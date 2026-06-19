@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - JUPEB Question Bank</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .admin-container {
+            max-width: 700px;
+            margin: 40px auto;
+        }
+        .admin-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        .admin-card h2 {
+            margin-bottom: 8px;
+            color: #0d6efd;
+        }
+        .admin-card .subtitle {
+            color: #6c757d;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            font-family: inherit;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #0d6efd;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        button:hover { background: #0b5ed7; }
+        button.danger {
+            background: #dc3545;
+            margin-top: 4px;
+        }
+        button.danger:hover { background: #c82333; }
+        .success-msg {
+            background: #d4edda;
+            color: #155724;
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+            margin-top: 12px;
+        }
+        .user-list {
+            margin-top: 20px;
+        }
+        .user-item {
+            background: #f8f9fa;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .user-email {
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+        .user-info {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        .user-date {
+            font-size: 0.75rem;
+            color: #adb5bd;
+        }
+        .login-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logout-btn {
+            background: #6c757d;
+            width: auto;
+            padding: 8px 20px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="login-section">
+            <button onclick="signInWithGoogle()" id="login-btn">🔐 Sign in with Google (Admin)</button>
+            <button onclick="signOut()" id="logout-btn" class="logout-btn" style="display:none;">Sign Out</button>
+            <p style="color:#6c757d;font-size:0.85rem;margin-top:8px;">Only your email has admin access</p>
+        </div>
+
+        <div class="admin-card" id="admin-panel" style="display:none;">
+            <h2>🔐 Admin Panel</h2>
+            <p class="subtitle">Add or remove authorized users</p>
+            
+            <input type="email" id="user-email" placeholder="Student's Gmail address">
+            
+            <textarea id="payment-ref" rows="2" placeholder="Payment reference (e.g., Bank transfer - GTB)"></textarea>
+            
+            <button onclick="authorizeUser()">✅ Authorize User</button>
+            <button class="danger" onclick="removeUser()">🗑️ Remove User</button>
+            
+            <div class="success-msg" id="success-msg"></div>
+            
+            <div class="user-list" id="user-list">
+                <h3 style="margin-bottom:12px;">📋 Authorized Users</h3>
+                <p style="color:#6c757d;">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script>
+        const ADMIN_EMAIL = "evulinemichael@gmail.com";
+        
+        auth.onAuthStateChanged(async (user) => {
+            if (user && user.email === ADMIN_EMAIL) {
+                document.getElementById('login-btn').style.display = 'none';
+                document.getElementById('logout-btn').style.display = 'inline-block';
+                document.getElementById('admin-panel').style.display = 'block';
+                loadUsers();
+            } else {
+                document.getElementById('login-btn').style.display = 'inline-block';
+                document.getElementById('logout-btn').style.display = 'none';
+                document.getElementById('admin-panel').style.display = 'none';
+                if (user) auth.signOut();
+            }
+        });
+        
+        function signInWithGoogle() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider);
+        }
+        
+        function signOut() {
+            auth.signOut();
+        }
+        
+        async function authorizeUser() {
+            const email = document.getElementById('user-email').value.trim();
+            const paymentRef = document.getElementById('payment-ref').value;
+            
+            if (!email) {
+                alert('Please enter an email address');
+                return;
+            }
+            
+            try {
+                await db.collection("authorized_users").doc(email).set({
+                    authorized_by: "Michael",
+                    date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                    payment_ref: paymentRef,
+                    expiry_date: "June 30, 2027",
+                    active: true
+                });
+                
+                showSuccess(`✅ ${email} authorized successfully!`);
+                document.getElementById('user-email').value = '';
+                document.getElementById('payment-ref').value = '';
+                loadUsers();
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+        
+        async function removeUser() {
+            const email = document.getElementById('user-email').value.trim();
+            if (!email) { alert('Enter email to remove'); return; }
+            if (!confirm(`Remove ${email}?`)) return;
+            
+            try {
+                await db.collection("authorized_users").doc(email).delete();
+                showSuccess(`🗑️ ${email} removed`);
+                document.getElementById('user-email').value = '';
+                loadUsers();
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+        
+        async function loadUsers() {
+            const listEl = document.getElementById('user-list');
+            try {
+                const snapshot = await db.collection("authorized_users").get();
+                if (snapshot.empty) {
+                    listEl.innerHTML = '<h3 style="margin-bottom:12px;">📋 Authorized Users</h3><p style="color:#6c757d;">No users yet</p>';
+                    return;
+                }
+                
+                let html = '<h3 style="margin-bottom:12px;">📋 Authorized Users</h3>';
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    html += `
+                        <div class="user-item">
+                            <div>
+                                <div class="user-email">${doc.id}</div>
+                                <div class="user-info">Expires: ${data.expiry_date || 'N/A'} | ${data.payment_ref || 'No ref'}</div>
+                                <div class="user-date">Added: ${data.date}</div>
+                            </div>
+                        </div>`;
+                });
+                listEl.innerHTML = html;
+            } catch (error) {
+                listEl.innerHTML = '<p style="color:#dc3545;">Error loading users</p>';
+            }
+        }
+        
+        function showSuccess(msg) {
+            const el = document.getElementById('success-msg');
+            el.textContent = msg;
+            el.style.display = 'block';
+            setTimeout(() => el.style.display = 'none', 4000);
+        }
+    </script>
+</body>
+</html>
