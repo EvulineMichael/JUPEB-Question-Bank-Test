@@ -1016,117 +1016,178 @@ function displayPastQuestions(subject, year) {
     const quizTab = document.getElementById('quiz-mode-tab');
     if (quizTab) quizTab.classList.remove('active');
     
-    // Read DIRECTLY from allSubjectData - never touch questionsData
-    const data = allSubjectData[subject] || [];
-    let allQuestions = data.filter(q => q.year === year);
+    // Show loading state immediately
+    questionsContainer.innerHTML = `
+        <div class="loading-container" style="text-align:center;padding:60px 20px;">
+            <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+            <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year} questions...</p>
+        </div>
+    `;
     
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
-    const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
-    
-    if (allQuestions.length === 0) {
-        questionsContainer.innerHTML = `<div class="welcome-message"><h2>📭 No questions found</h2><p>No questions for ${displayName} ${year}.</p></div>`;
-        return;
-    }
-    
-    // SEPARATE Objective and Essay questions
-    const objectiveQuestions = allQuestions.filter(q => q.type === "Objective");
-    const essayQuestions = allQuestions.filter(q => q.type === "Essay");
-    
-    // Sort objective questions by question number
-    objectiveQuestions.sort((a, b) => {
-        const aNum = parseInt(a.questionNumber) || 0;
-        const bNum = parseInt(b.questionNumber) || 0;
-        return aNum - bNum;
-    });
-    
-    // Sort essay questions by question number
-    essayQuestions.sort((a, b) => {
-        const aNum = parseInt(a.questionNumber) || 0;
-        const bNum = parseInt(b.questionNumber) || 0;
-        return aNum - bNum;
-    });
-    
-    // Build the HTML
-    let questionsHtml = `
-        <div class="past-questions-header">
-            <div>
-                <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
-                <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
-            </div>
-            <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year})">
-                📝 Take This as a Quiz
-            </button>
-        </div>`;
-    
-    // --- SECTION 1: OBJECTIVE QUESTIONS ---
-    if (objectiveQuestions.length > 0) {
-        questionsHtml += `
-            <div class="past-section-header">
-                <h3 style="color:#0d6efd;font-size:1.2rem;margin:24px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
-                    📝 Multiple-Choice Questions
-                </h3>
+    // Use setTimeout to allow the loading state to render
+    setTimeout(() => {
+        // Read DIRECTLY from allSubjectData - never touch questionsData
+        const data = allSubjectData[subject] || [];
+        let allQuestions = data.filter(q => q.year === year);
+        
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+        const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
+        
+        if (allQuestions.length === 0) {
+            questionsContainer.innerHTML = `<div class="welcome-message"><h2>📭 No questions found</h2><p>No questions for ${displayName} ${year}.</p></div>`;
+            return;
+        }
+        
+        // SEPARATE Objective and Essay questions
+        const objectiveQuestions = allQuestions.filter(q => q.type === "Objective");
+        const essayQuestions = allQuestions.filter(q => q.type === "Essay");
+        
+        // Sort objective questions by question number
+        objectiveQuestions.sort((a, b) => {
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Sort essay questions by question number
+        essayQuestions.sort((a, b) => {
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Build the HTML
+        let questionsHtml = `
+            <div class="past-questions-header">
+                <div>
+                    <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
+                    <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
+                </div>
+                <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year})">
+                    📝 Take This as a Quiz
+                </button>
             </div>`;
         
-        let questionIndex = 1;
-        objectiveQuestions.forEach((q) => {
-            questionsHtml += buildQuestionCard(q, year, questionIndex);
-            questionIndex++;
+        // --- SECTION 1: OBJECTIVE QUESTIONS ---
+        if (objectiveQuestions.length > 0) {
+            questionsHtml += `
+                <div class="past-section-header">
+                    <h3 style="color:#0d6efd;font-size:1.2rem;margin:24px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
+                        📝 Multiple-Choice Questions
+                    </h3>
+                </div>`;
+            
+            let questionIndex = 1;
+            objectiveQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, year, questionIndex);
+                questionIndex++;
+            });
+        }
+        
+        // --- SECTION 2: ESSAY QUESTIONS ---
+        if (essayQuestions.length > 0) {
+            questionsHtml += `
+                <div class="past-section-header">
+                    <h3 style="color:#059669;font-size:1.2rem;margin:32px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
+                        ✍️ Essay Questions
+                    </h3>
+                </div>`;
+            
+            let questionIndex = 1;
+            essayQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, year, questionIndex);
+                questionIndex++;
+            });
+        }
+
+        questionsContainer.innerHTML = questionsHtml;
+
+        // Set up event listeners for show answer buttons
+        document.querySelectorAll('.show-answer-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const qIdx = btn.dataset.qIdx;
+                const answerDisplay = document.getElementById(`answer-${qIdx}`);
+                if (answerDisplay.classList.contains('show')) {
+                    answerDisplay.classList.remove('show');
+                    btn.textContent = '🔍 Show Answer';
+                    document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
+                } else {
+                    answerDisplay.classList.add('show');
+                    btn.textContent = '🙈 Hide Answer';
+                    const answer = btn.dataset.answer;
+                    document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
+                        if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
+                    });
+                }
+            });
         });
+
+        document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const essayIdx = btn.dataset.essayIdx;
+                const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
+                if (answerDisplay.style.display === 'none') {
+                    answerDisplay.style.display = 'block';
+                    btn.textContent = '🙈 Hide Model Answer';
+                } else {
+                    answerDisplay.style.display = 'none';
+                    btn.textContent = '📝 Show Model Answer';
+                }
+            });
+        });
+
+        document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100); // Small delay to ensure loading state renders
+}
+
+// Helper function to build individual question cards
+function buildQuestionCard(q, year, questionIndex) {
+    const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
+    let html = `<div class="question-card" data-question-idx="${questionIndex}">
+        <div class="question-header">
+            <span class="question-year">📅 ${year}</span>
+            <span class="question-number-badge">🔢 Q${qNumberDisplay}</span>
+            <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
+            ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
+        </div>
+        <div class="question-text">${escapeHtml(q.question)}</div>`;
+
+    if (q.diagramMissing) {
+        html += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
+    }
+
+    if (q.type === "Objective" && q.options && q.options.length > 0) {
+        html += `<ul class="options-list" id="options-list-${questionIndex}">`;
+        const optionLabels = ['A','B','C','D','E','F'];
+        q.options.forEach((opt, optIdx) => {
+            if (opt && opt.trim() !== "") {
+                const isCorrect = q.answer && q.answer.toUpperCase() === optionLabels[optIdx];
+                html += `<li class="option-item" data-option="${optionLabels[optIdx]}" ${isCorrect ? 'data-correct="true"' : ''}><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
+            }
+        });
+        html += `</ul>`;
+        if (q.answer && q.explanation) {
+            html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button>
+                <div class="answer-display" id="answer-${questionIndex}">
+                    <div class="correct-answer">✅ Correct Answer: ${q.answer}</div>
+                    <div class="explanation">💡 ${escapeHtml(q.explanation)}</div>
+                </div>`;
+        }
+    }
+
+    if (q.type === "Essay") {
+        if (q.modelAnswer) {
+            html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button>
+                <div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;">
+                    <div class="model-answer"><strong>📖 Model Answer:</strong><br>${escapeHtml(q.modelAnswer)}</div>
+                </div>`;
+        } else if (!q.diagramMissing) {
+            html += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
+        }
     }
     
-    // --- SECTION 2: ESSAY QUESTIONS ---
-    if (essayQuestions.length > 0) {
-        questionsHtml += `
-            <div class="past-section-header">
-                <h3 style="color:#059669;font-size:1.2rem;margin:32px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
-                    ✍️ Essay Questions
-                </h3>
-            </div>`;
-        
-        let questionIndex = 1;
-        essayQuestions.forEach((q) => {
-            questionsHtml += buildQuestionCard(q, year, questionIndex);
-            questionIndex++;
-        });
-    }
-
-    questionsContainer.innerHTML = questionsHtml;
-
-    // Set up event listeners for show answer buttons
-    document.querySelectorAll('.show-answer-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const qIdx = btn.dataset.qIdx;
-            const answerDisplay = document.getElementById(`answer-${qIdx}`);
-            if (answerDisplay.classList.contains('show')) {
-                answerDisplay.classList.remove('show');
-                btn.textContent = '🔍 Show Answer';
-                document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
-            } else {
-                answerDisplay.classList.add('show');
-                btn.textContent = '🙈 Hide Answer';
-                const answer = btn.dataset.answer;
-                document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
-                    if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
-                });
-            }
-        });
-    });
-
-    document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const essayIdx = btn.dataset.essayIdx;
-            const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
-            if (answerDisplay.style.display === 'none') {
-                answerDisplay.style.display = 'block';
-                btn.textContent = '🙈 Hide Model Answer';
-            } else {
-                answerDisplay.style.display = 'none';
-                btn.textContent = '📝 Show Model Answer';
-            }
-        });
-    });
-
-    document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
+    html += `</div>`;
+    return html;
 }
 
 // Helper function to build individual question cards
