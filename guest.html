@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Access - JUPEB Question Bank</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        [data-theme="dark"] body { background: #0f172a; }
+        .guest-container {
+            max-width: 420px;
+            width: 90%;
+            padding: 40px 30px;
+            text-align: center;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        [data-theme="dark"] .guest-container {
+            background: #1e293b;
+            color: #f1f5f9;
+        }
+        .guest-container h1 {
+            font-size: 1.8rem;
+            color: #0d6efd;
+            margin-bottom: 8px;
+        }
+        .guest-container p {
+            color: #6c757d;
+            margin-bottom: 6px;
+        }
+        [data-theme="dark"] .guest-container p { color: #94a3b8; }
+        .guest-container input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            text-align: center;
+            letter-spacing: 4px;
+            margin: 20px 0;
+            font-family: inherit;
+        }
+        [data-theme="dark"] .guest-container input {
+            background: #334155;
+            border-color: #475569;
+            color: #f1f5f9;
+        }
+        .guest-container input:focus {
+            outline: none;
+            border-color: #0d6efd;
+        }
+        .guest-container button {
+            width: 100%;
+            padding: 16px;
+            background: #059669;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .guest-container button:hover { background: #047857; }
+        .status-msg {
+            font-size: 0.9rem;
+            margin-top: 12px;
+            display: none;
+        }
+        .status-msg.error { color: #dc3545; }
+        .status-msg.success { color: #059669; }
+        
+        /* Theme toggle */
+        .theme-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            border: 1px solid #e9ecef;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        [data-theme="dark"] .theme-btn {
+            background: #1e293b;
+            border-color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">🌓</button>
+
+    <div class="guest-container">
+        <h1>🎓 Guest Access</h1>
+        <p>Enter the guest code to try the full site</p>
+        <p style="font-size:0.85rem;">All subjects + Quiz Mode included</p>
+        
+        <input type="text" id="guest-code" placeholder="Enter code..." maxlength="20" autocomplete="off">
+        <p class="status-msg" id="status-msg"></p>
+        
+        <button onclick="verifyCode()">🔓 Unlock Access</button>
+    </div>
+
+    <script>
+        // ⚙️ GUEST CODES — Edit these
+        const guestCodes = {
+            "JUPEB2026": { expiry: "2026-12-31T23:59:59", label: "Full Access" },
+            "TRIAL7": { expiry: "2026-07-31T23:59:59", label: "7-Day Trial" }
+        };
+
+        function verifyCode() {
+            const code = document.getElementById('guest-code').value.trim().toUpperCase();
+            const msg = document.getElementById('status-msg');
+            msg.style.display = 'block';
+            msg.className = 'status-msg';
+
+            if (!code) {
+                msg.classList.add('error');
+                msg.textContent = 'Please enter a code.';
+                return;
+            }
+
+            if (guestCodes[code]) {
+                const expiry = new Date(guestCodes[code].expiry);
+                const now = new Date();
+
+                if (now < expiry) {
+                    msg.classList.add('success');
+                    msg.textContent = `✅ Access granted! Redirecting...`;
+                    
+                    // Store guest session
+                    sessionStorage.setItem('jupeb_guest', 'true');
+                    sessionStorage.setItem('jupeb_guest_code', code);
+
+                    setTimeout(() => {
+                        // Redirect to main site — auth.js checks for this
+                        window.location.href = 'index.html';
+                    }, 1000);
+                } else {
+                    msg.classList.add('error');
+                    msg.textContent = '⏰ This code has expired.';
+                }
+            } else {
+                msg.classList.add('error');
+                msg.textContent = '❌ Invalid code. Try again.';
+            }
+        }
+
+        // Enter key submits
+        document.getElementById('guest-code').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') verifyCode();
+        });
+
+        // Theme toggle
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            if (current === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+</body>
+</html>

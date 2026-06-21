@@ -12,6 +12,13 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
     // ... rest of your existing auth code
   });
 }
+// Guest access check
+if (sessionStorage.getItem('jupeb_guest') === 'true') {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('app-content').style.display = 'block';
+    window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+    if (typeof initJUPEBApp === 'function') initJUPEBApp();
+}
 function toggleAccessInfo() {
   const info = document.getElementById('access-info');
   if (info.style.display === 'none') {
