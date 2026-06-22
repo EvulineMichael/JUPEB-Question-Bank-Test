@@ -107,33 +107,15 @@
             padding: 8px 20px;
             font-size: 0.85rem;
         }
-.user-item {
-    background: #f8f9fa;
-    padding: 14px;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    border: 1px solid #e9ecef;
-}
-
-.user-item button {
-    flex-shrink: 0;
-}
-        
     </style>
 </head>
 <body>
-    <div id="login-section" style="max-width:400px;margin:80px auto;padding:30px;background:white;border-radius:12px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
-    <h2>🔐 Admin Access</h2>
-    <p style="color:#6c757d;margin-bottom:16px;">Enter the admin passcode</p>
-    <input type="password" id="admin-passcode" placeholder="Enter passcode..." style="width:100%;padding:14px;border:2px solid #e9ecef;border-radius:10px;font-size:1.1rem;text-align:center;letter-spacing:4px;margin-bottom:12px;">
-    <button onclick="verifyAdmin()" style="width:100%;padding:14px;background:#0d6efd;color:white;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;">Unlock</button>
-    <p id="admin-error" style="color:#dc3545;font-size:0.9rem;margin-top:8px;display:none;">Incorrect passcode</p>
-</div>
+    <div class="admin-container">
+        <div class="login-section">
+            <button onclick="signInWithGoogle()" id="login-btn">🔐 Sign in with Google (Admin)</button>
+            <button onclick="signOut()" id="logout-btn" class="logout-btn" style="display:none;">Sign Out</button>
+            <p style="color:#6c757d;font-size:0.85rem;margin-top:8px;">Only your email has admin access</p>
+        </div>
 
         <div class="admin-card" id="admin-panel" style="display:none;">
             <h2>🔐 Admin Panel</h2>
@@ -147,13 +129,6 @@
             <button class="danger" onclick="removeUser()">🗑️ Remove User</button>
             
             <div class="success-msg" id="success-msg"></div>
-
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-    <h3 style="margin:0;">📋 Authorized Users</h3>
-    <button onclick="toggleSort()" id="sort-btn" style="width:auto;padding:8px 14px;background:transparent;color:var(--text-secondary, #6c757d);border:1px solid var(--border-color, #e9ecef);border-radius:8px;cursor:pointer;font-size:0.85rem;display:flex;align-items:center;gap:6px;">
-        <span id="sort-icon">↓</span> <span id="sort-label">Newest</span>
-    </button>
-</div>
             
             <div class="user-list" id="user-list">
                 <h3 style="margin-bottom:12px;">📋 Authorized Users</h3>
@@ -166,159 +141,107 @@
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
     <script src="firebase-config.js"></script>
-    <div id="admin-panel" style="display:none;">
-    <div class="admin-container">
-        <div class="admin-card">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-                <h2>🔐 Admin Panel</h2>
-                <button onclick="logoutAdmin()" style="width:auto;padding:6px 14px;background:#6c757d;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.8rem;">Sign Out</button>
-            </div>
-            <p class="subtitle">Add or remove authorized users</p>
-            
-            <input type="email" id="user-email" placeholder="Student's Gmail address">
-            <textarea id="payment-ref" rows="2" placeholder="Payment reference (e.g., Bank transfer - GTB)"></textarea>
-            <button onclick="authorizeUser()">✅ Authorize User</button>
-            <button class="danger" onclick="removeUser()">🗑️ Remove User</button>
-            <div class="success-msg" id="success-msg"></div>
-            
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;margin-top:20px;">
-                <h3 style="margin:0;">📋 Authorized Users</h3>
-                <button onclick="toggleSort()" id="sort-btn" style="width:auto;padding:8px 14px;background:transparent;color:#6c757d;border:1px solid #e9ecef;border-radius:8px;cursor:pointer;font-size:0.85rem;display:flex;align-items:center;gap:6px;">
-                    <span id="sort-icon">↓</span> <span id="sort-label">Newest</span>
-                </button>
-            </div>
-            <div class="user-list" id="user-list">
-                <p style="color:#6c757d;">Loading...</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
-<script src="firebase-config.js"></script>
-<script>
-    const ADMIN_PASSCODE = "michael2026"; // ← CHANGE THIS to your passcode
-    let sortOrder = 'desc';
-
-    function verifyAdmin() {
-        const code = document.getElementById('admin-passcode').value;
-        if (code === ADMIN_PASSCODE) {
-            sessionStorage.setItem('admin_auth', 'true');
-            document.getElementById('login-section').style.display = 'none';
-            document.getElementById('admin-panel').style.display = 'block';
-            loadUsers();
-        } else {
-            document.getElementById('admin-error').style.display = 'block';
+    <script>
+        const ADMIN_EMAIL = "evulinemichael@gmail.com";
+        
+        auth.onAuthStateChanged(async (user) => {
+            if (user && user.email === ADMIN_EMAIL) {
+                document.getElementById('login-btn').style.display = 'none';
+                document.getElementById('logout-btn').style.display = 'inline-block';
+                document.getElementById('admin-panel').style.display = 'block';
+                loadUsers();
+            } else {
+                document.getElementById('login-btn').style.display = 'inline-block';
+                document.getElementById('logout-btn').style.display = 'none';
+                document.getElementById('admin-panel').style.display = 'none';
+                if (user) auth.signOut();
+            }
+        });
+        
+        function signInWithGoogle() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider);
         }
-    }
-
-    function logoutAdmin() {
-        sessionStorage.removeItem('admin_auth');
-        document.getElementById('login-section').style.display = 'block';
-        document.getElementById('admin-panel').style.display = 'none';
-    }
-
-    // Check if already logged in
-    if (sessionStorage.getItem('admin_auth') === 'true') {
-        document.getElementById('login-section').style.display = 'none';
-        document.getElementById('admin-panel').style.display = 'block';
-        loadUsers();
-    }
-
-    // Allow Enter key
-    document.getElementById('admin-passcode').addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') verifyAdmin();
-    });
-
-    function toggleSort() {
-        sortOrder = sortOrder === 'desc' ? 'asc' : 'desc';
-        document.getElementById('sort-icon').textContent = sortOrder === 'desc' ? '↓' : '↑';
-        document.getElementById('sort-label').textContent = sortOrder === 'desc' ? 'Newest' : 'Oldest';
-        loadUsers();
-    }
-
-    async function authorizeUser() {
-        const email = document.getElementById('user-email').value.trim();
-        const paymentRef = document.getElementById('payment-ref').value;
-        if (!email) { alert('Please enter an email'); return; }
-        try {
-            await db.collection("authorized_users").doc(email).set({
-                authorized_by: "Michael",
-                date: new Date().toISOString().split('T')[0],
-                payment_ref: paymentRef,
-                expiry_date: "June 30, 2027",
-                active: true
-            });
-            showSuccess(`✅ ${email} authorized!`);
-            document.getElementById('user-email').value = '';
-            document.getElementById('payment-ref').value = '';
-            loadUsers();
-        } catch (error) { alert('Error: ' + error.message); }
-    }
-
-    async function removeUser() {
-        const email = document.getElementById('user-email').value.trim();
-        if (!email) { alert('Enter email to remove'); return; }
-        if (!confirm(`Remove ${email}?`)) return;
-        try {
-            await db.collection("authorized_users").doc(email).delete();
-            showSuccess(`🗑️ ${email} removed`);
-            document.getElementById('user-email').value = '';
-            loadUsers();
-        } catch (error) { alert('Error: ' + error.message); }
-    }
-
-    async function removeUserDirect(email) {
-        if (!confirm(`Remove ${email}?`)) return;
-        try {
-            await db.collection("authorized_users").doc(email).delete();
-            showSuccess(`🗑️ ${email} removed`);
-            loadUsers();
-        } catch (error) { alert('Error: ' + error.message); }
-    }
-
-    async function loadUsers() {
-        const listEl = document.getElementById('user-list');
-        try {
-            const snapshot = await db.collection("authorized_users").get();
-            if (snapshot.empty) {
-                listEl.innerHTML = '<p style="color:#6c757d;">No users yet</p>';
+        
+        function signOut() {
+            auth.signOut();
+        }
+        
+        async function authorizeUser() {
+            const email = document.getElementById('user-email').value.trim();
+            const paymentRef = document.getElementById('payment-ref').value;
+            
+            if (!email) {
+                alert('Please enter an email address');
                 return;
             }
-            const users = [];
-            snapshot.forEach(doc => users.push({ id: doc.id, ...doc.data() }));
-            users.sort((a, b) => {
-                const dateA = new Date(a.date);
-                const dateB = new Date(b.date);
-                return sortOrder === 'desc' ? dateB - dateA : dateA - dateB;
-            });
-            let html = `<p style="color:#6c757d;margin-bottom:8px;">${users.length} user${users.length !== 1 ? 's' : ''}</p>`;
-            users.forEach((data, index) => {
-                const formattedDate = data.date.includes('-') 
-                    ? new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
-                    : data.date;
-                html += `
-                    <div class="user-item">
-                        <div>
-                            <span style="font-weight:700;color:#0d6efd;margin-right:8px;">#${index + 1}</span>
-                            <span class="user-email">${data.id}</span>
-                            <div class="user-info">Expires: ${data.expiry_date || 'N/A'} | ${data.payment_ref || 'No ref'}</div>
-                            <div class="user-date">Added: ${formattedDate}</div>
-                        </div>
-                        <button onclick="removeUserDirect('${data.id}')" style="background:#dc3545;color:white;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.8rem;">🗑️ Remove</button>
-                    </div>`;
-            });
-            listEl.innerHTML = html;
-        } catch (error) { listEl.innerHTML = '<p style="color:#dc3545;">Error loading users</p>'; }
-    }
-
-    function showSuccess(msg) {
-        const el = document.getElementById('success-msg');
-        el.textContent = msg;
-        el.style.display = 'block';
-        setTimeout(() => el.style.display = 'none', 4000);
-    }
-</script>
+            
+            try {
+                await db.collection("authorized_users").doc(email).set({
+                    authorized_by: "Michael",
+                    date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                    payment_ref: paymentRef,
+                    expiry_date: "June 30, 2027",
+                    active: true
+                });
+                
+                showSuccess(`✅ ${email} authorized successfully!`);
+                document.getElementById('user-email').value = '';
+                document.getElementById('payment-ref').value = '';
+                loadUsers();
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+        
+        async function removeUser() {
+            const email = document.getElementById('user-email').value.trim();
+            if (!email) { alert('Enter email to remove'); return; }
+            if (!confirm(`Remove ${email}?`)) return;
+            
+            try {
+                await db.collection("authorized_users").doc(email).delete();
+                showSuccess(`🗑️ ${email} removed`);
+                document.getElementById('user-email').value = '';
+                loadUsers();
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+        
+        async function loadUsers() {
+            const listEl = document.getElementById('user-list');
+            try {
+                const snapshot = await db.collection("authorized_users").get();
+                if (snapshot.empty) {
+                    listEl.innerHTML = '<h3 style="margin-bottom:12px;">📋 Authorized Users</h3><p style="color:#6c757d;">No users yet</p>';
+                    return;
+                }
+                
+                let html = '<h3 style="margin-bottom:12px;">📋 Authorized Users</h3>';
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    html += `
+                        <div class="user-item">
+                            <div>
+                                <div class="user-email">${doc.id}</div>
+                                <div class="user-info">Expires: ${data.expiry_date || 'N/A'} | ${data.payment_ref || 'No ref'}</div>
+                                <div class="user-date">Added: ${data.date}</div>
+                            </div>
+                        </div>`;
+                });
+                listEl.innerHTML = html;
+            } catch (error) {
+                listEl.innerHTML = '<p style="color:#dc3545;">Error loading users</p>';
+            }
+        }
+        
+        function showSuccess(msg) {
+            const el = document.getElementById('success-msg');
+            el.textContent = msg;
+            el.style.display = 'block';
+            setTimeout(() => el.style.display = 'none', 4000);
+        }
+    </script>
 </body>
 </html>

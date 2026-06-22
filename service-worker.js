@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jupeb-qb-v6'; // ← Bumped to v6
+const CACHE_NAME = 'jupeb-qb-v4'; // ← Bumped to v4
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
