@@ -29,49 +29,21 @@ function toggleAccessInfo() {
 }
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
-  if (user) {
-    const email = user.email;
-    
-    const docRef = db.collection("authorized_users").doc(email);
-    const doc = await docRef.get();
-    
-    if (doc.exists) {
-      const userData = doc.data();
-      
-      // Check expiry
-      if (userData.expiry_date) {
-        const expiryDate = new Date(userData.expiry_date);
-        const today = new Date();
-        if (today > expiryDate) {
-          document.getElementById('auth-status').innerHTML = 
-            `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-              <p>⏰ <strong>Access expired</strong></p>
-              <p>Your access expired on ${userData.expiry_date}. Please renew.</p>
-            </div>`;
-          auth.signOut();
-          return;
-        }
-      }
-      
-      // Access granted
-      document.getElementById('login-screen').style.display = 'none';
-      document.getElementById('app-content').style.display = 'block';
-      window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
-      
-      if (typeof initJUPEBApp === 'function') {
-        initJUPEBApp();
-      }
+  try {
+    if (user) {
+      const email = user.email;
+
+      const docRef = db.collection("authorized_users").doc(email);
+      const doc = await docRef.get();
+
+      // existing logic...
     } else {
-      document.getElementById('auth-status').innerHTML = 
-  `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-    <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
-    <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
-  </div>`;
-      auth.signOut();
+      document.getElementById('login-screen').style.display = 'block';
+      document.getElementById('app-content').style.display = 'none';
     }
-  } else {
-    document.getElementById('login-screen').style.display = 'block';
-    document.getElementById('app-content').style.display = 'none';
+  } catch (error) {
+    console.error("Auth Error:", error);
+    alert("Connection issue. Please refresh and try again.");
   }
 });
 
@@ -79,11 +51,20 @@ auth.onAuthStateChanged(async (user) => {
 // Google Sign In
 function signInWithGoogle() {
   const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider).catch((error) => {
-    alert('Login failed: ' + error.message);
-  });
-}
 
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+  if (isIOS) {
+    auth.signInWithRedirect(provider);
+  } else {
+    auth.signInWithPopup(provider);
+  }
+}
+console.log("Auth State Changed");
+console.log("User:", user?.email);
+console.log("Checking Firestore...");
+console.log("Document exists:", doc.exists);
+console.log("Signing out user");
 // Sign Out
 function signOutUser() {
   auth.signOut();
