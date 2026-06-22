@@ -27,6 +27,10 @@ function toggleAccessInfo() {
     info.style.display = 'none';
   }
 }
+if (email === "evulinemichael@gmail.com") {
+    const adminLink = document.getElementById('admin-link');
+    if (adminLink) adminLink.style.display = 'flex';
+}
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
   if (user) {
