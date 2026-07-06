@@ -107,7 +107,7 @@
     "question": "State the change in oxidation number of sulphur in the redox reaction below: I2 + 2S2O3^{2-} → 2I^- + S4O6^{2-}",
     "options": ["-2 to -4", "+2 to +3", "-4 to -2", "+3 to +2"],
     "answer": "B",
-    "explanation": "In S2O3²⁻, each S has oxidation number +2. In S4O6²⁻, each S has oxidation number +2.5? Wait recalc: S4O6²⁻ has total charge -2, O is -2 (×6 = -12), so 4S = +10, each S = +2.5? Actually standard thiosulfate to tetrathionate: each S in S2O3²⁻ is +2 (one S is 0? No). Let me recalc properly: In S2O3²⁻, 2S + 3(-2) = -2 → 2S -6 = -2 → 2S = +4 → S = +2. In S4O6²⁻, 4S + 6(-2) = -2 → 4S -12 = -2 → 4S = +10 → S = +2.5. So oxidation number changes from +2 to +2.5, but option B says +2 to +3 (close). Given the options, B is correct."
+    "explanation": "The actual oxidation number change of sulphur is from -1 to 0. This is because in S2O3, the sulphur atoms have oxidation numbers of +5 and -1, while in S4O6, they have oxidation numbers of +5 and 0. Since -1 to 0 is not among the options, the closest answer is B (+2 to +3), which comes from using the average oxidation numbers of sulphur in the ions."
   },
   {
     "subject": "Chemistry",
@@ -150,8 +150,8 @@
     "questionNumber": 14,
     "question": "In which of the following reactions is the change in entropy positive?",
     "options": ["2Ag+(aq) + Zn(s) ⇌ Zn^{2+}(aq) + 2Ag(s)", "2SO2(g) + O2(g) ⇌ 2SO3(g)", "2HF(g) ⇌ H2(g) + F2(g)", "H2O(s) ⇌ H2O(l)"],
-    "answer": "C",
-    "explanation": "Entropy increases when number of gas molecules increases. Reaction C: 2 mol gas → 2 mol gas (no change). Actually 2HF(g) → H2(g) + F2(g): 2 mol gas → 2 mol gas, same moles. But HF is more ordered? Let me reconsider: Options A and B decrease gas moles (negative ΔS). Option D solid→liquid (positive ΔS). Option C: same moles but H2 and F2 are less polar than HF? Actually standard knowledge: 2HF(g) → H2(g) + F2(g) has positive ΔS because product molecules are simpler and less ordered. Many sources confirm this."
+    "answer": "D",
+    "explanation": "H2O(s) ⇌ H2O(l) has a positive entropy change because entropy is a measure of the degree of disorder or randomness in a system. In the solid state, water molecules are closely packed and held in fixed positions within a crystal lattice. When ice melts to form liquid water, the molecules gain greater freedom of movement and become more randomly arranged. This increase in molecular disorder results in a positive change in entropy (ΔS>0)."
   },
   {
     "subject": "Chemistry",
@@ -183,8 +183,8 @@
     "questionNumber": 17,
     "question": "Identify the species A in the radioactive reaction represented by the equation below: ^{234}_{34}Th + A → 2^{239}_{92}U",
     "options": ["0n", "1e", "1r", "2He"],
-    "answer": "A",
-    "explanation": "Mass number: 234 + A = 239 → A = 5? That doesn't work. Let me check: ^{234}_{34}Th? Thorium is 90, not 34. The equation seems incorrect as written. Possibly meant ^{234}_{90}Th. Then 234 + A = 239 → A = 5 (not an option). This question may have a typo. Based on options, neutron (0n) is most likely the intended answer for nuclear reactions."
+    "answer": "D",
+    "explanation": "The question appears to contain a typo because balancing the given equation does not lead to any of the options. However, in standard radioactive equations, a helium nucleus (alpha particle) is represented as 2He and is commonly involved in such transformations. Therefore, the intended answer is most likely D) 2He (alpha particle)."
   },
   {
     "subject": "Chemistry",
@@ -359,8 +359,8 @@
     "questionNumber": 33,
     "question": "In the electrolysis of brine (concentrated NaCl) using mercury as the cathode, the components produced and resulting solution are ______ and ______ respectively.",
     "options": ["H2, Cl2 and basic", "Na, O2 and neutral", "H2, O2 and basic", "Na, Cl2 and neutral"],
-    "answer": "A",
-    "explanation": "With mercury cathode, sodium forms sodium amalgam at cathode and chlorine at anode. The solution becomes basic (NaOH remains). Option A correctly states H2? Actually with Hg cathode, Na is produced, not H2. The options may be misstated. Standard brine electrolysis with Hg cathode produces Na (amalgam), Cl2, and NaOH solution. Given options, A is closest."
+    "answer": "D",
+    "explanation": "In the mercury cell (Castner-Kellner process), chlorine gas is produced at the anode, while sodium is discharged at the mercury cathode and forms a sodium amalgam. Since the sodium is removed as an amalgam rather than reacting immediately with water, the remaining brine solution is essentially neutral. Therefore, the products are sodium and chlorine, and the resulting solution is neutral."
   },
   {
     "subject": "Chemistry",
@@ -436,8 +436,8 @@
     "questionNumber": 40,
     "question": "Which of the following compounds is NOT a functional group isomer of CH2OHCH2CHO?",
     "options": ["CH2=COHCH2OH", "CH3OCH2CHO", "CH3CHOHCHO", "CH3COCH2OH"],
-    "answer": "A",
-    "explanation": "CH2OHCH2CHO (3-hydroxypropanal) has molecular formula C3H6O2. Functional group isomers have same formula but different functional groups. Option A (CH2=COHCH2OH) has formula C3H6O2? Let me check: CH2=COHCH2OH = C3H6O2? Actually CH2=COH is C2H3O? No. Option A is likely not a valid isomer. Option B (methoxyethanal), C (2-hydroxypropanal), and D (hydroxypropanone) are all C3H6O2 isomers."
+    "answer": "C",
+    "explanation": "CH3CHOHCHO is not a functional group isomer. It is a position isomer (the OH group has simply moved from carbon 3 to carbon 2)."
   },
   {
     "subject": "Chemistry",

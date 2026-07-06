@@ -306,8 +306,8 @@
     "questionNumber": 28,
     "question": "Which of the following properties are NOT those of a suitable thermometric liquid? I. It should be a good conductor of heat II. It should be opaque III. Its expansion should be regular IV. It should wet glass V. It should have a high melting point and low boiling point",
     "options": ["I and II", "I and III", "II and III", "IV and V"],
-    "answer": "A",
-    "explanation": "A good thermometric liquid should be a poor conductor (I is NOT suitable) and should be clearly visible (not opaque, II is NOT suitable)."
+    "answer": "D",
+    "explanation": "A suitable thermometric liquid should not wet the glass so that the liquid level is easy to read, and it should have a low melting point and high boiling point so it can measure a wide range of temperatures. Statements IV and V are therefore not desirable properties."
   },
   {
     "subject": "Physics",
@@ -317,8 +317,8 @@
     "questionNumber": 29,
     "question": "How many grams of water at 20°C must be added to 35 g of ice at 0°C to melt it completely? (Specific heat capacity of water = 4.2 × 10³ Jkg⁻¹K⁻¹, Specific latent heat of fusion of ice = 3.4 × 10⁵ Jkg⁻¹)",
     "options": ["320.2 g", "445.2 g", "125.6 g", "129.8 g"],
-    "answer": "A",
-    "explanation": "Heat to melt ice = m_ice × L = 0.035×3.4×10⁵ = 11900 J. Heat lost by water = m_w × c × ΔT = m_w × 4200 × 20 = 84000 m_w. Equate: 84000 m_w = 11900 → m_w = 0.1417 kg = 141.7 g. None match exactly. 320.2 g is too large. Possibly the calculation includes something else. Re-evaluate: 35g ice = 0.035kg. Heat to melt = 0.035×3.4×10⁵ = 11,900 J. m×4200×20 = 11,900 → m = 11,900/(84,000) = 0.1417 kg = 141.7 g. Not in options. Option A is 320.2g (would give 2.25× more heat). Option D is 129.8g, closest. D is 129.8g."
+    "answer": "D",
+    "explanation": "Heat to melt ice = m_ice × L = 0.035×3.4×10⁵ = 11900 J. Heat lost by water = m_w × c × ΔT = m_w × 4200 × 20 = 84000 m_w. Equate: 84000 m_w = 11900 → m_w = 0.1417 kg = 141.7 g. None match exactly. 320.2 g is too large. Possibly the calculation includes something else. Re-evaluate: 35g ice = 0.035kg. Heat to melt = 0.035×3.4×10⁵ = 11,900 J. m×4200×20 = 11,900 → m = 11,900/(84,000) = 0.1417 kg = 141.7 g. Not in options. The closest option is D) 129.8 g, but it does not agree with the given data. This suggests there is likely an error in the question (either in the latent heat value, specific heat capacity, or the answer choices)."
   },
   {
     "subject": "Physics",

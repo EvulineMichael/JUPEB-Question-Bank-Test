@@ -1,0 +1,920 @@
+[
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The downfall of the hero of the Classical period is attributed to an inherent flaw while that of the hero of the Modern period is ascribed to a",
+    "options": [
+      "villainous antagonist.",
+      "dysfunctional society.",
+      "mischievous god.",
+      "injurious prophecy."
+    ],
+    "answer": "B",
+    "explanation": "In Classical drama, the hero's downfall is due to an inherent flaw (hamartia). In Modern drama, the hero's downfall is often due to a dysfunctional society — social, economic, or political forces beyond the hero's control."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Renaissance drama is different from Greek drama because in Renaissance drama,",
+    "options": [
+      "there is always one plot.",
+      "there are comic scenes.",
+      "the stage is elaborate.",
+      "the heroine sometimes dies."
+    ],
+    "answer": "B",
+    "explanation": "Renaissance drama differs from Greek drama because there are comic scenes — Renaissance plays often include comic relief, subplots, and clownish characters. Greek tragedy maintained a serious tone throughout."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Another form of the burlesque is",
+    "options": [
+      "parody.",
+      "limerick.",
+      "cacophony.",
+      "euphemism."
+    ],
+    "answer": "A",
+    "explanation": "Burlesque is closely related to parody — both involve humorous imitation of serious works. Parody is a form of burlesque that imitates a specific work or style for comic effect."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Which significant incident led to increased literacy and provided a market for authors in the Victorian period?",
+    "options": [
+      "Puritan's ban of the theatre.",
+      "Feminist movement of that century.",
+      "Development of the printing press.",
+      "Proliferation of writers of prose."
+    ],
+    "answer": "C",
+    "explanation": "The development of the printing press led to increased literacy and provided a market for authors in the Victorian period. Cheaper printing made books more accessible, leading to a wider reading public."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "One advantage of the omniscient narrative technique is that it",
+    "options": [
+      "permits character identification by the reader.",
+      "enables prose as a mobilization tool by the author.",
+      "facilitates memorability and believability of the text.",
+      "ensures deep knowledge of the characters in the story."
+    ],
+    "answer": "D",
+    "explanation": "One advantage of the omniscient narrative technique is that it ensures deep knowledge of the characters in the story — the narrator knows all characters' thoughts, feelings, and motivations, providing a comprehensive understanding."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Memoir differs significantly from autobiography because memoir",
+    "options": [
+      "gives a comprehensive account of the author's life",
+      "gives a full account of the narrator's life",
+      "focuses on specific areas of the author's life",
+      "focuses on specific experiences of the protagonist's life"
+    ],
+    "answer": "C",
+    "explanation": "A memoir differs from an autobiography because memoir focuses on specific areas of the author's life — it is a selective account of particular experiences or themes, whereas an autobiography covers the author's entire life."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Materials or objects that the performers or characters might need to use to play their parts are",
+    "options": [
+      "lines.",
+      "props.",
+      "materials.",
+      "roles."
+    ],
+    "answer": "B",
+    "explanation": "Props (properties) are materials or objects that performers or characters might need to use to play their parts — they include furniture, weapons, letters, and other items used on stage."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Sudden recognition of facts in tragedy is known as",
+    "options": [
+      "hamartia.",
+      "anagnorisis.",
+      "peripeteia.",
+      "catharsis."
+    ],
+    "answer": "B",
+    "explanation": "Anagnorisis is the sudden recognition of facts in tragedy — it is the moment when the hero realizes the truth about their situation. Peripeteia is the reversal of fortune, and catharsis is the emotional release."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "A form of Harmatia that is very common in Greek tragedy is",
+    "options": [
+      "catharsis.",
+      "error.",
+      "hubris.",
+      "dishonouring."
+    ],
+    "answer": "C",
+    "explanation": "Hubris (excessive pride or arrogance) is a very common form of hamartia (tragic flaw) in Greek tragedy. It leads the hero to defy the gods or fate, resulting in their downfall. Oedipus and Creon are examples."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "The playwright who does not belong to the group is",
+    "options": [
+      "Henrik Ibsen.",
+      "T.S Eliot.",
+      "William Shakespeare.",
+      "Tawfiq al-Hakim."
+    ],
+    "answer": "C",
+    "explanation": "William Shakespeare does not belong to the group — he is a Renaissance (Elizabethan) playwright, while Ibsen, Eliot, and al-Hakim are modern or contemporary playwrights."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The expression, 'he checked his cash, and cashed in his checks' illustrates the use of",
+    "options": [
+      "pun.",
+      "apostrophe.",
+      "personification.",
+      "litotes."
+    ],
+    "answer": "A",
+    "explanation": "'He checked his cash, and cashed in his checks' illustrates the use of pun — a play on words that have similar sounds but different meanings (cash/checks). It creates a humorous or clever effect."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Aristotle's mimesis is an imitation of",
+    "options": [
+      "divine actions.",
+      "human actions.",
+      "animal's actions.",
+      "nature's actions."
+    ],
+    "answer": "B",
+    "explanation": "Aristotle's mimesis is an imitation of human actions — art imitates reality, and drama is an imitation of human life, actions, and emotions. This is a central concept in Aristotle's Poetics."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The expression, 'a picture made out of words' best describes a/an",
+    "options": [
+      "symbol.",
+      "motif.",
+      "image.",
+      "theme."
+    ],
+    "answer": "C",
+    "explanation": "An image is 'a picture made out of words' — it creates a vivid mental picture through sensory description. Images appeal to the reader's senses and imagination."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "A plot is commonly said to have unity of",
+    "options": [
+      "action.",
+      "purpose.",
+      "character.",
+      "ending."
+    ],
+    "answer": "A",
+    "explanation": "A plot is commonly said to have unity of action — the events of the plot should be causally connected and contribute to the overall structure of the story. This is one of Aristotle's three unities."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "The excerpt above exemplifies the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt not provided in the PDF. Please refer to your original past question paper.",
+    "options": [
+      "refrain.",
+      "antithesis.",
+      "oxymoron.",
+      "irony."
+    ],
+    "answer": "N/A",
+    "explanation": "⚠️ Cannot determine answer as the excerpt is not provided in the PDF. Please supply the missing excerpt."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Can you believe that I have told you a million lies since we started this relationship? The expression is a good example of",
+    "options": [
+      "personification.",
+      "litotes.",
+      "irony.",
+      "hyperbole."
+    ],
+    "answer": "D",
+    "explanation": "The expression is a good example of hyperbole — 'a million lies' is an exaggeration used for emphasis. It is not meant to be taken literally but to emphasize the extent of the deception."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Literature",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Literature is best described as",
+    "options": [
+      "fictional and imaginative writing.",
+      "quantitative and reasoning writing.",
+      "motivational and inspirational writing.",
+      "philosophical and research writing."
+    ],
+    "answer": "A",
+    "explanation": "Literature is best described as fictional and imaginative writing — it is a creative art that uses language to express ideas, emotions, and experiences. It includes fiction, poetry, and drama."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The rhyme scheme for the excerpt above is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt: 'Like as the waves make towards the pebbled shore...' by William Shakespeare. Please refer to original past question paper.",
+    "options": [
+      "coupled rhyme.",
+      "enclosed rhyme.",
+      "monorhyme.",
+      "alternate rhyme."
+    ],
+    "answer": "A",
+    "explanation": "The rhyme scheme of the excerpt is coupled rhyme — the lines rhyme in pairs (AABB). The poem is a sonnet with a specific rhyme scheme."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The predominant imagery in the excerpt is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt: 'Like as the waves make towards the pebbled shore...' by William Shakespeare. Please refer to original past question paper.",
+    "options": [
+      "olfactory.",
+      "auditory.",
+      "kinesthetic.",
+      "tactile."
+    ],
+    "answer": "C",
+    "explanation": "The predominant imagery in the excerpt is kinesthetic — the movement of waves and the passing of time evoke a sense of motion and physical activity."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The last line of the excerpt exemplifies the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt: 'Like as the waves make towards the pebbled shore...' by William Shakespeare. Please refer to original past question paper.",
+    "options": [
+      "pathetic fallacy.",
+      "oxymoron.",
+      "personification.",
+      "paradox."
+    ],
+    "answer": "C",
+    "explanation": "The last line exemplifies personification — it gives human qualities to abstract concepts or non-human things. The phrase 'all forwards do contend' gives 'forwards' a human quality, suggesting struggle or competition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Literature",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Which of the following literary devices is odd in the list below?",
+    "options": [
+      "Resolution",
+      "Plot",
+      "Climax",
+      "Alliteration"
+    ],
+    "answer": "D",
+    "explanation": "Alliteration is odd in the list — it is a literary device (figure of speech), while resolution, plot, and climax are elements of plot structure in narrative and drama."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Which of the following options is the stronghold of poetry?",
+    "options": [
+      "Resolution",
+      "Plot",
+      "Climax",
+      "Emotion"
+    ],
+    "answer": "D",
+    "explanation": "Emotion is the stronghold of poetry — poetry is often described as the language of emotion. It expresses feelings, passions, and experiences in an intense and imaginative way."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Drama differs from poetry because drama",
+    "options": [
+      "makes use of many characters.",
+      "exists largely in action.",
+      "uses lofty language.",
+      "deals mainly with tragic experiences."
+    ],
+    "answer": "B",
+    "explanation": "Drama differs from poetry because drama exists largely in action — it is meant to be performed on stage, with physical actions and gestures. Poetry is primarily a written or spoken art form."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Literature",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "An effective choice of words in a piece of literary work is referred to as",
+    "options": [
+      "dialogue.",
+      "diction.",
+      "diphthong.",
+      "demagoguery."
+    ],
+    "answer": "B",
+    "explanation": "Diction is an effective choice of words in a piece of literary work — it refers to the author's choice of vocabulary and style. Diction contributes to tone, mood, and meaning."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "'Hillary, the heiress of the Clinton political dynasty, held her head high as she harassed the hooligans in Harlem.' The dominant literary device in the preceding remark is",
+    "options": [
+      "anagnorisis.",
+      "prolepsis.",
+      "alliteration.",
+      "personification."
+    ],
+    "answer": "C",
+    "explanation": "The dominant literary device is alliteration — the repetition of the initial 'h' sound in 'Hillary,' 'heiress,' 'held,' 'head,' 'high,' 'harassed,' and 'hooligans.' Alliteration creates rhythm and emphasis."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The expression, 'Akimbola lost his wife and his only child, his household furniture and his dog in the inferno' is a case of the use of",
+    "options": [
+      "bathos.",
+      "parody.",
+      "paradox.",
+      "litotes."
+    ],
+    "answer": "A",
+    "explanation": "The expression is a case of bathos — a sudden shift from the serious to the trivial. The loss of wife and child is tragic, but the addition of furniture and dog reduces the emotional impact, creating an anticlimax."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Pick the odd item out in the list.",
+    "options": [
+      "Chinua Achebe.",
+      "Elechi Amadi.",
+      "Helon Habila.",
+      "George Eliot."
+    ],
+    "answer": "D",
+    "explanation": "George Eliot is the odd item out — she is a British (Victorian) novelist. Chinua Achebe, Elechi Amadi, and Helon Habila are all Nigerian/African novelists."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "In Greek drama, a second actor was added by",
+    "options": [
+      "Aristotle.",
+      "Euripides.",
+      "Aeschylus.",
+      "Sophocles."
+    ],
+    "answer": "C",
+    "explanation": "Aeschylus added a second actor to Greek drama, reducing the role of the chorus and allowing for dialogue and dramatic conflict between characters. Sophocles later added a third actor."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "A type of comedy that is created with the use of humour and sarcasm or ridicule to expose vices in a given society is known as",
+    "options": [
+      "conflict.",
+      "sarcasm.",
+      "farce.",
+      "satire."
+    ],
+    "answer": "D",
+    "explanation": "Satire is a type of comedy that uses humour, sarcasm, and ridicule to expose vices and follies in society. It aims to criticize and provoke reform. Farce relies on slapstick, while sarcasm is a tone."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "According to Aristotle, the most important component of drama is the",
+    "options": [
+      "diction.",
+      "dialogue.",
+      "character.",
+      "plot."
+    ],
+    "answer": "D",
+    "explanation": "According to Aristotle, the most important component of drama is the plot — it is the 'soul' of tragedy. Plot is the arrangement of events and the structure of the action."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The dominant imagery in the extract above is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'When at break of day at a riverside...' by Gabriel Okara. Please refer to original past question paper.",
+    "options": [
+      "tactile.",
+      "auditory.",
+      "visual.",
+      "thermal."
+    ],
+    "answer": "B",
+    "explanation": "The dominant imagery in the extract is auditory — the poem describes sounds ('jingle drums telegraphing,' 'mystic rhythm') that appeal to the sense of hearing."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "I hear jingle drums telegraphing is an example of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'When at break of day at a riverside...' by Gabriel Okara. Please refer to original past question paper.",
+    "options": [
+      "oxymoron.",
+      "metaphor.",
+      "paradox.",
+      "pun."
+    ],
+    "answer": "B",
+    "explanation": "'I hear jingle drums telegraphing' is an example of metaphor — the sound of the drums is compared to telegraphing (sending a message) without using 'like' or 'as.' It suggests that the drums convey a message."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The feeling in the last two lines is one of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'When at break of day at a riverside...' by Gabriel Okara. Please refer to original past question paper.",
+    "options": [
+      "uncertainty.",
+      "indifference.",
+      "nostalgia.",
+      "anger."
+    ],
+    "answer": "C",
+    "explanation": "The feeling in the last two lines is one of nostalgia — the persona recalls being in his mother's lap as a suckling, evoking a sense of longing for childhood and the past."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "An approach solely on the features of the literary text is the concern of the",
+    "options": [
+      "marxist.",
+      "sociological.",
+      "philosophical.",
+      "formalist."
+    ],
+    "answer": "D",
+    "explanation": "The formalist approach focuses solely on the features of the literary text — it analyses form, structure, language, and literary devices without considering external factors like author, society, or history."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Looking at the text as it is and what literary strategies it entails is also known as",
+    "options": [
+      "subjective approach.",
+      "objective approach.",
+      "textual approach.",
+      "structural approach."
+    ],
+    "answer": "B",
+    "explanation": "Looking at the text as it is and what literary strategies it entails is known as the objective approach — it focuses on the text itself, independent of the author's intentions or the reader's response."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The dominant mood that pervades all or part of a literary work is called",
+    "options": [
+      "atmosphere.",
+      "weather.",
+      "setting.",
+      "local."
+    ],
+    "answer": "A",
+    "explanation": "Atmosphere is the dominant mood that pervades all or part of a literary work — it is the emotional tone or feeling created by the setting, imagery, and language. Weather and setting contribute to atmosphere but are not the same."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The meaning or abstract concept which one is left with after reading a novel is called",
+    "options": [
+      "setting.",
+      "theme.",
+      "analysis.",
+      "critique."
+    ],
+    "answer": "B",
+    "explanation": "Theme is the meaning or abstract concept which one is left with after reading a novel — it is the central idea or underlying message of the work."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Verisimilitude implies",
+    "options": [
+      "distance from truth.",
+      "closeness to truth.",
+      "defiance to truth.",
+      "resistance to truth."
+    ],
+    "answer": "B",
+    "explanation": "Verisimilitude implies closeness to truth — it is the quality of appearing true or realistic in a work of fiction. It creates the illusion of reality."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "A novel that involves exchange of letters is the",
+    "options": [
+      "historical.",
+      "epistolary.",
+      "memoir.",
+      "gothic."
+    ],
+    "answer": "B",
+    "explanation": "An epistolary novel is one that involves the exchange of letters — the story is told through documents like letters, diary entries, or emails. Examples include Samuel Richardson's Pamela."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "A very old story without easily traceable facts is called",
+    "options": [
+      "legend.",
+      "myth.",
+      "old history.",
+      "allegory."
+    ],
+    "answer": "B",
+    "explanation": "A myth is a very old story without easily traceable facts — it is a traditional story that explains natural phenomena, origins, or cultural beliefs, often involving gods or supernatural beings."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "'Sooty bosom' is a metaphor for",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 1, Scene 2). Please refer to original past question paper.",
+    "options": [
+      "a black coat.",
+      "Othello.",
+      "a breastplate.",
+      "Iago."
+    ],
+    "answer": "B",
+    "explanation": "'Sooty bosom' is a metaphor for Othello — it refers to his black skin, which is described as 'sooty' (dark). The speaker (Brabantio) uses this racialized language to express his disgust at Desdemona's marriage to Othello."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The 'her' of line 4 refers to?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 1, Scene 2). Please refer to original past question paper.",
+    "options": [
+      "Emilia.",
+      "Desdemona.",
+      "Bianca.",
+      "Cassio's mistress."
+    ],
+    "answer": "B",
+    "explanation": "The 'her' of line 4 refers to Desdemona — Brabantio is speaking about his daughter Desdemona, who has married Othello against his wishes."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Who is the speaker in this except?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 1, Scene 2). Please refer to original past question paper.",
+    "options": [
+      "Othello.",
+      "Desdemona.",
+      "Brabantio.",
+      "Emilia."
+    ],
+    "answer": "C",
+    "explanation": "The speaker is Brabantio — he is expressing his shock and dismay that Desdemona would marry Othello. He refers to Othello's 'sooty bosom' with disgust."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The speaker in the above extract is addressing",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello. Please refer to original past question paper.",
+    "options": [
+      "Cassio.",
+      "Duke.",
+      "herself.",
+      "himself."
+    ],
+    "answer": "D",
+    "explanation": "The speaker is addressing himself — this is a soliloquy or aside where Iago speaks to himself, revealing his thoughts and intentions to the audience."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The speaker's medicine works on?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello. Please refer to original past question paper.",
+    "options": [
+      "Desdemona.",
+      "Roderigo.",
+      "Othello.",
+      "Gratiano."
+    ],
+    "answer": "C",
+    "explanation": "The speaker's 'medicine' works on Othello — Iago is plotting to manipulate Othello and poison his mind against Desdemona. He calls his manipulation 'medicine' that will take effect on Othello."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The characters that just left the scene are",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 3, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Othello and Iago.",
+      "Montano and Cassio.",
+      "Othello and Desdemona.",
+      "Gratiano and Desdemona."
+    ],
+    "answer": "A",
+    "explanation": "The characters that just left the scene are Othello and Iago — Emilia is left alone on stage with the handkerchief after they depart."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "In the extract 'this napkin' is 'the token' of love between",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 3, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Iago and Emilia.",
+      "Cassio and Desdemona.",
+      "Bianca and Cassio.",
+      "Desdemona and Othello."
+    ],
+    "answer": "D",
+    "explanation": "The napkin (handkerchief) is a token of love between Desdemona and Othello — it was Othello's first gift to Desdemona, and she treasures it. Iago uses it to convince Othello of Desdemona's infidelity."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "By Janus is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 1, Scene 2). Please refer to original past question paper.",
+    "options": [
+      "flashback.",
+      "foregrounding.",
+      "an allusion.",
+      "euphemism."
+    ],
+    "answer": "C",
+    "explanation": "'By Janus' is an allusion — it refers to Janus, the Roman god of doors, gates, and transitions, often depicted with two faces. Iago swears by Janus, which is fitting for his duplicitous nature."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Duke is in council that night because of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 1, Scene 2). Please refer to original past question paper.",
+    "options": [
+      "Brabantio's complaint.",
+      "Iago's demotion.",
+      "the Turkish threat.",
+      "Cassio's dismissal as lieutenant."
+    ],
+    "answer": "C",
+    "explanation": "The Duke is in council that night because of the Turkish threat — the Turkish fleet is threatening Cyprus, and the Duke has called a council to discuss the military response."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "This scene takes place",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Extract from Shakespeare's Othello (Act 1, Scene 2). Please refer to original past question paper.",
+    "options": [
+      "on a street in Venice.",
+      "in the court of a Duke.",
+      "in Othello's bedroom.",
+      "in Gratiano's house."
+    ],
+    "answer": "A",
+    "explanation": "This scene takes place on a street in Venice — Othello and Iago are outside the Duke's court, and Brabantio accosts them."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The Classical Tradition",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the gender power structure as portrayed in Aristophanes' Lysistrata.",
+    "options": [],
+    "modelAnswer": "In Lysistrata, Aristophanes presents a comedic reversal of the traditional gender power structure. The play explores the dynamics of power between men and women in ancient Athens.\n\nWomen's Power through Sex Strike: Lysistrata organizes a sex strike to force the men to end the Peloponnesian War. The women use their sexual power to gain political influence. This is a radical inversion of traditional gender roles.\n\nWomen's Leadership: Lysistrata is a strong, intelligent, and resourceful leader. She plans the strike, negotiates with the men, and successfully ends the war. The play challenges the stereotype of women as passive and intellectually inferior.\n\nMen's Weakness: The men are portrayed as weak and easily manipulated by their sexual desires. They are unable to resist the women's strike and eventually capitulate. The play satirizes male weakness and the absurdity of war.\n\nSatirical Critique: The play is a satire of Athenian society and politics. It uses comedy to critique the patriarchal order and the irrationality of war. It suggests that women could bring peace and order to society.\n\nConclusion: In Lysistrata, Aristophanes subverts the traditional gender power structure, portraying women as capable, intelligent, and powerful, while men are shown as weak and easily manipulated. The play is a comic critique of patriarchy and the futility of war."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Discuss the themes of infidelity, illegitimacy and madness in Bosede Afolayan's Once upon an Elephant.",
+    "options": [],
+    "modelAnswer": "In Once upon an Elephant, Bosede Afolayan explores the themes of infidelity, illegitimacy, and madness, reflecting the complexities of human relationships and societal pressures.\n\nInfidelity: The play explores infidelity in marriage and relationships. Characters betray each other's trust, leading to emotional turmoil and conflict. Infidelity is presented as a destructive force that damages relationships and families.\n\nIllegitimacy: The theme of illegitimacy is explored through characters who are born out of wedlock. They face social stigma and struggle with their identity. The play highlights the societal judgment and discrimination faced by illegitimate children.\n\nMadness: Madness is portrayed as a consequence of betrayal, guilt, and societal pressure. Characters who experience infidelity and illegitimacy may descend into madness as a result of emotional trauma. The play uses madness to explore the psychological effects of social issues.\n\nConclusion: Once upon an Elephant uses the themes of infidelity, illegitimacy, and madness to explore the dark side of human relationships and the destructive effects of societal norms on individuals."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Explain the theme of racial segregation and resistance drawing examples from Peter Abrahams' Mine Boy.",
+    "options": [],
+    "modelAnswer": "In Mine Boy, Peter Abrahams explores the theme of racial segregation and resistance in apartheid South Africa.\n\nRacial Segregation: The novel depicts the harsh realities of apartheid — black South Africans are segregated, discriminated against, and exploited. Xuma, the protagonist, experiences racism in his daily life. He is denied decent housing, education, and employment opportunities.\n\nExploitation of Black Labour: The black workers are exploited in the mines. They are underpaid, overworked, and treated as expendable. The novel exposes the economic exploitation of black South Africans.\n\nResistance: The novel shows various forms of resistance — Xuma and other characters resist oppression through solidarity, protest, and political awareness. They fight for dignity and justice.\n\nUnity and Solidarity: The novel emphasizes the importance of unity among black workers. They organize and resist collectively. The strike represents the power of collective action against oppression.\n\nThe Human Cost of Apartheid: The novel portrays the human cost of apartheid — poverty, suffering, and the destruction of lives. Xuma's personal journey reflects the struggle of black South Africans for freedom and identity.\n\nConclusion: Mine Boy is a powerful critique of racial segregation and a celebration of resistance and solidarity. It highlights the injustices of apartheid and the resilience of those who fight against it."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Charlotte Bronte's Jane Eyre has some elements of a gothic novel. Discuss.",
+    "options": [],
+    "modelAnswer": "Jane Eyre contains several elements of the gothic novel, which contribute to its dark, mysterious, and atmospheric tone.\n\nHaunted Setting: Thornfield Hall is a dark, mysterious, and isolated mansion. It has secret rooms, eerie sounds, and a sense of foreboding. The gothic setting creates an atmosphere of mystery and suspense.\n\nThe Madwoman in the Attic: Bertha Mason, Rochester's insane wife, is a classic gothic figure. She is hidden in the attic, representing the secrets and horrors of the past. Her presence adds a supernatural and terrifying element to the novel.\n\nSupernatural Elements: The novel includes supernatural elements — Jane hears Rochester's voice calling her from across the distance, which is a supernatural event. There is also a sense of fate and destiny guiding Jane's life.\n\nDark Secrets: The novel is built on dark secrets — Rochester's secret marriage to Bertha is a gothic plot device. The revelation of the secret creates shock and drama.\n\nEmotional Intensity: The novel has gothic emotional intensity — Jane's passion, despair, and psychological turmoil are expressed with gothic fervour. The novel explores themes of madness, obsession, and moral struggle.\n\nIsolation: Jane is often isolated and alone — she is orphaned, abandoned, and solitary. This isolation is a gothic motif.\n\nConclusion: Jane Eyre incorporates gothic elements such as haunted settings, dark secrets, supernatural events, and emotional intensity. These elements contribute to the novel's enduring appeal and its status as a classic of the gothic tradition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Examine the use of images to portray varying life experiences, the theme that death is inevitable and a leveller in Thomas Gray's 'Elegy Written in a Country Churchyard.'",
+    "options": [],
+    "modelAnswer": "In Thomas Gray's 'Elegy Written in a Country Churchyard,' the poet uses images to portray varying life experiences and the theme that death is inevitable and a leveller.\n\nImages of Rural Life: Gray uses images of rural life — the ploughman, the swain, the shepherd, and the village folk. These images evoke a sense of simplicity, humility, and community. They contrast with the grandeur of the wealthy and powerful.\n\nThe Churchyard Images: The imagery of the churchyard, graves, and tombs creates a sombre and reflective mood. The graves remind the reader of the inevitability of death. The 'ivy-mantled tower' and 'rugged elms' create a picturesque setting.\n\nImages of Death: The poem uses images of death — the 'narrow cell,' 'the lowly bed,' 'the turf above them.' These images emphasize that death comes to all, regardless of status.\n\nThe Leveller: The poem suggests that death is a leveller — the rich and poor, the famous and obscure all end up in the same grave. The images of the 'paths of glory' leading 'but to the grave' emphasize that ambition and fame are ultimately meaningless.\n\nConclusion: Gray uses vivid images of rural life, the churchyard, and death to portray the theme that death is inevitable and a leveller. The poem reflects on the lives of the common people and the universality of death."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "African Poetry (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Discuss the use of metaphor in Sendar Senghor's 'Black Woman'.",
+    "options": [],
+    "modelAnswer": "In 'Black Woman,' Sendar Senghor uses powerful metaphors to celebrate the beauty, strength, and dignity of the African woman and, by extension, Africa itself.\n\nThe Woman as Nature: The poem uses metaphors that connect the woman to nature — she is described as 'naked woman,' 'black woman,' and 'flesh of my flesh.' She is likened to the earth, trees, and the sun. These metaphors celebrate her vitality and fertility.\n\nThe Woman as Africa: The black woman is a metaphor for Africa — she represents the continent's beauty, resilience, and soul. Senghor uses the woman to symbolize Africa's identity and heritage.\n\nThe Woman as Creation: The woman is compared to creative elements — she is 'life,' 'love,' and 'the promise of the harvest.' These metaphors emphasize her life-giving and nurturing qualities.\n\nThe Woman as Beauty: The woman is described as 'beautiful,' 'proud,' and 'radiant.' The metaphors evoke images of physical and spiritual beauty. She is a source of inspiration and strength.\n\nThe Woman as Resistance: The poem uses metaphors of strength and resistance — the woman is 'a shield,' 'a spear,' and 'the heart of a nation.' These metaphors suggest that she is a symbol of resistance against oppression.\n\nConclusion: Senghor's use of metaphor in 'Black Woman' elevates the African woman to a symbol of beauty, strength, and cultural identity. The metaphors celebrate Africa's heritage and resilience."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Read the passage below and answer the questions that follow:\n\n(i) State the dominant literary device used in the passage.\n(ii) Explain the effect of the use of this device on the passage.\n(iii) State the prose type under which the passage would be categorized.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I walked for I don't know how long...' by Jamaica Kincaid. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(i) Dominant literary device: The dominant literary device used in the passage is repetition — the repetition of 'I wanted to get across it but...' creates a rhythmic, incantatory effect and emphasizes the speaker's frustration and persistence.\n\n(ii) Effect of the device: The repetition conveys the speaker's struggle and determination — the obstacles seem insurmountable, but the speaker eventually overcomes them. The repetition also creates a dreamlike, surreal atmosphere, reflecting the speaker's disoriented journey. It adds to the sense of time passing and the feeling of isolation.\n\n(iii) Prose type: The passage would be categorized as creative non-fiction or literary prose — it is a narrative passage with introspective, reflective elements. It could also be considered magical realism, as the events are dreamlike and symbolic."
+  },
+  {
+    "subject": "Literature",
+    "year": 2024,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Read the poem below and answer the questions that follow:\n\n(i) Explain the significance of the relationship between the sun and the earth metaphors in the poem.\n(ii) Discuss the impact of his temper on the relationship between the sun and the moon through the day and night.\n(iii) Identify elements of form in the poem and discuss the implication of form on the content of the poem.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'At dawn slowly the sun withdraws...' by Chinua Achebe. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(i) Significance of the sun and earth metaphors: The poem uses the sun and earth as metaphors for a romantic relationship. The sun represents the male lover, and the earth represents the female lover. Their relationship is cyclical — they are in harmony at dawn and dusk, but the sun's temper brings conflict during the day. The metaphors explore the dynamics of love, passion, and reconciliation.\n\n(ii) Impact of his temper on the relationship: The sun's temper is like a lover's anger — it burns and hurts the earth. During the day, the sun (male) is aggressive and oppressive, while the earth (female) patiently endures. By evening, the sun's temper subsides, and the relationship is restored. This reflects the cycles of conflict and reconciliation in relationships.\n\n(iii) Elements of form: The poem uses free verse with no regular rhyme scheme or metre. It has a lyrical and reflective tone. The form supports the content — the free verse allows the poet to express the natural cycles of love and conflict without the constraints of traditional form. The imagery is vivid and metaphorical, enhancing the emotional and symbolic meaning."
+  }
+]

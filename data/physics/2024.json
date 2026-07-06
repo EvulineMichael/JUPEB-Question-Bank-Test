@@ -66,8 +66,8 @@
     "questionNumber": 6,
     "question": "A car travels at a uniform speed through a level circular curve on the road. Which of the following correctly describes the magnitude of the acceleration, velocity and force acting on the car?",
     "options": ["Constant, changing, changing", "Constant, constant, constant", "Constant, changing, constant", "Changing, changing, changing"],
-    "answer": "A",
-    "explanation": "Speed constant but direction changes, so velocity changes. Centripetal acceleration constant in magnitude (v²/r). Force = ma, also constant in magnitude but direction changes. Acceleration magnitude constant, velocity magnitude constant? Wait: Speed constant, so velocity magnitude constant but direction changes. Acceleration magnitude constant (centripetal). Force magnitude constant. So: acceleration constant, velocity changing (direction), force constant? Actually force magnitude constant. Option A says acceleration constant, velocity changing, force changing. Force magnitude constant but direction changes, so technically force is changing (vector). Option A is correct."
+    "answer": "C",
+    "explanation": "💡 Speed is constant, but the direction of motion changes, so the velocity changes. The magnitudes of the centripetal acceleration (v²/r) and centripetal force (mv²/r) remain constant because the speed and radius are constant. Therefore: acceleration – constant, velocity – changing, force – constant. Hence, Option C."
   },
   {
     "subject": "Physics",

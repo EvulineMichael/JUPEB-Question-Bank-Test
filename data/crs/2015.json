@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Standing in the place of the ancient Israelites' belief system today are three major religions",
+    "options": [
+      "Judaism, Christianity and Islam",
+      "Judaism, Buddhism and Christianity",
+      "Christianity, Buddhism and Hinduism",
+      "Judaism, Hebrewism and Islam."
+    ],
+    "answer": "A",
+    "explanation": "The three major monotheistic religions that trace their roots to the ancient Israelites are Judaism, Christianity, and Islam. They are often called the Abrahamic religions."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "How did historians succeed in scrutinizing the Old Testament to discover its nature and origins?",
+    "options": [
+      "Chronologically",
+      "Historically",
+      "Methodically",
+      "Systematically"
+    ],
+    "answer": "B",
+    "explanation": "Historians scrutinized the Old Testament historically — applying historical-critical methods to understand its development, sources, and the historical context behind the text."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "What was salvaged at the destruction of the first Temple by King Nebuchadnezzar in 605-562 BCE?",
+    "options": [
+      "The Israelites",
+      "Judaism",
+      "Religious Objects",
+      "Sacred texts"
+    ],
+    "answer": "D",
+    "explanation": "At the destruction of the first Temple (Solomon's Temple) in 586 BCE by Nebuchadnezzar, the sacred texts (the Torah and other scriptures) were salvaged, helping to preserve Judaism during the Babylonian exile."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Mosaic Authorship of the Pentateuch: An Overview",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The Pentateuch is actually a patchwork of what was once a different text known as",
+    "options": [
+      "Torah",
+      "Septuagint",
+      "The books of Moses",
+      "J.E.D.P."
+    ],
+    "answer": "D",
+    "explanation": "The Documentary Hypothesis (J.E.D.P.) argues that the Pentateuch is a patchwork of four distinct source documents (Jahwist, Elohist, Deuteronomist, Priestly), compiled over time."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The New Testament writers used the Greek version of the Bible called",
+    "options": [
+      "Talmud",
+      "Septuagint",
+      "Papyrus",
+      "Scroll."
+    ],
+    "answer": "B",
+    "explanation": "The Septuagint is the Greek translation of the Hebrew Bible (Old Testament), produced in Alexandria. The New Testament writers frequently quoted from the Septuagint."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Synopsis, Materials & Canonization of the New Testament",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The following criteria were observed by the early Church in the formation of the canon except:",
+    "options": [
+      "the author must have either been an apostle or his close associate",
+      "the author must have been well lettered and knowledgeable",
+      "the document should not contradict other 'inspired' writings",
+      "the document must share the overall nature of other inspired writings."
+    ],
+    "answer": "B",
+    "explanation": "The author being well-lettered and knowledgeable was NOT a criterion for canonization. The main criteria were apostolic origin, orthodox doctrine, widespread acceptance, and usage in worship."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Synopsis, Materials & Canonization of the New Testament",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The New Testament Canon evolved over the course of the period of Christian history between ...",
+    "options": [
+      "230-300 AD",
+      "240-300 AD",
+      "250-300 AD",
+      "260-300 AD"
+    ],
+    "answer": "D",
+    "explanation": "The New Testament Canon evolved between 260-300 AD. This was the period when the 27 books were largely recognized and accepted by the early Church."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Synopsis, Materials & Canonization of the New Testament",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The first Christian text that was not canonized but respected as authentic is the ...",
+    "options": [
+      "First Epistle of Clement of Rome",
+      "Gospel of Thomas",
+      "Epistle of Origen",
+      "Gospel of Claudius."
+    ],
+    "answer": "A",
+    "explanation": "The First Epistle of Clement of Rome was highly respected in the early Church and read in worship, but it was not included in the New Testament canon."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Toward the close of the 18th Century, freed slaves of West African ancestry began to arrive and settle in a town called ...",
+    "options": [
+      "Cape Town",
+      "Creek Town",
+      "Freetown",
+      "Badagry"
+    ],
+    "answer": "C",
+    "explanation": "Freed slaves of West African ancestry settled in Freetown, Sierra Leone, which became a base for the spread of Christianity into West Africa."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "The trade in slaves from Africa to the Americas began around the ...",
+    "options": [
+      "Fifteenth-Sixteenth Century",
+      "mid-Sixteenth Century",
+      "Seventeenth-Eighteenth Century",
+      "mid Eighteenth to Nineteenth Century."
+    ],
+    "answer": "A",
+    "explanation": "The transatlantic slave trade began around the Fifteenth-Sixteenth Century, with the Portuguese leading the early expeditions to West Africa."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "During the slave trade, Africans were transported across the Atlantic were estimated to be ...",
+    "options": [
+      "ten million",
+      "twelve million",
+      "thirteen million",
+      "fifteen million."
+    ],
+    "answer": "B",
+    "explanation": "Historical estimates suggest that approximately twelve million Africans were transported across the Atlantic during the transatlantic slave trade."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The first freed slaves to be shipped to Sierra Leone from London in 1787 were:",
+    "options": [
+      "300",
+      "305",
+      "315",
+      "331"
+    ],
+    "answer": "A",
+    "explanation": "The first group of freed slaves shipped to Sierra Leone from London in 1787 numbered 300. They were among the founders of the Province of Freedom."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of Prophecy in Israel",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "'Hear this word, you cows of Bashan ...who oppress the poor, who crush the needy ...' (Amos 4:1). Cows of Bashan in here refers to the ...",
+    "options": [
+      "women of Samaria",
+      "wicked kings",
+      "false prophets",
+      "judges in Israel."
+    ],
+    "answer": "A",
+    "explanation": "In Amos 4:1, 'cows of Bashan' is a metaphor referring to the wealthy, oppressive women of Samaria who exploited the poor and lived in luxury."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of Prophecy in Israel",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "God promised the Israelites that if they repented of their sins and returned to Him, He would....",
+    "options": [
+      "fill them with His knowledge",
+      "deliver their enemies into their hands",
+      "give them shepherds after His own heart",
+      "give them favour in the sight of the nations."
+    ],
+    "answer": "C",
+    "explanation": "God promised that if the Israelites repented, He would give them shepherds after His own heart (Jeremiah 3:15) who would lead them with wisdom and faithfulness."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "God decided not to punish the people of Israel during the reign of Josiah for the sins they committed because ...",
+    "options": [
+      "Josiah humbled himself before the LORD",
+      "God was merciful to him",
+      "Josiah took care of the prophets",
+      "God did not want Josiah to backslide."
+    ],
+    "answer": "A",
+    "explanation": "God decided not to punish Israel during Josiah's reign because Josiah humbled himself before the LORD (2 Kings 22:19-20). The punishment would come after his death."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of Prophecy in Israel",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Amos declared that the Jews who built houses of hewn stone would not dwell in them because they",
+    "options": [
+      "swore falsely",
+      "persecuted the prophets",
+      "trampled upon the poor",
+      "worshipped other gods."
+    ],
+    "answer": "C",
+    "explanation": "Amos declared judgment on those who built luxurious houses because they trampled upon the poor and oppressed the needy (Amos 5:11-12)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of Prophecy in Israel",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "What acts of righteousness did Isaiah admonish his people to demonstrate?",
+    "options": [
+      "Helping the poor and offering sacrifices.",
+      "Learning to do good and seeking justice.",
+      "Defending the orphans and respecting the widows.",
+      "Avoiding evil and praying for others."
+    ],
+    "answer": "B",
+    "explanation": "Isaiah admonished his people to learn to do good and seek justice (Isaiah 1:17) as acts of righteousness, rather than relying on empty sacrifices and rituals."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "'Father Abraham, have mercy upon me, and send Lazarus ...' (Luke 16:24). Abraham could not grant the rich man's request because ...",
+    "options": [
+      "his dogs used to lick Lazarus' sores",
+      "he had no pity on the rich man",
+      "there was a chasm between them",
+      "the rich man lived in luxury while on earth."
+    ],
+    "answer": "C",
+    "explanation": "Abraham could not grant the rich man's request because there was a great chasm fixed between them (Luke 16:26) — a barrier that could not be crossed."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The Jewish religious leaders arrested and imprisoned the Apostles the second time because",
+    "options": [
+      "the High Priest and the Sadducees were jealous",
+      "they disobeyed the law",
+      "they were accused of treason",
+      "they performed miracles in the name of Jesus."
+    ],
+    "answer": "A",
+    "explanation": "The Jewish religious leaders arrested the Apostles because the High Priest and the Sadducees were jealous (Acts 5:17-18) of their popularity and influence."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "In the Transfiguration episode, Moses and Elijah represented the",
+    "options": [
+      "glory of God",
+      "Old Testament saints",
+      "law and the prophets",
+      "end of the age."
+    ],
+    "answer": "C",
+    "explanation": "In the Transfiguration, Moses represented the Law and Elijah represented the Prophets. They appeared with Jesus to show that He fulfilled both the Law and the Prophets."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "'... but he who enters by the door is the shepherd of the sheep ...' (John 10:2). The door in this statement refers to",
+    "options": [
+      "Jesus Christ",
+      "the Gospel",
+      "Apostle Peter",
+      "the law."
+    ],
+    "answer": "A",
+    "explanation": "In John 10:2, Jesus says 'he who enters by the door is the shepherd of the sheep.' Jesus identifies Himself as the door (John 10:9)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Jesus did not go immediately to attend to Lazarus who was reported sick because He",
+    "options": [
+      "did not know how serious the sickness was",
+      "wanted His disciples to believe in Him",
+      "cared less about Lazarus",
+      "was too busy attending to other people."
+    ],
+    "answer": "B",
+    "explanation": "Jesus delayed going to Lazarus so that His disciples might believe (John 11:14-15). He wanted to demonstrate His power over death and strengthen their faith."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The following are Israel's patriarchs except...",
+    "options": [
+      "Abraham",
+      "Isaac",
+      "Jacob",
+      "Abel."
+    ],
+    "answer": "D",
+    "explanation": "The patriarchs of Israel are Abraham, Isaac, and Jacob. Abel is a pre-patriarchal figure from Genesis 4, not a patriarch of Israel."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Synoptic Gospels & The Synoptic Problem",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The first three books of the New Testament are called the",
+    "options": [
+      "Common Gospels",
+      "Major Gospels",
+      "Synoptic Gospels",
+      "Major Three."
+    ],
+    "answer": "C",
+    "explanation": "Matthew, Mark, and Luke are called the Synoptic Gospels because they share a similar perspective (synopsis) and parallel accounts of Jesus' life and ministry."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Proliferation of Churches in Nigeria",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "One of these is not a cause of proliferation of Churches in Nigeria.",
+    "options": [
+      "Polygamy and allied matters",
+      "Desire for independence",
+      "Selfishness",
+      "Nationalism"
+    ],
+    "answer": "D",
+    "explanation": "Nationalism is not a cause of church proliferation in Nigeria. The causes include polygamy-related issues, desire for independence, selfishness, leadership conflicts, and doctrinal disagreements."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Religious Personality & Human Values",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "A family system where the males have more power and authority than the females and where right and inheritance pass from fathers to sons is",
+    "options": [
+      "matriarchal",
+      "fatherhood",
+      "motherhood",
+      "patriarchal."
+    ],
+    "answer": "D",
+    "explanation": "A patriarchal system is one where males hold primary power and authority, and lineage and inheritance pass through the male line."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Mosaic Authorship of the Pentateuch: An Overview",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The supplementary hypothesis is a combination of",
+    "options": [
+      "form criticism and tradition history",
+      "source criticism and Old Testament criticism",
+      "textual criticism and Samaritan Pentateuch",
+      "the older documentary hypothesis and fragment hypothesis."
+    ],
+    "answer": "D",
+    "explanation": "The supplementary hypothesis is a combination of the older documentary hypothesis and the fragment hypothesis, proposing that the Pentateuch was formed by supplementing earlier documents with additional material."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Synoptic Gospels & The Synoptic Problem",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "By the priority of Mark, we mean",
+    "options": [
+      "Mark was the last Gospel to be written",
+      "Mark was the first Gospel to be written",
+      "Matthew used Mark extensively",
+      "Luke copied Matthew."
+    ],
+    "answer": "B",
+    "explanation": "The priority of Mark means that Mark was the first Gospel to be written, and that Matthew and Luke used Mark as a source when writing their own Gospels."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of the African Independent Churches",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "In which of these Churches do women play prominent role?",
+    "options": [
+      "Mainline Churches.",
+      "African Indigenous Churches.",
+      "Anglican Church.",
+      "Baptist Church."
+    ],
+    "answer": "B",
+    "explanation": "Women play a prominent role in African Indigenous Churches (AICs), often serving as prophets, healers, and church founders. This is a notable feature distinguishing them from mainline Churches."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of Monarchy in Israel",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Moses asked Pharaoh to allow the Hebrews depart from Egypt in order to...",
+    "options": [
+      "buy more food from the land of Canaan",
+      "fight the Jebusites",
+      "make a sacrifice to the Lord in the wilderness",
+      "smite the Amorites."
+    ],
+    "answer": "C",
+    "explanation": "Moses requested Pharaoh to allow the Hebrews to depart from Egypt to make a sacrifice to the LORD in the wilderness (Exodus 3:18, 5:3)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Synoptic Gospels & The Synoptic Problem",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The term 'Quelle' means",
+    "options": [
+      "form",
+      "primitive",
+      "redactive",
+      "source."
+    ],
+    "answer": "D",
+    "explanation": "Quelle (or 'Q') is the German word for 'source.' It refers to the hypothetical common source used by Matthew and Luke, consisting of sayings of Jesus not found in Mark."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Pentecostalism in Nigeria",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The term 'Aladura' is also used of the",
+    "options": [
+      "white garment Churches",
+      "Pentecostal Churches",
+      "Mountain of Fire and Miracles Ministry",
+      "all Churches in Yoruba land."
+    ],
+    "answer": "A",
+    "explanation": "The term 'Aladura' (meaning 'praying people') is used to describe the white garment churches in Nigeria, such as the Cherubim and Seraphim and the Celestial Church of Christ."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The Old Testament Scripture contains in it three (3) kinds of records ...",
+    "options": [
+      "story, legends and history",
+      "myths, legends and story",
+      "myths, legends and history",
+      "history, prophesy and Torah."
+    ],
+    "answer": "C",
+    "explanation": "The Old Testament contains myths, legends, and history. Myths explain origins, legends preserve memory of ancestral figures, and history records actual events."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Legends are stories that are based on",
+    "options": [
+      "memories of ancient people",
+      "memories of human beings persevered by oral traditions",
+      "memories that are not properly documented",
+      "stories that look as if they are true."
+    ],
+    "answer": "B",
+    "explanation": "Legends are stories based on memories of human beings preserved by oral traditions. They often contain historical kernels but are embellished over time."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Through the conquest of Alexander the Great of the then world, the Greeks produced",
+    "options": [
+      "Hellenistic culture",
+      "Egyptian culture",
+      "Adulterated culture",
+      "African culture"
+    ],
+    "answer": "A",
+    "explanation": "Alexander the Great's conquests produced Hellenistic culture — the spread of Greek language, ideas, and customs across the Mediterranean and Near East."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "'Roman Peace' is also known as",
+    "options": [
+      "Roman citizenship",
+      "Roman communications",
+      "'Pax Romana'",
+      "Greco-Roman Culture."
+    ],
+    "answer": "C",
+    "explanation": "Roman Peace is also known as Pax Romana — the period of relative peace and stability across the Roman Empire from the reign of Augustus."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "In the Roman Empire, which of these administrative systems was developed?",
+    "options": [
+      "Parochial",
+      "Federal",
+      "State",
+      "Provincial."
+    ],
+    "answer": "D",
+    "explanation": "The Roman Empire developed a provincial administrative system, dividing its territory into provinces governed by appointed officials (proconsuls and legates)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Jesus Christ was born during the reign of",
+    "options": [
+      "Philip the Tetrarch",
+      "Herod the Great",
+      "Alexander the Great",
+      "Pontius Pilate."
+    ],
+    "answer": "B",
+    "explanation": "Jesus Christ was born during the reign of Herod the Great, king of Judea (Matthew 2:1). Herod died in 4 BCE."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The outcome of the Jewish response to Hellenism was the creation of the ...",
+    "options": [
+      "Maccabees",
+      "Pharisees",
+      "Religious parties",
+      "Zealots."
+    ],
+    "answer": "C",
+    "explanation": "The Jewish response to Hellenism created religious parties — the Pharisees, Sadducees, Essenes, and Zealots — each responding differently to Greek influence."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "______ sect withdrew from the society and formed a small community of sharing and caring.",
+    "options": [
+      "The Sadducees",
+      "The Essenes",
+      "The Sanhedrin",
+      "The Scribes."
+    ],
+    "answer": "B",
+    "explanation": "The Essenes withdrew from society and formed small communities (like Qumran) based on sharing, caring, and strict observance of the Law."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The Aramaens were among the people who were mainly",
+    "options": [
+      "tradesmen",
+      "those who dwell in the cities",
+      "from Egypt",
+      "nomads."
+    ],
+    "answer": "A",
+    "explanation": "The Arameans were mainly tradesmen and merchants, known for their commercial activities across the ancient Near East."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The peoples of Ur and Haran worshipped the same god known as",
+    "options": [
+      "Baal",
+      "Jehovah",
+      "Sin",
+      "Ashtoreth."
+    ],
+    "answer": "C",
+    "explanation": "The peoples of Ur and Haran worshipped the moon god known as Sin. This was the religious context from which Abraham (from Ur) departed."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Measures of Religion",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Religiosity can be measured in the following ways with the exception of:",
+    "options": [
+      "Church membership",
+      "frequency of Church attendance",
+      "visiting religious leaders",
+      "saying of private prayers."
+    ],
+    "answer": "C",
+    "explanation": "Visiting religious leaders is NOT a common measure of religiosity. Religiosity is typically measured by church membership, attendance, private prayer, and participation in religious activities."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Christianity Response to Contemporary Issues",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The major cause of corruption in Nigeria involves all of the following except ...",
+    "options": [
+      "weak Government institutions",
+      "lack of openness and transparency in public service",
+      "inability of Churches to preach morality",
+      "absence of key anti-corruption tools."
+    ],
+    "answer": "C",
+    "explanation": "The inability of Churches to preach morality is NOT a major cause of corruption in Nigeria. The causes include weak government institutions, lack of transparency, and absence of anti-corruption tools."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The word 'Pharisee' means the",
+    "options": [
+      "anointed",
+      "separate",
+      "divided",
+      "honourable."
+    ],
+    "answer": "B",
+    "explanation": "The word 'Pharisee' comes from the Hebrew word meaning 'separate' — referring to their separation from common people and their strict adherence to the Law."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The party that believed most strongly in the Jewish Law is the",
+    "options": [
+      "Sadducees",
+      "Pharisees",
+      "Scribes",
+      "Sanhedrin."
+    ],
+    "answer": "B",
+    "explanation": "The Pharisees believed most strongly in the Jewish Law, emphasizing strict observance of the Torah and oral traditions."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Pentecostalism in Nigeria",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "One of cardinal beliefs of the Pentecostal Churches is NOT",
+    "options": [
+      "baptism of the Holy Spirit",
+      "charismatic leadership",
+      "Apostolic succession",
+      "inerrancy of the Bible."
+    ],
+    "answer": "C",
+    "explanation": "Apostolic succession is NOT a cardinal belief of Pentecostal Churches. They emphasize baptism of the Holy Spirit, charismatic leadership, and the inerrancy of the Bible."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of the African Independent Churches",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The Rev S. B. J. Oshoffa was born in 1909 in",
+    "options": [
+      "Oyo Town",
+      "Porto Novo",
+      "Freetown",
+      "Abeokuta."
+    ],
+    "answer": "B",
+    "explanation": "Rev. S. B. J. Oshoffa, founder of the Celestial Church of Christ, was born in 1909 in Porto Novo, Benin Republic (then Dahomey)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of the African Independent Churches",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Who was the first indigenous Church founder in Nigeria?",
+    "options": [
+      "Apostle Joseph Ayo Babalola.",
+      "Archbishop Benson Idahosa.",
+      "Garrick Sokeri Braide.",
+      "Moses Orimolade."
+    ],
+    "answer": "D",
+    "explanation": "Moses Orimolade Tunolase founded the Cherubim and Seraphim Church in 1925, making him one of the first indigenous church founders in Nigeria."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Sociological Theories of Religion",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Who declared religion as the 'opium' of the people?",
+    "options": [
+      "Karl Marx",
+      "Paul Tillich",
+      "Emile Durkheim",
+      "Charles Webber"
+    ],
+    "answer": "A",
+    "explanation": "Karl Marx famously declared religion as the 'opium of the people' — a tool used by the ruling class to pacify the oppressed and distract them from their economic suffering."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "The Rise of Monarchy in Israel",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "A. Explain the circumstances that led to the rejection of Saul as the king of Israel.\nB. Mention two consequences of his rejection as king.",
+    "options": [],
+    "modelAnswer": "A. Circumstances that led to the rejection of Saul as King of Israel:\n\n1. Saul's Disobedience at Gilgal (1 Samuel 13): Saul offered a burnt offering without waiting for Samuel, because he feared his army was deserting him. He disobeyed God's command that only Samuel should offer the sacrifice. Samuel told Saul that his kingdom would not endure.\n\n2. Saul's Disobedience regarding the Amalekites (1 Samuel 15): God commanded Saul to utterly destroy the Amalekites and all their possessions. Saul spared King Agag and the best of the livestock, claiming he wanted to sacrifice them to God. Samuel rebuked Saul, saying that obedience is better than sacrifice. Samuel told Saul that God had rejected him as king.\n\n3. Saul's Pride and Self-Will: Saul consistently put his own judgment above God's commands. He built a monument for himself and refused to humble himself before God.\n\n4. Saul's Jealousy of David: As David's popularity grew, Saul became jealous and tried to kill David, showing that he was no longer seeking God's will.\n\nB. Two consequences of his rejection:\n\n1. The Kingdom was Torn from Saul: Samuel told Saul that God had torn the kingdom from him and given it to a neighbour who was better than him (David).\n\n2. The Spirit of the LORD Departed from Saul: God's Spirit departed from Saul, and an evil spirit tormented him. He was no longer spiritually equipped to lead Israel."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "What were the criteria used in determining the Canon of the Old Testament?",
+    "options": [],
+    "modelAnswer": "The criteria used in determining the canon of the Old Testament were developed over time by Jewish religious leaders. The main criteria included:\n\n1. Divine Inspiration: The books must be recognized as divinely inspired — they must bear evidence of God's authority and influence. They were believed to be written by prophets or inspired leaders.\n\n2. Prophetic Authorship: The book must have been written by a prophet or a person with prophetic authority. Moses (the law), the prophets, and the writings attributed to them were considered authoritative.\n\n3. Consistency with Earlier Revelation: The book must not contradict previously accepted scripture — it must be consistent with the Torah and the teachings of the prophets.\n\n4. Acceptance by the Jewish Community: The book must have been widely accepted and used by the Jewish community in worship, teaching, and religious life. Books that were rejected or disputed were excluded.\n\n5. Antiquity and Relevance: The book must be ancient and relevant to the religious life of Israel. It must have been written in Hebrew and rooted in Israel's history and covenant relationship with God.\n\n6. Liturgical Usage: The book must have been used in public worship, read in synagogues, and recognized as authoritative for faith and practice.\n\n7. Canonical Lists: The books were included in official canonical lists compiled by Jewish scholars (e.g., the Council of Jamnia, c. 90 AD)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Examine the difficulties in determining the authorship of the Gospel according to Matthew.",
+    "options": [],
+    "modelAnswer": "Difficulties in determining the authorship of the Gospel according to Matthew:\n\n1. Anonymous Gospel: The Gospel of Matthew, like the other Synoptics, is technically anonymous. The title 'According to Matthew' was added later by the Church. The author does not identify himself by name in the text.\n\n2. Language of Composition: While tradition holds that Matthew wrote in Hebrew or Aramaic, the Gospel as we have it is in Greek. Scholars debate whether Matthew wrote in Greek or translated from an earlier Aramaic source.\n\n3. Apostolic Authorship: Matthew was a tax collector (Levi) and an eyewitness of Jesus. However, many scholars question whether a tax collector would have had the education to write such a sophisticated Greek text. Some propose that the Gospel was written by a later disciple of Matthew.\n\n4. Dependence on Mark: Matthew uses about 90% of Mark's Gospel. If Matthew was an eyewitness, why would he rely so heavily on Mark's account? This raises questions about whether the apostle Matthew wrote the Gospel or whether it was a later compiler.\n\n5. Date of Composition: The Gospel of Matthew is dated around 80-90 AD, which is after the destruction of the Temple (70 AD). If Matthew was written this late, it would mean the apostle Matthew lived to an old age, which is possible but debated.\n\n6. Theological Emphases: The Gospel of Matthew has a strong Jewish-Christian perspective and church interest, suggesting it was written by a Jewish-Christian community rather than the apostle himself. The emphasis on 'the Church' (ecclesia) suggests a later stage of development.\n\n7. Early Church Tradition: Papias (c. 120 AD) wrote that 'Matthew compiled the sayings in the Hebrew language, and everyone interpreted them as he was able.' This suggests that Matthew wrote sayings (logia), not necessarily the full Gospel.\n\n8. Lack of Eyewitness Detail: The Gospel of Matthew lacks some eyewitness details that would be expected from an apostle, such as specific personal observations and emotional reactions."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "What are the major differences between John and the Synoptic Gospels?",
+    "options": [],
+    "modelAnswer": "Major differences between the Gospel of John and the Synoptic Gospels (Matthew, Mark, Luke):\n\n1. Content and Structure: The Synoptic Gospels share a similar outline — they cover the Galilean ministry, the journey to Jerusalem, and the passion. John covers only about 20 days of Jesus' ministry, with a focus on Judea, and includes seven unique miracles (signs).\n\n2. Jesus' Teaching Style: In the Synoptics, Jesus teaches in parables, short sayings, and aphorisms. In John, Jesus gives long, theological discourses (e.g., the Bread of Life, the Good Shepherd, the Vine and Branches).\n\n3. Christology: The Synoptics present Jesus as the Son of God, the Messiah, and the Servant. John presents Jesus with a much higher Christology — Jesus is the pre-existent Word (Logos), the divine Son who is equal to God (John 1:1).\n\n4. Miracles: The Synoptics present miracles as demonstrations of Jesus' authority and compassion. John calls them 'signs' that point to Jesus' divine identity and lead to faith.\n\n5. The Passion Narrative: In the Synoptics, Jesus celebrates the Passover meal with His disciples (the Last Supper) before His arrest. In John, Jesus is crucified on the day of preparation for the Passover, at the same time the lambs are being slaughtered.\n\n6. The Holy Spirit: The Synoptics mention the Holy Spirit but without extensive teaching. John gives the 'Upper Room Discourse' (chapters 14-16), with detailed teaching about the Comforter/Paraclete (Holy Spirit).\n\n7. Timing and Chronology: The Synoptics seem to present Jesus' ministry as lasting about one year. John describes multiple Passovers, suggesting a ministry of about three years.\n\n8. Audience: The Synoptics were written for specific audiences (Mark for Romans, Matthew for Jews, Luke for Gentiles). John was written for a universal audience, emphasizing belief in Jesus as the Son of God.\n\n9. Use of Sources: The Synoptics share common sources (Mark and Q). John is independent and does not use the Synoptic sources.\n\n10. Language and Style: John's Greek is simpler but profound in theological depth, while the Synoptics have varied styles."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "With concrete facts, prove that the freed slaves were the major factors in the diffusion of Christianity in West Africa.",
+    "options": [],
+    "modelAnswer": "Concrete facts proving that freed slaves were the major factors in the diffusion of Christianity in West Africa:\n\n1. Founding of Freetown, Sierra Leone (1787): Freed slaves from Britain, Nova Scotia, and Jamaica were settled in Freetown. They brought Christianity with them and established churches, schools, and Christian communities. Freetown became the 'Jerusalem of West Africa' — a base for missionary expansion.\n\n2. The Niger Expedition (1841): Freed slaves from Sierra Leone participated in the Niger Expedition. They served as interpreters, teachers, and missionaries. The expedition was partly driven by the desire to spread Christianity and establish trade along the Niger River.\n\n3. The CMS Mission in Nigeria (1841-1842): The Church Missionary Society (CMS) established a mission in Badagry in 1842. The mission included freed slaves from Sierra Leone who were already Christianized. They helped translate the Bible into Yoruba and other local languages.\n\n4. The Printing Press and Literacy: Freed slaves introduced the printing press to West Africa. The first translations of the Bible into Yoruba and Hausa were done by freed slaves. They established schools, taught literacy, and spread Christianity through education.\n\n5. Establishment of the Yoruba Church: Freed slaves returning from Sierra Leone to Nigeria established churches in places like Abeokuta, Ibadan, and Lagos. The CMS missionaries, led by Henry Venn, encouraged the formation of African-led churches.\n\n6. Language and Translation: Samuel Ajayi Crowther, a freed slave, became the first African bishop of the Anglican Church. He translated the Bible into Yoruba and Hausa and contributed immensely to the spread of Christianity in West Africa.\n\n7. Pioneering Missionary Work: Freed slaves were pioneers in missionary work — they went into the interior, established churches, and evangelized local populations. They understood local cultures and could relate to the people better than European missionaries.\n\n8. Economic Support: Freed slaves supported the mission financially, built churches, and provided accommodation for missionaries. Their economic stability enabled the mission to grow.\n\n9. African Agency: The freed slaves demonstrated African agency in spreading Christianity — they were not passive recipients of European missions but actively participated and led the expansion of Christianity."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Pentecostalism in Nigeria",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Highlight the influence of the Pentecostal Movement on the Mainline Churches in Nigeria.",
+    "options": [],
+    "modelAnswer": "Influence of the Pentecostal Movement on Mainline Churches in Nigeria:\n\n1. Emphasis on the Holy Spirit: Mainline Churches have become more open to the Holy Spirit's operation — they now emphasize the baptism of the Holy Spirit, speaking in tongues, and spiritual gifts, which were previously emphasised by Pentecostals.\n\n2. Worship Style: Mainline Churches have adopted more lively, charismatic worship — contemporary music, clapping, dancing, and emotional expression. Hymns are often mixed with modern choruses, and services are longer and more participatory.\n\n3. Revival and Evangelism: Mainline Churches have become more revival-focused and evangelistic. They have adopted Pentecostal methods of outreach, crusades, and street evangelism to reach more people.\n\n4. Ministry of Healing and Deliverance: Many Mainline Churches now incorporate prayer for healing, deliverance from evil spirits, and prophetic ministry into their services. This was traditionally more Pentecostal than Mainline.\n\n5. Church Planting and Growth: Mainline Churches have been inspired to plant more churches, especially in urban areas and among the youth. They have adopted Pentecostal strategies for church growth.\n\n6. Emphasis on Personal Experience: Mainline Churches now emphasize personal relationship with Jesus, personal testimony, and experiential faith — moving away from formal liturgy and ritualism.\n\n7. Training and Education: Pentecostal influence has encouraged Mainline Churches to establish Bible schools, training centers, and seminars for church workers, focusing on practical ministry skills and spiritual formation.\n\n8. Youth Engagement: Mainline Churches have become more youth-focused, using Pentecostal methods to engage young people — modern music, dance, drama, and interactive programs.\n\n9. Response to Contemporary Issues: Mainline Churches are now more vocal on social and political issues — they have adopted Pentecostal activism on issues like corruption, poverty, and social justice.\n\n10. Media and Technology: Mainline Churches have embraced media, television broadcasting, and technology for evangelism and teaching, following the example of Pentecostal ministries."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Relationship Between Religion & Society",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Critically examine the relationship between religion and the society.",
+    "options": [],
+    "modelAnswer": "The relationship between religion and society is complex and multifaceted:\n\n1. Religion as a Social Institution: Religion is a major social institution that shapes values, norms, and behaviour. It provides a moral framework for society, guiding what is considered right and wrong. It gives meaning to life and defines social roles.\n\n2. Social Cohesion and Integration: Religion promotes social cohesion and integration. It brings people together through shared beliefs, rituals, and community activities. It creates social bonds and a sense of belonging. It reinforces social solidarity.\n\n3. Social Control: Religion acts as a mechanism of social control — it enforces moral rules and encourages conformity. Religious teachings on honesty, compassion, and justice influence behaviour. It can also legitimize existing social structures and inequalities.\n\n4. Social Change: Religion can be both conservative and progressive — it can preserve the status quo or inspire social change. Religious movements have been at the forefront of social reform (e.g., the anti-slavery movement, civil rights movement, liberation theology).\n\n5. Conflict and Division: Religion can also be a source of conflict and division — religious differences can lead to intolerance, discrimination, and violence (e.g., religious wars, persecution). Religious identities can be politicized, leading to ethnic and political conflicts.\n\n6. Economic Influence: Religion influences economic behaviour — it shapes work ethics, attitudes toward wealth, charity, and social justice. The Protestant work ethic, for example, is associated with economic development.\n\n7. Health and Welfare: Religion provides social support, comfort, and healing — churches often provide welfare services, healthcare, education, and charitable work. Religious communities support members in times of need.\n\n8. Education and Socialization: Religion educates and socializes individuals into the values, beliefs, and norms of society. It transmits cultural heritage, traditions, and moral teachings from one generation to the next.\n\n9. Political Influence: Religion can influence politics — it can support or challenge political authority. Religious organizations are powerful pressure groups that advocate for policies aligned with their beliefs.\n\nIn conclusion, religion and society are mutually constitutive — religion shapes society, and society shapes religion. They are inseparable and interact in complex, dynamic, and sometimes contradictory ways."
+  },
+  {
+    "subject": "CRS",
+    "year": 2015,
+    "category": "Sociological Theories of Religion",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Outline the theories proposed by Sociologists to explain religion.",
+    "options": [],
+    "modelAnswer": "Sociologists have proposed several theories to explain religion:\n\n1. Functionalist Theory (Emile Durkheim): Religion is a social institution that performs essential functions for society — it promotes social cohesion, solidarity, and integration. It reinforces collective conscience and provides meaning and purpose. Religion is a 'unifying force' that binds people together.\n\n2. Conflict Theory (Karl Marx): Religion is the 'opium of the people' — it is a tool used by the ruling class to control the oppressed. It justifies inequality, diverts attention from material suffering, and promotes passivity and acceptance of the status quo. Religion serves the interests of the powerful.\n\n3. Symbolic Interactionism (Max Weber): Religion is a system of meanings, symbols, and interpretations. It shapes individual behaviour and social action through shared beliefs and values. Religion influences economic behaviour (e.g., the Protestant Ethic) and social change.\n\n4. Rational Choice Theory (Rodney Stark and others): Religion is a rational choice — individuals make decisions about religion based on costs and benefits. People choose religions that meet their needs and provide the best 'return on investment' (e.g., salvation, community, meaning).\n\n5. Secularization Theory: As society modernizes, religion declines in influence — it loses its social significance, and religious institutions become less powerful. Religious beliefs and practices are replaced by secular, rational, and scientific worldviews.\n\n6. Neo-Marxist Theory (Antonio Gramsci): Religion is part of cultural hegemony — it is a tool of ideological control that reinforces the dominant class's worldview. It operates through consent rather than coercion, shaping consciousness and beliefs.\n\n7. Feminist Theory: Religion is a patriarchal institution that reinforces male dominance and gender inequality. It has been used to oppress women and justify their subordination. Feminists criticize religious texts, traditions, and institutions for their patriarchal nature.\n\n8. Peter Berger's Social Construction of Religion: Religion is a social construct — it is created, maintained, and changed by human beings in society. It provides a 'sacred canopy' that makes sense of reality and gives meaning to life.\n\n9. Phenomenological Approach: Religion should be studied objectively, without judgment — it is a unique human experience that cannot be reduced to social or economic factors. It focuses on the subjective experience of the believer.\n\n10. Anthropological Approach: Religion is a cultural universal — it exists in all societies and serves to explain the world, provide meaning, and regulate behaviour. It is deeply embedded in culture and tradition."
+  }
+]

@@ -1,0 +1,884 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "When a fall in the price of a commodity leaves the quantity demanded unchanged, demand is said to be",
+    "options": [
+      "fairly elastic.",
+      "fairly inelastic.",
+      "perfect elastic.",
+      "perfectly inelastic."
+    ],
+    "answer": "D",
+    "explanation": "Perfectly inelastic demand occurs when quantity demanded does not respond at all to changes in price. The demand curve is vertical, and PED = 0."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The Average Fixed Cost (AFC) curve falls continuously with increasing output but does not touch the X-axis. This means that the AFC curve is",
+    "options": [
+      "U-shaped.",
+      "upward sloping.",
+      "asymptotic to the origin.",
+      "fixed or horizontal."
+    ],
+    "answer": "C",
+    "explanation": "AFC = TFC/Q. As output (Q) increases, AFC falls continuously but approaches zero without reaching it — the curve is asymptotic to the X-axis (and Y-axis)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "When an increase in consumers' income leads to an increase in the quantity demanded of a good, then the good is",
+    "options": [
+      "a normal good.",
+      "a necessity.",
+      "an inferior good.",
+      "a giffen good."
+    ],
+    "answer": "A",
+    "explanation": "A normal good has a positive income elasticity of demand — as income rises, quantity demanded rises. Inferior goods have negative income elasticity (demand falls as income rises)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Price ceilings lead to",
+    "options": [
+      "shortage of commodity.",
+      "surplus of commodity.",
+      "market clearing.",
+      "excess supply."
+    ],
+    "answer": "A",
+    "explanation": "A price ceiling is a maximum legal price set below equilibrium. This causes quantity demanded to exceed quantity supplied, creating a shortage (excess demand)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "A country's national income is affected positively by one of the following factors EXCEPT the",
+    "options": [
+      "availability of natural resources.",
+      "number and quality of labour force.",
+      "state of the technical knowledge.",
+      "quantity and quality of water resources."
+    ],
+    "answer": "D",
+    "explanation": "All options are factors that positively affect national income. However, the question asks for the exception. Water resources are not typically listed as a primary determinant of national income. Natural resources, labour, and technology are standard factors of production. Water quality is an environmental factor, not a direct determinant of national income."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "What is the mercantilist view on trade?",
+    "options": [
+      "Maximizing welfarism.",
+      "Positive balance of trade and balance of payment.",
+      "That agriculture is the main stay of the economy.",
+      "Encourages crude oil exploitation."
+    ],
+    "answer": "B",
+    "explanation": "Mercantilism advocates for a positive balance of trade (exports > imports) to accumulate gold and silver. It emphasizes government intervention to protect domestic industries and promote exports."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Which of the following will occur if Nigeria devalues her currency?",
+    "options": [
+      "Increasing population.",
+      "Increasing import.",
+      "Reduced export.",
+      "Cheaper export."
+    ],
+    "answer": "D",
+    "explanation": "Devaluation makes exports cheaper for foreign buyers (in foreign currency terms), which should increase the quantity of exports demanded. Imports become more expensive, reducing imports."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Pricing and output decisions of sellers are highly interdependent on market known as",
+    "options": [
+      "Oligopoly.",
+      "Perfect competition.",
+      "Monopoly.",
+      "Monopolistic competition."
+    ],
+    "answer": "A",
+    "explanation": "In an oligopoly, firms are mutually interdependent — each firm's pricing and output decisions depend on the reactions of rival firms. This leads to strategic behaviour and price rigidity."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "In a mixed economy like Nigeria, variation in income distribution is a result of",
+    "options": [
+      "political instability.",
+      "free market mechanism rewarding merit and productivity.",
+      "too much money in the economy.",
+      "one's academic achievement."
+    ],
+    "answer": "B",
+    "explanation": "In a mixed economy, income inequality arises because the free market rewards individuals based on their productivity, skills, and contributions. The government intervenes to redistribute income through taxation and transfers, but market mechanisms still create variation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "At the point of profit maximization, MR = MC where",
+    "options": [
+      "MR is falling.",
+      "MR is maximum.",
+      "AR is falling below MR.",
+      "MC cuts MR from below."
+    ],
+    "answer": "D",
+    "explanation": "For profit maximization, MR = MC, and the MC curve must cut the MR curve from below (i.e., the second-order condition requires that MC is rising and MR is falling at the point of intersection)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The equilibrium of a profit-maximizing competitive firm is given by the point where",
+    "options": [
+      "MC = AC",
+      "MC = MR",
+      "MC = MR = AR = D",
+      "MC = AR = D"
+    ],
+    "answer": "C",
+    "explanation": "In perfect competition, firms are price takers, so P = AR = MR = D. Profit maximization occurs where MR = MC, so the equilibrium condition is MC = MR = AR = D. This is the point where the firm produces at P = MC."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A closed economy is a national economy that",
+    "options": [
+      "does not interact economically with the rest of the world.",
+      "has a stock market that it is not open to traders from outside the country.",
+      "has extensive trading and financial relationships with other national economies.",
+      "has not established diplomatic relations with other national economies."
+    ],
+    "answer": "A",
+    "explanation": "A closed economy has no economic interactions with the rest of the world — no imports, exports, or international capital flows. It is self-sufficient. Most real-world economies are open economies."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "At equilibrium, aggregate expenditure is equal to aggregate",
+    "options": [
+      "consumption.",
+      "investment.",
+      "income.",
+      "savings."
+    ],
+    "answer": "C",
+    "explanation": "In macroeconomic equilibrium, aggregate expenditure (AE) equals aggregate income (Y). This is the fundamental equilibrium condition in the Keynesian model: Y = AE = C + I + G + (X-M)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Stabilization Policies in Developing Countries",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Which of the following is an automatic stabilizer?",
+    "options": [
+      "Military spending.",
+      "Spending on public schools.",
+      "Unemployment benefit.",
+      "Increased exchange rate."
+    ],
+    "answer": "C",
+    "explanation": "Automatic stabilizers are built-in features of the fiscal system that automatically offset fluctuations in economic activity without government intervention. Unemployment benefits and progressive income taxes are examples. They increase spending during recessions and decrease it during booms."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Under flexible exchange rates, a deficit could be corrected by",
+    "options": [
+      "freezing the gold point.",
+      "appreciation of other currencies.",
+      "removing export subsidies.",
+      "removing tariffs."
+    ],
+    "answer": "B",
+    "explanation": "Under flexible exchange rates, a BOP deficit causes the domestic currency to depreciate (or other currencies to appreciate). This makes exports cheaper and imports more expensive, correcting the deficit. Appreciation of other currencies has the same effect."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "A major factor affecting the value of money is the",
+    "options": [
+      "price level.",
+      "banking habit.",
+      "transactionary motive.",
+      "spending habit of consumers."
+    ],
+    "answer": "A",
+    "explanation": "The value of money is inversely related to the price level. When prices rise (inflation), the purchasing power of money falls. This is the quantity theory of money relationship: P = MV/Q."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "A balanced budget is defined as a condition of",
+    "options": [
+      "balance of payments equilibrium.",
+      "equality of aggregate demand and aggregate supply.",
+      "equality of planned receipts and planned expenditure.",
+      "equality of planned exports and planned imports."
+    ],
+    "answer": "C",
+    "explanation": "A balanced budget occurs when government planned receipts (revenue) equal planned expenditure (spending). This means no budget deficit or surplus. It is a fiscal policy concept, not related to BOP or AD/AS."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "ECOWAS will enable member countries to achieve",
+    "options": [
+      "comparative political advantage over other countries not in the region.",
+      "a large market for their products.",
+      "military superiority over countries not in the region.",
+      "lower the transportation cost of goods within the region."
+    ],
+    "answer": "B",
+    "explanation": "ECOWAS creates a larger regional market (over 400 million people) for member countries' goods and services. This expands trade, attracts investment, and promotes economic integration. Military superiority is not an ECOWAS objective."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Population density refers to",
+    "options": [
+      "densely populated urban centres.",
+      "the total area divided by the total population.",
+      "densely populated rural areas.",
+      "the total population divided by the total area."
+    ],
+    "answer": "D",
+    "explanation": "Population density is the number of people per unit area of land. It is calculated as Total Population ÷ Total Land Area. The higher the density, the more crowded the area."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "A change in demand for a normal good implies that there is a",
+    "options": [
+      "change in quantity demanded as price changes.",
+      "shift in the demand curve.",
+      "movement along a given demand curve.",
+      "change in the price elasticity of demand."
+    ],
+    "answer": "B",
+    "explanation": "A 'change in demand' refers to a shift of the entire demand curve caused by factors other than price (income, tastes, prices of related goods). A 'change in quantity demanded' is a movement along the demand curve caused by a price change."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "If Mr Young obtains a ₦50,000 loan from a bank for the purpose of providing household needs, this demand for money is said to be",
+    "options": [
+      "transactionary and speculative.",
+      "transactionary.",
+      "speculative.",
+      "precautionary and speculative."
+    ],
+    "answer": "B",
+    "explanation": "Transactionary demand for money is for everyday purchases and household needs (day-to-day expenses). Mr Young is borrowing to meet household needs, which is transactionary demand. Speculative demand is for investment purposes; precautionary demand is for unexpected emergencies."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Which of the following relationships is the concern of Malthusian theory?",
+    "options": [
+      "Population growth rates of the rich and poor nations.",
+      "Population density and national income.",
+      "Population growth rate and natural resources.",
+      "Age distribution of population."
+    ],
+    "answer": "C",
+    "explanation": "Malthusian theory concerns the relationship between population growth and natural resources (especially food supply). Malthus argued that population grows geometrically while food grows arithmetically, leading to famine and poverty."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Combined positive demand and negative supply shock of the same magnitude will",
+    "options": [
+      "raise equilibrium price and quantity.",
+      "raise equilibrium quantity and leave price unaffected.",
+      "raise equilibrium price but leave equilibrium quantity unaffected.",
+      "reduce equilibrium price and quantity."
+    ],
+    "answer": "C",
+    "explanation": "A positive demand shock shifts the demand curve rightward (increases demand). A negative supply shock shifts the supply curve leftward (decreases supply). If both are of the same magnitude, the equilibrium price rises, but equilibrium quantity remains unchanged (the effects on quantity cancel out)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "An abnormal supply curve is also known as",
+    "options": [
+      "downward sloping supply curve.",
+      "linear supply curve.",
+      "regressive supply curve.",
+      "upward sloping curve."
+    ],
+    "answer": "A",
+    "explanation": "A normal supply curve slopes upward (positive relationship between price and quantity supplied). An abnormal supply curve slopes downward (negative relationship) — this occurs for backward-bending supply curves in labour markets or supply of Giffen goods."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Which of the following is the international cartel formed to stabilise the world oil market?",
+    "options": [
+      "Economic Commission for Africa.",
+      "International Monetary Fund.",
+      "Organisation of Petroleum Exporting Countries.",
+      "Organization of Petroleum importing countries."
+    ],
+    "answer": "C",
+    "explanation": "OPEC (Organization of Petroleum Exporting Countries) is an international cartel that coordinates petroleum policies among member countries to stabilize oil prices and ensure a steady supply to consumers."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Which of the following determines wage rate in a market setting?",
+    "options": [
+      "Aggregate supply.",
+      "Price of material used.",
+      "Output of labour.",
+      "Market demand and supply of labour."
+    ],
+    "answer": "D",
+    "explanation": "In a competitive labour market, wage rates are determined by the interaction of labour demand (from employers) and labour supply (from workers). This is the basic market mechanism for wage determination."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "One of these is the primary objective of NDIC.",
+    "options": [
+      "Giving protection to the CBN against fraud.",
+      "Provision of regulations guiding financial houses.",
+      "Giving protection to banks against fraud.",
+      "Giving protection to bank depositors."
+    ],
+    "answer": "D",
+    "explanation": "The Nigeria Deposit Insurance Corporation (NDIC) protects bank depositors by insuring deposits up to a certain limit. This ensures depositors' funds are safe even if a bank fails."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Which of the following is concerned mainly on the types, sources and uses of government income?",
+    "options": [
+      "Public expenditure.",
+      "Public budget.",
+      "Public finance.",
+      "Public revenue."
+    ],
+    "answer": "D",
+    "explanation": "Public revenue is the branch of public finance that deals with the sources and types of government income (taxation, grants, loans, etc.). Public expenditure deals with government spending. Public finance is the broader field."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "In computing national income, transfers are excluded because",
+    "options": [
+      "they are received only by the poor.",
+      "the figures reduce the size of the national income.",
+      "it is difficult to get the exact figure.",
+      "they are not payment for productive services."
+    ],
+    "answer": "D",
+    "explanation": "Transfer payments (pensions, welfare, scholarships) are excluded from national income because they are not payments for productive services. They are transfers of income from one group to another, not payments for current production."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The labour force of a country is best described as the number of people",
+    "options": [
+      "receiving pension.",
+      "within the working age.",
+      "in paid employment.",
+      "within the retirement age."
+    ],
+    "answer": "C",
+    "explanation": "The labour force consists of people who are either employed (in paid employment) or actively seeking work (unemployed). Pensioners and those not seeking work are excluded. The working-age population is broader than the labour force."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Those who are better off during inflation includes one of the following.",
+    "options": [
+      "Buyers of goods.",
+      "Creditors.",
+      "Debtors.",
+      "Those who anticipate the rise in prices."
+    ],
+    "answer": "C",
+    "explanation": "Debtors benefit from inflation because they repay loans with money that has lower purchasing power (the real value of debt falls). Creditors lose. Those who anticipate price rises can protect themselves, but debtors are generally the main beneficiaries."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Liquidity preference is the",
+    "options": [
+      "need to borrow money for short periods to meet some temporary crises.",
+      "wish to hold more funds for precautionary purposes.",
+      "need to increase the money supply in order to lower the interest rate.",
+      "demand to hold money as assets rather than as stocks."
+    ],
+    "answer": "D",
+    "explanation": "Liquidity preference is the desire to hold money (cash) rather than other assets (bonds, stocks). Keynes identified three motives: transactionary, precautionary, and speculative. Option D captures the general concept."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The effect of an increase in demand for a commodity accompanied by a decrease in supply will be to",
+    "options": [
+      "raise the price of the commodity and affect the quantity in an indeterminate way.",
+      "decrease the equilibrium quantity and affect the price in an indeterminate way.",
+      "raise its price as well as the equilibrium quantity.",
+      "lower its price while affecting the equilibrium quantity in an indeterminate way."
+    ],
+    "answer": "A",
+    "explanation": "An increase in demand shifts the demand curve rightward (increases P and Q). A decrease in supply shifts the supply curve leftward (increases P and decreases Q). Combined: Price definitely rises, but quantity is indeterminate (depends on relative magnitudes of the shifts)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The distinguishing characteristic between the money market and the capital market lies in whether the",
+    "options": [
+      "securities are primary or secondary.",
+      "debt instruments provided are long-term or short-term.",
+      "funds mobilized are private or public.",
+      "securities are in debentures or ordinary shares."
+    ],
+    "answer": "B",
+    "explanation": "The money market deals with short-term debt instruments (maturity of less than one year), while the capital market deals with long-term instruments (shares, bonds with maturity over one year). This is the primary distinguishing characteristic."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Securities are described as listed when they are",
+    "options": [
+      "mobilized as long-term debt instruments.",
+      "traded on a recognized stock market.",
+      "bought and sold purely for development purposes.",
+      "mobilized as short-term debt instruments."
+    ],
+    "answer": "B",
+    "explanation": "Listed securities are those that are officially traded on a recognized stock exchange (e.g., Nigerian Stock Exchange). They must meet listing requirements set by the exchange."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "When two variables are positively related, the graph of the relationship",
+    "options": [
+      "is a downward-sloping curve.",
+      "has a negative intercept.",
+      "is a straight line.",
+      "is an upward-sloping curve."
+    ],
+    "answer": "D",
+    "explanation": "A positive relationship means as one variable increases, the other also increases. The graph slopes upward from left to right. If the relationship is linear, it is a straight upward-sloping line."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Short-run period in production is a period too short for a firm to be able to change its",
+    "options": [
+      "scale of operation.",
+      "total revenue.",
+      "variable inputs.",
+      "total outputs."
+    ],
+    "answer": "A",
+    "explanation": "In the short run, at least one factor of production is fixed (usually capital/plant size). The firm can change variable inputs (labour, raw materials) but cannot change its scale of operation (the fixed factor)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "All economies are faced with a major problem of how to",
+    "options": [
+      "allocate scarce resources.",
+      "improve trade among nations.",
+      "increase consumption of imported goods.",
+      "transform from a developing to a developed economy."
+    ],
+    "answer": "A",
+    "explanation": "The fundamental economic problem is scarcity — all economies must decide how to allocate limited resources among competing uses. This is the basic economic problem of 'what, how, and for whom to produce'."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The table above exemplify the law of diminishing",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Table: Units Consumed: 0,1,2,3,4,5; TU: -,8,15,21,26,30; MU: -,8,7,6,5,4. Please refer to original past question paper.",
+    "options": [
+      "marginal productivity.",
+      "marginal utility.",
+      "marginal rate of substitution.",
+      "returns."
+    ],
+    "answer": "B",
+    "explanation": "The table shows total utility increasing at a decreasing rate, while marginal utility declines (8, 7, 6, 5, 4). This exemplifies the law of diminishing marginal utility — each additional unit consumed gives less additional satisfaction."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Under normal circumstances, a producer will bear the entire burden of taxation on his output if the",
+    "options": [
+      "supply of the good is more elastic than the demand.",
+      "demand for the product is purely elastic.",
+      "production of the commodity is subject to diminishing returns.",
+      "demand for his product is more elastic than the supply."
+    ],
+    "answer": "D",
+    "explanation": "The incidence of a tax depends on relative elasticities. If demand is more elastic than supply, producers bear a larger share of the tax burden (they cannot pass it on because consumers are sensitive to price changes). If demand is perfectly elastic, producers bear the entire tax burden."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Which of the following is the firm that charges different prices for goods that have the same qualities?",
+    "options": [
+      "Effective monopoly.",
+      "Monopoly.",
+      "Discriminatory monopoly.",
+      "Pure monopoly."
+    ],
+    "answer": "C",
+    "explanation": "A discriminatory monopoly (price discrimination) occurs when a firm charges different prices to different consumers for the same good or service, based on differences in willingness to pay, without differences in cost."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Normative economics deals with",
+    "options": [
+      "facts and not figures.",
+      "facts and figures.",
+      "value judgements.",
+      "what is and not what should be."
+    ],
+    "answer": "C",
+    "explanation": "Normative economics is based on value judgments and opinions about what should be. It is subjective and prescriptive. Positive economics deals with facts and what is (objective)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "One of the financing assets traded in the capital market is",
+    "options": [
+      "treasury bills.",
+      "commercial papers.",
+      "bankers' acceptances.",
+      "long-term securities."
+    ],
+    "answer": "D",
+    "explanation": "The capital market trades long-term securities (shares, bonds, debentures) with maturity over one year. Treasury bills, commercial papers, and bankers' acceptances are short-term instruments traded in the money market."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Over the years, the Nigerian naira depreciates relative to the United State dollars. Who would benefit the most from this?",
+    "options": [
+      "Nigerian consumers of USA goods.",
+      "Nigerians consumers of Nigerian goods.",
+      "USA consumers of Nigerian goods.",
+      "USA consumers of British goods."
+    ],
+    "answer": "C",
+    "explanation": "Depreciation of the naira makes Nigerian goods cheaper for US consumers (in dollar terms). Therefore, US consumers of Nigerian goods benefit the most. Nigerian consumers of US goods lose because imports become more expensive."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "In the quantity theory of money equation (MV=PQ) the M represents",
+    "options": [
+      "quantity of money available for government spending.",
+      "monetary value of output.",
+      "quantity of money supply.",
+      "quantity of money available for consumption."
+    ],
+    "answer": "C",
+    "explanation": "In the quantity theory of money equation MV = PQ, M represents the quantity of money supply in circulation. V is velocity of money, P is price level, and Q is real output."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The measure of economic growth that is based on evaluation of the trend behaviour of Aggregate Expenditure is",
+    "options": [
+      "nominal measurement of growth.",
+      "real output growth rate.",
+      "growth measured in per capita income.",
+      "growth in physical equality."
+    ],
+    "answer": "B",
+    "explanation": "Real output growth rate is the measure of economic growth based on changes in real GDP (adjusted for inflation). It evaluates the trend behaviour of aggregate expenditure over time. Nominal growth includes inflation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The total demand for goods and services in an economy is known as",
+    "options": [
+      "complementary demand.",
+      "derived demand.",
+      "composite demand.",
+      "aggregate demand."
+    ],
+    "answer": "D",
+    "explanation": "Aggregate demand (AD) is the total demand for all goods and services in an economy at a given price level and time. It is the sum of consumption (C), investment (I), government spending (G), and net exports (X-M)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Which of the following occurs when equilibrium in the economy is at a level below the potential output?",
+    "options": [
+      "Inflationary gap.",
+      "Expenditure gap.",
+      "Recessionary gap.",
+      "Output gap."
+    ],
+    "answer": "C",
+    "explanation": "A recessionary gap (deflationary gap) occurs when the equilibrium level of output is below the full-employment (potential) output. This means the economy is not using all its resources, resulting in unemployment."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The major aspect of the Keynesian revolution is the shift of emphasis from",
+    "options": [
+      "supply side to demand side.",
+      "government control to private control.",
+      "fiscal policy to monetary policy.",
+      "government expenditure to borrowing."
+    ],
+    "answer": "A",
+    "explanation": "The Keynesian revolution shifted emphasis from supply-side economics (classical view that supply creates its own demand) to demand-side economics. Keynes argued that aggregate demand drives output and employment, and government should manage demand."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Which of these schools of thought believe that aggregate demand is influenced by some economic decisions and sometimes behave erratically?",
+    "options": [
+      "Monetarists.",
+      "Keynesians.",
+      "Classicals.",
+      "Neo-Classicals."
+    ],
+    "answer": "B",
+    "explanation": "Keynesians believe that aggregate demand is influenced by economic decisions (consumption, investment, government spending) and can be erratic, causing fluctuations in output and employment. They advocate for government intervention to stabilize demand."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "The market for Nigerian cassava flour has the following demand and supply equations:\n\nQD + 15P = 1500\nQS = 5P - 300\n\nSuppose the market price per bag is observed by the government to be very cheap and government decided to increase the price to N950 per bag,\n\n(a) Calculate the equilibrium price and quantity before the price increase.\n(b) What are the new quantities demanded and supplied after the price increase.\n(c) Briefly explain the effect of the price increase on the consumers and farmers.",
+    "options": [],
+    "modelAnswer": "(a) Equilibrium price and quantity before price increase:\nDemand equation: QD + 15P = 1500 → QD = 1500 - 15P\nSupply equation: QS = 5P - 300\n\nAt equilibrium, QD = QS:\n1500 - 15P = 5P - 300\n1500 + 300 = 5P + 15P\n1800 = 20P\nP = 90\n\nEquilibrium price P = N90 per bag\n\nSubstitute P = 90 into supply equation:\nQS = 5(90) - 300 = 450 - 300 = 150\n\nEquilibrium quantity Q = 150 bags\n\n(b) New quantities demanded and supplied after price increase to N950:\nQD = 1500 - 15(950) = 1500 - 14250 = -12750 (not feasible, so demand is zero)\nQS = 5(950) - 300 = 4750 - 300 = 4450 bags\n\nAt P = N950, QD = 0 and QS = 4450 bags.\n\n(c) Effect of price increase on consumers and farmers:\n- Consumers: The price increase from N90 to N950 makes cassava flour unaffordable for most consumers. Quantity demanded falls to zero, meaning consumers are priced out of the market. This leads to a loss of consumer welfare and likely substitution to other cheaper flours.\n- Farmers: While the higher price seems beneficial, the quantity demanded falls to zero. Farmers cannot sell any cassava flour at this artificially high price, leading to surplus (excess supply of 4450 bags). In practice, farmers would have to sell below the government-mandated price illegally or incur losses, possibly leading to wastage and lower incomes."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Market Structure",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) What is a perfectly competitive market? Briefly discuss the characteristics of a Perfect competitive markets.\n(b) With the aid of a diagram, discuss the necessary and sufficient equilibrium conditions for a perfectly competitive market.\n(c) Explain the term Price Discrimination.",
+    "options": [],
+    "modelAnswer": "(a) Perfectly Competitive Market:\nA perfectly competitive market is a market structure where there are many buyers and sellers, homogeneous products, perfect information, and free entry and exit. Firms are price takers — they cannot influence market price.\n\nCharacteristics:\n1. Large number of buyers and sellers — no single firm can influence price.\n2. Homogeneous (identical) products — goods are perfect substitutes.\n3. Perfect information — all agents know prices, costs, and quality.\n4. Free entry and exit — no barriers to entering or leaving the industry.\n5. Perfect factor mobility — resources can move freely between industries.\n6. No transport costs — no transaction costs.\n7. Firms are profit maximizers — they produce where MR = MC.\n\n(b) Equilibrium Conditions for a Perfectly Competitive Firm (with diagram):\n\nNecessary condition (first-order condition): MR = MC\nSufficient condition (second-order condition): MC curve cuts MR from below (MC is rising at the point of intersection).\n\nDiagram components:\n- Horizontal demand curve (AR = MR = P = D) at the market price.\n- U-shaped MC curve and AC curve.\n- The firm produces at output Q* where MR = MC (point E).\n- At Q*, the firm earns normal profit if P = AC, supernormal profit if P > AC, or losses if P < AC.\n- The supply curve is the portion of MC above the minimum of AVC (shutdown point).\n\nFor the market equilibrium:\n- Market demand and supply determine equilibrium price P*.\n- Each firm produces at Q* where P* = MR = MC, and entry/exit ensures zero supernormal profit in the long run.\n\n(c) Price Discrimination:\nPrice discrimination is the practice of charging different prices to different consumers for the same good or service, where the price differences are not based on cost differences. It is possible when:\n- Firms have market power (monopoly/oligopoly).\n- Consumers have different price elasticities of demand.\n- Arbitrage (reselling) can be prevented.\n\nTypes: First-degree (perfect), second-degree (quantity discounts), and third-degree (segment-based, e.g., student/senior discounts)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Money and Banking",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) Discuss the key functions of money.\n(b) With the use of adequate examples, explain the basic motives for keeping money in liquid form by individuals in an economy.",
+    "options": [],
+    "modelAnswer": "(a) Key Functions of Money:\n1. Medium of Exchange: Money facilitates transactions by eliminating the need for barter. It is widely accepted as payment for goods and services. For example, a baker sells bread for naira and uses naira to buy flour.\n\n2. Unit of Account: Money provides a common measure of value, allowing comparison of prices. It simplifies accounting, contracts, and decision-making. For example, we express the price of all goods in naira rather than in terms of other goods.\n\n3. Standard of Deferred Payment: Money is used to settle debts and contracts over time. It enables credit transactions — borrowing and lending — because debts are denominated in money. Mortgages, student loans, and business loans are examples.\n\n4. Store of Value: Money can be held over time without losing value (assuming inflation is low). It allows people to save purchasing power for future use. However, inflation erodes this function.\n\n(b) Basic Motives for Holding Money (Liquidity Preference):\nKeynes identified three motives:\n1. Transactionary Motive: Holding money for everyday transactions (purchases, bills). Example: A family keeps cash for weekly groceries, transportation, and utility payments.\n\n2. Precautionary Motive: Holding money for unexpected emergencies (illness, accidents, job loss). Example: An individual saves money in a savings account for medical emergencies or car repairs.\n\n3. Speculative Motive: Holding money to take advantage of future investment opportunities (buying bonds/stocks when prices fall). Example: An investor holds cash waiting for the stock market to decline so they can buy shares at a lower price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Theory of National Income Determination",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) Discuss the Keynesian view of the equilibrium output and full employment level.\n(b) Using an appropriate diagram, explain the concept of inflationary and deflationary gaps.",
+    "options": [],
+    "modelAnswer": "(a) Keynesian View of Equilibrium Output and Full Employment:\nKeynes argued that equilibrium output (Y) is determined by aggregate demand (AD = C + I + G + NX). Full employment output (Yf) is the level of output at which all resources are fully employed.\n\n- In the short run, equilibrium output may be below, at, or above full employment.\n- If equilibrium output is below full employment (Y < Yf), there is unemployment and idle capacity. The economy is in a recessionary gap.\n- If equilibrium output equals full employment (Y = Yf), there is full employment.\n- If equilibrium output exceeds full employment (Y > Yf), there is an inflationary gap (overheating).\n\nKeynes advocated for government intervention: during recession, increase spending or cut taxes to boost AD; during inflation, reduce spending or raise taxes to cool AD.\n\n(b) Inflationary and Deflationary Gaps (Diagram):\nInflationary Gap: Occurs when equilibrium output exceeds full employment (Y > Yf). The AD curve intersects AS to the right of the full-employment vertical line. This excess demand pushes prices up (inflation), and wages rise as firms compete for scarce labour. Government should use contractionary policies (reduce spending, raise taxes) to close the gap.\n\nDeflationary Gap: Occurs when equilibrium output is below full employment (Y < Yf). The AD curve intersects AS to the left of the full-employment line. There is unemployment and idle capacity. Government should use expansionary policies (increase spending, cut taxes) to boost AD and close the gap.\n\nDiagram: Price level on vertical axis, Real GDP on horizontal axis. A vertical line at Yf (full employment). AD and AS curves intersect at equilibrium Y. If equilibrium is left of Yf → deflationary gap. If right of Yf → inflationary gap."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Trade",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "On 20th August 2019, Nigeria partially closed its land border with its neighbouring countries. As a student of Economics, assess the\n(a) economic implications of this on the Nigeria economy.\n(b) effect of this on the trade relationship between Nigeria and her neighbouring countries.",
+    "options": [],
+    "modelAnswer": "(a) Economic Implications of Nigeria's Partial Border Closure on the Nigerian Economy:\nPositive Implications:\n1. Boost for Domestic Agriculture: Closure reduces imports of cheap rice, poultry, and other agricultural products from neighbouring countries, protecting local farmers and encouraging domestic production. This can increase agricultural output and reduce dependency on imported food.\n\n2. Increase in Government Revenue: Smuggling is reduced, allowing customs to collect more duties on legitimate imports, increasing government revenue.\n\n3. Protection of Infant Industries: Local manufacturers face less competition from smuggled goods, allowing them to grow, invest, and create jobs.\n\n4. Reduction in Insecurity: Border closure can limit movement of arms, ammunition, and illicit goods, improving national security.\n\nNegative Implications:\n1. Increase in Food Prices: Reduced imports cause supply shortages, raising food prices and fuelling inflation (especially rice, poultry). This hurts consumers, especially the poor.\n\n2. Loss of Government Revenue: While smuggling is reduced, legitimate import duties also fall because goods are not entering legally, reducing customs revenue.\n\n3. Retaliatory Measures: Neighbouring countries may impose their own restrictions on Nigerian goods, hurting Nigerian exports (especially manufactured goods).\n\n4. Smuggling Increases: Partial closure may simply push smuggling to more remote routes, increasing corruption, smuggling costs, and insecurity.\n\n5. Damage to Regional Integration: Border closure undermines ECOWAS protocols on free movement of goods and persons, reducing trust and cooperation.\n\n(b) Effect on Trade Relationship with Neighbouring Countries:\n1. Strained Diplomatic Relations: Border closure creates friction with Benin, Niger, Ghana, and other neighbours, damaging diplomatic and trade ties.\n\n2. Retaliation: Neighbouring countries may close their borders in response or impose import restrictions on Nigerian goods, disrupting regional trade.\n\n3. Disruption of Regional Supply Chains: West African regional trade is integrated — goods move across borders frequently. Border closure disrupts these supply chains, hurting businesses and consumers across the region.\n\n4. Loss of Regional Economic Integration: ECOWAS aims for free movement of goods and persons. Border closure contradicts ECOWAS protocols and undermines trust in regional integration.\n\n5. Increased Informal Trade: Formal trade declines, but informal (smuggling) trade may increase through unregulated routes, reducing government revenue and law enforcement."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Growth and Development",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "(a) Discuss the statement that reads 'Economic growth is a necessary but not sufficient condition for Economic development'.\n(b) For many years ago, Nigeria has consistently been having deficit Balance of Payment. As a student of Economics, what could likely be the reasons for this?",
+    "options": [],
+    "modelAnswer": "(a) 'Economic growth is a necessary but not sufficient condition for Economic development':\nEconomic growth refers to an increase in a country's real output (GDP) over time. Economic development is a broader concept that includes improvements in living standards, reduction in poverty, better health, education, and equity.\n\nNecessary: Economic growth is necessary for development because without growth, there are no additional resources to invest in education, healthcare, infrastructure, and poverty reduction. Growth provides the means (financial resources) for development.\n\nNot Sufficient: Growth alone does not guarantee development. For example:\n- Nigeria has experienced periods of positive GDP growth but poverty and inequality remain high.\n- The benefits of growth may not be distributed equitably (growth may benefit only the wealthy).\n- Growth may be jobless (capital-intensive, not labour-intensive).\n- Growth may come at the cost of environmental degradation.\n- Growth may not improve health, education, or life expectancy.\n\nTherefore, growth must be inclusive, sustainable, and accompanied by policies that redistribute benefits (social welfare, education, health, infrastructure) to achieve development.\n\n(b) Reasons for Nigeria's Persistent Balance of Payments Deficit:\n1. Dependence on Oil Exports: Nigeria's exports are dominated by crude oil, which is subject to volatile global prices. When oil prices fall, export revenue declines, causing BOP deficits.\n\n2. High Import Dependency: Nigeria imports a large proportion of its consumption goods (food, machinery, fuel, manufactured goods), leading to high import bills. The marginal propensity to import is high.\n\n3. Low Non-Oil Exports: The non-oil sector (agriculture, manufacturing) is underdeveloped and contributes little to exports, limiting diversification and export revenue.\n\n4. Currency Depreciation: The naira has depreciated significantly, increasing the cost of imports, which worsens the current account deficit (in naira terms).\n\n5. High Debt Servicing: Nigeria pays large sums in interest and principal on external debt, which is a transfer payment abroad, worsening the current account.\n\n6. Capital Flight: Political instability, weak institutions, and corruption lead to capital flight — wealthy Nigerians invest abroad, reducing capital inflows.\n\n7. Weak Infrastructure: Poor infrastructure (power, roads) increases production costs, making exports uncompetitive and imports more attractive.\n\n8. Remittances Outflow: While remittances from Nigerians abroad are significant, outflows (foreign investments, profits repatriated by foreign companies) also contribute to deficits.\n\n9. Poor Export Diversification: Nigeria's exports are narrow in range (oil, cocoa, rubber) and low value-added, making the economy vulnerable to external shocks."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "International Economic Institutions",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) Define the term globalization.\n(b) What are the contributions of globalization towards economic development?\n(c) Highlight the functions of International Monetary Fund (IMF).",
+    "options": [],
+    "modelAnswer": "(a) Globalization:\nGlobalization is the process of increasing economic, social, and political integration and interdependence of countries through the international flow of goods, services, capital, technology, information, and labour. It involves the removal of barriers to trade and investment, the expansion of multinational corporations, and the spread of cultural and technological innovations across borders.\n\n(b) Contributions of Globalization to Economic Development:\n1. Increased Trade: Globalization expands markets, allowing countries to specialize and benefit from comparative advantage. Developing countries gain access to larger markets for their exports, increasing export revenue and GDP.\n\n2. Foreign Direct Investment (FDI): Globalization attracts FDI from multinational corporations, bringing capital, technology, and expertise. This creates jobs, improves infrastructure, and boosts productivity.\n\n3. Technology Transfer: Developing countries gain access to advanced technologies, production methods, and management practices, improving productivity and competitiveness.\n\n4. Employment Creation: Global integration creates jobs in export-oriented industries (manufacturing, services, agriculture), reducing poverty and unemployment.\n\n5. Access to Capital: Developing countries can borrow from international financial markets and institutions, financing infrastructure, education, and health projects.\n\n6. Improved Living Standards: Globalization exposes consumers to a wider variety of goods and services at competitive prices, improving consumer welfare.\n\n7. Knowledge and Skills Transfer: International cooperation (education, training, research) improves human capital, enhancing long-term development.\n\n8. Regional Integration: Globalization promotes regional economic integration (ECOWAS, EU), reducing trade barriers and fostering cooperation on common challenges.\n\n9. Reduction in Poverty: Rapid growth in countries like China, India, and Vietnam, driven by globalization, lifted millions out of poverty.\n\n(c) Functions of the International Monetary Fund (IMF):\n1. Surveillance of Member Economies: The IMF monitors global economic developments and provides policy advice to member countries to promote stability and growth.\n\n2. Financial Assistance (Lending): The IMF provides loans to countries facing balance of payments deficits, helping them stabilize their economies and avoid default. It provides conditional loans (with policy reform requirements).\n\n3. Technical Assistance and Capacity Building: The IMF provides technical advice and training to member countries on fiscal policy, monetary policy, exchange rate management, and financial sector reforms.\n\n4. Promotion of International Monetary Cooperation: The IMF promotes cooperation among countries on monetary policies, exchange rate stability, and international trade to foster global economic stability.\n\n5. Facilitating International Trade: By maintaining stable exchange rates and providing financial support during crises, the IMF facilitates international trade and investment.\n\n6. Poverty Reduction: Through the Poverty Reduction and Growth Trust (PRGT), the IMF provides concessional loans to low-income countries to support poverty reduction programs.\n\n7. Crisis Prevention and Management: The IMF helps countries prevent financial crises through early warning systems and assists in managing crises when they occur."
+  },
+  {
+    "subject": "Economics",
+    "year": 2021,
+    "category": "Growth and Development",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "All countries of the world focused majorly on economic growth as the most important goal among other development goals. This is because, achieving economic growth can lead to the achievement of economic development which is the ultimate. However, there is always an opportunity cost of achieving any of these goals.\n(a) Differentiate between economic growth and economic development.\n(b) Aside from economic growth, critically examine other development goals that you know.",
+    "options": [],
+    "modelAnswer": "(a) Differentiation between Economic Growth and Economic Development:\n\nEconomic Growth:\n- Quantitative increase in real GDP (national output) over time.\n- Measured by GDP growth rate or GDP per capita growth.\n- Focuses on the size of the economy — more output.\n- Does not consider income distribution, poverty, or quality of life.\n- Can occur without improvements in health, education, or equity.\n- Short-term or medium-term concept.\n- Examples: Nigeria's GDP grew by 6% in a year, but inequality and poverty remained high.\n\nEconomic Development:\n- Broader concept — includes economic growth plus improvements in living standards, poverty reduction, health, education, and equity.\n- Measured by HDI (Human Development Index), GINI coefficient, life expectancy, literacy, and other indicators.\n- Focuses on quality of life — better welfare.\n- Considers distribution of benefits, social welfare, and environmental sustainability.\n- Long-term, holistic concept.\n- Examples: The Asian Tigers (South Korea, Singapore) achieved both growth and development — high incomes, low poverty, good health, and education.\n\n(b) Other Development Goals (Aside from Economic Growth):\n1. Poverty Reduction: Reducing the proportion of people living below the poverty line (absolute and relative). This involves creating jobs, increasing incomes, providing social safety nets, and improving access to basic needs.\n\n2. Full Employment: Creating sufficient jobs for all willing and able workers. Employment reduces poverty, improves welfare, and promotes social stability. Youth unemployment in Nigeria is a major concern (over 40%).\n\n3. Price Stability: Maintaining low and stable inflation. High inflation erodes purchasing power, hurts savers, and creates uncertainty, harming growth and development.\n\n4. Balance of Payments Equilibrium: Achieving a sustainable balance of payments position — sufficient foreign reserves to finance imports and service debt. Persistent deficits lead to currency depreciation, inflation, and economic instability.\n\n5. Equitable Distribution of Income: Reducing income and wealth inequality. High inequality leads to social unrest, political instability, and wasted human potential. Progressive taxation, social spending, and pro-poor policies help.\n\n6. Human Capital Development: Investing in education, health, nutrition, and skills training. A healthy, educated workforce is more productive and adaptable, driving long-term growth.\n\n7. Environmental Sustainability: Protecting natural resources (land, water, forests, biodiversity) and reducing pollution. Unsustainable growth damages ecosystems, threatens agriculture, and reduces future growth potential.\n\n8. Political Stability and Good Governance: Strengthening institutions, rule of law, and democracy. Stability attracts investment, fosters growth, and ensures benefits are shared equitably.\n\n9. Social Inclusion and Gender Equality: Ensuring equal opportunities for all (regardless of gender, ethnicity, religion) to participate in economic and social life. Reducing gender inequality improves human development and growth.\n\n10. Technological Innovation: Promoting research, development, and innovation. Technological progress increases productivity, creates new industries, and solves development challenges.\n\n11. Infrastructure Development: Building roads, power, water, ports, and telecommunications. Infrastructure reduces costs, improves market access, and supports industrialization and services.\n\n12. Regional Integration and Trade: Promoting regional integration (ECOWAS) and international trade to expand markets, attract investment, and foster economic cooperation.\n\n13. Good Health and Well-being: Improving health indicators — reducing infant and maternal mortality, increasing life expectancy, controlling diseases (malaria, HIV/AIDS), and providing accessible healthcare.\n\n14. Quality Education: Ensuring universal access to quality primary and secondary education, and improving tertiary education and technical skills.\n\nOpportunity Cost: Pursuing any goal requires resources (money, time, labour) that could be used for other goals. For example:\n- Investing heavily in growth may come at the cost of environmental degradation.\n- Reducing poverty (social spending) may require higher taxes or borrowing.\n- Price stability may require sacrificing full employment (contractionary policies).\n\nBalancing these goals requires prioritization based on a country's stage of development, values, and political will."
+  }
+]

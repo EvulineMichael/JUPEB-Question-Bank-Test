@@ -1,0 +1,966 @@
+[
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "According to Aristotle, a well-written play has ______ elements.",
+    "options": [
+      "five",
+      "six",
+      "seven",
+      "eight"
+    ],
+    "answer": "B",
+    "explanation": "According to Aristotle's Poetics, a well-written play has six elements: plot, character, thought, diction, music, and spectacle. These are the essential components of tragedy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The art of dressing up a character for the stage is",
+    "options": [
+      "directing.",
+      "performing.",
+      "costuming.",
+      "assembling."
+    ],
+    "answer": "C",
+    "explanation": "Costuming is the art of dressing up a character for the stage. It involves designing and selecting costumes that reflect the character's personality, social status, and the period of the play."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Aristotle's catastasis is the same as",
+    "options": [
+      "exposition.",
+      "complication.",
+      "falling action.",
+      "climax."
+    ],
+    "answer": "B",
+    "explanation": "Aristotle's catastasis refers to the complication or rising action of a play — the stage where the plot becomes increasingly complex and tension builds toward the climax."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Many Renaissance tragedies emphasized the ______ world picture.",
+    "options": [
+      "Elizabethan",
+      "Restoration",
+      "Romantic",
+      "Victorian"
+    ],
+    "answer": "A",
+    "explanation": "Many Renaissance tragedies emphasized the Elizabethan world picture — a hierarchical view of the universe with order, harmony, and divine rule, which is reflected in Shakespeare's tragedies."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Comedy as a dramatic form presents men ______ than they are in real life.",
+    "options": [
+      "better",
+      "greater",
+      "miser",
+      "worse"
+    ],
+    "answer": "D",
+    "explanation": "Comedy presents men as worse than they are in real life — it exaggerates human flaws and weaknesses for humorous effect. The quotation is from Aristotle's Poetics, where he distinguishes comedy from tragedy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The error or frailty through which the fortunes of a hero are reversed is called",
+    "options": [
+      "peripeteia.",
+      "hamartia.",
+      "anagnorisis.",
+      "catharsis."
+    ],
+    "answer": "B",
+    "explanation": "Hamartia is the error or frailty (tragic flaw) through which the fortunes of a hero are reversed. It is the character trait or mistake that leads to the hero's downfall. Peripeteia is the reversal of fortune, and anagnorisis is the moment of recognition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "As a corrective measure, satire draws ______ blood but uses a ______ sword.",
+    "options": [
+      "silver",
+      "golden",
+      "rubber",
+      "double"
+    ],
+    "answer": "A",
+    "explanation": "Satire draws 'silver' blood but uses a 'golden' sword — it is a corrective measure that uses wit and humour to criticize, but its intention is to heal and improve rather than to wound."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The struggle for supremacy that grows out of the interplay of two opposing forces in a play is known as",
+    "options": [
+      "quarrel.",
+      "rebellion.",
+      "conflict.",
+      "confusion."
+    ],
+    "answer": "C",
+    "explanation": "Conflict is the struggle for supremacy that grows out of the interplay of two opposing forces in a play. It is the central element that drives the plot and creates dramatic tension."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "A literary composition where characters enact prescribed events and articulate prescribed speeches is",
+    "options": [
+      "prosaic.",
+      "ecliptic.",
+      "poetic.",
+      "dramatic."
+    ],
+    "answer": "D",
+    "explanation": "A dramatic composition is one where characters enact prescribed events and articulate prescribed speeches. It is meant to be performed on stage, with characters speaking and acting out the story."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Drama in ancient Greece developed out of man's attempt to harmonize with his",
+    "options": [
+      "person.",
+      "universe.",
+      "family.",
+      "society."
+    ],
+    "answer": "B",
+    "explanation": "Drama in ancient Greece developed out of man's attempt to harmonize with his universe — it was part of religious festivals in honour of Dionysus, where people sought to understand and connect with cosmic forces."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Drama evolved out of man's instinct to",
+    "options": [
+      "dramatise.",
+      "imitate.",
+      "write.",
+      "correct."
+    ],
+    "answer": "B",
+    "explanation": "Drama evolved out of man's instinct to imitate. Aristotle argued in the Poetics that humans have a natural instinct for imitation, and drama is an imitation of human actions and emotions."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "In drama, Oedipus complex is the attachment of the",
+    "options": [
+      "hero to his father.",
+      "hero to his mother.",
+      "heroine to her mother.",
+      "heroine to her father."
+    ],
+    "answer": "B",
+    "explanation": "The Oedipus complex is the attachment of the hero (son) to his mother, with rivalry toward his father. It is named after the Greek myth of Oedipus, who unknowingly killed his father and married his mother."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The addition of extemporaneous jokes and clowning makes a play",
+    "options": [
+      "tragic.",
+      "historical.",
+      "farcical.",
+      "mimetic."
+    ],
+    "answer": "C",
+    "explanation": "The addition of extemporaneous jokes and clowning makes a play farcical — it becomes a farce, characterized by exaggerated humour, slapstick, and improbable situations."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "The action of Thespis in Greek Drama demonstrates",
+    "options": [
+      "imitation.",
+      "dialogue.",
+      "creation.",
+      "presentation."
+    ],
+    "answer": "D",
+    "explanation": "The action of Thespis in Greek drama demonstrates acting — Thespis is considered the first actor who stepped out of the chorus to engage in dialogue with it. He introduced the idea of a single actor performing a character."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "In a tragic play, anagnorisis leads to",
+    "options": [
+      "complication.",
+      "crisis.",
+      "purgation.",
+      "resolution."
+    ],
+    "answer": "D",
+    "explanation": "In a tragic play, anagnorisis (recognition) leads to resolution — it is the moment when the hero realizes the truth about their situation, leading to the final resolution of the plot. It often occurs with peripeteia (reversal)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The major distinguishing features of prose are",
+    "options": [
+      "narrative and epilogue.",
+      "verse and action.",
+      "narrative and fiction.",
+      "character and dialogue."
+    ],
+    "answer": "C",
+    "explanation": "The major distinguishing features of prose are narrative and fiction — prose fiction tells a story through narrative and is characterized by its use of prose language. Verse and action are features of drama and poetry."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "An epistolary novel is conveyed entirely by",
+    "options": [
+      "an emphasis on the motives of the characters.",
+      "an exchange of letters between characters.",
+      "a dig into the minds of a character.",
+      "a beginning of conflict between characters."
+    ],
+    "answer": "B",
+    "explanation": "An epistolary novel is conveyed entirely by an exchange of letters between characters. The story is told through documents like letters, diary entries, or emails. Examples include Samuel Richardson's Pamela."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "A story within the narrative used to give a broader view of events is known as a",
+    "options": [
+      "conventional plot.",
+      "complex plot.",
+      "sub-plot.",
+      "simple plot."
+    ],
+    "answer": "C",
+    "explanation": "A sub-plot is a story within the main narrative used to give a broader view of events. It runs parallel to the main plot and often reinforces themes or provides contrast to the main story."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Surface level interpretation of meaning would focus on",
+    "options": [
+      "thematic structure.",
+      "plot sequence.",
+      "narrative technique.",
+      "subject matter."
+    ],
+    "answer": "D",
+    "explanation": "Surface level interpretation of meaning would focus on subject matter — the literal content of the text. Deeper interpretations would examine thematic structure, plot sequence, and narrative technique."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "All these novelists are new generational African writers EXCEPT",
+    "options": [
+      "Mukoma wa Ngugi.",
+      "Chris Abani.",
+      "Sembene Ousmane.",
+      "Segun Afolabi."
+    ],
+    "answer": "C",
+    "explanation": "Sembene Ousmane is NOT a new generational African writer — he is considered a pioneer of African literature (first generation), known for works like God's Bits of Wood. Mukoma wa Ngugi, Chris Abani, and Segun Afolabi are newer generation writers."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The heightened expectation of a reader while engaging a narrative is called",
+    "options": [
+      "suspense.",
+      "irony.",
+      "paradox.",
+      "imagery."
+    ],
+    "answer": "A",
+    "explanation": "Suspense is the heightened expectation of a reader while engaging a narrative — it is the feeling of uncertainty and anticipation about what will happen next in the story."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Who is considered the precursor of the epistolary novel?",
+    "options": [
+      "George Eliot.",
+      "Daniel Defoe.",
+      "Samuel Richardson.",
+      "Henry Fielding."
+    ],
+    "answer": "C",
+    "explanation": "Samuel Richardson is considered the precursor of the epistolary novel, with his works Pamela (1740) and Clarissa (1748) being early and influential examples of the form."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "What best describes the subject of most Victorian novels?",
+    "options": [
+      "Portrayal of mechanized social world in realistic detail.",
+      "Representation of a mythic world of social fantasy.",
+      "A surrealist exploration of different states of consciousness.",
+      "An ever continuing pursuit of fate of men."
+    ],
+    "answer": "A",
+    "explanation": "Victorian novels are best described as portraying the mechanized social world in realistic detail — they depict the social, economic, and moral conditions of the Victorian era with realism. Dickens, Eliot, and the Brontës are key examples."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Most neocolonial prose narratives portray characters who are",
+    "options": [
+      "struggling with dual identities.",
+      "fighting corruption.",
+      "in dire need of knowledge.",
+      "religiously confused."
+    ],
+    "answer": "A",
+    "explanation": "Most neocolonial prose narratives portray characters who are struggling with dual identities — torn between traditional African culture and Western influences, and grappling with issues of identity, alienation, and post-colonial disillusionment."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "A poem of five lines with synonymous words and phrases is called",
+    "options": [
+      "haiku.",
+      "lyric.",
+      "cinquains.",
+      "pastoral."
+    ],
+    "answer": "C",
+    "explanation": "A cinquain is a poem of five lines with a specific syllable count. It has synonymous words and phrases and is a structured form of poetry. Haiku has three lines, lyric is a broad category."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "A poem with regular meter but with no rhyme refers to ______ verse.",
+    "options": [
+      "free",
+      "blank",
+      "lyrical",
+      "rhetorical"
+    ],
+    "answer": "B",
+    "explanation": "Blank verse is poetry written in regular meter (usually iambic pentameter) but with no rhyme. Free verse has neither regular meter nor rhyme. Shakespeare's plays and Milton's Paradise Lost are written in blank verse."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "A hint at an unfavourable description of a person is known as",
+    "options": [
+      "oxymoron.",
+      "analogy.",
+      "metaphor.",
+      "innuendo."
+    ],
+    "answer": "D",
+    "explanation": "Innuendo is a hint at an unfavourable description of a person — it is an indirect or subtle suggestion that conveys a negative or disparaging meaning."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "One important focus of renaissance was an emphasis on",
+    "options": [
+      "transformation and magic.",
+      "the literature of Greece and Rome.",
+      "loyalty of the middle age.",
+      "importance of nature."
+    ],
+    "answer": "B",
+    "explanation": "One important focus of the Renaissance was an emphasis on the literature of Greece and Rome — the revival of classical learning, humanism, and the study of ancient Greek and Roman texts, which shaped Renaissance culture and literature."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The expression 'pleasing pain, I burn and freeze' connotes",
+    "options": [
+      "paradox.",
+      "onomatopoeia.",
+      "assonance.",
+      "oxymoron."
+    ],
+    "answer": "D",
+    "explanation": "'Pleasing pain' and 'I burn and freeze' are examples of oxymoron — a figure of speech that combines contradictory terms. These phrases express emotional conflict and intensity."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "What is the rhyme scheme of lines 2-5?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The cat went here and there...' by W.B. Yeats. Please refer to original past question paper.",
+    "options": [
+      "abcbc.",
+      "aabac.",
+      "abcdc.",
+      "abbbc."
+    ],
+    "answer": "A",
+    "explanation": "The rhyme scheme of lines 2-5 is abcbc — the lines rhyme in the pattern a-b-c-b-c. The poem is 'The Cat and the Moon' by W.B. Yeats."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Line 2 of the extract is an example of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The cat went here and there...' by W.B. Yeats. Please refer to original past question paper.",
+    "options": [
+      "apostrophe.",
+      "hyperbole.",
+      "metaphor.",
+      "simile."
+    ],
+    "answer": "D",
+    "explanation": "Line 2 ('The moon spun round like a top') is an example of simile — it uses 'like' to compare the moon's spinning to a top, creating a vivid image."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Black Minnaloushe refers to the",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The cat went here and there...' by W.B. Yeats. Please refer to original past question paper.",
+    "options": [
+      "top",
+      "cat",
+      "kin",
+      "moon"
+    ],
+    "answer": "B",
+    "explanation": "Black Minnaloushe refers to the cat — it is the name of the cat in Yeats' poem 'The Cat and the Moon.' The poet uses the cat to explore the relationship between nature and the supernatural."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The creeping cat in line 4 shows the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The cat went here and there...' by W.B. Yeats. Please refer to original past question paper.",
+    "options": [
+      "assonance.",
+      "consonance.",
+      "alliteration.",
+      "pun."
+    ],
+    "answer": "C",
+    "explanation": "The phrase 'creeping cat' shows the use of alliteration — the repetition of the initial 'c' sound in 'creeping' and 'cat.' Alliteration creates rhythm and emphasis in the line."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "She was not unmindful of her root is an example of",
+    "options": [
+      "metaphor.",
+      "oxymoron.",
+      "litotes.",
+      "imagery."
+    ],
+    "answer": "C",
+    "explanation": "'She was not unmindful of her root' is an example of litotes — a figure of speech that uses understatement by using a negative to affirm a positive. It means she was mindful of her heritage. Litotes is a form of ironical understatement."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "'But from the earth, this grave, this dust my God shall raise me up, I trust.' The feeling of the poet is one of",
+    "options": [
+      "hatred.",
+      "indecision.",
+      "optimism.",
+      "sarcasm."
+    ],
+    "answer": "C",
+    "explanation": "The feeling of the poet is one of optimism — the speaker expresses trust in God's promise of resurrection and hope, despite the finality of death. The tone is hopeful and confident."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The examination of versification and metre is called",
+    "options": [
+      "rhythm",
+      "verse",
+      "prosody",
+      "rhyme."
+    ],
+    "answer": "C",
+    "explanation": "Prosody is the examination of versification and metre — it is the study of the metrical structure of poetry, including rhythm, stress, and intonation."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The tone of the passage is one of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'But the house on Mango Street is not the way they told it at all...' by Sandra Cisneros. Please refer to original past question paper.",
+    "options": [
+      "astonishment.",
+      "disappointment.",
+      "repression.",
+      "apprehension."
+    ],
+    "answer": "B",
+    "explanation": "The tone of the passage is one of disappointment — the narrator describes the house on Mango Street as small, crumbling, and inadequate, contrasting with her expectations. The description creates a mood of letdown and disillusionment."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The atmosphere created by the author is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'But the house on Mango Street is not the way they told it at all...' by Sandra Cisneros. Please refer to original past question paper.",
+    "options": [
+      "claustrophobic.",
+      "invasive.",
+      "degeneration.",
+      "chaotic."
+    ],
+    "answer": "A",
+    "explanation": "The atmosphere created by the author is claustrophobic — the description of the small house, tight steps, tiny windows, and cramped spaces creates a sense of confinement and restriction."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "'and windows so small you'd think they were holding their breath' is an example of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'But the house on Mango Street is not the way they told it at all...' by Sandra Cisneros. Please refer to original past question paper.",
+    "options": [
+      "simile.",
+      "personification.",
+      "metaphor.",
+      "assonance."
+    ],
+    "answer": "B",
+    "explanation": "The expression 'windows so small you'd think they were holding their breath' is an example of personification — it gives the windows human-like qualities (holding their breath), making the description more vivid and expressive."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The images employed in the passage are visual and",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'But the house on Mango Street is not the way they told it at all...' by Sandra Cisneros. Please refer to original past question paper.",
+    "options": [
+      "auditory.",
+      "tactile.",
+      "kinetic.",
+      "olfactory."
+    ],
+    "answer": "B",
+    "explanation": "The images employed in the passage are visual and tactile — the descriptions appeal to sight (small windows, crumbling bricks) and touch (swollen front door, tight steps), creating a sensory experience for the reader."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The repetition of 'what' in the extract exemplifies",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'What the hammer? what the chain?...' by William Blake. Please refer to original past question paper.",
+    "options": [
+      "anaphora.",
+      "apostrophe.",
+      "ambiguity.",
+      "antithesis."
+    ],
+    "answer": "A",
+    "explanation": "The repetition of 'what' at the beginning of successive clauses is an example of anaphora — it creates rhythm, emphasis, and a sense of urgency in the poem. The poem is 'The Tyger' by William Blake."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The rhyme scheme of the extract is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'What the hammer? what the chain?...' by William Blake. Please refer to original past question paper.",
+    "options": [
+      "aabb.",
+      "abcd.",
+      "abab.",
+      "abba."
+    ],
+    "answer": "A",
+    "explanation": "The rhyme scheme of the extract is aabb — each couplet rhymes (hammer/chain with brain, dread grasp/clasp). 'The Tyger' uses a simple rhyming couplet structure throughout."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "A scansion of the extract indicates that it is largely",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'What the hammer? what the chain?...' by William Blake. Please refer to original past question paper.",
+    "options": [
+      "iambic.",
+      "trochaic.",
+      "anapestic.",
+      "spondaic."
+    ],
+    "answer": "B",
+    "explanation": "A scansion of the extract indicates that it is largely trochaic — the stress pattern is trochaic (a stressed syllable followed by an unstressed syllable), which gives 'The Tyger' its rhythmic, incantatory quality."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The tone of the narrator is one of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I should say that I am carrying no money...' by Salman Rushdie. Please refer to original past question paper.",
+    "options": [
+      "optimism.",
+      "defiance.",
+      "confidence.",
+      "dignity."
+    ],
+    "answer": "C",
+    "explanation": "The tone of the narrator is one of confidence — he speaks assertively about his safety measures and the consequences for his assailants, showing a sense of control and self-assurance."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The expression '...he will move Heaven and Earth to punish my assailants' is a/an",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I should say that I am carrying no money...' by Salman Rushdie. Please refer to original past question paper.",
+    "options": [
+      "oxymoron.",
+      "personification.",
+      "metaphor.",
+      "hyperbole."
+    ],
+    "answer": "D",
+    "explanation": "'He will move Heaven and Earth to punish my assailants' is an example of hyperbole — an exaggerated statement used for emphasis. It means he will do everything possible, not literally move Heaven and Earth."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Pragmatic Criticism is judging a text based on its",
+    "options": [
+      "effects on the audience.",
+      "connection to its author.",
+      "reflection of life",
+      "practicality of life"
+    ],
+    "answer": "A",
+    "explanation": "Pragmatic Criticism judges a text based on its effects on the audience — it considers how the work affects the reader or audience and whether it achieves its intended purpose. It focuses on the reader's response."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Aristotelian concept of tragedy exposes which type of criticism?",
+    "options": [
+      "Pragmatic.",
+      "Impressionistic.",
+      "Mimetic.",
+      "Historical."
+    ],
+    "answer": "C",
+    "explanation": "Aristotelian concept of tragedy exposes mimetic criticism — Aristotle argued that art is an imitation (mimesis) of reality, and tragedy imitates serious actions. His Poetics is a foundational text of mimetic criticism."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Analysis of a text with reference to its adequacy of representation is",
+    "options": [
+      "mimetic.",
+      "pragmatic.",
+      "expressive.",
+      "objective."
+    ],
+    "answer": "A",
+    "explanation": "Analysis of a text with reference to its adequacy of representation is mimetic criticism — it evaluates how well the text represents reality, life, or the world. Mimetic criticism focuses on the relationship between the work and the world."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "'I grew, day by day, more moody, more irritable, more regardless of the feelings of others.' (Edgar Allan Poe - 'The Black Cat') The rhetorical device in the above extract is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I grew, day by day, more moody, more irritable...' by Edgar Allan Poe. Please refer to original past question paper.",
+    "options": [
+      "parallelism.",
+      "climax",
+      "personification.",
+      "metaphor."
+    ],
+    "answer": "A",
+    "explanation": "The rhetorical device in the extract is parallelism — the repetition of similar grammatical structures ('more moody, more irritable, more regardless') creates rhythm and emphasis, reflecting the narrator's deteriorating state."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "That wind goes through this little cold like it ain't even there. The images presented here are",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'That wind goes through this little cold like it ain't even there.' Please refer to original past question paper.",
+    "options": [
+      "kinetic and tactile.",
+      "olfactory and kinetic.",
+      "gustatory and olfactory.",
+      "tactile and gustatory."
+    ],
+    "answer": "A",
+    "explanation": "The images presented are kinetic (movement of wind) and tactile (the sensation of cold and wind on the skin). The description appeals to the senses of touch and movement."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the theme of appearance versus reality in Shakespeare's King Lear.",
+    "options": [],
+    "modelAnswer": "In King Lear, Shakespeare explores the theme of appearance versus reality extensively. Characters often present themselves as one thing while being another.\n\nGoneril and Regan: They profess their love for Lear in exaggerated terms, saying they love him 'more than eyesight, space, and liberty.' However, their actions reveal their true nature — they are cruel, selfish, and ungrateful. Their words appear loving, but their reality is hateful.\n\nLear's Fool: The Fool appears as a jester providing comic relief, but he is actually the voice of truth and wisdom. He speaks the reality of Lear's situation, telling him he is a fool for trusting his daughters.\n\nEdmund: Edmund appears loyal and obedient to his father, but he is actually plotting against him. He feigns loyalty to both Gloucester and Edgar while scheming to destroy them.\n\nEdgar's Disguise: Edgar disguises himself as Poor Tom, appearing to be a mad beggar. His disguise allows him to survive and eventually reveal the truth.\n\nLear's Madness: Lear's madness strips away pretence — he sees the reality of his situation more clearly. His madness reveals the truth about his daughters and his own foolishness.\n\nConclusion: The theme of appearance versus reality is central to King Lear. Characters, words, and actions often mask true intentions, and the play explores the consequences of being deceived by appearances."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Henry IV is a battle of allegiance between two Harrys. Discuss.",
+    "options": [],
+    "modelAnswer": "Shakespeare's Henry IV explores the theme of allegiance and kingship through the contrasting characters of Prince Hal and Hotspur (Henry Percy), both named Harry.\n\nPrince Hal: Hal is the Prince of Wales, heir to the throne. He initially appears to be a wayward prince, spending time in taverns with Falstaff and engaging in frivolous activities. However, his allegiance to the crown and his father is ultimately strong. He is calculating and uses his wild behaviour to create a positive impression when he reforms.\n\nHotspur: Hotspur is the son of the Earl of Northumberland and a brave, honourable warrior. He is loyal to his family but rebels against King Henry IV. His allegiance is to honour, family, and his own ambitions. He represents the martial ideal of the medieval nobleman.\n\nThe Battle of Allegiance: The conflict between the two Harrys represents a battle for the crown and for the ideals of kingship. Hotspur is portrayed as a hot-headed rebel, while Hal must prove his worth as a future king.\n\nHal's Victory: Hal kills Hotspur in battle, demonstrating his loyalty to his father and the crown. This act proves his commitment to his royal duties and his readiness to rule.\n\nConclusion: The battle of allegiance between the two Harrys is central to Henry IV. Hal must choose between his wild companions and his duty as prince, while Hotspur must choose between loyalty to the king and his own ambition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Highlight the dramatic techniques used to express the discontent of the robbers with society in Once upon Four Robbers.",
+    "options": [],
+    "modelAnswer": "Femi Osofisan's Once upon Four Robbers uses various dramatic techniques to express the discontent of the robbers with society.\n\nSatire: The play uses satire to criticize the corruption and hypocrisy of Nigerian society. The robbers are products of a society that has failed them, and their actions highlight the desperation caused by injustice.\n\nSymbolism: The robbers symbolize the marginalized and oppressed members of society. Their discontent represents the anger and frustration of those who have been excluded from the benefits of society.\n\nIrony: The play uses irony to expose the contradictions in society. The robbers, who are criminals, are contrasted with the wealthy and powerful who are equally corrupt but are seen as respectable.\n\nMusic and Song: The play incorporates music and song to express the robbers' emotions and discontent. Music adds a dramatic element and allows the characters to voice their grievances.\n\nDark Comedy: The play uses dark comedy to address serious issues — humour is used to expose the absurdity of the situation. The robbers' actions are both tragic and comic, highlighting the absurdity of their predicament.\n\nMetatheatre: The play uses metatheatrical elements (breaking the fourth wall) to engage the audience directly, making them reflect on the issues presented. The playwright comments on the action and invites the audience to consider their own role in society.\n\nConclusion: Osofisan uses satirical, symbolic, and metatheatrical techniques to express the robbers' discontent with society, exposing the corruption, hypocrisy, and injustice that create criminals."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Focusing on the relationship between the Kingundas' and the Kiois, justify the theme of class struggles in I Will Marry When I Want.",
+    "options": [],
+    "modelAnswer": "In I Will Marry When I Want, Ngugi wa Thiong'o explores the theme of class struggle through the relationship between the Kingundas and the Kiois.\n\nKingunda Family: The Kingundas represent the poor, landless, and oppressed class in post-colonial Kenya. They are peasants who have been marginalized by the wealthy and powerful. Kiguunda and his wife, Wangeci, are hardworking but remain impoverished due to the exploitation of the rich and the betrayal of their own daughter.\n\nKioi Family: The Kiois represent the wealthy, landowning elite who have benefited from colonialism and independence. They are arrogant, greedy, and exploit the poor. They have acquired land through corruption and injustice.\n\nThe Class Struggle: The conflict between the two families is a struggle between the rich and the poor. The Kiois attempt to use their wealth to manipulate the Kingundas, offering them money and land in exchange for their daughter, Wangeci. However, the Kingundas refuse to be bought.\n\nThe Theme of Exploitation: The play exposes the exploitation of the poor by the rich. The Kiois exploit the Kingundas' poverty and desperation. The class struggle is not just economic but also social and ideological.\n\nThe Theme of Betrayal: The betrayal of their daughter, Wangeci, represents the betrayal of the poor by the educated elite. She becomes a symbol of the class struggle between the poor and the rich.\n\nConclusion: The relationship between the Kingundas and the Kiois in I Will Marry When I Want exposes the class struggle in post-colonial Africa, highlighting the exploitation of the poor by the wealthy and the corruption of the elite."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Discuss the concept of class in Hard Times.",
+    "options": [],
+    "modelAnswer": "In Hard Times, Charles Dickens explores the concept of class through the conflict between the working class and the industrial middle class in Victorian England.\n\nThe Industrial Class (Bourgeoisie): Thomas Gradgrind and Josiah Bounderby represent the industrial middle class. They are driven by materialism, utilitarianism, and self-interest. Bounderby is a capitalist who exploits his workers and lies about his humble origins to gain sympathy.\n\nThe Working Class (Proletariat): Stephen Blackpool represents the working class. He is a honest, hardworking factory worker who is trapped in poverty and injustice. He is exploited by Bounderby and struggles with the limitations imposed by his class. He is unable to divorce his alcoholic wife because of the cost of legal procedures.\n\nClass Conflict: The novel highlights the exploitation of workers by factory owners. The workers are treated as cogs in the machine of industrialization. Dickens criticizes the dehumanizing effects of industrial capitalism and the class divide.\n\nThe Theme of Education: Gradgrind's educational system is based on facts and figures, ignoring imagination and compassion. This education serves the interests of the industrial class and perpetuates class divisions.\n\nClass Mobility: The novel suggests that class mobility is limited — the rich remain rich, and the poor remain poor. Despite Gradgrind's educational reforms, the class structure remains rigid.\n\nConclusion: Hard Times exposes the class divisions and exploitation in Victorian industrial society. Dickens criticizes the dehumanizing effects of capitalism and advocates for compassion, community, and social justice."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Examine the interplay between love and sacrifice in The Mill on the Floss.",
+    "options": [],
+    "modelAnswer": "In The Mill on the Floss, George Eliot explores the interplay between love and sacrifice through the relationships of the main characters, particularly Maggie Tulliver.\n\nMaggie's Love for Tom: Maggie loves her brother Tom deeply, but her love is often met with rejection and misunderstanding. Tom is unable to accept Maggie's emotional needs, leading to a strained relationship. Maggie sacrifices her own happiness for Tom's approval.\n\nMaggie's Love for Philip Wakem: Maggie forms a friendship with Philip Wakem, despite the enmity between their families. She knows that loving Philip would cause conflict, but she finds comfort and understanding in him. Her love for Philip is complicated by duty and loyalty to her family.\n\nMaggie's Love for Stephen Guest: Maggie falls in love with Stephen Guest, but she realizes that their love would harm others. She sacrifices her love for Stephen to protect Lucy Deane, her cousin, and to maintain her moral integrity.\n\nLove and Duty: Maggie's love for her family and her sense of duty often conflict. She is torn between her own desires and her obligations to her family. Her sacrifices are acts of love and selflessness.\n\nSacrifice as Redemption: Maggie's ultimate sacrifice — her death while trying to save Tom — is an act of love that redeems their relationship. She dies with Tom, and in death, they are reconciled.\n\nConclusion: Eliot uses the interplay between love and sacrifice to explore themes of duty, morality, and the complexities of human relationships. Maggie's sacrifices are acts of love that define her character and lead to her tragic end."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Analyze the images of Post-colonialism in Achebe's Anthills of the Savannah.",
+    "options": [],
+    "modelAnswer": "In Anthills of the Savannah, Chinua Achebe uses various images to explore the themes of post-colonialism in Africa.\n\nThe Image of the Coup: The novel opens with a military coup, representing the political instability and violence that characterized post-colonial Africa. The coup signifies the failure of the post-colonial state to achieve stability and democracy.\n\nThe Image of the Savannah: The savannah symbolizes the harsh and barren landscape of post-colonial Africa. It represents the loss of culture, tradition, and hope. The physical environment reflects the political and social conditions.\n\nThe Image of the Radio: The radio represents state propaganda and the manipulation of information. Ikem, the editor of a newspaper, tries to use the media to speak the truth, but he is silenced by the state. The image of the radio highlights the power of the state to control narratives.\n\nThe Image of the Tortoise: The tortoise symbolizes resilience and survival in the face of adversity. It represents the ability of ordinary people to survive despite political oppression. The tortoise appears in the oral tradition, symbolizing endurance.\n\nThe Image of the Pillar: The title 'Anthills of the Savannah' refers to the anthills that dot the landscape — they symbolize the ruins of past civilizations and the fragility of post-colonial structures. The anthills are monuments to the past, but they also represent the transience of power.\n\nThe Image of Women: Women are portrayed as bearers of tradition and culture. The image of women resisting oppression represents the fight for justice and the preservation of identity.\n\nConclusion: Achebe uses images of political instability, state control, resilience, and cultural memory to critique post-colonial governance and the failures of the African elite."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Explicate how Amma Darko uses Mara to reinforce patriarchy in Beyond the Horizon?",
+    "options": [],
+    "modelAnswer": "In Beyond the Horizon, Amma Darko uses the character of Mara to expose and reinforce the theme of patriarchy in African society.\n\nMara as Victim of Patriarchy: Mara is a victim of patriarchal oppression — she is marginalized, exploited, and controlled by men. She is forced into marriage and domestic servitude, and her husband Akobi exploits her. Her journey to Germany represents the exploitation of women in patriarchal societies.\n\nPatriarchal Power: Darko shows how men exercise power over women through tradition, economics, and violence. Akobi dominates Mara, and she is expected to be submissive and obedient. Patriarchy is presented as a system that limits women's freedom.\n\nSexual Exploitation: Mara is sexually exploited by her husband, who pressures her to have sex with other men. Her body is commodified, and her agency is denied. The novel reveals the way patriarchy reduces women to objects of male desire.\n\nResistance and Agency: Mara's eventual rebellion and decision to leave Akobi represent resistance to patriarchy. She takes control of her life and escapes the cycle of exploitation.\n\nSisterhood and Solidarity: Mara finds solidarity with other women, who help her see the oppression she faces. Female friendship is a source of strength against patriarchal oppression.\n\nThe State and Patriarchy: The novel suggests that the state and laws are complicit in patriarchy. Women are trapped in marriages and have limited legal recourse.\n\nConclusion: Amma Darko uses Mara's story to critique patriarchy and the exploitation of women in African society. Through Mara's suffering and eventual rebellion, Darko exposes the injustices of patriarchal systems."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "Examine images of disgust in Adeoti's Hardlines.",
+    "options": [],
+    "modelAnswer": "In Hardlines, Adeoti presents vivid images of disgust to critique social and political conditions in Nigeria.\n\nThe Images of Poverty: The poem presents images of poverty — hunger, deprivation, and squalor. The lines describe people living in filth, struggling to survive, and suffering from neglect. These images evoke disgust at the conditions.\n\nThe Images of Corruption: The poem uses disgust to critique political corruption — the exploitation of the poor by the wealthy and the failure of leadership. The images of greed and selfishness evoke moral disgust.\n\nThe Images of Disease: The poem includes images of disease and decay — people wasting away, suffering from illness and malnutrition. These images evoke physical disgust at the neglect of human life.\n\nThe Images of Waste: The poem depicts waste — wasted lives, wasted resources, and wasted opportunities. The images of uselessness and decay provoke disgust at the waste of human potential.\n\nThe Images of Injustice: The poem uses disgust to highlight social injustice — the rich oppressing the poor, the powerful exploiting the weak. These images evoke moral outrage and disgust.\n\nConclusion: The images of disgust in Hardlines expose the harsh realities of poverty, corruption, and injustice in Nigeria. They evoke anger, revulsion, and a call for change."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Illustrate Osundare's focus on the resilience of the earth in 'Our Earth will not Die'?",
+    "options": [],
+    "modelAnswer": "In 'Our Earth will not Die,' Osundare celebrates the resilience of the earth and the natural world in the face of exploitation and destruction.\n\nThe Earth as a Living Entity: The poem personifies the earth as a living being — it has resilience and the capacity to regenerate. Despite being exploited, the earth endures and persists.\n\nThe Theme of Survival: The poem emphasizes that the earth will survive human exploitation. The natural world has the power to heal and renew itself. The resilience of the earth is a source of hope.\n\nThe Images of Nature: The poem uses images of nature — trees, rivers, and the soil — to illustrate the earth's endurance. Nature continues to flourish despite human destruction.\n\nThe Resistance to Exploitation: The poem suggests that the earth resists exploitation — it has the power to regenerate and fight back against human greed. The earth will not be destroyed.\n\nHope and Renewal: The poem conveys a message of hope — the earth will not die, and there is hope for renewal and restoration. The resilience of nature is a source of optimism.\n\nConclusion: Osundare's poem focuses on the resilience of the earth — the power of nature to survive, regenerate, and endure. It celebrates the earth's capacity to resist destruction and offers hope for the future."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "The Classical Tradition",
+    "type": "Essay",
+    "questionNumber": "11",
+    "question": "The gods and fate are central to the understanding of Virgil's Aeneid. Discuss.",
+    "options": [],
+    "modelAnswer": "In Virgil's Aeneid, the gods and fate play a central role in shaping events and the destiny of Aeneas.\n\nThe Gods: The gods in the Aeneid are active participants in human affairs. Juno, Venus, Jupiter, and other deities intervene in the lives of mortals, often motivated by personal desires and conflicts. The gods represent the forces of destiny and divine will.\n\nFate: Fate is an unchangeable force that determines the course of events. Aeneas is fated to found Rome, and his journey is driven by the fulfilment of his destiny. Despite obstacles and divine opposition, fate ultimately prevails.\n\nDivine Intervention: The gods intervene to help or hinder Aeneas. Venus protects him, Juno opposes him, and Jupiter ensures that fate is fulfilled. The interactions between gods and mortals reveal the tension between divine will and human agency.\n\nThe Theme of Duty (Pietas): Aeneas embodies pietas — duty, piety, and devotion to fate. He sacrifices his personal happiness for the greater good of founding Rome. His sense of duty is shaped by his commitment to fate.\n\nFate vs. Free Will: The Aeneid explores the tension between fate and free will. While fate is predetermined, characters have the freedom to choose their actions. However, their choices ultimately align with fate's plan.\n\nConclusion: In the Aeneid, the gods and fate are central to the narrative — they guide Aeneas' journey, determine the outcome of events, and underscore the importance of duty and destiny."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "12",
+    "question": "Use the questions below to show your understanding of the passage that follow:\n\n(a) What type(s) of images are presented in the passage?\n(b) Bring out the conflict(s) discernible in the passage.\n(c) Give a character sketch of the woman described in the passage.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'She suffered constantly, feeling herself destined for all delicacies and luxuries...' by Guy de Maupassant. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(a) Types of images presented:\n- Visual Images: The passage describes the appearance of the apartment — 'drab walls, threadbare furniture, ugly curtains' — creating a vivid picture of the grim surroundings.\n- Auditory Images: The passage evokes sound through the description of the 'young country girl who did her simple housework.'\n- Tactile Images: The passage describes the texture of furnishings — 'threadbare furniture' and 'high bronze floor lamps.'\n- Olfactory Images: The mention of 'perfume of dainty private rooms' appeals to the sense of smell.\n\n(b) Conflicts discernible:\n- Internal Conflict: The woman experiences internal conflict — she feels destined for a life of luxury but is trapped in poverty. She suffers from dissatisfaction and despair, constantly yearning for a different life.\n- Social Conflict: The passage highlights the conflict between her aspirations and her social reality — the gap between her desires and her situation. She compares herself with others and feels envious.\n\n(c) Character sketch of the woman:\nThe woman is portrayed as dissatisfied, dreaming, and yearning for a life of luxury. She is sensitive to her surroundings and desires material comfort and social status. Her character is defined by her dreams of wealth and elegance, which contrast sharply with her mundane reality. She is imaginative and romantic, but also unhappy and frustrated."
+  },
+  {
+    "subject": "Literature",
+    "year": 2019,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "13",
+    "question": "Using the poem below; explain the use of the words 'only' and 'little' in relation to the age of the persona. Describe his/her perception of time and life.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Loveliest of trees, the cherry now...' by A.E. Housman. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "The words 'only' and 'little' are used to emphasize the limited time the persona has left to live and his perception of time and life.\n\nUse of 'only': In the line, 'It only leaves me fifty more,' the word 'only' suggests that the persona feels he has relatively little time left. Fifty years, from the perspective of a 20-year-old, seems like a long time, but the persona uses 'only' to convey that life is short, and fifty years can pass quickly. It reflects a sense of urgency and the awareness of mortality.\n\nUse of 'little': In the line, 'Fifty springs are little room,' the word 'little' emphasizes that fifty years is insufficient time to fully appreciate life. The persona feels that life is too short to see all the beauty the world has to offer. 'Little room' suggests confinement and the limited opportunity to experience life fully.\n\nPerception of time and life: The persona's perception of time and life is that life is brief and precious. He is aware of his mortality and the passing of time. He values the beauty of nature and wants to make the most of the time he has left. The poem reflects a sense of urgency, appreciation, and melancholy — a desire to enjoy life while it lasts.\n\nIn conclusion, the persona's use of 'only' and 'little' reflects an awareness of the brevity of life and the need to seize the moment and appreciate the beauty around him."
+  }
+]

@@ -1,0 +1,920 @@
+[
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The whole excerpt exemplifies the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 4, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "anecdote.",
+      "short story.",
+      "allegory.",
+      "proverb."
+    ],
+    "answer": "A",
+    "explanation": "The excerpt exemplifies the use of anecdote — Desdemona tells a brief story about her mother's maid Barbara, who had a song of willow and died singing it. It is a short, personal story used to express her own sorrow."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The speaker in this excerpt is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 4, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Othello.",
+      "Emilia.",
+      "Desdemona.",
+      "Iago."
+    ],
+    "answer": "C",
+    "explanation": "The speaker is Desdemona — she is talking about the song of willow and its connection to Barbara's tragic love story, foreshadowing her own fate."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The speaker is discussing with",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 4, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Iago.",
+      "Roderigo.",
+      "Emilia.",
+      "Othello."
+    ],
+    "answer": "C",
+    "explanation": "The speaker is discussing with Emilia — Desdemona is speaking to Emilia about the song of willow, sharing her sadness and melancholy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The poem that celebrates historical events, the heroic achievements, the mores and the civilizations of a race is known as",
+    "options": [
+      "ballad.",
+      "epic.",
+      "metaphysical poetry.",
+      "sonnets."
+    ],
+    "answer": "B",
+    "explanation": "An epic poem celebrates historical events, heroic achievements, the mores, and the civilizations of a race. It is a long narrative poem that tells the story of a hero and his deeds. Examples include Homer's Iliad and Milton's Paradise Lost."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The inner working of a character's mind is portrayed through",
+    "options": [
+      "transferred epithet.",
+      "poetic justice.",
+      "pathetic fallacy.",
+      "stream of consciousness."
+    ],
+    "answer": "D",
+    "explanation": "Stream of consciousness is a narrative technique that portrays the inner workings of a character's mind — their thoughts, feelings, and impressions in a continuous flow."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Temporal setting situates a work of art within a",
+    "options": [
+      "location.",
+      "time.",
+      "locale.",
+      "space."
+    ],
+    "answer": "B",
+    "explanation": "Temporal setting situates a work of art within a time — it refers to the historical period, time of day, or season in which the story takes place. Location refers to the place (spatial setting)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "A short story that teaches moral lesson is",
+    "options": [
+      "proverb.",
+      "epigram.",
+      "parable.",
+      "anecdote."
+    ],
+    "answer": "C",
+    "explanation": "A parable is a short story that teaches a moral lesson — it is a simple narrative used to illustrate a spiritual or moral truth. The parables of Jesus are well-known examples."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "An elaborate classical form in which one shepherd-singer laments the death of another is called",
+    "options": [
+      "pastoral elegy.",
+      "pastoral romance.",
+      "ballad.",
+      "epic."
+    ],
+    "answer": "A",
+    "explanation": "A pastoral elegy is an elaborate classical form in which one shepherd-singer laments the death of another. It is a type of pastoral poetry that mourns a loss. Milton's 'Lycidas' is a famous example."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "All these are kinds of prose except",
+    "options": [
+      "essay.",
+      "memoir.",
+      "biography.",
+      "scansion."
+    ],
+    "answer": "D",
+    "explanation": "Scansion is NOT a kind of prose — it is the analysis of poetic metre and rhythm. Essay, memoir, and biography are all forms of prose."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Identify the major playwright from the following options.",
+    "options": [
+      "Chinua Achebe.",
+      "Wole Soyinka.",
+      "Ngozi Adichie.",
+      "Helon Habila."
+    ],
+    "answer": "B",
+    "explanation": "Wole Soyinka is a major playwright — he is a Nigerian playwright, poet, and novelist, and the first African to win the Nobel Prize in Literature. Achebe, Adichie, and Habila are primarily novelists."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The reversal of fortune or peripetia in Greek tragedy often depends on",
+    "options": [
+      "hubris.",
+      "catharsis.",
+      "hamartia.",
+      "anagnorisis."
+    ],
+    "answer": "C",
+    "explanation": "The reversal of fortune (peripeteia) in Greek tragedy often depends on hamartia — the tragic flaw or error in judgment that leads to the hero's downfall. Hubris is a form of hamartia, but hamartia is the broader concept."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "What differentiates bathos from pathos?",
+    "options": [
+      "Bathos is climax, pathos is anticlimax.",
+      "Pathos is sympathy, bathos is pity.",
+      "Pathos is pity, bathos is sympathy.",
+      "Bathos is anticlimax, pathos is pity."
+    ],
+    "answer": "D",
+    "explanation": "Bathos is anticlimax — a sudden shift from the serious to the trivial. Pathos is pity — the quality of evoking sympathy or sorrow. The correct differentiation is that bathos is anticlimax, while pathos is pity."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Othello's portrayal of Iago as 'honest creature' exemplifies the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello. Please refer to original past question paper.",
+    "options": [
+      "dramatic irony.",
+      "verbal irony.",
+      "situational irony.",
+      "Socratic irony."
+    ],
+    "answer": "A",
+    "explanation": "Othello's portrayal of Iago as 'honest creature' exemplifies dramatic irony — the audience knows that Iago is treacherous, but Othello believes him to be honest. This creates tension as the audience watches Othello being deceived."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "'Why did I marry?' exemplifies the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello. Please refer to original past question paper.",
+    "options": [
+      "metaphor.",
+      "irony.",
+      "paradox.",
+      "rhetorical question."
+    ],
+    "answer": "D",
+    "explanation": "'Why did I marry?' exemplifies the use of a rhetorical question — Othello asks the question not to seek an answer but to express his regret and doubt. It is a rhetorical device used for emphasis."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Conceit is an extension of",
+    "options": [
+      "simile.",
+      "paradox.",
+      "personification.",
+      "metaphor."
+    ],
+    "answer": "D",
+    "explanation": "Conceit is an extension of metaphor — it is an elaborate, extended metaphor that compares two very dissimilar things in a surprising way. It was popular in metaphysical poetry (e.g., John Donne)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "A fictional character that is drawn from some easily recognizable stereotype is the",
+    "options": [
+      "stock.",
+      "fictional.",
+      "round.",
+      "antagonist."
+    ],
+    "answer": "A",
+    "explanation": "A stock character is drawn from easily recognizable stereotypes — they are predictable, one-dimensional figures like the mad scientist, the greedy businessman, or the dumb blonde. They serve a specific function in the narrative."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "'Falsely true' is an example of",
+    "options": [
+      "paradox.",
+      "metaphor.",
+      "oxymoron.",
+      "personification."
+    ],
+    "answer": "C",
+    "explanation": "'Falsely true' is an example of an oxymoron — a figure of speech that combines contradictory terms (false and true). It creates a striking effect by juxtaposing opposites."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The following are figures of sound except",
+    "options": [
+      "pun.",
+      "parallelism.",
+      "consonance.",
+      "assonance."
+    ],
+    "answer": "A",
+    "explanation": "Pun is NOT a figure of sound — it is a play on words based on multiple meanings. Parallelism, consonance, and assonance are all figures of sound (repetition of sounds or structures)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The literary device that creates a discrepancy between what is said and what is actually meant is",
+    "options": [
+      "situational irony.",
+      "verbal irony.",
+      "dramatic irony.",
+      "cosmic irony."
+    ],
+    "answer": "B",
+    "explanation": "Verbal irony creates a discrepancy between what is said and what is actually meant — the speaker says one thing but intends the opposite. Sarcasm is a form of verbal irony."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "An inscription on the tomb of a dead person is called?",
+    "options": [
+      "Eulogy.",
+      "Epitaph.",
+      "Salutation.",
+      "Reference."
+    ],
+    "answer": "B",
+    "explanation": "An epitaph is an inscription on the tomb of a dead person. It is a brief statement or poem that commemorates the deceased."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "'She went into the freezing fire' indicates the use of",
+    "options": [
+      "irony.",
+      "oxymoron.",
+      "paradox.",
+      "simile."
+    ],
+    "answer": "C",
+    "explanation": "'She went into the freezing fire' indicates the use of paradox — a statement that appears self-contradictory but contains a deeper truth. It suggests a painful or contradictory experience."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Medieval English poetry was predominantly a/an",
+    "options": [
+      "product of Christian religion and doctrine.",
+      "period of rebirth of culture.",
+      "era of intellectual explorations.",
+      "product pagan society."
+    ],
+    "answer": "A",
+    "explanation": "Medieval English poetry was predominantly a product of Christian religion and doctrine — it was influenced by Christian beliefs, morality, and teachings. The Renaissance was the period of rebirth of culture."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The poem suggests that service to the fatherland is equivalent to",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Many years on wheels...' Please refer to original past question paper.",
+    "options": [
+      "patriotism.",
+      "servitude.",
+      "altruism.",
+      "law abiding."
+    ],
+    "answer": "A",
+    "explanation": "The poem suggests that service to the fatherland is equivalent to patriotism — the persona has served faithfully for many years, retiring as a 'Freeman eligible for his country's services.' Service to one's country is an act of patriotism."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The persona 'pummeled his boozy throat in obedience to duty rules and regulations' suggests",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Many years on wheels...' Please refer to original past question paper.",
+    "options": [
+      "denial and discipline.",
+      "obedience and dutifulness.",
+      "law abiding.",
+      "drunkenness."
+    ],
+    "answer": "B",
+    "explanation": "The expression suggests obedience and dutifulness — the persona is loyal to duty, rules, and regulations. 'Boozy throat' may refer to consuming alcohol, but the emphasis is on the persona's obedient service."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "In appreciating poetry and prose, identify the group that represents direct analysis of texts.",
+    "options": [
+      "Content and imagery.",
+      "Symbols and imageries.",
+      "Content and structure.",
+      "Imagery and techniques."
+    ],
+    "answer": "C",
+    "explanation": "Content and structure represent direct analysis of texts — they focus on what the text says (content) and how it is organized (structure). This approach examines the text's internal components."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The first step in analyzing an unseen passage is",
+    "options": [
+      "analysing it based on your residual knowledge.",
+      "reading it at least two times.",
+      "concentrating on the imagery.",
+      "using a known analogy to analyse the question."
+    ],
+    "answer": "B",
+    "explanation": "The first step in analyzing an unseen passage is reading it at least two times — this ensures a basic understanding of the text before attempting analysis. Reading multiple times helps grasp meaning and identify devices."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "What poetic structure is the above excerpt?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from John Vanburgh's 'The Provoked Wife.' Please refer to original past question paper.",
+    "options": [
+      "Sonnet.",
+      "Couplet.",
+      "Quatrain.",
+      "Stanza."
+    ],
+    "answer": "C",
+    "explanation": "The poetic structure is a quatrain — it is a four-line stanza. The excerpt has four lines, making it a quatrain. A sonnet has 14 lines, and a couplet has two lines."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "The rhyming scheme is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from John Vanburgh's 'The Provoked Wife.' Please refer to original past question paper.",
+    "options": [
+      "abab.",
+      "aacc.",
+      "abcb.",
+      "aabb."
+    ],
+    "answer": "A",
+    "explanation": "The rhyming scheme is abab — lines 1 and 3 rhyme, and lines 2 and 4 rhyme. The rhyme scheme follows the alternate rhyme pattern."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The rhyming scheme in the excerpt above follows the structure of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from John Vanburgh's 'The Provoked Wife.' Please refer to original past question paper.",
+    "options": [
+      "quatrain.",
+      "sonnet.",
+      "couplet.",
+      "onomatopoeia."
+    ],
+    "answer": "A",
+    "explanation": "The rhyming scheme follows the structure of a quatrain — a four-line stanza with an abab rhyme scheme. Quatrain is the stanzaic structure; onomatopoeia is a sound device."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Characterization in a novel means the",
+    "options": [
+      "expression of conflict between characters.",
+      "mode of presentation of the fictional individuals.",
+      "minor and major characters in the work.",
+      "peculiar mannerisms of the narrator."
+    ],
+    "answer": "B",
+    "explanation": "Characterization is the mode of presentation of the fictional individuals — it is the way an author develops and portrays characters through description, dialogue, action, and interaction."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The distinguishing feature of the short story is its",
+    "options": [
+      "compact plot.",
+      "narrative form.",
+      "prosaic conception.",
+      "climatic stage."
+    ],
+    "answer": "A",
+    "explanation": "The distinguishing feature of the short story is its compact plot — it is a brief work of fiction with a tight, focused plot, limited characters, and a single effect. It is designed to be read in one sitting."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "A literary composition in three parts is a",
+    "options": [
+      "trilogy.",
+      "trio.",
+      "trialogue.",
+      "colloquy."
+    ],
+    "answer": "A",
+    "explanation": "A literary composition in three parts is a trilogy — it is a set of three related works that together form a larger narrative or thematic whole. Examples include The Lord of the Rings."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The imagery in stanza 1 above indicates",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Housman's 'To an Athlete Dying Young.' Please refer to original past question paper.",
+    "options": [
+      "elation.",
+      "emotion.",
+      "acclamation.",
+      "probation."
+    ],
+    "answer": "A",
+    "explanation": "The imagery in stanza 1 indicates elation — the crowd cheers the athlete, chairs him shoulder-high, and celebrates his victory. The mood is triumphant and joyful."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The second stanza above suggests",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Housman's 'To an Athlete Dying Young.' Please refer to original past question paper.",
+    "options": [
+      "house launching.",
+      "burial.",
+      "celebration.",
+      "award."
+    ],
+    "answer": "B",
+    "explanation": "The second stanza suggests burial — the athlete is now dead, and 'shoulder-high we bring you home' refers to carrying his body to the grave. 'Townsman of a stiller town' suggests he is now in the town of the dead."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Form and content criticism is",
+    "options": [
+      "pragmatic.",
+      "textual.",
+      "expressive.",
+      "reader-response."
+    ],
+    "answer": "B",
+    "explanation": "Form and content criticism is textual criticism — it focuses on the text itself, analyzing its form, structure, language, and meaning. Pragmatic criticism focuses on the audience, expressive on the author, and reader-response on the reader."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The villain usually causes",
+    "options": [
+      "laughter to the antagonist.",
+      "conflict to the protagonist.",
+      "crisis to the antagonist.",
+      "relief to the protagonist."
+    ],
+    "answer": "B",
+    "explanation": "The villain usually causes conflict to the protagonist — the villain creates obstacles, challenges, and opposition for the protagonist, driving the conflict and tension of the plot."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Chorus, in the Greek tragedies, performed the singular role of a",
+    "options": [
+      "translator.",
+      "commentator.",
+      "director.",
+      "coordinator."
+    ],
+    "answer": "B",
+    "explanation": "In Greek tragedies, the chorus performed the singular role of a commentator — they observed the action, expressed moral views, and commented on the events, providing background information and emotional resonance."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The art by which a lone character utters his or her thoughts out loud is a/an",
+    "options": [
+      "aside.",
+      "soliloquy.",
+      "monologue.",
+      "dialogue."
+    ],
+    "answer": "B",
+    "explanation": "A soliloquy is the art by which a lone character utters his or her thoughts out loud — the character speaks alone on stage, revealing inner thoughts and emotions. An aside is a brief comment to the audience."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Blank verse is",
+    "options": [
+      "unrhymed.",
+      "unrhythmic.",
+      "unmetrical.",
+      "unstressed."
+    ],
+    "answer": "A",
+    "explanation": "Blank verse is unrhymed iambic pentameter — it has a regular meter (iambic pentameter) but no rhyme. Free verse has neither regular meter nor rhyme. Blank verse is common in Shakespeare's plays."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "A literary description that appeals to the five human senses is",
+    "options": [
+      "symbolism.",
+      "imagery.",
+      "motif.",
+      "epigram."
+    ],
+    "answer": "B",
+    "explanation": "Imagery is a literary description that appeals to the five human senses — it creates vivid sensory experiences through language, allowing readers to see, hear, touch, taste, and smell the world of the text."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The type of poetry composed and transmitted by means of recitation is said to be",
+    "options": [
+      "aural.",
+      "rural.",
+      "oral.",
+      "pastoral."
+    ],
+    "answer": "C",
+    "explanation": "Oral poetry is composed and transmitted by means of recitation — it is performed verbally and passed down through generations by word of mouth. Aural refers to sound, rural to the countryside, and pastoral to shepherds."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "An interruption of a chronological narrative to relate an event that has already occurred is the function of",
+    "options": [
+      "foreshadowing.",
+      "in media res.",
+      "flashback.",
+      "surprise."
+    ],
+    "answer": "C",
+    "explanation": "Flashback is the interruption of a chronological narrative to relate an event that has already occurred. It provides background information and context."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "'old black ram' and 'white ewe' refer to",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 1, Scene 1). Please refer to original past question paper.",
+    "options": [
+      "Iago and Emilia.",
+      "Othello and Desdemona.",
+      "Cassio and Bianca.",
+      "Brabantio and Desdemona."
+    ],
+    "answer": "B",
+    "explanation": "'old black ram' and 'white ewe' refer to Othello and Desdemona — Iago uses racist and dehumanizing language to describe Othello (black ram) and Desdemona (white ewe), emphasizing the perceived inappropriateness of their marriage."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Who is the speaker here?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 1, Scene 1). Please refer to original past question paper.",
+    "options": [
+      "Cassio.",
+      "Roderigo.",
+      "Brabantio",
+      "Iago."
+    ],
+    "answer": "D",
+    "explanation": "The speaker is Iago — he is the one who uses the crude and racist language to describe Othello and Desdemona's relationship, waking Brabantio to tell him about his daughter's elopement."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Speaker A is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 3, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Bianca.",
+      "Iago.",
+      "Emilia.",
+      "Cassio."
+    ],
+    "answer": "B",
+    "explanation": "Speaker A is Iago — he demands the handkerchief from Emilia ('A good wrench; give it me'). He wants to use it in his plot against Othello."
+},
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Speaker B is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 3, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Cassio.",
+      "Desdemona.",
+      "Othello.",
+      "Emilia."
+    ],
+    "answer": "D",
+    "explanation": "Speaker B is Emilia — she has taken the handkerchief and is questioning Iago about his intentions. She is suspicious and hesitant to give it to him."
+},
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "What is the thing being discussed?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Excerpt from Shakespeare's Othello (Act 3, Scene 3). Please refer to original past question paper.",
+    "options": [
+      "Sword.",
+      "Handkerchief.",
+      "Money.",
+      "Gun."
+    ],
+    "answer": "B",
+    "explanation": "The thing being discussed is the handkerchief — Emilia has taken the handkerchief that Desdemona dropped, and Iago demands it to use in his plot against Othello."
+},
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The imitation of the style of another author in a funny and exaggerated manner is a/an",
+    "options": [
+      "innuendo.",
+      "epic.",
+      "irony.",
+      "parody."
+    ],
+    "answer": "D",
+    "explanation": "Parody is the imitation of the style of another author in a funny and exaggerated manner. It is a form of humorous imitation that often mocks the original work for comic effect."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Acts are often subdivided into",
+    "options": [
+      "actions.",
+      "plots.",
+      "scenes.",
+      "paragraphs."
+    ],
+    "answer": "C",
+    "explanation": "Acts are often subdivided into scenes — a play is divided into acts, and each act is further divided into scenes that mark changes in location or time."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Two major Elizabethan dramatists are:",
+    "options": [
+      "John Lilly and John Dryden.",
+      "Oliver Goldsmith and Oliver Cromwell.",
+      "Christopher Marlowe and William Shakespeare.",
+      "Arthur Miller and John O'Casey."
+    ],
+    "answer": "C",
+    "explanation": "Christopher Marlowe and William Shakespeare are two major Elizabethan dramatists. Shakespeare and Marlowe were contemporaries and giants of Elizabethan theatre. John Dryden and Arthur Miller are from later periods."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "The Classical Tradition",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss Aristophanes' Lysistrata as a satire.",
+    "options": [],
+    "modelAnswer": "Aristophanes' Lysistrata is a powerful satire that uses comedy to critique the Peloponnesian War and the patriarchal society of ancient Athens.\n\nSatirical Critique of War: The play satirizes the absurdity of war — the men are portrayed as foolish and incapable of ending the conflict, while the women demonstrate wisdom and resolve. The play mocks the futility of prolonged war.\n\nGender Roles: The play satirizes traditional gender roles — women are portrayed as intelligent and capable of making political decisions, while men are shown as weak and easily manipulated. This reversal of roles is a comedic critique of patriarchy.\n\nSex Strike as Satirical Device: The women's sex strike is a satirical device used to force peace. The absurdity of the situation — women using their bodies to control men — highlights the irrationality of war and the power of collective action.\n\nPolitical Satire: The play is a political satire — it criticizes the Athenian leaders who prolong the war for their own benefit. It suggests that the women are more rational and patriotic than the men.\n\nComedy as Social Commentary: Aristophanes uses comedy to comment on serious issues — the play exposes the follies of war and the foolishness of men who refuse to listen to reason. The satire encourages the audience to reflect on the absurdity of their actions.\n\nConclusion: Lysistrata is a classic satire that uses humour, exaggeration, and irony to critique war, gender roles, and the political leadership of ancient Athens."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Discuss the failure of the democratic system as a cause of social problems in Afolayan's Once Upon an Elephant.",
+    "options": [],
+    "modelAnswer": "In Once Upon an Elephant, Bosede Afolayan portrays the failure of the democratic system as a major cause of social problems.\n\nCorruption and Greed: The play depicts a democratic system that is corrupt and self-serving. Political leaders are more interested in enriching themselves than in serving the people. Corruption leads to poverty, inequality, and social injustice.\n\nLeadership Failure: The play exposes the failure of political leadership — leaders are incompetent, dishonest, and indifferent to the suffering of the people. The democratic system fails to hold them accountable.\n\nLack of Accountability: The democratic system is portrayed as lacking accountability — politicians are not answerable to the people. This creates a culture of impunity and exploitation.\n\nSocial Injustice: The failure of democracy leads to social injustice — the rich become richer, and the poor become poorer. The gap between the wealthy and the poor widens, causing resentment and conflict.\n\nDisillusionment: The play shows the disillusionment of the masses — the people are frustrated with broken promises and empty rhetoric. They lose faith in the democratic system.\n\nConclusion: Once Upon an Elephant critiques the failure of democracy and its role in creating social problems. The play exposes the corruption, incompetence, and injustice that undermine democracy in post-colonial Africa."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "State and explain any THREE themes in Warri Nor Dey Carry Last.",
+    "options": [],
+    "modelAnswer": "Warri Nor Dey Carry Last explores several themes related to life in the Niger Delta.\n\n1. Corruption and Greed: The novel exposes the corruption and greed that pervade Nigerian society. Characters engage in fraudulent activities, exploit others, and pursue wealth at any cost. The theme critiques the moral decay in society.\n\n2. Survival and Resilience: The characters are driven by the need to survive in a harsh and unforgiving environment. They demonstrate resilience and determination despite challenges. The novel celebrates the spirit of survival.\n\n3. Urban Life and Disillusionment: The novel explores the struggles of urban life in Warri — poverty, unemployment, and the search for a better life. The characters face disillusionment as their dreams are shattered by harsh realities.\n\n4. Gender Relations: The novel examines gender dynamics — women are often marginalized, exploited, or objectified. The theme explores the role of women in a patriarchal society.\n\n5. Social Injustice: The novel highlights social injustice — the rich exploit the poor, and the powerful oppress the weak. The theme critiques the inequality and injustice in society.\n\nConclusion: Warri Nor Dey Carry Last explores themes of corruption, survival, urban disillusionment, gender relations, and social injustice, reflecting the realities of life in the Niger Delta."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Discuss Charlotte Bronte's Jane Eyre as a gothic novel.",
+    "options": [],
+    "modelAnswer": "Jane Eyre contains several elements of the gothic novel, which contribute to its dark, mysterious, and atmospheric tone.\n\nHaunted Setting: Thornfield Hall is a dark, mysterious, and isolated mansion. It has secret rooms, eerie sounds, and a sense of foreboding. The gothic setting creates an atmosphere of mystery and suspense.\n\nThe Madwoman in the Attic: Bertha Mason, Rochester's insane wife, is a classic gothic figure. She is hidden in the attic, representing the secrets and horrors of the past. Her presence adds a supernatural and terrifying element to the novel.\n\nSupernatural Elements: The novel includes supernatural elements — Jane hears Rochester's voice calling her from across the distance, which is a supernatural event. There is also a sense of fate and destiny guiding Jane's life.\n\nDark Secrets: The novel is built on dark secrets — Rochester's secret marriage to Bertha is a gothic plot device. The revelation of the secret creates shock and drama.\n\nEmotional Intensity: The novel has gothic emotional intensity — Jane's passion, despair, and psychological turmoil are expressed with gothic fervour. The novel explores themes of madness, obsession, and moral struggle.\n\nIsolation: Jane is often isolated and alone — she is orphaned, abandoned, and solitary. This isolation is a gothic motif.\n\nConclusion: Jane Eyre incorporates gothic elements such as haunted settings, dark secrets, supernatural events, and emotional intensity. These elements contribute to the novel's enduring appeal and its status as a classic of the gothic tradition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "African Poetry (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Discuss FIVE ways Oswald Mtshali portrays horror in 'Nightfall in Soweto.'",
+    "options": [],
+    "modelAnswer": "In 'Nightfall in Soweto,' Oswald Mtshali portrays horror in several ways:\n\n1. Imagery of Violence: Mtshali uses vivid images of violence — blood, guns, and death. The poem describes the brutal reality of life under apartheid, where violence is a daily occurrence.\n\n2. Darkness and Fear: The poem uses images of darkness to evoke fear and dread. Nightfall symbolizes the oppression and terror of apartheid. The darkness is menacing and threatening.\n\n3. Sounds of Terror: The poem uses auditory imagery — screams, gunshots, and cries — to create a sense of horror. The sounds evoke fear and distress.\n\n4. Inhumanity: The poem portrays the inhumanity of apartheid — people are dehumanized and treated as animals. The brutality of the regime is horrifying and unjust.\n\n5. Fear and Helplessness: The poem conveys the fear and helplessness of the people — they are trapped in a system of oppression. The horror is psychological as well as physical.\n\n6. Death and Destruction: The poem portrays death and destruction — people die, homes are destroyed, and communities are shattered. The horror is in the waste of human life.\n\nConclusion: Mtshali uses imagery, sounds, and portrayals of inhumanity and fear to convey the horror of apartheid in 'Nightfall in Soweto.' The poem is a powerful critique of oppression."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Examine the inevitability of death as portrayed in Thomas Gray's 'Elegy Written in a Country Churchyard.'",
+    "options": [],
+    "modelAnswer": "In Thomas Gray's 'Elegy Written in a Country Churchyard,' death is portrayed as an inevitable and universal experience.\n\nUniversality of Death: Gray emphasizes that death comes to all — the rich and poor, the famous and obscure. The poem reflects on the graves of the common people who lived simple lives and were forgotten. Death is a leveller.\n\nThe Churchyard Setting: The churchyard setting evokes mortality and the inevitability of death. The graves remind the reader of the shortness of life and the certainty of death.\n\nReflection on Mortality: The poem reflects on the mortality of all humans — the poet considers his own death and the legacy he will leave. He acknowledges that fame and ambition are fleeting.\n\nThe 'Paths of Glory': The phrase 'the paths of glory lead but to the grave' emphasizes the inevitability of death — even the most famous and powerful end up in the grave. Death is the ultimate destination.\n\nElegiac Tone: The elegiac tone conveys sadness and acceptance of death. The poem mourns the unfulfilled potential of the common people and reflects on the fragility of life.\n\nThe Cycle of Life and Death: Gray presents death as a natural part of life — the cycle of birth, life, and death is inevitable. The poem encourages reflection on mortality.\n\nConclusion: Gray portrays death as inevitable and universal — a leveller that claims all, regardless of status. The elegy encourages reflection on mortality and the fleeting nature of life."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Read the passage below and answer the questions that follow:\n\n(i) Describe the point of view employed in the narration\n(ii) Discuss the cause of conflict in the excerpt\n(iii) Apply objective criticism in discussing the portrayal of events and emotions in the excerpt.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage from Charlotte Bronte's Jane Eyre. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(i) Point of View: The passage employs the first-person point of view — Jane Eyre is the narrator, speaking as 'I.' The reader experiences events through her perspective and gains access to her thoughts and emotions.\n\n(ii) Cause of Conflict: The conflict arises from Jane's resistance to the authority of Mrs. Reed and her treatment as an inferior. Jane's defiance and anger are triggered by the mistreatment from the Reed family. The conflict is a struggle between Jane's desire for dignity and the oppression she faces.\n\n(iii) Objective Criticism: Objective criticism focuses on the text itself — it analyzes the characters, events, and language without reference to the author's life or external context. In this excerpt, the portrayal of Jane's emotional intensity and defiance is achieved through vivid language and imagery. The dialogue reveals the power dynamics, and the use of first-person narration allows the reader to experience Jane's anger and resistance. The emotions are portrayed with psychological depth, showing Jane's desperation and resolve."
+  },
+  {
+    "subject": "Literature",
+    "year": 2025,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Read the poem below and answer the questions that follow:\n\n(i) What kind of love relationship is described in the poem?\n(ii) How does the imagery in the third stanza enhance the meaning of the poem?\n(iii) Comment on the mood and tone of the poem.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Come away, my love from streets...' by Joseph Kuriuki. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(i) Kind of love relationship: The poem describes a secret, forbidden, or marginalized love relationship — the lovers face 'unkind eyes' and 'shop windows reflect our difference.' They seek refuge in a private, faithful room away from societal judgment. It suggests an interracial or socially disapproved relationship.\n\n(ii) Imagery in the third stanza: The third stanza uses imagery of merging shadows, joined hands, and united breaths to symbolize the lovers' unity and intimacy. The merging of two shadows into one and the joining of hands represent their emotional and physical union. The 'unchallenged harmony' of the piano suggests a sense of peace and fulfilment when they are together.\n\n(iii) Mood and Tone: The mood is intimate, tender, and passionate — there is a sense of safety and warmth in the private room. The tone is romantic, loving, and somewhat defiant against societal prejudice. The poem conveys a desire for connection and escape from external judgment."
+  }
+]

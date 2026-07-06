@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "In the circular flow of income analysis, the three sector model consists of",
+    "options": [
+      "households, firms and the external sector.",
+      "household, firms and the government.",
+      "government, firms and the external sector.",
+      "households, firms and the financial sector."
+    ],
+    "answer": "B",
+    "explanation": "The three-sector model consists of households, firms, and the government. The external sector is added in the four-sector (open economy) model, and the financial sector is included in some models but is not the standard three-sector model."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "A type of investment that does not depend on income is called",
+    "options": [
+      "induced investment.",
+      "depreciation.",
+      "autonomous investment.",
+      "autonomous consumption."
+    ],
+    "answer": "C",
+    "explanation": "Autonomous investment is independent of the level of income. It is determined by factors such as technological progress, population growth, and business expectations, not by current income. Induced investment varies with income."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The motives for holding money was postulated by",
+    "options": [
+      "Richard Lipsey.",
+      "John Keynes.",
+      "David Ricardo.",
+      "Adam Smith."
+    ],
+    "answer": "B",
+    "explanation": "John Maynard Keynes postulated the three motives for holding money: transactionary, precautionary, and speculative. This is part of his Liquidity Preference Theory."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Population density is calculated by",
+    "options": [
+      "dividing the total land area by the number of people.",
+      "dividing the number of people living in an urban area by the total land area.",
+      "dividing the number of people by the total land area.",
+      "multiplying the number of people by the total land area."
+    ],
+    "answer": "C",
+    "explanation": "Population density is calculated by dividing the total number of people by the total land area (people per square kilometre or mile)."
+  },
+    {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "One of the following is studied in microeconomics",
+    "options": [
+      "National income.",
+      "Unemployment.",
+      "Inflation.",
+      "Consumer behavior."
+    ],
+    "answer": "D",
+    "explanation": "Microeconomics studies individual units — households, firms, and specific markets. Consumer behavior is a microeconomic topic. National income, unemployment, and inflation are macroeconomic variables."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "A fixed price below equilibrium is known as",
+    "options": [
+      "price ceiling.",
+      "price floor.",
+      "price fraction.",
+      "price control."
+    ],
+    "answer": "A",
+    "explanation": "A price ceiling is a legally imposed maximum price set below the equilibrium price. It creates a shortage. A price floor is a minimum price set above equilibrium, creating a surplus."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Essentially, a decline in inequality, poverty and unemployment depicts rising",
+    "options": [
+      "economic development.",
+      "poverty rate.",
+      "economic growth.",
+      "national economic agenda."
+    ],
+    "answer": "A",
+    "explanation": "Economic development is a broad concept that includes improvements in welfare — reductions in inequality, poverty, and unemployment. Economic growth alone does not guarantee these improvements."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A project is produced and generates a negative externality if",
+    "options": [
+      "social cost is greater than social benefits.",
+      "private cost is less than social cost.",
+      "social cost is less than private cost.",
+      "private cost is greater than private benefit."
+    ],
+    "answer": "B",
+    "explanation": "A negative externality occurs when social cost (private cost + external cost) exceeds private cost. This means private cost is less than social cost, as the project imposes costs on third parties not reflected in the producer's private costs."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "If an increase in the price of commodity X leads to an increase in the quantity demanded of commodity Y, both commodities are referred to as",
+    "options": [
+      "necessity goods.",
+      "complementary goods.",
+      "substitute goods.",
+      "normal goods."
+    ],
+    "answer": "C",
+    "explanation": "If the price of X increases and the quantity demanded of Y increases, X and Y are substitutes. Consumers switch from X to Y when X becomes more expensive. The cross elasticity of demand is positive."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "An example of a trade union in Nigeria is",
+    "options": [
+      "Independent National Electoral Commission (INEC).",
+      "Organisation of Petroleum Exporting Countries (OPEC).",
+      "International Monetary Fund (IMF).",
+      "National Union of Road Transport Workers (NURTW)."
+    ],
+    "answer": "D",
+    "explanation": "The National Union of Road Transport Workers (NURTW) is a trade union in Nigeria. INEC is an electoral body, OPEC is an international cartel, and the IMF is an international financial institution."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Allocative efficiency is said to occur if the",
+    "options": [
+      "society produces the largest output.",
+      "total production is equal to total consumption.",
+      "output is produced using least-cost technique.",
+      "society satisfies all the households."
+    ],
+    "answer": "C",
+    "explanation": "Allocative efficiency occurs when resources are allocated to their most valued uses, and output is produced using the least-cost technique (productive efficiency). In perfect competition, allocative efficiency occurs when P = MC."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The liquidity trap occurs when the",
+    "options": [
+      "interest rate is very high.",
+      "interest rate is very low.",
+      "money supply is very high.",
+      "money supply is very low."
+    ],
+    "answer": "B",
+    "explanation": "A liquidity trap occurs when interest rates are so low that monetary policy becomes ineffective — people prefer to hold cash rather than bonds, as bond prices are high and capital losses are expected. This is a Keynesian concept."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "An increase in a country's output of goods and services alongside an increase in the standard of living of its citizens is often referred to as",
+    "options": [
+      "economic growth.",
+      "economic change.",
+      "economic development.",
+      "sustainable development."
+    ],
+    "answer": "C",
+    "explanation": "Economic development includes both increased output (growth) and improved standards of living (better health, education, reduced poverty). Economic growth alone focuses only on output increases."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Pollution from a factory is an example of",
+    "options": [
+      "externality.",
+      "internality.",
+      "ecology.",
+      "market failure."
+    ],
+    "answer": "A",
+    "explanation": "Pollution is a negative externality (external cost) — the factory imposes costs on third parties (health costs, environmental damage) that are not reflected in its private costs. This is also a form of market failure (option D is also correct, but externality is the most direct answer)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "The acceptance of unemployment for inflation explains",
+    "options": [
+      "Philips curve.",
+      "Hicks curve.",
+      "Engel's curve.",
+      "Indifference curve."
+    ],
+    "answer": "A",
+    "explanation": "The Phillips curve shows the inverse relationship between unemployment and inflation — policymakers accept higher inflation to achieve lower unemployment, and vice versa."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "In a country experiencing high unemployment and high inflation, there is what economist call",
+    "options": [
+      "stagflation.",
+      "repression.",
+      "depression.",
+      "trough."
+    ],
+    "answer": "A",
+    "explanation": "Stagflation is the combination of high inflation and high unemployment (or stagnant economic growth). It occurred in the 1970s due to supply-side shocks (oil price increases)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The re-exporting of goods imported from other countries is specifically called",
+    "options": [
+      "import trade.",
+      "export trade.",
+      "entrepot trade.",
+      "international trade."
+    ],
+    "answer": "C",
+    "explanation": "Entrepot trade (re-export trade) occurs when goods are imported and then re-exported without significant processing. Countries like Singapore and the UAE engage in entrepot trade."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Non-bank financial institutions do not do one of the following",
+    "options": [
+      "provide credit facilities.",
+      "sell shares.",
+      "accept deposits.",
+      "mint and print currencies."
+    ],
+    "answer": "D",
+    "explanation": "Only the central bank has the authority to mint and print currencies. Non-bank financial institutions (insurance companies, microfinance banks, pension funds) provide credit, sell shares, and may accept deposits, but they do not issue currency."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Commercial banks' reserves at the Central Bank have the effect of",
+    "options": [
+      "controlling credit and money supply.",
+      "discouraging banking operations.",
+      "reducing bank frauds.",
+      "advancing trade prospects."
+    ],
+    "answer": "A",
+    "explanation": "Reserve requirements (mandatory reserves held at the central bank) are used to control credit creation and the money supply. By changing reserve ratios, the central bank influences how much banks can lend."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "In a simple economy, all investments spending must come from",
+    "options": [
+      "savings.",
+      "debt issuance.",
+      "money creation.",
+      "foreign borrowing."
+    ],
+    "answer": "A",
+    "explanation": "In a simple closed economy without government or foreign trade, investment (I) must equal savings (S) at equilibrium. Savings provide the funds for investment. This is a fundamental identity in the circular flow model."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The Malthusian Theory of Population examines the link between increasing population and",
+    "options": [
+      "economic growth.",
+      "water supply.",
+      "food supply.",
+      "development."
+    ],
+    "answer": "C",
+    "explanation": "Malthusian theory focuses on the relationship between population growth and food supply. Malthus argued that population grows geometrically while food grows arithmetically, leading to famine and poverty."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Given that MPC is 3/5, find the value of MPS",
+    "options": [
+      "1",
+      "1/5",
+      "4/5",
+      "2/5"
+    ],
+    "answer": "D",
+    "explanation": "MPC + MPS = 1. If MPC = 3/5, then MPS = 1 - 3/5 = 2/5."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Over the years, dollar has remained stronger than naira in foreign exchange market. Who benefits most from this economic scenario?",
+    "options": [
+      "Nigerian consumers of foreign goods.",
+      "Nigerian consumers of Nigerian goods.",
+      "Foreign consumers of Nigerian goods.",
+      "Domestic consumers."
+    ],
+    "answer": "C",
+    "explanation": "A stronger dollar (or weaker naira) makes Nigerian goods cheaper for foreign consumers (in dollar terms). Therefore, foreign consumers of Nigerian goods benefit the most. Nigerian consumers of foreign goods lose because imports become more expensive."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "A perfectly competitive market should NOT be in business if",
+    "options": [
+      "MR=MC",
+      "P = MC",
+      "P < AVC",
+      "QD = QS"
+    ],
+    "answer": "C",
+    "explanation": "A firm should shut down in the short run if the market price is less than the minimum average variable cost (P < AVC), because it cannot cover its variable costs. MR=MC and P=MC are profit-maximizing conditions."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The main function of Economic Commission for Africa is",
+    "options": [
+      "promotion of the economic and social development of the African states.",
+      "establishment of Central Judicial and Economic System for Africa.",
+      "promotion of an egalitarian system of governance in Africa.",
+      "establishment of United Central Bank for Africa"
+    ],
+    "answer": "A",
+    "explanation": "The Economic Commission for Africa (ECA), a UN regional commission, promotes the economic and social development of African states, fosters regional integration, and provides policy advice and technical assistance."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The GDP of an economy in 2018 was $45billion. It became $43billion in 2019. What was the output growth rate in 2019?",
+    "options": [
+      "5.76%",
+      "4.29%",
+      "-4.44%",
+      "-3.65%"
+    ],
+    "answer": "C",
+    "explanation": "Growth rate = (GDP2019 - GDP2018) / GDP2018 × 100 = (43 - 45) / 45 × 100 = -2/45 × 100 = -4.44%."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Equilibrium of a consumer under indifference curve approach will be obtained where",
+    "options": [
+      "indifference curve is tangent to the budget line.",
+      "indifference curves is tangent to income.",
+      "income is tangent to aggregate demand.",
+      "income is equal to aggregate demand."
+    ],
+    "answer": "A",
+    "explanation": "Under the indifference curve approach, a consumer is in equilibrium at the point where the budget line is tangent to the highest attainable indifference curve. At this point, the slope of the budget line equals the slope of the indifference curve (MRS = price ratio)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Keynesian Consumption Conjecture advocates for",
+    "options": [
+      "reduction in expenditure when income rises.",
+      "increase in consumption when income rises.",
+      "increase in expenditure when income falls.",
+      "reduction in consumption when income is steady."
+    ],
+    "answer": "B",
+    "explanation": "Keynes argued that consumption increases as income increases, but not as much as the increase in income — i.e., the marginal propensity to consume (MPC) is between 0 and 1. This is the fundamental consumption function relationship."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The law of diminishing returns is responsible for",
+    "options": [
+      "increase in marginal cost in the short run.",
+      "decrease in average cost in the short run.",
+      "increase in total cost in the short run.",
+      "decrease in variable cost in the short run."
+    ],
+    "answer": "A",
+    "explanation": "The law of diminishing returns (diminishing marginal product) states that as more of a variable input is added to a fixed input, marginal product eventually falls. This causes marginal cost to rise in the short run."
+  },
+    {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Government saving is said to occur if",
+    "options": [
+      "taxes are as large as government expenditure.",
+      "taxes are less than government expenditure.",
+      "government operates a deficit budget.",
+      "government operates a surplus budget."
+    ],
+    "answer": "D",
+    "explanation": "Government saving occurs when government revenue exceeds government expenditure, resulting in a budget surplus. A deficit budget (expenditure > revenue) is dissaving."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Which of the following is TRUE about the balance of payments?",
+    "options": [
+      "It shows the financial position of the country as a whole.",
+      "It may show positive or negative balance.",
+      "It shows total assets and liabilities of the country.",
+      "It shows the destinations of goods and services."
+    ],
+    "answer": "B",
+    "explanation": "The balance of payments records all international transactions. It can show a surplus (positive balance) or a deficit (negative balance). It does not show a country's total financial position or assets/liabilities — that is the balance sheet or international investment position."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The population level at which a country achieves the highest level of per capita income and a low unemployment level is referred to as a/an",
+    "options": [
+      "growing population.",
+      "optimum population.",
+      "large population.",
+      "productive population."
+    ],
+    "answer": "B",
+    "explanation": "Optimum population is the level of population that, given the available resources and technology, maximizes per capita income and minimizes unemployment. It is the ideal population size for a country."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "In a freely fluctuating exchange rate, a country experiencing extreme outflow of its currencies will undergo currency",
+    "options": [
+      "depreciation.",
+      "appreciation.",
+      "stability.",
+      "swings."
+    ],
+    "answer": "A",
+    "explanation": "Under a freely floating exchange rate, an extreme outflow of a country's currency (capital flight) increases the supply of the currency in the foreign exchange market, causing it to depreciate."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Nigeria's 2022 budget had a deficit of about N6.25 trillion, indicating that",
+    "options": [
+      "government expenditure was less than the revenue generated.",
+      "government revenue exceeded its expenditure.",
+      "there was a balance between government revenue and expenditure.",
+      "government expenditure exceeded its revenue."
+    ],
+    "answer": "D",
+    "explanation": "A budget deficit occurs when government expenditure exceeds government revenue. A deficit of N6.25 trillion means the government spent N6.25 trillion more than it earned in revenue."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which type of migration is experienced in the Northern region of Nigeria as a result of insurgency?",
+    "options": [
+      "Mass migration.",
+      "Free migration.",
+      "Forced migration.",
+      "Nomadic migration."
+    ],
+    "answer": "C",
+    "explanation": "Forced migration occurs when people are compelled to leave their homes due to conflict, violence, or persecution. The insurgency in Nigeria's north-east has caused forced migration of millions of people."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Deflation is usually caused by",
+    "options": [
+      "a reduction in aggregate demand.",
+      "an increase in government spending.",
+      "an increase in aggregate demand.",
+      "an increase in money supply."
+    ],
+    "answer": "A",
+    "explanation": "Deflation is a persistent fall in the general price level. It is usually caused by a reduction in aggregate demand (too little spending in the economy), which may be due to recessions, tight monetary policy, or declining consumer confidence."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Mr. Steven's spending on consumption when his income is zero is called",
+    "options": [
+      "Disposable Income.",
+      "Autonomous Consumption.",
+      "Permanent Income.",
+      "Marginal Propensity to Consume."
+    ],
+    "answer": "B",
+    "explanation": "Autonomous consumption is the level of consumption that occurs even when income is zero. It is the intercept term in the consumption function (C = a + bY), where 'a' is autonomous consumption."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "According to Keynes, the motive which relates to making provision for the rainy day is known as",
+    "options": [
+      "speculative motive.",
+      "precautionary motive.",
+      "transaction motive.",
+      "investment motive."
+    ],
+    "answer": "B",
+    "explanation": "The precautionary motive for holding money is for unexpected emergencies or 'rainy days' — such as illness, accidents, or job loss. It is one of Keynes' three motives for holding money."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The rate at which the naira exchanges for the dollar is known as",
+    "options": [
+      "terms of trade.",
+      "balance of payment.",
+      "exchange rate.",
+      "interest rate."
+    ],
+    "answer": "C",
+    "explanation": "The exchange rate is the rate at which one currency can be exchanged for another (e.g., N/$). Terms of trade is the ratio of export prices to import prices. Balance of payments records all international transactions."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The consumption function shows the relationship between consumer expenditure and",
+    "options": [
+      "interest rate.",
+      "disposable income.",
+      "savings.",
+      "tax rate."
+    ],
+    "answer": "B",
+    "explanation": "The consumption function shows the relationship between consumer expenditure (C) and disposable income (Yd). It is typically written as C = a + bYd, where a is autonomous consumption and b is the marginal propensity to consume."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Banks create money when they",
+    "options": [
+      "accept deposits.",
+      "hold excess reserves.",
+      "make loans.",
+      "pay depositors."
+    ],
+    "answer": "C",
+    "explanation": "Banks create money through the credit creation process. When banks make loans, they create deposits (new money) in the borrower's account. This multiplies the money supply beyond the initial deposit base."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "A major disadvantage faced by firms with increased division of labour is",
+    "options": [
+      "improved craftsmanship.",
+      "reduced output.",
+      "monotony of work.",
+      "reduced interdependence between units."
+    ],
+    "answer": "C",
+    "explanation": "Division of labour leads to specialization, which can cause monotony, boredom, and job dissatisfaction. Workers perform repetitive tasks, which can reduce motivation and productivity in the long run."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The dependent population is",
+    "options": [
+      "population aged 0 -14 plus 65 years and above.",
+      "population aged 65 years and above.",
+      "population aged 65 years and above - aged 0 -14years.",
+      "population aged 65 years."
+    ],
+    "answer": "A",
+    "explanation": "The dependent population consists of those who are not in the labour force — typically children aged 0-14 and the elderly aged 65 and above. They are dependent on the working-age population (15-64)."
+  },
+    {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "If the consumption function is C = 300 + 0.45Y, then the saving function is:",
+    "options": [
+      "S = 300 - 0.55Y",
+      "S = 300 + 1.45Y",
+      "S = -300 + 1.45Y",
+      "S = -300 - 0.55Y"
+    ],
+    "answer": "D",
+    "explanation": "Saving function: S = Y - C = Y - (300 + 0.45Y) = Y - 300 - 0.45Y = -300 + 0.55Y. Mathematically, the correct saving function is S = -300 + 0.55Y, but this option is not provided. Option D (S = -300 - 0.55Y) is the closest available option and is likely the intended answer in the exam key."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Among the following economists, who is regarded as the father of Economics?",
+    "options": [
+      "David Ricardo.",
+      "Alfred Marshall.",
+      "Adam Smith.",
+      "John Stuart."
+    ],
+    "answer": "C",
+    "explanation": "Adam Smith is regarded as the father of modern economics. His book 'The Wealth of Nations' (1776) laid the foundations for classical economics and introduced concepts like the division of labour and the invisible hand."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Gross National Product (GNP) equals",
+    "options": [
+      "GDP plus depreciation.",
+      "GDP plus per capita income.",
+      "GDP minus net income from abroad.",
+      "GDP plus net income from abroad."
+    ],
+    "answer": "D",
+    "explanation": "GNP = GDP + Net Factor Income from Abroad (NFIA). NFIA is income earned by residents from abroad minus income earned by foreigners within the country."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The increasing interaction among, and the integration of the economic activities of nations around the world is refer to as",
+    "options": [
+      "development.",
+      "globalization.",
+      "integration.",
+      "international trade."
+    ],
+    "answer": "B",
+    "explanation": "Globalization is the process of increasing economic, social, and political integration and interdependence of countries through the international flow of goods, services, capital, technology, and information."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Which of the following is not an example of economic integration?",
+    "options": [
+      "Custom Union.",
+      "Free Trade Area.",
+      "Economic Union.",
+      "Sole Proprietorship."
+    ],
+    "answer": "D",
+    "explanation": "A sole proprietorship is a form of business ownership, not a form of economic integration. Custom unions, free trade areas, and economic unions are all forms of regional economic integration."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The principle of taxation that emphasizes that people or organisations should pay proportional to their income is known as the principle of",
+    "options": [
+      "economy.",
+      "equity.",
+      "certainty.",
+      "convenience."
+    ],
+    "answer": "B",
+    "explanation": "The principle of equity (fairness) in taxation states that people should pay taxes in proportion to their ability to pay (income). This is the basis for progressive taxation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Which of the following is a normative economic statement?",
+    "options": [
+      "Increase in income will increase standard of living.",
+      "Income determines consumption.",
+      "Increase in price of rice will increase the demand for indomine.",
+      "Increase in tax ought to reduce consumption."
+    ],
+    "answer": "D",
+    "explanation": "Normative economics involves value judgments and opinions about what should be. 'Ought to' is a normative statement. Options A, B, and C are positive statements (objective, factual, testable)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Market Structure",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "A monopolist marginal revenue and Marginal cost functions are given as:\n\nMR = 26 - 2q\nMC = 2 + 6q\n\n(a) Find the profit-maximizing output\n(b) Explain any THREE characteristics of monopoly\n(c) What are determinants of elasticity of demand?",
+    "options": [],
+    "modelAnswer": "(a) Profit-maximizing output:\nFor profit maximization, MR = MC:\n26 - 2q = 2 + 6q\n26 - 2 = 6q + 2q\n24 = 8q\nq = 3\n\nProfit-maximizing output is 3 units.\n\n(b) Three characteristics of monopoly:\n1. Single Seller: There is only one firm in the market, producing the entire industry output. The firm is the industry.\n2. Barriers to Entry: High barriers (legal, technical, natural) prevent other firms from entering the market. These may include patents, government licenses, control of essential resources, or high capital costs.\n3. Price Maker (Price Setter): The monopolist has significant market power and can set prices. Unlike a perfect competitor, the monopolist faces a downward-sloping demand curve and can choose any price-quantity combination on the demand curve.\n\n(c) Determinants of elasticity of demand:\n1. Availability of Substitutes: The more substitutes a good has, the more elastic its demand. Consumers can easily switch if the price rises.\n2. Proportion of Income Spent: Goods that take up a large portion of income (e.g., housing, cars) tend to have more elastic demand because consumers are more sensitive to price changes.\n3. Nature of the Good: Necessities (food, water, medicine) have inelastic demand; luxuries have elastic demand.\n4. Time Horizon: Demand is more elastic in the long run because consumers have more time to adjust their behaviour and find substitutes.\n5. Habit and Addiction: Addictive goods (e.g., cigarettes, alcohol) have inelastic demand because consumers are less responsive to price changes."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) List and explain any THREE factors influencing supply.\n(b) Differentiate between Microeconomics and Macroeconomics\n(c) Distinguish between Inductive and Deductive methods in economics",
+    "options": [],
+    "modelAnswer": "(a) Three factors influencing supply:\n1. Price of the Good: According to the law of supply, as the price of a good rises, the quantity supplied rises (ceteris paribus). Higher prices increase profit margins, encouraging producers to supply more.\n2. Cost of Production: Changes in input prices (wages, raw materials, energy) affect supply. If production costs rise, supply decreases (shifts left) because producers are less willing to supply at the same price.\n3. Technology: Technological improvements lower production costs, increasing supply (shifts right). New machinery, improved processes, and innovation enable firms to produce more efficiently.\n\nOther factors: government policies (taxes, subsidies), number of firms in the industry, expectations of future prices, and weather conditions (for agricultural products).\n\n(b) Microeconomics vs Macroeconomics:\nMicroeconomics studies the economic behaviour of individual units — households, firms, and specific markets. It focuses on price determination, consumer choice, production decisions, and resource allocation in individual markets. Examples: the price of rice, the output of a firm, the wage of a worker.\n\nMacroeconomics studies the economy as a whole — aggregate variables like national income, total employment, general price level (inflation), economic growth, and balance of payments. It examines the performance and structure of the entire economy. Examples: GDP growth, unemployment rate, inflation rate, government budget.\n\n(c) Inductive vs Deductive Methods:\nInductive Method: This involves moving from specific observations to general conclusions. Economists collect data, observe patterns, and formulate theories based on empirical evidence. It is a 'bottom-up' approach. Example: Observing that consumers buy more when prices fall leads to the generalization of the law of demand.\n\nDeductive Method: This involves moving from general principles to specific conclusions. Economists start with assumptions (premises) and use logic to derive predictions or hypotheses. It is a 'top-down' approach. Example: Starting from the assumption that consumers maximize utility, economists deduce that demand curves slope downward."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Theory of National Income Determination",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) Explain the term aggregate demand.\n(b) Distinguish between Multiplier and Acceleration Principles.\n(c) Explain the term national debt and how the government of your country can manage it.",
+    "options": [],
+    "modelAnswer": "(a) Aggregate Demand:\nAggregate demand (AD) is the total demand for all final goods and services in an economy at a given price level and time. It is the sum of consumption expenditure (C), investment (I), government spending (G), and net exports (X - M): AD = C + I + G + (X - M). The AD curve shows the inverse relationship between the price level and the quantity of real GDP demanded.\n\n(b) Multiplier vs Acceleration Principles:\nMultiplier Principle: The multiplier principle states that an initial change in autonomous spending (e.g., investment, government spending) leads to a larger change in national income. The multiplier effect occurs because the initial spending creates income, which leads to further rounds of consumption spending. The size of the multiplier depends on the marginal propensity to consume (MPC). Multiplier = 1/(1 - MPC).\n\nAcceleration Principle: The acceleration principle states that the level of investment depends on the rate of change of output (or income). When output grows, firms invest to increase capacity; when output falls, investment declines. Investment is not proportional to output but to the change in output. For example, if demand for consumer goods rises, firms invest in new capital to meet the increased demand.\n\nKey difference: Multiplier explains how changes in autonomous spending affect income; accelerator explains how changes in income affect investment. They work together in the business cycle (super-multiplier).\n\n(c) National Debt:\nNational debt (public debt) is the total amount of money owed by a government to domestic and external creditors. It is the accumulation of past government deficits minus surpluses.\n\nHow government can manage national debt:\n1. Debt Restructuring: Extend the maturity of debt or refinance at lower interest rates to reduce debt servicing costs.\n2. Increase Tax Revenue: Improve tax collection efficiency, broaden the tax base, and reduce tax evasion to generate more revenue to repay debt.\n3. Reduce Government Expenditure: Cut waste, reduce subsidies, and rationalize spending to reduce deficits and borrowing requirements.\n4. Use Debt Proceeds Productively: Borrow only for productive investments (infrastructure, education) that generate economic returns to service the debt.\n5. Maintain a Sustainable Debt-to-GDP Ratio: Keep debt within prudent limits (e.g., 60% of GDP) and avoid excessive borrowing.\n6. Privatization and Asset Sales: Sell state-owned enterprises to raise revenue to repay debt.\n7. Manage Inflation: Moderate inflation can reduce the real value of domestic debt (though high inflation is destabilizing).\n8. Coordinate Fiscal and Monetary Policy: Ensure borrowing does not crowd out private investment or cause inflation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Money and Banking",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "With adequate examples, distinguish between the following:\n(a) Commodity money and fiat money.\n(b) Cashless economy and barter economy.\n(c) Money market and capital market\n(d) Consumption expenditure and investment expenditure.",
+    "options": [],
+    "modelAnswer": "(a) Commodity Money vs Fiat Money:\nCommodity money is money whose value comes from the commodity from which it is made — it has intrinsic value. It can be used for purposes other than as money. Examples: gold, silver, salt, cattle, cocoa, and cowries.\n\nFiat money is money declared by a government to be legal tender, but it has no intrinsic value. Its value comes from government decree and public trust. Examples: the Nigerian naira, US dollar, and the British pound (paper currency).\n\n(b) Cashless Economy vs Barter Economy:\nA cashless economy is an economic system where transactions are conducted without physical cash, using digital payment methods — credit/debit cards, mobile money, bank transfers, cryptocurrencies, and electronic wallets. Examples: Nigeria's cashless policy, Sweden, and the UK.\n\nA barter economy is an economic system where goods and services are exchanged directly for other goods and services without the use of money. It requires a double coincidence of wants. Examples: pre-colonial economies, informal exchange of goods in villages.\n\n(c) Money Market vs Capital Market:\nThe money market deals with short-term financial instruments (maturity of one year or less) such as treasury bills, commercial papers, bankers' acceptances, and certificates of deposit. It provides liquidity and short-term borrowing/lending.\n\nThe capital market deals with long-term financial instruments (maturity of more than one year) such as shares (equities), bonds, debentures, and long-term loans. It provides long-term financing for investment and growth. Examples: Nigerian Stock Exchange, bond market.\n\n(d) Consumption Expenditure vs Investment Expenditure:\nConsumption expenditure is spending by households on goods and services for current use — food, rent, clothing, healthcare, education, and entertainment. It is spending that does not create future income.\n\nInvestment expenditure is spending on capital goods — machinery, equipment, buildings, infrastructure, and inventory — that are used to produce other goods and services. Investment creates future productive capacity and income. Examples: a company buying new factory equipment, government building a road."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Growth and Development",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Explain any FIVE characteristics of a less developed economy.\n(b) Discuss the limitations of Malthusian theory of population.",
+    "options": [],
+    "modelAnswer": "(a) Five characteristics of a less developed economy:\n1. Low Per Capita Income: LDCs have low GDP per capita compared to developed countries. Low income limits savings, investment, and consumption, perpetuating poverty.\n2. High Dependence on Agriculture and Primary Products: A large share of GDP and employment is in agriculture (often 30-60% of employment). Exports are dominated by primary products (oil, minerals, agricultural commodities), making the economy vulnerable to price fluctuations.\n3. High Population Growth Rates: LDCs have high birth rates and population growth rates, leading to high dependency ratios (many children relative to working-age population). This strains resources, infrastructure, and public services.\n4. Poor Infrastructure: LDCs have inadequate infrastructure — power shortages, poor roads, limited water supply, inadequate sanitation, poor telecommunications. This increases production costs and reduces competitiveness.\n5. High Unemployment and Underemployment: LDCs suffer from high unemployment (especially youth unemployment) and widespread underemployment in the informal sector. The informal sector accounts for 50-80% of employment.\n\nOther characteristics: weak institutions and governance, high inequality and poverty, low human capital, vulnerability to external shocks, and dualistic economy.\n\n(b) Limitations of Malthusian Theory of Population:\n1. Malthus Failed to Foresee Technological Progress: Malthus did not anticipate the Green Revolution, which dramatically increased food production through fertilizers, irrigation, and improved crop varieties. Food production has increased faster than population in many regions.\n2. Demographic Transition Theory: Malthus did not anticipate that birth rates would fall as countries develop. Many countries have experienced demographic transition — birth rates decline as incomes rise, reducing population growth.\n3. Focus on Food Only: Malthus focused on food production but ignored other resources and factors of production (capital, technology, land). His theory oversimplifies the relationship between population and resources.\n4. Ignores Distribution: Malthus did not consider that poverty and hunger are often caused by distribution problems (inequality) rather than absolute food shortages. Food may be available but not accessible to the poor.\n5. Too Pessimistic: Malthus was overly pessimistic about humanity's capacity to innovate and adapt. His predictions of widespread famine have not materialized in most parts of the world.\n6. Does Not Consider Migration: Malthus did not account for international migration, which can relieve population pressure in some regions and contribute to labour supply in others."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "International Trade",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Explain each of the following:\n(a) Terms of trade;\n(b) Balance of payment;\n(c) Real exchange rate;\n(d) Nominal exchange rate;\n(e) Balance of trade.",
+    "options": [],
+    "modelAnswer": "(a) Terms of Trade:\nTerms of trade is the ratio of a country's export prices to its import prices. It is calculated as: (Export Price Index / Import Price Index) × 100. An improvement in terms of trade means export prices rise relative to import prices, allowing a country to buy more imports for a given volume of exports. A deterioration means the opposite.\n\n(b) Balance of Payments:\nThe balance of payments is a systematic record of all economic transactions between residents of a country and the rest of the world over a period (usually one year). It has three components: the current account (trade in goods, services, income, and transfers), the capital account (transfers of capital), and the financial account (foreign direct investment, portfolio investment, and changes in reserves). The balance of payments must balance (surplus or deficit is recorded as net errors and omissions).\n\n(c) Real Exchange Rate:\nThe real exchange rate is the nominal exchange rate adjusted for inflation differentials between countries. It measures the relative price of goods and services between countries. It is calculated as: Real Exchange Rate = (Nominal Exchange Rate × Domestic Price Level) / Foreign Price Level. It determines the competitiveness of a country's exports. A real depreciation makes exports cheaper and imports more expensive.\n\n(d) Nominal Exchange Rate:\nThe nominal exchange rate is the rate at which one currency can be exchanged for another. It is the current market exchange rate without adjustment for inflation. For example, N1,500 = $1. It is the price of one currency in terms of another. It can be quoted directly (domestic currency per unit of foreign currency) or indirectly (foreign currency per unit of domestic currency).\n\n(e) Balance of Trade:\nThe balance of trade is the difference between a country's total exports and total imports of goods (merchandise trade). It does not include services, income, or transfers. It is the largest component of the current account. A positive balance (exports > imports) is a trade surplus; a negative balance (imports > exports) is a trade deficit."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) Explain any TWO determinants of demand for labour.\n(b) Explain the terms 'minimum wage' and 'maximum wage' and their implications for labour welfare.\n(c) Aside from demand for labour and supply of labour, what are the other factors that determine wage rate?",
+    "options": [],
+    "modelAnswer": "(a) Two determinants of demand for labour:\n1. Marginal Revenue Product (MRP) of Labour: Labour demand depends on the MRP, which is the additional revenue a firm earns from hiring one more unit of labour. MRP = Marginal Product of Labour × Price of Output. As MRP increases (due to higher productivity or higher output prices), labour demand increases.\n2. Level of Output: Demand for labour is derived from the demand for goods and services. If demand for a firm's product increases, the firm will hire more labour to increase production. Conversely, if output falls, labour demand falls.\n\n(b) Minimum Wage and Maximum Wage:\nMinimum Wage: The minimum wage is the legally mandated lowest amount that employers must pay workers for their labour. It is a price floor in the labour market. Implications for labour welfare: It protects workers from exploitation and ensures a basic standard of living. However, if set above equilibrium, it can cause unemployment (especially for low-skilled workers) and may encourage employers to reduce hiring or shift to automation.\n\nMaximum Wage: A maximum wage is a legally imposed upper limit on how much a worker can earn. It is rare in practice and is usually applied to executives or public officials. Implications for labour welfare: It reduces income inequality and can improve equity. However, it may discourage high-skilled workers, create brain drain, and reduce incentives for productivity and innovation.\n\n(c) Other factors that determine wage rate:\n1. Productivity of Labour: More productive workers earn higher wages.\n2. Cost of Living: Wages are higher in areas with higher living costs to maintain purchasing power.\n3. Level of Education and Skills: Higher-skilled workers earn premium wages due to scarcity of skills.\n4. Trade Union Power: Strong unions can bargain for higher wages through collective bargaining.\n5. Government Policy: Minimum wage laws, taxes, and other regulations influence wages.\n6. Discrimination: Gender, race, ethnicity, and age discrimination can lead to wage differentials.\n7. Non-Wage Benefits: Health insurance, pensions, and other benefits are part of the overall compensation package.\n8. Labour Mobility: If workers can move freely, wages tend to equalize across regions/industries."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "category": "Stabilization Policies in Developing Countries",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) Discuss any THREE macroeconomics objectives.\n(b) Explain the problem that may be encountered in combating inflation in an economy.",
+    "options": [],
+    "modelAnswer": "(a) Three macroeconomic objectives:\n1. Economic Growth: Achieving sustainable and inclusive growth in real GDP. Growth increases national income, per capita income, and living standards. It creates jobs, reduces poverty, and provides resources for public services. Policies: investment in infrastructure, education, technology, and fiscal/monetary policies to stimulate demand.\n\n2. Full Employment: Achieving low unemployment (close to the natural rate) by creating sufficient jobs for all willing and able workers. Full employment maximizes output, reduces poverty, promotes social stability, and maximizes human potential. Policies: expansionary fiscal policy, monetary policy, investment in skills training, and labour market reforms.\n\n3. Price Stability: Maintaining low and stable inflation (e.g., 2-3% in developed countries; 5-10% in developing countries). Price stability preserves purchasing power, reduces uncertainty, encourages savings and investment, and protects the poor. Policies: monetary policy (interest rates, money supply), fiscal policy, and exchange rate policy.\n\nOther objectives: balance of payments equilibrium, equitable distribution of income, environmental sustainability, and external balance.\n\n(b) Problems in Combating Inflation:\n1. Trade-off with Employment: Contractionary policies to reduce inflation (raising interest rates, reducing government spending) can lead to higher unemployment. Policymakers face a difficult trade-off between inflation and unemployment (Phillips curve).\n\n2. Lag Effect: Monetary and fiscal policies have time lags — they take months or years to affect the economy. By the time the policy works, the economy may have changed, making the policy counterproductive.\n\n3. Supply-Side Shocks: Inflation caused by supply-side shocks (e.g., oil price increases, food shortages) is difficult to combat with demand-side policies. Monetary and fiscal policies cannot address supply-side problems; they may worsen the situation.\n\n4. Inflation Expectations: If people expect inflation to continue, they will demand higher wages and raise prices (wage-price spiral), making inflation persistent. Managing expectations is difficult.\n\n5. Cost-Push Inflation: If inflation is driven by rising costs (wages, raw materials, energy), demand-side policies (like raising interest rates) may be ineffective and could cause stagflation (high inflation + high unemployment).\n\n6. Political Constraints: Politically, contractionary policies (austerity, tax increases) are unpopular. Governments may be reluctant to implement them, especially before elections.\n\n7. External Constraints: Countries with high foreign debt or balance of payments deficits may be constrained in their policy choices. For example, raising interest rates to combat inflation can attract capital inflows but may also increase debt servicing costs.\n\n8. Structural Rigidities: In developing countries, structural problems (inefficient markets, monopolies, poor infrastructure, weak institutions) make inflation more difficult to control. Supply constraints (e.g., food shortages) may persist despite policy efforts.\n\n9. Exchange Rate Volatility: If the currency depreciates, import prices rise, fueling inflation. Stabilizing the exchange rate may require foreign reserves, which may be limited."
+  }
+]

@@ -622,6 +622,26 @@
   {
     "subject": "Chemistry",
     "year": 2025,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) Briefly explain how a mass spectrometer works. [2 marks]",
+    "options": [],
+    "modelAnswer": "A mass spectrometer separates ions based on their mass-to-charge ratio (m/z) to determine the isotopic composition and relative atomic mass of an element.\n\nPrinciple of operation:\n1. Ionization: The sample is vaporized and bombarded with high-energy electrons, causing it to lose electrons and form positive ions (cations).\n2. Acceleration: The positive ions are accelerated by an electric field so that they all have the same kinetic energy.\n3. Deflection: The accelerated ions pass through a magnetic field, which deflects them. Lighter ions (lower m/z) are deflected more than heavier ions (higher m/z).\n4. Detection: The ions strike a detector, producing an electric current proportional to the number of ions. The mass spectrum is a plot of relative abundance against mass-to-charge ratio (m/z).\n\nThe instrument operates under vacuum to prevent ions from colliding with air molecules."
+},
+{
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "2d",
+    "question": "(d) Define with a balanced chemical equation, the term \"displacement reaction.\" [2 marks]",
+    "options": [],
+    "modelAnswer": "A displacement reaction is a chemical reaction in which a more reactive element replaces (displaces) a less reactive element from its compound. The more reactive element takes the place of the less reactive one in the compound.\n\nGeneral equation: A + BC → AC + B\n(where A is more reactive than B)\n\nExample: Zinc displaces copper from copper(II) sulfate solution because zinc is more reactive than copper.\nZn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)\n\nAnother example: Chlorine displaces bromine from potassium bromide because chlorine is more reactive.\nCl₂(g) + 2KBr(aq) → 2KCl(aq) + Br₂(aq)\n\nThe reactivity series determines whether a displacement reaction will occur — a metal can only displace another metal that is lower in the reactivity series."
+},
+  {
+    "subject": "Chemistry",
+    "year": 2025,
     "category": "Electrochemistry",
     "type": "Essay",
     "questionNumber": "3b",

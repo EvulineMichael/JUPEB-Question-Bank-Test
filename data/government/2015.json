@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "A government based on the rule of law is known as",
+    "options": [
+      "Constitutional Government",
+      "Military Government",
+      "Confederal Government",
+      "Monarchical Government"
+    ],
+    "answer": "A",
+    "explanation": "A constitutional government is one based on the rule of law, where the powers of government are defined and limited by a constitution. The constitution is supreme, and all actions of government must conform to it."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "A political concept that is defined as the beliefs, attitudes, and values of the society is referred to as",
+    "options": [
+      "Political socialization",
+      "Socialization",
+      "Political culture",
+      "Cultural socialism"
+    ],
+    "answer": "C",
+    "explanation": "Political culture refers to the set of beliefs, attitudes, values, and norms that shape political behavior in a society. It includes how people view their political system and their role within it."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "One of these countries adopted the policy of assimilation as a colonial policy",
+    "options": [
+      "Germany",
+      "Britain",
+      "Portugal",
+      "France"
+    ],
+    "answer": "D",
+    "explanation": "France adopted the policy of assimilation in its colonies, aiming to assimilate Africans into French culture, language, and citizenship. Britain used indirect rule, Portugal used a system of assimilation with less intensity."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The appointment, ratification and dismissal of Emirs in the Pre-Colonial Hausa-Fulani Empire was done by",
+    "options": [
+      "Emirs of Kano and Katsina",
+      "Emirs of Gwandu and Sokoto",
+      "Emir of Ilorin and Kwararafa",
+      "Emir of Shonga and Biu"
+    ],
+    "answer": "B",
+    "explanation": "In the pre-colonial Hausa-Fulani empire, the appointment, ratification, and dismissal of Emirs were done by the Emirs of Gwandu and Sokoto, who were the supreme authorities in the Sokoto Caliphate."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The first military coup d'etat in Nigeria took place in",
+    "options": [
+      "1960",
+      "1968",
+      "1966",
+      "1965"
+    ],
+    "answer": "C",
+    "explanation": "Nigeria's first military coup d'état took place on January 15, 1966. It overthrew the civilian government of Prime Minister Sir Abubakar Tafawa Balewa. 1960 was independence, 1965 was before the coup, and 1968 was after."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "In the Oyo traditional political system, the Alaafin of Oyo was selected or chosen by a group known as",
+    "options": [
+      "Tributary chiefs",
+      "Bales",
+      "Obas",
+      "Ogboni"
+    ],
+    "answer": "D",
+    "explanation": "⚠️ The Alaafin was actually selected by the Oyomesi (Oyo Mesi), a council of seven kingmakers. However, this option is not listed. Of the available options, the Ogboni (D) is the closest — it was a powerful secret society in the Oyo Empire with significant political influence, though its primary role was judicial and religious, not the selection of the Alaafin."
+},
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Sovereignty is limited by",
+    "options": [
+      "The criminal code",
+      "Decrees",
+      "The legal system",
+      "International law"
+    ],
+    "answer": "D",
+    "explanation": "Sovereignty, though supreme within a state, is limited by international law, treaties, and obligations to international organizations. States voluntarily accept these limitations through agreements and membership in international bodies."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Which of the following is NOT characteristics of democracy?",
+    "options": [
+      "Popular sovereignty",
+      "Regular elections",
+      "Majority rule",
+      "Limited franchise"
+    ],
+    "answer": "D",
+    "explanation": "Limited franchise (restricted right to vote) is NOT a characteristic of democracy. Democracy is characterized by popular sovereignty, regular elections, majority rule, and universal adult suffrage (broad franchise)."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Liberalism is a philosophy associated with",
+    "options": [
+      "Socialism",
+      "Capitalism",
+      "Feudalism",
+      "Nazism"
+    ],
+    "answer": "B",
+    "explanation": "Liberalism is a philosophy associated with capitalism. It emphasizes individual freedom, limited government, free markets, and private property. It is the ideological foundation of capitalist economies."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "One of the following is the primary duty of citizens to the state",
+    "options": [
+      "loyalty of traditional rulers",
+      "obedience to ministers",
+      "obedience to politicians",
+      "allegiance to the government"
+    ],
+    "answer": "D",
+    "explanation": "Allegiance to the government is a primary duty of citizens to the state. This includes loyalty, obedience to the law, payment of taxes, and defense of the nation. Citizens owe allegiance to the state and its constitution."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Elections & Electoral System",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The process of removing an elected official by the electorate after an election is termed.",
+    "options": [
+      "Impeachment",
+      "Plebiscite",
+      "Recall",
+      "Referendum"
+    ],
+    "answer": "C",
+    "explanation": "Recall is the process by which voters can remove an elected official from office before the end of their term. Impeachment is a legislative process for removing officials, a plebiscite is a vote on a specific issue, and a referendum is a direct vote on a policy question."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The principle of the rule of law stipulates that",
+    "options": [
+      "Only judges interpret the law",
+      "Law makers are above the law",
+      "Everyone is equal before the law",
+      "Lawyers make law"
+    ],
+    "answer": "C",
+    "explanation": "The rule of law stipulates that everyone, including government officials, is equal before the law. No one is above the law, and all must be treated equally under the law."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The principle of federal character was first enshrined in the",
+    "options": [
+      "1989 constitution",
+      "1963 constitution",
+      "1999 constitution",
+      "1979 constitution"
+    ],
+    "answer": "D",
+    "explanation": "The principle of federal character was first enshrined in the 1979 constitution. It aimed to ensure fair representation of all ethnic groups in federal government appointments and institutions. It was retained in the 1999 constitution but first appeared in 1979."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "The Nigerian federalism operates a",
+    "options": [
+      "Four tier system",
+      "Three tier system",
+      "Two tier system",
+      "One tier system"
+    ],
+    "answer": "B",
+    "explanation": "Nigeria operates a three-tier system of government: Federal, State, and Local Government. This is the structure established by the 1999 constitution, with each level having specific functions and responsibilities."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "After amalgamation in 1914, the first law-making body in Nigeria was",
+    "options": [
+      "Legislative Council",
+      "National Assembly",
+      "Regional Assembly",
+      "Nigerian Council."
+    ],
+    "answer": "D",
+    "explanation": "After the amalgamation in 1914, the first law-making body in Nigeria was the Nigerian Council, established in 1914 by Governor General Sir Frederick Lugard. It was an advisory body with limited legislative powers."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The foremost authority on federalism is",
+    "options": [
+      "Walter Ofonagoro",
+      "Wheare K.C.",
+      "Harold Lasswell",
+      "David Easton"
+    ],
+    "answer": "B",
+    "explanation": "Kenneth Clinton Wheare (Wheare K.C.) is widely regarded as the foremost authority on federalism. His book 'Federal Government' (1946) is a seminal work on the subject. He defined federalism as a system where powers are divided between central and regional governments."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "A confederation is a political arrangement where there is",
+    "options": [
+      "A strong centre and independent component units",
+      "A seemingly amorphous federation under a weak centre",
+      "A strong federation under monarchical centre",
+      "A shared constitutional power between a centre and two units"
+    ],
+    "answer": "B",
+    "explanation": "A confederation has a weak central government with sovereign component states. The centre is 'amorphous' (ill-defined, loose) and the states retain most powers. Option B best describes this — a loose political arrangement with a weak centre, unlike a federation which has a stronger central government."
+},
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The number of political parties created by General Ibrahim Babangida was",
+    "options": [
+      "2",
+      "6",
+      "8",
+      "3"
+    ],
+    "answer": "A",
+    "explanation": "General Ibrahim Babangida created two political parties in 1989: the National Republican Convention (NRC) and the Social Democratic Party (SDP). This was part of his transition to civilian rule program."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Pressure groups are differentiated from political parties based on one of the following reasons",
+    "options": [
+      "Population of membership",
+      "They do not seek political power",
+      "Inability to win election",
+      "Registration by the government"
+    ],
+    "answer": "B",
+    "explanation": "Pressure groups are differentiated from political parties primarily because they do not seek political power. Instead, they seek to influence government policy and decisions without contesting elections. Political parties seek to gain and exercise political power."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Public corporation are controlled by ALL the following EXCEPT",
+    "options": [
+      "Legislators",
+      "Judges",
+      "Tax payers",
+      "Clerks"
+    ],
+    "answer": "D",
+    "explanation": "Public corporations are controlled by legislators (through legislation and oversight), judges (through legal rulings), and taxpayers (as stakeholders). Clerks are employees and do not exercise control over public corporations."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "One of the following is correct in a federal System of government",
+    "options": [
+      "The central government has power over everything",
+      "Laws of the component units equate the constitution",
+      "Constitution must be flexible",
+      "Only unwritten constitution is permissible"
+    ],
+    "answer": "A",
+    "explanation": "In a federal system, the central government has certain enumerated powers over the whole country, such as defence and foreign affairs. The component units have powers over local matters. The constitution is supreme and usually rigid."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The Henry Willinks Commission was set up in Nigeria to",
+    "options": [
+      "Look into possibility of federalism",
+      "Look into the possibility of Nigeria's independence",
+      "Look into the fears of the minorities",
+      "Look into the tenure of colonial masters"
+    ],
+    "answer": "C",
+    "explanation": "The Henry Willinks Commission was set up in 1958 to look into the fears of minorities in Nigeria and recommend measures to allay them. It was established in response to demands for separate states by minority ethnic groups."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The scholar who defines politics as 'who gets what, when and how' is known as",
+    "options": [
+      "David Easton",
+      "Okwudiba Nnoli",
+      "Harold Lasswell",
+      "Karl Marx"
+    ],
+    "answer": "C",
+    "explanation": "Harold Lasswell defined politics as 'who gets what, when, and how.' This famous definition focuses on the distribution of power and resources in society. David Easton defined politics as the 'authoritative allocation of values.'"
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "A unitary state can be identified on the basis of",
+    "options": [
+      "Centralisation of Powers",
+      "Devolution of Powers",
+      "Allocation of Powers",
+      "Decentralisation of powers."
+    ],
+    "answer": "A",
+    "explanation": "A unitary state is characterized by the centralisation of powers in a single central government. Unlike a federal system, powers are not constitutionally divided between levels of government. Local governments exist but derive their powers from the central government."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "What gives the state a legal backing and distinguishes it from other political organisations?",
+    "options": [
+      "people",
+      "Territory",
+      "Government",
+      "sovereignty"
+    ],
+    "answer": "D",
+    "explanation": "Sovereignty gives the state legal backing and distinguishes it from other political organizations. It is the supreme and absolute authority of the state within its territory. No other political organization has this authority."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "What political activity is a pattern of learning of attitudes, values and orientations?",
+    "options": [
+      "Political emancipation",
+      "Political socialisation",
+      "Political articulation",
+      "Political conscientization"
+    ],
+    "answer": "B",
+    "explanation": "Political socialization is the process by which individuals learn the attitudes, values, beliefs, and orientations of their political system. It is how political culture is transmitted from one generation to the next."
+  },
+ {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The process of getting involved in the political activity of a society is called",
+    "options": [
+      "political education",
+      "political philosophy",
+      "political culture",
+      "political rascality"
+    ],
+    "answer": "A",
+    "explanation": "⚠️ The correct term is 'political participation' — the process by which citizens engage in political activities like voting, campaigning, and protesting. However, this option is not listed. Of the available options, 'political education' (A) is the closest — it involves learning about and engaging with the political system, which is a precursor to participation. 'Political philosophy' is the study of ideas, 'political culture' refers to societal beliefs and attitudes, and 'political rascality' refers to political dishonesty or thuggery."
+},
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Public Administration refers to the study of:",
+    "options": [
+      "Public Philosophy",
+      "Political Sociology",
+      "Public Policy",
+      "Public Relations"
+    ],
+    "answer": "C",
+    "explanation": "Public Administration is the study of public policy, government operations, and the implementation of laws and policies. It focuses on the management of public programs and the structures and processes of government bureaucracy."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Local Government authority is associated with:",
+    "options": [
+      "National development",
+      "State development",
+      "Grassroots development",
+      "Inter-state development"
+    ],
+    "answer": "C",
+    "explanation": "Local Government authority is associated with grassroots development. It is the tier of government closest to the people, responsible for local infrastructure, services, and community development."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Under which system of government does executive power reside with a single individual?",
+    "options": [
+      "presidential system",
+      "Parliamentary system",
+      "Cabinet system",
+      "Titular system"
+    ],
+    "answer": "A",
+    "explanation": "Under the presidential system, executive power resides with a single individual — the President. In a parliamentary system, executive power is vested in the Prime Minister and Cabinet, who are collectively responsible to the legislature."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The classical idea of direct democracy originated from",
+    "options": [
+      "Britain",
+      "Greece",
+      "United States",
+      "France"
+    ],
+    "answer": "B",
+    "explanation": "The classical idea of direct democracy originated from ancient Greece, particularly Athens. Citizens participated directly in decision-making, rather than through representatives. This is the original form of democracy."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The organs of government include the following, EXCEPT",
+    "options": [
+      "Executive",
+      "Legislature",
+      "Judiciary",
+      "Bureaucracy"
+    ],
+    "answer": "D",
+    "explanation": "The three traditional organs of government are the Executive, Legislature, and Judiciary. Bureaucracy (the civil service) is not an organ of government — it is the administrative machinery that serves the executive branch. The bureaucracy implements government policies but is not a formal branch of government like the three arms."
+},
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "______ economy is centrally planned and regulated",
+    "options": [
+      "Capitalist",
+      "Authoritarian",
+      "Socialist",
+      "Liberalist"
+    ],
+    "answer": "C",
+    "explanation": "A socialist economy is centrally planned and regulated by the state. The government owns the means of production and makes decisions about production, distribution, and pricing. Capitalist economies are market-driven."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "______ is a basic tenet of Marxist doctrine.",
+    "options": [
+      "Biblical materialism",
+      "Constructive materialism",
+      "Dialectical materialism",
+      "Structural materialism"
+    ],
+    "answer": "C",
+    "explanation": "Dialectical materialism is a basic tenet of Marxist doctrine. It is the philosophical framework developed by Marx and Engels, combining Hegelian dialectics with materialist philosophy. It holds that social change is driven by material conditions and class struggle."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The following are the functions of political party, EXCEPT",
+    "options": [
+      "Mobilization of the masses",
+      "Recruitment of leaders",
+      "Socialization of leaders",
+      "Harassment of citizens"
+    ],
+    "answer": "D",
+    "explanation": "Harassment of citizens is NOT a function of a political party. Political parties mobilize the masses, recruit leaders, socialize citizens into political culture, articulate interests, and contest elections."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "In the legislative process, a bill is a",
+    "options": [
+      "Motion accepted for debate",
+      "Motion rejected after debate",
+      "Proposal before the legislature",
+      "Motion passed by the executive"
+    ],
+    "answer": "C",
+    "explanation": "A bill is a proposed law presented to the legislature for consideration and debate. It becomes an Act (law) after being passed by the legislature and assented to by the executive."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The Agency that regulates the career of civil servants is known as:",
+    "options": [
+      "Ministerial Service Commission",
+      "Executive Service Commission",
+      "Civil Service Commission",
+      "Citizens Service Commission"
+    ],
+    "answer": "C",
+    "explanation": "The Civil Service Commission is the agency responsible for regulating the careers of civil servants, including recruitment, promotions, discipline, and other personnel matters. In Nigeria, this is the Civil Service Commission at both federal and state levels."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "A major feature of authoritarianism is that government is",
+    "options": [
+      "Consensual",
+      "Democratized",
+      "Centralized",
+      "Decentralized"
+    ],
+    "answer": "C",
+    "explanation": "Authoritarianism is characterized by centralized power in the hands of a single leader or small group. Power is concentrated, and political participation is limited. There is no political pluralism or checks and balances."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The following are party systems, EXCEPT",
+    "options": [
+      "One-party system",
+      "Two-party system",
+      "Multi-party system",
+      "Multi-virate"
+    ],
+    "answer": "D",
+    "explanation": "Multi-virate is NOT a party system. The recognized party systems are one-party, two-party, and multi-party systems. A multi-virate refers to a system of multiple rulers or leaders, not a party system."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The unrestrained power of the state over its citizens is underlined by",
+    "options": [
+      "Sovereignty",
+      "Nationalism",
+      "Self-determination",
+      "Patriotism"
+    ],
+    "answer": "A",
+    "explanation": "Sovereignty underlines the unrestrained power of the state over its citizens within its territory. It is the supreme authority of the state to make and enforce laws without external interference. While sovereignty is not absolute in practice (limited by international law and human rights), it is the legal basis of state authority."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The principle of checks and balances reinforces separation of powers in order to",
+    "options": [
+      "Make the legislature more powerful",
+      "Prevent the emergence of dictatorship",
+      "Protect the powers of the executive",
+      "Prevent an unconstitutional change of Government"
+    ],
+    "answer": "B",
+    "explanation": "The principle of checks and balances reinforces separation of powers in order to prevent the emergence of dictatorship. It ensures that no single branch of government becomes too powerful by allowing each branch to check the powers of the others."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The final interpretation of the provision of a federal constitution is vested in the",
+    "options": [
+      "Highest legislative body",
+      "Highest court of the land",
+      "Head of state",
+      "Council of State"
+    ],
+    "answer": "B",
+    "explanation": "The final interpretation of a federal constitution is vested in the highest court of the land — the Supreme Court. It has the power of judicial review to determine the constitutionality of laws and actions."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "One major factor that differentiates the presidential from the parliamentary systems is",
+    "options": [
+      "Judicial independence",
+      "Party system",
+      "Separation of powers",
+      "Passage of bills"
+    ],
+    "answer": "C",
+    "explanation": "One major factor that differentiates the presidential from the parliamentary system is separation of powers. In a presidential system, there is a strict separation of executive and legislative powers. In a parliamentary system, the executive is fused with the legislature."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The supreme policy-making organ in the then Organization of Africa Unity is (OAU) was:",
+    "options": [
+      "The Council of Ministers",
+      "The Assembly of Heads of State and Government",
+      "The General Secretariat",
+      "The Specialized Commissions"
+    ],
+    "answer": "B",
+    "explanation": "The supreme policy-making organ of the Organization of African Unity (OAU) was the Assembly of Heads of State and Government. It was the highest decision-making body, composed of the heads of state of all member countries."
+  },
+{
+    "subject": "Government",
+    "year": 2015,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "In which of these organs of the United Nations Organization is veto power exercised by some countries?",
+    "options": [
+      "The World Health Organization",
+      "The Security Council",
+      "The General Assembly",
+      "The International Court of Justice"
+    ],
+    "answer": "B",
+    "explanation": "Veto power is exercised by the five permanent members (USA, UK, France, Russia, China) of the UN Security Council. They can veto any substantive resolution, effectively blocking decisions. The General Assembly does not have veto power."
+},
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Which factor is necessary for development of democratic institutions?",
+    "options": [
+      "Strong military forces",
+      "Respect for individual rights",
+      "One party system",
+      "an agricultural economy"
+    ],
+    "answer": "B",
+    "explanation": "Respect for individual rights is necessary for the development of democratic institutions. Democracy requires protection of civil liberties, freedom of speech, assembly, and association. Strong militaries and one-party systems are anti-democratic."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Bicameral Legislature, which Nigeria currently operates, means a Legislature",
+    "options": [
+      "With two CCTV cameras to cover its proceedings",
+      "With two chambers, Upper and Lower Houses",
+      "That can switch from one mode to another during proceedings",
+      "That has two members from each State of the federation"
+    ],
+    "answer": "B",
+    "explanation": "Bicameral legislature means a legislature with two chambers — the Upper House (Senate) and the Lower House (House of Representatives). Nigeria's National Assembly is bicameral, as provided in the 1999 constitution."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The first region to be created in post Colonial Nigeria was:",
+    "options": [
+      "Benue-Plateau region",
+      "Cross River-Ogoja region",
+      "Kwara-Lokoja region",
+      "Mid-Western region"
+    ],
+    "answer": "D",
+    "explanation": "The first region created in post-colonial Nigeria was the Mid-Western region, created in 1963 from the Western Region. It was the first of many states to be created after independence, including Benue-Plateau and others."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Nigerian Foreign Policy",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Nigeria's support for the South-South Cooperation is based on her desire to",
+    "options": [
+      "Assert her leadership role in Africa",
+      "Promote her non-aligned policy",
+      "Promote economic understanding in the Third World",
+      "Counter the political and military domination by major powers"
+    ],
+    "answer": "C",
+    "explanation": "Nigeria's support for South-South Cooperation is based on her desire to promote economic understanding and cooperation among developing countries. South-South Cooperation emphasizes solidarity and mutual benefit among developing nations."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The countries in which Nigeria participated in the ECOMOG peacekeeping operations were",
+    "options": [
+      "Sierra Leone and Cote d'Ivoire",
+      "Liberia and Sierra Leone",
+      "Liberia and Guinea",
+      "Senegal and Cote d'Ivoire"
+    ],
+    "answer": "B",
+    "explanation": "Nigeria participated in ECOMOG (ECOWAS Cease-fire Monitoring Group) peacekeeping operations in Liberia (1990-1997) and Sierra Leone (1997-2000). Nigeria was a major contributor of troops and resources to these missions."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "List and explain any five basic functions performed by a modern government.",
+    "options": [],
+    "modelAnswer": "1. Law Making: The government formulates and enacts laws through the legislature (parliament). Laws regulate behaviour, maintain order, and protect rights. For example, the National Assembly makes laws for peace, order, and good governance.\n\n2. Security and Defence: The government protects the state from external aggression and internal threats. The armed forces, police, and intelligence agencies maintain national security and safeguard territorial integrity.\n\n3. Provision of Public Goods and Services: Government provides essential services that the private sector may not adequately supply — education, healthcare, roads, electricity, water supply, and sanitation. These services improve the quality of life.\n\n4. Economic Management: Government regulates and manages the economy through fiscal and monetary policies. It controls inflation, unemployment, and ensures stable economic growth. Agencies like the CBN and Ministry of Finance perform these roles.\n\n5. Dispute Resolution and Justice: The government establishes courts and judicial systems to resolve disputes and ensure justice. The judiciary interprets the law, protects rights, and punishes offenders. It ensures that justice is administered fairly.\n\n6. International Relations: Government represents the country abroad, negotiates treaties, maintains diplomatic relations, and participates in international organizations. Foreign policy promotes national interests and peaceful coexistence.\n\n7. Social Welfare and Development: Government provides social security, poverty alleviation programs, and development projects. It ensures that vulnerable groups (the aged, disabled, poor) are protected and supported."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Identify and explain five basic features of the Arthur Richards Constitution of 1946.",
+    "options": [],
+    "modelAnswer": "1. Introduction of Regionalism: The 1946 constitution introduced regionalism by dividing Nigeria into three regions — Northern, Western, and Eastern regions. Each region had its own legislative council, laying the foundation for Nigeria's federal structure.\n\n2. Establishment of a Unicameral Legislature: The constitution established the Central Legislative Council, which was the law-making body at the centre. It had both official and unofficial members.\n\n3. Unofficial Majority in Regional Assemblies: The regional legislatures had unofficial majorities (elected and appointed non-officials). This increased African participation in governance.\n\n4. Creation of the House of Chiefs: The constitution created a House of Chiefs in the Northern and Western regions to serve as advisory bodies on traditional matters. This recognized traditional institutions.\n\n5. Restriction of Legislative Powers: The Central Legislative Council could only legislate on matters of national importance. The regions had limited powers over local matters.\n\n6. Increased African Representation: The constitution increased African representation in the Legislative Council, though official members still controlled important matters. It was a step towards self-governance.\n\n7. Division of Legislative Subjects: Matters were divided into exclusive (central) and concurrent (regional) lists, which became the foundation of Nigeria's federal system.\n\n8. Limited Franchise: The constitution retained a restricted franchise based on property and income qualifications, limiting voting rights to a few Nigerians."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Nigerian Foreign Policy",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "What are the main objectives of Nigeria's foreign policy? Suggest four ways through which the objectives can be realized.",
+    "options": [],
+    "modelAnswer": "Main Objectives of Nigeria's Foreign Policy:\n1. Promotion of African Unity and Integration: Nigeria seeks to promote unity among African states through organizations like the African Union and ECOWAS, supporting decolonization and anti-apartheid struggles.\n\n2. Protection of Nigeria's National Interest: The protection of Nigeria's sovereignty, territorial integrity, economic interests, and the welfare of its citizens abroad.\n\n3. Economic Development and Cooperation: Nigeria pursues economic cooperation and trade with other nations to promote development and attract foreign investment.\n\n4. Peaceful Resolution of Conflicts: Nigeria promotes peace and peaceful resolution of disputes through diplomacy, mediation, and peacekeeping operations.\n\n5. Non-Alignment and Independent Foreign Policy: Nigeria maintains an independent foreign policy, avoiding alignment with any major power bloc, promoting its sovereignty and self-determination.\n\n6. Promotion of Justice, Equality, and Human Rights: Nigeria advocates for international justice, equality, and respect for human rights in international fora.\n\nFour Ways to Realize These Objectives:\n1. Strengthening Diplomatic Relations: Nigeria should maintain active diplomatic missions and engage in bilateral and multilateral cooperation with other countries.\n\n2. Active Participation in International Organizations: Nigeria should participate actively in the African Union, ECOWAS, the United Nations, and other international bodies.\n\n3. Economic Diplomacy: Nigeria should use its economic resources (oil, gas) to negotiate favourable trade agreements and attract foreign investment.\n\n4. Peacekeeping and Conflict Resolution: Nigeria should continue to participate in peacekeeping operations and mediation efforts to enhance its leadership role in Africa and internationally."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "What is a political party? Explain any five functions of a political party.",
+    "options": [],
+    "modelAnswer": "A political party is an organized group of people with shared political beliefs, values, and goals, who seek to gain and exercise political power through democratic means. Political parties contest elections to form government and implement their policies.\n\nFive Functions of a Political Party:\n1. Contesting Elections and Forming Government: Political parties select candidates, campaign, and contest elections to win political power and form government. Parties present manifestos to voters, seeking their mandate.\n\n2. Aggregation of Interests: Political parties aggregate diverse interests, demands, and opinions of various groups into coherent policies. They articulate the concerns of different segments of society and translate them into a political agenda.\n\n3. Political Socialization: Political parties educate and socialize citizens into political culture, values, and norms. They raise awareness about political issues, rights, and responsibilities, creating an informed electorate.\n\n4. Recruitment of Leaders: Political parties recruit, train, and prepare individuals for leadership positions in government (e.g., Ministers, Governors, Members of Parliament). They serve as training grounds for political leadership.\n\n5. Representation and Linkage: Political parties represent the interests of their supporters and link the people to the government. They act as a bridge between the governed and the governors, ensuring that the voice of the people is heard in government.\n\n6. Policy Formulation: Political parties develop policies and programs on various issues (economic, social, foreign). They provide alternatives to voters, giving citizens choice in governance direction.\n\n7. Political Stability and Order: Political parties contribute to political stability by providing a peaceful and structured means for the transfer of power. They manage political competition and prevent chaos.\n\n8. Oversight and Opposition: In opposition, political parties monitor and criticize the government, ensuring accountability and transparency. They expose government failures and propose alternative solutions."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Constitution & Constitutionalism",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Explain the differences between constitution and constitutionalism.",
+    "options": [],
+    "modelAnswer": "A constitution is a set of fundamental principles, rules, and laws that establishes the framework of a government, defines the powers and functions of different branches of government, and outlines the rights and duties of citizens. It can be written or unwritten, rigid or flexible.\n\nConstitutionalism is the principle that government must be conducted according to the constitution and the rule of law. It means that the powers of the government are limited by the constitution, and all actions of government must conform to constitutional provisions. Constitutionalism implies that the constitution is supreme and binding on all branches of government.\n\nKey Differences:\n1. Nature: A constitution is a document or set of documents; constitutionalism is a political philosophy or principle.\n2. Existence: A constitution may exist in name only (e.g., a dictator may have a constitution but ignore it). Constitutionalism requires that the constitution is actually respected and enforced.\n3. Scope: A constitution defines the structure and powers of government; constitutionalism requires adherence to the rule of law and limitations on government powers.\n4. Requirement: A constitution is a formal requirement for government; constitutionalism is a practice and culture of limiting government power.\n5. Violation: It is possible to violate a constitution (unconstitutional acts). Constitutionalism implies that such violations are not tolerated and are subject to judicial review.\n\nIn conclusion, a constitution is the 'rule book' of government, while constitutionalism is the 'spirit' of governance — the actual practice of limiting government power according to constitutional rules. A country can have a constitution without constitutionalism (e.g., authoritarian regimes with constitutions that are ignored)."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Outline and explain five basic functions of the executive arms of government.",
+    "options": [],
+    "modelAnswer": "1. Implementation and Enforcement of Laws: The executive is responsible for implementing and enforcing laws made by the legislature. It ensures that laws are put into practice through government agencies, departments, and public servants. For example, the Ministry of Education implements education policies.\n\n2. Formulation of Policy: The executive formulates policies and programs for the governance and development of the country. It initiates policy proposals, budgets, and bills that are presented to the legislature. The executive sets the national agenda.\n\n3. Conduct of Foreign Affairs: The executive represents the country in international relations. It negotiates treaties, appoints ambassadors, maintains diplomatic relations, and represents the country in international organizations like the UN, AU, and ECOWAS.\n\n4. Appointment and Control of Officials: The executive appoints key government officials — ministers, judges, ambassadors, and heads of public agencies. It exercises control over the civil service and public administration.\n\n5. National Security and Defence: The executive is responsible for the security and defence of the state. It commands the armed forces, police, and intelligence agencies. The executive decides on war and peace, and protects the country from external and internal threats.\n\n6. Law-Making (Residual Power): While law-making is primarily a legislative function, the executive also participates in law-making through the power of veto, issuing executive orders, and delegated legislation (regulations made by the executive under powers given by parliament)."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Identify and explain the reasons for the introduction of indirect rule system in Nigeria by the British colonialists. Why did the indirect rule system fail in the Eastern part of Nigeria?",
+    "options": [],
+    "modelAnswer": "Reasons for the Introduction of Indirect Rule:\n1. Limited Personnel and Resources: Britain lacked enough colonial administrators to govern Nigeria directly. Indirect rule allowed them to govern through traditional rulers, using minimal British personnel.\n2. Cost Effectiveness: It was cheaper to govern through traditional institutions than to establish a direct colonial administration. Traditional rulers were paid less than British officials.\n3. Preservation of Traditional Institutions: Britain wanted to preserve traditional political structures to avoid resistance and maintain stability. They recognized the authority of traditional rulers.\n4. Lack of Knowledge of Local Customs: British officials had limited understanding of Nigerian customs and languages. Ruling through traditional rulers who understood local customs was practical.\n5. Communication and Transportation Challenges: Poor infrastructure (roads, communication) made direct rule difficult. Traditional rulers served as intermediaries.\n6. Fear of Resistance: Britain feared that direct rule could provoke resistance and rebellion. Indirect rule was seen as a less disruptive way to maintain control.\n\nReasons for Failure of Indirect Rule in Eastern Nigeria:\n1. Absence of Centralized Authority: The Igbo society was decentralized and acephalous (without a central chief). There were no recognized traditional rulers like Emirs in the North. The British created warrant chiefs who were often unpopular and resisted.\n2. Egalitarian Igbo Society: The Igbo society was egalitarian and based on the village assembly, age grades, and consultative decision-making. Imposing chiefs was contrary to their political culture.\n3. Abuse of Power by Warrant Chiefs: The warrant chiefs appointed by the British abused their powers, collected taxes, and exploited the people. They were seen as corrupt and oppressive.\n4. Popular Resistance: The Aba Women's Riot of 1929 was a major resistance against the warrant chief system and indirect rule. Women protested against oppressive taxation and the abuse of power.\n5. Lack of Legitimacy: The warrant chiefs lacked legitimacy because they were not traditionally recognized as leaders by the people. Their authority was imposed by the British, not based on custom.\n6. Misunderstanding of Igbo Political Structure: British administrators did not understand the Igbo political system, which was based on lineage, village meetings, and consensus. They imposed a foreign system that did not fit.\n\nConclusion: Indirect rule succeeded in the North where centralized Emirs existed, but failed in the East due to cultural differences and opposition from the people."
+  },
+  {
+    "subject": "Government",
+    "year": 2015,
+    "category": "Political Ideas & Thoughts",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Write short notes on any three of the following:\n1. Socialism\n2. Capitalism\n3. Communism\n4. Fascism\n5. Anarchism",
+    "options": [],
+    "modelAnswer": "1. Socialism:\nSocialism is a political and economic ideology that advocates for collective or state ownership of the means of production, distribution, and exchange. It emphasizes social equality, economic justice, and the redistribution of wealth. In a socialist system, the government plans and controls the economy to ensure that the basic needs of all citizens are met. It opposes capitalism, which it sees as exploitative and unequal. Examples: China, Cuba, and the former Soviet Union. Key principles: public ownership, central planning, equality, and social welfare.\n\n2. Capitalism:\nCapitalism is an economic system based on private ownership of the means of production, free markets, profit motive, and competition. Individuals and firms operate for profit, and prices are determined by market forces of demand and supply. It emphasizes individual freedom, consumer choice, and economic growth. Capitalism is associated with liberalism and is the dominant economic system in Western countries (USA, UK, Germany). Key principles: private property, free market, competition, profit motive, and limited government intervention.\n\n3. Communism:\nCommunism is a political and economic ideology based on the ideas of Karl Marx and Friedrich Engels. It advocates for the abolition of private property, classless society, and common ownership of the means of production. In a communist society, the state eventually withers away, and goods are distributed according to need: 'From each according to his ability, to each according to his needs.' It is the most radical form of socialism. Examples: The Soviet Union (historically), China (with modifications), and North Korea. Key principles: class struggle, proletariat revolution, abolition of private property, and planned economy.\n\n4. Fascism:\nFascism is an authoritarian political ideology that emphasizes nationalism, militarism, dictatorship, and the supremacy of the state over the individual. It glorifies force, violence, and obedience to a strong leader (often a dictator). Fascism rejects democracy, liberalism, and socialism. It promotes totalitarian control over all aspects of life. Examples: Nazi Germany (Hitler), Italy (Mussolini), and Spain (Franco). Key principles: totalitarianism, nationalism, militarism, and rejection of democracy.\n\n5. Anarchism:\nAnarchism is a political ideology that advocates for the abolition of all forms of government, state, and hierarchy. It believes that people can organize themselves without any authority through voluntary cooperation and mutual aid. Anarchism opposes the state, capitalism, and all forms of coercion. It envisions a society based on freedom, equality, and self-governance. Key principles: stateless society, voluntary association, mutual aid, and direct democracy."
+  }
+]

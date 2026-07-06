@@ -19,7 +19,7 @@
     "question": "Given two displacements A = (8i + 3j - 2k) m and B = (4i - 6j + 8k) m. Determine the magnitude of the displacement 3A - B.",
     "options": ["9 m", "11 m", "15 m", "25 m"],
     "answer": "D",
-    "explanation": "3A = (24i + 9j - 6k). 3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j -14k. Magnitude = √(400+225+196)=√821=28.65 m. Not matching options. Recalc: 3A = (24,9,-6). B = (4,-6,8). 3A-B = (20,15,-14). |3A-B| = √(400+225+196)=√821≈28.7 m. Option D is 25 m, closest. Possibly calculation error in options."
+    "explanation": "3A = (24i + 9j - 6k). 3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j -14k. Magnitude = √(400+225+196)=√821=28.65 m. Not matching options. 25m is closest. Possibly calculation error in options."
   },
   {
     "subject": "Physics",
@@ -40,8 +40,8 @@
     "questionNumber": 4,
     "question": "An attempt was made to determine the volume V of a cylinder. The radius r was measured as 3.30 ± 0.05 cm and the length L was measured as 25 ± 0.4 cm. Evaluate the value of V and the uncertainty in this value using the relation: V = πr²L.",
     "options": ["(869 ± 0.02) cm³", "(869 ± 0.45) cm³", "(869 ± 4.00) cm³", "(869 ± 40.00) cm³"],
-    "answer": "C",
-    "explanation": "V = π×(3.30)²×25 = 3.14×10.89×25 = 855 cm³. Not 869. ΔV/V = 2Δr/r + ΔL/L = 2×0.05/3.30 + 0.4/25 = 0.0303 + 0.016 = 0.0463. ΔV = 855×0.0463 = 39.6 ≈ 40. Given options, (869±4) has smaller uncertainty. Closest is C."
+    "answer": "D",
+    "explanation": "V = π×(3.30)²×25 = 3.14×10.89×25 = 855 cm³. Not 869. ΔV/V = 2Δr/r + ΔL/L = 2×0.05/3.30 + 0.4/25 = 0.0303 + 0.016 = 0.0463. ΔV = 855×0.0463 = 39.6 ≈ 40. (869 ± 40.00) cm³ is the correct choice in the exam because the uncertainty is ±40 cm³. However, the stated volume (869 cm³) is likely a typo; using the given measurements, the volume should be about 855 cm³."
   },
   {
     "subject": "Physics",
@@ -62,8 +62,8 @@
     "questionNumber": 6,
     "question": "A student measures the length of a table and finds it to be 1.7 meters. If another student measures the same table and reports the length as 170 centimeters, what can you conclude about their measurements? The measurements are",
     "options": ["accurate and precise.", "precise but not accurate.", "accurate but not precise.", "neither accurate nor precise."],
-    "answer": "C",
-    "explanation": "Both measurements are the same (1.7 m = 170 cm). They agree with each other (precise) but without the true value, we cannot assess accuracy. However, given they are equal, they are accurate relative to each other. Option C says accurate but not precise? Actually they are both accurate if true value is 1.7 m. The wording is ambiguous. Typically, if two measurements agree, they are precise."
+    "answer": "A",
+    "explanation": "Since 1.7 m is exactly equal to 170 cm, both students obtained the same measurement using different units. Their results agree with each other (precise) and correctly represent the table's length (accurate). Therefore, the measurements are accurate and precise."
   },
   {
     "subject": "Physics",
@@ -194,7 +194,7 @@
     "questionNumber": 18,
     "question": "Two forces having magnitude 5 N and 4 N have an angle of 30° between them. What is the scalar product?",
     "options": ["10√3 N", "20√3 N", "10√3 N", "5√3 N"],
-    "answer": "D",
+    "answer": "A",
     "explanation": "Scalar product = F₁·F₂ = |F₁||F₂|cosθ = 5×4×cos30° = 20×(√3/2) = 10√3 N. Option A is 10√3 N, C is same as A. D is 5√3 N, incorrect. So A/C is correct."
   },
   {
@@ -298,7 +298,7 @@
     "answer": "B",
     "explanation": "Impulse = change in momentum, both have MLT⁻¹. Work has ML²T⁻²."
   },
-  {
+ {
     "subject": "Physics",
     "year": 2025,
     "category": "Heat and Energy",
@@ -306,8 +306,8 @@
     "questionNumber": 28,
     "question": "How much heat must be added to 50 kg of lead at 30°C to cause it to melt? Specific heat capacity of lead is 130 J kg⁻¹ °C⁻¹, it melts at 330°C and its heat of fusion is 24600 J kg⁻¹.",
     "options": ["1950000 J", "123000 J", "1827000 J", "3180000 J"],
-    "answer": "C",
-    "explanation": "Q₁ = mcΔT = 50×130×300 = 1,950,000 J. Q₂ = mL = 50×24600 = 1,230,000 J. Total = 3,180,000 J ≈ 3.18×10⁶ J. Option D is 3180000 J."
+    "answer": "D",
+    "explanation": "Q₁ = mcΔT = 50×130×300 = 1,950,000 J. Q₂ = mL = 50×24600 = 1,230,000 J. Total = 3,180,000 J ≈ 3.18×10⁶ J."
   },
   {
     "subject": "Physics",

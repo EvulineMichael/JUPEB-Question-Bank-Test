@@ -460,8 +460,8 @@
     "questionNumber": 42,
     "question": "The boiling point of a solution containing 40g of an unknown substance dissolved in 100g of water is 105.3°C. Calculate the molar mass of the compound. (Kb = 0.512°C kg/mol)",
     "options": ["10.5", "38.6", "66.0", "98.0"],
-    "answer": "C",
-    "explanation": "ΔTb = 105.3 - 100 = 5.3°C. ΔTb = Kb × m. m = ΔTb/Kb = 5.3/0.512 = 10.35 mol/kg. Moles solute = m × kg solvent = 10.35 × 0.100 = 1.035 mol. Molar mass = 40/1.035 = 38.6 g/mol. Wait recalc: m = mol solute/kg solvent. 10.35 = (40/M)/0.1 → 10.35 × 0.1 = 40/M → 1.035 = 40/M → M = 40/1.035 = 38.6. Option B is 38.6."
+    "answer": "B",
+    "explanation": "The boiling point elevation is calculated by subtracting the boiling point of pure water from that of the solution, giving 5.3°C. Using the formula ΔTb = Kb × molality, the molality of the solution is found to be 10.35 mol/kg. Since the solvent is 100 g of water (0.1 kg), the number of moles of the unknown substance is 1.035 mol. The molar mass is then calculated by dividing the mass of the substance (40 g) by the number of moles, giving 38.6 g/mol. Therefore, the molar mass of the compound is 38.6 g/mol."
   },
   {
     "subject": "Chemistry",

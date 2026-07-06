@@ -63,7 +63,7 @@
     "question": "An object with a mass of 5 kg displaces 350 ml of water. Which of the following is true?",
     "options": ["The weight of this object is 50 N.", "The weight of this object is 7 N.", "The weight of this object is 3 N.", "The buoyant force on this object is 3 N."],
     "answer": "A",
-    "explanation": "Weight = mg = 5 × 9.8 = 49 N ≈ 50 N. Buoyant force = weight of displaced water = 0.35 × 9.8 = 3.43 N ≈ 3.5 N. Option A is correct."
+    "explanation": "Weight = mass × gravity = 5 kg × 10 m/s² = 50 N. The buoyant force equals the weight of displaced water: 350 mL of water has a mass of 0.35 kg, so buoyant force = 0.35 × 10 = 3.5 N. Since weight (50 N) exceeds buoyant force (3.5 N), the object sinks."
   },
   {
     "subject": "Physics",
@@ -73,7 +73,7 @@
     "questionNumber": 7,
     "question": "If the earth is considered as a sphere of radius r and density ρ, the gravitational intensity at the surface is given as g = k r ρ where k is a constant, then the dimension of k is",
     "options": ["MLT⁻²", "ML⁻¹T¹", "ML⁻³T²", "M⁻¹L³T⁻²"],
-    "answer": "A",
+    "answer": "D",
     "explanation": "g has dimension LT⁻². r has L, ρ has ML⁻³. So k = g/(rρ) has dimension (LT⁻²)/(L × ML⁻³) = (LT⁻²)/(ML⁻²) = M⁻¹L³T⁻². Option D is M⁻¹L³T⁻²."
   },
   {

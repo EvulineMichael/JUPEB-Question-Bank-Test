@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Nigeria adopted the Parliamentary system of government in",
+    "options": [
+      "Fourth Republic.",
+      "Third Republic.",
+      "Second Republic.",
+      "First Republic."
+    ],
+    "answer": "D",
+    "explanation": "Nigeria adopted the Parliamentary system of government in the First Republic (1960-1966). It was a Westminster-style system with a Prime Minister as head of government and a Governor-General representing the Queen."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The sovereignty entrenched on law rather than coercion is",
+    "options": [
+      "de facto.",
+      "de jure.",
+      "internal.",
+      "external."
+    ],
+    "answer": "B",
+    "explanation": "De jure sovereignty is sovereignty based on law and legal right, rather than on force or coercion. It is legitimacy derived from constitutional and legal processes. De facto sovereignty is based on actual control and force."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The theory of state that describes popular sovereignty is known as",
+    "options": [
+      "Social contract theory.",
+      "Natural theory.",
+      "Force theory.",
+      "Theory of divine origin."
+    ],
+    "answer": "A",
+    "explanation": "Social contract theory (Hobbes, Locke, Rousseau) describes popular sovereignty — the idea that the state is created by the consent of the governed and that ultimate authority resides with the people. Force theory emphasizes conquest and coercion."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The type of government in which ceremonial and executive powers are vested in one person is",
+    "options": [
+      "Parliamentary system.",
+      "Republican system.",
+      "Confederate system.",
+      "Presidential system."
+    ],
+    "answer": "D",
+    "explanation": "In a presidential system, both ceremonial and executive powers are vested in one person — the President, who is both Head of State and Head of Government. In a parliamentary system, these roles are split."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The political ideology centered on a classless society is",
+    "options": [
+      "communism.",
+      "socialism.",
+      "capitalism.",
+      "communalism."
+    ],
+    "answer": "A",
+    "explanation": "Communism is centered on a classless society — it advocates for the abolition of social classes, common ownership of the means of production, and the eventual withering away of the state."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Elections & Electoral System",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Second ballot system is associated with",
+    "options": [
+      "run-off election.",
+      "direct election.",
+      "plurality system.",
+      "party list system."
+    ],
+    "answer": "A",
+    "explanation": "The second ballot system is associated with a run-off election — if no candidate wins an absolute majority in the first round, a second round is held between the top two candidates. This is used in some presidential elections."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The type of political culture in which the citizen is only interested in local, village and ethnic politics is",
+    "options": [
+      "participant culture.",
+      "subject culture.",
+      "civic culture.",
+      "parochial culture."
+    ],
+    "answer": "D",
+    "explanation": "Parochial culture is a type of political culture where citizens are only interested in local, village, and ethnic politics — they have little awareness of or interest in national politics. Participant culture involves active political engagement."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "John Stuart Mill and Jeremy Bentham are core proponents of",
+    "options": [
+      "Environmentalism.",
+      "Totalitarianism.",
+      "Utilitarianism.",
+      "Authoritarianism."
+    ],
+    "answer": "C",
+    "explanation": "John Stuart Mill and Jeremy Bentham are core proponents of Utilitarianism — the ethical and political philosophy that advocates for the greatest happiness for the greatest number. Bentham is considered the founder of utilitarianism."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The theory of public administration which emphasized hierarchy and rules is the",
+    "options": [
+      "Organizational theory.",
+      "Bureaucratic theory.",
+      "Human relations theory.",
+      "Scientific management theory."
+    ],
+    "answer": "B",
+    "explanation": "Max Weber's bureaucratic theory emphasized hierarchy and rules — it is based on rational-legal authority, clearly defined roles, rules, and a hierarchical structure. Scientific management (Taylor) focused on efficiency."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "How many local government authorities exist in Nigeria?",
+    "options": [
+      "772",
+      "773",
+      "774",
+      "775"
+    ],
+    "answer": "C",
+    "explanation": "There are 774 local government authorities (LGAs) in Nigeria. This number has been the established figure since 1996 under the Abacha administration."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Public Opinion & Propaganda",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The aggregate views expressed by people on a particular issue of national concern is",
+    "options": [
+      "opinion poll.",
+      "public opinion.",
+      "referendum.",
+      "opinion sampling."
+    ],
+    "answer": "B",
+    "explanation": "Public opinion is the aggregate views expressed by people on a particular issue of national concern. Opinion polls are methods of measuring public opinion; a referendum is a direct vote on a specific issue."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The candidate that won the presidential elections on June 12, 1993, annulled by the military was",
+    "options": [
+      "Sani Abacha.",
+      "M K O Abiola.",
+      "Bashir Tofa.",
+      "Umaru Yar'adua."
+    ],
+    "answer": "B",
+    "explanation": "Chief M.K.O. Abiola won the June 12, 1993 presidential elections, but the results were annulled by General Ibrahim Babangida. The election was widely considered the freest and fairest in Nigeria's history up to that point."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The legislative council of Clifford Constitution of 1922 were composed of",
+    "options": [
+      "44 members.",
+      "45 members.",
+      "46 members.",
+      "47 members."
+    ],
+    "answer": "C",
+    "explanation": "The Clifford Constitution of 1922 established a Legislative Council with 46 members — 27 official members and 19 unofficial members (including 4 elected members from Lagos and Calabar)."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Lyttleton Constitution of 1954 made provisions for two separate elections at",
+    "options": [
+      "state and federal levels.",
+      "local and state levels.",
+      "local and regional levels.",
+      "regional and central levels."
+    ],
+    "answer": "D",
+    "explanation": "The Lyttleton Constitution of 1954 made provisions for two separate elections at regional and central (federal) levels. It established a federal system with separate regional and central governments and elections."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "The 3R policy of General Yakubu Gowon at the end of Nigeria-Biafra war represents",
+    "options": [
+      "reconstruction, rejuvenation and reconciliation.",
+      "rejuvenation, revolution and reorganisation.",
+      "rehabilitation, representation and realization.",
+      "reconciliation, rehabilitation and reconstruction."
+    ],
+    "answer": "D",
+    "explanation": "The 3R policy of General Yakubu Gowon after the Nigeria-Biafra war represented Reconciliation, Rehabilitation, and Reconstruction. It aimed to heal the wounds of the war and rebuild the affected areas."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Boko Haram is popular as a",
+    "options": [
+      "terrorist organisation based in Northern Nigeria.",
+      "militant group fighting for emancipation of Nigeria.",
+      "terrorist group that promotes democracy in Nigeria.",
+      "militant organisation located in Southern Nigeria."
+    ],
+    "answer": "A",
+    "explanation": "Boko Haram is a terrorist organisation based in Northern Nigeria (primarily Borno, Yobe, and Adamawa states). It has carried out insurgency attacks against the Nigerian state and civilians since 2009."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The major actors in the Action Group crisis of 1962 were",
+    "options": [
+      "Tafawa Balewa and Obafemi Awolowo.",
+      "Ladoke Akintola and Tafawa Balewa.",
+      "Obafemi Awolowo and Ladoke Akintola.",
+      "Ahmadu Bello and Tafawa Balewa."
+    ],
+    "answer": "C",
+    "explanation": "The major actors in the 1962 Action Group crisis were Chief Obafemi Awolowo (leader of the Action Group) and Chief S.L. Akintola (his deputy). Their conflict led to the party's split and the declaration of a state of emergency in the Western Region."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The major external factor that influenced nationalism in the colonial territories was the",
+    "options": [
+      "discrimination in the civil service.",
+      "education of African elites.",
+      "role of ex-servicemen.",
+      "attitude of British Labour Party."
+    ],
+    "answer": "D",
+    "explanation": "The attitude of the British Labour Party was a major external factor that influenced nationalism in the colonial territories. The Labour Party was sympathetic to colonial independence and decolonization, which encouraged nationalist movements."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Democratization & Political Process in Africa",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The processes by which a country progress from totalitarianism to a democratic government describes",
+    "options": [
+      "totalitarianism.",
+      "democratization.",
+      "civil rule.",
+      "military administration."
+    ],
+    "answer": "B",
+    "explanation": "Democratization is the process by which a country transitions from authoritarianism or totalitarianism to a democratic system of government. It involves political liberalization, institution-building, and the establishment of democratic norms and practices."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The modern slavery that involves unlawful movement of persons across borders is",
+    "options": [
+      "human trafficking.",
+      "human right abuse.",
+      "colonization.",
+      "globalization."
+    ],
+    "answer": "A",
+    "explanation": "Human trafficking is the modern slavery that involves the unlawful movement of persons across borders for exploitation — forced labour, sexual exploitation, and organ harvesting. It is a violation of human rights."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The two dominant colonial powers in West Africa were",
+    "options": [
+      "Britain and France.",
+      "France and Spain.",
+      "Germany and Portugal.",
+      "Germany and Hungary."
+    ],
+    "answer": "A",
+    "explanation": "The two dominant colonial powers in West Africa were Britain and France. Britain colonized Nigeria, Ghana, Sierra Leone, and The Gambia, while France colonized Senegal, Mali, Ivory Coast, Benin, Burkina Faso, Niger, and Guinea."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The basic principle of federalism is that it",
+    "options": [
+      "allows for equal rights.",
+      "promotes rule of law.",
+      "allows for division of power.",
+      "protects fundamental human rights."
+    ],
+    "answer": "C",
+    "explanation": "The basic principle of federalism is the division of power between the central government and component units (states/provinces). Each level of government has constitutionally guaranteed powers. Equal rights and rule of law are broader democratic principles."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "A sovereign state with strong central government and weak components is",
+    "options": [
+      "confederal.",
+      "unitary.",
+      "federal.",
+      "bicameral."
+    ],
+    "answer": "B",
+    "explanation": "A unitary state has a strong central government and weak components (local/regional governments). Power is centralized in the national government. Federal systems share power between central and regional governments."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Citizens often exercise their suffrage by participating in",
+    "options": [
+      "campaign.",
+      "protest.",
+      "election.",
+      "demonstrations."
+    ],
+    "answer": "C",
+    "explanation": "Suffrage is the right to vote. Citizens exercise their suffrage by participating in elections — casting their votes to choose representatives and leaders. Campaigns, protests, and demonstrations are forms of political participation but not suffrage specifically."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "A sovereign state primarily interacts with others based on",
+    "options": [
+      "foreign trade.",
+      "foreign investment.",
+      "foreign policy.",
+      "foreign relations."
+    ],
+    "answer": "C",
+    "explanation": "A sovereign state primarily interacts with others based on foreign policy — the principles, strategies, and actions that guide its relations with other states. Foreign policy determines how a state engages with the international community."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The involvement of the electorates in choosing representatives into political positions is called",
+    "options": [
+      "Aristocracy.",
+      "Democracy.",
+      "Theocracy.",
+      "Gerontocracy."
+    ],
+    "answer": "B",
+    "explanation": "Democracy is the involvement of the electorates (citizens) in choosing representatives into political positions through elections. Aristocracy is rule by the elite, theocracy is rule by religious leaders, and gerontocracy is rule by the elderly."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Nigeria adopted the Presidential system of government in",
+    "options": [
+      "Fourth Republic.",
+      "Third Republic.",
+      "Second Republic.",
+      "First Republic."
+    ],
+    "answer": "C",
+    "explanation": "Nigeria adopted the Presidential system of government in the Second Republic (1979-1983). The 1979 Constitution established a presidential system with an executive President. The First Republic had a parliamentary system."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "An authority that is based on exceptional personal qualities of a leader is known as",
+    "options": [
+      "military authority.",
+      "charismatic authority.",
+      "traditional authority.",
+      "legal-rational authority."
+    ],
+    "answer": "B",
+    "explanation": "Charismatic authority is based on exceptional personal qualities, charisma, and extraordinary leadership of an individual. It is one of Max Weber's three types of authority (the others being traditional and legal-rational)."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The approach to the study of government and politics that attempts to predict and explain a phenomenon is",
+    "options": [
+      "behavioural approach.",
+      "qualitative approach.",
+      "empirical approach.",
+      "quantitative approach."
+    ],
+    "answer": "A",
+    "explanation": "The behavioural approach to the study of government and politics attempts to predict and explain political phenomena through empirical observation and scientific methods. It focuses on observable political behaviour rather than institutions or values."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "In the middle age, the central means of production in the feudal society is",
+    "options": [
+      "trade.",
+      "wealth.",
+      "money.",
+      "land."
+    ],
+    "answer": "D",
+    "explanation": "In the Middle Ages, the central means of production in feudal society was land — land was the source of wealth and power. Lords owned land and granted it to vassals in exchange for military service and labour."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Federalism is most suitable in a",
+    "options": [
+      "homogeneous society.",
+      "society with natural resources.",
+      "heterogeneous society.",
+      "society with uniform background."
+    ],
+    "answer": "C",
+    "explanation": "Federalism is most suitable in a heterogeneous society — a society with diverse ethnic, linguistic, religious, and cultural groups. It accommodates diversity by allowing regions to have some autonomy while maintaining a central government for common affairs."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "In a confederation, sovereignty reposes with the",
+    "options": [
+      "central government.",
+      "component states.",
+      "unitary states.",
+      "federal government."
+    ],
+    "answer": "B",
+    "explanation": "In a confederation, sovereignty reposes with the component states (member states). They retain their sovereignty and independence, and the central government is weak and subordinate. Member states can withdraw from the confederation."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Gender equality is an ideological movement of",
+    "options": [
+      "feminism.",
+      "imperialism.",
+      "welfarism.",
+      "nationalism."
+    ],
+    "answer": "A",
+    "explanation": "Gender equality is an ideological movement of feminism — it advocates for equal rights, opportunities, and treatment for women in all spheres of life, including political, economic, and social spheres."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "In the capitalist society, the central means of production is",
+    "options": [
+      "labour.",
+      "slave.",
+      "capital.",
+      "land."
+    ],
+    "answer": "C",
+    "explanation": "In a capitalist society, the central means of production is capital — money, machinery, equipment, and infrastructure used to produce goods and services. Capital is privately owned by the bourgeoisie."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "An organized group of citizens having similar political ideology, working together to gain control of government explains",
+    "options": [
+      "political participation.",
+      "party system.",
+      "political party.",
+      "party affiliation."
+    ],
+    "answer": "C",
+    "explanation": "A political party is an organized group of citizens having similar political ideology, working together to gain control of government through elections. It is the vehicle through which citizens organize for political power."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The technique frequently adopted by Nigeria Labour Congress to influence government decisions is",
+    "options": [
+      "strike.",
+      "revolution.",
+      "riot.",
+      "protest."
+    ],
+    "answer": "A",
+    "explanation": "The Nigeria Labour Congress (NLC) frequently adopts strikes as a technique to influence government decisions — workers withdraw their labour to press for better wages and working conditions. Strikes are industrial action, not riots or protests."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The forcible seizure of power through unconstitutional action by the military defines",
+    "options": [
+      "coup d'etat.",
+      "counter coup.",
+      "unconstitutionalism.",
+      "insurrection."
+    ],
+    "answer": "A",
+    "explanation": "A coup d'etat is the forcible seizure of power through unconstitutional action by the military. It involves overthrowing an existing government through force or threat of force. A counter-coup is a reaction against a coup."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The political party that won the presidential election of 1979 was",
+    "options": [
+      "National Party of Nigeria.",
+      "Unity Party of Nigeria.",
+      "Nigerian People's Party.",
+      "People's redemption Party."
+    ],
+    "answer": "A",
+    "explanation": "The National Party of Nigeria (NPN) won the presidential election of 1979. Alhaji Shehu Shagari was the NPN candidate and became Nigeria's first Executive President. The UPN was led by Awolowo, NPP by Azikiwe, and PRP by Aminu Kano."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The principle of checks and balances in the pre-colonial era is more pronounced in",
+    "options": [
+      "Hausa-Fulani emirate.",
+      "Yoruba kingdom.",
+      "Igbo community.",
+      "Benin kingdom."
+    ],
+    "answer": "B",
+    "explanation": "The principle of checks and balances was more pronounced in the Yoruba kingdom — the Oyo Mesi council checked the powers of the Alaafin, and the Bashorun could compel the Alaafin to commit suicide. This was a system of checks on executive power."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "In the Hausa-Fulani emirate, the Dogari is the equivalent of the",
+    "options": [
+      "Minster of Information.",
+      "Inspector General of Police.",
+      "Chief Justice.",
+      "Minister of Education."
+    ],
+    "answer": "B",
+    "explanation": "In the Hausa-Fulani emirate, the Dogari was the equivalent of the Inspector General of Police — he was the head of the security forces responsible for maintaining law and order, guarding the Emir, and enforcing the Emir's commands."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The political parties that formed alliance and transformed to APC in 2013 were",
+    "options": [
+      "ACN, CPC and ANPP.",
+      "AC, ANPP and SDP.",
+      "PDP, ACN and CPC.",
+      "APGA, CPC and AC."
+    ],
+    "answer": "A",
+    "explanation": "The political parties that formed an alliance and transformed to the All Progressives Congress (APC) in 2013 were the Action Congress of Nigeria (ACN), the Congress for Progressive Change (CPC), and the All Nigeria Peoples Party (ANPP)."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The leading European country to invade Africa was",
+    "options": [
+      "Britain.",
+      "Portugal.",
+      "Belgium.",
+      "Germany."
+    ],
+    "answer": "B",
+    "explanation": "The leading European country to invade Africa was Portugal — Portuguese explorers were the first to reach West Africa in the 15th century under Prince Henry the Navigator. They began the era of European contact and exploration of Africa."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The agitation for self-government against colonial rule describes",
+    "options": [
+      "colonialism.",
+      "imperialism.",
+      "expansionism.",
+      "nationalism."
+    ],
+    "answer": "D",
+    "explanation": "Nationalism is the agitation for self-government against colonial rule — it is the movement for independence and self-determination by colonized peoples. Colonialism is the system of colonial rule; imperialism is the policy of extending power."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The positive effect of colonialism in West Africa led to the",
+    "options": [
+      "formation of political parties.",
+      "introduction of military administration.",
+      "exclusion of the educated elite.",
+      "relegation of African culture and tradition."
+    ],
+    "answer": "A",
+    "explanation": "The positive effect of colonialism in West Africa led to the formation of political parties — nationalist movements and political parties emerged as a response to colonial rule, leading to self-government and independence. Introduction of military administration is not positive."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The foremost objective of pre-colonial nationalists in West Africa was",
+    "options": [
+      "political integration.",
+      "political development.",
+      "political empowerment.",
+      "political independence."
+    ],
+    "answer": "D",
+    "explanation": "The foremost objective of pre-colonial nationalists in West Africa was political independence — the liberation of their countries from colonial rule and the establishment of self-government."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The core motive of European invasion of Africa was",
+    "options": [
+      "political.",
+      "economical.",
+      "geographical.",
+      "social."
+    ],
+    "answer": "B",
+    "explanation": "The core motive of European invasion of Africa was economical — the desire for raw materials, markets, and wealth. Economic exploitation was the primary driver of colonialism. Political, geographical, and social motives were secondary."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The major reason advanced by General Babangida for annulment of June 12, 1993 presidential election was to",
+    "options": [
+      "prevent a coup.",
+      "control ethnicity.",
+      "protect the military.",
+      "violate human rights."
+    ],
+    "answer": "A",
+    "explanation": "General Babangida advanced that the annulment of the June 12, 1993 presidential election was to prevent a coup — he claimed that the political situation was volatile and could lead to military intervention. However, this was widely disputed."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The appointment of the head of the judiciary in any democratic setting is done by the",
+    "options": [
+      "legislature.",
+      "judicial organ.",
+      "judicial council.",
+      "president."
+    ],
+    "answer": "D",
+    "explanation": "In most democratic settings, the head of the judiciary (e.g., Chief Justice) is formally appointed by the President or Head of State, usually on the recommendation of an independent judicial body and subject to legislative confirmation. While the Judicial Council makes recommendations, the actual appointing authority is the President."
+},
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The major advantage of political participation is that it",
+    "options": [
+      "promotes rigging of election.",
+      "reduces party politics.",
+      "reduces political apathy.",
+      "ensures economic growth."
+    ],
+    "answer": "C",
+    "explanation": "The major advantage of political participation is that it reduces political apathy — when citizens participate, they become engaged, informed, and invested in the political process. This strengthens democracy and accountability."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The organ of the United Nations that has all states represented on an equal basis is the",
+    "options": [
+      "Security Council.",
+      "General Assembly.",
+      "International Court of Justice.",
+      "The Economic and Social Council."
+    ],
+    "answer": "B",
+    "explanation": "The General Assembly is the organ of the United Nations that has all states represented on an equal basis — each member state has one vote, regardless of size, population, or power. The Security Council has limited membership with veto power."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) Define Federalism.\n(b) Identify and discuss any FOUR features of a federal system.",
+    "options": [],
+    "modelAnswer": "(a) Federalism:\nFederalism is a system of government in which political power is divided between a central (national) government and regional (state/provincial) governments. Each level of government has constitutionally guaranteed powers and is independent in its own sphere. Both levels of government operate directly on the citizens.\n\n(b) Four features of a federal system:\n1. Division of Powers: A federal system has a constitutional division of powers between the central government and the component units. The constitution specifies the matters on which each level can legislate — exclusive list for the central government, concurrent list for both, and residual list for the states.\n\n2. Supremacy of the Constitution: The constitution is supreme in a federal system — all levels of government derive their powers from the constitution, and any action inconsistent with the constitution is void. The constitution is the fundamental law.\n\n3. Written and Rigid Constitution: Federal constitutions are typically written and rigid — they cannot be easily amended. Amendments usually require a special procedure, such as supermajority approval, to ensure that changes have broad support.\n\n4. Bicameral Legislature: Federal systems usually have a bicameral legislature — an upper house (Senate) representing the states/regions and a lower house (House of Representatives) representing the population. This ensures that smaller states have a voice in lawmaking.\n\n5. Independent Judiciary: Federal systems have an independent judiciary to interpret the constitution and resolve disputes between the central and regional governments. The Supreme Court acts as the final arbiter of constitutional questions.\n\n6. Dual Government: There are two levels of government — each with its own executive, legislature, and sometimes judiciary. Both levels are autonomous in their respective spheres of jurisdiction."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Discuss any FIVE features of Unitary System of Government.",
+    "options": [],
+    "modelAnswer": "A unitary system of government is one where all political power is centralized in the central government. Regional/local governments exist but derive their powers from the central government.\n\nFive features of a unitary system:\n1. Centralization of Power: In a unitary system, power is concentrated in the central government. The central government has supreme authority over all matters — it can create, modify, or abolish regional or local governments.\n\n2. Supremacy of the Central Government: The central government is supreme — it is the ultimate authority in the state. There is no constitutional division of powers between central and regional governments; local governments are subordinate.\n\n3. Unwritten or Flexible Constitution: Unitary systems often have unwritten (or flexible) constitutions. The constitution can be amended by ordinary legislative process, allowing the central government to adapt to changing circumstances without special procedures.\n\n4. Uniformity of Laws and Policies: Unitary systems have uniform laws and policies throughout the country. There are no regional variations in laws, as the central government makes laws for the entire territory.\n\n5. Single Legislature and Executive: There is usually a single legislature and a single executive governing the entire country. Local governments are administrative units, not constitutional entities with independent powers.\n\n6. No Constitutional Division of Powers: Unlike federalism, there is no constitutional division of powers — the central government can delegate powers to local governments but can also withdraw them.\n\n7. Less Expensive: Unitary systems are often less expensive to operate than federal systems, as there is no duplication of governmental structures (state governments) and fewer administrative costs."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Elections & Electoral System",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) Define Election.\n(b) Write short notes on any FOUR of the following:\ni. Primary election.\nii. General election.\niii. Bye election.\niv. Indirect election.\nv. Direct election.\nvi. Re-Run election.",
+    "options": [],
+    "modelAnswer": "(a) Election:\nAn election is a formal process by which citizens of a country choose their representatives or leaders through voting. It is a fundamental mechanism of democracy, allowing citizens to participate in governance, hold leaders accountable, and peacefully transfer political power.\n\n(b) Short notes on four types of elections:\n1. Primary Election: A primary election is an election held within a political party to select its candidate for a general election. It allows party members to choose who will represent the party in the main election. Example: US presidential primaries.\n\n2. General Election: A general election is a nationwide or regional election held to choose representatives for political office — the president, members of parliament, governors, etc. It determines who will hold political power. Example: Nigerian presidential elections.\n\n3. Bye-election (By-election): A bye-election is held to fill a vacant seat in the legislature that becomes vacant between general elections due to death, resignation, or disqualification of the incumbent. It ensures that all constituencies have representation.\n\n4. Indirect Election: An indirect election is one where citizens elect representatives (electors) who then elect the final officeholder. The citizens do not directly vote for the candidate. Example: The Electoral College in the US presidential elections.\n\n5. Direct Election: A direct election is one where citizens vote directly for candidates or parties. The candidate with the most votes wins the election. Example: Presidential elections in Nigeria.\n\n6. Re-Run Election: A re-run election is held when the initial election is inconclusive or disputed — usually when no candidate secures the required majority, or when irregularities are serious enough to warrant a fresh election."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Public Opinion & Propaganda",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) What is Propaganda?\n(b) Discuss any FOUR strategies of propaganda.",
+    "options": [],
+    "modelAnswer": "(a) Propaganda:\nPropaganda is the deliberate and systematic dissemination of information, ideas, or rumours to influence public opinion, shape perceptions, or promote a particular cause, ideology, or agenda. It often involves biased, misleading, or distorted information to achieve political, ideological, or commercial objectives.\n\n(b) Four strategies of propaganda:\n1. Name Calling (Labeling): This strategy involves attaching negative labels or names to opponents, ideas, or groups to discredit them. It uses emotionally charged language to create prejudice and hostility. Example: Calling political opponents 'corrupt' or 'enemies of progress.'\n\n2. Glittering Generalities (Virtue Words): This strategy uses positive, emotionally appealing words (freedom, justice, democracy, patriotism) that sound good but are vague. It associates the propagandist's cause with widely accepted values to gain support without providing concrete details.\n\n3. Testimonial: This strategy uses endorsements from respected or famous individuals to promote a cause or idea. When trusted figures (celebrities, religious leaders, experts) support a position, people are more likely to accept it. Example: A politician getting endorsement from a popular religious leader.\n\n4. Bandwagon Effect: This strategy creates the impression that 'everyone is doing it' or that a particular cause is winning — it appeals to the desire to be on the winning side. It pressures people to conform to majority opinion. Example: 'Join millions of Nigerians in supporting this policy.'\n\n5. Transfer (Association): This strategy associates a person, idea, or product with something that has positive or negative connotations. It transfers the emotional appeal from one thing to another. Example: A politician standing in front of the national flag to associate himself with patriotism.\n\n6. Fear (Appeal to Fear): This strategy uses fear to influence public opinion — it warns people about negative consequences if they do not support a particular position. Example: 'Vote for us or the country will collapse.'\n\n7. Plain Folks: This strategy attempts to convince the audience that the propagandist is an ordinary person who understands and shares their concerns. It builds trust by appearing relatable and down-to-earth."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Identify and explain any TWO strengths and THREE weaknesses of the Richards Constitution of 1946.",
+    "options": [],
+    "modelAnswer": "The Richards Constitution of 1946 was a major constitutional development in Nigeria, introducing regionalism and increasing African representation.\n\nStrengths:\n1. Introduction of Regionalism: The constitution introduced regionalism by dividing Nigeria into three regions — Northern, Western, and Eastern regions. This recognized Nigeria's diversity and laid the foundation for the federal system. It allowed each region to develop according to its needs.\n\n2. Increased African Participation: The constitution increased African representation in the Legislative Council — it created regional legislatures with unofficial majorities, giving Africans more say in governance. This was a step towards self-government and prepared Nigerians for independence.\n\n3. Establishment of the House of Chiefs: The constitution created a House of Chiefs in the Northern and Western regions, recognizing traditional institutions and incorporating them into governance. This preserved traditional authority and culture.\n\nWeaknesses:\n1. Limited Franchise: The constitution retained a restricted franchise based on property and income qualifications, limiting voting rights to a small minority of Nigerians. Most Nigerians could not participate in elections, undermining democracy.\n\n2. Central Government Dominance: Despite regionalism, the central government (Governor-General) retained ultimate authority. The regions had limited powers, and the Governor-General could override regional decisions. This made the constitution undemocratic.\n\n3. Lack of Popular Consultation: The constitution was imposed without consulting the Nigerian people — it was drafted by Governor-General Sir Arthur Richards and presented to the Legislative Council for approval. Nigerians had no say in its making, leading to resentment.\n\n4. Unequal Representation: The regions were not equally represented — the Northern region had more representatives than the Eastern and Western regions combined, creating regional imbalances and dissatisfaction."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Identify and discuss any FIVE effects of the Nigerian Civil War (1967-1970).",
+    "options": [],
+    "modelAnswer": "The Nigerian Civil War (1967-1970) was a devastating conflict between Nigeria and the secessionist state of Biafra. It had lasting effects on Nigeria.\n\nFive effects of the Nigerian Civil War:\n1. Massive Loss of Lives and Displacement: The war claimed an estimated 1-3 million lives, mostly from starvation, disease, and military action. Millions were displaced, and many became refugees in neighbouring countries. The war left deep psychological scars on survivors.\n\n2. Economic Devastation: The war destroyed infrastructure, industries, and agriculture in the Eastern region — roads, bridges, schools, hospitals, and factories were destroyed. The economy of the region collapsed, and Nigeria as a whole suffered economic decline. Many communities were left in ruins.\n\n3. Rise of Ethnic and Regional Tensions: The war intensified ethnic and regional tensions — the Igbo (Biafran) population suffered discrimination and marginalization after the war. The 'no victor, no vanquished' policy was adopted, but ethnic relations remained strained. The war deepened divisions in Nigerian society.\n\n4. Strengthening of Federalism: The war reinforced the federal system — Nigeria remained united, and the federal government became stronger. The number of states was increased from 4 to 12 in 1967 to prevent future secession and ensure regional balance. Federalism was consolidated.\n\n5. Economic Policy Changes: The war led to the indigenization policy — the government took control of key industries and resources to reduce foreign influence and build national capacity. It also led to increased government spending on defence and security.\n\n6. Humanitarian Crisis: The war created a humanitarian crisis — widespread starvation, disease, and malnutrition, especially among children. International organizations (Red Cross, UNICEF) provided aid, but it was insufficient. The images of starving Biafran children shaped global perceptions of the war.\n\n7. Political Instability: The war contributed to political instability — Nigeria experienced several coups in the years following the war (1975, 1976, 1983). The military remained in power until 1979, and the war's legacy affected Nigerian politics for decades."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) What is Colonialism?\n(b) Discuss FOUR strategies of European invasion of Africa.",
+    "options": [],
+    "modelAnswer": "(a) Colonialism:\nColonialism is the policy and practice of acquiring and maintaining political control over a foreign territory, colonizing it with settlers, and exploiting its resources for the benefit of the colonizing power. It involves the domination of one people by another, often with economic exploitation, cultural imposition, and political subjugation.\n\n(b) Four strategies of European invasion of Africa:\n1. Military Conquest and Force: European powers used superior weapons (guns, cannons, machine guns) to defeat African armies and establish colonial rule. They employed military force to subjugate resistance, depose African leaders, and establish control. Examples: The British conquest of the Ashanti Empire, the French conquest of Dahomey, and the German suppression of the Maji Maji rebellion.\n\n2. Treaties and Deception: Europeans signed treaties with African chiefs, often exploiting their lack of understanding of European legal concepts. These treaties granted Europeans sovereignty or control over land and resources. In many cases, African leaders were deceived about the terms. Examples: Lugard's treaties with Northern Nigerian Emirs, and treaties between Cecil Rhodes and African chiefs in Southern Africa.\n\n3. Divide and Rule: Europeans exploited existing ethnic, religious, and political divisions among African societies to weaken resistance. They played groups against each other, used alliances with some groups to conquer others, and exacerbated rivalries. This strategy weakened African unity and facilitated conquest. Examples: The British using the Fulani against the Hausa, and the French using certain ethnic groups as auxiliaries against others.\n\n4. Economic Infiltration: Europeans established trading posts, commercial companies, and economic influence before formal colonization. They used missionaries and explorers to gather information, create goodwill, and prepare the ground for political control. Economic interests (trade in palm oil, rubber, gold, minerals) often preceded colonial rule. Examples: The Royal Niger Company and the British East Africa Company were trading companies that later became instruments of colonial administration.\n\n5. Missionary and Religious Activity: Missionaries were often the first Europeans to enter African territories. They established schools, churches, and missions, winning converts and gaining influence. They also provided information to colonial authorities about local conditions and peoples. Missionary activity facilitated colonization by creating a favourable environment for European presence."
+  },
+  {
+    "subject": "Government",
+    "year": 2025,
+    "category": "Democratization & Political Process in Africa",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) Define the concept of Democratization.\n(b) Explain FOUR challenges to democratization in African Politics.",
+    "options": [],
+    "modelAnswer": "(a) Democratization:\nDemocratization is the process by which a country transitions from authoritarian rule to a democratic system of government. It involves the establishment of democratic institutions, the rule of law, free and fair elections, protection of human rights, and political participation. Democratization is a complex process that may include political liberalization, constitutional reforms, and consolidation of democratic practices.\n\n(b) Four challenges to democratization in African politics:\n1. Ethnic and Religious Divisions: Africa is characterized by ethnic and religious diversity. Politicians often exploit these divisions for electoral gain, leading to ethnic conflicts, violence, and political instability. This undermines national unity, democratic consolidation, and peaceful coexistence. Examples: Nigeria, Kenya, Rwanda.\n\n2. Weak Institutions: Many African countries have weak institutions — independent electoral bodies, judiciary, civil society, and media are often underfunded, politicized, and manipulated by the executive. Weak institutions undermine rule of law, accountability, and democratic governance.\n\n3. Military Intervention in Politics: Africa has a history of military coups and interference in politics. The military has frequently intervened to overthrow civilian governments, disrupting democratization and democratic consolidation. Countries like Mali, Burkina Faso, Niger, and Guinea have experienced coups, setting back democratic progress.\n\n4. Poverty and Economic Inequality: High levels of poverty and inequality undermine democratization — poor citizens are easily manipulated by politicians, and economic grievances lead to political instability. Poverty limits political participation, creates vulnerability to corruption, and undermines the capacity of citizens to hold governments accountable.\n\n5. Corruption and Electoral Malpractices: Corruption is endemic in many African countries — it undermines public trust, distorts governance, and weakens democratic institutions. Electoral malpractices (rigging, violence, manipulation) undermine the legitimacy of elections and democratic processes.\n\n6. Weak Civil Society and Media: Independent civil society organizations and media are essential for democratization — they monitor government, advocate for rights, and inform citizens. In many African countries, these are weak, co-opted, or suppressed, limiting democratic accountability.\n\n7. Political Violence and Insecurity: Political violence, insurgency, and terrorism (Boko Haram, Al-Shabaab) create insecurity that undermines democratization — elections are disrupted, citizens are displaced, and democratic institutions are weakened."
+  }
+]

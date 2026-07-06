@@ -1,0 +1,962 @@
+[
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The introduction of an extraneous element to resolve a naughty plot is",
+    "options": [
+      "deus ex machina.",
+      "sudden death.",
+      "catastrophic.",
+      "melodramatic."
+    ],
+    "answer": "A",
+    "explanation": "Deus ex machina is the introduction of an extraneous element (often a god) to resolve a plot that has become too complicated. It is a contrived and artificial device used to bring the play to a quick conclusion."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Modern African plays are essentially concerned with",
+    "options": [
+      "folklore and tradition.",
+      "economic and political struggles.",
+      "colonial and nationalist struggles.",
+      "cultural and religious debates."
+    ],
+    "answer": "C",
+    "explanation": "Modern African plays are essentially concerned with colonial and nationalist struggles — they explore the impact of colonialism, the fight for independence, and the post-colonial challenges facing African societies."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "European Drama (The Modern Tradition)",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "As a dramatic theory, realism emphasizes",
+    "options": [
+      "abstract, verifiable experience.",
+      "concrete, verifiable experience.",
+      "subjective, verifiable experience.",
+      "personal, verifiable experience."
+    ],
+    "answer": "B",
+    "explanation": "As a dramatic theory, realism emphasizes concrete, verifiable experience — it seeks to represent life as it is, with accurate details, realistic characters, and everyday situations. It avoids idealization and romanticism."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Aristotle's unity of time' demands",
+    "options": [
+      "four revolution of the sun.",
+      "three revolution of the sun.",
+      "two revolution of the sun.",
+      "one revolution of the sun."
+    ],
+    "answer": "D",
+    "explanation": "Aristotle's 'unity of time' demands one revolution of the sun — the action of the play should take place within a single day (24 hours). This is one of the three unities of classical drama."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Modern tragedy often deals with man's relationship with",
+    "options": [
+      "cosmic realities.",
+      "social realities.",
+      "ethereal forces.",
+      "divine forces."
+    ],
+    "answer": "B",
+    "explanation": "Modern tragedy often deals with man's relationship with social realities — it focuses on social issues, psychological conflicts, and the individual's struggle against society, rather than cosmic or divine forces. Greek tragedy focused more on fate and the gods."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "In Greek drama, the tragic hero is usually portrayed as",
+    "options": [
+      "clueless.",
+      "helpless.",
+      "flawless.",
+      "ruthless."
+    ],
+    "answer": "A",
+    "explanation": "In Greek drama, the tragic hero is usually portrayed as clueless (lacking knowledge) — they are often blind to the truth of their situation and only realize their tragic flaw (hamartia) after it is too late. Oedipus is a prime example."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "A form of comedy characterized by ridiculous exaggeration and distortion is",
+    "options": [
+      "figuresque.",
+      "burlesque.",
+      "picaresque",
+      "miniaturesque."
+    ],
+    "answer": "B",
+    "explanation": "Burlesque is a form of comedy characterized by ridiculous exaggeration and distortion — it mocks serious subjects through absurd and humorous imitation. Picaresque is a genre of prose fiction, not comedy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A work whose major purpose is to give guidance, particularly in ethical and religious matters is",
+    "options": [
+      "aesthetic.",
+      "moralistic.",
+      "periodic.",
+      "liturgical."
+    ],
+    "answer": "B",
+    "explanation": "A moralistic work has a major purpose to give guidance, particularly in ethical and religious matters. It is didactic — intended to teach moral lessons."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The most important dramatic device in a comedy is",
+    "options": [
+      "irony.",
+      "humour.",
+      "suspense.",
+      "contrast."
+    ],
+    "answer": "B",
+    "explanation": "The most important dramatic device in a comedy is humour — comedy relies on laughter, wit, and amusement. While irony, suspense, and contrast can be used, humour is the essential element that defines comedy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "By referring to a past action that has significance for the present, the playwright uses",
+    "options": [
+      "flashback.",
+      "foreshadowing.",
+      "contrast.",
+      "irony."
+    ],
+    "answer": "A",
+    "explanation": "By referring to a past action that has significance for the present, the playwright uses flashback — a technique that interrupts the chronological flow of the narrative to reveal earlier events."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "A play that deals with stock characters and uses a sensational plot is called",
+    "options": [
+      "tragedy.",
+      "comedy.",
+      "melodrama.",
+      "mystery."
+      ],
+    "answer": "C",
+    "explanation": "A play that deals with stock characters and uses a sensational plot is called melodrama — it is characterized by exaggerated characters, thrilling events, and moralistic themes. Stock characters are stereotypical and often one-dimensional."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A comic form whose actions are hard to believe and discusses trivial themes is called",
+    "options": [
+      "farce.",
+      "melodrama.",
+      "burlesque.",
+      "parody."
+    ],
+    "answer": "A",
+    "explanation": "A farce is a comic form whose actions are hard to believe and discusses trivial themes. It is characterized by exaggerated, improbable situations, slapstick humour, and fast-paced action. Parody is a humorous imitation of a serious work."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Ridicule in a comedy is achieved through",
+    "options": [
+      "consummation.",
+      "adulteration",
+      "exaggeration",
+      "enunciation."
+    ],
+    "answer": "C",
+    "explanation": "Ridicule in a comedy is achieved through exaggeration — characters, situations, and traits are exaggerated to the point of absurdity to provoke laughter and mockery. Satire and parody also use exaggeration."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "In the six elements of tragedy, thought is the exclusive property of the characters because it",
+    "options": [
+      "has nothing to do with the audience",
+      "is not what the audience expects.",
+      "is a pattern of spoken words in the play's dialogue",
+      "is the medium of expression"
+    ],
+    "answer": "C",
+    "explanation": "In the six elements of tragedy, thought is the exclusive property of the characters because it is the medium of expression — it is expressed through the characters' speeches and represents their intellectual and moral reasoning. Diction is the pattern of spoken words."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Greek comedy developed from",
+    "options": [
+      "romantic celebrations.",
+      "rebellious celebrations.",
+      "religious celebrations.",
+      "political celebrations."
+    ],
+    "answer": "C",
+    "explanation": "Greek comedy developed from religious celebrations — specifically, from the phallic songs and fertility rituals in honour of Dionysus. Over time, these evolved into the satirical and humorous form of comedy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The Father of the English novel is",
+    "options": [
+      "George Eliot.",
+      "Daniel Defoe",
+      "Henry Fielding.",
+      "Jonathan Swift."
+    ],
+    "answer": "B",
+    "explanation": "Daniel Defoe is often referred to as the Father of the English novel for his work Robinson Crusoe (1719). Henry Fielding is also an early novelist, but Defoe is more commonly credited as the pioneer."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "A novel that evokes chilling terror by exploiting mystery and a variety of horrors is",
+    "options": [
+      "sociological",
+      "gothic",
+      "realistic",
+      "magical"
+    ],
+    "answer": "B",
+    "explanation": "A gothic novel evokes chilling terror by exploiting mystery and a variety of horrors — it features haunted settings, supernatural elements, and dark secrets. Examples include Mary Shelley's Frankenstein and Bram Stoker's Dracula."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The milieu of a story may emphasize its",
+    "options": [
+      "behaviour and action.",
+      "location and time.",
+      "diction and imagery.",
+      "costume and style."
+    ],
+    "answer": "B",
+    "explanation": "The milieu of a story may emphasize its location and time — milieu refers to the social, cultural, and historical environment in which the story takes place. It helps establish the context and atmosphere."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Which of these periods of English literature precede the Victorian period?",
+    "options": [
+      "The Classical period",
+      "The Middle Ages",
+      "The Romantic Period",
+      "The Renaissance period"
+    ],
+    "answer": "C",
+    "explanation": "The Romantic Period (roughly 1798-1832) precedes the Victorian period (1837-1901). The Renaissance and Middle Ages are much earlier, and the Classical period is earlier still. The correct answer is the Romantic Period."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The descriptive language that the author uses to appeal to the readers' sense organs is",
+    "options": [
+      "setting.",
+      "imagery.",
+      "mood.",
+      "tone."
+    ],
+    "answer": "B",
+    "explanation": "Imagery is the descriptive language that the author uses to appeal to the readers' sense organs — it creates vivid mental pictures through sensory details (visual, auditory, tactile, olfactory, gustatory)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Authors provide clues to suggest a later event through",
+    "options": [
+      "suspense.",
+      "foreshadowing.",
+      "flashback.",
+      "parable."
+    ],
+    "answer": "B",
+    "explanation": "Authors provide clues to suggest a later event through foreshadowing — it hints at what is to come, creating anticipation and building suspense. Flashback refers to past events, while parable is a moral story."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "In which of the following genres did the 18th Century literature achieve its greatest success?",
+    "options": [
+      "Drama",
+      "Epic poetry",
+      "Novel",
+      "The essay"
+    ],
+    "answer": "D",
+    "explanation": "In the 18th Century, literature achieved its greatest success in the novel — the rise of the English novel with Defoe, Richardson, Fielding, and Sterne marked this period. Drama and poetry were not as dominant."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The 18th century English novel was characterized by the",
+    "options": [
+      "social concern for socialism.",
+      "love for communalism.",
+      "spirit of realism.",
+      "concept of romanticism."
+    ],
+    "answer": "C",
+    "explanation": "The 18th century English novel was characterized by the spirit of realism — it focused on everyday life, realistic characters, and social conditions. This was the foundation of the realistic novel tradition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The new generation African writers are more concerned about",
+    "options": [
+      "colonial exploitation.",
+      "social disillusionment.",
+      "political corruption.",
+      "gender discrimination."
+    ],
+    "answer": "C",
+    "explanation": "The new generation African writers are more concerned about political corruption — post-colonial writing often focuses on the failures of African leadership, corruption, and the struggles of ordinary people."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "European Poetry (19th and 20th Centuries)",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The most popular element of modernist poetry is",
+    "options": [
+      "free verse.",
+      "blank verse",
+      "regular verse",
+      "irregular verse"
+    ],
+    "answer": "A",
+    "explanation": "The most popular element of modernist poetry is free verse — poets like T.S. Eliot, Ezra Pound, and Wallace Stevens rejected traditional metre and rhyme, using free verse to express the complexity of modern life."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The device used to make reference to events or people is known as",
+    "options": [
+      "Allegory.",
+      "Allusion.",
+      "Irony.",
+      "Paradox."
+    ],
+    "answer": "B",
+    "explanation": "Allusion is the device used to make reference to events or people — it is an indirect reference to a person, place, event, or literary work that the reader is expected to recognize."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Six hands at open door dicing for pieces of silver is an example of",
+    "options": [
+      "Oxymoron.",
+      "Paradox.",
+      "Synecdoche.",
+      "Apostrophe."
+    ],
+    "answer": "C",
+    "explanation": "'Six hands at open door dicing for pieces of silver' is an example of synecdoche — 'hands' represents the whole persons. Synecdoche is a figure of speech where a part stands for the whole or vice versa."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "What determines the rhythm of a line?",
+    "options": [
+      "Number of stress",
+      "Patterns of stress",
+      "Patterns of sounds",
+      "Number of sounds"
+    ],
+    "answer": "B",
+    "explanation": "The rhythm of a line is determined by patterns of stress — the arrangement of stressed and unstressed syllables creates the metrical pattern (rhythm). The number of stress matters, but the pattern is what defines the rhythm."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The poetic device used in line 5 is called",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Gather ye rose-buds while ye may...' by Robert Herrick. Please refer to original past question paper.",
+    "options": [
+      "Hyperbole",
+      "Symbolism",
+      "Simile",
+      "Metaphor"
+    ],
+    "answer": "D",
+    "explanation": "Line 5 ('The glorious lamp of heaven, the sun') is a metaphor — it compares the sun to a lamp without using 'like' or 'as.' The sun is described as a lamp of heaven, a source of light and life."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Old time is still a-flying in the above poem is an example of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Gather ye rose-buds while ye may...' by Robert Herrick. Please refer to original past question paper.",
+    "options": [
+      "Personification",
+      "Euphemism",
+      "Oxymoron",
+      "Synecdoche"
+    ],
+    "answer": "A",
+    "explanation": "'Old time is still a-flying' is an example of personification — time is given the human quality of flying, suggesting it moves quickly like a bird. This emphasizes the urgency of the poet's message."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The rhyme scheme for this expression is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Gather ye rose-buds while ye may...' by Robert Herrick. Please refer to original past question paper.",
+    "options": [
+      "ababcdcd.",
+      "abbacddc.",
+      "abcabcdd.",
+      "ababdcde."
+    ],
+    "answer": "A",
+    "explanation": "The rhyme scheme of the poem is ababcdcd — lines 1 and 3 rhyme (may/today), lines 2 and 4 rhyme (flying/dying), lines 5 and 7 rhyme (sun/run), and lines 6 and 8 rhyme (getting/setting)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "And this same flower that smiles today is an example of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Gather ye rose-buds while ye may...' by Robert Herrick. Please refer to original past question paper.",
+    "options": [
+      "Pun.",
+      "Personification.",
+      "Simile.",
+      "Metaphor."
+    ],
+    "answer": "B",
+    "explanation": "'And this same flower that smiles today' is an example of personification — the flower is given the human quality of smiling. This creates a vivid image and suggests the flower's brief beauty."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The focus of the poem is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Gather ye rose-buds while ye may...' by Robert Herrick. Please refer to original past question paper.",
+    "options": [
+      "Flower.",
+      "Life.",
+      "Time.",
+      "Death."
+    ],
+    "answer": "C",
+    "explanation": "The focus of the poem is time — the poet urges the reader to seize the day ('carpe diem') because time is fleeting. The theme of carpe diem emphasizes the brevity of life and the importance of making the most of the present."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Which age in European poetry lays emphasis on emotion, and revitalized interest in medieval subjects?",
+    "options": [
+      "Romantic",
+      "Medieval",
+      "Classical",
+      "Renaissance"
+    ],
+    "answer": "A",
+    "explanation": "The Romantic age in European poetry lays emphasis on emotion, and revitalized interest in medieval subjects. Romantic poets like Wordsworth, Coleridge, and Keats emphasized imagination, nature, and medieval themes."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "A sonnet may be described as traditional poetry because it",
+    "options": [
+      "conforms to a fixed verse structure.",
+      "has no rhyme scheme and rhythm.",
+      "deals with love and relationships.",
+      "was a favourable form used by Shakespeare."
+    ],
+    "answer": "A",
+    "explanation": "A sonnet may be described as traditional poetry because it conforms to a fixed verse structure — it has 14 lines, a specific rhyme scheme, and iambic pentameter. It follows established conventions."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The English sonnet has",
+    "options": [
+      "90 syllables.",
+      "140 syllables.",
+      "70 syllables.",
+      "120 syllables."
+    ],
+    "answer": "B",
+    "explanation": "The English (Shakespearean) sonnet has 140 syllables — it consists of 14 lines of iambic pentameter (10 syllables per line), totaling 140 syllables. The Italian sonnet has 140 syllables as well (14 lines of 10 syllables in the octave and 14 in the sestet)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The dominant imagery in the passage is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I am staring painfully at an image...' from Amma Darko's Beyond the Horizon. Please refer to original past question paper.",
+    "options": [
+      "auditory.",
+      "tactile.",
+      "olfactory.",
+      "thermal."
+    ],
+    "answer": "A",
+    "explanation": "The dominant imagery in the passage is auditory — the passage describes sounds ('chuckles and pantings, wild bedspring creaks, screaming oohs and aahs'), appealing to the sense of hearing."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The expression 'bedspring creaks, screaming oohs and aahs' exemplifies",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I am staring painfully at an image...' from Amma Darko's Beyond the Horizon. Please refer to original past question paper.",
+    "options": [
+      "Simile.",
+      "Oxymoron.",
+      "Onomatopoeia.",
+      "Personification."
+    ],
+    "answer": "C",
+    "explanation": "The expression exemplifies onomatopoeia — words like 'creaks,' 'screaming,' 'oohs,' and 'aahs' imitate the sounds they describe, creating a vivid auditory effect."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The passage uses the",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I am staring painfully at an image...' from Amma Darko's Beyond the Horizon. Please refer to original past question paper.",
+    "options": [
+      "First person narrative point of view.",
+      "Third person narrative point of view.",
+      "Omniscient narrative point of view.",
+      "Limited narrative point of view."
+    ],
+    "answer": "A",
+    "explanation": "The passage uses the first person narrative point of view — the narrator uses 'I' and speaks from their own perspective, sharing their personal experiences and feelings."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The mood of the extract is that of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I am staring painfully at an image...' from Amma Darko's Beyond the Horizon. Please refer to original past question paper.",
+    "options": [
+      "danger.",
+      "pity.",
+      "excitement.",
+      "indifference"
+    ],
+    "answer": "B",
+    "explanation": "The mood of the extract is one of pity — the narrator describes isolation, loneliness, and exploitation with sadness and despair. The reader feels compassion for the narrator's situation."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The poem above is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The snow is a white blanket...' Please refer to original past question paper.",
+    "options": [
+      "sarcastic",
+      "ironic.",
+      "angry",
+      "patronizing"
+    ],
+    "answer": "A",
+    "explanation": "The poem is sarcastic — the speaker mocks the romanticized description of snow as a 'white blanket' by pointing out the harsh reality that a six-inch blanket is cold and impractical. The tone is mocking and cynical."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "What type of poem is it?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The snow is a white blanket...' Please refer to original past question paper.",
+    "options": [
+      "Panegyric",
+      "Dramatic",
+      "Ode",
+      "Lyric"
+    ],
+    "answer": "D",
+    "explanation": "The poem is a lyric poem — it expresses the personal thoughts and feelings of the speaker in a concise, emotional way. It is not a panegyric (praise poem), ode, or dramatic poem."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The snow is a white blanket as used in the poem is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The snow is a white blanket...' Please refer to original past question paper.",
+    "options": [
+      "Metaphoric.",
+      "Hyperbolic.",
+      "Paradoxical.",
+      "Ironic."
+    ],
+    "answer": "A",
+    "explanation": "'The snow is a white blanket' is metaphoric — it directly compares snow to a blanket without using 'like' or 'as.' The metaphor suggests warmth and comfort, but the speaker uses it ironically."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Criticism that deals with the interrelations of the components parts of the text is",
+    "options": [
+      "aesthetic.",
+      "historical.",
+      "impressionistic.",
+      "objective."
+    ],
+    "answer": "D",
+    "explanation": "Objective criticism deals with the interrelations of the component parts of the text — it analyses the structure, form, and internal relationships within the work. It is also known as formalist or New Criticism."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Biographical approach to the evaluation of a text is influenced essentially by the belief that the literary work is",
+    "options": [
+      "a reflection of the lives of the audience.",
+      "an expression of the writer's perceptions and feelings.",
+      "free of any influence of the writer's perceptions and feelings.",
+      "an imitation of the lives of the writer and the audience."
+    ],
+    "answer": "B",
+    "explanation": "The biographical approach to the evaluation of a text is influenced by the belief that the literary work is an expression of the writer's perceptions and feelings — it interprets the text through the author's life and experiences."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "An assessment of the development of the mind of a character is suggestive of which type of critical approach?",
+    "options": [
+      "Philosophical",
+      "Psychological",
+      "Sociological",
+      "Biographical"
+    ],
+    "answer": "B",
+    "explanation": "An assessment of the development of the mind of a character is suggestive of the psychological critical approach — it examines the inner workings of the character's mind, motives, and psychological development."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Experience darkness that is visible is an example of",
+    "options": [
+      "Synecdoche.",
+      "Oxymoron",
+      "Synesthesia.",
+      "Pun."
+    ],
+    "answer": "C",
+    "explanation": "'Experience darkness that is visible' is an example of synesthesia — a device that mixes different sensory experiences (darkness is usually seen, but here it is 'experienced,' blending visual and tactile sensations)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "A basic difference between simile and metaphor is that while the simile",
+    "options": [
+      "stimulates the imagination, the metaphor recalls memory.",
+      "recalls memory, the metaphor stimulates the imagination.",
+      "merges identities, the metaphor focusses on resemblances.",
+      "focuses on resemblances, the metaphor merges identities."
+    ],
+    "answer": "D",
+    "explanation": "A basic difference between simile and metaphor is that while the simile focuses on resemblances (using 'like' or 'as'), the metaphor merges identities (stating that one thing IS another). Simile compares, metaphor equates."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "In Greek drama, the chorus ...",
+    "options": [
+      "once they came on, remained on stage until the end of the play.",
+      "was made of men and women unlike the actors who were men.",
+      "was made up of old men because of their voice.",
+      "sometimes acted as the gods who provided information to the priests."
+    ],
+    "answer": "A",
+    "explanation": "In Greek drama, the chorus once they came on, remained on stage until the end of the play. The chorus was a group of men who sang, danced, and commented on the action. They were not made of old men, and women were not in the chorus."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "I stood on the road, looking at the fluffy, dark-red young cattle that seemed to moo at me. The device used in the line above is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'I stood on the road...' Please refer to original past question paper.",
+    "options": [
+      "Metaphor",
+      "Simile",
+      "Personification.",
+      "Onomatopoeia."
+    ],
+    "answer": "D",
+    "explanation": "The device used in the line is onomatopoeia — 'moo' imitates the sound made by cattle. It is a word that phonetically imitates the sound it describes."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the theme of rebellion in Henry IV.",
+    "options": [],
+    "modelAnswer": "In Shakespeare's Henry IV, the theme of rebellion is central to the plot and reflects the political instability of the kingdom.\n\nThe Percy Rebellion: The primary rebellion is led by the Percy family (Hotspur, Northumberland, and Worcester) against King Henry IV. They feel betrayed by the king, who they helped to the throne, and they rebel to assert their own power. The rebellion represents the conflict between the nobility and the monarchy.\n\nPrince Hal's Rebellion: Prince Hal also rebels against his father's expectations. He rejects the responsibilities of kingship and spends time in taverns with Falstaff. However, his 'rebellion' is temporary — he ultimately reforms and demonstrates his loyalty to the crown.\n\nReligious and Political Tensions: The rebellion is also driven by religious and political tensions. The Percy family and their allies feel that Henry's rule is illegitimate and that he has broken his promises.\n\nThe Theme of Order and Chaos: The rebellion represents the threat of chaos to the established order. Henry's kingdom is unstable, and the rebellion must be suppressed to maintain order and stability.\n\nLegitimacy of Rule: The rebellion raises questions about the legitimacy of Henry's rule. Henry came to power by deposing Richard II, and the rebels challenge his authority.\n\nConclusion: Rebellion in Henry IV reflects the political instability and conflicts of the era. The play explores the themes of power, legitimacy, and the consequences of rebellion against the crown."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "'As flies to wanton boys, are we to the gods; They kill us for their sport.' King Lear Act 4 scene 1. Demonstrate the extent to which the excerpt is dramatized in King Lear.",
+    "options": [],
+    "modelAnswer": "The excerpt from King Lear ('As flies to wanton boys, are we to the gods; They kill us for their sport') expresses the theme of human suffering and the apparent cruelty of the gods.\n\nGloucester's Speech: The speech is spoken by Gloucester, who has been blinded and is suffering. He expresses the idea that humans are powerless before the gods, who toy with them like children playing with flies. The gods are indifferent to human suffering.\n\nDramatization of Suffering: The play dramatizes this idea through the extreme suffering of Lear, Gloucester, and others. Lear is betrayed by his daughters, driven mad, and loses everything. Gloucester is blinded and betrayed by his son Edmund. The characters are victims of cruelty and injustice.\n\nThe Gods and Justice: The play questions the existence of divine justice. Despite their suffering, the good characters are not rewarded, and the wicked are not always punished. The gods seem indifferent to human suffering.\n\nHuman Cruelty: The play shows that human beings are often more cruel than the gods. Goneril, Regan, and Edmund are responsible for the suffering of others. The cruelty of humans is a central theme.\n\nConclusion: The excerpt is dramatized in King Lear through the extreme suffering of the characters, the apparent indifference of the gods, and the exploration of human cruelty and injustice."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Discuss Femi Osofisan's Once Upon Four Robbers as a Sociological play.",
+    "options": [],
+    "modelAnswer": "Femi Osofisan's Once Upon Four Robbers is a sociological play that critiques the social, economic, and political conditions of post-colonial Nigeria.\n\nSocial Injustice: The play highlights the social injustice and inequality in Nigerian society. The robbers are products of a society that has failed them — they are poor, marginalized, and oppressed. The play exposes the gap between the rich and the poor.\n\nCorruption: The play critiques the corruption of the political and economic elite. The wealthy and powerful exploit the poor and are immune from justice. The play shows that the system is rigged against the poor.\n\nEconomic Exploitation: The play exposes the economic exploitation of the masses. The robbers' actions are a response to economic deprivation and injustice. They are driven to crime by desperation.\n\nThe Role of the State: The play critiques the failure of the state to provide for its citizens. The government is corrupt, and the police are complicit in the oppression of the poor.\n\nAlienation and Anomie: The play shows the alienation and anomie (normlessness) of the characters. The robbers are disconnected from society and have no sense of belonging.\n\nConclusion: Once Upon Four Robbers is a sociological play that uses the story of four robbers to critique the social, economic, and political conditions of post-colonial Nigeria."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Examine Ngugi's treatment of religion in I Will Marry When I Want.",
+    "options": [],
+    "modelAnswer": "In I Will Marry When I Want, Ngugi wa Thiong'o critiques religion as a tool of oppression and a means of social control.\n\nReligion as a Tool of Oppression: The play presents religion as a tool used by the wealthy and powerful to control the poor. The Kiois use Christianity to manipulate the Kingundas, promising salvation and a better life to keep them submissive.\n\nThe Hypocrisy of Religion: The play exposes the hypocrisy of the religious establishment. The wealthy are religious but exploit the poor. They use religion to justify their greed and oppression.\n\nFalse Consciousness: Religion creates false consciousness — it distracts the poor from their real problems and encourages them to accept their suffering as God's will. The poor are taught to hope for a better life in heaven rather than fighting for justice on earth.\n\nResistance and Liberation: The play shows that true liberation requires rejecting the oppressive aspects of religion. Kiguunda refuses to sell his daughter and resists the manipulation of the wealthy.\n\nCultural vs. Christian Values: The play contrasts African cultural values with Christianity. The traditional values of community, justice, and respect for the land are undermined by Christianity and capitalism.\n\nConclusion: Ngugi treats religion as a tool of oppression in I Will Marry When I Want, exposing its role in maintaining inequality and control. The play calls for resistance and liberation from religious oppression."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "'Hard Times is built on irony.' Discuss this in relation to characterisation and theme in the novel.",
+    "options": [],
+    "modelAnswer": "Charles Dickens' Hard Times is built on irony, especially in its characterisation and themes.\n\nIrony in Characterisation:\n- Thomas Gradgrind: Gradgrind is a rationalist who believes only in facts and figures, but his own children become victims of his system. His daughter Louisa is emotionally stunted, and his son Tom becomes a thief. The irony is that his philosophy destroys what he claims to uphold.\n- Josiah Bounderby: Bounderby constantly boasts about his humble origins, but it is revealed that he is lying. He pretends to be a self-made man but is actually a hypocrite. The irony is that his success is built on deception.\n- Stephen Blackpool: Stephen is a good man but is falsely accused of robbery. The irony is that he is punished for doing the right thing.\n\nIrony in Theme:\n- The Theme of Education: Gradgrind's utilitarian education is supposed to produce moral and productive citizens, but it produces morally bankrupt individuals like Tom. The irony is that the educational system fails its purpose.\n- The Theme of Industrialization: The industrial system is supposed to bring progress and prosperity, but it creates poverty, exploitation, and alienation. The irony is that the system that promises progress is destructive.\n\nConclusion: Hard Times is built on irony — Dickens uses irony to critique utilitarianism, industrial capitalism, and the hypocrisy of the upper classes."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Examine gender inequality in The Mill on the Floss.",
+    "options": [],
+    "modelAnswer": "In The Mill on the Floss, George Eliot examines gender inequality and the restrictions placed on women in Victorian society.\n\nMaggie's Limitations: Maggie Tulliver is intelligent and passionate, but she is denied the educational opportunities given to her brother Tom. She is expected to be submissive, domestic, and obedient. Her intelligence is seen as a liability.\n\nThe Double Standard: There is a sexual double standard — Tom can have relationships without consequence, but Maggie is judged harshly for her association with Stephen Guest. Men are allowed more freedom than women.\n\nMarriage and Independence: Victorian women were expected to marry for economic security. Maggie's refusal to conform to social expectations leads to her isolation.\n\nFamily and Duty: Maggie is expected to sacrifice her own desires for her family. She is torn between duty and personal happiness.\n\nConclusion: The Mill on the Floss exposes the gender inequality of the Victorian era, showing how women were restricted in education, relationships, and personal freedom."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "In Achebe's Anthills of the Savannah, Beatrice is a metaphor of the modern African woman. Discuss.",
+    "options": [],
+    "modelAnswer": "In Anthills of the Savannah, Beatrice is a metaphor of the modern African woman, representing the challenges, strengths, and potential of women in post-colonial Africa.\n\nIntellectual and Professional: Beatrice is educated and holds a position of influence as the press secretary to the president. She represents the modern African woman who is educated, professional, and engaged in public life.\n\nStruggle for Identity: Beatrice struggles with her identity — she is caught between tradition and modernity, between loyalty to her country and her desire for independence. She is a symbol of the modern African woman's search for self-definition.\n\nResilience and Strength: Beatrice is resilient — she survives the political turmoil and violence, and she stands as a symbol of hope and strength. She represents the resilience of African women.\n\nVoice for Women: Beatrice speaks for women and advocates for their rights and dignity. She challenges the patriarchal structures that marginalize women. She represents the voice of women in the struggle for justice.\n\nConclusion: Beatrice is a metaphor of the modern African woman — educated, professional, resilient, and engaged in the struggle for justice and equality."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Describe Darko's Beyond the Horizon as a prose fiction.",
+    "options": [],
+    "modelAnswer": "Amma Darko's Beyond the Horizon is a powerful work of prose fiction that explores themes of exploitation, patriarchy, and the struggles of women.\n\nNarrative Style: The novel uses a first-person narrative, told from the perspective of Mara, the protagonist. This allows the reader to experience her thoughts and emotions intimately.\n\nRealism: The novel is realistic — it depicts the harsh realities of marriage, migration, and exploitation. It is not romanticized; it shows the brutal consequences of patriarchy and economic exploitation.\n\nThematic Concerns: The novel explores themes of patriarchy, exploitation, gender inequality, and the commodification of women. It critiques the marginalization of women in African society.\n\nCharacterization: Mara is a complex and evolving character — she begins as a submissive wife but develops into a strong, independent woman who takes control of her life.\n\nSetting: The novel is set in both Africa and Europe, highlighting the contrast between traditional and modern societies. The setting reflects the experience of migration and the exploitation of women.\n\nConclusion: Beyond the Horizon is a powerful work of prose fiction that uses realism, first-person narrative, and social critique to explore the struggles of women in a patriarchal society."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "In Hardlines, Adeoti employs unusual images to buttress his theme. Explain the significance of these images.",
+    "options": [],
+    "modelAnswer": "In Hardlines, Gbemisola Adeoti uses unusual images to highlight the theme of social injustice, poverty, and exploitation.\n\nImages of Hunger and Poverty: Adeoti uses vivid images of hunger and poverty — people suffering, malnourished, and struggling to survive. These images evoke disgust and pity, highlighting the harsh realities of poverty.\n\nImages of Exploitation: The poem uses images of exploitation — the rich oppress the poor, and the powerful exploit the weak. These images expose the injustice of the social system.\n\nImages of Waste: The poem uses images of wasted resources and wasted lives — opportunities are wasted, and people suffer unnecessarily. These images highlight the failure of the system.\n\nImages of Disease and Decay: The poem uses images of disease and decay — people wasting away, suffering from illness and malnutrition. These images evoke a sense of disgust and outrage.\n\nImages of Injustice: The poem uses images of injustice — the poor are neglected, and the rich are indifferent. These images evoke moral outrage.\n\nConclusion: The unusual images in Hardlines are significant because they evoke strong emotions and highlight the theme of social injustice. They make the reader confront the harsh realities of poverty and exploitation."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "African Poetry (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Discuss Osundare's 'Farmer-born' as a romantic poem.",
+    "options": [],
+    "modelAnswer": "Niyi Osundare's 'Farmer-born' can be read as a romantic poem because it celebrates nature, the earth, and the life of the farmer in an idealized way.\n\nCelebration of Nature: The poem celebrates the natural world — the earth, the soil, the rain, and the seasons. The farmer is connected to the earth, and the poem romanticizes the relationship between man and nature.\n\nIdealization of Rural Life: The poem idealizes rural life — the farmer's life is portrayed as simple, honest, and dignified. The farmer is in harmony with nature and the community.\n\nThe Farmer as a Symbol: The farmer represents the connection to the earth and the source of life. The poem romanticizes the farmer's role in sustaining the community.\n\nEmotion and Subjectivity: The poem expresses emotion and subjectivity — the persona's feelings about the farmer and the earth are central. The poem is lyrical and personal.\n\nRejection of Modernity: The poem implicitly rejects the materialism and alienation of modern life, celebrating the simplicity and authenticity of rural existence.\n\nConclusion: 'Farmer-born' is a romantic poem because it celebrates nature, idealizes rural life, and expresses emotion and subjectivity. It connects the farmer to the earth and the source of life."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "European Poetry (19th and 20th Centuries)",
+    "type": "Essay",
+    "questionNumber": "11",
+    "question": "Examine John Keats' 'Ode to a Nightingale' as a nature poem.",
+    "options": [],
+    "modelAnswer": "John Keats' 'Ode to a Nightingale' is a nature poem that explores the beauty and transience of the natural world.\n\nThe Nightingale as a Symbol of Nature: The nightingale represents the beauty and immortality of nature. Its song is eternal and unchanging, unlike human life, which is short and suffering. The nightingale is part of the natural world, and its song connects the poet to nature.\n\nCelebration of Nature: The poem celebrates the beauty of nature — the imagery is rich with natural elements (flowers, trees, moonlight, birdsong). Keats describes the nightingale's song as a source of joy and escape from human suffering.\n\nThe Transience of Nature: The poem acknowledges the transience of nature — the nightingale's song is fleeting, and the poet cannot hold on to the experience. The poem reflects the Romantic concern with the fleeting nature of beauty.\n\nEscape to Nature: The poet wishes to escape into the world of the nightingale, leaving behind the suffering of human life. The nightingale's song offers a temporary escape into the beauty of nature.\n\nConclusion: 'Ode to a Nightingale' is a nature poem that celebrates the beauty of the natural world, acknowledges its transience, and explores the desire to escape into nature."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "12",
+    "question": "READ THE PASSAGE BELOW AND ANSWER THE QUESTIONS THAT FOLLOW:\n\n(a) Identify the technique that enables us to read the speaker's thoughts and examine what it reveals about the persona's character.\n(b) Determine whether the persona should be taken seriously or not.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'Me? Steal? My ankles start to wobble...' from 'Caterer, Caterer' by Pemi Aguda. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(a) Technique: The passage uses stream of consciousness or interior monologue — it reveals the speaker's unspoken thoughts and feelings. This technique allows the reader to access the persona's inner world, revealing her pride, vulnerability, and anger.\n\nThe persona is proud ('Me. My palms press down on my breasts. Me.'), proud of her education and status as a caterer. She is defensive and sensitive about being insulted. However, she is also pragmatic — she needs money for rent and a wheelchair for Biyi, so she suppresses her pride.\n\n(b) The persona should be taken seriously — she is a hardworking woman trying to make ends meet and care for her family. Her anger and pride are understandable, and her decision to suppress them for the sake of Biyi shows her responsibility and love. However, her emotional volatility (the cooking incident) shows that she is human and flawed. She is a complex character who deserves sympathy."
+  },
+  {
+    "subject": "Literature",
+    "year": 2020,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "13",
+    "question": "READ THE POEM BELOW AND ANSWER THE QUESTIONS THAT FOLLOW:\n\n(a) Discuss the type of the poem and its significance.\n(b) What do you think the poem is all about?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Long afterward, Oedipus, old and blinded...' by Muriel Rukeyser. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(a) Type of poem: The poem is a dramatic monologue or narrative poem — it tells a story and features a dialogue between Oedipus and the Sphinx. It is also a revisionist poem, reinterpreting the myth from a feminist perspective.\n\nSignificance: The poem reinterprets the Oedipus myth, focusing on gender and language. The Sphinx corrects Oedipus' answer ('Man' should include 'woman'). This challenges the patriarchal assumptions of the original myth and suggests that language shapes reality.\n\n(b) What the poem is about: The poem is about the limits of knowledge and the gendered nature of language. Oedipus, blinded and old, seeks to understand why he did not recognize his mother. The Sphinx reveals that his failure was due to his answer — he said 'Man' instead of 'Woman.' The poem suggests that language and definition can determine reality, and the erasure of women from language leads to misunderstanding and tragedy."
+  }
+]

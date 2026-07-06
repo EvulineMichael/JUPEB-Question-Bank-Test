@@ -18,7 +18,7 @@
     "questionNumber": 2,
     "question": "Given three vectors, A = 3i - j + 3k, B = -i + 2j - k and C = -3i + 5j - 3k. Find: (A + B)·C",
     "options": ["-7", "-8", "-10", "-14"],
-    "answer": "D",
+    "answer": "A",
     "explanation": "A+B = (3-1)i + (-1+2)j + (3-1)k = 2i + j + 2k. (A+B)·C = 2(-3) + 1(5) + 2(-3) = -6 + 5 -6 = -7. Option A is -7."
   },
   {
@@ -84,7 +84,7 @@
     "questionNumber": 8,
     "question": "A body moves a distance of r = 2i - 5j - 2k (in metres) under the action of a force F = 2i - 2j - k (in newtons). Find the work done by the force.",
     "options": ["8 J", "11 J", "16 J", "18 J"],
-    "answer": "A",
+    "answer": "C",
     "explanation": "Work = F·r = (2)(2) + (-2)(-5) + (-1)(-2) = 4 + 10 + 2 = 16 J. Option C is 16 J."
   },
   {
