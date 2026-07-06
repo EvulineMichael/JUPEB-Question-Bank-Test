@@ -219,7 +219,7 @@
     "question": "The following statements/expressions are false EXCEPT",
     "options": ["A closed system allows only the exchange of matter with the surrounding.", "dQ = dU - dW", "for a given mass of a gas, C_p > C_v", "Adiabatic change refers to change of pressure and temperature only."],
     "answer": "C",
-    "explanation": "For a gas, specific heat at constant pressure (C_p) is greater than at constant volume (C_v). Option A is false (closed system allows energy exchange, not matter). Option B is wrong sign (dQ = dU + dW). Option D is incomplete."
+    "explanation": "For a gas, specific heat at constant pressure (C_p) is greater than at constant volume (C_v)."
   },
   {
     "subject": "Physics",

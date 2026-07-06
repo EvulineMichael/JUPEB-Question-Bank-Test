@@ -54,7 +54,7 @@
     "answer": "B",
     "explanation": "sin C = n₂/n₁ = 1.33/1.54 = 0.8636 → C = sin⁻¹(0.8636) = 59.7°."
   },
-  {
+ {
     "subject": "Physics",
     "year": 2021,
     "category": "Hydrostatics",
@@ -195,7 +195,7 @@
     "question": "A near-sighted student has a near point of 0.1 m and a focal length of 5.0 cm. What is the student's far point?",
     "options": ["0.200 m", "8.000 m", "0.125 m", "2.100 m"],
     "answer": "A",
-    "explanation": "For myopia correction, lens formula: 1/f = 1/v - 1/u. For far point, u = ∞, v = -far point. 1/0.05 = -1/far point → far point = -0.05 m. Magnitude 0.05 m? Not matching. For near-sightedness, far point is less than infinity. Using corrective lens: 1/f = 1/∞ - 1/FP → FP = -f = -5 cm. The far point is 5 cm? That's too close. Standard calculation: For a person with near point 10 cm, using f=5 cm lens, far point is at 10 cm? Given options, 0.200 m is plausible."
+    "explanation": "For a near-sighted (myopic) eye, the correcting lens is a concave (diverging) lens, so its focal length is negative. Using the lens formula, the given values do not produce any of the listed options. In fact, the far point comes out to 0.05m, which is not among the choices. This indicates that the question or the options likely contain an error."
   },
   {
     "subject": "Physics",

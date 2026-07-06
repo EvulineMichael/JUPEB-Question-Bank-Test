@@ -12,13 +12,21 @@ let allSubjectData = {
     chemistry: [],
     physics: [],
     maths: [],
-    biology: []
+    biology: [],
+    economics: [],
+    government: [],
+    crs: [],
+    literature: []
 };
 let allSubjectYears = {
     chemistry: [],
     physics: [],
     maths: [],
-    biology: []
+    biology: [],
+    economics: [],
+    government: [],
+    crs: [],
+    literature: []
 };
 
 // ===== THEME =====
@@ -156,6 +164,134 @@ const courseStructure = {
             "Consumer and Producer Surplus", "Optimization", "Linear Programming"
         ]
     },
+    economics: {
+    "ECN 001 - Principles of Economics I": [
+        "Introduction to Economics",
+        "Basic Economic Principles",
+        "Tools and Methods of Economic Analysis",
+        "The Price System",
+        "Theory of Consumer Behavior",
+        "Theory of the Firm",
+        "Market Structure",
+        "Theory of Income Distribution",
+        "Government Intervention"
+    ],
+    "ECN 002 - Principles of Economics II": [
+        "Circular Flow of Income",
+        "National Income Accounting",
+        "Theory of National Income Determination",
+        "Money and Banking",
+        "Inflation and Unemployment",
+        "Public Finance"
+    ],
+    "ECN 003 - Applied Economics I": [
+        "Economic Structure of West Africa",
+        "Growth and Development",
+        "Population",
+        "International Trade"
+    ],
+    "ECN 004 - Applied Economics II": [
+        "Measurement and Application in Macroeconomics",
+        "Applied Issues in Labour Economics",
+        "Stabilization Policies in Developing Countries",
+        "International Economic Institutions"
+    ]
+},
+crs: {
+    "CRS 001 - Old Testament Studies": [
+        "Formation and Composition of the Old Testament",
+        "Mosaic Authorship of the Pentateuch",
+        "The Rise of Monarchy in Israel",
+        "The Divided Kingdoms and the Exiles",
+        "The Rise of Prophecy in Israel"
+    ],
+    "CRS 002 - New Testament Studies": [
+        "Historical Background of the New Testament",
+        "The Synopsis, Materials and Canonization of the New Testament",
+        "The Synoptic Gospels and the Synoptic Problem",
+        "Modern Criticism of the Gospel",
+        "Literature and Theology of the Synoptic Gospels"
+    ],
+    "CRS 003 - History of Christianity in West Africa": [
+        "Previous Attempts at Christianizing Africa",
+        "Establishing Christianity in Sierra Leone",
+        "The Planting of Christianity in the Gold Coast (Ghana)",
+        "The Planting of Christianity in Nigeria",
+        "The Rise of the African Independent Churches",
+        "Pentecostalism in Nigeria",
+        "Proliferation of Churches in Nigeria"
+    ],
+    "CRS 004 - Religion and Society": [
+        "Relationship Between Religion and Society",
+        "Sociological Theories of Religion",
+        "Measures of Religion",
+        "Functions of Religion",
+        "Religion, Peace and Conflict Resolution",
+        "Religious Personality and Human Values",
+        "Christianity Response to Contemporary Issues"
+    ]
+},
+literature: {
+    "LIT 001 - Introduction to Drama": [
+        "Introduction",
+        "The Classical Tradition",
+        "European Drama (The Renaissance Tradition)",
+        "European Drama (The Modern Tradition)",
+        "American Drama (The Modern Tradition)",
+        "African Drama (The Modern Tradition)"
+    ],
+    "LIT 002 - Prose Fiction": [
+        "Introduction",
+        "The European Prose Tradition",
+        "African Prose (Modern African Novel)"
+    ],
+    "LIT 003 - Introduction to Poetry": [
+        "Introduction",
+        "The Classical Tradition",
+        "European Poetry (The Medieval and Renaissance Traditions)",
+        "European Poetry (19th and 20th Centuries)",
+        "American Poetry (The Modern Tradition)",
+        "African Poetry (The Modern Tradition)"
+    ],
+    "LIT 004 - Unseen Prose and Poetry": [
+        "Unseen Prose and Poetry"
+    ]
+},
+government: {
+    "GOV 001 - Elements of Government": [
+        "Nature of Government and Politics",
+        "Basic Concepts of Government",
+        "The State, Structure and Types of Government",
+        "Constitution and Constitutionalism",
+        "Governance and Citizenship"
+    ],
+    "GOV 002 - Fundamentals of Government": [
+        "Political Ideas and Thoughts",
+        "Political Parties, Party System and Pressure Groups",
+        "Public Opinion and Propaganda",
+        "Elections and Electoral System",
+        "Political and Social Change",
+        "Public Administration",
+        "International Relations"
+    ],
+    "GOV 003 - Nigerian Government and Politics": [
+        "Pre-Colonial Systems of Government in Nigeria",
+        "Colonial Administration in Nigeria",
+        "Development of Political Parties in Nigeria",
+        "Elections and Electoral Process in Nigeria",
+        "Major Political Crises in Nigeria",
+        "Reasons for Military Rule of Military Regimes",
+        "Nigerian Foreign Policy"
+    ],
+    "GOV 004 - African Government and Politics": [
+        "Africa Before European Invasion and Colonial Conquest",
+        "Colonial Systems of Administration in Africa",
+        "Constitutional Development of Selected West African Countries",
+        "The Nationalist Movement in West Africa",
+        "Military Intervention in Africa",
+        "Democratization and Political Process in Africa"
+    ]
+},
     biology: {
         "BIO 001 - General Biology": [
             "Origin of Living Things",
@@ -368,7 +504,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
     
-    const subjects = ['chemistry', 'physics', 'maths', 'biology'];
+  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -428,9 +564,13 @@ function renderCategories() {
         categoriesList.innerHTML = '<p class="loading">📭 No categories available.</p>';
         return;
     }
-    let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
+let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
                      currentSubject === 'maths' ? 'Mathematics' : 
-                     currentSubject === 'biology' ? 'Biology' : 'Chemistry';
+                     currentSubject === 'biology' ? 'Biology' :
+                     currentSubject === 'government' ? 'Government' :
+                     currentSubject === 'economics' ? 'Economics' : 
+                     currentSubject === 'crs' ? 'CRS': 
+                     currentSubject === 'literature' ? 'Literature': 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
 
@@ -610,44 +750,60 @@ function showWelcomeMessage() {
 
 // ===== EVENT LISTENERS =====
 function setupEventListeners() {
-    const tabBtns = document.querySelectorAll(".tab-btn");
-    tabBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        if (btn.id === 'quiz-mode-tab') return;
-        if (btn.id === 'past-questions-tab') return;
-            tabBtns.forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            currentSubject = btn.dataset.subject;
+    // Subject dropdown items
+    document.querySelectorAll('.subject-dropdown-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const subject = item.dataset.subject;
+            
+            // Update active states
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.add('active');
+            
+            // Close dropdown
+            document.getElementById('subjects-dropdown-menu').classList.remove('show');
+            document.getElementById('subjects-dropdown-btn').classList.remove('open');
+            
+            // Switch subject
+            currentSubject = subject;
             currentTopic = null;
             clearQuizTimer();
-            
             questionsData = allSubjectData[currentSubject] || [];
             window.currentSubjectYears = allSubjectYears[currentSubject] || [];
             renderCategories();
             showWelcomeMessage();
-            
             autoOpenSidebarOnMobile();
         });
     });
 
+    // Quiz mode tab
     const quizModeTab = document.getElementById('quiz-mode-tab');
     if (quizModeTab) {
         quizModeTab.addEventListener('click', () => {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.remove('active');
             quizModeTab.classList.add('active');
             clearQuizTimer();
             showQuizLobby();
         });
     }
-const pastQuestionsTab = document.getElementById('past-questions-tab');
-if (pastQuestionsTab) {
-    pastQuestionsTab.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        pastQuestionsTab.classList.add('active');
-        clearQuizTimer();
-        showPastQuestionsSidebar();
-    });
-}
+
+    // Past questions tab
+    const pastQuestionsTab = document.getElementById('past-questions-tab');
+    if (pastQuestionsTab) {
+        pastQuestionsTab.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.remove('active');
+            pastQuestionsTab.classList.add('active');
+            clearQuizTimer();
+            showPastQuestionsSidebar();
+        });
+    }
+
+    // Back to top
     backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     window.addEventListener("scroll", () => {
         backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
@@ -826,23 +982,22 @@ function showQuizLobby() {
                 <p class="quiz-subtitle">Choose your subject and configure your session</p>
             </div>
 
-            <div class="quiz-step" id="qstep-0">
-                <div class="quiz-step-label"><span class="step-number">1</span> Choose Subject</div>
-                <div class="quiz-subject-grid">
-                    <button class="quiz-subject-card ${currentSubject === 'chemistry' ? 'selected' : ''}" data-subject="chemistry">
-                        <div class="qmc-icon">🧪</div><div class="qmc-title">Chemistry</div><div class="qmc-desc">${allSubjectYears.chemistry.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'physics' ? 'selected' : ''}" data-subject="physics">
-                        <div class="qmc-icon">⚛️</div><div class="qmc-title">Physics</div><div class="qmc-desc">${allSubjectYears.physics.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'maths' ? 'selected' : ''}" data-subject="maths">
-                        <div class="qmc-icon">📐</div><div class="qmc-title">Mathematics</div><div class="qmc-desc">${allSubjectYears.maths.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'biology' ? 'selected' : ''}" data-subject="biology">
-                        <div class="qmc-icon">🧬</div><div class="qmc-title">Biology</div><div class="qmc-desc">${allSubjectYears.biology.length} years loaded</div>
-                    </button>
-                </div>
-            </div>
+            <!-- STEP 0: Choose Subject -->
+<div class="quiz-step" id="qstep-0">
+    <div class="quiz-step-label"><span class="step-number">1</span> Choose Subject</div>
+    <div class="quiz-subject-select">
+        <select id="quiz-subject-select" style="width:100%;padding:14px 16px;border:2px solid var(--border-color);border-radius:12px;background:var(--bg-secondary);color:var(--text-primary);font-size:1rem;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22currentColor%22 stroke-width=%222%22><polyline points=%226 9 12 15 18 9%22/></svg>');background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;">
+            <option value="chemistry" ${currentSubject === 'chemistry' ? 'selected' : ''}>🧪 Chemistry</option>
+            <option value="physics" ${currentSubject === 'physics' ? 'selected' : ''}>⚛️ Physics</option>
+            <option value="maths" ${currentSubject === 'maths' ? 'selected' : ''}>📐 Mathematics</option>
+            <option value="biology" ${currentSubject === 'biology' ? 'selected' : ''}>🧬 Biology</option>
+            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>🕊️ CRS</option>
+            <option value="economics" ${currentSubject === 'economics' ? 'selected' : ''}>💰 Economics</option>
+            <option value="government" ${currentSubject === 'government' ? 'selected' : ''}>🏛️ Government</option>
+            <option value="literature" ${currentSubject === 'literature' ? 'selected' : ''}>📖 Literature</option>
+        </select>
+    </div>
+</div>
 
             <div class="quiz-step" id="qstep-1">
                 <div class="quiz-step-label"><span class="step-number">2</span> Choose Quiz Mode</div>
@@ -888,7 +1043,24 @@ function showQuizLobby() {
 
     setupLobbyListeners();
 }
+// Toggle subjects dropdown
+function toggleSubjectsDropdown() {
+    const menu = document.getElementById('subjects-dropdown-menu');
+    const btn = document.getElementById('subjects-dropdown-btn');
+    menu.classList.toggle('show');
+    btn.classList.toggle('open');
+}
 
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const dropdown = document.querySelector('.subjects-dropdown');
+    if (dropdown && !dropdown.contains(e.target)) {
+        const menu = document.getElementById('subjects-dropdown-menu');
+        const btn = document.getElementById('subjects-dropdown-btn');
+        if (menu) menu.classList.remove('show');
+        if (btn) btn.classList.remove('open');
+    }
+});
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
     if (welcomeMessage) welcomeMessage.style.display = 'none';
@@ -913,8 +1085,8 @@ function showPastQuestionsSidebar() {
     // Use setTimeout to allow loading state to render, then check if data is ready
     setTimeout(() => {
         // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -953,8 +1125,8 @@ function showPastQuestionsSidebar() {
 
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
-    const subjects = ['chemistry', 'physics', 'maths', 'biology'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
     
     let html = '';
     
@@ -1068,7 +1240,7 @@ function displayPastQuestions(subject, year) {
         // Read DIRECTLY from allSubjectData - never touch questionsData
         let allQuestions = data.filter(q => q.year === year);
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
@@ -1231,27 +1403,37 @@ function takePastQuestionsAsQuiz(subject, year) {
 }
 
 function setupLobbyListeners() {
-    document.querySelectorAll('.quiz-subject-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const newSubject = card.dataset.subject;
-            if (newSubject === currentSubject) return;
-            document.querySelectorAll('.quiz-subject-card').forEach(c => c.classList.remove('selected'));
-            card.classList.add('selected');
-            currentSubject = newSubject;
-            quizState.subject = newSubject;
-            questionsData = allSubjectData[currentSubject] || [];
-            window.currentSubjectYears = allSubjectYears[currentSubject] || [];
-            quizState.mode = null;
-            quizState.filter = null;
-            quizState.selectedTopics = [];
-            document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
-            document.querySelectorAll('.quiz-timer-btn').forEach(b => { b.classList.remove('active'); if (b.dataset.time === '0') b.classList.add('active'); });
-            quizState.timed = false;
-            quizState.totalTime = 0;
-            ['qstep-2','qstep-3','qstep-4'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
-            showQuizLobby();
+    // Subject dropdown in quiz lobby
+const quizSubjectSelect = document.getElementById('quiz-subject-select');
+if (quizSubjectSelect) {
+    quizSubjectSelect.addEventListener('change', () => {
+        const newSubject = quizSubjectSelect.value;
+        if (newSubject === currentSubject) return;
+        
+        currentSubject = newSubject;
+        quizState.subject = newSubject;
+        questionsData = allSubjectData[currentSubject] || [];
+        window.currentSubjectYears = allSubjectYears[currentSubject] || [];
+        
+        quizState.mode = null;
+        quizState.filter = null;
+        quizState.selectedTopics = [];
+        document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
+        document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
+            b.classList.remove('active'); 
+            if (b.dataset.time === '0') b.classList.add('active'); 
         });
+        quizState.timed = false;
+        quizState.totalTime = 0;
+        
+        ['qstep-2','qstep-3','qstep-4'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.add('hidden');
+        });
+        
+        showQuizLobby();
     });
+}
     
     document.querySelectorAll('.quiz-mode-card:not([disabled])').forEach(card => {
         card.addEventListener('click', () => {
@@ -1789,15 +1971,12 @@ function initJUPEBApp() {
     setupThemeListeners();
     initStickyNavbar();
     setupEventListeners();
-    loadQuestions();
-    // In initJUPEBApp or wherever you first load data
-loadQuestions(null, () => {
-    console.log('All data loaded!');
-    // Optionally refresh past questions sidebar if it's open
-    if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
-        showPastQuestionsSidebar();
-    }
-});
+    loadQuestions(null, () => {
+        console.log('All data loaded!');
+        if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
+            showPastQuestionsSidebar();
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -819,41 +819,23 @@ function escapeHtml(text) {
 
 function shuffleOptions(question) {
     if (question.type !== 'Objective' || !question.options || !question.answer) return question;
-
+    
     const labels = ['A','B','C','D','E','F'];
     const originalIndex = labels.indexOf(question.answer.trim().toUpperCase());
     if (originalIndex === -1 || originalIndex >= question.options.length) return question;
-
-    // Build indexed pairs so duplicates don't confuse indexOf
-    const indexed = question.options.map((text, i) => ({ text, originalIndex: i }));
-
-    // Fisher-Yates on the pairs
-    for (let i = indexed.length - 1; i > 0; i--) {
+    
+    const correctText = question.options[originalIndex];
+    const shuffled = [...question.options];
+    
+    // Fisher-Yates shuffle
+    for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [indexed[i], indexed[j]] = [indexed[j], indexed[i]];
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-
-    // Find where the correct original index landed
-    const newCorrectPos = indexed.findIndex(item => item.originalIndex === originalIndex);
-    const newCorrectLetter = labels[newCorrectPos];
-
-    // Clean explanation — targeted, only full answer-reference phrases
-    let cleanExplanation = question.explanation || '';
-    if (cleanExplanation) {
-        cleanExplanation = cleanExplanation
-            .replace(/\bThe correct answer is\s+[A-F]\b/gi, '')
-            .replace(/\bAnswer\s*[A-F]\s+is correct\b/gi, '')
-            .replace(/\bOption\s+[A-F]\s+is correct\b/gi, '')
-            .trim();
-    }
-
-    return {
-        ...question,
-        options: indexed.map(item => item.text),
-        answer: newCorrectLetter,
-        originalAnswer: question.answer,
-        explanation: cleanExplanation || question.explanation
-    };
+    
+    const newCorrectLetter = labels[shuffled.indexOf(correctText)];
+    
+    return { ...question, options: shuffled, answer: newCorrectLetter, originalAnswer: question.answer };
 }
 
 // ===== STICKY NAVBAR =====
@@ -1641,14 +1623,10 @@ function getAllTopicsForSubject() {
     }
     return result;
 }
-function hasValidOptions(q) {
-    if (q.type !== 'Objective' || !q.options) return true;
-    const unique = new Set(q.options.map(o => o?.trim().toLowerCase()));
-    return unique.size === q.options.filter(o => o?.trim()).length;
-}
+
 function getAvailableQuestions() {
     let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer &&
-        !q.diagramMissing && hasValidOptions(q));
+        !q.diagramMissing);
     
     if (quizState.mode === 'practice') {
         if (quizState.filter !== 'all') {

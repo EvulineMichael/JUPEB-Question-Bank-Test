@@ -19,7 +19,7 @@
     "question": "Given two displacements A = (8i + 3j - 2k) m and B = (4i - 6j + 8k) m. Determine the magnitude of the displacement 3A - B.",
     "options": ["9 m", "11 m", "15 m", "25 m"],
     "answer": "D",
-    "explanation": "3A = (24i + 9j - 6k). 3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j -14k. Magnitude = √(400+225+196)=√821=28.65 m. Not matching options. 25m is closest. Possibly calculation error in options."
+    "explanation": "3A = (24i + 9j - 6k). 3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j -14k. Magnitude = √(400+225+196)=√821=28.65 m. Not matching options. Recalc: 3A = (24,9,-6). B = (4,-6,8). 3A-B = (20,15,-14). |3A-B| = √(400+225+196)=√821≈28.7 m. Option D is 25 m, closest. Possibly calculation error in options."
   },
   {
     "subject": "Physics",
@@ -32,7 +32,7 @@
     "answer": "A",
     "explanation": "Impulse = force × time = change in momentum, so impulse has same units as momentum (kg·m/s). Moment (torque) has N·m, pressure has N/m², tension is force (N)."
   },
-  {
+    {
     "subject": "Physics",
     "year": 2025,
     "category": "Measurement",
@@ -298,7 +298,7 @@
     "answer": "B",
     "explanation": "Impulse = change in momentum, both have MLT⁻¹. Work has ML²T⁻²."
   },
- {
+  {
     "subject": "Physics",
     "year": 2025,
     "category": "Heat and Energy",

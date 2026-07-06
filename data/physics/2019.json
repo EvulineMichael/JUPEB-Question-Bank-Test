@@ -425,7 +425,7 @@
     "questionNumber": 39,
     "question": "A 20Ω load is connected to the secondary coil of a transformer which has Np/Ns ratio of 1/4. Calculate the maximum current through the load if the input Vrms is 120 V.",
     "options": ["34 A", "24 A", "480 A", "480√2 A"],
-    "answer": "B",
+    "answer": "A",
     "explanation": "Vs/Vp = Ns/Np = 4 → Vs = 4×120 = 480 V (rms). Is = Vs/R = 480/20 = 24 A (rms). Maximum current = I_rms × √2 = 24√2 ≈ 34 A. Option A is 34 A."
   },
   {
@@ -436,8 +436,8 @@
     "questionNumber": 40,
     "question": "An inductor is capable of dissipating 50 W of heat energy when a current 0.8 A flows through it at a certain frequency. Calculate its impedance when the reactance of the inductor is 50Ω.",
     "options": ["62.5Ω", "40.0Ω", "92.8Ω", "1.0Ω"],
-    "answer": "A",
-    "explanation": "Power dissipated = I²R → R = P/I² = 50/0.64 = 78.125Ω. Impedance Z = √(R² + X_L²) = √(78.125² + 50²) = √(6103.5 + 2500) = √8603.5 = 92.8Ω. Option C is 92.8Ω."
+    "answer": "C",
+    "explanation": "Power dissipated = I²R → R = P/I² = 50/0.64 = 78.125Ω. Impedance Z = √(R² + X_L²) = √(78.125² + 50²) = √(6103.5 + 2500) = √8603.5 = 92.8Ω."
   },
   {
     "subject": "Physics",
