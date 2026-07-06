@@ -837,17 +837,14 @@ function shuffleOptions(question) {
     const newCorrectPos = indexed.findIndex(item => item.originalIndex === originalIndex);
     const newCorrectLetter = labels[newCorrectPos];
 
-    // Clean explanation of letter references
+    // Clean explanation — targeted, only full answer-reference phrases
     let cleanExplanation = question.explanation || '';
     if (cleanExplanation) {
         cleanExplanation = cleanExplanation
-            .replace(/\b(Option|Answer)\s*:?\s*[A-F]\b/gi, '')
-            .replace(/\b[A-F]\s+is\s+correct\b/gi, '')
-            .replace(/\bso\s+[A-F]\b/gi, '')
-            .replace(/\bCorrect answer:?\s*[A-F]\b/gi, '')
-            .replace(/\b[A-F]\)/g, '')
-            .trim()
-            .replace(/\s{2,}/g, ' ');
+            .replace(/\bThe correct answer is\s+[A-F]\b/gi, '')
+            .replace(/\bAnswer\s*[A-F]\s+is correct\b/gi, '')
+            .replace(/\bOption\s+[A-F]\s+is correct\b/gi, '')
+            .trim();
     }
 
     return {
