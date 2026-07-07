@@ -490,12 +490,29 @@ function handleSidebarResponsive() {
 async function getAvailableYears(subject) {
     const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
     const availableYears = [];
+    
     for (const year of possibleYears) {
-        try {
-            const response = await fetch(`data/${subject}/${year}.json`, { method: 'HEAD' });
-            if (response.ok) availableYears.push(year);
-        } catch (error) {}
+        // Check for type variants (Type A, Type B, Type C, Type D)
+        let foundAny = false;
+        for (const type of ['A', 'B', 'C', 'D']) {
+            try {
+                const response = await fetch(`data/${subject}/${year}-type${type.toLowerCase()}.json`, { method: 'HEAD' });
+                if (response.ok) {
+                    availableYears.push({ year, paper: `Type ${type}`, label: `${year} Type ${type}` });
+                    foundAny = true;
+                }
+            } catch (error) {}
+        }
+        
+        // If no type files found, try the plain year file
+        if (!foundAny) {
+            try {
+                const response = await fetch(`data/${subject}/${year}.json`, { method: 'HEAD' });
+                if (response.ok) availableYears.push({ year, paper: null, label: String(year) });
+            } catch (error) {}
+        }
     }
+    
     return availableYears;
 }
 
@@ -515,24 +532,33 @@ async function loadQuestions(forceSubject = null, callback = null) {
         if (availableYears.length === 0) continue;
         
         let allQuestions = [];
-        for (const year of availableYears) {
-            try {
-                const response = await fetch(`data/${subject}/${year}.json`);
+        for (const yr of availableYears) {
+    try {
+        let fileName;
+        if (yr.paper) {
+            const typeLetter = yr.paper.replace('Type ', '').toLowerCase();
+            fileName = `data/${subject}/${yr.year}-type${typeLetter}.json`;
+        } else {
+            fileName = `data/${subject}/${yr.year}.json`;
+        }
+        const response = await fetch(fileName);
                 if (response.ok) {
-                    const yearData = await response.json();
-                    if (Array.isArray(yearData)) {
-                        allQuestions = [...allQuestions, ...yearData];
-                    } else if (yearData.questions && Array.isArray(yearData.questions)) {
-                        allQuestions = [...allQuestions, ...yearData.questions];
-                    }
-                }
+    const yearData = await response.json();
+    if (Array.isArray(yearData)) {
+        const tagged = yearData.map(q => ({ ...q, paper: yr.paper || null }));
+        allQuestions = [...allQuestions, ...tagged];
+    } else if (yearData.questions && Array.isArray(yearData.questions)) {
+        const tagged = yearData.questions.map(q => ({ ...q, paper: yr.paper || null }));
+        allQuestions = [...allQuestions, ...tagged];
+    }
+}
             } catch (error) {
-                console.error(`Error loading ${subject}/${year}.json:`, error);
-            }
+    console.error(`Error loading ${fileName}:`, error);
+}
         }
         
         allSubjectData[subject] = allQuestions;
-        console.log(`Cached ${subject}: ${allQuestions.length} questions from years ${availableYears.join(', ')}`);
+        console.log(`Cached ${subject}: ${allQuestions.length} questions from years ${availableYears.map(y => y.label).join(', ')}`);
     }
     
     questionsData = allSubjectData[currentSubject] || [];
@@ -572,7 +598,7 @@ let subjectDisplay = currentSubject === 'physics' ? 'Physics' :
                      currentSubject === 'crs' ? 'CRS': 
                      currentSubject === 'literature' ? 'Literature': 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
-    sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
+    sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.map(y => y.label).join(', ')})</span>`;
 
     let html = '';
     let courseIndex = 0;
@@ -1172,11 +1198,41 @@ function buildPastQuestionsSidebar() {
                         <span class="dropdown-icon">▼</span>
                     </div>
                     <div class="course-topics" id="${subjectId}">
-                        ${years.sort((a, b) => b - a).map(year => `
-                            <button class="topic-btn" data-subject="${subject}" data-year="${year}">
-                                📖 📅 ${year}
-                            </button>
-                        `).join('')}
+                        ${(() => {
+    // Group years with same year number
+    const yearGroups = {};
+    years.forEach(yr => {
+        if (!yearGroups[yr.year]) yearGroups[yr.year] = [];
+        yearGroups[yr.year].push(yr);
+    });
+    
+    let yearButtons = '';
+    for (const [yearNum, entries] of Object.entries(yearGroups).sort((a, b) => b[0] - a[0])) {
+        if (entries.length === 1 && !entries[0].paper) {
+            // Single file, no paper type
+            yearButtons += `
+                <button class="topic-btn" data-subject="${subject}" data-year="${yearNum}" data-paper="">
+                    📖 📅 ${yearNum}
+                </button>`;
+        } else {
+            // Has paper types - show as sub-items
+            yearButtons += `
+                <div class="past-year-group">
+                    <div class="past-year-header" style="font-weight:600;padding:8px 12px;color:var(--text-primary);font-size:0.85rem;">
+                        📅 ${yearNum}
+                    </div>`;
+            entries.sort((a, b) => (a.paper || '').localeCompare(b.paper || ''));
+            entries.forEach(entry => {
+                yearButtons += `
+                    <button class="topic-btn" data-subject="${subject}" data-year="${yearNum}" data-paper="${entry.paper || ''}" style="padding-left:28px;">
+                        📖 ${entry.paper || 'Standard'}
+                    </button>`;
+            });
+            yearButtons += `</div>`;
+        }
+    }
+    return yearButtons;
+})()}
                     </div>
                 </div>`;
         }
@@ -1207,12 +1263,13 @@ function buildPastQuestionsSidebar() {
     // Set up event listeners for year buttons
     document.querySelectorAll('.topic-btn').forEach(btn => {
         btn.addEventListener("click", () => {
-            document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
-            btn.classList.add("active-topic");
-            const subject = btn.dataset.subject;
-            const year = parseInt(btn.dataset.year);
-            displayPastQuestions(subject, year);
-        });
+    document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
+    btn.classList.add("active-topic");
+    const subject = btn.dataset.subject;
+    const year = parseInt(btn.dataset.year);
+    const paper = btn.dataset.paper || null;
+    displayPastQuestions(subject, year, paper);
+});
     });
     
     // Clear the questions area if no year is selected
@@ -1223,7 +1280,7 @@ function buildPastQuestionsSidebar() {
     autoOpenSidebarOnMobile();
 }
 
-function displayPastQuestions(subject, year) {
+function displayPastQuestions(subject, year, paper = null) {
     if (welcomeMessage) welcomeMessage.style.display = 'none';
     const quizTab = document.getElementById('quiz-mode-tab');
     if (quizTab) quizTab.classList.remove('active');
@@ -1259,7 +1316,11 @@ function displayPastQuestions(subject, year) {
     // Use setTimeout to allow the loading state to render
     setTimeout(() => {
         // Read DIRECTLY from allSubjectData - never touch questionsData
-        let allQuestions = data.filter(q => q.year === year);
+        let allQuestions = data.filter(q => {
+    if (q.year !== year) return false;
+    if (paper) return q.paper === paper;
+    return true; // Show all if no specific paper selected
+});
         
         const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
@@ -1294,7 +1355,7 @@ function displayPastQuestions(subject, year) {
                     <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
                     <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
                 </div>
-                <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year})">
+<button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">
                     📝 Take This as a Quiz
                 </button>
             </div>`;
@@ -1398,13 +1459,13 @@ function buildQuestionCard(q, year, questionIndex) {
     return html + `</div>`;
 }
 
-function takePastQuestionsAsQuiz(subject, year) {
+function takePastQuestionsAsQuiz(subject, year, paper = null) {
     currentSubject = subject;
     questionsData = allSubjectData[subject] || [];
     window.currentSubjectYears = allSubjectYears[subject] || [];
     quizState.subject = subject;
     quizState.mode = 'exam';
-    quizState.filter = year;
+    quizState.filter = { year: year, paper: paper };
     quizState.selectedTopics = [];
     quizState.timed = false;
     quizState.totalTime = 0;
@@ -1417,9 +1478,9 @@ function takePastQuestionsAsQuiz(subject, year) {
         const examCard = document.querySelector('.quiz-mode-card[data-mode="exam"]');
         if (examCard) examCard.click();
         setTimeout(() => {
-            const yearBtn = document.querySelector(`.quiz-year-btn[data-filter="${year}"]`);
-            if (yearBtn) yearBtn.click();
-        }, 150);
+    const yearBtn = document.querySelector(`.quiz-year-btn[data-filter="${year}"][data-paper="${paper || ''}"]`);
+    if (yearBtn) yearBtn.click();
+}, 150);
     }, 100);
 }
 
@@ -1529,22 +1590,40 @@ function showQuizStep2() {
         });
 
     } else if (quizState.mode === 'exam') {
-        label.textContent = 'Select Exam Year';
-        const years = [...new Set(questionsData.map(q => q.year))].sort((a, b) => b - a);
-        const yearsWithCounts = years.map(y => {
-            const count = questionsData.filter(q => q.year === y && q.type === 'Objective' && q.options && q.options.length > 0 && q.answer).length;
-            return { year: y, count };
-        }).filter(y => y.count > 0);
+    label.textContent = 'Select Exam Year & Paper';
+    
+    // Build list of unique year-paper combinations
+    const yearPapers = [];
+    questionsData.forEach(q => {
+        const key = `${q.year}|||${q.paper || 'standard'}`;
+        if (!yearPapers.find(yp => yp.key === key)) {
+            yearPapers.push({ 
+                key, 
+                year: q.year, 
+                paper: q.paper, 
+                label: q.paper ? `${q.year} — ${q.paper}` : `${q.year}`,
+                count: 0 
+            });
+        }
+        const entry = yearPapers.find(yp => yp.key === key);
+        if (q.type === 'Objective' && q.options && q.options.length > 0 && q.answer) {
+            entry.count++;
+        }
+    });
+    
+    const yearsWithCounts = yearPapers
+        .filter(yp => yp.count > 0)
+        .sort((a, b) => b.year - a.year || (a.paper || '').localeCompare(b.paper || ''));
         
         if (yearsWithCounts.length === 0) {
             filterOptions.innerHTML = `<p class="no-data-message">No quiz-ready questions found.</p>`;
         } else {
-            filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => `<button class="quiz-year-btn" data-filter="${y.year}"><span class="year-num">${y.year}</span><span class="year-count">${y.count}q</span></button>`).join('')}</div>`;
+filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => `<button class="quiz-year-btn" data-filter="${y.year}" data-paper="${y.paper || ''}"><span class="year-num">${y.label}</span><span class="year-count">${y.count}q</span></button>`).join('')}</div>`;
             filterOptions.querySelectorAll('.quiz-year-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     filterOptions.querySelectorAll('.quiz-year-btn').forEach(b => b.classList.remove('selected'));
                     btn.classList.add('selected');
-                    quizState.filter = parseInt(btn.dataset.filter);
+                    quizState.filter = { year: parseInt(btn.dataset.filter), paper: btn.dataset.paper || null };
                     showQuizStep3();
                 });
             });
@@ -1590,7 +1669,7 @@ function showQuizStep5() {
 
     const modeLabels = {
         practice: quizState.filter === 'all' ? 'Random Practice' : 'Selected Topics',
-        exam: `Past Exam: ${quizState.filter}`,
+        exam: `Past Exam: ${quizState.filter.paper ? quizState.filter.year + ' — ' + quizState.filter.paper : quizState.filter.year}`,
         weak: 'Weak Areas Focus'
     };
     const modeLabel = modeLabels[quizState.mode] || quizState.mode;
@@ -1635,8 +1714,13 @@ function getAvailableQuestions() {
         }
         if (pool.length > 50) pool = shuffleArray(pool).slice(0, 50);
     } else if (quizState.mode === 'exam') {
-        pool = pool.filter(q => q.year === quizState.filter);
-    } else if (quizState.mode === 'weak') {
+    const filter = quizState.filter;
+    pool = pool.filter(q => {
+        if (q.year !== filter.year) return false;
+        if (filter.paper) return q.paper === filter.paper;
+        return true;
+    });
+} else if (quizState.mode === 'weak') {
         const weakTopics = getWeakTopics();
         if (weakTopics.length > 0) pool = pool.filter(q => weakTopics.includes(q.category));
     }
