@@ -659,6 +659,16 @@ function displayQuestions(topic) {
     setTimeout(() => {
         // Use a local copy instead of modifying the global
         let allQuestions = questionsData.filter(q => q.category === topic);
+
+// Deduplicate: keep only one copy of identical questions
+// Prefer Type A (or first loaded) when duplicates exist
+const seen = new Set();
+allQuestions = allQuestions.filter(q => {
+    const key = q.question.trim().toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+});
         
         // SEPARATE Objective and Essay questions
         const objectiveQuestions = allQuestions.filter(q => q.type === "Objective");

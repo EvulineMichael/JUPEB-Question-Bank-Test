@@ -220,8 +220,8 @@
     "questionNumber": 20,
     "question": "Which group of particles is in order of increasing size?",
     "options": ["N, O, F", "N^{3-}, O^{2-}, F^{-}", "Na^{+}, Mg^{2+}, Al^{3+}", "Na^{+}, Ne, F^{-}"],
-    "answer": "B",
-    "explanation": "N³⁻, O²⁻, and F⁻ are isoelectronic. Ionic radius decreases as nuclear charge increases: N³⁻ > O²⁻ > F⁻."
+    "answer": "D",
+    "explanation": "Na⁺, Ne, and F⁻ are isoelectronic (they all have 10 electrons). Among isoelectronic species, ionic/atomic size decreases as nuclear charge (number of protons) increases. Since Na⁺ has 11 protons, Ne has 10, and F⁻ has 9, the order of increasing size is: Na^{+}, Ne, F^{-}."
   },
   {
     "subject": "Chemistry",

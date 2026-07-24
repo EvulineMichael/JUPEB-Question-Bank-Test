@@ -19,7 +19,7 @@
     "question": "Given two displacements A = (8i + 3j - 2k) m and B = (4i - 6j + 8k) m. Determine the magnitude of the displacement 3A - B.",
     "options": ["9 m", "11 m", "15 m", "25 m"],
     "answer": "D",
-    "explanation": "3A = (24i + 9j - 6k). 3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j -14k. Magnitude = √(400+225+196)=√821=28.65 m. Not matching options. Recalc: 3A = (24,9,-6). B = (4,-6,8). 3A-B = (20,15,-14). |3A-B| = √(400+225+196)=√821≈28.7 m. Option D is 25 m, closest. Possibly calculation error in options."
+    "explanation": "3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j - 14k. Magnitude = √(20² + 15² + 14²) = √821 ≈ 28.7 m. The closest exam option provided is 25 m."
   },
   {
     "subject": "Physics",
@@ -35,7 +35,7 @@
     {
     "subject": "Physics",
     "year": 2025,
-    "category": "Measurement",
+    "category": "Physical Quantities and Units",
     "type": "Objective",
     "questionNumber": 4,
     "question": "An attempt was made to determine the volume V of a cylinder. The radius r was measured as 3.30 ± 0.05 cm and the length L was measured as 25 ± 0.4 cm. Evaluate the value of V and the uncertainty in this value using the relation: V = πr²L.",
@@ -57,7 +57,7 @@
   {
     "subject": "Physics",
     "year": 2025,
-    "category": "Measurement",
+    "category": "Physical Quantities and Units",
     "type": "Objective",
     "questionNumber": 6,
     "question": "A student measures the length of a table and finds it to be 1.7 meters. If another student measures the same table and reports the length as 170 centimeters, what can you conclude about their measurements? The measurements are",
@@ -195,7 +195,7 @@
     "question": "Two forces having magnitude 5 N and 4 N have an angle of 30° between them. What is the scalar product?",
     "options": ["10√3 N", "20√3 N", "10√3 N", "5√3 N"],
     "answer": "A",
-    "explanation": "Scalar product = F₁·F₂ = |F₁||F₂|cosθ = 5×4×cos30° = 20×(√3/2) = 10√3 N. Option A is 10√3 N, C is same as A. D is 5√3 N, incorrect. So A/C is correct."
+    "explanation": "Scalar product = A·B = |A||B|cosθ = 5 × 4 × cos 30° = 20 × (√3/2) = 10√3."
   },
   {
     "subject": "Physics",

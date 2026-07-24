@@ -2,47 +2,47 @@
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Indices",
+    "category": "Mole Concept",
     "type": "Objective",
     "questionNumber": 1,
-    "question": "If 2ˣ × 4⁻ʸ = 1/8 and 3ˣ × 9²ʸ = 27. Find (x, y).",
-    "options": ["(1, -1)", "(-1, 1)", "(1, 1)", "(-1, -1)"],
-    "answer": "C",
-    "explanation": "2ˣ × 4⁻ʸ = 2ˣ × (2²)⁻ʸ = 2ˣ × 2⁻²ʸ = 2ˣ⁻²ʸ = 1/8 = 2⁻³ → x - 2y = -3. 3ˣ × 9²ʸ = 3ˣ × (3²)²ʸ = 3ˣ × 3⁴ʸ = 3ˣ⁺⁴ʸ = 27 = 3³ → x + 4y = 3. Solving: subtract first from second: (x+4y)-(x-2y)=3-(-3) → 6y=6 → y=1. Then x= -3+2=1. (x,y)=(1,1)."
-  },
+    "question": "Give the empirical formula of a compound containing 92.26% C and H.",
+    "options": ["CH", "CH₂", "C₂H₃", "C₂H₅"],
+    "answer": "A",
+    "explanation": "Mass of C = 92.26g, mass of H = 100 - 92.26 = 7.74g. Moles of C = 92.26/12 = 7.688, moles of H = 7.74/1 = 7.74. Ratio C:H = 7.688:7.74 ≈ 1:1. Empirical formula = CH."
+},
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Complex Numbers",
+    "category": "Kinetic Molecular Theory of Gases",
     "type": "Objective",
     "questionNumber": 2,
-    "question": "If the complex number z = 3 + 5i, determine the imaginary part of z³.",
-    "options": ["30", "170", "20", "10"],
-    "answer": "A",
-    "explanation": "z³ = (3+5i)³ = 27 + 3×9×5i + 3×3×25i² + 125i³ = 27 + 135i + 225(-1) + 125(-i) = 27 -225 + 135i -125i = -198 + 10i. Imaginary part = 10. Wait, option A is 30, not 10. Let me recalc: (a+bi)³ = a³ + 3a²bi + 3ab²i² + b³i³ = a³ -3ab² + (3a²b - b³)i. a=3, b=5. 3a²b = 3×9×5 = 135. b³ = 125. 135-125=10. Imaginary part = 10. But 10 is not an option. Options: 30,170,20,10. 10 is option D? Actually options show 30,170,20,10. Option D is 10. But question asks for imaginary part of z³, answer is 10."
-  },
+    "question": "The gas heavier than air is",
+    "options": ["pure N₂", "pure Cl₂", "moist air", "moist H₂"],
+    "answer": "B",
+    "explanation": "Air has an average molar mass of approximately 29 g/mol. Cl₂ (71 g/mol) is heavier than air. N₂ (28 g/mol) is slightly lighter. Moist air is lighter than dry air. H₂ (2 g/mol) is much lighter."
+},
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Number Systems",
+    "category": "Thermodynamics",
     "type": "Objective",
     "questionNumber": 3,
-    "question": "Write 0.66... recurring as a fraction",
-    "options": ["3/5", "6/9", "1/9", "1/10"],
-    "answer": "B",
-    "explanation": "0.666... = 2/3 = 6/9. Option B is 6/9, which simplifies to 2/3. 3/5 = 0.6, 1/9 = 0.111..., 1/10 = 0.1."
-  },
+    "question": "A well-stoppered thermos flask contains some ice cubes. This is an example of",
+    "options": ["closed system", "open system", "isolated system", "non-thermodynamic system"],
+    "answer": "C",
+    "explanation": "An isolated system exchanges neither matter nor energy with its surroundings. A well-stoppered thermos flask prevents both mass transfer and heat exchange, making it an isolated system."
+},
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Differentiation",
+    "category": "Chemical Bonding",
     "type": "Objective",
     "questionNumber": 4,
-    "question": "The radius of a hemisphere is increasing at the rate of 0.01 cm/s. Find the rate at which the volume is increasing when the radius is 10 cm.",
-    "options": ["4π cm³/s", "0.4π cm³/s", "2π cm³/s", "0.2π cm³/s"],
-    "answer": "A",
-    "explanation": "Volume of hemisphere = (2/3)πr³. dV/dt = (2/3)π × 3r² × dr/dt = 2πr² × dr/dt. dr/dt = 0.01 cm/s, r = 10 cm. dV/dt = 2π × 100 × 0.01 = 2π × 1 = 2π cm³/s. Option C is 2π cm³/s. Wait, A is 4π, B is 0.4π, C is 2π, D is 0.2π. Correct is 2π."
-  },
+    "question": "The kinds of bonding in NH₄⁺ is",
+    "options": ["ionic/dative", "ionic/covalent", "dative/covalent", "metallic/dative"],
+    "answer": "C",
+    "explanation": "In NH₄⁺, three N-H bonds are covalent (formed by sharing electrons between N and H), and one N-H bond is dative/coordinate (formed when N donates its lone pair to H⁺). All four bonds become equivalent after formation."
+},
   {
     "subject": "Chemistry",
     "year": 2025,
@@ -74,7 +74,7 @@
     "question": "What is the atomic mass of a triatomic elementary gas with a vapour density of 48?",
     "options": ["48", "96", "32", "16"],
     "answer": "C",
-    "explanation": "Vapour density = molecular mass / 2. Molecular mass = 2 × 48 = 96. Since gas is triatomic (3 atoms per molecule), atomic mass = 96/3 = 32. Option C is 32."
+    "explanation": "Vapour density = molecular mass / 2. Molecular mass = 2 × 48 = 96. Since gas is triatomic (3 atoms per molecule), atomic mass = 96/3 = 32."
   },
   {
     "subject": "Chemistry",

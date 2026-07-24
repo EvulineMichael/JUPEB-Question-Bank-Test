@@ -817,6 +817,27 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+function shuffleOptions(question) {
+    if (question.type !== 'Objective' || !question.options || !question.answer) return question;
+    
+    const labels = ['A','B','C','D','E','F'];
+    const originalIndex = labels.indexOf(question.answer.trim().toUpperCase());
+    if (originalIndex === -1 || originalIndex >= question.options.length) return question;
+    
+    const correctText = question.options[originalIndex];
+    const shuffled = [...question.options];
+    
+    // Fisher-Yates shuffle
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    const newCorrectLetter = labels[shuffled.indexOf(correctText)];
+    
+    return { ...question, options: shuffled, answer: newCorrectLetter, originalAnswer: question.answer };
+}
+
 // ===== STICKY NAVBAR =====
 let lastScrollY = window.scrollY;
 let ticking = false;
@@ -991,10 +1012,10 @@ function showQuizLobby() {
             <option value="physics" ${currentSubject === 'physics' ? 'selected' : ''}>⚛️ Physics</option>
             <option value="maths" ${currentSubject === 'maths' ? 'selected' : ''}>📐 Mathematics</option>
             <option value="biology" ${currentSubject === 'biology' ? 'selected' : ''}>🧬 Biology</option>
-            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>🕊️ CRS</option>
-            <option value="economics" ${currentSubject === 'economics' ? 'selected' : ''}>💰 Economics</option>
-            <option value="government" ${currentSubject === 'government' ? 'selected' : ''}>🏛️ Government</option>
+            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>✝️ CRS</option>
             <option value="literature" ${currentSubject === 'literature' ? 'selected' : ''}>📖 Literature</option>
+            <option value="economics" ${currentSubject === 'economics' ? 'selected' : ''}>💰 Economics</option>
+<option value="government" ${currentSubject === 'government' ? 'selected' : ''}>🏛️ Government</option>
         </select>
     </div>
 </div>
@@ -1086,7 +1107,7 @@ function showPastQuestionsSidebar() {
     setTimeout(() => {
         // Check if data is loaded
         const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -1126,7 +1147,7 @@ function showPastQuestionsSidebar() {
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
     const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
     
     let html = '';
     
@@ -1240,7 +1261,7 @@ function displayPastQuestions(subject, year) {
         // Read DIRECTLY from allSubjectData - never touch questionsData
         let allQuestions = data.filter(q => q.year === year);
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
@@ -1604,7 +1625,8 @@ function getAllTopicsForSubject() {
 }
 
 function getAvailableQuestions() {
-    let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer);
+    let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer &&
+        !q.diagramMissing);
     
     if (quizState.mode === 'practice') {
         if (quizState.filter !== 'all') {
@@ -1679,7 +1701,7 @@ function updateWeakAreas(questions, answers) {
 function startQuiz() {
     const pool = shuffleArray(getAvailableQuestions());
     const finalCount = Math.min(quizState.count, pool.length);
-    quizState.questions = pool.slice(0, finalCount);
+    quizState.questions = pool.slice(0, finalCount).map(q => shuffleOptions(q));
     quizState.currentIndex = 0;
     quizState.answers = {};
     quizState.flagged = new Set();

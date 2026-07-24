@@ -416,8 +416,8 @@
     "questionNumber": 38,
     "question": "In a youth club with 94 members, 60 like modern music while 50 like traditional music. The number of members who like both modern and traditional music is three times the number of members who do not like any type of music. How many members like only one type of music?",
     "options": ["86", "62", "8", "24"],
-    "answer": "A",
-    "explanation": "Let x = like neither, then both = 3x. Total: 60+50-3x+x=94 → 110-2x=94 → 2x=16 → x=8, both=24. Only modern = 60-24=36, only traditional = 50-24=26. Only one type = 36+26=62. Option B is 62."
+    "answer": "B",
+    "explanation": "Let x = like neither, then both = 3x. Total: 60+50-3x+x=94 → 110-2x=94 → 2x=16 → x=8, both=24. Only modern = 60-24=36, only traditional = 50-24=26. Only one type = 36+26=62."
   },
   {
     "subject": "Mathematics",
