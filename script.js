@@ -16,6 +16,7 @@ let allSubjectData = {
     economics: [],
     government: [],
     crs: [],
+    irs: [],
     literature: []
 };
 let allSubjectYears = {
@@ -26,6 +27,7 @@ let allSubjectYears = {
     economics: [],
     government: [],
     crs: [],
+    irs: [],
     literature: []
 };
 
@@ -195,6 +197,55 @@ const courseStructure = {
         "Applied Issues in Labour Economics",
         "Stabilization Policies in Developing Countries",
         "International Economic Institutions"
+    ]
+},
+irs: {
+    "ISS 001 - History of Islam": [
+        "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+        "The Biography of Muhammad",
+        "Life and Achievements of the Khulafa Rashidūn",
+        "An Overview of the Umayyad and Abbasid Dynasties",
+        "Life and Achievements of 'Umar ibn Abdul Aziz",
+        "Life and Achievements of Hārūn ar-Rāshid",
+        "Impact of the Spread of Islam to West Africa",
+        "The Hausa-Fulani Jihād",
+        "The Kanem-Bornu Empire",
+        "Muslim-Non-Muslim Relations"
+    ],
+    "ISS 002 - Tawhid & Ibadat": [
+        "Definition and Types of Tawhid",
+        "Types and Implications of Shirk",
+        "Nature and Implication of Engaging in Different Forms of Shirk",
+        "The Islamic Concept of Ibadah",
+        "Forms and Purposes of Taharah",
+        "The Observance, Types, and Values of Salāt",
+        "The Regulations Governing Zakat and Sadaqah",
+        "The Regulations Governing Sawm",
+        "Types of Fasts and the Significance of Fasting",
+        "The Conditions, Performance, and Performance of Hajj and Umrah",
+        "Islamic Marriage and Divorce and Comparison with Marriage and Divorce Practices in Other Cultures"
+    ],
+    "ISS 003 - Qur'anic Studies": [
+        "Analysis of the Names and Attributes of the Qur'an",
+        "Authenticity of the Qur'an as a Divine Book",
+        "Arrangement and Means of Preserving the Qur'anic Text",
+        "The Emergence of ar-Rasm al-'Uthmānī",
+        "The Distinction between the Makki and Madani Suwar",
+        "Asbāb an-Nuzūl and an-Nāsikh wal-Mansūkh",
+        "Ethics of Interpreting the Qur'an",
+        "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma"
+    ],
+    "ISS 004 - Introduction to the Study of Hadith": [
+        "Definition and Values of Hadith",
+        "The Relationship between Hadith and Sunnah",
+        "Types of Hadith (Nabawi and Qudsi)",
+        "Basic Form of the Hadith (Isnād and Matn)",
+        "Determining the Authenticity of Hadith",
+        "The Ruwāt and the Muhaddithūn",
+        "The Six Standard Works and Biographies of Compilers",
+        "The Mu'jam of at-Tabarānī and Jāmi' of Ibn 'Athīr",
+        "Textual Analyses of an-Nawawī's Collection",
+        "A Critical Appraisal of Sahīh al-Bukhārī"
     ]
 },
 crs: {
@@ -521,7 +572,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
     
-  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
+  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -553,7 +604,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
     }
 }
             } catch (error) {
-    console.error(`Error loading ${fileName}:`, error);
+    console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
 }
         }
         
@@ -596,6 +647,7 @@ let subjectDisplay = currentSubject === 'physics' ? 'Physics' :
                      currentSubject === 'government' ? 'Government' :
                      currentSubject === 'economics' ? 'Economics' : 
                      currentSubject === 'crs' ? 'CRS': 
+                     currentSubject === 'irs' ? 'IRS': 
                      currentSubject === 'literature' ? 'Literature': 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.map(y => y.label).join(', ')})</span>`;
@@ -1048,7 +1100,8 @@ function showQuizLobby() {
             <option value="physics" ${currentSubject === 'physics' ? 'selected' : ''}>⚛️ Physics</option>
             <option value="maths" ${currentSubject === 'maths' ? 'selected' : ''}>📐 Mathematics</option>
             <option value="biology" ${currentSubject === 'biology' ? 'selected' : ''}>🧬 Biology</option>
-            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>✝️ CRS</option>
+            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>🕊️ CRS</option>
+            <option value="irs" ${currentSubject === 'irs' ? 'selected' : ''}>☪️ IRS</option>
             <option value="literature" ${currentSubject === 'literature' ? 'selected' : ''}>📖 Literature</option>
             <option value="economics" ${currentSubject === 'economics' ? 'selected' : ''}>💰 Economics</option>
 <option value="government" ${currentSubject === 'government' ? 'selected' : ''}>🏛️ Government</option>
@@ -1142,8 +1195,8 @@ function showPastQuestionsSidebar() {
     // Use setTimeout to allow loading state to render, then check if data is ready
     setTimeout(() => {
         // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
+        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -1182,8 +1235,8 @@ function showPastQuestionsSidebar() {
 
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
-    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
     
     let html = '';
     
@@ -1332,7 +1385,7 @@ function displayPastQuestions(subject, year, paper = null) {
     return true; // Show all if no specific paper selected
 });
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {

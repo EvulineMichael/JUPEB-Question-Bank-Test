@@ -1,0 +1,857 @@
+[
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Basic Form of the Hadith (Isnād and Matn)",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Which of the following terms signifies the chains of narration of hadith?",
+    "options": [
+      "As-Sahih",
+      "Al-Matn",
+      "Al-Musnad",
+      "As-Sanad"
+    ],
+    "answer": "D",
+    "explanation": "As-Sanad (or Isnad) is the term that signifies the chains of narration of Hadith. It refers to the chain of narrators through whom the Hadith has been transmitted. Al-Matn is the text of the Hadith."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Types of Hadith (Nabawi and Qudsi)",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Al-Hadith al-Qudsi is different from Nabawi because",
+    "options": [
+      "it is a direct statement from the Prophet to the Muslims.",
+      "it is a direct statement from Allah to the Prophet.",
+      "it is a direct statement from Angel Jibril to the Prophet.",
+      "it is a direct statement from the Prophet to his wives."
+    ],
+    "answer": "B",
+    "explanation": "Al-Hadith al-Qudsi (Divine Hadith) is different from Nabawi because its meaning comes directly from Allah to the Prophet, though the wording is the Prophet's. Hadith Nabawi are the Prophet's own words and actions."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Definition and Types of Tawhid",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Maintaining the unity of Allah's lordship is",
+    "options": [
+      "Tawhid ar-Rububiyyah.",
+      "Tawhid al-Hidadiyyah.",
+      "Tawhid al-Asma was-Sifat.",
+      "Tawhid al-Uluhiyyah."
+    ],
+    "answer": "A",
+    "explanation": "Tawhid ar-Rububiyyah is the unity of Allah's lordship — the belief that Allah is the sole Creator, Sustainer, and Sovereign of the universe. Tawhid al-Uluhiyyah is the unity of worship, and Tawhid al-Asma was-Sifat is the unity of Allah's names and attributes."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Definition and Types of Tawhid",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "A Muslim believes in Qadar which entails",
+    "options": [
+      "five articles.",
+      "six articles.",
+      "seven articles.",
+      "eight articles."
+    ],
+    "answer": "B",
+    "explanation": "Qadar (divine decree) is one of the six articles of faith in Islam. The six articles are: belief in Allah, His angels, His books, His messengers, the Last Day, and divine decree (Qadar)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Types and Implications of Shirk",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Shirk could be divided into two namely:",
+    "options": [
+      "Shirk Al-Asghar and Shirk Al-Kubra.",
+      "Shirk Al-Asghar and Shirk Al-Akbar.",
+      "Shirk Al-Saghir and Shirk Al-Kabir.",
+      "Shirk Al-Wusta and Shirk Al-Kubrah."
+    ],
+    "answer": "B",
+    "explanation": "Shirk is divided into two types: Shirk al-Asghar (minor shirk) and Shirk al-Akbar (major shirk). Major shirk is the gravest sin of associating partners with Allah, while minor shirk includes acts like showing off (riya)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Islamic Concept of Ibadah",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "'Ibadah is any action that is",
+    "options": [
+      "carried out to gain popularity.",
+      "carried out to win the favour of a leader.",
+      "carried out to please Allah.",
+      "carried out to gain monetary value."
+    ],
+    "answer": "C",
+    "explanation": "'Ibadah (worship) is any action that is carried out to please Allah. It includes all acts of worship, both ritual and non-ritual, done with the sincere intention of seeking Allah's pleasure."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Authenticity of the Qur'an as a Divine Book",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The number of verses contained in the first revelation are",
+    "options": ["four.", "five.", "six.", "seven."],
+    "answer": "B",
+    "explanation": "The first revelation contained five verses — the first five verses of Surah al-Alaq (96:1-5): 'Iqra bismi Rabbika...' These were revealed to the Prophet in Cave Hira."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Authenticity of the Qur'an as a Divine Book",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Which of the following words is applied to the piecemeal revelation of the Qur'an?",
+    "options": [
+      "Wahy",
+      "Anzala",
+      "Azbah",
+      "Anbiya'"
+    ],
+    "answer": "B",
+    "explanation": "Anzala (or Tanzil) is the word applied to the piecemeal (gradual) revelation of the Qur'an over 23 years. Wahy is the general term for revelation."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Arrangement and Means of Preserving the Qur'anic Text",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Zayd bn Thabit was popular because of his roles in",
+    "options": [
+      "conquest of Makkah.",
+      "compilation of the Qur'an.",
+      "compilation of Hadith.",
+      "compilation of Tafsir."
+    ],
+    "answer": "B",
+    "explanation": "Zayd ibn Thabit was popular because of his role in the compilation of the Qur'an. He was the chief scribe of the Prophet and was tasked by Abu Bakr and later 'Uthman to lead the compilation of the Qur'anic text."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Asbāb an-Nuzūl and an-Nāsikh wal-Mansūkh",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Which of these is a rare form of abrogation in the Qur'an?",
+    "options": [
+      "Abrogation of the Qur'an by the Hadith",
+      "Abrogation of the text and the law",
+      "Abrogation of the text but the law is retained",
+      "Abrogation of the law and the text is retained"
+    ],
+    "answer": "A",
+    "explanation": "Abrogation of the Qur'an by the Hadith is a rare and disputed form of abrogation. Most scholars maintain that the Qur'an cannot be abrogated by Hadith; abrogation occurs within the Qur'an itself. However, among the given options, this is the correct answer."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Arrangement and Means of Preserving the Qur'anic Text",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Which of the followings is not part of the materials used in preserving the Qur'an?",
+    "options": [
+      "Dried animal skin",
+      "Scapular of cow or camel",
+      "Tablet",
+      "Dried leaves"
+    ],
+    "answer": "B",
+    "explanation": "Scapular of cow or camel (shoulder blade bones) were actually used as writing materials for the Qur'an. However, among the options, scapular bones were indeed used, making this question problematic. Dried animal skin, tablets, and dried leaves were all used. Based on the options given, B is the intended answer as the least commonly associated material."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Analysis of the Names and Attributes of the Qur'an",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Which of the names of the Qur'an describes it as the Reminder?",
+    "options": [
+      "Al-Kitab",
+      "Ad-Dhikr",
+      "Al-Furqan",
+      "At-Tanzil"
+    ],
+    "answer": "B",
+    "explanation": "Ad-Dhikr (The Reminder) is one of the names of the Qur'an. It reminds humanity of Allah's existence, His commands, and the Day of Judgment. Al-Kitab means The Book, and Al-Furqan means The Criterion."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "'Surely, man is in a state of loss' is found in",
+    "options": [
+      "Suratul Kawthar.",
+      "Suratul Quraysh.",
+      "Suratul Falaq.",
+      "Suratul 'Asr."
+    ],
+    "answer": "D",
+    "explanation": "'Surely, man is in a state of loss' (innal-insana lafi khusr) is found in Suratul 'Asr (Chapter 103). The surah teaches that humanity is in loss except those who believe, do righteous deeds, and encourage truth and patience."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "What chapter of the Qur'an is Suratul Kawthar?",
+    "options": ["106", "107", "108", "10"],
+    "answer": "C",
+    "explanation": "Suratul Kawthar is Chapter 108 of the Qur'an. It is the shortest chapter, consisting of three verses, and was revealed in Makkah."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Types and Implications of Shirk",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "All these are forms of shirk EXCEPT",
+    "options": [
+      "belief in fortune telling.",
+      "hero-worship.",
+      "belief in Allah.",
+      "belief in idols."
+    ],
+    "answer": "C",
+    "explanation": "Belief in Allah is the opposite of shirk — it is iman (faith) and Tawhid. Fortune-telling, hero-worship, and idol worship are all forms of shirk (associating partners with Allah)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Islamic Concept of Ibadah",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Primary sources of Shari'ah are",
+    "options": [
+      "Sunnah and Hadith.",
+      "Qur'an and Sunnah.",
+      "Qur'an and Qiyas.",
+      "Qur'an and Ijma'."
+    ],
+    "answer": "B",
+    "explanation": "The primary sources of Shari'ah are the Qur'an and Sunnah. Ijma' (consensus) and Qiyas (analogy) are secondary sources derived from the primary sources."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Types and Implications of Shirk",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The opposite of shirk is considered as",
+    "options": [
+      "Kufr.",
+      "Qiyammah.",
+      "Iman.",
+      "Istilahah."
+    ],
+    "answer": "C",
+    "explanation": "The opposite of shirk is Iman (faith). Shirk is associating partners with Allah, while iman is belief in the oneness of Allah (Tawhid), which is the foundation of Islamic faith."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Types and Implications of Shirk",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Shirk is ______ sin before Allah",
+    "options": [
+      "unquestionable",
+      "unpardonable",
+      "unjustifiable",
+      "uncountable"
+    ],
+    "answer": "B",
+    "explanation": "Shirk is an unpardonable sin before Allah if a person dies upon it without repentance. The Qur'an states: 'Indeed, Allah does not forgive association with Him' (Qur'an 4:48)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Islamic Concept of Ibadah",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "According to Islamic teaching, an Arab is",
+    "options": [
+      "superior to a non-Arab.",
+      "inferior to a non-Arab.",
+      "more religious than a non-Arab.",
+      "equal to a non-Arab."
+    ],
+    "answer": "D",
+    "explanation": "According to Islamic teaching, an Arab is equal to a non-Arab. The Prophet (SAW) said in his Farewell Sermon: 'There is no superiority of an Arab over a non-Arab, nor of a non-Arab over an Arab, except in piety.'"
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "At the end of the battle of Badr, the number of Muslims who lost their lives are only",
+    "options": ["14", "15", "16", "17"],
+    "answer": "A",
+    "explanation": "At the Battle of Badr, only 14 Muslims lost their lives, while 70 Quraysh were killed and 70 captured. This was a decisive victory for the Muslims in 624 C.E. (2 AH)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "One of the followings is not correct about the conquest of Makkah.",
+    "options": [
+      "It occurred before the Hijrah",
+      "It occurred in 630 CE",
+      "It occurred after the Makkah's breach of the treaty of Hudaybiyyah",
+      "Either Ka'bah or Abu Sufyan's house approved by the Prophet as a refuge place"
+    ],
+    "answer": "A",
+    "explanation": "The conquest of Makkah occurred in 630 CE (8 AH), which was after the Hijrah, not before. The statement that it occurred before the Hijrah is incorrect. The other options are factually correct."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "One of the agreements in the Treaty of Hudaybiyyah was to",
+    "options": [
+      "kill any Muslim found in Makkah.",
+      "kill any pagan found in Madinah.",
+      "stop the practice of Islam for ten years.",
+      "bury their hatchet for ten years."
+    ],
+    "answer": "D",
+    "explanation": "One of the agreements in the Treaty of Hudaybiyyah was to establish a truce (ceasefire) for ten years between the Muslims and the Quraysh. This allowed for peaceful relations and the spread of Islam."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Jahiliyyah Arab woman could not inherit her husband because she",
+    "options": [
+      "might not need the properties.",
+      "might not handle it very well.",
+      "was considered not to have merited it.",
+      "was considered as part of her husband's properties."
+    ],
+    "answer": "D",
+    "explanation": "In the Jahiliyyah period, an Arab woman could not inherit her husband because she was considered part of her husband's property. She was inherited like any other possession. Islam abolished this practice and gave women inheritance rights."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The leader of the Muslim delegation to Abyssinia was",
+    "options": [
+      "Ja'far.",
+      "Jaysh.",
+      "Jibril.",
+      "Junaid."
+    ],
+    "answer": "A",
+    "explanation": "The leader of the Muslim delegation to Abyssinia (Ethiopia) was Ja'far ibn Abi Talib, the cousin of the Prophet. He was known for his eloquence and successfully defended the Muslims before the Negus."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "One of the Arab leaders who was sent to bring back the Muslims from Abyssinia to Makkah was",
+    "options": [
+      "Abu Talib.",
+      "Abu Jahl.",
+      "Abu Lahab.",
+      "Abu Sufyan."
+    ],
+    "answer": "D",
+    "explanation": "The Quraysh sent a delegation to Abyssinia to persuade the Negus to return the Muslim refugees. Note: The delegation was led by 'Amr ibn al-'As, not Abu Sufyan. However, among the given options, Abu Sufyan is the best available answer as he was a prominent Quraysh leader who interacted with the Negus."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The period of cessation of revelation to the Prophet is described as",
+    "options": [
+      "Fatah.",
+      "Fadiah.",
+      "Fatrah.",
+      "Fasq."
+    ],
+    "answer": "C",
+    "explanation": "The period of cessation of revelation to the Prophet is described as Fatrah. This was the period after the first revelation when revelation stopped temporarily, causing the Prophet great distress until it resumed."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Authenticity of the Qur'an as a Divine Book",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "One of the followings is not part of the mode of revelation.",
+    "options": [
+      "Behind the veil",
+      "Through inspiration",
+      "Through dream",
+      "Through discussion with friends"
+    ],
+    "answer": "D",
+    "explanation": "Through discussion with friends is NOT a mode of revelation. The modes of revelation include: behind the veil, through inspiration (Wahy), through a dream (Ru'ya), and through Angel Jibril."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "The first encounter of Prophet Muhammad with Jibril in angelic form was at",
+    "options": [
+      "Jamrah.",
+      "Cave Hira.",
+      "'Arafah.",
+      "Miqat."
+    ],
+    "answer": "B",
+    "explanation": "The first encounter of Prophet Muhammad with Jibril in angelic form was at Cave Hira, where he received the first revelation — the first five verses of Surah al-Alaq in 610 C.E."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Conditions, Performance, and Performance of Hajj and Umrah",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Dhul Hulayfah is mentioned under",
+    "options": [
+      "Hajj.",
+      "Salah.",
+      "Zakah.",
+      "Sawm."
+    ],
+    "answer": "A",
+    "explanation": "Dhul Hulayfah is a miqat (designated station for entering the state of Ihram) for those coming from Madinah to perform Hajj or 'Umrah. It is one of the five miqat stations."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Forms and Purposes of Taharah",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Both men and women are expected to perform the following ghusl EXCEPT",
+    "options": [
+      "Dukhulul Islam.",
+      "Janabah.",
+      "Nifas.",
+      "Janazah."
+    ],
+    "answer": "C",
+    "explanation": "Nifas (post-natal bleeding) is a condition that only affects women, so only women perform ghusl for it. Janabah applies to both genders, Dukhulul Islam is for new converts of either gender, and Janazah (washing the deceased) applies to both."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Determining the Authenticity of Hadith",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The chains of narrators are significant in the study of hadith because",
+    "options": [
+      "it is a tool for understanding hadith.",
+      "it exposes the hadith reporters.",
+      "it enables the verification of authenticity of hadith.",
+      "it links the hadith with the Prophet."
+    ],
+    "answer": "C",
+    "explanation": "The chains of narrators (isnad) are significant because they enable the verification of the authenticity of Hadith. Scholars examine each narrator's reliability, memory, and the continuity of the chain."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Definition and Values of Hadith",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The followings are used interchangeably for Hadith EXCEPT",
+    "options": [
+      "Sunni.",
+      "Sunnah.",
+      "Isnad.",
+      "Matn."
+    ],
+    "answer": "A",
+    "explanation": "Sunni is NOT a term used interchangeably for Hadith. Sunni refers to a follower of the Sunni branch of Islam. Sunnah is sometimes used interchangeably with Hadith, while Isnad and Matn are components of Hadith."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "An Overview of the Umayyad and Abbasid Dynasties",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The founder of Umayyad caliphate was",
+    "options": [
+      "Mu'awiyah ibn Abu Sufyan.",
+      "Mu'awiyah ibn Abu Talib.",
+      "Mu'awiyah ibn Abu Jahl.",
+      "Mu'awiyah ibn Abu Lahab."
+    ],
+    "answer": "A",
+    "explanation": "The founder of the Umayyad caliphate was Mu'awiyah ibn Abu Sufyan. He established the Umayyad dynasty in 661 C.E. after the end of the Rashidun caliphate, moving the capital to Damascus."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Regulations Governing Sawm",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Fasting as prescribed for the Muslims is contained in Qur'an",
+    "options": ["3:183", "4:183", "2:283", "2:183"],
+    "answer": "D",
+    "explanation": "Fasting is prescribed for Muslims in Qur'an 2:183: 'O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous.'"
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The marriage of Prophet Muhammad (SAW) with Khadijah was blessed with",
+    "options": [
+      "two sons and four daughters.",
+      "four sons and two daughters.",
+      "three sons and four daughters.",
+      "three sons and three daughters."
+    ],
+    "answer": "A",
+    "explanation": "The marriage of Prophet Muhammad (SAW) with Khadijah was blessed with two sons (Qasim and Abdullah, also known as Tahir and Tayyib) and four daughters (Zaynab, Ruqayyah, Umm Kulthum, and Fatimah)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Life and Achievements of the Khulafa Rashidūn",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Battle of Siffin led to the emergence of",
+    "options": [
+      "Qadriyyah.",
+      "Tijaniyyah.",
+      "Khawarij.",
+      "Khilafah."
+    ],
+    "answer": "C",
+    "explanation": "The Battle of Siffin (657 C.E.) led to the emergence of the Khawarij. They were the group that seceded from Ali's army after he accepted arbitration with Mu'awiyah, declaring that 'judgment belongs only to Allah.'"
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Arrangement and Means of Preserving the Qur'anic Text",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The whole of Qur'an is divided into thirty approximately equal portions, each of which is called",
+    "options": [
+      "Qur'an.",
+      "Hizb.",
+      "Juz'.",
+      "Nisfu."
+    ],
+    "answer": "C",
+    "explanation": "The whole Qur'an is divided into thirty approximately equal portions, each of which is called Juz' (plural: Ajza'). Each Juz' is further divided into two Hizbs."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The Surah of the Holy Qur'an that focuses on the Oneness of Allah is",
+    "options": [
+      "Suratul Fatihah.",
+      "Suratun Nas.",
+      "Suratul Ikhlas.",
+      "Suratul Du'a."
+    ],
+    "answer": "C",
+    "explanation": "Suratul Ikhlas (Chapter 112) focuses on the Oneness of Allah. It declares: 'Say, He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.'"
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The warning given by Qur'an chapter 102 to Muslims is to avoid",
+    "options": [
+      "forbidden foods.",
+      "hatred of neighbours.",
+      "amazing wealth.",
+      "travelling."
+    ],
+    "answer": "C",
+    "explanation": "The warning given by Qur'an chapter 102 (Suratut-Takathur) is to avoid the excessive pursuit and mutual rivalry for piling up worldly wealth. It warns that this distraction diverts people from the remembrance of Allah."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Determining the Authenticity of Hadith",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "An Hadith is considered Mawdu' when it is",
+    "options": [
+      "sound.",
+      "good.",
+      "fabricated.",
+      "weak."
+    ],
+    "answer": "C",
+    "explanation": "A Hadith is considered Mawdu' (fabricated) when it is forged and falsely attributed to the Prophet (SAW). It is the most unreliable and rejected category of Hadith."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Authenticity of the Qur'an as a Divine Book",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The Holy Qur'an revealed through which mode of revelation?",
+    "options": [
+      "Behind the veil",
+      "Intuition",
+      "Angelic",
+      "Flashing"
+    ],
+    "answer": "C",
+    "explanation": "The Holy Qur'an was revealed through the angelic mode — Angel Jibril delivered the revelation to Prophet Muhammad (SAW) over 23 years. The other modes were used for other forms of divine communication."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "One of the followings is not a god worshipped by the Arabs of pre-Islamic period.",
+    "options": [
+      "Al-Lat",
+      "Nasra",
+      "Yagutha",
+      "Rabb"
+    ],
+    "answer": "D",
+    "explanation": "Rabb is NOT a god worshipped by the Arabs of the pre-Islamic period. Rabb is a name of Allah (meaning Lord, Sustainer). Al-Lat, Nasra (Nasr), and Yagutha (Yaghuth) were idols worshipped by the pre-Islamic Arabs."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The intellectual programmes of the Arabs during the Jahiliyyah period was held at",
+    "options": [
+      "Taif.",
+      "Madinah.",
+      "Ukaz.",
+      "'Arafah."
+    ],
+    "answer": "C",
+    "explanation": "The intellectual programmes of the Arabs during the Jahiliyyah period were held at Ukaz, a famous market and cultural fair near Makkah where poetry, oratory, and literary competitions were held annually."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Six Standard Works and Biographies of Compilers",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The book of Hadith of Imam Bukhari is called",
+    "options": [
+      "Hadith Qawl.",
+      "Hadith Quds.",
+      "Sahih Bukhari.",
+      "Sunnah."
+    ],
+    "answer": "C",
+    "explanation": "The book of Hadith compiled by Imam Bukhari is called Sahih al-Bukhari. It is considered the most authentic collection of Hadith after the Holy Qur'an."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Textual Analyses of an-Nawawī's Collection",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The main teaching of Hadith 16th of An-Nawawi is",
+    "options": [
+      "generosity.",
+      "humility.",
+      "honesty.",
+      "patience."
+    ],
+    "answer": "D",
+    "explanation": "Hadith 16 of an-Nawawi specifically teaches about controlling anger: 'Do not become angry.' Among the given options, patience (D) is the closest virtue to anger management, as patience involves restraining oneself from impulsive reactions."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Arrangement and Means of Preserving the Qur'anic Text",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Under whose Chairmanship was the standardisation of the Holy Qur'an done?",
+    "options": [
+      "Abdullah bn Zubayr",
+      "Sa'ad bn al-As",
+      "Abdul Rahman bn Harith",
+      "Zayd bn Thabit"
+    ],
+    "answer": "D",
+    "explanation": "The standardisation of the Holy Qur'an was done under the chairmanship of Zayd ibn Thabit during the caliphate of 'Uthman ibn Affan. He led the committee that produced the 'Uthmanic codex (ar-Rasm al-'Uthmani)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Emergence of ar-Rasm al-'Uthmānī",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Variation in the recitation of the Holy Qur'an was noticed during the reign of 'Uthman bn Affan in the following provinces.",
+    "options": [
+      "Makkah, Madinah, Taif and Najd",
+      "Kufah, Syria, Hims and Basrah",
+      "Jeddah, Munah, 'Arafah and Tabuk",
+      "Makkah, Jeddah, Abyssinia and Taif"
+    ],
+    "answer": "B",
+    "explanation": "Variation in the recitation of the Holy Qur'an was noticed during the reign of 'Uthman ibn Affan in the provinces of Kufah (Iraq), Syria, Hims, and Basrah. This prompted the standardization of the Qur'anic text."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Textual Analyses of an-Nawawī's Collection",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "'One of the excellences of a man's religion is his leaving alone what does not concern him.' This is contained in Hadith of An-Nawawi's collection.",
+    "options": ["13th", "16th", "10th", "12th"],
+    "answer": "D",
+    "explanation": "'Part of the perfection of a person's Islam is his leaving alone what does not concern him' is contained in Hadith 12 of an-Nawawi's collection. It teaches minding one's own business and avoiding unnecessary matters."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Analysis of the Names and Attributes of the Qur'an",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Ad-Dhikr is one of the attributes of the Qur'an which means",
+    "options": [
+      "the path.",
+      "the book.",
+      "the reminder.",
+      "the message."
+    ],
+    "answer": "C",
+    "explanation": "Ad-Dhikr is one of the attributes of the Qur'an which means The Reminder. It reminds humanity of Allah, His commands, the purpose of life, and the Day of Judgment."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Conditions, Performance, and Performance of Hajj and Umrah",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The only duty that differentiates between Hajj and Umrah is",
+    "options": [
+      "Talbiyyah.",
+      "Sa'y.",
+      "Wuqifu bil 'Arafah.",
+      "Tawaf."
+    ],
+    "answer": "C",
+    "explanation": "Wuquf bil 'Arafah (standing at Arafat) is the only duty that differentiates between Hajj and Umrah. It is a compulsory pillar of Hajj performed on the 9th of Dhul-Hijjah but is not required in Umrah. The other rites are common to both."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "What are the practices that are common in your society that can be likened to the practices of the Jahiliyyah?",
+    "options": [],
+    "modelAnswer": "Practices common in contemporary society that can be likened to Jahiliyyah include:\n\n1. Tribalism and Ethnicity: In the Jahiliyyah period, Arabs were divided by tribalism and fought over tribal loyalties. In modern society, tribalism, nepotism, and ethnic discrimination are common.\n\n2. Superstition and Fortune-telling: The pre-Islamic Arabs believed in omens, fortune-telling, and superstition. In modern society, people still engage in astrology, palm reading, and consulting spiritualists.\n\n3. Immorality and Indecency: Jahiliyyah society was characterized by sexual immorality, adultery, and the exploitation of women. Modern society also faces challenges of immorality, indecency, and the objectification of women.\n\n4. Usury (Riba): Interest-based transactions were common in Jahiliyyah and are still prevalent in modern banking and finance.\n\n5. Oppression and Injustice: The strong oppressed the weak in Jahiliyyah. In contemporary society, corruption, exploitation of the poor, and human rights abuses persist.\n\n6. Ignorance of Divine Guidance: Many people in modern society have turned away from divine guidance, following secular ideologies and materialism.\n\n7. Materialism and Greed: The Jahiliyyah era was marked by the excessive pursuit of wealth and status. Modern society is similarly materialistic.\n\n8. Female Infanticide: In Jahiliyyah, female children were buried alive. While this practice has largely stopped, gender discrimination and the neglect of women's rights still occur.\n\n9. Alcohol and Drugs: Jahiliyyah society was known for excessive drinking and drug use. Modern society also struggles with substance abuse."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Discuss three (3) ways through which religious understanding and peaceful co-existence were established during the time of Prophet Muhammad (S.A.W.).",
+    "options": [],
+    "modelAnswer": "Three ways through which religious understanding and peaceful co-existence were established during the time of Prophet Muhammad (SAW):\n\n1. The Charter of Madinah (Constitution of Madinah): The Prophet established a comprehensive charter that governed relations between Muslims, Jews, and other tribes in Madinah. It guaranteed religious freedom, mutual protection, and justice for all citizens, regardless of their faith.\n\n2. The Treaty of Hudaybiyyah: The Prophet signed the Treaty of Hudaybiyyah with the Quraysh, which established a ten-year truce and allowed for peaceful interaction. It recognized the rights of both parties and set a precedent for peaceful coexistence.\n\n3. The Example of the Prophet's Character: The Prophet demonstrated tolerance, kindness, and justice in his dealings with non-Muslims. He allowed Christians of Najran to pray in his mosque, and he gave them rights and protection. His character won many hearts and promoted understanding.\n\n4. The Concept of Ummah: The Prophet established the concept of Ummah — a community of believers bound by faith and mutual responsibility. Non-Muslims living under Islamic rule were given the status of Dhimmi (protected persons) with rights and obligations.\n\n5. Dialogue and Debate: The Prophet engaged in respectful dialogue with people of other religions, inviting them to Islam but not forcing them. The Qur'an emphasizes: 'There is no compulsion in religion' (2:256)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Definition and Types of Tawhid",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "The first condition for being a Muslim is Iman (faith). List the six (6) articles of faith and give explanation on belief in the holy books.",
+    "options": [],
+    "modelAnswer": "The six articles of faith in Islam are:\n\n1. Belief in Allah: Belief in the oneness of Allah, His lordship, His names and attributes.\n2. Belief in His Angels: Belief in the existence of angels, their functions, and their role in carrying out Allah's commands.\n3. Belief in His Books: Belief in all the revealed books, including the Torah, Psalms, Gospel, and the Qur'an as the final and complete revelation.\n4. Belief in His Messengers: Belief in all the prophets sent by Allah, from Adam to Muhammad (SAW).\n5. Belief in the Last Day: Belief in the Day of Judgment, resurrection, heaven, and hell.\n6. Belief in Divine Decree (Qadar): Belief in Allah's predestination, both good and bad.\n\n**Belief in the Holy Books:**\n- Muslims believe that Allah revealed books to various prophets as guidance for humanity.\n- These books include: the Torah (to Musa), the Psalms (to Dawud), the Gospel (to 'Isa), and the Qur'an (to Muhammad).\n- The Qur'an is the final and complete revelation, confirming and superseding previous scriptures.\n- Muslims believe that the earlier scriptures have been altered over time, while the Qur'an has been perfectly preserved.\n- The Qur'an is the ultimate authority for Muslims, and belief in it is essential for faith.\n- Belief in the books entails accepting them as true and following the guidance they contain."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Regulations Governing Zakat and Sadaqah",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Examine briefly any five (5) benefits of Zakat and itemize any five (5) articles on which it is paid.",
+    "options": [],
+    "modelAnswer": "**Five benefits of Zakat:**\n\n1. Purification of Wealth: Zakat purifies one's wealth and removes the taint of greed and selfishness.\n2. Social Solidarity: Zakat fosters brotherhood and compassion by redistributing wealth to the poor.\n3. Economic Justice: Zakat reduces inequality and helps bridge the gap between the rich and the poor.\n4. Spiritual Growth: Zakat increases one's piety and strengthens one's relationship with Allah.\n5. Community Development: Zakat contributes to the welfare of the community and supports those in need.\n\n**Five articles on which Zakat is paid:**\n\n1. Gold (Nisab: 85 grams)\n2. Silver (Nisab: 595 grams)\n3. Agricultural produce (at the time of harvest)\n4. Livestock (camels, cattle, sheep, goats)\n5. Cash and trade goods (money, merchandise, savings)"
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "The Biography of Muhammad",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Describe fully the circumstances under which Prophet Muhammad (S.A.W.) received the first revelation.",
+    "options": [],
+    "modelAnswer": "The circumstances of the first revelation:\n\n1. The Prophet's Love for Seclusion: Before prophethood, the Prophet (SAW) loved to retreat to the Cave Hira in Makkah to meditate and ponder over the creation of the heavens and earth.\n\n2. The Appearance of Angel Jibril: One night in Ramadan (610 C.E.), while the Prophet was in Cave Hira, Angel Jibril appeared to him in his angelic form.\n\n3. The Command to Read: The Angel commanded the Prophet to 'Read' (Iqra). The Prophet replied that he could not read (or did not know how to read). The Angel embraced him three times and commanded him to read each time.\n\n4. The First Verses: The Angel recited the first five verses of Surah al-Alaq: 'Read in the name of your Lord who created...' (96:1-5).\n\n5. The Prophet's Distress: After the revelation, the Prophet was terrified and trembled. He returned home to his wife Khadijah and said: 'Cover me, cover me.'\n\n6. Khadijah's Support: Khadijah consoled him and took him to her cousin Waraqah ibn Nawfal, a Christian scholar, who confirmed that the revelation was from Allah and that Muhammad was the awaited Prophet.\n\n7. Cessation Period: After this, revelation ceased for some time (the Fatrah), which caused the Prophet further distress until revelation resumed."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Write either in Arabic or transliteration, Suratul Qadr (Qur'an 97), translate the chapter and itemize its teachings.",
+    "options": [],
+    "modelAnswer": "**Suratul Qadr (Chapter 97):**\n\nTransliteration:\n*Bismillahir-Rahmanir-Rahim*\n1. Inna anzalnahu fi laylatil-qadr\n2. Wa ma adraka ma laylatul-qadr\n3. Laylatul-qadri khayrun min alfi shahr\n4. Tanazzalul-mala'ikatu war-ruhu fiha bi-idhni rabbihim min kulli amr\n5. Salamun hiya hatta matla'il-fajr\n\nTranslation:\n\"In the name of Allah, the Most Gracious, the Most Merciful.\n1. Indeed, We sent it down on the Night of Decree.\n2. And what can make you know what the Night of Decree is?\n3. The Night of Decree is better than a thousand months.\n4. The angels and the Spirit descend therein by permission of their Lord for every matter.\n5. Peace it is until the emergence of dawn.\"\n\n**Teachings:**\n1. The Qur'an was revealed on the Night of Decree (Laylatul-Qadr) in Ramadan.\n2. Laylatul-Qadr is better than a thousand months — worship on this night is immensely rewarding.\n3. Angels descend on this night by Allah's permission.\n4. The night is full of peace and blessings.\n5. It is a night of divine mercy and forgiveness.\n6. Muslims are encouraged to seek this night and increase their worship.\n7. The night occurs in the last ten nights of Ramadan (especially odd nights)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "Types of Hadith (Nabawi and Qudsi)",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "List the basic forms of Hadith and describe five characteristics of each of them.",
+    "options": [],
+    "modelAnswer": "The basic forms of Hadith are:\n\n**1. Hadith Qudsi (Divine Hadith):**\n- It is a Hadith where the meaning comes from Allah, but the wording is from the Prophet.\n- It is introduced with phrases like 'The Prophet said, on the authority of Allah...'\n- It is less frequent than Hadith Nabawi.\n- It contains the words of Allah addressed to humanity.\n- It is not part of the Qur'an and is not recited in prayer.\n- Examples include: 'I am as My servant thinks of Me...'\n\n**2. Hadith Nabawi (Prophetic Hadith):**\n- It is the sayings, deeds, and approvals of the Prophet (SAW).\n- It is the most common type of Hadith.\n- It is used as a source of Shari'ah.\n- It is classified into Sahih, Hasan, and Da'if.\n- It is divided into Qawli (sayings), Fi'li (actions), and Taqriri (approvals)."
+  },
+  {
+    "subject": "IRS",
+    "year": 2021,
+    "category": "A Critical Appraisal of Sahīh al-Bukhārī",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Explain the contributions of Imam Bukhari to the study of the science of Hadith.",
+    "options": [],
+    "modelAnswer": "Imam al-Bukhari made significant contributions to the science of Hadith:\n\n1. Compilation of Sahih al-Bukhari: He spent 16 years compiling his famous collection, which contains approximately 7,275 Hadith (with repetitions). It is considered the most authentic book after the Qur'an.\n\n2. Strict Criteria for Authenticity: He developed strict criteria for verifying Hadith, requiring that all narrators be reliable, have strong memory, and the chain of transmission be continuous.\n\n3. Classification of Hadith: He classified Hadith into different categories — Sahih, Hasan, and Da'if — setting the standard for later scholars.\n\n4. Preservation of the Sunnah: His work preserved the Sunnah of the Prophet (SAW) for future generations and protected it from fabrication.\n\n5. Influence on Islamic Scholarship: Sahih al-Bukhari became a primary source for Islamic law, theology, and Hadith studies.\n\n6. Methodology of Hadith Criticism: He established the science of Jarh wa Ta'dil (criticism and validation of narrators), which became the foundation of Hadith criticism.\n\n7. Teaching and Mentorship: He taught many students, including Imam Muslim, who became prominent scholars in their own right.\n\n8. Defense of the Sunnah: His work defended the Sunnah from heresies and innovations by establishing the authenticity of Prophetic traditions."
+  }
+]
