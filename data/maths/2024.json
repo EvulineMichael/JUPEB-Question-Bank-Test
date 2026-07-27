@@ -29,8 +29,8 @@
     "questionNumber": 3,
     "question": "Given two numbers Z₁ = 2(cos35° + i sin35°) and Z₂ = 5(cos25° + i sin25°), find Re(Z₁Z₂).",
     "options": ["10", "5", "60", "20"],
-    "answer": "A",
-    "explanation": "Z₁Z₂ = 2×5(cos(35+25)° + i sin(35+25)°) = 10(cos60° + i sin60°) = 10(1/2 + i√3/2) = 5 + 5i√3. Real part = 5. Option B is 5."
+    "answer": "B",
+    "explanation": "Z₁Z₂ = 2×5(cos(35+25)° + i sin(35+25)°) = 10(cos60° + i sin60°) = 10(1/2 + i√3/2) = 5 + 5i√3. Real part = 5."
   },
   {
     "subject": "Mathematics",

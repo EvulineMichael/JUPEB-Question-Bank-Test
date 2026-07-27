@@ -51,8 +51,8 @@
     "questionNumber": 5,
     "question": "Let f: x → (x + 1)/(x - 2) be a function defined on the set of real numbers excluding 2. Determine the inverse of the function.",
     "options": ["(2x - 1)/(x - 1)", "(2x + 1)/(x - 2)", "(2x + 1)/(x - 1)", "(x - 1)/(2x + 1)"],
-    "answer": "A",
-    "explanation": "Let y = (x+1)/(x-2). Solve for x: y(x-2)=x+1 → yx - 2y = x+1 → yx - x = 2y+1 → x(y-1) = 2y+1 → x = (2y+1)/(y-1). Swap x and y: f⁻¹(x) = (2x+1)/(x-1) = (2x+1)/(x-1). Option A is (2x-1)/(x-1) — close but sign difference. Let me recalc carefully: y(x-2)=x+1 → yx - 2y = x+1 → yx - x = 2y+1 → x(y-1) = 2y+1 → x = (2y+1)/(y-1). So f⁻¹(x) = (2x+1)/(x-1). None match exactly. Option C is (2x+1)/(x-1) — that's correct. Option A has minus sign in numerator."
+    "answer": "C",
+    "explanation": "Let y = (x+1)/(x-2). Solve for x: y(x-2)=x+1 → yx - 2y = x+1 → yx - x = 2y+1 → x(y-1) = 2y+1 → x = (2y+1)/(y-1). Swap x and y: f⁻¹(x) = (2x+1)/(x-1) = (2x+1)/(x-1)."
   },
   {
     "subject": "Mathematics",

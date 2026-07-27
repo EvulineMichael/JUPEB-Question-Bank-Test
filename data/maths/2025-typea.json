@@ -448,7 +448,7 @@
     "question": "For what value of k is the line 3x - ky = 5 perpendicular to the line 6x + 9y = 7?",
     "options": ["-2", "9/2", "-2/3", "-2"],
     "answer": "A",
-    "explanation": "Slope of first line: 3x - ky = 5 → -ky = -3x + 5 → y = (3/k)x - 5/k, slope m₁ = 3/k. Slope of second: 6x + 9y = 7 → 9y = -6x + 7 → y = -(2/3)x + 7/9, slope m₂ = -2/3. Perpendicular: m₁ × m₂ = -1 → (3/k)(-2/3) = -1 → -2/k = -1 → k = 2. Not in options. Option A is -2. If k = -2, m₁ = 3/(-2) = -1.5, m₂ = -0.6667, product = 1, not -1. Given options, k=2 is not listed. Possibly the line is 3x - ky = 5 perpendicular to 6x + 9y = 7? Let me recalc: m₁ = 3/k, m₂ = -2/3. For perpendicular: (3/k)(-2/3) = -1 → -2/k = -1 → k = 2. Not in options. Option A is -2, C is -2/3. None is 2."
+    "explanation": "First line: 3x − ky = 5 → y = (3/k)x − 5/k, so slope = 3/k. Second line: 6x + 9y = 7 → y = −(2/3)x + 7/9, so slope = −2/3. For perpendicular lines, product of slopes = −1. Therefore, (3/k)(−2/3) = −1 → −2/k = −1 → k = 2. None of the options equals 2."
   },
   {
     "subject": "Mathematics",
