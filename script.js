@@ -541,29 +541,32 @@ function handleSidebarResponsive() {
 async function getAvailableYears(subject) {
     const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
     const availableYears = [];
-    
+
     for (const year of possibleYears) {
-        // Check for type variants (Type A, Type B, Type C, Type D)
         let foundAny = false;
         for (const type of ['A', 'B', 'C', 'D']) {
             try {
-                const response = await fetch(`data/${subject}/${year}-type${type.toLowerCase()}.json`, { method: 'HEAD' });
+                const fileName = `data/${subject}/${year}-type${type.toLowerCase()}.json`;
+                const response = await fetch(fileName); // Direct fetch, no HEAD
                 if (response.ok) {
                     availableYears.push({ year, paper: `Type ${type}`, label: `${year} Type ${type}` });
                     foundAny = true;
                 }
-            } catch (error) {}
+            } catch (error) {
+                // File doesn't exist — skip
+            }
         }
-        
-        // If no type files found, try the plain year file
+
         if (!foundAny) {
             try {
-                const response = await fetch(`data/${subject}/${year}.json`, { method: 'HEAD' });
+                const response = await fetch(`data/${subject}/${year}.json`);
                 if (response.ok) availableYears.push({ year, paper: null, label: String(year) });
-            } catch (error) {}
+            } catch (error) {
+                // Doesn't exist — skip
+            }
         }
     }
-    
+
     return availableYears;
 }
 
@@ -571,56 +574,63 @@ async function loadQuestions(forceSubject = null, callback = null) {
     if (forceSubject) {
         currentSubject = forceSubject;
     }
-    
-  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
-    
-    for (const subject of subjects) {
-        if (allSubjectData[subject].length > 0) continue;
-        
+
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+
+    // Create a promise for each subject that needs loading
+    const loadPromises = subjects.map(async (subject) => {
+        if (allSubjectData[subject].length > 0) return; // Skip already-loaded
+
         const availableYears = await getAvailableYears(subject);
         allSubjectYears[subject] = availableYears;
-        
-        if (availableYears.length === 0) continue;
-        
+
+        if (availableYears.length === 0) return;
+
         let allQuestions = [];
-        for (const yr of availableYears) {
-    try {
-        let fileName;
-        if (yr.paper) {
-            const typeLetter = yr.paper.replace('Type ', '').toLowerCase();
-            fileName = `data/${subject}/${yr.year}-type${typeLetter}.json`;
-        } else {
-            fileName = `data/${subject}/${yr.year}.json`;
-        }
-        const response = await fetch(fileName);
+        const fetchPromises = availableYears.map(async (yr) => {
+            try {
+                let fileName;
+                if (yr.paper) {
+                    const typeLetter = yr.paper.replace('Type ', '').toLowerCase();
+                    fileName = `data/${subject}/${yr.year}-type${typeLetter}.json`;
+                } else {
+                    fileName = `data/${subject}/${yr.year}.json`;
+                }
+                const response = await fetch(fileName);
                 if (response.ok) {
-    const yearData = await response.json();
-    if (Array.isArray(yearData)) {
-        const tagged = yearData.map(q => ({ ...q, paper: yr.paper || null }));
-        allQuestions = [...allQuestions, ...tagged];
-    } else if (yearData.questions && Array.isArray(yearData.questions)) {
-        const tagged = yearData.questions.map(q => ({ ...q, paper: yr.paper || null }));
-        allQuestions = [...allQuestions, ...tagged];
-    }
-}
-} catch (error) {
-    console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
-}
-        }
-        
+                    const yearData = await response.json();
+                    if (Array.isArray(yearData)) {
+                        return yearData.map(q => ({ ...q, paper: yr.paper || null }));
+                    } else if (yearData.questions && Array.isArray(yearData.questions)) {
+                        return yearData.questions.map(q => ({ ...q, paper: yr.paper || null }));
+                    }
+                }
+                return [];
+            } catch (error) {
+                console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
+                return [];
+            }
+        });
+
+        const yearResults = await Promise.all(fetchPromises);
+        yearResults.forEach(result => {
+            allQuestions = [...allQuestions, ...result];
+        });
+
         allSubjectData[subject] = allQuestions;
         console.log(`Cached ${subject}: ${allQuestions.length} questions from years ${availableYears.map(y => y.label).join(', ')}`);
-    }
-    
+    });
+
+    // Wait for ALL subjects to load simultaneously
+    await Promise.all(loadPromises);
+
     questionsData = allSubjectData[currentSubject] || [];
     window.currentSubjectYears = allSubjectYears[currentSubject] || [];
-    
+
     renderCategories();
     showWelcomeMessage();
-    
     autoOpenSidebarOnMobile();
-    
-    // Call callback if provided
+
     if (callback) callback();
 }
 
