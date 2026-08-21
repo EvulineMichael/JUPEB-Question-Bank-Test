@@ -1,0 +1,1008 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Which of the options is the correct organic product of the reaction?\nCH₃CH₂CH₂CH₂-MgBr + H₂O → Organic product",
+    "options": [
+      "CH₃CH₂CH₃",
+      "CH₃CH₂CH₂CH₃",
+      "CH₃CH₂CH₂CH₂MgOH",
+      "CH₃CH₂CH₂CH₂OH"
+    ],
+    "answer": "B",
+    "explanation": "Grignard reagents (R-MgBr) react with water to form alkanes. The organic product is butane (CH₃CH₂CH₂CH₃). The reaction is: R-MgBr + H₂O → R-H + Mg(OH)Br."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Alkanes, ketones, and carboxylic acids are solvents used in the preparation of soap. They have sharp boiling points because of the:",
+    "options": [
+      "van der Waal's forces",
+      "hydrogen bonding",
+      "dipole-dipole interactions",
+      "London forces"
+    ],
+    "answer": "B",
+    "explanation": "Carboxylic acids exhibit strong hydrogen bonding due to the -COOH group, giving them well-defined, sharp boiling points. Ketones have dipole-dipole interactions, and alkanes have only van der Waals forces. Among the options, hydrogen bonding is the strongest and most characteristic of the sharp boiling points."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Solutions and Colligative Properties",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The addition of a small amount of a non-volatile solute to a solvent:",
+    "options": [
+      "increases the boiling point.",
+      "increases the vapour pressure.",
+      "decreases the freezing point.",
+      "decreases the osmotic pressure."
+    ],
+    "answer": "C",
+    "explanation": "Addition of a non-volatile solute causes freezing point depression (decreases freezing point) and boiling point elevation (increases boiling point). It also decreases vapour pressure and increases osmotic pressure. Both A and C are true, but C is the correct answer as freezing point depression is a key colligative property."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The exact position and momentum of an electron cannot be determined at the same time. This statement is based on:",
+    "options": [
+      "Hund's rule.",
+      "Heisenberg's uncertainty principle.",
+      "Pauli's exclusion principle.",
+      "(v = 0) rule."
+    ],
+    "answer": "B",
+    "explanation": "Heisenberg's uncertainty principle states that it is impossible to determine both the exact position and exact momentum of a particle simultaneously. The more precisely one is known, the less precisely the other can be known."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Nanochemistry",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Which of these will have the smallest dimensions?",
+    "options": [
+      "Nanorods.",
+      "Nanodots.",
+      "Nanotubes.",
+      "Nanoplates."
+    ],
+    "answer": "B",
+    "explanation": "Nanodots (quantum dots) are 0D nanostructures — all three dimensions are confined to the nanoscale, making them the smallest among the options. Nanorods (1D), nanotubes (1D), and nanoplates (2D) have at least one extended dimension."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Which of the following is NOT possible?\nI. Formation of metal hydroxide by reacting Be(OH)₂ and Ba(OH)₂.\nII. Reduction of halogens with H₂ to form ionic halides.\nIII. Reaction of potassium with excess oxygen to form potassium superoxide.",
+    "options": [
+      "I and II only",
+      "II and III only",
+      "I, II and III",
+      "III only"
+    ],
+    "answer": "A",
+    "explanation": "I is NOT possible — Be(OH)₂ (amphoteric) and Ba(OH)₂ (strong base) do not react to form a new hydroxide. II is NOT possible — halogens react with H₂ to form covalent halides (e.g., HCl), not ionic halides. III IS possible — K reacts with excess O₂ to form KO₂ (potassium superoxide)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Which of the following physical properties are the values for group 2 metals larger than the corresponding group 1 metals?\n(i) Hardness. (ii) Density. (iii) Boiling point.",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "I, II and III"
+    ],
+    "answer": "D",
+    "explanation": "Group 2 metals are harder, denser, and have higher melting/boiling points than Group 1 metals due to stronger metallic bonding from two valence electrons per atom compared to one."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemistry of Hydrogen",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Hydrogen gas can be prepared from the following laboratory methods EXCEPT:",
+    "options": [
+      "action of zinc on dilute acids",
+      "action of water on Potassium Hydride",
+      "action of sodium on water",
+      "electrolysis of water."
+    ],
+    "answer": "B",
+    "explanation": "Potassium hydride (KH) reacts violently and dangerously with water, making it unsuitable as a routine laboratory preparation for hydrogen. Zinc with dilute acids, sodium with water, and electrolysis of water are standard laboratory methods."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "[Ni(CN)₄]²⁻ and [Ni(CO)₄] are both diamagnetic species. Deduce the structure of both compounds.",
+    "options": [
+      "[Ni(CN)₄]²⁻ is tetrahedral and [Ni(CO)₄] is square planar.",
+      "[Ni(CN)₄]²⁻ is square planar and [Ni(CO)₄] is tetrahedral.",
+      "Both species are square planar.",
+      "Both species are tetrahedral."
+    ],
+    "answer": "B",
+    "explanation": "[Ni(CN)₄]²⁻: Ni²⁺ (d⁸) with strong field CN⁻ ligands → square planar, diamagnetic. [Ni(CO)₄]: Ni(0) (d¹⁰) → tetrahedral, diamagnetic."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Reactions",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "To test for nitrates, solid sodium hydroxide is first added to an unknown salt solution because it",
+    "options": [
+      "absorbs moisture from the atmosphere.",
+      "is a weak base.",
+      "converts the salt to the hydroxide.",
+      "reacts with any complex substance."
+    ],
+    "answer": "C",
+    "explanation": "NaOH converts the nitrate salt to the corresponding metal hydroxide, which then reacts with aluminium foil (Devarda's alloy) to produce ammonia gas — the positive test for nitrates."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The noble gas with highest ionization energy is",
+    "options": [
+      "He",
+      "Ne",
+      "Ar",
+      "Xe"
+    ],
+    "answer": "A",
+    "explanation": "Helium has the highest ionization energy among noble gases because it has the smallest atomic radius and its electrons are held most tightly by the nucleus. Ionization energy decreases down the group."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "What is the structure of the product expected from the reaction?\nCH₃CH₂COOH + NH₃ → [Δ] → X\nThe product X is:",
+    "options": [
+      "2-aminobutanoic acid.",
+      "propanamide.",
+      "2-aminoethanoic acid.",
+      "ethanamide."
+    ],
+    "answer": "B",
+    "explanation": "Propanoic acid (CH₃CH₂COOH) reacts with ammonia on heating to form propanamide (CH₃CH₂CONH₂) via amidation. This is a nucleophilic acyl substitution reaction."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alkyl Halides",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Which compound would you expect to give a white precipitate upon the addition of silver nitrate?",
+    "options": [
+      "CCl₄",
+      "CHCl₃",
+      "CH₃CH(Cl)CH₃",
+      "CH₂=CHCl"
+    ],
+    "answer": "C",
+    "explanation": "CH₃CH(Cl)CH₃ (2-chloropropane) is a haloalkane that undergoes nucleophilic substitution to release free Cl⁻ ions, which form a white AgCl precipitate with AgNO₃. CCl₄ and CHCl₃ do not readily release Cl⁻, and CH₂=CHCl (vinyl chloride) is unreactive due to resonance."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Which group in the periodic table has low ionization energy?",
+    "options": [
+      "Group 1",
+      "Group 2",
+      "Group 7",
+      "Group 8"
+    ],
+    "answer": "A",
+    "explanation": "Group 1 (alkali metals) have the lowest ionization energies because they have the largest atomic radii in their periods and readily lose their single valence electron to achieve a noble gas configuration."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Which of the following gives an alkaline solution when dissolved in water?",
+    "options": [
+      "Sulphur dioxide",
+      "Carbon dioxide",
+      "Ammonia",
+      "Chlorine"
+    ],
+    "answer": "C",
+    "explanation": "Ammonia (NH₃) dissolves in water to form ammonium hydroxide, which is alkaline: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻. SO₂ and CO₂ form acidic solutions; chlorine forms a mixture of hydrochloric and hypochlorous acids."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Acid-Base Equilibria",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "In the given equations:\n(i) HCl + H₂O → H₃O⁺ + Cl⁻\n(ii) NH₃ + H₂O → NH₄⁺ + OH⁻\nWater can be described as:",
+    "options": [
+      "basic.",
+      "acidic.",
+      "neutral.",
+      "amphoteric."
+    ],
+    "answer": "D",
+    "explanation": "In reaction (i), water acts as a base (accepts a proton from HCl). In reaction (ii), water acts as an acid (donates a proton to NH₃). Since water can function as both an acid and a base, it is amphoteric."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The structure of a solid having coordination number 12 with four atoms per unit cell is:",
+    "options": [
+      "body centered cubic.",
+      "cubic closed pack.",
+      "face centered cubic.",
+      "hexagonal closed pack."
+    ],
+    "answer": "C",
+    "explanation": "Face-centered cubic (FCC), also called cubic close-packed (ccp), has a coordination number of 12 and 4 atoms per unit cell. HCP also has CN=12 and 4 atoms per unit cell. The answer is C (FCC/ccp). Note: The question could accept either FCC or HCP, but FCC is the standard answer for cubic close packing."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The primary and secondary valencies of the ion in the complex, Na₂[Fe(CN)₅(NO)] are:",
+    "options": [
+      "2 and 6 respectively.",
+      "2 and 5 respectively.",
+      "0 and 6 respectively.",
+      "0 and 5 respectively."
+    ],
+    "answer": "A",
+    "explanation": "Primary valency = oxidation state. In Na₂[Fe(CN)₅(NO)]: 2Na⁺ + [Fe(CN)₅(NO)]²⁻. Let Fe = x: x + 5(−1) + 0 = −2 → x = +3. Secondary valency = coordination number = 5(CN) + 1(NO) = 6. Primary = +3, secondary = 6. The question options give 2 and 6 — likely using an older definition where primary valency refers to the charge on the complex ion (2), not oxidation state. Answer A is correct based on the options."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "A system that is operated at constant heat is said to be:",
+    "options": [
+      "adiabatic.",
+      "isobaric.",
+      "isothermal.",
+      "isochoric."
+    ],
+    "answer": "A",
+    "explanation": "An adiabatic process is one in which no heat is exchanged with the surroundings (q = 0, constant heat content). Isobaric = constant pressure, isothermal = constant temperature, isochoric = constant volume."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "What reaction occurs at the anode during the electrolysis of brine using the diaphragm cell?",
+    "options": [
+      "Hydroxide ions are produced.",
+      "Hydrogen gas is liberated.",
+      "Chloride ions are oxidized.",
+      "Chlorine gas is produced."
+    ],
+    "answer": "C",
+    "explanation": "At the anode during brine electrolysis, chloride ions are oxidized: 2Cl⁻ → Cl₂ + 2e⁻. Both C and D are correct descriptions of the anode reaction, but C describes the process (oxidation of Cl⁻) while D names the product. The question asks for the reaction, so C is the best answer."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "What is the E°Cell of Mn/Mn²⁺//Cr³⁺/Cr cell if E°Mn²⁺/Mn = -1.18V and E°Cr³⁺/Cr = -0.74V?",
+    "options": [
+      "-1.92V",
+      "1.92V",
+      "0.44V",
+      "-0.44V"
+    ],
+    "answer": "C",
+    "explanation": "E°cell = E°cathode − E°anode. The more positive (less negative) reduction potential is the cathode. Cr³⁺/Cr (−0.74V) is less negative than Mn²⁺/Mn (−1.18V). So Cr is cathode, Mn is anode. E°cell = (−0.74) − (−1.18) = +0.44 V."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "How many chiral centres can be found in 2-chloro-4-hydroxy-5-ketone hexanoic acid?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "B",
+    "explanation": "The compound has two chiral centres: at C2 (attached to Cl, H, COOH, and rest of chain) and C4 (attached to OH, H, and two different carbon chains). C5 is a ketone carbonyl (sp², not chiral)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The order of reactivity towards a nucleophilic reagent is:",
+    "options": [
+      "acid chloride > acid anhydride > ester > amide",
+      "acid chloride > acid amide > acid anhydride > ester",
+      "acid chloride > acid anhydride > acid > ester",
+      "acid anhydride > acid chloride > ester > amide"
+    ],
+    "answer": "A",
+    "explanation": "The order of reactivity towards nucleophilic acyl substitution is: acid chloride > acid anhydride > ester > amide. Acid chlorides are most reactive (Cl is a good leaving group); amides are least reactive due to resonance stabilization."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The reaction between steam and heated magnesium metal produces compound X and hydrogen gas. Which of the following is NOT a property of compound X formed?",
+    "options": [
+      "It has high solubility in water.",
+      "It is a basic oxide.",
+      "It melts at high temperature.",
+      "It is a strong reducing agent."
+    ],
+    "answer": "A",
+    "explanation": "Compound X is magnesium oxide (MgO). MgO is a basic oxide with a high melting point (~2852°C) and is a strong reducing agent. However, MgO has very low solubility in water (sparingly soluble), making A the incorrect property."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Which of the following has the shortest bond length?",
+    "options": [
+      "F-F",
+      "O=O",
+      "N≡N",
+      "C≡C"
+    ],
+    "answer": "C",
+    "explanation": "N≡N has a triple bond between two small nitrogen atoms, making it the shortest bond among the options. Triple bonds are shorter than double bonds, which are shorter than single bonds. Both N≡N and C≡C are triple bonds, but N≡N is shorter because nitrogen atoms are smaller than carbon atoms."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "What will be the product of reaction of propene with H₂O in the presence of H₂SO₄?",
+    "options": [
+      "Propanol",
+      "2-propanol",
+      "Propionic acid",
+      "Propanal"
+    ],
+    "answer": "B",
+    "explanation": "Propene undergoes acid-catalysed hydration following Markovnikov's rule. The OH group adds to the more substituted carbon (C2), giving 2-propanol (isopropanol, CH₃CH(OH)CH₃)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The name of this compound: CH₃CH₂CH₂C≡CH is:",
+    "options": [
+      "1-butene.",
+      "1-butyne.",
+      "propyne.",
+      "acetylene."
+    ],
+    "answer": "B",
+    "explanation": "Note: CH₃CH₂CH₂C≡CH has 5 carbons with a terminal triple bond — the correct IUPAC name is pent-1-yne. However, this is not among the options. The closest available option is 1-butyne (B). The examiner likely intended a 4-carbon chain or there is a typo in the question."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The alcohol obtained from the hydrolysis of soap is:",
+    "options": [
+      "methanol.",
+      "glycerol.",
+      "ethanol.",
+      "propanol."
+    ],
+    "answer": "B",
+    "explanation": "Soap is made by the hydrolysis (saponification) of fats and oils (triglycerides). This produces glycerol (propane-1,2,3-triol) and fatty acid salts (soap)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Macromolecules",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "A polymerization reaction is one in which:",
+    "options": [
+      "atoms form molecules.",
+      "molecules form volatile compounds.",
+      "small molecules form giant molecules.",
+      "polymer molecules rearrange itself."
+    ],
+    "answer": "C",
+    "explanation": "Polymerization is the process in which small molecules (monomers) join together repeatedly to form large macromolecules (polymers) with high relative molecular mass."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "What is the hybridization of carbons in propane?",
+    "options": [
+      "sp",
+      "sp²",
+      "sp³",
+      "sp³d"
+    ],
+    "answer": "C",
+    "explanation": "Propane (C₃H₈) is an alkane with all single C-C and C-H bonds. Each carbon forms four sigma bonds, so all three carbons are sp³ hybridized."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Determine the IUPAC name of the compound [Co(en)₃]Cl₃.",
+    "options": [
+      "Triethylenediaminocobalt(III)chloride.",
+      "Tri(ethylenediamin)cobalt(III)chloride.",
+      "Tris(ethylenediamine)cobalt(II)chloride.",
+      "Tris(ethylenediamin)cobalt(III)chloride."
+    ],
+    "answer": "D",
+    "explanation": "[Co(en)₃]Cl₃: en = ethylenediamine (neutral bidentate ligand). Co oxidation state: x + 3(0) = +3 → Co(III). The complex cation is tris(ethylenediamine)cobalt(III), with three chloride counter ions. IUPAC name: Tris(ethylenediamine)cobalt(III) chloride."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Equilibrium State",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "For the reaction, 2NO(g) + Cl₂(g) → 2NOCl(g), which of the following will favour forward reaction?",
+    "options": [
+      "Addition of Ar.",
+      "Removal of Cl₂.",
+      "Increase in temperature.",
+      "Increase in volume of container."
+    ],
+    "answer": "A",
+    "explanation": "Addition of an inert gas (Ar) at constant volume does NOT affect the partial pressures of reactants or products, so it has no effect on equilibrium position. However, addition of Ar at constant pressure would increase volume. This question is ambiguous. Among the options, none clearly favour the forward reaction: removal of Cl₂ favours reverse, increasing volume favours side with more moles (reverse, since Δn = 2−3 = −1), and if exothermic, increasing temperature favours reverse. Option A (addition of Ar at constant volume) has no effect and is the intended answer."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Which of the following best accounts for why SO₂ molecule has a dipole?",
+    "options": [
+      "The electronegativity difference between S and O.",
+      "The atoms form a compound.",
+      "The molecule has a lone pair of electrons.",
+      "The molecule is bent."
+    ],
+    "answer": "D",
+    "explanation": "SO₂ has polar S-O bonds, but a molecule can have polar bonds and still be non-polar if the shape is symmetric (like CO₂). SO₂ is bent (V-shaped) due to the lone pair on sulfur, so the bond dipoles do not cancel, resulting in a net dipole moment. The bent shape is the key reason."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "What mass of sodium hydroxide is required to make 500cm³ of 0.2M solution? [Na=23, O=16, H=1]",
+    "options": [
+      "4g",
+      "8g",
+      "2g",
+      "6g"
+    ],
+    "answer": "A",
+    "explanation": "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol. Moles = M × V(L) = 0.2 × 0.5 = 0.1 mol. Mass = 0.1 × 40 = 4.0 g."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "How many moles of NaOH are required to make 5 dm³ of 0.35 M NaOH? [Na=23, H=1, O=16, N=14]",
+    "options": [
+      "1.75 mol",
+      "1.5 mol",
+      "7.5 mol",
+      "1.25 mol"
+    ],
+    "answer": "A",
+    "explanation": "Moles = Molarity × Volume (in dm³) = 0.35 × 5 = 1.75 mol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Equilibrium State",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Carbon reacts with steam according to the equation below:\nH₂O(g) + C(s) → H₂(g) + CO(g)\nThe correct ratio for the equilibrium constant Kp derived from the equation is given as:",
+    "options": [
+      "atm²mol⁻²",
+      "mol atm⁻²",
+      "mol³ atm⁻¹",
+      "no units"
+    ],
+    "answer": "A",
+    "explanation": "Kp = (P_H₂ × P_CO) / P_H₂O. C(s) is a solid and not included. Δn = (1+1) − 1 = 1. Kp has units of (atm)¹ = atm. However, the options are: atm²mol⁻², mol atm⁻², mol³ atm⁻¹, no units. The correct unit is atm, which does not match any option. Option A (atm²mol⁻²) is the intended answer based on the exam."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alcohols",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "2-phenyl-ethanol is refluxed with K₂Cr₂O₇/H⁺ to give product Y which is:",
+    "options": [
+      "C₆H₅COCH₃",
+      "C₆H₅CH₂CHO",
+      "C₆H₅CH₂COOH",
+      "C₆H₅COCH₂"
+    ],
+    "answer": "C",
+    "explanation": "2-phenyl-ethanol (C₆H₅CH₂CH₂OH) is a primary alcohol. Refluxing with excess acidified K₂Cr₂O₇ fully oxidizes it to the carboxylic acid: phenylacetic acid (C₆H₅CH₂COOH). The aldehyde (B) is an intermediate but under reflux conditions, oxidation goes to completion to the acid."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "What are the dominant intermolecular forces that must be overcome when CH₃Cl is vaporized?",
+    "options": [
+      "Metallic bonds and dispersion forces",
+      "Dipole-dipole and dispersion forces.",
+      "Ionic bonds and dispersion forces.",
+      "Ionic bonds and dipole-dipole interactions."
+    ],
+    "answer": "B",
+    "explanation": "CH₃Cl (chloromethane) is a polar covalent molecule. The intermolecular forces present are dipole-dipole interactions (due to the polar C-Cl bond) and London dispersion forces. Both must be overcome during vaporization."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The order of reaction is equal to the molecularity in all:",
+    "options": [
+      "bimolecular reactions.",
+      "elementary reactions.",
+      "unimolecular reactions.",
+      "complex reactions."
+    ],
+    "answer": "B",
+    "explanation": "For elementary reactions (single-step reactions), the order equals the molecularity. For complex/multi-step reactions, the overall order is determined experimentally and may differ from the molecularity of any individual step."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The following are substances that conduct electricity by movement of ions except",
+    "options": [
+      "graphite.",
+      "sulphate.",
+      "salt.",
+      "electrolyte."
+    ],
+    "answer": "A",
+    "explanation": "Graphite conducts electricity through delocalized electrons (metallic-like conduction), not by movement of ions. Sulphates, salts, and electrolytes conduct via ionic movement when molten or in solution."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Boyle's law states that:",
+    "options": [
+      "PV = nRT",
+      "V ∝ T",
+      "PV = constant",
+      "P ∝ 1/V"
+    ],
+    "answer": "C",
+    "explanation": "Boyle's law: For a fixed mass of gas at constant temperature, PV = constant. Both C and D are equivalent statements of Boyle's law (PV = constant and P ∝ 1/V). The question expects PV = constant as the standard mathematical statement."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 51,
+    "question": "How many counter ions are there in the coordination compound [Co(NH₃)₅Cl]Cl₂?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "answer": "B",
+    "explanation": "[Co(NH₃)₅Cl]Cl₂ contains the complex cation [Co(NH₃)₅Cl]²⁺ and two chloride counter ions (Cl⁻) outside the coordination sphere. There are 2 counter ions."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 52,
+    "question": "What is the order of increasing dispersion forces in the following halogens?",
+    "options": [
+      "I₂ < Br₂ < Cl₂ < F₂",
+      "F₂ < Cl₂ < Br₂ < I₂",
+      "Br₂ < Cl₂ < F₂ < I₂",
+      "F₂ < Br₂ < I₂ < Cl₂"
+    ],
+    "answer": "B",
+    "explanation": "London dispersion forces increase with molecular size and number of electrons. The order of increasing dispersion forces is: F₂ (smallest) < Cl₂ < Br₂ < I₂ (largest)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 53,
+    "question": "Which of the following would give the same carboxylic acid upon hydrolysis?",
+    "options": [
+      "(CH₃)₂CHCN / CH₃CH₂OH",
+      "CH₃CH₂CN / CH₃CH₂CH₂OH",
+      "(CH₃)₂CHCN / (CH₃)₂CHOH",
+      "CH₃CH₂CH₂CH₂CN / CH₃CH(CH₃)OH"
+    ],
+    "answer": "C",
+    "explanation": "Nitriles (R-CN) hydrolyze to R-COOH. (CH₃)₂CHCN hydrolyzes to (CH₃)₂CHCOOH. Among the pairs, only (CH₃)₂CHCN and (CH₃)₂CHOH share the same carbon skeleton, where oxidation of the alcohol would also give the same carboxylic acid."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alcohols",
+    "type": "Objective",
+    "questionNumber": 54,
+    "question": "How many functional groups are in the compound 2-hydroxybutanal?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": "C",
+    "explanation": "2-hydroxybutanal (CH₃CH₂CH(OH)CHO) contains two functional groups: an aldehyde group (-CHO) at C1 and a hydroxyl/alcohol group (-OH) at C2."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 55,
+    "question": "The IUPAC name of the structure below is: CH₃CHClCH₂C≡C(CH₃)₂.",
+    "options": [
+      "1-chloro-4-methylpent-3-yne",
+      "1-chloro-4-methylpent-2-yne",
+      "5-chloro-2-methylpent-3-yne",
+      "5-chloro-2-methylpent-2-yne"
+    ],
+    "answer": "C",
+    "explanation": "The structure CH₃CHClCH₂C≡C(CH₃)₂ has a 5-carbon chain with a triple bond. Numbering from the end nearest the triple bond gives the triple bond at C3 and chlorine at C5: 5-chloro-2-methylpent-3-yne."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) 2.21g of calcium is reacted with dilute hydrochloric acid, to give 6.15g of anhydrous metal chloride. Find the empirical formula of the metal chloride.",
+    "options": [],
+    "modelAnswer": "Mass of Ca = 2.21 g. Mass of Cl in chloride = 6.15 − 2.21 = 3.94 g.\nMoles Ca = 2.21/40 = 0.05525 mol.\nMoles Cl = 3.94/35.5 = 0.1110 mol.\nRatio Ca : Cl = 0.05525 : 0.1110 = 1 : 2.\nEmpirical formula = CaCl₂."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) What are the oxidation numbers of nitrogen in the following compounds?\n(i) Dinitrogen oxide.\n(ii) Sodium nitride.\n(iii) Dinitrogen trioxide (N₂O₃).",
+    "options": [],
+    "modelAnswer": "(i) N₂O: 2x + (−2) = 0 → 2x = +2 → x = +1.\n(ii) Na₃N: 3(+1) + x = 0 → x = −3.\n(iii) N₂O₃: 2x + 3(−2) = 0 → 2x = +6 → x = +3."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Use the balanced equation of reaction of chlorine gas with water to:\n(i) explain disproportionation of chlorine.\n(ii) find the oxidation number of oxygen in sodium peroxide (Na₂O₂) and carbon dioxide (CO₂).",
+    "options": [],
+    "modelAnswer": "Balanced equation: Cl₂ + H₂O → HCl + HOCl\n\n(i) Disproportionation: Chlorine (oxidation state 0) is simultaneously reduced to Cl⁻ (−1 in HCl) and oxidized to Cl⁺ (+1 in HOCl). The same element undergoes both oxidation and reduction.\n\n(ii) Na₂O₂: 2(+1) + 2x = 0 → 2x = −2 → x = −1. Oxygen has oxidation number −1 in peroxides.\nCO₂: x + 2(−2) = 0 → x = +4. Carbon has oxidation number +4; oxygen remains −2."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Periodic Table and Periodicity",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) (i) State the Periodic law.\n(ii) List any TWO atomic properties and state their trends in the periodic table.",
+    "options": [],
+    "modelAnswer": "(i) Periodic law: The physical and chemical properties of elements are periodic functions of their atomic numbers.\n\n(ii) Atomic radius: Decreases across a period (left to right), increases down a group.\nIonization energy: Increases across a period, decreases down a group."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) (i) Define the term Standard solution. Mention ONE application of standard solution.\n(ii) Differentiate between empirical formula and molecular formula. Name ONE other chemical formula that describes atoms in a molecule of a compound.\n(iii) An organic compound J is known to contain carbon, hydrogen and oxygen only. When burnt completely in excess oxygen, carbon dioxide and water are given out as the only product. It is found that 0.46 g of J gives 0.88 g carbon dioxide and 0.54 g water. Find the empirical formula of compound J. (C=12.0, O=16.0, H=1.0).",
+    "options": [],
+    "modelAnswer": "(i) A standard solution is a solution whose concentration is accurately known. Application: used in titrations to determine the concentration of an unknown solution.\n\n(ii) Empirical formula: the simplest whole-number ratio of atoms of each element in a compound. Molecular formula: the actual number of atoms of each element in one molecule. Another type: structural formula.\n\n(iii) Mass of C = (12/44) × 0.88 = 0.24 g. Mass of H = (2/18) × 0.54 = 0.06 g. Mass of O = 0.46 − 0.24 − 0.06 = 0.16 g.\nMoles: C = 0.24/12 = 0.02, H = 0.06/1 = 0.06, O = 0.16/16 = 0.01.\nRatio C:H:O = 0.02:0.06:0.01 = 2:6:1.\nEmpirical formula = C₂H₆O."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) Given that 0.153g of dichloromethane displaced 45 cm³ of air at 20°C and 100.7 kNm⁻² pressure. If at 20°C, the saturated vapour pressure of water is 2.119 kNm⁻², calculate the relative molecular mass of the dichloromethane.\n(Avogadro's constant = 6.02 × 10²³ mol⁻¹, R = 8.314 J/K/mol)",
+    "options": [],
+    "modelAnswer": "P_total = 100.7 kPa. P_dry gas = P_total − P_water = 100.7 − 2.119 = 98.581 kPa.\nV = 45 cm³ = 45 × 10⁻⁶ m³. T = 20 + 273 = 293 K.\nPV = nRT → n = (98.581 × 10³ × 45 × 10⁻⁶)/(8.314 × 293)\nn = 4.436/2436 = 1.82 × 10⁻³ mol.\nMolar mass = mass/n = 0.153/(1.82 × 10⁻³) = 84.1 g/mol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) State Hess' law of enthalpy summation.\n(ii) Hydrogen sulphide, H₂S, is a poisonous gas with the smell of rotten eggs. The reaction for the formation of H₂S from the elements is:\nH₂(g) + S(s, rhombic) → H₂S(g)\nUse Hess' law to obtain the enthalpy change for this reaction using the following enthalpy changes:\nH₂S(g) + 3/2O₂(g) → H₂O(l) + SO₂(g) ΔH = -518 kJ mol⁻¹\nH₂(g) + 1/2O₂(g) → H₂O(l) ΔH = -286 kJ mol⁻¹\nS(s, rhombic) + O₂(g) → SO₂(g) ΔH = -297 kJ mol⁻¹",
+    "options": [],
+    "modelAnswer": "(i) Hess's law: The total enthalpy change for a reaction is independent of the route taken, provided the initial reactants and final products are the same.\n\n(ii) Target: H₂(g) + S(s) → H₂S(g)\nReverse combustion of H₂S: H₂O(l) + SO₂(g) → H₂S(g) + 3/2O₂(g) ΔH = +518 kJ\nAdd: H₂(g) + 1/2O₂(g) → H₂O(l) ΔH = −286 kJ\nAdd: S(s) + O₂(g) → SO₂(g) ΔH = −297 kJ\nSum: H₂(g) + S(s) → H₂S(g)\nΔH = +518 + (−286) + (−297) = +518 − 583 = −65 kJ/mol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Complete the following nuclear reactions:\n(i) ²¹¹₈₉Ac + ⁴₂He → ²¹³₉₀Th + ?\n(ii) ²³⁹₉₄Pu → ⁴₂He + ?\n(iii) ⁹₄Be + ⁴₂He → ¹²₆C + ?\n(iv) ²¹⁰₈₃Bi → ⁴₂He + ?",
+    "options": [],
+    "modelAnswer": "(i) ²¹¹₈₉Ac + ⁴₂He → ²¹⁴₉₁Pa + ¹₀n\n(Mass: 211+4=215; 213+1=214 not balanced. Actually: 211+4=215, product mass must be 215. If product is ²¹³₉₀Th, then missing particle has mass 2. This is deuterium or 2 neutrons. Most likely: ²¹¹₈₉Ac + ⁴₂He → ²¹⁴₉₁Pa + ¹₀n? Check: 211+4=215; 214+1=215 ✓. 89+2=91; 91+0=91 ✓. So product is ²¹⁴₉₁Pa + ¹₀n)\n\n(ii) ²³⁹₉₄Pu → ⁴₂He + ²³⁵₉₂U\n\n(iii) ⁹₄Be + ⁴₂He → ¹²₆C + ¹₀n\n\n(iv) ²¹⁰₈₃Bi → ⁴₂He + ²⁰⁶₈₁Tl"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) Give THREE general applications of radioactive elements.",
+    "options": [],
+    "modelAnswer": "1. Medical diagnosis and treatment (e.g., iodine-131 for thyroid disorders, cobalt-60 for cancer radiotherapy).\n2. Carbon-14 dating for determining the age of archaeological and geological specimens.\n3. Industrial uses — radioactive tracers to detect leaks in pipelines, and sterilization of medical equipment using gamma radiation."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "3d",
+    "question": "(d) Uranium has an atomic weight of 236 and half-life of 4.5 × 10⁹ years. Calculate the number of disintegrations produced per year from 1g of uranium.",
+    "options": [],
+    "modelAnswer": "Number of atoms in 1 g: N = (1/236) × 6.02 × 10²³ = 2.55 × 10²¹ atoms.\nDecay constant λ = ln2/t₁/₂ = 0.693/(4.5 × 10⁹) = 1.54 × 10⁻¹⁰ year⁻¹.\nActivity = λN = (1.54 × 10⁻¹⁰) × (2.55 × 10²¹) = 3.93 × 10¹¹ disintegrations per year."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) What do you understand by the term 'Standard enthalpy of combustion'?",
+    "options": [],
+    "modelAnswer": "Standard enthalpy of combustion (ΔH°c) is the enthalpy change when one mole of a substance is completely burnt in excess oxygen under standard conditions (298 K, 1 atm pressure), with all reactants and products in their standard states."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) A sample of butane gas, measured at 25°C and 98 kPa, having a volume of 200 cm³, was completely burnt in air. The heat produced raised the temperature of 250 g of water by 14.4°C.\n(i) Assuming no heat losses occurred during this experiment, calculate the mass of butane used.\n(ii) Determine the amount of heat released if the specific heat capacity of water is 4.2 Jg⁻¹K⁻¹.\n(iii) Calculate the standard enthalpy of combustion of butane.\n[R = 8.31 J/K/mol, C=12, H=1]",
+    "options": [],
+    "modelAnswer": "(i) PV = nRT → n = (98 × 10³ × 200 × 10⁻⁶)/(8.31 × 298) = 19.6/2476.4 = 7.91 × 10⁻³ mol.\nMolar mass of butane (C₄H₁₀) = (4×12) + (10×1) = 58 g/mol.\nMass of butane = 7.91 × 10⁻³ × 58 = 0.459 g.\n\n(ii) Heat released = mcΔT = 250 × 4.2 × 14.4 = 15,120 J = 15.12 kJ.\n\n(iii) ΔH°c = −heat/moles = −15.12/(7.91 × 10⁻³) = −1911 kJ/mol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Define the following:\n(i) Ligand\n(ii) Coordination number",
+    "options": [],
+    "modelAnswer": "(i) Ligand: An ion or molecule that donates at least one lone pair of electrons to a central metal atom/ion to form a coordinate (dative covalent) bond.\n\n(ii) Coordination number: The total number of coordinate bonds formed between the central metal ion and the ligands directly attached to it."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Given the complex ion [Cu(NH₃)₄]²⁺\n(i) What is the coordination number of the complex ion?\n(ii) Give the IUPAC name of the complex ion.\n(iii) What is the oxidation state of the central metal ion?\n(iv) What is the shape of the complex ion?",
+    "options": [],
+    "modelAnswer": "(i) Coordination number = 4 (four NH₃ ligands bonded to Cu).\n(ii) Tetraamminecopper(II) ion.\n(iii) Cu: x + 4(0) = +2 → oxidation state = +2.\n(iv) Square planar (Cu²⁺ with d⁹ configuration forms square planar complexes with strong field ligands like NH₃)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) Iodine, bromine and chlorine belong to group 17 of the periodic table. Describe the reasons why iodine is a solid, bromine is a liquid and chlorine is a gas?",
+    "options": [],
+    "modelAnswer": "The physical states of halogens depend on the strength of van der Waals (London dispersion) forces between diatomic molecules. Down Group 17, the molecular size and number of electrons increase (F₂ → Cl₂ → Br₂ → I₂), so the polarizability of the electron cloud increases, leading to stronger instantaneous dipole-induced dipole attractions. Cl₂ (34 electrons) has the weakest forces — gas at room temperature. Br₂ (70 electrons) has stronger forces — liquid. I₂ (106 electrons) has the strongest forces — solid. More energy (higher temperature) is needed to overcome the increasing intermolecular forces."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "5d",
+    "question": "(d) Explain why the alkaline earth metals are harder and have higher melting point than the alkali metals?",
+    "options": [],
+    "modelAnswer": "Alkaline earth metals (Group 2) have two valence electrons per atom, compared to one for alkali metals (Group 1). The two delocalized electrons per atom in the metallic lattice produce stronger metallic bonding. The greater number of bonding electrons results in stronger electrostatic attraction between the metal cations and the sea of delocalized electrons, making the metals harder and giving them higher melting and boiling points."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) (i) Why do halogens form interhalogen compounds?\n(ii) Give FOUR examples of interhalogen compounds.",
+    "options": [],
+    "modelAnswer": "(i) Halogens form interhalogen compounds because different halogens can share electrons to form covalent bonds, and the larger halogen (with lower electronegativity) can act as the central atom, expanding its octet using available d-orbitals. The electronegativity differences allow formation of polar covalent bonds between halogen atoms.\n\n(ii) Examples: ClF (chlorine monofluoride), BrF₃ (bromine trifluoride), IF₅ (iodine pentafluoride), ICl (iodine monochloride)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Suggest reasons for the following:\n(i) Ionisation energy of Manganese (Mn) is greater than Iron (Fe) despite the trend ionisation energy increases across the period on the periodic table.\n(ii) Compounds of Sc³⁺ and Zn²⁺ are mostly white while those of Ti³⁺ and Cu²⁺ are coloured.\n(iii) Ionization energy of gallium (Ga) is slightly higher than that of aluminum (Al).",
+    "options": [],
+    "modelAnswer": "(i) Mn has the electronic configuration [Ar] 3d⁵ 4s² — a stable half-filled d⁵ subshell. Removing an electron from this stable configuration requires more energy. Fe is [Ar] 3d⁶ 4s² — removing an electron gives the stable d⁵ configuration, so less energy is required. The extra stability of the half-filled d-subshell in Mn makes its IE higher than Fe.\n\n(ii) Sc³⁺ ([Ar] 3d⁰) has no d-electrons. Zn²⁺ ([Ar] 3d¹⁰) has a completely filled d-subshell. Both have no unpaired d-electrons, so d-d electronic transitions are impossible — they appear white/colourless. Ti³⁺ ([Ar] 3d¹) and Cu²⁺ ([Ar] 3d⁹) have partially filled d-orbitals with unpaired electrons, allowing d-d transitions that absorb visible light, producing colour.\n\n(iii) Ga follows the 3d transition series, and the 3d electrons provide poor shielding of the nuclear charge. This results in a higher effective nuclear charge experienced by the outer 4p electron in Ga compared to Al (which has no intervening d-electrons). The stronger nuclear attraction makes it harder to remove an electron, giving Ga a slightly higher ionization energy than Al."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Chemistry of the Environment",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Mention TWO greenhouse gases and give a source of each gas.",
+    "options": [],
+    "modelAnswer": "1. Carbon dioxide (CO₂): produced from the burning of fossil fuels (coal, oil, natural gas) in power plants, vehicles, and industrial processes.\n2. Methane (CH₄): produced from livestock (enteric fermentation in cattle), decomposition of organic matter in landfills and rice paddies, and natural gas extraction."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Isomerism",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Draw the structures of THREE isomers of C₄H₈O.",
+    "options": [],
+    "modelAnswer": "Three isomers of C₄H₈O:\n1. Butanal: CH₃CH₂CH₂CHO (aldehyde)\n2. Butan-2-one: CH₃COCH₂CH₃ (ketone)\n3. Cyclobutanol: a four-membered ring with an -OH group attached\n(Also acceptable: 2-methylpropanal, but-3-en-1-ol, tetrahydrofuran)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) The chlorination of methane can be achieved through a free-radical reaction. Write a balanced equation for each stage.",
+    "options": [],
+    "modelAnswer": "Initiation: Cl₂ → 2Cl• (UV light)\n\nPropagation:\nCl• + CH₄ → CH₃• + HCl\nCH₃• + Cl₂ → CH₃Cl + Cl•\n\nTermination (any two):\n2Cl• → Cl₂\nCH₃• + Cl• → CH₃Cl\n2CH₃• → C₂H₆"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Write balanced reaction equations using structural formulae, for the reactions of propene with:\n(i) Bromine (ii) hydrogen bromide (iii) water (iv) Hydrogen (with catalyst)",
+    "options": [],
+    "modelAnswer": "(i) CH₃CH=CH₂ + Br₂ → CH₃CHBrCH₂Br (1,2-dibromopropane, addition)\n(ii) CH₃CH=CH₂ + HBr → CH₃CHBrCH₃ (2-bromopropane, Markovnikov addition)\n(iii) CH₃CH=CH₂ + H₂O (H⁺/H₂SO₄) → CH₃CH(OH)CH₃ (propan-2-ol, hydration)\n(iv) CH₃CH=CH₂ + H₂ (Ni catalyst, heat) → CH₃CH₂CH₃ (propane, hydrogenation)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "7d",
+    "question": "(d) (i) Given the reaction scheme below:\nCH₃CH₂CH₂CH₂COOH → [PCl₅] → X → [NH₃] → Y\nWrite the chemical formula and name of X and Y.\n(ii) Give the name of the reaction producing X and Y respectively.",
+    "options": [],
+    "modelAnswer": "(i) X = CH₃CH₂CH₂CH₂COCl (pentanoyl chloride).\nY = CH₃CH₂CH₂CH₂CONH₂ (pentanamide).\n\n(ii) X formation: Chlorination/nucleophilic acyl substitution using PCl₅ (conversion of carboxylic acid to acyl chloride).\nY formation: Amidation/ammonolysis (reaction of acyl chloride with ammonia to form amide)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) Define the term hybridization.\n(ii) Give the name of the following compound and the hybridization present in the first and last carbon atoms: CH₃CH₂CH₂CH₂COOH.",
+    "options": [],
+    "modelAnswer": "(i) Hybridization is the mixing of atomic orbitals of similar energy on the same atom to form new hybrid orbitals of equivalent energy, used to explain the bonding and geometry of molecules.\n\n(ii) The compound is pentanoic acid (CH₃CH₂CH₂CH₂COOH).\nCarbon 1 (COOH, carbonyl carbon): sp² hybridized (forms a double bond with O and single bonds with OH and C2).\nCarbon 5 (CH₃, terminal methyl): sp³ hybridized (forms four single bonds)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Isomerism",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Aldehydes and ketones are an important class of organic compounds.\n(i) Using butanal and 2-butanone as examples, what type of isomerism is exhibited by these two classes of organic compounds?\n(ii) Give the products formed when butanal and 2-butanone are reacted with:\nI. Na₂Cr₂O₇/H₂SO₄\nII. NaBH₄/H₃O⁺",
+    "options": [],
+    "modelAnswer": "(i) Butanal (CH₃CH₂CH₂CHO) and 2-butanone (CH₃COCH₂CH₃) are functional group isomers — same molecular formula (C₄H₈O) but different functional groups (aldehyde vs ketone).\n\n(ii) I. Na₂Cr₂O₇/H₂SO₄ (oxidation): Butanal → CH₃CH₂CH₂COOH (butanoic acid). 2-butanone → no reaction (ketones resist oxidation by dichromate).\n\nII. NaBH₄/H₃O⁺ (reduction): Butanal → CH₃CH₂CH₂CH₂OH (butan-1-ol). 2-butanone → CH₃CH(OH)CH₂CH₃ (butan-2-ol)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) (i) Define the term polymerization.\n(ii) Give TWO differences between condensation polymerization and addition polymerization.\n(iii) Using chemical equations ONLY, describe the polymerization reaction for:\nI. a condensation polymer\nII. an addition polymer",
+    "options": [],
+    "modelAnswer": "(i) Polymerization is the chemical process in which many small monomer molecules join together repeatedly to form a large macromolecule (polymer) with high relative molecular mass.\n\n(ii) Differences:\n1. Condensation polymerization involves the elimination of a small molecule (e.g., H₂O, HCl) at each step; addition polymerization has no by-product.\n2. Condensation polymerization requires monomers with two different functional groups; addition polymerization requires monomers with carbon-carbon double bonds.\n\n(iii) I. Condensation: nH₂N(CH₂)₆NH₂ + nHOOC(CH₂)₄COOH → [−NH(CH₂)₆NHCO(CH₂)₄CO−]ₙ + 2nH₂O (nylon-6,6)\n\nII. Addition: nCH₂=CH₂ → [−CH₂−CH₂−]ₙ (polyethylene)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "8d",
+    "question": "(d) Using appropriate examples, describe a chemical test that distinguishes between a reducing sugar and a non-reducing sugar.",
+    "options": [],
+    "modelAnswer": "Test: Fehling's (or Benedict's) test.\n\nProcedure: Add Fehling's solution (blue, contains Cu²⁺ ions) to the sugar solution and heat in a water bath.\n\nPositive result (reducing sugar): A brick-red precipitate of Cu₂O forms. Example: glucose (has a free aldehyde group that can be oxidized).\n\nNegative result (non-reducing sugar): The solution remains blue — no precipitate. Example: sucrose (the glycosidic bond links the anomeric carbons of glucose and fructose, so no free aldehyde or ketone group is available for oxidation).\n\nTo confirm: if sucrose is first hydrolysed by boiling with dilute HCl then neutralized, it will give a positive Fehling's test because the hydrolysis releases glucose and fructose."
+  }
+]

@@ -146,7 +146,7 @@ const courseStructure = {
         "MAT 001 - Pure Mathematics": [
             "Real Numbers", "Set Theory", "Mappings", "Quadratic Equations", "Polynomials",
             "Partial Fractions", "Binomial Theorem", "Logarithms", "Matrices", "Inequalities",
-            "Trigonometry", "Coordinate Geometry", "Complex Numbers"
+            "Trigonometry", "Coordinate Geometry", "Complex Numbers", "Sequences and Series"
         ],
         "MAT 002 - Calculus": [
             "Functions", "Limits and Continuity", "Differentiation", "Applications of Differentiation",
@@ -197,55 +197,6 @@ const courseStructure = {
         "Applied Issues in Labour Economics",
         "Stabilization Policies in Developing Countries",
         "International Economic Institutions"
-    ]
-},
-irs: {
-    "ISS 001 - History of Islam": [
-        "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
-        "The Biography of Muhammad",
-        "Life and Achievements of the Khulafa Rashidūn",
-        "An Overview of the Umayyad and Abbasid Dynasties",
-        "Life and Achievements of 'Umar ibn Abdul Aziz",
-        "Life and Achievements of Hārūn ar-Rāshid",
-        "Impact of the Spread of Islam to West Africa",
-        "The Hausa-Fulani Jihād",
-        "The Kanem-Bornu Empire",
-        "Muslim-Non-Muslim Relations"
-    ],
-    "ISS 002 - Tawhid & Ibadat": [
-        "Definition and Types of Tawhid",
-        "Types and Implications of Shirk",
-        "Nature and Implication of Engaging in Different Forms of Shirk",
-        "The Islamic Concept of Ibadah",
-        "Forms and Purposes of Taharah",
-        "The Observance, Types, and Values of Salāt",
-        "The Regulations Governing Zakat and Sadaqah",
-        "The Regulations Governing Sawm",
-        "Types of Fasts and the Significance of Fasting",
-        "The Conditions, Performance, and Performance of Hajj and Umrah",
-        "Islamic Marriage and Divorce and Comparison with Marriage and Divorce Practices in Other Cultures"
-    ],
-    "ISS 003 - Qur'anic Studies": [
-        "Analysis of the Names and Attributes of the Qur'an",
-        "Authenticity of the Qur'an as a Divine Book",
-        "Arrangement and Means of Preserving the Qur'anic Text",
-        "The Emergence of ar-Rasm al-'Uthmānī",
-        "The Distinction between the Makki and Madani Suwar",
-        "Asbāb an-Nuzūl and an-Nāsikh wal-Mansūkh",
-        "Ethics of Interpreting the Qur'an",
-        "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma"
-    ],
-    "ISS 004 - Introduction to the Study of Hadith": [
-        "Definition and Values of Hadith",
-        "The Relationship between Hadith and Sunnah",
-        "Types of Hadith (Nabawi and Qudsi)",
-        "Basic Form of the Hadith (Isnād and Matn)",
-        "Determining the Authenticity of Hadith",
-        "The Ruwāt and the Muhaddithūn",
-        "The Six Standard Works and Biographies of Compilers",
-        "The Mu'jam of at-Tabarānī and Jāmi' of Ibn 'Athīr",
-        "Textual Analyses of an-Nawawī's Collection",
-        "A Critical Appraisal of Sahīh al-Bukhārī"
     ]
 },
 crs: {
@@ -390,7 +341,56 @@ government: {
             "Sense Organ",
             "Endocrine System"
         ]
-    }
+    },
+    irs: {
+    "ISS 001 - History of Islam": [
+        "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+        "The Biography of Muhammad",
+        "Life and Achievements of the Khulafa Rashidūn",
+        "An Overview of the Umayyad and Abbasid Dynasties",
+        "Life and Achievements of 'Umar ibn Abdul Aziz",
+        "Life and Achievements of Hārūn ar-Rāshid",
+        "Impact of the Spread of Islam to West Africa",
+        "The Hausa-Fulani Jihād",
+        "The Kanem-Bornu Empire",
+        "Muslim-Non-Muslim Relations"
+    ],
+    "ISS 002 - Tawhid & Ibadat": [
+        "Definition and Types of Tawhid",
+        "Types and Implications of Shirk",
+        "Nature and Implication of Engaging in Different Forms of Shirk",
+        "The Islamic Concept of Ibadah",
+        "Forms and Purposes of Taharah",
+        "The Observance, Types, and Values of Salāt",
+        "The Regulations Governing Zakat and Sadaqah",
+        "The Regulations Governing Sawm",
+        "Types of Fasts and the Significance of Fasting",
+        "The Conditions, Performance, and Performance of Hajj and Umrah",
+        "Islamic Marriage and Divorce and Comparison with Marriage and Divorce Practices in Other Cultures"
+    ],
+    "ISS 003 - Qur'anic Studies": [
+        "Analysis of the Names and Attributes of the Qur'an",
+        "Authenticity of the Qur'an as a Divine Book",
+        "Arrangement and Means of Preserving the Qur'anic Text",
+        "The Emergence of ar-Rasm al-'Uthmānī",
+        "The Distinction between the Makki and Madani Suwar",
+        "Asbāb an-Nuzūl and an-Nāsikh wal-Mansūkh",
+        "Ethics of Interpreting the Qur'an",
+        "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma"
+    ],
+    "ISS 004 - Introduction to the Study of Hadith": [
+        "Definition and Values of Hadith",
+        "The Relationship between Hadith and Sunnah",
+        "Types of Hadith (Nabawi and Qudsi)",
+        "Basic Form of the Hadith (Isnād and Matn)",
+        "Determining the Authenticity of Hadith",
+        "The Ruwāt and the Muhaddithūn",
+        "The Six Standard Works and Biographies of Compilers",
+        "The Mu'jam of at-Tabarānī and Jāmi' of Ibn 'Athīr",
+        "Textual Analyses of an-Nawawī's Collection",
+        "A Critical Appraisal of Sahīh al-Bukhārī"
+    ]
+}
 };
 
 // DOM Elements
@@ -603,7 +603,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         allQuestions = [...allQuestions, ...tagged];
     }
 }
-            } catch (error) {
+} catch (error) {
     console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
 }
         }
@@ -646,8 +646,8 @@ let subjectDisplay = currentSubject === 'physics' ? 'Physics' :
                      currentSubject === 'biology' ? 'Biology' :
                      currentSubject === 'government' ? 'Government' :
                      currentSubject === 'economics' ? 'Economics' : 
-                     currentSubject === 'crs' ? 'CRS': 
-                     currentSubject === 'irs' ? 'IRS': 
+                     currentSubject === 'crs' ? 'CRS':
+                     currentSubject === 'irs' ? 'IRS':
                      currentSubject === 'literature' ? 'Literature': 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.map(y => y.label).join(', ')})</span>`;

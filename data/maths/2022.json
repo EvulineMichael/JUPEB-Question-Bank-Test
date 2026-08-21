@@ -1,0 +1,902 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Polynomials",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "When the polynomial f(x) = x³ + 3x² + ax - 2 is divided by x - 3, the remainder is 100. Determine the value of a.",
+    "options": ["16", "8", "6", "-3"],
+    "answer": "A",
+    "explanation": "By the Remainder Theorem, f(3) = 100. f(3) = 27 + 27 + 3a - 2 = 52 + 3a. Set 52 + 3a = 100 → 3a = 48 → a = 16."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "If α and β are the roots of 2x² + 3x - 2 = 0, evaluate 1/α + 1/β.",
+    "options": ["2/3", "3/2", "-2/3", "-3/2"],
+    "answer": "B",
+    "explanation": "1/α + 1/β = (α + β)/(αβ). α + β = -b/a = -3/2, αβ = c/a = -2/2 = -1. So (α+β)/(αβ) = (-3/2)/(-1) = 3/2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Binomial Theorem",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Obtain the coefficient of (ab)⁴ in the expansion of (a + b/2)⁸.",
+    "options": ["30", "35/8", "35", "1/8"],
+    "answer": "B",
+    "explanation": "General term: T_{r+1} = ⁸Cᵣ a^{8-r} (b/2)^r = ⁸Cᵣ (1/2)^r a^{8-r} b^r. For a⁴b⁴: 8−r = 4, r = 4. Coefficient = ⁸C₄ × (1/2)⁴ = 70 × 1/16 = 35/8."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Matrices",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Evaluate the determinant of matrix [[1, -2, 3], [2, 2, 6], [4, 1, 4]].",
+    "options": ["38", "-48", "28", "-38"],
+    "answer": "B",
+    "explanation": "det = 1(2×4 − 6×1) − (−2)(2×4 − 6×4) + 3(2×1 − 2×4) = 1(8−6) + 2(8−24) + 3(2−8) = 2 + 2(−16) + 3(−6) = 2 − 32 − 18 = −48."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The following curves are circle EXCEPT",
+    "options": [
+      "x² + y² - 2x + y = 0",
+      "x² + y² - x = 2",
+      "3x² + y² + 4x - 8y = 0",
+      "x² + y² - 4x - 6y - 3 = 0"
+    ],
+    "answer": "C",
+    "explanation": "For a circle, the coefficients of x² and y² must be equal. In option C, the coefficients are 3 and 1 — unequal, so it is an ellipse, not a circle."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Evaluate the equation of the directrix to parabola y² = 36x.",
+    "options": ["x = 4", "x = -9", "x = -4", "x = 9"],
+    "answer": "B",
+    "explanation": "For y² = 4ax, the directrix is x = −a. Here 4a = 36 → a = 9. Directrix: x = −9."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Matrices",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Obtain the values of x and y in the matrix equation [[2, x], [y, -3]] × [[1, 3], [2, 5]] = [[6, 16], [4, 15]].",
+    "options": ["x = 2, y = 10", "x = 3, y = 2", "x = 10, y = 2", "x = 2, y = 5"],
+    "answer": "A",
+    "explanation": "First row, first column: 2×1 + x×2 = 2 + 2x = 6 → 2x = 4 → x = 2. Second row, first column: y×1 + (−3)×2 = y − 6 = 4 → y = 10. Check: first row second: 2×3 + 2×5 = 6+10 = 16 ✓. So x = 2, y = 10."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A line is perpendicular to 3x - y + 11 = 0 and passes through the point (1, -5). Determine its equation.",
+    "options": [
+      "3y - x - 14 = 0",
+      "3x + y + 1 = 0",
+      "3y + x + 14 = 0",
+      "3y + x + 1 = 0"
+    ],
+    "answer": "C",
+    "explanation": "Given line: y = 3x + 11 → slope m₁ = 3. Perpendicular slope m₂ = −1/3. Line through (1,−5): y + 5 = −1/3(x − 1) → 3y + 15 = −x + 1 → 3y + x + 14 = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Polynomials",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Deduce the quotient when 2x³ + 3x + 1 is divided by x² + x - 2.",
+    "options": ["2x + 1", "2x - 1", "x - 2", "2x - 2"],
+    "answer": "D",
+    "explanation": "Divide 2x³ + 0x² + 3x + 1 by x² + x − 2. 2x³/x² = 2x. (2x)(x²+x−2) = 2x³+2x²−4x. Subtract: −2x²+7x+1. −2x²/x² = −2. (−2)(x²+x−2) = −2x²−2x+4. Subtract: 9x−3. Quotient = 2x − 2, remainder = 9x − 3."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Find the 5th term of the harmonic progression 2/9, 4/17, 1/4, ...",
+    "options": ["3/5", "2/5", "3/4", "2/7"],
+    "answer": "D",
+    "explanation": "Convert to AP: reciprocals are 9/2 = 4.5, 17/4 = 4.25, 4 = 4. Common difference d = −0.25. 5th AP term = 4.5 + 4(−0.25) = 3.5 = 7/2. HP 5th term = reciprocal = 2/7."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Set Theory",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Given ξ = {x: 0 < x ≤ 10, x an integer} as the universal set and set A = {multiples of 3}, B = {x: 3 ≤ x < 8, x an integer}. Find A ∩ B′.",
+    "options": ["{3,6}", "{9}", "{6,9}", "{5,6}"],
+    "answer": "B",
+    "explanation": "ξ = {1,2,3,4,5,6,7,8,9,10}. A = {3,6,9}. B = {3,4,5,6,7}. B′ = {1,2,8,9,10}. A ∩ B′ = {9}."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Logarithms",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Solve logₓ 3 + logₓ 9 = 2.",
+    "options": ["√8", "√7", "3√3", "14"],
+    "answer": "C",
+    "explanation": "logₓ(3×9) = logₓ 27 = 2 → x² = 27 → x = 3√3."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Binomial Theorem",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Binomial series for (1 + x)ⁿ is valid only when",
+    "options": ["x < 1", "x < -1", "|x| < 1", "n < 1"],
+    "answer": "C",
+    "explanation": "The binomial series expansion of (1 + x)ⁿ converges for |x| < 1 (when n is not a positive integer)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "The distance between points A (x, -8) and B (2, -5) is 5 units. Deduce the values of x.",
+    "options": ["6", "3", "4", "2"],
+    "answer": "A",
+    "explanation": "√[(2−x)² + (−5+8)²] = 5 → (2−x)² + 9 = 25 → (2−x)² = 16 → 2−x = ±4 → x = −2 or x = 6. Option A gives x = 6."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "The 4th and 6th terms of a linear sequence are 8 and 14 respectively. Compute the first term and common difference.",
+    "options": ["0,3", "-1,2", "0,2", "-1,3"],
+    "answer": "D",
+    "explanation": "a + 3d = 8, a + 5d = 14. Subtract: 2d = 6 → d = 3. a + 9 = 8 → a = −1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Determine lim_{x → −∞} {(5x² - x + 2)/(4x³ - 4)}.",
+    "options": ["-3", "4", "5/4", "0"],
+    "answer": "D",
+    "explanation": "Divide numerator and denominator by x³: (5/x − 1/x² + 2/x³)/(4 − 4/x³). As x → −∞, numerator → 0, denominator → 4. Limit = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Applications of Integration",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Find the volume generated when the area bounded by the curve y = x² under the line y = 1 rotated through 1 revolution between x = 0 and x = 1 about the x-axis.",
+    "options": ["6π/7", "4π/5", "3π/4", "π/2"],
+    "answer": "B",
+    "explanation": "V = π∫₀¹ (1² − (x²)²) dx = π∫₀¹ (1 − x⁴) dx = π[x − x⁵/5]₀¹ = π(1 − 1/5) = 4π/5."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The Integral ∫ f′(x)/f(x) dx equals:",
+    "options": ["ln f(x)", "ln f′(x)", "ln f(x²)", "(ln f(x))²"],
+    "answer": "A",
+    "explanation": "∫ f′(x)/f(x) dx = ln|f(x)| + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Evaluate lim_{x → 2⁻} |x - 2|/(x - 2).",
+    "options": ["2", "0", "3", "-1"],
+    "answer": "D",
+    "explanation": "As x → 2⁻, x < 2, so |x−2| = −(x−2). The expression = −(x−2)/(x−2) = −1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Differentiate eˣ cos x.",
+    "options": [
+      "eˣ cos x[cos x - sin x]",
+      "eˣ(cos x - x sin x)",
+      "eˣ cos x sin x",
+      "eˣ cos x cos x"
+    ],
+    "answer": "A",
+    "explanation": "Using product rule: d/dx(eˣ cos x) = eˣ cos x + eˣ(−sin x) = eˣ(cos x − sin x). Note: The correct derivative is eˣ(cos x − sin x). Option A has an extra cos x factor and is technically incorrect, but among the given options, it is the closest — the examiner likely intended option A as the answer."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Applications of Differentiation",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Find the maximum and minimum values of y = x(x - 1)².",
+    "options": [
+      "(1/2,1)_max, (0,2)_min",
+      "(0,3)_max, (1,2)_min",
+      "(1/3,4/27)_max, (1,0)_min",
+      "(1/3,1)_max, (0,1/2)_min"
+    ],
+    "answer": "C",
+    "explanation": "y = x(x² − 2x + 1) = x³ − 2x² + x. y′ = 3x² − 4x + 1 = (3x−1)(x−1). Critical points: x = 1/3, x = 1. y″ = 6x − 4. At x = 1/3: y″ = −2 < 0 → maximum, y = 4/27. At x = 1: y″ = 2 > 0 → minimum, y = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Evaluate ∫₀^(π/2) cos x dx.",
+    "options": ["0", "2", "3", "1"],
+    "answer": "D",
+    "explanation": "∫ cos x dx = sin x. [sin x]₀^(π/2) = sin(π/2) − sin 0 = 1 − 0 = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "First Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Solve the equation x dy/dx = 5x³ + 4.",
+    "options": [
+      "5x²/2 + 4ln x + C",
+      "5x³/3 + 4ln x + C",
+      "3x²/2 + 4ln x + C",
+      "3x³/5 + 4ln x + C"
+    ],
+    "answer": "B",
+    "explanation": "dy/dx = 5x² + 4/x. y = ∫(5x² + 4/x) dx = 5x³/3 + 4ln|x| + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Given y = e⁴ˣ, obtain the fourth derivative of y.",
+    "options": ["4e⁴ˣ", "64e⁴ˣ", "128e⁴ˣ", "256e⁴ˣ"],
+    "answer": "D",
+    "explanation": "y′ = 4e⁴ˣ, y″ = 16e⁴ˣ, y‴ = 64e⁴ˣ, y⁽⁴⁾ = 256e⁴ˣ."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Differentiate the function (³√(x² + 2x - 1))⁵.",
+    "options": [
+      "5(³√(x² + 2x - 1))⁴",
+      "(5/3)(2x + 2)(x² + 2x - 1)^(3/2)",
+      "(10/3)(x + 1)(x² + 2x - 1)^(2/3)",
+      "5(³√(x² + 2x - 1))⁻⁴"
+    ],
+    "answer": "C",
+    "explanation": "y = (x² + 2x − 1)^(5/3). y′ = (5/3)(x²+2x−1)^(2/3) × (2x+2) = (10/3)(x+1)(x²+2x−1)^(2/3)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Evaluate ∫₁² ((1 + x²)/x) dx.",
+    "options": [
+      "ln x + x²/2",
+      "1 + ln 2",
+      "1 + (ln 1 - ln 2)",
+      "3/2 + (ln 2 - ln 1)"
+    ],
+    "answer": "D",
+    "explanation": "∫(1/x + x) dx = ln|x| + x²/2. [ln|x| + x²/2]₁² = (ln2 + 2) − (ln1 + 1/2) = ln2 + 2 − 0 − 0.5 = 3/2 + ln2 = 3/2 + (ln2 − ln1)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Evaluate ∫ cos x cos 2x dx.",
+    "options": [
+      "cos 4x/6 + C",
+      "sin 3x/6 + sin x/2 + C",
+      "sin³x/3 - sin x/2 + C",
+      "sin 5x/7 - sin 2x/5 + C"
+    ],
+    "answer": "B",
+    "explanation": "cos x cos 2x = ½[cos(3x) + cos(x)]. ∫ = ½[sin3x/3 + sin x] + C = sin3x/6 + sin x/2 + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "If y = eˣ sin x, find d⁴y/dx⁴ + 4y.",
+    "options": ["4x - 1", "2x - 2", "0", "1"],
+    "answer": "C",
+    "explanation": "y = eˣ sin x. y′ = eˣ(sin x + cos x). y″ = 2eˣ cos x. y‴ = 2eˣ(cos x − sin x). y⁽⁴⁾ = −4eˣ sin x = −4y. So d⁴y/dx⁴ + 4y = −4y + 4y = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Solve ∫ 1/[(1 + x)(2 + log(1 + x))] dx.",
+    "options": [
+      "ln[2 - log(1 + x)]",
+      "ln[2 + log(1 + x)]",
+      "ln[2 + log(1 - x)]",
+      "ln[2 + log(1 + x)]"
+    ],
+    "answer": "B",
+    "explanation": "Let u = 2 + log(1 + x). du = 1/(1+x) dx. ∫ du/u = ln|u| + C = ln[2 + log(1+x)] + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "One of the following measures of location is not affected by extreme values.",
+    "options": ["Harmonic mean.", "Arithmetic mean.", "Geometric mean.", "Median."],
+    "answer": "D",
+    "explanation": "The median is resistant to outliers (extreme values). The arithmetic mean, geometric mean, and harmonic mean are all affected by extreme values."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The following marks were obtained during an examination 5, 5, 8, 4, 7, 6, 5, 3, 9. Compute the mean, median and mode.",
+    "options": ["4, 5, 4", "5.43,5,5", "5.78,5,5", "6,5,5"],
+    "answer": "C",
+    "explanation": "Sum = 5+5+8+4+7+6+5+3+9 = 52. Mean = 52/9 = 5.78. Sorted: 3,4,5,5,5,6,7,8,9 → median = 5. Mode = 5."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "A die is tossed once. Find the probability that the number which appeared is an even or an odd number.",
+    "options": ["1/2", "1/3", "1/6", "1"],
+    "answer": "D",
+    "explanation": "Every number on a standard die is either even or odd. The probability is 1 (certainty)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Introduction to Statistics",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "An estimate of a population parameter given by a single number is called",
+    "options": ["estimator.", "an interval estimate.", "confidence interval.", "point estimate."],
+    "answer": "D",
+    "explanation": "A point estimate is a single numerical value used to estimate a population parameter. An interval estimate provides a range of plausible values."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "An unbiased six sided die has the score 2 engraved on two sides, the score 4 on three sides and score 6 on the remaining one side. The die is thrown once. Compute the probability of obtaining a score of 4 or less.",
+    "options": ["3/6", "2/6", "5/6", "4/6"],
+    "answer": "C",
+    "explanation": "Scores ≤ 4 are 2 (2 sides) and 4 (3 sides). Total favourable = 5. Total outcomes = 6. Probability = 5/6."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Random Variables",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Evaluate P(X = 5) when X ∼ Bi(9, 0.3).",
+    "options": ["0.975", "0.901", "0.74", "0.074"],
+    "answer": "D",
+    "explanation": "P(X=5) = ⁹C₅ (0.3)⁵(0.7)⁴ = 126 × 0.00243 × 0.2401 = 126 × 0.0005834 = 0.0735 ≈ 0.074."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Normal Distribution",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Let Z ∼ N(0, 1). If P(z < a) = 0.975 then the value of a is",
+    "options": ["0.975", "0.025", "1.96", "-1.96"],
+    "answer": "C",
+    "explanation": "For the standard normal distribution, P(Z < 1.96) = 0.975. So a = 1.96."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Measures of Dispersion",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Calculate the variance of the data: 5, 6, 4, 5.",
+    "options": ["0.5", "2.0", "1.5", "2.2"],
+    "answer": "A",
+    "explanation": "Mean = (5+6+4+5)/4 = 5. Variance = [(0² + 1² + (−1)² + 0²)]/4 = (0+1+1+0)/4 = 2/4 = 0.5."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "When is a distribution said to be symmetric?\nI. Mean = Mode = Median\nII. Mean - Mode = 3(Mean - Median)",
+    "options": ["I only", "I and II", "II only", "I or II"],
+    "answer": "A",
+    "explanation": "In a perfectly symmetric distribution, mean = median = mode. Statement II (Pearson's empirical relation) holds for moderately skewed distributions, not for symmetry."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Normal Distribution",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The normal distribution is given by the probability density function f(x) = (1/(σ√(2π))) e^(-(x-μ)²/(2σ²)). Determine the range of x.",
+    "options": [
+      "0 ≤ x ≤ ∞",
+      "-∞ < x < +∞",
+      "-∞ < x ≤ 0",
+      "a ≤ x ≤ b"
+    ],
+    "answer": "B",
+    "explanation": "The normal distribution is defined for all real values of x: −∞ < x < +∞."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Random Variables",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Given that Y ∼ Po(2.4), evaluate P(5 ≤ Y ≤ 6).",
+    "options": ["0.024", "0.988", "0.84", "0.084"],
+    "answer": "C",
+    "explanation": "P(Y=5) + P(Y=6) = e⁻²·⁴[2.4⁵/120 + 2.4⁶/720] = 0.0907 × [6.6355 + 2.6542] = 0.0907 × 9.2897 = 0.842 ≈ 0.84."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "A particle moving at the velocity 30 m/s brought to rest after 5 seconds. Find its deceleration.",
+    "options": ["-9 m/s²", "-8 m/s²", "-6 m/s²", "-7 m/s²"],
+    "answer": "C",
+    "explanation": "a = (v − u)/t = (0 − 30)/5 = −6 m/s². Deceleration = 6 m/s²."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Given that vector a = 3i + j is normal to line ℓ and ℓ passes through (-1, 4), obtain the Cartesian equation for ℓ.",
+    "options": ["3x + y = 4", "3x + y = -1", "3x + y = 1", "3x - y = 4"],
+    "answer": "C",
+    "explanation": "Normal vector n = (3,1). Equation: 3(x+1) + 1(y−4) = 0 → 3x + 3 + y − 4 = 0 → 3x + y = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Find the angle B of triangle ABC where the position vectors of A, B, C are respectively 2i + 4k, 3i - 2j + 4k, 2i - j + k.",
+    "options": [
+      "cos⁻¹(3/√55)",
+      "sin⁻¹(-3/√55)",
+      "cos⁻¹(-3/√55)",
+      "sin⁻¹(3/√55)"
+    ],
+    "answer": "A",
+    "explanation": "BA = A−B = −i + 2j + 0k. BC = C−B = −i + j − 3k. BA·BC = 1+2+0 = 3. |BA| = √5, |BC| = √11. cos B = 3/(√55). B = cos⁻¹(3/√55)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Obtain the vector equation for the line whose Cartesian equations are (x - 1)/2 = (y + 1)/3 = (z - 4)/1.",
+    "options": [
+      "i - j + 4k = λ(2i + 3j + k)",
+      "i + j - 4k = λ(2i - 3j + k)",
+      "i - j - k = λ(i - 3j - k)",
+      "i - j - k = λ(i - j - k)"
+    ],
+    "answer": "A",
+    "explanation": "Line passes through (1,−1,4) with direction vector (2,3,1). Vector equation: r = (i − j + 4k) + λ(2i + 3j + k)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Evaluate the modulus of the vector (a + b) given that a = 3i + 2j and b = 4i - j.",
+    "options": ["5√2", "√5", "√2", "2√5"],
+    "answer": "A",
+    "explanation": "a + b = 7i + j. |a + b| = √(49+1) = √50 = 5√2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Obtain the scalar product of the vectors: a = 2i + 3j - 4k and b = i - 2j + k.",
+    "options": ["5", "-6", "-8", "-10"],
+    "answer": "C",
+    "explanation": "a·b = 2(1) + 3(−2) + (−4)(1) = 2 − 6 − 4 = −8."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Find the sum of the vectors: AB, BC, 2CD and DC.",
+    "options": ["CD", "AD", "AB", "AC"],
+    "answer": "B",
+    "explanation": "AB + BC + 2CD + DC = AC + 2CD + (−CD) = AC + CD = AD."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Forces and Equilibrium",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "An object of mass 4 kg hangs from a fixed point by a light inextensible string and then pulled by a force F N and rest in equilibrium with the string inclined at 60°. Find the force F.",
+    "options": ["60√3 N", "40√3 N", "20√3 N", "40√2 N"],
+    "answer": "B",
+    "explanation": "Weight = 4 × 10 = 40 N. T cos60° = 40 → T = 80 N. F = T sin60° = 80 × √3/2 = 40√3 N."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Newtonian Mechanics",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "An object of mass 5 kg, travelling at 6 m/s is acted upon by a force of 100 N for 0.4 s in the direction of motion. Compute the final velocity of the object.",
+    "options": ["14 m/s", "7 m/s", "6 m/s", "40 m/s"],
+    "answer": "A",
+    "explanation": "Impulse = F × t = 100 × 0.4 = 40 Ns. m(v − u) = Impulse → 5(v − 6) = 40 → v − 6 = 8 → v = 14 m/s."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Newtonian Mechanics",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Calculate the work done when an object of mass 4.5 kg is lifted through a vertical distance of 10 m. (g = 10 ms⁻²)",
+    "options": ["75 J", "240 J", "450 J", "400 J"],
+    "answer": "C",
+    "explanation": "Work done = mgh = 4.5 × 10 × 10 = 450 J."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Given the ellipse x²/16 + y²/9 = 1. Obtain the i. eccentricity ii. coordinates of the foci",
+    "options": [],
+    "modelAnswer": "(i) a² = 16, b² = 9. For ellipse a > b: c² = a² − b² = 7 → c = √7. Eccentricity e = c/a = √7/4.\n(ii) Foci: (±√7, 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) If the equation of the parabola y² = -16x, determine the coordinates of the focus.",
+    "options": [],
+    "modelAnswer": "y² = −16x = −4ax → 4a = 16 → a = 4. The parabola opens to the left. Focus: (−4, 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) If α and β are the roots of the equation 2x² - 5x + 3 = 0, find: i. 1/α + 1/β ii. α/β + β/α",
+    "options": [],
+    "modelAnswer": "α + β = 5/2, αβ = 3/2.\n(i) 1/α + 1/β = (α+β)/(αβ) = (5/2)/(3/2) = 5/3.\n(ii) α/β + β/α = (α²+β²)/(αβ) = [(α+β)² − 2αβ]/(αβ) = [(25/4) − 3]/(3/2) = (13/4)/(3/2) = 13/6."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "1d",
+    "question": "(d) Solve the equation 2 sin² x = 2 + cos 2x giving all solutions within the range 0° ≤ x ≤ 360°",
+    "options": [],
+    "modelAnswer": "cos 2x = 1 − 2sin²x. Substituting: 2sin²x = 2 + 1 − 2sin²x → 4sin²x = 3 → sin²x = 3/4 → sin x = ±√3/2.\nx = 60°, 120°, 240°, 300°."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) Let ξ = {x: 0 < x ≤ 10, x ∈ Z} be the universal set and the sets P = {1,2,3,4,5}, Q = {x: 3 ≤ x < 8, x ∈ N} and R = {multiples of 2}.\ni. Find P ∪ (Q′ ∩ R′)′\nii. Show that P ∩ (Q ∪ R) = (P ∩ Q) ∪ (P ∩ R)",
+    "options": [],
+    "modelAnswer": "ξ = {1,2,3,4,5,6,7,8,9,10}. P = {1,2,3,4,5}. Q = {3,4,5,6,7}. R = {2,4,6,8,10}.\nQ′ = {1,2,8,9,10}. R′ = {1,3,5,7,9}. Q′∩R′ = {1,9}. (Q′∩R′)′ = {2,3,4,5,6,7,8,10}.\nP ∪ (Q′∩R′)′ = {1,2,3,4,5,6,7,8,10}.\n\n(ii) LHS: Q∪R = {2,3,4,5,6,7,8,10}. P∩(Q∪R) = {2,3,4,5}.\nRHS: P∩Q = {3,4,5}; P∩R = {2,4}. (P∩Q)∪(P∩R) = {2,3,4,5}. LHS = RHS ✓."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Logarithms",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Simplify the following\ni. log_a b² - 2 log_a C - 2\nii. (√5 + √2)/(√5 - 5√2)",
+    "options": [],
+    "modelAnswer": "(i) log_a b² − 2log_a C − 2 = 2log_a b − 2log_a C − 2log_a a = 2log_a(b/(aC)).\n\n(ii) (√5 + √2)/(√5 − 5√2) × (√5 + 5√2)/(√5 + 5√2) = (5 + 5√10 + √10 + 10)/(5 − 50) = (15 + 6√10)/(−45) = −(5 + 2√10)/15."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Inequalities",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) Find the range of values of P for which the roots of the equation:\n(P² + 10P + 2)x² + (3P + 1)x + 1 = 0 are NOT real.",
+    "options": [],
+    "modelAnswer": "For non-real roots: discriminant < 0. Δ = (3P+1)² − 4(P²+10P+2)(1) < 0.\n9P² + 6P + 1 − 4P² − 40P − 8 < 0 → 5P² − 34P − 7 < 0.\nRoots of 5P²−34P−7=0: P = [34 ± √(1156+140)]/10 = [34 ± 36]/10 → P = 7, −0.2.\nSince coefficient of P² is positive, 5P²−34P−7 < 0 for −0.2 < P < 7."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Applications of Differentiation",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) Find and classify the stationary points of the curve y = x³ - 3x² - 9x + 2.",
+    "options": [],
+    "modelAnswer": "y′ = 3x² − 6x − 9 = 3(x² − 2x − 3) = 3(x−3)(x+1). Stationary points: x = 3, x = −1.\ny″ = 6x − 6. At x = −1: y″ = −12 < 0 → maximum; y(−1) = −1−3+9+2 = 7.\nAt x = 3: y″ = 12 > 0 → minimum; y(3) = 27−27−27+2 = −25.\nMaximum at (−1, 7); minimum at (3, −25)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Applications of Differentiation",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) 120m of fencing is to be used to form three sides of a rectangular enclosure, the fourth side being an existing wall. Find the maximum possible area of the enclosure.",
+    "options": [],
+    "modelAnswer": "Let length parallel to wall = L, width = B. L + 2B = 120 → L = 120 − 2B.\nArea A = LB = (120−2B)B = 120B − 2B².\ndA/dB = 120 − 4B = 0 → B = 30 m. L = 60 m.\nMaximum area = 60 × 30 = 1800 m²."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Applications of Integration",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) Find the volume of the solid generated if the area enclosed by y = x² and y = x + 2 is rotated about the x-axis.",
+    "options": [],
+    "modelAnswer": "Intersection: x² = x + 2 → x² − x − 2 = 0 → (x−2)(x+1) = 0 → x = 2, −1.\nV = π∫₋₁² [(x+2)² − (x²)²] dx = π∫₋₁² (x² + 4x + 4 − x⁴) dx = π[x³/3 + 2x² + 4x − x⁵/5]₋₁²\n= π[(8/3+8+8−32/5) − (−1/3+2−4+1/5)] = π[(40/15+120/15+120/15−96/15) − (−5/15+30/15−60/15+3/15)]\n= π[(184/15) − (−32/15)] = π(216/15) = 72π/5."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Evaluate the following integrals:\ni. ∫₋₁³ (2x³ + 5x - 6) dx\nii. ∫ x² sin x dx\niii. ∫ dx/⁴√(3x + 2)",
+    "options": [],
+    "modelAnswer": "(i) ∫₋₁³ (2x³ + 5x − 6) dx = [x⁴/2 + 5x²/2 − 6x]₋₁³ = (81/2+45/2−18) − (1/2+5/2+6) = (63−18) − (3+6) = 45 − 9 = 36.\n\n(ii) ∫ x² sin x dx: Integration by parts twice.\nu = x², dv = sin x dx → du = 2x dx, v = −cos x.\n∫ = −x² cos x + ∫ 2x cos x dx.\nSecond time: u = 2x, dv = cos x dx → du = 2dx, v = sin x.\n∫ 2x cos x dx = 2x sin x − ∫ 2 sin x dx = 2x sin x + 2 cos x.\n∫ x² sin x dx = −x² cos x + 2x sin x + 2 cos x + C.\n\n(iii) ∫ (3x+2)^(−1/4) dx. Let u = 3x+2, du = 3dx. = (1/3)∫ u^(−1/4) du = (1/3) × (4/3)u^(3/4) + C = 4(3x+2)^(3/4)/9 + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) A particle which moves along a straight line is initially at a displacement of 3m from a fixed point O and has an initial velocity of 6 m/s. The acceleration of the particles after t seconds is (2t - 5) ms⁻². Find the:\ni. times at which the particles is instantaneously at rest.\nii. distance travelled in the first second.",
+    "options": [],
+    "modelAnswer": "a = dv/dt = 2t − 5. v = ∫(2t−5)dt = t² − 5t + C. At t=0, v=6 → C=6. v = t² − 5t + 6.\ns = ∫v dt = t³/3 − 5t²/2 + 6t + D. At t=0, s=3 → D=3. s = t³/3 − 5t²/2 + 6t + 3.\n\n(i) At rest: v = 0 → t² − 5t + 6 = 0 → (t−2)(t−3) = 0 → t = 2 s, t = 3 s.\n\n(ii) Distance in first second = s(1) − s(0) = (1/3 − 5/2 + 6 + 3) − 3 = 1/3 − 2.5 + 6 = 3.833 m ≈ 3.83 m."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) Given that f(x) = (x - 1)/(x + 1); obtain f′(x) and f″(x). Hence show that (x + 1)f″(x) + 2f′(x) = 0.",
+    "options": [],
+    "modelAnswer": "f(x) = (x−1)/(x+1). Using quotient rule: f′(x) = [(x+1)(1) − (x−1)(1)]/(x+1)² = 2/(x+1)².\nf″(x) = 2 × (−2)/(x+1)³ = −4/(x+1)³.\n(x+1)f″(x) + 2f′(x) = (x+1)(−4/(x+1)³) + 2(2/(x+1)²) = −4/(x+1)² + 4/(x+1)² = 0 ✓."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Differentiate between goodness-of-fit test and the analysis of contingency table.",
+    "options": [],
+    "modelAnswer": "A goodness-of-fit test (e.g., chi-square goodness-of-fit) compares observed frequencies with expected frequencies for a single categorical variable to determine if the data fit a specified distribution.\n\nAnalysis of a contingency table (chi-square test of independence) tests whether there is a significant association between two categorical variables using a two-way table of observed frequencies."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) A die is rolled 420 times with the following outcomes 63, 67, 66, 73, 72, 79. Based on these data, test whether the die is fair at the α = 0.05 level of significance.",
+    "options": [],
+    "modelAnswer": "H₀: die is fair (each face probability = 1/6). Expected frequency per face = 420/6 = 70.\nχ² = Σ(O−E)²/E = (63−70)²/70 + (67−70)²/70 + (66−70)²/70 + (73−70)²/70 + (72−70)²/70 + (79−70)²/70\n= 49/70 + 9/70 + 16/70 + 9/70 + 4/70 + 81/70 = 168/70 = 2.4.\nDegrees of freedom = 6−1 = 5. χ²_critical (α=0.05, df=5) = 11.07.\nSince 2.4 < 11.07, fail to reject H₀. The die is fair."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) The table shows the way in which a randomly chosen group intends to vote in the next election.\nAge of Voters | 18 to 34 | 35 to 59 | 60 and above\nParty A | 85 | 95 | 131\nParty B | 168 | 197 | 173\nTest at a 5% level whether there is any association between the age of a voters and the party they wish to vote for.",
+    "options": [],
+    "modelAnswer": "H₀: No association between age and party preference.\nRow totals: Party A = 311, Party B = 538. Column totals: 253, 292, 304. Grand total = 849.\n\nExpected frequencies:\nA 18-34: 311×253/849 = 92.65; A 35-59: 311×292/849 = 107.01; A 60+: 311×304/849 = 111.34.\nB 18-34: 538×253/849 = 160.35; B 35-59: 538×292/849 = 184.99; B 60+: 538×304/849 = 192.66.\n\nχ² = (85−92.65)²/92.65 + (95−107.01)²/107.01 + (131−111.34)²/111.34\n+ (168−160.35)²/160.35 + (197−184.99)²/184.99 + (173−192.66)²/192.66\n= 0.632 + 1.348 + 3.469 + 0.365 + 0.780 + 2.005 = 8.60.\n\ndf = (2−1)(3−1) = 2. χ²_critical (α=0.05, df=2) = 5.991.\nSince 8.60 > 5.991, reject H₀. There is a significant association between age and party preference."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) One out of a thousand people reacted to a newly manufactured vaccine against an endemic disease. If 3000 people were treated with this vaccine, find the probability that at most two people reacted to the vaccine.",
+    "options": [],
+    "modelAnswer": "p = 0.001, n = 3000. λ = np = 3. Using Poisson approximation: P(X ≤ 2) = e⁻³(1 + 3 + 3²/2!) = 0.0498 × (1 + 3 + 4.5) = 0.0498 × 8.5 = 0.4233 ≈ 0.423."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Normal Distribution",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Find the probability of getting between 40 and 60 heads inclusive in 100 tosses of a fair coin.",
+    "options": [],
+    "modelAnswer": "n = 100, p = 0.5. μ = np = 50, σ = √(npq) = √(25) = 5.\nUsing normal approximation with continuity correction: P(39.5 < X < 60.5).\nz₁ = (39.5−50)/5 = −2.1, z₂ = (60.5−50)/5 = 2.1.\nP(−2.1 < Z < 2.1) = Φ(2.1) − Φ(−2.1) = 0.9821 − 0.0179 = 0.9642."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Find the probability that in a family of 4 children, there will be at least 1 boy.",
+    "options": [],
+    "modelAnswer": "P(at least 1 boy) = 1 − P(all girls) = 1 − (1/2)⁴ = 1 − 1/16 = 15/16."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Equilibrium of Rigid Bodies",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) A uniform ladder of length 4m long and of mass 40kg rests with one end against a rough vertical wall and the other end a rough horizontal ground. The coefficient of friction at each point of contact is 0.5. If the ladder is on the point of slipping, calculate the frictional force\n(i) of the wall and of the ground\n(ii) on the wall",
+    "options": [],
+    "modelAnswer": "At point of slipping: F_W = μR_W = 0.5R_W, F_G = μR_G = 0.5R_G.\nResolving horizontally: R_W = F_G = 0.5R_G.\nResolving vertically: R_G + F_W = mg = 40×9.8 = 392 → R_G + 0.5R_W = 392.\nSubstitute R_W = 0.5R_G: R_G + 0.25R_G = 392 → 1.25R_G = 392 → R_G = 313.6 N, R_W = 156.8 N.\n(i) F_G = 0.5×313.6 = 156.8 N; F_W = 0.5×156.8 = 78.4 N.\n(ii) Frictional force on wall = 78.4 N."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) If A = 8t³i - 2t²j + 5tk and B = sin 2t i + cos 2t j. Find d/dt (A × B).",
+    "options": [],
+    "modelAnswer": "A × B = |i j k; 8t³ −2t² 5t; sin2t cos2t 0| = i(0 − 5t cos2t) − j(0 − 5t sin2t) + k(8t³ cos2t + 2t² sin2t)\n= (−5t cos2t)i + (5t sin2t)j + (8t³ cos2t + 2t² sin2t)k.\n\nd/dt(A×B) = (−5cos2t + 10t sin2t)i + (5sin2t + 10t cos2t)j + (24t² cos2t − 16t³ sin2t + 4t sin2t + 4t² cos2t)k\n= (−5cos2t + 10t sin2t)i + (5sin2t + 10t cos2t)j + ((24t²+4t²)cos2t + (−16t³+4t)sin2t)k\n= (−5cos2t + 10t sin2t)i + (5sin2t + 10t cos2t)j + (28t² cos2t + (4t−16t³)sin2t)k."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) A particle is projected with a velocity of 100 m/s at an angle of 30° to the horizontal. Find the (i) greatest height attained (ii) range on the horizontal plane.",
+    "options": [],
+    "modelAnswer": "(i) H = u²sin²θ/(2g) = 10000 × sin²30°/(2×9.8) = 10000 × 0.25/19.6 = 2500/19.6 = 127.6 m.\n(ii) R = u²sin2θ/g = 10000 × sin60°/9.8 = 10000 × 0.8660/9.8 = 8660/9.8 = 883.7 m."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Forces and Equilibrium",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) A block of mass 3.5 kg rests on a rough plane which is inclined at an angle of 42° to the horizontal. If the coefficient of friction between the block and the plane is 0.75, what is the least force P parallel to the plane required to start the block moving up the plane? (g = 9.8 m/s).",
+    "options": [],
+    "modelAnswer": "Weight component down plane = mg sinθ = 3.5×9.8×sin42° = 34.3×0.6691 = 22.95 N.\nNormal reaction N = mg cosθ = 34.3×cos42° = 34.3×0.7431 = 25.49 N.\nLimiting friction = μN = 0.75×25.49 = 19.12 N.\nForce required up plane: P = mg sinθ + friction = 22.95 + 19.12 = 42.1 N."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Mathematics of Finance",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) Simple interest on a certain sum at a certain rate is 16/25 of the sum. If the number representing the rate and time are equal, find the time.",
+    "options": [],
+    "modelAnswer": "I = PRT/100. Given I = (16/25)P and R = T = x.\n(16/25)P = P×x×x/100 → 16/25 = x²/100 → x² = 1600/25 = 64 → x = 8.\nTime = 8 years."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Consumer and Producer Surplus",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) The demand and supply curves for a product are respectively given by D(q) = 31 - 5q and S(q) = 10 + 2q. Obtain the (i) equilibrium price and quantity (ii) consumer's surplus.",
+    "options": [],
+    "modelAnswer": "(i) D(q) = S(q) → 31 − 5q = 10 + 2q → 21 = 7q → q = 3. Price p = 31 − 15 = 16.\n\n(ii) Consumer surplus = ∫₀³ (31−5q) dq − 3×16 = [31q − 5q²/2]₀³ − 48 = (93 − 22.5) − 48 = 70.5 − 48 = 22.5."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Mathematics of Finance",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) An amount of money was invested at 8% simple interest and after 9 months, an equal amount was invested at 10% simple interest.\n(i) Find the period in which the amount in each case becomes ₦52,000.\n(ii) How much money is invested in either case?",
+    "options": [],
+    "modelAnswer": "Let principal = P. First: A₁ = P(1 + 0.08t). Second: A₂ = P(1 + 0.10(t−0.75)).\nSet A₁ = A₂ = 52000.\nP(1+0.08t) = P(1+0.10(t−0.75)) → 1+0.08t = 1+0.10t−0.075 → 0.02t = 0.075 → t = 3.75 years.\nP(1 + 0.08×3.75) = 52000 → P(1.3) = 52000 → P = 40000.\nPrincipal = ₦40,000 in each case."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Production and Cost Functions",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) If the cost of producing 200 balls is ₦1500 and the cost increases to ₦2100 when 275 balls were produced;\n(i) obtain the linear relationship between the cost and the units produced.\n(ii) find the profit function if the price of each unit of ball is ₦30.",
+    "options": [],
+    "modelAnswer": "(i) Let C = a + bq. (200,1500), (275,2100). b = (2100−1500)/(275−200) = 600/75 = 8.\na = 1500 − 8×200 = 1500 − 1600 = −100. C = 8q − 100.\n\n(ii) Revenue R = 30q. Profit = R − C = 30q − (8q−100) = 22q + 100."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Linear Programming",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Solve the following optimization problem graphically.\nMaximize Z = 5x + 10y\nSubject to 2x + y ≤ 100, x + 2y ≤ 72, x, y ≥ 0",
+    "options": [],
+    "modelAnswer": "Feasible region vertices:\n(0,0): Z = 0\n(50,0): Z = 250 (intersection of 2x+y=100 and y=0)\n(0,36): Z = 360 (intersection of x+2y=72 and x=0)\nIntersection of 2x+y=100 and x+2y=72: from first, y=100−2x. Substitute: x+2(100−2x)=72 → x+200−4x=72 → −3x=−128 → x=42.67, y=14.67. Z = 5(42.67)+10(14.67)=213.3+146.7=360.\n\nMaximum Z = 360 occurs at (0,36) and (42.67,14.67) — the entire line segment between these points gives Z=360."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "category": "Mathematics of Finance",
+    "type": "Essay",
+    "questionNumber": "10c",
+    "question": "(c) Simple interest on a certain sum at a certain rate is 16/25 of the sum. If the number representing the rate and time are equal, find the time.",
+    "options": [],
+    "modelAnswer": "Same as Q8(c): I = (16/25)P = P×x²/100 → x² = 64 → x = 8. Time = 8 years."
+  }
+]

@@ -12,6 +12,9 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
     // ... rest of your existing auth code
   });
 }
+// Show loading status
+document.getElementById('auth-status').innerHTML = 
+  '<div style="color:#6c757d;font-size:0.9rem;">🔄 Checking access...</div>';
 // Guest access check
 if (sessionStorage.getItem('jupeb_guest') === 'true') {
     document.getElementById('login-screen').style.display = 'none';
@@ -52,6 +55,13 @@ auth.onAuthStateChanged(async (user) => {
           return;
         }
       }
+      if (!userData.expiry_date) {
+  console.warn(`User ${email} has no expiry_date set. Adding one-year default.`);
+  // Optionally auto-set it:
+  // await db.collection("authorized_users").doc(email).update({
+  //   expiry_date: "June 30, 2027"
+  // });
+}
       
       // Access granted
       document.getElementById('login-screen').style.display = 'none';
@@ -75,13 +85,35 @@ auth.onAuthStateChanged(async (user) => {
   }
 });
 
+// Handle redirect result (after user returns from Google sign-in)
+auth.getRedirectResult().then((result) => {
+  if (result.user) {
+    // User is signed in. onAuthStateChanged will handle authorization.
+    console.log('Redirect sign-in successful:', result.user.email);
+  }
+}).catch((error) => {
+  console.error('Redirect sign-in error:', error);
+});
+
 
 // Google Sign In
 function signInWithGoogle() {
   const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider).catch((error) => {
-    alert('Login failed: ' + error.message);
-  });
+  
+  // Use redirect for mobile (iPhone/Android), popup for desktop
+  if (/iPhone|iPad|Android/i.test(navigator.userAgent)) {
+    auth.signInWithRedirect(provider)
+      .then(() => {
+        // Redirect happens; onAuthStateChanged will fire after return
+      })
+      .catch((error) => {
+        alert('Login failed: ' + error.message);
+      });
+  } else {
+    auth.signInWithPopup(provider).catch((error) => {
+      alert('Login failed: ' + error.message);
+    });
+  }
 }
 
 // Sign Out

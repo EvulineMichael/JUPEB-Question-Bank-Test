@@ -179,17 +179,17 @@
     "answer": "D",
     "explanation": "In normal adjustment, the distance between objective and eyepiece = f_o + f_e."
   },
-  {
-    "subject": "Physics",
-    "year": 2024,
-    "category": "Geometrical Optics",
-    "type": "Objective",
-    "questionNumber": 17,
-    "question": "An object is placed at a distance of 15 cm from a convex mirror of radius of curvature 30 cm. The virtual image produced is located",
-    "options": ["7.5 cm away from the mirror", "0.0 cm away from the mirror", "10.0 cm away from the mirror", "30.0 cm away from the mirror"],
-    "answer": "A",
-    "explanation": "f = R/2 = 15 cm (positive for convex mirror? Actually convex mirror has negative focal length). Using mirror formula: 1/f = 1/u + 1/v. f = -15 cm, u = -15 cm (real object). 1/v = 1/f - 1/u = -1/15 - (-1/15) = 0 → v = ∞. Not matching. For convex mirror, 1/f = 1/u + 1/v with f positive? Standard: f = R/2 = 15 cm for convex mirror (positive). Then 1/15 = 1/15 + 1/v → 1/v = 0 → v = ∞. Not in options. If using sign convention: u = -15, f = +15? That gives v = +7.5 cm. Option A is 7.5 cm."
-  },
+{
+  "subject": "Physics",
+  "year": 2024,
+  "category": "Geometrical Optics",
+  "type": "Objective",
+  "questionNumber": 17,
+  "question": "An object is placed at a distance of 15 cm from a convex mirror of radius of curvature 30 cm. The virtual image produced is located",
+  "options": ["7.5 cm away from the mirror", "0.0 cm away from the mirror", "10.0 cm away from the mirror", "30.0 cm away from the mirror"],
+  "answer": "A",
+  "explanation": "For a convex mirror, focal length f = R/2 = 30/2 = +15 cm (positive by sign convention). Object distance u = −15 cm (real object). Using the mirror formula 1/f = 1/u + 1/v: 1/15 = 1/(−15) + 1/v → 1/v = 1/15 + 1/15 = 2/15 → v = +7.5 cm. The positive sign indicates a virtual image located 7.5 cm behind the mirror."
+},
   {
     "subject": "Physics",
     "year": 2024,

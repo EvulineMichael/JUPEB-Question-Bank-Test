@@ -1,15 +1,15 @@
-const CACHE_NAME = 'jupeb-qb-v7'; // ← Bumped to v7
+const CACHE_NAME = 'jupeb-qb-v8'; // ← Bump to v8
+
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/style.css',
   '/script.js',
-  '/manifest.json',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
-  'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'
+  '/auth.js',
+  '/manifest.json'
 ];
 
-// Install event - cache core assets
+// Install
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -18,7 +18,7 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate event - clean old caches
+// Activate — clean old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -30,17 +30,33 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch event - Network first for ALL your files, cache first only for external CDN
+// Fetch
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   
-  // Your own files (HTML, CSS, JS, JSON) - Network first
-  if (url.origin === self.location.origin || url.pathname.includes('/data/')) {
+  // Data JSON files — Stale-While-Revalidate (fast + fresh)
+  if (url.pathname.includes('/data/')) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(async (cache) => {
+        const cached = await cache.match(event.request);
+        const networkFetch = fetch(event.request).then(response => {
+          const clone = response.clone();
+          cache.put(event.request, clone);
+          return response;
+        }).catch(() => cached);
+        return cached || networkFetch;
+      })
+    );
+    return;
+  }
+  
+  // Your own files (HTML, CSS, JS) — Network first, cache fallback
+  if (url.origin === self.location.origin) {
     event.respondWith(
       fetch(event.request)
         .then(response => {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
           return response;
         })
         .catch(() => caches.match(event.request))
@@ -48,7 +64,7 @@ self.addEventListener('fetch', event => {
     return;
   }
   
-  // External CDN files (Font Awesome, MathJax) - Cache first
+  // External CDN — Cache first
   event.respondWith(
     caches.match(event.request)
       .then(cachedResponse => cachedResponse || fetch(event.request))
