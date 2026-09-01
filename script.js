@@ -123,24 +123,24 @@ const courseStructure = {
         ]
     },
     physics: {
-        "PHY 001 - Mechanics & Properties of Matter": [
-            "Physical Quantities and Units", "Vectors", "Kinematics", "Newton's Laws and Forces",
-            "Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
-            "Elasticity", "Hydrostatics", "Hydrodynamics"
-        ],
-        "PHY 002 - Heat, Waves & Optics": [
-            "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", "Thermodynamics",
-            "Waves", "Electromagnetic Waves", "Sound Waves", "Geometrical Optics",
-            "Lenses and Optical Instruments", "Wave Theory of Light"
-        ],
-        "PHY 003 - Electricity & Magnetism": [
-            "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
-            "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
-        ],
-        "PHY 004 - Modern Physics": [
-            "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
-            "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
-        ]
+    "PHY 001 - Mechanics & Properties of Matter": [
+        "Physical Quantities and Units", "Vectors", "Kinematics", "Dynamics (Newton's Laws and Forces)",
+        "The Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
+        "Elasticity", "Hydrostatics", "Hydrodynamics"
+    ],
+    "PHY 002 - Heat, Waves & Optics": [
+        "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", 
+        "Waves", "Sound Waves", "Geometric Optics (Light)", 
+        "Lenses and Optical Instruments", "Wave Theory of Light"
+    ],
+    "PHY 003 - Electricity & Magnetism": [
+        "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
+        "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
+    ],
+    "PHY 004 - Modern Physics": [
+        "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
+        "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
+    ]
     },
     maths: {
         "MAT 001 - Pure Mathematics": [
@@ -569,6 +569,47 @@ async function getAvailableYears(subject) {
 
     return availableYears;
 }
+// ===== QUESTION BODY RENDERER =====
+// Detects and renders equation, dataTable, and diagram fields
+function renderQuestionBody(q) {
+    let html = '';
+    
+    // 1. Question text
+    html += `<div class="question-text">${escapeHtml(q.question)}</div>`;
+    
+    // 2. LaTeX equation (if present)
+    if (q.equation) {
+        html += `<div class="question-equation">\\[${q.equation}\\]</div>`;
+    }
+    
+    // 3. Data table (if present)
+    if (q.dataTable && q.dataTable.headers && q.dataTable.rows) {
+        html += `<div class="question-table-wrap"><table class="question-table">
+            <thead><tr>${q.dataTable.headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>
+            <tbody>${q.dataTable.rows.map(row => 
+                `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`
+            ).join('')}</tbody>
+        </table></div>`;
+    }
+    
+    // 4. Image (if present)
+if (q.image && q.image.src) {
+    html += `
+        <div class="question-diagram">
+            <img src="${q.image.src}" 
+                 alt="${escapeHtml(q.image.alt || 'Question diagram')}" 
+                 style="max-width:100%;height:auto;border-radius:8px;" 
+                 loading="lazy" />
+        </div>`;
+}
+
+// 5. Diagram missing warning (if flagged)
+if (q.diagramMissing) {
+    html += `<div class="quiz-diagram-note">⚠️ ${escapeHtml(q.diagramNote || 'Diagram missing — refer to past paper.')}</div>`;
+}
+    
+    return html;
+}
 
 async function loadQuestions(forceSubject = null, callback = null) {
     if (forceSubject) {
@@ -800,6 +841,11 @@ allQuestions = allQuestions.filter(q => {
         }
 
         questionsContainer.innerHTML = questionsHtml;
+
+        // Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}
 
         // Set up event listeners for show answer buttons
         document.querySelectorAll('.show-answer-btn').forEach(btn => {
@@ -1467,6 +1513,11 @@ function displayPastQuestions(subject, year, paper = null) {
 
         questionsContainer.innerHTML = questionsHtml;
 
+// Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}      
+
         // Set up event listeners for show answer buttons
         document.querySelectorAll('.show-answer-btn').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -1515,7 +1566,7 @@ function buildQuestionCard(q, year, questionIndex) {
             <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
             ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
         </div>
-        <div class="question-text">${escapeHtml(q.question)}</div>`;
+        ${renderQuestionBody(q)}`;
     if (q.diagramMissing) html += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
     if (q.type === "Objective" && q.options?.length > 0) {
         html += `<ul class="options-list" id="options-list-${questionIndex}">`;
@@ -1523,13 +1574,54 @@ function buildQuestionCard(q, year, questionIndex) {
             if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
         });
         html += `</ul>`;
-        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${escapeHtml(q.explanation)}</div></div>`;
+        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${formatModelAnswer(q.explanation)}</div></div>`;
     }
     if (q.type === "Essay") {
-        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${escapeHtml(q.modelAnswer)}</div></div>`;
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${formatModelAnswer(q.modelAnswer)}</div></div>`;
         else if (!q.diagramMissing) html += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
     }
     return html + `</div>`;
+}
+function formatModelAnswer(text) {
+    if (!text) return "";
+    
+    // Split by double newline
+    const paragraphs = text.split("\n\n");
+    
+    return paragraphs.map(paragraph => {
+        const lines = paragraph.split("\n");
+        const firstLine = lines[0] || "";
+        
+        const isHeader = /^\([iIvVxX]+\)\s|^Final Answers|^Finding|^Actual directions|^Step\s\d/.test(firstLine);
+        
+        let paragraphHtml;
+        
+        if (isHeader) {
+            const header = escapeHtml(firstLine);
+            // Process rest of lines for images
+            const restLines = lines.slice(1);
+            const restHtml = processLinesForImages(restLines);
+            paragraphHtml = `<strong style="display:block;margin-top:12px;color:#17a2b8;">${header}</strong>${restHtml ? `<br>${restHtml}` : ''}`;
+        } else {
+            paragraphHtml = processLinesForImages(lines);
+        }
+        
+        return paragraphHtml;
+    }).join("<div style='height:10px;'></div>");
+}
+
+function processLinesForImages(lines) {
+    const imageRegex = /\[IMAGE:\s*([^\|]+)\s*\|\s*([^\]]+)\]/g;
+    
+    return lines.map(line => {
+        // Check if this line contains an image marker
+        if (imageRegex.test(line)) {
+            return line.replace(imageRegex, (match, src, alt) => {
+                return `<div class="question-diagram" style="margin:12px 0;"><img src="${src.trim()}" alt="${escapeHtml(alt.trim())}" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy" /></div>`;
+            });
+        }
+        return escapeHtml(line);
+    }).join("<br>");
 }
 
 function takePastQuestionsAsQuiz(subject, year, paper = null) {
@@ -1915,7 +2007,7 @@ function renderQuizExam() {
                 </div>
             </div>
             <div class="quiz-navigator" id="quiz-navigator">${navDots}</div>
-            <div class="quiz-question-card">
+           <div class="quiz-question-card">
                 <div class="quiz-q-meta">
                     <span class="quiz-q-badge year-badge">📅 ${q.year}</span>
                     <span class="quiz-q-badge num-badge">🔢 Q${q.questionNumber.toString().padStart(2, '0')}</span>
@@ -1923,8 +2015,7 @@ function renderQuizExam() {
                     ${q.diagramMissing ? '<span class="quiz-q-badge diagram-badge">⚠️ Diagram</span>' : ''}
                     ${quizState.flagged.has(quizState.currentIndex) ? '<span class="quiz-q-badge flag-badge">🚩 Flagged</span>' : ''}
                 </div>
-                <div class="quiz-question-text">${escapeHtml(q.question)}</div>
-                ${q.diagramMissing ? `<div class="quiz-diagram-note">⚠️ ${escapeHtml(q.diagramNote || 'Diagram missing — refer to past paper.')}</div>` : ''}
+                ${renderQuestionBody(q)}
                 <div class="quiz-options" id="quiz-options">
                     ${q.options.filter(o => o && o.trim()).map((opt, i) => {
                         const label = optionLabels[i];
@@ -1941,6 +2032,10 @@ function renderQuizExam() {
                 </div>
             </div>
         </div>`;
+// Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}
 
     setupExamListeners();
     updateTimerDisplay();
@@ -2104,7 +2199,7 @@ function submitQuiz(timeUp = false) {
                             </div>
                             ${!isCorrect && !isSkipped ? `<div class="rq-your-ans">Your answer: <strong>${userAns}</strong></div>` : ''}
                             <div class="rq-correct-ans">Correct answer: <strong>${correctAns}</strong></div>
-                            ${q.explanation ? `<div class="rq-explanation">💡 ${escapeHtml(q.explanation)}</div>` : ''}
+                            ${q.explanation ? `<div class="rq-explanation">💡 ${formatModelAnswer(q.explanation)}</div>` : ''}
                         </div>`;
                     }).join('')}
                 </div>

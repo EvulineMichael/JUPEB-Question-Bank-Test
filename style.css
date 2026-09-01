@@ -405,6 +405,151 @@ header {
     transition: all 0.2s ease;
 }
 
+/* ===== QUESTION TABLE ===== */
+.question-table-wrap {
+    margin: 16px 0;
+    overflow-x: auto;
+}
+
+.question-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.question-table th,
+.question-table td {
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.question-table th {
+    background: var(--course-header-bg);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.question-table td {
+    color: var(--text-primary);
+    background: var(--bg-card);
+}
+
+.question-table tr:hover td {
+    background: var(--course-header-hover);
+}
+
+/* ===== QUESTION EQUATION (LaTeX) ===== */
+.question-equation {
+    margin: 16px 0;
+    padding: 16px;
+    background: var(--bg-card);
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ===== QUESTION DIAGRAM ===== */
+.question-diagram {
+    margin: 16px 0;
+    padding: 16px;
+    background: var(--bg-card);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.question-diagram svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .question-table th {
+    background: #1e293b;
+}
+
+[data-theme="dark"] .question-diagram {
+    background: #1e293b;
+}
+
+/* ===== MODEL ANSWER FORMATTING ===== */
+.model-answer {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.model-answer br {
+    display: block;
+    content: "";
+    margin: 4px 0;
+}
+
+/* ===== ESSAY ANSWER DISPLAY ===== */
+.essay-answer-display {
+    padding: 18px 20px;
+    background: #e8f4f8;
+    border-left: 4px solid #17a2b8;
+    border-radius: 8px;
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] .essay-answer-display {
+    background: #1e3a5f;
+    border-left-color: #60a5fa;
+}
+
+[data-theme="dark"] .model-answer {
+    color: #93c5fd;
+}
+
+/* ===== OBJECTIVE ANSWER DISPLAY ===== */
+.answer-display {
+    padding: 14px 16px;
+    background: #d4edda;
+    border-left: 4px solid #28a745;
+    border-radius: 8px;
+}
+
+.answer-display .explanation {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    word-wrap: break-word;
+    white-space: normal;
+    color: #155724;
+}
+
+/* ===== QUIZ REVIEW EXPLANATION ===== */
+.rq-explanation {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 12px 14px;
+    background: #e8f4f8;
+    border-radius: 8px;
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] .answer-display {
+    background: #1a3a2a;
+    border-left-color: #2ecc71;
+}
+
+[data-theme="dark"] .answer-display .explanation {
+    color: #a3e4b7;
+}
+
+[data-theme="dark"] .rq-explanation {
+    background: #1e3a5f;
+    color: #93c5fd;
+}
 .sidebar-collapse-btn:hover {
     background: var(--topic-btn-hover);
     color: var(--tab-active-bg);

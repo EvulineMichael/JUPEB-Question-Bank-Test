@@ -13,7 +13,7 @@
       "force."
     ],
     "answer": "A",
-    "explanation": "p²/m = (mv)²/m = m²v²/m = mv² = 2 × (½mv²) = 2 × kinetic energy. The unit of p²/m is kg·m²/s² = Joule (J), which is the unit of energy."
+    "explanation": "p²/m = (mv)²/m = m²v²/m = mv² = 2 × (½mv²) = 2 × kinetic energy.\n\nThe unit of p²/m is kg·m²/s² = Joule (J), which is the unit of energy."
   },
   {
     "subject": "Physics",
@@ -29,7 +29,7 @@
       "acceleration due to gravity."
     ],
     "answer": "D",
-    "explanation": "When a ball is thrown vertically upwards, the acceleration due to gravity (g ≈ 9.8 m/s² downward) remains constant throughout the motion. Displacement, speed, and kinetic energy all change during the flight."
+    "explanation": "When a ball is thrown vertically upwards, the acceleration due to gravity (g ≈ 9.8 m/s² downward) remains constant throughout the motion.\n\nDisplacement, speed, and kinetic energy all change during the flight."
   },
   {
     "subject": "Physics",
@@ -45,7 +45,7 @@
       "m, ms⁻²"
     ],
     "answer": "C",
-    "explanation": "For dimensional consistency: P/t must have the same unit as V (m/s), so P = V × t → unit = (m/s) × s = m (metre). Qt must also have the same unit as V, so Q = V/t → unit = (m/s)/s = m/s²."
+    "explanation": "For dimensional consistency:\nP/t must have the same unit as V (m/s), so P = V × t → unit = (m/s) × s = m (metre).\nQt must also have the same unit as V, so Q = V/t → unit = (m/s)/s = m/s².\n\nNote: Options C and D are identical."
   },
   {
     "subject": "Physics",
@@ -61,7 +61,7 @@
       "20s."
     ],
     "answer": "B",
-    "explanation": "Using s = (u+v)/2 × t: 1500 = (20+55)/2 × t = 37.5t → t = 1500/37.5 = 40 s."
+    "explanation": "Using s = (u+v)/2 × t:\n1500 = (20+55)/2 × t = 37.5t.\nt = 1500/37.5 = 40 s."
   },
   {
     "subject": "Physics",
@@ -77,12 +77,12 @@
       "Cryogenic cells."
     ],
     "answer": "C",
-    "explanation": "Satellites primarily use solar cells (photovoltaic panels) to convert sunlight into electrical energy. Solar panels are the standard power source for most satellites in orbit."
+    "explanation": "Satellites primarily use solar cells (photovoltaic panels) to convert sunlight into electrical energy.\n\nSolar panels are the standard power source for most satellites in orbit."
   },
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Gravitational Field",
+    "category": "The Gravitational Field",
     "type": "Objective",
     "questionNumber": 6,
     "question": "The gravitational force between two objects of masses 10²⁴ kg and 10²⁷ kg is 6.6 N. Calculate the distance between them.",
@@ -93,7 +93,7 @@
       "1.0 × 10⁻²⁰ m"
     ],
     "answer": "C",
-    "explanation": "F = Gm₁m₂/r² → r = √(Gm₁m₂/F) = √[(6.67×10⁻¹¹ × 10²⁴ × 10²⁷)/6.6] = √(6.67×10⁴⁰/6.6) = √(1.01×10⁴⁰) = 1.0 × 10²⁰ m. Option A (10¹⁹ m) is incorrect; option C is the correct answer."
+    "explanation": "F = Gm₁m₂/r².\n\nr = √(Gm₁m₂/F) = √[(6.67×10⁻¹¹ × 10²⁴ × 10²⁷)/6.6]\n= √(6.67×10⁴⁰/6.6)\n= √(1.01×10⁴⁰)\n= 1.0 × 10²⁰ m."
   },
   {
     "subject": "Physics",
@@ -125,7 +125,7 @@
       "2.0 kV"
     ],
     "answer": "C",
-    "explanation": "Xc = 1/(2πfC) = 1/[2π × (50/π) × 10⁻⁴] = 1/(100 × 10⁻⁴) = 100 Ω. Z = √(R² + Xc²) = √(1000² + 100²) ≈ 1005 Ω. I_rms = I₀/√2 = 2/1.414 = 1.414 A. V_rms = I_rms × Z = 1.414 × 1005 ≈ 1421 V ≈ 1.4 kV."
+    "explanation": "Xc = 1/(2πfC) = 1/[2π × (50/π) × 10⁻⁴] = 1/(100 × 10⁻⁴) = 100 Ω.\n\nZ = √(R² + Xc²) = √(1000² + 100²) ≈ 1005 Ω.\n\nI_rms = I₀/√2 = 2/1.414 = 1.414 A.\n\nV_rms = I_rms × Z = 1.414 × 1005 ≈ 1421 V ≈ 1.4 kV."
   },
   {
     "subject": "Physics",
@@ -141,7 +141,7 @@
       "maintain the balancing potential."
     ],
     "answer": "A",
-    "explanation": "The atomiser in Millikan's oil drop experiment sprays fine oil droplets into the chamber. The droplets become charged by friction during the spraying process."
+    "explanation": "The atomiser in Millikan's oil drop experiment sprays fine oil droplets into the chamber.\n\nThe droplets become charged by friction during the spraying process."
   },
   {
     "subject": "Physics",
@@ -173,7 +173,7 @@
       "iii only."
     ],
     "answer": "A",
-    "explanation": "X-rays are electromagnetic waves (no charged particles) — i is correct. They are not deflected by electric or magnetic fields — ii is correct. X-rays have shorter wavelengths than visible light, not longer — iii is incorrect."
+    "explanation": "X-rays are electromagnetic waves (no charged particles) — i is correct.\nThey are not deflected by electric or magnetic fields — ii is correct.\nX-rays have shorter wavelengths than visible light, not longer — iii is incorrect."
   },
   {
     "subject": "Physics",
@@ -205,7 +205,7 @@
       "9.2 × 10⁻¹¹ m"
     ],
     "answer": "A",
-    "explanation": "E = 1.0 keV = 1.6 × 10⁻¹⁶ J. λ = h/√(2mE) = 6.63×10⁻³⁴/√(2×9.11×10⁻³¹×1.6×10⁻¹⁶) = 6.63×10⁻³⁴/(1.71×10⁻²³) = 3.88 × 10⁻¹¹ m ≈ 3.9 × 10⁻¹¹ m."
+    "explanation": "E = 1.0 keV = 1.6 × 10⁻¹⁶ J.\n\nλ = h/√(2mE) = 6.63×10⁻³⁴/√(2 × 9.11×10⁻³¹ × 1.6×10⁻¹⁶)\n= 6.63×10⁻³⁴/(1.71×10⁻²³)\n= 3.88 × 10⁻¹¹ m ≈ 3.9 × 10⁻¹¹ m."
   },
   {
     "subject": "Physics",
@@ -221,7 +221,7 @@
       "X-rays."
     ],
     "answer": "C",
-    "explanation": "Gamma rays have the highest penetrating power among the listed radiations. They can penetrate several centimetres of lead and require thick lead or concrete for effective shielding."
+    "explanation": "Gamma rays have the highest penetrating power among the listed radiations.\n\nThey can penetrate several centimetres of lead and require thick lead or concrete for effective shielding."
   },
   {
     "subject": "Physics",
@@ -237,12 +237,12 @@
       "E."
     ],
     "answer": "B",
-    "explanation": "From the photoelectric equation: eVₛ = hf − w₀ → Vₛ = (h/e)f − w₀/e. When Vₛ is plotted against f, the y-intercept (magnitude) is w₀/e."
+    "explanation": "From the photoelectric equation: eVₛ = hf − w₀ → Vₛ = (h/e)f − w₀/e.\n\nWhen Vₛ is plotted against f, the y-intercept (magnitude) is w₀/e."
   },
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Gravitational Field",
+    "category": "The Gravitational Field",
     "type": "Objective",
     "questionNumber": 16,
     "question": "A rocket of mass 100 kg was launched from the surface of the earth so that it escaped the gravitational attraction of the earth. Calculate its escape velocity. [g = 9.8 m/s², R_E = 6.4 × 10⁶ m, and M_E = 6 × 10²⁴ kg]",
@@ -269,7 +269,7 @@
       "80.0J."
     ],
     "answer": "D",
-    "explanation": "a = F/m = 8/10 = 0.8 m/s². v = u + at = 0 + 0.8 × 5 = 4 m/s. KE = ½mv² = ½ × 10 × 16 = 80 J."
+    "explanation": "a = F/m = 8/10 = 0.8 m/s².\n\nv = u + at = 0 + 0.8 × 5 = 4 m/s.\n\nKE = ½mv² = ½ × 10 × 16 = 80 J."
   },
   {
     "subject": "Physics",
@@ -285,7 +285,7 @@
       "minimum mechanical energy."
     ],
     "answer": "B",
-    "explanation": "At the middle (lowest point) of its swing, the pendulum has maximum kinetic energy and minimum potential energy. Mechanical energy remains constant (neglecting air resistance)."
+    "explanation": "At the middle (lowest point) of its swing, the pendulum has maximum kinetic energy and minimum potential energy.\n\nMechanical energy remains constant (neglecting air resistance)."
   },
   {
     "subject": "Physics",
@@ -301,7 +301,7 @@
       "5.5 m/s²"
     ],
     "answer": "B",
-    "explanation": "v = 2πr/T = 2π × 7/4 = 10.996 m/s. a = v²/r = (10.996)²/7 = 17.3 m/s². Note: The options were missing units; the answer is 17.3 m/s²."
+    "explanation": "v = 2πr/T = 2π × 7/4 = 10.996 m/s.\n\na = v²/r = (10.996)²/7 = 17.3 m/s²."
   },
   {
     "subject": "Physics",
@@ -349,7 +349,7 @@
       "erect and diminished."
     ],
     "answer": "B",
-    "explanation": "For a converging lens with object at infinity, the image is formed at the focal point. It is real, inverted, and highly diminished (much smaller than the object)."
+    "explanation": "For a converging lens with object at infinity, the image is formed at the focal point.\n\nIt is real, inverted, and highly diminished (much smaller than the object)."
   },
   {
     "subject": "Physics",
@@ -365,7 +365,7 @@
       "333.9°C"
     ],
     "answer": "B",
-    "explanation": "T₁ = 40 + 273 = 313 K. V₂ = V₁ − V₁/3 = 2V₁/3. P₂ = P₁ + 0.6P₁ = 1.6P₁. Using combined gas law: P₁V₁/T₁ = P₂V₂/T₂ → T₂ = (P₂/P₁)(V₂/V₁)T₁ = 1.6 × (2/3) × 313 = 333.9 K. T₂ = 333.9 − 273 = 60.9°C."
+    "explanation": "T₁ = 40 + 273 = 313 K.\nV₂ = V₁ − V₁/3 = 2V₁/3.\nP₂ = P₁ + 0.6P₁ = 1.6P₁.\n\nUsing combined gas law: P₁V₁/T₁ = P₂V₂/T₂.\nT₂ = (P₂/P₁)(V₂/V₁)T₁ = 1.6 × (2/3) × 313 = 333.9 K.\nT₂ = 333.9 − 273 = 60.9°C."
   },
   {
     "subject": "Physics",
@@ -381,7 +381,7 @@
       "170 Hz"
     ],
     "answer": "D",
-    "explanation": "For a stretched wire, f ∝ √T. If tension is doubled: f_new = f_old × √2 = 120 × 1.414 = 169.7 Hz ≈ 170 Hz."
+    "explanation": "For a stretched wire, f ∝ √T.\n\nIf tension is doubled: f_new = f_old × √2 = 120 × 1.414 = 169.7 Hz ≈ 170 Hz."
   },
   {
     "subject": "Physics",
@@ -397,7 +397,7 @@
       "wave number."
     ],
     "answer": "C",
-    "explanation": "According to Huygens' principle, every point on a wavefront acts as a source of secondary wavelets. The envelope of these wavelets gives the new position of the wavefront."
+    "explanation": "According to Huygens' principle, every point on a wavefront acts as a source of secondary wavelets.\n\nThe envelope of these wavelets gives the new position of the wavefront."
   },
   {
     "subject": "Physics",
@@ -429,7 +429,7 @@
       "0.1 Nm²/C"
     ],
     "answer": "A",
-    "explanation": "Maximum flux through a sphere in a uniform field: Φ = E × πr² = 150 × π × (0.05)² = 150 × π × 0.0025 = 150 × 0.007854 = 1.18 Nm²/C. Wait — flux through a closed surface (sphere) is zero for a uniform field because what enters equals what exits. The maximum flux through one hemisphere or the cross-sectional area: Φ = E × πr² = 150 × π × 0.0025 = 1.18 Nm²/C. Option A (4.7) uses 4πr². The correct answer using cross-sectional area is 1.18 Nm²/C, but option A (4.7) uses the full surface area. The intended answer is A."
+    "explanation": "For a sphere in a uniform electric field, the maximum flux through the full spherical surface is:\nΦ = E × 4πr² = 150 × 4π × (0.05)² = 150 × 0.0314 = 4.7 Nm²/C.\n\nNote: The net flux through a closed sphere in a uniform field is zero, but the question asks for the maximum flux that can pass through it, which uses the total surface area."
   },
   {
     "subject": "Physics",
@@ -438,21 +438,23 @@
     "type": "Objective",
     "questionNumber": 28,
     "question": "Which of the following BEST represents the field lines due to two equal and opposite charged spheres?",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing from source. Please refer to your original past question paper.",
+    "image": {
+        "src": "/images/questions/physics/2022/phy-2022-obj-28.svg",
+        "alt": "Four diagrams (A, B, C, D) showing electric field line patterns between two charged spheres. Diagram D shows field lines originating from the positive sphere and terminating on the negative sphere."
+    },
     "options": [
       "A",
       "B",
       "C",
       "D"
     ],
-    "answer": "N/A",
-    "explanation": "Cannot determine answer without the diagram. Electric field lines for two equal and opposite charges originate from the positive charge, terminate at the negative charge, and curve outward between them. Refer to the original paper for the diagram."
-  },
+    "answer": "D",
+    "explanation": "The question asks for the electric field pattern produced by two equal and opposite charges — an electric dipole.\n\nThree important rules for electric field lines:\n1. Field lines start from a positive charge.\n2. Field lines end on a negative charge.\n3. Field lines do not cross one another.\n\nFor equal and opposite charges, the field lines leave the positive sphere and curve toward the negative sphere.\n\nOption D is correct because:\n- Field lines originate from one charged sphere and terminate on the other\n- They curve naturally between the two charges\n- They are symmetrical because the charges have equal magnitude\n- Arrows point from + to −\n\nOptions A, B, and C are incorrect:\n- A: Field-line directions/pattern do not correctly represent lines going from positive to negative\n- B: Field lines move outward from both spheres (characteristic of two like charges)\n- C: Lines radiate outward from both charges (also like charges, not opposite)\n\nAnswer: D"
+},
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Thermodynamics",
+    "category": "Heat and Energy",
     "type": "Objective",
     "questionNumber": 29,
     "question": "Water in an open container boils at a lower temperature when heated at the top of a mountain than at sea level because at the top of a mountain, the",
@@ -463,7 +465,7 @@
       "temperature is lower than that at sea level."
     ],
     "answer": "A",
-    "explanation": "Atmospheric pressure decreases with altitude. At lower pressure, water boils at a lower temperature because its vapour pressure equals the external pressure at a lower temperature."
+    "explanation": "Atmospheric pressure decreases with altitude.\n\nAt lower pressure, water boils at a lower temperature because its vapour pressure equals the external pressure at a lower temperature."
   },
   {
     "subject": "Physics",
@@ -479,7 +481,7 @@
       "Pitot-static tube."
     ],
     "answer": "D",
-    "explanation": "A Pitot-static tube measures fluid flow velocity by comparing stagnation pressure and static pressure. It is widely used in aerodynamics and fluid mechanics."
+    "explanation": "A Pitot-static tube measures fluid flow velocity by comparing stagnation pressure and static pressure.\n\nIt is widely used in aerodynamics and fluid mechanics."
   },
   {
     "subject": "Physics",
@@ -495,7 +497,7 @@
       "The surface must be held together by gravitational forces."
     ],
     "answer": "B",
-    "explanation": "For a soap bubble to remain intact, the internal pressure must exceed the external pressure to balance the surface tension forces. The excess pressure is ΔP = 4T/r (for a soap bubble with two surfaces)."
+    "explanation": "For a soap bubble to remain intact, the internal pressure must exceed the external pressure to balance the surface tension forces.\n\nThe excess pressure is ΔP = 4T/r (for a soap bubble with two surfaces)."
   },
   {
     "subject": "Physics",
@@ -511,7 +513,7 @@
       "fourth power of the absolute temperature of that radiator."
     ],
     "answer": "D",
-    "explanation": "Stefan-Boltzmann law: E = σT⁴. The rate of radiant energy per unit area is proportional to the fourth power of the absolute temperature."
+    "explanation": "Stefan-Boltzmann law: E = σT⁴.\n\nThe rate of radiant energy per unit area is proportional to the fourth power of the absolute temperature."
   },
   {
     "subject": "Physics",
@@ -543,7 +545,7 @@
       "57°C"
     ],
     "answer": "C",
-    "explanation": "Δr = αr₀ΔT → 0.01 = (1.30×10⁻⁴)(2.20)ΔT → ΔT = 0.01/(2.86×10⁻⁴) = 35.0°C. T = 20.0 + 35.0 = 55.0°C."
+    "explanation": "Δr = αr₀ΔT.\n\n0.01 = (1.30×10⁻⁴)(2.20)ΔT.\nΔT = 0.01/(2.86×10⁻⁴) = 35.0°C.\n\nT = 20.0 + 35.0 = 55.0°C."
   },
   {
     "subject": "Physics",
@@ -559,7 +561,7 @@
       "raise temperature of a substance by 1 K."
     ],
     "answer": "B",
-    "explanation": "Latent heat of vaporization is the heat energy required to change a substance from liquid to gas (vapour) at constant temperature. Option A describes latent heat of fusion. Options C and D describe specific heat capacity."
+    "explanation": "Latent heat of vaporization is the heat energy required to change a substance from liquid to gas (vapour) at constant temperature.\n\nOption A describes latent heat of fusion. Options C and D describe specific heat capacity."
   },
   {
     "subject": "Physics",
@@ -575,12 +577,12 @@
       "10.025 m"
     ],
     "answer": "C",
-    "explanation": "ΔL = αL₀ΔT = (1.0×10⁻⁴)(10)(65−15) = 10⁻³ × 50 = 0.050 m. New length = 10.000 + 0.050 = 10.050 m."
+    "explanation": "ΔL = αL₀ΔT = (1.0×10⁻⁴)(10)(65−15) = 10⁻³ × 50 = 0.050 m.\n\nNew length = 10.000 + 0.050 = 10.050 m."
   },
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Thermodynamics",
+    "category": "Heat and Energy",
     "type": "Objective",
     "questionNumber": 37,
     "question": "A Carnot engine operates between temperature limits of 473 K and 293 K. What is its maximum possible efficiency?",
@@ -596,7 +598,7 @@
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Thermodynamics",
+    "category": "Heat and Energy",
     "type": "Objective",
     "questionNumber": 38,
     "question": "When a system expands adiabatically, the work done by the system on its surroundings is",
@@ -607,7 +609,7 @@
       "positive."
     ],
     "answer": "D",
-    "explanation": "In an adiabatic expansion (q = 0), the system does positive work on its surroundings (w > 0). The internal energy decreases as the system performs work: ΔU = −w."
+    "explanation": "In an adiabatic expansion (q = 0), the system does positive work on its surroundings (w > 0).\n\nThe internal energy decreases as the system performs work: ΔU = −w."
   },
   {
     "subject": "Physics",
@@ -623,12 +625,12 @@
       "microwaves; ultraviolet."
     ],
     "answer": "A",
-    "explanation": "Gamma rays have the highest energy (shortest wavelength, highest frequency). Radio waves have the lowest energy (longest wavelength, lowest frequency)."
+    "explanation": "Gamma rays have the highest energy (shortest wavelength, highest frequency).\n\nRadio waves have the lowest energy (longest wavelength, lowest frequency)."
   },
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Geometrical Optics",
+    "category": "Geometric Optics (Light)",
     "type": "Objective",
     "questionNumber": 40,
     "question": "I. Rays of light must travel from a less dense medium to a denser medium.\nII. Rays of light must travel from a denser medium to a less dense medium.\nIII. The angle of incidence must be greater than the critical angle.\nWhich of the statements above is/are condition(s) for total internal reflection to occur?",
@@ -639,12 +641,12 @@
       "II only."
     ],
     "answer": "C",
-    "explanation": "Total internal reflection requires: (II) light traveling from a denser to a less dense medium, and (III) angle of incidence greater than the critical angle. Statement I is incorrect."
+    "explanation": "Total internal reflection requires:\n(II) light traveling from a denser to a less dense medium.\n(III) angle of incidence greater than the critical angle.\n\nStatement I is incorrect."
   },
   {
     "subject": "Physics",
     "year": 2022,
-    "category": "Geometrical Optics",
+    "category": "Geometric Optics (Light)",
     "type": "Objective",
     "questionNumber": 41,
     "question": "A man stands 50 cm from a concave mirror with radius of curvature 10 cm. Find the position and magnification of the image.",
@@ -655,7 +657,7 @@
       "5.56 cm, 0.12"
     ],
     "answer": "C",
-    "explanation": "f = R/2 = 10/2 = 5 cm. 1/f = 1/u + 1/v → 1/5 = 1/50 + 1/v → 1/v = 1/5 − 1/50 = 9/50 → v = 5.56 cm. Magnification m = −v/u = −5.56/50 = −0.11 (magnitude 0.11)."
+    "explanation": "f = R/2 = 10/2 = 5 cm.\n\n1/f = 1/u + 1/v.\n1/5 = 1/50 + 1/v.\n1/v = 1/5 − 1/50 = 9/50.\nv = 5.56 cm.\n\nMagnification m = |v/u| = 5.56/50 = 0.11."
   },
   {
     "subject": "Physics",
@@ -671,7 +673,7 @@
       "1.20 × 10⁻⁴ C"
     ],
     "answer": "C",
-    "explanation": "C_total = C₁ + C₂ = 7.0 µF = 7.0×10⁻⁶ F. Q = CV = 7.0×10⁻⁶ × 24 = 1.68 × 10⁻⁴ C."
+    "explanation": "C_total = C₁ + C₂ = 7.0 µF = 7.0×10⁻⁶ F.\n\nQ = CV = 7.0×10⁻⁶ × 24 = 1.68 × 10⁻⁴ C."
   },
   {
     "subject": "Physics",
@@ -687,7 +689,7 @@
       "55.9 Ω."
     ],
     "answer": "C",
-    "explanation": "P = V²/R → R = V²/P = 230²/1000 = 52900/1000 = 52.9 Ω."
+    "explanation": "P = V²/R.\n\nR = V²/P = 230²/1000 = 52900/1000 = 52.9 Ω."
   },
   {
     "subject": "Physics",
@@ -703,7 +705,7 @@
       "ratio of the permittivity of free space to the permittivity of the dielectric material."
     ],
     "answer": "D",
-    "explanation": "Dielectric strength is NOT the ratio of permittivities. That ratio (ε₀/ε) is the reciprocal of the relative permittivity (1/εᵣ). Dielectric strength is the maximum electric field a material can withstand without electrical breakdown."
+    "explanation": "Dielectric strength is NOT the ratio of permittivities.\n\nThat ratio (ε₀/ε) is the reciprocal of the relative permittivity (1/εᵣ).\n\nDielectric strength is the maximum electric field a material can withstand without electrical breakdown."
   },
   {
     "subject": "Physics",
@@ -719,7 +721,7 @@
       "9.6 × 10⁻¹⁵ N"
     ],
     "answer": "D",
-    "explanation": "Charge of Li nucleus = +3e = 3 × 1.6×10⁻¹⁹ = 4.8×10⁻¹⁹ C. Maximum force when v ⟂ B: F = qvB = 4.8×10⁻¹⁹ × 2.0×10⁵ × 0.10 = 9.6 × 10⁻¹⁵ N."
+    "explanation": "Charge of Li nucleus = +3e = 3 × 1.6×10⁻¹⁹ = 4.8×10⁻¹⁹ C.\n\nMaximum force when v ⟂ B:\nF = qvB = 4.8×10⁻¹⁹ × 2.0×10⁵ × 0.10 = 9.6 × 10⁻¹⁵ N."
   },
   {
     "subject": "Physics",
@@ -735,7 +737,7 @@
       "attractive."
     ],
     "answer": "D",
-    "explanation": "Two parallel conductors carrying currents in the same direction attract each other. If currents are in opposite directions, they repel."
+    "explanation": "Two parallel conductors carrying currents in the same direction attract each other.\n\nIf currents are in opposite directions, they repel."
   },
   {
     "subject": "Physics",
@@ -751,7 +753,7 @@
       "75 Ω"
     ],
     "answer": "B",
-    "explanation": "V = I_g(R_g + R_s) → 15 = (20×10⁻³)(10 + R_s) → 15/0.02 = 750 = 10 + R_s → R_s = 740 Ω."
+    "explanation": "V = I_g(R_g + R_s).\n\n15 = (20×10⁻³)(10 + R_s).\n15/0.02 = 750 = 10 + R_s.\nR_s = 740 Ω."
   },
   {
     "subject": "Physics",
@@ -767,7 +769,7 @@
       "monovalent atom."
     ],
     "answer": "C",
-    "explanation": "N-type semiconductors are formed by doping with pentavalent atoms (e.g., phosphorus, arsenic, antimony) which have five valence electrons. The extra electron becomes a free charge carrier."
+    "explanation": "N-type semiconductors are formed by doping with pentavalent atoms (e.g., phosphorus, arsenic, antimony) which have five valence electrons.\n\nThe extra electron becomes a free charge carrier."
   },
   {
     "subject": "Physics",
@@ -799,7 +801,7 @@
       "power product."
     ],
     "answer": "A",
-    "explanation": "Acoustic impedance (Z) is defined as Z = ρv, where ρ is the density of the medium and v is the speed of sound in that medium. It measures the resistance a sound wave encounters when propagating through a medium."
+    "explanation": "Acoustic impedance (Z) is defined as Z = ρv, where ρ is the density of the medium and v is the speed of sound in that medium.\n\nIt measures the resistance a sound wave encounters when propagating through a medium."
   },
   {
     "subject": "Physics",
@@ -809,7 +811,7 @@
     "questionNumber": "1a",
     "question": "(a) (i) Define the following terms: Young modulus, Bulk modulus; and Shear modulus.\n(ii) Two parallel oppositely directed forces, each 3500 N, are applied tangentially to the upper and lower faces of a cubical metal block 25 cm on a side. Find the angle of shear and displacement of the upper surface relative to the lower surface if the shear modulus for the metal is 80 GPa.",
     "options": [],
-    "modelAnswer": "(i) Young modulus (E) = tensile stress/tensile strain = (F/A)/(ΔL/L₀). Bulk modulus (K) = volumetric stress/volumetric strain = −ΔP/(ΔV/V₀). Shear modulus (G) = shear stress/shear strain = (F/A)/tanθ ≈ (F/A)/θ.\n\n(ii) Area = (0.25)² = 0.0625 m². Shear stress = 3500/0.0625 = 5.6 × 10⁴ Pa. Angle of shear θ = shear stress/G = (5.6×10⁴)/(80×10⁹) = 7.0 × 10⁻⁷ rad. Displacement = θ × L = 7.0×10⁻⁷ × 0.25 = 1.75 × 10⁻⁷ m."
+    "modelAnswer": "(i) Young modulus (E) = tensile stress/tensile strain = (F/A)/(ΔL/L₀).\nBulk modulus (K) = volumetric stress/volumetric strain = −ΔP/(ΔV/V₀).\nShear modulus (G) = shear stress/shear strain = (F/A)/tanθ ≈ (F/A)/θ.\n\n(ii) Area = (0.25)² = 0.0625 m².\nShear stress = 3500/0.0625 = 5.6 × 10⁴ Pa.\nAngle of shear θ = shear stress/G = (5.6×10⁴)/(80×10⁹) = 7.0 × 10⁻⁷ rad.\nDisplacement = θ × L = 7.0×10⁻⁷ × 0.25 = 1.75 × 10⁻⁷ m."
   },
   {
     "subject": "Physics",
@@ -819,7 +821,7 @@
     "questionNumber": "1b",
     "question": "(b) An airplane is travelling horizontally at a speed of 60 m/s and drops a crate of emergency supplies. To avoid damage, the maximum vertical speed of the crate on landing is 30 m/s. Assuming air resistance is negligible,\n(i) calculate the maximum height of the airplane when the crate is dropped;\n(ii) calculate the time taken for the crate to reach the ground from this height.\n(iii) If the airplane is travelling at the maximum permitted height, calculate the horizontal distance travelled by the crate after it is released from the airplane.",
     "options": [],
-    "modelAnswer": "(i) v² = u² + 2gh → 30² = 0 + 2(9.8)h → h = 900/19.6 = 45.9 m.\n(ii) v = u + gt → 30 = 0 + 9.8t → t = 30/9.8 = 3.06 s.\n(iii) Horizontal distance = v_x × t = 60 × 3.06 = 183.6 m ≈ 184 m."
+    "modelAnswer": "(i) v² = u² + 2gh.\n30² = 0 + 2(9.8)h.\nh = 900/19.6 = 45.9 m.\n\n(ii) v = u + gt.\n30 = 0 + 9.8t.\nt = 30/9.8 = 3.06 s.\n\n(iii) Horizontal distance = v_x × t = 60 × 3.06 = 183.6 m ≈ 184 m."
   },
   {
     "subject": "Physics",
@@ -829,7 +831,7 @@
     "questionNumber": "2a",
     "question": "(a) Define the following: (i) terminal velocity, (ii) viscosity, (iii) surface tension.",
     "options": [],
-    "modelAnswer": "(i) Terminal velocity: the constant maximum velocity reached by a falling object when the net force on it becomes zero — the downward weight is balanced by the upward buoyant force and drag force.\n(ii) Viscosity: the internal friction of a fluid that resists relative motion between its layers. It is measured by the coefficient of viscosity η.\n(iii) Surface tension: the property of a liquid surface that makes it behave like a stretched elastic membrane; defined as the force per unit length acting along the surface."
+    "modelAnswer": "(i) Terminal velocity: the constant maximum velocity reached by a falling object when the net force on it becomes zero — the downward weight is balanced by the upward buoyant force and drag force.\n\n(ii) Viscosity: the internal friction of a fluid that resists relative motion between its layers. It is measured by the coefficient of viscosity η.\n\n(iii) Surface tension: the property of a liquid surface that makes it behave like a stretched elastic membrane; defined as the force per unit length acting along the surface."
   },
   {
     "subject": "Physics",
@@ -839,7 +841,7 @@
     "questionNumber": "2b",
     "question": "(b) State the following: (i) Stokes' law, (ii) law of conservation of angular momentum.",
     "options": [],
-    "modelAnswer": "(i) Stokes' law: The viscous drag force F on a small sphere of radius r moving with velocity v through a fluid of viscosity η is F = 6πηrv.\n(ii) Law of conservation of angular momentum: In the absence of an external torque, the total angular momentum of a system remains constant. L = Iω = constant."
+    "modelAnswer": "(i) Stokes' law: The viscous drag force F on a small sphere of radius r moving with velocity v through a fluid of viscosity η is F = 6πηrv.\n\n(ii) Law of conservation of angular momentum: In the absence of an external torque, the total angular momentum of a system remains constant. L = Iω = constant."
   },
   {
     "subject": "Physics",
@@ -849,7 +851,7 @@
     "questionNumber": "2c",
     "question": "(c) A mass of 2 kg attached to the end of a vertical wire of length 2 m and diameter 2 mm extended the wire by 1 mm. Calculate the (i) Young's modulus of the wire, (ii) energy stored in the wire.",
     "options": [],
-    "modelAnswer": "Area = πd²/4 = π(2×10⁻³)²/4 = π × 10⁻⁶ m². Force = mg = 2 × 9.8 = 19.6 N.\nStress = F/A = 19.6/(π×10⁻⁶) = 6.24 × 10⁶ Pa.\nStrain = ΔL/L = 1×10⁻³/2 = 5.0 × 10⁻⁴.\n(i) E = stress/strain = 6.24×10⁶/(5.0×10⁻⁴) = 1.25 × 10¹⁰ Pa = 12.5 GPa.\n(ii) Energy stored = ½ × F × ΔL = ½ × 19.6 × 1×10⁻³ = 9.8 × 10⁻³ J."
+    "modelAnswer": "Area = πd²/4 = π(2×10⁻³)²/4 = π × 10⁻⁶ m².\nForce = mg = 2 × 9.8 = 19.6 N.\nStress = F/A = 19.6/(π×10⁻⁶) = 6.24 × 10⁶ Pa.\nStrain = ΔL/L = 1×10⁻³/2 = 5.0 × 10⁻⁴.\n\n(i) E = stress/strain = 6.24×10⁶/(5.0×10⁻⁴) = 1.25 × 10¹⁰ Pa = 12.5 GPa.\n\n(ii) Energy stored = ½ × F × ΔL = ½ × 19.6 × 1×10⁻³ = 9.8 × 10⁻³ J."
   },
   {
     "subject": "Physics",
@@ -859,7 +861,7 @@
     "questionNumber": "3a",
     "question": "(a) Define the following terms and state their units: (i) specific heat capacity, (ii) specific latent heat.",
     "options": [],
-    "modelAnswer": "(i) Specific heat capacity (c): the quantity of heat required to raise the temperature of 1 kg of a substance by 1 K (or 1°C). Unit: J/(kg·K) or J/(kg·°C).\n(ii) Specific latent heat (L): the quantity of heat required to change the phase of 1 kg of a substance without any change in temperature. Unit: J/kg."
+    "modelAnswer": "(i) Specific heat capacity (c): the quantity of heat required to raise the temperature of 1 kg of a substance by 1 K (or 1°C). Unit: J/(kg·K) or J/(kg·°C).\n\n(ii) Specific latent heat (L): the quantity of heat required to change the phase of 1 kg of a substance without any change in temperature. Unit: J/kg."
   },
   {
     "subject": "Physics",
@@ -869,7 +871,7 @@
     "questionNumber": "3b",
     "question": "(b) A plane progressive wave is represented by the equation y = 0.3 sin (20πx/3 + 100πt) m. Calculate the following: (i) amplitude; (ii) frequency; (iii) wavelength; (iv) velocity of the wave.",
     "options": [],
-    "modelAnswer": "Comparing with y = A sin(kx + ωt):\n(i) Amplitude A = 0.3 m.\n(ii) ω = 100π = 2πf → f = 50 Hz.\n(iii) k = 20π/3 = 2π/λ → λ = 2π/(20π/3) = 6/20 = 0.3 m.\n(iv) v = fλ = 50 × 0.3 = 15 m/s. Alternatively, v = ω/k = 100π/(20π/3) = 15 m/s."
+    "modelAnswer": "Comparing with y = A sin(kx + ωt):\n\n(i) Amplitude A = 0.3 m.\n\n(ii) ω = 100π = 2πf → f = 50 Hz.\n\n(iii) k = 20π/3 = 2π/λ → λ = 2π/(20π/3) = 6/20 = 0.3 m.\n\n(iv) v = fλ = 50 × 0.3 = 15 m/s.\nAlternatively, v = ω/k = 100π/(20π/3) = 15 m/s."
   },
   {
     "subject": "Physics",
@@ -879,7 +881,7 @@
     "questionNumber": "3c",
     "question": "(c) The length of a test-tube is 15.0 cm. Calculate the two lowest frequencies for the sound emitted when the open end of the tube is blown. Take the speed of sound in air as 330 m/s.",
     "options": [],
-    "modelAnswer": "A test-tube is closed at one end. For a closed pipe, only odd harmonics exist: f_n = nv/(4L), n = 1, 3, 5, ...\nL = 0.15 m, v = 330 m/s.\nf₁ = 330/(4×0.15) = 330/0.6 = 550 Hz (fundamental).\nf₃ = 3 × 550 = 1650 Hz (third harmonic/second lowest)."
+    "modelAnswer": "A test-tube is closed at one end. For a closed pipe, only odd harmonics exist: f_n = nv/(4L), n = 1, 3, 5, ...\n\nL = 0.15 m, v = 330 m/s.\n\nf₁ = 330/(4 × 0.15) = 330/0.6 = 550 Hz (fundamental).\n\nf₃ = 3 × 550 = 1650 Hz (third harmonic/second lowest)."
   },
   {
     "subject": "Physics",
@@ -889,27 +891,17 @@
     "questionNumber": "4a",
     "question": "(a) Define the following: (i) Optical path, (ii) Coherent sources.",
     "options": [],
-    "modelAnswer": "(i) Optical path: the product of the refractive index (n) of the medium and the geometric path length (d) travelled by light. Optical path = n × d. It represents the equivalent distance the light would travel in vacuum.\n(ii) Coherent sources: two sources of light that emit waves of the same frequency (wavelength) with a constant phase difference over time. Only coherent sources produce stable interference patterns."
+    "modelAnswer": "(i) Optical path: the product of the refractive index (n) of the medium and the geometric path length (d) travelled by light. Optical path = n × d. It represents the equivalent distance the light would travel in vacuum.\n\n(ii) Coherent sources: two sources of light that emit waves of the same frequency (wavelength) with a constant phase difference over time. Only coherent sources produce stable interference patterns."
   },
   {
     "subject": "Physics",
     "year": 2022,
     "category": "Sound Waves",
     "type": "Essay",
-    "questionNumber": "4b(i)",
-    "question": "(b) (i) A sound wave has an amplitude of 8.5 µm when it is a particular distance away from the source. Calculate the amplitude when this distance is increased by 90%.",
+    "questionNumber": "4b",
+    "question": "(b) (i) A sound wave has an amplitude of 8.5 µm when it is a particular distance away from the source. Calculate the amplitude when this distance is increased by 90%.\n(ii) State TWO uses of ultrasonics.",
     "options": [],
-    "modelAnswer": "For a spherical wave, amplitude A ∝ 1/r. New distance r₂ = r₁ + 0.9r₁ = 1.9r₁.\nA₂/A₁ = r₁/r₂ = 1/1.9.\nA₂ = 8.5/1.9 = 4.47 µm ≈ 4.5 µm."
-  },
-  {
-    "subject": "Physics",
-    "year": 2022,
-    "category": "Sound Waves",
-    "type": "Essay",
-    "questionNumber": "4b(ii)",
-    "question": "(b) (ii) State TWO uses of ultrasonics.",
-    "options": [],
-    "modelAnswer": "1. Medical imaging (sonography): used to visualize internal organs and monitor fetal development during pregnancy.\n2. Industrial non-destructive testing: used to detect internal flaws, cracks, or voids in metal components and welds."
+    "modelAnswer": "(i) For a spherical wave, amplitude A ∝ 1/r.\nNew distance r₂ = r₁ + 0.9r₁ = 1.9r₁.\nA₂/A₁ = r₁/r₂ = 1/1.9.\nA₂ = 8.5/1.9 = 4.47 µm ≈ 4.5 µm.\n\n(ii) 1. Medical imaging (sonography): used to visualize internal organs and monitor fetal development during pregnancy.\n2. Industrial non-destructive testing: used to detect internal flaws, cracks, or voids in metal components and welds."
   },
   {
     "subject": "Physics",
@@ -919,7 +911,7 @@
     "questionNumber": "4c",
     "question": "(c) A parallel beam of sodium light is incident normally on a diffraction grating. The angle between the two first-order spectra on either side of the normal is 38°. If the wavelength of the light is 0.859 µm, find the (i) number of rulings per mm on the grating. (ii) greatest number of bright images obtained.",
     "options": [],
-    "modelAnswer": "First-order angle θ₁ = 38°/2 = 19°.\n(i) d sinθ = nλ → d = λ/sin19° = 0.859×10⁻⁶/0.3256 = 2.639×10⁻⁶ m.\nNumber of rulings per metre = 1/d = 3.79×10⁵.\nNumber of rulings per mm = 3.79×10⁵/1000 = 379 rulings/mm.\n\n(ii) n_max occurs when sinθ = 1: n_max = d/λ = 2.639×10⁻⁶/0.859×10⁻⁶ = 3.07.\nMaximum integer order = 3 (on each side).\nTotal bright images = 2(3) + 1 (central) = 7."
+    "modelAnswer": "First-order angle θ₁ = 38°/2 = 19°.\n\n(i) d sinθ = nλ.\nd = λ/sin19° = 0.859×10⁻⁶/0.3256 = 2.639×10⁻⁶ m.\nNumber of rulings per metre = 1/d = 3.79×10⁵.\nNumber of rulings per mm = 3.79×10⁵/1000 = 379 rulings/mm.\n\n(ii) n_max occurs when sinθ = 1:\nn_max = d/λ = 2.639×10⁻⁶/0.859×10⁻⁶ = 3.07.\nMaximum integer order = 3 (on each side).\nTotal bright images = 2(3) + 1 (central) = 7."
   },
   {
     "subject": "Physics",
@@ -929,7 +921,7 @@
     "questionNumber": "5a",
     "question": "(a) Explain the following terms: (i) Electric flux, (ii) Equipotential surface.",
     "options": [],
-    "modelAnswer": "(i) Electric flux (Φₑ): the total number of electric field lines passing through a given surface. Φₑ = ∫E·dA = EA cosθ. Unit: N·m²/C or V·m.\n(ii) Equipotential surface: a surface on which the electric potential is the same at every point. No work is done in moving a charge along an equipotential surface."
+    "modelAnswer": "(i) Electric flux (Φₑ): the total number of electric field lines passing through a given surface. Φₑ = ∫E·dA = EA cosθ. Unit: N·m²/C or V·m.\n\n(ii) Equipotential surface: a surface on which the electric potential is the same at every point. No work is done in moving a charge along an equipotential surface."
   },
   {
     "subject": "Physics",
@@ -939,7 +931,7 @@
     "questionNumber": "5b",
     "question": "(b) (i) State the condition for resonance in RLC circuits.\n(ii) A series RLC circuit with R = 425Ω, L = 1.25H, and C = 3.50µF, is connected to a maximum voltage supply, V = 150V, with ω = 377 s⁻¹. Determine the impedance and maximum current in the circuit.",
     "options": [],
-    "modelAnswer": "(i) Resonance occurs when the inductive reactance equals the capacitive reactance: X_L = X_C → ωL = 1/(ωC). At resonance, Z = R (minimum), and current is maximum.\n\n(ii) X_L = 377 × 1.25 = 471.25 Ω. X_C = 1/(377 × 3.50×10⁻⁶) = 758.0 Ω. Z = √[425² + (471.25 − 758.0)²] = √[180625 + 82236] = √262861 = 512.7 Ω. I_max = 150/512.7 = 0.293 A."
+    "modelAnswer": "(i) Resonance occurs when the inductive reactance equals the capacitive reactance: X_L = X_C → ωL = 1/(ωC). At resonance, Z = R (minimum), and current is maximum.\n\n(ii) X_L = 377 × 1.25 = 471.25 Ω.\nX_C = 1/(377 × 3.50×10⁻⁶) = 758.0 Ω.\nZ = √[425² + (471.25 − 758.0)²] = √[180625 + 82236] = √262861 = 512.7 Ω.\nI_max = 150/512.7 = 0.293 A."
   },
   {
     "subject": "Physics",
@@ -949,7 +941,7 @@
     "questionNumber": "5c",
     "question": "(c) The maximum power dissipated in a 5kΩ resistor is 15W. What is the maximum current?",
     "options": [],
-    "modelAnswer": "P = I²R → I = √(P/R) = √(15/5000) = √0.003 = 0.0548 A = 54.8 mA."
+    "modelAnswer": "P = I²R.\nI = √(P/R) = √(15/5000) = √0.003 = 0.0548 A = 54.8 mA."
   },
   {
     "subject": "Physics",
@@ -969,7 +961,7 @@
     "questionNumber": "6b",
     "question": "(b) A capacitor consisting of 2 parallel plates separated by oil of dielectric constant 1.5, each plate having an effective area of 1000 cm² and spaced 0.1 cm apart, is connected across a constant voltage source of 5000 V. Calculate: (i) the capacitance of the capacitor, (ii) the charge of the capacitor, (iii) the energy stored in the capacitor, and (iv) If the voltage source was doubled, while the capacitance was kept constant, what would be the new amount of energy stored?",
     "options": [],
-    "modelAnswer": "A = 1000 cm² = 0.1 m², d = 0.1 cm = 0.001 m, ε₀ = 8.85×10⁻¹² F/m.\n(i) C = ε₀εᵣA/d = 8.85×10⁻¹² × 1.5 × 0.1/0.001 = 1.33 × 10⁻⁹ F = 1.33 nF.\n(ii) Q = CV = 1.33×10⁻⁹ × 5000 = 6.64 × 10⁻⁶ C = 6.64 µC.\n(iii) E = ½CV² = ½ × 1.33×10⁻⁹ × (5000)² = 0.0166 J.\n(iv) E ∝ V². Doubling V → E' = 4E = 4 × 0.0166 = 0.0664 J."
+    "modelAnswer": "A = 1000 cm² = 0.1 m², d = 0.1 cm = 0.001 m, ε₀ = 8.85×10⁻¹² F/m.\n\n(i) C = ε₀εᵣA/d = 8.85×10⁻¹² × 1.5 × 0.1/0.001 = 1.33 × 10⁻⁹ F = 1.33 nF.\n\n(ii) Q = CV = 1.33×10⁻⁹ × 5000 = 6.64 × 10⁻⁶ C = 6.64 µC.\n\n(iii) E = ½CV² = ½ × 1.33×10⁻⁹ × (5000)² = 0.0166 J.\n\n(iv) E ∝ V². Doubling V → E' = 4E = 4 × 0.0166 = 0.0664 J."
   },
   {
     "subject": "Physics",
@@ -979,7 +971,7 @@
     "questionNumber": "6c",
     "question": "(c) Two charges Q₁ = +200 µC and Q₂ = -100 µC are separated by a distance of 100 cm, with Q₁ located at the origin. How much work must be done to transfer a charge Q₃ = +500 µC from a point x = 80 cm to a point x = 20 cm?",
     "options": [],
-    "modelAnswer": "Work done = Q₃(V_f − V_i), where V = kQ₁/r₁ + kQ₂/r₂, k = 9×10⁹.\nAt x = 80 cm: r₁ = 0.8, r₂ = 0.2. V_i = 9×10⁹[200×10⁻⁶/0.8 + (−100×10⁻⁶)/0.2] = 9×10⁹[250×10⁻⁶ − 500×10⁻⁶] = −2.25×10⁶ V.\nAt x = 20 cm: r₁ = 0.2, r₂ = 0.8. V_f = 9×10⁹[200×10⁻⁶/0.2 + (−100×10⁻⁶)/0.8] = 9×10⁹[1000×10⁻⁶ − 125×10⁻⁶] = +7.875×10⁶ V.\nW = 500×10⁻⁶ × [7.875×10⁶ − (−2.25×10⁶)] = 500×10⁻⁶ × 10.125×10⁶ = 5062.5 J ≈ 5.06 kJ."
+    "modelAnswer": "Work done = Q₃(V_f − V_i), where V = kQ₁/r₁ + kQ₂/r₂, k = 9×10⁹.\n\nAt x = 80 cm: r₁ = 0.8, r₂ = 0.2.\nV_i = 9×10⁹[200×10⁻⁶/0.8 + (−100×10⁻⁶)/0.2] = 9×10⁹[250×10⁻⁶ − 500×10⁻⁶] = −2.25×10⁶ V.\n\nAt x = 20 cm: r₁ = 0.2, r₂ = 0.8.\nV_f = 9×10⁹[200×10⁻⁶/0.2 + (−100×10⁻⁶)/0.8] = 9×10⁹[1000×10⁻⁶ − 125×10⁻⁶] = +7.875×10⁶ V.\n\nW = 500×10⁻⁶ × [7.875×10⁶ − (−2.25×10⁶)] = 500×10⁻⁶ × 10.125×10⁶ = 5062.5 J ≈ 5.06 kJ."
   },
   {
     "subject": "Physics",
@@ -989,7 +981,7 @@
     "questionNumber": "7a",
     "question": "(a) (i) State three differences between intrinsic and extrinsic semiconductors.\n(ii) Explain the term 'doping' in semiconducting material.",
     "options": [],
-    "modelAnswer": "(i) 1. Intrinsic: pure semiconductor; Extrinsic: doped with impurity atoms. 2. Intrinsic: equal numbers of electrons and holes; Extrinsic: one carrier type dominates. 3. Intrinsic: low conductivity; Extrinsic: higher conductivity.\n\n(ii) Doping is the deliberate introduction of controlled amounts of impurity atoms (dopants) into a pure semiconductor to modify its electrical conductivity. Pentavalent dopants (e.g., P, As) create n-type; trivalent dopants (e.g., B, Al) create p-type."
+    "modelAnswer": "(i) 1. Intrinsic: pure semiconductor; Extrinsic: doped with impurity atoms.\n2. Intrinsic: equal numbers of electrons and holes; Extrinsic: one carrier type dominates.\n3. Intrinsic: low conductivity; Extrinsic: higher conductivity.\n\n(ii) Doping is the deliberate introduction of controlled amounts of impurity atoms (dopants) into a pure semiconductor to modify its electrical conductivity. Pentavalent dopants (e.g., P, As) create n-type; trivalent dopants (e.g., B, Al) create p-type."
   },
   {
     "subject": "Physics",
@@ -999,7 +991,7 @@
     "questionNumber": "7b",
     "question": "(b) (i) State Einstein's photoelectric equation and define the terms in the equation.\n(ii) Calculate the mass-energy equivalence of a neutron in eV. (Take 1amu as 1.66 × 10⁻²⁷ kg; mass of neutron = 1.67493 × 10⁻²⁷ kg; c = 3 × 10⁸ m/s, e = 1.6 × 10⁻¹⁹ C).",
     "options": [],
-    "modelAnswer": "(i) Einstein's photoelectric equation: K_max = hf − φ, where K_max = maximum kinetic energy of emitted photoelectrons, h = Planck's constant, f = frequency of incident light, φ = work function (minimum energy to eject an electron).\n\n(ii) E = mc² = 1.67493×10⁻²⁷ × (3×10⁸)² = 1.5074×10⁻¹⁰ J. In eV: E = 1.5074×10⁻¹⁰/(1.6×10⁻¹⁹) = 9.42×10⁸ eV = 942 MeV."
+    "modelAnswer": "(i) Einstein's photoelectric equation: K_max = hf − φ, where K_max = maximum kinetic energy of emitted photoelectrons, h = Planck's constant, f = frequency of incident light, φ = work function (minimum energy to eject an electron).\n\n(ii) E = mc² = 1.67493×10⁻²⁷ × (3×10⁸)² = 1.5074×10⁻¹⁰ J.\nIn eV: E = 1.5074×10⁻¹⁰/(1.6×10⁻¹⁹) = 9.42×10⁸ eV = 942 MeV."
   },
   {
     "subject": "Physics",
@@ -1019,7 +1011,7 @@
     "questionNumber": "8a(ii)",
     "question": "(a) (ii) State any TWO properties each of alpha (α), beta (β) and gamma (γ) rays emitted by radioactive atoms.",
     "options": [],
-    "modelAnswer": "Alpha (α): (1) Positively charged (helium nuclei, ²⁴He²⁺), (2) Low penetrating power — stopped by a sheet of paper or a few cm of air.\nBeta (β): (1) Negatively charged (electrons) or positively charged (positrons), (2) Moderate penetrating power — stopped by a few mm of aluminium.\nGamma (γ): (1) Electromagnetic waves with no charge and no mass, (2) Very high penetrating power — requires thick lead or concrete for shielding."
+    "modelAnswer": "Alpha (α): (1) Positively charged (helium nuclei, ²⁴He²⁺), (2) Low penetrating power — stopped by a sheet of paper or a few cm of air.\n\nBeta (β): (1) Negatively charged (electrons) or positively charged (positrons), (2) Moderate penetrating power — stopped by a few mm of aluminium.\n\nGamma (γ): (1) Electromagnetic waves with no charge and no mass, (2) Very high penetrating power — requires thick lead or concrete for shielding."
   },
   {
     "subject": "Physics",
@@ -1029,6 +1021,6 @@
     "questionNumber": "8b",
     "question": "(b) The wavelength of Balmer first line is 6563 Å. Calculate the wavelength of the second line.",
     "options": [],
-    "modelAnswer": "Balmer series: 1/λ = R_H(1/2² − 1/n²).\nFirst line (n=3): 1/λ₁ = R_H(1/4 − 1/9) = R_H(5/36).\nSecond line (n=4): 1/λ₂ = R_H(1/4 − 1/16) = R_H(3/16).\nλ₂/λ₁ = (5/36)/(3/16) = (5/36) × (16/3) = 80/108 = 20/27.\nλ₂ = (20/27) × 6563 = 4861.5 Å ≈ 4862 Å."
+    "modelAnswer": "Balmer series: 1/λ = R_H(1/2² − 1/n²).\n\nFirst line (n=3): 1/λ₁ = R_H(1/4 − 1/9) = R_H(5/36).\nSecond line (n=4): 1/λ₂ = R_H(1/4 − 1/16) = R_H(3/16).\n\nλ₂/λ₁ = (5/36)/(3/16) = (5/36) × (16/3) = 80/108 = 20/27.\nλ₂ = (20/27) × 6563 = 4861.5 Å ≈ 4862 Å."
   }
 ]

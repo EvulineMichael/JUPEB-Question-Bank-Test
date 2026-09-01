@@ -8,7 +8,7 @@
     "question": "The displacement of a body is given as a function of time as y(t). Which of the following is true when the body is at momentarily rest?",
     "options": ["∫ y dt = 0", "dy/dt = 0", "∫ y dx = 0", "dy/dx = 0"],
     "answer": "B",
-    "explanation": "When a body is at momentary rest, its velocity is zero. Velocity is the derivative of displacement with respect to time: v = dy/dt = 0."
+    "explanation": "When a body is at momentary rest, its velocity is zero.\n\nVelocity is the derivative of displacement with respect to time: v = dy/dt = 0."
   },
   {
     "subject": "Mathematics",
@@ -19,7 +19,7 @@
     "question": "A particle is projected with initial velocity u into the air at an angle φ to the horizontal. If the time of flight is found to be (2u/g) sin φ, obtain its range on the horizontal plane.",
     "options": ["(u²/g) sin² φ", "(u²/g) cos 2φ", "(u²/g) sin φ", "(u²/g) sin 2φ"],
     "answer": "D",
-    "explanation": "Range R = (u² sin 2φ)/g = (u²/g) sin 2φ."
+    "explanation": "Range R = u cos φ × time of flight\n= u cos φ × (2u sin φ / g)\n= (u²/g) sin 2φ."
   },
   {
     "subject": "Mathematics",
@@ -30,7 +30,7 @@
     "question": "Two objects of masses 8kg and 6kg are attached to the ends of a light inextensible string that passes over a light frictionless pulley. If the masses hang freely and the system is released from rest when the 8kg mass is 10m above the floor, express in minutes the time the 8kg mass takes to reach the floor [Take g = 9.8ms⁻²].",
     "options": ["√2", "30√2", "1/(60√2)", "1/(30√2)"],
     "answer": "D",
-    "explanation": "a = g(m₁ - m₂)/(m₁ + m₂) = 9.8(8-6)/14 = 1.4 m/s². s = ½at² → 10 = ½(1.4)t² → t = √(20/1.4) = √14.286 = 3.78s. In minutes: 3.78/60 ≈ 0.063 ≈ 1/(15.87). Closest is 1/(30√2)."
+    "explanation": "a = g(m₁ - m₂)/(m₁ + m₂) = 9.8(8-6)/14 = 1.4 m/s².\n\ns = ½at².\n10 = ½(1.4)t².\nt = √(20/1.4) = √14.286 = 3.78 s.\n\nIn minutes: t = 3.78/60 ≈ 0.063 minutes.\n\nNote: This doesn't match any option exactly. The closest option is 1/(30√2) ≈ 0.0236."
   },
   {
     "subject": "Mathematics",
@@ -52,7 +52,7 @@
     "question": "If two vehicles with masses 750kg and 400kg travelling in the same direction, at velocities 3ms⁻¹ and 5ms⁻¹ respectively, collide and coalesce, evaluate their common velocity after collision.",
     "options": ["3.29 ms⁻¹", "3.70 ms⁻¹", "12.14 ms⁻¹", "26.09 ms⁻¹"],
     "answer": "B",
-    "explanation": "By conservation of momentum: m₁u₁ + m₂u₂ = (m₁ + m₂)v. 750(3) + 400(5) = 1150v → 2250 + 2000 = 1150v → v = 4250/1150 = 3.70 ms⁻¹."
+    "explanation": "By conservation of momentum:\nm₁u₁ + m₂u₂ = (m₁ + m₂)v.\n750(3) + 400(5) = 1150v.\n2250 + 2000 = 1150v.\nv = 4250/1150 = 3.70 m/s."
   },
   {
     "subject": "Mathematics",
@@ -63,7 +63,7 @@
     "question": "Which of the following defines the projection of vector a over vector b?",
     "options": ["(a·b)/|a|", "(a×b)/|a|", "(a·b)/|b|", "(a×b)/|b|"],
     "answer": "C",
-    "explanation": "The projection of vector a onto vector b is (a·b)/|b|. It gives the scalar component of a in the direction of b."
+    "explanation": "The projection of vector a onto vector b is (a·b)/|b| — the scalar component of a in the direction of b."
   },
   {
     "subject": "Mathematics",
@@ -96,7 +96,7 @@
     "question": "If 2ˣ × 4⁻ʸ = 1/8 and 3ˣ × 9²ʸ = 27. Find (x, y).",
     "options": ["(1, -1)", "(-1, 1)", "(1, 1)", "(-1, -1)"],
     "answer": "B",
-    "explanation": "First equation: 2ˣ × 2⁻²ʸ = 2⁻³ → x - 2y = -3. Second: 3ˣ × 3⁴ʸ = 3³ → x + 4y = 3. Solving: x = -3 + 2y → -3 + 2y + 4y = 3 → 6y = 6 → y = 1, x = -1. So (-1, 1)."
+    "explanation": "First equation: 2ˣ × 2⁻²ʸ = 2⁻³ → x - 2y = -3.\n\nSecond: 3ˣ × 3⁴ʸ = 3³ → x + 4y = 3.\n\nSolving:\nx = -3 + 2y.\n-3 + 2y + 4y = 3.\n6y = 6.\ny = 1.\nx = -1.\n\n(x, y) = (-1, 1)."
   },
   {
     "subject": "Mathematics",
@@ -107,7 +107,7 @@
     "question": "Let A = {prime number less than 10}, B = {2x - 1 : 1 ≤ x ≤ 5} and U = {1,2,3,4,5,...,10}. Find (A∪B)ᶜ.",
     "options": ["{3,5,7}", "{1,4,6,8,10}", "{1,2,4,6,8,9,10}", "{4,6,8,10}"],
     "answer": "D",
-    "explanation": "A = {2,3,5,7}. B = {1,3,5,7,9}. A∪B = {1,2,3,5,7,9}. (A∪B)ᶜ = U - (A∪B) = {4,6,8,10}."
+    "explanation": "A = {2,3,5,7}.\nB = {1,3,5,7,9}.\nA ∪ B = {1,2,3,5,7,9}.\n\n(A ∪ B)ᶜ = U - (A ∪ B) = {4,6,8,10}."
   },
   {
     "subject": "Mathematics",
@@ -118,7 +118,7 @@
     "question": "A binary operation Δ is defined on the set of real numbers R by p Δ q = p + q + pq. Solve for x in the equation x Δ 3 + 2 Δ 3 = 18.",
     "options": ["1", "3", "4", "2"],
     "answer": "A",
-    "explanation": "x Δ 3 = x + 3 + 3x = 4x + 3. 2 Δ 3 = 2 + 3 + 6 = 11. Equation: (4x + 3) + 11 = 18 → 4x + 14 = 18 → 4x = 4 → x = 1."
+    "explanation": "x Δ 3 = x + 3 + 3x = 4x + 3.\n2 Δ 3 = 2 + 3 + 6 = 11.\n\nEquation: (4x + 3) + 11 = 18.\n4x + 14 = 18.\n4x = 4.\nx = 1."
   },
   {
     "subject": "Mathematics",
@@ -129,7 +129,7 @@
     "question": "If the complex number z = 3 + 5i, determine the imaginary part of z³.",
     "options": ["30", "170", "20", "10"],
     "answer": "D",
-    "explanation": "z² = (3+5i)² = 9 + 30i - 25 = -16 + 30i. z³ = (-16+30i)(3+5i) = -48 - 80i + 90i + 150i² = -48 + 10i - 150 = -198 + 10i. Imaginary part = 10."
+    "explanation": "z² = (3+5i)² = 9 + 30i - 25 = -16 + 30i.\n\nz³ = (-16+30i)(3+5i) = -48 - 80i + 90i + 150i² = -198 + 10i.\n\nImaginary part = 10."
   },
   {
     "subject": "Mathematics",
@@ -140,7 +140,7 @@
     "question": "The square of an identity matrix Iₙ is",
     "options": ["2Iₙ", "I₂ₙ", "Iₙ", "0"],
     "answer": "C",
-    "explanation": "The identity matrix Iₙ has the property that Iₙ² = Iₙ. Multiplying the identity matrix by itself yields the identity matrix."
+    "explanation": "The identity matrix Iₙ has the property that Iₙ² = Iₙ."
   },
   {
     "subject": "Mathematics",
@@ -151,7 +151,7 @@
     "question": "Write 0.66... recurring as a fraction",
     "options": ["3/5", "6/9", "1/9", "1/10"],
     "answer": "B",
-    "explanation": "0.666... = 6/9 = 2/3. Option B is 6/9, which reduces to 2/3."
+    "explanation": "0.666... = 6/9 = 2/3."
   },
   {
     "subject": "Mathematics",
@@ -162,7 +162,7 @@
     "question": "The eccentricity of a parabola is",
     "options": ["e > 1", "e < 1", "e = 0", "e = 1"],
     "answer": "D",
-    "explanation": "The eccentricity of a parabola is e = 1. For an ellipse, e < 1; for a hyperbola, e > 1; and for a circle, e = 0."
+    "explanation": "The eccentricity of a parabola is e = 1.\n\nEllipse: e < 1. Hyperbola: e > 1. Circle: e = 0."
   },
   {
     "subject": "Mathematics",
@@ -173,7 +173,7 @@
     "question": "Solve the differential equation dy/dx = y tan x.",
     "options": ["y = A cos x", "y = A sec² x", "y = A sec x", "y = A x²"],
     "answer": "C",
-    "explanation": "dy/y = tan x dx. ∫ dy/y = ∫ tan x dx → ln|y| = -ln|cos x| + C → y = A sec x."
+    "explanation": "dy/y = tan x dx.\n\n∫ dy/y = ∫ tan x dx.\nln|y| = -ln|cos x| + C.\n\ny = A sec x."
   },
   {
     "subject": "Mathematics",
@@ -184,7 +184,7 @@
     "question": "Evaluate ∫₂³ ((1+x³)/x²) dx",
     "options": ["8/3", "3", "3/2", "1/2"],
     "answer": "A",
-    "explanation": "∫ (x⁻² + x) dx = -x⁻¹ + x²/2. Evaluate from 2 to 3: [-1/3 + 9/2] - [-1/2 + 2] = (25/6) - (3/2) = (25-9)/6 = 16/6 = 8/3."
+    "explanation": "∫ (x⁻² + x) dx = -x⁻¹ + x²/2.\n\nEvaluate from 2 to 3:\n[-1/3 + 9/2] - [-1/2 + 2]\n= (25/6) - (3/2)\n= (25-9)/6\n= 16/6\n= 8/3."
   },
   {
     "subject": "Mathematics",
@@ -195,7 +195,7 @@
     "question": "Integrate sinⁿ x cos x with respect to x",
     "options": ["sinⁿ⁺¹ x/(n+1) + C", "-cosⁿ⁺¹ x/(n+1) + C", "sinⁿ⁺¹ x/(n+1) + C", "-cosⁿ⁺¹ x/(n+1) + C"],
     "answer": "A",
-    "explanation": "Let u = sin x, then du = cos x dx. ∫ sinⁿ x cos x dx = ∫ uⁿ du = uⁿ⁺¹/(n+1) + C = sinⁿ⁺¹ x/(n+1) + C."
+    "explanation": "Let u = sin x, du = cos x dx.\n\n∫ sinⁿ x cos x dx = ∫ uⁿ du = uⁿ⁺¹/(n+1) + C = sinⁿ⁺¹ x/(n+1) + C.\n\nNote: Options A and C are identical."
   },
   {
     "subject": "Mathematics",
@@ -206,7 +206,7 @@
     "question": "If the minimum value of the function y = x² + kx - 3 is -4. Find values of k.",
     "options": ["k = -1, k = 1", "k = 2, k = 1", "k = -2, k = 1", "k = 2, k = -2"],
     "answer": "D",
-    "explanation": "The minimum value occurs at x = -k/2. y_min = (-k/2)² + k(-k/2) - 3 = k²/4 - k²/2 - 3 = -k²/4 - 3. Set = -4 → -k²/4 = -1 → k² = 4 → k = ±2."
+    "explanation": "Minimum occurs at x = -k/2.\n\ny_min = (-k/2)² + k(-k/2) - 3\n= k²/4 - k²/2 - 3\n= -k²/4 - 3.\n\n-k²/4 - 3 = -4.\n-k²/4 = -1.\nk² = 4.\nk = ±2."
   },
   {
     "subject": "Mathematics",
@@ -217,7 +217,7 @@
     "question": "The radius of a hemisphere is increasing at the rate of 0.01 cm/s. Find the rate at which the volume is increasing when the radius is 10 cm.",
     "options": ["4π cm³/s", "0.4π cm³/s", "2π cm³/s", "0.2π cm³/s"],
     "answer": "C",
-    "explanation": "V = (2/3)πr³. dV/dt = 2πr² × dr/dt. At r=10, dr/dt = 0.01: dV/dt = 2π(100)(0.01) = 2π cm³/s."
+    "explanation": "V = (2/3)πr³.\n\ndV/dt = 2πr² × dr/dt.\n\nAt r = 10, dr/dt = 0.01:\ndV/dt = 2π(100)(0.01) = 2π cm³/s."
   },
   {
     "subject": "Mathematics",
@@ -228,7 +228,7 @@
     "question": "A rectangle has area 24 m². Express the perimeter of the rectangle as a function of the length of one of its sides.",
     "options": ["P = 2(L + B)", "P = (2B² + 48)/B", "P = (2B + 24)/B", "P = (2B² + 24)/B"],
     "answer": "B",
-    "explanation": "Area = L × B = 24 → L = 24/B. Perimeter P = 2(L + B) = 2(24/B + B) = 48/B + 2B = (2B² + 48)/B."
+    "explanation": "Area = L × B = 24 → L = 24/B.\n\nPerimeter P = 2(L + B)\n= 2(24/B + B)\n= 48/B + 2B\n= (2B² + 48)/B."
   },
   {
     "subject": "Mathematics",
@@ -239,7 +239,7 @@
     "question": "The displacement function of a particle at a time t ≥ 0 is given as S(t) = t³ - 3.5t² - 7t. When does the particle reach a velocity of 3 m/s?",
     "options": ["1 second", "4/3 seconds", "10/3 seconds", "5 seconds"],
     "answer": "C",
-    "explanation": "Velocity v(t) = S'(t) = 3t² - 7t - 7. Set v(t) = 3: 3t² - 7t - 7 = 3 → 3t² - 7t - 10 = 0 → (3t - 10)(t + 1) = 0 → t = 10/3 seconds."
+    "explanation": "Velocity v(t) = S'(t) = 3t² - 7t - 7.\n\nSet v(t) = 3:\n3t² - 7t - 7 = 3\n3t² - 7t - 10 = 0\n(3t - 10)(t + 1) = 0\n\nt = 10/3 seconds."
   },
   {
     "subject": "Mathematics",
@@ -250,7 +250,7 @@
     "question": "What is the critical number of the function f(x) = 4 - (2/3)x + (1/2)x²?",
     "options": ["x = 2/3", "x = 1/4", "x = 0", "x = 2"],
     "answer": "A",
-    "explanation": "f'(x) = -2/3 + x. Set f'(x) = 0 → x = 2/3."
+    "explanation": "f'(x) = -2/3 + x.\n\nSet f'(x) = 0:\nx = 2/3."
   },
   {
     "subject": "Mathematics",
@@ -261,7 +261,7 @@
     "question": "Find the general solution of the D.E. y'' - 3y' + 2y = 0",
     "options": ["y(x) = c₁e⁻²ˣ + c₂e⁻ˣ", "y(x) = c₁e²ˣ + c₂e⁻ˣ", "y(x) = c₁e²ˣ + c₂eˣ", "y(x) = c₁e⁻²ˣ + c₂eˣ"],
     "answer": "C",
-    "explanation": "Characteristic equation: r² - 3r + 2 = 0 → (r - 2)(r - 1) = 0 → r = 2, 1. General solution: y(x) = c₁e²ˣ + c₂eˣ."
+    "explanation": "Characteristic equation: r² - 3r + 2 = 0.\n(r - 2)(r - 1) = 0.\nr = 2, 1.\n\nGeneral solution: y(x) = c₁e²ˣ + c₂eˣ."
   },
   {
     "subject": "Mathematics",
@@ -272,7 +272,7 @@
     "question": "Find the variance of a Bernoulli distribution with 2/3 probability of success.",
     "options": ["2/3", "4/3", "4/3", "2/9"],
     "answer": "D",
-    "explanation": "For Bernoulli distribution, Var(X) = p(1-p) = (2/3)(1/3) = 2/9."
+    "explanation": "For Bernoulli distribution, Var(X) = p(1-p) = (2/3)(1/3) = 2/9.\n\nNote: Options B and C are identical."
   },
   {
     "subject": "Mathematics",
@@ -283,7 +283,7 @@
     "question": "The probability that Tolu and Ayo solve a particular mathematics problem is 1/3 and 1/5 respectively. If they both attempt the problem, what is the probability that the problem will be solved by at least one of them?",
     "options": ["2/5", "7/15", "3/5", "1/15"],
     "answer": "B",
-    "explanation": "P(at least one) = 1 - P(neither) = 1 - (2/3)(4/5) = 1 - 8/15 = 7/15."
+    "explanation": "P(at least one) = 1 - P(neither)\n= 1 - (2/3)(4/5)\n= 1 - 8/15\n= 7/15."
   },
   {
     "subject": "Mathematics",
@@ -294,7 +294,7 @@
     "question": "In how many ways can letters of the word BURNING be permuted if it begins with B and ends with G.",
     "options": ["360", "720", "120", "60"],
     "answer": "D",
-    "explanation": "BURNING has 7 letters with N repeated twice. Fixing B at start and G at end leaves 5 positions for U,R,N,I,N. Arrangements = 5!/2! = 120/2 = 60."
+    "explanation": "BURNING has 7 letters with N repeated twice.\n\nFix B at start and G at end.\n\nRemaining 5 positions for U, R, N, I, N.\n\nArrangements = 5!/2! = 120/2 = 60."
   },
   {
     "subject": "Mathematics",
@@ -316,7 +316,7 @@
     "question": "A measure obtained from a population is called",
     "options": ["Statistic.", "Inferential Statistics.", "Parameter.", "Descriptive."],
     "answer": "C",
-    "explanation": "A measure obtained from a population is called a parameter. A statistic is obtained from a sample."
+    "explanation": "A measure obtained from a population is called a parameter.\n\nA statistic is obtained from a sample."
   },
   {
     "subject": "Mathematics",
@@ -349,7 +349,7 @@
     "question": "Which of the following formulae is Pearson's product moment correlation coefficient with M = [n∑x² - (∑x)²] and T = [n∑y² - (∑y)²]?",
     "options": ["(n∑xy - ∑x∑y)/√(M * T)", "(n∑xy - ∑x∑y)/√(M * ∑x² - (∑y)²)", "(n∑xy - ∑x∑y)/√(M * [∑x² - (∑y)²])", "(n∑xy - ∑x∑y)/√(M * [∑(xy)² - (∑y)²])"],
     "answer": "A",
-    "explanation": "Pearson's r = (n∑xy - ∑x∑y)/√([n∑x² - (∑x)²][n∑y² - (∑y)²]) = (n∑xy - ∑x∑y)/√(M * T)."
+    "explanation": "Pearson's r = (n∑xy - ∑x∑y)/√[(n∑x² - (∑x)²)(n∑y² - (∑y)²)] = (n∑xy - ∑x∑y)/√(M × T)."
   },
   {
     "subject": "Mathematics",
@@ -360,7 +360,7 @@
     "question": "The adjacent sides of a parallelogram are represented with 3î - 2ĵ + k̂ and î + ĵ - 3k̂. Obtain the area of the parallelogram.",
     "options": ["12.25 unit sq.", "6.12 unit sq.", "24.49 unit sq.", "32.45 unit sq."],
     "answer": "A",
-    "explanation": "Area = |a × b| = |(3î - 2ĵ + k̂) × (î + ĵ - 3k̂)| = |5i + 10j + 5k| = √(25+100+25) = √150 = 12.25 unit sq."
+    "explanation": "a × b = (3î - 2ĵ + k̂) × (î + ĵ - 3k̂)\n= i(6-1) - j(-9-1) + k(3+2)\n= 5i + 10j + 5k.\n\n|a × b| = √(25+100+25) = √150 = 12.25 unit sq."
   },
   {
     "subject": "Mathematics",
@@ -382,7 +382,7 @@
     "question": "The radius of gyration of a body is 18m when it is rotating about an axis which passes through the centre of mass of the body. If the radius of gyration of the same body is 30m about an axis parallel to the first axis, calculate the perpendicular distance between the two parallel axes?",
     "options": ["36m", "24m", "16m", "12m"],
     "answer": "B",
-    "explanation": "Using parallel axis theorem: k² = k_cm² + d². 30² = 18² + d² → 900 = 324 + d² → d² = 576 → d = 24m."
+    "explanation": "Using the parallel axis theorem: k² = k_cm² + d².\n\n30² = 18² + d².\n900 = 324 + d².\nd² = 576.\nd = 24 m."
   },
   {
     "subject": "Mathematics",
@@ -393,7 +393,7 @@
     "question": "When a stone and a feather is dropped from the same height under strict free fall condition, which of them lands first?",
     "options": ["Stone", "Feather", "Cannot be decided", "Both at the same time"],
     "answer": "D",
-    "explanation": "Under free fall (neglecting air resistance), all objects fall with the same acceleration g. Both land at the same time."
+    "explanation": "Under free fall (neglecting air resistance), all objects fall with the same acceleration g.\n\nBoth land at the same time."
   },
   {
     "subject": "Mathematics",
@@ -404,7 +404,7 @@
     "question": "The moment of inertia of a thin uniform rod of mass m, and length l, about an axis perpendicular to the rod through its centre is M. Derive an expression, in terms of M, for the moment of inertia of the rod about an axis perpendicular to the rod through its endpoint.",
     "options": ["4M", "M/4", "M/2", "2M"],
     "answer": "A",
-    "explanation": "I_cm = (1/12)ml² = M. I_end = I_cm + m(l/2)² = (1/12)ml² + (1/4)ml² = (1/3)ml² = 4M."
+    "explanation": "I_cm = (1/12)ml² = M.\n\nI_end = I_cm + m(l/2)²\n= (1/12)ml² + (1/4)ml²\n= (1/3)ml²\n= 4M."
   },
   {
     "subject": "Mathematics",
@@ -415,7 +415,7 @@
     "question": "The geometric series 1 + 2/3 + 4/9 + ... + (2/3)^k converges to the sum",
     "options": ["1", "3/2", "4/3", "3"],
     "answer": "D",
-    "explanation": "Geometric series with a = 1 and r = 2/3. Sum to infinity = a/(1-r) = 1/(1 - 2/3) = 1/(1/3) = 3."
+    "explanation": "Geometric series with a = 1 and r = 2/3.\n\nSum to infinity = a/(1-r) = 1/(1 - 2/3) = 1/(1/3) = 3."
   },
   {
     "subject": "Mathematics",
@@ -426,7 +426,7 @@
     "question": "For what value of k is the line 3x - ky = 5 perpendicular to the line 6x + 9y = 7?",
     "options": ["-2", "9/2", "-2/3", "2"],
     "answer": "D",
-    "explanation": "Slope of first line: m₁ = 3/k. Slope of second: m₂ = -2/3. For perpendicular: m₁m₂ = -1 → (3/k)(-2/3) = -1 → -2/k = -1 → k = 2."
+    "explanation": "First line: slope = 3/k.\nSecond line: slope = -2/3.\n\nFor perpendicular lines: (3/k)(-2/3) = -1.\n-2/k = -1.\nk = 2."
   },
   {
     "subject": "Mathematics",
@@ -437,7 +437,7 @@
     "question": "Find the interquartile range from the set of data given below: 160, 130, 180, 190, 140, 150, 170, 80, 100, 200",
     "options": ["155", "25", "50", "15"],
     "answer": "C",
-    "explanation": "Sorted: 80,100,130,140,150 | 160,170,180,190,200. Q1 = 130, Q3 = 180. IQR = 50."
+    "explanation": "Sorted: 80, 100, 130, 140, 150 | 160, 170, 180, 190, 200.\n\nQ1 = 130.\nQ3 = 180.\n\nIQR = 180 - 130 = 50."
   },
   {
     "subject": "Mathematics",
@@ -448,7 +448,7 @@
     "question": "Solve the matrix equation [[0,0,3],[1,3,0],[0,1,3]] [x,y,z]ᵀ = [3,7,5]ᵀ.",
     "options": ["x = 0, y = 1, z = 1", "x = 1, y = 2, z = 1", "x = -1, y = 2, z = -1", "x = 0, y = -1, z = -1"],
     "answer": "B",
-    "explanation": "3z = 3 → z = 1. y + 3 = 5 → y = 2. x + 3(2) = 7 → x = 1. Solution: x=1, y=2, z=1."
+    "explanation": "From first row: 3z = 3 → z = 1.\n\nFrom third row: y + 3z = 5 → y + 3 = 5 → y = 2.\n\nFrom second row: x + 3y = 7 → x + 6 = 7 → x = 1.\n\nSolution: x = 1, y = 2, z = 1."
   },
   {
     "subject": "Mathematics",
@@ -459,7 +459,7 @@
     "question": "Express (5 - i)/(4 - 2i) in the form a + bi",
     "options": ["9/10 + 3i/10", "11/10 - 3i/10", "9/10 - 3i/10", "11/10 + 3i/10"],
     "answer": "D",
-    "explanation": "Multiply by conjugate: (5 - i)(4 + 2i)/(16 + 4) = (20 + 10i - 4i + 2)/20 = (22 + 6i)/20 = 11/10 + 3i/10."
+    "explanation": "Multiply by conjugate (4 + 2i):\n(5 - i)(4 + 2i)/(16 + 4)\n= (20 + 10i - 4i + 2)/20\n= (22 + 6i)/20\n= 11/10 + 3i/10."
   },
   {
     "subject": "Mathematics",
@@ -470,7 +470,7 @@
     "question": "The Power set of the set A = {∅, {∅}} is",
     "options": ["2", "3", "4", "5"],
     "answer": "C",
-    "explanation": "Set A has 2 elements: ∅ and {∅}. The power set has 2² = 4 elements."
+    "explanation": "Set A has 2 elements: ∅ and {∅}.\n\nPower set has 2² = 4 elements."
   },
   {
     "subject": "Mathematics",
@@ -481,7 +481,7 @@
     "question": "The equation of a circle is formulated as x² + y² - 4x + 2y - 4 = 0, obtain the radius and the coordinates of the centre of the circle.",
     "options": ["3, (-1, 2)", "2√2, (2, -1)", "2√2, (2, 1)", "3, (2, -1)"],
     "answer": "D",
-    "explanation": "(x² - 4x + 4) + (y² + 2y + 1) = 9 → (x - 2)² + (y + 1)² = 9. Centre = (2, -1), Radius = 3."
+    "explanation": "Complete squares:\n(x² - 4x + 4) + (y² + 2y + 1) = 4 + 4 + 1.\n(x - 2)² + (y + 1)² = 9.\n\nCentre = (2, -1), Radius = 3."
   },
   {
     "subject": "Mathematics",
@@ -503,7 +503,7 @@
     "question": "Determine the value of n for which ⁿ⁺¹C₄ = 6(ⁿC₃)",
     "options": ["5", "23", "24", "22"],
     "answer": "B",
-    "explanation": "(n+1)!/(4!(n-3)!) = 6 × n!/(3!(n-3)!). (n+1)/24 = 1 → n+1 = 24 → n = 23."
+    "explanation": "C(n+1,4) = (n+1)n(n-1)(n-2)/24.\nC(n,3) = n(n-1)(n-2)/6.\n\nEquation: (n+1)n(n-1)(n-2)/24 = 6 × n(n-1)(n-2)/6.\n\nCancel n(n-1)(n-2):\n(n+1)/24 = 1.\nn + 1 = 24.\nn = 23."
   },
   {
     "subject": "Mathematics",
@@ -514,7 +514,7 @@
     "question": "Evaluate lim_{t→0} (1 - cos t)/sin t",
     "options": ["0", "1", "Undefined", "-1"],
     "answer": "A",
-    "explanation": "Using L'Hôpital's rule: lim (sin t)/(cos t) = 0/1 = 0."
+    "explanation": "Using L'Hôpital's rule:\nlim (sin t)/(cos t) = 0/1 = 0."
   },
   {
     "subject": "Mathematics",
@@ -525,7 +525,7 @@
     "question": "Find the third term in the Maclaurin series expansion of f(x) = eˣ - 2",
     "options": ["x³/3!", "x²/2!", "-x²/2!", "(x-1)²/2!"],
     "answer": "B",
-    "explanation": "f(0) = -1, f'(0) = 1, f''(0) = 1. Third term (x² term) = f''(0)x²/2! = x²/2!."
+    "explanation": "eˣ = 1 + x + x²/2! + x³/3! + ...\n\neˣ - 2 = -1 + x + x²/2! + ...\n\nThird term = x²/2!."
   },
   {
     "subject": "Mathematics",
@@ -536,7 +536,7 @@
     "question": "What is the derivative of y = cos x/(x + sin x) with respect to x?",
     "options": ["-(x cos x + sin x + 1)/(x + sin x)²", "-(x sin x + cos x + 1)/(x + sin x)²", "(x sin x - cos x - 1)/(x + sin x)²", "(x sin x - cos x + 1)/(x + sin x)²"],
     "answer": "B",
-    "explanation": "y' = [(-sin x)(x+sin x) - cos x(1+cos x)]/(x+sin x)² = [-(x sin x + cos x + 1)]/(x+sin x)²."
+    "explanation": "Using quotient rule:\ny' = [(-sin x)(x+sin x) - cos x(1+cos x)]/(x+sin x)²\n= [-x sin x - sin²x - cos x - cos²x]/(x+sin x)²\n= [-x sin x - (sin²x + cos²x) - cos x]/(x+sin x)²\n= [-(x sin x + 1 + cos x)]/(x+sin x)²\n= -(x sin x + cos x + 1)/(x + sin x)²."
   },
   {
     "subject": "Mathematics",
@@ -557,7 +557,7 @@
     "questionNumber": "3",
     "question": "(a) Find the equation of normal to the curve y = x³ + xy + y² + 10 at the point (-1, 3).\n(b) Solve the Bernoulli equation dy/dx - y/x = y² e^(x²).\n(c) (i) Obtain reduction formula of ∫ cotⁿ θ dθ.\n(ii) Hence, find ∫ cot⁴ θ dθ.",
     "options": [],
-    "modelAnswer": "(a) Differentiating implicitly: 3x² + y + x(dy/dx) + 2y(dy/dx) = 0. At (-1,3): 3(1) + 3 + (-1)(dy/dx) + 6(dy/dx) = 0 → 6 + 5(dy/dx) = 0 → dy/dx = -6/5. Gradient of normal = 5/6. Equation: y - 3 = (5/6)(x + 1) → 6y - 18 = 5x + 5 → 5x - 6y + 23 = 0.\n\n(b) Bernoulli equation: dy/dx - y/x = y²e^(x²). Let v = y⁻¹ → dy/dx = -y²(dv/dx). Substituting: -y²(dv/dx) - y/x = y²e^(x²) → dv/dx + v/x = -e^(x²). Integrating factor: μ = e^(∫dx/x) = x. xv = -∫xe^(x²)dx = -½e^(x²) + C. v = -½e^(x²)/x + C/x. y = 1/v = x/(-½e^(x²) + C).\n\n(c)(i) Iₙ = ∫cotⁿθ dθ = ∫cotⁿ⁻²θ(csc²θ - 1)dθ = -cotⁿ⁻¹θ/(n-1) - Iₙ₋₂.\n(ii) I₄ = -cot³θ/3 - I₂. I₂ = -cotθ - I₀ = -cotθ - θ. So I₄ = -cot³θ/3 + cotθ + θ + C."
+    "modelAnswer": "(a) Differentiating implicitly:\n3x² + y + x(dy/dx) + 2y(dy/dx) = 0.\n\nAt (-1, 3):\n3(1) + 3 + (-1)(dy/dx) + 6(dy/dx) = 0.\n6 + 5(dy/dx) = 0.\ndy/dx = -6/5.\n\nGradient of normal = 5/6.\n\nEquation: y - 3 = (5/6)(x + 1).\n6y - 18 = 5x + 5.\n5x - 6y + 23 = 0.\n\n(b) Bernoulli equation: dy/dx - y/x = y²e^(x²).\n\nLet v = y⁻¹ → dy/dx = -y²(dv/dx).\n\nSubstituting:\n-y²(dv/dx) - y/x = y²e^(x²).\ndv/dx + v/x = -e^(x²).\n\nIntegrating factor: μ = e^(∫dx/x) = x.\n\nxv = -∫xe^(x²)dx = -½e^(x²) + C.\n\nv = -½e^(x²)/x + C/x.\n\ny = 1/v = x/(-½e^(x²) + C).\n\n(c)(i) Iₙ = ∫cotⁿθ dθ = ∫cotⁿ⁻²θ(csc²θ - 1)dθ\n= -cotⁿ⁻¹θ/(n-1) - Iₙ₋₂.\n\n(ii) I₄ = -cot³θ/3 - I₂.\nI₂ = -cotθ - I₀ = -cotθ - θ.\n\nI₄ = -cot³θ/3 + cotθ + θ + C."
   },
   {
     "subject": "Mathematics",
@@ -567,7 +567,7 @@
     "questionNumber": "4",
     "question": "(a) (i) Compute lim_{x→∞} (5x⁴ + 6x³ - x² + 4x - 8)/(15x⁴ + 4x³ - 9x² - 10).\n(ii) Evaluate without using L'Hospital's rule lim_{x→1/3} (x³ - 1/27)/(x - 1/3).\n(b) Use first principle to differentiate y = 5x² - cos 7x.\n(c) Find the derivative of y = sin⁻¹[cos (2x³ - 3x - 5)].",
     "options": [],
-    "modelAnswer": "(a)(i) Divide numerator and denominator by x⁴: lim (5 + 6/x - 1/x² + 4/x³ - 8/x⁴)/(15 + 4/x - 9/x² - 10/x⁴) = 5/15 = 1/3.\n(ii) Factor: x³ - 1/27 = (x - 1/3)(x² + x/3 + 1/9). lim (x - 1/3)(x² + x/3 + 1/9)/(x - 1/3) = lim(x² + x/3 + 1/9) = 1/9 + 1/9 + 1/9 = 1/3.\n\n(b) dy/dx = lim_{h→0} [5(x+h)² - cos7(x+h) - (5x² - cos7x)]/h = lim [5x²+10xh+5h²-cos(7x+7h)-5x²+cos7x]/h = 10x + lim [-2sin((14x+7h)/2)sin(-7h/2)]/h = 10x + 7sin7x.\n\n(c) Let u = cos(2x³-3x-5). y = sin⁻¹u → dy/du = 1/√(1-u²). du/dx = -sin(2x³-3x-5)(6x²-3). dy/dx = -(6x²-3)sin(2x³-3x-5)/√(1-cos²(2x³-3x-5)) = -(6x²-3)sin(2x³-3x-5)/|sin(2x³-3x-5)| = -(6x²-3) for sin > 0."
+    "modelAnswer": "(a)(i) Divide numerator and denominator by x⁴:\nlim (5 + 6/x - 1/x² + 4/x³ - 8/x⁴)/(15 + 4/x - 9/x² - 10/x⁴) = 5/15 = 1/3.\n\n(ii) Factor: x³ - 1/27 = (x - 1/3)(x² + x/3 + 1/9).\n\nlim (x - 1/3)(x² + x/3 + 1/9)/(x - 1/3)\n= lim(x² + x/3 + 1/9)\n= 1/9 + 1/9 + 1/9\n= 1/3.\n\n(b) Using first principle:\ndy/dx = lim_{h→0} [5(x+h)² - cos7(x+h) - (5x² - cos7x)]/h\n= lim [10xh + 5h² - cos(7x+7h) + cos7x]/h\n= 10x + lim [-2sin((14x+7h)/2)sin(-7h/2)]/h\n= 10x + 7sin7x.\n\n(c) Let u = cos(2x³ - 3x - 5).\n\ny = sin⁻¹u.\ndy/du = 1/√(1-u²).\ndu/dx = -sin(2x³-3x-5)(6x² - 3).\n\ndy/dx = -(6x² - 3)sin(2x³-3x-5)/√(1-cos²(2x³-3x-5))\n= -(6x² - 3)sin(2x³-3x-5)/|sin(2x³-3x-5)|\n= -(6x² - 3) for sin > 0."
   },
   {
     "subject": "Mathematics",
@@ -577,7 +577,7 @@
     "questionNumber": "5",
     "question": "(a) The following represent the scores of students in a JUPEB entrance examination:\nScores: 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99\nFrequency: 1, 1, 3, 14, 20, 22, 12, 2\n(i) Construct a cumulative frequency table and draw the Ogive.\n(ii) Use your graph to determine the 50th percentile score.\n(iii) Suppose students scoring <40% will not be admitted and those scoring >85% get waiver. Estimate the number of students admitted without waiver.\n(b) 0.2% of bulbs produced are faulty. Find the probability that 5 out of 1000 bulbs would be faulty.\n(c) The random variable X has probability distribution: P(X=1)=0.1, P(X=2)=0.3, P(X=3)=0.2, P(X=4)=0.4.\n(i) Find the mean. (ii) Find Var(X).",
     "options": [],
-    "modelAnswer": "(a)(i) Cumulative frequencies: 1, 2, 5, 19, 39, 61, 73, 75. Ogive plotted with upper class boundaries.\n(ii) 50th percentile (median) from graph ≈ 67 marks.\n(iii) Students scoring ≥40 and ≤85. From the table: 40-49: 3, 50-59: 14, 60-69: 20, 70-79: 22, 80-85: approx 8 from the 12 in 80-89. Total ≈ 3+14+20+22+8 = 67 students.\n\n(b) Poisson approximation: λ = np = 1000×0.002 = 2. P(X=5) = e⁻²×2⁵/5! = 0.1353×32/120 = 0.0361.\n\n(c)(i) E(X) = 1(0.1)+2(0.3)+3(0.2)+4(0.4) = 0.1+0.6+0.6+1.6 = 2.9.\n(ii) E(X²) = 1(0.1)+4(0.3)+9(0.2)+16(0.4) = 0.1+1.2+1.8+6.4 = 9.5. Var(X) = 9.5 - 2.9² = 9.5 - 8.41 = 1.09."
+    "modelAnswer": "(a)(i) Cumulative frequencies: 1, 2, 5, 19, 39, 61, 73, 75.\nOgive plotted with upper class boundaries.\n\n(ii) 50th percentile (median) from graph ≈ 67 marks.\n\n(iii) Students scoring ≥40 and ≤85:\n40-49: 3, 50-59: 14, 60-69: 20, 70-79: 22, 80-85: approximately 8 from the 12 in 80-89.\nTotal ≈ 3 + 14 + 20 + 22 + 8 = 67 students.\n\n(b) Poisson approximation: λ = np = 1000 × 0.002 = 2.\n\nP(X = 5) = e⁻² × 2⁵/5! = 0.1353 × 32/120 = 0.0361.\n\n(c)(i) E(X) = 1(0.1) + 2(0.3) + 3(0.2) + 4(0.4)\n= 0.1 + 0.6 + 0.6 + 1.6\n= 2.9.\n\n(ii) E(X²) = 1(0.1) + 4(0.3) + 9(0.2) + 16(0.4)\n= 0.1 + 1.2 + 1.8 + 6.4\n= 9.5.\n\nVar(X) = E(X²) - [E(X)]² = 9.5 - 8.41 = 1.09."
   },
   {
     "subject": "Mathematics",
@@ -587,7 +587,7 @@
     "questionNumber": "6",
     "question": "(a) Given data on price (x) and number of laptops sold (y):\nx: 10, 15, 20, 25, 30, 35, 40, 45\ny: 68, 61, 56, 52, 48, 37, 31, 25\n(i) Calculate the value of β if y = α + βx.\n(ii) Find the regression line of y on x.\n(iii) Predict the number of laptops sold when price is 28 naira.\n(b) f(x) = x/3 for 0 ≤ x ≤ 1 and f(x) = 2/3 - x/3 for 1 ≤ x ≤ 2. Show that f(x) is a probability density function.\n(c) A die is rolled 420 times with outcomes: 1:63, 2:66, 3:76, 4:73, 5:72, 6:79. Test whether the die is fair at α = 0.05 level of significance.",
     "options": [],
-    "modelAnswer": "(a) n=8. ∑x=220, ∑y=378, ∑xy=9075, ∑x²=7100. β = (8×9075 - 220×378)/(8×7100 - 220²) = (72600-83160)/(56800-48400) = -10560/8400 = -1.257. α = (378 - (-1.257)(220))/8 = (378+276.54)/8 = 81.82. y = 81.82 - 1.257x. For x=28: y = 81.82 - 35.20 = 46.62 ≈ 47 laptops.\n\n(b) ∫₀¹ x/3 dx = [x²/6]₀¹ = 1/6. ∫₁² (2/3 - x/3)dx = [2x/3 - x²/6]₁² = (4/3-4/6)-(2/3-1/6) = (4/3-2/3)-(2/3-1/6) = 2/3 - 1/2 = 1/6. Total = 1/6+1/6 = 1/3. Not a pdf (sum should be 1). Need to normalize.\n\n(c) H₀: die is fair. E = 420/6 = 70. χ² = Σ(O-E)²/E = (63-70)²/70 + (66-70)²/70 + (76-70)²/70 + (73-70)²/70 + (72-70)²/70 + (79-70)²/70 = 49/70 + 16/70 + 36/70 + 9/70 + 4/70 + 81/70 = 195/70 = 2.786. df=5, χ²₀.₀₅ = 11.07. 2.786 < 11.07 → fail to reject H₀. The die is fair."
+    "modelAnswer": "(a) n = 8.\n∑x = 220, ∑y = 378, ∑xy = 9075, ∑x² = 7100.\n\nβ = (8×9075 - 220×378)/(8×7100 - 220²)\n= (72600 - 83160)/(56800 - 48400)\n= -10560/8400\n= -1.257.\n\nα = (378 - (-1.257)(220))/8\n= (378 + 276.54)/8\n= 81.82.\n\nRegression line: y = 81.82 - 1.257x.\n\nFor x = 28:\ny = 81.82 - 1.257(28) = 81.82 - 35.20 = 46.62 ≈ 47 laptops.\n\n(b) ∫₀¹ x/3 dx = [x²/6]₀¹ = 1/6.\n\n∫₁² (2/3 - x/3)dx = [2x/3 - x²/6]₁²\n= (4/3 - 2/3) - (2/3 - 1/6)\n= 2/3 - 1/2\n= 1/6.\n\nTotal = 1/6 + 1/6 = 1/3.\n\nNote: The total is 1/3, not 1. This function is NOT a valid probability density function as given. It would need to be multiplied by 3 (normalized) to make the total area equal to 1.\n\n(c) H₀: die is fair.\n\nExpected frequency per face = 420/6 = 70.\n\nχ² = Σ(O-E)²/E\n= (63-70)²/70 + (66-70)²/70 + (76-70)²/70 + (73-70)²/70 + (72-70)²/70 + (79-70)²/70\n= 49/70 + 16/70 + 36/70 + 9/70 + 4/70 + 81/70\n= 195/70\n= 2.786.\n\ndf = 5, χ²₀.₀₅ = 11.07.\n\n2.786 < 11.07 → Fail to reject H₀.\n\nThe die is fair."
   },
   {
     "subject": "Mathematics",
@@ -597,7 +597,7 @@
     "questionNumber": "7",
     "question": "(a) The velocity of a particle which moves along a curved path is described by v(t) = (3t² - 4)î + (2t + 4)ĵ + (16t - 9t²)k̂ in m/s. At t = 2s:\n(i) Find the distance, |r|, travelled by the particle.\n(ii) Find the magnitude of the acceleration, |a|.\n(b) A broken car of mass 250kg is towed by a towing vehicle of mass 500kg at a steady velocity of 10 m/s on a road which delivers a frictional force of 300 N. Find the tractive force with which the car is towed.\n(c) A particle P moves along a straight line. The speed of P at time t seconds is v = mt² + nt + c. When t = 2, v has its minimum value. When t = 0, v = 8 and when t = 2, v = 4. Find the acceleration of P when t = 4.",
     "options": [],
-    "modelAnswer": "(a) r(t) = ∫v dt = (t³-4t)î + (t²+4t)ĵ + (8t²-3t³)k̂. r(2) = (8-8)î + (4+8)ĵ + (32-24)k̂ = 12ĵ + 8k̂. |r| = √(0+144+64) = √208 = 14.42m. a(t) = dv/dt = 6tî + 2ĵ + (16-18t)k̂. a(2) = 12î + 2ĵ + (16-36)k̂ = 12î + 2ĵ - 20k̂. |a| = √(144+4+400) = √548 = 23.41 m/s².\n\n(b) At steady velocity, net force = 0. Frictional force = 300N. Tractive force = 300N.\n\n(c) v = mt² + nt + c. t=0, v=8 → c=8. t=2, v=4 → 4m+2n+8=4 → 4m+2n=-4 → 2m+n=-2. Minimum at t=2: dv/dt = 2mt+n = 4m+n = 0 → n = -4m. Substitute: 2m-4m=-2 → -2m=-2 → m=1, n=-4. v = t² - 4t + 8. a = dv/dt = 2t - 4. At t=4: a = 8-4 = 4 m/s²."
+    "modelAnswer": "(a) r(t) = ∫v dt = (t³ - 4t)î + (t² + 4t)ĵ + (8t² - 3t³)k̂.\n\nr(2) = (8 - 8)î + (4 + 8)ĵ + (32 - 24)k̂ = 12ĵ + 8k̂.\n\n|r| = √(0 + 144 + 64) = √208 = 14.42 m.\n\na(t) = dv/dt = 6tî + 2ĵ + (16 - 18t)k̂.\n\na(2) = 12î + 2ĵ + (16 - 36)k̂ = 12î + 2ĵ - 20k̂.\n\n|a| = √(144 + 4 + 400) = √548 = 23.41 m/s².\n\n(b) At steady velocity, net force = 0.\n\nThe tractive force equals the frictional force = 300 N.\n\n(c) v = mt² + nt + c.\n\nt = 0, v = 8 → c = 8.\n\nt = 2, v = 4 → 4m + 2n + 8 = 4 → 4m + 2n = -4 → 2m + n = -2.\n\nMinimum at t = 2: dv/dt = 2mt + n = 4m + n = 0 → n = -4m.\n\nSubstitute: 2m - 4m = -2 → -2m = -2 → m = 1, n = -4.\n\nv = t² - 4t + 8.\n\na = dv/dt = 2t - 4.\n\nAt t = 4: a = 8 - 4 = 4 m/s²."
   },
   {
     "subject": "Mathematics",
@@ -607,6 +607,6 @@
     "questionNumber": "8",
     "question": "(a) A metal door of dimension 50 cm × 150 cm has a mass 18 kg and is hinged along one 150 cm side.\n(i) moment of inertia about xx, the axis through the centre of gravity.\n(ii) moment of inertia about AB, the line of hinge.\n(iii) radius of gyration about AB.\n(b) A car engine of mass 80 kg hangs from two chains fixed to a crane making angles 40° and 60° with the horizontal frame. Find the tension in each chain.\n(c) A particle of mass 0.8 kg is moving with constant velocity (cî + 2cĵ) m/s, where c is a positive constant. The particle receives an impulse of magnitude 3√10 Ns. Immediately after receiving the impulse the particle has velocity (2cî - cĵ) m/s. Find the value of c.",
     "options": [],
-    "modelAnswer": "(a)(i) I_xx = (1/12)m(a²+b²) = (1/12)(18)(0.5²+1.5²) = 1.5(0.25+2.25) = 1.5(2.5) = 3.75 kg m².\n(ii) Using parallel axis: I_AB = I_xx + md² = 3.75 + 18(0.25)² = 3.75 + 1.125 = 4.875 kg m².\n(iii) k_AB = √(I_AB/m) = √(4.875/18) = √0.2708 = 0.52m.\n\n(b) Resolving horizontally: T₁cos40° = T₂cos60° → T₁(0.7660) = T₂(0.5) → T₂ = 1.532T₁. Vertically: T₁sin40° + T₂sin60° = 80×9.8 = 784. T₁(0.6428) + 1.532T₁(0.8660) = 784 → 0.6428T₁ + 1.3267T₁ = 784 → 1.9695T₁ = 784 → T₁ = 398N, T₂ = 610N.\n\n(c) Initial momentum = 0.8(cî+2cĵ). Final momentum = 0.8(2cî-cĵ). Impulse = change in momentum = 0.8(cî-3cĵ). |Impulse| = 0.8√(c²+9c²) = 0.8c√10. Given |Impulse| = 3√10 → 0.8c√10 = 3√10 → c = 3/0.8 = 3.75."
+    "modelAnswer": "(a) Door dimensions: a = 0.5 m, b = 1.5 m, m = 18 kg.\n\n(i) I_xx = (1/12)m(a² + b²)\n= (1/12)(18)(0.25 + 2.25)\n= 1.5(2.5)\n= 3.75 kg m².\n\n(ii) Distance from centre to hinge = a/2 = 0.25 m.\n\nI_AB = I_xx + md²\n= 3.75 + 18(0.25)²\n= 3.75 + 1.125\n= 4.875 kg m².\n\n(iii) k_AB = √(I_AB/m) = √(4.875/18) = √0.2708 = 0.52 m.\n\n(b) Resolving horizontally:\nT₁cos40° = T₂cos60°.\nT₁(0.7660) = T₂(0.5).\nT₂ = 1.532T₁.\n\nVertically:\nT₁sin40° + T₂sin60° = 80 × 9.8 = 784.\nT₁(0.6428) + 1.532T₁(0.8660) = 784.\n0.6428T₁ + 1.3267T₁ = 784.\n1.9695T₁ = 784.\nT₁ = 398 N.\nT₂ = 1.532(398) = 610 N.\n\n(c) Initial momentum = 0.8(cî + 2cĵ).\nFinal momentum = 0.8(2cî - cĵ).\n\nImpulse = Change in momentum = 0.8[(2cî - cĵ) - (cî + 2cĵ)]\n= 0.8(cî - 3cĵ).\n\n|Impulse| = 0.8√(c² + 9c²) = 0.8c√10.\n\nGiven |Impulse| = 3√10:\n0.8c√10 = 3√10.\nc = 3/0.8 = 3.75."
   }
 ]
