@@ -102,26 +102,25 @@ function setupThemeListeners() {
 // ===== COURSE STRUCTURE =====
 const courseStructure = {
     chemistry: {
-        "CHM 001 - General Chemistry": [
-            "Measurement", "Mole Concept", "Atomic Structure", "Electronic Configuration",
-            "Periodic Table and Periodicity", "Chemical Bonding"
-        ],
-        "CHM 002 - Physical Chemistry": [
-            "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
-            "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
-            "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
-        ],
-        "CHM 003 - Inorganic Chemistry": [
-            "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
-            "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
-        ],
-        "CHM 004 - Organic Chemistry": [
-            "Separation and Purification", "Structure and Bonding in Organic Compounds",
-            "Organic Reactions", "Isomerism", "Alkanes, Alkenes, Alkynes", "Alcohols",
-            "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
-            "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
-        ]
-    },
+    "CHM 001 - General Chemistry": [
+        "Measurement", "Mole Concept", "Atomic Structure", "Chemical Bonding"
+    ],
+    "CHM 002 - Physical Chemistry": [
+        "Nature of Matter", "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
+        "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
+        "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
+    ],
+    "CHM 003 - Inorganic Chemistry": [
+        "Periodicity", "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
+        "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
+    ],
+    "CHM 004 - Organic Chemistry": [
+        "Separation and Purification Techniques", "Structure and Bonding in Organic Compounds",
+        "Organic Reactions", "Isomerism in Organic Compounds", "Alkanes, Alkenes, Alkynes", "Alcohols",
+        "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
+        "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
+    ]
+},
     physics: {
     "PHY 001 - Mechanics & Properties of Matter": [
         "Physical Quantities and Units", "Vectors", "Kinematics", "Dynamics (Newton's Laws and Forces)",

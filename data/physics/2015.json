@@ -586,9 +586,20 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) Complete the table of the image properties for converging and diverging lenses below.",
+    "dataTable": {
+        "headers": ["Cases", "Lens type", "Object Position", "Image Position", "Orientation", "Size", "Type"],
+        "rows": [
+            ["1", "Converging", "> 2f", "< 2f", "Inverted", "Smaller", "Real"],
+            ["2", "Converging", "2f", "(i)", "Inverted", "Same Size", "Real"],
+            ["3", "Converging", "> f but < 2f", "> 2f", "(ii)", "Larger", "Real"],
+            ["4", "Converging", "(iii)", "No image is formed", "", "", ""],
+            ["5", "Converging", "< f", "> f", "upright", "Larger", "(iv)"],
+            ["6", "Diverging", "Any position", "< f", "upright", "(v)", "Virtual"]
+        ]
+    },
     "options": [],
-    "modelAnswer": "1. Converging lens, Object beyond 2f: Between f and 2f, inverted, diminished, real.\n\n2. Converging lens, Object at 2f: At 2f, inverted, same size, real.\n\n3. Converging lens, Object between f and 2f: Beyond 2f, inverted, magnified, real.\n\n4. Converging lens, Object at f: No image (rays parallel — image at infinity).\n\n5. Converging lens, Object inside f: Same side beyond f, upright, magnified, virtual.\n\n6. Diverging lens, Object anywhere: Between object and lens inside f, upright, diminished, virtual."
-  },
+    "modelAnswer": "(i) At 2f\n(ii) Inverted\n(iii) At f\n(iv) Virtual\n(v) Smaller (diminished)\n\nSummary of image properties:\n\n1. Object beyond 2f: Image between f and 2f, inverted, diminished, real.\n2. Object at 2f: Image at 2f, inverted, same size, real.\n3. Object between f and 2f: Image beyond 2f, inverted, magnified, real.\n4. Object at f: No image formed (rays emerge parallel).\n5. Object inside f: Image on same side beyond f, upright, magnified, virtual.\n6. Diverging lens (any position): Image between object and lens inside f, upright, diminished, virtual."
+},
   {
     "subject": "Physics",
     "year": 2015,

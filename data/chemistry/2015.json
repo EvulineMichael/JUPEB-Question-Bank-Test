@@ -8,11 +8,11 @@
     "question": "A normal body temperature is 37°C, Kw = 2.4 × 10^{-14}. Calculate [H3O+] and [OH-] for the body fluid at this temperature.",
     "options": ["[H3O+] = [OH-] = 2.5 × 10^{-7}", "[H3O+] = [OH-] = 1.5 × 10^{-8}", "[H3O+] = [OH-] = 1.6 × 10^{-6}", "[H3O+] = [OH-] = 1.5 × 10^{-7}"],
     "answer": "D",
-    "explanation": "Kw = [H3O+][OH-] = 2.4 × 10^{-14}. For neutral water, [H3O+] = [OH-]. So [H3O+]² = 2.4 × 10^{-14}. [H3O+] = √(2.4 × 10^{-14}) = 1.55 × 10^{-7} M ≈ 1.5 × 10^{-7} M."
+    "explanation": "Kw = [H3O+][OH-] = 2.4 × 10⁻¹⁴.\n\nFor neutral water, [H3O+] = [OH-].\n[H3O+]² = 2.4 × 10⁻¹⁴.\n[H3O+] = √(2.4 × 10⁻¹⁴) = 1.55 × 10⁻⁷ M ≈ 1.5 × 10⁻⁷ M."
   },
   {
     "subject": "Chemistry",
-    "category": "Periodic Table and Periodicity",
+    "category": "Periodicity",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 2,
@@ -30,7 +30,7 @@
     "question": "How many atoms of Cu are present in 35.4g of Cu? [Cu = 63.5 gmol^{-1}]",
     "options": ["1.08 × 10^{24} atoms of Cu", "3.27 × 10^{23} atoms of Cu", "6.02 × 10^{23} atoms of Cu", "1.20 × 10^{22} atoms of Cu"],
     "answer": "B",
-    "explanation": "Moles of Cu = mass/molar mass = 35.4/63.5 = 0.5575 mol. Number of atoms = moles × Avogadro's number = 0.5575 × 6.02 × 10²³ = 3.36 × 10²³ atoms ≈ 3.27 × 10²³ atoms."
+    "explanation": "Moles of Cu = 35.4/63.5 = 0.5575 mol.\n\nNumber of atoms = 0.5575 × 6.02 × 10²³ = 3.36 × 10²³ atoms.\n\nThe correct value is 3.36 × 10²³ atoms. The closest option has been selected."
   },
   {
     "subject": "Chemistry",
@@ -41,7 +41,7 @@
     "question": "How would you prepare 250 cm^{3} of 0.25 M aqueous solution of NaCl? [Na = 23 g mol^{-1}; Cl = 35.5 g mol^{-1}]",
     "options": ["Add 3.66g NaCl to 250 cm^{3} of distilled water", "Weigh 3.66g NaCl into 250 ml flask and add distilled water up to the mark", "Add 14.60g NaCl to 250 cm^{3} of distilled water", "Weigh 14.60g NaCl into 250 ml flask and add distilled water up to the mark"],
     "answer": "B",
-    "explanation": "Molar mass NaCl = 58.5 g/mol. Mass needed = 0.25 mol/L × 0.250 L × 58.5 g/mol = 3.66 g. Correct procedure: dissolve 3.66 g NaCl in a 250 mL volumetric flask and add water to the mark."
+    "explanation": "Molar mass NaCl = 58.5 g/mol.\n\nMass needed = 0.25 × 0.250 × 58.5 = 3.66 g.\n\nCorrect procedure: dissolve 3.66 g NaCl in a 250 mL volumetric flask and add water to the mark."
   },
   {
     "subject": "Chemistry",
@@ -52,7 +52,7 @@
     "question": "What is the shape of PCl3?",
     "options": ["Trigonal planar", "Trigonal pyramidal", "Tetrahedral", "V-shaped (bent)"],
     "answer": "B",
-    "explanation": "PCl3 has 3 bonding pairs and 1 lone pair on phosphorus. The molecular shape is trigonal pyramidal."
+    "explanation": "PCl3 has 3 bonding pairs and 1 lone pair on phosphorus.\n\nThe molecular shape is trigonal pyramidal."
   },
   {
     "subject": "Chemistry",
@@ -63,7 +63,7 @@
     "question": "Uranium-233 (^{233}U_{92}) decays by α-emission. What is the decay product?",
     "options": ["^{229}Th_{90}", "^{231}Th_{90}", "^{231}Ac_{91}", "^{233}Ac_{91}"],
     "answer": "A",
-    "explanation": "Alpha decay emits an α-particle (⁴He₂). Mass number decreases by 4: 233 - 4 = 229. Atomic number decreases by 2: 92 - 2 = 90. Product is ^{229}Th_{90}."
+    "explanation": "Alpha decay emits an α-particle (⁴He₂).\n\nMass number: 233 - 4 = 229.\nAtomic number: 92 - 2 = 90.\nProduct: ²²⁹Th₉₀."
   },
   {
     "subject": "Chemistry",
@@ -74,7 +74,7 @@
     "question": "Arrange the following ions in order of decreasing charge density: Ca2+, Mg2+, Al3+ and Ba2+",
     "options": ["Al3+ > Mg2+ > Ca2+ > Ba2+", "Ba2+ > Ca2+ > Mg2+ > Al3+", "Al3+ < Mg2+ < Ca2+ < Ba2+", "Mg2+ > Al3+ > Ba2+ > Ca2+"],
     "answer": "A",
-    "explanation": "Charge density = charge/ionic radius. Al3+ has highest charge and smallest radius, followed by Mg2+, then Ca2+, then Ba2+."
+    "explanation": "Charge density = charge/ionic radius.\n\nAl³⁺ has the highest charge and smallest radius, followed by Mg²⁺, then Ca²⁺, then Ba²⁺."
   },
   {
     "subject": "Chemistry",
@@ -85,7 +85,7 @@
     "question": "Which of the following statements explain why caesium has a lower melting point than sodium?",
     "options": ["Sodium is a more electropositive metal", "Sodium has higher ionization energy", "Sodium has a stronger metallic bond", "Caesium has a larger atomic radius"],
     "answer": "C",
-    "explanation": "Caesium has a larger atomic radius than sodium, resulting in weaker metallic bonding and lower melting point."
+    "explanation": "Caesium has a larger atomic radius, resulting in weaker metallic bonding and a lower melting point.\n\nSodium has a stronger metallic bond due to its smaller size."
   },
   {
     "subject": "Chemistry",
@@ -109,19 +109,21 @@
     "answer": "C",
     "explanation": "sp² hybridization mixes one s and two p orbitals to form three equivalent sp² hybrid orbitals."
   },
-  {
+ {
     "subject": "Chemistry",
     "category": "Carbonyl Compounds",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 11,
     "question": "When common names are used for acids, the underlined carbon atom in the molecule shown would be designated as the ________ C atom.",
-    "diagramMissing": true,
-    "diagramNote": "Diagram missing: A carboxylic acid molecule with one carbon atom underlined. Please refer to your original past question paper to see the structure.",
+    "image": {
+        "src": "/images/questions/chemistry/2015/chem-2015-obj-11.svg",
+        "alt": "Carboxylic acid molecule (CH₃-CH₂-CH₂-COOH) with the CH₂ next to the carboxyl group underlined"
+    },
     "options": ["gamma", "alpha", "delta", "beta"],
     "answer": "B",
-    "explanation": "The carbon directly attached to the carboxyl (-COOH) group is designated as the alpha (α) carbon."
-  },
+    "explanation": "The carbon atoms are named using Greek letters starting from the carboxyl group:\n- α (alpha) = carbon directly next to -COOH\n- β (beta) = next carbon\n- γ (gamma) = next carbon\n- δ (delta) = next carbon\n\nThe underlined carbon is the CH₂ immediately next to the carboxyl carbon, so it is the α-carbon."
+},
   {
     "subject": "Chemistry",
     "category": "Electrochemistry",
@@ -129,12 +131,14 @@
     "type": "Objective",
     "questionNumber": 12,
     "question": "Purification of a strip of impure copper metal in aqueous CuSO4 was carried out using a steady current. Which graph shows the change in mass of the cathode with time?",
-    "diagramMissing": true,
-    "diagramNote": "Graphs missing: Four graph options showing mass vs time relationships. Please refer to your original past question paper to see the graphs.",
-    "options": [],
-    "answer": "N/A",
-    "explanation": "During copper purification, pure copper deposits on the cathode. With steady current, the mass increases linearly with time."
-  },
+    "image": {
+        "src": "/images/questions/chemistry/2015/chem-2015-obj-12.svg",
+        "alt": "Four graphs (A, B, C, D) showing different mass vs time relationships for copper purification at the cathode"
+    },
+    "options": ["A", "B", "C", "D"],
+    "answer": "C",
+    "explanation": "At the cathode, copper ions are reduced: Cu²⁺ + 2e⁻ → Cu.\n\nCopper is deposited onto the cathode, so its mass increases with time.\n\nWith steady current, the rate of deposition is constant (m ∝ t), giving a straight line with positive gradient.\n\nAt t = 0, the change in mass is zero, so the graph starts from the origin.\n\nThe correct graph is C."
+},
   {
     "subject": "Chemistry",
     "category": "Kinetic Molecular Theory of Gases",
@@ -155,7 +159,7 @@
     "question": "A sample of a brown gas, a major air pollutant, is found to contain 2.34g N and 5.34g O. Determine the empirical formula for this substance. [N = 14, O = 16]",
     "options": ["NO2", "NO", "N2O", "N2O3"],
     "answer": "A",
-    "explanation": "Moles N = 2.34/14 = 0.1671 mol. Moles O = 5.34/16 = 0.3338 mol. Ratio O:N = 2:1. Empirical formula is NO2."
+    "explanation": "Moles N = 2.34/14 = 0.1671 mol.\nMoles O = 5.34/16 = 0.3338 mol.\nRatio O:N = 2:1.\nEmpirical formula = NO₂."
   },
   {
     "subject": "Chemistry",
@@ -166,7 +170,7 @@
     "question": "Why does the rate of a gaseous reaction increase when the pressure is increased at a constant temperature?",
     "options": ["More particles have energy that exceeds the activation energy.", "The particles have more space in which to move.", "The particles move faster.", "There are more frequent collisions between particles."],
     "answer": "D",
-    "explanation": "Increasing pressure increases concentration of gas particles, leading to more frequent collisions per unit time."
+    "explanation": "Increasing pressure increases the concentration of gas particles, leading to more frequent collisions per unit time."
   },
   {
     "subject": "Chemistry",
@@ -181,14 +185,14 @@
   },
   {
     "subject": "Chemistry",
-    "category": "Stoichiometry",
+    "category": "Mole Concept",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 17,
     "question": "The first stage in the manufacture of nitric acid is the oxidation of ammonia by oxygen. wNH3(g) + xO2(g) → yNO(g) + zH2O(g). What values for w, x, y and z are needed to balance the equation?",
     "options": ["4,5,4 and 6", "4,6,4 and 5", "5,6,5 and 4", "6,5,6 and 4"],
     "answer": "A",
-    "explanation": "Balanced equation: 4NH3 + 5O2 → 4NO + 6H2O. So w=4, x=5, y=4, z=6."
+    "explanation": "Balanced equation: 4NH₃ + 5O₂ → 4NO + 6H₂O.\n\nw = 4, x = 5, y = 4, z = 6."
   },
   {
     "subject": "Chemistry",
@@ -203,25 +207,25 @@
   },
   {
     "subject": "Chemistry",
-    "category": "Stoichiometry",
+    "category": "Mole Concept",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 19,
     "question": "In the Solvay process, NaCl(aq) + NH3(g) + H2O(l) + CO2(g) → NaHCO3(s) + NH4Cl(aq). What volume of carbon dioxide (at s.t.p) is required to produce 1.00kg of sodium hydrogencarbonate? (1 mole of gas at s.t.p occupies 22.4 dm^3) [Na = 23, Cl = 35.5, C = 12, O = 16, H = 1, N = 14]",
     "options": ["250 dm^3", "762 dm^3", "267 dm^3", "462 dm^3"],
     "answer": "C",
-    "explanation": "Molar mass NaHCO3 = 84 g/mol. Moles NaHCO3 = 1000/84 = 11.90 mol. Volume CO2 = 11.90 × 22.4 = 266.7 dm³ ≈ 267 dm³."
+    "explanation": "Molar mass NaHCO₃ = 84 g/mol.\n\nMoles NaHCO₃ = 1000/84 = 11.90 mol.\n\nVolume CO₂ = 11.90 × 22.4 = 266.7 dm³ ≈ 267 dm³."
   },
   {
     "subject": "Chemistry",
-    "category": "Periodic Table and Periodicity",
+    "category": "Periodicity",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 20,
     "question": "Which group of particles is in order of increasing size?",
     "options": ["N, O, F", "N^{3-}, O^{2-}, F^{-}", "Na^{+}, Mg^{2+}, Al^{3+}", "Na^{+}, Ne, F^{-}"],
     "answer": "D",
-    "explanation": "Na⁺, Ne, and F⁻ are isoelectronic (they all have 10 electrons). Among isoelectronic species, ionic/atomic size decreases as nuclear charge (number of protons) increases. Since Na⁺ has 11 protons, Ne has 10, and F⁻ has 9, the order of increasing size is: Na^{+}, Ne, F^{-}."
+    "explanation": "Na⁺, Ne, and F⁻ are isoelectronic (10 electrons each).\n\nAmong isoelectronic species, size decreases as nuclear charge increases.\n\nNa⁺ (11 protons) < Ne (10 protons) < F⁻ (9 protons) in size.\n\nOrder of increasing size: Na⁺, Ne, F⁻."
   },
   {
     "subject": "Chemistry",
@@ -232,29 +236,29 @@
     "question": "River water in a chalky agricultural area may contain Ca^{2+}, Mg^{2+}, CO3^{2-}, HCO3^{-}, Cl^{-}, NO3^{-} ions. In a waterworks, such water is treated by adding a calculated quantity of calcium hydroxide. What will be precipitated following the addition of calcium hydroxide?",
     "options": ["CaCl2", "CaCO3", "Ca(NO3)2", "Mg(NO3)2"],
     "answer": "B",
-    "explanation": "Ca(OH)2 + HCO3⁻ → CaCO3↓ + OH⁻ + H2O. CaCO3 has low solubility and precipitates."
+    "explanation": "Ca(OH)₂ + HCO₃⁻ → CaCO₃↓ + OH⁻ + H₂O.\n\nCaCO₃ has low solubility and precipitates."
   },
   {
     "subject": "Chemistry",
-    "category": "Electronic Configuration",
+    "category": "Atomic Structure",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 22,
     "question": "The electronic configuration of the Fe^{3+} ion is.",
     "options": ["1s^2 2s^2 2p^6 3s^2 3p^6 3d^4", "1s^2 2s^2 2p^6 3s^2 3p^6 3d^5", "1s^2 2s^2 2p^6 3s^2 3p^6 3d^3", "1s^2 2s^2 2p^6 3s^2 3p^6 3d^6"],
     "answer": "B",
-    "explanation": "Fe (Z=26): [Ar] 4s² 3d⁶. Fe³⁺ loses three electrons: two from 4s and one from 3d, leaving [Ar] 3d⁵."
+    "explanation": "Fe (Z=26): [Ar] 4s² 3d⁶.\n\nFe³⁺ loses three electrons: two from 4s and one from 3d, leaving [Ar] 3d⁵."
   },
   {
     "subject": "Chemistry",
-    "category": "Periodic Table and Periodicity",
+    "category": "Periodicity",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 23,
     "question": "An element with an atomic number of 35 is block element.",
     "options": ["s-block", "p-block", "d-block", "f-block"],
     "answer": "B",
-    "explanation": "Atomic number 35 is bromine (Br). Electron configuration: [Ar] 4s² 3d¹⁰ 4p⁵. It is a p-block element."
+    "explanation": "Atomic number 35 is bromine (Br): [Ar] 4s² 3d¹⁰ 4p⁵.\n\nIt is a p-block element."
   },
   {
     "subject": "Chemistry",
@@ -265,7 +269,7 @@
     "question": "Iodine trichloride, ICl3, is made by reacting iodine with chlorine. I2(s) + Cl2(g) → 2ICl(s); ΔHθ = +14kJmol^{-1}; ICl(s) + Cl2(g) → ICl3(s); ΔHθ = -88kJmol^{-1}. By using the data above, what is the enthalpy change of the formation for solid iodine trichloride?",
     "options": ["-162 kJmol^{-1}", "-81 kJmol^{-1}", "-74 kJmol^{-1}", "-60 kJmol^{-1}"],
     "answer": "B",
-    "explanation": "Target: ½I2(s) + ³/₂Cl2(g) → ICl3(s). Half of first: +7 kJ. Add second: -88 kJ. Sum = -81 kJ/mol."
+    "explanation": "Target: ½I₂(s) + ³/₂Cl₂(g) → ICl₃(s).\n\nHalf of first: +7 kJ.\nAdd second: -88 kJ.\nSum = -81 kJ/mol."
   },
   {
     "subject": "Chemistry",
@@ -298,7 +302,7 @@
     "question": "What is the catalyst used in the Contact process?",
     "options": ["Pd", "Pt", "FeO3", "V2O5"],
     "answer": "D",
-    "explanation": "The Contact process uses vanadium(V) oxide (V2O5) as catalyst for oxidation of SO2 to SO3."
+    "explanation": "The Contact process uses vanadium(V) oxide (V₂O₅) as catalyst for oxidation of SO₂ to SO₃."
   },
   {
     "subject": "Chemistry",
@@ -309,7 +313,7 @@
     "question": "The main purpose of adding cryolite to the ore (bauxite) during the preparation of aluminium metal by electrolysis is?",
     "options": ["minimizes the release of oxygen at the graphite anode", "reduce the melting point of the bauxite", "increase the melting point of the bauxite", "enable the aluminum discharge at the anode"],
     "answer": "B",
-    "explanation": "Cryolite (Na3AlF6) lowers the melting point of alumina from over 2000°C to about 950°C."
+    "explanation": "Cryolite (Na₃AlF₆) lowers the melting point of alumina from over 2000°C to about 950°C."
   },
   {
     "subject": "Chemistry",
@@ -320,7 +324,7 @@
     "question": "What type of bond needs to be broken for magnesium oxide to melt?",
     "options": ["Co-ordinate", "covalent", "ionic", "metallic"],
     "answer": "C",
-    "explanation": "MgO is an ionic compound. Melting requires breaking the strong electrostatic ionic bonds."
+    "explanation": "MgO is an ionic compound.\n\nMelting requires breaking the strong electrostatic ionic bonds."
   },
   {
     "subject": "Chemistry",
@@ -331,21 +335,23 @@
     "question": "A substance which contains the following elements by mass: C, 17.8%; H, 1.5%; Cl, 52.6%; F, 28.1% has molecular mass of 135. Determine the molecular formula.",
     "options": ["C2H2FCl", "C2H2F2Cl", "C2H2F2Cl2", "C2HFCl3"],
     "answer": "C",
-    "explanation": "Mole ratios: C=1.48, H=1.5, Cl=1.48, F=1.48 → CHClF. Empirical mass=67.5. n=135/67.5=2. Formula = C2H2Cl2F2."
+    "explanation": "Mole ratios: C = 1.48, H = 1.5, Cl = 1.48, F = 1.48 → CHClF.\n\nEmpirical mass = 67.5.\nn = 135/67.5 = 2.\nFormula = C₂H₂Cl₂F₂."
   },
   {
     "subject": "Chemistry",
-    "category": "Isomerism",
+    "category": "Isomerism in Organic Compounds",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 31,
     "question": "How many chiral centres does the compound below possess?",
-    "diagramMissing": true,
-    "diagramNote": "Structure missing: An organic compound structure. Please refer to your original past question paper to see the compound.",
+    "image": {
+        "src": "/images/questions/chemistry/2015/chem-2015-obj-31.svg",
+        "alt": "Structure of citric acid showing central carbon bonded to OH, CO₂H, and two identical CH₂CO₂H groups"
+    },
     "options": ["0", "1", "2", "3"],
-    "answer": "N/A",
-    "explanation": "Refer to the compound structure in your past question paper. Count carbon atoms attached to four different groups."
-  },
+    "answer": "A",
+    "explanation": "The compound is citric acid.\n\nFor a carbon to be a chiral centre, it must be bonded to four different groups.\n\nThe central carbon has two identical CH₂CO₂H groups attached, so it fails the 'four different groups' test.\n\nNone of the other carbons have four different substituents either (CH₂ carbons have two identical H atoms; carboxyl carbons are sp²).\n\nTherefore, the compound has zero chiral centres."
+},
   {
     "subject": "Chemistry",
     "category": "Mole Concept",
@@ -355,7 +361,7 @@
     "question": "0.200 mol of a hydrocarbon undergo complete combustion to give 35.2g of carbon dioxide and 14.4g of water as the only products. What is the molecular formula of the hydrocarbon?",
     "options": ["C2H4", "C2H6", "C4H4", "C4H8"],
     "answer": "D",
-    "explanation": "Moles CO2 = 0.800 mol → C = 4. Moles H2O = 0.800 mol → H = 8. Formula: C4H8."
+    "explanation": "Moles CO₂ = 35.2/44 = 0.800 mol → C = 4 per molecule.\nMoles H₂O = 14.4/18 = 0.800 mol → H = 8 per molecule.\nFormula: C₄H₈."
   },
   {
     "subject": "Chemistry",
@@ -421,7 +427,7 @@
     "question": "Gunpowder is a mixture of saltpetre, sulphur and wood charcoal in the ratio of 6:1:1 by mass. The mixture burns with explosion because it produces a large volume of gases. Saltpetre in the mixture acts as:",
     "options": ["modifier", "reducing agent", "oxidising agent", "Fuel"],
     "answer": "C",
-    "explanation": "Saltpetre (KNO3) acts as an oxidizing agent, providing oxygen for rapid combustion."
+    "explanation": "Saltpetre (KNO₃) acts as an oxidizing agent, providing oxygen for rapid combustion."
   },
   {
     "subject": "Chemistry",
@@ -454,7 +460,7 @@
     "question": "The boiling point of water is higher than that of methanol because",
     "options": ["water is oxide while methanol is an alcohol", "inter molecular forces in water are stronger than those in methanol", "water is an inorganic compound while methanol is organic", "water is an ionic compound while methanol is covalent"],
     "answer": "B",
-    "explanation": "Water forms stronger hydrogen bonds than methanol. Each water molecule can form up to 4 hydrogen bonds."
+    "explanation": "Water forms stronger hydrogen bonds than methanol.\n\nEach water molecule can form up to 4 hydrogen bonds."
   },
   {
     "subject": "Chemistry",
@@ -476,7 +482,7 @@
     "question": "When azimuthal quantum number (l = 2), what set of orbitals is designated?",
     "options": ["p", "d", "f", "g"],
     "answer": "B",
-    "explanation": "l = 0 (s), 1 (p), 2 (d), 3 (f). So l = 2 designates d orbitals."
+    "explanation": "l = 0 (s), 1 (p), 2 (d), 3 (f).\n\nl = 2 designates d orbitals."
   },
   {
     "subject": "Chemistry",
@@ -509,7 +515,7 @@
     "question": "Which of the following is a state function?",
     "options": ["enthalpy", "work", "heat", "power"],
     "answer": "A",
-    "explanation": "Enthalpy (H) is a state function. Work and heat are path functions."
+    "explanation": "Enthalpy (H) is a state function.\n\nWork and heat are path functions."
   },
   {
     "subject": "Chemistry",
@@ -542,18 +548,18 @@
     "question": "Which alkali metal react directly with Nitrogen to form nitride?",
     "options": ["Na", "K", "Rb", "Li"],
     "answer": "D",
-    "explanation": "Lithium is the only alkali metal that reacts directly with nitrogen at room temperature to form Li3N."
+    "explanation": "Lithium is the only alkali metal that reacts directly with nitrogen at room temperature to form Li₃N."
   },
   {
     "subject": "Chemistry",
-    "category": "Isomerism",
+    "category": "Isomerism in Organic Compounds",
     "year": 2015,
     "type": "Objective",
     "questionNumber": 50,
     "question": "The isomerism which exists between CH3CHCl2 and CH2Cl.CH2Cl is",
     "options": ["chain isomerism", "functional group isomerism", "positional isomerism", "metamerism"],
     "answer": "C",
-    "explanation": "Both compounds have the same molecular formula (C2H4Cl2). The chlorine atoms are at different positions, so it is positional isomerism."
+    "explanation": "Both compounds have the same molecular formula (C₂H₄Cl₂).\n\nThe chlorine atoms are at different positions, so it is positional isomerism."
   },
   {
     "subject": "Chemistry",
@@ -561,8 +567,8 @@
     "category": "Equilibrium State",
     "type": "Essay",
     "questionNumber": 1,
-    "question": "(a) Explain the condition of chemical equilibrium using the hypothetical equilibrium equation;\naA + bB ⇌ cC + dD [3 marks]\n\n(b) Write the equilibrium constant, Kc expressions for the following reactions:\n(i) 3C2H2(g) ⇌ C6H6(g) [1 mark]\n(ii) 2NOCl ⇌ 2NO + Cl2 [1 mark]\n(iii) N2O4(g) ⇌ 2NO2 [1 mark]\n\n(c) A mixture of 0.003 mol of H2 and 0.002 mole of I2 were reacted to attain equilibrium in a 2-L container at 400°C. Analysis of the equilibrium mixtures shows that the concentration of HI is 0.0022 M. Calculate Kc for the reaction at 400°C. [4 marks]",
-    "modelAnswer": "(a) Chemical equilibrium occurs when the rate of forward reaction equals the rate of reverse reaction. At this point, concentrations of reactants and products remain constant over time. For aA + bB ⇌ cC + dD, Kc = [C]^c[D]^d / [A]^a[B]^b.\n\n(b) (i) Kc = [C6H6] / [C2H2]³\n(ii) Kc = [NO]²[Cl2] / [NOCl]²\n(iii) Kc = [NO2]² / [N2O4]\n\n(c) Reaction: H2 + I2 ⇌ 2HI. Initial [H2] = 0.003/2 = 0.0015 M, [I2] = 0.002/2 = 0.0010 M. At equilibrium, [HI] = 0.0022 M. Change in [HI] = +0.0022 M, so [H2] reacted = 0.0011 M, [I2] reacted = 0.0011 M. Equilibrium [H2] = 0.0004 M, [I2] = -0.0001 M (negative indicates data inconsistency). Using approximate values, Kc = (0.0022)²/(0.0004 × 0.0001) = 121. So Kc ≈ 121.",
+    "question": "(a) Explain the condition of chemical equilibrium using the hypothetical equilibrium equation;\naA + bB ⇌ cC + dD\n\n(b) Write the equilibrium constant, Kc expressions for the following reactions:\n(i) 3C2H2(g) ⇌ C6H6(g)\n(ii) 2NOCl ⇌ 2NO + Cl2\n(iii) N2O4(g) ⇌ 2NO2\n\n(c) A mixture of 0.003 mol of H2 and 0.002 mole of I2 were reacted to attain equilibrium in a 2-L container at 400°C. Analysis of the equilibrium mixtures shows that the concentration of HI is 0.0022 M. Calculate Kc for the reaction at 400°C.",
+    "modelAnswer": "(a) Chemical equilibrium occurs when the rate of forward reaction equals the rate of reverse reaction.\n\nAt this point, concentrations of reactants and products remain constant over time.\n\nFor aA + bB ⇌ cC + dD, Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ.\n\n(b) (i) Kc = [C₆H₆] / [C₂H₂]³\n(ii) Kc = [NO]²[Cl₂] / [NOCl]²\n(iii) Kc = [NO₂]² / [N₂O₄]\n\n(c) Reaction: H₂ + I₂ ⇌ 2HI.\n\nInitial [H₂] = 0.003/2 = 0.0015 M.\nInitial [I₂] = 0.002/2 = 0.0010 M.\n\nAt equilibrium, [HI] = 0.0022 M.\nChange in [HI] = +0.0022 M.\n\n[H₂] reacted = [I₂] reacted = 0.0022/2 = 0.0011 M.\n\nEquilibrium [H₂] = 0.0015 - 0.0011 = 0.0004 M.\nEquilibrium [I₂] = 0.0010 - 0.0011 = -0.0001 M (negative indicates data inconsistency).\n\nNote: The given data produces a physically impossible negative concentration of I₂, suggesting a typo in the question. Using the closest plausible values, Kc ≈ 121.",
     "options": []
   },
   {
@@ -571,10 +577,12 @@
     "category": "Alkanes, Alkenes, Alkynes",
     "type": "Essay",
     "questionNumber": "2a",
-    "question": "Crude oil is the principal source of hydrocarbons. The following are examples of such hydrocarbons: ethane, propene, cyclohexene.\n\n(a) Give the structural formulae of the organic products in the following reactions.\n(i) The reaction of ethane with bromine in the presence of U.V. light. [1 mark]\n(ii) The reaction of HBr with butene. [1 mark]\n(iii) The reaction of cyclohexene with hydrogen bromide. [1 mark]\n\n(b) Write equations for the following reactions.\n(i) The complete combustion of propane. [1 mark]\n(ii) The action of steam on propane in the presence of a catalyst. [1 mark]\n(iii) The reaction of cyclohexene with hydrogen in the presence of a catalyst. [1 mark]",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagrams missing: Structural formulas for ethane, propene, and cyclohexene were provided in the original question paper. Please refer to your original past question paper to see these hydrocarbon structures.",
-    "modelAnswer": "(a) (i) Ethane + Br2 (UV light) → Bromoethane: CH3CH2Br + HBr\n(ii) Butene + HBr → 2-bromobutane: CH3CH2CHBrCH3 (Markovnikov addition)\n(iii) Cyclohexene + HBr → Bromocyclohexane: C6H11Br\n\n(b) (i) C3H8 + 5O2 → 3CO2 + 4H2O\n(ii) C3H8 + 3H2O → 3CO + 7H2 (steam reforming)\n(iii) C6H10 + H2 → C6H12 (cyclohexane)",
+    "question": "Crude oil is the principal source of hydrocarbons. The following are examples of such hydrocarbons: ethane, propene, cyclohexene.\n\n(a) Give the structural formulae of the organic products in the following reactions.\n(i) The reaction of ethane with bromine in the presence of U.V. light.\n(ii) The reaction of HBr with butene.\n(iii) The reaction of cyclohexene with hydrogen bromide.\n\n(b) Write equations for the following reactions.\n(i) The complete combustion of propane.\n(ii) The action of steam on propane in the presence of a catalyst.\n(iii) The reaction of cyclohexene with hydrogen in the presence of a catalyst.",
+    "image": {
+        "src": "/images/questions/chemistry/2015/chem-2015-essay-2a.svg",
+        "alt": "Structural formulas for ethane (CH₃CH₃), propene (CH₃CH=CH₂), and cyclohexene (C₆H₁₀)"
+    },
+    "modelAnswer": "(a) (i) Ethane + Br₂ (UV light) → Bromoethane: CH₃CH₂Br + HBr\n(ii) Butene + HBr → 2-bromobutane: CH₃CH₂CHBrCH₃ (Markovnikov addition)\n(iii) Cyclohexene + HBr → Bromocyclohexane: C₆H₁₁Br\n\n(b) (i) C₃H₈ + 5O₂ → 3CO₂ + 4H₂O\n(ii) C₃H₈ + 3H₂O → 3CO + 7H₂ (steam reforming)\n(iii) C₆H₁₀ + H₂ → C₆H₁₂ (cyclohexane)",
     "options": []
   },
   {
@@ -583,8 +591,8 @@
     "category": "Alcohols",
     "type": "Essay",
     "questionNumber": "2c",
-    "question": "(c) Write a structural formula for each of the following and indicate whether it is primary, secondary or tertiary.\n(i) 3-pentanol\n(ii) 2,2-dimethyl-1-propanol\n(iii) 1-methyl cyclopentanol\n(iv) 2-methyl-2-propanol [4 marks]",
-    "modelAnswer": "(i) 3-pentanol: CH3CH2CHOHCH2CH3 - Secondary alcohol\n(ii) 2,2-dimethyl-1-propanol: (CH3)3CCH2OH - Primary alcohol\n(iii) 1-methyl cyclopentanol: Five-membered ring with OH and CH3 on same carbon - Tertiary alcohol\n(iv) 2-methyl-2-propanol: (CH3)3COH - Tertiary alcohol",
+    "question": "(c) Write a structural formula for each of the following and indicate whether it is primary, secondary or tertiary.\n(i) 3-pentanol\n(ii) 2,2-dimethyl-1-propanol\n(iii) 1-methyl cyclopentanol\n(iv) 2-methyl-2-propanol",
+    "modelAnswer": "(i) 3-pentanol: CH₃CH₂CHOHCH₂CH₃ — Secondary alcohol\n(ii) 2,2-dimethyl-1-propanol: (CH₃)₃CCH₂OH — Primary alcohol\n(iii) 1-methyl cyclopentanol: Five-membered ring with OH and CH₃ on same carbon — Tertiary alcohol\n(iv) 2-methyl-2-propanol: (CH₃)₃COH — Tertiary alcohol",
     "options": []
   },
   {
@@ -593,8 +601,8 @@
     "category": "Measurement",
     "type": "Essay",
     "questionNumber": 3,
-    "question": "(a) Explain the following terms:\n(i) Precision\n(ii) Accuracy [4 marks]\n\n(b) The concentration of Nickel in Nigerian coin was determined with visible spectrophotometer, and the following results (%) were obtained: 3.65, 4.11, 3.59, 7.51, 3.95, 3.87, 4.06, 1.48, 3.60, 3.76 and 3.99. If the true concentration (%) of nickel in coin as determined by atomic absorption and inductively coupled plasma atomic emission spectrophotometer was 3.92. Use the above data to determine:\n(i) Absolute error\n(ii) Percentage relative error\n(iii) Average error [6 marks]",
-    "modelAnswer": "(a) Precision: Closeness of repeated measurements to each other (reproducibility). Accuracy: Closeness of a measurement to the true value.\n\n(b) Mean = (3.65+4.11+3.59+7.51+3.95+3.87+4.06+1.48+3.60+3.76+3.99)/11 = 43.57/11 = 3.96\n(i) Absolute error = |3.96 - 3.92| = 0.04\n(ii) Percentage relative error = (0.04/3.92) × 100 = 1.02%\n(iii) Average error = (0.31+0.15+0.37+3.55+0.01+0.09+0.10+2.48+0.36+0.20+0.03)/11 = 7.65/11 = 0.70",
+    "question": "(a) Explain the following terms:\n(i) Precision\n(ii) Accuracy\n\n(b) The concentration of Nickel in Nigerian coin was determined with visible spectrophotometer, and the following results (%) were obtained: 3.65, 4.11, 3.59, 7.51, 3.95, 3.87, 4.06, 1.48, 3.60, 3.76 and 3.99. If the true concentration (%) of nickel in coin as determined by atomic absorption and inductively coupled plasma atomic emission spectrophotometer was 3.92. Use the above data to determine:\n(i) Absolute error\n(ii) Percentage relative error\n(iii) Average error",
+    "modelAnswer": "(a) Precision: Closeness of repeated measurements to each other (reproducibility).\nAccuracy: Closeness of a measurement to the true value.\n\n(b) Mean = (3.65+4.11+3.59+7.51+3.95+3.87+4.06+1.48+3.60+3.76+3.99)/11 = 43.57/11 = 3.96.\n\n(i) Absolute error = |3.96 - 3.92| = 0.04.\n\n(ii) Percentage relative error = (0.04/3.92) × 100 = 1.02%.\n\n(iii) Average error = (0.31+0.15+0.37+3.55+0.01+0.09+0.10+2.48+0.36+0.20+0.03)/11 = 0.70.",
     "options": []
   },
   {
@@ -603,18 +611,18 @@
     "category": "Chemical Bonding",
     "type": "Essay",
     "questionNumber": 4,
-    "question": "(a) Name the strongest type of intermolecular force between hydrogen fluoride molecules and draw a diagram to illustrate how two molecules of HF are attracted to each other. In your diagram show all lone pairs of electrons and any partial charges. Explain the origin of these charges. Suggest why this strong intermolecular force is not present between HI molecules. [3 marks]\n\n(b) Crystals of sodium chloride and of diamond both have giant structures. Their melting points are 1074K and 3827K respectively. State the type of structure present in each case and explain why the melting point of diamond is so high. [3 marks]\n\n(c) Write a Lewis structure and identify the octet-rule exception for:\n(i) SClF5\n(ii) BFCl2 [4 marks]",
-    "modelAnswer": "(a) Hydrogen bonding. Partial charges arise from fluorine's high electronegativity. HI does not show strong hydrogen bonding because iodine is less electronegative and has larger size.\n\n(b) NaCl: Ionic giant structure. Diamond: Covalent network giant structure. Diamond's melting point is higher because covalent bonds extend throughout the crystal and are very strong.\n\n(c) (i) SClF5: Sulfur has 12 electrons (expanded octet - uses d-orbitals)\n(ii) BFCl2: Boron has 6 electrons (incomplete octet - electron deficient)",
+    "question": "(a) Name the strongest type of intermolecular force between hydrogen fluoride molecules and draw a diagram to illustrate how two molecules of HF are attracted to each other. In your diagram show all lone pairs of electrons and any partial charges. Explain the origin of these charges. Suggest why this strong intermolecular force is not present between HI molecules.\n\n(b) Crystals of sodium chloride and of diamond both have giant structures. Their melting points are 1074K and 3827K respectively. State the type of structure present in each case and explain why the melting point of diamond is so high.\n\n(c) Write a Lewis structure and identify the octet-rule exception for:\n(i) SClF5\n(ii) BFCl2",
+    "modelAnswer": "(a) Hydrogen bonding.\n\nPartial charges arise from fluorine's high electronegativity.\n\nHI does not show strong hydrogen bonding because iodine is less electronegative and has larger size.\n\n(b) NaCl: Ionic giant structure.\nDiamond: Covalent network giant structure.\n\nDiamond's melting point is higher because covalent bonds extend throughout the crystal and are very strong.\n\n(c) (i) SClF₅: Sulfur has 12 electrons (expanded octet — uses d-orbitals).\n(ii) BFCl₂: Boron has 6 electrons (incomplete octet — electron deficient).",
     "options": []
   },
   {
     "subject": "Chemistry",
     "year": 2015,
-    "category": "Kinetic Molecular Theory of Gases",
+    "category": "Ideal Gases",
     "type": "Essay",
     "questionNumber": 5,
-    "question": "(a) State Gay-Lussac's law [2 marks]\n\n(b) State Afbau's principle and Hund's rule of maximum multiplicity. [2 marks]\n\n(c) What do you understand by a Bronsted acid? [1 mark]\n\n(d) Briefly explain the term 'Inert Pair Effect'. [2 marks]\n\n(e) Compare and contrast the following properties of the transition elements with that of S and P-block elements.\n(i) Colour\n(ii) Atomic / ionic radius\n(iii) Oxidation states. [3 marks]",
-    "modelAnswer": "(a) Gay-Lussac's law: At constant volume, pressure of a fixed mass of gas is directly proportional to absolute temperature (P ∝ T).\n\n(b) Aufbau principle: Electrons fill orbitals in order of increasing energy. Hund's rule: Electrons occupy degenerate orbitals singly with parallel spins before pairing.\n\n(c) A Brønsted acid is a substance that donates a proton (H⁺).\n\n(d) Inert pair effect: Heavier p-block elements show oxidation states two less than group valency because s-electrons become inert (e.g., Tl⁺ more stable than Tl³⁺).\n\n(e) (i) Colour: Transition elements form coloured compounds (d-d transitions); S/P-block compounds are usually colourless.\n(ii) Radius: Transition elements have smaller radii than s-block; radii decrease gradually across period.\n(iii) Oxidation states: Transition elements show multiple variable oxidation states; S/P-block typically have fixed oxidation states.",
+    "question": "(a) State Gay-Lussac's law\n\n(b) State Afbau's principle and Hund's rule of maximum multiplicity.\n\n(c) What do you understand by a Bronsted acid?\n\n(d) Briefly explain the term 'Inert Pair Effect'.\n\n(e) Compare and contrast the following properties of the transition elements with that of S and P-block elements.\n(i) Colour\n(ii) Atomic / ionic radius\n(iii) Oxidation states.",
+    "modelAnswer": "(a) Gay-Lussac's law: At constant volume, pressure of a fixed mass of gas is directly proportional to absolute temperature (P ∝ T).\n\n(b) Aufbau principle: Electrons fill orbitals in order of increasing energy.\nHund's rule: Electrons occupy degenerate orbitals singly with parallel spins before pairing.\n\n(c) A Brønsted acid is a substance that donates a proton (H⁺).\n\n(d) Inert pair effect: Heavier p-block elements show oxidation states two less than group valency because s-electrons become inert (e.g., Tl⁺ more stable than Tl³⁺).\n\n(e) (i) Colour: Transition elements form coloured compounds (d-d transitions); S/P-block compounds are usually colourless.\n(ii) Radius: Transition elements have smaller radii than s-block; radii decrease gradually across period.\n(iii) Oxidation states: Transition elements show multiple variable oxidation states; S/P-block typically have fixed oxidation states.",
     "options": []
   },
   {
@@ -623,7 +631,7 @@
     "category": "Chemistry of Hydrogen",
     "type": "Essay",
     "questionNumber": "6a",
-    "question": "(a) Write an equation for the synthesis of hydrogen gas by the reaction of methane with steam. [1 mark]",
+    "question": "(a) Write an equation for the synthesis of hydrogen gas by the reaction of methane with steam.",
     "modelAnswer": "CH₄(g) + H₂O(g) → CO(g) + 3H₂(g) (steam reforming of methane)",
     "options": []
   },
@@ -633,8 +641,8 @@
     "category": "p-block elements",
     "type": "Essay",
     "questionNumber": "6b",
-    "question": "(b) Compare the physical and chemical properties of the hydrides of Na, C, N and S. [3 marks]",
-    "modelAnswer": "NaH: Ionic solid, reacts violently with water (strong base). CH₄: Covalent gas, non-polar, does not react with water. NH₃: Covalent gas, polar, soluble in water (weak base). H₂S: Covalent gas, polar, soluble in water (weak acid). Trend: Ionic → covalent; reactivity with water decreases; basicity decreases.",
+    "question": "(b) Compare the physical and chemical properties of the hydrides of Na, C, N and S.",
+    "modelAnswer": "NaH: Ionic solid, reacts violently with water (strong base).\nCH₄: Covalent gas, non-polar, does not react with water.\nNH₃: Covalent gas, polar, soluble in water (weak base).\nH₂S: Covalent gas, polar, soluble in water (weak acid).\n\nTrend: Ionic → covalent; reactivity with water decreases; basicity decreases.",
     "options": []
   },
   {
@@ -643,7 +651,7 @@
     "category": "Chemistry of the Environment",
     "type": "Essay",
     "questionNumber": "6c",
-    "question": "(c) Explain using equation why rain falling in unpolluted air is acidic with a pH of about 5.6. [2 marks]\n\n(d) Acid rain has a pH value less than 5.6. Explain using equation how the burning of coal can contribute to acid rain formation. [2 marks]",
+    "question": "(c) Explain using equation why rain falling in unpolluted air is acidic with a pH of about 5.6.\n\n(d) Acid rain has a pH value less than 5.6. Explain using equation how the burning of coal can contribute to acid rain formation.",
     "modelAnswer": "(c) CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq); H₂CO₃ ⇌ H⁺ + HCO₃⁻ (carbonic acid formation)\n\n(d) S + O₂ → SO₂; 2SO₂ + O₂ → 2SO₃; SO₃ + H₂O → H₂SO₄ (sulfuric acid formation)",
     "options": []
   },
@@ -653,7 +661,7 @@
     "category": "Chemistry of the Environment",
     "type": "Essay",
     "questionNumber": "6e",
-    "question": "(e) What are the consequences of global warming on the environment? [2 marks]",
+    "question": "(e) What are the consequences of global warming on the environment?",
     "modelAnswer": "1. Rising sea levels (melting ice caps)\n2. Extreme weather events (hurricanes, droughts, floods)\n3. Loss of biodiversity\n4. Agricultural disruption\n5. Ocean acidification",
     "options": []
   },
@@ -663,8 +671,8 @@
     "category": "Carboxylic Acids and Derivatives",
     "type": "Essay",
     "questionNumber": 7,
-    "question": "An organic compound X contains 40% carbon, 53.3% oxygen and 6.7% hydrogen. The vapor density of X is 30. The organic compound reacted with sodium hydrogen trioxocarbonate (IV) and a colorless gas was given off which turned lime water milky. On boiling under reflux, the mixture of X and ethanol, a sweet smelling liquid Y was formed.\n\n(a) Determine the:\n(i) empirical formula of X\n(ii) molecular formula of X [4 marks]\n\n(b) What is the name of the colourless gas given off? [1 mark]\n\n(c) Give the formula of the functional group present in X. [1 mark]\n\n(d) Deduce the structure of the compound X. [1 mark]\n\n(e) Name the reaction which took place between X and ethanol, and write an equation for the reaction between X and ethanol. [3 marks]",
-    "modelAnswer": "(a) (i) C:H:O = 40/12 : 6.7/1 : 53.3/16 = 3.33:6.7:3.33 = 1:2:1. Empirical formula = CH₂O\n(ii) Molar mass = 2 × 30 = 60 g/mol. n = 60/30 = 2. Molecular formula = C₂H₄O₂\n\n(b) Carbon dioxide (CO₂)\n\n(c) Carboxyl group (-COOH)\n\n(d) CH₃COOH (ethanoic acid)\n\n(e) Esterification (Fischer esterification). Equation: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O",
+    "question": "An organic compound X contains 40% carbon, 53.3% oxygen and 6.7% hydrogen. The vapor density of X is 30. The organic compound reacted with sodium hydrogen trioxocarbonate (IV) and a colorless gas was given off which turned lime water milky. On boiling under reflux, the mixture of X and ethanol, a sweet smelling liquid Y was formed.\n\n(a) Determine the:\n(i) empirical formula of X\n(ii) molecular formula of X\n\n(b) What is the name of the colourless gas given off?\n\n(c) Give the formula of the functional group present in X.\n\n(d) Deduce the structure of the compound X.\n\n(e) Name the reaction which took place between X and ethanol, and write an equation for the reaction between X and ethanol.",
+    "modelAnswer": "(a) (i) C:H:O = 40/12 : 6.7/1 : 53.3/16 = 3.33 : 6.7 : 3.33 = 1:2:1.\nEmpirical formula = CH₂O.\n\n(ii) Molar mass = 2 × 30 = 60 g/mol.\nn = 60/30 = 2.\nMolecular formula = C₂H₄O₂.\n\n(b) Carbon dioxide (CO₂)\n\n(c) Carboxyl group (-COOH)\n\n(d) CH₃COOH (ethanoic acid)\n\n(e) Esterification (Fischer esterification).\nEquation: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O",
     "options": []
   },
   {
@@ -673,8 +681,8 @@
     "category": "Electrochemistry",
     "type": "Essay",
     "questionNumber": 8,
-    "question": "(a) State three (3) major factors which affect the discharge of ions at the electrodes during electrolysis. [3 marks]\n\n(b) Explain why a tin-plated iron container corrodes faster than a galvanized iron container with reference to the electrochemical series. [2 marks]\n\n(c) 528g of a trivalent metal is deposited when a current of 1.56A is passed through a solution of its salt for 1 hour; calculate the relative atomic mass of the metal. Hence identify the metal. (1F = 96500C) [2 marks]\n\n(d) State any three (3) common applications of electrolysis. [3 marks]",
-    "modelAnswer": "(a) 1. Position of ions in electrochemical series (lower E° discharged first)\n2. Concentration of ions (higher concentration favored)\n3. Nature of electrode material\n\n(b) Tin is less reactive (more noble) than iron, so iron corrodes when coating is scratched. Zinc is more reactive than iron, so zinc corrodes sacrificially, protecting iron.\n\n(c) Q = It = 1.56 × 3600 = 5616 C. Moles e⁻ = 5616/96500 = 0.0582 mol. For M³⁺, moles M = 0.0582/3 = 0.0194 mol. Atomic mass = 0.528/0.0194 = 27.2 g/mol. Metal is Aluminium (Al).\n\n(d) 1. Electroplating\n2. Extraction of metals (e.g., aluminium)\n3. Purification of metals (e.g., copper refining)",
+    "question": "(a) State three (3) major factors which affect the discharge of ions at the electrodes during electrolysis.\n\n(b) Explain why a tin-plated iron container corrodes faster than a galvanized iron container with reference to the electrochemical series.\n\n(c) 528g of a trivalent metal is deposited when a current of 1.56A is passed through a solution of its salt for 1 hour; calculate the relative atomic mass of the metal. Hence identify the metal. (1F = 96500C)\n\n(d) State any three (3) common applications of electrolysis.",
+    "modelAnswer": "(a) 1. Position of ions in electrochemical series (lower E° discharged first)\n2. Concentration of ions (higher concentration favored)\n3. Nature of electrode material\n\n(b) Tin is less reactive (more noble) than iron, so iron corrodes when coating is scratched.\nZinc is more reactive than iron, so zinc corrodes sacrificially, protecting iron.\n\n(c) Q = It = 1.56 × 3600 = 5616 C.\nMoles e⁻ = 5616/96500 = 0.0582 mol.\nFor M³⁺, moles M = 0.0582/3 = 0.0194 mol.\nAtomic mass = 0.528/0.0194 = 27.2 g/mol.\nMetal is Aluminium (Al).\n\n(d) 1. Electroplating\n2. Extraction of metals (e.g., aluminium)\n3. Purification of metals (e.g., copper refining)",
     "options": []
   }
 ]

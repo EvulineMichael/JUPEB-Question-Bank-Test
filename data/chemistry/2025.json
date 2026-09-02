@@ -8,8 +8,8 @@
     "question": "Give the empirical formula of a compound containing 92.26% C and H.",
     "options": ["CH", "CH₂", "C₂H₃", "C₂H₅"],
     "answer": "A",
-    "explanation": "Mass of C = 92.26g, mass of H = 100 - 92.26 = 7.74g. Moles of C = 92.26/12 = 7.688, moles of H = 7.74/1 = 7.74. Ratio C:H = 7.688:7.74 ≈ 1:1. Empirical formula = CH."
-},
+    "explanation": "Mass of C = 92.26 g, mass of H = 7.74 g.\nMoles C = 92.26/12 = 7.688.\nMoles H = 7.74/1 = 7.74.\nRatio C:H ≈ 1:1.\nEmpirical formula = CH."
+  },
   {
     "subject": "Chemistry",
     "year": 2025,
@@ -19,8 +19,8 @@
     "question": "The gas heavier than air is",
     "options": ["pure N₂", "pure Cl₂", "moist air", "moist H₂"],
     "answer": "B",
-    "explanation": "Air has an average molar mass of approximately 29 g/mol. Cl₂ (71 g/mol) is heavier than air. N₂ (28 g/mol) is slightly lighter. Moist air is lighter than dry air. H₂ (2 g/mol) is much lighter."
-},
+    "explanation": "Air has average molar mass ≈ 29 g/mol.\nCl₂ (71 g/mol) is heavier than air."
+  },
   {
     "subject": "Chemistry",
     "year": 2025,
@@ -30,8 +30,8 @@
     "question": "A well-stoppered thermos flask contains some ice cubes. This is an example of",
     "options": ["closed system", "open system", "isolated system", "non-thermodynamic system"],
     "answer": "C",
-    "explanation": "An isolated system exchanges neither matter nor energy with its surroundings. A well-stoppered thermos flask prevents both mass transfer and heat exchange, making it an isolated system."
-},
+    "explanation": "An isolated system exchanges neither matter nor energy.\n\nA well-stoppered thermos flask prevents both mass transfer and heat exchange."
+  },
   {
     "subject": "Chemistry",
     "year": 2025,
@@ -41,8 +41,8 @@
     "question": "The kinds of bonding in NH₄⁺ is",
     "options": ["ionic/dative", "ionic/covalent", "dative/covalent", "metallic/dative"],
     "answer": "C",
-    "explanation": "In NH₄⁺, three N-H bonds are covalent (formed by sharing electrons between N and H), and one N-H bond is dative/coordinate (formed when N donates its lone pair to H⁺). All four bonds become equivalent after formation."
-},
+    "explanation": "Three N-H bonds are covalent; one N-H bond is dative/coordinate (from N's lone pair to H⁺).\n\nAll four bonds become equivalent after formation."
+  },
   {
     "subject": "Chemistry",
     "year": 2025,
@@ -52,7 +52,7 @@
     "question": "The ratio of the absolute error in measurement to the expected true value defines the",
     "options": ["relative error", "mean error", "absolute error", "random error"],
     "answer": "A",
-    "explanation": "Relative error = absolute error / true value. Absolute error (C) is the difference between measured and true value. Mean error (B) is average of errors. Random error (D) is unpredictable."
+    "explanation": "Relative error = absolute error / true value."
   },
   {
     "subject": "Chemistry",
@@ -63,7 +63,7 @@
     "question": "The mass spectrum of an atom shows two peaks with masses 80 and 100, if the isotopic ratio of the isotopes is 6:5 respectively, determine the average atomic mass of the atom.",
     "options": ["98.0", "90.2", "89.1", "72.7"],
     "answer": "C",
-    "explanation": "Average atomic mass = (80×6 + 100×5) / (6+5) = (480 + 500)/11 = 980/11 = 89.09 ≈ 89.1."
+    "explanation": "Average atomic mass = (80×6 + 100×5)/(6+5) = 980/11 = 89.1."
   },
   {
     "subject": "Chemistry",
@@ -74,29 +74,29 @@
     "question": "What is the atomic mass of a triatomic elementary gas with a vapour density of 48?",
     "options": ["48", "96", "32", "16"],
     "answer": "C",
-    "explanation": "Vapour density = molecular mass / 2. Molecular mass = 2 × 48 = 96. Since gas is triatomic (3 atoms per molecule), atomic mass = 96/3 = 32."
+    "explanation": "Molecular mass = 2 × 48 = 96.\nTriatomic → atomic mass = 96/3 = 32."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Stoichiometry",
+    "category": "Mole Concept",
     "type": "Objective",
     "questionNumber": 8,
     "question": "In the equation, xNH₃ + yO₂ → zNO + wH₂O. If x is 2, then y, z, and w are respectively",
     "options": ["5/2, 4, 6", "5/2, 2, 3", "3, 2, 4", "2, 4, 6"],
     "answer": "B",
-    "explanation": "2NH₃ + (5/2)O₂ → 2NO + 3H₂O. Multiply by 2: 4NH₃ + 5O₂ → 4NO + 6H₂O. For x=2, y=5/2, z=2, w=3."
+    "explanation": "2NH₃ + (5/2)O₂ → 2NO + 3H₂O.\n\ny = 5/2, z = 2, w = 3."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Electronic Configuration",
+    "category": "Atomic Structure",
     "type": "Objective",
     "questionNumber": 9,
     "question": "The element whose electronic configuration is 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ is a",
     "options": ["metal", "non-metal", "noble gas", "metalloid"],
     "answer": "A",
-    "explanation": "The configuration [Ar] 4s² 3d¹⁰ is Zinc (Zn, Z=30). Zinc is a metal (transition metal)."
+    "explanation": "The configuration is Zinc (Zn, Z=30) — a metal (transition metal)."
   },
   {
     "subject": "Chemistry",
@@ -107,7 +107,7 @@
     "question": "Which of the following characteristics shows that hydrogen resembles halogens?",
     "options": ["Hydrogen is the lightest", "H atom contains one electron", "H forms ionic hydrides with alkali metals", "Hydrogen has three isotopes"],
     "answer": "B",
-    "explanation": "Hydrogen and halogens both have one electron in their outermost shell (H: 1s¹, halogens: ns²np⁵). Option A is not a resemblance. Option C: halogens form ionic halides, but hydrogen forms ionic hydrides only with very electropositive metals. Option D is not a resemblance."
+    "explanation": "Hydrogen and halogens both have one electron in their outermost shell."
   },
   {
     "subject": "Chemistry",
@@ -118,7 +118,7 @@
     "question": "What type of reaction can convert alkyl halide into an alcohol?",
     "options": ["addition", "elimination", "substitution", "hydrolysis"],
     "answer": "D",
-    "explanation": "Hydrolysis of alkyl halides with aqueous NaOH or KOH gives alcohols. This is a nucleophilic substitution reaction, but the specific name is hydrolysis."
+    "explanation": "Hydrolysis of alkyl halides with aqueous NaOH/KOH gives alcohols (nucleophilic substitution)."
   },
   {
     "subject": "Chemistry",
@@ -129,18 +129,18 @@
     "question": "The scientist who discovered Neutrons is",
     "options": ["J.J. Thomson", "Rutherford", "James Chadwick", "G.T. Seaberry"],
     "answer": "C",
-    "explanation": "James Chadwick discovered the neutron in 1932. J.J. Thomson (A) discovered the electron. Rutherford (B) discovered the nucleus. G.T. Seaberry is not associated with neutron discovery."
+    "explanation": "James Chadwick discovered the neutron in 1932."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Periodic Table and Periodicity",
+    "category": "Periodicity",
     "type": "Objective",
     "questionNumber": 13,
     "question": "Identify the elements that have the smallest first ionization energy.",
     "options": ["15P", "19K", "6C", "12Mg"],
     "answer": "B",
-    "explanation": "Ionization energy decreases down a group. Potassium (K, Z=19) is in Group 1, Period 4, and has the lowest first ionization energy among the options. P, C, Mg are in Periods 2-3 with higher IE."
+    "explanation": "Potassium (K, Z=19) is in Group 1, Period 4 — lowest first ionization energy among the options."
   },
   {
     "subject": "Chemistry",
@@ -151,7 +151,7 @@
     "question": "Which of the following ionic compounds is insoluble in water?",
     "options": ["(NH₄)₂CO₃", "AgBr", "CuSO₄", "KI"],
     "answer": "B",
-    "explanation": "AgBr (silver bromide) is insoluble in water. (NH₄)₂CO₃ (A) is soluble. CuSO₄ (C) is soluble. KI (D) is soluble."
+    "explanation": "AgBr (silver bromide) is insoluble in water."
   },
   {
     "subject": "Chemistry",
@@ -162,7 +162,7 @@
     "question": "When lead acid battery is discharged",
     "options": ["SO₂ is evolved", "lead sulphate is consumed", "lead is formed", "sulphuric acid is used up"],
     "answer": "D",
-    "explanation": "During discharge: Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O. Sulphuric acid is consumed (concentration decreases). PbSO₄ is formed (not consumed), lead is consumed (not formed)."
+    "explanation": "Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O.\n\nSulphuric acid is consumed during discharge."
   },
   {
     "subject": "Chemistry",
@@ -173,7 +173,7 @@
     "question": "The rate constant does not depend on",
     "options": ["temperature", "concentration", "presence of a catalyst", "nature of reactants"],
     "answer": "B",
-    "explanation": "Rate constant (k) is independent of concentration. It depends on temperature, catalyst, and nature of reactants."
+    "explanation": "Rate constant (k) is independent of concentration."
   },
   {
     "subject": "Chemistry",
@@ -184,7 +184,7 @@
     "question": "The total mass of protons and neutrons of an isotope are not equal to the actual mass of the nuclide because of",
     "options": ["radioactivity", "binding energy", "attraction between electrons and the nucleus", "proton-proton interaction"],
     "answer": "B",
-    "explanation": "Mass defect (difference between calculated mass of nucleons and actual nucleus mass) is due to binding energy (E=mc²). The missing mass is converted to energy that holds the nucleus together."
+    "explanation": "Mass defect is due to binding energy (E = mc²) holding the nucleus together."
   },
   {
     "subject": "Chemistry",
@@ -195,7 +195,7 @@
     "question": "Calculate the volume of 0.200 M Na₂CO₃ solution which contains 53.0 g of Na₂CO₃? [Na = 23, C = 12, O = 16]",
     "options": ["0.20 L", "1.60 L", "2.50 L", "0.50 L"],
     "answer": "C",
-    "explanation": "Molar mass Na₂CO₃ = (2×23) + 12 + (3×16) = 46 + 12 + 48 = 106 g/mol. Moles = 53.0/106 = 0.5 mol. Volume = moles / concentration = 0.5 / 0.200 = 2.50 L."
+    "explanation": "Molar mass Na₂CO₃ = 106 g/mol.\nMoles = 53.0/106 = 0.5 mol.\nVolume = 0.5/0.200 = 2.50 L."
   },
   {
     "subject": "Chemistry",
@@ -206,7 +206,7 @@
     "question": "Identify the option which contains the highest number of atoms.",
     "options": ["71 g of chlorine", "48 g of magnesium", "127 g of iodine", "4 g of hydrogen"],
     "answer": "D",
-    "explanation": "Moles: Cl₂ = 71/71 = 1 mol → 2 mol atoms. Mg = 48/24 = 2 mol atoms. I₂ = 127/127 = 1 mol → 2 mol atoms. H₂ = 4/2 = 2 mol → 4 mol atoms. Hydrogen has the highest (4 mol atoms)."
+    "explanation": "Cl₂: 1 mol → 2 mol atoms.\nMg: 2 mol atoms.\nI₂: 1 mol → 2 mol atoms.\nH₂: 2 mol → 4 mol atoms (highest)."
   },
   {
     "subject": "Chemistry",
@@ -217,7 +217,7 @@
     "question": "If 2.5 L of a sample of a gas at 27°C and 1 bar pressure is compressed to a volume of 500 mL at constant temperature. What is the percentage increase in pressure?",
     "options": ["100%", "400%", "500%", "80%"],
     "answer": "B",
-    "explanation": "Boyle's Law: P₁V₁ = P₂V₂. P₂ = P₁V₁/V₂ = 1 × 2.5 / 0.5 = 5 bar. Increase = 5 - 1 = 4 bar. Percentage increase = (4/1) × 100 = 400%."
+    "explanation": "P₂ = 1 × 2.5/0.5 = 5 bar.\nIncrease = 4 bar.\nPercentage increase = (4/1) × 100 = 400%."
   },
   {
     "subject": "Chemistry",
@@ -228,7 +228,7 @@
     "question": "The process of preparing hydrogen from red-hot coke and steam is generally called",
     "options": ["Lane's process", "Reforming of Coke", "Linde's process", "Bosch's process"],
     "answer": "D",
-    "explanation": "Bosch's process: C + H₂O → CO + H₂ (water gas). Lane's process (A) is for hydrogen from iron. Linde's process (C) is for liquefaction of gases."
+    "explanation": "Bosch's process: C + H₂O → CO + H₂ (water gas from red-hot coke and steam)."
   },
   {
     "subject": "Chemistry",
@@ -239,7 +239,7 @@
     "question": "The formula for washing soda is",
     "options": ["Na₂CO₃", "Na₂CO₃·10H₂O", "Na₂CO₃·3H₂O", "Na₂CO₃·7H₂O"],
     "answer": "B",
-    "explanation": "Washing soda is sodium carbonate decahydrate: Na₂CO₃·10H₂O. Anhydrous Na₂CO₃ (A) is soda ash."
+    "explanation": "Washing soda is sodium carbonate decahydrate: Na₂CO₃·10H₂O."
   },
   {
     "subject": "Chemistry",
@@ -250,7 +250,7 @@
     "question": "Synthesis gas is a mixture of",
     "options": ["Steam and CO", "CO and N₂", "H₂ and CO", "H₂ and CH₄"],
     "answer": "C",
-    "explanation": "Synthesis gas (syngas) is a mixture of hydrogen (H₂) and carbon monoxide (CO), produced from steam reforming of natural gas or gasification of coal."
+    "explanation": "Synthesis gas (syngas) is a mixture of H₂ and CO."
   },
   {
     "subject": "Chemistry",
@@ -261,7 +261,7 @@
     "question": "The destructive action of Hydrogen bombs is based on",
     "options": ["natural radioactivity", "nuclear fission", "nuclear fusion", "natural reaction"],
     "answer": "C",
-    "explanation": "Hydrogen bombs (thermonuclear bombs) use nuclear fusion of hydrogen isotopes (deuterium and tritium) to release enormous energy. Fission is used as a trigger."
+    "explanation": "Hydrogen bombs use nuclear fusion of hydrogen isotopes (deuterium and tritium)."
   },
   {
     "subject": "Chemistry",
@@ -272,7 +272,7 @@
     "question": "If a radioactive element is placed in an evacuated container, its rate of disintegration",
     "options": ["will be increased.", "will be decreased.", "will change very slightly.", "will remain unchanged."],
     "answer": "D",
-    "explanation": "Radioactive decay is a nuclear process and is not affected by external conditions such as pressure, temperature, or container. The rate remains unchanged."
+    "explanation": "Radioactive decay is a nuclear process — unaffected by external conditions."
   },
   {
     "subject": "Chemistry",
@@ -283,7 +283,7 @@
     "question": "If the half-life of a radioactive nuclide is 24 hours. What time will be required for 12.5% of its original amount to remain?",
     "options": ["1 day", "2 days", "3 days", "4 days"],
     "answer": "C",
-    "explanation": "12.5% = 1/8 = (1/2)³. Three half-lives = 3 × 24 = 72 hours = 3 days."
+    "explanation": "12.5% = 1/8 = (1/2)³.\nThree half-lives = 3 × 24 = 72 hours = 3 days."
   },
   {
     "subject": "Chemistry",
@@ -294,18 +294,18 @@
     "question": "For exothermic reactions to be spontaneous, the temperature should be",
     "options": ["high", "0°C", "low", "373K"],
     "answer": "C",
-    "explanation": "For exothermic reactions (ΔH negative), spontaneity depends on ΔG = ΔH - TΔS. If ΔS is also negative, low temperature favors spontaneity. If ΔS is positive, spontaneous at all temperatures. The question likely assumes ΔS negative, so low temperature."
+    "explanation": "For exothermic reactions (ΔH < 0), spontaneity is favoured at low temperature when ΔS is negative (ΔG = ΔH − TΔS)."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Periodic Table and Periodicity",
+    "category": "Periodicity",
     "type": "Objective",
     "questionNumber": 28,
     "question": "An element with high electronegativity has",
     "options": ["High Ionization Energy and high Electron Affinity", "High Ionization Energy and low Electron Affinity", "Low Ionization Energy and high EA", "Low Ionization Energy and low EA"],
     "answer": "A",
-    "explanation": "Electronegativity generally correlates with both high ionization energy and high electron affinity. Elements that attract electrons strongly (high electronegativity) tend to have high IE and high EA."
+    "explanation": "High electronegativity correlates with high IE and high EA."
   },
   {
     "subject": "Chemistry",
@@ -316,7 +316,7 @@
     "question": "How does a catalyst alter the rate of a reaction?",
     "options": ["By changing the reaction conditions", "By lowering the activation energy", "By changing the order", "By reversing the order"],
     "answer": "B",
-    "explanation": "A catalyst provides an alternative reaction pathway with lower activation energy, increasing the reaction rate. It does not change the order (C) or reverse the order (D)."
+    "explanation": "A catalyst lowers activation energy, providing an alternative pathway."
   },
   {
     "subject": "Chemistry",
@@ -327,7 +327,7 @@
     "question": "What is the correct order of melting points of B, Al, and Ga?",
     "options": ["B > Al > Ga", "Al > B > Ga", "Ga > B > Al", "B > Ga > Al"],
     "answer": "A",
-    "explanation": "Melting points: Boron (~2076°C) > Aluminum (~660°C) > Gallium (~30°C). Order: B > Al > Ga."
+    "explanation": "Boron (~2076°C) > Al (~660°C) > Ga (~30°C)."
   },
   {
     "subject": "Chemistry",
@@ -338,7 +338,7 @@
     "question": "The mixing of atomic orbitals at different energy levels to form hybrid orbitals is known as",
     "options": ["isomerism", "hybridization", "delocalization", "cyclization"],
     "answer": "B",
-    "explanation": "Hybridization is the mixing of atomic orbitals to form new hybrid orbitals of equivalent energy. Isomerism (A) is different structures. Delocalization (C) is spreading of electrons. Cyclization (D) is ring formation."
+    "explanation": "Hybridization is the mixing of atomic orbitals to form hybrid orbitals."
   },
   {
     "subject": "Chemistry",
@@ -349,7 +349,7 @@
     "question": "An organic reaction in which bond fission results in formation of free radicals is",
     "options": ["homolytic", "ozonolysis", "rearrangement", "elimination"],
     "answer": "A",
-    "explanation": "Homolytic fission breaks a bond evenly, each atom taking one electron, forming free radicals. Ozonolysis (B) uses ozone. Rearrangement (C) is structural change. Elimination (D) removes atoms."
+    "explanation": "Homolytic fission breaks a bond evenly, forming free radicals."
   },
   {
     "subject": "Chemistry",
@@ -360,7 +360,7 @@
     "question": "The 3d metal ions are generally paramagnetic in nature because",
     "options": ["they form coloured salts", "they have one or more unpaired electron", "they have one or more paired s-electrons", "they are reducing agents"],
     "answer": "B",
-    "explanation": "Paramagnetism is caused by the presence of unpaired electrons. Transition metal ions with unpaired d-electrons are paramagnetic. Colour (A) is related but not the cause."
+    "explanation": "Paramagnetism is caused by unpaired electrons."
   },
   {
     "subject": "Chemistry",
@@ -371,7 +371,7 @@
     "question": "Grignard reagent is prepared by the reaction between an alkyl halide and",
     "options": ["Zinc in the presence of alcohol", "Magnesium in the presence of dry ether", "Magnesium in the presence of alcohol", "Magnesium in the presence of moist ether"],
     "answer": "B",
-    "explanation": "Grignard reagents (RMgX) are prepared by reacting alkyl/aryl halides with magnesium metal in anhydrous (dry) ether. Water/moisture destroys the reagent."
+    "explanation": "Grignard reagents are prepared from alkyl halides + Mg in anhydrous (dry) ether."
   },
   {
     "subject": "Chemistry",
@@ -382,7 +382,7 @@
     "question": "Which of the following is the most stable hydroxide?",
     "options": ["Mg(OH)₂", "Ca(OH)₂", "Sr(OH)₂", "Ba(OH)₂"],
     "answer": "D",
-    "explanation": "Stability of hydroxides increases down Group 2. Ba(OH)₂ is the most stable and most soluble. Mg(OH)₂ decomposes more easily."
+    "explanation": "Stability of hydroxides increases down Group 2.\n\nBa(OH)₂ is the most stable."
   },
   {
     "subject": "Chemistry",
@@ -393,7 +393,7 @@
     "question": "In the esterification of carboxylic acid with alcohol, which bond of the carboxylic acid undergoes cleavage?",
     "options": ["C-C", "C=O", "C-H", "O-H"],
     "answer": "D",
-    "explanation": "In esterification (Fischer esterification), the carboxylic acid loses the -OH group (O-H bond breaks), and the alcohol loses H from its -OH group. Water is eliminated."
+    "explanation": "The carboxylic acid loses its –OH group (O–H bond breaks) during esterification."
   },
   {
     "subject": "Chemistry",
@@ -404,7 +404,7 @@
     "question": "Which of the following oxides is neutral but toxic?",
     "options": ["CO₂", "CO", "SnO", "H₂O"],
     "answer": "B",
-    "explanation": "CO (carbon monoxide) is a neutral oxide (does not react with acids or bases) and is highly toxic. CO₂ (A) is acidic. SnO (C) is amphoteric. H₂O (D) is neutral but not toxic."
+    "explanation": "CO is a neutral oxide and is highly toxic."
   },
   {
     "subject": "Chemistry",
@@ -415,7 +415,7 @@
     "question": "The product of the Polymerization of styrene is",
     "options": ["polyethylene", "polypropylene", "polystyrene", "toluene"],
     "answer": "C",
-    "explanation": "Styrene (C₆H₅CH=CH₂) polymerizes to form polystyrene (PS). Polyethylene (A) from ethylene, polypropylene (B) from propylene, toluene (D) is not a polymer."
+    "explanation": "Styrene polymerizes to polystyrene."
   },
   {
     "subject": "Chemistry",
@@ -426,18 +426,18 @@
     "question": "What is the hybrid state of boron in boric acid?",
     "options": ["sp", "sp²", "sp³", "sp³d"],
     "answer": "B",
-    "explanation": "Boric acid H₃BO₃ (or B(OH)₃) has boron in sp² hybridization with trigonal planar geometry."
+    "explanation": "Boron in boric acid is sp² hybridized (trigonal planar)."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Amino Acids and Proteins",
+    "category": "Macromolecules",
     "type": "Objective",
     "questionNumber": 40,
     "question": "An example of a zwitterion is",
     "options": ["alanine", "methyl acetate", "glucose", "sodium hydroxide"],
     "answer": "A",
-    "explanation": "A zwitterion has both positive and negative charges in the same molecule. Amino acids like alanine exist as zwitterions (H₃N⁺-CH(CH₃)-COO⁻) at physiological pH."
+    "explanation": "Amino acids like alanine exist as zwitterions (H₃N⁺–CH(CH₃)–COO⁻) at physiological pH."
   },
   {
     "subject": "Chemistry",
@@ -448,7 +448,7 @@
     "question": "Which of the following is the main structural feature of proteins?",
     "options": ["peptide linkage", "glycoside linkage", "ether linkage", "ester linkage"],
     "answer": "A",
-    "explanation": "Proteins are polymers of amino acids linked by peptide bonds (amide linkages). Glycoside (B) in carbohydrates, ether (C) and ester (D) are other linkages."
+    "explanation": "Proteins are polymers of amino acids linked by peptide bonds."
   },
   {
     "subject": "Chemistry",
@@ -459,7 +459,7 @@
     "question": "The acid with the highest Ka value is",
     "options": ["HIO", "HFO", "HClO", "BrOH"],
     "answer": "B",
-    "explanation": "Acidity of hypohalous acids (HOX) increases with electronegativity of X. Fluorine is most electronegative, so HFO (hypofluorous acid) has the highest Ka. HClO (C) is next, then HBrO, then HIO."
+    "explanation": "Acidity of hypohalous acids increases with electronegativity of halogen.\n\nHFO (fluoro) is the strongest."
   },
   {
     "subject": "Chemistry",
@@ -470,7 +470,7 @@
     "question": "The force of attraction between the neighboring peptide chains is",
     "options": ["Van der Waal's forces", "Covalent bond", "Hydrogen bond", "peptide linkage"],
     "answer": "C",
-    "explanation": "Secondary structure of proteins (α-helix, β-sheet) is stabilized by hydrogen bonds between N-H and C=O groups of neighboring peptide chains."
+    "explanation": "Secondary protein structure (α-helix, β-sheet) is stabilized by hydrogen bonds between N–H and C=O groups."
   },
   {
     "subject": "Chemistry",
@@ -481,7 +481,7 @@
     "question": "Which element of group 16 cannot form a compound of the type XF₆?",
     "options": ["Selenium", "Sulphur", "Oxygen", "Tellurium"],
     "answer": "C",
-    "explanation": "Oxygen (O) cannot expand its octet (no d-orbitals). It cannot form OF₆. S, Se, Te can form XF₆ compounds (e.g., SF₆, SeF₆, TeF₆)."
+    "explanation": "Oxygen cannot expand its octet (no d-orbitals) — cannot form OF₆."
   },
   {
     "subject": "Chemistry",
@@ -492,7 +492,7 @@
     "question": "Which of the following compounds can be used as a refrigerant?",
     "options": ["CCl₄", "CH₂Cl₂", "CF₄", "CF₂Cl₂"],
     "answer": "D",
-    "explanation": "CF₂Cl₂ (dichlorodifluoromethane, Freon-12) was widely used as a refrigerant. CCl₄ (A) and CH₂Cl₂ (B) are solvents. CF₄ (C) is used in electronics but not as refrigerant."
+    "explanation": "CF₂Cl₂ (Freon-12) was widely used as a refrigerant."
   },
   {
     "subject": "Chemistry",
@@ -503,7 +503,7 @@
     "question": "What is the same in various hydrides of chalcogens?",
     "options": ["Molecular shape", "Reducing nature", "Central bond angle", "Magnitude of inter-particle forces"],
     "answer": "A",
-    "explanation": "All chalcogen hydrides (H₂O, H₂S, H₂Se, H₂Te) have bent (V-shaped) molecular shape due to two lone pairs on the central atom. Bond angles decrease down the group."
+    "explanation": "All chalcogen hydrides (H₂O, H₂S, H₂Se, H₂Te) have bent (V-shaped) molecular shape."
   },
   {
     "subject": "Chemistry",
@@ -514,7 +514,7 @@
     "question": "Synthesis gas is a mixture of",
     "options": ["Steam and CO", "CO and N₂", "H₂ and CO", "H₂ and CH₄"],
     "answer": "C",
-    "explanation": "Synthesis gas (syngas) is a mixture of hydrogen (H₂) and carbon monoxide (CO)."
+    "explanation": "Synthesis gas (syngas) is a mixture of H₂ and CO.\n\nNote: This is a duplicate of question 23."
   },
   {
     "subject": "Chemistry",
@@ -525,7 +525,7 @@
     "question": "The reaction, ⁹¹Pa²³⁴ → ⁹²U²³⁴ occurs with the emission of",
     "options": ["α-particle", "β-particle", "p-particle", "position"],
     "answer": "B",
-    "explanation": "Atomic number increases from 91 to 92, mass number unchanged. This is β⁻ decay (emission of an electron and antineutrino). α decay would decrease mass number by 4."
+    "explanation": "Atomic number increases from 91 to 92, mass unchanged → β⁻ decay."
   },
   {
     "subject": "Chemistry",
@@ -536,38 +536,38 @@
     "question": "The substance that adsorbs and activates reactants to form products which cannot break away is",
     "options": ["Catalyst.", "Metal", "Adsorbate.", "Precipitate"],
     "answer": "A",
-    "explanation": "A catalyst adsorbs reactants on its surface, activates them, and forms products that desorb. If products cannot break away, the catalyst would be poisoned. The question wording is odd, but catalyst is the intended answer."
+    "explanation": "Note: The question wording is unusual — the description suggests catalyst poisoning.\n\nA catalyst adsorbs reactants, activates them, and forms products.\n\nThe closest option has been selected."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Isomerism",
+    "category": "Isomerism in Organic Compounds",
     "type": "Objective",
     "questionNumber": 50,
     "question": "Tautomeric product of propenol is",
     "options": ["propenoic acid", "propanol", "propanal", "propanone"],
     "answer": "D",
-    "explanation": "Propenol (CH₂=CH-CH₂OH) is an enol. Tautomerization of enol gives the keto form: propanone (acetone, CH₃-CO-CH₃)."
+    "explanation": "Propenol (enol form) tautomerizes to propanone (keto form, CH₃-CO-CH₃)."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Electronic Configuration",
+    "category": "Atomic Structure",
     "type": "Essay",
     "questionNumber": "1a",
-    "question": "(a) Write the electronic configuration of the elements with the following atomic numbers:\n(i) 35\n(ii) 26 [1 mark]",
+    "question": "(a) Write the electronic configuration of the elements with the following atomic numbers:\n(i) 35\n(ii) 26",
     "options": [],
-    "modelAnswer": "(i) Element with Z = 35 (Bromine, Br):\nFull configuration: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s² 4p⁵\nCondensed: [Ar] 3d¹⁰ 4s² 4p⁵\n\n(ii) Element with Z = 26 (Iron, Fe):\nFull configuration: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²\nCondensed: [Ar] 3d⁶ 4s²"
+    "modelAnswer": "(i) Z = 35 (Br): [Ar] 3d¹⁰ 4s² 4p⁵.\n(ii) Z = 26 (Fe): [Ar] 3d⁶ 4s²."
   },
   {
     "subject": "Chemistry",
     "year": 2025,
-    "category": "Electronic Configuration",
+    "category": "Atomic Structure",
     "type": "Essay",
     "questionNumber": "1b",
-    "question": "(b) Write the designation for the orbital occupied by an electron described by the following quantum numbers:\n(i) n = 3, l = 1\n(ii) n = 4, l = 0\n(iii) n = 3, l = 2\n(iv) n = 3, l = 0 [2 marks]",
+    "question": "(b) Write the designation for the orbital occupied by an electron described by the following quantum numbers:\n(i) n = 3, l = 1\n(ii) n = 4, l = 0\n(iii) n = 3, l = 2\n(iv) n = 3, l = 0",
     "options": [],
-    "modelAnswer": "The orbital designation is written as nl, where n is the principal quantum number and the letter corresponds to l (0=s, 1=p, 2=d, 3=f):\n\n(i) n = 3, l = 1 → 3p orbital\n(ii) n = 4, l = 0 → 4s orbital\n(iii) n = 3, l = 2 → 3d orbital\n(iv) n = 3, l = 0 → 3s orbital"
+    "modelAnswer": "(i) 3p\n(ii) 4s\n(iii) 3d\n(iv) 3s"
   },
   {
     "subject": "Chemistry",
@@ -575,9 +575,9 @@
     "category": "Mole Concept",
     "type": "Essay",
     "questionNumber": "1c",
-    "question": "(c) 20g of a hydrocarbon produced 62.85g of CO2 and 25.57g of H2O when completely combusted in air.\n(i) Determine the empirical formula of the hydrocarbon.\n(ii) If the molecular mass of the compound is 252 g/mol, determine the molecular formula of the hydrocarbon. [4 marks]",
+    "question": "(c) 20g of a hydrocarbon produced 62.85g of CO2 and 25.57g of H2O when completely combusted in air.\n(i) Determine the empirical formula of the hydrocarbon.\n(ii) If the molecular mass of the compound is 252 g/mol, determine the molecular formula of the hydrocarbon.",
     "options": [],
-    "modelAnswer": "A hydrocarbon contains only C and H.\n\nStep 1: Find mass of C and H from combustion products.\nMass of C (from CO₂): molar mass CO₂ = 44 g/mol\nMass of C = (12/44) × 62.85 = 17.14 g\n\nMass of H (from H₂O): molar mass H₂O = 18 g/mol\nMass of H = (2/18) × 25.57 = 2.841 g\n\nCheck: 17.14 + 2.841 = 19.98 ≈ 20 g ✓ (accounts for all mass in the hydrocarbon)\n\nStep 2: Convert to moles.\nMoles of C = 17.14 / 12 = 1.428 mol\nMoles of H = 2.841 / 1 = 2.841 mol\n\nStep 3: Find simplest ratio (divide by smallest = 1.428).\nC : H = 1.428/1.428 : 2.841/1.428 = 1 : 1.99 ≈ 1 : 2\n\n(i) Empirical formula = CH₂\n\n(ii) Molecular Formula:\nEmpirical formula mass of CH₂ = 12 + 2 = 14 g/mol\nMultiplier n = molecular mass / empirical mass = 252 / 14 = 18\nMolecular formula = (CH₂)₁₈ = C₁₈H₃₆"
+    "modelAnswer": "Mass of C = (12/44) × 62.85 = 17.14 g.\nMass of H = (2/18) × 25.57 = 2.841 g.\n\nMoles C = 1.428 mol, H = 2.841 mol.\nRatio C:H = 1:2.\n\n(i) Empirical formula = CH₂.\n\n(ii) n = 252/14 = 18.\nMolecular formula = C₁₈H₃₆."
   },
   {
     "subject": "Chemistry",
@@ -585,9 +585,9 @@
     "category": "Measurement",
     "type": "Essay",
     "questionNumber": "1d",
-    "question": "(d) Five persons measure the length of a room and obtained the following results: 10.325m, 10.320m, 10.315m, 10.313m and 10.327m. Determine the:\n(i) mean deviation\n(ii) standard deviation [3 marks]",
+    "question": "(d) Five persons measure the length of a room and obtained the following results: 10.325m, 10.320m, 10.315m, 10.313m and 10.327m. Determine the:\n(i) mean deviation\n(ii) standard deviation",
     "options": [],
-    "modelAnswer": "Data: 10.325, 10.320, 10.315, 10.313, 10.327 (n = 5)\n\nStep 1: Calculate the mean (x̄).\nx̄ = (10.325 + 10.320 + 10.315 + 10.313 + 10.327) / 5\nx̄ = 51.600 / 5 = 10.320 m\n\nStep 2: Calculate deviations from the mean |xᵢ − x̄|.\n|10.325 − 10.320| = 0.005\n|10.320 − 10.320| = 0.000\n|10.315 − 10.320| = 0.005\n|10.313 − 10.320| = 0.007\n|10.327 − 10.320| = 0.007\n\n(i) Mean Deviation:\nMean deviation = Σ|xᵢ − x̄| / n\n= (0.005 + 0.000 + 0.005 + 0.007 + 0.007) / 5\n= 0.024 / 5\n= 0.0048 m ≈ 0.005 m\n\n(ii) Standard Deviation:\nStep 3: Square each deviation.\n(0.005)² = 0.000025\n(0.000)² = 0.000000\n(0.005)² = 0.000025\n(0.007)² = 0.000049\n(0.007)² = 0.000049\n\nStep 4: Sum of squared deviations.\nΣ(xᵢ − x̄)² = 0.000025 + 0 + 0.000025 + 0.000049 + 0.000049 = 0.000148\n\nStep 5: Standard deviation (using sample SD, n−1).\ns = √[Σ(xᵢ − x̄)² / (n−1)] = √(0.000148 / 4) = √(0.000037) = 0.00608 m ≈ 0.006 m\n\n(Population SD using n: σ = √(0.000148/5) = √(0.0000296) = 0.00544 m ≈ 0.005 m)"
+    "modelAnswer": "Mean = 10.320 m.\n\n(i) Mean deviation = 0.0048 m ≈ 0.005 m.\n\n(ii) Standard deviation (sample) = √(0.000148/4) = 0.006 m."
   },
   {
     "subject": "Chemistry",
@@ -595,9 +595,9 @@
     "category": "Atomic Structure",
     "type": "Essay",
     "questionNumber": "2a",
-    "question": "(a) (i) What is ionization of atom? [1 mark]\n(ii) An electron for a hydrogen atom is at an infinite excitation and the maximum wavelength of electromagnetic radiation that can completely remove (ionize) the electron from the H atom is 1460 nm, what is the initial state of the electron? (R = 2.18 × 10^{-18} J, h = 6.626 × 10^{-34}, c = 3 × 10^8) [3 marks]",
+    "question": "(a) (i) What is ionization of atom?\n(ii) An electron for a hydrogen atom is at an infinite excitation and the maximum wavelength of electromagnetic radiation that can completely remove (ionize) the electron from the H atom is 1460 nm, what is the initial state of the electron? (R = 2.18 × 10^{-18} J, h = 6.626 × 10^{-34}, c = 3 × 10^8)",
     "options": [],
-    "modelAnswer": "(i) Ionization of an Atom:\nIonization of an atom is the process by which an electron is completely removed from a neutral gaseous atom (or ion), converting it into a positively charged ion. It occurs when sufficient energy is supplied to overcome the attraction between the electron and the nucleus. The minimum energy required for this process is called the ionization energy.\nEquation: X(g) + energy → X⁺(g) + e⁻\n\n(ii) Finding the Initial State of the Electron:\nAt infinite excitation, the final state nf = ∞, so 1/nf² = 0.\n\nStep 1: Calculate the energy of the photon with λ = 1460 nm.\nλ = 1460 nm = 1460 × 10⁻⁹ m\nE = hc/λ = (6.626 × 10⁻³⁴ × 3 × 10⁸) / (1460 × 10⁻⁹)\nE = (1.9878 × 10⁻²⁵) / (1.46 × 10⁻⁶)\nE = 1.3615 × 10⁻¹⁹ J\n\nStep 2: Use the Bohr energy equation.\nE = RH × (1/nᵢ² − 1/nf²)\nSince nf = ∞: E = RH / nᵢ²\n1.3615 × 10⁻¹⁹ = 2.18 × 10⁻¹⁸ / nᵢ²\nnᵢ² = 2.18 × 10⁻¹⁸ / 1.3615 × 10⁻¹⁹\nnᵢ² = 16.01 ≈ 16\nnᵢ = 4\n\nThe initial state of the electron is n = 4 (the fourth energy level)."
+    "modelAnswer": "(i) Ionization: removal of an electron from a gaseous atom to form a positive ion.\n\n(ii) E = hc/λ = 1.3615 × 10⁻¹⁹ J.\nE = RH/nᵢ².\nnᵢ² = (2.18 × 10⁻¹⁸)/(1.3615 × 10⁻¹⁹) = 16.\nnᵢ = 4."
   },
   {
     "subject": "Chemistry",
@@ -605,9 +605,9 @@
     "category": "p-block elements",
     "type": "Essay",
     "questionNumber": "2b",
-    "question": "(b) The following equation shows the reaction of phosphine (PH3) with a hydrogen ion, H+: PH3 + H+ → PH4+\n(i) Predict the shape and bond angle of phosphine [1 mark]\n(ii) State the type of bonds present in PH4+ [1 mark]",
+    "question": "(b) The following equation shows the reaction of phosphine (PH3) with a hydrogen ion, H+: PH3 + H+ → PH4+\n(i) Predict the shape and bond angle of phosphine\n(ii) State the type of bonds present in PH4+",
     "options": [],
-    "modelAnswer": "(i) Shape and Bond Angle of Phosphine (PH₃):\nPhosphorus in PH₃ has 5 valence electrons: 3 are used to form 3 P–H bonds, and 1 lone pair remains on P.\nElectron geometry: tetrahedral (4 electron pairs)\nMolecular shape: Trigonal pyramidal (3 bonding pairs + 1 lone pair)\nBond angle: approximately 93.5° (slightly less than 109.5° due to the greater repulsion from the lone pair, and also because P is larger than N so the lone pair exerts slightly different repulsion; PH₃ has a smaller bond angle than NH₃)\n\n(ii) Types of Bonds in PH₄⁺:\nPH₄⁺ (phosphonium ion) contains two types of bonds:\n1. Three covalent (ordinary) bonds: The original 3 P–H bonds from PH₃, formed by mutual sharing of one electron each from P and H.\n2. One coordinate (dative) covalent bond: The bond formed when PH₃ donates its lone pair on P to the incoming H⁺ (which has an empty 1s orbital). Both electrons in this bond come from the phosphorus atom.\nOnce formed, all four P–H bonds in PH₄⁺ are equivalent and indistinguishable."
+    "modelAnswer": "(i) Trigonal pyramidal; bond angle ≈ 93.5°.\n\n(ii) Three covalent bonds + one coordinate (dative) bond."
   },
   {
     "subject": "Chemistry",
@@ -615,9 +615,9 @@
     "category": "Thermochemistry",
     "type": "Essay",
     "questionNumber": "3a",
-    "question": "(a) (i) State Hess's law of heat summation. [1 mark]\n(ii) Given the following data:\nH2(g) + ½O2(g) → H2O(l) ΔH = -285.8 kJ\nN2O5(g) + H2O(l) → 2HNO3(l) ΔH = -76.6 kJ\n½N2(g) + 3/2O2(g) + ½H2(g) → HNO3(l) ΔH = -174.1 kJ\nCalculate the standard enthalpy change ΔH for the reaction: 2N2(g) + 5O2(g) → 2N2O5(g) [3 marks]",
+    "question": "(a) (i) State Hess's law of heat summation.\n(ii) Given the following data:\nH2(g) + ½O2(g) → H2O(l) ΔH = -285.8 kJ\nN2O5(g) + H2O(l) → 2HNO3(l) ΔH = -76.6 kJ\n½N2(g) + 3/2O2(g) + ½H2(g) → HNO3(l) ΔH = -174.1 kJ\nCalculate the standard enthalpy change ΔH for the reaction: 2N2(g) + 5O2(g) → 2N2O5(g)",
     "options": [],
-    "modelAnswer": "(i) Hess's Law of Heat Summation:\nHess's Law states that the total enthalpy change for a chemical reaction is independent of the route by which the reaction takes place, provided the initial and final states are the same. In other words, the total heat of a reaction is the same whether the reaction occurs in one step or in several steps. This allows enthalpy changes to be calculated by algebraically combining known thermochemical equations.\n\n(ii) Calculating ΔH for 2N₂(g) + 5O₂(g) → 2N₂O₅(g):\n\nLabel the given equations:\n(1) H₂(g) + ½O₂(g) → H₂O(l)                              ΔH₁ = −285.8 kJ\n(2) N₂O₅(g) + H₂O(l) → 2HNO₃(l)                        ΔH₂ = −76.6 kJ\n(3) ½N₂(g) + 3/2O₂(g) + ½H₂(g) → HNO₃(l)            ΔH₃ = −174.1 kJ\n\nTarget: 2N₂(g) + 5O₂(g) → 2N₂O₅(g)\n\nStrategy:\n- Need 2N₂O₅ on the right → reverse equation (2) and multiply by 2\n- Need 2HNO₃ consumed → use equation (3) × 4 to get 4HNO₃ on right, then cancel\n- Need to eliminate H₂O and H₂\n\nStep 1: Multiply equation (3) by 4:\n2N₂(g) + 6O₂(g) + 2H₂(g) → 4HNO₃(l)       ΔH = 4 × (−174.1) = −696.4 kJ\n\nStep 2: Reverse equation (2) and multiply by 2:\n4HNO₃(l) → 2N₂O₅(g) + 2H₂O(l)               ΔH = 2 × (+76.6) = +153.2 kJ\n\nStep 3: Multiply equation (1) by 2 and reverse (to cancel 2H₂O):\n2H₂O(l) → 2H₂(g) + O₂(g)                          ΔH = 2 × (+285.8) = +571.6 kJ\n\nStep 4: Add all three modified equations:\n2N₂ + 6O₂ + 2H₂ → 4HNO₃                    ΔH = −696.4\n4HNO₃ → 2N₂O₅ + 2H₂O                        ΔH = +153.2\n2H₂O → 2H₂ + O₂                                  ΔH = +571.6\n─────────────────────────────────────────────────────\n2N₂ + 5O₂ → 2N₂O₅\n(Cancel: 4HNO₃, 2H₂O, 2H₂, and 1O₂ from each side)\n\nΔH = −696.4 + 153.2 + 571.6 = +28.4 kJ\n\nΔH for 2N₂(g) + 5O₂(g) → 2N₂O₅(g) = +28.4 kJ/mol"
+    "modelAnswer": "(i) The total enthalpy change is independent of the route taken.\n\n(ii) Reverse eq(2) × 2: +153.2 kJ.\nEq(3) × 4: −696.4 kJ.\nReverse eq(1) × 2: +571.6 kJ.\n\nSum: ΔH = +28.4 kJ/mol."
   },
   {
     "subject": "Chemistry",
@@ -625,29 +625,29 @@
     "category": "Atomic Structure",
     "type": "Essay",
     "questionNumber": "2c",
-    "question": "(c) Briefly explain how a mass spectrometer works. [2 marks]",
+    "question": "(c) Briefly explain how a mass spectrometer works.",
     "options": [],
-    "modelAnswer": "A mass spectrometer separates ions based on their mass-to-charge ratio (m/z) to determine the isotopic composition and relative atomic mass of an element.\n\nPrinciple of operation:\n1. Ionization: The sample is vaporized and bombarded with high-energy electrons, causing it to lose electrons and form positive ions (cations).\n2. Acceleration: The positive ions are accelerated by an electric field so that they all have the same kinetic energy.\n3. Deflection: The accelerated ions pass through a magnetic field, which deflects them. Lighter ions (lower m/z) are deflected more than heavier ions (higher m/z).\n4. Detection: The ions strike a detector, producing an electric current proportional to the number of ions. The mass spectrum is a plot of relative abundance against mass-to-charge ratio (m/z).\n\nThe instrument operates under vacuum to prevent ions from colliding with air molecules."
-},
-{
+    "modelAnswer": "Mass spectrometer separates ions by mass-to-charge ratio:\n1. Ionization (electron bombardment)\n2. Acceleration (electric field)\n3. Deflection (magnetic field — lighter ions deflected more)\n4. Detection (ion current proportional to abundance)\n\nVacuum is required to prevent ion collisions."
+  },
+  {
     "subject": "Chemistry",
     "year": 2025,
     "category": "Chemical Bonding",
     "type": "Essay",
     "questionNumber": "2d",
-    "question": "(d) Define with a balanced chemical equation, the term \"displacement reaction.\" [2 marks]",
+    "question": "(d) Define with a balanced chemical equation, the term \"displacement reaction.\"",
     "options": [],
-    "modelAnswer": "A displacement reaction is a chemical reaction in which a more reactive element replaces (displaces) a less reactive element from its compound. The more reactive element takes the place of the less reactive one in the compound.\n\nGeneral equation: A + BC → AC + B\n(where A is more reactive than B)\n\nExample: Zinc displaces copper from copper(II) sulfate solution because zinc is more reactive than copper.\nZn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)\n\nAnother example: Chlorine displaces bromine from potassium bromide because chlorine is more reactive.\nCl₂(g) + 2KBr(aq) → 2KCl(aq) + Br₂(aq)\n\nThe reactivity series determines whether a displacement reaction will occur — a metal can only displace another metal that is lower in the reactivity series."
-},
+    "modelAnswer": "A more reactive element displaces a less reactive element from its compound.\n\nExample: Zn + CuSO₄ → ZnSO₄ + Cu."
+  },
   {
     "subject": "Chemistry",
     "year": 2025,
     "category": "Electrochemistry",
     "type": "Essay",
     "questionNumber": "3b",
-    "question": "(b) Calculate the e.m.f of the cell at 25°C for the following electrochemical cell: Cr / Cr^{3+}(0.1M) // Fe^{2+}(0.01M) / Fe. Given the following standard reduction potentials: E°Cr^{3+}/Cr = -0.74V and E°Fe^{2+}/Fe = -0.44V [4 marks]",
+    "question": "(b) Calculate the e.m.f of the cell at 25°C for the following electrochemical cell: Cr / Cr^{3+}(0.1M) // Fe^{2+}(0.01M) / Fe. Given the following standard reduction potentials: E°Cr^{3+}/Cr = -0.74V and E°Fe^{2+}/Fe = -0.44V",
     "options": [],
-    "modelAnswer": "Cell notation: Cr / Cr³⁺(0.1M) // Fe²⁺(0.01M) / Fe\nAnode (left, oxidation): Cr → Cr³⁺ + 3e⁻\nCathode (right, reduction): Fe²⁺ + 2e⁻ → Fe\n\nStep 1: Calculate standard cell e.m.f.\nE°cell = E°cathode − E°anode = E°(Fe²⁺/Fe) − E°(Cr³⁺/Cr)\nE°cell = (−0.44) − (−0.74) = −0.44 + 0.74 = +0.30 V\n\nStep 2: Balance electrons for overall reaction.\nMultiply oxidation by 2 and reduction by 3 to equalise electrons (6e⁻):\nAnode: 2Cr → 2Cr³⁺ + 6e⁻\nCathode: 3Fe²⁺ + 6e⁻ → 3Fe\nOverall: 2Cr + 3Fe²⁺ → 2Cr³⁺ + 3Fe\nn = 6 electrons transferred\n\nStep 3: Apply the Nernst equation at 25°C (298 K).\nE = E°cell − (RT/nF) × ln Q\nor using: E = E°cell − (0.0592/n) × log Q\n\nQ = [Cr³⁺]² / [Fe²⁺]³\n(Fe and Cr are solids — activity = 1)\nQ = (0.1)² / (0.01)³ = 0.01 / 0.000001 = 10,000 = 1 × 10⁴\n\nE = 0.30 − (0.0592/6) × log(1 × 10⁴)\nE = 0.30 − (0.009867) × 4\nE = 0.30 − 0.03947\nE = +0.2605 V ≈ 0.26 V\n\nThe e.m.f of the cell at 25°C is approximately +0.26 V."
+    "modelAnswer": "E°cell = (−0.44) − (−0.74) = +0.30 V.\nn = 6.\nQ = (0.1)²/(0.01)³ = 10⁴.\n\nE = 0.30 − (0.0592/6) × log(10⁴) = 0.30 − 0.03947 = +0.26 V."
   },
   {
     "subject": "Chemistry",
@@ -655,9 +655,9 @@
     "category": "Equilibrium State",
     "type": "Essay",
     "questionNumber": "3c",
-    "question": "(c) Decomposition of COCl2 is a reversible process written as COCl2(g) ⇌ CO(g) + Cl2(g). When the reaction is at equilibrium, what will be the effect of:\n(i) Adding more COCl2\n(ii) Adding more Cl2 [2 marks]",
+    "question": "(c) Decomposition of COCl2 is a reversible process written as COCl2(g) ⇌ CO(g) + Cl2(g). When the reaction is at equilibrium, what will be the effect of:\n(i) Adding more COCl2\n(ii) Adding more Cl2",
     "options": [],
-    "modelAnswer": "Applying Le Chatelier's Principle: when a stress is applied to a system at equilibrium, the system shifts to oppose the stress and restore equilibrium.\n\n(i) Adding more COCl₂ (a reactant):\nIncreasing the concentration of COCl₂ on the left-hand side creates a stress. The system responds by shifting the equilibrium position to the RIGHT (forward direction) to consume the excess COCl₂. This produces more CO and Cl₂ until a new equilibrium is established. The overall effect is an increase in the concentrations of CO and Cl₂, and a partial reduction in the added COCl₂ (though [COCl₂] at the new equilibrium is still higher than before the addition).\n\n(ii) Adding more Cl₂ (a product):\nIncreasing the concentration of Cl₂ on the right-hand side creates a stress. The system responds by shifting the equilibrium position to the LEFT (reverse direction) to consume the excess Cl₂. This converts some CO and Cl₂ back into COCl₂, increasing [COCl₂] until a new equilibrium is established. The overall effect is a decrease in the concentrations of CO and the added Cl₂ (partially), and an increase in [COCl₂]."
+    "modelAnswer": "(i) Adding COCl₂ (reactant): Equilibrium shifts RIGHT (forward) to consume excess reactant.\n\n(ii) Adding Cl₂ (product): Equilibrium shifts LEFT (reverse) to consume excess product."
   },
   {
     "subject": "Chemistry",
@@ -665,9 +665,9 @@
     "category": "Nuclear Chemistry",
     "type": "Essay",
     "questionNumber": "4a",
-    "question": "(a) (i) Define Nuclear binding energy [1 mark]\n(ii) A compound is used in an experiment 6.5 days after it was prepared. If the sample originally contained 0.35g of phosphorus-32 with a half-life of 15 days. How many grams was used in the experiment? [2 marks]",
+    "question": "(a) (i) Define Nuclear binding energy\n(ii) A compound is used in an experiment 6.5 days after it was prepared. If the sample originally contained 0.35g of phosphorus-32 with a half-life of 15 days. How many grams was used in the experiment?",
     "options": [],
-    "modelAnswer": "(i) Nuclear Binding Energy:\nNuclear binding energy is the energy required to completely separate all the protons and neutrons (nucleons) in a nucleus into individual, isolated nucleons. Equivalently, it is the energy released when free protons and neutrons come together to form a nucleus. It arises from the mass defect — the difference between the mass of the separated nucleons and the actual mass of the nucleus (Δm), related by Einstein's equation: E = Δmc². A higher binding energy per nucleon indicates a more stable nucleus.\n\n(ii) Mass of Phosphorus-32 remaining after 6.5 days:\nUsing the radioactive decay equation:\nN = N₀ × (1/2)^(t/t½)\n\nGiven: N₀ = 0.35 g, t = 6.5 days, t½ = 15 days\n\nN = 0.35 × (1/2)^(6.5/15)\nN = 0.35 × (0.5)^(0.4333)\nN = 0.35 × e^(0.4333 × ln0.5)\nN = 0.35 × e^(0.4333 × (−0.6931))\nN = 0.35 × e^(−0.3003)\nN = 0.35 × 0.7404\nN = 0.2591 g ≈ 0.259 g\n\nApproximately 0.259 g of phosphorus-32 was used in the experiment."
+    "modelAnswer": "(i) Nuclear binding energy: energy required to separate all nucleons in a nucleus into individual nucleons.\n\n(ii) N = 0.35 × (1/2)^(6.5/15) = 0.259 g remaining.\n\nNote: The question asks for grams used, but 0.259 g is the amount remaining.\nGrams used = 0.35 − 0.259 = 0.091 g."
   },
   {
     "subject": "Chemistry",
@@ -675,9 +675,9 @@
     "category": "Equilibrium State",
     "type": "Essay",
     "questionNumber": "4b",
-    "question": "(b) Consider the reaction for the combustion of iron: 4Fe(aq) + 3O2(g) ⇌ 2Fe2O3(aq) at 25°C. An equilibrium mixture contains 0.2 moles of Fe, 0.3 moles of O2 and 0.4 moles of Fe2O3 all in a 2000 mL reaction vessel.\n(i) Write the equilibrium constant expression for the reaction\n(ii) Calculate the values of Kc and Kp for the reaction [3 marks]",
+    "question": "(b) Consider the reaction for the combustion of iron: 4Fe(aq) + 3O2(g) ⇌ 2Fe2O3(aq) at 25°C. An equilibrium mixture contains 0.2 moles of Fe, 0.3 moles of O2 and 0.4 moles of Fe2O3 all in a 2000 mL reaction vessel.\n(i) Write the equilibrium constant expression for the reaction\n(ii) Calculate the values of Kc and Kp for the reaction",
     "options": [],
-    "modelAnswer": "(i) Equilibrium Constant Expression:\nFor: 4Fe(aq) + 3O₂(g) ⇌ 2Fe₂O₃(aq)\nKc = [Fe₂O₃]² / ([Fe]⁴ × [O₂]³)\n\nNote: All species are included since Fe and Fe₂O₃ are given as aqueous (aq), not solids. If they were pure solids, their activities would be 1 and excluded.\n\n(ii) Calculating Kc:\nVolume = 2000 mL = 2.0 L\n\nConcentrations at equilibrium:\n[Fe] = 0.2 / 2.0 = 0.1 M\n[O₂] = 0.3 / 2.0 = 0.15 M\n[Fe₂O₃] = 0.4 / 2.0 = 0.2 M\n\nKc = (0.2)² / [(0.1)⁴ × (0.15)³]\nKc = 0.04 / [(0.0001) × (0.003375)]\nKc = 0.04 / (3.375 × 10⁻⁷)\nKc = 1.185 × 10⁵ ≈ 1.19 × 10⁵\n\nCalculating Kp:\nKp = Kc × (RT)^Δn\nwhere Δn = moles of gaseous products − moles of gaseous reactants\nΔn = 0 − 3 = −3 (only O₂ is gaseous)\nR = 0.08206 L·atm·mol⁻¹·K⁻¹, T = 25°C = 298 K\nRT = 0.08206 × 298 = 24.45 L·atm·mol⁻¹\n\nKp = Kc × (RT)^(−3)\nKp = 1.185 × 10⁵ × (24.45)^(−3)\nKp = 1.185 × 10⁵ × (1/14,620)\nKp = 1.185 × 10⁵ / 1.462 × 10⁴\nKp = 8.10"
+    "modelAnswer": "(i) Kc = [Fe₂O₃]²/([Fe]⁴ × [O₂]³).\n\n(ii) [Fe] = 0.1 M, [O₂] = 0.15 M, [Fe₂O₃] = 0.2 M.\nKc = (0.2)²/[(0.1)⁴ × (0.15)³] = 1.19 × 10⁵.\n\nΔn = −3.\nKp = Kc(RT)^(−3) = 1.185 × 10⁵ × (24.45)⁻³ = 8.10."
   },
   {
     "subject": "Chemistry",
@@ -685,9 +685,9 @@
     "category": "Electrochemistry",
     "type": "Essay",
     "questionNumber": "4c",
-    "question": "(c) Balance the redox equation in basic medium: MnO4^- + C2O4^{2-} → MnO2 + CO2 [2 marks]",
+    "question": "(c) Balance the redox equation in basic medium: MnO4^- + C2O4^{2-} → MnO2 + CO2",
     "options": [],
-    "modelAnswer": "Balancing MnO₄⁻ + C₂O₄²⁻ → MnO₂ + CO₂ in Basic Medium:\n\nStep 1: Write unbalanced half-reactions.\nReduction: MnO₄⁻ → MnO₂\nOxidation: C₂O₄²⁻ → CO₂\n\nStep 2: Balance the reduction half-reaction.\nMnO₄⁻ → MnO₂\nBalance O: MnO₄⁻ → MnO₂ + 2H₂O\nBalance H: MnO₄⁻ + 4H⁺ → MnO₂ + 2H₂O\nBalance charge (add 3e⁻): MnO₄⁻ + 4H⁺ + 3e⁻ → MnO₂ + 2H₂O\nConvert to basic (add 4OH⁻ to both sides):\nMnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻\n\nStep 3: Balance the oxidation half-reaction.\nC₂O₄²⁻ → 2CO₂   (balance C)\nBalance O: already balanced (4O each side)\nBalance charge: C₂O₄²⁻ → 2CO₂ + 2e⁻\n(Left = −2; Right = 0; add 2e⁻ to right) ✓\n\nStep 4: Equalise electrons.\nReduction × 2: 2MnO₄⁻ + 4H₂O + 6e⁻ → 2MnO₂ + 8OH⁻\nOxidation × 3: 3C₂O₄²⁻ → 6CO₂ + 6e⁻\n\nStep 5: Add and simplify.\n2MnO₄⁻ + 4H₂O + 3C₂O₄²⁻ → 2MnO₂ + 8OH⁻ + 6CO₂\n\nFinal Balanced Equation (basic medium):\n2MnO₄⁻ + 3C₂O₄²⁻ + 4H₂O → 2MnO₂ + 6CO₂ + 8OH⁻"
+    "modelAnswer": "2MnO₄⁻ + 3C₂O₄²⁻ + 4H₂O → 2MnO₂ + 6CO₂ + 8OH⁻."
   },
   {
     "subject": "Chemistry",
@@ -695,9 +695,9 @@
     "category": "Ionic Equilibria",
     "type": "Essay",
     "questionNumber": "4d",
-    "question": "(d) (i) Write an expression for the Ksp of magnesium hydroxide, stating its unit. [1 mark]\n(ii) Given that the numerical value of the Ksp of magnesium hydroxide is 2.0 × 10^{-11}, calculate the concentration of Mg(OH)2 in a saturated solution. [2 marks]",
+    "question": "(d) (i) Write an expression for the Ksp of magnesium hydroxide, stating its unit.\n(ii) Given that the numerical value of the Ksp of magnesium hydroxide is 2.0 × 10^{-11}, calculate the concentration of Mg(OH)2 in a saturated solution.",
     "options": [],
-    "modelAnswer": "(i) Ksp Expression for Mg(OH)₂:\nDissolution: Mg(OH)₂(s) ⇌ Mg²⁺(aq) + 2OH⁻(aq)\nKsp = [Mg²⁺][OH⁻]²\nUnit: Since [Mg²⁺] is in mol/dm³ and [OH⁻]² is in (mol/dm³)², the unit of Ksp is:\nmol³ dm⁻⁹ (or mol³ L⁻³)\n\n(ii) Concentration of Mg(OH)₂ in Saturated Solution:\nLet solubility of Mg(OH)₂ = s mol/dm³\nFrom dissolution: [Mg²⁺] = s and [OH⁻] = 2s\n\nKsp = [Mg²⁺][OH⁻]² = s × (2s)² = s × 4s² = 4s³\n2.0 × 10⁻¹¹ = 4s³\ns³ = 2.0 × 10⁻¹¹ / 4 = 5.0 × 10⁻¹²\ns = ∛(5.0 × 10⁻¹²)\ns = ∛(5.0) × 10⁻⁴\ns = 1.710 × 10⁻⁴ mol/dm³\n\nThe concentration (solubility) of Mg(OH)₂ in a saturated solution ≈ 1.71 × 10⁻⁴ mol/dm³"
+    "modelAnswer": "(i) Ksp = [Mg²⁺][OH⁻]². Unit: mol³ dm⁻⁹.\n\n(ii) Ksp = 4s³.\ns = ∛(2.0 × 10⁻¹¹/4) = 1.71 × 10⁻⁴ mol/dm³."
   },
   {
     "subject": "Chemistry",
@@ -705,9 +705,9 @@
     "category": "d-block elements",
     "type": "Essay",
     "questionNumber": "5a",
-    "question": "(a) Give a reason for the following:\n(i) Zn, Cd and Hg are not considered as true transition metals [1 mark]\n(ii) Zn^{2+} salts are white, while Cu^{2+} salts are blue [1 mark]",
+    "question": "(a) Give a reason for the following:\n(i) Zn, Cd and Hg are not considered as true transition metals\n(ii) Zn^{2+} salts are white, while Cu^{2+} salts are blue",
     "options": [],
-    "modelAnswer": "(i) Zn, Cd and Hg are not true transition metals:\nTrue transition metals are defined as elements that have partially filled d-orbitals in their ground state or in their most common stable oxidation state (forming ions). Zn (Z=30), Cd (Z=48), and Hg (Z=80) all have the configuration [noble gas] d¹⁰s² in their ground state and form M²⁺ ions with completely filled d¹⁰ configurations. Since their d-orbitals are always completely filled (never partially filled) in both the element and their common ions, they do not exhibit the characteristic properties of transition metals (variable oxidation states, coloured ions, catalytic behaviour due to d-electrons). Therefore, they are classified as post-transition metals, not true transition metals.\n\n(ii) Zn²⁺ salts are white; Cu²⁺ salts are blue:\nThe colour of transition metal ions arises from d–d electronic transitions. When visible light hits the ion, electrons in the partially filled d-orbitals absorb specific wavelengths and are promoted to higher d-energy levels (split by ligand field); the complementary colour is transmitted.\nCu²⁺ has the configuration [Ar] 3d⁹ — a partially filled d-subshell. This allows d–d transitions where electrons absorb visible light (in the red/orange region), transmitting blue light — hence Cu²⁺ salts appear blue.\nZn²⁺ has the configuration [Ar] 3d¹⁰ — a completely filled d-subshell. No d–d transitions are possible because all d-orbitals are full and no electron can be promoted within the d-subshell. Therefore, Zn²⁺ does not absorb visible light and its salts appear white (colourless)."
+    "modelAnswer": "(i) They have completely filled d¹⁰ configuration in element and common ions — never partially filled d-orbitals.\n\n(ii) Cu²⁺ (3d⁹) has unpaired d-electrons → d-d transitions → blue.\nZn²⁺ (3d¹⁰) has filled d-orbitals → no d-d transitions → white."
   },
   {
     "subject": "Chemistry",
@@ -715,9 +715,9 @@
     "category": "d-block elements",
     "type": "Essay",
     "questionNumber": "5b",
-    "question": "(b) Write the electronic configuration of the following atoms/ions and indicate the magnetic property:\n(i) V^{3+}\n(ii) Fe^{3+}\n(iii) Ti\n(iv) Cr^{+} [4 marks]",
+    "question": "(b) Write the electronic configuration of the following atoms/ions and indicate the magnetic property:\n(i) V^{3+}\n(ii) Fe^{3+}\n(iii) Ti\n(iv) Cr^{+}",
     "options": [],
-    "modelAnswer": "Magnetic property: Paramagnetic = has unpaired electrons; Diamagnetic = all electrons paired.\n\n(i) V³⁺ (Vanadium, Z = 23; loses 3 electrons from V: [Ar] 3d³ 4s²):\nV³⁺: [Ar] 3d²\nFull: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d²\nUnpaired electrons: 2 (both 3d electrons are unpaired by Hund's rule)\nMagnetic property: Paramagnetic\n\n(ii) Fe³⁺ (Iron, Z = 26; Fe ground state: [Ar] 3d⁶ 4s²; loses 3e⁻ from 4s first then 3d):\nFe³⁺: [Ar] 3d⁵\nFull: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵\nUnpaired electrons: 5 (each 3d orbital has one electron — half-filled, maximally unpaired)\nMagnetic property: Paramagnetic (strongly paramagnetic)\n\n(iii) Ti (Titanium, Z = 22):\nGround state: [Ar] 3d² 4s²\nFull: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d² 4s²\nUnpaired electrons: 2 (two 3d electrons, each in separate orbitals)\nMagnetic property: Paramagnetic\n\n(iv) Cr⁺ (Chromium, Z = 24; Cr ground state is [Ar] 3d⁵ 4s¹ — special half-filled stability; loses 1e⁻ from 4s):\nCr⁺: [Ar] 3d⁵\nFull: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵\nUnpaired electrons: 5\nMagnetic property: Paramagnetic"
+    "modelAnswer": "(i) V³⁺: [Ar] 3d² — paramagnetic (2 unpaired).\n(ii) Fe³⁺: [Ar] 3d⁵ — paramagnetic (5 unpaired).\n(iii) Ti: [Ar] 3d² 4s² — paramagnetic (2 unpaired).\n(iv) Cr⁺: [Ar] 3d⁵ — paramagnetic (5 unpaired)."
   },
   {
     "subject": "Chemistry",
@@ -725,9 +725,9 @@
     "category": "p-block elements",
     "type": "Essay",
     "questionNumber": "5c",
-    "question": "(c) The melting points of some oxides of Group IV elements are given below:\nOxide: CO2 (-78°C), SiO2 (1610°C), SnO2 (1630°C)\nDescribe the bonding and its relation to the melting point for the following oxides:\n(i) CO2\n(ii) SiO2\n(iii) SnO2 [3 marks]",
+    "question": "(c) The melting points of some oxides of Group IV elements are given below:\nOxide: CO2 (-78°C), SiO2 (1610°C), SnO2 (1630°C)\nDescribe the bonding and its relation to the melting point for the following oxides:\n(i) CO2\n(ii) SiO2\n(iii) SnO2",
     "options": [],
-    "modelAnswer": "(i) CO₂ (melting point −78°C — actually sublimation point):\nBonding: CO₂ is a simple molecular compound. Carbon forms two double covalent bonds with oxygen (O=C=O), resulting in a linear, non-polar molecule. The intramolecular bonds (C=O) are strong covalent bonds, but the intermolecular forces between CO₂ molecules are very weak London (dispersion) forces only — because the molecule is non-polar and symmetrical, the bond dipoles cancel.\nRelation to melting point: The very low melting/sublimation point (−78°C) reflects the ease of overcoming these weak London dispersion forces between individual CO₂ molecules. Very little energy is needed to separate the molecules, hence the extremely low melting point.\n\n(ii) SiO₂ (melting point 1610°C):\nBonding: SiO₂ is a giant covalent (macromolecular/network) solid. Unlike CO₂, silicon cannot form stable double bonds (Si=O) due to its larger size and inability to form effective π bonds. Instead, each Si atom forms four single covalent bonds to four oxygen atoms in a three-dimensional tetrahedral network, with each O bridging two Si atoms.\nRelation to melting point: The extremely high melting point (1610°C) reflects the need to break a vast number of strong Si–O covalent bonds throughout the entire macromolecular lattice. Enormous energy is required, resulting in a very high melting point.\n\n(iii) SnO₂ (melting point 1630°C):\nBonding: SnO₂ is an ionic solid. Tin forms Sn⁴⁺ ions and oxygen forms O²⁻ ions, arranged in a rutile-type ionic lattice with strong electrostatic attractions between the highly charged ions (Sn⁴⁺ and O²⁻). The high charge on both ions creates very strong ionic bonds throughout the crystal lattice.\nRelation to melting point: The very high melting point (1630°C) is a consequence of the strong electrostatic forces between the highly charged Sn⁴⁺ and O²⁻ ions in the ionic lattice. A large amount of energy is required to overcome these strong ionic attractions and melt the solid."
+    "modelAnswer": "(i) CO₂: simple molecular — weak London forces → very low MP.\n(ii) SiO₂: giant covalent network — strong Si-O bonds throughout → very high MP.\n(iii) SnO₂: ionic lattice (Sn⁴⁺ and O²⁻) — strong electrostatic forces → very high MP."
   },
   {
     "subject": "Chemistry",
@@ -735,9 +735,9 @@
     "category": "Structure and Bonding in Organic Compounds",
     "type": "Essay",
     "questionNumber": "5d",
-    "question": "(d) Deduce the hybrid orbitals involved in the bonding molecules of CH4 and BCl3. [1 mark]",
+    "question": "(d) Deduce the hybrid orbitals involved in the bonding molecules of CH4 and BCl3.",
     "options": [],
-    "modelAnswer": "CH₄ (methane):\nCarbon in CH₄ has 4 bonding pairs and no lone pairs. To form 4 equivalent bonds directed to the corners of a tetrahedron, carbon mixes one 2s orbital with three 2p orbitals to form four equivalent sp³ hybrid orbitals.\nHybridization: sp³\nGeometry: Tetrahedral; bond angle 109.5°\n\nBCl₃ (boron trichloride):\nBoron in BCl₃ has 3 bonding pairs and no lone pairs (boron has only 3 valence electrons). Boron mixes one 2s orbital with two 2p orbitals to form three equivalent sp² hybrid orbitals arranged in a trigonal planar geometry. The remaining unhybridized 2p orbital is empty and perpendicular to the plane.\nHybridization: sp²\nGeometry: Trigonal planar; bond angle 120°"
+    "modelAnswer": "CH₄: sp³ (tetrahedral).\nBCl₃: sp² (trigonal planar)."
   },
   {
     "subject": "Chemistry",
@@ -745,9 +745,9 @@
     "category": "s-block elements",
     "type": "Essay",
     "questionNumber": "6a",
-    "question": "(a) Arrange the hydroxides and the sulphates of alkaline earth metals in increasing order of solubilities. [2 marks]",
+    "question": "(a) Arrange the hydroxides and the sulphates of alkaline earth metals in increasing order of solubilities.",
     "options": [],
-    "modelAnswer": "Alkaline earth metals (Group 2): Be, Mg, Ca, Sr, Ba\n\nHydroxides — Increasing Solubility (least → most soluble):\nBe(OH)₂ < Mg(OH)₂ < Ca(OH)₂ < Sr(OH)₂ < Ba(OH)₂\nSolubility increases down the group. Reason: As the cation size increases (Be²⁺ → Ba²⁺), the lattice enthalpy decreases faster than the hydration enthalpy, so the overall dissolution becomes more energetically favourable. Ba(OH)₂ is quite soluble; Be(OH)₂ is almost insoluble.\n\nSulphates — Increasing Solubility (least → most soluble):\nBaSO₄ < SrSO₄ < CaSO₄ < MgSO₄ < BeSO₄\nSolubility decreases down the group (opposite trend to hydroxides). Reason: The large SO₄²⁻ ion dominates the lattice enthalpy — as the cation gets larger down the group, the hydration enthalpy of M²⁺ decreases more rapidly than the lattice enthalpy, making dissolution less favourable. BaSO₄ is practically insoluble; BeSO₄ and MgSO₄ are readily soluble."
+    "modelAnswer": "Hydroxides: Be(OH)₂ < Mg(OH)₂ < Ca(OH)₂ < Sr(OH)₂ < Ba(OH)₂.\n\nSulphates: BaSO₄ < SrSO₄ < CaSO₄ < MgSO₄ < BeSO₄."
   },
   {
     "subject": "Chemistry",
@@ -755,9 +755,9 @@
     "category": "Nanochemistry",
     "type": "Essay",
     "questionNumber": "6b",
-    "question": "(b) Write the classification of nanostructured materials based on their dimensionality. [2 marks]",
+    "question": "(b) Write the classification of nanostructured materials based on their dimensionality.",
     "options": [],
-    "modelAnswer": "Nanostructured materials are classified based on the number of dimensions that fall within the nanoscale range (1–100 nm):\n\n1. Zero-dimensional (0D) nanostructures:\nAll three dimensions (length, width, height) are in the nanoscale range. The material is confined in all three directions.\nExamples: Quantum dots, nanoparticles, nanoclusters, fullerenes (C₆₀)\n\n2. One-dimensional (1D) nanostructures:\nTwo dimensions are in the nanoscale range; one dimension extends beyond (macroscopic length). These are elongated structures.\nExamples: Carbon nanotubes (CNTs), nanowires, nanorods, nanofibers\n\n3. Two-dimensional (2D) nanostructures:\nOnly one dimension is in the nanoscale range (thickness/height); the other two dimensions are macroscopic. These are thin, sheet-like structures.\nExamples: Graphene, thin films, nanosheets, nanoplates, nanodiscs\n\n4. Three-dimensional (3D) nanostructures (bulk nanostructured materials):\nNone of the dimensions are confined to the nanoscale, but the material contains nanoscale features (e.g. nanocrystalline grains) within a bulk structure.\nExamples: Nanocrystalline metals, nanoporous materials, bundles of nanowires"
+    "modelAnswer": "0D: quantum dots, nanoparticles (all dimensions nanoscale).\n1D: nanotubes, nanowires (two dimensions nanoscale).\n2D: graphene, thin films (one dimension nanoscale).\n3D: nanocrystalline bulk materials (nanoscale features in bulk)."
   },
   {
     "subject": "Chemistry",
@@ -765,9 +765,9 @@
     "category": "p-block elements",
     "type": "Essay",
     "questionNumber": "6c",
-    "question": "(c) Na2O, Al2O3 and P4O10 are oxides of period 3. Explain using balanced equations, what is observed when each compound is reacted with:\n(i) An alkali\n(ii) An acid\n(iii) Which oxide(s) in c(i) above will give a solution whose pH is higher than 7 in water? [5 marks]",
+    "question": "(c) Na2O, Al2O3 and P4O10 are oxides of period 3. Explain using balanced equations, what is observed when each compound is reacted with:\n(i) An alkali\n(ii) An acid\n(iii) Which oxide(s) in c(i) above will give a solution whose pH is higher than 7 in water?",
     "options": [],
-    "modelAnswer": "Na₂O is a basic oxide; Al₂O₃ is an amphoteric oxide; P₄O₁₀ is an acidic oxide.\n\n(i) Reaction with an alkali (e.g. NaOH):\n\nNa₂O + alkali:\nNa₂O does not react with NaOH (basic oxide + base — no reaction, like dissolves like).\nNa₂O simply dissolves in water to give NaOH:\nNa₂O(s) + H₂O(l) → 2NaOH(aq)\n\nAl₂O₃ + NaOH:\nAl₂O₃ reacts with alkali (amphoteric behaviour — acts as an acid with bases):\nAl₂O₃(s) + 2NaOH(aq) + 3H₂O(l) → 2NaAl(OH)₄(aq)\nor: Al₂O₃(s) + 2NaOH(aq) → 2NaAlO₂(aq) + H₂O(l)\nObservation: Al₂O₃ dissolves in NaOH to give sodium aluminate solution.\n\nP₄O₁₀ + NaOH:\nP₄O₁₀ reacts vigorously with alkali (acidic oxide + base → salt + water):\nP₄O₁₀(s) + 12NaOH(aq) → 4Na₃PO₄(aq) + 6H₂O(l)\nObservation: P₄O₁₀ dissolves readily to give sodium phosphate solution.\n\n(ii) Reaction with an acid (e.g. HCl):\n\nNa₂O + HCl:\nBasic oxide reacts readily with acid:\nNa₂O(s) + 2HCl(aq) → 2NaCl(aq) + H₂O(l)\nObservation: Na₂O dissolves to give sodium chloride solution.\n\nAl₂O₃ + HCl:\nAmphoteric oxide reacts with acid (acts as a base with acids):\nAl₂O₃(s) + 6HCl(aq) → 2AlCl₃(aq) + 3H₂O(l)\nObservation: Al₂O₃ dissolves to give aluminium chloride solution.\n\nP₄O₁₀ + HCl:\nAcidic oxide generally does not react with acids (acid + acid — no reaction).\nP₄O₁₀ reacts with water to give phosphoric acid instead:\nP₄O₁₀(s) + 6H₂O(l) → 4H₃PO₄(aq)\nNo observable reaction with HCl.\n\n(iii) Oxides giving pH > 7 in water:\nNa₂O gives a pH higher than 7 in water.\nNa₂O(s) + H₂O(l) → 2NaOH(aq)\nNaOH is a strong base, so the resulting solution is strongly alkaline (pH >> 7).\n\nAl₂O₃ has very limited solubility in pure water and gives a very slightly acidic solution (due to slight Al³⁺ hydrolysis), pH slightly below 7.\nP₄O₁₀ reacts with water to form H₃PO₄ (phosphoric acid), giving pH < 7.\n\nTherefore, only Na₂O gives a solution with pH > 7 in water."
+    "modelAnswer": "(i) With alkali:\nNa₂O: no reaction with NaOH (basic oxide).\nAl₂O₃: Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O (dissolves).\nP₄O₁₀: P₄O₁₀ + 12NaOH → 4Na₃PO₄ + 6H₂O (dissolves).\n\n(ii) With acid:\nNa₂O: Na₂O + 2HCl → 2NaCl + H₂O (dissolves).\nAl₂O₃: Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O (dissolves).\nP₄O₁₀: no reaction with HCl (acidic oxide).\n\n(iii) Only Na₂O gives pH > 7 in water (forms NaOH)."
   },
   {
     "subject": "Chemistry",
@@ -775,9 +775,9 @@
     "category": "Chemistry of Hydrogen",
     "type": "Essay",
     "questionNumber": "6d",
-    "question": "(d) Justify the placement of hydrogen into groups I and VII of the periodic table. [1 mark]",
+    "question": "(d) Justify the placement of hydrogen into groups I and VII of the periodic table.",
     "options": [],
-    "modelAnswer": "Hydrogen can be placed in Group I (alkali metals) or Group VII (halogens) because it shares properties with both groups:\n\nJustification for Group I (like alkali metals):\n- Hydrogen has 1 valence electron in its 1s orbital, like all Group 1 metals (ns¹ configuration).\n- It can lose its single electron to form H⁺ (proton), similar to how alkali metals form M⁺ ions.\n- It reacts with non-metals to form compounds analogous to those of alkali metals (e.g. HCl similar to NaCl in structure).\n- It acts as a reducing agent in some reactions.\n\nJustification for Group VII (like halogens):\n- Hydrogen needs only one electron to complete its shell (1s²), similar to halogens that need one electron to achieve a noble gas configuration.\n- It can gain one electron to form H⁻ (hydride ion), analogous to halide ions (X⁻).\n- Like halogens, hydrogen exists as a diatomic molecule (H₂) in its elemental form.\n- Hydrogen forms ionic hydrides (e.g. NaH) similar to ionic halides (e.g. NaCl), where H⁻ resembles F⁻ in size and charge.\n\nDue to its unique properties, hydrogen is best placed in a separate position, but its similarities to both groups justify its dual placement."
+    "modelAnswer": "Group I: 1 valence electron, forms H⁺ like alkali metals.\nGroup VII: needs one electron, forms H⁻ like halides, exists as diatomic H₂."
   },
   {
     "subject": "Chemistry",
@@ -785,9 +785,9 @@
     "category": "Carbonyl Compounds",
     "type": "Essay",
     "questionNumber": "7a",
-    "question": "(a) HCN reacts with propanal (CH3CH2CHO) to form compound F.\n(i) Give the name and the structure of the organic product F.\n(ii) State the type of reaction involved.\n(iii) Write the formula and name the product obtained when Compound F is hydrolysed in acid (H2O/H+). [3 marks]",
+    "question": "(a) HCN reacts with propanal (CH3CH2CHO) to form compound F.\n(i) Give the name and the structure of the organic product F.\n(ii) State the type of reaction involved.\n(iii) Write the formula and name the product obtained when Compound F is hydrolysed in acid (H2O/H+).",
     "options": [],
-    "modelAnswer": "(i) Name and Structure of Compound F:\nHCN adds across the C=O bond of propanal (nucleophilic addition). The CN⁻ (nucleophile) attacks the electrophilic carbonyl carbon, and H⁺ adds to the oxygen:\n\nReaction: CH₃CH₂CHO + HCN → CH₃CH₂CH(OH)CN\n\nStructure of F: CH₃CH₂CH(OH)CN\nName: 2-hydroxybutanenitrile (also called propanal cyanohydrin)\nIt is a cyanohydrin — a compound with both –OH and –CN on the same carbon.\n\n(ii) Type of Reaction:\nNucleophilic addition reaction.\nThe CN⁻ ion acts as the nucleophile, attacking the electron-deficient (electrophilic) carbonyl carbon of the aldehyde. This is characteristic of aldehydes and ketones.\n\n(iii) Product of Acid Hydrolysis of F:\nWhen the nitrile group (–CN) in F is hydrolysed under acidic conditions (H₂O/H⁺), it is converted to a carboxylic acid (–COOH):\nCH₃CH₂CH(OH)CN + 2H₂O → CH₃CH₂CH(OH)COOH + NH₃\n\nFormula of product: CH₃CH₂CH(OH)COOH\nName: 2-hydroxybutanoic acid (an α-hydroxy acid)"
+    "modelAnswer": "(i) F = CH₃CH₂CH(OH)CN — 2-hydroxybutanenitrile.\n(ii) Nucleophilic addition.\n(iii) CH₃CH₂CH(OH)COOH — 2-hydroxybutanoic acid."
   },
   {
     "subject": "Chemistry",
@@ -795,9 +795,9 @@
     "category": "Petroleum Industry",
     "type": "Essay",
     "questionNumber": "7b",
-    "question": "(b) The table below is obtained in the fractions obtained from crude petroleum. Fill in the missing components:\n\nTemp. of Separation | No. of C atoms | Fraction | Use\nUnder 30°C | 2-4 | Petroleum gas |\n30°-180°C | 4-9 | | Motor fuel\n160°-230°C | 8-16 | Kerosene | Heat, jet fuel\n200°-320°C | | Diesel | Motor fuel\n300°-450°C | 16-30 | | Heating lubricants\n>300°C Vacuum | >25 | Petroleum jelly/paraffin wax |\nResidue | | Asphalt | In construction [3 marks]",
+    "question": "(b) The table below is obtained in the fractions obtained from crude petroleum. Fill in the missing components.",
     "options": [],
-    "modelAnswer": "Completed Petroleum Fractionation Table:\n\n1. Under 30°C | 2–4 C atoms | Petroleum gas | Use: Fuel for cooking and heating (LPG — liquefied petroleum gas); chemical feedstock\n\n2. 30°–180°C | 4–9 C atoms | Fraction: Gasoline (Petrol/Naphtha) | Motor fuel\n\n3. 160°–230°C | 8–16 C atoms | Kerosene | Heat, jet fuel\n\n4. 200°–320°C | 14–20 C atoms (typically 10–20) | Diesel (Gas oil) | Motor fuel\n\n5. 300°–450°C | 16–30 C atoms | Fraction: Fuel oil / Lubricating oil | Heating, lubricants\n\n6. >300°C Vacuum | >25 C atoms | Petroleum jelly / Paraffin wax | Use: Cosmetics, candles, waterproofing, medicinal (Vaseline)\n\n7. Residue | >40 C atoms (very large) | Asphalt (Bitumen) | In construction (road surfacing, roofing)"
+    "modelAnswer": "1. Under 30°C | 2–4 C | Petroleum gas | Cooking/heating fuel (LPG).\n2. 30°–180°C | 4–9 C | Gasoline (Petrol/Naphtha) | Motor fuel.\n3. 160°–230°C | 8–16 C | Kerosene | Heat, jet fuel.\n4. 200°–320°C | 14–20 C | Diesel (Gas oil) | Motor fuel.\n5. 300°–450°C | 16–30 C | Fuel oil/Lubricating oil | Heating, lubricants.\n6. >300°C vacuum | >25 C | Petroleum jelly/Paraffin wax | Cosmetics, candles, medicinal.\n7. Residue | >40 C | Asphalt (Bitumen) | Construction (roads, roofing)."
   },
   {
     "subject": "Chemistry",
@@ -805,9 +805,9 @@
     "category": "Aromatic Compounds",
     "type": "Essay",
     "questionNumber": "7c",
-    "question": "(c) Write equations to illustrate the following reactions:\n(i) Nitration of bromobenzene\n(ii) Bromination of nitrobenzene [2 marks]",
+    "question": "(c) Write equations to illustrate the following reactions:\n(i) Nitration of bromobenzene\n(ii) Bromination of nitrobenzene",
     "options": [],
-    "modelAnswer": "(i) Nitration of Bromobenzene:\nBromobenzene undergoes electrophilic aromatic substitution with a nitrating mixture (conc. HNO₃ + conc. H₂SO₄) at ~55°C. The bromine substituent is an ortho/para director (deactivating but directs to ortho and para positions).\nThe major products are 2-bromonitrobenzene (ortho) and 4-bromonitrobenzene (para).\n\nEquation:\nC₆H₅Br + HNO₃ → o-BrC₆H₄NO₂ + p-BrC₆H₄NO₂ + H₂O\n(in the presence of conc. H₂SO₄ catalyst, ~55°C)\nMajor product: 4-bromonitrobenzene (para) and 2-bromonitrobenzene (ortho)\n\n(ii) Bromination of Nitrobenzene:\nNitrobenzene undergoes electrophilic aromatic substitution with Br₂ in the presence of a Lewis acid catalyst (FeBr₃ or AlBr₃) at elevated temperature. The nitro group (–NO₂) is a meta director and deactivator, so bromination occurs predominantly at the meta position.\n\nEquation:\nC₆H₅NO₂ + Br₂ → m-BrC₆H₄NO₂ + HBr\n(in the presence of FeBr₃ catalyst, heat)\nMajor product: 3-bromonitrobenzene (meta-bromonitrobenzene)"
+    "modelAnswer": "(i) C₆H₅Br + HNO₃ → o-BrC₆H₄NO₂ + p-BrC₆H₄NO₂ + H₂O (conc. H₂SO₄, ~55°C).\n\n(ii) C₆H₅NO₂ + Br₂ → m-BrC₆H₄NO₂ + HBr (FeBr₃, heat)."
   },
   {
     "subject": "Chemistry",
@@ -815,9 +815,9 @@
     "category": "Macromolecules",
     "type": "Essay",
     "questionNumber": "7d",
-    "question": "(d) (i) Write the open-chain structures of D-glucose and D-fructose. [1 mark]\n(ii) Explain why Fehling's solution is reduced by glucose and not by sucrose. [1 mark]",
+    "question": "(d) (i) Write the open-chain structures of D-glucose and D-fructose.\n(ii) Explain why Fehling's solution is reduced by glucose and not by sucrose.",
     "options": [],
-    "modelAnswer": "(i) Open-Chain Structures:\n\nD-Glucose (an aldohexose — C₆H₁₂O₆):\nCHO\n|\nH–C–OH\n|\nHO–C–H\n|\nH–C–OH\n|\nH–C–OH\n|\nCH₂OH\n(Aldehyde group at C1; hydroxyl groups as shown in Fischer projection)\n\nD-Fructose (a ketohexose — C₆H₁₂O₆):\nCH₂OH\n|\nC=O\n|\nHO–C–H\n|\nH–C–OH\n|\nH–C–OH\n|\nCH₂OH\n(Ketone group at C2; both ends are CH₂OH)\n\n(ii) Why Fehling's solution is reduced by glucose but not sucrose:\nFehling's solution contains Cu²⁺ ions (in alkaline solution) and is reduced to Cu⁺ (brick-red Cu₂O precipitate) only by reducing sugars — those that have a free aldehyde (–CHO) or free ketone group that can be oxidized.\n\nGlucose is a reducing sugar because it has a free aldehyde group (–CHO) at C1 in its open-chain form. This free –CHO group is easily oxidized, reducing the Cu²⁺ in Fehling's solution to Cu⁺ (Cu₂O precipitate).\n\nSucrose is a non-reducing sugar. It is a disaccharide formed from glucose (C1) and fructose (C2) linked by a glycosidic bond through both their anomeric carbons (C1 of glucose and C2 of fructose — a 1,2-glycosidic bond). This linkage blocks both the potential aldehyde group of glucose and the ketone group of fructose, so neither free –CHO nor free C=O group is available for oxidation. Therefore, sucrose cannot reduce Fehling's solution."
+    "modelAnswer": "(i) D-Glucose: aldohexose (CHO at C1).\nD-Fructose: ketohexose (C=O at C2).\n\n(ii) Glucose has a free aldehyde group → reducing sugar.\nSucrose has both anomeric carbons linked by glycosidic bond → no free aldehyde/ketone → non-reducing."
   },
   {
     "subject": "Chemistry",
@@ -825,9 +825,9 @@
     "category": "Alkanes, Alkenes, Alkynes",
     "type": "Essay",
     "questionNumber": "8a",
-    "question": "(a) (i) Give the name and structure of the product formed from the reaction of butene and hydrogen bromide in the presence of peroxide. [2 marks]\n(ii) Write three differences between Inductive and Mesomeric Effects. [1½ marks]",
+    "question": "(a) (i) Give the name and structure of the product formed from the reaction of butene and hydrogen bromide in the presence of peroxide.\n(ii) Write three differences between Inductive and Mesomeric Effects.",
     "options": [],
-    "modelAnswer": "(i) Reaction of Butene with HBr in the Presence of Peroxide:\nIn the presence of peroxide (or UV light), the reaction proceeds by a free radical mechanism (anti-Markovnikov addition), not the usual ionic Markovnikov mechanism.\n\nUsing but-1-ene (CH₂=CHCH₂CH₃) as the alkene:\nAnti-Markovnikov addition: Br adds to the less substituted carbon (C1)\nProduct: CH₂BrCH₂CH₂CH₃\nName: 1-bromobutane\n\n(Note: If but-2-ene is used: CH₃CH=CHCH₃ + HBr → CH₃CH₂CHBrCH₃ (2-bromobutane) — same carbon either way since the molecule is symmetric)\n\n(ii) Three Differences between Inductive and Mesomeric Effects:\n\n1. Nature of bond involved:\nInductive effect: Operates through σ (sigma) bonds only — involves polarization of single bonds along the carbon chain.\nMesomeric effect: Operates through π (pi) bonds and conjugated systems — involves delocalization of π electrons or lone pairs.\n\n2. Distance of effect:\nInductive effect: Decreases rapidly with distance from the substituent; diminishes significantly after 2–3 carbon atoms.\nMesomeric effect: Can be transmitted over a longer range through conjugated π systems without significant decrease in magnitude.\n\n3. Type of electron displacement:\nInductive effect: Causes a permanent but partial displacement of electrons (creates δ+ and δ− charges); the electrons are not fully transferred.\nMesomeric effect: Involves complete delocalization (resonance) of electrons across the π system; electrons are shared over multiple atoms, not localized between two atoms."
+    "modelAnswer": "(i) But-1-ene + HBr (peroxide) → 1-bromobutane (CH₂BrCH₂CH₂CH₃) — anti-Markovnikov.\n\n(ii) 1. Inductive: σ bonds; Mesomeric: π bonds/delocalization.\n2. Inductive: decreases with distance; Mesomeric: extends through conjugation.\n3. Inductive: partial displacement; Mesomeric: complete delocalization."
   },
   {
     "subject": "Chemistry",
@@ -835,9 +835,9 @@
     "category": "Organic Reactions",
     "type": "Essay",
     "questionNumber": "8b",
-    "question": "(b) Show how the compound formed between atom X and Y (i.e. X-Y) can be subjected to:\n(i) Homolytic fission\n(ii) Heterolytic fission\nState the condition(s) that may lead to each type of fission. [2 marks]",
+    "question": "(b) Show how the compound formed between atom X and Y (i.e. X-Y) can be subjected to:\n(i) Homolytic fission\n(ii) Heterolytic fission\nState the condition(s) that may lead to each type of fission.",
     "options": [],
-    "modelAnswer": "(i) Homolytic Fission of X–Y:\nIn homolytic fission, the covalent bond between X and Y breaks so that each atom receives one electron from the shared pair, forming two neutral free radicals:\nX–Y → X• + Y•\n(Each atom retains one electron — represented by single-headed/fish-hook arrows)\n\nConditions that lead to homolytic fission:\n- High temperature (thermal energy)\n- Ultraviolet (UV) or visible light irradiation (photolysis)\n- Presence of radical initiators (e.g. peroxides such as benzoyl peroxide)\nHomolytic fission is favoured in the gas phase or non-polar solvents and leads to radical chain reactions (e.g. halogenation of alkanes in UV light).\n\n(ii) Heterolytic Fission of X–Y:\nIn heterolytic fission, the covalent bond breaks unevenly — both electrons from the shared pair go to one atom, forming a cation and an anion:\nX–Y → X⁺ + Y:⁻   (if Y takes both electrons)\nor\nX–Y → X:⁻ + Y⁺   (if X takes both electrons)\n(Represented by a double-headed curved arrow)\n\nConditions that lead to heterolytic fission:\n- Polar solvents (e.g. water, ethanol) that can stabilize the ions formed through solvation\n- Presence of polar reagents or electrophiles/nucleophiles\n- Bonds between atoms of significantly different electronegativities (polar bonds)\nHeterolytic fission leads to ionic intermediates (carbocations or carbanions) and is involved in nucleophilic substitution, electrophilic addition, and elimination reactions."
+    "modelAnswer": "(i) Homolytic: X–Y → X• + Y• (each gets one electron).\nConditions: high temperature, UV light, radical initiators, non-polar solvents.\n\n(ii) Heterolytic: X–Y → X⁺ + Y:⁻ (both electrons to one atom).\nConditions: polar solvents, polar reagents, large electronegativity difference."
   },
   {
     "subject": "Chemistry",
@@ -845,9 +845,9 @@
     "category": "Macromolecules",
     "type": "Essay",
     "questionNumber": "8c",
-    "question": "(c) List three uses of polymers. [1½ marks]",
+    "question": "(c) List three uses of polymers.",
     "options": [],
-    "modelAnswer": "Three Uses of Polymers:\n\n1. Packaging and containers: Polymers such as polyethylene (PE) and polypropylene (PP) are widely used to make plastic bags, bottles, food containers, and wrapping materials due to their lightweight, flexibility, and resistance to moisture.\n\n2. Textile and clothing industry: Synthetic polymers such as nylon (polyamide), polyester, and acrylic fibres are used to manufacture clothing, ropes, carpets, and parachutes because of their strength, durability, and ease of production.\n\n3. Medical and biomedical applications: Polymers are used to make surgical sutures (biodegradable polymers), drug delivery systems, prosthetics, contact lenses, and medical tubing (e.g. PVC, silicone, PTFE/Teflon) due to their biocompatibility and versatility.\n\n(Other valid uses: construction materials — PVC pipes, insulation; electronics — polymer coatings and insulators; automotive parts; adhesives and coatings.)"
+    "modelAnswer": "1. Packaging and containers (PE, PP).\n2. Textiles and clothing (nylon, polyester).\n3. Medical applications (sutures, drug delivery, prosthetics)."
   },
   {
     "subject": "Chemistry",
@@ -855,8 +855,8 @@
     "category": "Organic Reactions",
     "type": "Essay",
     "questionNumber": "8d",
-    "question": "(d) Give two examples of each of the following:\n(i) a free radical\n(ii) an electrophile\n(iii) a nucleophile [1½ marks]",
+    "question": "(d) Give two examples of each of the following:\n(i) a free radical\n(ii) an electrophile\n(iii) a nucleophile",
     "options": [],
-    "modelAnswer": "(i) Free Radicals (species with one or more unpaired electrons):\n1. Chlorine radical: Cl•\n2. Methyl radical: CH₃•\n(Also acceptable: Br•, OH•, CCl₃•, H•)\n\n(ii) Electrophiles (electron-deficient species that accept electron pairs — Lewis acids):\n1. Bromonium ion / Br⁺ (or Br₂ acting as electrophile)\n2. Carbocation / H⁺ (proton)\n(Also acceptable: NO₂⁺ (nitronium ion), SO₃, AlCl₃, BF₃, Cl⁺, R⁺)\n\n(iii) Nucleophiles (electron-rich species that donate electron pairs — Lewis bases):\n1. Hydroxide ion: OH⁻\n2. Cyanide ion: CN⁻\n(Also acceptable: NH₃, H₂O, Br⁻, I⁻, RO⁻ (alkoxide), carbanions R:⁻)"
+    "modelAnswer": "(i) Cl• and CH₃•.\n(ii) H⁺ and NO₂⁺.\n(iii) OH⁻ and CN⁻."
   }
 ]
