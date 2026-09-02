@@ -52,7 +52,7 @@
     "question": "The by-product of light-dependent reaction of photosynthesis is ...",
     "options": ["H₂O", "CO₂", "O₂", "ATP."],
     "answer": "C",
-    "explanation": "Oxygen is released as a by-product of the light-dependent reactions of photosynthesis."
+    "explanation": "Oxygen is released as a by-product of the light-dependent reactions."
   },
   {
     "subject": "Biology",
@@ -63,18 +63,18 @@
     "question": "The internal changes that seeds pass through before they start germinating is known as ...",
     "options": ["after-ripening.", "dormancy.", "sprouting.", "fertilization."],
     "answer": "A",
-    "explanation": "After-ripening refers to the internal changes seeds undergo before germination."
+    "explanation": "After-ripening refers to internal changes seeds undergo before germination."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Objective",
     "questionNumber": 7,
     "question": "One of the following statements is correct about Bryophytes and Pteridophytes.",
     "options": ["The organ of anchorage are rhizoids and roots respectively.", "Bryophytes are terrestrial while Pteridophytes are amphibious.", "Bryophytes have complex body structures while Pteridophytes have simpler body structures.", "Bryophytes and Pteridophytes possess rhizoids."],
     "answer": "A",
-    "explanation": "Bryophytes have rhizoids for anchorage, while pteridophytes have true roots."
+    "explanation": "Bryophytes have rhizoids for anchorage; pteridophytes have true roots."
   },
   {
     "subject": "Biology",
@@ -90,7 +90,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Plant Tissues and Functions",
+    "category": "Plant Morphology/Anatomy",
     "type": "Objective",
     "questionNumber": 9,
     "question": "A cell that has thin cell walls, dense cytoplasm, small sized vacuoles and capable of dividing is likely to be a",
@@ -134,7 +134,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Transport of Substances across Membranes",
     "type": "Objective",
     "questionNumber": 13,
     "question": "The rate of diffusion is inversely proportional to the",
@@ -162,7 +162,7 @@
     "question": "In seed vascular plants, the first fertilization occurs",
     "options": ["when two nuclei fuse together to form a zygote.", "when one nucleus fuses with the ovum to form a diploid cell.", "when one nucleus fuses with the ovum to form a zygote.", "when two nuclei fuse together to form a diploid cell."],
     "answer": "C",
-    "explanation": "Fertilization in seed plants involves the fusion of a sperm nucleus with the egg cell (ovum) to form a zygote."
+    "explanation": "Fertilization in seed plants involves fusion of a sperm nucleus with the egg cell (ovum) to form a zygote."
   },
   {
     "subject": "Biology",
@@ -195,7 +195,7 @@
     "question": "Which of the listed phyla is referred to as a dead end phylum?",
     "options": ["Coelentrata.", "Annelida.", "Porifera.", "Arthropoda."],
     "answer": "C",
-    "explanation": "Porifera (sponges) are sometimes called a dead-end phylum because they do not give rise to more advanced groups."
+    "explanation": "Porifera (sponges) are sometimes called a dead-end phylum."
   },
   {
     "subject": "Biology",
@@ -237,16 +237,18 @@
     "type": "Objective",
     "questionNumber": 22,
     "question": "The part labeled II is the",
+    "image": {
+      "src": "/images/questions/biology/2020/bio-2020-obj-22.svg",
+      "alt": "Diagram of a unicellular organism (Euglena) showing labeled parts including nucleus, eyespot, basal granule, and contractile vacuole"
+    },
     "options": ["nucleus.", "eyespot.", "basal granule.", "contractile vacuole."],
-    "answer": "N/A",
-    "explanation": "Cannot determine without the diagram. Please refer to your original past question paper.",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A labeled diagram of a unicellular organism with parts labeled I, II, III, etc. Please refer to your original past question paper."
+    "answer": "C",
+    "explanation": "The part labelled II is the basal granule, located at the base of the flagellum."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 23,
     "question": "Which of these cell structures can be seen only with an electron microscope?",
@@ -257,13 +259,13 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 24,
     "question": "Which of the following are found in both eukaryotic and prokaryotic cells? I. Cellulose II. Deoxyribose III. Lipids IV. Ribose.",
     "options": ["I, II and III.", "I, II and IV.", "I, III and IV.", "II, III and IV."],
     "answer": "D",
-    "explanation": "Deoxyribose (in DNA), lipids, and ribose (in RNA) are found in both cell types. Cellulose is only in plant cells (eukaryotic)."
+    "explanation": "Deoxyribose (in DNA), lipids, and ribose (in RNA) are found in both cell types. Cellulose is only in plant cells."
   },
   {
     "subject": "Biology",
@@ -274,7 +276,7 @@
     "question": "Which of the following listed organisms is a multicellular organism?",
     "options": ["Rhizopus.", "Euglena.", "Paramecium.", "Chlorella."],
     "answer": "A",
-    "explanation": "Rhizopus is a multicellular fungus (mold). Euglena, Paramecium, and Chlorella are unicellular."
+    "explanation": "Rhizopus is a multicellular fungus (mold)."
   },
   {
     "subject": "Biology",
@@ -285,12 +287,12 @@
     "question": "Birds and mammals have certain shared characteristics. Which of these is not a shared characteristic?",
     "options": ["Ossified endoskeleton.", "Breathing using lungs.", "Viviparity.", "Warm blooded."],
     "answer": "C",
-    "explanation": "Birds are oviparous (lay eggs), not viviparous. Viviparity is a characteristic of most mammals."
+    "explanation": "Birds are oviparous (lay eggs), not viviparous."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Objective",
     "questionNumber": 27,
     "question": "Choose the option that is associated with an open vascular system.",
@@ -301,18 +303,18 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Objective",
     "questionNumber": 28,
     "question": "Choose the option that is associated with the measuring of the pulse beat.",
     "options": ["Artery.", "Vein.", "Capillary.", "Nerves."],
     "answer": "A",
-    "explanation": "Pulse beat is measured at arteries, where blood pressure changes are detectable."
+    "explanation": "Pulse beat is measured at arteries."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 29,
     "question": "Study the options carefully and identify the organism that excretes uric acid as its main nitrogenous waste.",
@@ -338,24 +340,38 @@
     "type": "Objective",
     "questionNumber": 31,
     "question": "Which of the options below best describes an electron microscope in comparison with a light microscope?",
-    "options": ["Higher Higher", "Higher Lower", "Lower Higher", "Lower Lower"],
+    "dataTable": {
+      "headers": ["Option", "Magnification", "Resolution"],
+      "rows": [
+        ["A", "Higher", "Higher"],
+        ["B", "Higher", "Lower"],
+        ["C", "Lower", "Higher"],
+        ["D", "Lower", "Lower"]
+      ]
+    },
+    "options": ["A", "B", "C", "D"],
     "answer": "A",
-    "explanation": "An electron microscope has both higher magnification and higher resolution than a light microscope.",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Options represent a table (Magnification vs Resolution). 'Higher Higher' means higher magnification and higher resolution. Please refer to your original past question paper for the complete table."
+    "explanation": "An electron microscope has both higher magnification and higher resolution than a light microscope."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 32,
     "question": "Study the table below and choose the option which does not tally.",
-    "options": ["Hydra Diffusion", "Planaria Flame cells", "Earthworm Nephridia", "Cockroach Spiracels"],
+    "dataTable": {
+      "headers": ["Option", "Animal", "Excretion/Excretory Structures"],
+      "rows": [
+        ["A", "Hydra", "Diffusion"],
+        ["B", "Planaria", "Flame cells"],
+        ["C", "Earthworm", "Nephridia"],
+        ["D", "Cockroach", "Spiracles"]
+      ]
+    },
+    "options": ["A", "B", "C", "D"],
     "answer": "D",
-    "explanation": "Cockroach excretes via Malpighian tubules, not spiracles (which are for respiration).",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Options represent a table (Organism vs Excretory Organ). Please refer to your original past question paper for the complete table."
+    "explanation": "Cockroach excretes via Malpighian tubules, not spiracles (which are for respiration)."
   },
   {
     "subject": "Biology",
@@ -366,7 +382,7 @@
     "question": "Which of these is the intermediate host of Fasciola?",
     "options": ["Lymnaea truncatula.", "Pila globosa.", "Lamellidens marginalis.", "Achatina achatina."],
     "answer": "A",
-    "explanation": "Lymnaea truncatula is the snail intermediate host for Fasciola hepatica (liver fluke)."
+    "explanation": "Lymnaea truncatula is the snail intermediate host for Fasciola hepatica."
   },
   {
     "subject": "Biology",
@@ -377,7 +393,7 @@
     "question": "Which of the following is contrary to the rules of nomenclature?",
     "options": ["Biological names can be written in any language.", "The first word in a biological name represents the generic name, and the second is a specific name.", "The names are written in Latin and are italicized.", "When written by hand, the specific names are to be underlined."],
     "answer": "A",
-    "explanation": "Biological names are universally written in Latin, not any language."
+    "explanation": "Biological names are universally written in Latin."
   },
   {
     "subject": "Biology",
@@ -396,7 +412,7 @@
     "category": "Biological Methods and Application",
     "type": "Objective",
     "questionNumber": 36,
-    "question": "Students in a biology class were asked to use the following information to draw a bar chart to show number of babies born in twelve villages on a certain day: No. of babies: 4 5 6 7 8 No. of Villages: 1 4 2 3 2. Choose the option that could be a suitable title for the graph.",
+    "question": "Students in a biology class were asked to use the following information to draw a bar chart to show number of babies born in twelve villages on a certain day. Choose the option that could be a suitable title for the graph.",
     "options": ["Graph of number of babies against number of villages.", "Graph of number of villages against number of babies.", "Bar chart showing number of babies against number of villages.", "Bar chart showing number of villages against number of babies."],
     "answer": "C",
     "explanation": "The title should be 'Bar chart showing number of babies against number of villages'."
@@ -410,18 +426,18 @@
     "question": "What is the ecological definition of the term community?",
     "options": ["All the food web in an ecosystem.", "All the individuals of one species in an area.", "All the organisms in an area.", "All the biotic and abiotic components in an ecosystem."],
     "answer": "C",
-    "explanation": "A community is all the living organisms (different species) in a given area."
+    "explanation": "A community is all the living organisms in a given area."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 38,
     "question": "The difference between the smooth endoplasmic reticulum and the rough endoplasmic reticulum is that",
     "options": ["the smooth synthesises steroids, while the rough assembles protein.", "the smooth assembles protein, while the rough synthesizes steroids.", "the smooth distributes steroids, while the rough distributes protein.", "the smooth distributes protein, while the rough synthesizes steroids."],
     "answer": "A",
-    "explanation": "Smooth ER synthesizes lipids (steroids), while rough ER has ribosomes for protein synthesis."
+    "explanation": "Smooth ER synthesizes lipids (steroids); rough ER has ribosomes for protein synthesis."
   },
   {
     "subject": "Biology",
@@ -432,7 +448,7 @@
     "question": "Identify the option that is not an anti sera used in blood grouping.",
     "options": ["Anti sera A.", "Anti sera B.", "Anti sera C.", "Anti sera D."],
     "answer": "D",
-    "explanation": "Blood grouping uses Anti-A, Anti-B, and Anti-AB sera. Anti-D is not a standard anti sera; Anti-D is actually an Rh antibody (anti-RhD), which is used differently from ABO typing anti sera."
+    "explanation": "Blood grouping uses Anti-A, Anti-B, and Anti-D (Rh). Anti-C is not standard."
   },
   {
     "subject": "Biology",
@@ -443,20 +459,22 @@
     "question": "Identify the odd ecological instrument from the options given below.",
     "options": ["Barometer.", "Ecological meter.", "Meter rule.", "Anemometer."],
     "answer": "C",
-    "explanation": "Meter rule is not an ecological instrument (the others measure environmental conditions)."
+    "explanation": "Meter rule is not an ecological instrument."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Transport of Substances across Membranes",
     "type": "Objective",
     "questionNumber": 41,
     "question": "The diagram below shows the description of an experiment to demonstrate osmosis. Choose the option that best describes the direction of flow of water.",
+    "image": {
+      "src": "/images/questions/biology/2020/bio-2020-obj-41.svg",
+      "alt": "Diagram showing a potato tuber with a cavity containing salt solution, a capillary tube, and a beaker of water"
+    },
     "options": ["Water will move from the capillary tube to the beaker.", "Water will move from the beaker to the capillary tube.", "Water will move from the potato tuber to the beaker.", "Water will move from the beaker to the potato tuber."],
     "answer": "D",
-    "explanation": "Water moves by osmosis from the beaker (lower solute concentration) into the potato tuber (higher solute concentration).",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A diagram showing a potato tuber with a cavity containing salt solution, a capillary tube, and a beaker of water. Please refer to your original past question paper."
+    "explanation": "The salt solution inside the potato tuber has a higher solute concentration than the surrounding water. By osmosis, water moves from the dilute solution (beaker) to the more concentrated salt solution (inside the potato tuber)."
   },
   {
     "subject": "Biology",
@@ -483,7 +501,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Objective",
     "questionNumber": 44,
     "question": "Which of the following is not true of Bryophytes?",
@@ -513,7 +531,7 @@
     "answer": "A",
     "explanation": "Lag phase is the adaptation period before exponential growth."
   },
-{
+  {
     "subject": "Biology",
     "year": 2020,
     "category": "Microbial Ecology",
@@ -522,8 +540,8 @@
     "question": "Identify the option which is not caused by a pathogen.",
     "options": ["Malaria.", "Cancer.", "Measles.", "Tuberculosis."],
     "answer": "B",
-    "explanation": "Cancer is not caused by a pathogen (it is caused by genetic mutations or environmental factors). Malaria, measles, and tuberculosis are all caused by pathogens."
-},
+    "explanation": "Cancer is not caused by a pathogen — it is caused by genetic mutations or environmental factors."
+  },
   {
     "subject": "Biology",
     "year": 2020,
@@ -549,7 +567,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Transport of Substances across Membranes",
     "type": "Objective",
     "questionNumber": 50,
     "question": "A piece of yam fell into a solution of unknown concentration. After 5 days, the piece of yam was found to be of the same size because the solution it fell into is ...",
@@ -560,124 +578,122 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Essay",
     "questionNumber": "1a",
-    "question": "(a) State one (1) function of the following cell organelles: i. Nucleus ii. Plasma membrane iii. Ribosome iv. Chloroplast v. Ribosomal Endoplasmic Reticulum vi. Golgi apparatus vii. Mitochondria viii. Cell wall ix. Lysosome x. Vacuoles. [5 marks]",
-    "modelAnswer": "i. Nucleus: controls cell activities and stores genetic material. ii. Plasma membrane: regulates transport of substances. iii. Ribosome: protein synthesis. iv. Chloroplast: photosynthesis. v. Ribosomal ER: protein synthesis and transport. vi. Golgi apparatus: modifies and packages proteins. vii. Mitochondria: ATP production (cellular respiration). viii. Cell wall: provides structural support. ix. Lysosome: intracellular digestion. x. Vacuole: storage and turgor pressure maintenance.",
-    "options": []
+    "question": "(a) State one (1) function of the following cell organelles: i. Nucleus ii. Plasma membrane iii. Ribosome iv. Chloroplast v. Ribosomal Endoplasmic Reticulum vi. Golgi apparatus vii. Mitochondria viii. Cell wall ix. Lysosome x. Vacuoles.",
+    "options": [],
+    "modelAnswer": "i. Nucleus: controls cell activities and stores genetic material.\nii. Plasma membrane: regulates transport of substances.\niii. Ribosome: protein synthesis.\niv. Chloroplast: photosynthesis.\nv. Ribosomal ER: protein synthesis and transport.\nvi. Golgi apparatus: modifies and packages proteins.\nvii. Mitochondria: ATP production.\nviii. Cell wall: structural support.\nix. Lysosome: intracellular digestion.\nx. Vacuole: storage and turgor pressure."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Essay",
     "questionNumber": "1b",
-    "question": "(b) Mention three (3) similarities between a prokaryotic and an eukaryotic cell. [3 marks]",
-    "modelAnswer": "1. Both have a cell membrane. 2. Both have ribosomes. 3. Both contain DNA as genetic material.",
-    "options": []
+    "question": "(b) Mention three (3) similarities between a prokaryotic and an eukaryotic cell.",
+    "options": [],
+    "modelAnswer": "1. Both have a cell membrane.\n2. Both have ribosomes.\n3. Both contain DNA as genetic material."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Essay",
     "questionNumber": "1c",
-    "question": "(c) Mention two (2) differences between a prokaryotic and an eukaryotic cell. [2 marks]",
-    "modelAnswer": "1. Prokaryotes lack a nucleus; eukaryotes have a membrane-bound nucleus. 2. Prokaryotes are generally smaller than eukaryotes.",
-    "options": []
+    "question": "(c) Mention two (2) differences between a prokaryotic and an eukaryotic cell.",
+    "options": [],
+    "modelAnswer": "1. Prokaryotes lack a nucleus; eukaryotes have a membrane-bound nucleus.\n2. Prokaryotes are generally smaller than eukaryotes."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2a",
-    "question": "A breed of dog is said to have genes for hair colour and leg length. Allele 'A' is dominant and gives brown hair. Allele 'a' is recessive and gives black hair. Allele 'L' is dominant and gives long legs, and allele 'l' is recessive and gives short legs. (a) Present in tabular form, the various types of genotypes and phenotypes that the dogs may have. [5 marks]",
-    "modelAnswer": "Genotypes: AALL, AALl, AAll, AaLL, AaLl, Aall, aaLL, aaLl, aall. Phenotypes: Brown hair long legs (AALL, AALl, AaLL, AaLl), Brown hair short legs (AAll, Aall), Black hair long legs (aaLL, aaLl), Black hair short legs (aall).",
-    "options": []
+    "question": "(a) A breed of dog is said to have genes for hair colour and leg length. Allele 'A' is dominant and gives brown hair. Allele 'a' is recessive and gives black hair. Allele 'L' is dominant and gives long legs, and allele 'l' is recessive and gives short legs. Present in tabular form, the various types of genotypes and phenotypes that the dogs may have.",
+    "options": [],
+    "modelAnswer": "Genotypes: AALL, AALl, AAll, AaLL, AaLl, Aall, aaLL, aaLl, aall.\n\nPhenotypes:\nBrown long: AALL, AALl, AaLL, AaLl.\nBrown short: AAll, Aall.\nBlack long: aaLL, aaLl.\nBlack short: aall."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2b",
-    "question": "(b) Construct a genetic table to show the offspring a breeder would expect between two dogs that are heterozygote for both genes using Punnet square. [4 marks]",
-    "modelAnswer": "Parental cross: AaLl × AaLl. Punnett square: 4x4 grid with gametes AL, Al, aL, al. Offspring genotypes: 9 A_L_ (brown long), 3 A_ll (brown short), 3 aa L_ (black long), 1 aall (black short).",
-    "options": []
+    "question": "(b) Construct a genetic table to show the offspring a breeder would expect between two dogs that are heterozygote for both genes using Punnet square.",
+    "options": [],
+    "modelAnswer": "Parental cross: AaLl × AaLl.\n\nPunnett square (4×4) with gametes AL, Al, aL, al.\n\nOffspring: 9 brown long : 3 brown short : 3 black long : 1 black short."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2c",
-    "question": "(c) State the phenotypic ratio of the cross. [1 mark]",
-    "modelAnswer": "9:3:3:1 (Brown long : Brown short : Black long : Black short).",
-    "options": []
+    "question": "(c) State the phenotypic ratio of the cross.",
+    "options": [],
+    "modelAnswer": "9:3:3:1 (Brown long : Brown short : Black long : Black short)."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Plant Conservation",
+    "category": "Economic and Ecological Importance of Plants",
     "type": "Essay",
     "questionNumber": "3a",
-    "question": "(a) What is conservation? [2 marks]",
-    "modelAnswer": "Conservation is the protection, preservation, management, and restoration of natural resources and ecosystems.",
-    "options": []
+    "question": "(a) What is conservation?",
+    "options": [],
+    "modelAnswer": "Conservation is the protection, preservation, management, and restoration of natural resources and ecosystems."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Plant Conservation",
+    "category": "Economic and Ecological Importance of Plants",
     "type": "Essay",
     "questionNumber": "3b",
-    "question": "(b) Differentiate between in-situ and ex-situ conservation. [2 marks]",
-    "modelAnswer": "In-situ: conservation of species in their natural habitat. Ex-situ: conservation of species outside their natural habitat (e.g., zoos, seed banks).",
-    "options": []
+    "question": "(b) Differentiate between in-situ and ex-situ conservation.",
+    "options": [],
+    "modelAnswer": "In-situ: conservation of species in their natural habitat.\nEx-situ: conservation of species outside their natural habitat (e.g., zoos, seed banks)."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Plant Conservation",
+    "category": "Economic and Ecological Importance of Plants",
     "type": "Essay",
     "questionNumber": "3c",
-    "question": "(c) Outline the merits and demerits of each of in-situ and ex-situ conservation. [6 marks]",
-    "modelAnswer": "In-situ merits: maintains natural ecosystems, cost-effective, preserves evolution. Demerits: vulnerable to environmental changes, difficult to manage. Ex-situ merits: controlled environment, genetic research, protection from threats. Demerits: high cost, loss of natural behavior, limited space.",
-    "options": []
+    "question": "(c) Outline the merits and demerits of each of in-situ and ex-situ conservation.",
+    "options": [],
+    "modelAnswer": "In-situ merits: maintains natural ecosystems, cost-effective, preserves evolution.\nDemerits: vulnerable to environmental changes, difficult to manage.\n\nEx-situ merits: controlled environment, genetic research, protection from threats.\nDemerits: high cost, loss of natural behavior, limited space."
   },
   {
-    "subject": "Biology",
-    "year": 2020,
-    "category": "Microbial Ecology",
-    "type": "Essay",
-    "questionNumber": "4a",
-    "question": "(a) With the aid of a labelled diagram alone, show the general sexual life cycle of fungi. [5 marks]",
-    "modelAnswer": "Sexual cycle: Plasmogamy → Karyogamy → Meiosis → Spore formation.",
-    "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A labelled diagram of the sexual life cycle of fungi was required. Please refer to your original past question paper."
-  },
+  "subject": "Biology",
+  "year": 2020,
+  "category": "Microbial Ecology",
+  "type": "Essay",
+  "questionNumber": "4a",
+  "question": "(a) With the aid of a labelled diagram alone, show the general sexual life cycle of fungi.",
+  "options": [],
+  "modelAnswer": "[IMAGE: /images/questions/biology/2020/bio-2020-essay-4a.svg | Sexual life cycle of fungi]\n\nSexual cycle: Plasmogamy → Karyogamy → Meiosis → Spore formation."
+},
   {
     "subject": "Biology",
     "year": 2020,
     "category": "Types and Taxonomic Groupings of Microorganisms",
     "type": "Essay",
     "questionNumber": "4b",
-    "question": "(b) Outline the general characteristics of Basidiomycetes. [5 marks]",
-    "modelAnswer": "1. Produce basidiospores on basidia. 2. Have dikaryotic mycelium. 3. Sex organs absent. 4. Septate hyphae with clamp connections. 5. Fruiting body (basidiocarp). 6. Includes mushrooms, puffballs, rusts, smuts.",
-    "options": []
+    "question": "(b) Outline the general characteristics of Basidiomycetes.",
+    "options": [],
+    "modelAnswer": "1. Produce basidiospores on basidia.\n2. Have dikaryotic mycelium.\n3. Sex organs absent.\n4. Septate hyphae with clamp connections.\n5. Fruiting body (basidiocarp).\n6. Includes mushrooms, puffballs, rusts, smuts."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Types and Taxonomic Groupings of Microorganisms",
+    "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "5a",
-    "question": "(a) Name three (3) major constituents of plant tissues decomposed by fungi. [3 marks]",
-    "modelAnswer": "1. Cellulose. 2. Lignin. 3. Hemicellulose.",
-    "options": []
+    "question": "(a) Name three (3) major constituents of plant tissues decomposed by fungi.",
+    "options": [],
+    "modelAnswer": "1. Cellulose.\n2. Lignin.\n3. Hemicellulose."
   },
   {
     "subject": "Biology",
@@ -685,9 +701,9 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "5b",
-    "question": "(b) Write two (2) importance of fungi to the soil. [2 marks]",
-    "modelAnswer": "1. Decompose organic matter, releasing nutrients. 2. Form mycorrhizal associations with plant roots, improving nutrient uptake.",
-    "options": []
+    "question": "(b) Write two (2) importance of fungi to the soil.",
+    "options": [],
+    "modelAnswer": "1. Decompose organic matter, releasing nutrients.\n2. Form mycorrhizal associations with plant roots, improving nutrient uptake."
   },
   {
     "subject": "Biology",
@@ -695,9 +711,9 @@
     "category": "Types and Taxonomic Groupings of Microorganisms",
     "type": "Essay",
     "questionNumber": "5c",
-    "question": "(c) List five (5) general characteristics of fungi. [5 marks]",
-    "modelAnswer": "1. Eukaryotic. 2. Heterotrophic (absorptive nutrition). 3. Cell wall made of chitin. 4. Reproduce via spores. 5. Filamentous (hyphae) or unicellular (yeast).",
-    "options": []
+    "question": "(c) List five (5) general characteristics of fungi.",
+    "options": [],
+    "modelAnswer": "1. Eukaryotic.\n2. Heterotrophic (absorptive nutrition).\n3. Cell wall made of chitin.\n4. Reproduce via spores.\n5. Filamentous (hyphae) or unicellular (yeast)."
   },
   {
     "subject": "Biology",
@@ -705,9 +721,9 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "6a",
-    "question": "(a) In a tabular form, name six (6) microorganisms causing infectious diseases in animals, indicating the diseases caused and their common sources. [6 marks]",
-    "modelAnswer": "1. Salmonella (Salmonellosis - contaminated food). 2. Escherichia coli (Diarrhea - contaminated water). 3. Mycobacterium tuberculosis (Tuberculosis - respiratory droplets). 4. Staphylococcus aureus (Wound infection - skin contact). 5. Streptococcus pyogenes (Strep throat - respiratory droplets). 6. Plasmodium falciparum (Malaria - mosquito bite).",
-    "options": []
+    "question": "(a) In a tabular form, name six (6) microorganisms causing infectious diseases in animals, indicating the diseases caused and their common sources.",
+    "options": [],
+    "modelAnswer": "1. Salmonella (Salmonellosis - contaminated food).\n2. Escherichia coli (Diarrhea - contaminated water).\n3. Mycobacterium tuberculosis (Tuberculosis - respiratory droplets).\n4. Staphylococcus aureus (Wound infection - skin contact).\n5. Streptococcus pyogenes (Strep throat - respiratory droplets).\n6. Plasmodium falciparum (Malaria - mosquito bite)."
   },
   {
     "subject": "Biology",
@@ -715,39 +731,39 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "6b",
-    "question": "(b) Briefly describe yeast reproduction. [4 marks]",
-    "modelAnswer": "Yeast reproduces asexually by budding (most common) and sexually by spore formation. Budding: a small bud forms on the parent cell, enlarges, and detaches. Sexual: two haploid cells fuse (plasmogamy) to form a diploid zygote, which undergoes meiosis to produce ascospores.",
-    "options": []
+    "question": "(b) Briefly describe yeast reproduction.",
+    "options": [],
+    "modelAnswer": "Yeast reproduces asexually by budding (most common) and sexually by spore formation.\n\nBudding: a small bud forms on the parent cell, enlarges, and detaches.\n\nSexual: two haploid cells fuse (plasmogamy) to form a diploid zygote, which undergoes meiosis to produce ascospores."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Essay",
     "questionNumber": "7a",
-    "question": "(a) Define the term: tissue. [1 mark]",
-    "modelAnswer": "A tissue is a group of structurally similar cells that perform a specific function together.",
-    "options": []
+    "question": "(a) Define the term: tissue.",
+    "options": [],
+    "modelAnswer": "A tissue is a group of structurally similar cells that perform a specific function together."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Essay",
     "questionNumber": "7b",
-    "question": "(b) State the four (4) main types of tissue found in animals. [2 marks]",
-    "modelAnswer": "1. Epithelial tissue. 2. Connective tissue. 3. Muscle tissue. 4. Nervous tissue.",
-    "options": []
+    "question": "(b) State the four (4) main types of tissue found in animals.",
+    "options": [],
+    "modelAnswer": "1. Epithelial tissue.\n2. Connective tissue.\n3. Muscle tissue.\n4. Nervous tissue."
   },
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Essay",
     "questionNumber": "7c",
-    "question": "(c) Write short notes on each of the various types of epithelial tissues, indicating their structures, locations and functions. [7 marks]",
-    "modelAnswer": "1. Simple squamous: single flat layer (blood vessels, alveoli) - diffusion. 2. Simple cuboidal: cube-shaped (kidney tubules) - secretion/absorption. 3. Simple columnar: tall column (stomach, intestines) - absorption. 4. Ciliated columnar: with cilia (respiratory tract) - movement of particles. 5. Stratified squamous: multiple layers (skin) - protection. 6. Pseudostratified: single layer with different heights (trachea) - secretion and movement.",
-    "options": []
+    "question": "(c) Write short notes on each of the various types of epithelial tissues, indicating their structures, locations and functions.",
+    "options": [],
+    "modelAnswer": "1. Simple squamous: single flat layer (blood vessels, alveoli) - diffusion.\n2. Simple cuboidal: cube-shaped (kidney tubules) - secretion/absorption.\n3. Simple columnar: tall column (stomach, intestines) - absorption.\n4. Ciliated columnar: with cilia (respiratory tract) - movement of particles.\n5. Stratified squamous: multiple layers (skin) - protection.\n6. Pseudostratified: single layer with different heights (trachea) - secretion and movement."
   },
   {
     "subject": "Biology",
@@ -755,9 +771,9 @@
     "category": "Invertebrates",
     "type": "Essay",
     "questionNumber": "8a",
-    "question": "(a) Describe sexual reproduction in Hydra. [6 marks]",
-    "modelAnswer": "Hydra reproduces sexually under unfavorable conditions. Some develop testes (produce sperm) and some develop ovaries (produce eggs). Sperm are released into water, swim to the egg, and fertilize it. The zygote develops into a planula larva, which later grows into a new Hydra.",
-    "options": []
+    "question": "(a) Describe sexual reproduction in Hydra.",
+    "options": [],
+    "modelAnswer": "Hydra reproduces sexually under unfavorable conditions.\n\nSome develop testes (produce sperm) and some develop ovaries (produce eggs).\n\nSperm are released into water, swim to the egg, and fertilize it.\n\nThe zygote develops into a planula larva, which later grows into a new Hydra."
   },
   {
     "subject": "Biology",
@@ -765,8 +781,8 @@
     "category": "Invertebrates",
     "type": "Essay",
     "questionNumber": "8b",
-    "question": "(b) Briefly describe nutrition in Hydra. [4 marks]",
-    "modelAnswer": "Hydra captures prey (small crustaceans, insects) using its tentacles and nematocysts. It brings the prey to the mouth, then into the gastrovascular cavity. Enzymes digest the food, and nutrients are absorbed by the gastrodermis. Undigested remains are expelled through the mouth.",
-    "options": []
+    "question": "(b) Briefly describe nutrition in Hydra.",
+    "options": [],
+    "modelAnswer": "Hydra captures prey (small crustaceans, insects) using its tentacles and nematocysts.\n\nIt brings the prey to the mouth, then into the gastrovascular cavity.\n\nEnzymes digest the food, and nutrients are absorbed by the gastrodermis.\n\nUndigested remains are expelled through the mouth."
   }
 ]

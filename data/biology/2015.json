@@ -13,7 +13,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 2,
     "question": "In mammals, the function of the sebaceous gland is to ______________",
@@ -24,7 +24,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Objective",
     "questionNumber": 3,
     "question": "Osteoporosis is a disease of the ______________",
@@ -41,7 +41,7 @@
     "question": "The type of reproduction that is common to both Hydra and yeast is ______________",
     "options": ["grafting", "budding", "conjugation", "binary fission"],
     "answer": "B",
-    "explanation": "Both Hydra and yeast reproduce asexually by budding, where a new individual grows from a parent organism."
+    "explanation": "Both Hydra and yeast reproduce asexually by budding."
   },
   {
     "subject": "Biology",
@@ -52,23 +52,23 @@
     "question": "The difference between the largest and the smallest data values is the ______________",
     "options": ["variance", "interquartile range", "range", "coefficient of variation"],
     "answer": "C",
-    "explanation": "The range is defined as the difference between the maximum and minimum values in a dataset."
+    "explanation": "The range is the difference between the maximum and minimum values in a dataset."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 6,
     "question": "The function of ribosomes in cells is ______________",
     "options": ["protein synthesis", "starch synthesis", "transport of materials", "lipid storage"],
     "answer": "A",
-    "explanation": "Ribosomes are the site of protein synthesis, where amino acids are assembled into polypeptide chains."
+    "explanation": "Ribosomes are the site of protein synthesis."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 7,
     "question": "Which statement correctly describes homologous chromosomes?",
@@ -86,11 +86,11 @@
     "options": ["Oxygen reacts with a carbohydrate to produce water and carbon-dioxide in the presence of light.", "Light join carbon-dioxide to an acceptor compound which is then reduced by hydrogen obtained from water.", "Light splits water and the resulting hydroxyl group combines with a compound which has incorporated carbon-dioxide", "Carbon-dioxide combines with an acceptor compound and this is reduced by hydrogen split from water by light."],
     "answer": "D",
     "explanation": "Photosynthesis: CO₂ combines with an acceptor (RuBP), and hydrogen split from water by light reduces the compound to form carbohydrates."
-},
+  },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Objective",
     "questionNumber": 9,
     "question": "Breathing movement in mammals is accompanied by regular movement of the diaphragm and the",
@@ -107,7 +107,7 @@
     "question": "Organisms that require oxygen to grow are called",
     "options": ["psychrophilic organisms", "thermophilic organisms", "aerobes", "hyperthermophiles."],
     "answer": "C",
-    "explanation": "Aerobes are organisms that require oxygen for aerobic respiration and growth."
+    "explanation": "Aerobes are organisms that require oxygen for growth."
   },
   {
     "subject": "Biology",
@@ -118,19 +118,19 @@
     "question": "Organisms that retain the blue/purple colour in their cell wall in gram staining technique are",
     "options": ["microaerophile", "viable cells", "gram positive organisms", "gram negative organisms."],
     "answer": "C",
-    "explanation": "Gram-positive bacteria have thick peptidoglycan layers that retain the crystal violet-iodine complex, appearing purple."
+    "explanation": "Gram-positive bacteria have thick peptidoglycan layers that retain crystal violet-iodine complex, appearing purple."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 12,
     "question": "Which of the following nitrogenous base is found in RNA but not in DNA?",
     "options": ["Adenine", "Thymine", "Uracil", "Guanine."],
     "answer": "C",
-    "explanation": "Uracil is found in RNA, while thymine is found in DNA."
-},
+    "explanation": "Uracil is found in RNA; thymine is found in DNA."
+  },
   {
     "subject": "Biology",
     "year": 2015,
@@ -140,12 +140,12 @@
     "question": "The study of groups of organisms is called",
     "options": ["Ecology", "Autecology", "Gynecology", "Synecology"],
     "answer": "D",
-    "explanation": "Synecology is the study of groups of organisms (communities), while autecology studies individual species."
+    "explanation": "Synecology is the study of groups of organisms (communities).\n\nNote: Option C 'Gynecology' appears to be a typo for 'Autecology' (study of individual species)."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 14,
     "question": "Genetic rearrangement between nonsister chromatids is known as",
@@ -162,7 +162,7 @@
     "question": "One of the following is not a type of dormancy.",
     "options": ["Induced", "Innate", "Enforced", "Applied"],
     "answer": "D",
-    "explanation": "The common types of dormancy are innate (endogenous), enforced (environmental), and induced (secondary). 'Applied' is not a recognized type."
+    "explanation": "Common types: innate (endogenous), enforced (environmental), induced (secondary).\n\n'Applied' is not a recognized type."
   },
   {
     "subject": "Biology",
@@ -184,7 +184,7 @@
     "question": "The first forms of life on Earth were thought to be",
     "options": ["single-celled plants.", "prokaryotes", "insects", "large animals such as dinosaurs"],
     "answer": "B",
-    "explanation": "The earliest life forms were prokaryotes, which appeared about 3.5 billion years ago."
+    "explanation": "The earliest life forms were prokaryotes, appearing about 3.5 billion years ago."
   },
   {
     "subject": "Biology",
@@ -195,7 +195,7 @@
     "question": "Which polysaccharide is usually found in the cell walls of fungi?",
     "options": ["Starch", "Glycogen", "Chitin", "Cellulose"],
     "answer": "C",
-    "explanation": "Chitin is the main structural polysaccharide in fungal cell walls, similar to insect exoskeletons."
+    "explanation": "Chitin is the main structural polysaccharide in fungal cell walls."
   },
   {
     "subject": "Biology",
@@ -206,7 +206,7 @@
     "question": "What adaptation do seed plants have in addition to the seed that is not found in seedless plants?",
     "options": ["Gametophytes", "Vascular tissue", "Pollen", "Chlorophyll"],
     "answer": "C",
-    "explanation": "Pollen allows seed plants to reproduce without water, unlike seedless plants that require water for fertilization."
+    "explanation": "Pollen allows seed plants to reproduce without water, unlike seedless plants."
   },
   {
     "subject": "Biology",
@@ -228,8 +228,8 @@
     "question": "External fertilization occurs in ______________ type of environment?",
     "options": ["Aquatic", "Forested", "Savanna", "Steppe"],
     "answer": "A",
-    "explanation": "External fertilization requires water for gametes to meet, so it occurs in aquatic environments."
-},
+    "explanation": "External fertilization requires water for gametes to meet."
+  },
   {
     "subject": "Biology",
     "year": 2015,
@@ -255,13 +255,13 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Plant Tissues and Functions",
+    "category": "Plant Morphology/Anatomy",
     "type": "Objective",
     "questionNumber": 24,
     "question": "One of these statements is not true about Berry and Drupe.",
     "options": ["They both have thin epicarp", "They both have fleshy succulent mesocarp", "Their endocarp is edible", "They both have seed"],
     "answer": "C",
-    "explanation": "In drupes (e.g., mango), the endocarp is hard and stony, not edible. In berries, the endocarp is usually thin and edible."
+    "explanation": "In drupes (e.g., mango), the endocarp is hard and stony, not edible.\n\nIn berries, the endocarp is usually thin and edible.\n\nOption C is the false statement."
   },
   {
     "subject": "Biology",
@@ -277,13 +277,13 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 26,
     "question": "The type of cell division which forms the basis of Mendel's law of segregation is",
     "options": ["Mitosis", "Meiosis", "Somatic", "Synoptic"],
     "answer": "B",
-    "explanation": "Meiosis separates homologous alleles into different gametes, which is the physical basis of segregation."
+    "explanation": "Meiosis separates homologous alleles into different gametes — the physical basis of segregation."
   },
   {
     "subject": "Biology",
@@ -294,7 +294,7 @@
     "question": "Archaebacteria is simply",
     "options": ["A prokaryotes without cell wall", "An eukaryotes without cell wall", "A prokaryote without a peptidoglycan cell wall", "An eukaryotes without a peptidoglycan cell wall"],
     "answer": "C",
-    "explanation": "Archaebacteria are prokaryotes that lack peptidoglycan in their cell walls, instead having pseudopeptidoglycan or other molecules."
+    "explanation": "Archaebacteria are prokaryotes that lack peptidoglycan in their cell walls."
   },
   {
     "subject": "Biology",
@@ -316,7 +316,7 @@
     "question": "A pseudopodia that is threadlike, branched and interconnected is known as",
     "options": ["Lobopodia", "Actinopodia", "Filopodia", "Reticulopodia"],
     "answer": "D",
-    "explanation": "Reticulopodia are fine, branching, and interconnecting pseudopodia, as seen in foraminiferans."
+    "explanation": "Reticulopodia are fine, branching, and interconnecting pseudopodia."
   },
   {
     "subject": "Biology",
@@ -327,7 +327,7 @@
     "question": "Photosynthetic microphylls are found in",
     "options": ["Division Psilophyta", "Division Lycophyta", "Division Sphenophyta", "Division Pterophyta"],
     "answer": "B",
-    "explanation": "Microphylls (leaves with a single vein) are characteristic of division Lycophyta (clubmosses)."
+    "explanation": "Microphylls (leaves with a single vein) are characteristic of division Lycophyta."
   },
   {
     "subject": "Biology",
@@ -338,18 +338,18 @@
     "question": "Polio myelitis is an infectious disease caused by",
     "options": ["virus", "protozoan", "bacterium", "fungus"],
     "answer": "A",
-    "explanation": "Poliomyelitis (polio) is caused by the poliovirus, an enterovirus."
+    "explanation": "Poliomyelitis (polio) is caused by the poliovirus."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 32,
     "question": "Which of these is a trace element?",
     "options": ["Iron", "Copper", "Calcium", "Sulphur"],
     "answer": "B",
-    "explanation": "Copper is a trace element required in minute amounts. Iron is a major element; calcium and sulphur are macro elements."
+    "explanation": "Copper is a trace element required in minute amounts."
   },
   {
     "subject": "Biology",
@@ -371,7 +371,7 @@
     "question": "Hydra removes undigested food by",
     "options": ["passing it through the anus", "passing it through the mouth", "means of contractile vacuole", "digesting it through the body surface"],
     "answer": "B",
-    "explanation": "Hydra has a single opening (mouth/anus) through which both food enters and undigested waste is expelled."
+    "explanation": "Hydra has a single opening (mouth/anus) through which food enters and waste is expelled."
   },
   {
     "subject": "Biology",
@@ -382,7 +382,7 @@
     "question": "Which of the following is INCORRECT? The prothallus of a fern",
     "options": ["is a flattened heart shaped structure", "is green because its cells contain chloroplast", "is the dominant plant", "bears the sexual organs"],
     "answer": "C",
-    "explanation": "The prothallus (gametophyte) is a small, independent structure. It is NOT the dominant plant—the sporophyte is the dominant stage in ferns."
+    "explanation": "The prothallus (gametophyte) is small, not dominant.\n\nThe sporophyte is the dominant stage in ferns."
   },
   {
     "subject": "Biology",
@@ -393,7 +393,7 @@
     "question": "The science of taxonomy has two branches namely",
     "options": ["Biology naming and biochemistry", "Nomenclature and Classification", "Botany and systematic", "Microbiology and systematic"],
     "answer": "B",
-    "explanation": "Taxonomy consists of nomenclature (naming organisms) and classification (grouping organisms)."
+    "explanation": "Taxonomy consists of nomenclature (naming) and classification (grouping)."
   },
   {
     "subject": "Biology",
@@ -403,8 +403,8 @@
     "questionNumber": 37,
     "question": "To complement biotic analysis in measuring environmental factors the following are studied Except",
     "options": ["Soil", "Water", "Topography", "Geography"],
-    "answer": "C",
-    "explanation": "Topography is not typically measured directly for biotic analysis; soil, water, and geography are commonly included."
+    "answer": "D",
+    "explanation": "Soil, water, and topography are environmental factors studied to complement biotic analysis.\n\nGeography is a broad field, not a specific environmental factor measured.\n\nThe correct answer is D (Geography)."
   },
   {
     "subject": "Biology",
@@ -426,7 +426,7 @@
     "question": "Small proteinaceous infectious particles that do not contain nucleic acid genome that codes for their progeny are",
     "options": ["bacteria", "viruses", "HIV", "prion"],
     "answer": "D",
-    "explanation": "Prions are infectious protein particles that cause neurodegenerative diseases; they lack nucleic acids."
+    "explanation": "Prions are infectious protein particles that lack nucleic acids."
   },
   {
     "subject": "Biology",
@@ -437,7 +437,7 @@
     "question": "Example of all-purpose media used in cultivation of bacteria by a bacteriologist is",
     "options": ["selenitic A agar", "blood agar", "nutrient agar", "tryptone soy agar"],
     "answer": "C",
-    "explanation": "Nutrient agar is a general-purpose medium that supports the growth of a wide range of bacteria."
+    "explanation": "Nutrient agar is a general-purpose medium supporting growth of a wide range of bacteria."
   },
   {
     "subject": "Biology",
@@ -448,7 +448,7 @@
     "question": "Which of the following is not a characteristic feature of the phylum Cnidaria?",
     "options": ["Polymorphism", "Cephalisation", "Body of two-germ layers", "Nematocysts"],
     "answer": "B",
-    "explanation": "Cnidarians have radial symmetry and lack cephalisation (head development)."
+    "explanation": "Cnidarians have radial symmetry and lack cephalisation."
   },
   {
     "subject": "Biology",
@@ -459,12 +459,12 @@
     "question": "Which of the following groups of plants are not considered as lower plants?",
     "options": ["Pteridophytes", "Bryophytes", "Cryptogams", "Spermatophytes"],
     "answer": "D",
-    "explanation": "Spermatophytes (seed plants) are higher plants; the others are lower plants (cryptogams)."
+    "explanation": "Spermatophytes (seed plants) are higher plants; the others are lower plants."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 43,
     "question": "Non-living bodies in the cell includes one of these,",
@@ -486,13 +486,13 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Objective",
     "questionNumber": 45,
     "question": "Which of these is not a form of respiration in Amphibians?",
     "options": ["Cutaneous", "Tubular", "Pulmonary", "Buccal-Pharyngeal"],
     "answer": "B",
-    "explanation": "Tubular respiration is not a known respiratory mode in amphibians; they use cutaneous, pulmonary, and buccopharyngeal respiration."
+    "explanation": "Tubular respiration is not a known respiratory mode in amphibians."
   },
   {
     "subject": "Biology",
@@ -503,7 +503,7 @@
     "question": "The factor that least affects food shortage in the sub-saharan Africa is",
     "options": ["flooding", "pests", "mixed cropping", "drought"],
     "answer": "C",
-    "explanation": "Mixed cropping is a sustainable farming practice that helps reduce food shortage, not a cause of it."
+    "explanation": "Mixed cropping is a sustainable farming practice that helps reduce food shortage."
   },
   {
     "subject": "Biology",
@@ -514,7 +514,7 @@
     "question": "Which one of the following factors may not directly affect population density of organisms?",
     "options": ["Edaphic", "Nutritional", "Mortality", "Emigration"],
     "answer": "A",
-    "explanation": "Edaphic factors (soil conditions) affect distribution but not directly population density like mortality or emigration do."
+    "explanation": "Edaphic factors (soil conditions) affect distribution but not directly population density."
   },
   {
     "subject": "Biology",
@@ -537,7 +537,7 @@
     "options": ["bone marrow cells", "erythrocytes", "lymphocytes", "monocytes"],
     "answer": "C",
     "explanation": "Lymphocytes (B and T cells) are the major cells of the specific (adaptive) immune system."
-},
+  },
   {
     "subject": "Biology",
     "year": 2015,
@@ -552,52 +552,52 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1a",
-    "question": "(a) State 6 differences between sexual and asexual reproduction [6 marks]",
-    "modelAnswer": "1. Sexual reproduction involves two parents; asexual involves one. 2. Sexual produces genetically varied offspring; asexual produces clones. 3. Sexual involves gamete fusion; asexual does not. 4. Sexual requires meiosis; asexual involves mitosis. 5. Sexual is slower; asexual is faster. 6. Sexual occurs in multicellular eukaryotes; asexual is common in prokaryotes and some eukaryotes.",
-    "options": []
+    "question": "(a) State 6 differences between sexual and asexual reproduction",
+    "options": [],
+    "modelAnswer": "1. Sexual reproduction involves two parents; asexual involves one.\n2. Sexual produces genetically varied offspring; asexual produces clones.\n3. Sexual involves gamete fusion; asexual does not.\n4. Sexual requires meiosis; asexual involves mitosis.\n5. Sexual is slower; asexual is faster.\n6. Sexual occurs in multicellular eukaryotes; asexual is common in prokaryotes and some eukaryotes."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1b",
-    "question": "(b) Write short notes on any 2 of the following:\n(i) Haplontic life cycle\n(ii) Diplontic life cycle\n(iii) Haplodiplontic life cycle [4 marks]",
-    "modelAnswer": "(i) Haplontic: Dominant phase is haploid gametophyte; zygote undergoes meiosis. (ii) Diplontic: Dominant phase is diploid sporophyte; gametes are the only haploid stage. (iii) Haplodiplontic: Alternation of generations with both haploid and diploid multicellular stages.",
-    "options": []
+    "question": "(b) Write short notes on any 2 of the following:\n(i) Haplontic life cycle\n(ii) Diplontic life cycle\n(iii) Haplodiplontic life cycle",
+    "options": [],
+    "modelAnswer": "(i) Haplontic: Dominant phase is haploid gametophyte; zygote undergoes meiosis.\n(ii) Diplontic: Dominant phase is diploid sporophyte; gametes are the only haploid stage.\n(iii) Haplodiplontic: Alternation of generations with both haploid and diploid multicellular stages."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2a",
-    "question": "(a) Define the following terms:\n(i) Genotype\n(ii) Phenotype\n(iii) Hybrid\n(iv) Dominant character [4 marks]",
-    "modelAnswer": "(i) Genotype: Genetic makeup of an organism. (ii) Phenotype: Physical expression of genotype. (iii) Hybrid: Offspring of two genetically different parents. (iv) Dominant character: Trait that masks the recessive trait in heterozygotes.",
-    "options": []
+    "question": "(a) Define the following terms:\n(i) Genotype\n(ii) Phenotype\n(iii) Hybrid\n(iv) Dominant character",
+    "options": [],
+    "modelAnswer": "(i) Genotype: Genetic makeup of an organism.\n(ii) Phenotype: Physical expression of genotype.\n(iii) Hybrid: Offspring of two genetically different parents.\n(iv) Dominant character: Trait that masks the recessive trait in heterozygotes."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2b",
-    "question": "(b) State clearly Mendel's first and second laws of inheritance [2 marks]",
-    "modelAnswer": "First law (Law of Segregation): Alleles separate during gamete formation. Second law (Law of Independent Assortment): Genes for different traits assort independently.",
-    "options": []
+    "question": "(b) State clearly Mendel's first and second laws of inheritance",
+    "options": [],
+    "modelAnswer": "First law (Law of Segregation): Alleles separate during gamete formation.\nSecond law (Law of Independent Assortment): Genes for different traits assort independently."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2c",
-    "question": "(c) If a pure breeding brown coloured rat BB is crossed with a pure breeding White rat bb, using diagrams only, show the genotype of the offspring up to the second filial generation. [4 marks]",
-    "modelAnswer": "P: BB × bb → F1: Bb (all brown). F1 × F1: Bb × Bb → F2: BB, Bb, Bb, bb (3 brown : 1 white).",
-    "options": []
+    "question": "(c) If a pure breeding brown coloured rat BB is crossed with a pure breeding White rat bb, using diagrams only, show the genotype of the offspring up to the second filial generation.",
+    "options": [],
+    "modelAnswer": "P: BB × bb → F1: Bb (all brown).\nF1 × F1: Bb × Bb → F2: BB, Bb, Bb, bb (3 brown : 1 white)."
   },
   {
     "subject": "Biology",
@@ -605,9 +605,9 @@
     "category": "Respiration",
     "type": "Essay",
     "questionNumber": 3,
-    "question": "Describe the formation of two molecules of pyruvate during respiration [10 marks]",
-    "modelAnswer": "Glycolysis: Glucose (6C) is phosphorylated twice using ATP, converted to fructose-1,6-bisphosphate, then split into two 3C intermediates (glyceraldehyde-3-phosphate). These are oxidized to 1,3-bisphosphoglycerate (NADH produced), then converted to 3-phosphoglycerate (ATP produced), then to 2-phosphoglycerate, then to phosphoenolpyruvate (PEP). Finally, PEP is converted to pyruvate with ATP production. Net: 2 ATP, 2 NADH, 2 pyruvate per glucose.",
-    "options": []
+    "question": "Describe the formation of two molecules of pyruvate during respiration",
+    "options": [],
+    "modelAnswer": "Glycolysis: Glucose (6C) is phosphorylated twice, split into two 3C glyceraldehyde-3-phosphate molecules. These are oxidized (NADH produced), then converted to pyruvate with ATP production.\n\nNet: 2 ATP, 2 NADH, 2 pyruvate per glucose."
   },
   {
     "subject": "Biology",
@@ -615,9 +615,9 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "4a",
-    "question": "(a) Define the following terms:\n(i) Aseptic Technique\n(ii) Antigens\n(iii) Antibodies\n(iv) Immunity [4 marks]",
-    "modelAnswer": "(i) Aseptic technique: Procedures preventing contamination by microorganisms. (ii) Antigens: Substances that trigger immune response. (iii) Antibodies: Proteins produced by B cells that bind to antigens. (iv) Immunity: Body's ability to resist infection.",
-    "options": []
+    "question": "(a) Define the following terms:\n(i) Aseptic Technique\n(ii) Antigens\n(iii) Antibodies\n(iv) Immunity",
+    "options": [],
+    "modelAnswer": "(i) Aseptic technique: Procedures preventing contamination by microorganisms.\n(ii) Antigens: Substances that trigger immune response.\n(iii) Antibodies: Proteins produced by B cells that bind to antigens.\n(iv) Immunity: Body's ability to resist infection."
   },
   {
     "subject": "Biology",
@@ -625,9 +625,9 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "4b",
-    "question": "(b) List 6 rules that must be observed for any aseptic technique [6 marks]",
-    "modelAnswer": "1. Sterilize all equipment. 2. Flame inoculating loops before and after use. 3. Work near a flame or in a laminar flow hood. 4. Keep culture tubes capped. 5. Disinfect work surfaces before and after. 6. Avoid talking or coughing near open cultures.",
-    "options": []
+    "question": "(b) List 6 rules that must be observed for any aseptic technique",
+    "options": [],
+    "modelAnswer": "1. Sterilize all equipment.\n2. Flame inoculating loops before and after use.\n3. Work near a flame or in a laminar flow hood.\n4. Keep culture tubes capped.\n5. Disinfect work surfaces before and after.\n6. Avoid talking or coughing near open cultures."
   },
   {
     "subject": "Biology",
@@ -635,9 +635,9 @@
     "category": "Transport System in Plants",
     "type": "Essay",
     "questionNumber": "5a",
-    "question": "(a) How does water in the soil enter the root hair of a plant? [6 marks]",
-    "modelAnswer": "Water enters root hairs by osmosis. Root hair cells have high solute concentration (due to active transport of minerals), creating a water potential gradient. Water moves from soil (higher water potential) to root hair (lower water potential) through the cell wall and plasma membrane.",
-    "options": []
+    "question": "(a) How does water in the soil enter the root hair of a plant?",
+    "options": [],
+    "modelAnswer": "Water enters root hairs by osmosis.\n\nRoot hair cells have high solute concentration (from active transport of minerals), creating a water potential gradient.\n\nWater moves from soil (higher water potential) to root hair (lower water potential)."
   },
   {
     "subject": "Biology",
@@ -645,9 +645,9 @@
     "category": "Transport System in Plants",
     "type": "Essay",
     "questionNumber": "5b",
-    "question": "(b) Name the tissue that conducts water from the root to the stem and leaves in a flowering plant? [4 marks]",
-    "modelAnswer": "Xylem tissue. Specifically, xylem vessels and tracheids conduct water and dissolved minerals upwards from roots to shoots.",
-    "options": []
+    "question": "(b) Name the tissue that conducts water from the root to the stem and leaves in a flowering plant?",
+    "options": [],
+    "modelAnswer": "Xylem tissue.\n\nXylem vessels and tracheids conduct water and dissolved minerals upwards from roots to shoots."
   },
   {
     "subject": "Biology",
@@ -655,49 +655,49 @@
     "category": "Endocrine System",
     "type": "Essay",
     "questionNumber": "6a",
-    "question": "(a) State five functions of testosterone [5 marks]",
-    "modelAnswer": "1. Development of male secondary sexual characteristics. 2. Sperm production (spermatogenesis). 3. Muscle growth and maintenance. 4. Bone density regulation. 5. Libido (sex drive) in males.",
-    "options": []
+    "question": "(a) State five functions of testosterone",
+    "options": [],
+    "modelAnswer": "1. Development of male secondary sexual characteristics.\n2. Sperm production (spermatogenesis).\n3. Muscle growth and maintenance.\n4. Bone density regulation.\n5. Libido (sex drive) in males."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Essay",
     "questionNumber": "6b",
-    "question": "(b) With aid of diagram only, describe mature spermatozoon [5 marks]",
-    "modelAnswer": "Mature spermatozoon: Head (contains nucleus and acrosome), midpiece (contains mitochondria), tail (flagellum for motility). Diagram should label these parts.",
-    "options": []
+    "question": "(b) With aid of diagram only, describe mature spermatozoon",
+    "options": [],
+    "modelAnswer": "[IMAGE: /images/questions/biology/2015/bio-2015-essay-6b.png | Diagram of mature spermatozoon showing head, acrosome, nucleus, neck, midpiece with mitochondria, and tail (flagellum)]\n\nHead:\n- Contains the haploid nucleus (23 chromosomes) with highly condensed chromatin.\n- Covered at the front by the acrosome (derived from Golgi apparatus), containing hydrolytic enzymes for penetrating the egg.\n\nNeck:\n- Short connecting region containing centrioles.\n\nMidpiece:\n- Packed with mitochondria arranged in a spiral sheath around the flagellum, providing ATP for movement.\n\nTail (Flagellum):\n- Longest part, made of axoneme with '9+2' microtubule arrangement.\n- Whip-like beating propels the sperm forward.\n- Tapers to a narrow end piece.\n\nOverall: A highly specialized, streamlined cell — essentially a nucleus (genetic cargo), enzyme cap (penetrating the egg), energy plant (mitochondria), and motor (flagellum) — built for delivering paternal DNA to the egg."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Plant Tissues and Functions",
+    "category": "Plant Morphology/Anatomy",
     "type": "Essay",
     "questionNumber": "7a",
-    "question": "(a) What is a tissue? [1 mark]",
-    "modelAnswer": "A tissue is a group of structurally similar cells that perform a specific function together.",
-    "options": []
+    "question": "(a) What is a tissue?",
+    "options": [],
+    "modelAnswer": "A tissue is a group of structurally similar cells that perform a specific function together."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Plant Tissues and Functions",
+    "category": "Plant Morphology/Anatomy",
     "type": "Essay",
     "questionNumber": "7b",
-    "question": "(b) How are plant tissue formed [3 marks]",
-    "modelAnswer": "Plant tissues are formed by cell division in meristems (apical, lateral, and intercalary). Cells undergo differentiation to become specialized tissues like xylem, phloem, and epidermis.",
-    "options": []
+    "question": "(b) How are plant tissue formed",
+    "options": [],
+    "modelAnswer": "Plant tissues are formed by cell division in meristems (apical, lateral, intercalary).\n\nCells undergo differentiation to become specialized tissues."
   },
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Plant Tissues and Functions",
+    "category": "Plant Morphology/Anatomy",
     "type": "Essay",
     "questionNumber": "7c",
-    "question": "(c) Describe the structure and function of two vascular tissues [6 marks]",
-    "modelAnswer": "1. Xylem: Composed of vessels (dead, hollow) and tracheids; transports water and minerals upward; provides support. 2. Phloem: Composed of sieve tubes (living) and companion cells; transports organic nutrients (sucrose) bidirectionally.",
-    "options": []
+    "question": "(c) Describe the structure and function of two vascular tissues",
+    "options": [],
+    "modelAnswer": "1. Xylem: Vessels (dead, hollow) and tracheids; transports water and minerals upward; provides support.\n\n2. Phloem: Sieve tubes (living) and companion cells; transports organic nutrients (sucrose) bidirectionally."
   },
   {
     "subject": "Biology",
@@ -705,9 +705,9 @@
     "category": "Diversity and General Characteristics of Animals",
     "type": "Essay",
     "questionNumber": "8a",
-    "question": "(a) List any 6 characteristics of the phylum Mollusca [6 marks]",
-    "modelAnswer": "1. Soft body. 2. Presence of mantle. 3. Radula (most species). 4. Muscular foot. 5. Visceral mass. 6. Unsegmented body. 7. Coelomate. 8. Bilateral symmetry.",
-    "options": []
+    "question": "(a) List any 6 characteristics of the phylum Mollusca",
+    "options": [],
+    "modelAnswer": "1. Soft body.\n2. Presence of mantle.\n3. Radula (most species).\n4. Muscular foot.\n5. Visceral mass.\n6. Unsegmented body.\n7. Coelomate.\n8. Bilateral symmetry."
   },
   {
     "subject": "Biology",
@@ -715,8 +715,8 @@
     "category": "Ecologic and Economic Importance of Animals",
     "type": "Essay",
     "questionNumber": "8b",
-    "question": "(b) Give 4 economic importance of the sub-class Pulmonata [4 marks]",
-    "modelAnswer": "1. Some are pests of crops (e.g., slugs). 2. Some serve as intermediate hosts for parasites. 3. Some are used as food (e.g., snails). 4. Some are used in traditional medicine.",
-    "options": []
+    "question": "(b) Give 4 economic importance of the sub-class Pulmonata",
+    "options": [],
+    "modelAnswer": "1. Some are pests of crops (e.g., slugs).\n2. Some serve as intermediate hosts for parasites.\n3. Some are used as food (e.g., snails).\n4. Some are used in traditional medicine."
   }
 ]

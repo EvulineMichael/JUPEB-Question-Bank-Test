@@ -24,7 +24,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 3,
     "question": "If diploid number 2n = 8 in an organism, how many sister chromatids will be formed during S phase of cell cycle?",
@@ -35,7 +35,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 4,
     "question": "The following are sex-linked disorder EXCEPT",
@@ -68,7 +68,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 7,
     "question": "The membrane-bound ribosomes found in the cytoplasm of eukaryotic plant cell is",
@@ -101,7 +101,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 10,
     "question": "Homologous chromosomes do NOT necessarily have the same",
@@ -112,7 +112,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 11,
     "question": "The constricted region of a chromosome that is an attachment site for microtubules is",
@@ -211,7 +211,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 20,
     "question": "The type of mutation that arises as a result of natural during DNA replication is referred to as",
@@ -310,7 +310,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Objective",
     "questionNumber": 29,
     "question": "Which of the following groups of plants are not considered as lower plants?",
@@ -336,7 +336,7 @@
     "type": "Objective",
     "questionNumber": 31,
     "question": "The study of group of organisms is called",
-    "options": ["Ecology", "Syncology", "Autocology", "Haematology"],
+    "options": ["Ecology", "Synecology", "Autocology", "Haematology"],
     "answer": "B",
     "explanation": "Synecology studies groups of organisms (communities)."
   },
@@ -409,7 +409,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 38,
     "question": "Blood flowing in renal vein is deep red in colour due to the presence of",
@@ -442,11 +442,11 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 41,
     "question": "The cortex of kidney contains all the following EXCEPT",
-    "options": ["Bowman's capsule", "convoluted tubules", "glomerulus", "Helen's loop"],
+    "options": ["Bowman's capsule", "convoluted tubules", "glomerulus", "Loop of Henle"],
     "answer": "D",
     "explanation": "The loop of Henle is in the medulla, not cortex."
   },
@@ -475,7 +475,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Objective",
     "questionNumber": 44,
     "question": "Fertilization of sex cells naturally occur in females in the",
@@ -530,7 +530,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Objective",
     "questionNumber": 49,
     "question": "Iliac artery supplies blood to",
@@ -552,21 +552,21 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) Briefly state ONE function each of the cell organelles listed below: i. Nucleus ii. Plasma membrane iii. Mitochondria iv. Ribosome v. Golgi apparatus vi. Rough Endoplasmic Reticulum [3 Marks]",
-    "modelAnswer": "i. Nucleus: controls cell activities and stores genetic material. ii. Plasma membrane: regulates transport of substances. iii. Mitochondria: ATP production. iv. Ribosome: protein synthesis. v. Golgi apparatus: modifies and packages proteins. vi. Rough ER: protein synthesis and transport.",
+    "modelAnswer": "i. Nucleus: controls cell activities and stores genetic material.\nii. Plasma membrane: regulates transport of substances.\niii. Mitochondria: ATP production.\niv. Ribosome: protein synthesis.\nv. Golgi apparatus: modifies and packages proteins.\nvi. Rough ER: protein synthesis and transport.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) Itemize THREE differences between DNA and RNA. [3 Marks]",
-    "modelAnswer": "1. DNA has deoxyribose sugar; RNA has ribose sugar. 2. DNA has thymine; RNA has uracil. 3. DNA is double-stranded; RNA is usually single-stranded.",
+    "modelAnswer": "1. DNA has deoxyribose sugar; RNA has ribose sugar.\n2. DNA has thymine; RNA has uracil.\n3. DNA is double-stranded; RNA is usually single-stranded.",
     "options": []
   },
   {
@@ -576,7 +576,7 @@
     "type": "Essay",
     "questionNumber": "1c(i)",
     "question": "(c) i. List FOUR characteristic of enzymes. [2 Marks]",
-    "modelAnswer": "1. Biological catalysts. 2. Specific in action. 3. Sensitive to temperature and pH. 4. Remain unchanged at the end of reaction.",
+    "modelAnswer": "1. Biological catalysts.\n2. Specific in action.\n3. Sensitive to temperature and pH.\n4. Remain unchanged at the end of reaction.",
     "options": []
   },
   {
@@ -586,7 +586,7 @@
     "type": "Essay",
     "questionNumber": "1c(ii)",
     "question": "(c) ii. List FOUR evidences of evolution. [2 Marks]",
-    "modelAnswer": "1. Fossil records. 2. Comparative anatomy (homologous structures). 3. Comparative embryology. 4. Molecular biology (DNA similarities).",
+    "modelAnswer": "1. Fossil records.\n2. Comparative anatomy (homologous structures).\n3. Comparative embryology.\n4. Molecular biology (DNA similarities).",
     "options": []
   },
   {
@@ -595,40 +595,47 @@
     "category": "Ecology",
     "type": "Essay",
     "questionNumber": "2a",
-    "question": "(a) i. Define ecological succession. [1 Mark] ii. Define food chain. [1 Mark]",
-    "modelAnswer": "i. Ecological succession: gradual change in species composition of a community over time. ii. Food chain: linear sequence of organisms through which energy and nutrients are transferred.",
+    "question": "(a) i. Define ecological succession. [1 Mark]\nii. Define food chain. [1 Mark]",
+    "modelAnswer": "i. Ecological succession: gradual change in species composition of a community over time.\nii. Food chain: linear sequence of organisms through which energy and nutrients are transferred.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) State TWO reasons for the choice of garden pea plant by Gregor Mendel for his experiment in genetics. [2 Marks]",
-    "modelAnswer": "1. Pea plants have contrasting, easily observable traits. 2. They have a short generation time and produce many offspring.",
+    "modelAnswer": "1. Pea plants have contrasting, easily observable traits.\n2. They have a short generation time and produce many offspring.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Essay",
     "questionNumber": "2c(i,ii)",
-    "question": "(c) i. Calculate the percentage change in the average breathing rates when running compared with bending sideways. [3 Marks] ii. What is the relationship between the level of exercise and breathing rates? [1 Mark]",
-    "modelAnswer": "i. Requires data from the table: % change = [(Running rate - Bending rate) / Bending rate] × 100. ii. As exercise level increases, breathing rate increases.",
+    "question": "(c) i. Calculate the percentage change in the average breathing rates when running compared with bending sideways. [3 Marks]\nii. What is the relationship between the level of exercise and breathing rates? [1 Mark]",
+    "dataTable": {
+      "headers": ["Exercise", "1st Trial", "2nd Trial", "3rd Trial", "Average"],
+      "rows": [
+        ["Bending sideways", "13", "12", "14", "13"],
+        ["Walking", "23", "25", "24", "24"],
+        ["Jogging", "30", "32", "34", "32"],
+        ["Running", "55", "51", "53", "53"]
+      ]
+    },
     "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Data table missing: Breathing rate data for different exercise levels. Please refer to your original past question paper."
+    "modelAnswer": "i. Percentage change = [(Running average - Bending average) / Bending average] × 100\n\nRunning average = 53 breaths/min\nBending average = 13 breaths/min\n\nDifference = 53 - 13 = 40\nPercentage change = (40 / 13) × 100 ≈ 307.7% (or 308%)\n\nii. There is a direct (positive) relationship between exercise level and breathing rate. As exercise intensity increases, breathing rate increases significantly to supply more oxygen to muscles and remove carbon dioxide."
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Essay",
     "questionNumber": "2c(iii)",
     "question": "(c) iii. With ONE example each, state FOUR different forms in which cell exists. [2 Marks]",
-    "modelAnswer": "1. Unicellular (Amoeba). 2. Colonial (Volvox). 3. Multicellular (man). 4. Coenocytic (Vaucheria).",
+    "modelAnswer": "1. Unicellular (Amoeba).\n2. Colonial (Volvox).\n3. Multicellular (man).\n4. Coenocytic (Vaucheria).",
     "options": []
   },
   {
@@ -638,7 +645,7 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) Describe the process that leads to the production of human antibodies. [5 Marks]",
-    "modelAnswer": "1. Antigen enters body and is processed by antigen-presenting cells (APCs). 2. APCs present antigen to helper T cells. 3. Helper T cells activate B cells. 4. B cells proliferate into plasma cells and memory cells. 5. Plasma cells produce antibodies specific to the antigen.",
+    "modelAnswer": "1. Antigen enters body and is processed by antigen-presenting cells (APCs).\n2. APCs present antigen to helper T cells.\n3. Helper T cells activate B cells.\n4. B cells proliferate into plasma cells and memory cells.\n5. Plasma cells produce antibodies specific to the antigen.",
     "options": []
   },
   {
@@ -648,7 +655,7 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) Explain the following microbial interactions with given examples. i. Mutualism ii. Amensalism iii. Proto-cooperation [3 Marks]",
-    "modelAnswer": "i. Mutualism: both benefit (Rhizobium and legumes). ii. Amensalism: one harmed, one unaffected (Penicillium producing antibiotics). iii. Proto-cooperation: both benefit but can survive independently (gut bacteria and humans).",
+    "modelAnswer": "i. Mutualism: both benefit (Rhizobium and legumes).\nii. Amensalism: one harmed, one unaffected (Penicillium producing antibiotics).\niii. Proto-cooperation: both benefit but can survive independently (gut bacteria and humans).",
     "options": []
   },
   {
@@ -657,11 +664,9 @@
     "category": "Biological Methods and Application",
     "type": "Essay",
     "questionNumber": "3c",
-    "question": "(c) The oil immersion objective lens of a light microscope was used to observe bacterial cells of 10μm. Calculate: i. the total magnification of the image ii. the image size [2 Marks]",
-    "modelAnswer": "i. Total magnification = Eyepiece magnification × Objective magnification. ii. Image size = Actual size × Total magnification. Requires data not provided.",
+    "question": "The oil immersion objective lens of a light microscope was used to observe bacterial cells of 10µm. Calculate:\ni. the total magnification of the image\nii. the image size [2 Marks]",
     "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Magnification data missing. Please refer to your original past question paper."
+    "modelAnswer": "i. Total magnification = Eyepiece magnification × Objective magnification.\n\nThe question does not provide the eyepiece or objective lens magnification values. If using a standard light microscope with a 10× eyepiece and 100× oil immersion objective, the total magnification would be 10 × 100 = 1000×.\n\nii. Image size = Actual size × Total magnification.\n\nImage size = 10 µm × 1000 = 10,000 µm (10 mm) — assuming the standard magnification of 1000×.\n\nNote: The original question does not specify the eyepiece or objective lens magnification."
   },
   {
     "subject": "Biology",
@@ -670,7 +675,7 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) Define the following terms: i. Viroids ii. Prions iii. Virions iv. Capsomeres [2 Marks]",
-    "modelAnswer": "i. Viroids: infectious RNA molecules (no protein coat). ii. Prions: infectious protein particles. iii. Virions: complete viral particles. iv. Capsomeres: protein subunits of the viral capsid.",
+    "modelAnswer": "i. Viroids: infectious RNA molecules (no protein coat).\nii. Prions: infectious protein particles.\niii. Virions: complete viral particles.\niv. Capsomeres: protein subunits of the viral capsid.",
     "options": []
   },
   {
@@ -680,7 +685,7 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) Highlight and state the functions of the dyes and chemicals used in the Gram Staining procedure. [4 Marks]",
-    "modelAnswer": "1. Crystal violet: primary stain (purple). 2. Gram's iodine: mordant. 3. Alcohol/acetone: decolorizer. 4. Safranin: counterstain (red/pink).",
+    "modelAnswer": "1. Crystal violet: primary stain (purple).\n2. Gram's iodine: mordant.\n3. Alcohol/acetone: decolorizer.\n4. Safranin: counterstain (red/pink).",
     "options": []
   },
   {
@@ -690,7 +695,7 @@
     "type": "Essay",
     "questionNumber": "4c(i)",
     "question": "(c) i. Describe the steps of binary fission in bacteria. [3 Marks]",
-    "modelAnswer": "1. DNA replication. 2. Cell elongation. 3. Septum formation. 4. Division into two daughter cells.",
+    "modelAnswer": "1. DNA replication.\n2. Cell elongation.\n3. Septum formation.\n4. Division into two daughter cells.",
     "options": []
   },
   {
@@ -700,7 +705,7 @@
     "type": "Essay",
     "questionNumber": "4c(ii)",
     "question": "(c) ii. State the function of any TWO enzymes used in genetic engineering. [1 Mark]",
-    "modelAnswer": "1. Restriction endonuclease: cuts DNA at specific sites. 2. DNA ligase: joins DNA fragments together.",
+    "modelAnswer": "1. Restriction endonuclease: cuts DNA at specific sites.\n2. DNA ligase: joins DNA fragments together.",
     "options": []
   },
   {
@@ -710,20 +715,20 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) Distinguish the following pair of terms: i. Parasites and Saprophytes ii. Species and Genus iii. Nomenclature and Classification iv. Fruits and Seeds [4 Marks]",
-    "modelAnswer": "i. Parasites: obtain nutrients from living hosts; Saprophytes: from dead matter. ii. Species: basic unit of classification; Genus: group of related species. iii. Nomenclature: naming organisms; Classification: grouping organisms. iv. Fruits: mature ovary; Seeds: mature ovule.",
+    "modelAnswer": "i. Parasites: obtain nutrients from living hosts; Saprophytes: from dead matter.\nii. Species: basic unit of classification; Genus: group of related species.\niii. Nomenclature: naming organisms; Classification: grouping organisms.\niv. Fruits: mature ovary; Seeds: mature ovule.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) In a tabular form, differentiate between pteridophytes and bryophytes. [4 Marks]",
-    "modelAnswer": "Bryophytes: no vascular tissue, dominant gametophyte, no true roots (rhizoids), require water for reproduction. Pteridophytes: have vascular tissue, dominant sporophyte, have true roots, require water for reproduction.",
+    "modelAnswer": "Bryophytes: no vascular tissue, dominant gametophyte, no true roots (rhizoids), require water for reproduction.\n\nPteridophytes: have vascular tissue, dominant sporophyte, have true roots, require water for reproduction.",
     "options": []
   },
-{
+  {
     "subject": "Biology",
     "year": 2025,
     "category": "Plant Reproduction",
@@ -731,8 +736,8 @@
     "questionNumber": "5c",
     "question": "(c) i. Define cross pollination. [1 Mark]\nii. What is vegetative propagation? [1 Mark]",
     "options": [],
-    "modelAnswer": "i. Cross pollination: transfer of pollen from the anther of one flower to the stigma of a flower on a different plant.\nii. Vegetative propagation: asexual reproduction in plants using vegetative parts (stems, roots, leaves)."
-},
+    "modelAnswer": "i. Cross pollination: transfer of pollen from the anther of one flower to the stigma of a flower on a different plant.\n\nii. Vegetative propagation: asexual reproduction in plants using vegetative parts (stems, roots, leaves)."
+  },
   {
     "subject": "Biology",
     "year": 2025,
@@ -740,7 +745,7 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) Tabulate FOUR differences between monocotyledous and dicotyledous plants. [4 Marks]",
-    "modelAnswer": "Monocots: one cotyledon, parallel venation, scattered vascular bundles, fibrous roots. Dicots: two cotyledons, net venation, ringed vascular bundles, taproot.",
+    "modelAnswer": "Monocots: one cotyledon, parallel venation, scattered vascular bundles, fibrous roots.\n\nDicots: two cotyledons, net venation, ringed vascular bundles, taproot.",
     "options": []
   },
   {
@@ -750,7 +755,7 @@
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) Define the following terms: i. Parthenocarpy ii. Fertilization iii. True fruits iv. Dehiscent fruits v. Anemophilous flowers [5 Marks]",
-    "modelAnswer": "i. Parthenocarpy: fruit development without fertilization. ii. Fertilization: fusion of male and female gametes. iii. True fruits: developed from ovary. iv. Dehiscent fruits: split open to release seeds. v. Anemophilous flowers: wind-pollinated.",
+    "modelAnswer": "i. Parthenocarpy: fruit development without fertilization.\nii. Fertilization: fusion of male and female gametes.\niii. True fruits: developed from ovary.\niv. Dehiscent fruits: split open to release seeds.\nv. Anemophilous flowers: wind-pollinated.",
     "options": []
   },
   {
@@ -760,37 +765,37 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) State FIVE classes of the Phylum Echinodermata with one example each. [5 Marks]",
-    "modelAnswer": "1. Asteroidea (starfish). 2. Ophiuroidea (brittle stars). 3. Echinoidea (sea urchins). 4. Holothuroidea (sea cucumbers). 5. Crinoidea (sea lilies).",
+    "modelAnswer": "1. Asteroidea (starfish).\n2. Ophiuroidea (brittle stars).\n3. Echinoidea (sea urchins).\n4. Holothuroidea (sea cucumbers).\n5. Crinoidea (sea lilies).",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) Highlight the steps involved in the process of blood clotting. [5 Marks]",
-    "modelAnswer": "1. Injury exposes collagen. 2. Platelets adhere and release clotting factors. 3. Prothrombin → thrombin. 4. Thrombin converts fibrinogen → fibrin. 5. Fibrin mesh traps blood cells, forming a clot.",
+    "modelAnswer": "1. Injury exposes collagen.\n2. Platelets adhere and release clotting factors.\n3. Prothrombin → thrombin.\n4. Thrombin converts fibrinogen → fibrin.\n5. Fibrin mesh traps blood cells, forming a clot.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Nutrition in Animals",
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) State FIVE functions of the mammalian liver. [5 Marks]",
-    "modelAnswer": "1. Bile production. 2. Detoxification. 3. Glycogen/vitamin/mineral storage. 4. Protein synthesis. 5. Metabolism of carbohydrates, fats, proteins.",
+    "modelAnswer": "1. Bile production.\n2. Detoxification.\n3. Glycogen/vitamin/mineral storage.\n4. Protein synthesis.\n5. Metabolism of carbohydrates, fats, proteins.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) Explain briefly how the skeleton is important to humans with specific examples. [5 Marks]",
-    "modelAnswer": "1. Support (vertebral column). 2. Protection (skull protects brain). 3. Movement (bones as levers). 4. Mineral storage (calcium, phosphorus). 5. Blood cell production (bone marrow).",
+    "modelAnswer": "1. Support (vertebral column).\n2. Protection (skull protects brain).\n3. Movement (bones as levers).\n4. Mineral storage (calcium, phosphorus).\n5. Blood cell production (bone marrow).",
     "options": []
   }
 ]

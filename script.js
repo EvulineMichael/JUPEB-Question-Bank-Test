@@ -293,54 +293,60 @@ government: {
         "Democratization and Political Process in Africa"
     ]
 },
-    biology: {
-        "BIO 001 - General Biology": [
-            "Origin of Living Things",
-            "Living Things in Nature and Biological Molecules",
-            "Cell Organisation, Structure and Functions",
-            "Cell Division, Principles of Genetics, Variations and Heredity",
-            "Systematics, Taxonomy and Nomenclature",
-            "Ecology",
-            "Biological Methods and Application",
-            "Evolution",
-            "Enzymes"
-        ],
-        "BIO 002 - Microbiology": [
-            "History of the Discovery of Microorganisms",
-            "Types and Taxonomic Groupings of Microorganisms",
-            "Structures, Morphology and Characteristics of Microorganisms",
-            "Microbial Ecology",
-            "Microbial Nucleic Acids in Information Storage and Transfer",
-            "Microorganisms and their Application in Biotechnology"
-        ],
-        "BIO 003 - Botany": [
-            "General Characteristics and Diversity of Plants",
-            "Taxonomy of Lower and Higher Plants",
-            "Plant Conservation",
-            "Plant Tissues and Functions",
-            "Plant Morphology/Anatomy",
-            "Nutrition in Plants",
-            "Transport System in Plants",
-            "Respiration",
-            "Plant Reproduction",
-            "Growth in Higher Plants and Growth Regulators",
-            "Crop Improvement",
-            "Economic and Ecological Importance of Plants"
-        ],
-        "BIO 004 - Zoology": [
-            "Diversity and General Characteristics of Animals",
-            "Systematics (Taxonomy) of Animals",
-            "Evolution of Animals",
-            "Invertebrates",
-            "Introduction to Chordates",
-            "Ecologic and Economic Importance of Animals",
-            "Physiological Processes",
-            "Transport of Substances across Membranes",
-            "Nervous System",
-            "Sense Organ",
-            "Endocrine System"
-        ]
-    },
+   biology: {
+    "BIO 001 - General Biology": [
+        "Origin of Living Things",
+        "Origin of Organic Molecules",
+        "Basic Biostatistics",
+        "Diversity of Living Things",
+        "Biological Molecules",
+        "Cell Structure and Functions",
+        "Cell Division, Genetics, Variations and Heredity",
+        "Systematics, Taxonomy and Nomenclature",
+        "Ecology",
+        "Biological Methods and Application",
+        "Evolution",
+        "Enzymes"
+    ],
+    "BIO 002 - Microbiology": [
+        "History of the Discovery of Microorganisms",
+        "Types and Taxonomic Groupings of Microorganisms",
+        "Structures, Morphology and Characteristics of Microorganisms",
+        "Microbial Ecology",
+        "Microbial Nucleic Acids in Information Storage and Transfer",
+        "Microorganisms and their Application in Biotechnology"
+    ],
+    "BIO 003 - Botany": [
+        "General Characteristics and Diversity of Plants",
+        "Plant Morphology/Anatomy",
+        "Nutrition in Plants",
+        "Transport System in Plants",
+        "Respiration",
+        "Plant Reproduction",
+        "Growth in Higher Plants and Growth Regulators",
+        "Crop Improvement",
+        "Economic and Ecological Importance of Plants"
+    ],
+    "BIO 004 - Zoology": [
+        "Diversity and General Characteristics of Animals",
+        "Systematics (Taxonomy) of Animals",
+        "Evolution of Animals",
+        "Invertebrates",
+        "Introduction to Chordates",
+        "Ecologic and Economic Importance of Animals",
+        "Nutrition in Animals",
+        "Respiration in Mammals",
+        "Transport of Substances across Membranes",
+        "Skeletal System and Muscles",
+        "Reproduction",
+        "Excretion",
+        "Circulatory System",
+        "Growth and Development",
+        "Nervous System",
+        "Sense Organs",
+        "Endocrine System"
+    ]
+},
     irs: {
     "ISS 001 - History of Islam": [
         "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
@@ -1581,10 +1587,10 @@ function buildQuestionCard(q, year, questionIndex) {
     }
     return html + `</div>`;
 }
+// ===== FORMAT MODEL ANSWER =====
 function formatModelAnswer(text) {
     if (!text) return "";
     
-    // Split by double newline
     const paragraphs = text.split("\n\n");
     
     return paragraphs.map(paragraph => {
@@ -1597,16 +1603,61 @@ function formatModelAnswer(text) {
         
         if (isHeader) {
             const header = escapeHtml(firstLine);
-            // Process rest of lines for images
             const restLines = lines.slice(1);
-            const restHtml = processLinesForImages(restLines);
+            const restHtml = processLinesForVisuals(restLines);
             paragraphHtml = `<strong style="display:block;margin-top:12px;color:#17a2b8;">${header}</strong>${restHtml ? `<br>${restHtml}` : ''}`;
         } else {
-            paragraphHtml = processLinesForImages(lines);
+            paragraphHtml = processLinesForVisuals(lines);
         }
         
         return paragraphHtml;
     }).join("<div style='height:10px;'></div>");
+}
+// ===== PROCESS LINES FOR VISUALS (IMAGES & TABLES) =====
+function processLinesForVisuals(lines) {
+    const imageRegex = /\[IMAGE:\s*([^\|]+)\s*\|\s*([^\]]+)\]/g;
+    const tableRegex = /\[TABLE:\s*([^\]]+)\]/g;
+    
+    return lines.map(line => {
+        // 1. Check for TABLE marker first
+        if (tableRegex.test(line)) {
+            return line.replace(tableRegex, (match, tableData) => {
+                return renderTableFromMarker(tableData);
+            });
+        }
+        
+        // 2. Check for IMAGE marker
+        if (imageRegex.test(line)) {
+            return line.replace(imageRegex, (match, src, alt) => {
+                return `<div class="question-diagram" style="margin:12px 0;"><img src="${src.trim()}" alt="${escapeHtml(alt.trim())}" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy" /></div>`;
+            });
+        }
+        
+        // 3. Plain text — escape it
+        return escapeHtml(line);
+    }).join("<br>");
+}
+
+// ===== RENDER TABLE FROM MARKER =====
+function renderTableFromMarker(tableData) {
+    // Format: col1 | col2 | col3 | row1c1 | row1c2 | row1c3 | row2c1 | row2c2 | row2c3 | ...
+    const cells = tableData.split("|").map(cell => cell.trim());
+    
+    // First 3 cells are headers
+    const headers = cells.slice(0, 3);
+    const rowData = cells.slice(3);
+    
+    let html = `<div class="question-table-wrap"><table class="question-table">`;
+    html += `<thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>`;
+    html += `<tbody>`;
+    
+    for (let i = 0; i < rowData.length; i += 3) {
+        const rowCells = rowData.slice(i, i + 3);
+        html += `<tr>${rowCells.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`;
+    }
+    
+    html += `</tbody></table></div>`;
+    return html;
 }
 
 function processLinesForImages(lines) {

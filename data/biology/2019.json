@@ -13,7 +13,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 2,
     "question": "The bonding between two complementary bases in a nucleotide is",
@@ -24,7 +24,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 3,
     "question": "______ is the basic unit of inheritance.",
@@ -35,7 +35,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 4,
     "question": "Which statement describes events during interphase of mitosis?",
@@ -46,7 +46,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 5,
     "question": "Which process occurs during prophase of the mitotic cell cycle in an animal cell?",
@@ -90,15 +90,22 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 9,
     "question": "Cells consist of a number of different components. Which row shows the components present in both a prokaryotic and an eukaryotic cell?",
-    "options": ["Absent Present Absent Present", "Present Present Absent Absent", "Absent Absent Present Present", "Present Absent Present Nil"],
+    "dataTable": {
+        "headers": ["Option", "Lysosome", "Golgi Apparatus", "Ribosome", "Cell Surface Membrane"],
+        "rows": [
+            ["A", "Absent", "Present", "Absent", "Present"],
+            ["B", "Present", "Present", "Absent", "Absent"],
+            ["C", "Absent", "Absent", "Present", "Present"],
+            ["D", "Present", "Absent", "Present", "Nil"]
+        ]
+    },
+    "options": ["A", "B", "C", "D"],
     "answer": "C",
-    "explanation": "Both prokaryotic and eukaryotic cells have ribosomes and a cell surface membrane.",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Options represent a table. Row 3 (Absent Absent Present Present) corresponds to components present in both cell types. Please refer to your original past question paper for the complete table."
+    "explanation": "Both prokaryotic and eukaryotic cells have ribosomes and a cell surface membrane.\n\nLysosomes and Golgi apparatus are found only in eukaryotes.\n\nOption C correctly shows ribosome (Present) and cell surface membrane (Present) with lysosome (Absent) and Golgi (Absent)."
   },
   {
     "subject": "Biology",
@@ -107,9 +114,18 @@
     "type": "Objective",
     "questionNumber": 10,
     "question": "Four different juices A, B, C and D were tested with Benedict solution. A second sample of each juice was hydrolysed and tested with Benedict solution. The table below shows the masses of the precipitate formed. Which juice contains the greatest mass of non-reducing sugar?",
-    "options": ["30 55", "55 55", "65 85", "70 80"],
-    "answer": "C",
-    "explanation": "Non-reducing sugar = mass after hydrolysis - mass before hydrolysis. Option C: 85 - 65 = 20, which is the largest."
+    "dataTable": {
+        "headers": ["Option", "Mass of precipitate before hydrolysis", "Mass of precipitate after hydrolysis"],
+        "rows": [
+            ["A", "30", "55"],
+            ["B", "55", "55"],
+            ["C", "65", "85"],
+            ["D", "70", "80"]
+        ]
+    },
+    "options": ["A", "B", "C", "D"],
+    "answer": "A",
+    "explanation": "Non-reducing sugar mass = mass after hydrolysis − mass before hydrolysis.\n\nA: 55 − 30 = 25 (largest)\nB: 55 − 55 = 0\nC: 85 − 65 = 20\nD: 80 − 70 = 10\n\nOption A has the greatest mass of non-reducing sugar (25)."
   },
   {
     "subject": "Biology",
@@ -169,7 +185,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Plant Tissues and Functions",
+    "category": "Transport System in Plants",
     "type": "Objective",
     "questionNumber": 16,
     "question": "The main function of a companion cell in phloem tissue during translocation is ...",
@@ -252,12 +268,12 @@
     "question": "What does A represent, and in what condition does this reaction occur in non-photosynthetic plants? Pyruvate → 2C₂H₅OH + 2CO₂ + 2ATP",
     "options": ["Cytochrome oxidase, aerobic.", "Pyruvate decarboxylase, anaerobic.", "Pyruvate dehydrogenase, aerobic.", "NAD, Anaerobic."],
     "answer": "B",
-    "explanation": "In alcoholic fermentation, pyruvate decarboxylase converts pyruvate to acetaldehyde, which is then reduced to ethanol under anaerobic conditions."
+    "explanation": "In alcoholic fermentation, pyruvate decarboxylase converts pyruvate to acetaldehyde, then reduced to ethanol under anaerobic conditions."
   },
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Physiological Processes",
+    "category": "Respiration",
     "type": "Objective",
     "questionNumber": 24,
     "question": "What does B represent, and in what condition does this reaction occur in animal cell? Pyruvate → Lactate + 2ATP",
@@ -326,27 +342,42 @@
     "category": "Structures, Morphology and Characteristics of Microorganisms",
     "type": "Objective",
     "questionNumber": 30,
-    "question": "The parts labeled A, B, and C are respectively.",
+    "question": "Use the diagram below to answer Questions 30 to 32.\n\n30. The parts labeled A, B, and C are respectively.",
+    "image": {
+        "src": "/images/questions/biology/2019/bio-2019-obj-30.png",
+        "alt": "Diagram of a bacteriophage showing labeled parts A (head), B (sheath), and C (collar)"
+    },
     "options": ["Head, Collar, Sheath", "Head, Neck and Sheath", "Head, Sheath and Neck", "Head, Sheath and Collar"],
-    "answer": "A",
-    "explanation": "A = Head, B = Collar, C = Sheath (based on typical bacteriophage structure).",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A labeled diagram of a bacteriophage virus with parts A, B, C, and DNA. Please refer to your original past question paper."
-  },
+    "answer": "D",
+    "explanation": "A points to the polyhedral structure at top → Head (capsid).\nB points to the long segmented cylindrical structure → Sheath (contractile tail sheath).\nC points to the short connecting piece → Collar (neck region)."
+},
   {
     "subject": "Biology",
     "year": 2019,
     "category": "Structures, Morphology and Characteristics of Microorganisms",
     "type": "Objective",
+    "questionNumber": 30,
+    "question": "Use the diagram below to answer Questions 30 to 32.\n30. The parts labeled A, B, and C are respectively.",
+    "image": {
+        "src": "/images/questions/biology/2019/bio-2019-obj-30.png",
+        "alt": "Diagram of a bacteriophage showing labeled parts A (head), B (sheath), and C (collar)"
+    },
+    "options": ["Head, Collar, Sheath", "Head, Neck and Sheath", "Head, Sheath and Neck", "Head, Sheath and Collar"],
+    "answer": "D",
+    "explanation": "A points to the polyhedral structure at top → Head (capsid).\nB points to the long segmented cylindrical structure → Sheath (contractile tail sheath).\nC points to the short connecting piece → Collar (neck region)."
+},
+{
+    "subject": "Biology",
+    "year": 2019,
+    "category": "Structures, Morphology and Characteristics of Microorganisms",
+    "type": "Objective",
     "questionNumber": 31,
-    "question": "What is the name of the diagram represented above?",
+    "question": "What is the name of the diagram represented?",
     "options": ["Bacteriophage virus.", "Sperm cell.", "Stem cell.", "Bacteria."],
     "answer": "A",
-    "explanation": "The diagram is a bacteriophage (a virus that infects bacteria).",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A labeled diagram of a bacteriophage virus with parts A, B, C, and DNA. Please refer to your original past question paper."
-  },
-  {
+    "explanation": "The structure — polyhedral head, collar, contractile tail sheath, base plate, and tail fibers — is the classic anatomy of a bacteriophage (a virus that infects bacteria)."
+},
+{
     "subject": "Biology",
     "year": 2019,
     "category": "Microbial Nucleic Acids in Information Storage and Transfer",
@@ -355,10 +386,8 @@
     "question": "Which of the following occurs at the part labeled DNA?",
     "options": ["Replication.", "Death.", "Growth.", "Development."],
     "answer": "A",
-    "explanation": "The viral DNA undergoes replication inside the host cell.",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A labeled diagram of a bacteriophage virus with parts A, B, C, and DNA. Please refer to your original past question paper."
-  },
+    "explanation": "Once the bacteriophage injects its DNA into a host bacterium, the DNA is replicated many times using host cell enzymes and nucleotides.\n\nDNA replication is the direct, relevant process."
+},
   {
     "subject": "Biology",
     "year": 2019,
@@ -395,7 +424,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Physiological Processes",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 36,
     "question": "The stored carbohydrate nutrient in animals is known as",
@@ -417,7 +446,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Objective",
     "questionNumber": 38,
     "question": "The main function of epithelial tissue is",
@@ -428,7 +457,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Objective",
     "questionNumber": 39,
     "question": "Which of these is a connective tissue?",
@@ -445,7 +474,7 @@
     "question": "Which of the following is not a member of the phylum Chordata?",
     "options": ["Lung fish.", "Star fish.", "Frog.", "Parrot."],
     "answer": "B",
-    "explanation": "Starfish (echinoderm) is not a chordate; lungfish, frog, and parrot are chordates."
+    "explanation": "Starfish (echinoderm) is not a chordate."
   },
   {
     "subject": "Biology",
@@ -483,7 +512,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Physiological Processes",
+    "category": "Nutrition in Animals",
     "type": "Objective",
     "questionNumber": 44,
     "question": "The conversion of a nutrient into a molecule in the body of a consumer is referred to as",
@@ -505,7 +534,7 @@
       "They produce silk from abdominal glands to spin webs from trapping its prey."
     ],
     "answer": "C",
-    "explanation": "The exoskeleton provides protection from predators and prevents desiccation, key factors in arthropod success."
+    "explanation": "The exoskeleton provides protection from predators and prevents desiccation."
   },
   {
     "subject": "Biology",
@@ -526,7 +555,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Objective",
     "questionNumber": 47,
     "question": "The method of fertilization among vertebrates in which fertilized eggs are retained in the body of the female until when matured and then hatched out is",
@@ -570,42 +599,42 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1a",
-    "question": "Two parents with normal skin and hair colouring had six (6) children, of whom three (3) were albino. Albino people have no colouring in their skin or hair, due to having an inactive form of the enzyme tyrosinase. Tyrosinase is essential for the formation of the brown pigment melanin. (a) The normal allele of the tyrosinase gene is 'A' and the allele that produces faulty tyrosinase is 'a'. State the genotype of the parents and their albino children. [5 marks]",
-    "modelAnswer": "Both parents are heterozygous (Aa) because they have normal phenotype but produced albino (aa) children. Albino children are homozygous recessive (aa).",
-    "options": []
+    "question": "(a) Two parents with normal skin and hair colouring had six (6) children, of whom three (3) were albino. Albino people have no colouring in their skin or hair, due to having an inactive form of the enzyme tyrosinase. The normal allele of the tyrosinase gene is 'A' and the allele that produces faulty tyrosinase is 'a'. State the genotype of the parents and their albino children.",
+    "options": [],
+    "modelAnswer": "Both parents are heterozygous (Aa) — normal phenotype but produced albino (aa) children.\n\nAlbino children are homozygous recessive (aa)."
   },
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1b",
-    "question": "(b) Albinism is a relatively frequent condition in humans, but one (1) of these albino children had a very unusual phenotype. While most of her hair was white, the hair of her eye brows developed some brown colouring, as did the hair on her hands and lower legs. Genetic analysis suggested that a mutation had occurred in the faulty tyrosinase allele. Suggest why it is likely that this mutation occurred in the child with brown coloured eye brows rather than in the testes and ovaries of the parent. [2 marks]",
-    "modelAnswer": "If the mutation occurred in the parent's germ cells, all children would be affected. A somatic mutation in the child explains why only some body regions (eyebrows, hands, legs) show color while the rest remains albino.",
-    "options": []
+    "question": "(b) Albinism is a relatively frequent condition in humans, but one (1) of these albino children had a very unusual phenotype. While most of her hair was white, the hair of her eye brows developed some brown colouring, as did the hair on her hands and lower legs. Suggest why it is likely that this mutation occurred in the child with brown coloured eye brows rather than in the testes and ovaries of the parent.",
+    "options": [],
+    "modelAnswer": "If the mutation occurred in the parent's germ cells, all children would be affected.\n\nA somatic mutation in the child explains why only some body regions (eyebrows, hands, legs) show colour while the rest remains albino."
   },
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1c",
-    "question": "(c) A man with normal vision, married a lady with normal vision. Incidentally, their first son is colour blind. Use a genetic diagram to show the possibility of this man being the rightful father of the colour blind child. [2 marks]",
-    "modelAnswer": "Colour blindness is X-linked recessive. If the son is colour blind (XʸY), he inherited Xʸ from his mother. The father (XᴺY) is normal. This does not exclude the father as the man could be XᴺY and the mother XᴺXʸ (carrier).",
-    "options": []
+    "question": "(c) A man with normal vision, married a lady with normal vision. Incidentally, their first son is colour blind. Use a genetic diagram to show the possibility of this man being the rightful father of the colour blind child.",
+    "options": [],
+    "modelAnswer": "Colour blindness is X-linked recessive.\n\nIf the son is colour blind (XʸY), he inherited Xʸ from his mother.\n\nThe father (XᴺY) is normal.\n\nThis does not exclude the father — the man could be XᴺY and the mother XᴺXʸ (carrier)."
   },
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1d",
-    "question": "(d) What was the genotype of the man and his wife? [1 mark]",
-    "modelAnswer": "Man: XᴺY (normal vision), Wife: XᴺXʸ (carrier for colour blindness).",
-    "options": []
+    "question": "(d) What was the genotype of the man and his wife?",
+    "options": [],
+    "modelAnswer": "Man: XᴺY (normal vision).\nWife: XᴺXʸ (carrier for colour blindness)."
   },
   {
     "subject": "Biology",
@@ -613,9 +642,9 @@
     "category": "Ecology",
     "type": "Essay",
     "questionNumber": "2a",
-    "question": "As the team leader of an environmental study team, you have been commissioned to undergo a field study to determine the population density and population size of given species in a habitat. (a) Design a pro-forma that would guide your team to success. [5 marks]",
-    "modelAnswer": "Pro-forma: Date, Location, Habitat type, Species name, Plot size, Number of quadrats, Count per quadrat, Total count, Density calculation, Weather conditions, Team members, Notes.",
-    "options": []
+    "question": "(a) As the team leader of an environmental study team, you have been commissioned to undergo a field study to determine the population density and population size of given species in a habitat. Design a pro-forma that would guide your team to success.",
+    "options": [],
+    "modelAnswer": "Pro-forma: Date, Location, Habitat type, Species name, Plot size, Number of quadrats, Count per quadrat, Total count, Density calculation, Weather conditions, Team members, Notes."
   },
   {
     "subject": "Biology",
@@ -623,9 +652,9 @@
     "category": "Ecology",
     "type": "Essay",
     "questionNumber": "2b",
-    "question": "(b) Mention any four (4) materials that would be required. [4 marks]",
-    "modelAnswer": "1. Quadrat, 2. Tape measure/string, 3. Hand lens/magnifying glass, 4. Notebook and pen.",
-    "options": []
+    "question": "(b) Mention any four (4) materials that would be required.",
+    "options": [],
+    "modelAnswer": "1. Quadrat.\n2. Tape measure/string.\n3. Hand lens/magnifying glass.\n4. Notebook and pen."
   },
   {
     "subject": "Biology",
@@ -633,9 +662,9 @@
     "category": "Ecology",
     "type": "Essay",
     "questionNumber": "2c",
-    "question": "(c) If the population size of grasshopper is 700 in a sample plot of 100m² what is the population density of grasshopper in the plot? [1 mark]",
-    "modelAnswer": "Population density = Population size / Area = 700 / 100 = 7 grasshoppers per m².",
-    "options": []
+    "question": "(c) If the population size of grasshopper is 700 in a sample plot of 100m² what is the population density of grasshopper in the plot?",
+    "options": [],
+    "modelAnswer": "Population density = 700/100 = 7 grasshoppers per m²."
   },
   {
     "subject": "Biology",
@@ -643,9 +672,9 @@
     "category": "Crop Improvement",
     "type": "Essay",
     "questionNumber": "3a",
-    "question": "(a) Using six (6) points each describe the following: i. Biological control [3 marks] ii. Chemical control. [3 marks]",
-    "modelAnswer": "Biological control: 1. Uses natural predators, 2. Uses parasites, 3. Uses pathogens, 4. Environmentally friendly, 5. Self-sustaining, 6. Targets specific pests. Chemical control: 1. Uses synthetic pesticides, 2. Fast acting, 3. Broad spectrum, 4. Can cause resistance, 5. Harmful to non-target organisms, 6. Requires careful handling.",
-    "options": []
+    "question": "(a) Using six (6) points each describe the following: i. Biological control ii. Chemical control.",
+    "options": [],
+    "modelAnswer": "Biological control: 1. Uses natural predators. 2. Uses parasites. 3. Uses pathogens. 4. Environmentally friendly. 5. Self-sustaining. 6. Targets specific pests.\n\nChemical control: 1. Uses synthetic pesticides. 2. Fast acting. 3. Broad spectrum. 4. Can cause resistance. 5. Harmful to non-target organisms. 6. Requires careful handling."
   },
   {
     "subject": "Biology",
@@ -653,9 +682,9 @@
     "category": "Economic and Ecological Importance of Plants",
     "type": "Essay",
     "questionNumber": "3b",
-    "question": "(b) Enumerate four (4) impacts of climate change on plants. [4 marks]",
-    "modelAnswer": "1. Altered flowering times, 2. Shift in geographic ranges, 3. Increased pest and disease pressure, 4. Reduced water availability/drought stress.",
-    "options": []
+    "question": "(b) Enumerate four (4) impacts of climate change on plants.",
+    "options": [],
+    "modelAnswer": "1. Altered flowering times.\n2. Shift in geographic ranges.\n3. Increased pest and disease pressure.\n4. Reduced water availability/drought stress."
   },
   {
     "subject": "Biology",
@@ -663,9 +692,9 @@
     "category": "General Characteristics and Diversity of Plants",
     "type": "Essay",
     "questionNumber": "4a",
-    "question": "(a) Outline eight (8) general characteristics of ferns. [4 marks]",
-    "modelAnswer": "1. Vascular plants, 2. Have true roots, stems, and leaves, 3. Reproduce via spores, 4. Have fronds, 5. Have sori on leaves, 6. Have rhizomes, 7. Have circinate vernation, 8. Have ramenta.",
-    "options": []
+    "question": "(a) Outline eight (8) general characteristics of ferns.",
+    "options": [],
+    "modelAnswer": "1. Vascular plants.\n2. Have true roots, stems, and leaves.\n3. Reproduce via spores.\n4. Have fronds.\n5. Have sori on leaves.\n6. Have rhizomes.\n7. Have circinate vernation.\n8. Have ramenta."
   },
   {
     "subject": "Biology",
@@ -673,11 +702,13 @@
     "category": "Plant Reproduction",
     "type": "Essay",
     "questionNumber": "4b",
-    "question": "(b) With the aid of diagram only, describe the life cycle of Selaginella. [6 marks]",
-    "modelAnswer": "Life cycle: Heterosporous → microspores and megaspores → male and female gametophytes → fertilization → sporophyte.",
+    "question": "(b) With the aid of diagram only, describe the life cycle of Selaginella.",
+    "image": {
+        "src": "/images/questions/biology/2019/bio-2019-essay-4b.png",
+        "alt": "Life cycle diagram of Selaginella showing alternation of generations with sporophyte, strobili, microspores, megaspores, gametophytes, fertilization, and new sporophyte"
+    },
     "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A life cycle diagram of Selaginella was required. Please refer to your original past question paper."
+    "modelAnswer": "[IMAGE: /images/questions/biology/2019/bio-2019-essay-4b.png | Life cycle diagram of Selaginella]\n\n1. Sporophyte generation (dominant, 2n):\nThe visible leafy plant bears cone-like structures (strobili) containing microsporangia and megasporangia (heterosporous).\n\n2. Spore formation (meiosis):\n- Microsporangia produce numerous small microspores (n).\n- Megasporangia produce fewer, larger megaspores (n).\n\n3. Gametophyte generation (reduced, n):\nGametophytes are extremely reduced and develop inside the spore wall (endosporic):\n- Microspore → male gametophyte → antherozoids (motile sperm).\n- Megaspore → female gametophyte → archegonia with egg cells.\n\n4. Fertilization:\nAntherozoids swim to archegonium when water is present, fertilizing the egg → zygote (2n).\n\n5. Embryo and new sporophyte:\nZygote develops into embryo, grows into new young sporophyte — completing the cycle.\n\nKey features: Heterospory and progressive reduction of the gametophyte generation, foreshadowing the seed habit."
   },
   {
     "subject": "Biology",
@@ -685,9 +716,9 @@
     "category": "Types and Taxonomic Groupings of Microorganisms",
     "type": "Essay",
     "questionNumber": "5a",
-    "question": "(a) State the following characteristics of the Archaea: i. Mesophiles ii. Halophiles iii. Acidophiles iv. Alkaliphiles v. Thermophiles. [5 marks]",
-    "modelAnswer": "Mesophiles: optimum growth 20-45°C. Halophiles: require high salt concentrations. Acidophiles: optimum pH < 5. Alkaliphiles: optimum pH > 9. Thermophiles: optimum growth > 45°C.",
-    "options": []
+    "question": "(a) State the following characteristics of the Archaea: i. Mesophiles ii. Halophiles iii. Acidophiles iv. Alkaliphiles v. Thermophiles.",
+    "options": [],
+    "modelAnswer": "Mesophiles: optimum growth 20-45°C.\nHalophiles: require high salt concentrations.\nAcidophiles: optimum pH < 5.\nAlkaliphiles: optimum pH > 9.\nThermophiles: optimum growth > 45°C."
   },
   {
     "subject": "Biology",
@@ -695,9 +726,9 @@
     "category": "Microorganisms and their Application in Biotechnology",
     "type": "Essay",
     "questionNumber": "5b",
-    "question": "(b) Highlight five (5) biotechnological or beneficial uses of microorganisms. [5 marks]",
-    "modelAnswer": "1. Production of antibiotics, 2. Food fermentation (yogurt, bread, beer), 3. Bioremediation, 4. Production of enzymes, 5. Genetic engineering.",
-    "options": []
+    "question": "(b) Highlight five (5) biotechnological or beneficial uses of microorganisms.",
+    "options": [],
+    "modelAnswer": "1. Production of antibiotics.\n2. Food fermentation (yogurt, bread, beer).\n3. Bioremediation.\n4. Production of enzymes.\n5. Genetic engineering."
   },
   {
     "subject": "Biology",
@@ -705,9 +736,9 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "6a",
-    "question": "(a) List two (2) media that are used for the growth of microorganisms in the laboratory. [2 marks]",
-    "modelAnswer": "1. Nutrient agar, 2. MacConkey agar.",
-    "options": []
+    "question": "(a) List two (2) media that are used for the growth of microorganisms in the laboratory.",
+    "options": [],
+    "modelAnswer": "1. Nutrient agar.\n2. MacConkey agar."
   },
   {
     "subject": "Biology",
@@ -715,9 +746,9 @@
     "category": "Structures, Morphology and Characteristics of Microorganisms",
     "type": "Essay",
     "questionNumber": "6b",
-    "question": "(b) Briefly write on the structures that prokaryotes use for attachment. [3 marks]",
-    "modelAnswer": "Prokaryotes use pili (fimbriae) and capsules for attachment to surfaces. Pili are hair-like structures, capsules are polysaccharide layers.",
-    "options": []
+    "question": "(b) Briefly write on the structures that prokaryotes use for attachment.",
+    "options": [],
+    "modelAnswer": "Prokaryotes use pili (fimbriae) for attachment to surfaces.\n\nCapsules (polysaccharide layers) also aid in attachment and protection."
   },
   {
     "subject": "Biology",
@@ -725,11 +756,13 @@
     "category": "Microbial Ecology",
     "type": "Essay",
     "questionNumber": "6c",
-    "question": "(c) With illustration, describe the events in each stage of a microbial growth curve of a batch culture. [5 marks]",
-    "modelAnswer": "1. Lag phase: adaptation. 2. Log phase: exponential growth. 3. Stationary phase: growth = death. 4. Death phase: population declines.",
+    "question": "(c) With illustration, describe the events in each stage of a microbial growth curve of a batch culture.",
+    "image": {
+        "src": "/images/questions/biology/2019/bio-2019-essay-6c.png",
+        "alt": "Microbial growth curve showing lag phase, exponential (log) phase, stationary phase, and death (decline) phase"
+    },
     "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram missing: A microbial growth curve diagram was required. Please refer to your original past question paper."
+    "modelAnswer": "[IMAGE: /images/questions/biology/2019/bio-2019-essay-6c.png | Microbial growth curve]\n\n1. Lag phase:\nCells adjust to new environment — synthesizing enzymes and RNA. Little to no increase in cell number. Metabolically active but not yet dividing.\n\n2. Exponential (Log) phase:\nCells divide at maximum constant rate. Population increases exponentially. Cells most uniform — best for physiological studies.\n\n3. Stationary phase:\nGrowth rate = death rate. Population remains constant. Caused by nutrient depletion, waste accumulation, or lack of space. Secondary metabolites (e.g., antibiotics) often produced.\n\n4. Death (Decline) phase:\nNutrients severely depleted; toxic products accumulate. Viable cell number declines exponentially. Some cells may survive as dormant endospores."
   },
   {
     "subject": "Biology",
@@ -737,9 +770,9 @@
     "category": "Invertebrates",
     "type": "Essay",
     "questionNumber": "7a",
-    "question": "(a) Describe the life cycle of Plasmodium in man. [8 marks]",
-    "modelAnswer": "Plasmodium sporozoites enter human via mosquito bite → liver (exoerythrocytic stage) → merozoites released → infect red blood cells (erythrocytic stage) → trophozoite → schizont → merozoites (asexual cycle) → some become gametocytes (taken up by mosquito).",
-    "options": []
+    "question": "(a) Describe the life cycle of Plasmodium in man.",
+    "options": [],
+    "modelAnswer": "Plasmodium sporozoites enter human via mosquito bite → liver (exoerythrocytic stage) → merozoites released → infect red blood cells (erythrocytic stage) → trophozoite → schizont → merozoites (asexual cycle) → some become gametocytes (taken up by mosquito)."
   },
   {
     "subject": "Biology",
@@ -747,9 +780,9 @@
     "category": "Ecologic and Economic Importance of Animals",
     "type": "Essay",
     "questionNumber": "7b",
-    "question": "(b) Mention four (4) economic importance of Plasmodium. [2 marks]",
-    "modelAnswer": "1. Causes malaria (health burden). 2. Reduces worker productivity. 3. Increases healthcare costs. 4. Affects tourism in endemic areas.",
-    "options": []
+    "question": "(b) Mention four (4) economic importance of Plasmodium.",
+    "options": [],
+    "modelAnswer": "1. Causes malaria (health burden).\n2. Reduces worker productivity.\n3. Increases healthcare costs.\n4. Affects tourism in endemic areas."
   },
   {
     "subject": "Biology",
@@ -757,9 +790,9 @@
     "category": "Diversity and General Characteristics of Animals",
     "type": "Essay",
     "questionNumber": "8a",
-    "question": "(a) List ten (10) characteristics of the Class Reptilia. [5 marks]",
-    "modelAnswer": "1. Dry scaly skin. 2. Lungs for breathing. 3. Three-chambered heart (except crocodiles). 4. Cold-blooded. 5. Internal fertilization. 6. Amniotic eggs. 7. Claws on toes. 8. Ectothermic. 9. Metamorphosis absent. 10. Thick epidermis.",
-    "options": []
+    "question": "(a) List ten (10) characteristics of the Class Reptilia.",
+    "options": [],
+    "modelAnswer": "1. Dry scaly skin.\n2. Lungs for breathing.\n3. Three-chambered heart (except crocodiles).\n4. Cold-blooded.\n5. Internal fertilization.\n6. Amniotic eggs.\n7. Claws on toes.\n8. Ectothermic.\n9. Metamorphosis absent.\n10. Thick epidermis."
   },
   {
     "subject": "Biology",
@@ -767,8 +800,8 @@
     "category": "Evolution of Animals",
     "type": "Essay",
     "questionNumber": "8b",
-    "question": "(b) Itemize five (5) adaptations of animals in transition from water to land. [5 marks]",
-    "modelAnswer": "1. Lungs for air breathing. 2. Limbs for movement on land. 3. Skin adapted to prevent water loss. 4. Internal fertilization. 5. Amniotic egg.",
-    "options": []
+    "question": "(b) Itemize five (5) adaptations of animals in transition from water to land.",
+    "options": [],
+    "modelAnswer": "1. Lungs for air breathing.\n2. Limbs for movement on land.\n3. Skin adapted to prevent water loss.\n4. Internal fertilization.\n5. Amniotic egg."
   }
 ]

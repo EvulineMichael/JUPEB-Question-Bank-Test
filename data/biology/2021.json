@@ -2,7 +2,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 1,
     "question": "The process of a white blood cell engulfing a bacterium is known as",
@@ -46,7 +46,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Objective",
     "questionNumber": 5,
     "question": "The function of the scrotum is to",
@@ -79,7 +79,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 8,
     "question": "A peptide bond is formed between",
@@ -90,7 +90,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 9,
     "question": "Which one of the following molecules contains amino acids?",
@@ -123,7 +123,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 12,
     "question": "Unsaturated fat is in the form of",
@@ -145,7 +145,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 14,
     "question": "RNA means",
@@ -200,7 +200,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 19,
     "question": "Which of these organelles synthesize, refines, sorts, stores and secretes chemical products in the cell?",
@@ -233,7 +233,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Transport of Substances across Membranes",
     "type": "Objective",
     "questionNumber": 22,
     "question": "The movement of molecules or ions from a region of high concentration to a region of low concentration is known as",
@@ -266,7 +266,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Objective",
     "questionNumber": 25,
     "question": "One of these is NOT a classification of egg based on the yolk content.",
@@ -277,7 +277,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Transport of Substances across Membranes",
     "type": "Objective",
     "questionNumber": 26,
     "question": "Active transport is",
@@ -310,7 +310,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Nutrition in Animals",
     "type": "Objective",
     "questionNumber": 29,
     "question": "In which of the following organisms would glycogen be stored?",
@@ -321,7 +321,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 30,
     "question": "The phenotype ratio resulting from Mendel's law of independent assortment is",
@@ -332,7 +332,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 31,
     "question": "The function of ribosome in cell is",
@@ -343,7 +343,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Skeletal System and Muscles",
     "type": "Objective",
     "questionNumber": 32,
     "question": "The joint between the atlas and the vertebrae allows for",
@@ -365,7 +365,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 34,
     "question": "During the excretion of urea, there is also a corresponding re-absorption of water into the blood stream. This re-absorption take place in the",
@@ -387,7 +387,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Nutrition in Animals",
     "type": "Objective",
     "questionNumber": 36,
     "question": "Organisms which take in complex organic molecules are called",
@@ -398,7 +398,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 37,
     "question": "The genotype ratio of a monohybrid cross in the F2 generation is",
@@ -409,7 +409,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 38,
     "question": "Chiasmata formation leads to",
@@ -426,7 +426,7 @@
     "question": "Techniques of sterilization were introduced by",
     "options": ["Louis Pasteur", "Robert Koch", "Ferdinand Cohn", "John Needham"],
     "answer": "C",
-    "explanation": "Ferdinand Cohn introduced sterilization techniques and demonstrated that heat kills bacteria."
+    "explanation": "Ferdinand Cohn introduced sterilization techniques and demonstrated that heat kills bacteria. Note: Louis Pasteur is also credited with developing and popularizing sterilization techniques (pasteurization), but Cohn's contribution to sterilization methods is recognized in microbiology."
   },
   {
     "subject": "Biology",
@@ -470,12 +470,12 @@
     "question": "Two useful substances produced by the light-dependent stage of photosynthesis are",
     "options": ["ATP and ribulose", "Ribulose and NADP2", "ATP and ethanol", "ATP and NADPH2"],
     "answer": "D",
-    "explanation": "The light-dependent reactions produce ATP and NADPH (NADPH2)."
+    "explanation": "The light-dependent reactions produce ATP and NADPH (reduced NADP)."
   },
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Growth and Development",
     "type": "Objective",
     "questionNumber": 44,
     "question": "In animals cleavage produces a mass of cells called",
@@ -552,7 +552,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) What is gaseous exchange? [1 mark]",
@@ -562,7 +562,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) What is respiratory surface? [1 mark]",
@@ -572,21 +572,21 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) State FOUR properties required for a cell to be an effective respiratory surface. [4 marks]",
-    "modelAnswer": "1. Large surface area. 2. Thin and permeable membrane. 3. Moist surface. 4. Well-supplied with blood or body fluids (for transport).",
+    "modelAnswer": "1. Large surface area.\n2. Thin and permeable membrane.\n3. Moist surface.\n4. Well-supplied with blood or body fluids (for transport).",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Respiration in Mammals",
     "type": "Essay",
     "questionNumber": "1d",
     "question": "(d) Give FOUR examples of respiratory surfaces [4 marks]",
-    "modelAnswer": "1. Alveoli (mammalian lungs). 2. Gills (fish). 3. Tracheoles (insects). 4. Skin (earthworm, amphibian).",
+    "modelAnswer": "1. Alveoli (mammalian lungs).\n2. Gills (fish).\n3. Tracheoles (insects).\n4. Skin (earthworm, amphibian).",
     "options": []
   },
   {
@@ -596,7 +596,7 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) Define the following Ecological terms: i. Niche ii. Microhabitat iii. Ecosystem iv. Population [4 marks]",
-    "modelAnswer": "i. Niche: the role and position of a species in an ecosystem. ii. Microhabitat: a small, localized habitat within a larger habitat. iii. Ecosystem: a community of living organisms interacting with their physical environment. iv. Population: all individuals of a single species in a given area.",
+    "modelAnswer": "i. Niche: the role and position of a species in an ecosystem.\nii. Microhabitat: a small, localized habitat within a larger habitat.\niii. Ecosystem: a community of living organisms interacting with their physical environment.\niv. Population: all individuals of a single species in a given area.",
     "options": []
   },
   {
@@ -606,7 +606,7 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) Give TWO reasons why a small population can easily go into extinction. [2 marks]",
-    "modelAnswer": "1. Inbreeding depression reduces genetic diversity and fitness. 2. Vulnerable to stochastic events (disease, natural disasters, predation).",
+    "modelAnswer": "1. Inbreeding depression reduces genetic diversity and fitness.\n2. Vulnerable to stochastic events (disease, natural disasters, predation).",
     "options": []
   },
   {
@@ -616,7 +616,7 @@
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) Give TWO explanations each on how the population growth of an organism can be affected by density dependent and density independent factors. [4 marks]",
-    "modelAnswer": "Density-dependent: 1. Competition for resources increases as population density rises. 2. Predation risk increases with higher prey density. Density-independent: 1. Natural disasters affect populations regardless of density. 2. Seasonal weather changes impact survival irrespective of population size.",
+    "modelAnswer": "Density-dependent:\n1. Competition for resources increases as population density rises.\n2. Predation risk increases with higher prey density.\n\nDensity-independent:\n1. Natural disasters affect populations regardless of density.\n2. Seasonal weather changes impact survival irrespective of population size.",
     "options": []
   },
   {
@@ -636,7 +636,7 @@
     "type": "Essay",
     "questionNumber": "3a(ii)",
     "question": "(a) ii.) State THREE anatomical differences between Monocot and Dicot [3 marks]",
-    "modelAnswer": "1. Monocots have scattered vascular bundles; dicots have ringed vascular bundles. 2. Monocots lack cambium; dicots have vascular cambium. 3. Monocots have parallel leaf venation; dicots have net-like venation.",
+    "modelAnswer": "1. Monocots have scattered vascular bundles; dicots have ringed vascular bundles.\n2. Monocots lack cambium; dicots have vascular cambium.\n3. Monocots have parallel leaf venation; dicots have net-like venation.",
     "options": []
   },
   {
@@ -646,7 +646,7 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) State THREE importance of phosphorus to plants [1½ marks]",
-    "modelAnswer": "1. Essential for ATP synthesis (energy transfer). 2. Component of DNA and RNA. 3. Important for root development and flowering.",
+    "modelAnswer": "1. Essential for ATP synthesis (energy transfer).\n2. Component of DNA and RNA.\n3. Important for root development and flowering.",
     "options": []
   },
   {
@@ -656,7 +656,7 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) State THREE symptoms which can be observed in a plant growing in soil that is deficient in phosphorus [3 marks]",
-    "modelAnswer": "1. Stunted growth. 2. Dark green or purplish leaves (due to anthocyanin accumulation). 3. Poor root development and delayed flowering.",
+    "modelAnswer": "1. Stunted growth.\n2. Dark green or purplish leaves (due to anthocyanin accumulation).\n3. Poor root development and delayed flowering.",
     "options": []
   },
   {
@@ -666,7 +666,7 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) Mention FOUR roles of cytokinin in plant growth [4 marks]",
-    "modelAnswer": "1. Promotes cell division. 2. Delays leaf senescence (aging). 3. Promotes lateral bud growth. 4. Stimulates seed germination.",
+    "modelAnswer": "1. Promotes cell division.\n2. Delays leaf senescence (aging).\n3. Promotes lateral bud growth.\n4. Stimulates seed germination.",
     "options": []
   },
   {
@@ -676,7 +676,7 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) Define the following terms: i. Hypogeal germination ii. Meristem iii. Epigeal germination iv. Geotropism [4 marks]",
-    "modelAnswer": "i. Hypogeal germination: cotyledons remain underground. ii. Meristem: undifferentiated plant tissue capable of cell division. iii. Epigeal germination: cotyledons emerge above ground. iv. Geotropism: plant growth response to gravity.",
+    "modelAnswer": "i. Hypogeal germination: cotyledons remain underground.\nii. Meristem: undifferentiated plant tissue capable of cell division.\niii. Epigeal germination: cotyledons emerge above ground.\niv. Geotropism: plant growth response to gravity.",
     "options": []
   },
   {
@@ -686,7 +686,7 @@
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) List TWO conditions necessary for growth. [1 mark]",
-    "modelAnswer": "1. Water. 2. Oxygen.",
+    "modelAnswer": "1. Water.\n2. Oxygen.",
     "options": []
   },
   {
@@ -706,7 +706,7 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) Enumerate TWO major historical issues/challenges/events that contributed to the historical development of Microbiology. [2 marks]",
-    "modelAnswer": "1. The debate over spontaneous generation (Pasteur's experiments). 2. The development of the microscope (Leeuwenhoek).",
+    "modelAnswer": "1. The debate over spontaneous generation (Pasteur's experiments).\n2. The development of the microscope (Leeuwenhoek).",
     "options": []
   },
   {
@@ -716,7 +716,7 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) Describe the FOUR major groups of fungi based on the spores produced. [4 marks]",
-    "modelAnswer": "1. Zygomycetes: produce zygospores (sexual). 2. Ascomycetes: produce ascospores. 3. Basidiomycetes: produce basidiospores. 4. Deuteromycetes (imperfect fungi): asexual spores only (no known sexual stage).",
+    "modelAnswer": "1. Zygomycetes: produce zygospores (sexual).\n2. Ascomycetes: produce ascospores.\n3. Basidiomycetes: produce basidiospores.\n4. Deuteromycetes (imperfect fungi): asexual spores only (no known sexual stage).",
     "options": []
   },
   {
@@ -726,7 +726,7 @@
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) Give FOUR differences between bacteria and viruses. [4 marks]",
-    "modelAnswer": "1. Bacteria are cellular; viruses are acellular. 2. Bacteria have both DNA and RNA; viruses have either DNA or RNA. 3. Bacteria reproduce by binary fission; viruses replicate using host cell machinery. 4. Bacteria are susceptible to antibiotics; viruses are not.",
+    "modelAnswer": "1. Bacteria are cellular; viruses are acellular.\n2. Bacteria have both DNA and RNA; viruses have either DNA or RNA.\n3. Bacteria reproduce by binary fission; viruses replicate using host cell machinery.\n4. Bacteria are susceptible to antibiotics; viruses are not.",
     "options": []
   },
   {
@@ -736,7 +736,7 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) State FOUR differences between mutational and plasmids mediated drug resistance. [4 marks]",
-    "modelAnswer": "1. Mutation is permanent; plasmid resistance can be transferred. 2. Mutation occurs spontaneously; plasmid resistance is acquired via conjugation. 3. Mutation affects a single gene; plasmids carry multiple resistance genes. 4. Mutation is not transferable between bacteria; plasmids are transferable.",
+    "modelAnswer": "1. Mutation is permanent; plasmid resistance can be transferred.\n2. Mutation occurs spontaneously; plasmid resistance is acquired via conjugation.\n3. Mutation affects a single gene; plasmids carry multiple resistance genes.\n4. Mutation is not transferable between bacteria; plasmids are transferable.",
     "options": []
   },
   {
@@ -756,7 +756,7 @@
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) Describe the life cycle of E. Coli. [4 marks]",
-    "modelAnswer": "E. coli reproduces asexually by binary fission: 1. DNA replication. 2. Cell elongation. 3. Septum formation. 4. Division into two daughter cells. (Generation time: ~20 mins under optimal conditions.)",
+    "modelAnswer": "E. coli reproduces asexually by binary fission:\n1. DNA replication.\n2. Cell elongation.\n3. Septum formation.\n4. Division into two daughter cells.\n(Generation time: ~20 mins under optimal conditions.)",
     "options": []
   },
   {
@@ -776,7 +776,7 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Enumerate FIVE reasons why Monotremes and Marsupials are special categories of mammals. [2½ marks]",
-    "modelAnswer": "1. Monotremes lay eggs (oviparous). 2. Marsupials give birth to undeveloped young. 3. Marsupials have pouches for nursing. 4. Monotremes lack nipples (milk secreted through skin). 5. Both are primitive mammalian groups with distinct reproductive strategies.",
+    "modelAnswer": "1. Monotremes lay eggs (oviparous).\n2. Marsupials give birth to undeveloped young.\n3. Marsupials have pouches for nursing.\n4. Monotremes lack nipples (milk secreted through skin).\n5. Both are primitive mammalian groups with distinct reproductive strategies.",
     "options": []
   },
   {
@@ -786,13 +786,13 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) List FIVE biological advancements of Amphibians over Fishes. [2½ marks]",
-    "modelAnswer": "1. Lungs for air breathing. 2. Limbs for terrestrial locomotion. 3. Three-chambered heart. 4. Tympanic membrane for hearing in air. 5. Eyelids to protect eyes on land.",
+    "modelAnswer": "1. Lungs for air breathing.\n2. Limbs for terrestrial locomotion.\n3. Three-chambered heart.\n4. Tympanic membrane for hearing in air.\n5. Eyelids to protect eyes on land.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) Explain ultrafiltration. [5 marks]",
@@ -802,21 +802,21 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Nutrition in Animals",
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) Name the constituents of a balanced diet and state their importance in the diet. [4 marks]",
-    "modelAnswer": "1. Carbohydrates: energy. 2. Proteins: growth and repair. 3. Fats: energy storage and insulation. 4. Vitamins: metabolic regulation. 5. Minerals: body functions. 6. Water: hydration and transport. 7. Fibre: digestion.",
+    "modelAnswer": "1. Carbohydrates: energy.\n2. Proteins: growth and repair.\n3. Fats: energy storage and insulation.\n4. Vitamins: metabolic regulation.\n5. Minerals: body functions.\n6. Water: hydration and transport.\n7. Fibre: digestion.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Physiological Processes",
+    "category": "Nutrition in Animals",
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) What are the modifications and the mechanisms associated with the following habits; i. Filter feeding in mosquito larva [3 marks] ii. Parasitic feeding in tapeworms [3 marks]",
-    "modelAnswer": "i. Mosquito larva: uses mouth brushes to filter food particles from water. ii. Tapeworm: lacks a digestive system; absorbs nutrients directly through its body surface (tegument).",
+    "modelAnswer": "i. Mosquito larva: uses mouth brushes to filter food particles from water.\nii. Tapeworm: lacks a digestive system; absorbs nutrients directly through its body surface (tegument).",
     "options": []
   }
 ]

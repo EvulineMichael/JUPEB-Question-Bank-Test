@@ -30,12 +30,12 @@
     "question": "Which of the following is FALSE for axon?",
     "options": ["At resting potential, membrane of axon is polarized.", "At action potential, membrane of axon is depolarized.", "At resting potential, membrane of axon is depolarized.", "Repolarization return the potential difference across membrane of axon to -70mV"],
     "answer": "C",
-    "explanation": "At resting potential, the axon membrane is polarized (not depolarized). Statement C is false."
+    "explanation": "At resting potential, the axon membrane is polarized (not depolarized)."
   },
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Objective",
     "questionNumber": 4,
     "question": "The supply of blood to the tissues of the heart is termed",
@@ -46,7 +46,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Sense Organ",
+    "category": "Sense Organs",
     "type": "Objective",
     "questionNumber": 5,
     "question": "Which is NOT a bone involved in the connection of the outer and inner ear?",
@@ -68,7 +68,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Objective",
     "questionNumber": 7,
     "question": "Which compound present in haemoglobin causes the characteristic red colour in blood?",
@@ -134,7 +134,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 13,
     "question": "The following events take place in early prophase of mitosis EXCEPT",
@@ -145,7 +145,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 14,
     "question": "The generation produced by crossing homologous parental stocks is",
@@ -156,7 +156,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 15,
     "question": "The change in the amount, arrangement or structure of deoxyribonucleic acid (DNA) of a living organism is called",
@@ -167,7 +167,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Objective",
     "questionNumber": 16,
     "question": "The type of cell division during spermatogenesis and oogenesis in which there is a reduction of chromosomes to half of the original number of chromosomes is called",
@@ -206,7 +206,7 @@
     "question": "A plant researcher while carrying out a project on Piper nigrum found out that some of the leaves were yellowish. This can be due to the fact that the soil samples lacked",
     "options": ["nitrogen.", "phosphorus.", "magnesium.", "zinc."],
     "answer": "A",
-    "explanation": "Yellowish leaves (chlorosis) can be caused by nitrogen deficiency."
+    "explanation": "Yellowish leaves (chlorosis) can be caused by nitrogen deficiency. Note: magnesium deficiency can also cause chlorosis, but nitrogen is the most common cause."
   },
   {
     "subject": "Biology",
@@ -244,7 +244,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Objective",
     "questionNumber": 23,
     "question": "Non-vascular plants have",
@@ -310,18 +310,18 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 29,
     "question": "After undergoing a genetic testing, a patient who has constantly exposed herself to ultrasound treatment during her first trimester of pregnancy was diagnosed of abnormality in her blood cell. This could have resulted from",
     "options": ["a chronic disease.", "transferable gene.", "DNA transfer.", "gene mutation."],
     "answer": "D",
-    "explanation": "Ultrasound exposure during pregnancy can potentially cause gene mutations leading to abnormalities."
+    "explanation": "A genetic abnormality diagnosed through genetic testing is caused by a gene mutation. Diagnostic ultrasound exposure during pregnancy is not known to cause gene mutations."
   },
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 30,
     "question": "The following are nucleotide bases EXCEPT",
@@ -332,7 +332,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Growth and Development",
     "type": "Objective",
     "questionNumber": 31,
     "question": "For effective development of an embryo, which of the following organs emerges first?",
@@ -354,7 +354,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Excretion",
     "type": "Objective",
     "questionNumber": 33,
     "question": "Which food nutrient is detected in urine to announce the diabetics' condition?",
@@ -420,7 +420,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 39,
     "question": "The observable features in living organisms which can be inherited from parents is",
@@ -453,7 +453,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 42,
     "question": "One of the alternative forms of the same gene responsible for determining contrasting characteristics is called",
@@ -464,18 +464,18 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "category": "Cell Division, Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 43,
     "question": "One of the following is NOT true about meiosis and mitosis?",
     "options": ["Mitosis occurs in somatic cells.", "Mitosis does not take place in sex cells.", "There is an exchange of genetic materials in meiosis.", "There is no exchange of genetic materials in meiosis."],
     "answer": "D",
-    "explanation": "Statement D is false because there IS exchange of genetic material (crossing over) in meiosis."
+    "explanation": "There IS exchange of genetic material (crossing over) in meiosis, so the statement that there is no exchange is false."
   },
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Objective",
     "questionNumber": 44,
     "question": "The scientific study of cells is known as",
@@ -486,7 +486,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Objective",
     "questionNumber": 45,
     "question": "Gymnosperms are plants that",
@@ -508,7 +508,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Objective",
     "questionNumber": 47,
     "question": "Mosses belong to what phylum of plants?",
@@ -519,7 +519,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Plant Tissues and Functions",
+    "category": "Plant Morphology/Anatomy",
     "type": "Objective",
     "questionNumber": 48,
     "question": "The plant tissue that cannot stretch and provide important structural support in mature stems after growth has ceased is referred to as",
@@ -541,7 +541,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Objective",
     "questionNumber": 50,
     "question": "In which order will the synthesis of any macromolecule proceed?",
@@ -549,29 +549,42 @@
     "answer": "A",
     "explanation": "Macromolecule synthesis proceeds in three stages: initiation, elongation, and termination."
   },
-{
+  {
     "subject": "Biology",
     "year": 2024,
     "category": "Ecology",
     "type": "Essay",
     "questionNumber": "1a",
-    "question": "The table below shows the number of insects collected from three different sites A, B and C in a field study.\n\n(a) i. Determine the mean of the insects from each site [3 Marks]\nii. Which site has highest abundance of insects? [½ Mark]\niii. Draw a pie chart to show the percentage composition of insects in the three sites. [2½ Marks]\niv. What is likely to be the implication of insect 1 on site A? [1 Mark]",
+    "question": "A study was conducted in school field to determine the distribution and abundance of some insects. Three sections were selected, A, B and C. The collection of the samples were done the same day for 5 hours between 6am and 11am. The Table below shows the results obtained.",
+    "dataTable": {
+      "headers": ["S/N", "Insects", "Site A", "Site B", "Site C"],
+      "rows": [
+        ["1", "Butterfly", "18", "5", "12"],
+        ["2", "Housefly", "21", "11", "37"],
+        ["3", "Tse-Tse fly", "3", "0", "7"],
+        ["4", "Soldier Ant", "42", "19", "9"],
+        ["5", "Termite", "13", "7", "27"],
+        ["6", "Praying mantis", "2", "0", "0"],
+        ["7", "Cockroach", "8", "4", "1"],
+        ["8", "Mosquito", "3", "0", "9"],
+        ["9", "Dragon fly", "3", "0", "9"],
+        ["10", "Bee", "29", "12", "7"]
+      ]
+    },
     "options": [],
-    "modelAnswer": "i. Mean = Total number of insects / Number of insect types. ii. Requires data from the table. iii. Requires data to calculate percentages and draw pie chart. iv. Requires data from the table.",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Data table missing: A table with insect counts for sites A, B, and C was provided in the original question. Please refer to your original past question paper."
-},
-{
+    "modelAnswer": "(a) i. Mean of insects from each site:\n\nSite A: Total = 18 + 21 + 3 + 42 + 13 + 2 + 8 + 3 + 3 + 29 = 142\nMean = 142 / 10 = 14.2 insects\n\nSite B: Total = 5 + 11 + 0 + 19 + 7 + 0 + 4 + 0 + 0 + 12 = 58\nMean = 58 / 10 = 5.8 insects\n\nSite C: Total = 12 + 37 + 7 + 9 + 27 + 0 + 1 + 9 + 9 + 7 = 118\nMean = 118 / 10 = 11.8 insects\n\nii. Site A has the highest abundance of insects (142 total).\n\niii. Pie chart:\nTotal abundance = 142 + 58 + 118 = 318 insects\n\nSite A: (142 ÷ 318) × 100 ≈ 44.7% | Angle ≈ 161°\nSite B: (58 ÷ 318) × 100 ≈ 18.2% | Angle ≈ 66°\nSite C: (118 ÷ 318) × 100 ≈ 37.1% | Angle ≈ 133°\n\niv. Insect 1 (Butterfly) is a pollinator. High abundance in Site A suggests a high abundance of flowering plants and a favorable habitat with less pesticide use."
+  },
+  {
     "subject": "Biology",
     "year": 2024,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) i. Name the purines of the nitrogenous base of nucleic acid. [1 Mark]\niii. List TWO functions of lipids in a cell. [1 Mark]",
     "options": [],
-    "modelAnswer": "i. Adenine and Guanine.\niii. 1. Structural component of cell membranes (phospholipids). 2. Energy storage (triglycerides/fats)."
-},
-{
+    "modelAnswer": "i. Adenine and Guanine.\n\niii. 1. Structural component of cell membranes (phospholipids).\n2. Energy storage (triglycerides/fats)."
+  },
+  {
     "subject": "Biology",
     "year": 2024,
     "category": "Evolution",
@@ -580,7 +593,7 @@
     "question": "(b) ii. Define evolution. [1 Mark]",
     "options": [],
     "modelAnswer": "Evolution is the gradual change in the heritable characteristics of a population over successive generations."
-},
+  },
   {
     "subject": "Biology",
     "year": 2024,
@@ -588,27 +601,27 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) Define the following terms: i. Synecology ii. Systematics iii. Succession iv. Aestivation v. Carrying capacity [5 Marks]",
-    "modelAnswer": "i. Synecology: study of communities and their interactions. ii. Systematics: classification and naming of organisms. iii. Succession: change in species composition over time. iv. Aestivation: summer dormancy. v. Carrying capacity: maximum population size an environment can sustain.",
+    "modelAnswer": "i. Synecology: study of communities and their interactions.\nii. Systematics: classification and naming of organisms.\niii. Succession: change in species composition over time.\niv. Aestivation: summer dormancy.\nv. Carrying capacity: maximum population size an environment can sustain.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Organisation, Structure and Functions",
+    "category": "Cell Structure and Functions",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) State the THREE cell theories [3 Marks]",
-    "modelAnswer": "1. All living organisms are composed of cells. 2. The cell is the basic unit of structure and function. 3. All cells arise from pre-existing cells.",
+    "modelAnswer": "1. All living organisms are composed of cells.\n2. The cell is the basic unit of structure and function.\n3. All cells arise from pre-existing cells.",
     "options": []
   },
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Living Things in Nature and Biological Molecules",
+    "category": "Biological Molecules",
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) Name the bonds that is formed between monomers of the following biological molecules: i. Starch, ii. Protein, iii. Lipid, iv. Nucleic acid [2 Marks]",
-    "modelAnswer": "i. Starch: glycosidic bonds. ii. Protein: peptide bonds. iii. Lipid: ester bonds. iv. Nucleic acid: phosphodiester bonds.",
+    "modelAnswer": "i. Starch: glycosidic bonds.\nii. Protein: peptide bonds.\niii. Lipid: ester bonds.\niv. Nucleic acid: phosphodiester bonds.",
     "options": []
   },
   {
@@ -628,7 +641,7 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) State TWO examples of diseases caused by prions. [1 Mark]",
-    "modelAnswer": "1. Creutzfeldt-Jakob disease (CJD). 2. Mad cow disease (Bovine Spongiform Encephalopathy - BSE).",
+    "modelAnswer": "1. Creutzfeldt-Jakob disease (CJD).\n2. Mad cow disease (Bovine Spongiform Encephalopathy - BSE).",
     "options": []
   },
   {
@@ -638,7 +651,7 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) What is the generation time of a bacterial population that increases from one thousand cells to one million cells in four hours of growth? [3 Marks]",
-    "modelAnswer": "Initial = 1000, Final = 1,000,000. Number of generations (n): 2^n = 1,000,000/1,000 = 1000. log2(1000) = 9.97 ≈ 10 generations. Generation time = 4 hours / 10 = 0.4 hours (24 minutes).",
+    "modelAnswer": "Initial = 1000, Final = 1,000,000.\n\nNumber of generations (n):\n2^n = 1,000,000/1,000 = 1000\nlog2(1000) = 9.97 ≈ 10 generations\n\nGeneration time = 4 hours / 10 = 0.4 hours (24 minutes).",
     "options": []
   },
   {
@@ -648,7 +661,7 @@
     "type": "Essay",
     "questionNumber": "3d",
     "question": "(d) Briefly explain the following: i. Facultative anaerobes ii. Inoculation iii. Nucleotide iv. Lymphocytes v. Plasmids [5 Marks]",
-    "modelAnswer": "i. Facultative anaerobes: can grow with or without oxygen. ii. Inoculation: introducing microorganisms into a culture medium. iii. Nucleotide: building block of nucleic acids. iv. Lymphocytes: white blood cells involved in immune response. v. Plasmids: small circular DNA molecules in bacteria.",
+    "modelAnswer": "i. Facultative anaerobes: can grow with or without oxygen.\nii. Inoculation: introducing microorganisms into a culture medium.\niii. Nucleotide: building block of nucleic acids.\niv. Lymphocytes: white blood cells involved in immune response.\nv. Plasmids: small circular DNA molecules in bacteria.",
     "options": []
   },
   {
@@ -657,12 +670,19 @@
     "category": "Structures, Morphology and Characteristics of Microorganisms",
     "type": "Essay",
     "questionNumber": "4a",
-    "question": "(a) In an attempt to understand the difference between Gram positive and Gram negative bacteria, Chidozie arrived with the table below. Fill in the missing spaces. [4 Marks]",
-    "modelAnswer": "Gram positive: thick cell wall, fewer amino acids, no outer membrane, has teichoic acid. Gram negative: thin cell wall, more amino acids, has outer membrane, no teichoic acid.",
+    "question": "In an attempt to understand the difference between Gram positive and Gram negative bacteria, Chidozie arrived with the table below. Fill in the missing spaces.",
+    "dataTable": {
+        "headers": ["Characteristics", "Gram Positive", "Gram Negative"],
+        "rows": [
+            ["Thickness of cell wall", "", ""],
+            ["Variety of amino acids", "", ""],
+            ["Outer membrane", "", ""],
+            ["Teichoic acid", "", ""]
+        ]
+    },
     "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Table missing from original question. Please refer to your past question paper."
-  },
+    "modelAnswer": "Filled table:\n[TABLE: Characteristics | Gram Positive | Gram Negative | Thickness of cell wall | Thick (20-80 nm) | Thin (5-10 nm) | Variety of amino acids | Few types | Many types | Outer membrane | Absent | Present | Teichoic acid | Present | Absent]"
+},
   {
     "subject": "Biology",
     "year": 2024,
@@ -670,7 +690,7 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) Name FOUR enzymes that facilitate DNA replication in bacteria. [2 Marks]",
-    "modelAnswer": "1. DNA helicase. 2. DNA polymerase III. 3. DNA ligase. 4. Primase.",
+    "modelAnswer": "1. DNA helicase.\n2. DNA polymerase III.\n3. DNA ligase.\n4. Primase.",
     "options": []
   },
   {
@@ -680,22 +700,20 @@
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) State the conditions for the use of the following methods for the control of microbial activities: i. steam under pressure ii. boiling, iii. pasteurization iv. dry heat [4 marks]",
-    "modelAnswer": "i. Steam under pressure: autoclaving at 121°C, 15 psi, 15-20 min. ii. Boiling: 100°C for 30 min. iii. Pasteurization: 63°C for 30 min or 72°C for 15 sec. iv. Dry heat: 160-180°C for 2 hours.",
+    "modelAnswer": "i. Steam under pressure: autoclaving at 121°C, 15 psi, 15-20 min.\nii. Boiling: 100°C for 30 min.\niii. Pasteurization: 63°C for 30 min or 72°C for 15 sec.\niv. Dry heat: 160-180°C for 2 hours.",
     "options": []
   },
   {
-    "subject": "Biology",
-    "year": 2024,
-    "category": "Cell Organisation, Structure and Functions",
-    "type": "Essay",
-    "questionNumber": "5a",
-    "question": "(a) Draw and label the plant cell. [4 Marks]",
-    "modelAnswer": "Plant cell diagram should include: cell wall, cell membrane, nucleus, chloroplast, vacuole, mitochondria, endoplasmic reticulum, Golgi apparatus, ribosomes.",
-    "options": [],
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram required. Please refer to your original past question paper."
-  },
-{
+  "subject": "Biology",
+  "year": 2024,
+  "category": "Cell Structure and Functions",
+  "type": "Essay",
+  "questionNumber": "5a",
+  "question": "(a) Draw and label the plant cell. [4 Marks]",
+  "options": [],
+  "modelAnswer": "[IMAGE: /images/questions/biology/2024/bio-2024-essay-5a.jpg | Plant cell diagram]\n\nPlant cell diagram should include: cell wall, cell membrane, nucleus, chloroplast, vacuole, mitochondria, endoplasmic reticulum, Golgi apparatus, ribosomes."
+},
+  {
     "subject": "Biology",
     "year": 2024,
     "category": "Plant Morphology/Anatomy",
@@ -703,9 +721,9 @@
     "questionNumber": "5b",
     "question": "(b) i. List FOUR modifications in leaves of plant. [2 Marks]\nii. List FOUR modification in the stem of plant. [2 Marks]",
     "options": [],
-    "modelAnswer": "i. Leaf modifications: spines (cactus), tendrils (pea), storage leaves (aloe), insect traps (Venus flytrap).\nii. Stem modifications: rhizomes (ginger), tubers (potato), bulbs (onion), runners (strawberry)."
-},
-{
+    "modelAnswer": "i. Leaf modifications: spines (cactus), tendrils (pea), storage leaves (aloe), insect traps (Venus flytrap).\n\nii. Stem modifications: rhizomes (ginger), tubers (potato), bulbs (onion), runners (strawberry)."
+  },
+  {
     "subject": "Biology",
     "year": 2024,
     "category": "Growth in Higher Plants and Growth Regulators",
@@ -713,18 +731,18 @@
     "questionNumber": "5c",
     "question": "(c) i. State TWO functions of Auxin. [1 Mark]\nii. State TWO functions of Cytokinins. [1 Mark]",
     "options": [],
-    "modelAnswer": "i. Auxin: promotes cell elongation, stimulates root formation.\nii. Cytokinins: promotes cell division, delays senescence."
-},
-{
+    "modelAnswer": "i. Auxin: promotes cell elongation, stimulates root formation.\n\nii. Cytokinins: promotes cell division, delays senescence."
+  },
+  {
     "subject": "Biology",
     "year": 2024,
-    "category": "Taxonomy of Lower and Higher Plants",
+    "category": "General Characteristics and Diversity of Plants",
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) i. State FOUR general characteristics of Spermatophytes. [2 Marks]\nii. List THREE divisions of the spermatophytes and give one example in each. [3 Marks]",
     "options": [],
-    "modelAnswer": "i. Characteristics: produce seeds, have vascular tissue, heterosporous, dominant sporophyte generation.\nii. Divisions: Cycadophyta (Cycas), Coniferophyta (Pinus), Anthophyta (Mangifera)."
-},
+    "modelAnswer": "i. Characteristics: produce seeds, have vascular tissue, heterosporous, dominant sporophyte generation.\n\nii. Divisions: Cycadophyta (Cycas), Coniferophyta (Pinus), Anthophyta (Mangifera)."
+  },
   {
     "subject": "Biology",
     "year": 2024,
@@ -742,20 +760,20 @@
     "type": "Essay",
     "questionNumber": "6b(ii)",
     "question": "(b) ii. Highlight FOUR ethical implications of genetically modified foods. [2 Marks]",
-    "modelAnswer": "1. Potential allergenicity. 2. Environmental impact (gene flow to wild relatives). 3. Socioeconomic issues (patents and farmer rights). 4. Long-term health effects unknown.",
+    "modelAnswer": "1. Potential allergenicity.\n2. Environmental impact (gene flow to wild relatives).\n3. Socioeconomic issues (patents and farmer rights).\n4. Long-term health effects unknown.",
     "options": []
   },
-{
+  {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Reproduction",
     "type": "Essay",
-    "questionNumber": 7,
+    "questionNumber": "7",
     "question": "(a) i. Define Gametogenesis. [2 Marks]\nii. Name the TWO different types of gametogenesis in organisms. [2 Marks]\niii. Describe the process of gametogenesis in male mammals. [3 Marks]\n\n(b) Explain the processes that occur in a nephron. [3 Marks]",
     "options": [],
-    "modelAnswer": "(a) i. Gametogenesis: formation of gametes (sperm and egg). ii. Spermatogenesis (male) and Oogenesis (female). iii. Spermatogonia undergo mitosis → primary spermatocytes → meiosis I → secondary spermatocytes → meiosis II → spermatids → spermiogenesis → mature spermatozoa.\n\n(b) 1. Ultrafiltration in glomerulus. 2. Reabsorption in proximal tubule. 3. Countercurrent multiplier in Loop of Henle. 4. Fine regulation in distal tubule and collecting duct."
-},
- {
+    "modelAnswer": "(a) i. Gametogenesis: formation of gametes (sperm and egg).\n\nii. Spermatogenesis (male) and Oogenesis (female).\n\niii. Spermatogonia undergo mitosis → primary spermatocytes → meiosis I → secondary spermatocytes → meiosis II → spermatids → spermiogenesis → mature spermatozoa.\n\n(b) 1. Ultrafiltration in glomerulus.\n2. Reabsorption in proximal tubule.\n3. Countercurrent multiplier in Loop of Henle.\n4. Fine regulation in distal tubule and collecting duct."
+  },
+  {
     "subject": "Biology",
     "year": 2024,
     "category": "Nervous System",
@@ -763,18 +781,26 @@
     "questionNumber": "8a",
     "question": "(a) i. Explain briefly saltatory conduction in axon [2 marks]\nii. Give two differences between a resting potential and depolarization [2 marks]",
     "options": [],
-    "modelAnswer": "i. Saltatory conduction: action potential jumps from node to node along myelinated axons, increasing conduction speed.\nii. Resting potential: polarized (-70mV), Na+ channels closed. Depolarization: membrane becomes less negative, Na+ channels open, Na+ enters."
-},
+    "modelAnswer": "i. Saltatory conduction: action potential jumps from node to node along myelinated axons, increasing conduction speed.\n\nii. Resting potential: polarized (-70mV), Na+ channels closed.\nDepolarization: membrane becomes less negative, Na+ channels open, Na+ enters."
+  },
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Physiological Processes",
+    "category": "Circulatory System",
     "type": "Essay",
     "questionNumber": "8b",
-    "question": "(b) State two ways by which white blood cells carry out their activity in the body of humans [1 mark]\n\n(c) i. Draw a well labelled diagram of spermatozoon [3 marks]\nii. State the functions of any four of the labelled parts [2 marks]",
+    "question": "(b) State two ways by which white blood cells carry out their activity in the body of humans [1 mark]",
     "options": [],
-    "modelAnswer": "(b) 1. Phagocytosis: engulfing and destroying pathogens. 2. Antibody production: producing antibodies to neutralize pathogens.\n\n(c) i. Diagram should include: head (acrosome, nucleus), midpiece (mitochondria), tail (flagellum). ii. Head (genetic material), Acrosome (enzymes for egg penetration), Midpiece (energy via mitochondria), Tail (propulsion).",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram required for part (c)(i). Please refer to your original past question paper."
+    "modelAnswer": "1. Phagocytosis: engulfing and destroying pathogens.\n2. Antibody production: producing antibodies to neutralize pathogens."
+  },
+  {
+  "subject": "Biology",
+  "year": 2024,
+  "category": "Reproduction",
+  "type": "Essay",
+  "questionNumber": "8c",
+  "question": "(c) i. Draw a well labelled diagram of spermatozoon [3 marks]\nii. State the functions of any four of the labelled parts [2 marks]",
+  "options": [],
+  "modelAnswer": "[IMAGE: /images/questions/biology/2024/bio-2024-essay-8c.png | Spermatozoon diagram]\n\n(c) i. Diagram should include: head (acrosome, nucleus), midpiece (mitochondria), tail (flagellum).\n\nii. 1. Acrosome: contains hydrolytic enzymes that break down the outer layers of the egg cell, enabling the sperm to penetrate and fertilize it.\n2. Nucleus: carries the haploid set of genetic material (DNA) that combines with the egg's nucleus during fertilization.\n3. Midpiece: contains mitochondria that produce ATP for the tail to beat and propel the sperm toward the egg.\n4. Tail/Flagellum: locomotive organelle with wave-like movements powered by ATP."
 }
 ]
