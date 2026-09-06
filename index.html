@@ -60,45 +60,187 @@
 <body>
 <!-- Login Screen -->
 <div id="login-screen" style="display:block;">
-    <div style="max-width:450px;margin:80px auto;padding:40px;position:relative;text-align:center;background:var(--bg-secondary);border-radius:16px;box-shadow:var(--card-shadow);">
-        <h1 style="font-size:2rem;color:var(--tab-active-bg);margin-bottom:8px;">📚 JUPEB Question Bank</h1>
-        <p style="color:var(--text-secondary);margin-bottom:30px;font-style:italic;">Helping you ace JUPEB, one question at a time</p>
-
+    <div style="max-width:550px;margin:40px auto;padding:24px;position:relative;background:var(--bg-secondary);border-radius:16px;box-shadow:var(--card-shadow);">
+        
+        <!-- Theme Toggle (Top Right) -->
         <div style="position:absolute;top:16px;right:16px;">
-    <button onclick="toggleTheme()" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border-color);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:all 0.2s;" title="Toggle theme">
-        <svg id="login-sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg id="login-moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
-</div>
-        
-        <div id="auth-status"></div>
-        
-        <button onclick="signInWithGoogle()" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:2px solid #e9ecef;border-radius:12px;font-size:1rem;font-weight:500;cursor:pointer;color:#1a1a2e;">
-            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-            Sign in with Google
-        </button>
-        
-        <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border-color);">
-            <span style="color:var(--text-secondary);font-size:0.85rem;">New here?</span>
-            <button onclick="toggleAccessInfo()" style="display:block;margin:8px auto 0;padding:10px 24px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;cursor:pointer;color:var(--tab-active-bg);font-size:0.9rem;font-weight:500;transition:all 0.2s;">How to Get Access →</button>
+            <button onclick="toggleTheme()" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border-color);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:all 0.2s;" title="Toggle theme">
+                <svg id="login-sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg id="login-moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
         </div>
+
+        <div style="text-align:center;margin-bottom:24px;">
+            <h1 style="font-size:1.8rem;color:var(--tab-active-bg);margin-bottom:4px;">📚 JUPEB Question Bank</h1>
+            <p style="color:var(--text-secondary);font-style:italic;font-size:0.9rem;">Helping you ace JUPEB, one question at a time</p>
+        </div>
+
+        <!-- Tabs -->
+        <div style="display:flex;justify-content:center;gap:0;margin-bottom:24px;border-bottom:2px solid var(--border-color);">
+            <button onclick="showLoginTab('about')" id="login-tab-about" class="login-tab-btn" style="flex:1;padding:12px;background:transparent;border:none;border-bottom:3px solid transparent;color:var(--text-secondary);font-weight:600;font-size:0.95rem;cursor:pointer;">About This Site</button>
+<button onclick="showLoginTab('signin')" id="login-tab-signin" class="login-tab-btn" style="flex:1;padding:12px;background:transparent;border:none;border-bottom:3px solid var(--tab-active-bg);color:var(--tab-active-bg);font-weight:600;font-size:0.95rem;cursor:pointer;">Sign In</button>
+        </div>
+
+        <!-- ABOUT TAB -->
+        <div id="login-tab-about-content" style="text-align:left;font-size:0.9rem;line-height:1.7;color:var(--text-secondary);">
+            <p style="margin-bottom:12px;color:var(--text-primary);font-weight:500;">
+                JUPEB Question Bank is a dedicated study platform built for JUPEB students who want to pass their exams with confidence. Instead of carrying piles of past question papers, you get everything organised in one place — by subject, by topic, and by year.
+            </p>
+            <p style="margin-bottom:12px;">
+                Every question comes with a clear answer and a simple explanation that helps you understand <em>why</em> the answer is correct. You don't just memorise — you actually learn.
+            </p>
+            <p style="margin-bottom:12px;">
+                With quiz mode, you can test yourself under timed conditions, track your weak areas, and focus your study time on the topics that need the most work. The site remembers your progress so you can continue from where you stopped.
+            </p>
+            <p style="margin-bottom:16px;">
+                Whether you're preparing for Chemistry, Physics, Mathematics, Biology, CRS, IRS, Economics, Government, or Literature — everything you need is here. Study on your phone, tablet, or laptop. It works everywhere.
+            </p>
+            
+            <div style="background:var(--bg-card);border-radius:12px;padding:16px;margin-bottom:16px;">
+                <h3 style="color:var(--tab-active-bg);margin-bottom:10px;font-size:0.95rem;">✅ What You Get</h3>
+                <ul style="list-style:none;padding:0;margin:0;">
+                    <li style="margin-bottom:6px;">• 500+ past questions (2015–2025) across 9 subjects</li>
+                    <li style="margin-bottom:6px;">• Instant answers with step-by-step explanations</li>
+                    <li style="margin-bottom:6px;">• Quiz mode with timer for real exam practice</li>
+                    <li style="margin-bottom:6px;">• Weak area tracking so you know what to focus on</li>
+                    <li style="margin-bottom:6px;">• Past papers organised by year and type</li>
+                    <li>• Works on any device — phone, tablet, laptop</li>
+                </ul>
+            </div>
+
+            <div style="text-align:center;margin-top:16px;">
+                <button onclick="showLoginTab('signin')" style="padding:12px 28px;background:var(--tab-active-bg);color:white;border:none;border-radius:10px;font-size:0.95rem;font-weight:600;cursor:pointer;">Get Started →</button>
+            </div>
+        </div>
+
+        <!-- SIGN IN TAB -->
+        <div id="login-tab-signin-content" style="display:none;text-align:center;">
+            <div id="auth-status"></div>
+            
+            <button onclick="signInWithGoogle()" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:2px solid #e9ecef;border-radius:12px;font-size:1rem;font-weight:500;cursor:pointer;color:#1a1a2e;margin-bottom:20px;">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                Sign in with Google
+            </button>
+
+            <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-color);">
+                <span style="color:var(--text-secondary);font-size:0.85rem;">New here?</span>
+                <button onclick="toggleAccessInfo()" style="display:block;margin:8px auto 0;padding:10px 24px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;cursor:pointer;color:var(--tab-active-bg);font-size:0.9rem;font-weight:500;">How to Get Access →</button>
+            </div>
+            
+            <div id="access-info" style="display:none;margin-top:20px;padding:20px;background:var(--bg-card);border-radius:12px;text-align:left;font-size:0.9rem;color:var(--text-secondary);">
+                <h3 style="color:var(--text-primary);margin-bottom:12px;">💡 Here's How It Works</h3>
+                <p style="margin-bottom:8px;"><strong>1.</strong> Pay ₦5,000 to:<br>
+                <span style="color:var(--text-primary);font-weight:500;">Moniepoint: 5282798033</span><br>
+                <span style="color:var(--text-primary);font-weight:500;">Michael Evuline</span></p>
+                <p style="margin-bottom:8px;"><strong>2.</strong> Send payment proof to:<br>
+                <span style="color:var(--text-primary);font-weight:500;">WhatsApp: 09035801863</span></p>
+                <p style="margin-bottom:8px;padding:10px;background:var(--warning-bg);border-radius:8px;border-left:3px solid var(--warning-border);color:var(--warning-text);">
+                    <strong>⚠️ Important:</strong> You must include your <strong>Gmail address</strong> in the WhatsApp message — this is the email you'll use to sign in.
+                </p>
+                <p><strong>3.</strong> You're in! Full access to all subjects + quiz mode 🎉</p>
+                <button onclick="toggleAccessInfo()" style="display:block;margin:16px auto 0;padding:10px 24px;background:var(--tab-active-bg);color:white;border:none;border-radius:10px;cursor:pointer;font-size:0.9rem;font-weight:500;">Got it!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dashboard Screen (Shown after sign-in) -->
+<div id="dashboard-screen" style="display:none;">
+    <div class="dashboard-container">
         
-        <div id="access-info" style="display:none;margin-top:20px;padding:20px;background:var(--bg-card);border-radius:12px;text-align:left;font-size:0.9rem;color:var(--text-secondary);">
-            <h3 style="color:var(--text-primary);margin-bottom:12px;">💡 Here's How It Works</h3>
-            <p style="margin-bottom:8px;"><strong>1.</strong> Pay ₦3,000 to:<br>
-            <span style="color:var(--text-primary);font-weight:500;">Moniepoint: 5282798033</span><br>
-            <span style="color:var(--text-primary);font-weight:500;">Michael Evuline</span></p>
-            <p style="margin-bottom:8px;"><strong>2.</strong> Send payment proof to:<br>
-<span style="color:var(--text-primary);font-weight:500;">WhatsApp: 09035801863</span></p>
-<p style="margin-bottom:8px;padding:10px;background:#fff3cd;border-radius:8px;border-left:3px solid #ffc107;">
-    <strong>⚠️ Important:</strong> You must include your <strong>Gmail address</strong> in the WhatsApp message — this is the email you'll use to sign in.
-</p>
-            <p><strong>3.</strong> You're in! Full access to all subjects + quiz mode 🎉</p>
-            <button onclick="toggleAccessInfo()" style="display:block;margin:16px auto 0;padding:10px 24px;background:var(--tab-active-bg);color:white;border:none;border-radius:10px;cursor:pointer;font-size:0.9rem;font-weight:500;">Got it!</button>
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+            <div class="dash-greeting">
+                <h2 id="dash-greeting-text">👋 Good morning</h2>
+                <p id="dash-user-name">Student</p>
+            </div>
+            <div class="dash-header-actions">
+                <span class="dash-date" id="dash-date"></span>
+            </div>
+        </div>
+
+        <!-- Top Row: Continue Last Session + Study Streak -->
+        <div class="dashboard-row">
+            <!-- Continue Last Session -->
+            <div class="dash-card dash-continue-card" id="dash-continue-card">
+                <h3>📖 Continue Last Session</h3>
+                <p id="dash-continue-text">You haven't started studying yet.</p>
+                <button class="dash-btn-primary" onclick="goToBrowseQuestions()">Browse Questions</button>
+            </div>
+
+            <!-- Study Streak -->
+            <div class="dash-card dash-streak-card" id="dash-streak-card">
+                <h3>🔥 Study Streak</h3>
+                <p id="dash-streak-text">0 days</p>
+                <div class="streak-dots" id="streak-dots">
+                    <span class="streak-dot">M</span>
+                    <span class="streak-dot">T</span>
+                    <span class="streak-dot">W</span>
+                    <span class="streak-dot">T</span>
+                    <span class="streak-dot">F</span>
+                    <span class="streak-dot">S</span>
+                    <span class="streak-dot">S</span>
+                </div>
+                <p id="dash-streak-subtext" class="dash-subtext">Start studying today to build your streak</p>
+            </div>
+        </div>
+
+        <!-- Middle Row: Subject Progress + Quick Practice -->
+        <div class="dashboard-row">
+            <!-- Subject Progress -->
+            <div class="dash-card dash-progress-card">
+                <h3>📊 Subject Progress</h3>
+                <div id="dash-subject-progress">
+                    <p class="dash-subtext">No progress yet — start answering questions.</p>
+                </div>
+            </div>
+
+            <!-- Quick Practice -->
+            <div class="dash-card dash-quick-practice-card">
+                <h3>⚡ Quick Practice</h3>
+                <p>Answer random questions from any topic</p>
+                <p class="dash-subtext">10 Questions • All Topics</p>
+                <button class="dash-btn-primary" onclick="startQuickPractice()">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Weak Topics + Recent Activity -->
+        <div class="dashboard-row">
+            <!-- Weak Topics -->
+            <div class="dash-card dash-weak-topics-card">
+                <h3>⚠️ Weak Topics</h3>
+                <div id="dash-weak-topics">
+                    <p class="dash-subtext">Answer 10+ questions to unlock weak area tracking.</p>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="dash-card dash-recent-card">
+                <h3>🕐 Recent Activity</h3>
+                <div id="dash-recent-activity">
+                    <p class="dash-subtext">No activity yet — your study sessions will show here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="dashboard-nav">
+            <button class="dash-nav-btn" onclick="goToBrowseQuestions()">
+                <span class="dash-nav-icon">📚</span>
+                <span>Browse Questions</span>
+            </button>
+            <button class="dash-nav-btn" onclick="goToQuizMode()">
+                <span class="dash-nav-icon">📝</span>
+                <span>Quiz Mode</span>
+            </button>
+            <button class="dash-nav-btn" onclick="goToPastPapers()">
+                <span class="dash-nav-icon">📄</span>
+                <span>Past Papers</span>
+            </button>
         </div>
     </div>
 </div>

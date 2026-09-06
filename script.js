@@ -1561,6 +1561,34 @@ if (window.MathJax && window.MathJax.typesetPromise) {
     }, 100); // Small delay to ensure loading state renders
 }
 
+// ===== DASHBOARD NAVIGATION =====
+function goToBrowseQuestions() {
+    document.getElementById('dashboard-screen').style.display = 'none';
+    document.getElementById('app-content').style.display = 'block';
+    // Reset to normal study mode
+    showWelcomeMessage();
+}
+
+function goToQuizMode() {
+    document.getElementById('dashboard-screen').style.display = 'none';
+    document.getElementById('app-content').style.display = 'block';
+    // Activate quiz tab
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    const quizTab = document.getElementById('quiz-mode-tab');
+    if (quizTab) quizTab.classList.add('active');
+    showQuizLobby();
+}
+
+function goToPastPapers() {
+    document.getElementById('dashboard-screen').style.display = 'none';
+    document.getElementById('app-content').style.display = 'block';
+    // Activate past papers tab
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    const pastTab = document.getElementById('past-questions-tab');
+    if (pastTab) pastTab.classList.add('active');
+    showPastQuestionsSidebar();
+}
+
 function buildQuestionCard(q, year, questionIndex) {
     const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
     const optionLabels = ['A','B','C','D','E','F'];

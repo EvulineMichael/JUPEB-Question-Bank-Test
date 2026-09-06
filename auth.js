@@ -1,16 +1,15 @@
 // Bypass auth on localhost
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
   document.getElementById('login-screen').style.display = 'none';
-  document.getElementById('app-content').style.display = 'block';
+document.getElementById('dashboard-screen').style.display = 'block';
+document.getElementById('app-content').style.display = 'none';
+if (typeof showDashboard === 'function') {
+    showDashboard();
+}
   window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
   if (typeof initJUPEBApp === 'function') {
     initJUPEBApp();
   }
-} else {
-  // Normal auth flow below...
-  auth.onAuthStateChanged(async (user) => {
-    // ... rest of your existing auth code
-  });
 }
 // Guest access check
 if (sessionStorage.getItem('jupeb_guest') === 'true') {
@@ -26,6 +25,29 @@ function toggleAccessInfo() {
   } else {
     info.style.display = 'none';
   }
+}
+// ===== LOGIN TABS =====
+function showLoginTab(tab) {
+    const aboutContent = document.getElementById('login-tab-about-content');
+    const signinContent = document.getElementById('login-tab-signin-content');
+    const aboutBtn = document.getElementById('login-tab-about');
+    const signinBtn = document.getElementById('login-tab-signin');
+    
+    if (tab === 'about') {
+        aboutContent.style.display = 'block';
+        signinContent.style.display = 'none';
+        aboutBtn.style.borderBottom = '3px solid var(--tab-active-bg)';
+        aboutBtn.style.color = 'var(--tab-active-bg)';
+        signinBtn.style.borderBottom = '3px solid transparent';
+        signinBtn.style.color = 'var(--text-secondary)';
+    } else {
+        aboutContent.style.display = 'none';
+        signinContent.style.display = 'block';
+        signinBtn.style.borderBottom = '3px solid var(--tab-active-bg)';
+        signinBtn.style.color = 'var(--tab-active-bg)';
+        aboutBtn.style.borderBottom = '3px solid transparent';
+        aboutBtn.style.color = 'var(--text-secondary)';
+    }
 }
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
@@ -54,8 +76,14 @@ auth.onAuthStateChanged(async (user) => {
       }
       
       // Access granted
-      document.getElementById('login-screen').style.display = 'none';
-      document.getElementById('app-content').style.display = 'block';
+document.getElementById('login-screen').style.display = 'none';
+document.getElementById('dashboard-screen').style.display = 'block';
+document.getElementById('app-content').style.display = 'none';
+
+// Show dashboard
+if (typeof showDashboard === 'function') {
+    showDashboard();
+}
       window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
       
       if (typeof initJUPEBApp === 'function') {
@@ -69,8 +97,9 @@ auth.onAuthStateChanged(async (user) => {
   </div>`;
       auth.signOut();
     }
-  } else {
+    } else {
     document.getElementById('login-screen').style.display = 'block';
+    document.getElementById('dashboard-screen').style.display = 'none';
     document.getElementById('app-content').style.display = 'none';
   }
 });
@@ -84,7 +113,14 @@ function signInWithGoogle() {
   });
 }
 
+// ===== INITIALIZE LOGIN TABS =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure Sign In is default
+    showLoginTab('signin');
+});
+
 // Sign Out
 function signOutUser() {
   auth.signOut();
 }
+
