@@ -75,11 +75,21 @@ auth.onAuthStateChanged(async (user) => {
         }
       }
       
-      // Access granted
-document.getElementById('login-screen').style.display = 'none';
-document.getElementById('dashboard-screen').style.display = 'block';
-document.getElementById('app-content').style.display = 'none';
+      // Save user name
+if (user.displayName) {
+    localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
+}
 
+// Show dashboard, hide others
+showScreen("dashboard-screen", { pushHistory: false });
+
+// Show sidebar
+document.getElementById('app-sidebar').style.display = 'flex';
+
+// Populate user
+if (user.displayName) {
+    renderSidebarUser({ name: user.displayName.split(' ')[0], isPremium: true });
+}
 // Show dashboard
 if (typeof showDashboard === 'function') {
     showDashboard();
@@ -98,9 +108,7 @@ if (typeof showDashboard === 'function') {
       auth.signOut();
     }
     } else {
-    document.getElementById('login-screen').style.display = 'block';
-    document.getElementById('dashboard-screen').style.display = 'none';
-    document.getElementById('app-content').style.display = 'none';
+    showScreen("login-screen", { pushHistory: false });
   }
 });
 

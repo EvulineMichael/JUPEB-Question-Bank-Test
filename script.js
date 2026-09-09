@@ -78,6 +78,22 @@ function toggleTheme() {
         localStorage.setItem('theme', 'dark');
     }
     updateThemeIcons();
+    updateSidebarThemeButton();
+}
+
+function updateSidebarThemeButton() {
+    const icon = document.getElementById('sidebar-theme-icon');
+    const text = document.getElementById('sidebar-theme-text');
+    if (!icon || !text) return;
+    
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+        icon.textContent = '☀️';
+        text.textContent = 'Light Mode';
+    } else {
+        icon.textContent = '🌙';
+        text.textContent = 'Dark Mode';
+    }
 }
 
 function initTheme() {
@@ -1214,84 +1230,38 @@ function showQuizLobby() {
 
     setupLobbyListeners();
 }
-// Toggle subjects dropdown
-function toggleSubjectsDropdown() {
-    const menu = document.getElementById('subjects-dropdown-menu');
-    const btn = document.getElementById('subjects-dropdown-btn');
-    menu.classList.toggle('show');
-    btn.classList.toggle('open');
-}
 
-// Close dropdown when clicking outside
-document.addEventListener('click', function(e) {
-    const dropdown = document.querySelector('.subjects-dropdown');
-    if (dropdown && !dropdown.contains(e.target)) {
-        const menu = document.getElementById('subjects-dropdown-menu');
-        const btn = document.getElementById('subjects-dropdown-btn');
-        if (menu) menu.classList.remove('show');
-        if (btn) btn.classList.remove('open');
-    }
-});
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
-    if (welcomeMessage) welcomeMessage.style.display = 'none';
+    showScreen("app-content");
     
-    // Show loading state in sidebar
-    categoriesList.innerHTML = `
-        <div style="text-align:center;padding:40px 20px;">
-            <div class="loading-spinner" style="display:inline-block;width:30px;height:30px;border:3px solid var(--border-color);border-top:3px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
-            <p style="margin-top:12px;color:var(--text-secondary);font-size:0.9rem;">Loading past questions...</p>
-        </div>
-    `;
-    sidebarTitle.innerHTML = '📄 Past Questions';
+    const subjects = Object.keys(courseStructure);
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
     
-    // Show loading in questions area too
-    questionsContainer.innerHTML = `
-        <div class="loading-container" style="text-align:center;padding:60px 20px;">
-            <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
-            <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading past questions...</p>
-        </div>
-    `;
+    let html = `<h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>`;
+    html += `<p style="color:var(--text-secondary);margin-bottom:24px;">Select a subject and year to view past questions.</p>`;
     
-    // Use setTimeout to allow loading state to render, then check if data is ready
-    setTimeout(() => {
-        // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
+    subjects.forEach(subject => {
+        const years = allSubjectYears[subject] || [];
+        const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
-        // Check if any subject has data loaded
-        let hasData = false;
-        for (const subject of subjects) {
-            if (allSubjectData[subject] && allSubjectData[subject].length > 0) {
-                hasData = true;
-                break;
-            }
+        if (years.length > 0) {
+            html += `<div class="dash-card" style="margin-bottom:16px;">
+                <h3 style="margin-bottom:12px;">${subjectEmojis[subject]} ${displayName}</h3>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;">`;
+            
+            years.forEach(yr => {
+                html += `<button onclick="displayPastQuestions('${subject}', ${yr.year}, '${yr.paper || ''}')" 
+                    style="padding:8px 16px;background:var(--bg-card);border:1px solid var(--dash-border);border-radius:8px;cursor:pointer;color:var(--text-primary);font-size:0.85rem;">
+                    ${yr.label}
+                </button>`;
+            });
+            
+            html += `</div></div>`;
         }
-        
-        if (!hasData) {
-            // Data not loaded yet - show retry option
-            categoriesList.innerHTML = `
-                <div style="text-align:center;padding:40px 20px;color:var(--text-secondary);">
-                    <p style="font-size:1.2rem;margin-bottom:16px;">⏳ Data is still loading...</p>
-                    <p style="font-size:0.9rem;margin-bottom:20px;">Please wait a moment or try refreshing.</p>
-                    <button onclick="location.reload()" style="padding:10px 24px;background:var(--tab-active-bg);color:white;border:none;border-radius:8px;cursor:pointer;font-size:0.9rem;">
-                        🔄 Refresh
-                    </button>
-                </div>
-            `;
-            questionsContainer.innerHTML = `
-                <div class="welcome-message">
-                    <h2>⏳ Loading...</h2>
-                    <p>Please wait while questions are being loaded.</p>
-                    <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:12px;">This may take a few seconds on slower connections.</p>
-                </div>
-            `;
-            return;
-        }
-        
-        // Data is ready - build the sidebar
-        buildPastQuestionsSidebar();
-    }, 300); // Give time for loading state to render
+    });
+    
+    questionsContainer.innerHTML = html;
 }
 
 // Helper function to build the past questions sidebar
@@ -1474,15 +1444,20 @@ function displayPastQuestions(subject, year, paper = null) {
         
         // Build the HTML
         let questionsHtml = `
-            <div class="past-questions-header">
-                <div>
-                    <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
-                    <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
-                </div>
-<button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">
-                    📝 Take This as a Quiz
-                </button>
-            </div>`;
+    <div class="past-questions-header">
+        <button class="dash-back-btn" onclick="goToPastPapers()" style="margin-bottom:12px;">
+            <span aria-hidden="true">←</span> Back to Past Papers
+        </button>
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+            <div>
+                <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
+                <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
+            </div>
+            <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">
+                📝 Take This as a Quiz
+            </button>
+        </div>
+    </div>`;
         
         // --- SECTION 1: OBJECTIVE QUESTIONS ---
         if (objectiveQuestions.length > 0) {
@@ -1561,34 +1536,6 @@ if (window.MathJax && window.MathJax.typesetPromise) {
     }, 100); // Small delay to ensure loading state renders
 }
 
-// ===== DASHBOARD NAVIGATION =====
-function goToBrowseQuestions() {
-    document.getElementById('dashboard-screen').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
-    // Reset to normal study mode
-    showWelcomeMessage();
-}
-
-function goToQuizMode() {
-    document.getElementById('dashboard-screen').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
-    // Activate quiz tab
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    const quizTab = document.getElementById('quiz-mode-tab');
-    if (quizTab) quizTab.classList.add('active');
-    showQuizLobby();
-}
-
-function goToPastPapers() {
-    document.getElementById('dashboard-screen').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
-    // Activate past papers tab
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    const pastTab = document.getElementById('past-questions-tab');
-    if (pastTab) pastTab.classList.add('active');
-    showPastQuestionsSidebar();
-}
-
 function buildQuestionCard(q, year, questionIndex) {
     const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
     const optionLabels = ['A','B','C','D','E','F'];
@@ -1664,6 +1611,32 @@ function processLinesForVisuals(lines) {
         // 3. Plain text — escape it
         return escapeHtml(line);
     }).join("<br>");
+}
+function buildQuestionCard(q, year, questionIndex) {
+    const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
+    const optionLabels = ['A','B','C','D','E','F'];
+    let html = `<div class="question-card" data-question-idx="${questionIndex}">
+        <div class="question-header">
+            <span class="question-year">📅 ${year}</span>
+            <span class="question-number-badge">🔢 Q${qNumberDisplay}</span>
+            <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
+            ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
+        </div>
+        ${renderQuestionBody(q)}`;
+    if (q.diagramMissing) html += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
+    if (q.type === "Objective" && q.options?.length > 0) {
+        html += `<ul class="options-list" id="options-list-${questionIndex}">`;
+        q.options.forEach((opt, optIdx) => {
+            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
+        });
+        html += `</ul>`;
+        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${formatModelAnswer(q.explanation)}</div></div>`;
+    }
+    if (q.type === "Essay") {
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${formatModelAnswer(q.modelAnswer)}</div></div>`;
+        else if (!q.diagramMissing) html += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
+    }
+    return html + `</div>`;
 }
 
 // ===== RENDER TABLE FROM MARKER =====
@@ -2185,6 +2158,595 @@ function showQuizReviewScreen() {
     document.getElementById('review-submit-btn').addEventListener('click', () => submitQuiz(false));
 }
 
+// ===== DASHBOARD =====
+
+// ===== DASHBOARD NAVIGATION =====
+function goToBrowseQuestions() {
+    openSubjectPicker();
+}
+
+function goToQuizMode() {
+    showScreen("app-content");
+    showQuizLobby();
+}
+
+function goToPastPapers() {
+    showScreen("app-content");
+    showPastQuestionsSidebar();
+}
+
+function startQuickPractice() {
+    goToQuizMode();
+    setTimeout(() => {
+        const practiceCard = document.querySelector('.quiz-mode-card[data-mode="practice"]');
+        if (practiceCard) practiceCard.click();
+    }, 200);
+}
+function showDashboard() {
+    const data = getDashboardData();
+    renderDashboard(data);
+}
+
+function getDashboardData() {
+    const userName = localStorage.getItem('jupeb_user_name') || 'Student';
+    const lastSession = JSON.parse(localStorage.getItem('jupeb_last_session') || 'null');
+    const streakData = JSON.parse(localStorage.getItem('jupeb_streak') || '{"days":0,"flags":[false,false,false,false,false,false,false]}');
+    const subjectProgress = JSON.parse(localStorage.getItem('jupeb_subject_progress') || '{}');
+    const weakTopics = getWeakTopicsForDashboard();
+    const recentActivity = JSON.parse(localStorage.getItem('jupeb_quiz_history') || '[]').slice(-5).reverse();
+    
+    // Build subjects array
+    const subjectMeta = {
+        chemistry: { name: 'Chemistry', icon: '🧪' },
+        physics: { name: 'Physics', icon: '⚛️' },
+        maths: { name: 'Mathematics', icon: '📐' },
+        biology: { name: 'Biology', icon: '🧬' },
+        crs: { name: 'CRS', icon: '🕊️' },
+        irs: { name: 'IRS', icon: '☪️' },
+        literature: { name: 'Literature', icon: '📖' },
+        economics: { name: 'Economics', icon: '💰' },
+        government: { name: 'Government', icon: '🏛️' }
+    };
+    
+    const subjects = Object.entries(subjectMeta).map(([key, meta]) => {
+        const progress = subjectProgress[key] || { answered: 0, total: 0 };
+        return {
+            name: meta.name,
+            icon: meta.icon,
+            answered: progress.answered || 0,
+            total: progress.total || 0
+        };
+    });
+    
+        // Build weak topics
+    const weakTopicNames = getWeakTopics();
+    const weakTopicDetails = weakTopicNames.map(name => {
+        const weakData = (quizState.weakAreas[window.currentSubject] || {})[name] || {};
+        const pct = weakData.attempts > 0 ? Math.round((weakData.correct / weakData.attempts) * 100) : 0;
+        return { name, score: pct };
+    });
+    
+    // Build recent activity
+    const activity = recentActivity.map(entry => ({
+        label: entry.mode === 'exam' ? 'Completed Past Exam' : entry.mode === 'practice' ? 'Practiced Questions' : 'Weak Area Practice',
+        meta: `${entry.subject} · ${entry.total} questions · ${entry.score}%`,
+        when: entry.date || 'Today'
+    }));
+    
+    return {
+        userName,
+        lastSession,
+        streakDays: streakData.days || 0,
+        streakDayFlags: streakData.flags || [false,false,false,false,false,false,false],
+        subjects,
+        weakTopics: weakTopicDetails,
+        recentActivity: activity
+    };
+}
+
+function renderDashboard(data = {}) {
+    console.log('renderDashboard called with:', data);
+    const {
+        userName = "Student",
+        lastSession = null,
+        streakDays = 0,
+        streakDayFlags = [false, false, false, false, false, false, false],
+        subjects = [],
+        weakTopics = [],
+        recentActivity = []
+    } = data;
+
+    // Greeting
+    const hour = new Date().getHours();
+    const part = hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening";
+    document.getElementById("dash-greeting-text").textContent = `Good ${part}, ${userName} 👋`;
+    document.getElementById("dash-date").textContent = new Date().toLocaleDateString(undefined, {
+        weekday: "long", month: "short", day: "numeric"
+    });
+    // Update subtitle
+document.getElementById("dash-user-name").textContent = 
+    "Ready to make today a productive study session?";
+
+    // Continue last session
+    const topicEl = document.getElementById("dash-continue-topic");
+    const textEl = document.getElementById("dash-continue-text");
+    const fillEl = document.getElementById("dash-continue-fill");
+    if (lastSession && lastSession.topic) {
+        topicEl.textContent = lastSession.topic;
+        const pct = Math.round((lastSession.answered / lastSession.total) * 100) || 0;
+        textEl.textContent = `${lastSession.subject} · ${lastSession.answered} / ${lastSession.total} questions completed`;
+        fillEl.style.width = `${pct}%`;
+    } else {
+        topicEl.textContent = "Pick a subject to begin";
+        textEl.textContent = "You haven't started studying yet.";
+        fillEl.style.width = "0%";
+    }
+
+    // Streak
+    document.getElementById("dash-streak-text").innerHTML = `${streakDays} <span>days</span>`;
+    document.getElementById("dash-streak-subtext").textContent =
+        streakDays > 0 ? "Keep it up! Consistency is key." : "Start studying today to build your streak";
+    document.querySelectorAll("#streak-dots .streak-dot").forEach((dot, i) => {
+        dot.classList.toggle("is-complete", !!streakDayFlags[i]);
+        dot.classList.remove("is-today");
+    });
+    const todayIndex = (new Date().getDay() + 6) % 7;
+    const todayDot = document.querySelectorAll("#streak-dots .streak-dot")[todayIndex];
+    if (todayDot) todayDot.classList.add("is-today");
+
+    // Subjects
+    const subjectEl = document.getElementById("dash-subject-progress");
+    if (subjects.length && subjects.some(s => s.answered > 0)) {
+        subjectEl.innerHTML = subjects.map(s => {
+            const pct = s.total > 0 ? Math.round((s.answered / s.total) * 100) : 0;
+            return `
+                <div class="dash-subject-tile">
+                    <span>${s.icon}</span>
+                    <h4>${s.name}</h4>
+                    <p class="dash-subject-pct">${pct}%</p>
+                    <div class="dash-progress-track"><div class="dash-progress-fill" style="width:${pct}%"></div></div>
+                    <p class="dash-subtext">${s.answered} / ${s.total || 0} questions</p>
+                </div>`;
+        }).join("");
+    } else {
+        subjectEl.innerHTML = '<p class="dash-subtext">No progress yet — start answering questions.</p>';
+    }
+
+    // Weak topics
+    const weakEl = document.getElementById("dash-weak-topics");
+    if (weakTopics.length) {
+        weakEl.innerHTML = weakTopics.map(t => `
+            <div class="dash-weak-row">
+                <span>${t.name}</span>
+                <div class="dash-progress-track"><div class="dash-progress-fill" style="width:${t.score}%;background:#ef4444;"></div></div>
+                <span class="dash-weak-pct">${t.score}%</span>
+            </div>`).join("");
+    } else {
+        weakEl.innerHTML = '<p class="dash-subtext">Answer 10+ questions to unlock weak area tracking.</p>';
+    }
+
+    // Recent activity
+    const recentEl = document.getElementById("dash-recent-activity");
+    if (recentActivity.length) {
+        recentEl.innerHTML = recentActivity.map(a => `
+            <div class="dash-activity-row">
+                <span>${a.label}${a.meta ? ` · ${a.meta}` : ""}</span>
+                <span class="dash-subtext">${a.when}</span>
+            </div>`).join("");
+    } else {
+        recentEl.innerHTML = '<p class="dash-subtext">No activity yet — your study sessions will show here.</p>';
+    }
+}
+
+function getWeakTopicsForDashboard() {
+    return getWeakTopics();
+}
+
+// ===== TRACKING FUNCTIONS =====
+function trackStudySession(subject, topic, answered, total) {
+    // Save last session
+    localStorage.setItem('jupeb_last_session', JSON.stringify({ subject, topic, answered, total }));
+    
+    // Update streak
+    updateStreak();
+    
+    // Update subject progress
+    const progress = JSON.parse(localStorage.getItem('jupeb_subject_progress') || '{}');
+    if (!progress[subject]) progress[subject] = { answered: 0, total: 0 };
+    progress[subject].answered = (progress[subject].answered || 0) + answered;
+    // Total for a subject = number of available questions for that subject
+    if (allSubjectData[subject] && allSubjectData[subject].length > 0) {
+        progress[subject].total = allSubjectData[subject].length;
+    }
+    localStorage.setItem('jupeb_subject_progress', JSON.stringify(progress));
+}
+
+function updateStreak() {
+    const today = new Date().toDateString();
+    const streak = JSON.parse(localStorage.getItem('jupeb_streak') || '{"days":0,"lastDate":null,"flags":[false,false,false,false,false,false,false]}');
+    
+    if (streak.lastDate === today) return; // Already logged today
+    
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toDateString();
+    
+    if (streak.lastDate === yesterdayStr) {
+        // Consecutive
+        streak.days = (streak.days || 0) + 1;
+    } else if (streak.lastDate !== today) {
+        // Reset
+        streak.days = 1;
+    }
+    
+    streak.lastDate = today;
+    
+    // Update flags for current week
+    const dayIndex = (new Date().getDay() + 6) % 7; // Mon=0..Sun=6
+    streak.flags = streak.flags || [false,false,false,false,false,false,false];
+    streak.flags[dayIndex] = true;
+    
+    localStorage.setItem('jupeb_streak', JSON.stringify(streak));
+}
+
+function startQuickPractice() {
+    goToQuizMode();
+    setTimeout(() => {
+        const practiceCard = document.querySelector('.quiz-mode-card[data-mode="practice"]');
+        if (practiceCard) practiceCard.click();
+    }, 200);
+}
+function goToDashboard() {
+    // Check if quiz is in progress
+    if (typeof quizState !== 'undefined' && quizState.questions && quizState.questions.length > 0 && !quizState.submitted) {
+        const confirmed = confirm("Leave this quiz? Your progress won't be saved.");
+        if (!confirmed) {
+            // Push the quiz state back so back gesture doesn't desync
+            history.pushState({ screenId: "app-content" }, "", "#questions");
+            return;
+        }
+        clearQuizTimer();
+    }
+    showScreen("dashboard-screen");
+    showDashboard();
+}
+// ===== HASH ROUTING (Browser Back Support) =====
+const SCREEN_ROUTES = {
+    "login-screen": "login",
+    "dashboard-screen": "dashboard",
+    "app-content": "questions",
+    "progress-screen": "progress",
+    "settings-screen": "settings",
+    "help-screen": "help"
+};
+
+function showScreen(screenId, { pushHistory = true } = {}) {
+    Object.keys(SCREEN_ROUTES).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = (id === screenId) ? "block" : "none";
+    });
+
+    // Show/hide sidebar
+    const sidebar = document.getElementById('app-sidebar');
+    if (sidebar) {
+        if (screenId === 'login-screen') {
+            sidebar.style.display = 'none';
+        } else {
+            sidebar.style.display = 'flex';
+        }
+    }
+
+    if (pushHistory) {
+        const hash = "#" + SCREEN_ROUTES[screenId];
+        if (location.hash !== hash) history.pushState({ screenId }, "", hash);
+    }
+
+    // Notify sidebar to highlight active link
+    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId } }));
+}
+
+// Browser back/forward
+window.addEventListener("popstate", (e) => {
+    const screenId = e.state?.screenId || screenFromHash();
+    showScreen(screenId, { pushHistory: false });
+});
+
+function screenFromHash() {
+    const hash = location.hash.replace("#", "");
+    const match = Object.entries(SCREEN_ROUTES).find(([, h]) => h === hash);
+    return match ? match[0] : "dashboard-screen";
+}
+
+// On first load, respect hash in URL
+window.addEventListener("DOMContentLoaded", () => {
+    showScreen(screenFromHash(), { pushHistory: false });
+});
+// Stub navigation
+function goToProgress() { showScreen("progress-screen"); }
+function goToSettings() { showScreen("settings-screen"); }
+function goToHelp() { showScreen("help-screen"); }
+
+// Sidebar behaviour
+const sidebarToggle = document.getElementById("sidebar-toggle");
+const sidebarOverlay = document.getElementById("sidebar-overlay");
+const appSidebar = document.getElementById("app-sidebar");
+
+function openSidebar() {
+    appSidebar.classList.add("is-open");
+    sidebarOverlay.classList.add("is-open");
+}
+function closeSidebar() {
+    appSidebar.classList.remove("is-open");
+    sidebarOverlay.classList.remove("is-open");
+}
+sidebarToggle?.addEventListener("click", () => {
+    appSidebar.classList.contains("is-open") ? closeSidebar() : openSidebar();
+});
+sidebarOverlay?.addEventListener("click", closeSidebar);
+
+document.addEventListener("screenchange", (e) => {
+    document.querySelectorAll(".sidebar-link").forEach(link => {
+        link.classList.toggle("is-active", link.dataset.screen === e.detail.screenId);
+    });
+    closeSidebar();
+});
+
+// Populate sidebar user
+function renderSidebarUser({ name = "Student", isPremium = true } = {}) {
+    document.getElementById("sidebar-user-name").textContent = name;
+    document.getElementById("sidebar-user-plan").textContent = isPremium ? "⭐ Premium Plan" : "Free Plan";
+    document.getElementById("sidebar-avatar").textContent = name
+        .split(" ").map(w => w[0]).slice(0, 2).join("").toUpperCase();
+}
+function goToWeakAreas() {
+    showScreen("app-content");
+    showQuizLobby();
+    
+    setTimeout(() => {
+        const weakCard = document.querySelector('.quiz-mode-card[data-mode="weak"]:not([disabled])');
+        if (weakCard) weakCard.click();
+    }, 200);
+}
+// ===== SUBJECT PICKER =====
+const SUBJECTS = [
+    { id: "chemistry",   name: "Chemistry",   icon: "🧪" },
+    { id: "physics",     name: "Physics",     icon: "⚛️" },
+    { id: "maths",       name: "Mathematics", icon: "📐" },
+    { id: "biology",     name: "Biology",     icon: "🧬" },
+    { id: "crs",         name: "CRS",         icon: "✝️" },
+    { id: "irs",         name: "IRS",         icon: "☪️" },
+    { id: "literature",  name: "Literature",  icon: "📖" },
+    { id: "economics",   name: "Economics",   icon: "💰" },
+    { id: "government",  name: "Government",  icon: "🏛️" }
+];
+
+function renderSubjectTiles() {
+    const grid = document.getElementById("subject-picker-grid");
+    if (!grid) return;
+    grid.innerHTML = SUBJECTS.map(s => `
+        <button class="subject-tile" data-name="${s.name.toLowerCase()}" onclick="selectSubject('${s.id}')">
+            <span class="subject-tile-icon">${s.icon}</span>
+            <span class="subject-tile-name">${s.name}</span>
+        </button>`).join("");
+}
+
+function openSubjectPicker() {
+    const picker = document.getElementById("subject-picker");
+    const search = document.getElementById("subject-picker-search");
+    picker.classList.add("is-open");
+    picker.setAttribute("aria-hidden", "false");
+    search.value = "";
+    filterSubjectTiles("");
+    document.body.style.overflow = "hidden";
+    setTimeout(() => search.focus(), 200);
+}
+
+function closeSubjectPicker() {
+    const picker = document.getElementById("subject-picker");
+    picker.classList.remove("is-open");
+    picker.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+function filterSubjectTiles(query) {
+    const q = query.trim().toLowerCase();
+    document.querySelectorAll(".subject-tile").forEach(tile => {
+        tile.classList.toggle("is-hidden", q && !tile.dataset.name.includes(q));
+    });
+}
+
+function selectSubject(subjectId) {
+    closeSubjectPicker();
+    
+    // Set current subject
+    currentSubject = subjectId;
+    questionsData = allSubjectData[subjectId] || [];
+    window.currentSubjectYears = allSubjectYears[subjectId] || [];
+    
+    // Show question bank
+    showScreen("app-content");
+    renderCategories();
+    showWelcomeMessage();
+    
+    // Auto-open sidebar on mobile
+    autoOpenSidebarOnMobile();
+}
+
+// Set up subject picker events
+document.addEventListener("DOMContentLoaded", () => {
+    renderSubjectTiles();
+    
+    const pickerSearch = document.getElementById("subject-picker-search");
+    const pickerBackdrop = document.getElementById("subject-picker-backdrop");
+    const pickerClose = document.getElementById("subject-picker-close");
+    
+    pickerSearch?.addEventListener("input", (e) => filterSubjectTiles(e.target.value));
+    pickerBackdrop?.addEventListener("click", closeSubjectPicker);
+    pickerClose?.addEventListener("click", closeSubjectPicker);
+    
+    document.addEventListener("keydown", (e) => {
+        const picker = document.getElementById("subject-picker");
+        if (e.key === "Escape" && picker.classList.contains("is-open")) closeSubjectPicker();
+    });
+});
+// ===== SUBJECT PICKER (Multi-Level) =====
+let pickerStep = "subject";     // "subject" | "set" | "topic"
+let pickerSubject = null;       // selected subject id
+let pickerSubjectName = null;   // selected subject display name
+let pickerSet = null;           // selected course name (e.g., "CHM 001 - General Chemistry")
+
+const pickerEl = document.getElementById("subject-picker");
+const pickerGrid = document.getElementById("subject-picker-grid");
+const pickerSearch = document.getElementById("subject-picker-search");
+const pickerBackdrop = document.getElementById("subject-picker-backdrop");
+const pickerClose = document.getElementById("subject-picker-close");
+const pickerBackBtn = document.getElementById("subject-picker-back");
+const pickerCrumbs = document.getElementById("subject-picker-crumbs");
+
+const SUBJECT_ICONS = {
+    chemistry: "🧪",
+    physics: "⚛️",
+    maths: "📐",
+    biology: "🧬",
+    crs: "✝️",
+    irs: "☪️",
+    literature: "📖",
+    economics: "💰",
+    government: "🏛️"
+};
+
+const SUBJECT_NAMES = {
+    chemistry: "Chemistry",
+    physics: "Physics",
+    maths: "Mathematics",
+    biology: "Biology",
+    crs: "CRS",
+    irs: "IRS",
+    literature: "Literature",
+    economics: "Economics",
+    government: "Government"
+};
+
+function openSubjectPicker() {
+    pickerStep = "subject";
+    pickerSubject = null;
+    pickerSubjectName = null;
+    pickerSet = null;
+    pickerEl.classList.add("is-open");
+    pickerEl.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    renderPickerStep();
+    setTimeout(() => pickerSearch.focus(), 200);
+}
+
+function closeSubjectPicker() {
+    pickerEl.classList.remove("is-open");
+    pickerEl.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+function pickerGoBack() {
+    if (pickerStep === "topic") { pickerStep = "set"; pickerSet = null; }
+    else if (pickerStep === "set") { pickerStep = "subject"; pickerSubject = null; pickerSubjectName = null; }
+    renderPickerStep();
+}
+
+function pickerJumpTo(step) {
+    if (step === "subject") { pickerStep = "subject"; pickerSubject = null; pickerSubjectName = null; pickerSet = null; }
+    if (step === "set") { pickerStep = "set"; pickerSet = null; }
+    renderPickerStep();
+}
+
+function renderPickerStep() {
+    pickerSearch.value = "";
+    pickerBackBtn.classList.toggle("is-visible", pickerStep !== "subject");
+
+    // Breadcrumb
+    const crumbs = [];
+    if (pickerStep === "subject") {
+        crumbs.push(`<span class="crumb is-current">Choose a subject</span>`);
+    } else if (pickerStep === "set") {
+        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">${pickerSubjectName}</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">Choose a course</span>`);
+    } else if (pickerStep === "topic") {
+        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">${pickerSubjectName}</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb" onclick="pickerJumpTo('set')">${pickerSet}</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">Choose a topic</span>`);
+    }
+    pickerCrumbs.innerHTML = crumbs.join("");
+
+    // Tiles
+    if (pickerStep === "subject") {
+        pickerSearch.placeholder = "Search subjects…";
+        const subjects = Object.keys(courseStructure);
+        pickerGrid.innerHTML = subjects.map(id => `
+            <button class="subject-tile" data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="pickerChooseSubject('${id}')">
+                <span class="subject-tile-icon">${SUBJECT_ICONS[id] || "📘"}</span>
+                <span class="subject-tile-name">${SUBJECT_NAMES[id]}</span>
+            </button>`).join("");
+    } else if (pickerStep === "set") {
+        pickerSearch.placeholder = "Search courses…";
+        const courses = Object.keys(courseStructure[pickerSubject] || {});
+        pickerGrid.innerHTML = courses.map(course => `
+            <button class="subject-tile" data-name="${course.toLowerCase()}" onclick="pickerChooseSet('${escapeHtml(course)}')">
+                <span class="subject-tile-icon">📘</span>
+                <span class="subject-tile-name">${escapeHtml(course)}</span>
+            </button>`).join("");
+    } else if (pickerStep === "topic") {
+        pickerSearch.placeholder = "Search topics…";
+        const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
+        pickerGrid.innerHTML = topics.map(topic => `
+            <button class="subject-tile" data-name="${topic.toLowerCase()}" onclick="pickerChooseTopic('${escapeHtml(topic)}')">
+                <span class="subject-tile-icon">📖</span>
+                <span class="subject-tile-name">${escapeHtml(topic)}</span>
+            </button>`).join("");
+    }
+}
+
+function pickerChooseSubject(subjectId) {
+    pickerSubject = subjectId;
+    pickerSubjectName = SUBJECT_NAMES[subjectId];
+    pickerStep = "set";
+    renderPickerStep();
+}
+
+function pickerChooseSet(courseName) {
+    pickerSet = courseName;
+    pickerStep = "topic";
+    renderPickerStep();
+}
+
+function pickerChooseTopic(topicName) {
+    const subjectId = pickerSubject;
+    const setId = pickerSet;
+    closeSubjectPicker();
+    
+    // Set current subject
+    currentSubject = subjectId;
+    questionsData = allSubjectData[subjectId] || [];
+    window.currentSubjectYears = allSubjectYears[subjectId] || [];
+    
+    // Show question bank
+    showScreen("app-content");
+    displayQuestions(topicName);
+}
+
+function filterPickerTiles(query) {
+    const q = query.trim().toLowerCase();
+    document.querySelectorAll(".subject-tile").forEach(tile => {
+        tile.classList.toggle("is-hidden", q && !tile.dataset.name.includes(q));
+    });
+}
+
+// Set up picker events
+pickerSearch?.addEventListener("input", (e) => filterPickerTiles(e.target.value));
+pickerBackdrop?.addEventListener("click", closeSubjectPicker);
+pickerClose?.addEventListener("click", closeSubjectPicker);
+pickerBackBtn?.addEventListener("click", pickerGoBack);
+document.addEventListener("keydown", (e) => {
+    if (!pickerEl?.classList.contains("is-open")) return;
+    if (e.key === "Escape") closeSubjectPicker();
+});
 // ----- SUBMIT & DEBRIEF -----
 function submitQuiz(timeUp = false) {
     clearInterval(quizState.timerInterval);

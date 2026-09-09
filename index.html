@@ -58,6 +58,54 @@
 </script>
 </head>
 <body>
+    <!-- Persistent Sidebar -->
+<button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open menu">☰</button>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<aside class="app-sidebar" id="app-sidebar" style="display:none;">
+  <div class="sidebar-brand">
+    <div class="sidebar-logo">📚 JUPEB</div>
+    <p class="sidebar-tagline">Study smarter. Score higher.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <button class="sidebar-link is-active" data-screen="dashboard-screen" onclick="goToDashboard()">
+        <span class="sidebar-icon">🏠</span> Home
+    </button>
+    <button class="sidebar-link" data-screen="app-content" onclick="openSubjectPicker()">
+    <span class="sidebar-icon">📚</span> Subjects
+</button>
+    <button class="sidebar-link" data-screen="app-content" onclick="goToQuizMode()">
+        <span class="sidebar-icon">📝</span> Quiz Mode
+    </button>
+    <button class="sidebar-link" data-screen="app-content" onclick="goToPastPapers()">
+        <span class="sidebar-icon">📄</span> Past Papers
+    </button>
+    <button class="sidebar-link" data-screen="app-content" onclick="goToWeakAreas()">
+        <span class="sidebar-icon">⚠️</span> Weak Areas
+    </button>
+</nav>
+<nav class="sidebar-nav sidebar-nav--secondary">
+    <button class="sidebar-link" onclick="toggleTheme()">
+        <span class="sidebar-icon" id="sidebar-theme-icon">🌙</span> <span id="sidebar-theme-text">Dark Mode</span>
+    </button>
+  <nav class="sidebar-nav sidebar-nav--secondary">
+    <button class="sidebar-link" data-screen="settings-screen" onclick="goToSettings()">
+      <span class="sidebar-icon">⚙️</span> Settings
+    </button>
+    <button class="sidebar-link" data-screen="help-screen" onclick="goToHelp()">
+      <span class="sidebar-icon">❓</span> Help & Support
+    </button>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="sidebar-avatar" id="sidebar-avatar">ST</div>
+    <div class="sidebar-user-info">
+      <p class="sidebar-user-name" id="sidebar-user-name">Student</p>
+      <p class="sidebar-user-plan" id="sidebar-user-plan">⭐ Premium Plan</p>
+    </div>
+  </div>
+</aside>
 <!-- Login Screen -->
 <div id="login-screen" style="display:block;">
     <div style="max-width:550px;margin:40px auto;padding:24px;position:relative;background:var(--bg-secondary);border-radius:16px;box-shadow:var(--card-shadow);">
@@ -148,280 +196,140 @@
     </div>
 </div>
 
-<!-- Dashboard Screen (Shown after sign-in) -->
+
+        <!-- Drop-in replacement for the existing #dashboard-screen block.
+     Assumes goToBrowseQuestions(), goToQuizMode(), goToPastPapers(), startQuickPractice()
+     already exist in script.js (unchanged). Link dashboard.css and dashboard.js. -->
 <div id="dashboard-screen" style="display:none;">
-    <div class="dashboard-container">
-        
-        <!-- Dashboard Header -->
-        <div class="dashboard-header">
-            <div class="dash-greeting">
-                <h2 id="dash-greeting-text">👋 Good morning</h2>
-                <p id="dash-user-name">Student</p>
-            </div>
-            <div class="dash-header-actions">
-                <span class="dash-date" id="dash-date"></span>
-            </div>
-        </div>
+  <div class="dash-shell">
 
-        <!-- Top Row: Continue Last Session + Study Streak -->
-        <div class="dashboard-row">
-            <!-- Continue Last Session -->
-            <div class="dash-card dash-continue-card" id="dash-continue-card">
-                <h3>📖 Continue Last Session</h3>
-                <p id="dash-continue-text">You haven't started studying yet.</p>
-                <button class="dash-btn-primary" onclick="goToBrowseQuestions()">Browse Questions</button>
-            </div>
-
-            <!-- Study Streak -->
-            <div class="dash-card dash-streak-card" id="dash-streak-card">
-                <h3>🔥 Study Streak</h3>
-                <p id="dash-streak-text">0 days</p>
-                <div class="streak-dots" id="streak-dots">
-                    <span class="streak-dot">M</span>
-                    <span class="streak-dot">T</span>
-                    <span class="streak-dot">W</span>
-                    <span class="streak-dot">T</span>
-                    <span class="streak-dot">F</span>
-                    <span class="streak-dot">S</span>
-                    <span class="streak-dot">S</span>
-                </div>
-                <p id="dash-streak-subtext" class="dash-subtext">Start studying today to build your streak</p>
-            </div>
-        </div>
-
-        <!-- Middle Row: Subject Progress + Quick Practice -->
-        <div class="dashboard-row">
-            <!-- Subject Progress -->
-            <div class="dash-card dash-progress-card">
-                <h3>📊 Subject Progress</h3>
-                <div id="dash-subject-progress">
-                    <p class="dash-subtext">No progress yet — start answering questions.</p>
-                </div>
-            </div>
-
-            <!-- Quick Practice -->
-            <div class="dash-card dash-quick-practice-card">
-                <h3>⚡ Quick Practice</h3>
-                <p>Answer random questions from any topic</p>
-                <p class="dash-subtext">10 Questions • All Topics</p>
-                <button class="dash-btn-primary" onclick="startQuickPractice()">Start Quiz</button>
-            </div>
-        </div>
-
-        <!-- Bottom Row: Weak Topics + Recent Activity -->
-        <div class="dashboard-row">
-            <!-- Weak Topics -->
-            <div class="dash-card dash-weak-topics-card">
-                <h3>⚠️ Weak Topics</h3>
-                <div id="dash-weak-topics">
-                    <p class="dash-subtext">Answer 10+ questions to unlock weak area tracking.</p>
-                </div>
-            </div>
-
-            <!-- Recent Activity -->
-            <div class="dash-card dash-recent-card">
-                <h3>🕐 Recent Activity</h3>
-                <div id="dash-recent-activity">
-                    <p class="dash-subtext">No activity yet — your study sessions will show here.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Navigation -->
-        <div class="dashboard-nav">
-            <button class="dash-nav-btn" onclick="goToBrowseQuestions()">
-                <span class="dash-nav-icon">📚</span>
-                <span>Browse Questions</span>
-            </button>
-            <button class="dash-nav-btn" onclick="goToQuizMode()">
-                <span class="dash-nav-icon">📝</span>
-                <span>Quiz Mode</span>
-            </button>
-            <button class="dash-nav-btn" onclick="goToPastPapers()">
-                <span class="dash-nav-icon">📄</span>
-                <span>Past Papers</span>
-            </button>
-        </div>
+    <!-- Header -->
+    <div class="dashboard-header">
+      
+      <div class="dash-greeting">
+        <h2 id="dash-greeting-text">Good morning</h2>
+        <p id="dash-user-name">Ready to make today a productive study session?</p>
+      </div>
+      <div class="dash-header-actions">
+        <span class="dash-date" id="dash-date"></span>
+      </div>
     </div>
-</div>
 
+    <!-- Top row: continue session + streak -->
+    <div class="dashboard-row dashboard-row--top">
+      <div class="dash-card dash-continue-card" id="dash-continue-card">
+        <p class="dash-eyebrow">Continue your last session</p>
+        <h3 id="dash-continue-topic">Pick a subject to begin</h3>
+        <p id="dash-continue-text" class="dash-subtext">You haven't started studying yet.</p>
+        <div class="dash-progress-track">
+          <div class="dash-progress-fill" id="dash-continue-fill" style="width:0%"></div>
+        </div>
+        <button class="dash-btn-primary" onclick="openSubjectPicker()">
+          Continue Practicing <span aria-hidden="true">›</span>
+        </button>
+      </div>
+
+      <div class="dash-card dash-streak-card" id="dash-streak-card">
+        <h3>🔥 Study Streak</h3>
+        <p id="dash-streak-text" class="dash-streak-number">0 <span>days</span></p>
+        <p id="dash-streak-subtext" class="dash-subtext">Start studying today to build your streak</p>
+        <div class="streak-dots" id="streak-dots">
+          <span class="streak-dot">M</span><span class="streak-dot">T</span><span class="streak-dot">W</span>
+          <span class="streak-dot">T</span><span class="streak-dot">F</span><span class="streak-dot">S</span>
+          <span class="streak-dot">S</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subjects -->
+    <div class="dash-card dash-subjects-card">
+      <div class="dash-card-heading">
+        <h3>Your Subjects</h3>
+        <button class="dash-link-btn" onclick="openSubjectPicker()">View all</button>
+      </div>
+      <div id="dash-subject-progress" class="dash-subject-grid">
+        <p class="dash-subtext">No progress yet — start answering questions.</p>
+      </div>
+    </div>
+
+    <!-- Quick practice -->
+    <div class="dash-card dash-quick-practice-card">
+      <h3>⚡ Quick Practice</h3>
+      <p class="dash-subtext">Answer random questions from any topic</p>
+      <p class="dash-subtext dash-subtext--muted">10 Questions · All Topics</p>
+      <button class="dash-btn-primary" onclick="startQuickPractice()">Start Quiz</button>
+    </div>
+
+    <!-- Weak topics + recent activity -->
+    <div class="dashboard-row dashboard-row--bottom">
+      <div class="dash-card dash-weak-topics-card">
+        <div class="dash-card-heading">
+          <h3>⚠️ Weak Topics</h3>
+          <button class="dash-link-btn" onclick="goToQuizMode()">View all</button>
+        </div>
+        <div id="dash-weak-topics">
+          <p class="dash-subtext">Answer 10+ questions to unlock weak area tracking.</p>
+        </div>
+      </div>
+
+      <div class="dash-card dash-recent-card">
+        <div class="dash-card-heading">
+          <h3>🕐 Recent Activity</h3>
+        </div>
+        <div id="dash-recent-activity">
+          <p class="dash-subtext">No activity yet — your study sessions will show here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- App Content (Hidden until authorized) -->
     <div id="app-content" style="display:none;">
-    <!-- Sticky Navbar (DeepSeek Style) -->
-<nav class="sticky-navbar" id="sticky-navbar">
-    <div class="navbar-container">
-        <div class="navbar-left">
-            <!-- Hamburger for mobile (also visible on desktop for consistency) -->
-            <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <a href="#" class="navbar-logo">📚 JUPEB QBank</a>
-        </div>
-        <div class="navbar-actions">
-            <button class="navbar-theme-toggle" id="navbar-theme-toggle" aria-label="Toggle theme">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-            </button>
-        </div>
+    <div class="main-container">
+        <main id="questions-area">
+            <div class="welcome-message" id="welcome-message">
+                <h2>📚 Welcome to JUPEB Question Bank</h2>
+                <p>Click "Subjects" in the sidebar to get started.</p>
+            </div>
+            <div id="questions-container"></div>
+        </main>
     </div>
-</nav>
-
-<header>
-    <div class="header-container">
-        <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="header-text">
-            <h1>JUPEB Question Bank</h1>
-            <p>Select a subject, then choose a topic to view questions</p>
-        </div>
-        <!-- ADD THEME TOGGLE TO HEADER -->
-         <div class="desktop-only" style="display:flex;align-items:center;gap:8px;">
-    <button class="header-theme-toggle" id="header-theme-toggle" aria-label="Toggle theme">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-    </button>
-</div>
-    </div>
-</header>
-
-<!-- Subject Tabs -->
-<div class="subject-tabs">
-    <div class="subjects-dropdown">
-        <button class="tab-btn active" id="subjects-dropdown-btn" onclick="toggleSubjectsDropdown()">
-            📚 SUBJECTS <span class="dropdown-arrow">▼</span>
-        </button>
-        <div class="subjects-dropdown-menu" id="subjects-dropdown-menu">
-            <button class="subject-dropdown-item active" data-subject="chemistry">🧪 Chemistry</button>
-            <button class="subject-dropdown-item" data-subject="physics">⚛️ Physics</button>
-            <button class="subject-dropdown-item" data-subject="maths">📐 Mathematics</button>
-            <button class="subject-dropdown-item" data-subject="biology">🧬 Biology</button>
-            <button class="subject-dropdown-item" data-subject="crs">🕊️ CRS</button>
-            <button class="subject-dropdown-item" data-subject="irs">☪️ IRS</button>
-            <button class="subject-dropdown-item" data-subject="literature">📖 Literature</button>
-            <button class="subject-dropdown-item" data-subject="economics">💰 Economics</button>
-            <button class="subject-dropdown-item" data-subject="government">🏛️ Government</button>
-        </div>
-    </div>
-    <button class="tab-btn quiz-mode-tab" id="quiz-mode-tab" data-subject="quiz">📝 QUIZ MODE</button>
-    <button class="tab-btn past-questions-tab" id="past-questions-tab" data-subject="past">📄 PAST QUESTIONS</button>
 </div>
 
-<!-- Main Container -->
-<div class="main-container">
-    
-   <!-- Categories Sidebar -->
-<aside id="categories-sidebar">
-    <div class="sidebar-header">
-        <h3 id="sidebar-title">📚 Chemistry</h3>
-        <button class="sidebar-collapse-btn" id="sidebar-collapse-btn" aria-label="Collapse sidebar">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-        </button>
-        <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Close sidebar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-    </div>
-    <div id="categories-list">
-        <p class="loading">Loading...</p>
-    </div>
-    <button class="sign-out-btn" onclick="signOutUser()" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:var(--topic-btn-bg);border:1px solid var(--border-color);border-radius:8px;cursor:pointer;color:#dc3545;font-size:0.85rem;margin-bottom:8px;">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-    Sign Out
-</button>
-    
-       <!-- Sidebar Footer (Mobile Only) -->
-    <div class="sidebar-footer">
-        <button onclick="signOutUser()" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:var(--topic-btn-bg);border:1px solid var(--border-color);border-radius:8px;cursor:pointer;color:#dc3545;font-size:0.85rem;margin-bottom:8px;">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-    Sign Out
-</button>
-        <button class="sidebar-theme-toggle" id="sidebar-theme-toggle" aria-label="Toggle theme">
-            <svg class="sidebar-sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg class="sidebar-moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-            <span>Toggle Theme</span>
-        </button>
-        <div class="sidebar-footer-links">
-            <span class="sidebar-version">v2.0</span>
-            <span class="sidebar-footer-dot">•</span>
-            <a href="https://wa.me/2349035801863" target="_blank" rel="noopener noreferrer" class="sidebar-footer-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Chat
-            </a>
-        </div>
-    </div>
-</aside>
-    
-    <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
-    <!-- Questions Area -->
-    <main id="questions-area">
-        <div class="welcome-message" id="welcome-message">
-            <h2>📚 Welcome to JUPEB Question Bank</h2>
-            <p>Select a subject from the top, then click on any topic to view questions.</p>
-            <p>📅 Questions from 2015 - 2025 examinations</p>
-            <p>🔍 Over 500+ past questions organized by topic</p>
-        </div>
-        <div id="questions-container"></div>
-    </main>
+<!-- Stub Screens -->
+<div class="app-screen" id="progress-screen" style="display:none;padding:40px;">
+  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
+  <h2 style="color:var(--text-primary);">📈 Progress</h2>
+  <p style="color:var(--text-secondary);">Your detailed progress will appear here.</p>
 </div>
-<!-- Theme Toggle Button - Subtle -->
-<button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light mode">
-    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5"></circle>
-        <line x1="12" y1="1" x2="12" y2="3"></line>
-        <line x1="12" y1="21" x2="12" y2="23"></line>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-        <line x1="1" y1="12" x2="3" y2="12"></line>
-        <line x1="21" y1="12" x2="23" y2="12"></line>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-</button>
 
+<div class="app-screen" id="settings-screen" style="display:none;padding:40px;">
+  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
+  <h2 style="color:var(--text-primary);">⚙️ Settings</h2>
+  <p style="color:var(--text-secondary);">Settings options will appear here.</p>
+</div>
 
+<div class="app-screen" id="help-screen" style="display:none;padding:40px;">
+  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
+  <h2 style="color:var(--text-primary);">❓ Help & Support</h2>
+  <p style="color:var(--text-secondary);">Help resources will appear here.</p>
+</div>
+<!-- Subject Picker Overlay -->
+<div class="subject-picker" id="subject-picker" aria-hidden="true">
+  <div class="subject-picker-backdrop" id="subject-picker-backdrop"></div>
+  <div class="subject-picker-panel" role="dialog" aria-modal="true" aria-label="Choose a subject">
+    <button class="subject-picker-close" id="subject-picker-close" aria-label="Close">×</button>
+    <div class="subject-picker-topbar">
+      <button class="subject-picker-back" id="subject-picker-back" aria-label="Go back">
+        <span aria-hidden="true">←</span> Back
+      </button>
+      <nav class="subject-picker-crumbs" id="subject-picker-crumbs" aria-label="Breadcrumb"></nav>
+    </div>
+    <input type="text" class="subject-picker-search" id="subject-picker-search" placeholder="Search…" autocomplete="off" />
+    <div class="subject-picker-grid" id="subject-picker-grid"></div>
+  </div>
+</div>
 <!-- Back to Top Button -->
 <button id="back-to-top" style="display:none;">↑ Back to Top</button>
 
