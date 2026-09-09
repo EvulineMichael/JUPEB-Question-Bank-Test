@@ -1,23 +1,37 @@
 // Bypass auth on localhost
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
   document.getElementById('login-screen').style.display = 'none';
-document.getElementById('dashboard-screen').style.display = 'block';
-document.getElementById('app-content').style.display = 'none';
-if (typeof showDashboard === 'function') {
+  document.getElementById('dashboard-screen').style.display = 'block';
+  document.getElementById('app-content').style.display = 'none';
+  document.getElementById('app-sidebar').style.display = 'flex';
+  document.getElementById('sidebar-toggle').style.display = 'block';
+  document.getElementById('sidebar-overlay').style.display = 'none';
+  
+  if (typeof showDashboard === 'function') {
     showDashboard();
-}
+  }
+  
   window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+  
   if (typeof initJUPEBApp === 'function') {
     initJUPEBApp();
   }
 }
+
 // Guest access check
 if (sessionStorage.getItem('jupeb_guest') === 'true') {
     document.getElementById('login-screen').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
+    document.getElementById('dashboard-screen').style.display = 'block';
+    document.getElementById('app-content').style.display = 'none';
+    document.getElementById('app-sidebar').style.display = 'flex';
+    document.getElementById('sidebar-toggle').style.display = 'block';
+    
     window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+    
+    if (typeof showDashboard === 'function') showDashboard();
     if (typeof initJUPEBApp === 'function') initJUPEBApp();
 }
+
 function toggleAccessInfo() {
   const info = document.getElementById('access-info');
   if (info.style.display === 'none') {
@@ -26,6 +40,7 @@ function toggleAccessInfo() {
     info.style.display = 'none';
   }
 }
+
 // ===== LOGIN TABS =====
 function showLoginTab(tab) {
     const aboutContent = document.getElementById('login-tab-about-content');
@@ -49,6 +64,7 @@ function showLoginTab(tab) {
         aboutBtn.style.color = 'var(--text-secondary)';
     }
 }
+
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
   if (user) {
@@ -76,39 +92,48 @@ auth.onAuthStateChanged(async (user) => {
       }
       
       // Save user name
-if (user.displayName) {
-    localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
-}
+      if (user.displayName) {
+          localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
+      }
 
-// Show dashboard, hide others
-showScreen("dashboard-screen", { pushHistory: false });
+      // Show dashboard
+      showScreen("dashboard-screen", { pushHistory: false });
 
-// Show sidebar
-document.getElementById('app-sidebar').style.display = 'flex';
+      // Show sidebar
+      document.getElementById('app-sidebar').style.display = 'flex';
+      document.getElementById('sidebar-toggle').style.display = 'block';
 
-// Populate user
-if (user.displayName) {
-    renderSidebarUser({ name: user.displayName.split(' ')[0], isPremium: true });
-}
-// Show dashboard
-if (typeof showDashboard === 'function') {
-    showDashboard();
-}
+      // Populate user in sidebar
+      if (user.displayName) {
+          renderSidebarUser({ name: user.displayName.split(' ')[0], isPremium: true });
+      }
+      
+      // Show dashboard content
+      if (typeof showDashboard === 'function') {
+          showDashboard();
+      }
+      
       window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
       
       if (typeof initJUPEBApp === 'function') {
         initJUPEBApp();
       }
+      
     } else {
+      // Not authorized
       document.getElementById('auth-status').innerHTML = 
-  `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-    <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
-    <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
-  </div>`;
+        `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
+          <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
+          <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
+        </div>`;
       auth.signOut();
     }
-    } else {
+  } else {
+    // Signed out — show login, hide everything else
     showScreen("login-screen", { pushHistory: false });
+    document.getElementById('app-sidebar').style.display = 'none';
+    document.getElementById('sidebar-toggle').style.display = 'none';
+    document.getElementById('sidebar-overlay').style.display = 'none';
   }
 });
 
@@ -116,14 +141,29 @@ if (typeof showDashboard === 'function') {
 // Google Sign In
 function signInWithGoogle() {
   const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider).catch((error) => {
-    alert('Login failed: ' + error.message);
-  });
+  
+  if (/iPhone|iPad|Android/i.test(navigator.userAgent)) {
+    auth.signInWithRedirect(provider).catch((error) => {
+      alert('Login failed: ' + error.message);
+    });
+  } else {
+    auth.signInWithPopup(provider).catch((error) => {
+      alert('Login failed: ' + error.message);
+    });
+  }
 }
+
+// Handle redirect result
+auth.getRedirectResult().then((result) => {
+  if (result.user) {
+    console.log('Redirect sign-in successful:', result.user.email);
+  }
+}).catch((error) => {
+  console.error('Redirect sign-in error:', error);
+});
 
 // ===== INITIALIZE LOGIN TABS =====
 document.addEventListener('DOMContentLoaded', function() {
-    // Ensure Sign In is default
     showLoginTab('signin');
 });
 
@@ -131,4 +171,3 @@ document.addEventListener('DOMContentLoaded', function() {
 function signOutUser() {
   auth.signOut();
 }
-
