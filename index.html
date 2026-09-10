@@ -72,23 +72,17 @@
     <button class="sidebar-link is-active" data-screen="dashboard-screen" onclick="goToDashboard()">
         <span class="sidebar-icon">🏠</span> Home
     </button>
-    <button class="sidebar-link" data-screen="app-content" onclick="openSubjectPicker()">
+   <button class="sidebar-link" data-screen="subjects-screen" onclick="openSubjectPicker()">
     <span class="sidebar-icon">📚</span> Subjects
 </button>
-    <button class="sidebar-link" data-screen="app-content" onclick="goToQuizMode()">
-        <span class="sidebar-icon">📝</span> Quiz Mode
-    </button>
-    <button class="sidebar-link" data-screen="app-content" onclick="goToPastPapers()">
-        <span class="sidebar-icon">📄</span> Past Papers
-    </button>
-    <button class="sidebar-link" data-screen="app-content" onclick="goToWeakAreas()">
-        <span class="sidebar-icon">⚠️</span> Weak Areas
-    </button>
+<button class="sidebar-link" data-screen="quiz-screen" onclick="goToQuizMode()">
+    <span class="sidebar-icon">📝</span> Quiz Mode
+</button>
+<button class="sidebar-link" data-screen="past-papers-screen" onclick="goToPastPapers()">
+    <span class="sidebar-icon">📄</span> Past Papers
+</button>
 </nav>
-<nav class="sidebar-nav sidebar-nav--secondary">
-    <button class="sidebar-link" onclick="toggleTheme()">
-        <span class="sidebar-icon" id="sidebar-theme-icon">🌙</span> <span id="sidebar-theme-text">Dark Mode</span>
-    </button>
+
   <nav class="sidebar-nav sidebar-nav--secondary">
     <button class="sidebar-link" data-screen="settings-screen" onclick="goToSettings()">
       <span class="sidebar-icon">⚙️</span> Settings
@@ -296,7 +290,119 @@
     </div>
 </div>
 
+<!-- Settings screen. Replace "settings-screen" placeholder with this. -->
+<div class="app-screen" id="settings-screen" style="display:none;">
+  <div class="dash-shell">
+    <div class="dashboard-header">
+      <button class="dash-back-btn" onclick="goToDashboard()" aria-label="Back to dashboard">
+        <span aria-hidden="true">←</span> Back to Dashboard
+      </button>
+      <div class="dash-greeting">
+        <h2>Settings</h2>
+        <p>Manage your account and preferences.</p>
+      </div>
+    </div>
 
+    <!-- Study preferences -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Study Preferences</h3></div>
+
+      <label class="settings-label" for="settings-default-length">Default quiz length</label>
+      <select id="settings-default-length" class="settings-select">
+        <option value="10">10 Questions</option>
+        <option value="20">20 Questions</option>
+        <option value="50">50 Questions</option>
+      </select>
+
+      <label class="settings-label" for="settings-default-timer">Default timer</label>
+      <select id="settings-default-timer" class="settings-select">
+        <option value="0">No Timer</option>
+        <option value="1800">30 min</option>
+        <option value="3600">60 min</option>
+        <option value="5400">90 min</option>
+      </select>
+    </div>
+
+    <!-- Appearance -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Appearance</h3></div>
+      <div class="settings-row">
+        <div>
+          <p class="settings-row-title">Dark Mode</p>
+          <p class="dash-subtext">Switch between light and dark theme</p>
+        </div>
+        <label class="settings-switch">
+          <input type="checkbox" id="settings-theme-toggle" />
+          <span class="settings-switch-track"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Account -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Account</h3></div>
+
+      <div class="settings-account-row">
+        <div class="settings-avatar" id="settings-avatar">ST</div>
+        <div class="settings-account-info">
+          <p class="settings-account-email" id="settings-email">student@example.com</p>
+        </div>
+      </div>
+
+      <label class="settings-label" for="settings-name-input">What should we call you?</label>
+      <div class="settings-name-row">
+        <input type="text" id="settings-name-input" class="settings-input" placeholder="Your preferred name" />
+        <button class="dash-btn-primary" id="settings-name-save">Save</button>
+      </div>
+      <p class="dash-subtext" id="settings-name-status"></p>
+
+      <button class="settings-danger-btn" id="settings-signout-btn">Sign Out</button>
+    </div>
+
+  </div>
+</div>
+<!-- Help & Support screen. Replace "help-screen" placeholder with this. -->
+<div class="app-screen" id="help-screen" style="display:none;">
+  <div class="dash-shell">
+    <div class="dashboard-header">
+      <button class="dash-back-btn" onclick="goToDashboard()" aria-label="Back to dashboard">
+        <span aria-hidden="true">←</span> Back to Dashboard
+      </button>
+      <div class="dash-greeting">
+        <h2>Help &amp; Support</h2>
+        <p>Answers, contact, and reporting a problem.</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Frequently Asked Questions</h3></div>
+      <div class="help-faq-list" id="help-faq-list">
+        <!-- items injected by help.js from FAQ_ITEMS; shows an empty state until FAQ_ITEMS has content -->
+      </div>
+    </div>
+
+    <!-- Contact + report bug -->
+    <div class="dashboard-row dashboard-row--bottom">
+      <div class="dash-card">
+        <div class="dash-card-heading"><h3>💬 Contact Support</h3></div>
+        <p class="dash-subtext">Questions, payment issues, or anything else — reach us directly.</p>
+        <button class="dash-btn-primary help-contact-btn" id="help-whatsapp-btn">
+          Chat on WhatsApp
+        </button>
+      </div>
+
+      <div class="dash-card">
+        <div class="dash-card-heading"><h3>🐞 Report a Problem</h3></div>
+        <p class="dash-subtext">Wrong answer, broken question, or a bug in the app.</p>
+        <button class="dash-btn-primary help-contact-btn" id="help-report-btn">
+          Report an Issue
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
 <!-- Stub Screens -->
 <div class="app-screen" id="progress-screen" style="display:none;padding:40px;">
   <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>

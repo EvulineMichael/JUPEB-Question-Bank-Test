@@ -67,7 +67,18 @@ if (currentTheme === 'dark') {
     if (loginMoon) loginMoon.style.display = 'none';
 }
 }
+let activeSidebarScreen = "dashboard-screen";
 
+function setActiveSidebarLink(screenId) {
+    document.querySelectorAll(".sidebar-link").forEach(link => {
+        link.classList.toggle("is-active", link.dataset.screen === screenId);
+    });
+}
+
+document.addEventListener("screenchange", (e) => {
+    setActiveSidebarLink(e.detail.screenId);
+    closeSidebar();
+});
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     if (currentTheme === 'dark') {
@@ -1233,7 +1244,6 @@ function showQuizLobby() {
 
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
-    showScreen("app-content");
     
     const subjects = Object.keys(courseStructure);
     const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
@@ -2166,12 +2176,12 @@ function goToBrowseQuestions() {
 }
 
 function goToQuizMode() {
-    showScreen("app-content");
+    showScreen("app-content", { customScreenId: "quiz-screen" });
     showQuizLobby();
 }
 
 function goToPastPapers() {
-    showScreen("app-content");
+    showScreen("app-content", { customScreenId: "past-papers-screen" });
     showPastQuestionsSidebar();
 }
 
@@ -2420,29 +2430,20 @@ const SCREEN_ROUTES = {
     "help-screen": "help"
 };
 
-function showScreen(screenId, { pushHistory = true } = {}) {
+function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}) {
+    if (welcomeMessage) welcomeMessage.style.display = 'none';   // add this
+
     Object.keys(SCREEN_ROUTES).forEach(id => {
         const el = document.getElementById(id);
         if (el) el.style.display = (id === screenId) ? "block" : "none";
     });
-
-    // Show/hide sidebar
-    const sidebar = document.getElementById('app-sidebar');
-    if (sidebar) {
-        if (screenId === 'login-screen') {
-            sidebar.style.display = 'none';
-        } else {
-            sidebar.style.display = 'flex';
-        }
-    }
-
+    // ... sidebar show/hide logic ...
     if (pushHistory) {
         const hash = "#" + SCREEN_ROUTES[screenId];
         if (location.hash !== hash) history.pushState({ screenId }, "", hash);
     }
-
-    // Notify sidebar to highlight active link
-    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId } }));
+    const dispatchId = customScreenId || screenId;
+    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: dispatchId } }));
 }
 
 // Browser back/forward
@@ -2464,7 +2465,10 @@ window.addEventListener("DOMContentLoaded", () => {
 // Stub navigation
 function goToProgress() { showScreen("progress-screen"); }
 function goToSettings() { showScreen("settings-screen"); }
-function goToHelp() { showScreen("help-screen"); }
+function goToHelp() {
+  showScreen("help-screen");
+  renderHelp();
+}
 
 // Sidebar behaviour
 const sidebarToggle = document.getElementById("sidebar-toggle");
@@ -2492,11 +2496,27 @@ document.addEventListener("screenchange", (e) => {
 });
 
 // Populate sidebar user
-function renderSidebarUser({ name = "Student", isPremium = true } = {}) {
-    document.getElementById("sidebar-user-name").textContent = name;
-    document.getElementById("sidebar-user-plan").textContent = isPremium ? "⭐ Premium Plan" : "Free Plan";
-    document.getElementById("sidebar-avatar").textContent = name
-        .split(" ").map(w => w[0]).slice(0, 2).join("").toUpperCase();
+function renderSidebarUser({ name = "Student", isPremium = true, photoURL = null } = {}) {
+    const nameEl = document.getElementById("sidebar-user-name");
+    const planEl = document.getElementById("sidebar-user-plan");
+    const avatarEl = document.getElementById("sidebar-avatar");
+    
+    if (nameEl) nameEl.textContent = name;
+    if (planEl) planEl.textContent = isPremium ? "⭐ Premium Plan" : "Free Plan";
+    
+    if (avatarEl) {
+        if (photoURL) {
+            avatarEl.innerHTML = `<img src="${photoURL}" alt="${name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
+        } else {
+            const initials = name
+                .split(" ")
+                .map(w => w[0])
+                .slice(0, 2)
+                .join("")
+                .toUpperCase();
+            avatarEl.textContent = initials;
+        }
+    }
 }
 function goToWeakAreas() {
     showScreen("app-content");
@@ -2507,88 +2527,7 @@ function goToWeakAreas() {
         if (weakCard) weakCard.click();
     }, 200);
 }
-// ===== SUBJECT PICKER =====
-const SUBJECTS = [
-    { id: "chemistry",   name: "Chemistry",   icon: "🧪" },
-    { id: "physics",     name: "Physics",     icon: "⚛️" },
-    { id: "maths",       name: "Mathematics", icon: "📐" },
-    { id: "biology",     name: "Biology",     icon: "🧬" },
-    { id: "crs",         name: "CRS",         icon: "✝️" },
-    { id: "irs",         name: "IRS",         icon: "☪️" },
-    { id: "literature",  name: "Literature",  icon: "📖" },
-    { id: "economics",   name: "Economics",   icon: "💰" },
-    { id: "government",  name: "Government",  icon: "🏛️" }
-];
 
-function renderSubjectTiles() {
-    const grid = document.getElementById("subject-picker-grid");
-    if (!grid) return;
-    grid.innerHTML = SUBJECTS.map(s => `
-        <button class="subject-tile" data-name="${s.name.toLowerCase()}" onclick="selectSubject('${s.id}')">
-            <span class="subject-tile-icon">${s.icon}</span>
-            <span class="subject-tile-name">${s.name}</span>
-        </button>`).join("");
-}
-
-function openSubjectPicker() {
-    const picker = document.getElementById("subject-picker");
-    const search = document.getElementById("subject-picker-search");
-    picker.classList.add("is-open");
-    picker.setAttribute("aria-hidden", "false");
-    search.value = "";
-    filterSubjectTiles("");
-    document.body.style.overflow = "hidden";
-    setTimeout(() => search.focus(), 200);
-}
-
-function closeSubjectPicker() {
-    const picker = document.getElementById("subject-picker");
-    picker.classList.remove("is-open");
-    picker.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-}
-
-function filterSubjectTiles(query) {
-    const q = query.trim().toLowerCase();
-    document.querySelectorAll(".subject-tile").forEach(tile => {
-        tile.classList.toggle("is-hidden", q && !tile.dataset.name.includes(q));
-    });
-}
-
-function selectSubject(subjectId) {
-    closeSubjectPicker();
-    
-    // Set current subject
-    currentSubject = subjectId;
-    questionsData = allSubjectData[subjectId] || [];
-    window.currentSubjectYears = allSubjectYears[subjectId] || [];
-    
-    // Show question bank
-    showScreen("app-content");
-    renderCategories();
-    showWelcomeMessage();
-    
-    // Auto-open sidebar on mobile
-    autoOpenSidebarOnMobile();
-}
-
-// Set up subject picker events
-document.addEventListener("DOMContentLoaded", () => {
-    renderSubjectTiles();
-    
-    const pickerSearch = document.getElementById("subject-picker-search");
-    const pickerBackdrop = document.getElementById("subject-picker-backdrop");
-    const pickerClose = document.getElementById("subject-picker-close");
-    
-    pickerSearch?.addEventListener("input", (e) => filterSubjectTiles(e.target.value));
-    pickerBackdrop?.addEventListener("click", closeSubjectPicker);
-    pickerClose?.addEventListener("click", closeSubjectPicker);
-    
-    document.addEventListener("keydown", (e) => {
-        const picker = document.getElementById("subject-picker");
-        if (e.key === "Escape" && picker.classList.contains("is-open")) closeSubjectPicker();
-    });
-});
 // ===== SUBJECT PICKER (Multi-Level) =====
 let pickerStep = "subject";     // "subject" | "set" | "topic"
 let pickerSubject = null;       // selected subject id
@@ -2637,6 +2576,8 @@ function openSubjectPicker() {
     document.body.style.overflow = "hidden";
     renderPickerStep();
     setTimeout(() => pickerSearch.focus(), 200);
+    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: "subjects-screen" } }));
+    setActiveSidebarLink("subjects-screen");
 }
 
 function closeSubjectPicker() {
@@ -2873,7 +2814,191 @@ function getGrade(score) {
     if (score >= 45) return { grade: 'D', color: '#f97316', message: 'Just below pass mark 💪' };
     return { grade: 'F', color: '#ef4444', message: 'Keep studying — you\'ve got this! 📚' };
 }
+// Settings screen logic. Call renderSettings() whenever the screen is shown
+// (e.g. from goToSettings()), after Firebase auth has resolved.
 
+function renderSettings() {
+  const user = firebase.auth().currentUser; // adjust to however you access the current user
+  if (!user) return;
+
+  // --- Account: photo, email, preferred name ---
+  const avatarEl = document.getElementById("settings-avatar");
+  if (user.photoURL) {
+    avatarEl.innerHTML = `<img src="${user.photoURL}" alt="">`;
+  } else {
+    const initials = (user.displayName || "Student")
+      .split(" ").map(w => w[0]).slice(0, 2).join("").toUpperCase();
+    avatarEl.textContent = initials;
+  }
+
+  document.getElementById("settings-email").textContent = user.email || "";
+
+  const savedName = localStorage.getItem("jupeb_preferred_name");
+  document.getElementById("settings-name-input").value = savedName || user.displayName || "";
+
+  // --- Appearance ---
+  const themeToggle = document.getElementById("settings-theme-toggle");
+  themeToggle.checked = document.documentElement.getAttribute("data-theme") === "dark";
+
+  // --- Subscription ---
+  const isPremium = localStorage.getItem("jupeb_is_premium") === "true"; // adjust to your real flag
+  document.getElementById("settings-plan-label").textContent = isPremium ? "⭐ Premium Plan" : "Free Plan";
+  document.getElementById("settings-plan-detail").textContent = isPremium
+    ? "You have full access to all subjects."
+    : "Upgrade to unlock full access to all subjects.";
+  document.getElementById("settings-plan-action").textContent = isPremium ? "Manage" : "Upgrade";
+
+  // --- Study preferences ---
+  document.getElementById("settings-default-length").value =
+    localStorage.getItem("jupeb_default_quiz_length") || "10";
+  document.getElementById("settings-default-timer").value =
+    localStorage.getItem("jupeb_default_timer") || "0";
+}
+
+// Preferred name — falls back to Google display name everywhere it's read,
+// e.g. in getDashboardData(): userName = localStorage.getItem('jupeb_preferred_name') || googleName
+document.getElementById("settings-name-save").addEventListener("click", () => {
+  const name = document.getElementById("settings-name-input").value.trim();
+  const statusEl = document.getElementById("settings-name-status");
+  if (!name) {
+    statusEl.textContent = "Please enter a name.";
+    return;
+  }
+  localStorage.setItem("jupeb_preferred_name", name);
+  statusEl.textContent = "Saved ✓";
+  setTimeout(() => (statusEl.textContent = ""), 2000);
+});
+
+document.getElementById("settings-signout-btn").addEventListener("click", () => {
+  const confirmed = confirm("Sign out of your account?");
+  if (!confirmed) return;
+  firebase.auth().signOut().then(() => {
+    window.location.reload();
+  });
+});
+
+document.getElementById("settings-theme-toggle").addEventListener("change", (e) => {
+  const theme = e.target.checked ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("jupeb_theme", theme); // keep in sync with wherever your existing theme toggle stores this
+});
+
+document.getElementById("settings-plan-action").addEventListener("click", () => {
+  // Wire to your existing payment flow / upgrade page
+  alert("Wire this to your Paystack/payment flow");
+});
+
+document.getElementById("settings-default-length").addEventListener("change", (e) => {
+  localStorage.setItem("jupeb_default_quiz_length", e.target.value);
+});
+document.getElementById("settings-default-timer").addEventListener("change", (e) => {
+  localStorage.setItem("jupeb_default_timer", e.target.value);
+});
+
+// Help & Support screen logic. Call renderHelp() from goToHelp().
+
+// Edit this list whenever your answers change — the empty state disappears
+// automatically once this array has content.
+const FAQ_ITEMS = [
+  {
+    q: "How do I sign in?",
+    a: "Use the \"Sign in with Google\" button with the same Gmail you sent during payment."
+  },
+  {
+    q: "Which subjects are available?",
+    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics, Government."
+  },
+  {
+    q: "Which years are covered?",
+    a: "2015–2025, depending on the subject."
+  },
+  {
+    q: "How do I browse questions by topic?",
+    a: "Click \"Subjects\" in the sidebar → pick a subject → pick a course → pick a topic."
+  },
+  {
+    q: "What is Quiz Mode?",
+    a: "Practice questions with a timer under exam-like conditions."
+  },
+  {
+    q: "What are Weak Areas?",
+    a: "Topics you consistently score low on. The site tracks them automatically after you answer enough questions."
+  },
+  {
+    q: "How do I access Past Papers?",
+    a: "Click \"Past Papers\" in the sidebar → pick a subject → pick a year."
+  },
+  {
+    q: "Are the answers correct?",
+    a: "Yes, but always cross-check with your textbook — no answer bank is 100% perfect."
+  },
+  {
+    q: "Does the site work on my phone?",
+    a: "Yes. It's fully mobile-friendly and can be installed as an app."
+  },
+  {
+    q: "What if I see a wrong answer or a broken question?",
+    a: "Message us on WhatsApp: 09035801863. We fix issues quickly."
+  },
+  {
+    q: "Can I use the same account on multiple devices?",
+    a: "Yes. Just sign in with the same Gmail."
+  },
+  {
+    q: "How do I sign out?",
+    a: "Go to the sidebar → Settings → Sign Out."
+  },
+  {
+    q: "What if my access expires?",
+    a: "Message us on WhatsApp to renew."
+  },
+  {
+    q: "What if I have a different question?",
+    a: "Message us on WhatsApp: 09035801863."
+  },
+];
+
+const WHATSAPP_NUMBER = "2349035801863"; // international format, no + or spaces
+const SUPPORT_EMAIL = "jupeb.qbank@gmail.com";
+
+function renderHelp() {
+  const listEl = document.getElementById("help-faq-list");
+  if (FAQ_ITEMS.length === 0) {
+    listEl.innerHTML = `<p class="dash-subtext">No FAQs yet — check back soon!</p>`;
+  } else {
+    listEl.innerHTML = FAQ_ITEMS.map((item, i) => `
+      <div class="help-faq-item" data-index="${i}">
+        <button class="help-faq-question" onclick="toggleFaqItem(${i})">
+          <span>${item.q}</span>
+          <span class="help-faq-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="help-faq-answer">${item.a}</div>
+      </div>`).join("");
+  }
+}
+
+function toggleFaqItem(index) {
+  document.querySelectorAll(".help-faq-item").forEach(el => {
+    if (Number(el.dataset.index) === index) {
+      el.classList.toggle("is-open");
+    } else {
+      el.classList.remove("is-open"); // accordion: only one open at a time
+    }
+  });
+}
+
+// Buttons, not links with a placeholder href — avoids any risk of a bare "#"
+// interacting with your hash-based router (see SCREEN_ROUTES/showScreen).
+document.getElementById("help-whatsapp-btn").addEventListener("click", () => {
+  const message = encodeURIComponent("Hi! I need help with the JUPEB Question Bank app.");
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank", "noopener");
+});
+
+document.getElementById("help-report-btn").addEventListener("click", () => {
+  const subject = encodeURIComponent("JUPEB QB — Bug Report");
+  const body = encodeURIComponent("Subject:\nTopic:\nQuestion (if applicable):\n\nWhat went wrong:\n");
+  window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${subject}&body=${body}`;
+});
 // ============================================================
 // ===== INIT ===================================================
 // ============================================================

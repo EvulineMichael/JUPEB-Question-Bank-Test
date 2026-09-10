@@ -743,7 +743,142 @@ header {
   .dashboard-row--top, .dashboard-row--bottom { grid-template-columns: 1fr; }
   .dashboard-header { grid-template-columns: 1fr; text-align: left; }
 }
- 
+.dash-header-actions {
+  justify-self: end;
+}
+/* Settings — reuses dash-card, dash-btn-primary, dash-subtext, dash-border,
+   tab-active-bg from dashboard.css. Only new/settings-specific rules below. */
+
+.settings-account-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.settings-avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--tab-active-bg);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 700;
+  flex-shrink: 0;
+}
+.settings-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.settings-account-email { margin: 0; color: var(--text-secondary); font-size: 0.9rem; }
+
+.settings-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 16px 0 6px;
+}
+.settings-name-row { display: flex; gap: 10px; }
+.settings-input, .settings-select {
+  flex: 1;
+  background: var(--bg-primary);
+  border: 1px solid var(--dash-border);
+  border-radius: 9px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+.settings-select { width: 100%; }
+.settings-input:focus, .settings-select:focus { outline: none; border-color: var(--tab-active-bg); }
+
+.settings-danger-btn {
+  margin-top: 20px;
+  background: none;
+  border: 1px solid var(--dash-danger);
+  color: var(--dash-danger);
+  border-radius: 9px;
+  padding: 9px 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.settings-danger-btn:hover { background: var(--dash-danger); color: #fff; }
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.settings-row-title { margin: 0; font-size: 0.95rem; color: var(--text-primary); }
+
+/* Toggle switch */
+.settings-switch {
+  position: relative;
+  display: inline-block;
+  width: 46px; height: 26px;
+  flex-shrink: 0;
+}
+.settings-switch input { opacity: 0; width: 0; height: 0; }
+.settings-switch-track {
+  position: absolute; inset: 0;
+  background: var(--dash-border);
+  border-radius: 999px;
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+.settings-switch-track::before {
+  content: "";
+  position: absolute;
+  width: 20px; height: 20px;
+  left: 3px; top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.15s ease;
+}
+.settings-switch input:checked + .settings-switch-track { background: var(--tab-active-bg); }
+.settings-switch input:checked + .settings-switch-track::before { transform: translateX(20px); }
+
+/* Help & Support — reuses dash-card, dash-btn-primary, dash-subtext,
+   dash-border from dashboard.css. Only new rules below. */
+
+.help-faq-item {
+  border-bottom: 1px solid var(--dash-border);
+}
+.help-faq-item:last-child { border-bottom: none; }
+
+.help-faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 14px 4px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.help-faq-caret {
+  transition: transform 0.15s ease;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+.help-faq-item.is-open .help-faq-caret { transform: rotate(180deg); }
+
+.help-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 0 4px;
+}
+.help-faq-item.is-open .help-faq-answer {
+  padding: 0 4px 16px;
+}
+
+.help-contact-btn {
+  width: 100%;
+  margin-top: 8px;
+}
 /* Cards */
 .dash-card {
   background: var(--bg-secondary);
@@ -931,8 +1066,12 @@ header {
 
 /* Push content over on desktop */
 @media (min-width: 901px) {
-    .dashboard-container,
-    #app-content {
+    #dashboard-screen,
+    #app-content,
+    #progress-screen,
+    #settings-screen,
+    #help-screen,
+    .app-footer {
         margin-left: 220px;
     }
 }
@@ -963,88 +1102,29 @@ header {
     .app-sidebar.is-open { transform: translateX(0); }
     .sidebar-toggle { display: block; }
     .sidebar-overlay.is-open { display: block; }
-    .dashboard-container,
-    #app-content { margin-left: 0; }
-}
-/* Subject picker — reuses --bg-secondary, --text-primary, --text-secondary,
-   --tab-active-bg, --dash-border from your existing token system. */
-
-.subject-picker {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.22s ease, visibility 0.22s ease;
-}
-.subject-picker.is-open {
-  visibility: visible;
-  opacity: 1;
-}
-
-.subject-picker-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(8, 10, 20, 0.55);
-  backdrop-filter: blur(22px) saturate(140%);
-  -webkit-backdrop-filter: blur(22px) saturate(140%);
+    
+    #dashboard-screen,
+    #app-content,
+    #progress-screen,
+    #settings-screen,
+    #help-screen,
+    .app-footer { margin-left: 0; }
+    
+    /* Push content down so hamburger doesn't cover it */
+    #dashboard-screen,
+    #app-content,
+    #progress-screen,
+    #settings-screen,
+    #help-screen {
+        padding-top: 56px;
+    }
+    
+    /* Dashboard header adjustment */
+    .dashboard-header {
+        grid-template-columns: 1fr;
+    }
 }
 
-.subject-picker-panel {
-  position: relative;
-  width: min(720px, 92vw);
-  max-height: 82vh;
-  overflow-y: auto;
-  background: color-mix(in srgb, var(--bg-secondary) 88%, transparent);
-  border: 1px solid color-mix(in srgb, var(--dash-border) 80%, transparent);
-  border-radius: 24px;
-  padding: 28px 32px 36px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
-  transform: scale(0.94) translateY(10px);
-  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-.subject-picker.is-open .subject-picker-panel {
-  transform: scale(1) translateY(0);
-}
-
-.subject-picker-close {
-  position: absolute;
-  top: 16px; right: 16px;
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  border: none;
-  background: var(--bg-primary);
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-  line-height: 1;
-  cursor: pointer;
-}
-.subject-picker-close:hover { color: var(--text-primary); }
-
-.subject-picker-search {
-  width: 100%;
-  box-sizing: border-box;
-  background: var(--bg-primary);
-  border: 1px solid var(--dash-border);
-  border-radius: 12px;
-  padding: 12px 16px;
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  margin: 8px 0 26px;
-}
-.subject-picker-search:focus {
-  outline: none;
-  border-color: var(--tab-active-bg);
-}
-
-.subject-picker-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  gap: 22px 12px;
-}
 
 .subject-tile {
   display: flex;
