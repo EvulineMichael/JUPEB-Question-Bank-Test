@@ -30,6 +30,66 @@ let allSubjectYears = {
     irs: [],
     literature: []
 };
+// Edit this list whenever your answers change — the empty state disappears
+// automatically once this array has content.
+const FAQ_ITEMS = [
+  {
+    q: "How do I sign in?",
+    a: "Use the \"Sign in with Google\" button with the same Gmail you sent during payment."
+  },
+  {
+    q: "Which subjects are available?",
+    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics, Government."
+  },
+  {
+    q: "Which years are covered?",
+    a: "2015–2025, depending on the subject."
+  },
+  {
+    q: "How do I browse questions by topic?",
+    a: "Click \"Subjects\" in the sidebar → pick a subject → pick a course → pick a topic."
+  },
+  {
+    q: "What is Quiz Mode?",
+    a: "Practice questions with a timer under exam-like conditions."
+  },
+  {
+    q: "What are Weak Areas?",
+    a: "Topics you consistently score low on. The site tracks them automatically after you answer enough questions."
+  },
+  {
+    q: "How do I access Past Papers?",
+    a: "Click \"Past Papers\" in the sidebar → pick a subject → pick a year."
+  },
+  {
+    q: "Are the answers correct?",
+    a: "Yes, but always cross-check with your textbook — no answer bank is 100% perfect."
+  },
+  {
+    q: "Does the site work on my phone?",
+    a: "Yes. It's fully mobile-friendly and can be installed as an app."
+  },
+  {
+    q: "What if I see a wrong answer or a broken question?",
+    a: "Message us on WhatsApp: 09035801863. We fix issues quickly."
+  },
+  {
+    q: "Can I use the same account on multiple devices?",
+    a: "Yes. Just sign in with the same Gmail."
+  },
+  {
+    q: "How do I sign out?",
+    a: "Go to the sidebar → Settings → Sign Out."
+  },
+  {
+    q: "What if my access expires?",
+    a: "Message us on WhatsApp to renew."
+  },
+  {
+    q: "What if I have a different question?",
+    a: "Message us on WhatsApp: 09035801863."
+  },
+];
 
 // ===== THEME =====
 function updateThemeIcons() {
@@ -2451,6 +2511,13 @@ const SCREEN_ROUTES = {
 };
 
 function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}) {
+    // Close subject picker if it's open
+    const picker = document.getElementById("subject-picker");
+    if (picker && picker.classList.contains("is-open")) {
+        picker.classList.remove("is-open");
+        picker.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
     if (welcomeMessage) welcomeMessage.style.display = 'none';
 
     Object.keys(SCREEN_ROUTES).forEach(id => {
@@ -2942,66 +3009,6 @@ document.getElementById("settings-default-timer").addEventListener("change", (e)
 
 // Help & Support screen logic. Call renderHelp() from goToHelp().
 
-// Edit this list whenever your answers change — the empty state disappears
-// automatically once this array has content.
-const FAQ_ITEMS = [
-  {
-    q: "How do I sign in?",
-    a: "Use the \"Sign in with Google\" button with the same Gmail you sent during payment."
-  },
-  {
-    q: "Which subjects are available?",
-    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics, Government."
-  },
-  {
-    q: "Which years are covered?",
-    a: "2015–2025, depending on the subject."
-  },
-  {
-    q: "How do I browse questions by topic?",
-    a: "Click \"Subjects\" in the sidebar → pick a subject → pick a course → pick a topic."
-  },
-  {
-    q: "What is Quiz Mode?",
-    a: "Practice questions with a timer under exam-like conditions."
-  },
-  {
-    q: "What are Weak Areas?",
-    a: "Topics you consistently score low on. The site tracks them automatically after you answer enough questions."
-  },
-  {
-    q: "How do I access Past Papers?",
-    a: "Click \"Past Papers\" in the sidebar → pick a subject → pick a year."
-  },
-  {
-    q: "Are the answers correct?",
-    a: "Yes, but always cross-check with your textbook — no answer bank is 100% perfect."
-  },
-  {
-    q: "Does the site work on my phone?",
-    a: "Yes. It's fully mobile-friendly and can be installed as an app."
-  },
-  {
-    q: "What if I see a wrong answer or a broken question?",
-    a: "Message us on WhatsApp: 09035801863. We fix issues quickly."
-  },
-  {
-    q: "Can I use the same account on multiple devices?",
-    a: "Yes. Just sign in with the same Gmail."
-  },
-  {
-    q: "How do I sign out?",
-    a: "Go to the sidebar → Settings → Sign Out."
-  },
-  {
-    q: "What if my access expires?",
-    a: "Message us on WhatsApp to renew."
-  },
-  {
-    q: "What if I have a different question?",
-    a: "Message us on WhatsApp: 09035801863."
-  },
-];
 
 const WHATSAPP_NUMBER = "2349035801863"; // international format, no + or spaces
 const SUPPORT_EMAIL = "jupeb.qbank@gmail.com";

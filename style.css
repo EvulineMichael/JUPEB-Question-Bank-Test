@@ -3873,3 +3873,17 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
         font-size: 0.9rem;
     }
 }
+.sidebar-footer,
+.sidebar-user-info,
+.sidebar-user-name,
+.sidebar-user-plan {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.sidebar-footer {
+    padding: 12px 8px 0;
+    border-top: 1px solid var(--dash-border);
+}
