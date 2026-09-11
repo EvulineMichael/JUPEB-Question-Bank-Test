@@ -69,7 +69,14 @@
     --dash-danger: #f16565;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
@@ -382,7 +389,117 @@ header {
 #categories-sidebar.sidebar-collapsed .topic-text {
     display: none;
 }
+/* ===== Sidebar collapse ===== */
 
+body.sidebar-collapsed .app-sidebar {
+  width: 72px;
+}
+
+/* Collapse toggle button — small circular tab riding the sidebar's edge */
+.sidebar-collapse-btn {
+  position: absolute;
+  top: 22px;
+  right: -13px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--dash-border);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s ease, color 0.15s ease;
+  z-index: 1101;
+}
+.sidebar-collapse-btn:hover {
+  border-color: var(--tab-active-bg);
+  color: var(--tab-active-bg);
+}
+body.sidebar-collapsed .sidebar-collapse-btn span {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+/* Only show the collapse toggle on desktop — mobile already has the hamburger */
+@media (max-width: 900px) {
+  .sidebar-collapse-btn { display: none; }
+}
+
+/* Fade + collapse the text labels, keep icons centered */
+.sidebar-label {
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+body.sidebar-collapsed .sidebar-label {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+body.sidebar-collapsed .sidebar-link {
+  justify-content: center;
+  gap: 0;
+  position: relative; /* anchor for the tooltip */
+}
+body.sidebar-collapsed .sidebar-nav,
+body.sidebar-collapsed .sidebar-nav--secondary {
+  align-items: center;
+}
+body.sidebar-collapsed .sidebar-brand {
+  text-align: center;
+}
+body.sidebar-collapsed .sidebar-footer {
+  justify-content: center;
+}
+
+/* Pure-CSS tooltip, only active in collapsed mode */
+body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--dash-border);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* When collapsed, reserve less space for content/footer (desktop only) */
+@media (min-width: 901px) {
+  body.has-sidebar.sidebar-collapsed #dashboard-screen,
+  body.has-sidebar.sidebar-collapsed #app-content,
+  body.has-sidebar.sidebar-collapsed #progress-screen,
+  body.has-sidebar.sidebar-collapsed #settings-screen,
+  body.has-sidebar.sidebar-collapsed #help-screen,
+  body.has-sidebar.sidebar-collapsed .app-footer {
+    margin-left: 72px;
+    transition: margin-left 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* Also animate the expanded state smoothly */
+  body.has-sidebar:not(.sidebar-collapsed) #dashboard-screen,
+  body.has-sidebar:not(.sidebar-collapsed) #app-content,
+  body.has-sidebar:not(.sidebar-collapsed) #progress-screen,
+  body.has-sidebar:not(.sidebar-collapsed) #settings-screen,
+  body.has-sidebar:not(.sidebar-collapsed) #help-screen,
+  body.has-sidebar:not(.sidebar-collapsed) .app-footer {
+    transition: margin-left 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 /* Sidebar header */
 .sidebar-header {
     display: flex;
@@ -398,19 +515,6 @@ header {
     margin: 0;
     color: var(--tab-active-bg);
     font-weight: normal;
-}
-
-.sidebar-collapse-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    transition: all 0.2s ease;
 }
 
 /* ===== QUESTION TABLE ===== */
@@ -1008,7 +1112,7 @@ header {
     flex-direction: column;
     padding: 20px 14px;
     z-index: 1000;
-    transition: transform 0.2s ease;
+    transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease;
 }
 
 .sidebar-brand { padding: 0 8px 20px; }
@@ -1066,12 +1170,12 @@ header {
 
 /* Push content over on desktop */
 @media (min-width: 901px) {
-    #dashboard-screen,
-    #app-content,
-    #progress-screen,
-    #settings-screen,
-    #help-screen,
-    .app-footer {
+    body.has-sidebar #dashboard-screen,
+    body.has-sidebar #app-content,
+    body.has-sidebar #progress-screen,
+    body.has-sidebar #settings-screen,
+    body.has-sidebar #help-screen,
+    body.has-sidebar .app-footer {
         margin-left: 220px;
     }
 }
@@ -1102,15 +1206,14 @@ header {
     .app-sidebar.is-open { transform: translateX(0); }
     .sidebar-toggle { display: block; }
     .sidebar-overlay.is-open { display: block; }
-    
+
     #dashboard-screen,
     #app-content,
     #progress-screen,
     #settings-screen,
     #help-screen,
     .app-footer { margin-left: 0; }
-    
-    /* Push content down so hamburger doesn't cover it */
+
     #dashboard-screen,
     #app-content,
     #progress-screen,
@@ -1652,10 +1755,6 @@ header {
     
     #categories-sidebar.sidebar-open {
         left: 0;
-    }
-    
-    .sidebar-collapse-btn {
-        display: none;
     }
     
     .sidebar-close-btn {
@@ -3608,10 +3707,11 @@ header {
 
 /* ===== FOOTER ===== */
 .app-footer {
+    flex-shrink: 0;
+    margin-top: auto;
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
     padding: 24px 24px 20px;
-    margin-top: 40px;
     transition: background 0.3s ease;
 }
 

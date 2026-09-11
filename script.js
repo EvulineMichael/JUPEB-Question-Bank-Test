@@ -448,6 +448,26 @@ function initSidebar() {
         localStorage.setItem('sidebarCollapsed', isSidebarCollapsed);
     });
 }
+// Sidebar collapse toggle. Add this wherever your other sidebar JS lives.
+
+const sidebarCollapseBtn = document.getElementById("app-sidebar-collapse-btn");
+
+function setSidebarCollapsed(collapsed) {
+  document.body.classList.toggle("sidebar-collapsed", collapsed);
+  localStorage.setItem("jupeb_sidebar_collapsed", collapsed ? "true" : "false");
+}
+
+sidebarCollapseBtn?.addEventListener("click", () => {
+  const isCollapsed = document.body.classList.contains("sidebar-collapsed");
+  setSidebarCollapsed(!isCollapsed);
+});
+
+// Restore preference on load — call this once your sidebar is actually
+// shown (i.e. alongside wherever you add body.classList.add('has-sidebar')).
+function restoreSidebarCollapseState() {
+  const wasCollapsed = localStorage.getItem("jupeb_sidebar_collapsed") === "true";
+  setSidebarCollapsed(wasCollapsed);
+}
 
 function initMobileSidebar() {
     const originalHamburger = document.getElementById('hamburger-btn');
@@ -2431,19 +2451,26 @@ const SCREEN_ROUTES = {
 };
 
 function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}) {
-    if (welcomeMessage) welcomeMessage.style.display = 'none';   // add this
+    if (welcomeMessage) welcomeMessage.style.display = 'none';
 
     Object.keys(SCREEN_ROUTES).forEach(id => {
         const el = document.getElementById(id);
         if (el) el.style.display = (id === screenId) ? "block" : "none";
     });
-    // ... sidebar show/hide logic ...
+
+    // login-screen isn't part of SCREEN_ROUTES (it's controlled by auth
+    // state, not the URL hash) — handle it explicitly so it's never
+    // visible at the same time as a routed screen.
+    const loginEl = document.getElementById("login-screen");
+    if (loginEl) loginEl.style.display = (screenId === "login-screen") ? "block" : "none";
+
+    const dispatchId = customScreenId || screenId;
+    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: dispatchId } }));
+
     if (pushHistory) {
         const hash = "#" + SCREEN_ROUTES[screenId];
         if (location.hash !== hash) history.pushState({ screenId }, "", hash);
     }
-    const dispatchId = customScreenId || screenId;
-    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: dispatchId } }));
 }
 
 // Browser back/forward
@@ -2873,8 +2900,9 @@ document.getElementById("settings-signout-btn").addEventListener("click", () => 
   const confirmed = confirm("Sign out of your account?");
   if (!confirmed) return;
   firebase.auth().signOut().then(() => {
-    window.location.reload();
-  });
+  history.replaceState(null, "", location.pathname);
+  window.location.reload();
+});
 });
 
 document.getElementById("settings-theme-toggle").addEventListener("change", (e) => {

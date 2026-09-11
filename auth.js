@@ -4,6 +4,7 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
   document.getElementById('dashboard-screen').style.display = 'block';
   document.getElementById('app-content').style.display = 'none';
   document.getElementById('app-sidebar').style.display = 'flex';
+  document.body.classList.add('has-sidebar');   // add this line
   document.getElementById('sidebar-toggle').style.display = '';
   document.getElementById('sidebar-overlay').style.display = 'none';
   renderSidebarUser({ name: "Student", isPremium: true, photoURL: null });
@@ -25,6 +26,7 @@ if (sessionStorage.getItem('jupeb_guest') === 'true') {
     document.getElementById('dashboard-screen').style.display = 'block';
     document.getElementById('app-content').style.display = 'none';
     document.getElementById('app-sidebar').style.display = 'flex';
+    document.body.classList.add('has-sidebar');   // add this line
     document.getElementById('sidebar-toggle').style.display = 'block';
     renderSidebarUser({ name: "Guest User", isPremium: false, photoURL: null });
     
@@ -104,6 +106,7 @@ auth.onAuthStateChanged(async (user) => {
       // Show sidebar
       // Show sidebar
 document.getElementById('app-sidebar').style.display = 'flex';
+document.body.classList.add('has-sidebar');   // add this line
 document.getElementById('sidebar-toggle').style.display = '';  // ← empty, CSS decides
 
       // Populate user in sidebar
@@ -138,6 +141,7 @@ document.getElementById('sidebar-toggle').style.display = '';  // ← empty, CSS
   } else {
     showScreen("login-screen", { pushHistory: false });
     document.getElementById('app-sidebar').style.display = 'none';
+    document.body.classList.remove('has-sidebar');   // add this line
     document.getElementById('sidebar-toggle').style.display = 'none';
     document.getElementById('sidebar-overlay').style.display = 'none';
 }
