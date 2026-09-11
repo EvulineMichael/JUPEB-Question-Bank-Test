@@ -2491,7 +2491,10 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 // Stub navigation
 function goToProgress() { showScreen("progress-screen"); }
-function goToSettings() { showScreen("settings-screen"); }
+function goToSettings() {
+    showScreen("settings-screen");
+    if (typeof renderSettings === 'function') renderSettings();
+}
 function goToHelp() {
   showScreen("help-screen");
   renderHelp();
@@ -2860,8 +2863,8 @@ function renderSettings() {
 
   document.getElementById("settings-email").textContent = user.email || "";
 
-  const savedName = localStorage.getItem("jupeb_preferred_name");
-  document.getElementById("settings-name-input").value = savedName || user.displayName || "";
+  const savedName = localStorage.getItem("jupeb_user_name");
+localStorage.setItem("jupeb_user_name", name);
 
   // --- Appearance ---
   const themeToggle = document.getElementById("settings-theme-toggle");
@@ -2885,15 +2888,27 @@ function renderSettings() {
 // Preferred name — falls back to Google display name everywhere it's read,
 // e.g. in getDashboardData(): userName = localStorage.getItem('jupeb_preferred_name') || googleName
 document.getElementById("settings-name-save").addEventListener("click", () => {
-  const name = document.getElementById("settings-name-input").value.trim();
-  const statusEl = document.getElementById("settings-name-status");
-  if (!name) {
-    statusEl.textContent = "Please enter a name.";
-    return;
-  }
-  localStorage.setItem("jupeb_preferred_name", name);
-  statusEl.textContent = "Saved ✓";
-  setTimeout(() => (statusEl.textContent = ""), 2000);
+    const name = document.getElementById("settings-name-input").value.trim();
+    const statusEl = document.getElementById("settings-name-status");
+    if (!name) {
+        statusEl.textContent = "Please enter a name.";
+        return;
+    }
+    
+    localStorage.setItem("jupeb_user_name", name);
+    
+    // Update sidebar display
+    const user = firebase.auth().currentUser;
+    if (typeof renderSidebarUser === 'function' && user) {
+        renderSidebarUser({ 
+            name: name, 
+            isPremium: true, 
+            photoURL: user.photoURL || null 
+        });
+    }
+    
+    statusEl.textContent = "✓ Saved";
+    setTimeout(() => (statusEl.textContent = ""), 2000);
 });
 
 document.getElementById("settings-signout-btn").addEventListener("click", () => {
@@ -2906,9 +2921,11 @@ document.getElementById("settings-signout-btn").addEventListener("click", () => 
 });
 
 document.getElementById("settings-theme-toggle").addEventListener("change", (e) => {
-  const theme = e.target.checked ? "dark" : "light";
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem("jupeb_theme", theme); // keep in sync with wherever your existing theme toggle stores this
+    const desiredTheme = e.target.checked ? "dark" : "light";
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    if (currentTheme !== desiredTheme) {
+        toggleTheme(); // This handles localStorage, icons, and sidebar button
+    }
 });
 
 document.getElementById("settings-plan-action").addEventListener("click", () => {

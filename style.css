@@ -983,6 +983,42 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
   width: 100%;
   margin-top: 8px;
 }
+/* ===== FAQ ACCORDION ===== */
+.faq-item {
+    border-bottom: 1px solid var(--dash-border);
+    padding: 12px 0;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-primary);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-item summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    transition: transform 0.2s;
+}
+.faq-item[open] summary::after {
+    content: '−';
+}
+.faq-item p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
 /* Cards */
 .dash-card {
   background: var(--bg-secondary);
