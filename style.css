@@ -1757,6 +1757,10 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
         left: 0;
     }
     
+    .sidebar-collapse-btn {
+        display: none;
+    }
+    
     .sidebar-close-btn {
         display: flex;
         align-items: center;
