@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v8'; // ← Still bump this when you make major changes
+const CACHE_VERSION = 'v9'; // was v8
 const CACHE_NAME = `jupeb-qb-${CACHE_VERSION}`;
 
 const ASSETS_TO_CACHE = [
