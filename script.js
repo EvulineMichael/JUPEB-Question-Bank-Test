@@ -1324,33 +1324,46 @@ function showQuizLobby() {
 
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
-    
     const subjects = Object.keys(courseStructure);
     const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
-    
+
+    // If no subject has years loaded yet, data is probably still fetching.
+    const anyDataLoaded = subjects.some(s => (allSubjectYears[s] || []).length > 0);
+
+    if (!anyDataLoaded) {
+        questionsContainer.innerHTML = `
+            <h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>
+            <p style="color:var(--text-secondary);">Loading past papers…</p>`;
+
+        // Re-render automatically once the data actually finishes loading,
+        // instead of staying stuck on this empty state forever.
+        document.addEventListener("jupebDataLoaded", () => showPastQuestionsSidebar(), { once: true });
+        return;
+    }
+
     let html = `<h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>`;
     html += `<p style="color:var(--text-secondary);margin-bottom:24px;">Select a subject and year to view past questions.</p>`;
-    
+
     subjects.forEach(subject => {
         const years = allSubjectYears[subject] || [];
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
-        
+
         if (years.length > 0) {
             html += `<div class="dash-card" style="margin-bottom:16px;">
                 <h3 style="margin-bottom:12px;">${subjectEmojis[subject]} ${displayName}</h3>
                 <div style="display:flex;flex-wrap:wrap;gap:8px;">`;
-            
+
             years.forEach(yr => {
-                html += `<button onclick="displayPastQuestions('${subject}', ${yr.year}, '${yr.paper || ''}')" 
+                html += `<button onclick="displayPastQuestions('${subject}', ${yr.year}, '${yr.paper || ''}')"
                     style="padding:8px 16px;background:var(--bg-card);border:1px solid var(--dash-border);border-radius:8px;cursor:pointer;color:var(--text-primary);font-size:0.85rem;">
                     ${yr.label}
                 </button>`;
             });
-            
+
             html += `</div></div>`;
         }
     });
-    
+
     questionsContainer.innerHTML = html;
 }
 
@@ -3090,8 +3103,9 @@ function initJUPEBApp() {
     setupThemeListeners();
     initStickyNavbar();
     setupEventListeners();
-    loadQuestions(null, () => {
+        loadQuestions(null, () => {
         console.log('All data loaded!');
+        document.dispatchEvent(new CustomEvent("jupebDataLoaded"));   // add this line
         if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
             showPastQuestionsSidebar();
         }

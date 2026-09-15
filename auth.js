@@ -100,8 +100,8 @@ auth.onAuthStateChanged(async (user) => {
           localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
       }
 
-      // Show dashboard
-      showScreen("dashboard-screen", { pushHistory: false });
+            // Show the screen the URL says we're on (not always dashboard)
+      showScreen(screenFromHash(), { pushHistory: false });
 
       // Show sidebar
       // Show sidebar
