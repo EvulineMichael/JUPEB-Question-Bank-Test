@@ -2256,12 +2256,18 @@ function goToBrowseQuestions() {
 }
 
 function goToQuizMode() {
-    showScreen("app-content", { customScreenId: "quiz-screen" });
+    showScreen("app-content", { 
+        customScreenId: "quiz-screen", 
+        customPath: "/quiz-mode" 
+    });
     showQuizLobby();
 }
 
 function goToPastPapers() {
-    showScreen("app-content", { customScreenId: "past-papers-screen" });
+    showScreen("app-content", { 
+        customScreenId: "past-papers-screen", 
+        customPath: "/past-papers" 
+    });
     showPastQuestionsSidebar();
 }
 
@@ -2507,11 +2513,15 @@ const SCREEN_ROUTES = {
     "app-content": "questions",
     "progress-screen": "progress",
     "settings-screen": "settings",
-    "help-screen": "help"
+    "help-screen": "help",
+    // Custom routes (not actual screens, but valid URLs)
+    "quiz-screen": "quiz-mode",
+    "past-papers-screen": "past-papers",
+    "subjects-screen": "subjects"
 };
 
 
-function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}) {
+function showScreen(screenId, { pushHistory = true, customScreenId = null, customPath = null } = {}) {
     // Close subject picker if it's open
     const picker = document.getElementById("subject-picker");
     if (picker && picker.classList.contains("is-open")) {
@@ -2535,10 +2545,12 @@ function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}
     const dispatchId = customScreenId || screenId;
     document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: dispatchId } }));
 
-    if (pushHistory) {
-    const path = "/" + SCREEN_ROUTES[screenId];
-    if (location.pathname !== path) history.pushState({ screenId }, "", path);
-}
+     if (pushHistory) {
+        const path = customPath || ("/" + SCREEN_ROUTES[screenId]);
+        if (location.pathname !== path) {
+            history.pushState({ screenId, customScreenId }, "", path);
+        }
+    }
 }
 
 // Browser back/forward
@@ -2548,8 +2560,17 @@ window.addEventListener("popstate", (e) => {
 });
 
 function screenFromHash() {
-    const hash = location.hash.replace("#", "");
-    const match = Object.entries(SCREEN_ROUTES).find(([, h]) => h === hash);
+    const path = location.pathname.replace("/", "");
+    
+    // If it's a custom sub-screen, map it back to app-content
+    if (path === "quiz-mode" || path === "past-papers") {
+        return "app-content";
+    }
+    if (path === "subjects") {
+        return "app-content"; // Subject picker will need to be reopened
+    }
+    
+    const match = Object.entries(SCREEN_ROUTES).find(([, p]) => p === path);
     return match ? match[0] : "dashboard-screen";
 }
 
@@ -2674,8 +2695,14 @@ function openSubjectPicker() {
     document.body.style.overflow = "hidden";
     renderPickerStep();
     setTimeout(() => pickerSearch.focus(), 200);
+    
+    history.pushState(
+        { screenId: "app-content", customScreenId: "subjects-screen" }, 
+        "", 
+        "/subjects"
+    );
+    
     document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: "subjects-screen" } }));
-    setActiveSidebarLink("subjects-screen");
 }
 
 function closeSubjectPicker() {
