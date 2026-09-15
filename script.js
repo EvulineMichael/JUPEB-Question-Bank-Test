@@ -2509,6 +2509,16 @@ const SCREEN_ROUTES = {
     "settings-screen": "settings",
     "help-screen": "help"
 };
+const URL_ROUTES = {
+  "dashboard-screen": "home",
+  "app-content": "questions",     // fallback if no customScreenId is passed
+  "quiz-screen": "quiz-mode",
+  "past-papers-screen": "past-papers",
+  "subjects-screen": "subjects",
+  "settings-screen": "settings",
+  "help-screen": "help",
+  "login-screen": "login",
+};
 
 function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}) {
     // Close subject picker if it's open
@@ -2534,9 +2544,9 @@ function showScreen(screenId, { pushHistory = true, customScreenId = null } = {}
     const dispatchId = customScreenId || screenId;
     document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: dispatchId } }));
 
-    if (pushHistory) {
-        const hash = "#" + SCREEN_ROUTES[screenId];
-        if (location.hash !== hash) history.pushState({ screenId }, "", hash);
+        if (pushHistory) {
+        const path = "/" + (URL_ROUTES[dispatchId] || URL_ROUTES[screenId] || "");
+        if (location.pathname !== path) history.pushState({ screenId }, "", path);
     }
 }
 
@@ -2616,7 +2626,7 @@ function renderSidebarUser({ name = "Student", isPremium = true, photoURL = null
     }
 }
 function goToWeakAreas() {
-    showScreen("app-content");
+     showScreen("app-content", { customScreenId: "quiz-screen" });
     showQuizLobby();
     
     setTimeout(() => {
@@ -2668,13 +2678,12 @@ function openSubjectPicker() {
     pickerSubject = null;
     pickerSubjectName = null;
     pickerSet = null;
+    showScreen("app-content", { customScreenId: "subjects-screen" });
     pickerEl.classList.add("is-open");
     pickerEl.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
     renderPickerStep();
     setTimeout(() => pickerSearch.focus(), 200);
-    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: "subjects-screen" } }));
-    setActiveSidebarLink("subjects-screen");
 }
 
 function closeSubjectPicker() {
@@ -2765,7 +2774,8 @@ function pickerChooseTopic(topicName) {
     window.currentSubjectYears = allSubjectYears[subjectId] || [];
     
     // Show question bank
-    showScreen("app-content");
+        // Show question bank
+    showScreen("app-content", { customScreenId: "subjects-screen" });
     displayQuestions(topicName);
 }
 
