@@ -1327,20 +1327,6 @@ function showPastQuestionsSidebar() {
     const subjects = Object.keys(courseStructure);
     const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
 
-    // If no subject has years loaded yet, data is probably still fetching.
-    const anyDataLoaded = subjects.some(s => (allSubjectYears[s] || []).length > 0);
-
-    if (!anyDataLoaded) {
-        questionsContainer.innerHTML = `
-            <h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>
-            <p style="color:var(--text-secondary);">Loading past papers…</p>`;
-
-        // Re-render automatically once the data actually finishes loading,
-        // instead of staying stuck on this empty state forever.
-        document.addEventListener("jupebDataLoaded", () => showPastQuestionsSidebar(), { once: true });
-        return;
-    }
-
     let html = `<h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>`;
     html += `<p style="color:var(--text-secondary);margin-bottom:24px;">Select a subject and year to view past questions.</p>`;
 
@@ -2277,11 +2263,22 @@ function goToQuizMode() {
 }
 
 function goToPastPapers() {
-    showScreen("app-content", { 
-        customScreenId: "past-papers-screen", 
-        customPath: "/past-papers" 
-    });
+    if (!window.jupebDataLoaded) {
+        goToDashboard();
+        return;
+    }
+    showScreen("app-content", { customScreenId: "past-papers-screen" });
     showPastQuestionsSidebar();
+}
+function runRouteInit() {
+    const path = location.pathname.replace("/", "") || "dashboard";
+    if (path === "past-papers") {
+        if (window.jupebDataLoaded) showPastQuestionsSidebar();
+        else goToDashboard();
+    }
+    else if (path === "quiz-mode") showQuizLobby();
+    else if (path === "subjects") openSubjectPicker();
+    else showDashboard();
 }
 
 function startQuickPractice() {
@@ -3095,6 +3092,8 @@ document.getElementById("help-report-btn").addEventListener("click", () => {
 // ============================================================
 // ===== INIT ===================================================
 // ============================================================
+window.jupebDataLoaded = false;
+
 function initJUPEBApp() {
     initTheme();
     initSidebar();
@@ -3103,9 +3102,9 @@ function initJUPEBApp() {
     setupThemeListeners();
     initStickyNavbar();
     setupEventListeners();
-        loadQuestions(null, () => {
+    loadQuestions(null, () => {
         console.log('All data loaded!');
-        document.dispatchEvent(new CustomEvent("jupebDataLoaded"));   // add this line
+        window.jupebDataLoaded = true;   // add this line
         if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
             showPastQuestionsSidebar();
         }
