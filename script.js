@@ -798,6 +798,7 @@ function getQuestionCountForTopic(topic) {
 }
 
 function renderCategories() {
+    if (!categoriesList) return;
     const courses = courseStructure[currentSubject];
     const availableCategories = getAvailableCategoriesFromJSON();
     if (!courses || Object.keys(courses).length === 0) {
