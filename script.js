@@ -2263,19 +2263,12 @@ function goToQuizMode() {
 }
 
 function goToPastPapers() {
-    if (!window.jupebDataLoaded) {
-        goToDashboard();
-        return;
-    }
     showScreen("app-content", { customScreenId: "past-papers-screen" });
     showPastQuestionsSidebar();
 }
 function runRouteInit() {
     const path = location.pathname.replace("/", "") || "dashboard";
-    if (path === "past-papers") {
-        if (window.jupebDataLoaded) showPastQuestionsSidebar();
-        else goToDashboard();
-    }
+    if (path === "past-papers") showPastQuestionsSidebar();
     else if (path === "quiz-mode") showQuizLobby();
     else if (path === "subjects") openSubjectPicker();
     else showDashboard();
