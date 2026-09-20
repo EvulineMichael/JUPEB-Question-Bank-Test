@@ -2264,6 +2264,10 @@ function goToQuizMode() {
 }
 
 function goToPastPapers() {
+    if (!window.jupebDataLoaded) {
+        goToDashboard();
+        return;
+    }
     showScreen("app-content", { customScreenId: "past-papers-screen" });
     showPastQuestionsSidebar();
 }
