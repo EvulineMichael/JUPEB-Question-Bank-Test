@@ -1326,6 +1326,7 @@ function showQuizLobby() {
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
     const subjects = Object.keys(courseStructure);
+    if (welcomeMessage) welcomeMessage.style.display = 'none';   // add this line
     const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
 
     if (!window.jupebDataLoaded) {
@@ -2273,23 +2274,12 @@ function goToPastPapers() {
     showPastQuestionsSidebar();
 }
 function runRouteInit() {
+    if (welcomeMessage) welcomeMessage.style.display = 'none'; 
     const path = location.pathname.replace("/", "") || "dashboard";
-    if (path === "past-papers") {
-        showScreen("app-content", { customScreenId: "past-papers-screen", pushHistory: false });
-        showPastQuestionsSidebar();
-    }
-    else if (path === "quiz-mode") {
-        showScreen("app-content", { customScreenId: "quiz-screen", pushHistory: false });
-        showQuizLobby();
-    }
-    else if (path === "subjects") {
-        showScreen("app-content", { customScreenId: "subjects-screen", pushHistory: false });
-        openSubjectPicker();
-    }
-    else {
-        showScreen("dashboard-screen", { pushHistory: false });
-        showDashboard();
-    }
+    if (path === "past-papers") showPastQuestionsSidebar();
+    else if (path === "quiz-mode") showQuizLobby();
+    else if (path === "subjects") openSubjectPicker();
+    else showDashboard();
 }
 
 function startQuickPractice() {
