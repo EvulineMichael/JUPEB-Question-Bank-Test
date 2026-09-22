@@ -18,6 +18,7 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
   if (typeof initJUPEBApp === 'function') {
     initJUPEBApp();
   }
+  runRouteInit(); 
 }
 
 // Guest access check
@@ -34,6 +35,8 @@ if (sessionStorage.getItem('jupeb_guest') === 'true') {
     
     if (typeof showDashboard === 'function') showDashboard();
     if (typeof initJUPEBApp === 'function') initJUPEBApp();
+
+    runRouteInit();
 }
 
 function toggleAccessInfo() {

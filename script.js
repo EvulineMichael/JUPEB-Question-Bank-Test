@@ -2565,9 +2565,8 @@ function showScreen(screenId, { pushHistory = true, customScreenId = null, custo
 }
 
 // Browser back/forward
-window.addEventListener("popstate", (e) => {
-    const screenId = e.state?.screenId || screenFromHash();
-    showScreen(screenId, { pushHistory: false });
+window.addEventListener("popstate", () => {
+    runRouteInit();
 });
 
 function screenFromHash() {
