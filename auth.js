@@ -151,16 +151,9 @@ document.getElementById('sidebar-toggle').style.display = '';  // ← empty, CSS
 // Google Sign In
 function signInWithGoogle() {
   const provider = new firebase.auth.GoogleAuthProvider();
-  
-  if (/iPhone|iPad|Android/i.test(navigator.userAgent)) {
-    auth.signInWithRedirect(provider).catch((error) => {
-      alert('Login failed: ' + error.message);
-    });
-  } else {
-    auth.signInWithPopup(provider).catch((error) => {
-      alert('Login failed: ' + error.message);
-    });
-  }
+  auth.signInWithPopup(provider).catch((error) => {
+    alert('Login failed: ' + error.message);
+  });
 }
 
 // Handle redirect result
