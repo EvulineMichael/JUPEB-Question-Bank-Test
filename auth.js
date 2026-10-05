@@ -122,6 +122,12 @@ document.getElementById('sidebar-toggle').style.display = '';  // ← empty, CSS
       if (typeof showDashboard === 'function') {
           showDashboard();
       }
+      // Show survey if user hasn't seen it yet
+if (userData.hasSeenSurvey !== true) {
+    if (typeof showSurvey === 'function') {
+        showSurvey();
+    }
+}
       
       window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
       
