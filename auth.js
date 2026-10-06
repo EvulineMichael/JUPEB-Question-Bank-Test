@@ -77,73 +77,87 @@ auth.onAuthStateChanged(async (user) => {
     const docRef = db.collection("authorized_users").doc(email);
     const doc = await docRef.get();
     
-    if (doc.exists) {
-      const userData = doc.data();
-      
-      // Check expiry
-      if (userData.expiry_date) {
-        const expiryDate = new Date(userData.expiry_date);
-        const today = new Date();
-        if (today > expiryDate) {
-          document.getElementById('auth-status').innerHTML = 
-            `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-              <p>⏰ <strong>Access expired</strong></p>
-              <p>Your access expired on ${userData.expiry_date}. Please renew.</p>
-            </div>`;
-          auth.signOut();
-          return;
-        }
-      }
-      
-      // Save user name
-      if (user.displayName) {
-          localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
-      }
+    // Replace your ENTIRE current "if (doc.exists) { ... }" block (inside
+// auth.onAuthStateChanged) with this. The dashboard-reveal logic that used
+// to run immediately now lives in revealDashboard(user) — a single named
+// function called from exactly one of two places below, so there's no
+// ambiguity about whether it ran.
 
-            // Show the screen the URL says we're on (not always dashboard)
-      showScreen(screenFromHash(), { pushHistory: false });
+if (doc.exists) {
+  const userData = doc.data();
 
-      // Show sidebar
-      // Show sidebar
-document.getElementById('app-sidebar').style.display = 'flex';
-document.body.classList.add('has-sidebar');   // add this line
-document.getElementById('sidebar-toggle').style.display = '';  // ← empty, CSS decides
-
-      // Populate user in sidebar
-      if (user.displayName) {
-    renderSidebarUser({ 
-        name: user.displayName.split(' ')[0], 
-        isPremium: true,
-        photoURL: user.photoURL || null
-    });
-}
-      
-      // Show dashboard content
-      if (typeof showDashboard === 'function') {
-          showDashboard();
-      }
-      // Show survey if user hasn't seen it yet
-if (userData.hasSeenSurvey !== true) {
-    if (typeof showSurvey === 'function') {
-        showSurvey();
-    }
-}
-      
-      window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
-      
-      if (typeof initJUPEBApp === 'function') {
-        initJUPEBApp();
-      }
-      
-    } else {
-      // Not authorized
-      document.getElementById('auth-status').innerHTML = 
+  // Check expiry — unchanged from before
+  if (userData.expiry_date) {
+    const expiryDate = new Date(userData.expiry_date);
+    const today = new Date();
+    if (today > expiryDate) {
+      document.getElementById('auth-status').innerHTML =
         `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-          <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
-          <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
+          <p>⏰ <strong>Access expired</strong></p>
+          <p>Your access expired on ${userData.expiry_date}. Please renew.</p>
         </div>`;
       auth.signOut();
+      return;
     }
+  }
+
+  const docRef = db.collection("authorized_users").doc(email);
+
+  // This is everything that used to run immediately after the expiry
+  // check. It now lives in one place, called either right away (survey
+  // already done) or after the survey is submitted (first-time user).
+  function revealDashboard() {
+    if (user.displayName) {
+      localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
+    }
+
+    // No showScreen() call here — runRouteInit() below already shows the
+    // correct screen for the current URL *and* loads its content. Calling
+    // showScreen() here too would be redundant and could reintroduce the
+    // "reload always lands on dashboard" bug.
+
+    document.getElementById('app-sidebar').style.display = 'flex';
+    document.body.classList.add('has-sidebar');
+    document.getElementById('sidebar-toggle').style.display = '';
+
+    if (user.displayName) {
+      renderSidebarUser({
+        name: user.displayName.split(' ')[0],
+        isPremium: true,
+        photoURL: user.photoURL || null
+      });
+    }
+
+    if (typeof showDashboard === 'function') {
+      showDashboard();
+    }
+
+    window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+
+    if (typeof initJUPEBApp === 'function') {
+      initJUPEBApp();
+    }
+
+    if (typeof runRouteInit === 'function') {
+      runRouteInit();
+    }
+  }
+
+  if (userData.hasSeenSurvey === true) {
+    revealDashboard();
+  } else {
+    showSurvey(user, docRef, revealDashboard);
+  }
+
+} else {
+  // Not authorized — unchanged from before
+  document.getElementById('auth-status').innerHTML =
+    `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
+      <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
+      <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
+    </div>`;
+  auth.signOut();
+}
   } else {
     showScreen("login-screen", { pushHistory: false });
     document.getElementById('app-sidebar').style.display = 'none';

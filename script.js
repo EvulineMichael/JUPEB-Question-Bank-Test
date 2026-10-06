@@ -151,7 +151,105 @@ function toggleTheme() {
     updateThemeIcons();
     updateSidebarThemeButton();
 }
+// ===== SURVEY MODAL =====
+// Place in script.js, anywhere after your other function definitions.
+//
+// Usage from auth.js: showSurvey(user, docRef, onComplete)
+// onComplete is called once the survey is saved (or immediately, if the
+// user has already completed it before) — it's where your existing
+// dashboard-reveal logic goes, so the survey sits cleanly *before* it
+// rather than being tangled up with it.
 
+let _surveyOnComplete = null; // holds the callback until submit
+
+function showSurvey(user, docRef, onComplete) {
+    _surveyOnComplete = { user, docRef, onComplete };
+
+    const overlay = document.getElementById("survey-overlay");
+    if (!overlay) return;
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function hideSurvey() {
+    const overlay = document.getElementById("survey-overlay");
+    if (!overlay) return;
+    overlay.style.display = "none";
+    document.body.style.overflow = "";
+}
+
+document.getElementById("survey-source")?.addEventListener("change", (e) => {
+    const source = e.target.value;
+    const otherWrap = document.getElementById("survey-other-wrap");
+    const referrerWrap = document.getElementById("survey-referrer-wrap");
+
+    if (otherWrap) {
+        otherWrap.style.display = (source === "Other") ? "block" : "none";
+    }
+    if (referrerWrap) {
+        referrerWrap.style.display =
+            (source === "Referred by a friend" || source === "Referred by a teacher") ? "block" : "none";
+    }
+});
+
+document.getElementById("survey-submit")?.addEventListener("click", async () => {
+    const sourceEl = document.getElementById("survey-source");
+    const otherEl = document.getElementById("survey-other");
+    const referrerEl = document.getElementById("survey-referrer");
+    const errorEl = document.getElementById("survey-error");
+    const submitBtn = document.getElementById("survey-submit");
+
+    if (!sourceEl || !errorEl || !submitBtn || !_surveyOnComplete) return;
+
+    const source = sourceEl.value.trim();
+    if (!source) {
+        errorEl.textContent = "Please select how you heard about us.";
+        errorEl.style.display = "block";
+        return;
+    }
+
+    let finalSource = source;
+    if (source === "Other") {
+        const otherText = otherEl?.value.trim();
+        if (!otherText) {
+            errorEl.textContent = "Please tell us how you heard about us.";
+            errorEl.style.display = "block";
+            return;
+        }
+        finalSource = `Other: ${otherText}`;
+    }
+
+    errorEl.style.display = "none";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Saving...";
+
+    const { user, docRef, onComplete } = _surveyOnComplete;
+
+    try {
+        await db.collection("surveys").doc(user.email).set({
+            email: user.email,
+            name: user.displayName || null,
+            source: finalSource,
+            referredBy: referrerEl?.value.trim() || null,
+            submittedAt: firebase.firestore.FieldValue.serverTimestamp()
+        });
+
+        await docRef.update({ hasSeenSurvey: true });
+
+        hideSurvey();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Continue →";
+        _surveyOnComplete = null;
+
+        onComplete(); // <-- proceeds to the dashboard, now that saving succeeded
+    } catch (error) {
+        console.error("Survey submit error:", error);
+        errorEl.textContent = "Could not save. Please try again.";
+        errorEl.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Continue →";
+    }
+});
 function updateSidebarThemeButton() {
     const icon = document.getElementById('sidebar-theme-icon');
     const text = document.getElementById('sidebar-theme-text');
@@ -3118,99 +3216,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener('resize', () => { handleSidebarResponsive(); });
 
-// ===== SURVEY MODAL =====
-
-function showSurvey() {
-    const overlay = document.getElementById("survey-overlay");
-    if (!overlay) return;
-    overlay.style.display = "flex";
-    document.body.style.overflow = "hidden";
-}
-
-function hideSurvey() {
-    const overlay = document.getElementById("survey-overlay");
-    if (!overlay) return;
-    overlay.style.display = "none";
-    document.body.style.overflow = "";
-}
-
-// Show/hide "Other" text field based on the Q1 answer
-document.getElementById("survey-source")?.addEventListener("change", (e) => {
-    const source = e.target.value;
-    const otherWrap = document.getElementById("survey-other-wrap");
-    const referrerWrap = document.getElementById("survey-referrer-wrap");
-    
-    // Show "Other" input when "Other" is selected
-    if (otherWrap) {
-        otherWrap.style.display = (source === "Other") ? "block" : "none";
-    }
-    
-    // Show referrer field when "Referred by..." is selected
-    if (referrerWrap) {
-        referrerWrap.style.display = (source === "Referred by a friend" || source === "Referred by a teacher") ? "block" : "none";
-    }
-});
-
-async function submitSurvey() {
-    const sourceEl = document.getElementById("survey-source");
-    const otherEl = document.getElementById("survey-other");
-    const referrerEl = document.getElementById("survey-referrer");
-    const errorEl = document.getElementById("survey-error");
-    const submitBtn = document.getElementById("survey-submit");
-    
-    if (!sourceEl || !errorEl || !submitBtn) return;
-    
-    const source = sourceEl.value.trim();
-    if (!source) {
-        errorEl.textContent = "Please select how you heard about us.";
-        errorEl.style.display = "block";
-        return;
-    }
-    
-    // If "Other", require the text field
-    let finalSource = source;
-    if (source === "Other") {
-        const otherText = otherEl?.value.trim();
-        if (!otherText) {
-            errorEl.textContent = "Please tell us how you heard about us.";
-            errorEl.style.display = "block";
-            return;
-        }
-        finalSource = `Other: ${otherText}`;
-    }
-    
-    errorEl.style.display = "none";
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Saving...";
-    
-    const user = firebase.auth().currentUser;
-    if (!user) {
-        // Not signed in — just hide it (edge case)
-        hideSurvey();
-        return;
-    }
-    
-    try {
-        // Save survey response
-        await db.collection("surveys").doc(user.email).set({
-            email: user.email,
-            name: user.displayName || null,
-            source: finalSource,
-            referredBy: referrerEl?.value.trim() || null,
-            submittedAt: firebase.firestore.FieldValue.serverTimestamp()
-        });
-        
-        // Mark user as having seen the survey
-        await db.collection("authorized_users").doc(user.email).update({
-            hasSeenSurvey: true
-        });
-        
-        hideSurvey();
-    } catch (error) {
-        console.error("Survey submit error:", error);
-        errorEl.textContent = "Could not save. Please try again.";
-        errorEl.style.display = "block";
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Continue →";
-    }
-}

@@ -124,7 +124,7 @@
             <h1 style="font-size:1.8rem;color:var(--tab-active-bg);margin-bottom:4px;">📚 JUPEB Question Bank</h1>
             <p style="color:var(--text-secondary);font-style:italic;font-size:0.9rem;">Helping you ace JUPEB, one question at a time</p>
         </div>
-        <!-- Survey Modal (shown once to new users after first sign-in) -->
+      
 <div class="survey-overlay" id="survey-overlay" style="display:none;">
   <div class="survey-modal">
     <div class="survey-header">
@@ -134,9 +134,8 @@
     </div>
 
     <div class="survey-body">
-      <!-- Q1: How did you hear about us? -->
       <label class="survey-label">How did you hear about us? <span class="survey-required">*</span></label>
-      <select id="survey-source" class="survey-select" required>
+      <select id="survey-source" class="survey-select">
         <option value="">— Select one —</option>
         <option value="Referred by a friend">Referred by a friend</option>
         <option value="Referred by a teacher">Referred by a teacher</option>
@@ -147,13 +146,11 @@
         <option value="Other">Other</option>
       </select>
 
-      <!-- Other (shown only when "Other" is selected) -->
       <div id="survey-other-wrap" style="display:none;">
         <label class="survey-label">Please specify</label>
         <input type="text" id="survey-other" class="survey-input" placeholder="e.g. Friend's WhatsApp status" />
       </div>
 
-      <!-- Q2: Who referred you? (optional, shown only when relevant) -->
       <div id="survey-referrer-wrap" style="display:none;">
         <label class="survey-label">Who referred you? <span class="survey-optional">(optional)</span></label>
         <input type="text" id="survey-referrer" class="survey-input" placeholder="Their name" />
@@ -162,7 +159,7 @@
     </div>
 
     <div class="survey-footer">
-      <button class="survey-submit" id="survey-submit" onclick="submitSurvey()">Continue →</button>
+      <button class="survey-submit" id="survey-submit">Continue →</button>
       <p class="survey-error" id="survey-error" style="display:none;"></p>
     </div>
   </div>

@@ -82,7 +82,11 @@ body {
     color: var(--text-primary);
     transition: background 0.3s ease, color 0.3s ease;
 }
-/* ===== SURVEY MODAL ===== */
+/* ===== Survey modal =====
+   Place anywhere in style.css. Uses your existing tokens:
+   --bg-secondary, --bg-primary, --dash-border, --text-primary,
+   --text-secondary, --tab-active-bg, --dash-danger */
+
 .survey-overlay {
     position: fixed;
     inset: 0;
@@ -94,12 +98,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    animation: surveyFadeIn 0.25s ease;
-}
-
-@keyframes surveyFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .survey-modal {
@@ -111,40 +109,14 @@ body {
     max-height: 92vh;
     overflow-y: auto;
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
-    animation: surveySlideUp 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-@keyframes surveySlideUp {
-    from { transform: translateY(16px) scale(0.98); opacity: 0; }
-    to { transform: translateY(0) scale(1); opacity: 1; }
-}
+.survey-header { text-align: center; padding: 28px 24px 12px; }
+.survey-emoji { font-size: 2rem; margin-bottom: 8px; }
+.survey-header h2 { font-size: 1.3rem; color: var(--text-primary); margin-bottom: 6px; }
+.survey-header p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
 
-.survey-header {
-    text-align: center;
-    padding: 28px 24px 12px;
-}
-
-.survey-emoji {
-    font-size: 2rem;
-    margin-bottom: 8px;
-}
-
-.survey-header h2 {
-    font-size: 1.3rem;
-    color: var(--text-primary);
-    margin-bottom: 6px;
-}
-
-.survey-header p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
-}
-
-.survey-body {
-    padding: 8px 24px 0;
-}
-
+.survey-body { padding: 8px 24px 0; }
 .survey-label {
     display: block;
     font-size: 0.9rem;
@@ -152,20 +124,10 @@ body {
     color: var(--text-primary);
     margin: 14px 0 6px;
 }
+.survey-required { color: var(--dash-danger); font-weight: 400; }
+.survey-optional { color: var(--text-secondary); font-weight: 400; font-size: 0.8rem; }
 
-.survey-required {
-    color: var(--dash-danger);
-    font-weight: 400;
-}
-
-.survey-optional {
-    color: var(--text-secondary);
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-.survey-select,
-.survey-input {
+.survey-select, .survey-input {
     width: 100%;
     padding: 12px 14px;
     border: 2px solid var(--dash-border);
@@ -177,25 +139,14 @@ body {
     box-sizing: border-box;
     transition: border-color 0.15s ease;
 }
-
-.survey-select:focus,
-.survey-input:focus {
+.survey-select:focus, .survey-input:focus {
     outline: none;
     border-color: var(--tab-active-bg);
 }
 
-.survey-hint {
-    font-size: 0.78rem;
-    color: var(--text-secondary);
-    margin: 6px 0 0;
-    font-style: italic;
-}
+.survey-hint { font-size: 0.78rem; color: var(--text-secondary); margin: 6px 0 0; font-style: italic; }
 
-.survey-footer {
-    padding: 20px 24px 24px;
-    text-align: center;
-}
-
+.survey-footer { padding: 20px 24px 24px; text-align: center; }
 .survey-submit {
     width: 100%;
     padding: 14px;
@@ -206,23 +157,11 @@ body {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: filter 0.15s ease, transform 0.15s ease;
+    transition: filter 0.15s ease;
 }
-
-.survey-submit:hover:not(:disabled) {
-    filter: brightness(1.08);
-}
-
-.survey-submit:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-.survey-error {
-    color: var(--dash-danger);
-    font-size: 0.85rem;
-    margin-top: 10px;
-}
+.survey-submit:hover:not(:disabled) { filter: brightness(1.08); }
+.survey-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.survey-error { color: var(--dash-danger); font-size: 0.85rem; margin-top: 10px; }
 /* Header Theme Toggle */
 .header-theme-toggle {
     position: absolute;
