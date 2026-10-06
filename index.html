@@ -125,45 +125,7 @@
             <p style="color:var(--text-secondary);font-style:italic;font-size:0.9rem;">Helping you ace JUPEB, one question at a time</p>
         </div>
       
-<div class="survey-overlay" id="survey-overlay" style="display:none;">
-  <div class="survey-modal">
-    <div class="survey-header">
-      <div class="survey-emoji">👋</div>
-      <h2>Welcome to JUPEB Question Bank</h2>
-      <p>Before we get started, help us understand how you found us. Takes 20 seconds.</p>
-    </div>
 
-    <div class="survey-body">
-      <label class="survey-label">How did you hear about us? <span class="survey-required">*</span></label>
-      <select id="survey-source" class="survey-select">
-        <option value="">— Select one —</option>
-        <option value="Referred by a friend">Referred by a friend</option>
-        <option value="Referred by a teacher">Referred by a teacher</option>
-        <option value="WhatsApp">WhatsApp</option>
-        <option value="Instagram">Instagram</option>
-        <option value="TikTok">TikTok</option>
-        <option value="Google search">Google search</option>
-        <option value="Other">Other</option>
-      </select>
-
-      <div id="survey-other-wrap" style="display:none;">
-        <label class="survey-label">Please specify</label>
-        <input type="text" id="survey-other" class="survey-input" placeholder="e.g. Friend's WhatsApp status" />
-      </div>
-
-      <div id="survey-referrer-wrap" style="display:none;">
-        <label class="survey-label">Who referred you? <span class="survey-optional">(optional)</span></label>
-        <input type="text" id="survey-referrer" class="survey-input" placeholder="Their name" />
-        <p class="survey-hint">Skip this if you found us yourself.</p>
-      </div>
-    </div>
-
-    <div class="survey-footer">
-      <button class="survey-submit" id="survey-submit">Continue →</button>
-      <p class="survey-error" id="survey-error" style="display:none;"></p>
-    </div>
-  </div>
-</div>
 
         <!-- Tabs -->
         <div style="display:flex;justify-content:center;gap:0;margin-bottom:24px;border-bottom:2px solid var(--border-color);">
@@ -480,6 +442,45 @@
     </div>
     <input type="text" class="subject-picker-search" id="subject-picker-search" placeholder="Search…" autocomplete="off" />
     <div class="subject-picker-grid" id="subject-picker-grid"></div>
+  </div>
+</div>
+<div class="survey-overlay" id="survey-overlay" style="display:none;">
+  <div class="survey-modal">
+    <div class="survey-header">
+      <div class="survey-emoji">👋</div>
+      <h2>Welcome to JUPEB Question Bank</h2>
+      <p>Before we get started, help us understand how you found us. Takes 20 seconds.</p>
+    </div>
+
+    <div class="survey-body">
+      <label class="survey-label">How did you hear about us? <span class="survey-required">*</span></label>
+      <select id="survey-source" class="survey-select">
+        <option value="">— Select one —</option>
+        <option value="Referred by a friend">Referred by a friend</option>
+        <option value="Referred by a teacher">Referred by a teacher</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Google search">Google search</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <div id="survey-other-wrap" style="display:none;">
+        <label class="survey-label">Please specify</label>
+        <input type="text" id="survey-other" class="survey-input" placeholder="e.g. Friend's WhatsApp status" />
+      </div>
+
+      <div id="survey-referrer-wrap" style="display:none;">
+        <label class="survey-label">Who referred you? <span class="survey-optional">(optional)</span></label>
+        <input type="text" id="survey-referrer" class="survey-input" placeholder="Their name" />
+        <p class="survey-hint">Skip this if you found us yourself.</p>
+      </div>
+    </div>
+
+    <div class="survey-footer">
+      <button class="survey-submit" id="survey-submit">Continue →</button>
+      <p class="survey-error" id="survey-error" style="display:none;"></p>
+    </div>
   </div>
 </div>
 <!-- Back to Top Button -->
