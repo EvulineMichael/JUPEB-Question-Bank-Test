@@ -77,7 +77,7 @@ auth.onAuthStateChanged(async (user) => {
     const docRef = db.collection("authorized_users").doc(email);
     const doc = await docRef.get();
     
-    // Replace your ENTIRE current "if (doc.exists) { ... }" block (inside
+// Replace your ENTIRE current "if (doc.exists) { ... }" block (inside
 // auth.onAuthStateChanged) with this. The dashboard-reveal logic that used
 // to run immediately now lives in revealDashboard(user) — a single named
 // function called from exactly one of two places below, so there's no
@@ -114,6 +114,12 @@ if (doc.exists) {
     // stuck visible if something later throws.
     const loginEl = document.getElementById('login-screen');
     if (loginEl) loginEl.style.display = 'none';
+
+    // Show dashboard immediately as a guaranteed baseline — don't wait on
+    // runRouteInit() at the end of this function. If the URL says a
+    // different screen, runRouteInit() will correct it a moment later;
+    // this just guarantees something visible shows up right away.
+    showScreen("dashboard-screen", { pushHistory: false });
 
     if (user.displayName) {
       localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
