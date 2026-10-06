@@ -77,15 +77,9 @@ auth.onAuthStateChanged(async (user) => {
     const docRef = db.collection("authorized_users").doc(email);
     const doc = await docRef.get();
     
-    // Replace your ENTIRE current "if (doc.exists) { ... }" block (inside
-// auth.onAuthStateChanged) with this. The dashboard-reveal logic that used
-// to run immediately now lives in revealDashboard(user) — a single named
-// function called from exactly one of two places below, so there's no
-// ambiguity about whether it ran.
-
-if (doc.exists) {
+    if (doc.exists) {
   const userData = doc.data();
-
+ 
   // Check expiry — unchanged from before
   if (userData.expiry_date) {
     const expiryDate = new Date(userData.expiry_date);
@@ -100,9 +94,9 @@ if (doc.exists) {
       return;
     }
   }
-
+ 
   const docRef = db.collection("authorized_users").doc(email);
-
+ 
   // This is everything that used to run immediately after the expiry
   // check. It now lives in one place, called either right away (survey
   // already done) or after the survey is submitted (first-time user).
@@ -110,16 +104,16 @@ if (doc.exists) {
     if (user.displayName) {
       localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
     }
-
+ 
     // No showScreen() call here — runRouteInit() below already shows the
     // correct screen for the current URL *and* loads its content. Calling
     // showScreen() here too would be redundant and could reintroduce the
     // "reload always lands on dashboard" bug.
-
+ 
     document.getElementById('app-sidebar').style.display = 'flex';
     document.body.classList.add('has-sidebar');
     document.getElementById('sidebar-toggle').style.display = '';
-
+ 
     if (user.displayName) {
       renderSidebarUser({
         name: user.displayName.split(' ')[0],
@@ -127,28 +121,29 @@ if (doc.exists) {
         photoURL: user.photoURL || null
       });
     }
-
+ 
     if (typeof showDashboard === 'function') {
       showDashboard();
     }
-
+ 
     window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
-
+ 
     if (typeof initJUPEBApp === 'function') {
       initJUPEBApp();
     }
-
+ 
     if (typeof runRouteInit === 'function') {
       runRouteInit();
     }
   }
-
-  if (userData.hasSeenSurvey === true) {
-    revealDashboard();
-  } else {
-    showSurvey(user, docRef, revealDashboard);
+ 
+  // Dashboard always reveals immediately — the survey no longer blocks it.
+  revealDashboard();
+ 
+  if (userData.hasSeenSurvey !== true) {
+    showSurvey(user, docRef);
   }
-
+ 
 } else {
   // Not authorized — unchanged from before
   document.getElementById('auth-status').innerHTML =

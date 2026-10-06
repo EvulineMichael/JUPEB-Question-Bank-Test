@@ -160,10 +160,10 @@ function toggleTheme() {
 // dashboard-reveal logic goes, so the survey sits cleanly *before* it
 // rather than being tangled up with it.
 
-let _surveyOnComplete = null; // holds the callback until submit
+let _surveyContext = null; // holds user/docRef until submit
 
-function showSurvey(user, docRef, onComplete) {
-    _surveyOnComplete = { user, docRef, onComplete };
+function showSurvey(user, docRef) {
+    _surveyContext = { user, docRef };
 
     const overlay = document.getElementById("survey-overlay");
     if (!overlay) return;
@@ -199,7 +199,7 @@ document.getElementById("survey-submit")?.addEventListener("click", async () => 
     const errorEl = document.getElementById("survey-error");
     const submitBtn = document.getElementById("survey-submit");
 
-    if (!sourceEl || !errorEl || !submitBtn || !_surveyOnComplete) return;
+    if (!sourceEl || !errorEl || !submitBtn || !_surveyContext) return;
 
     const source = sourceEl.value.trim();
     if (!source) {
@@ -223,7 +223,7 @@ document.getElementById("survey-submit")?.addEventListener("click", async () => 
     submitBtn.disabled = true;
     submitBtn.textContent = "Saving...";
 
-    const { user, docRef, onComplete } = _surveyOnComplete;
+    const { user, docRef } = _surveyContext;
 
     try {
         await db.collection("surveys").doc(user.email).set({
@@ -239,9 +239,8 @@ document.getElementById("survey-submit")?.addEventListener("click", async () => 
         hideSurvey();
         submitBtn.disabled = false;
         submitBtn.textContent = "Continue →";
-        _surveyOnComplete = null;
-
-        onComplete(); // <-- proceeds to the dashboard, now that saving succeeded
+        _surveyContext = null;
+        // No callback to fire — the dashboard was already showing underneath
     } catch (error) {
         console.error("Survey submit error:", error);
         errorEl.textContent = "Could not save. Please try again.";
