@@ -163,6 +163,7 @@ function toggleTheme() {
 let _surveyContext = null; // holds user/docRef until submit
 
 function showSurvey(user, docRef) {
+    console.log("showSurvey() called");
     _surveyContext = { user, docRef };
 
     const overlay = document.getElementById("survey-overlay");
@@ -172,6 +173,7 @@ function showSurvey(user, docRef) {
 }
 
 function hideSurvey() {
+    console.log("hideSurvey() called");
     const overlay = document.getElementById("survey-overlay");
     if (!overlay) return;
     overlay.style.display = "none";
