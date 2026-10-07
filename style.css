@@ -69,14 +69,15 @@
     --dash-danger: #f16565;
 }
 
-html {
-  height: 100%;
+html, body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
