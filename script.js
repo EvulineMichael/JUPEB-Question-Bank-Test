@@ -955,7 +955,42 @@ html += `<button class="topic-btn" data-topic="${escapeHtml(topic)}" ${!hasQuest
         });
     });
 }
-
+function renderTopicResources(topic) {
+    // Guard against missing file or empty object
+    if (typeof TOPIC_RESOURCES === "undefined") return "";
+    
+    const resources = TOPIC_RESOURCES[topic];
+    if (!resources || resources.length === 0) return "";
+    
+    const iconFor = (type) => {
+        if (type === "video") return "🎬";
+        if (type === "article") return "📄";
+        return "🔗";
+    };
+    
+    const links = resources.map(r => {
+        const icon = iconFor(r.type);
+        return `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer"
+                   style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;
+                          background:var(--bg-card);border:1px solid var(--dash-border);
+                          border-radius:8px;color:var(--text-primary);text-decoration:none;
+                          font-size:0.85rem;transition:all 0.15s ease;">
+            <span>${icon}</span><span>${escapeHtml(r.title)}</span>
+        </a>`;
+    }).join("");
+    
+    return `
+        <div style="margin:0 0 20px;padding:16px;background:var(--bg-card);
+                    border:1px solid var(--dash-border);border-radius:12px;">
+            <div style="font-size:0.8rem;font-weight:600;color:var(--tab-active-bg);
+                        text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;">
+                📚 Learn this topic
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                ${links}
+            </div>
+        </div>`;
+}
 // ===== DISPLAY QUESTIONS (STUDY MODE) =====
 function displayQuestions(topic) {
     if (welcomeMessage) welcomeMessage.style.display = "none";
@@ -1015,10 +1050,12 @@ allQuestions = allQuestions.filter(q => {
         // Get unique years for display
         const allYears = [...new Set(allQuestions.map(q => q.year))].sort((a, b) => b - a);
 
-        let questionsHtml = `<h2 style="margin-bottom:10px;color:#0d6efd;">📖 ${escapeHtml(topic)}</h2>`;
-        questionsHtml += `<p style="margin-bottom:20px;color:#6c757d;padding-bottom:10px;border-bottom:1px solid #e9ecef;">${totalQuestions} question(s) | 📅 Years: ${allYears.join(", ")}</p>`;
+let questionsHtml = `<h2 style="margin-bottom:10px;color:#0d6efd;">📖 ${escapeHtml(topic)}</h2>`;
+questionsHtml += renderTopicResources(topic);
+questionsHtml += renderTopicNav(topic); 
+questionsHtml += `<p style="margin-bottom:20px;color:#6c757d;padding-bottom:10px;border-bottom:1px solid #e9ecef;">${totalQuestions} question(s) | 📅 Years: ${allYears.join(", ")}</p>`;
 
-        let questionIndex = 1;
+let questionIndex = 1;
         
         // --- SECTION 1: OBJECTIVE QUESTIONS ---
         if (objectiveQuestions.length > 0) {
@@ -1078,6 +1115,7 @@ if (window.MathJax && window.MathJax.typesetPromise) {
                 }
             });
         });
+        wireTopicNavButtons(topic); 
 
         document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -1422,6 +1460,62 @@ function showQuizLobby() {
     setupLobbyListeners();
 }
 
+// ===== TOPIC NAVIGATION (Prev / Next / Back to course) =====
+// Relies on pickerSubject, pickerSet, courseStructure, pickerStep, pickerEl,
+// renderPickerStep(), showScreen(), escapeHtml() — all already in script.js.
+
+function getCurrentCourseTopics() {
+  if (!pickerSubject || !pickerSet) return null;
+  const topics = courseStructure[pickerSubject]?.[pickerSet];
+  return topics || null;
+}
+
+function renderTopicNav(topic) {
+  const topics = getCurrentCourseTopics();
+  if (!topics) return ""; // no course context (e.g. reached via a direct link) — just hide it
+
+  const idx = topics.indexOf(topic);
+  if (idx === -1) return "";
+
+  const prevTopic = idx > 0 ? topics[idx - 1] : null;
+  const nextTopic = idx < topics.length - 1 ? topics[idx + 1] : null;
+
+  return `
+    <div class="topic-nav-bar">
+      <button class="topic-nav-btn" id="topic-nav-prev" ${!prevTopic ? "disabled" : ""}>
+        ← ${prevTopic ? escapeHtml(prevTopic) : "Previous"}
+      </button>
+      <button class="topic-nav-btn topic-nav-back" id="topic-nav-back">
+        📋 Back to ${escapeHtml(pickerSet)}
+      </button>
+      <button class="topic-nav-btn" id="topic-nav-next" ${!nextTopic ? "disabled" : ""}>
+        ${nextTopic ? escapeHtml(nextTopic) : "Next"} →
+      </button>
+    </div>`;
+}
+
+// Call this once, right after questionsContainer.innerHTML is set in
+// displayQuestions() — see wiring note below.
+function wireTopicNavButtons(topic) {
+  const topics = getCurrentCourseTopics();
+  if (!topics) return;
+  const idx = topics.indexOf(topic);
+
+  document.getElementById("topic-nav-prev")?.addEventListener("click", () => {
+    if (idx > 0) displayQuestions(topics[idx - 1]);
+  });
+  document.getElementById("topic-nav-next")?.addEventListener("click", () => {
+    if (idx < topics.length - 1) displayQuestions(topics[idx + 1]);
+  });
+  document.getElementById("topic-nav-back")?.addEventListener("click", () => {
+    showScreen("app-content", { customScreenId: "subjects-screen" });
+    pickerStep = "topic";
+    pickerEl.classList.add("is-open");
+    pickerEl.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    renderPickerStep();
+  });
+}
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
     const subjects = Object.keys(courseStructure);
