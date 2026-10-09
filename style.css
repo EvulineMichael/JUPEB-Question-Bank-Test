@@ -323,6 +323,62 @@ header {
 .topic-nav-btn:hover:not(:disabled) { border-color: var(--tab-active-bg); }
 .topic-nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 .topic-nav-back { flex: 0 0 auto; color: var(--tab-active-bg); }
+
+/* ===== LEARN BANNER + TOPIC NAV — MOBILE ===== */
+@media (max-width: 768px) {
+
+  /* Learn banner */
+  .learn-banner {
+    padding: 14px 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .learn-banner-heading {
+    font-size: 0.82rem;
+    margin-bottom: 8px;
+  }
+  .learn-resource-list {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .learn-resource-pill {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    border-radius: 10px;      /* pills become full-width rows on mobile */
+  }
+
+  /* Topic nav bar */
+  .topic-nav-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .topic-nav-btn {
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+  .topic-nav-back {
+    flex: 1 1 100%;            /* "Back" takes full row on mobile */
+    order: -1;                 /* but sits ABOVE prev/next buttons */
+    text-align: left;
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .learn-banner { padding: 12px; }
+  .learn-resource-pill {
+    font-size: 0.75rem;
+    padding: 9px 12px;
+  }
+  .topic-nav-btn {
+    font-size: 0.75rem;
+    padding: 9px 8px;
+  }
+}
 /* Subject Tabs */
 .subject-tabs {
     display: flex;

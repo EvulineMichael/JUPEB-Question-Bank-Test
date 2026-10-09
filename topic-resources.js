@@ -57,16 +57,17 @@ const TOPIC_RESOURCES = {
 
   "Chemical Kinetics": [
     { type: "video", title: "Chemical Kinetics: Full Review", url: "https://youtu.be/7I0Xg92_eA4?si=fv1QGQ0eCmYtdpg9" },
-    { type: "video", title: "Chemical Kinetics: ICE Method", url: "https://youtu.be/kgpgdReUR6g?si=u5noc1idah2uDQBt" },
+    { type: "video", title: "Organic Chemistry Tutor: Chemical Kinetics", url: "https://youtu.be/kgpgdReUR6g?si=u5noc1idah2uDQBt" },
   ],
 
   "Equilibrium State": [
-    { type: "video", title: "Placeholder: Chemical Equilibrium", url: "https://example.com/video-equilibrium" },
-    { type: "article", title: "Placeholder: Khan Academy — Equilibrium", url: "https://example.com/article-equilibrium" },
+    { type: "video", title: "Organic Chemistry Tutor: Chemical Equilibrium", url: "https://youtu.be/J4WJCYpTYj8?si=0sAr3Y3PT4EfAZxP" },
+    { type: "video", title: "Chemical Equilibrium Tutorial. How to solve questions on Le Chatelier's principle(GCSE Chemistry)", url: "https://youtu.be/GeKzlLc4yGs?si=-qIScetomKHaB7CS" },
   ],
 
   "Acid-Base Equilibria": [
-    { type: "video", title: "Placeholder: Acid-Base Equilibria", url: "https://example.com/video-acid-base" },
+    { type: "video", title: "Acids and Bases - Formulas and Equations - pH, pOH, Ka, Kb, pKa, pKb, Kw - Chemistry", url: "https://youtu.be/8VXyvMXbUa8?si=hPdQqXC64IZh6xlI" },
+    { type: "video", title: "Khan Academy: Acid-Base Equilibria", url: "https://youtu.be/ss7Ap-6bFYw?si=TSYjwzDvfkVRWCI9" },
     { type: "article", title: "Placeholder: Khan Academy — Acid-Base Equilibria", url: "https://example.com/article-acid-base" },
   ],
 
