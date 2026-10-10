@@ -30,6 +30,28 @@ let allSubjectYears = {
     irs: [],
     literature: []
 };
+
+// Teacher referral codes
+const REFERRAL_CODES = {
+  "ABD001": "Abdul",
+  "COL001": "Collins",
+  "OBI001": "Obinna",
+  "SEG001": "Segun",
+  "CHI001": "Chidinma",
+  "TEN001": "Tenkat",
+  "EDA001": "Edafe"
+};
+
+// Capture ?ref= from URL and remember it
+(function captureReferral() {
+  const params = new URLSearchParams(window.location.search);
+  const ref = params.get("ref");
+  if (ref && REFERRAL_CODES[ref]) {
+    localStorage.setItem("jupeb_referral_code", ref);
+    // Clean the URL so the code doesn't linger in the address bar
+    window.history.replaceState({}, "", window.location.pathname);
+  }
+})();
 // Edit this list whenever your answers change — the empty state disappears
 // automatically once this array has content.
 const FAQ_ITEMS = [
@@ -228,13 +250,18 @@ document.getElementById("survey-submit")?.addEventListener("click", async () => 
     const { user, docRef } = _surveyContext;
 
     try {
-        await db.collection("surveys").doc(user.email).set({
-            email: user.email,
-            name: user.displayName || null,
-            source: finalSource,
-            referredBy: referrerEl?.value.trim() || null,
-            submittedAt: firebase.firestore.FieldValue.serverTimestamp()
-        });
+        const refCode = localStorage.getItem("jupeb_referral_code") || null;
+
+await db.collection("surveys").doc(user.email).set({
+    email: user.email,
+    name: user.displayName || null,
+    source: finalSource,
+    referredBy: referrerEl?.value.trim() || null,
+    referralCode: refCode,
+    submittedAt: firebase.firestore.FieldValue.serverTimestamp()
+});
+// After successful submit
+localStorage.removeItem("jupeb_referral_code");
 
         await docRef.update({ hasSeenSurvey: true });
 
@@ -251,6 +278,31 @@ document.getElementById("survey-submit")?.addEventListener("click", async () => 
         submitBtn.textContent = "Continue →";
     }
 });
+
+function showSurvey(user, docRef) {
+    _surveyContext = { user, docRef };
+    
+    // Pre-fill referrer if a referral code is stored
+    const refCode = localStorage.getItem("jupeb_referral_code");
+    if (refCode && REFERRAL_CODES[refCode]) {
+        const referrerField = document.getElementById("survey-referrer");
+        const sourceField = document.getElementById("survey-source");
+        
+        if (referrerField) {
+            referrerField.value = REFERRAL_CODES[refCode];
+        }
+        if (sourceField) {
+            sourceField.value = "Referred by a teacher";
+            // Trigger change event to show the referrer field
+            sourceField.dispatchEvent(new Event("change"));
+        }
+    }
+    
+    const overlay = document.getElementById("survey-overlay");
+    if (!overlay) return;
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
 function updateSidebarThemeButton() {
     const icon = document.getElementById('sidebar-theme-icon');
     const text = document.getElementById('sidebar-theme-text');
