@@ -242,15 +242,13 @@
     </div>
 
     <!-- Subjects -->
-    <div class="dash-card dash-subjects-card">
-      <div class="dash-card-heading">
-        <h3>Your Subjects</h3>
-        <button class="dash-link-btn" onclick="openSubjectPicker()">View all</button>
-      </div>
-      <div id="dash-subject-progress" class="dash-subject-grid">
-        <p class="dash-subtext">No progress yet — start answering questions.</p>
-      </div>
-    </div>
+   <div class="dash-card dash-subjects-card">
+  <div class="dash-card-heading"><h3>Quick Access</h3></div>
+  <p class="dash-subtext" style="margin:-6px 0 14px;">Choose your favorite subjects to easily access them.</p>
+  <div id="dash-pinned-subjects" class="dash-subject-grid">
+    <!-- populated by renderPinnedSubjects() -->
+  </div>
+</div>
 
     <!-- Quick practice -->
     <div class="dash-card dash-quick-practice-card">

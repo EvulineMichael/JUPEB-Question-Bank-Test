@@ -2595,7 +2595,96 @@ function getDashboardData() {
         recentActivity: activity
     };
 }
+// ===== PINNED SUBJECTS (dashboard quick access) =====
+// Pins are stored in localStorage, so they persist whenever the student comes
+// back on the same browser/device. Relies on SUBJECT_ICONS, SUBJECT_NAMES,
+// pickerEl, pickerStep, pickerSubject, pickerSubjectName, pickerSet,
+// renderPickerStep(), showScreen() — all already in script.js.
 
+// ===== PINNED SUBJECTS (dashboard quick access) =====
+// Pins are stored in localStorage, so they persist whenever the student comes
+// back on the same browser/device. Relies on SUBJECT_ICONS, SUBJECT_NAMES,
+// pickerEl, pickerStep, pickerSubject, pickerSubjectName, pickerSet,
+// renderPickerStep(), showScreen() — all already in script.js.
+
+function getPinnedSubjects() {
+  try {
+    return JSON.parse(localStorage.getItem("jupeb_pinned_subjects") || "[]");
+  } catch (e) {
+    return [];
+  }
+}
+
+function savePinnedSubjects(list) {
+  localStorage.setItem("jupeb_pinned_subjects", JSON.stringify(list));
+}
+
+function renderPinnedSubjects() {
+  const container = document.getElementById("dash-pinned-subjects");
+  if (!container) return;
+
+  const pinned = getPinnedSubjects().filter(id => SUBJECT_NAMES[id]); // ignore stale ids
+
+  if (pinned.length === 0) {
+    container.innerHTML = `
+      <div class="pinned-empty">
+        <button class="dash-btn-primary" onclick="openSubjectPickerForPinning()">Pick Subjects</button>
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = pinned.map(id => `
+    <div class="dash-subject-tile is-clickable" onclick="openPinnedSubject('${id}')">
+      <span style="font-size:1.4rem;">${SUBJECT_ICONS[id] || "📘"}</span>
+      <h4>${SUBJECT_NAMES[id]}</h4>
+    </div>`).join("") + `
+    <button class="dash-add-subject-tile" onclick="openSubjectPickerForPinning()">
+      <span class="plus-icon">+</span>
+      <span>Edit</span>
+    </button>`;
+}
+
+// Jump straight into a pinned subject's course list (skips subject selection)
+function openPinnedSubject(subjectId) {
+  pickerPinMode = false;
+  pickerSubject = subjectId;
+  pickerSubjectName = SUBJECT_NAMES[subjectId];
+  pickerSet = null;
+  pickerStep = "set";
+
+  showScreen("app-content", { customScreenId: "subjects-screen" });
+  pickerEl.classList.add("is-open");
+  pickerEl.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  renderPickerStep();
+}
+
+// Pin-mode helpers (these live next to the picker code too — keep ONE copy)
+function openSubjectPickerForPinning() {
+  pickerPinMode = true;
+  pickerStep = "subject";
+  pickerSubject = null;
+  pickerSubjectName = null;
+  pickerSet = null;
+
+  // No showScreen() here: pinning happens on top of the dashboard.
+  pickerEl.classList.add("is-open");
+  pickerEl.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  renderPickerStep();
+  setTimeout(() => pickerSearch.focus(), 200);
+}
+
+function pickerTogglePin(subjectId) {
+  const pinned = getPinnedSubjects();
+  const index = pinned.indexOf(subjectId);
+  if (index === -1) pinned.push(subjectId);
+  else pinned.splice(index, 1);
+
+  savePinnedSubjects(pinned);
+  renderPickerStep();
+  renderPinnedSubjects();
+}
 function renderDashboard(data = {}) {
     console.log('renderDashboard called with:', data);
     const {
@@ -2646,24 +2735,7 @@ document.getElementById("dash-user-name").textContent =
     const todayDot = document.querySelectorAll("#streak-dots .streak-dot")[todayIndex];
     if (todayDot) todayDot.classList.add("is-today");
 
-    // Subjects
-    const subjectEl = document.getElementById("dash-subject-progress");
-    if (subjects.length && subjects.some(s => s.answered > 0)) {
-        subjectEl.innerHTML = subjects.map(s => {
-            const pct = s.total > 0 ? Math.round((s.answered / s.total) * 100) : 0;
-            return `
-                <div class="dash-subject-tile">
-                    <span>${s.icon}</span>
-                    <h4>${s.name}</h4>
-                    <p class="dash-subject-pct">${pct}%</p>
-                    <div class="dash-progress-track"><div class="dash-progress-fill" style="width:${pct}%"></div></div>
-                    <p class="dash-subtext">${s.answered} / ${s.total || 0} questions</p>
-                </div>`;
-        }).join("");
-    } else {
-        subjectEl.innerHTML = '<p class="dash-subtext">No progress yet — start answering questions.</p>';
-    }
-
+    
     // Weak topics
     const weakEl = document.getElementById("dash-weak-topics");
     if (weakTopics.length) {
@@ -2687,6 +2759,9 @@ document.getElementById("dash-user-name").textContent =
             </div>`).join("");
     } else {
         recentEl.innerHTML = '<p class="dash-subtext">No activity yet — your study sessions will show here.</p>';
+    }
+     if (typeof renderPinnedSubjects === 'function') {
+        renderPinnedSubjects();
     }
 }
 
@@ -2941,6 +3016,7 @@ const SUBJECT_NAMES = {
 };
 
 function openSubjectPicker() {
+    pickerPinMode = false;   // add this line
     pickerStep = "subject";
     pickerSubject = null;
     pickerSubjectName = null;
@@ -2964,6 +3040,8 @@ function closeSubjectPicker() {
     pickerEl.classList.remove("is-open");
     pickerEl.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    pickerPinMode = false;                                            // add
+    if (typeof renderPinnedSubjects === 'function') renderPinnedSubjects();  // add
 }
 
 function pickerGoBack() {
@@ -2978,6 +3056,7 @@ function pickerJumpTo(step) {
     renderPickerStep();
 }
 
+// REPLACE your entire existing renderPickerStep() with this whole function.
 function renderPickerStep() {
     pickerSearch.value = "";
     pickerBackBtn.classList.toggle("is-visible", pickerStep !== "subject");
@@ -2985,7 +3064,7 @@ function renderPickerStep() {
     // Breadcrumb
     const crumbs = [];
     if (pickerStep === "subject") {
-        crumbs.push(`<span class="crumb is-current">Choose a subject</span>`);
+        crumbs.push(`<span class="crumb is-current">${pickerPinMode ? "Pick your subjects" : "Choose a subject"}</span>`);
     } else if (pickerStep === "set") {
         crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">${pickerSubjectName}</span>`);
         crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">Choose a course</span>`);
@@ -3000,11 +3079,21 @@ function renderPickerStep() {
     if (pickerStep === "subject") {
         pickerSearch.placeholder = "Search subjects…";
         const subjects = Object.keys(courseStructure);
-        pickerGrid.innerHTML = subjects.map(id => `
-            <button class="subject-tile" data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="pickerChooseSubject('${id}')">
-                <span class="subject-tile-icon">${SUBJECT_ICONS[id] || "📘"}</span>
-                <span class="subject-tile-name">${SUBJECT_NAMES[id]}</span>
-            </button>`).join("");
+        const pinned = pickerPinMode ? getPinnedSubjects() : [];
+
+        pickerGrid.innerHTML = subjects.map(id => {
+            const isPinned = pinned.includes(id);
+            const action = pickerPinMode ? `pickerTogglePin('${id}')` : `pickerChooseSubject('${id}')`;
+            const badge = pickerPinMode
+                ? `<span class="pin-badge ${isPinned ? 'is-pinned' : ''}">${isPinned ? '−' : '+'}</span>`
+                : '';
+            return `
+                <button class="subject-tile" data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="${action}">
+                    ${badge}
+                    <span class="subject-tile-icon">${SUBJECT_ICONS[id] || "📘"}</span>
+                    <span class="subject-tile-name">${SUBJECT_NAMES[id]}</span>
+                </button>`;
+        }).join("");
     } else if (pickerStep === "set") {
         pickerSearch.placeholder = "Search courses…";
         const courses = Object.keys(courseStructure[pickerSubject] || {});
@@ -3024,6 +3113,7 @@ function renderPickerStep() {
     }
 }
 
+let pickerPinMode = false; // true when the picker is open for pinning, not browsing
 function pickerChooseSubject(subjectId) {
     pickerSubject = subjectId;
     pickerSubjectName = SUBJECT_NAMES[subjectId];

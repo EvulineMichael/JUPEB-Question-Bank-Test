@@ -1283,7 +1283,44 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
 .dash-subject-tile h4 { margin: 8px 0 2px; font-size: 0.95rem; }
 .dash-subject-pct { font-size: 1.4rem; font-weight: 700; margin: 2px 0; }
 .dash-subject-tile .dash-progress-track { margin: 8px 0 4px; height: 6px; }
+
+.subject-tile { position: relative; }
+
+.pin-badge {
+  position: absolute;
+  top: 2px; right: 2px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--tab-active-bg);
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1;
+}
+.pin-badge.is-pinned { background: var(--dash-danger); }
  
+.pinned-empty { grid-column: 1 / -1; text-align: center; padding: 8px 0; }
+.dash-subject-tile { text-align: center; }
+.dash-subject-tile.is-clickable { cursor: pointer; }
+.dash-subject-tile.is-clickable:hover { border-color: var(--tab-active-bg); }
+
+.dash-add-subject-tile {
+  border: 1px dashed var(--dash-border);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  background: none;
+  cursor: pointer;
+  min-height: 96px;
+}
+.dash-add-subject-tile:hover { border-color: var(--tab-active-bg); color: var(--tab-active-bg); }
+.dash-add-subject-tile .plus-icon { font-size: 1.4rem; }
 /* Weak topics */
 .dash-weak-row {
   display: flex;
