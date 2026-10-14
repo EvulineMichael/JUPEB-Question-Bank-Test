@@ -42,41 +42,7 @@ const REFERRAL_CODES = {
   "ADE001": "Ade"
 };
 
-async function recordTeacherReferral(user, refCode) {
-    const teacherName = REFERRAL_CODES[refCode] || "Unknown";
-    
-    try {
-        // Save to surveys collection (so it shows up in your admin dashboard)
-        await db.collection("surveys").doc(user.email).set({
-            email: user.email,
-            name: user.displayName || null,
-            source: "Referred by a teacher",
-            referredBy: teacherName,
-            referralCode: refCode,
-            viaLink: true,
-            submittedAt: firebase.firestore.FieldValue.serverTimestamp()
-        });
-        
-        // Mark user as "seen survey" so it never shows up
-        await db.collection("authorized_users").doc(user.email).update({
-            hasSeenSurvey: true
-        });
-        
-        // Increment the teacher's referral count
-        await db.collection("teachers").doc(refCode).set({
-            name: teacherName,
-            referralCount: firebase.firestore.FieldValue.increment(1)
-        }, { merge: true });
-        
-        // Clear the code so it doesn't affect future logins
-        localStorage.removeItem("jupeb_referral_code");
-        
-        console.log(`Teacher referral recorded: ${teacherName} (${refCode})`);
-    } catch (error) {
-        console.error("Failed to record teacher referral:", error);
-        // Fail silently — don't break the student experience
-    }
-}
+
 
 // Capture ?ref= from URL and remember it
 (function captureReferral() {
