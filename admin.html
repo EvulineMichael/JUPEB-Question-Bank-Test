@@ -333,6 +333,7 @@
 <script>
 const ADMIN_PASSCODE = "michael2026";
 const ADMIN_EMAIL = "evulinemichael@gmail.com";
+const ADMIN_SESSION_DAYS = 10;
 const RATE_PER_STUDENT = 1000;
 let sortOrder = 'desc';
 
@@ -352,7 +353,7 @@ async function verifyAdmin() {
             await auth.signOut();
             return;
         }
-        sessionStorage.setItem('admin_auth', 'true');
+        localStorage.setItem('admin_auth_until', String(Date.now() + ADMIN_SESSION_DAYS * 24 * 60 * 60 * 1000));
         document.getElementById('login-section').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
         loadUsers();
@@ -366,14 +367,12 @@ async function verifyAdmin() {
 
 async function logoutAdmin() {
     await auth.signOut();
-    sessionStorage.removeItem('admin_auth');
-    document.getElementById('login-section').style.display = 'block';
+    localStorage.removeItem('admin_auth_until');    document.getElementById('login-section').style.display = 'block';
     document.getElementById('admin-panel').style.display = 'none';
 }
 
 auth.onAuthStateChanged((user) => {
-    if (user && user.email === ADMIN_EMAIL && sessionStorage.getItem('admin_auth') === 'true') {
-        document.getElementById('login-section').style.display = 'none';
+    if (user && user.email === ADMIN_EMAIL && Number(localStorage.getItem('admin_auth_until')) > Date.now()) {        document.getElementById('login-section').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
         loadUsers();
         loadTeachers();
