@@ -74,27 +74,7 @@ auth.onAuthStateChanged(async (user) => {
   if (user) {
     const email = user.email;
 
-    // ===== REFERRAL CAPTURE (runs before authorization check) =====
-    // If the student arrived via ?ref=XXXXX, we record it on their survey
-    // doc immediately — regardless of whether they're authorized yet.
-    // This is what admin.html reads later when you authorize them.
-    const storedRefCode = localStorage.getItem("jupeb_referral_code");
-    if (storedRefCode && REFERRAL_CODES[storedRefCode]) {
-      try {
-        await db.collection("surveys").doc(email).set({
-          email: email,
-          name: user.displayName || null,
-          referralCode: storedRefCode,
-          viaLink: true,
-          capturedAt: firebase.firestore.FieldValue.serverTimestamp()
-        }, { merge: true });
-        // Clear the code so it doesn't re-fire on future sign-ins
-        localStorage.removeItem("jupeb_referral_code");
-      } catch (err) {
-        console.error("Referral capture failed:", err);
-        // Fail silently — don't break login
-      }
-    }
+       const claimCode = await recordReferralClaim(user);
 
     // ===== NORMAL AUTHORIZATION CHECK =====
     const docRef = db.collection("authorized_users").doc(email);
@@ -148,16 +128,13 @@ auth.onAuthStateChanged(async (user) => {
 
       revealDashboard();
 
-      // Survey — only if they haven't seen it AND didn't come via a link
-      // (link-arrived students skip the survey, since referral is already captured)
-      if (userData.hasSeenSurvey !== true && !storedRefCode) {
-        showSurvey(user, docRef);
-      } else if (userData.hasSeenSurvey !== true && storedRefCode) {
-        // Came via link — mark survey as seen so it never shows
-        try {
-          await docRef.update({ hasSeenSurvey: true });
-        } catch (err) { /* silent */ }
-      }
+         if (userData.hasSeenSurvey !== true) {
+     if (claimCode) {
+       try { await docRef.update({ hasSeenSurvey: true }); } catch (err) {}
+     } else {
+       showSurvey(user, docRef);
+     }
+   }
 
     } else {
       // Not authorized

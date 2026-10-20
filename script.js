@@ -31,29 +31,65 @@ let allSubjectYears = {
     literature: []
 };
 
-// Teacher referral codes
-const REFERRAL_CODES = {
-  "ABD001": "Abdul",
-  "COL001": "Collins",
-  "OBI001": "Obinna",
-  "SEG001": "Segun",
-  "CHI001": "Chidinma",
-  "TEN001": "Tenkat",
-  "ADE001": "Ade"
-};
+// ===== REFERRAL CAPTURE =====
+// In script.js, DELETE the old REFERRAL_CODES object and the old captureReferral()
+// and paste this in their place. Teacher codes now live only in Firestore
+// (the Teachers tab in admin.html), so there is no second list to keep in sync.
 
-
-
-// Capture ?ref= from URL and remember it
+// 1) When the page opens with ?ref=CODE, remember the code in this browser.
 (function captureReferral() {
-  const params = new URLSearchParams(window.location.search);
-  const ref = params.get("ref");
-  if (ref && REFERRAL_CODES[ref]) {
-    localStorage.setItem("jupeb_referral_code", ref);
+  const ref = new URLSearchParams(window.location.search).get("ref");
+  const code = ref ? ref.trim().toUpperCase() : "";
+  if (/^[A-Z]{3}\d{3}$/.test(code)) {            // same format admin.html enforces
+    localStorage.setItem("jupeb_referral_code", code);
     // Clean the URL so the code doesn't linger in the address bar
     window.history.replaceState({}, "", window.location.pathname);
   }
 })();
+
+// 2) Called from auth.js right after sign-in (see the auth.js edit).
+//    Checks the code belongs to a real, active teacher, then saves a CLAIM on the
+//    student's survey doc. It never touches teacher money; you credit from admin.html.
+//    Returns the teacher code the student came through, or null.
+async function recordReferralClaim(user) {
+  const surveyRef = db.collection("surveys").doc(user.email);
+
+  // Did they already come through a link before? (first link wins; this also covers
+  // someone who tried the link before they were authorized)
+  let claimCode = null;
+  try {
+    const existing = await surveyRef.get();
+    claimCode = existing.exists ? (existing.data().referralCode || null) : null;
+  } catch (err) {
+    console.error("Could not read referral claim:", err);
+  }
+
+  const storedCode = localStorage.getItem("jupeb_referral_code");
+  if (!storedCode) return claimCode;
+
+  if (claimCode) {                                  // already claimed, don't overwrite
+    localStorage.removeItem("jupeb_referral_code");
+    return claimCode;
+  }
+
+  try {
+    const teacher = await db.collection("teachers").doc(storedCode).get();
+    if (teacher.exists && teacher.data().active !== false) {
+      await surveyRef.set({
+        email: user.email,
+        name: user.displayName || null,
+        referralCode: storedCode,
+        viaLink: true,
+        capturedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, { merge: true });
+      claimCode = storedCode;
+    }
+    localStorage.removeItem("jupeb_referral_code"); // real or not, it has been dealt with
+  } catch (err) {
+    console.error("Referral capture failed:", err);  // keep the code so the next sign-in retries
+  }
+  return claimCode;
+}
 // Edit this list whenever your answers change — the empty state disappears
 // automatically once this array has content.
 const FAQ_ITEMS = [
@@ -281,30 +317,7 @@ localStorage.removeItem("jupeb_referral_code");
     }
 });
 
-function showSurvey(user, docRef) {
-    _surveyContext = { user, docRef };
-    
-    // Pre-fill referrer if a referral code is stored
-    const refCode = localStorage.getItem("jupeb_referral_code");
-    if (refCode && REFERRAL_CODES[refCode]) {
-        const referrerField = document.getElementById("survey-referrer");
-        const sourceField = document.getElementById("survey-source");
-        
-        if (referrerField) {
-            referrerField.value = REFERRAL_CODES[refCode];
-        }
-        if (sourceField) {
-            sourceField.value = "Referred by a teacher";
-            // Trigger change event to show the referrer field
-            sourceField.dispatchEvent(new Event("change"));
-        }
-    }
-    
-    const overlay = document.getElementById("survey-overlay");
-    if (!overlay) return;
-    overlay.style.display = "flex";
-    document.body.style.overflow = "hidden";
-}
+
 function updateSidebarThemeButton() {
     const icon = document.getElementById('sidebar-theme-icon');
     const text = document.getElementById('sidebar-theme-text');
