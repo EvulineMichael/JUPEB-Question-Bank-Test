@@ -1,0 +1,260 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Mention the three types of moduli. [1½ marks]",
+    "options": [],
+    "modelAnswer": "1. Young's modulus (modulus of elasticity in tension/compression)\n2. Bulk modulus (modulus of volume elasticity)\n3. Shear modulus (modulus of rigidity)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Briefly explain the following:\ni. Elasticity\nii. Plasticity\niii. Ductility\niv. malleability [4 mark]",
+    "options": [],
+    "modelAnswer": "i. Elasticity: the ability of a material to return to its original shape and size after the deforming force is removed.\nii. Plasticity: the ability of a material to undergo permanent deformation without fracture when a force is applied and removed.\niii. Ductility: the ability of a material to be drawn into thin wires without breaking.\niv. Malleability: the ability of a material to be hammered or rolled into thin sheets without cracking."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) A particle is moving along the x-axis such that its position is given by x = 4t² - 16t + 12. Find the following at t = 5s:\ni. instantaneous velocity\nii. instantaneous acceleration\niii. At what time is the particle stationary? [4½ marks]",
+    "options": [],
+    "modelAnswer": "v = dx/dt = 8t − 16; a = dv/dt = 8 m/s².\n\ni. At t = 5 s: v = 8(5) − 16 = 24 m/s.\nii. a = 8 m/s² (constant) at t = 5 s.\niii. Stationary when v = 0: 8t − 16 = 0 → t = 2 s."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) i. State Archimedes' Principle\nii. List four characteristics of pressure in a fluid. [3 marks]",
+    "options": [],
+    "modelAnswer": "i. Archimedes' principle: When a body is wholly or partially immersed in a fluid, it experiences an upthrust equal to the weight of the fluid displaced.\n\nii. Characteristics of fluid pressure:\n1. Pressure acts in all directions at a point in a fluid.\n2. Pressure increases with depth.\n3. Pressure at the same level in a fluid at rest is the same.\n4. Pressure is perpendicular to any surface in contact with the fluid.\n\n(Also: pressure depends on the density of the fluid.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Distinguish between compressible fluid and incompressible fluid. [2 marks]",
+    "options": [],
+    "modelAnswer": "A compressible fluid (e.g., gases) changes its volume/density significantly when pressure is applied. An incompressible fluid (e.g., liquids) has an essentially constant volume/density — its volume changes negligibly under pressure."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) Two divers M and N are at depth 60 m and 80 m respectively below the water surface in a sea. The pressure on M is P₁ and the pressure on N is P₂. If the atmospheric pressure is equivalent to 20 m of water, find the value of P₂/P₁. [2 marks]",
+    "options": [],
+    "modelAnswer": "P = P_atm + ρgh, equivalent head: P₁ ∝ (20 + 60) = 80 m; P₂ ∝ (20 + 80) = 100 m.\n\nP₂/P₁ = 100/80 = 1.25."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Dynamics (Newton's Laws and Forces)",
+    "type": "Essay",
+    "questionNumber": "2d",
+    "question": "(d) Differentiate between conservative force and non-conservative force, giving one example each. [3 marks]",
+    "options": [],
+    "modelAnswer": "A conservative force does work that is independent of the path taken and is recoverable (work done in a closed loop is zero). Example: gravitational force, elastic spring force.\n\nA non-conservative force does work that depends on the path taken and dissipates energy (e.g., as heat). Example: friction, air resistance."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave Theory of Light",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) State Huygen's principle. [1 mark]",
+    "options": [],
+    "modelAnswer": "Huygens' principle: Every point on a wavefront acts as a source of secondary spherical wavelets, and the new position of the wavefront is the common tangent (envelope) to these secondary wavelets."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave Theory of Light",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) i. Explain the term \"electromagnetic spectrum\". List any three of its components.\nii. In a Young's slit experiment, the separation between the first and fifth bright fringes is 2.5 mm when the wavelength used is 4.5 x 10⁻⁷ m. The distance from the slits to the screen is 0.9m. Calculate the separation of the two slits. [4 marks]",
+    "options": [],
+    "modelAnswer": "i. The electromagnetic spectrum is the complete range of electromagnetic waves arranged in order of increasing wavelength (or decreasing frequency), including radio waves, microwaves, infrared, visible light, ultraviolet, X-rays and gamma rays. Three components: radio waves, visible light, X-rays (any three).\n\nii. Fringe separation β = λD/d. Distance between 1st and 5th bright fringe = 4β = 2.5 mm → β = 0.625 mm = 6.25 × 10⁻⁴ m.\nd = λD/β = (4.5 × 10⁻⁷ × 0.9)/(6.25 × 10⁻⁴) = 4.05 × 10⁻⁷/6.25 × 10⁻⁴ = 6.48 × 10⁻⁴ m = 0.648 mm."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) i. Define internal energy.\nii. State the second law of thermodynamics. [2 marks]",
+    "options": [],
+    "modelAnswer": "i. Internal energy is the total kinetic and potential energy of all the molecules (particles) of a system.\n\nii. Second law of thermodynamics: Heat cannot flow spontaneously from a colder body to a hotter body without the input of external work; or, the entropy of an isolated system never decreases (it increases for spontaneous processes)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "3d",
+    "question": "(d) i. Using the first law of thermodynamics, write expressions for adiabatic and isochoric processes.\nii. State four factors on which affect heat loss by convection. [3 marks]",
+    "options": [],
+    "modelAnswer": "i. First law: ΔQ = ΔU + ΔW.\nAdiabatic: ΔQ = 0 → ΔU = −ΔW (or ΔW = −ΔU).\nIsochoric: ΔV = 0 → ΔW = 0 → ΔQ = ΔU.\n\nii. Factors affecting heat loss by convection:\n1. Temperature difference between the body and the surrounding fluid.\n2. Surface area of the body.\n3. Nature/type of fluid (its density, viscosity, specific heat).\n4. Velocity of the fluid relative to the body (forced vs natural convection)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) State two similarities and two differences between image formed by a converging mirror and a converging lens. [2 marks]",
+    "options": [],
+    "modelAnswer": "Similarities:\n1. Both can form real or virtual images depending on object position.\n2. Both have a principal focus and focal length, and obey the same mirror/lens formula (1/f = 1/u + 1/v).\n\nDifferences:\n1. A converging mirror reflects light (images formed in front of the mirror), while a converging lens refracts light (images formed on the opposite side of the lens).\n2. For a real object, a converging mirror forms a real image on the same side as the object; a converging lens forms a real image on the opposite side."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) i. Mention any two uses each of plane mirror, concave and convex mirror.\nii. Copy and complete the table below for the image formed by a concave mirror for different positions of the object. [8 marks]",
+    "dataTable": {
+      "headers": ["Position of Object", "Position of Image", "Size of image", "Nature of image"],
+      "rows": [
+        ["At infinity", "", "", ""],
+        ["At C", "", "", ""],
+        ["Between C and F", "", "", ""],
+        ["At F", "", "", ""],
+        ["Between F and P", "", "", ""]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "i. Plane mirror: looking glass/dressing mirror, periscope.\nConcave mirror: shaving/make-up mirror, dentist's mirror, reflecting telescope, headlamp reflector.\nConvex mirror: rear-view mirror in vehicles, security/convex mirror in shops, road safety mirrors.\n\nii. Completed table (concave mirror):\ni. At infinity → image at F, highly diminished, real and inverted.\nii. At C → image at C, same size, real and inverted.\niii. Between C and F → image beyond C, magnified, real and inverted.\niv. At F → image at infinity, highly magnified, real and inverted.\nv. Between F and P → image behind the mirror, magnified, virtual and erect."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) (i) Explain what is meant by relative permittivity.\n(ii) State two physical desirable properties in a material considered for dielectric in a capacitor. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Relative permittivity (dielectric constant) is the ratio of the permittivity of a material to the permittivity of free space; it measures how much a dielectric increases the capacitance of a capacitor compared with a vacuum.\n\n(ii) Desirable properties:\n1. High relative permittivity (to give high capacitance).\n2. High dielectric strength (to withstand high voltages without breakdown).\n\n(Also: low dielectric loss, good thermal stability, high resistivity.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) A long magnet is removed from the centre of a coil of 30 turns. The speed of the magnet is controlled to maintain an induced e.m.f. of 80μV across the coil. Removing the magnet in this way takes 3 minutes. Calculate the change of flux through the coil. [3 marks]",
+    "options": [],
+    "modelAnswer": "E = N ΔΦ/Δt → ΔΦ = EΔt/N = (80 × 10⁻⁶ × 180)/30 = 0.0144/30 = 4.8 × 10⁻⁴ Wb."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) An electron enters the region of a uniform electric field as shown in figure 1 below, with v₀ = 3.00 x 10⁶ m/s and E = 200 N/C. The horizontal length of each plate is l = 0.100 m.\n\ni. Find the acceleration of the electron while it is in the electric field.\nii. Assuming the electron enters the field at time t = 0, find the time at which it leaves the field. (mass of an electron = 1.67 x 10⁻²⁷ kg, charge of an electron = 1.60 x 10⁻¹⁹ C) [4 marks]",
+    "image": {
+      "src": "/images/questions/physics/2026/phy-2026-essay-5c.png",
+      "alt": "Diagram showing two parallel horizontal plates with an upward electric field. An electron enters from the left with velocity v₀, follows a parabolic path downwards towards the bottom plate, and exits from the right side with velocity v."
+    },
+    "options": [],
+    "modelAnswer": "i. a = eE/m = (1.60 × 10⁻¹⁹ × 200)/(1.67 × 10⁻²⁷) = 3.20 × 10⁻¹⁷/1.67 × 10⁻²⁷ = 1.92 × 10¹⁰ m/s².\n\nii. Horizontal motion is uniform: t = l/v₀ = 0.100/(3.00 × 10⁶) = 3.33 × 10⁻⁸ s.\n\nNote: The mass given in the question (1.67 × 10⁻²⁷ kg) is the mass of a proton, not an electron (9.11 × 10⁻³¹ kg). If the particle is truly an electron, the acceleration should be 3.51 × 10¹³ m/s². Flagged for examiner clarification."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) How can the motion of a moving charged particle be used to distinguish between a magnetic field and an electric field? [2 marks]",
+    "options": [],
+    "modelAnswer": "If a charged particle moving along a straight line is deflected, the field is electric (an electric field exerts a force along the field direction regardless of velocity). If the particle is deflected only when moving (and the force is perpendicular to both velocity and field), the field is magnetic. Also, a magnetic field does no work on the particle (speed constant), while an electric field changes the particle's speed/kinetic energy."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Consider the circuit diagram in figure 2. Calculate the current in each resistor.\n\n[5 marks]",
+    "image": {
+      "src": "/images/questions/physics/2026/phy-2026-essay-6b.png",
+      "alt": "Two-loop circuit diagram. Top branch contains a 24V battery and a 3.0Ω resistor. Middle branch contains a 13V battery and a 2.0Ω resistor. Bottom branch contains a 10.0Ω resistor. Junctions labelled a, b, c, d, e, f."
+    },
+    "options": [],
+    "modelAnswer": "Applying Kirchhoff's laws to the two loops (let I₁ flow in top branch, I₂ in middle branch, and I₃ = I₁ + I₂ in bottom branch):\n\nLoop 1 (top + bottom): 24 = 3I₁ + 10I₃ = 3I₁ + 10(I₁ + I₂) = 13I₁ + 10I₂.\nLoop 2 (middle + bottom): 13 = 2I₂ + 10I₃ = 2I₂ + 10(I₁ + I₂) = 10I₁ + 12I₂.\n\nSolving:\n13I₁ + 10I₂ = 24\n10I₁ + 12I₂ = 13\n\nMultiply first by 6, second by 5: 78I₁ + 60I₂ = 144; 50I₁ + 60I₂ = 65.\nSubtract: 28I₁ = 79 → I₁ = 2.82 A; then 10I₂ = 24 − 13(2.82) = −12.66 → I₂ = −1.27 A.\nI₃ = I₁ + I₂ = 1.55 A.\n\nCurrents: top 3.0 Ω resistor: 2.82 A; middle 2.0 Ω resistor: 1.27 A (opposite to assumed direction); bottom 10.0 Ω resistor: 1.55 A."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Force on Conductor and Moving Charge",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) A proton is moving in a circular orbit of radius 14 cm in a uniform 0.35 T magnetic field perpendicular to the velocity of the proton. Determine the speed of the proton. [2 marks]",
+    "options": [],
+    "modelAnswer": "Magnetic force provides centripetal force: qvB = mv²/r → v = qBr/m.\nv = (1.60 × 10⁻¹⁹ × 0.35 × 0.14)/(1.67 × 10⁻²⁷) = 7.84 × 10⁻²¹/1.67 × 10⁻²⁷ = 4.69 × 10⁶ m/s."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Calculate the de Broglie wavelength for a particle moving with a speed of 2.20 × 10⁶ m/s if the particle is:\ni. an electron\nii. a proton\niii. a 200g bullet [3 marks]",
+    "options": [],
+    "modelAnswer": "λ = h/(mv) = 6.626 × 10⁻³⁴/(mv).\n\ni. Electron (m = 9.11 × 10⁻³¹ kg): λ = 6.626 × 10⁻³⁴/(9.11 × 10⁻³¹ × 2.20 × 10⁶) = 3.31 × 10⁻¹⁰ m = 0.331 nm.\nii. Proton (m = 1.67 × 10⁻²⁷ kg): λ = 6.626 × 10⁻³⁴/(1.67 × 10⁻²⁷ × 2.20 × 10⁶) = 1.80 × 10⁻¹³ m.\niii. Bullet (m = 0.200 kg): λ = 6.626 × 10⁻³⁴/(0.200 × 2.20 × 10⁶) = 1.51 × 10⁻³⁹ m."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) i. Give the properties of α, β- and γ-radiation in terms of charge, mass, ionizing effect, and field effect.\nii. Explain the effect of temperature and pressure on the rate of disintegration of a radioactive nucleus. [7 marks]",
+    "options": [],
+    "modelAnswer": "i. α-radiation: charge +2e; mass 4 u (helium nucleus); highly ionizing; deflected slightly by electric/magnetic fields (towards negative plate); range a few cm in air, stopped by paper.\n\nβ⁻-radiation: charge −1e; mass ≈ 1/1836 u (fast electron); moderately ionizing; strongly deflected by fields (towards positive plate); range ~1 m in air, stopped by a few mm of aluminium.\n\nγ-radiation: no charge; no rest mass (electromagnetic wave/photon); weakly ionizing; not deflected by fields; highly penetrating, stopped by thick lead/concrete.\n\nii. Temperature and pressure have no effect on the rate of disintegration of a radioactive nucleus, because radioactive decay is a nuclear process governed only by the internal instability of the nucleus. The decay constant is independent of external physical conditions."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) i. State Heisenberg's Uncertainty principle.\nii. List four practical applications of X-rays. [3 marks]",
+    "options": [],
+    "modelAnswer": "i. Heisenberg's uncertainty principle: It is impossible to determine simultaneously both the position and momentum of a particle with absolute precision; the product of the uncertainties satisfies Δx·Δp ≥ h/(4π).\n\nii. Applications of X-rays:\n1. Medical diagnosis (radiographs, CT scans).\n2. Cancer treatment (radiotherapy).\n3. Security screening at airports.\n4. Industrial non-destructive testing (detecting cracks in welds/structures).\n\n(Also: crystallography/structure determination.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) A photon has a wavelength of 1Å. Calculate the:\ni. energy of the photon in electron volt.\nii. momentum of the photon. (1Å = 10⁻¹⁰ m) [3 marks]",
+    "options": [],
+    "modelAnswer": "i. E = hc/λ = (6.626 × 10⁻³⁴ × 3 × 10⁸)/(1 × 10⁻¹⁰) = 1.988 × 10⁻¹⁵ J = 1.988 × 10⁻¹⁵/1.6 × 10⁻¹⁹ = 1.24 × 10⁴ eV = 12.4 keV.\n\nii. p = h/λ = 6.626 × 10⁻³⁴/1 × 10⁻¹⁰ = 6.63 × 10⁻²⁴ kg m/s."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) i. Define binding energy.\nii. Calculate the average binding energy per nucleon of ⁷₃Li which has a mass of 7.016003u. (mass of proton = 1.007825u, mass of neutron = 1.008665u, 1u = 931.5 MeV) [4 marks]",
+    "options": [],
+    "modelAnswer": "i. Binding energy is the energy required to separate all the nucleons (protons and neutrons) in a nucleus completely into individual free nucleons.\n\nii. Mass defect: Δm = [3(1.007825) + 4(1.008665)] − 7.016003 = [3.023475 + 4.034660] − 7.016003 = 7.058135 − 7.016003 = 0.042132 u.\n\nBinding energy = 0.042132 × 931.5 = 39.25 MeV.\nAverage BE per nucleon = 39.25/7 = 5.61 MeV/nucleon."
+  }
+]
