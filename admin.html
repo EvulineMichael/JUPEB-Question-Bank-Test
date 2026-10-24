@@ -174,6 +174,13 @@
         color: #6c757d; font-size: 0.9rem; font-style: italic;
         padding: 20px; text-align: center;
     }
+    .fb-filters { display: flex; gap: 8px; margin-bottom: 14px; }
+    .fb-message { margin-top: 8px; white-space: pre-wrap; word-break: break-word; font-size: 0.9rem; }
+    .fb-item.is-done { opacity: 0.65; }
+    .fb-reply {
+        font-size: 0.8rem; color: #0d6efd; text-decoration: none;
+        padding: 6px 10px; border: 1px solid #e9ecef; border-radius: 8px;
+    }
 </style>
 </head>
 <body>
@@ -200,7 +207,9 @@
     <button class="tab-btn active" data-tab="students" onclick="showTab('students')">👥 Students</button>
     <button class="tab-btn" data-tab="teachers" onclick="showTab('teachers')">👨‍🏫 Teachers</button>
     <button class="tab-btn" data-tab="payouts" onclick="showTab('payouts')">💰 Payouts <span id="payout-badge" style="display:none;background:#dc3545;color:white;padding:1px 7px;border-radius:10px;font-size:0.7rem;margin-left:4px;"></span></button>
-    <button class="tab-btn" data-tab="referrals" onclick="showTab('referrals')">🔗 Referrals</button>
+<button class="tab-btn" data-tab="referrals" onclick="showTab('referrals')">🔗 Referrals <span id="credit-badge" style="display:none;background:#dc3545;color:white;padding:1px 7px;border-radius:10px;font-size:0.7rem;margin-left:4px;"></span></button>
+    <button class="tab-btn" data-tab="updates" onclick="showTab('updates')">📣 Updates</button>
+<button class="tab-btn" data-tab="feedback" onclick="showTab('feedback')">💬 Feedback <span id="fb-badge" style="display:none;background:#dc3545;color:white;padding:1px 7px;border-radius:10px;font-size:0.7rem;margin-left:4px;"></span></button>
 </div>
 
     <!-- ============ STUDENTS TAB ============ -->
@@ -292,23 +301,58 @@
     </div>
 
     <!-- ============ REFERRALS TAB ============ -->
-          <div class="admin-card">
-       <h2>⏳ Pending Credits</h2>
-       <p class="subtitle">Authorized students who signed in through a teacher's link and haven't been credited yet</p>
-       <div id="pending-credits-list"><p class="empty-state">Loading...</p></div>
-     </div>
-    <div class="tab-panel" id="tab-referrals">
-        <div class="admin-card">
-            <h2>🔗 All Referrals</h2>
-            <p class="subtitle">Every student credited to a teacher. Use this to remove test/dummy referrals.</p>
-            <div id="referrals-mgmt-list">
-                <p class="empty-state">Loading...</p>
-            </div>
+<div class="tab-panel" id="tab-referrals">
+
+    <div class="admin-card">
+        <h2>⏳ Pending Credits</h2>
+        <p class="subtitle">Authorized students who signed in through a teacher's link and haven't been credited yet</p>
+        <div id="pending-credits-list"><p class="empty-state">Loading...</p></div>
+    </div>
+
+    <div class="admin-card">
+        <h2>🔗 All Referrals</h2>
+        <p class="subtitle">Every student credited to a teacher. Use this to remove test/dummy referrals.</p>
+        <div id="referrals-mgmt-list">
+            <p class="empty-state">Loading...</p>
         </div>
     </div>
-         <span id="credit-badge" style="display:none;background:#dc3545;color:white;padding:1px 7px;border-radius:10px;font-size:0.7rem;margin-left:4px;"></span>
 
 </div>
+    <!-- ============ UPDATES TAB ============ -->
+<div class="tab-panel" id="tab-updates">
+    <div class="admin-card">
+        <h2>Post an Update</h2>
+        <p class="subtitle">Shows in the bell on every student's dashboard</p>
+        <input type="text" id="upd-title" maxlength="80" placeholder="Title (e.g. 2025 past papers added)">
+        <textarea id="upd-body" rows="4" maxlength="600" placeholder="Short message"></textarea>
+        <button onclick="postAdminUpdate()">📣 Post Update</button>
+        <div class="success-msg" id="upd-msg"></div>
+    </div>
+ 
+    <div class="admin-card">
+        <h3>Posted Updates</h3>
+        <div class="user-list" id="upd-list">
+            <p class="empty-state">Loading...</p>
+        </div>
+    </div>
+</div>
+ 
+<!-- ============ FEEDBACK TAB ============ -->
+<div class="tab-panel" id="tab-feedback">
+    <div class="admin-card">
+        <h2>💬 Student Feedback</h2>
+        <p class="subtitle">Everything sent from the bell and the Help &amp; Support page</p>
+        <div class="fb-filters" id="fb-filters">
+            <button class="small fb-filter is-active" data-filter="new">New</button>
+            <button class="small secondary fb-filter" data-filter="done">Done</button>
+            <button class="small secondary fb-filter" data-filter="all">All</button>
+        </div>
+        <div id="fb-list"><p class="empty-state">Loading...</p></div>
+    </div>
+</div>
+
+</div>
+
 
 <!-- Edit Teacher Modal -->
 <div class="modal-backdrop" id="edit-teacher-modal">
@@ -1031,6 +1075,214 @@ async function creditPending(email, code, button) {
 document.getElementById('pending-credits-list')?.addEventListener('click', (e) => {
   const btn = e.target.closest('button[data-email]');
   if (btn) creditPending(btn.dataset.email, btn.dataset.code, btn);
+});
+// ===== ADMIN: UPDATES + FEEDBACK TABS =====
+// Paste inside the <script> in admin.html, anywhere AFTER `const ADMIN_EMAIL`.
+// Uses db, auth and firebase, the same as the rest of admin.html.
+// Nothing here replaces existing functions, so showTab() and the unlock code stay as they are.
+
+const FB_TYPE_COLORS = {
+  'Bug':          ['#f8d7da', '#721c24'],
+  'Wrong answer': ['#fff3cd', '#856404'],
+  'Suggestion':   ['#d4edda', '#155724'],
+  'Other':        ['#e9ecef', '#495057']
+};
+let fbItems = [];
+let fbFilter = 'new';
+
+function fbEsc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function fbWhen(ts) {
+  return ts && typeof ts.toDate === 'function'
+    ? ts.toDate().toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+    : '—';
+}
+function fbDevice(ua) {
+  ua = ua || '';
+  if (/iPhone|iPad/.test(ua)) return 'iPhone/iPad';
+  if (/Android/.test(ua)) return 'Android';
+  if (/Windows/.test(ua)) return 'Windows';
+  if (/Macintosh/.test(ua)) return 'Mac';
+  return '';
+}
+
+// ---------- Updates tab ----------
+async function loadAdminUpdates() {
+  const el = document.getElementById('upd-list');
+  try {
+    const snap = await db.collection('updates').orderBy('createdAt', 'desc').limit(50).get();
+    if (snap.docs.length === 0) {
+      el.innerHTML = '<p class="empty-state">Nothing posted yet.</p>';
+      return;
+    }
+    el.innerHTML = snap.docs.map(doc => {
+      const u = doc.data();
+      return `
+        <div class="user-item" style="align-items:flex-start;">
+          <div style="flex:1;min-width:0;">
+            <span class="user-email">${fbEsc(u.title)}</span>
+            <div class="fb-message">${fbEsc(u.body)}</div>
+            <div class="user-date">${fbEsc(fbWhen(u.createdAt))}</div>
+          </div>
+          <button class="small danger" data-upd-del="${fbEsc(doc.id)}">🗑️ Delete</button>
+        </div>`;
+    }).join('');
+  } catch (err) {
+    el.innerHTML = '<p style="color:#dc3545;">Error: ' + fbEsc(err.message) + '</p>';
+  }
+}
+
+async function postAdminUpdate() {
+  const titleEl = document.getElementById('upd-title');
+  const bodyEl = document.getElementById('upd-body');
+  const msg = document.getElementById('upd-msg');
+  const title = titleEl.value.trim();
+  const body = bodyEl.value.trim();
+  if (!title || !body) { alert('Please fill in both the title and the message.'); return; }
+  try {
+    await db.collection('updates').add({
+      title: title.slice(0, 80),
+      body: body.slice(0, 600),
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+    titleEl.value = '';
+    bodyEl.value = '';
+    msg.textContent = '✅ Posted. Students will see it in the bell.';
+    msg.style.display = 'block';
+    setTimeout(() => { msg.style.display = 'none'; }, 4000);
+    loadAdminUpdates();
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+}
+
+document.getElementById('upd-list')?.addEventListener('click', async (e) => {
+  const btn = e.target.closest('button[data-upd-del]');
+  if (!btn) return;
+  if (!confirm('Delete this update? Students will no longer see it.')) return;
+  try {
+    await db.collection('updates').doc(btn.dataset.updDel).delete();
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+  loadAdminUpdates();
+});
+
+// ---------- Feedback tab ----------
+async function loadFeedbackBadge() {
+  const badge = document.getElementById('fb-badge');
+  if (!badge) return;
+  try {
+    const snap = await db.collection('feedback').where('status', '==', 'new').get();
+    badge.textContent = snap.size;
+    badge.style.display = snap.size ? 'inline-block' : 'none';
+  } catch (err) {
+    console.error('Could not count new feedback:', err);
+  }
+}
+
+async function loadAdminFeedback() {
+  const el = document.getElementById('fb-list');
+  try {
+    const snap = await db.collection('feedback').orderBy('createdAt', 'desc').limit(100).get();
+    fbItems = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+  } catch (err) {
+    el.innerHTML = '<p style="color:#dc3545;">Error: ' + fbEsc(err.message) + '</p>';
+    return;
+  }
+  renderAdminFeedback();
+  loadFeedbackBadge();
+}
+
+function renderAdminFeedback() {
+  const el = document.getElementById('fb-list');
+  document.querySelectorAll('.fb-filter').forEach(b => {
+    const on = b.dataset.filter === fbFilter;
+    b.classList.toggle('secondary', !on);
+    b.classList.toggle('is-active', on);
+  });
+
+  const rows = fbItems.filter(i => fbFilter === 'all' || i.status === fbFilter);
+  if (rows.length === 0) {
+    el.innerHTML = '<p class="empty-state">' +
+      (fbFilter === 'new' ? 'No new feedback 🎉' : 'Nothing here.') + '</p>';
+    return;
+  }
+
+  el.innerHTML = rows.map(i => {
+    const [bg, fg] = FB_TYPE_COLORS[i.type] || FB_TYPE_COLORS['Other'];
+    const device = fbDevice(i.ua);
+    const meta = [device ? 'Device: ' + device : '', i.page ? 'Page: ' + i.page : ''].filter(Boolean).join(' · ');
+    const done = i.status === 'done';
+    return `
+      <div class="user-item fb-item ${done ? 'is-done' : ''}" style="align-items:flex-start;">
+        <div style="flex:1;min-width:0;">
+          <span class="badge" style="background:${bg};color:${fg};">${fbEsc(i.type || 'Other')}</span>
+          <span class="user-email" style="margin-left:6px;">${fbEsc(i.email)}</span>
+          <div class="user-info">${fbEsc(i.name || '')}${i.name ? ' · ' : ''}${fbEsc(fbWhen(i.createdAt))}</div>
+          <div class="fb-message">${fbEsc(i.message)}</div>
+          ${i.context ? `<div class="user-info" style="margin-top:6px;">📍 ${fbEsc(i.context)}</div>` : ''}
+          ${meta ? `<div class="user-date">${fbEsc(meta)}</div>` : ''}
+        </div>
+        <div class="user-actions" style="flex-wrap:wrap;justify-content:flex-end;">
+          <button class="small ${done ? 'secondary' : 'success'}" data-fb-act="${done ? 'reopen' : 'done'}" data-id="${fbEsc(i.id)}">${done ? '↩ Reopen' : '✓ Done'}</button>
+          <a class="fb-reply" href="mailto:${fbEsc(i.email)}?subject=${encodeURIComponent('Your JUPEB Question Bank feedback')}">✉️ Reply</a>
+          <button class="small danger" data-fb-act="delete" data-id="${fbEsc(i.id)}">🗑️</button>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+async function setFeedbackStatus(id, status) {
+  const update = status === 'done'
+    ? { status: 'done', doneAt: firebase.firestore.FieldValue.serverTimestamp() }
+    : { status: 'new', doneAt: firebase.firestore.FieldValue.delete() };
+  try {
+    await db.collection('feedback').doc(id).update(update);
+    const item = fbItems.find(i => i.id === id);
+    if (item) item.status = status;
+    renderAdminFeedback();
+    loadFeedbackBadge();
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+}
+
+async function deleteFeedback(id) {
+  if (!confirm('Delete this feedback permanently?')) return;
+  try {
+    await db.collection('feedback').doc(id).delete();
+    fbItems = fbItems.filter(i => i.id !== id);
+    renderAdminFeedback();
+    loadFeedbackBadge();
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+}
+
+document.getElementById('fb-list')?.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-fb-act]');
+  if (!btn) return;
+  const id = btn.dataset.id;
+  if (btn.dataset.fbAct === 'done') setFeedbackStatus(id, 'done');
+  else if (btn.dataset.fbAct === 'reopen') setFeedbackStatus(id, 'new');
+  else if (btn.dataset.fbAct === 'delete') deleteFeedback(id);
+});
+
+document.getElementById('fb-filters')?.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-filter]');
+  if (!btn) return;
+  fbFilter = btn.dataset.filter;
+  renderAdminFeedback();
+});
+
+// ---------- Hooks (no edits to showTab or the unlock code needed) ----------
+document.querySelector('.tab-btn[data-tab="updates"]')?.addEventListener('click', loadAdminUpdates);
+document.querySelector('.tab-btn[data-tab="feedback"]')?.addEventListener('click', loadAdminFeedback);
+auth.onAuthStateChanged((user) => {
+  if (user && user.email === ADMIN_EMAIL) loadFeedbackBadge();
 });
 </script>
 </body>

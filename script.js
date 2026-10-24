@@ -103,7 +103,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Which years are covered?",
-    a: "2015–2025, depending on the subject."
+    a: "2015–2026, depending on the subject."
   },
   {
     q: "How do I browse questions by topic?",
@@ -815,9 +815,202 @@ function handleSidebarResponsive() {
     if (window.innerWidth <= 768) sidebar.classList.remove('sidebar-collapsed');
 }
 
+// ===== NOTIFICATION BELL (updates + feedback) =====
+// Paste into script.js, anywhere after your other functions (it runs on load).
+// Needs the globals you already have: db, auth, firebase.
+
+const BELL_FEEDBACK_TYPES = ["Wrong answer", "Bug", "Suggestion", "Other"];
+const BELL_REFRESH_MS = 5 * 60 * 1000;      // don't re-read updates more often than this
+let bellUpdates = [];
+let bellLastLoad = 0;
+let bellTab = "updates";
+
+function bellEsc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, c =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function bellMillis(ts) {
+    return ts && typeof ts.toMillis === "function" ? ts.toMillis() : 0;
+}
+function bellDate(ts) {
+    const ms = bellMillis(ts);
+    return ms ? new Date(ms).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "";
+}
+function bellIsOpen() {
+    const panel = document.getElementById("bell-panel");
+    return !!panel && panel.classList.contains("is-open");
+}
+
+// ----- Updates (newest 10, posted from Firestore) -----
+async function loadBellUpdates(force) {
+    if (!force && Date.now() - bellLastLoad < BELL_REFRESH_MS) return;
+    bellLastLoad = Date.now();
+    try {
+        const snap = await db.collection("updates").orderBy("createdAt", "desc").limit(10).get();
+        bellUpdates = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    } catch (err) {
+        console.error("Could not load updates:", err);
+        bellLastLoad = 0;                       // try again next time
+    }
+    renderBellUpdates();
+    if (bellIsOpen() && bellTab === "updates") markBellSeen();
+    refreshBellDot();
+}
+
+function renderBellUpdates() {
+    const list = document.getElementById("bell-updates-list");
+    if (list) {
+        list.innerHTML = bellUpdates.length
+            ? bellUpdates.map(u => `
+                <article class="bell-update">
+                    <h4>${bellEsc(u.title)}</h4>
+                    <p>${bellEsc(u.body)}</p>
+                    <time>${bellEsc(bellDate(u.createdAt))}</time>
+                </article>`).join("")
+            : `<p class="bell-empty">No updates yet. News and new features will show up here.</p>`;
+    }
+    const guide = document.getElementById("bell-guide");
+    if (guide) guide.hidden = localStorage.getItem("jupeb_guide_hidden") === "1";
+}
+
+// The red dot: shows if there is an update newer than the last one they looked at,
+// or if they have never opened the home-screen tip. Kept in this browser only.
+function refreshBellDot() {
+    const dot = document.getElementById("bell-dot");
+    if (!dot) return;
+    const lastSeen = Number(localStorage.getItem("jupeb_updates_seen") || 0);
+    const newest = bellUpdates.length ? bellMillis(bellUpdates[0].createdAt) : 0;
+    const guideUnseen = localStorage.getItem("jupeb_guide_hidden") !== "1" &&
+                        localStorage.getItem("jupeb_guide_seen") !== "1";
+    dot.classList.toggle("is-on", newest > lastSeen || guideUnseen);
+}
+
+function markBellSeen() {
+    localStorage.setItem("jupeb_guide_seen", "1");
+    if (bellUpdates.length) {
+        localStorage.setItem("jupeb_updates_seen", String(bellMillis(bellUpdates[0].createdAt)));
+    }
+    refreshBellDot();
+}
+
+// ----- Open / close -----
+function switchBellTab(name) {
+    bellTab = name;
+    document.querySelectorAll(".bell-tab").forEach(b =>
+        b.classList.toggle("is-active", b.dataset.tab === name));
+    const updatesPane = document.getElementById("bell-pane-updates");
+    const feedbackPane = document.getElementById("bell-pane-feedback");
+    if (updatesPane) updatesPane.hidden = name !== "updates";
+    if (feedbackPane) feedbackPane.hidden = name !== "feedback";
+    if (name === "updates") markBellSeen();
+}
+
+// openBell("updates")  or  openBell("feedback", { type: "Wrong answer", context: "Chemistry · Atomic Structure" })
+function openBell(tab, prefill) {
+    const panel = document.getElementById("bell-panel");
+    const backdrop = document.getElementById("bell-backdrop");
+    if (!panel || !backdrop) return;
+
+    if (prefill) {
+        if (prefill.type && BELL_FEEDBACK_TYPES.includes(prefill.type)) {
+            document.getElementById("bell-fb-type").value = prefill.type;
+        }
+        if (prefill.context) document.getElementById("bell-fb-context").value = prefill.context;
+    }
+    panel.classList.add("is-open");
+    backdrop.classList.add("is-open");
+    panel.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    switchBellTab(tab || "updates");
+    loadBellUpdates();                          // refreshes only if the data is stale
+}
+
+function closeBell() {
+    const panel = document.getElementById("bell-panel");
+    const backdrop = document.getElementById("bell-backdrop");
+    if (!panel || !backdrop) return;
+    panel.classList.remove("is-open");
+    backdrop.classList.remove("is-open");
+    panel.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+// ----- Feedback -----
+async function submitBellFeedback() {
+    const typeEl = document.getElementById("bell-fb-type");
+    const msgEl = document.getElementById("bell-fb-message");
+    const ctxEl = document.getElementById("bell-fb-context");
+    const statusEl = document.getElementById("bell-fb-status");
+    const btn = document.getElementById("bell-fb-send");
+    if (!typeEl || !msgEl || !statusEl || !btn) return;
+
+    const say = (text, ok) => {
+        statusEl.textContent = text;
+        statusEl.className = "bell-msg " + (ok ? "is-ok" : "is-error");
+    };
+
+    const type = typeEl.value;
+    const message = (msgEl.value || "").trim();
+    const context = ((ctxEl && ctxEl.value) || "").trim();
+
+    if (!BELL_FEEDBACK_TYPES.includes(type)) return say("Please choose what this is about.", false);
+    if (!message) return say("Please write a short message.", false);
+
+    const user = (typeof auth !== "undefined" && auth) ? auth.currentUser : null;
+    if (!user) return say("Please sign in to send feedback.", false);
+
+    if (Date.now() - Number(localStorage.getItem("jupeb_last_feedback") || 0) < 30000) {
+        return say("Please wait a few seconds before sending another.", false);
+    }
+
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    try {
+        const data = {
+            email: user.email,
+            name: user.displayName || null,
+            type,
+            message: message.slice(0, 1000),
+            page: location.pathname,
+            ua: navigator.userAgent.slice(0, 200),
+            status: "new",
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+        };
+        if (context) data.context = context.slice(0, 200);
+
+        await db.collection("feedback").add(data);
+        localStorage.setItem("jupeb_last_feedback", String(Date.now()));
+        msgEl.value = "";
+        if (ctxEl) ctxEl.value = "";
+        say("Thank you! We've received your feedback.", true);
+    } catch (err) {
+        console.error("Feedback failed:", err);
+        say("Could not send. Please try again.", false);
+    }
+    btn.disabled = false;
+    btn.textContent = "Send feedback";
+}
+
+// ----- Wiring (runs once, on load) -----
+(function initBell() {
+    document.getElementById("bell-btn")?.addEventListener("click", () => openBell("updates"));
+    document.getElementById("bell-close")?.addEventListener("click", closeBell);
+    document.getElementById("bell-backdrop")?.addEventListener("click", closeBell);
+    document.querySelectorAll(".bell-tab").forEach(b =>
+        b.addEventListener("click", () => switchBellTab(b.dataset.tab)));
+    document.getElementById("bell-fb-send")?.addEventListener("click", submitBellFeedback);
+    document.getElementById("bell-guide-hide")?.addEventListener("click", () => {
+        localStorage.setItem("jupeb_guide_hidden", "1");
+        renderBellUpdates();
+        refreshBellDot();
+    });
+    document.addEventListener("keydown", e => {
+        if (e.key === "Escape" && bellIsOpen()) closeBell();
+    });
+})();
 // ===== DATA LOADING =====
 async function getAvailableYears(subject) {
-    const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+    const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
     const availableYears = [];
 
     for (const year of possibleYears) {
@@ -2778,6 +2971,7 @@ document.getElementById("dash-user-name").textContent =
      if (typeof renderPinnedSubjects === 'function') {
         renderPinnedSubjects();
     }
+    if (typeof loadBellUpdates === 'function') loadBellUpdates();
 }
 
 function getWeakTopicsForDashboard() {
@@ -3434,11 +3628,7 @@ document.getElementById("help-whatsapp-btn").addEventListener("click", () => {
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank", "noopener");
 });
 
-document.getElementById("help-report-btn").addEventListener("click", () => {
-  const subject = encodeURIComponent("JUPEB QB — Bug Report");
-  const body = encodeURIComponent("Subject:\nTopic:\nQuestion (if applicable):\n\nWhat went wrong:\n");
-  window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${subject}&body=${body}`;
-});
+document.getElementById("help-report-btn").addEventListener("click", () => openBell("feedback"));
 // ============================================================
 // ===== INIT ===================================================
 // ============================================================

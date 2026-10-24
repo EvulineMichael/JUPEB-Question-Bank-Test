@@ -550,5 +550,251 @@
     "options": ["Diamond consists of covalent bonds extending in all directions", "The structural layers of graphite are too far apart", "Diamond has a higher density than graphite", "Graphite is partially soluble in water"],
     "answer": "A",
     "explanation": "Diamond has a giant covalent network with strong C–C bonds in all three dimensions, requiring more energy to melt. Graphite has layers held by weak van der Waals forces."
+  },
+  {
+  "subject": "Chemistry",
+  "year": 2026,
+  "category": "Periodicity",
+  "type": "Essay",
+  "questionNumber": "1a",
+  "question": "(a) (i) Define the term '1st ionization energy'. [1 mark]\n(ii) Write an equation to represent 1st ionization energy of Aluminium. [1 mark]\n(iii) The first ionization energy (kJ/mol) of four successive elements in the periodic table is given as follows. Suggest a reason why the trend is reversed from R to T. [2 marks]",
+  "dataTable": {
+    "headers": ["Element", "P", "Q", "R", "T"],
+    "rows": [
+      ["Ionization Energy", "799", "1090", "1400", "1310"]
+    ]
+  },
+  "options": [],
+  "modelAnswer": "(i) First ionization energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous univalent positive ions.\n\n(ii) Al(g) → Al⁺(g) + e⁻\n\n(iii) R has a half-filled p subshell (p³ configuration), which gives it extra stability and an unusually high ionization energy. T is the next element, with one paired p electron (p⁴ configuration), which is easier to remove. Hence T has a lower first ionization energy than R."
+},
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) The mass spectrum of copper has two peaks at 69.10 % at m/e 63 and 30.90 % at m/e 65.\n(i) Give the formula of the specie responsible for the peak at m/e 65. [1 mark]\n(ii) State why two peaks, at m/e values of 63 and 65, were obtained in the mass spectrum. [1 mark]\n(iii) Using the data above, calculate the relative atomic mass of copper. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) ⁶⁵Cu⁺ (the cation of the copper-65 isotope).\n\n(ii) Copper exists as two isotopes: ⁶³Cu and ⁶⁵Cu. The two peaks correspond to the two isotopes.\n\n(iii) Relative atomic mass = (63 × 69.10 + 65 × 30.90)/100 = (4353.3 + 2008.5)/100 = 63.62."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Sodium and sodium chloride are conductors of electricity\n(i) Under what condition does each conduct electricity? [1 mark]\n(ii) Give a reason why each species conduct electricity. [2 mark]",
+    "options": [],
+    "modelAnswer": "(i) Sodium conducts electricity in the solid or molten state (as a metal). Sodium chloride conducts electricity when molten or in aqueous solution.\n\n(ii) Sodium conducts due to the mobility of delocalized/free electrons. Sodium chloride conducts due to the mobility of free ions (Na⁺ and Cl⁻) in the molten or aqueous state."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) (i) In terms of bonding, give a reason each why silicon has a high melting point and low conductivity. [2 marks]\n(ii) State the type of bond formed when BH₃ reacts with NH₃. [1 mark]\n(iii) Why does BH₃ react with NH₃ and not with AlCl₃? [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Silicon has a giant covalent (macromolecular) structure with strong covalent bonds extending in all directions, giving a high melting point. It has no free electrons or mobile ions, so it has low conductivity.\n\n(ii) Coordinate (dative) covalent bond.\n\n(iii) BH₃ is electron-deficient and has a vacant orbital that accepts the lone pair from NH₃. AlCl₃ exists as a dimer (Al₂Cl₆) and does not have an available vacant orbital, so it does not react with NH₃.\n\nNote: This question is flagged — AlCl₃ does in fact react with NH₃ to form AlCl₃·NH₃. The examiner's intended premise is questionable."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) 5.85g of potassium reacts with 2.40g of oxygen to give compound X.\n(i) calculate the empirical formula of compound X. [2 mark]\n(ii) if the molar mass of X is 110g/mol, find the molecular formula. [1 mark]\n(iii) write an equation for the reaction indicating the states of the compounds. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Moles K = 5.85/39 = 0.15; Moles O = 2.40/16 = 0.15. Ratio K:O = 1:1. Empirical formula = KO.\n\n(ii) Empirical mass = 39 + 16 = 55. n = 110/55 = 2. Molecular formula = K₂O₂ (potassium peroxide).\n\n(iii) 2K(s) + O₂(g) → K₂O₂(s)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) State two limitations of Bohr's atomic model. [2 marks]",
+    "options": [],
+    "modelAnswer": "1. It cannot explain the spectra of multi-electron atoms (only works for hydrogen-like species).\n2. It cannot explain the splitting of spectral lines in the presence of a magnetic or electric field (Zeeman/Stark effect).\n\n(Also: it violates the Heisenberg uncertainty principle and treats the electron as a particle moving in definite orbits.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) State the Hess's law of enthalpy summation. [1 mark]\n(ii) The following is a list of bond enthalpies at 298K\n\n| Bond | ΔH° |\n| :--- | :--- |\n| C-C | +348 |\n| C=C | +612 |\n| H-H | +436 |\n| C-H | +412 |\n\nCalculate the standard molar enthalpy change for the hydrogenation of ethene C₂H₄(g) + H₂(g) → C₂H₆(g). [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) The total enthalpy change for a chemical reaction is independent of the route by which the reaction occurs, provided the initial and final states are the same.\n\n(ii) ΔH = Σ(bonds broken) − Σ(bonds formed)\nBonds broken: C=C (612) + H-H (436) = 1048 kJ\nBonds formed: C-C (348) + 2 × C-H (2 × 412 = 824) = 1172 kJ\nΔH = 1048 − 1172 = −124 kJ/mol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Ionic Equilibria",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) (i) Write an expression for the solubility product of BaCl₂(s). [1 mark]\n(ii) The Ksp of Al(OH)₃ at 25 °C is 2.00 x 10⁻³¹. Calculate ΔG for the precipitation of Al(OH)₃. The equation for the reaction is: Al³⁺(aq) + 3OH⁻(aq) → Al(OH)₃(s). (R = 8.314 J/mol.K) [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Ksp = [Ba²⁺][Cl⁻]²\n\n(ii) For precipitation, the equilibrium constant is 1/Ksp.\nΔG° = −RT ln(1/Ksp) = RT ln Ksp\nln Ksp = ln(2.00 × 10⁻³¹) = 0.693 − 71.38 = −70.69\nΔG° = (8.314)(298)(−70.69) = −1.751 × 10⁵ J/mol ≈ −175.1 kJ/mol.\nThe negative value confirms that precipitation is spontaneous."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) If 350cm³ of CO is sparked with 200 cm³ of O₂ to form CO₂ according to the reaction: 2CO(g) + O₂(g) → 2CO₂(g)\n(i) Find the volume of each gas present after the reaction. [2 mark]\n(ii) What volume is left when the gases are passed through a solution of alkaline pyrogallol? [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) 2CO + O₂ → 2CO₂. 350 cm³ CO requires 175 cm³ O₂. O₂ is in excess (200 − 175 = 25 cm³ left). CO₂ formed = 350 cm³. After reaction: CO₂ = 350 cm³, O₂ = 25 cm³, CO = 0 cm³.\n\n(ii) Alkaline pyrogallol absorbs both CO₂ and O₂. Volume left = 0 cm³."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Kinetics",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) Define the term molecularity of a reaction. [1 mark]\n(ii) State two differences between order and molecularity. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Molecularity is the number of reacting species (atoms, ions or molecules) that collide simultaneously in an elementary step of a reaction.\n\n(ii) 1. Order is determined experimentally; molecularity is a theoretical value from the reaction mechanism.\n2. Order can be zero, fractional or negative; molecularity is always a whole number (≥1).\n\n(Also: order applies to the overall reaction; molecularity applies to an elementary step.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Ionic Equilibria",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) (i) Write an expression for the dissociation constant (Ka) of CH₃COOH. [1 mark]\n(ii) Calculate the pH and percentage dissociation of 0.1M ethanoic acid. (Ka at 25°C is 1.74 x 10⁻⁵ moldm⁻³). [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Ka = [CH₃COO⁻][H⁺]/[CH₃COOH]\n\n(ii) [H⁺] = √(Ka × C) = √(1.74 × 10⁻⁵ × 0.1) = √(1.74 × 10⁻⁶) = 1.319 × 10⁻³ M.\npH = −log(1.319 × 10⁻³) = 2.88.\nPercentage dissociation = (1.319 × 10⁻³/0.1) × 100 = 1.32%."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) An electrochemical cell is to be set up between Al with E° = -1.66V and Cu with E° = +0.34V.\n(i) Write the half-cell equations. [2 marks]\n(ii) Write the overall cell equation. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Anode (oxidation): Al(s) → Al³⁺(aq) + 3e⁻\nCathode (reduction): Cu²⁺(aq) + 2e⁻ → Cu(s)\n\n(ii) Overall: 2Al(s) + 3Cu²⁺(aq) → 2Al³⁺(aq) + 3Cu(s)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "5. The elements in group II of the periodic table are; Barium, Beryllium, Calcium, Magnesium, Strontium.\n(a) (i) Write an equation for the reaction of each element with water. [2 marks]\n(ii) Give the trend of their reactivity with water. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Be + H₂O → no reaction\nMg + 2H₂O → Mg(OH)₂ + H₂ (very slow with cold water; faster with steam)\nCa + 2H₂O → Ca(OH)₂ + H₂\nSr + 2H₂O → Sr(OH)₂ + H₂\nBa + 2H₂O → Ba(OH)₂ + H₂\n\n(ii) Reactivity with water increases down the group: Be < Mg < Ca < Sr < Ba."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) (i) State two reasons why transition metals are able to form complexes. [2 marks]\n(ii) Why are the transition metal complexes coloured? [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) 1. They have vacant d orbitals that can accept electron pairs from ligands.\n2. They have high charge density (small size, high charge) which strongly attracts ligands.\n\n(ii) Transition metal complexes are coloured due to d-d transitions: electrons absorb visible light to move between split d orbitals, and the transmitted light is the complementary colour."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemistry of the Environment",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) (i) What is meant by \"acid rain\"? [1 mark]\n(ii) Explain how acid rain attacks each of the following: Trees, Fish and building materials. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Acid rain is rain with a pH lower than 5.6, caused by dissolution of acidic gases such as SO₂ and NO₂ in rainwater, forming H₂SO₄ and HNO₃.\n\n(ii) Trees: Acid rain leaches nutrients from the soil and damages leaves/roots, weakening and killing trees.\nFish: Acid rain lowers the pH of lakes/rivers, which is toxic to fish and aquatic life; it also releases toxic Al³⁺ ions from soil.\nBuilding materials: Acids react with calcium carbonate in limestone/marble (CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂), corroding buildings and monuments."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) What is a transition metal? [2 marks]",
+    "options": [],
+    "modelAnswer": "A transition metal is an element whose atom has a partially filled d subshell, or which can form ions with a partially filled d subshell. They are found in the d-block of the periodic table (Groups 3–12)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Account for the trend in atomic radii of Chromium (atomic number 24) manganese (25) and iron (26). [2 marks]",
+    "options": [],
+    "modelAnswer": "The atomic radii of Cr, Mn and Fe are similar (slightly decreasing). Across the period, nuclear charge increases but the added electrons enter the inner 3d subshell, which shields the outer 4s electrons. The increased nuclear charge is largely cancelled by the increased shielding, so the radius changes only slightly (slight decrease from Cr to Fe)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Give three properties characteristic of transition elements. [3 marks]",
+    "options": [],
+    "modelAnswer": "1. They form coloured compounds/ions.\n2. They exhibit variable oxidation states.\n3. They act as catalysts (and form complex ions).\n\n(Also: they are paramagnetic due to unpaired d electrons; they have high melting points and densities.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemistry of the Environment",
+    "type": "Essay",
+    "questionNumber": "6d",
+    "question": "(d) (i) What is greenhouse effect? [1 mark]\n(ii) State four activities that contribute to greenhouse effect. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) The greenhouse effect is the trapping of heat (infrared radiation) in the atmosphere by greenhouse gases (CO₂, CH₄, N₂O, CFCs, water vapour), warming the Earth's surface.\n\n(ii) 1. Burning of fossil fuels (CO₂).\n2. Deforestation (reduced CO₂ absorption).\n3. Agriculture/livestock rearing (CH₄).\n4. Industrial processes and use of CFCs/refrigerants.\n\n(Also: vehicular emissions.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "7. Two types of isomerism found in organic compounds are structural isomerism and geometric isomerism.\n(a) Draw displayed formulae for:\n(i) Two structural isomers of C₂H₄Br₂. [2 marks]\n(ii) The cis- and the trans- isomers of C₂H₄Br₂. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Structural isomers of C₂H₄Br₂:\n1,1-dibromoethane: CH₃–CHBr₂\n1,2-dibromoethane: BrCH₂–CH₂Br\n\n(ii) Note: C₂H₄Br₂ is saturated and cannot exhibit cis/trans geometric isomerism. The question likely intended C₂H₂Br₂.\nFor C₂H₂Br₂ (1,2-dibromoethene):\ncis-1,2-dibromoethene: Br and Br on the same side of C=C.\ntrans-1,2-dibromoethene: Br on opposite sides of C=C."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Which of the isomers of the formula C₅H₁₀ does not decolourises aqueous bromine. [1 mark]",
+    "options": [],
+    "modelAnswer": "Cyclopentane (the cyclic isomer) does not decolourise aqueous bromine because it is saturated (no C=C double bond)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Compound A reacts under separate conditions to form B and C as follows;\nC₂H₅OH (A) — (H⁺, 180°C) → B\nC₂H₅OH (A) — (KMnO₄) → C\n(i) Provide structures and IUPAC names for B and C. [4 marks]\n(ii) What type of reaction occurs between compounds A and C? [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) B: ethene, CH₂=CH₂ (IUPAC: ethene) — formed by dehydration.\nC: ethanoic acid, CH₃COOH (IUPAC: ethanoic acid) — formed by oxidation.\n\n(ii) Esterification (condensation) — ethanol + ethanoic acid → ethyl ethanoate + water."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) Give the structural formulae of two alcohols which would each produce pent-2-ene on dehydration. [2 marks]\n(ii) One of these alcohols exhibits optical isomerism. Draw the two optical isomers of this alcohol. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Pentan-2-ol: CH₃–CH(OH)–CH₂–CH₂–CH₃\nPentan-3-ol: CH₃–CH₂–CH(OH)–CH₂–CH₃\n\n(ii) Pentan-2-ol exhibits optical isomerism (chiral carbon at C2). The two enantiomers are non-superimposable mirror images: (R)-pentan-2-ol and (S)-pentan-2-ol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Give the structure and name of the monomer unit of natural rubber. [2 marks]",
+    "options": [],
+    "modelAnswer": "Monomer: isoprene (2-methylbuta-1,3-diene).\nStructure: CH₂=C(CH₃)–CH=CH₂."
   }
 ]

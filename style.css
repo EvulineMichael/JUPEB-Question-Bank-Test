@@ -4112,3 +4112,174 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
     padding: 12px 8px 0;
     border-top: 1px solid var(--dash-border);
 }
+
+/* ===== DASHBOARD TOUCH-UP + NOTIFICATION BELL =====
+   Paste this at the very END of your stylesheet (after the sidebar and dashboard
+   CSS) so it wins over the older rules. Everything dashboard-related is scoped to
+   #dashboard-screen, so Settings and Help & Support are not affected. */
+
+/* ---------- Header: greeting on the left, date + bell on the right ---------- */
+#dashboard-screen .dashboard-header { grid-template-columns: 1fr auto; }
+#dashboard-screen .dash-header-actions { display: flex; align-items: center; gap: 14px; }
+
+.bell-btn {
+  position: relative;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--dash-border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.bell-btn:hover { border-color: var(--tab-active-bg); color: var(--tab-active-bg); }
+.bell-dot {
+  position: absolute; top: 7px; right: 8px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--dash-danger);
+  border: 2px solid var(--bg-secondary);
+  display: none;
+}
+.bell-dot.is-on { display: block; }
+
+/* ---------- Phones and small tablets ---------- */
+@media (max-width: 900px) {
+  /* The fixed ☰ button now sits BESIDE the greeting instead of above it,
+     which removes the empty row at the top. */
+  #dashboard-screen { padding-top: 0; }
+  #dashboard-screen .dash-shell { padding: 14px 16px 28px; gap: 12px; }
+  #dashboard-screen .dashboard-header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; min-height: 40px; padding-left: 50px;
+  }
+  #dashboard-screen .dash-greeting h2 { font-size: 1.15rem; line-height: 1.25; }
+  #dash-user-name, #dash-date { display: none; }
+
+  /* The ☰ button stays on top of the open drawer, so start the drawer's
+     content below it (it was covering the logo). */
+  .app-sidebar { padding-top: 64px; }
+
+  /* Cards */
+  #dashboard-screen .dash-card { padding: 16px; }
+  #dashboard-screen .dash-continue-card h3 { font-size: 1.15rem; }
+  #dashboard-screen .dash-progress-track { margin: 12px 0; }
+  #dashboard-screen .dash-btn-primary { width: 100%; padding: 12px 16px; }
+  #dashboard-screen .dash-streak-number { font-size: 1.8rem; }
+  #dashboard-screen .streak-dots { justify-content: space-between; margin-top: 12px; }
+  #dashboard-screen .streak-dot { width: 36px; height: 36px; }
+
+  /* Quick Access: three tiles per row instead of one per row */
+  #dashboard-screen .dash-subject-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  #dashboard-screen .dash-subject-tile { padding: 12px 6px; }
+  #dashboard-screen .dash-subject-tile h4 { font-size: 0.8rem; margin-top: 6px; }
+  /* The Edit tile becomes a slim full-width row under the subjects */
+  #dashboard-screen .dash-add-subject-tile {
+    grid-column: 1 / -1; flex-direction: row; min-height: 44px; padding: 8px 12px; font-size: 0.85rem;
+  }
+  #dashboard-screen .dash-add-subject-tile .plus-icon { font-size: 1.1rem; }
+}
+
+/* ---------- Bell panel ---------- */
+.bell-backdrop {
+  position: fixed; inset: 0; z-index: 1100;
+  background: rgba(8, 10, 20, 0.45);
+  opacity: 0; visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.bell-backdrop.is-open { opacity: 1; visibility: visible; }
+
+.bell-panel {
+  position: fixed; z-index: 1101;
+  top: 64px; right: 24px;
+  width: 380px; max-height: min(70vh, 560px);
+  background: var(--bg-secondary);
+  border: 1px solid var(--dash-border);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+  display: flex; flex-direction: column;
+  opacity: 0; visibility: hidden; transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.22s ease, visibility 0.22s ease;
+}
+.bell-panel.is-open { opacity: 1; visibility: visible; transform: none; }
+
+/* On phones the panel slides up from the bottom */
+@media (max-width: 720px) {
+  .bell-panel {
+    top: auto; right: 0; left: 0; bottom: 0;
+    width: auto; max-height: 82vh;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    transform: translateY(100%);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+.bell-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px 0; border-bottom: 1px solid var(--dash-border);
+}
+.bell-tabs { display: flex; gap: 4px; }
+.bell-tab {
+  background: none; border: none; cursor: pointer;
+  padding: 10px 12px; font-size: 0.9rem; font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 3px solid transparent; margin-bottom: -1px;
+}
+.bell-tab.is-active { color: var(--tab-active-bg); border-bottom-color: var(--tab-active-bg); }
+.bell-close {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: none; background: var(--bg-primary); color: var(--text-secondary);
+  font-size: 1.1rem; line-height: 1; cursor: pointer; margin-bottom: 8px;
+}
+.bell-body { padding: 14px 16px 18px; overflow-y: auto; }
+.bell-body[hidden] { display: none; }
+
+/* Pinned "add to home screen" tip */
+.bell-guide {
+  background: var(--bg-primary);
+  border: 1px solid var(--dash-border);
+  border-radius: 12px; padding: 12px 14px; margin-bottom: 14px;
+  font-size: 0.85rem; color: var(--text-primary);
+}
+.bell-guide[hidden] { display: none; }
+.bell-guide summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.bell-guide p { margin: 8px 0 0; color: var(--text-secondary); }
+.bell-guide ul { margin: 8px 0 0; padding-left: 18px; color: var(--text-secondary); }
+.bell-guide li { margin-bottom: 4px; }
+.bell-guide .bell-guide-note { font-size: 0.8rem; font-style: italic; }
+.bell-link {
+  background: none; border: none; padding: 0; margin-top: 10px;
+  color: var(--text-secondary); font-size: 0.78rem; cursor: pointer; text-decoration: underline;
+}
+
+.bell-update { padding: 12px 0; border-bottom: 1px solid var(--dash-border); }
+.bell-update:last-child { border-bottom: none; }
+.bell-update h4 { margin: 0 0 4px; font-size: 0.95rem; color: var(--text-primary); }
+.bell-update p { margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); white-space: pre-line; }
+.bell-update time { display: block; margin-top: 6px; font-size: 0.75rem; color: var(--text-secondary); opacity: 0.8; }
+.bell-empty { margin: 4px 0; font-size: 0.85rem; color: var(--text-secondary); }
+
+/* Feedback form */
+.bell-label { display: block; margin: 12px 0 6px; font-size: 0.82rem; font-weight: 600; color: var(--text-primary); }
+.bell-label:first-child { margin-top: 0; }
+.bell-optional { font-weight: 400; color: var(--text-secondary); }
+.bell-field {
+  width: 100%; padding: 11px 12px;
+  background: var(--bg-primary); color: var(--text-primary);
+  border: 1px solid var(--dash-border); border-radius: 10px;
+  font-size: 0.9rem; font-family: inherit;
+}
+.bell-field:focus { outline: none; border-color: var(--tab-active-bg); }
+textarea.bell-field { resize: vertical; min-height: 96px; }
+.bell-msg { min-height: 1.2em; margin: 10px 0 0; font-size: 0.82rem; }
+.bell-msg.is-ok { color: var(--dash-success); }
+.bell-msg.is-error { color: var(--dash-danger); }
+.bell-send {
+  width: 100%; margin-top: 10px; padding: 12px;
+  background: var(--tab-active-bg); color: #fff; border: none; border-radius: 10px;
+  font-size: 0.95rem; font-weight: 600; cursor: pointer;
+}
+.bell-send:disabled { opacity: 0.6; cursor: not-allowed; }

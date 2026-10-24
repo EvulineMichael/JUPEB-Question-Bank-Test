@@ -205,15 +205,20 @@
 
     <!-- Header -->
     <div class="dashboard-header">
-      
-      <div class="dash-greeting">
-        <h2 id="dash-greeting-text">Good morning</h2>
-        <p id="dash-user-name">Ready to make today a productive study session?</p>
-      </div>
-      <div class="dash-header-actions">
-        <span class="dash-date" id="dash-date"></span>
-      </div>
-    </div>
+  <div class="dash-greeting">
+    <h2 id="dash-greeting-text">Good morning</h2>
+    <p id="dash-user-name">Ready to make today a productive study session?</p>
+  </div>
+  <div class="dash-header-actions">
+    <span class="dash-date" id="dash-date"></span>
+    <button class="bell-btn" id="bell-btn" aria-label="Updates and feedback">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span class="bell-dot" id="bell-dot"></span>
+    </button>
+  </div>
+</div>
+
+
 
     <!-- Top row: continue session + streak -->
     <div class="dashboard-row dashboard-row--top">
@@ -481,6 +486,53 @@
     </div>
   </div>
 </div>
+<!-- ========== PART 2: the bell panel ==========
+     Paste once as a DIRECT child of <body>, next to your other overlays
+     (the subject picker and the survey), NOT inside any screen. -->
+<div class="bell-backdrop" id="bell-backdrop"></div>
+<section class="bell-panel" id="bell-panel" role="dialog" aria-label="Updates and feedback" aria-hidden="true">
+  <div class="bell-head">
+    <div class="bell-tabs">
+      <button class="bell-tab is-active" data-tab="updates">Updates</button>
+      <button class="bell-tab" data-tab="feedback">Feedback</button>
+    </div>
+    <button class="bell-close" id="bell-close" aria-label="Close">×</button>
+  </div>
+ 
+  <div class="bell-body" id="bell-pane-updates">
+    <details class="bell-guide" id="bell-guide" open>
+      <summary>📲 Add JUPEB Question Bank to your home screen</summary>
+      <p>Open it like an app, in one tap.</p>
+      <ul>
+        <li><strong>Android (Chrome):</strong> tap the ⋮ menu, then “Install app” (or “Add to Home screen”).</li>
+        <li><strong>iPhone (Safari):</strong> tap the Share button, then “Add to Home Screen”.</li>
+      </ul>
+      <p class="bell-guide-note">Opened this link from WhatsApp or Instagram? Open it in Chrome or Safari first.</p>
+      <button class="bell-link" id="bell-guide-hide">Don't show this again</button>
+    </details>
+    <div id="bell-updates-list"></div>
+  </div>
+ 
+  <div class="bell-body" id="bell-pane-feedback" hidden>
+    <label class="bell-label" for="bell-fb-type">What is this about?</label>
+    <select class="bell-field" id="bell-fb-type">
+      <option>Wrong answer</option>
+      <option>Bug</option>
+      <option>Suggestion</option>
+      <option>Other</option>
+    </select>
+ 
+    <label class="bell-label" for="bell-fb-message">Your message</label>
+    <textarea class="bell-field" id="bell-fb-message" rows="4" maxlength="1000" placeholder="Tell us what happened…"></textarea>
+ 
+    <label class="bell-label" for="bell-fb-context">Where did it happen? <span class="bell-optional">(optional)</span></label>
+    <input class="bell-field" id="bell-fb-context" maxlength="200" placeholder="e.g. Chemistry · Atomic Structure · Question 3">
+ 
+    <p class="bell-msg" id="bell-fb-status" role="status"></p>
+    <button class="bell-send" id="bell-fb-send">Send feedback</button>
+  </div>
+</section>
+ 
 <!-- Back to Top Button -->
 <button id="back-to-top" style="display:none;">↑ Back to Top</button>
 

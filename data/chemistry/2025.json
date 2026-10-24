@@ -789,16 +789,28 @@
     "options": [],
     "modelAnswer": "(i) F = CH₃CH₂CH(OH)CN — 2-hydroxybutanenitrile.\n(ii) Nucleophilic addition.\n(iii) CH₃CH₂CH(OH)COOH — 2-hydroxybutanoic acid."
   },
-  {
-    "subject": "Chemistry",
-    "year": 2025,
-    "category": "Petroleum Industry",
-    "type": "Essay",
-    "questionNumber": "7b",
-    "question": "(b) The table below is obtained in the fractions obtained from crude petroleum. Fill in the missing components.",
-    "options": [],
-    "modelAnswer": "1. Under 30°C | 2–4 C | Petroleum gas | Cooking/heating fuel (LPG).\n2. 30°–180°C | 4–9 C | Gasoline (Petrol/Naphtha) | Motor fuel.\n3. 160°–230°C | 8–16 C | Kerosene | Heat, jet fuel.\n4. 200°–320°C | 14–20 C | Diesel (Gas oil) | Motor fuel.\n5. 300°–450°C | 16–30 C | Fuel oil/Lubricating oil | Heating, lubricants.\n6. >300°C vacuum | >25 C | Petroleum jelly/Paraffin wax | Cosmetics, candles, medicinal.\n7. Residue | >40 C | Asphalt (Bitumen) | Construction (roads, roofing)."
+ {
+  "subject": "Chemistry",
+  "year": 2025,
+  "category": "Petroleum Industry",
+  "type": "Essay",
+  "questionNumber": "7b",
+  "question": "(b) The table below is obtained in the fractions obtained from crude petroleum. Fill in the missing components.",
+  "dataTable": {
+    "headers": ["Temp. of Separation", "No. of C atoms", "Fraction", "Use"],
+    "rows": [
+      ["Under 30°C", "2-4", "Petroleum gas", ""],
+      ["30° – 180° C", "4-9", "", "Motor fuel"],
+      ["160° - 230°C", "8-16", "Kerosene", "Heat, jet fuel"],
+      ["200° – 320° C", "", "Diesel", "Motor fuel"],
+      ["300° - 450° C", "16-30", "", "Heating lubricants"],
+      [">300° C Vacuum", ">25", "Petroleum jelly/paraffin wax", ""],
+      ["Residue", "", "Asphalt", "In construction"]
+    ]
   },
+  "options": [],
+  "modelAnswer": "i. Use of petroleum gas: Cooking/heating fuel (LPG).\n\nii. Fraction at 30° – 180°C: Gasoline (petrol/naphtha).\n\niii. Number of carbon atoms for diesel: 14–20 C.\n\niv. Fraction at 300° – 450°C: Fuel oil/lubricating oil.\n\nv. Use of petroleum jelly/paraffin wax: Cosmetics, candles, medicinal uses.\n\nvi. Number of carbon atoms for asphalt: >40 C."
+},
   {
     "subject": "Chemistry",
     "year": 2025,

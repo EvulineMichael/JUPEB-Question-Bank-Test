@@ -6,7 +6,7 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
   document.getElementById('app-sidebar').style.display = 'flex';
   document.body.classList.add('has-sidebar');   // add this line
   document.getElementById('sidebar-toggle').style.display = '';
-  document.getElementById('sidebar-overlay').style.display = 'none';
+document.getElementById('sidebar-overlay').classList.remove('is-open');
   renderSidebarUser({ name: "Student", isPremium: true, photoURL: null });
   
   if (typeof showDashboard === 'function') {
@@ -111,6 +111,7 @@ auth.onAuthStateChanged(async (user) => {
         document.getElementById('app-sidebar').style.display = 'flex';
         document.body.classList.add('has-sidebar');
         document.getElementById('sidebar-toggle').style.display = '';
+        document.getElementById('sidebar-overlay').style.display = '';
 
         if (user.displayName) {
           renderSidebarUser({
@@ -150,7 +151,7 @@ auth.onAuthStateChanged(async (user) => {
     document.getElementById('app-sidebar').style.display = 'none';
     document.body.classList.remove('has-sidebar');
     document.getElementById('sidebar-toggle').style.display = 'none';
-    document.getElementById('sidebar-overlay').style.display = 'none';
+    document.getElementById('sidebar-overlay').classList.remove('is-open');
   }
 });
 
