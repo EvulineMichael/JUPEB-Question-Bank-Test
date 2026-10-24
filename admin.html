@@ -307,6 +307,7 @@
         <h2>⏳ Pending Credits</h2>
         <p class="subtitle">Authorized students who signed in through a teacher's link and haven't been credited yet</p>
         <div id="pending-credits-list"><p class="empty-state">Loading...</p></div>
+        <button class="small secondary" id="pending-clear-btn" style="display:none;margin-top:12px;">Clear all suggestions</button>
     </div>
 
     <div class="admin-card">
@@ -982,43 +983,58 @@ async function removeReferral(email, refCode) {
     }
 }
 // ===== PENDING CREDITS (admin.html) =====
-// Paste inside the <script> in admin.html, anywhere after RATE_PER_STUDENT is defined.
-// Lists students who are authorized and signed in through a teacher's link, but have
-// not been credited yet, and credits them in one click.
+// This REPLACES the earlier "PENDING CREDITS" block in admin.html's <script>.
+// Delete the old block (from `function adminEsc` through the click listener on
+// #pending-credits-list) and paste this whole file in its place.
+//
+// Pending = a student who is authorized, signed in through a teacher's link, and has
+// not been credited yet. You can Credit them, Dismiss one, or Clear all of them.
+// Dismissing never credits anyone and never touches the student's access; it just
+// marks the claim as dismissed so it stops showing here.
 
 function adminEsc(s) {
   return String(s == null ? "" : s).replace(/[&<>"']/g, c =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+async function getPendingCredits() {
+  const [usersSnap, surveysSnap, teachersSnap] = await Promise.all([
+    db.collection('authorized_users').get(),
+    db.collection('surveys').get(),
+    db.collection('teachers').get()
+  ]);
+
+  const teachers = {};
+  teachersSnap.forEach(d => { teachers[d.id] = d.data(); });
+  const claims = {};
+  surveysSnap.forEach(d => {
+    const s = d.data();
+    if (s.referralCode && !s.referralDismissed) claims[d.id] = s.referralCode;
+  });
+
+  const rows = [];
+  usersSnap.forEach(d => {
+    const u = d.data();
+    const code = claims[d.id];
+    if (!u.referredBy && code && teachers[code]) {
+      rows.push({ email: d.id, code, teacher: teachers[code].name, date: u.date || '—' });
+    }
+  });
+  return rows;
+}
+
 async function loadPendingCredits() {
   const el = document.getElementById('pending-credits-list');
   const badge = document.getElementById('credit-badge');
+  const clearBtn = document.getElementById('pending-clear-btn');
   try {
-    const [usersSnap, surveysSnap, teachersSnap] = await Promise.all([
-      db.collection('authorized_users').get(),
-      db.collection('surveys').get(),
-      db.collection('teachers').get()
-    ]);
-
-    const teachers = {};
-    teachersSnap.forEach(d => { teachers[d.id] = d.data(); });
-    const claims = {};
-    surveysSnap.forEach(d => { const c = d.data().referralCode; if (c) claims[d.id] = c; });
-
-    const rows = [];
-    usersSnap.forEach(d => {
-      const u = d.data();
-      const code = claims[d.id];
-      if (!u.referredBy && code && teachers[code]) {
-        rows.push({ email: d.id, code, teacher: teachers[code].name, date: u.date || '—' });
-      }
-    });
+    const rows = await getPendingCredits();
 
     if (badge) {
       badge.textContent = rows.length;
       badge.style.display = rows.length ? 'inline-block' : 'none';
     }
+    if (clearBtn) clearBtn.style.display = rows.length ? 'inline-block' : 'none';
 
     if (rows.length === 0) {
       el.innerHTML = '<p class="empty-state">Nothing waiting 🎉</p>';
@@ -1033,9 +1049,12 @@ async function loadPendingCredits() {
           <div class="user-info">Teacher: ${adminEsc(r.teacher)}</div>
           <div class="user-date">Authorized: ${adminEsc(r.date)}</div>
         </div>
-        <button class="small success" data-email="${adminEsc(r.email)}" data-code="${adminEsc(r.code)}">
-          Credit ₦${RATE_PER_STUDENT.toLocaleString()}
-        </button>
+        <div class="user-actions">
+          <button class="small success" data-email="${adminEsc(r.email)}" data-code="${adminEsc(r.code)}">
+            Credit ₦${RATE_PER_STUDENT.toLocaleString()}
+          </button>
+          <button class="small secondary" data-dismiss="${adminEsc(r.email)}">Dismiss</button>
+        </div>
       </div>`).join('');
   } catch (err) {
     el.innerHTML = '<p style="color:#dc3545;">Error: ' + adminEsc(err.message) + '</p>';
@@ -1072,10 +1091,49 @@ async function creditPending(email, code, button) {
   loadReferralsMgmt();
 }
 
+// Marks claims as dismissed (in chunks, since a batch holds at most 500 writes).
+async function dismissPendingCredits(emails) {
+  for (let i = 0; i < emails.length; i += 400) {
+    const batch = db.batch();
+    emails.slice(i, i + 400).forEach(email => {
+      batch.set(db.collection('surveys').doc(email), {
+        referralDismissed: true,
+        referralDismissedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, { merge: true });
+    });
+    await batch.commit();
+  }
+}
+
+async function dismissOnePending(email) {
+  if (!confirm(`Dismiss the suggestion for ${email}?\n\nNobody is credited, and it will not come back.`)) return;
+  try {
+    await dismissPendingCredits([email]);
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+  loadPendingCredits();
+}
+
+async function clearAllPendingCredits() {
+  try {
+    const rows = await getPendingCredits();          // fresh list, not what's on screen
+    if (rows.length === 0) { loadPendingCredits(); return; }
+    if (!confirm(`Clear all ${rows.length} suggestion${rows.length === 1 ? '' : 's'}?\n\nNobody is credited, the students keep their access, and these will not come back.`)) return;
+    await dismissPendingCredits(rows.map(r => r.email));
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
+  loadPendingCredits();
+}
+
 document.getElementById('pending-credits-list')?.addEventListener('click', (e) => {
-  const btn = e.target.closest('button[data-email]');
-  if (btn) creditPending(btn.dataset.email, btn.dataset.code, btn);
+  const credit = e.target.closest('button[data-email]');
+  if (credit) { creditPending(credit.dataset.email, credit.dataset.code, credit); return; }
+  const dismiss = e.target.closest('button[data-dismiss]');
+  if (dismiss) dismissOnePending(dismiss.dataset.dismiss);
 });
+document.getElementById('pending-clear-btn')?.addEventListener('click', clearAllPendingCredits);
 // ===== ADMIN: UPDATES + FEEDBACK TABS =====
 // Paste inside the <script> in admin.html, anywhere AFTER `const ADMIN_EMAIL`.
 // Uses db, auth and firebase, the same as the rest of admin.html.
