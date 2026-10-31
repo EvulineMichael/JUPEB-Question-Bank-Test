@@ -3306,14 +3306,20 @@ function renderPickerStep() {
                 <span class="subject-tile-name">${escapeHtml(course)}</span>
             </button>`).join("");
     } else if (pickerStep === "topic") {
-        pickerSearch.placeholder = "Search topics…";
-        const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
-        pickerGrid.innerHTML = topics.map(topic => `
-            <button class="subject-tile" data-name="${topic.toLowerCase()}" onclick="pickerChooseTopic('${escapeHtml(topic)}')">
-                <span class="subject-tile-icon">📖</span>
-                <span class="subject-tile-name">${escapeHtml(topic)}</span>
-            </button>`).join("");
-    }
+    pickerSearch.placeholder = "Search topics…";
+    const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
+    pickerGrid.innerHTML = topics.map((topic, i) => `
+        <button class="subject-tile" data-name="${topic.toLowerCase()}" data-topic-index="${i}">
+            <span class="subject-tile-icon">📖</span>
+            <span class="subject-tile-name">${escapeHtml(topic)}</span>
+        </button>`).join("");
+
+    pickerGrid.querySelectorAll("button[data-topic-index]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            pickerChooseTopic(topics[parseInt(btn.dataset.topicIndex, 10)]);
+        });
+    });
+}
 }
 
 let pickerPinMode = false; // true when the picker is open for pinning, not browsing
