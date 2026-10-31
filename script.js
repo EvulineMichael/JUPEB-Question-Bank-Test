@@ -547,59 +547,53 @@ government: {
     ]
 },
    biology: {
-    "BIO 001 - General Biology": [
-        "Origin of Living Things",
-        "Origin of Organic Molecules",
-        "Basic Biostatistics",
-        "Diversity of Living Things",
-        "Biological Molecules",
-        "Cell Structure and Functions",
-        "Cell Division, Genetics, Variations and Heredity",
-        "Systematics, Taxonomy and Nomenclature",
-        "Ecology",
-        "Biological Methods and Application",
-        "Evolution",
-        "Enzymes"
-    ],
-    "BIO 002 - Microbiology": [
-        "History of the Discovery of Microorganisms",
-        "Types and Taxonomic Groupings of Microorganisms",
-        "Structures, Morphology and Characteristics of Microorganisms",
-        "Microbial Ecology",
-        "Microbial Nucleic Acids in Information Storage and Transfer",
-        "Microorganisms and their Application in Biotechnology"
-    ],
-    "BIO 003 - Botany": [
-        "General Characteristics and Diversity of Plants",
-        "Plant Morphology/Anatomy",
-        "Nutrition in Plants",
-        "Transport System in Plants",
-        "Respiration",
-        "Plant Reproduction",
-        "Growth in Higher Plants and Growth Regulators",
-        "Crop Improvement",
-        "Economic and Ecological Importance of Plants"
-    ],
-    "BIO 004 - Zoology": [
-        "Diversity and General Characteristics of Animals",
-        "Systematics (Taxonomy) of Animals",
-        "Evolution of Animals",
-        "Invertebrates",
-        "Introduction to Chordates",
-        "Ecologic and Economic Importance of Animals",
-        "Nutrition in Animals",
-        "Respiration in Mammals",
-        "Transport of Substances across Membranes",
-        "Skeletal System and Muscles",
-        "Reproduction",
-        "Excretion",
-        "Circulatory System",
-        "Growth and Development",
-        "Nervous System",
-        "Sense Organs",
-        "Endocrine System"
-    ]
-},
+        "BIO 001 - General Biology": [
+            "Origin of Living Things",
+            "Living Things in Nature and Biological Molecules",
+            "Cell Organisation, Structure and Functions",
+            "Cell Division, Principles of Genetics, Variations and Heredity",
+            "Systematics, Taxonomy and Nomenclature",
+            "Ecology",
+            "Biological Methods and Application",
+            "Evolution",
+            "Enzymes"
+        ],
+        "BIO 002 - Microbiology": [
+            "History of the Discovery of Microorganisms",
+            "Types and Taxonomic Groupings of Microorganisms",
+            "Structures, Morphology and Characteristics of Microorganisms",
+            "Microbial Ecology",
+            "Microbial Nucleic Acids in Information Storage and Transfer",
+            "Microorganisms and their Application in Biotechnology"
+        ],
+        "BIO 003 - Botany": [
+            "General Characteristics and Diversity of Plants",
+            "Taxonomy of Lower and Higher Plants",
+            "Plant Conservation",
+            "Plant Tissues and Functions",
+            "Plant Morphology/Anatomy",
+            "Nutrition in Plants",
+            "Transport System in Plants",
+            "Respiration",
+            "Plant Reproduction",
+            "Growth in Higher Plants and Growth Regulators",
+            "Crop Improvement",
+            "Economic and Ecological Importance of Plants"
+        ],
+        "BIO 004 - Zoology": [
+            "Diversity and General Characteristics of Animals",
+            "Systematics (Taxonomy) of Animals",
+            "Evolution of Animals",
+            "Invertebrates",
+            "Introduction to Chordates",
+            "Ecologic and Economic Importance of Animals",
+            "Physiological Processes",
+            "Transport of Substances across Membranes",
+            "Nervous System",
+            "Sense Organ",
+            "Endocrine System"
+        ]
+    },
     irs: {
     "ISS 001 - History of Islam": [
         "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
