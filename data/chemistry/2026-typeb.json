@@ -1,0 +1,282 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) What is a Limiting reagent? [1 mark]",
+    "options": [],
+    "modelAnswer": "A limiting reagent is the reactant that is completely consumed in a chemical reaction and thereby limits (determines) the amount of product formed."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Hydrofluoric acid finds use in etching of glass by reacting with the trioxosilicate in glass according to the following stoichiometry:\nCaSiO₃ + 6HF → CaF₂ + SiF₄ + 3H₂O\nIf 25.0g of hydrofluoric acid reacts with 50.0 g of the trioxosilicate to produce calcium fluoride (CaF₂),\n(i) Identify the limiting reagent.\n(ii) Calculate the theoretical yield of Calcium fluoride.\n(Ca=40, Si=28, O=16, F=19, H=1) [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) Moles HF = 25.0/20 = 1.25 mol. Moles CaSiO₃ = 50.0/116 = 0.431 mol.\nFrom equation, 1 mol CaSiO₃ needs 6 mol HF. HF required for 0.431 mol CaSiO₃ = 2.586 mol. Available HF = 1.25 mol → HF is the limiting reagent.\n\n(ii) From 6 mol HF → 1 mol CaF₂. Moles CaF₂ = 1.25/6 = 0.2083 mol. Molar mass CaF₂ = 40 + 38 = 78 g/mol.\nTheoretical yield = 0.2083 × 78 = 16.25 g."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) (i) State Hund's rule of maximum multiplicity\n(ii) Write the electronic configuration of Cr³⁺ and Zn [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Hund's rule of maximum multiplicity: Electrons occupy degenerate orbitals singly first, with parallel spins, before pairing up, so as to maximize total spin (maximum multiplicity) and minimize repulsion.\n\n(ii) Cr³⁺ (Z=24): [Ar] 3d³ (1s² 2s² 2p⁶ 3s² 3p⁶ 3d³).\nZn (Z=30): [Ar] 3d¹⁰ 4s² (1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s²)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "1d",
+    "question": "(d) (i) Define the term electronegativity\n(ii) Arrange C, F, H, N, O in order of increasing electronegativity [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Electronegativity is the tendency of an atom in a molecule to attract the shared pair of electrons towards itself.\n\n(ii) Increasing electronegativity: H < C < N < O < F (Pauling values: H 2.1, C 2.5, N 3.0, O 3.5, F 4.0)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) (i) Define a standard solution? [1 mark]\n(ii) A fluoride of Tungsten, WFx, contains 38.27% of Fluorine. What is the oxidation state of Tungsten in this compound? (W = 183.84; F = 19.00) [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) A standard solution is a solution whose concentration is accurately known (prepared by dissolving an exact mass of solute in a definite volume).\n\n(ii) In WFx: mass W = 61.73 g, mass F = 38.27 g per 100 g.\nMoles W = 61.73/183.84 = 0.3358; Moles F = 38.27/19.00 = 2.014.\nRatio W:F = 0.3358:2.014 ≈ 1:6. Formula = WF₆.\nOxidation state: x + 6(−1) = 0 → x = +6."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Carbon burns completely in oxygen according to the equation:\nC(s) + O₂(g) → CO₂(g)\nDetermine the volume of CO₂ that could be formed when 0.500 g of carbon is burnt under conditions of standard temperature and pressure? (Molar volume of a gas at stp = 22.4 dm³, C = 12.00) [2 marks]",
+    "options": [],
+    "modelAnswer": "Moles C = 0.500/12.00 = 0.04167 mol. From equation, 1 mol C → 1 mol CO₂.\nVolume CO₂ = 0.04167 × 22.4 = 0.933 dm³."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) Write the balanced chemical equations for the following redox reactions:\n(i) Fe(OH)₂(s) + Pb(OH)₃(aq) → Fe(OH)₃(s) + Pb(s) [basic medium]\n(ii) ClO₃⁻(aq) + Br⁻(aq) → Br₂(s) + Cl⁻(aq) [acidic medium] [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Basic medium:\nHalf-reactions:\nOxidation: Fe²⁺ → Fe³⁺ + e⁻ (×3)\nReduction: Pb³⁺ + 3e⁻ → Pb (×1)\nBalanced: 3Fe(OH)₂ + Pb(OH)₃ → 3Fe(OH)₃ + Pb\n\n(ii) Acidic medium:\nClO₃⁻ + 6Br⁻ + 6H⁺ → 3Br₂ + Cl⁻ + 3H₂O."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Measurement",
+    "type": "Essay",
+    "questionNumber": "2d",
+    "question": "(d) A sample of brass containing 70% of copper was analyzed by a chemist for five times and the results were 70.10%, 69.99%, 70.20%, 70.00% and 69.98%. Use the analyst data to determine: (i) Absolute error (ii) Percentage relative error [2 marks]",
+    "options": [],
+    "modelAnswer": "Mean = (70.10 + 69.99 + 70.20 + 70.00 + 69.98)/5 = 350.27/5 = 70.054%.\n(i) Absolute error = |mean − true value| = |70.054 − 70.00| = 0.054%.\n(ii) Percentage relative error = (absolute error/true value) × 100 = (0.054/70.00) × 100 = 0.077%."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) Given the following half-cell reactions:\nCr³⁺(aq) + 3e⁻ → Cr(s)  E° = -0.74 V\nNO₃⁻(aq) + 4H⁺(aq) + 3e⁻ → NO(g) + 2H₂O(l)  E° = +0.96 V\n(i) Write the balanced chemical equation for the cell reaction\n(ii) Determine the equilibrium constant at 300 K for the cell\n(R = 8.314 J/mol.K, F = 96500 C) [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) Cathode (reduction): NO₃⁻ + 4H⁺ + 3e⁻ → NO + 2H₂O\nAnode (oxidation): Cr → Cr³⁺ + 3e⁻\nOverall: Cr(s) + NO₃⁻(aq) + 4H⁺(aq) → Cr³⁺(aq) + NO(g) + 2H₂O(l)\n\n(ii) E°cell = 0.96 − (−0.74) = 1.70 V. n = 3.\nE°cell = (RT/nF) ln K → ln K = nFE°/RT = (3 × 96500 × 1.70)/(8.314 × 300) = 492150/2494.2 = 197.32.\nK = e^197.32 ≈ 2.1 × 10⁸⁵."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Equilibrium State",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) The reaction quotient Q for the reaction:\n2NOCl(g) ⇌ 2NO(g) + Cl₂(g) is 0.034 at 27°C.\nGiven that 5 g of NOCl(g) gave 2.29 g of NO(g) and 2.70 g of Cl₂(g) in a 1.0 L flask at equilibrium, what direction will the system proceed to reach equilibrium?\n(N = 14, O = 16, Cl = 35.5) [4 marks]",
+    "options": [],
+    "modelAnswer": "Moles: NOCl = 5/65.5 = 0.0763 mol; NO = 2.29/30 = 0.0763 mol; Cl₂ = 2.70/71 = 0.0380 mol.\nConcentrations (1 L): [NOCl] = 0.0763 M, [NO] = 0.0763 M, [Cl₂] = 0.0380 M.\nReaction quotient Qc = [NO]²[Cl₂]/[NOCl]² = (0.0763)²(0.0380)/(0.0763)² = 0.0380.\n\nSince Qc (0.0380) > Kc (0.034), the system will proceed in the reverse direction (towards reactants, left) to reach equilibrium."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) State any two applications of radioactive nuclides [2 marks]",
+    "options": [],
+    "modelAnswer": "1. Medical diagnosis and treatment (e.g., iodine-131 for thyroid, cobalt-60 in radiotherapy, technetium-99m for imaging).\n2. Carbon dating (carbon-14) for archaeology/geology.\n\n(Also: industrial radiography, sterilization of medical equipment, tracing in agriculture/industry, nuclear power.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Acid-Base Equilibria",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) Identify the acid, base, conjugate acid and conjugate base in the following aqueous reaction:\nAl(H₂O)₆³⁺ + H₂O ⇌ H₃O⁺ + Al(H₂O)₅(OH)²⁺\n(ii) Use the following data for three aqueous solutions of CaCl₂ to calculate the average value of the van't Hoff factor. (Kf = 1.86 °C/m) [4 marks]",
+    "dataTable": {
+      "headers": ["Solutions", "Molality (m)", "Freezing Point Depression (°C)"],
+      "rows": [
+        ["1", "0.0225", "0.110"],
+        ["2", "0.0910", "0.440"],
+        ["3", "0.278", "1.330"]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "(i) Acid: Al(H₂O)₆³⁺; Base: H₂O; Conjugate acid: H₃O⁺; Conjugate base: Al(H₂O)₅(OH)²⁺.\n\n(ii) i = ΔTf/(Kf·m):\nSolution 1: i = 0.110/(1.86 × 0.0225) = 0.110/0.04185 = 2.63.\nSolution 2: i = 0.440/(1.86 × 0.0910) = 0.440/0.1693 = 2.60.\nSolution 3: i = 1.330/(1.86 × 0.278) = 1.330/0.5171 = 2.57.\nAverage i = (2.63 + 2.60 + 2.57)/3 = 2.60."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) (i) Predict the spontaneity of chemical reactions from a standard Gibbs' free energy equation\n(ii) A 1.0 L gas jar contains 0.050 mole of oxygen gas and 0.015 mole of Nitrogen gas at 30 °C and 1 atm. Calculate the partial pressure of each gas in mmHg? [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) ΔG° = ΔH° − TΔS°.\nIf ΔG° < 0 → reaction is spontaneous.\nIf ΔG° = 0 → system at equilibrium.\nIf ΔG° > 0 → reaction is non-spontaneous (spontaneous in reverse).\n\n(ii) Total moles = 0.050 + 0.015 = 0.065 mol. Total pressure = 1 atm = 760 mmHg.\nP(O₂) = (0.050/0.065) × 760 = 584.6 mmHg.\nP(N₂) = (0.015/0.065) × 760 = 175.4 mmHg."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) (i) State the Fajan's rule of bond types.\n(ii) Name ONE oxide anion for each of the following transition metals: Vanadium, Chromium, and Manganese that occurs without the M²⁺ cation state.\n(iii) Mention THREE catalytic applications of transition metals in industries. [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) Fajan's rules: Covalent character of an ionic bond increases with (1) small cation size, (2) high cation charge, (3) large anion size, and (4) cation with a non-noble-gas (pseudo-noble-gas) electronic configuration. Such polarization leads to more covalent character.\n\n(ii) Oxide anions:\nVanadium: VO₃⁻ (metavanadate) or VO₄³⁻ (orthovanadate).\nChromium: CrO₄²⁻ (chromate) or Cr₂O₇²⁻ (dichromate).\nManganese: MnO₄⁻ (permanganate).\n\n(iii) Catalytic applications:\n1. Iron (with promoters) in the Haber process for ammonia.\n2. Vanadium(V) oxide in the contact process for H₂SO₄.\n3. Nickel in hydrogenation of vegetable oils (margarine manufacture).\n\n(Also: platinum/rhodium in catalytic converters; platinum in Ostwald process for HNO₃.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Use pertinent equations ONLY to describe the role of tetraoxosulphate (VI) acid as\n(i) an oxidizing agent\n(ii) a dehydrating agent\n(iii) a sulphonating agent [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Oxidizing agent: Cu + 2H₂SO₄ → CuSO₄ + SO₂ + 2H₂O\n(ii) Dehydrating agent: C₁₂H₂₂O₁₁ → 12C + 11H₂O (using conc. H₂SO₄)\n(iii) Sulphonating agent: C₆H₆ + H₂SO₄ → C₆H₅SO₃H + H₂O"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) (i) Outline the processes involved in the manufacture of sodium trioxocarbonate (IV) by the Solvay process.\n(ii) Compare transition elements with Group II elements. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Solvay process:\n1. Brine (NaCl solution) is saturated with ammonia.\n2. CO₂ is passed through the ammoniated brine: NaCl + NH₃ + CO₂ + H₂O → NaHCO₃ + NH₄Cl.\n3. NaHCO₃ is filtered and heated (calcined): 2NaHCO₃ → Na₂CO₃ + CO₂ + H₂O.\n4. CO₂ is recycled; NH₃ is recovered by treating NH₄Cl with Ca(OH)₂: 2NH₄Cl + Ca(OH)₂ → CaCl₂ + 2NH₃ + 2H₂O.\n\n(ii) Comparison:\n1. Transition elements have partially filled d orbitals and variable oxidation states; Group II elements have fixed +2 oxidation state.\n2. Transition elements form coloured compounds and complexes; Group II elements generally do not.\n3. Transition elements are good catalysts; Group II elements are not.\n4. Transition metals are harder, denser and have higher melting points than Group II metals."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Highlight FOUR ways in which beryllium resembles aluminium. [2 marks]",
+    "options": [],
+    "modelAnswer": "1. Both form amphoteric oxides/hydroxides (BeO, Be(OH)₂; Al₂O₃, Al(OH)₃) that dissolve in both acids and alkalis.\n2. Both have high charge-to-size ratio and form covalent compounds (e.g., BeCl₂, AlCl₃ are covalent and dimerize).\n3. Both are passivated by a protective oxide layer and resist attack by concentrated nitric acid.\n4. Both form stable complexes (Be and Al form complex ions) and their carbides react with water to give methane.\n\n(Also: diagonal relationship — similar electronegativity and ionization energies.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Explain the following observations:\n(i) Ionization potential of group II elements decreases down the group.\n(ii) Beryllium is capable of forming covalent compounds.\n(iii) PbO is more stable than PbO₂ but SiO₂ is more stable than SiO. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Down Group II, atomic radius increases and shielding increases, so the outermost electrons are further from the nucleus and more easily removed; hence ionization energy decreases.\n\n(ii) Be²⁺ is very small with a high charge density, which strongly polarizes anions, giving high covalent character (Fajan's rules) — hence Be forms covalent compounds.\n\n(iii) In Pb, the +2 oxidation state is more stable than +4 due to the inert pair effect (reluctance of the 6s² pair to be lost); so PbO is more stable than PbO₂. In Si (Period 3), the +4 state is stable (no inert pair effect), so SiO₂ is more stable than SiO."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) (i) Give TWO reasons why alkali metals are often difficult to prepare by chemical reduction of their ores.\n(ii) Name of the following complexes:\nI. [Co(en)₃]Cl₃\nII. K₄[Fe(CN)₆]\nIII. [Cr(NH₃)₂(CN)₄]⁻ [5 marks]",
+    "options": [],
+    "modelAnswer": "(i) 1. Alkali metals are highly reactive and readily combine with oxygen/water, so they cannot be obtained by simple chemical reduction of their ores.\n2. They have very negative reduction potentials — they are powerful reducing agents themselves, so common reducing agents cannot reduce their ions; electrolysis of molten salts is required.\n\n(Also: they form very stable compounds, so large energy is needed to break them down.)\n\n(ii) Names:\nI. [Co(en)₃]Cl₃ — tris(ethylenediamine)cobalt(III) chloride.\nII. K₄[Fe(CN)₆] — potassium hexacyanoferrate(II) (potassium ferrocyanide).\nIII. [Cr(NH₃)₂(CN)₄]⁻ — diammine tetracyanochromate(III) ion."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) In the preparation of Ester (Alkylalkanoate), Ethanol can be used as the starting material according to the following steps:\nCH₃CHO →(step 1) CH₃COOH →(step 2) CH₃COOCH₂CH₃\n(i) State the reagents needed for Step 1 and identify the type of reaction occurring.\n(ii) Name other organic compound needed in Step 2.\n(iii) Give the name of the ester formed. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Step 1 reagents: acidified potassium dichromate(VI) (K₂Cr₂O₇/H₂SO₄) or acidified KMnO₄, under reflux/heat. Reaction type: oxidation (of ethanal to ethanoic acid).\n(ii) Other organic compound needed in Step 2: ethanol (CH₃CH₂OH).\n(iii) Name of ester: ethyl ethanoate."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Penicillin G (whose structure is given below) was the first antibiotic used to fight infections.\n(i) Determine the molecular formula of penicillin G.\n(ii) How many chiral carbons are present in the structure of Penicillin G?\n(iii) Which functional group in the structure of Penicillin G above can undergo Nucleophilic addition reaction with cyanide ion? [3 marks]",
+    "image": {
+      "src": "/images/questions/chemistry/2026/type-b/chem-2026-essay-7b.png",
+      "alt": "Structure of Penicillin G showing the beta-lactam ring and thiazolidine ring with the formula C16H18N2O4S"
+    },
+    "options": [],
+    "modelAnswer": "(i) Molecular formula: C₁₆H₁₈N₂O₄S.\n\n(ii) Number of chiral carbons: 3 (the three stereocentres in the β-lactam/thiazolidine ring system).\n\n(iii) The β-lactam carbonyl group (an amide carbonyl in the four-membered β-lactam ring) can undergo nucleophilic addition (e.g., with cyanide ion)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Cyclohexene (as shown below) behaves as a typical alkene.\n(i) Name the type of polymerization that cyclohexene undergoes and hence, state the IUPAC nomenclature of the organic products formed when one molecule of cyclohexene reacts with:\ni) one molecule of H₂\nii) one molecule of acidified KMnO₄. [3 marks]",
+    "image": {
+      "src": "/images/questions/chemistry/2026/type-b/chem-2026-essay-7c.png",
+      "alt": "Structure of cyclohexene showing a six-membered carbon ring with one C=C double bond"
+    },
+    "options": [],
+    "modelAnswer": "(i) Type of polymerization: addition polymerization.\n\nProducts:\ni) With one molecule of H₂: cyclohexane.\nii) With one molecule of acidified KMnO₄: cyclohexane-1,2-diol (cis-1,2-cyclohexanediol)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Name the following organic compounds and determine the number of sigma and pi bonds present in each case:\n(i) CH₃-CH₂-CH₂-CH₃\n(ii) H₃C-C(=O)-CH₃\n(iii) H₂C=CH-CH₃ [4½ Marks]",
+    "options": [],
+    "modelAnswer": "(i) Butane. Sigma bonds: 13 (C–C ×3 + C–H ×10). Pi bonds: 0.\n(ii) Propanone (acetone). Sigma bonds: 9 (C–C ×2 + C–H ×6 + C=O sigma 1). Pi bonds: 1 (C=O).\n(iii) Propene. Sigma bonds: 8 (C–C ×2 + C–H ×6). Pi bonds: 1 (C=C)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Alkyl Halides",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Arrange the following compounds in order of increasing susceptibility to SN1 reactions:\nCH₃Br, CH₃CH₂Br, (CH₃)₃CBr, CH₃CH(CH₃)Br [1 mark]",
+    "options": [],
+    "modelAnswer": "Increasing SN1 susceptibility: CH₃Br < CH₃CH₂Br < CH₃CH(CH₃)Br < (CH₃)₃CBr.\n(SN1 rate depends on carbocation stability: methyl < primary < secondary < tertiary.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) (i) Define the term 'polymers'.\n(ii) List two types of polymerization and give two examples of polymers formed in each case.",
+    "options": [],
+    "modelAnswer": "(i) Polymers are large molecules (macromolecules) formed by the chemical combination of many small repeating units called monomers.\n\n(ii) Two types:\n1. Addition polymerization — examples: polyethylene (from ethene), polypropylene (from propene), polystyrene, PVC.\n2. Condensation polymerization — examples: nylon-6,6 (from hexamethylenediamine and adipic acid), polyester (PET), bakelite."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "8d",
+    "question": "(d) Use the structure of Tylenol given below to answer the following:\n(i) Identify TWO functional groups in Tylenol.\n(ii) Write the molecular formula of the compound. [1½ marks]",
+    "image": {
+      "src": "/images/questions/chemistry/2026/type-b/chem-2026-essay-8d.png",
+      "alt": "Structure of Tylenol showing a benzene ring with a hydroxyl group (-OH) and an acetamido group (-NHCOCH3) para to each other"
+    },
+    "options": [],
+    "modelAnswer": "(i) Functional groups: hydroxyl (–OH, phenol) and amide (–NHCOCH₃, acetamido).\n\n(ii) Molecular formula: C₈H₉NO₂."
+  }
+]

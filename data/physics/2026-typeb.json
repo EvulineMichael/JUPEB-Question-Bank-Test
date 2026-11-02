@@ -167,7 +167,7 @@
     "questionNumber": "5c",
     "question": "(c) An electron enters the region of a uniform electric field as shown in figure 1 below, with v₀ = 3.00 x 10⁶ m/s and E = 200 N/C. The horizontal length of each plate is l = 0.100 m.\n\ni. Find the acceleration of the electron while it is in the electric field.\nii. Assuming the electron enters the field at time t = 0, find the time at which it leaves the field. (mass of an electron = 1.67 x 10⁻²⁷ kg, charge of an electron = 1.60 x 10⁻¹⁹ C) [4 marks]",
     "image": {
-      "src": "/images/questions/physics/2026/phy-2026-essay-5c.png",
+      "src": "/images/questions/physics/2026/type-b/phy-2026-essay-5c.png",
       "alt": "Diagram showing two parallel horizontal plates with an upward electric field. An electron enters from the left with velocity v₀, follows a parabolic path downwards towards the bottom plate, and exits from the right side with velocity v."
     },
     "options": [],
@@ -191,7 +191,7 @@
     "questionNumber": "6b",
     "question": "(b) Consider the circuit diagram in figure 2. Calculate the current in each resistor.\n\n[5 marks]",
     "image": {
-      "src": "/images/questions/physics/2026/phy-2026-essay-6b.png",
+      "src": "/images/questions/physics/2026/type-b/phy-2026-essay-6b.png",
       "alt": "Two-loop circuit diagram. Top branch contains a 24V battery and a 3.0Ω resistor. Middle branch contains a 13V battery and a 2.0Ω resistor. Bottom branch contains a 10.0Ω resistor. Junctions labelled a, b, c, d, e, f."
     },
     "options": [],

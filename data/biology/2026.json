@@ -1,0 +1,267 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "A survey was carried out in a community with ten villages (A, B, C.......J) to know the prevalence of Plasmodium falciparum. From each of the villages the following number of individuals were found positive to the pathogen. Find the (i) Mean (ii) Median (iii) Mode (iv) Range [4 Marks]",
+    "dataTable": {
+      "headers": ["S/N", "Villages", "Persons positive to the pathogen"],
+      "rows": [
+        ["1", "A", "5"],
+        ["2", "B", "3"],
+        ["3", "C", "6"],
+        ["4", "D", "2"],
+        ["5", "E", "6"],
+        ["6", "F", "3"],
+        ["7", "G", "2"],
+        ["8", "H", "4"],
+        ["9", "I", "3"],
+        ["10", "J", "1"]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "(i) Mean = (5+3+6+2+6+3+2+4+3+1)/10 = 35/10 = 3.5.\n\n(ii) Median: arranged scores = 1,2,2,3,3,3,4,5,6,6. Median = (3+3)/2 = 3.\n\n(iii) Mode = 3 (appears most frequently, 3 times).\n\n(iv) Range = highest − lowest = 6 − 1 = 5."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "Define the following: (i) Variable. (ii) Population. (iii) Parameter. (iv) Sample. [4 Marks]",
+    "options": [],
+    "modelAnswer": "(i) Variable: A characteristic or factor that can change or take different values in a study (e.g., number of infected persons, age, temperature).\n\n(ii) Population: The total number of individuals of the same species living in a defined area at a given time, from which samples may be drawn.\n\n(iii) Parameter: A numerical value that describes a characteristic of an entire population (e.g., population mean).\n\n(iv) Sample: A small representative portion or subset selected from a population for study/measurement."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Evolution",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Name FOUR evidences in support of evolution. [2 Marks]",
+    "options": [],
+    "modelAnswer": "1. Fossil records (palaeontology).\n2. Comparative anatomy (homologous and analogous structures).\n3. Embryology (similar embryonic stages).\n4. Biochemical/molecular evidence (DNA and protein similarities).\n\n(Also: vestigial organs, geographical distribution, artificial selection.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Living Things in Nature and Biological Molecules",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) i. State any THREE differences between Deoxyribonucleic acid (DNA) and Ribonucleic acid (RNA). [3 Marks]\nii. State any THREE differences between Mitochondrion and Golgi Apparatus [3 Marks]",
+    "options": [],
+    "modelAnswer": "i. DNA vs RNA:\n1. DNA contains deoxyribose sugar; RNA contains ribose sugar.\n2. DNA has bases A, T, G, C; RNA has A, U, G, C (uracil replaces thymine).\n3. DNA is double-stranded (double helix); RNA is usually single-stranded.\n\n(Also: DNA is mostly in the nucleus; RNA is found in nucleus and cytoplasm; DNA is more stable; RNA is less stable.)\n\nii. Mitochondrion vs Golgi apparatus:\n1. Mitochondrion is the site of aerobic respiration/ATP production; Golgi apparatus is involved in packaging, modification and secretion of materials.\n2. Mitochondrion has a double membrane with inner folds (cristae); Golgi apparatus consists of flattened membranous sacs (cisternae) without cristae.\n3. Mitochondrion contains its own DNA and ribosomes; Golgi apparatus does not contain DNA."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Enzymes",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) i. Outline FOUR properties of enzymes. [2 Marks]\nii. State FOUR categories of enzymes. [2 Marks]",
+    "options": [],
+    "modelAnswer": "i. Properties of enzymes:\n1. They are protein in nature (except ribozymes).\n2. They are highly specific in action.\n3. They act as biological catalysts and are needed in small amounts.\n4. They are sensitive to temperature and pH (denatured by high temperature/extreme pH).\n\n(Also: they are reusable; they speed up reactions by lowering activation energy; reactions are reversible.)\n\nii. Categories of enzymes (by reaction type):\n1. Oxidoreductases (oxidation-reduction).\n2. Transferases (transfer of groups).\n3. Hydrolases (hydrolysis).\n4. Lyases (removal of groups without hydrolysis).\n\n(Also: isomerases, ligases.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Types and Taxonomic Groupings of Microorganisms",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) Name the FOUR morphological groups (shapes) of bacteria and state their characteristics. [4 Marks]",
+    "options": [],
+    "modelAnswer": "1. Cocci: spherical bacteria; may occur singly, in pairs (diplococci), chains (streptococci), clusters (staphylococci) or tetrads.\n2. Bacilli: rod-shaped bacteria; may occur singly, in pairs (diplobacilli) or chains (streptobacilli).\n3. Spirilla: spiral/helical-shaped bacteria; occur mostly singly.\n4. Vibrios: comma-shaped bacteria; usually occur singly.\n\n(Also: spirochaetes — corkscrew-shaped.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Microorganisms and their Application in Biotechnology",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) List FOUR biotechnological applications of microorganisms. [2 Marks]",
+    "options": [],
+    "modelAnswer": "1. Production of antibiotics (e.g., penicillin from Penicillium).\n2. Production of fermented foods and beverages (e.g., bread, beer, cheese, yoghurt).\n3. Production of enzymes and vaccines (genetic engineering/recombinant DNA).\n4. Waste treatment and bioremediation (sewage treatment, oil spill clean-up).\n\n(Also: production of biogas/biofuel, insulin, vitamins.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Structures, Morphology and Characteristics of Microorganisms",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) i. Outline the stages of the lytic cycle in Viruses. [3 Marks]\nii. Name the shape of Tobacco Mosaic Virus and Rotavirus. [1 Mark]",
+    "options": [],
+    "modelAnswer": "i. Stages of the lytic cycle:\n1. Adsorption/attachment — the virus attaches to the host cell surface.\n2. Penetration/injection — viral nucleic acid is injected into the host cell.\n3. Replication/biosynthesis — viral components are synthesized using host machinery.\n4. Assembly/maturation — new viral particles are assembled.\n5. Lysis/release — the host cell bursts, releasing new viruses.\n\nii. Tobacco Mosaic Virus: rod-shaped (helical). Rotavirus: spherical (icosahedral)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Microbial Ecology",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Explain how vaccination can protect the body from contracting infectious diseases. [2 Marks]",
+    "options": [],
+    "modelAnswer": "Vaccination introduces a weakened/inactivated pathogen or its antigen into the body. This stimulates the immune system to produce antibodies and memory cells (lymphocytes) specific to the pathogen. If the actual pathogen later invades, the memory cells rapidly produce antibodies and destroy it before disease develops, giving immunity."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Microbial Ecology",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Enumerate any FOUR infectious diseases of human [2 Marks]",
+    "options": [],
+    "modelAnswer": "1. Malaria.\n2. Tuberculosis (TB).\n3. Cholera.\n4. Measles.\n\n(Also: HIV/AIDS, typhoid, poliomyelitis, hepatitis, COVID-19.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) Define the following types of mutation\ni. Spontaneous mutation\nii. Base substitution mutation [2 Mark]",
+    "options": [],
+    "modelAnswer": "i. Spontaneous mutation: A mutation that occurs naturally without exposure to external mutagenic agents, due to errors during DNA replication or natural chemical instability of bases.\n\nii. Base substitution mutation: A mutation in which one base is replaced by another base in the DNA sequence (e.g., transition or transversion), which may alter the codon and hence the amino acid sequence."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Structures, Morphology and Characteristics of Microorganisms",
+    "type": "Essay",
+    "questionNumber": "4d",
+    "question": "(d) Make a well labelled diagram of Bacteriophage [4 Marks]",
+    "options": [],
+    "modelAnswer": "[IMAGE: /images/questions/biology/2026/type-a/bio-2026-essay-4d.png | Labelled diagram of a bacteriophage showing the head (capsid enclosing DNA), collar, sheath (tail sheath), tail tube, base plate, and tail fibres]\n\nA labelled diagram of a bacteriophage showing: head (capsid enclosing DNA), collar, sheath (tail sheath), tail tube, base plate, tail fibres, and the viral DNA/genome inside the head."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Nutrition in Plants",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) i. State FOUR factors that influence the rate of photosynthesis. [2 Marks]\nii. Explain how TWO of the named factors affect the rate of photosynthesis. [2 Marks]",
+    "options": [],
+    "modelAnswer": "i. Factors:\n1. Light intensity.\n2. Carbon dioxide concentration.\n3. Temperature.\n4. Water availability.\n\n(Also: chlorophyll amount, leaf surface area, mineral nutrients.)\n\nii. Two explanations:\n1. Light intensity: As light intensity increases, the rate of photosynthesis increases up to a point, because more light energy is available to excite electrons in the light-dependent reactions; beyond saturation, the rate levels off.\n2. Temperature: Photosynthesis is enzyme-controlled; increasing temperature increases the rate up to an optimum, above which enzymes denature and the rate falls."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Plant Morphology/Anatomy",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Highlight the characteristic features of monocotyledon and dicotyledon plants in terms of root system, stem, leaves and flower parts in a tabular form. [4 Marks]",
+    "options": [],
+    "modelAnswer": "i. Root system: Monocotyledons have a fibrous root system; dicotyledons have a tap root system.\n\nii. Stem: Monocotyledons have scattered vascular bundles with no secondary growth; dicotyledons have vascular bundles in a ring with secondary growth present.\n\niii. Leaves: Monocotyledons have parallel venation and long narrow leaves; dicotyledons have network/reticulate venation and broad leaves.\n\niv. Flower parts: Monocotyledons have flower parts usually in threes (trimerous); dicotyledons have flower parts usually in fours or fives (tetramerous/pentamerous)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Plant Morphology/Anatomy",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) With the aid of annotated diagram, describe two types of leaf arrangement in plants. [2 Marks]",
+    "options": [],
+    "modelAnswer": "[IMAGE: /images/questions/biology/2026/type-a/bio-2026-essay-5c.png | Annotated diagrams of alternate and opposite leaf arrangements showing the node, internode and leaf attachment]\n\nTwo types of leaf arrangement (phyllotaxy):\n1. Alternate (spiral): leaves arise singly at each node, alternating on opposite sides of the stem — e.g., Hibiscus.\n2. Opposite: two leaves arise at the same node on opposite sides of the stem — e.g., Ocimum (basil).\n\n(Also: whorled — three or more leaves at a node.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Nutrition in Plants",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Explain the Cyclic Phosphorylation in plants. [3 Marks]",
+    "options": [],
+    "modelAnswer": "Cyclic phosphorylation is a light-dependent process in chloroplasts in which electrons from excited chlorophyll (photosystem I) are passed along an electron transport chain and returned to the same photosystem/chlorophyll. It involves photosystem I only and generates ATP but no NADPH and no oxygen. It occurs when NADP⁺ is unavailable or ATP demand is high (e.g., for the Calvin cycle)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Plant Reproduction",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Name, Describe and Give an example in each case of five methods of Asexual reproduction in plants. [5 Marks]",
+    "options": [],
+    "modelAnswer": "1. Binary fission — parent cell divides into two daughter cells; e.g., Euglena, bacteria/cyanobacteria.\n2. Budding — a small outgrowth (bud) detaches to form a new organism; e.g., yeast.\n3. Fragmentation — body breaks into pieces, each growing into a new individual; e.g., Spirogyra.\n4. Spore formation — spores germinate into new individuals; e.g., Rhizopus (bread mould), ferns.\n5. Vegetative propagation — new plants arise from vegetative parts (e.g., runners/suckers/bulbs); e.g., Bryophyllum (leaf buds), ginger (rhizome), onion (bulb)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Economic and Ecological Importance of Plants",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) State FOUR economic importance of plants. [2 Marks]",
+    "options": [],
+    "modelAnswer": "1. Source of food (cereals, fruits, vegetables).\n2. Source of medicine (herbal drugs, alkaloids).\n3. Source of timber and building materials.\n4. Source of raw materials for industries (cotton, rubber, paper, oil).\n\n(Also: source of fuel/wood, income/employment, soil conservation, oxygen production.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) (i) Define respiration. [1 Mark]\n(ii) State TWO differences between Glycolysis and Krebs' cycle. [2 Marks]",
+    "options": [],
+    "modelAnswer": "(i) Respiration is the biochemical process by which living organisms break down organic food substances (e.g., glucose) to release energy (ATP), with or without oxygen.\n\n(ii) Differences:\n1. Glycolysis occurs in the cytoplasm; Krebs' cycle occurs in the mitochondrial matrix.\n2. Glycolysis does not require oxygen and yields a net of 2 ATP; Krebs' cycle requires oxygen (aerobic) and yields more ATP/NADH/FADH₂."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Endocrine System",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Using a diagram, show the locations of FOUR named endocrine glands. [4 Marks]",
+    "options": [],
+    "modelAnswer": "[IMAGE: /images/questions/biology/2026/type-a/bio-2026-essay-7b.png | Labelled diagram of the human body showing the locations of the pituitary gland, thyroid gland, adrenal gland and pancreas]\n\nA labelled diagram of the human body showing the locations of four endocrine glands:\n1. Pituitary gland — at the base of the brain.\n2. Thyroid gland — in the neck, around the trachea.\n3. Adrenal gland — on top of the kidneys.\n4. Pancreas (islets of Langerhans) — in the abdomen, behind the stomach.\n\n(Also: gonads, parathyroid, thymus.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Sense Organ",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) (i) Define Accommodation. [1 Mark]\n(ii) Name any TWO eye defects and state how they are corrected. [2 Marks]",
+    "options": [],
+    "modelAnswer": "(i) Accommodation is the ability of the eye to adjust the focal length of the lens (by the action of the ciliary muscles) to focus objects at different distances clearly on the retina.\n\n(ii) Eye defects and correction:\n1. Myopia (short-sightedness) — corrected with a concave (diverging) lens.\n2. Hypermetropia (long-sightedness) — corrected with a convex (converging) lens.\n\n(Also: astigmatism — cylindrical lens; presbyopia — bifocal lens.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Diversity and General Characteristics of Animals",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) State SIX characteristics of phylum Annelida. [3 Marks]",
+    "options": [],
+    "modelAnswer": "1. Body is segmented (metamerically) and bilaterally symmetrical.\n2. Body wall is covered with a thin cuticle and has chaetae (bristles) for locomotion.\n3. True coelom (body cavity) lined with mesoderm.\n4. Closed circulatory system.\n5. Excretion by nephridia.\n6. Respiration through the body surface/gills; nervous system with a ventral nerve cord and ganglia.\n\n(Also: triploblastic; may be hermaphroditic.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) In an attempt to ascertain the excretory and respiratory organs of some organisms, Bisi arrived with the table below. Fill in the missing spaces. [5 Marks]",
+    "dataTable": {
+      "headers": ["Organisms", "Excretory organ", "Respiratory organ"],
+      "rows": [
+        ["Cnidarians", "", ""],
+        ["Platyhelminthes", "", ""],
+        ["Molluscans", "", ""],
+        ["Crustaceans", "", ""],
+        ["Insects", "", ""]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "i. Cnidarians — Excretory organ: Body surface (diffusion); no specialized organ. Respiratory organ: Body surface (diffusion).\n\nii. Platyhelminthes — Excretory organ: Flame cells (protonephridia). Respiratory organ: Body surface (diffusion).\n\niii. Molluscans — Excretory organ: Nephridia (kidneys). Respiratory organ: Gills (ctenidia) / mantle.\n\niv. Crustaceans — Excretory organ: Green glands (antennal glands). Respiratory organ: Gills.\n\nv. Insects — Excretory organ: Malpighian tubules. Respiratory organ: Tracheae (tracheal system)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "category": "Ecologic and Economic Importance of Animals",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) Explain FOUR benefits of insects to man. [2 Marks]",
+    "options": [],
+    "modelAnswer": "1. Pollination: insects (e.g., bees) pollinate crops, increasing yields.\n2. Source of food: insects such as termites, grasshoppers and honey are eaten in some regions.\n3. Production of useful products: honey and beeswax from bees; silk from silkworms.\n4. Biological control of pests: predatory insects (e.g., ladybirds) feed on crop pests.\n\n(Also: decomposition of organic matter, food for livestock, research organisms, employment/income from apiculture.)"
+  }
+]
