@@ -3534,19 +3534,20 @@ document.getElementById("settings-name-save").addEventListener("click", () => {
         statusEl.textContent = "Please enter a name.";
         return;
     }
-    
+
     localStorage.setItem("jupeb_user_name", name);
-    
+
     // Update sidebar display
     const user = firebase.auth().currentUser;
+    if (user) db.collection("surveys").doc(user.email).set({ preferredName: name }, { merge: true }).catch(() => {});
     if (typeof renderSidebarUser === 'function' && user) {
-        renderSidebarUser({ 
-            name: name, 
-            isPremium: true, 
-            photoURL: user.photoURL || null 
+        renderSidebarUser({
+            name: name,
+            isPremium: true,
+            photoURL: user.photoURL || null
         });
     }
-    
+
     statusEl.textContent = "✓ Saved";
     setTimeout(() => (statusEl.textContent = ""), 2000);
 });
@@ -3567,10 +3568,6 @@ document.getElementById("settings-theme-toggle").addEventListener("change", (e) 
     }
 });
 
-document.getElementById("settings-plan-action").addEventListener("click", () => {
-  // Wire to your existing payment flow / upgrade page
-  alert("Wire this to your Paystack/payment flow");
-});
 
 document.getElementById("settings-default-length").addEventListener("change", (e) => {
   localStorage.setItem("jupeb_default_quiz_length", e.target.value);

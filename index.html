@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JUPEB Question Bank</title>
 <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="welcome.css">
 
 <!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
@@ -598,6 +599,48 @@
   </div>
 </section>
  
+<!-- ===== WELCOME STEP =====
+     Asks every student once: name, subjects, school, and (only if they didn't come
+     through a teacher's link) how they heard about us.
+     Paste once as a DIRECT child of <body>, directly ABOVE the line <!-- Footer -->.
+     Not inside login-screen or any other screen. -->
+<div class="welcome-overlay" id="welcome-overlay" aria-hidden="true">
+  <div class="welcome-card" role="dialog" aria-labelledby="welcome-title">
+    <div class="welcome-head">
+      <div class="welcome-emoji">👋</div>
+      <h2 id="welcome-title">Welcome!</h2>
+      <p>Tell us a little about you so we can set things up for you. It takes 20 seconds.</p>
+    </div>
+
+    <label class="welcome-label" for="welcome-name">What should we call you?</label>
+    <input class="welcome-input" id="welcome-name" maxlength="40" autocomplete="given-name">
+
+    <div class="welcome-label">Which subjects are you taking? <span class="welcome-hint">Pick all that apply</span></div>
+    <div class="welcome-subjects" id="welcome-subjects"></div>
+
+    <label class="welcome-label" for="welcome-school">Your school or JUPEB centre</label>
+    <input class="welcome-input" id="welcome-school" maxlength="80" placeholder="e.g. University of Lagos JUPEB centre">
+
+    <div id="welcome-source-wrap" hidden>
+      <label class="welcome-label" for="welcome-source">How did you hear about us?</label>
+      <select class="welcome-input" id="welcome-source">
+        <option value="">Select one</option>
+        <option value="Referred by a friend">A friend told me</option>
+        <option value="Referred by a teacher">A teacher told me</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Google search">Google search</option>
+        <option value="Other">Other</option>
+      </select>
+      <input class="welcome-input" id="welcome-source-other" maxlength="80" placeholder="Please tell us where" hidden>
+    </div>
+
+    <p class="welcome-error" id="welcome-error" role="alert"></p>
+    <button class="welcome-submit" id="welcome-submit">Continue →</button>
+    <button class="welcome-later" id="welcome-later">Not now</button>
+  </div>
+</div>
 <!-- Back to Top Button -->
 <button id="back-to-top" style="display:none;">↑ Back to Top</button>
 
@@ -641,5 +684,6 @@
 <script src="script.js"></script>
 <script src="auth.js"></script>
 <script src="home-screen.js"></script>
+     <script src="welcome.js"></script>
 </body>
 </html>

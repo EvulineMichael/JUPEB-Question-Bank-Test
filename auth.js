@@ -107,13 +107,7 @@ auth.onAuthStateChanged(async (user) => {
 
       revealDashboard();
 
-         if (userData.hasSeenSurvey !== true) {
-     if (claimCode) {
-       try { await docRef.update({ hasSeenSurvey: true }); } catch (err) {}
-     } else {
-       showSurvey(user, docRef);
-     }
-   }
+         if (typeof maybeShowWelcome === "function") maybeShowWelcome(user, docRef);
 
     } else {
       // Not authorized
