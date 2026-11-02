@@ -4182,6 +4182,177 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
   #dashboard-screen .dash-add-subject-tile .plus-icon { font-size: 1.1rem; }
 }
 
+/* ===== HOME SCREEN =====
+   Paste at the very END of your stylesheet. Uses your existing colour variables,
+   so dark mode works. All class names start with "home-", so nothing else is affected. */
+
+#login-screen {
+  background: radial-gradient(900px 420px at 50% -8%, color-mix(in srgb, var(--tab-active-bg) 16%, transparent), transparent 70%);
+}
+.home { max-width: 540px; margin: 0 auto; padding: 18px 18px 40px; color: var(--text-primary); }
+
+/* Top bar */
+.home-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.home-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.05rem; }
+.home-brand img { border-radius: 10px; display: block; }
+.home-theme {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--bg-secondary); border: 1px solid var(--dash-border); color: var(--text-secondary);
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+
+/* Slideshow */
+.home-hero {
+  position: relative; overflow: hidden; touch-action: pan-y;
+  border-radius: 24px; color: #fff;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+.home-slides { display: flex; transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1); }
+.home-slide {
+  flex: 0 0 100%; min-height: 340px; padding: 40px 22px 26px;
+  display: flex; flex-direction: column; position: relative; overflow: hidden;
+}
+.home-slide::before, .home-slide::after {
+  content: ""; position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.08); pointer-events: none;
+}
+.home-slide::before { width: 220px; height: 220px; right: -80px; top: -90px; }
+.home-slide::after { width: 150px; height: 150px; left: -60px; bottom: -70px; }
+.home-slide > * { position: relative; z-index: 1; }
+.home-slide--blue   { background: linear-gradient(140deg, #1a73ff, #0b3fb5); }
+.home-slide--violet { background: linear-gradient(140deg, #8b5cf6, #5b21b6); }
+.home-slide--orange { background: linear-gradient(140deg, #ea580c, #9a3412); }
+.home-slide--green  { background: linear-gradient(140deg, #059669, #065f46); }
+.home-slide--rose   { background: linear-gradient(140deg, #db2777, #9d174d); }
+.home-slide--teal   { background: linear-gradient(140deg, #0891b2, #155e75); }
+
+.home-eyebrow {
+  align-self: flex-start; margin-bottom: 12px; padding: 4px 10px; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.home-slide h2 { margin: 0 0 8px; font-size: clamp(1.45rem, 6.4vw, 1.9rem); line-height: 1.12; font-weight: 800; letter-spacing: -0.02em; }
+.home-slide p { margin: 0 0 14px; font-size: 0.93rem; line-height: 1.5; opacity: 0.92; max-width: 34ch; }
+
+/* Little pictures of the app inside each slide */
+.home-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+.home-chips span { padding: 5px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.16); font-size: 0.72rem; font-weight: 600; }
+.home-demo {
+  margin-top: auto; padding: 12px 14px; border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.home-demo-q { font-size: 0.8rem; font-weight: 600; line-height: 1.4; margin-bottom: 8px; }
+.home-demo-opt { padding: 7px 10px; border-radius: 9px; background: rgba(255, 255, 255, 0.95); color: #166534; font-size: 0.8rem; font-weight: 700; }
+.home-demo-why { margin-top: 9px; font-size: 0.78rem; line-height: 1.45; opacity: 0.95; }
+.home-quiz-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-size: 0.8rem; font-weight: 600; }
+.home-timer { padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, 0.95); color: #9a3412; font-weight: 800; }
+.home-bar { height: 8px; border-radius: 999px; background: rgba(255, 255, 255, 0.25); overflow: hidden; }
+.home-bar i { display: block; height: 100%; border-radius: 999px; background: #fff; }
+.home-row { display: grid; grid-template-columns: 1fr 1.3fr; gap: 12px; align-items: center; margin: 8px 0; font-size: 0.78rem; font-weight: 600; }
+.home-demo--people { display: flex; align-items: center; gap: 14px; }
+.home-avatars { display: flex; }
+.home-avatars span {
+  width: 36px; height: 36px; border-radius: 50%; margin-left: -10px; border: 2px solid rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+}
+.home-avatars span:first-child { margin-left: 0; }
+.home-avatars span:nth-child(2) { background: linear-gradient(135deg, #a7f3d0, #10b981); }
+.home-avatars span:nth-child(3) { background: linear-gradient(135deg, #bfdbfe, #3b82f6); }
+.home-avatars span:nth-child(4) { background: linear-gradient(135deg, #ddd6fe, #8b5cf6); }
+.home-avatars .home-avatar-more { display: flex; align-items: center; justify-content: center; background: #fff; color: #9d174d; font-size: 0.7rem; font-weight: 800; }
+.home-people-note { font-size: 0.82rem; font-weight: 600; line-height: 1.35; }
+.home-demo--phone { display: flex; align-items: center; gap: 16px; }
+.home-phone { flex: 0 0 auto; width: 84px; padding: 12px 8px 10px; border-radius: 18px; background: rgba(255, 255, 255, 0.18); text-align: center; border: 1px solid rgba(255, 255, 255, 0.25); }
+.home-phone img { display: block; margin: 0 auto 6px; border-radius: 11px; }
+.home-phone small { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.04em; }
+.home-phone-steps { font-size: 0.82rem; line-height: 1.5; }
+
+/* Story-style progress bars: they fill over 5 seconds, then the next slide appears */
+.home-segs { position: absolute; top: 8px; left: 16px; right: 16px; display: flex; gap: 6px; z-index: 3; }
+.home-seg { flex: 1; height: 22px; padding: 9px 0; border: none; background: none; cursor: pointer; }
+.home-seg span { display: block; position: relative; height: 4px; border-radius: 999px; background: rgba(255, 255, 255, 0.3); overflow: hidden; }
+.home-seg span::after { content: ""; position: absolute; inset: 0; width: 0; border-radius: inherit; background: #fff; }
+.home-seg.is-done span::after { width: 100%; }
+.home-seg.is-on span::after { animation: home-fill 5s linear forwards; }
+.home-hero.is-paused .home-seg.is-on span::after { animation-play-state: paused; }
+@keyframes home-fill { from { width: 0; } to { width: 100%; } }
+@media (prefers-reduced-motion: reduce) {
+  .home-seg.is-on span::after { animation: none; width: 100%; }
+  .home-slides { transition: none; }
+}
+
+/* Price + buttons */
+.home-price { display: flex; align-items: baseline; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 22px 0 14px; }
+.home-price-amount { font-size: 2rem; font-weight: 800; }
+.home-price-note { font-size: 0.9rem; color: var(--text-secondary); }
+.home-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; padding: 15px 18px; border-radius: 14px; border: 2px solid transparent;
+  font-family: inherit; font-size: 1rem; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.home-btn--primary {
+  background: var(--tab-active-bg); color: #fff;
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--tab-active-bg) 40%, transparent);
+}
+.home-btn--google { margin-top: 10px; background: #fff; color: #1a1a2e; border-color: #e3e6ea; font-weight: 600; }
+.home-btn--whatsapp { margin-top: 14px; background: #25d366; color: #fff; }
+.home-link {
+  display: block; margin: 14px auto 0; background: none; border: none; cursor: pointer;
+  color: var(--tab-active-bg); font-family: inherit; font-size: 0.92rem; font-weight: 600;
+}
+
+/* How to get access */
+.home-access { margin-top: 18px; padding: 18px; background: var(--bg-secondary); border: 1px solid var(--dash-border); border-radius: 16px; }
+.home-access h3 { margin: 0 0 12px; font-size: 1.05rem; }
+.home-steps { list-style: none; counter-reset: step; margin: 0; padding: 0; }
+.home-steps li { position: relative; counter-increment: step; padding: 0 0 14px 38px; font-size: 0.92rem; line-height: 1.5; color: var(--text-secondary); }
+.home-steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--tab-active-bg); color: #fff; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; justify-content: center;
+}
+.home-steps strong { color: var(--text-primary); }
+.home-mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-weight: 700; color: var(--text-primary); }
+
+/* FAQ */
+.home-faq { margin-top: 30px; }
+.home-faq h3 { margin: 0 0 10px; font-size: 1.1rem; }
+.home-faq-item { border-bottom: 1px solid var(--dash-border); }
+.home-faq-item summary {
+  list-style: none; cursor: pointer; padding: 15px 28px 15px 2px; position: relative;
+  font-size: 0.95rem; font-weight: 600;
+}
+.home-faq-item summary::-webkit-details-marker { display: none; }
+.home-faq-item summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-size: 1.3rem; font-weight: 400; color: var(--text-secondary); }
+.home-faq-item[open] summary::after { content: "–"; }
+.home-faq-item p { margin: 0 0 16px; padding-right: 8px; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); }
+
+/* Free sample modal */
+.home-modal { position: fixed; inset: 0; z-index: 3000; display: flex; align-items: flex-end; justify-content: center; visibility: hidden; opacity: 0; transition: opacity 0.2s ease, visibility 0.2s ease; }
+.home-modal.is-open { visibility: visible; opacity: 1; }
+.home-modal-backdrop { position: absolute; inset: 0; background: rgba(8, 10, 20, 0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.home-modal-card {
+  position: relative; width: 100%; max-width: 540px; max-height: 90vh; overflow-y: auto;
+  background: var(--bg-secondary); color: var(--text-primary);
+  border-radius: 22px 22px 0 0; padding: 26px 20px 28px;
+  transform: translateY(30px); transition: transform 0.25s ease;
+}
+.home-modal.is-open .home-modal-card { transform: none; }
+@media (min-width: 600px) { .home-modal { align-items: center; } .home-modal-card { border-radius: 22px; } }
+.home-modal-close { position: absolute; top: 12px; right: 12px; width: 34px; height: 34px; border: none; border-radius: 50%; background: var(--bg-primary); color: var(--text-secondary); font-size: 1.2rem; cursor: pointer; }
+.home-sample-meta { margin: 0 34px 10px 0; font-size: 0.8rem; color: var(--text-secondary); }
+.home-sample-q { margin: 0 0 16px; font-size: 1.05rem; line-height: 1.45; font-weight: 700; }
+.home-sample-options { display: flex; flex-direction: column; gap: 10px; }
+.home-sample-opt {
+  display: flex; align-items: flex-start; gap: 12px; width: 100%; padding: 12px 14px; text-align: left;
+  background: var(--bg-primary); color: var(--text-primary); border: 2px solid var(--dash-border); border-radius: 12px;
+  font-family: inherit; font-size: 0.95rem; line-height: 1.4; cursor: pointer;
+}
+.home-sample-letter { flex: 0 0 24px; height: 24px; border-radius: 50%; background: var(--dash-border); font-size: 0.78rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.home-sample-opt.is-correct { border-color: var(--dash-success); background: color-mix(in srgb, var(--dash-success) 14%, var(--bg-secondary)); }
+.home-sample-opt.is-wrong { border-color: var(--dash-danger); background: color-mix(in srgb, var(--dash-danger) 12%, var(--bg-secondary)); }
+.home-sample-explain { margin: 16px 0; padding: 14px; background: var(--bg-primary); border-radius: 12px; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); white-space: pre-line; }
+.home-sample-explain strong { color: var(--text-primary); }
+.home-sample-end { text-align: center; padding: 10px 0 4px; }
+.home-sample-end h4 { margin: 0 0 8px; font-size: 1.4rem; }
+.home-sample-end p { margin: 0 0 18px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); }
 /* ---------- Bell panel ---------- */
 .bell-backdrop {
   position: fixed; inset: 0; z-index: 1100;
