@@ -45,29 +45,7 @@ function toggleAccessInfo() {
   }
 }
 
-// ===== LOGIN TABS =====
-function showLoginTab(tab) {
-    const aboutContent = document.getElementById('login-tab-about-content');
-    const signinContent = document.getElementById('login-tab-signin-content');
-    const aboutBtn = document.getElementById('login-tab-about');
-    const signinBtn = document.getElementById('login-tab-signin');
-    
-    if (tab === 'about') {
-        aboutContent.style.display = 'block';
-        signinContent.style.display = 'none';
-        aboutBtn.style.borderBottom = '3px solid var(--tab-active-bg)';
-        aboutBtn.style.color = 'var(--tab-active-bg)';
-        signinBtn.style.borderBottom = '3px solid transparent';
-        signinBtn.style.color = 'var(--text-secondary)';
-    } else {
-        aboutContent.style.display = 'none';
-        signinContent.style.display = 'block';
-        signinBtn.style.borderBottom = '3px solid var(--tab-active-bg)';
-        signinBtn.style.color = 'var(--tab-active-bg)';
-        aboutBtn.style.borderBottom = '3px solid transparent';
-        aboutBtn.style.color = 'var(--text-secondary)';
-    }
-}
+
 
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
@@ -173,10 +151,7 @@ auth.getRedirectResult().then((result) => {
   console.error('Redirect sign-in error:', error);
 });
 
-// ===== INITIALIZE LOGIN TABS =====
-document.addEventListener('DOMContentLoaded', function() {
-    showLoginTab('signin');
-});
+
 
 // Sign Out
 function signOutUser() {
