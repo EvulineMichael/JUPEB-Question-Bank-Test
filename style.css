@@ -4353,6 +4353,106 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
 .home-sample-end { text-align: center; padding: 10px 0 4px; }
 .home-sample-end h4 { margin: 0 0 8px; font-size: 1.4rem; }
 .home-sample-end p { margin: 0 0 18px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); }
+
+/* ===== Larger screens ===== */
+.home-top-actions { display: flex; align-items: center; gap: 10px; }
+.home-signin-top { display: none; }
+.home-perks { display: none; }
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+  .home { max-width: 680px; padding-top: 28px; }
+  .home-slide { min-height: 400px; padding: 56px 34px 30px; }
+  .home-slide h2 { font-size: 2.2rem; }
+  .home-slide p { font-size: 1.05rem; }
+  .home-segs { left: 26px; right: 26px; }
+  .home-faq-list { columns: 2; column-gap: 32px; }
+  .home-faq-item { break-inside: avoid; }
+}
+
+/* Laptops and desktops: slideshow on the left, price and buttons on the right */
+@media (min-width: 900px) {
+  #login-screen {
+    background:
+      radial-gradient(1100px 520px at 12% -8%, color-mix(in srgb, var(--tab-active-bg) 18%, transparent), transparent 70%),
+      radial-gradient(900px 480px at 100% 0%, color-mix(in srgb, #8b5cf6 12%, transparent), transparent 70%);
+  }
+  .home {
+    max-width: 1180px; padding: 28px 44px 80px;
+    display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+    column-gap: 44px; align-items: stretch;
+  }
+  .home-top { grid-column: 1 / -1; margin-bottom: 40px; }
+  .home-brand { font-size: 1.2rem; gap: 12px; }
+  .home-brand img { width: 46px; height: 46px; }
+  .home-theme { width: 42px; height: 42px; }
+  .home-signin-top {
+    display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 999px;
+    border: 1px solid var(--dash-border); background: var(--bg-secondary); color: var(--text-primary);
+    font-family: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer;
+  }
+  .home-signin-top:hover { border-color: var(--tab-active-bg); color: var(--tab-active-bg); }
+
+  /* Slideshow, bigger */
+  .home-hero { grid-column: 1; display: flex; flex-direction: column; border-radius: 30px; box-shadow: 0 28px 60px rgba(0, 0, 0, 0.2); }
+  .home-slides { flex: 1; }
+  .home-segs { top: 18px; left: 34px; right: 34px; }
+  .home-slide { min-height: 540px; padding: 72px 48px 46px; }
+  .home-slide::before { width: 340px; height: 340px; right: -110px; top: -130px; }
+  .home-slide::after { width: 240px; height: 240px; left: -90px; bottom: -110px; }
+  .home-eyebrow { font-size: 0.76rem; padding: 6px 13px; margin-bottom: 16px; }
+  .home-slide h2 { font-size: clamp(2.2rem, 3.4vw, 3rem); margin-bottom: 12px; }
+  .home-slide p { font-size: 1.15rem; max-width: 40ch; margin-bottom: 20px; }
+  .home-chips { gap: 9px; }
+  .home-chips span { font-size: 0.9rem; padding: 8px 15px; }
+  .home-demo { padding: 20px 22px; max-width: 560px; border-radius: 18px; }
+  .home-demo-q { font-size: 1rem; margin-bottom: 12px; }
+  .home-demo-opt { font-size: 0.98rem; padding: 11px 15px; border-radius: 11px; }
+  .home-demo-why { font-size: 0.92rem; margin-top: 12px; }
+  .home-quiz-top { font-size: 0.98rem; margin-bottom: 14px; }
+  .home-timer { padding: 6px 14px; }
+  .home-bar { height: 10px; }
+  .home-row { font-size: 0.95rem; margin: 12px 0; }
+  .home-avatars span { width: 48px; height: 48px; margin-left: -13px; }
+  .home-avatars .home-avatar-more { font-size: 0.82rem; }
+  .home-people-note { font-size: 1rem; }
+  .home-phone { width: 104px; padding: 16px 10px 12px; border-radius: 22px; }
+  .home-phone img { width: 56px; height: 56px; margin-bottom: 8px; border-radius: 14px; }
+  .home-phone small { font-size: 0.72rem; }
+  .home-phone-steps { font-size: 1rem; }
+
+  /* Price card */
+  .home-cta {
+    grid-column: 2; display: flex; flex-direction: column; justify-content: center;
+    padding: 38px 32px; background: var(--bg-secondary); border: 1px solid var(--dash-border);
+    border-radius: 28px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+  }
+  .home-price { justify-content: flex-start; margin: 0 0 18px; }
+  .home-price-amount { font-size: 3rem; line-height: 1; }
+  .home-price-note { font-size: 0.95rem; }
+  .home-perks { display: block; list-style: none; margin: 0 0 26px; padding: 0; }
+  .home-perks li { position: relative; padding: 7px 0 7px 30px; font-size: 0.98rem; color: var(--text-primary); }
+  .home-perks li::before {
+    content: "✓"; position: absolute; left: 0; top: 7px; width: 21px; height: 21px; border-radius: 50%;
+    background: color-mix(in srgb, var(--dash-success) 18%, transparent); color: var(--dash-success);
+    font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center;
+  }
+  .home-btn { padding: 17px 20px; font-size: 1.05rem; }
+  .home-btn--primary:hover { filter: brightness(1.07); transform: translateY(-1px); }
+  .home-btn--google:hover { border-color: var(--tab-active-bg); }
+  .home-btn { transition: transform 0.15s ease, filter 0.15s ease, border-color 0.15s ease; }
+  .home-cta .home-access { background: var(--bg-primary); border: none; }
+  .home-paid-hint { display: none; }
+
+  /* FAQ across the full width, in two columns */
+  .home-faq { grid-column: 1 / -1; margin-top: 72px; }
+  .home-faq h3 { font-size: 1.6rem; margin-bottom: 20px; }
+  .home-faq-list { columns: 2; column-gap: 56px; }
+  .home-faq-item { break-inside: avoid; }
+  .home-faq-item summary { font-size: 1.02rem; padding: 18px 30px 18px 2px; }
+  .home-faq-item p { font-size: 0.96rem; }
+}
+@media (min-width: 1400px) { .home { max-width: 1280px; } }
 /* ---------- Bell panel ---------- */
 .bell-backdrop {
   position: fixed; inset: 0; z-index: 1100;
