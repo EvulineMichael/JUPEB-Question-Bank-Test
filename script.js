@@ -3107,10 +3107,7 @@ function screenFromHash() {
     return match ? match[0] : "dashboard-screen";
 }
 
-// On first load, respect hash in URL
-window.addEventListener("DOMContentLoaded", () => {
-    showScreen(screenFromHash(), { pushHistory: false });
-});
+
 // Stub navigation
 function goToProgress() { showScreen("progress-screen"); }
 function goToSettings() {
