@@ -1,0 +1,323 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Identify the following reactions as precipitation, neutralisation, redox, addition, or decomposition:\n(a) H₂SO₄(aq) + CuO(s) → CuSO₄(aq) + H₂O(l)\n(b) Mg(s) + I₂(g) → MgI₂(s)\n(c) BaCl₂(aq) + K₂SO₄(aq) → BaSO₄(s) + 2KCl(aq)\n(d) PbO₂(aq) + SO₂(g) → PbSO₄(s)\n(e) Pb(NO₃)₂(aq) + 2KI(aq) → 2KNO₃(aq) + PbI₂(s)",
+    "options": [],
+    "modelAnswer": "(a) Neutralisation: an acid (H₂SO₄) reacts with a basic oxide (CuO) to form a salt and water.\n\n(b) Redox: magnesium is oxidised (0 → +2) and iodine is reduced (0 → −1). Two elements join to form one compound, so it is also a combination (addition) reaction.\n\n(c) Precipitation: insoluble white barium sulphate (BaSO₄) forms from two solutions.\n\n(d) Redox: lead is reduced (+4 in PbO₂ → +2 in PbSO₄) and sulphur is oxidised (+4 in SO₂ → +6 in PbSO₄). It is also a combination (addition) reaction.\nNote: the paper prints PbO₂(aq); lead(IV) oxide is an insoluble solid, PbO₂(s).\n\n(e) Precipitation: insoluble yellow lead(II) iodide (PbI₂) forms from two solutions.\n\nNone of the five reactions is a decomposition."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "List five uses of compounds of group 2 elements of the periodic table.",
+    "options": [],
+    "modelAnswer": "Any five:\n1. Calcium trioxocarbonate(IV) (limestone, CaCO₃) is used in making cement, glass and quicklime, and in the extraction of iron.\n2. Calcium oxide (quicklime, CaO) is used in making cement, as a drying agent, and to make slaked lime.\n3. Calcium hydroxide (slaked lime, Ca(OH)₂) is used to neutralise acidic soils, in whitewash and mortar, and in water treatment.\n4. Calcium sulphate (CaSO₄·½H₂O, plaster of Paris) is used for setting broken bones and making casts and moulds.\n5. Magnesium hydroxide (milk of magnesia, Mg(OH)₂) is used as an antacid to relieve indigestion.\n6. Magnesium sulphate (Epsom salt, MgSO₄·7H₂O) is used as a laxative.\n7. Barium sulphate (BaSO₄) is used as a 'barium meal' for X-ray imaging of the digestive tract.\n8. Anhydrous calcium chloride (CaCl₂) is used as a drying agent.\n9. Magnesium oxide (MgO) is used as a refractory lining in furnaces."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Classify each of the following statements as True or False:\n(a) A reaction occurring in a beaker is an example of an open system;\n(b) Non-metals are reducing agents;\n(c) A chemical equilibrium equation does not give information about the mechanism of a reaction;\n(d) The order of the strength of σ bond is p-p > s-p > s-s;\n(e) Electron affinity is directly proportional to the tendency of anion formation.",
+    "options": [],
+    "modelAnswer": "(a) True. An open beaker can exchange both matter (e.g., escaping gases) and energy (heat) with its surroundings, so it is an open system.\n\n(b) False. Non-metals generally gain electrons, so they act as oxidising agents. (A few, such as carbon and hydrogen, can act as reducing agents.)\n\n(c) True. An equilibrium equation shows only the overall reactants and products and their proportions. It says nothing about the steps (mechanism) by which the reaction takes place.\n\n(d) True. The strength of a σ bond depends on the extent of orbital overlap. p orbitals are directional and overlap more effectively end-on than s orbitals, so the order of strength is p–p > s–p > s–s. (This is a general rule and has exceptions.)\n\n(e) True. The more energy an atom releases when it gains an electron (the higher its electron affinity), the greater its tendency to form a negative ion (anion)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Using an appropriate equation(s), explain why an aqueous solution of AlCl₃ is acidic to litmus paper.",
+    "options": [],
+    "modelAnswer": "In water, Al³⁺ exists as the hydrated ion [Al(H₂O)₆]³⁺. The Al³⁺ ion is small and highly charged, so its charge density is very high. It strongly attracts electrons from the O–H bonds of the water molecules attached to it, weakening them, so a water ligand releases a proton (H⁺) to the solvent. This is hydrolysis:\n[Al(H₂O)₆]³⁺(aq) + H₂O(l) ⇌ [Al(H₂O)₅(OH)]²⁺(aq) + H₃O⁺(aq)\nOverall, the hydrolysis can be written as:\nAlCl₃(aq) + 3H₂O(l) ⇌ Al(OH)₃(s) + 3HCl(aq)\n\nThe H₃O⁺ (H⁺) ions produced make the solution acidic, so it turns blue litmus paper red."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "A 1.00 dm³ vessel contains oxygen gas at 25°C and a pressure of 4.05 x 10⁵ Pascals. Calculate the number of molecules of oxygen present in the vessel.",
+    "options": [],
+    "modelAnswer": "V = 1.00 dm³ = 1.00 × 10⁻³ m³; T = 25 + 273 = 298 K; P = 4.05 × 10⁵ Pa.\n\nPV = nRT, so n = PV/RT\n= (4.05 × 10⁵ × 1.00 × 10⁻³)/(8.314 × 298)\n= 405/2477.6\n= 0.163 mol.\n\nNumber of molecules = n × Nₐ = 0.163 × 6.023 × 10²³ = 9.85 × 10²² molecules."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Give the shapes of the following species:\n(a) NH₃ (B) NH₄⁺ (c) BCl₃ (d) CO₂ (e) H₂O",
+    "options": [],
+    "modelAnswer": "(a) NH₃: trigonal pyramidal (3 bond pairs + 1 lone pair on N; bond angle about 107°).\n(b) NH₄⁺: tetrahedral (4 bond pairs, no lone pair; 109.5°).\n(c) BCl₃: trigonal planar (3 bond pairs, no lone pair on B; 120°).\n(d) CO₂: linear (two C=O double bonds, no lone pair on C; 180°).\n(e) H₂O: bent (V-shaped) (2 bond pairs + 2 lone pairs on O; about 104.5°)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Equilibrium State",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) State Le-Chatelier’s principle.",
+    "options": [],
+    "modelAnswer": "Le Chatelier's principle: if a system in equilibrium is subjected to a change in conditions (such as concentration, pressure or temperature), the equilibrium position shifts in the direction that tends to oppose (counteract) the change."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Lime is prepared by the decomposition of calcium trioxocarbonate(IV) at 298K in accordance to the equation: CaCO₃(s) → CaO(s) + CO₂(g) ΔG = +31kcal mol⁻¹\n(i) Is the reaction spontaneous at 500K?\n(ii) What is the change in entropy of the reaction?\n(iii) Does the reaction occur spontaneously at 298K?",
+    "options": [],
+    "modelAnswer": "Note: the question gives only ΔG at 298 K. To work out ΔS and ΔG at 500 K, ΔH is also needed. The standard value ΔH ≈ +42.5 kcal mol⁻¹ (about +178 kJ mol⁻¹) is used below.\n\n(ii) Entropy change: from ΔG = ΔH − TΔS,\nΔS = (ΔH − ΔG)/T = (42.5 − 31)/298 = 0.0386 kcal K⁻¹ mol⁻¹ = +38.6 cal K⁻¹ mol⁻¹ (about +161 J K⁻¹ mol⁻¹).\nΔS is positive: a solid produces a gas (CO₂), so the disorder increases.\n\n(i) At 500 K, taking ΔH and ΔS as constant:\nΔG = ΔH − TΔS = 42.5 − 500 × 0.0386 = 42.5 − 19.3 = +23.2 kcal mol⁻¹.\nΔG is still positive, so the reaction is not spontaneous at 500 K. (It becomes spontaneous only above about T = ΔH/ΔS = 42.5/0.0386 ≈ 1100 K, which is why limestone is heated strongly in a kiln.)\n\n(iii) No. At 298 K, ΔG = +31 kcal mol⁻¹. A positive ΔG means the reaction is not spontaneous at that temperature."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "In a Victor Meyer experiment, 0.52g of an organic liquid of a molar mass 120g mol⁻¹ was vapourised at a temperature of 298K and pressure of 1.013 x10⁵ Nm⁻². What is the volume (cm³) of the air displaced? Given that the saturated vapour pressure of water at 298K is 2.32x10³ N m⁻².",
+    "options": [],
+    "modelAnswer": "The vapour displaces an equal amount (in moles) of air, which is collected over water at 298 K. Because the air is saturated with water vapour, its own pressure is the atmospheric pressure minus the saturated vapour pressure of water.\n\nMoles of liquid: n = 0.52/120 = 4.333 × 10⁻³ mol.\n\nPressure of dry air: P = 1.013 × 10⁵ − 2.32 × 10³ = 9.898 × 10⁴ N m⁻².\n\nPV = nRT, so V = nRT/P\n= (4.333 × 10⁻³ × 8.314 × 298)/(9.898 × 10⁴)\n= 10.736/(9.898 × 10⁴)\n= 1.085 × 10⁻⁴ m³.\n\nSince 1 m³ = 10⁶ cm³:\nV = 1.085 × 10⁻⁴ × 10⁶ = 108.5 cm³ (about 108 cm³)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "When calcium was burnt in gas A, compound B was formed. The compound, B reacted with water to form gas C which turned red litmus paper to blue.\n(a) Identify A and B.\n(b) Write the equation for the reaction of: (i) calcium with A; (ii) B with water.",
+    "options": [],
+    "modelAnswer": "Gas C turns red litmus blue, so it is alkaline: C is ammonia (NH₃). Ammonia is formed when a nitride reacts with water, so B is calcium nitride and A is nitrogen.\n\n(a) A = nitrogen (N₂); B = calcium nitride (Ca₃N₂). (C = ammonia, NH₃.)\n\n(b)\n(i) Calcium burning in nitrogen: 3Ca(s) + N₂(g) → Ca₃N₂(s)\n(ii) Calcium nitride with water: Ca₃N₂(s) + 6H₂O(l) → 3Ca(OH)₂(aq) + 2NH₃(g)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) What is a battery?",
+    "options": [],
+    "modelAnswer": "A battery is a device made of one or more electrochemical (galvanic) cells connected together, which converts stored chemical energy directly into electrical energy by means of spontaneous redox reactions. Examples: the dry (Leclanché) cell and the lead–acid accumulator used in cars."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Using appropriate equations, explain what happens at the electrodes of a cell in terms of redox reactions.",
+    "options": [],
+    "modelAnswer": "In a cell, oxidation takes place at one electrode and reduction at the other. Electrons released by oxidation flow through the external circuit to the other electrode, where they are used in reduction.\n\nAnode (negative electrode in a galvanic cell): oxidation, the loss of electrons. In the Daniell cell, zinc dissolves:\nZn(s) → Zn²⁺(aq) + 2e⁻\n\nCathode (positive electrode in a galvanic cell): reduction, the gain of electrons. In the Daniell cell, copper is deposited:\nCu²⁺(aq) + 2e⁻ → Cu(s)\n\nOverall cell (redox) reaction:\nZn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)\n\nZinc is the reducing agent (it is oxidised); Cu²⁺ is the oxidising agent (it is reduced). A salt bridge (or porous partition) lets ions move between the half-cells, keeping the solutions electrically neutral and completing the circuit."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Chemical Kinetics",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Explain the following terms: (10 marks)\n(i) Order of reaction (ii) Rate constant (iii) Half life (iv) Activation energy (v) Activated state",
+    "options": [],
+    "modelAnswer": "(i) Order of reaction: the sum of the powers to which the concentrations of the reactants are raised in the experimentally determined rate law. For rate = k[A]ˣ[B]ʸ, the order is x + y. It is found by experiment, not from the balanced equation.\n\n(ii) Rate constant (k): the constant of proportionality in the rate law. It equals the rate of reaction when the concentration of each reactant is 1 mol dm⁻³. It is constant at a given temperature, and increases with temperature.\n\n(iii) Half-life (t½): the time taken for the concentration of a reactant to fall to half of its initial value. For a first-order reaction, it is constant: t½ = 0.693/k.\n\n(iv) Activation energy (Eₐ): the minimum energy that colliding reactant particles must have for a reaction to occur. It is the energy barrier between reactants and products.\n\n(v) Activated state (activated complex, or transition state): the short-lived, high-energy arrangement of atoms at the top of the energy barrier, in which old bonds are partly broken and new bonds partly formed. It can either break up to give products or go back to reactants."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Chemical Kinetics",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) In the reaction, 2HI(g) ⇌ H₂(g) + I₂(g)\n(i) Derive an expression for the equilibrium constant in terms of the concentration of all the species in the above reaction. (3 marks)\n(ii) The rate constant for the decomposition of hydrogen iodide at different temperatures are provided below.\nDetermine the value of the activation energy for the decomposition reaction from the plot of lnk against 1/T and obtain the value for the activation energy of the decomposition reaction. (12 marks)",
+    "dataTable": {
+      "headers": [
+        "Rate constant, k (dm³ mole⁻¹ s⁻¹)",
+        "Temperature (K)"
+      ],
+      "rows": [
+        [
+          "3.75 × 10⁻⁹",
+          "500"
+        ],
+        [
+          "6.65 × 10⁻⁶",
+          "600"
+        ],
+        [
+          "1.15 × 10⁻³",
+          "700"
+        ],
+        [
+          "7.75 × 10⁻²",
+          "800"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the powers of ten in the table are hard to read on the photo. They have been read as 10⁻⁹, 10⁻⁶, 10⁻³ and 10⁻². These values give an activation energy close to the known value for this reaction (about 184 kJ mol⁻¹), which supports the reading, but please check them against the original paper.\n\n(i) By the law of mass action, at equilibrium the forward and backward rates are equal:\nRate forward = k₁[HI]²; rate backward = k₂[H₂][I₂].\nk₁[HI]² = k₂[H₂][I₂]\nK_c = k₁/k₂ = [H₂][I₂]/[HI]².\n(K_c has no units for this reaction, because the moles on both sides are equal.)\n\n(ii) Arrhenius equation: k = Ae^(−Eₐ/RT), so ln k = ln A − (Eₐ/R)(1/T).\nA plot of ln k against 1/T is a straight line with slope = −Eₐ/R.\n\nValues for the plot:\nT = 500 K: 1/T = 2.000 × 10⁻³ K⁻¹; ln k = ln(3.75 × 10⁻⁹) = −19.40\nT = 600 K: 1/T = 1.667 × 10⁻³ K⁻¹; ln k = ln(6.65 × 10⁻⁶) = −11.92\nT = 700 K: 1/T = 1.429 × 10⁻³ K⁻¹; ln k = ln(1.15 × 10⁻³) = −6.77\nT = 800 K: 1/T = 1.250 × 10⁻³ K⁻¹; ln k = ln(7.75 × 10⁻²) = −2.56\n\nPlot ln k (vertical axis) against 1/T (horizontal axis) and draw the best straight line.\nSlope = Δ(ln k)/Δ(1/T). From the best line (least squares): slope ≈ −2.24 × 10⁴ K.\n(Using the end points: (−2.56 − (−19.40))/(1.250 × 10⁻³ − 2.000 × 10⁻³) = 16.84/(−0.750 × 10⁻³) = −2.25 × 10⁴ K.)\n\nEₐ = −slope × R = 2.24 × 10⁴ × 8.314 = 1.86 × 10⁵ J mol⁻¹ ≈ 186 kJ mol⁻¹.\n(A value read from a hand-drawn graph will differ slightly, e.g., 180–190 kJ mol⁻¹.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "(a) State the major contribution of each of the following to the development of atomic structure: (5 marks)\n(i) James Chadwick (ii) Henri Becquerel (iii) Michael Faraday (iv) Robert Millikan\n(v) Ernest Rutherford",
+    "options": [],
+    "modelAnswer": "(i) James Chadwick: discovered the neutron (1932), by bombarding beryllium with α-particles. This explained why atomic masses are greater than the mass of the protons alone.\n\n(ii) Henri Becquerel: discovered radioactivity (1896), when he found that uranium salts emitted radiation that fogged photographic plates. This showed that atoms are not indivisible.\n\n(iii) Michael Faraday: established the laws of electrolysis (1833–34). These showed that electricity is carried in definite units, which pointed to the existence of electrons.\n\n(iv) Robert Millikan: measured the charge on the electron (1.6 × 10⁻¹⁹ C) by his oil-drop experiment (1909). Combined with Thomson's e/m value, this gave the mass of the electron.\n\n(v) Ernest Rutherford: proposed the nuclear model of the atom (1911) from the α-particle scattering (gold foil) experiment. Nearly all the mass and all the positive charge of an atom is concentrated in a tiny nucleus, with electrons around it and most of the atom empty space. He also discovered the proton."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "(b) In the reaction:\nMnO₄⁻ + Cl⁻ + H⁺ → Mn²⁺ + Cl₂ + H₂O\n(i) Balance the equation of the reaction. (8 marks)\n(ii) What is the oxidation number of manganese in MnO₄⁻? (1 mark)\n(iii) What are the species that oxidised and reduced? (2 marks)\n(iv) Use an electron configuration to illustrate how manganese is able to possess variable oxidation state in this reaction. (3 marks)\n(v) What is the role of H⁺ in the reaction? (1 mark)",
+    "options": [],
+    "modelAnswer": "(i) Half-equations:\nReduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (× 2)\nOxidation: 2Cl⁻ → Cl₂ + 2e⁻ (× 5)\nMultiply so that 10 electrons are transferred in each, then add:\n2MnO₄⁻ + 10Cl⁻ + 16H⁺ → 2Mn²⁺ + 5Cl₂ + 8H₂O\nCheck: Mn 2 = 2; O 8 = 8; Cl 10 = 10; H 16 = 16; charge (−2 − 10 + 16) = +4 on the left and 2(+2) = +4 on the right.\n\n(ii) MnO₄⁻: x + 4(−2) = −1, so x = +7.\n\n(iii) Cl⁻ is oxidised (−1 → 0 in Cl₂). MnO₄⁻ is reduced (Mn +7 → +2 in Mn²⁺).\n\n(iv) Mn (Z = 25): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s², or [Ar] 3d⁵ 4s².\nThe 3d and 4s orbitals are very close in energy, so manganese can lose different numbers of electrons from them.\nIn MnO₄⁻ (+7), all seven 3d and 4s electrons are used in bonding: Mn⁷⁺ is [Ar] 3d⁰.\nIn Mn²⁺ (+2), only the two 4s electrons are lost: [Ar] 3d⁵. This is a stable, half-filled 3d subshell.\nSo manganese can change from +7 to +2 in this reaction.\n\n(v) H⁺ provides the acidic medium. It combines with the oxygen of MnO₄⁻ to form water, allowing MnO₄⁻ to be fully reduced to Mn²⁺."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "12c",
+    "question": "(c) In the redox reaction:\nKClO₃ + FeSO₄ + H⁺ → KCl + Fe₂(SO₄)₃ + H₂O\nWhat is the number of moles of iron(III) produced, when 5.1g of the trioxochlorate(V) is consumed in the reaction? (5 marks)",
+    "options": [],
+    "modelAnswer": "Note: the atomic mass of potassium is not in the list given, so K = 39 is used.\n\nBalance the equation using half-equations:\nReduction: ClO₃⁻ + 6H⁺ + 6e⁻ → Cl⁻ + 3H₂O (Cl: +5 → −1, gaining 6 electrons)\nOxidation: Fe²⁺ → Fe³⁺ + e⁻ (× 6)\nIonic equation: ClO₃⁻ + 6Fe²⁺ + 6H⁺ → Cl⁻ + 6Fe³⁺ + 3H₂O\nFull equation: KClO₃ + 6FeSO₄ + 3H₂SO₄ → KCl + 3Fe₂(SO₄)₃ + 3H₂O\n\nMolar mass of KClO₃ = 39 + 35.5 + 3(16) = 122.5 g mol⁻¹.\nMoles of KClO₃ = 5.1/122.5 = 0.0416 mol.\n\nFrom the equation, 1 mol KClO₃ gives 6 mol Fe³⁺ (i.e., 3 mol Fe₂(SO₄)₃).\nMoles of iron(III) = 6 × 0.0416 = 0.25 mol.\n(This is 0.125 mol of Fe₂(SO₄)₃.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "(a) Predict the sign of the standard entropy change in the following: (5 marks)\n(i) N₂O₄(g) → 2NO₂(g) ΔH° = +58.04 kJ mol⁻¹\n(ii) H₂O(g) + C(s) → H₂O(g) + C(s) ΔH° = +128.4 kJ mol⁻¹\n(iii) CH₄(g) + 2O₂(s) → CO₂(g) + 2H₂O(g) ΔH° = -885.2 kJ mol⁻¹\n(iv) C(s) + O₂(g) → CO₂(g) ΔH° = -392.3 kJ mol⁻¹\n(v) 2H₂(g) + O₂(g) → H₂O(l) ΔH° = +570.0 kJ mol⁻¹",
+    "options": [],
+    "modelAnswer": "(i) Positive: 1 mol of gas → 2 mol of gas, so disorder increases.\n\n(ii) Misprint note: the equation as printed (H₂O(g) + C(s) → H₂O(g) + C(s)) has identical reactants and products, so nothing would change. The reaction intended is the formation of water gas: C(s) + H₂O(g) → CO(g) + H₂(g) (ΔH° ≈ +131 kJ mol⁻¹).\nPositive: 1 mol of gas → 2 mol of gas.\n\n(iii) Approximately zero (very slightly negative): 3 mol of gas → 3 mol of gas, so there is little change in disorder.\nNote: O₂ is printed as (s); oxygen is a gas, O₂(g).\n\n(iv) Approximately zero (very slightly positive): 1 mol of gas → 1 mol of gas.\n\n(v) Negative: 3 mol of gas → a liquid, so disorder decreases sharply.\nMisprint note: the balanced equation is 2H₂(g) + O₂(g) → 2H₂O(l), and the reaction is exothermic: ΔH° ≈ −571.6 kJ mol⁻¹, not +570.0."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "(b) Explain the factor that is responsible for the changes in the above a(i-v) (12 marks)",
+    "options": [],
+    "modelAnswer": "The main factor is the change in the number of moles of gas (and the physical states) between reactants and products, because entropy is a measure of disorder.\n\n1. Gases have far more entropy than liquids, and liquids more than solids, because gas particles move freely and randomly in a large volume. Solid particles are held in fixed positions.\n2. When a reaction produces more moles of gas than it uses, the disorder increases and ΔS° is positive: reactions (i) and (ii).\n3. When the number of moles of gas decreases, or gases form a liquid or solid, the disorder decreases and ΔS° is negative: reaction (v).\n4. When the number of moles of gas stays the same, ΔS° is small, close to zero: reactions (iii) and (iv). Its exact sign then depends on smaller factors, such as the complexity of the molecules.\n\nThe sign of ΔH° does not decide the sign of ΔS°: (i) and (ii) are both endothermic with positive ΔS°, while (iii), (iv) and (v) are exothermic with ΔS° near zero or negative."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "13c",
+    "question": "(c) The following reaction occurs at 200°C:\nC₂H₅OH(g) → C₂H₄(g) + H₂O(g) ΔH = + 12 kcal mol⁻¹\n(i) What is the sign of ΔG? (4 marks) (ii) What is the sign of ΔS? (2 marks)\n(iii)What feature of the reaction can affect the sign of ΔS? (2 marks)",
+    "options": [],
+    "modelAnswer": "(i) Negative. The question states that the reaction occurs (takes place spontaneously) at 200°C, and a reaction is spontaneous only when ΔG is negative.\nΔG = ΔH − TΔS. ΔH is positive (+12 kcal mol⁻¹), so ΔG can be negative only if TΔS is larger than ΔH. At T = 473 K, this needs ΔS > 12/473 = 0.0254 kcal K⁻¹ mol⁻¹ (25.4 cal K⁻¹ mol⁻¹).\n\n(ii) Positive. For an endothermic reaction to be spontaneous, ΔS must be positive (and large enough, as shown in (i)).\n\n(iii) The number of moles of gas increases: 1 mol of gas (C₂H₅OH) produces 2 mol of gas (C₂H₄ + H₂O). One molecule breaks into two, which increases the disorder of the system and makes ΔS positive."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "14",
+    "question": "Account for the following observations:\n(a) Chloride of silicon hydrolyses readily but that of carbon does not under normal condition. (5 marks)\n(b) Although both boron and aluminium belong to the same group in the periodic table, BCl₃ is trigonal planar but AlCl₃ is tetrahedral in dimeric state. (6 marks)\n(c) The first ionisation energy of beryllium is greater than that of lithium but the second ionisation energy of lithium is higher than that of beryllium. (5 marks)\n(d) The radii, r of an element, X and its ions follow the other: rx⁺ < rx < rx⁻ (4 marks)\n(e) Nitrogen is generally unreactive at room temperature but reactive at very high temperature. (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Silicon is in period 3, so it has vacant 3d orbitals. A water molecule can donate a lone pair into one of these orbitals, attacking the silicon atom and starting hydrolysis:\nSiCl₄(l) + 4H₂O(l) → Si(OH)₄(s) + 4HCl(aq) (or SiO₂·2H₂O + 4HCl)\nCarbon is in period 2 and has no d orbitals to accept a lone pair. It is also small and completely surrounded by four large chlorine atoms, which block the approach of water molecules. So CCl₄ does not hydrolyse under normal conditions.\n\n(b) In BCl₃, boron uses sp² hybrid orbitals to form three B–Cl bonds, giving a trigonal planar molecule (120°). Boron is very small, and its electron deficiency is partly relieved by back-donation (pπ–pπ bonding) from the lone pairs of the chlorine atoms, so BCl₃ stays a monomer.\nAluminium is larger, and back-bonding with chlorine is weak. To complete its octet, each Al atom accepts a lone pair from a chlorine atom of a neighbouring AlCl₃ molecule, forming the dimer Al₂Cl₆ with two bridging Cl atoms (coordinate bonds). Each Al is now surrounded by four Cl atoms, uses sp³ hybrid orbitals, and is tetrahedral.\n\n(c) First ionisation energy: Li is 1s² 2s¹ and Be is 1s² 2s². Beryllium has a greater nuclear charge (+4 against +3) and a smaller atomic radius, and its 2s² subshell is full and stable. So more energy is needed to remove its first electron.\nSecond ionisation energy: Li⁺ is 1s², so the second electron of lithium must come from the inner, full 1s shell, which is close to the nucleus and not shielded. This needs a very large amount of energy. Be⁺ is 1s² 2s¹, so beryllium's second electron still comes from the outer 2s shell, which is easier to remove. So the second ionisation energy of Li is much higher than that of Be.\n\n(d) Note: 'the other' means the order.\nCation X⁺: when an atom loses an electron, the same nuclear charge acts on fewer electrons. There is less electron–electron repulsion, so the electrons are pulled closer (and sometimes a whole shell is lost). So rX⁺ < rX.\nAnion X⁻: when an atom gains an electron, the same nuclear charge acts on more electrons. The extra electron increases repulsion and the electron cloud expands. So rX⁻ > rX.\nTherefore rX⁺ < rX < rX⁻.\n\n(e) The two nitrogen atoms in N₂ are joined by a very strong triple bond (N≡N, bond energy about 945 kJ mol⁻¹). Reactions of nitrogen therefore have a very high activation energy, so at room temperature very few molecules have enough energy to react. At very high temperatures, enough energy is available to break the triple bond, and nitrogen reacts. Examples: N₂ + O₂ → 2NO (in lightning or car engines); 3Mg + N₂ → Mg₃N₂; N₂ + 3H₂ ⇌ 2NH₃ (Haber process, about 450°C, with a catalyst)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "(a) State four unique properties of most d- block elements. (4 marks)",
+    "options": [],
+    "modelAnswer": "Any four:\n1. They show variable oxidation states (e.g., Fe²⁺ and Fe³⁺; Mn from +2 to +7).\n2. They form coloured compounds and ions (e.g., blue Cu²⁺, green Ni²⁺), because of d–d electron transitions.\n3. They and their compounds act as catalysts (e.g., Fe in the Haber process, V₂O₅ in the Contact process, Ni in hydrogenation).\n4. They form complex ions with ligands (e.g., [Cu(NH₃)₄]²⁺, [Fe(CN)₆]⁴⁻).\n5. Many of their compounds are paramagnetic, because they have unpaired d electrons.\n6. They are hard metals with high melting and boiling points and high densities, and they form alloys."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "(b) Using electron configuration, explain the following:\n(i) The boiling points of potassium and chromium are 760 and 2,665 °C respectively. (5 marks)\n(ii) Some cobalt(II) complexes have pink colour. (5 marks)\n(iii) +5 oxidation state can be obtained in vanadium. (3 marks)",
+    "options": [],
+    "modelAnswer": "(i) K (Z = 19): [Ar] 4s¹. Cr (Z = 24): [Ar] 3d⁵ 4s¹.\nPotassium has only one valence electron per atom to contribute to the 'sea' of delocalised electrons, and its atoms are large. Its metallic bonding is weak, so little energy is needed to separate the atoms, and its boiling point is low (760°C).\nChromium can contribute up to six electrons (five 3d and one 4s) to metallic bonding, and its atoms are smaller. Its metallic bonding is much stronger, so its boiling point is very high (2665°C).\n\n(ii) Co²⁺: Co (Z = 27) is [Ar] 3d⁷ 4s², so Co²⁺ is [Ar] 3d⁷. Its d subshell is partly filled.\nIn a complex such as [Co(H₂O)₆]²⁺, the ligands split the five d orbitals into two groups of slightly different energy. A d electron can absorb visible light of a particular energy (frequency) and jump to a higher d orbital (a d–d transition). Co(II) complexes absorb mainly blue-green light, so the light transmitted, the complementary colour, is pink.\n\n(iii) V (Z = 23): [Ar] 3d³ 4s². Vanadium has five electrons in its 3d and 4s orbitals, which are close in energy. It can lose (or use in bonding) all five, giving V⁵⁺ with the stable noble-gas configuration of argon, [Ar]. Example: vanadium(V) oxide, V₂O₅."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "15c",
+    "question": "(c) Account for the magnetic property of Sc³⁺, Cu⁺, Zn²⁺. (8 marks)",
+    "options": [],
+    "modelAnswer": "Paramagnetism (attraction into a magnetic field) is caused by unpaired electrons. Ions with all their electrons paired are diamagnetic (weakly repelled).\n\nSc³⁺: Sc (Z = 21) is [Ar] 3d¹ 4s². Sc³⁺ loses all three outer electrons: [Ar] 3d⁰. It has no unpaired electrons, so it is diamagnetic.\n\nCu⁺: Cu (Z = 29) is [Ar] 3d¹⁰ 4s¹. Cu⁺ loses the 4s electron: [Ar] 3d¹⁰. The d subshell is full and all its electrons are paired, so it is diamagnetic.\n\nZn²⁺: Zn (Z = 30) is [Ar] 3d¹⁰ 4s². Zn²⁺ loses both 4s electrons: [Ar] 3d¹⁰. All electrons are paired, so it is diamagnetic.\n\nAll three ions are diamagnetic. For the same reason (no partly filled d subshell, so no d–d transitions), their compounds are usually colourless or white."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Separation and Purification Techniques",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "(a) A is a mixture of 3 substances P, Q and R. Substance P is soluble in water and ethanol but insoluble in ether. Q is soluble in ethanol and ether but not in water. R is soluble only in ether. Explain briefly, how you will determine the percentage of P in the mixture, A. (7 marks)",
+    "options": [],
+    "modelAnswer": "P is the only substance that dissolves in water, so water is used to separate it.\n\n1. Weigh a sample of the dry mixture A accurately (mass m₁).\n2. Add water and stir (warming gently if needed) until all of P dissolves. Q and R are insoluble in water and remain as solids.\n3. Filter the mixture. P is in the filtrate; Q and R stay on the filter paper. Wash the residue with a little water so that no P is left behind, and add the washings to the filtrate.\n4. Evaporate the filtrate to dryness, dry the solid P (e.g., in an oven or desiccator), cool it and weigh it (mass m₂). (Alternatively, dry and weigh the residue of Q + R, and find the mass of P by difference.)\n5. Percentage of P in A = (m₂/m₁) × 100%."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "(b) The atomic numbers of 2 elements, X and Y are 37 and 35 respectively.\n(i) Write the electron configurations of X and Y. (4 marks)\n(ii) Write the formulae of the hydrides of X and Y. (4 marks)\n(iii) State and explain the type of bonding between X and Y and give the formula of the compound formed. (4 marks)",
+    "options": [],
+    "modelAnswer": "(i) X (Z = 37, rubidium): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s² 4p⁶ 5s¹, or [Kr] 5s¹. It is in group 1, an alkali metal.\nY (Z = 35, bromine): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s² 4p⁵, or [Ar] 3d¹⁰ 4s² 4p⁵. It is in group 17, a halogen.\n\n(ii) Hydride of X: XH (rubidium hydride, RbH), an ionic hydride containing H⁻.\nHydride of Y: HY (hydrogen bromide, HBr), a covalent hydride.\n\n(iii) The bonding is ionic (electrovalent). X has one valence electron, which it loses easily (low ionisation energy) to form X⁺. Y has seven valence electrons and readily gains one (high electron affinity) to form Y⁻. Both ions then have stable noble-gas configurations, and they are held together by strong electrostatic attraction.\nFormula of the compound: XY (rubidium bromide, RbBr)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "16c",
+    "question": "(c) Which of the elements, X and Y in b above: (1 mark each)\n(i) will conduct electricity in the solid state? (ii) will react violently with water?\n(iii)will form an acid anhydride? (iv) will form basic hydroxide?\n(v) has catenating property? (vi) has variable oxidation state?",
+    "options": [],
+    "modelAnswer": "(i) X (rubidium). It is a metal, with delocalised electrons that carry current in the solid state.\n\n(ii) X. Rubidium reacts violently with water: 2Rb + 2H₂O → 2RbOH + H₂.\n\n(iii) Y (bromine). Its oxides, such as Br₂O, are acidic; they dissolve in water to form acids (Br₂O + H₂O → 2HOBr).\n\n(iv) X. Rubidium forms the strongly basic hydroxide RbOH.\n\n(v) Y, but only to a very small extent: bromine atoms join to each other in Br₂ and in the tribromide ion, Br₃⁻. Neither element shows true catenation (long chains of atoms), as carbon does. X shows none.\n\n(vi) Y. Bromine shows oxidation states of −1, +1, +3, +5 and +7 (e.g., HBr, HOBr, HBrO₂, HBrO₃, HBrO₄). Rubidium shows only +1."
+  }
+]

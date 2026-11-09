@@ -193,17 +193,42 @@ document.getElementById("home-sample-body")?.addEventListener("click", (e) => {
   go(0);
 })();
 
-// ---------- WhatsApp button ----------
-// If the student came through a teacher's link, their code travels with the receipt message.
+// ---------- Exam choice + WhatsApp button ----------
+// The student picks JUPEB, IJMB or both in "How to get access". The amount in
+// step 1 and the WhatsApp message follow that choice. If they came through a
+// teacher's link, the teacher's code travels with the message too.
 (function initHomeWhatsApp() {
   const btn = document.getElementById("home-wa-btn");
+  const pick = document.getElementById("home-exam-pick");
+  const amountEl = document.getElementById("home-pay-amount");
   if (!btn) return;
+
+  function chosen() {
+    const on = pick ? pick.querySelector(".is-on") : null;
+    return on ? { exam: on.dataset.exam, price: on.dataset.price } : { exam: "JUPEB", price: "₦5,000" };
+  }
+
   function refresh() {
+    const { exam, price } = chosen();
+    if (amountEl) amountEl.textContent = price;
+    const siteName = (typeof SITE_NAME === "string") ? SITE_NAME : "JUPEB Question Bank";
     const code = localStorage.getItem("jupeb_referral_code");
-    let text = "Hi! I've paid ₦5,000 for JUPEB Question Bank.";
+    let text = `Hi! I've paid ${price} for ${exam} on ${siteName}.`;
     if (code) text += "\nTeacher code: " + code;
     text += "\nMy Gmail: ";
     btn.href = "https://wa.me/2349035801863?text=" + encodeURIComponent(text);
+  }
+
+  if (pick) {
+    pick.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-exam]");
+      if (!b) return;
+      pick.querySelectorAll("button").forEach(x => {
+        x.classList.toggle("is-on", x === b);
+        x.setAttribute("aria-checked", x === b ? "true" : "false");
+      });
+      refresh();
+    });
   }
   refresh();
   btn.addEventListener("click", refresh);   // rebuilt on tap, so it is always current

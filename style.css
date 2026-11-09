@@ -4192,7 +4192,11 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
 .home { max-width: 540px; margin: 0 auto; padding: 18px 18px 40px; color: var(--text-primary); }
 
 /* Top bar */
-.home-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.home-top {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;
+  /* an old rule in style.css styles every <header> as a blue bar; undo it here */
+  padding: 0; background: none; color: var(--text-primary); text-align: left;
+}
 .home-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.05rem; }
 .home-brand img { border-radius: 10px; display: block; }
 .home-theme {
@@ -4224,6 +4228,7 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
 .home-slide--green  { background: linear-gradient(140deg, #059669, #065f46); }
 .home-slide--rose   { background: linear-gradient(140deg, #db2777, #9d174d); }
 .home-slide--teal   { background: linear-gradient(140deg, #0891b2, #155e75); }
+.home-slide--amber  { background: linear-gradient(140deg, #d97706, #92400e); }
 
 .home-eyebrow {
   align-self: flex-start; margin-bottom: 12px; padding: 4px 10px; border-radius: 999px;
@@ -4354,6 +4359,25 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
 .home-sample-end h4 { margin: 0 0 8px; font-size: 1.4rem; }
 .home-sample-end p { margin: 0 0 18px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); }
 
+/* Price for both exams */
+.home-price-bundle { margin: -4px 0 14px; text-align: center; font-size: 0.9rem; color: var(--text-secondary); }
+.home-price-bundle strong { color: var(--text-primary); }
+
+/* Exam choice in "How to get access" */
+.home-exam-pick-label { margin: 0 0 8px; font-size: 0.88rem; font-weight: 700; color: var(--text-primary); }
+.home-exam-pick { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 14px; }
+.home-exam-pick button {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px;
+  border: 2px solid var(--dash-border); border-radius: 12px; background: var(--bg-secondary); color: var(--text-primary);
+  font-family: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer;
+}
+.home-exam-pick button span { font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); }
+.home-exam-pick button.is-on {
+  border-color: var(--tab-active-bg);
+  background: color-mix(in srgb, var(--tab-active-bg) 10%, var(--bg-secondary));
+}
+.home-exam-pick button.is-on span { color: var(--tab-active-bg); }
+
 /* ===== Larger screens ===== */
 .home-top-actions { display: flex; align-items: center; gap: 10px; }
 .home-signin-top { display: none; }
@@ -4428,6 +4452,7 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
     border-radius: 28px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
   }
   .home-price { justify-content: flex-start; margin: 0 0 18px; }
+  .home-price-bundle { text-align: left; margin: -10px 0 18px; }
   .home-price-amount { font-size: 3rem; line-height: 1; }
   .home-price-note { font-size: 0.95rem; }
   .home-perks { display: block; list-style: none; margin: 0 0 26px; padding: 0; }

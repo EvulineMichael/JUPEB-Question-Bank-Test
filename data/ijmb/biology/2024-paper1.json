@@ -1,0 +1,193 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "The following data was generated from six plots plots during a field trip by students of Biology. Study the data carefully and use it to answer the questions that follow.\nStudy the data and use it to answer the questions that follow:\na. Describe the type of variable the data above represents in a single word.\nb. Calculate the mean abundance of each plant species.\nc. Present the mean (from II. Above) of the data on a Pie Chart.",
+    "dataTable": {
+      "headers": [
+        "Species",
+        "Plot 1",
+        "Plot 2",
+        "Plot 3",
+        "Plot 4",
+        "Plot 5",
+        "Plot 6"
+      ],
+      "rows": [
+        [
+          "1 Adansonia digitata",
+          "10",
+          "7",
+          "13",
+          "9",
+          "12",
+          "10"
+        ],
+        [
+          "2 Acacia albida",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "2"
+        ],
+        [
+          "3 Albizia lebbeck",
+          "1",
+          "3",
+          "4",
+          "5",
+          "1",
+          "0"
+        ],
+        [
+          "4 Azadirachta indica",
+          "1",
+          "8",
+          "6",
+          "7",
+          "2",
+          "6"
+        ],
+        [
+          "5 Borasus aethiopum",
+          "1",
+          "0",
+          "0",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "6 Bosmelia serrata",
+          "0",
+          "2",
+          "1",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "7 Ceiba pentadra",
+          "7",
+          "4",
+          "10",
+          "2",
+          "3",
+          "1"
+        ],
+        [
+          "8 Diospyros mespiliformis",
+          "0",
+          "1",
+          "0",
+          "0",
+          "2",
+          "1"
+        ],
+        [
+          "9 Gmelina arborea",
+          "1",
+          "1",
+          "5",
+          "0",
+          "1",
+          "4"
+        ],
+        [
+          "10 Mangifera indica",
+          "2",
+          "0",
+          "3",
+          "2",
+          "7",
+          "3"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the table was photographed at an angle, so its numbers were read with care, row by row; please check them against the original paper. Some species names are misspelt in the paper: Borassus aethiopum, Boswellia serrata and Ceiba pentandra are the correct spellings. Part (c) refers to 'II. Above', which means part (b).\n\n(a) Discrete. (The data are counts of plants, which can only be whole numbers.)\n\n(b) Mean abundance = total number of individuals in the six plots ÷ 6.\n1. Adansonia digitata: (10 + 7 + 13 + 9 + 12 + 10)/6 = 61/6 = 10.17\n2. Acacia albida: (1 + 1 + 0 + 0 + 0 + 2)/6 = 4/6 = 0.67\n3. Albizia lebbeck: (1 + 3 + 4 + 5 + 1 + 0)/6 = 14/6 = 2.33\n4. Azadirachta indica: (1 + 8 + 6 + 7 + 2 + 6)/6 = 30/6 = 5.00\n5. Borassus aethiopum: (1 + 0 + 0 + 2 + 1 + 1)/6 = 5/6 = 0.83\n6. Boswellia serrata: (0 + 2 + 1 + 1 + 0 + 1)/6 = 5/6 = 0.83\n7. Ceiba pentandra: (7 + 4 + 10 + 2 + 3 + 1)/6 = 27/6 = 4.50\n8. Diospyros mespiliformis: (0 + 1 + 0 + 0 + 2 + 1)/6 = 4/6 = 0.67\n9. Gmelina arborea: (1 + 1 + 5 + 0 + 1 + 4)/6 = 12/6 = 2.00\n10. Mangifera indica: (2 + 0 + 3 + 2 + 7 + 3)/6 = 17/6 = 2.83\nSum of the means = 29.83.\n\n(c) Pie chart: the angle of each sector = (mean of the species ÷ sum of all the means) × 360°.\n1. Adansonia digitata: (10.17/29.83) × 360° = 122.7°\n2. Acacia albida: (0.67/29.83) × 360° = 8.0°\n3. Albizia lebbeck: (2.33/29.83) × 360° = 28.2°\n4. Azadirachta indica: (5.00/29.83) × 360° = 60.3°\n5. Borassus aethiopum: (0.83/29.83) × 360° = 10.1°\n6. Boswellia serrata: (0.83/29.83) × 360° = 10.1°\n7. Ceiba pentandra: (4.50/29.83) × 360° = 54.3°\n8. Diospyros mespiliformis: (0.67/29.83) × 360° = 8.0°\n9. Gmelina arborea: (2.00/29.83) × 360° = 24.1°\n10. Mangifera indica: (2.83/29.83) × 360° = 34.2°\nTotal = 360°.\nDraw a circle, and use a protractor to mark off each sector with these angles. Label each sector with the species name (or use a key), and give the chart a title, e.g., 'Mean abundance of tree species in six plots'. Adansonia digitata occupies the largest sector (about one third of the circle)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Answer the following questions by providing the most appropriate response in the blank spaces. Write down your answers in the answer booklet. Spelling of single word answers and scientific terms must be correct to score.\ni. Non- flagellated spores produced by algae are referred to as ________\nii. The spore produced in sexual reproduction in Mucor is called ________\niii. The arrangement of the calyx and corolla in the floral bud is known as ________\niv. ________ refers to the type of reproduction in algae in which the male and female gametes are morphologically identical.\nv. The spores produced in basidiomycotina are called ________\nvi. Rod shaped bacterial cells are called ________\nvii. The structure responsible for translocation of manufactured food in spermatophytes is called ________\nviii. The seedless vascular plants are called ________\nix. Organisms that lack membrane bound organelles in their cells are referred to as ________\nx. The entire mass of hyphae in fungi is termed ________",
+    "options": [],
+    "modelAnswer": "(i) Aplanospores\n(ii) Zygospore\n(iii) Aestivation (praefloration)\n(iv) Isogamy\n(v) Basidiospores\n(vi) Bacilli (singular: bacillus)\n(vii) Phloem (sieve tubes)\n(viii) Pteridophytes\n(ix) Prokaryotes\n(x) Mycelium"
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Ecology",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Give a brief explanation to the following terms:\ni. Natural Selection\nii. Alternation of Generation\niii. Global warming\niv. afforestation",
+    "options": [],
+    "modelAnswer": "(i) Natural selection: the process, proposed by Charles Darwin, by which individuals with characteristics (variations) best suited to their environment survive and reproduce more than others, passing these favourable, inherited characteristics on to their offspring. Over many generations, the favourable characteristics become more common in the population, and less suitable ones become rare. It is the main mechanism of evolution, summed up as 'survival of the fittest'. Example: the peppered moth, whose dark form became common in soot-polluted areas.\n\n(ii) Alternation of generation: the occurrence in the life cycle of a plant of two distinct generations that follow each other in turn: a haploid (n) gametophyte generation, which produces gametes, and a diploid (2n) sporophyte generation, which produces spores by meiosis. The zygote formed by fusion of gametes grows into the sporophyte, and each spore grows into a new gametophyte. In mosses the gametophyte is dominant; in ferns and seed plants the sporophyte is dominant.\n\n(iii) Global warming: the gradual rise in the average temperature of the earth's surface and atmosphere. It is caused mainly by increased amounts of greenhouse gases (carbon(IV) oxide, methane, nitrous oxide and CFCs) in the atmosphere, from burning fossil fuels, deforestation and agriculture. These gases trap heat radiated from the earth (an enhanced greenhouse effect). Effects include melting of polar ice and glaciers, rising sea levels and flooding, changes in rainfall patterns, droughts, desertification, and the loss of species.\n\n(iv) Afforestation: the planting of trees on land that has not had forest cover, or has been without trees for a long time, to create a new forest. (Reforestation is replanting trees where a forest has recently been cut down.) Benefits: it reduces soil erosion and desert encroachment (e.g., shelter belts in northern Nigeria), absorbs carbon(IV) oxide and so reduces global warming, provides timber and fuel wood, restores habitats for wildlife, and improves rainfall and soil fertility."
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Structures, Morphology and Characteristics of Microorganisms",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "a. In a TABULAR FORM, present the differences between the viruses and bacteria",
+    "options": [],
+    "modelAnswer": "In the exam, set these out in two columns headed Viruses and Bacteria.\n\n1. Cellular nature:\nViruses: acellular (not made of cells).\nBacteria: unicellular, prokaryotic cells.\n\n2. Size:\nViruses: very small (about 20–300 nm); seen only with an electron microscope; pass through bacterial filters.\nBacteria: larger (about 0.5–5 μm); visible with a light microscope; retained by bacterial filters.\n\n3. Nucleic acid:\nViruses: contain either DNA or RNA, never both.\nBacteria: contain both DNA and RNA.\n\n4. Structure:\nViruses: a nucleic acid core surrounded by a protein coat (capsid), sometimes with an envelope.\nBacteria: a cell wall (of peptidoglycan), cell membrane, cytoplasm, ribosomes and a nucleoid; some have flagella, pili or a capsule.\n\n5. Ribosomes and enzymes:\nViruses: no ribosomes and no enzymes for metabolism.\nBacteria: have ribosomes (70S) and their own metabolic enzymes.\n\n6. Reproduction:\nViruses: reproduce only inside living host cells, using the host's machinery (replication).\nBacteria: reproduce on their own, by binary fission.\n\n7. Mode of life:\nViruses: obligate intracellular parasites.\nBacteria: free-living (saprophytic or autotrophic), parasitic, or symbiotic.\n\n8. Living outside a host:\nViruses: inert outside a host cell; can be crystallised.\nBacteria: carry out their life processes independently; cannot be crystallised.\n\n9. Growth on culture media:\nViruses: cannot be grown on non-living media; need living cells.\nBacteria: can be grown on non-living culture media (e.g., nutrient agar).\n\n10. Effect of antibiotics:\nViruses: not affected by antibiotics.\nBacteria: many are killed or inhibited by antibiotics.\n\n11. Examples:\nViruses: HIV, tobacco mosaic virus, influenza virus, bacteriophages.\nBacteria: Escherichia coli, Rhizobium, Bacillus, Streptococcus."
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "General Characteristics and Diversity of Plants",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "b. Write short notes on the types and range forms of lichens.",
+    "options": [],
+    "modelAnswer": "A lichen is a dual organism formed by a symbiotic association (mutualism) between a fungus (the mycobiont, usually an ascomycete) and a photosynthetic partner (the photobiont): a green alga (e.g., Trebouxia) or a cyanobacterium (e.g., Nostoc). The fungus provides shelter, water and minerals, and protects the alga from drying out. The alga makes food by photosynthesis for both partners.\n\nTypes (growth forms) of lichens, based on the form of the thallus:\n1. Crustose lichens: flat, crust-like thalli that are tightly attached to the substratum (rock or bark) over their whole lower surface, and cannot be removed without damaging it. Example: Graphis, Lecanora.\n2. Foliose lichens: leaf-like, lobed thalli, loosely attached to the substratum by rhizines, with distinct upper and lower surfaces. Example: Parmelia, Peltigera.\n3. Fruticose lichens: shrub-like, much-branched thalli, either erect or hanging, attached at a single point. Example: Usnea (old man's beard), Cladonia.\n(Other forms sometimes described are squamulose lichens, with small scale-like lobes, and leprose lichens, which are powdery.)\n\nRange (habitats and distribution): lichens are found almost everywhere on land, from the tropics to the polar regions and high mountains. They grow on bare rocks, tree bark, soil, walls and roofs, and are often pioneer organisms in succession on bare rock, where they help to form soil. They are very sensitive to air pollution, especially sulphur(IV) oxide, so they are used as indicators of air quality."
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Ecology",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Write explanatory notes on:\na. Ecological Succession\nb. Ecological pyramids",
+    "options": [],
+    "modelAnswer": "(a) Ecological succession\nEcological succession is the gradual, orderly change in the species composition of a community over time, until a stable climax community is reached. Each community changes the environment (e.g., by adding humus, increasing soil depth or providing shade), making it more suitable for the next community.\nThe series of communities is called a sere, and each stage is a seral stage.\n\nTypes:\n1. Primary succession: starts on bare ground with no soil, such as bare rock, sand dunes or new volcanic land. Pioneer organisms, such as lichens, break down the rock and begin forming soil. They are followed by mosses, then grasses and herbs, then shrubs, and finally trees (the climax community). Succession on dry land is a xerosere; in water it is a hydrosere.\n2. Secondary succession: starts where soil already exists but the vegetation has been removed, e.g., abandoned farmland or land cleared by fire. It is faster than primary succession.\n\nAs succession proceeds, soil depth and fertility, species diversity, biomass and the complexity of food webs all increase. The climax community, e.g., a forest in the rainforest zone, is stable and in balance with the climate.\n\n(b) Ecological pyramids\nEcological pyramids are diagrams that show the relationship between the different trophic (feeding) levels of a food chain. Producers form the base, with primary, secondary and tertiary consumers in layers above.\n\nTypes:\n1. Pyramid of numbers: shows the number of organisms at each trophic level. It is usually upright (many grasses, fewer grasshoppers, fewer frogs, one snake), but it can be inverted. For example, one large tree supports many caterpillars, and one host supports many parasites.\n2. Pyramid of biomass: shows the total dry mass of the organisms at each trophic level. It is usually upright. It can be inverted in water, where a small biomass of fast-reproducing phytoplankton supports a larger biomass of zooplankton.\n3. Pyramid of energy: shows the amount of energy flowing through each trophic level per unit area per unit time. It is always upright, because energy is lost at each level through respiration, heat, movement and undigested waste. Only about 10% of the energy at one level is passed on to the next.\n\nImportance: they show the feeding relationships and the flow of energy in an ecosystem, and explain why food chains are usually short (rarely more than four or five links)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Ecology",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "a. What is soil profile?",
+    "options": [],
+    "modelAnswer": "Note: the question number is not visible on the photo; this is taken as Question 6.\n\nA soil profile is a vertical section through the soil, from the surface down to the underlying parent rock, which shows the distinct layers, called horizons, that make up the soil.\n\nThe main horizons are:\n1. O horizon (humus layer): the top layer of fresh and decaying organic matter (leaf litter).\n2. A horizon (topsoil): dark, fertile soil rich in humus, minerals, soil organisms and plant roots. Leaching (eluviation) removes some minerals downwards.\n3. B horizon (subsoil): lighter in colour, with less humus. Minerals leached from above accumulate here (illuviation), and only deep roots reach it.\n4. C horizon (weathered parent material): broken pieces of partly weathered rock.\n5. R horizon (bedrock): the solid parent rock from which the soil is formed.\n\nThe soil profile is used to study how a soil was formed, how fertile it is, and what crops it can support."
+  },
+  {
+    "subject": "Biology",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Nutrition in Plants",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "b. What are the external factors that affect the rate of photosynthesis?",
+    "options": [],
+    "modelAnswer": "1. Light intensity: as light intensity increases, the rate of photosynthesis increases, until another factor becomes limiting. Very strong light can damage chlorophyll.\n2. Carbon(IV) oxide concentration: a higher concentration of CO₂ increases the rate, up to a limit. CO₂ is often the limiting factor in bright light.\n3. Temperature: photosynthesis is controlled by enzymes, so the rate increases with temperature up to an optimum (about 25–35°C), and then falls as the enzymes are denatured.\n4. Water supply: water is a raw material. A shortage causes the stomata to close, which cuts off the supply of CO₂ and reduces the rate.\n5. Wavelength (quality) of light: chlorophyll absorbs mainly red and blue light, so these wavelengths give the highest rates; green light is mostly reflected.\n6. Availability of mineral salts: e.g., magnesium and nitrogen are needed to make chlorophyll. A shortage causes chlorosis and reduces the rate.\n7. Pollutants: e.g., dust on leaves blocks light, and gases such as sulphur(IV) oxide damage leaves.\n\nThe principle of limiting factors (Blackman): the rate of photosynthesis is limited by whichever factor is in the shortest supply."
+  }
+]

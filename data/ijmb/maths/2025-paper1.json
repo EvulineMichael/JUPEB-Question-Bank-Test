@@ -1,0 +1,211 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Binomial Theorem",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Find the first three terms in the expansion of (1 + 1/x)² (1 − x)² in descending power of x. [4 marks]",
+    "options": [],
+    "modelAnswer": "Combine the brackets first, since both are squared:\n(1 + 1/x)²(1 − x)² = [(1 + 1/x)(1 − x)]².\n\n(1 + 1/x)(1 − x) = 1 − x + 1/x − 1 = 1/x − x.\n\n[1/x − x]² = 1/x² − 2 + x².\n\nIn descending powers of x: x² − 2 + x⁻².\nThe expansion has exactly three terms: x², −2 and 1/x².\n\n(Check by expanding each bracket by the binomial theorem: (1 + 1/x)² = 1 + 2/x + 1/x² and (1 − x)² = 1 − 2x + x². Multiplying gives the same result: the x and 1/x terms cancel.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Obtain the equation whose roots are the reciprocals of those of the equation ax² − x + c = 0. [4 marks]",
+    "options": [],
+    "modelAnswer": "Let the roots of ax² − x + c = 0 be α and β, so α + β = 1/a and αβ = c/a.\n\nThe new roots are 1/α and 1/β:\nSum = 1/α + 1/β = (α + β)/(αβ) = (1/a)/(c/a) = 1/c.\nProduct = 1/(αβ) = a/c.\n\nRequired equation: x² − (sum)x + product = 0\nx² − (1/c)x + a/c = 0\nMultiply by c: cx² − x + a = 0.\n\n(Quick method: replacing x by 1/x in ax² − x + c = 0 gives a/x² − 1/x + c = 0; multiplying by x² gives cx² − x + a = 0.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Express ((√5 − i)/(√5 + i))² in the form a + ib. [4 marks]",
+    "options": [],
+    "modelAnswer": "First simplify the fraction by multiplying by the conjugate of the denominator:\n(√5 − i)/(√5 + i) × (√5 − i)/(√5 − i) = (√5 − i)²/(5 + 1)\n(√5 − i)² = 5 − 2√5 i + i² = 4 − 2√5 i.\nSo the fraction = (4 − 2√5 i)/6 = (2 − √5 i)/3.\n\nSquare it:\n((2 − √5 i)/3)² = (4 − 4√5 i + 5i²)/9 = (4 − 4√5 i − 5)/9 = (−1 − 4√5 i)/9.\n\nAnswer: −1/9 − (4√5/9)i, i.e., a = −1/9 and b = −4√5/9."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Given that tan 30° = 1/√3, Obtain in surd form tan 15°. [4 marks",
+    "options": [],
+    "modelAnswer": "Let t = tan 15°. Since 30° = 2 × 15°, use tan 2θ = 2tan θ/(1 − tan²θ):\n1/√3 = 2t/(1 − t²)\n1 − t² = 2√3 t\nt² + 2√3 t − 1 = 0.\n\nt = [−2√3 ± √(12 + 4)]/2 = (−2√3 ± 4)/2 = −√3 ± 2.\n\n15° is acute, so tan 15° is positive:\ntan 15° = 2 − √3 (≈ 0.268)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Show that the point (3,0) lies on the line x = 3 and the circle x² + y² = 9, find the point of intersection. What conclusion can be drawn? [4 marks]",
+    "options": [],
+    "modelAnswer": "The point (3, 0) is on the line x = 3, because its x-coordinate is 3.\nIt is on the circle, because 3² + 0² = 9.\n\nPoints of intersection: substitute x = 3 into x² + y² = 9:\n9 + y² = 9, so y² = 0 and y = 0 (a repeated root).\nThe line and circle meet at one point only: (3, 0).\n\nConclusion: the line x = 3 touches the circle at exactly one point, so it is a tangent to the circle at (3, 0). (The circle has centre (0, 0) and radius 3, and the line x = 3 is exactly 3 units from the centre.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Matrices",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Given that A = (1 0 1; −1 2 0; 1 2 3), B = (3 0 −1; 2 4 0; −1 0 6), show that (AB)ᵀ ≠ AᵀBᵀ. [08 marks]",
+    "options": [],
+    "modelAnswer": "Note: each matrix is written row by row, with rows separated by semicolons.\n\nAB = (1 0 1; −1 2 0; 1 2 3)(3 0 −1; 2 4 0; −1 0 6)\nRow 1: (3 + 0 − 1, 0 + 0 + 0, −1 + 0 + 6) = (2, 0, 5)\nRow 2: (−3 + 4 + 0, 0 + 8 + 0, 1 + 0 + 0) = (1, 8, 1)\nRow 3: (3 + 4 − 3, 0 + 8 + 0, −1 + 0 + 18) = (4, 8, 17)\nAB = (2 0 5; 1 8 1; 4 8 17)\n\n(AB)ᵀ (swap rows and columns) = (2 1 4; 0 8 8; 5 1 17)\n\nAᵀ = (1 −1 1; 0 2 2; 1 0 3), Bᵀ = (3 2 −1; 0 4 0; −1 0 6)\nAᵀBᵀ:\nRow 1: (3 + 0 − 1, 2 − 4 + 0, −1 + 0 + 6) = (2, −2, 5)\nRow 2: (0 + 0 − 2, 0 + 8 + 0, 0 + 0 + 12) = (−2, 8, 12)\nRow 3: (3 + 0 − 3, 2 + 0 + 0, −1 + 0 + 18) = (0, 2, 17)\nAᵀBᵀ = (2 −2 5; −2 8 12; 0 2 17)\n\nComparing, the two matrices differ, e.g., the (1, 2) entries are 1 and −2. So (AB)ᵀ ≠ AᵀBᵀ.\n(In fact, the correct rule is (AB)ᵀ = BᵀAᵀ.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Using mathematical induction, show that Σ_(r=1)^n 1/(r(r+1)) = n/(n+1). [08 marks]",
+    "options": [],
+    "modelAnswer": "Let P(n) be the statement Σ_(r=1)^n 1/(r(r + 1)) = n/(n + 1).\n\nStep 1: n = 1.\nLeft side = 1/(1 × 2) = 1/2. Right side = 1/(1 + 1) = 1/2.\nSo P(1) is true.\n\nStep 2: assume P(k) is true for some positive integer k:\nΣ_(r=1)^k 1/(r(r + 1)) = k/(k + 1).\n\nStep 3: show that P(k + 1) is then true.\nΣ_(r=1)^(k+1) 1/(r(r + 1)) = k/(k + 1) + 1/((k + 1)(k + 2))\n= [k(k + 2) + 1]/((k + 1)(k + 2))\n= (k² + 2k + 1)/((k + 1)(k + 2))\n= (k + 1)²/((k + 1)(k + 2))\n= (k + 1)/(k + 2)\n= (k + 1)/((k + 1) + 1).\nThis is P(k + 1).\n\nConclusion: P(1) is true, and P(k) true implies P(k + 1) true. By the principle of mathematical induction, the result holds for all positive integers n."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Find the value b for which the equation bx² + bx + 1 = 0 to have equal roots. [04 marks]",
+    "options": [],
+    "modelAnswer": "For equal roots, the discriminant is zero: b² − 4ac = 0.\nHere a = b, the coefficient of x is b, and c = 1:\nb² − 4(b)(1) = 0\nb(b − 4) = 0\nb = 0 or b = 4.\n\nIf b = 0, the equation becomes 1 = 0, which is not a quadratic and has no roots, so b = 0 is rejected.\nTherefore b = 4. (The equation 4x² + 4x + 1 = (2x + 1)² = 0 has the equal roots x = −½.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Logarithms",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Find the set of values of y for which 9^(y+5) = 5^(y+9). [10 marks]",
+    "options": [],
+    "modelAnswer": "Take logarithms of both sides:\n(y + 5) log 9 = (y + 9) log 5\ny log 9 + 5 log 9 = y log 5 + 9 log 5\ny(log 9 − log 5) = 9 log 5 − 5 log 9\ny = (9 log 5 − 5 log 9)/(log 9 − log 5).\n\nUsing log 5 = 0.69897 and log 9 = 0.95424:\nNumerator = 9(0.69897) − 5(0.95424) = 6.29073 − 4.77120 = 1.51953\nDenominator = 0.95424 − 0.69897 = 0.25527\ny = 1.51953/0.25527 ≈ 5.95.\n\nThe equation has a single solution: the solution set is {y : y ≈ 5.95} (more precisely, y = 5.9525)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Polynomials",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) The expression ax² + bx + c is divisible by (x − 1), has a remainder 2 when divided by (x + 1), and has a reminder of 8 when divided by (x − 2). Find the values of a, b and c. Hence factorize the expression completely. [10 marks]",
+    "options": [],
+    "modelAnswer": "Let f(x) = ax² + bx + c. By the remainder theorem:\nDivisible by (x − 1): f(1) = 0, so a + b + c = 0 ...(1)\nRemainder 2 with (x + 1): f(−1) = 2, so a − b + c = 2 ...(2)\nRemainder 8 with (x − 2): f(2) = 8, so 4a + 2b + c = 8 ...(3)\n\n(1) − (2): 2b = −2, so b = −1.\nThen (1) gives a + c = 1 ...(4)\nand (3) gives 4a − 2 + c = 8, so 4a + c = 10 ...(5)\n(5) − (4): 3a = 9, so a = 3, and c = 1 − 3 = −2.\n\na = 3, b = −1, c = −2, so f(x) = 3x² − x − 2.\n\nFactorise: (x − 1) is a factor, and 3x² − x − 2 = (x − 1)(3x + 2).\nCheck: (x − 1)(3x + 2) = 3x² + 2x − 3x − 2 = 3x² − x − 2 ✓"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Partial Fractions",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Resolve (x+1)/((x−1)(x−2)(x+3)) into partial fractions. Hence, obtain its binomial expansion up to the term in x². [08 marks]",
+    "options": [],
+    "modelAnswer": "(x + 1)/((x − 1)(x − 2)(x + 3)) = A/(x − 1) + B/(x − 2) + C/(x + 3)\nx + 1 = A(x − 2)(x + 3) + B(x − 1)(x + 3) + C(x − 1)(x − 2)\n\nx = 1: 2 = A(−1)(4), so A = −1/2.\nx = 2: 3 = B(1)(5), so B = 3/5.\nx = −3: −2 = C(−4)(−5), so C = −1/10.\n\n(x + 1)/((x − 1)(x − 2)(x + 3)) = −1/(2(x − 1)) + 3/(5(x − 2)) − 1/(10(x + 3)).\n\nBinomial expansion (for |x| < 1):\n−1/(2(x − 1)) = (1/2)(1 − x)⁻¹ = (1/2)(1 + x + x² + ...) = 1/2 + x/2 + x²/2\n3/(5(x − 2)) = −(3/10)(1 − x/2)⁻¹ = −(3/10)(1 + x/2 + x²/4 + ...) = −3/10 − 3x/20 − 3x²/40\n−1/(10(x + 3)) = −(1/30)(1 + x/3)⁻¹ = −(1/30)(1 − x/3 + x²/9 − ...) = −1/30 + x/90 − x²/270\n\nAdd:\nConstant: 1/2 − 3/10 − 1/30 = (15 − 9 − 1)/30 = 1/6\nx: 1/2 − 3/20 + 1/90 = (90 − 27 + 2)/180 = 65/180 = 13/36\nx²: 1/2 − 3/40 − 1/270 = (540 − 81 − 4)/1080 = 455/1080 = 91/216\n\n(x + 1)/((x − 1)(x − 2)(x + 3)) ≈ 1/6 + (13/36)x + (91/216)x², valid for |x| < 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) If α and β are the roots of the equation ax² + bx + 1 = 0, form the equation whose roots are 1/(α+2β) and 1/(β+2α) in terms of a and b. [08 marks]",
+    "options": [],
+    "modelAnswer": "α + β = −b/a, αβ = 1/a.\n\nLet P = (α + 2β)(β + 2α) = αβ + 2α² + 2β² + 4αβ = 2(α² + β²) + 5αβ.\nSince α² + β² = (α + β)² − 2αβ:\nP = 2(α + β)² − 4αβ + 5αβ = 2(α + β)² + αβ = 2b²/a² + 1/a = (2b² + a)/a².\n\nSum of the new roots:\n1/(α + 2β) + 1/(β + 2α) = [(β + 2α) + (α + 2β)]/P = 3(α + β)/P = 3(−b/a) × a²/(2b² + a) = −3ab/(2b² + a).\n\nProduct of the new roots:\n1/P = a²/(2b² + a).\n\nRequired equation: x² − (sum)x + product = 0\nx² + [3ab/(2b² + a)]x + a²/(2b² + a) = 0\nMultiply by (2b² + a):\n(2b² + a)x² + 3abx + a² = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) If one of the roots of equation x² + px + q = 0 is twice the other, prove that 2p² = 9q. [04marks]",
+    "options": [],
+    "modelAnswer": "Let the roots be α and 2α.\nSum of roots: α + 2α = 3α = −p, so α = −p/3.\nProduct of roots: α × 2α = 2α² = q.\n\nSubstitute α = −p/3:\n2(−p/3)² = q\n2p²/9 = q\n2p² = 9q, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) Find the roots of the equation z⁵ + 1 = 0, where z = x + iy. [10marks]",
+    "options": [],
+    "modelAnswer": "z⁵ = −1. In polar form, −1 = cos(π + 2kπ) + i sin(π + 2kπ), where k is an integer.\n\nBy De Moivre's theorem:\nz = cos((2k + 1)π/5) + i sin((2k + 1)π/5), k = 0, 1, 2, 3, 4.\n\nk = 0: z = cos 36° + i sin 36° = 0.809 + 0.588i\nk = 1: z = cos 108° + i sin 108° = −0.309 + 0.951i\nk = 2: z = cos 180° + i sin 180° = −1\nk = 3: z = cos 252° + i sin 252° = −0.309 − 0.951i\nk = 4: z = cos 324° + i sin 324° = 0.809 − 0.588i\n\nThe five roots lie equally spaced (72° apart) on the unit circle. They include the one real root, z = −1, and two pairs of complex conjugates."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Given that z = r(cos θ + i sin θ), show that zⁿ = rⁿ(cos nθ + i sin nθ). [10marks]",
+    "options": [],
+    "modelAnswer": "Proof by mathematical induction for positive integers n (De Moivre's theorem).\n\nStep 1: n = 1. z¹ = r(cos θ + i sin θ) = r¹(cos 1θ + i sin 1θ). True.\n\nStep 2: assume the result is true for n = k: zᵏ = rᵏ(cos kθ + i sin kθ).\n\nStep 3: for n = k + 1:\nzᵏ⁺¹ = zᵏ × z = rᵏ(cos kθ + i sin kθ) × r(cos θ + i sin θ)\n= rᵏ⁺¹[cos kθ cos θ + i cos kθ sin θ + i sin kθ cos θ + i² sin kθ sin θ]\n= rᵏ⁺¹[(cos kθ cos θ − sin kθ sin θ) + i(sin kθ cos θ + cos kθ sin θ)]\nUsing the compound angle formulae:\n= rᵏ⁺¹[cos(k + 1)θ + i sin(k + 1)θ].\nSo the result is true for n = k + 1.\n\nConclusion: it is true for n = 1, and true for n = k + 1 whenever it is true for n = k. By induction, zⁿ = rⁿ(cos nθ + i sin nθ) for all positive integers n."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) (i) If z₁ = 1/(1+i), z₂ = 1/(1−i), find the value of z₁² − z₂² in the form z = x + iy.\n(ii) Simplify x² − 1/x², given that x = 1/(1+i√3). [12marks]",
+    "options": [],
+    "modelAnswer": "(i) z₁ = 1/(1 + i) = (1 − i)/((1 + i)(1 − i)) = (1 − i)/2.\nz₂ = 1/(1 − i) = (1 + i)/2.\nz₁² = (1 − i)²/4 = (1 − 2i + i²)/4 = −2i/4 = −i/2.\nz₂² = (1 + i)²/4 = 2i/4 = i/2.\nz₁² − z₂² = −i/2 − i/2 = −i, i.e., z = 0 − i (x = 0, y = −1).\n\n(ii) x = 1/(1 + i√3), so 1/x = 1 + i√3.\n1/x² = (1 + i√3)² = 1 + 2√3 i + 3i² = −2 + 2√3 i.\nx = (1 − i√3)/((1 + i√3)(1 − i√3)) = (1 − i√3)/4.\nx² = (1 − i√3)²/16 = (1 − 2√3 i − 3)/16 = (−2 − 2√3 i)/16 = (−1 − √3 i)/8.\n\nx² − 1/x² = (−1 − √3 i)/8 − (−2 + 2√3 i)\n= −1/8 + 2 − (√3/8)i − 2√3 i\n= 15/8 − (17√3/8)i."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Given that sin⁻¹x + cos⁻¹(x√3) = π/2, find the value of x. [08 marks]",
+    "options": [],
+    "modelAnswer": "Let sin⁻¹x = θ, so x = sin θ.\nThen cos⁻¹(x√3) = π/2 − θ, so x√3 = cos(π/2 − θ) = sin θ = x.\n\nx√3 = x\nx(√3 − 1) = 0\nx = 0.\n\nCheck: sin⁻¹0 + cos⁻¹0 = 0 + π/2 = π/2 ✓"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Using the expressions for cos (A + B), sin (A + B), obtain an expression for tan (A + B). Hence find the value of A + B if tan A = 5 and tan B = 1. [10marks]",
+    "options": [],
+    "modelAnswer": "tan(A + B) = sin(A + B)/cos(A + B) = (sin A cos B + cos A sin B)/(cos A cos B − sin A sin B).\nDivide the numerator and denominator by cos A cos B:\ntan(A + B) = (sin A/cos A + sin B/cos B)/(1 − (sin A/cos A)(sin B/cos B))\ntan(A + B) = (tan A + tan B)/(1 − tan A tan B).\n\nWith tan A = 5 and tan B = 1:\ntan(A + B) = (5 + 1)/(1 − 5 × 1) = 6/(−4) = −3/2.\n\nTaking A and B as acute angles: A = tan⁻¹5 = 78.69° and B = tan⁻¹1 = 45°, so A + B = 123.69°.\n(Check: tan 123.69° = −1.5 ✓; it lies in the second quadrant because tan(A + B) is negative while A + B < 180°.)\nA + B ≈ 123.7°."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Express 12 sin x − 5 cos x in terms of R sin (x − α) and hence solve the equation 12 sin x − 5 cos x = 13 for 0° ≤ x ≤ 360°. [10marks]",
+    "options": [],
+    "modelAnswer": "R sin(x − α) = R sin x cos α − R cos x sin α.\nComparing with 12 sin x − 5 cos x:\nR cos α = 12 and R sin α = 5.\n\nR = √(12² + 5²) = √169 = 13.\ntan α = 5/12, so α = 22.62°.\n\n12 sin x − 5 cos x = 13 sin(x − 22.62°).\n\nSolve 13 sin(x − 22.62°) = 13:\nsin(x − 22.62°) = 1.\nFor 0° ≤ x ≤ 360°, x − 22.62° lies between −22.62° and 337.38°, and the only angle in this range with sine 1 is 90°.\nx − 22.62° = 90°, so x = 112.62° (≈ 112.6°)."
+  }
+]

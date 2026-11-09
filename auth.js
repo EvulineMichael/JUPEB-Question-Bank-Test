@@ -14,6 +14,7 @@ document.getElementById('sidebar-overlay').classList.remove('is-open');
   }
   
   window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+  window.userExams = ['jupeb', 'ijmb'];   // test both exams locally
   
   if (typeof initJUPEBApp === 'function') {
     initJUPEBApp();
@@ -31,6 +32,7 @@ if (sessionStorage.getItem('jupeb_guest') === 'true') {
     renderSidebarUser({ name: "Guest User", isPremium: false, photoURL: null });
     
     window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+    window.userExams = ['jupeb'];
     
     if (typeof showDashboard === 'function') showDashboard();
     if (typeof initJUPEBApp === 'function') initJUPEBApp();
@@ -43,6 +45,21 @@ function toggleAccessInfo() {
   } else {
     info.style.display = 'none';
   }
+}
+
+// ===== EXAM ACCESS =====
+// A student's record can hold exams: ["jupeb"], ["ijmb"] or ["jupeb", "ijmb"].
+// Students added before IJMB existed have no list, so they count as JUPEB only.
+function getUserExams(userData) {
+  const list = userData && Array.isArray(userData.exams)
+    ? userData.exams.filter(e => e === 'jupeb' || e === 'ijmb')
+    : [];
+  return list.length ? list : ['jupeb'];
+}
+
+// true if the signed-in student has paid for this exam ('jupeb' or 'ijmb')
+function hasExam(exam) {
+  return Array.isArray(window.userExams) && window.userExams.includes(exam);
 }
 
 
@@ -61,20 +78,9 @@ auth.onAuthStateChanged(async (user) => {
     if (doc.exists) {
       const userData = doc.data();
 
-      // Check expiry — unchanged
-      if (userData.expiry_date) {
-        const expiryDate = new Date(userData.expiry_date);
-        const today = new Date();
-        if (today > expiryDate) {
-          document.getElementById('auth-status').innerHTML =
-            `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-              <p>⏰ <strong>Access expired</strong></p>
-              <p>Your access expired on ${userData.expiry_date}. Please renew.</p>
-            </div>`;
-          auth.signOut();
-          return;
-        }
-      }
+      // Access is lifetime, so there is no expiry check any more.
+      // Which exams this student has paid for (see getUserExams above).
+      window.userExams = getUserExams(userData);
 
       function revealDashboard() {
         const loginEl = document.getElementById('login-screen');

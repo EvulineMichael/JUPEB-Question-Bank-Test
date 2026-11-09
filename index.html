@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JUPEB Question Bank</title>
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
 <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="welcome.css">
+<link rel="stylesheet" href="exam-mode.css">
+ <link rel="stylesheet" href="topic-counts.css">
 
 <!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
@@ -117,7 +122,7 @@
     <header class="home-top">
       <div class="home-brand">
         <img src="images/jupeb-icon.png" alt="" width="40" height="40">
-        <span>JUPEB Question Bank</span>
+        <span data-site-name>JUPEB Question Bank</span>
       </div>
       <div class="home-top-actions">
         <button class="home-signin-top" onclick="signInWithGoogle()">Sign in</button>
@@ -143,6 +148,15 @@
           <p>Every JUPEB year from 2015 to 2026, organised by subject, topic and year.</p>
           <div class="home-chips">
             <span>🧪 Chemistry</span><span>⚛️ Physics</span><span>📐 Maths</span><span>🧬 Biology</span><span>✝️ CRS</span><span>☪️ IRS</span><span>📖 Literature</span><span>💰 Economics</span><span>🏛️ Government</span>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--amber">
+          <span class="home-eyebrow">New · IJMB</span>
+          <h2>IJMB past questions</h2>
+          <p>Essay questions with step-by-step model answers. Get IJMB on its own, or JUPEB and IJMB together.</p>
+          <div class="home-chips">
+            <span>🧬 Biology</span><span>⚛️ Physics</span><span>➕ More subjects coming</span>
           </div>
         </article>
 
@@ -206,14 +220,15 @@
 
       <div class="home-price">
         <span class="home-price-amount">₦5,000</span>
-        <span class="home-price-note">one payment · lifetime access</span>
+        <span class="home-price-note">per exam · lifetime access</span>
       </div>
+      <p class="home-price-bundle">JUPEB + IJMB together: <strong>₦8,000</strong></p>
 
       <ul class="home-perks">
-        <li>Lifetime access, one payment</li>
-        <li>All 9 subjects, 2015–2026</li>
+        <li>JUPEB, IJMB, or both</li>
+        <li>All 9 JUPEB subjects, 2015–2026</li>
         <li>Every answer explained</li>
-        <li>Timed quizzes and weak-topic tracking</li>
+        <li>Lifetime access, one payment</li>
       </ul>
 
       <button class="home-btn home-btn--primary" id="home-get-access" onclick="toggleAccessInfo()">Get access</button>
@@ -226,8 +241,14 @@
       <!-- How to get access (opened by the Get access button) -->
       <div id="access-info" class="home-access" style="display:none;">
         <h3>How to get access</h3>
+        <p class="home-exam-pick-label">Which exam do you want?</p>
+        <div class="home-exam-pick" id="home-exam-pick" role="radiogroup" aria-label="Choose your exam">
+          <button type="button" role="radio" class="is-on" aria-checked="true" data-exam="JUPEB" data-price="₦5,000">JUPEB<span>₦5,000</span></button>
+          <button type="button" role="radio" aria-checked="false" data-exam="IJMB" data-price="₦5,000">IJMB<span>₦5,000</span></button>
+          <button type="button" role="radio" aria-checked="false" data-exam="JUPEB + IJMB" data-price="₦8,000">Both<span>₦8,000</span></button>
+        </div>
         <ol class="home-steps">
-          <li><strong>Pay ₦5,000</strong> to Moniepoint <span class="home-mono">5282798033</span> (Michael Evuline).</li>
+          <li><strong>Pay <span id="home-pay-amount">₦5,000</span></strong> to Moniepoint <span class="home-mono">5282798033</span> (Michael Evuline).</li>
           <li><strong>Send your receipt and your Gmail address</strong> to us on WhatsApp. This is the Gmail you'll sign in with.</li>
           <li><strong>Sign in with that Gmail</strong> once we've activated you. That's it. Access is for life.</li>
         </ol>
@@ -240,14 +261,14 @@
     <section class="home-faq">
       <h3>Questions? Answers.</h3>
       <div class="home-faq-list">
-      <details class="home-faq-item"><summary>How much does it cost?</summary><p>₦5,000, paid once. You get lifetime access, with no subscription.</p></details>
-      <details class="home-faq-item"><summary>How do I get access?</summary><p>Pay ₦5,000, then send your receipt and your Gmail address to us on WhatsApp. We activate that Gmail, and you sign in with it. Tap "Get access" above for the details.</p></details>
-      <details class="home-faq-item"><summary>Which subjects and years are covered?</summary><p>Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government. Past questions run from 2015 to 2026, depending on the subject.</p></details>
+      <details class="home-faq-item"><summary>How much does it cost?</summary><p>₦5,000 per exam (JUPEB or IJMB), or ₦8,000 for both, paid once. You get lifetime access, with no subscription. Already have one exam? Add the other for ₦3,000.</p></details>
+      <details class="home-faq-item"><summary>How do I get access?</summary><p>Choose JUPEB, IJMB or both and pay, then send your receipt and your Gmail address to us on WhatsApp. We activate that Gmail, and you sign in with it. Tap "Get access" above for the details.</p></details>
+      <details class="home-faq-item"><summary>Which subjects and years are covered?</summary><p>JUPEB: Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, with past questions from 2015 to 2026 depending on the subject. IJMB: essay past questions with model answers, starting with Biology and Physics, with more subjects being added.</p></details>
       <details class="home-faq-item"><summary>Are the answers correct?</summary><p>Yes, but always cross-check with your textbook, because no answer bank is 100% perfect. If you spot a mistake, tell us and we fix it quickly.</p></details>
       <details class="home-faq-item"><summary>Does it work on my phone?</summary><p>Yes. It works on any phone, tablet or laptop, and you can add it to your home screen and open it like an app.</p></details>
       <details class="home-faq-item"><summary>Can I use it on more than one device?</summary><p>Yes. Just sign in with the same Gmail.</p></details>
       <details class="home-faq-item"><summary>I paid but I can't sign in.</summary><p>Sign in with the exact Gmail you sent us with your receipt. If it still doesn't work, message us on WhatsApp and we'll sort it out.</p></details>
-      <details class="home-faq-item"><summary>Is this the official JUPEB website?</summary><p>No. JUPEB Question Bank is an independent study tool and is not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB).</p></details>
+      <details class="home-faq-item"><summary>Is this the official JUPEB or IJMB website?</summary><p>No. <span data-site-name>JUPEB Question Bank</span> is an independent study tool. It is not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB).</p></details>
       </div>
     </section>
 
@@ -487,17 +508,6 @@
   <p style="color:var(--text-secondary);">Your detailed progress will appear here.</p>
 </div>
 
-<div class="app-screen" id="settings-screen" style="display:none;padding:40px;">
-  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
-  <h2 style="color:var(--text-primary);">⚙️ Settings</h2>
-  <p style="color:var(--text-secondary);">Settings options will appear here.</p>
-</div>
-
-<div class="app-screen" id="help-screen" style="display:none;padding:40px;">
-  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
-  <h2 style="color:var(--text-primary);">❓ Help & Support</h2>
-  <p style="color:var(--text-secondary);">Help resources will appear here.</p>
-</div>
 <!-- Subject Picker Overlay -->
 <div class="subject-picker" id="subject-picker" aria-hidden="true">
   <div class="subject-picker-backdrop" id="subject-picker-backdrop"></div>
@@ -602,7 +612,9 @@
 <!-- ===== WELCOME STEP =====
      Asks every student once: name, subjects, school, and (only if they didn't come
      through a teacher's link) how they heard about us.
- -->
+
+     Paste once as a DIRECT child of <body>, directly ABOVE the Footer comment line.
+     Not inside login-screen or any other screen. -->
 <div class="welcome-overlay" id="welcome-overlay" aria-hidden="true">
   <div class="welcome-card" role="dialog" aria-labelledby="welcome-title">
     <div class="welcome-head">
@@ -611,14 +623,23 @@
       <p>Tell us a little about you so we can set things up for you. It takes 20 seconds.</p>
     </div>
 
+    <div id="welcome-exam-wrap" hidden>
+      <div class="welcome-label">Which exam are you writing?</div>
+      <div class="welcome-exams" id="welcome-exams" role="radiogroup" aria-label="Which exam are you writing?">
+        <button type="button" role="radio" aria-checked="false" data-exams="jupeb">JUPEB</button>
+        <button type="button" role="radio" aria-checked="false" data-exams="ijmb">IJMB</button>
+        <button type="button" role="radio" aria-checked="false" data-exams="jupeb,ijmb">Both</button>
+      </div>
+    </div>
+
     <label class="welcome-label" for="welcome-name">What should we call you?</label>
     <input class="welcome-input" id="welcome-name" maxlength="40" autocomplete="given-name">
 
     <div class="welcome-label">Which subjects are you taking? <span class="welcome-hint">Pick all that apply</span></div>
     <div class="welcome-subjects" id="welcome-subjects"></div>
 
-    <label class="welcome-label" for="welcome-school">Your school or JUPEB centre</label>
-    <input class="welcome-input" id="welcome-school" maxlength="80" placeholder="e.g. University of Lagos JUPEB centre">
+    <label class="welcome-label" for="welcome-school">Your school or study centre</label>
+    <input class="welcome-input" id="welcome-school" maxlength="80" placeholder="e.g. University of Lagos">
 
     <div id="welcome-source-wrap" hidden>
       <label class="welcome-label" for="welcome-source">How did you hear about us?</label>
@@ -647,15 +668,15 @@
 <footer class="app-footer">
     <div class="footer-content">
         <div class="footer-top">
-            <span class="footer-tagline">Helping you ace JUPEB, one question at a time...</span>
+            <span class="footer-tagline">Helping you ace JUPEB and IJMB, one question at a time...</span>
         </div>
         <div class="footer-bottom">
             <div class="footer-left">
-                <span class="footer-brand">JUPEB Question Bank</span>
+                <span class="footer-brand" data-site-name>JUPEB Question Bank</span>
                 <span class="footer-version desktop-only">v2.0</span>
             </div>
             <div class="footer-center">
-                <span class="footer-copyright">&copy; 2026 JUPEB Question Bank</span>
+                <span class="footer-copyright">&copy; 2026 <span data-site-name>JUPEB Question Bank</span></span>
                 <span class="footer-dot desktop-only">•</span>
                 <span class="footer-updated desktop-only">Updated: August 1, 2026</span>
             </div>
@@ -669,7 +690,7 @@
         </div>
         <div class="footer-disclaimer">
         <p style="font-size:0.8rem;">⚠️ Answers may not be 100% accurate. Always cross-check with your textbooks and research tools.</p>
-        <p style="margin-bottom:4px;">Disclaimer: Not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB)</p>
+        <p style="margin-bottom:4px;">Disclaimer: Not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB)</p>
 </div>
     </div>
 </footer>
@@ -681,6 +702,7 @@
 <script src="firebase-config.js"></script>
 <script src="topic-resources.js"></script>
 <script src="script.js"></script>
+<script src="exam-mode.js"></script>
 <script src="auth.js"></script>
 <script src="home-screen.js"></script>
      <script src="welcome.js"></script>

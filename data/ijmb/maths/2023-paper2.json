@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Differentiate tan⁻¹(1 − x²) cos 3x. [04marks]",
+    "options": [],
+    "modelAnswer": "Let y = tan⁻¹(1 − x²) × cos 3x. Use the product rule.\n\nd/dx[tan⁻¹u] = (1/(1 + u²)) du/dx. With u = 1 − x², du/dx = −2x, so:\nd/dx[tan⁻¹(1 − x²)] = −2x/(1 + (1 − x²)²) = −2x/(x⁴ − 2x² + 2).\n\nd/dx[cos 3x] = −3 sin 3x.\n\ndy/dx = cos 3x × (−2x/(1 + (1 − x²)²)) + tan⁻¹(1 − x²) × (−3 sin 3x)\n= −2x cos 3x/(x⁴ − 2x² + 2) − 3 sin 3x tan⁻¹(1 − x²)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Evaluate lim_(x→−1) (x³ + 1)/(x² − 1). [04marks]",
+    "options": [],
+    "modelAnswer": "Substituting x = −1 gives 0/0, so factorise.\n\nx³ + 1 = (x + 1)(x² − x + 1) (sum of two cubes)\nx² − 1 = (x + 1)(x − 1)\n\n(x³ + 1)/(x² − 1) = (x² − x + 1)/(x − 1), for x ≠ −1.\n\nlim_(x→−1) (x² − x + 1)/(x − 1) = (1 + 1 + 1)/(−1 − 1) = 3/(−2) = −3/2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Solve the equation y(1 + x²)dy + (1 + y²)dx = 0 [05marks]",
+    "options": [],
+    "modelAnswer": "Separate the variables by dividing by (1 + x²)(1 + y²):\ny dy/(1 + y²) = −dx/(1 + x²).\n\nIntegrate both sides:\n½ ln(1 + y²) = −tan⁻¹x + C.\n\nGeneral solution: ln(1 + y²) + 2 tan⁻¹x = A (where A = 2C),\nor equivalently 1 + y² = B e^(−2tan⁻¹x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Find the direction cosines of the vector i − 2j − k [03marks]",
+    "options": [],
+    "modelAnswer": "|v| = √(1² + (−2)² + (−1)²) = √6.\n\nDirection cosines (each component divided by |v|):\nl = 1/√6, m = −2/√6, n = −1/√6\n(≈ 0.408, −0.816, −0.408).\nCheck: l² + m² + n² = 1/6 + 4/6 + 1/6 = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Evaluate, ∫₀¹ x²e^(x³) dx [04marks]",
+    "options": [],
+    "modelAnswer": "Substitute u = x³, so du = 3x² dx and x² dx = ⅓ du.\nLimits: when x = 0, u = 0; when x = 1, u = 1.\n\n∫₀¹ x²e^(x³) dx = ⅓∫₀¹ eᵘ du = ⅓[eᵘ]₀¹ = ⅓(e − 1) ≈ 0.573."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Applications of Differentiation",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) If a body moves according to the law S = e³ᵗ − 9te⁻ᵗ − 4tcos t, find the velocity and acceleration at t = 0 sec [08marks]",
+    "options": [],
+    "modelAnswer": "Velocity: v = dS/dt.\nd/dt(e³ᵗ) = 3e³ᵗ\nd/dt(−9te⁻ᵗ) = −9e⁻ᵗ + 9te⁻ᵗ (product rule)\nd/dt(−4t cos t) = −4cos t + 4t sin t (product rule)\nv = 3e³ᵗ − 9e⁻ᵗ + 9te⁻ᵗ − 4cos t + 4t sin t.\n\nAt t = 0: v = 3 − 9 + 0 − 4 + 0 = −10 units per second.\n\nAcceleration: a = dv/dt.\na = 9e³ᵗ + 9e⁻ᵗ + (9e⁻ᵗ − 9te⁻ᵗ) + 4sin t + (4sin t + 4t cos t)\n= 9e³ᵗ + 18e⁻ᵗ − 9te⁻ᵗ + 8sin t + 4t cos t.\n\nAt t = 0: a = 9 + 18 − 0 + 0 + 0 = 27 units per second squared."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Find ∫e⁻²ˣ cos 3xdx. [12marks]",
+    "options": [],
+    "modelAnswer": "Let I = ∫e⁻²ˣ cos 3x dx. Integrate by parts twice.\n\nFirst: u = e⁻²ˣ, dv = cos 3x dx, so du = −2e⁻²ˣ dx and v = ⅓ sin 3x.\nI = ⅓e⁻²ˣ sin 3x + ⅔∫e⁻²ˣ sin 3x dx.\n\nSecond: u = e⁻²ˣ, dv = sin 3x dx, so du = −2e⁻²ˣ dx and v = −⅓ cos 3x.\n∫e⁻²ˣ sin 3x dx = −⅓e⁻²ˣ cos 3x − ⅔∫e⁻²ˣ cos 3x dx = −⅓e⁻²ˣ cos 3x − ⅔I.\n\nSubstitute back:\nI = ⅓e⁻²ˣ sin 3x + ⅔(−⅓e⁻²ˣ cos 3x − ⅔I)\nI = ⅓e⁻²ˣ sin 3x − (2/9)e⁻²ˣ cos 3x − (4/9)I\n(13/9)I = ⅓e⁻²ˣ sin 3x − (2/9)e⁻²ˣ cos 3x\nI = (9/13)[⅓e⁻²ˣ sin 3x − (2/9)e⁻²ˣ cos 3x]\n\n∫e⁻²ˣ cos 3x dx = (e⁻²ˣ/13)(3 sin 3x − 2 cos 3x) + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Applications of Integration",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Find the area of the region bounded by the curves y = x² − 2x and y = 2x − x². [10marks]",
+    "options": [],
+    "modelAnswer": "Points of intersection: x² − 2x = 2x − x²\n2x² − 4x = 0\n2x(x − 2) = 0, so x = 0 or x = 2.\n(The points are (0, 0) and (2, 0).)\n\nBetween x = 0 and x = 2, the curve y = 2x − x² lies above y = x² − 2x (e.g., at x = 1: 1 against −1).\n\nArea = ∫₀² [(2x − x²) − (x² − 2x)] dx = ∫₀² (4x − 2x²) dx\n= [2x² − (2/3)x³]₀²\n= 8 − 16/3\n= 8/3 square units (≈ 2.67)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Given that cos y = y/x, find d²y/dx² at the point (1,0). [10marks]",
+    "options": [],
+    "modelAnswer": "Note: the point (1, 0) does not lie on the curve as printed: at x = 1, y = 0, cos y = 1 but y/x = 0. The question probably contains a misprint. The working below applies the method to the equation as printed and evaluates the result at x = 1, y = 0 as instructed.\n\nWrite the equation as x cos y = y and differentiate implicitly:\ncos y − x sin y (dy/dx) = dy/dx\ndy/dx (1 + x sin y) = cos y\ndy/dx = cos y/(1 + x sin y).\n\nAt x = 1, y = 0: dy/dx = cos 0/(1 + 0) = 1.\n\nDifferentiate dy/dx = N/D, with N = cos y and D = 1 + x sin y, using the quotient rule:\nd²y/dx² = (D × dN/dx − N × dD/dx)/D²\ndN/dx = −sin y (dy/dx)\ndD/dx = sin y + x cos y (dy/dx)\n\nAt x = 1, y = 0, dy/dx = 1:\nN = 1, D = 1, dN/dx = 0, dD/dx = 0 + 1 × 1 × 1 = 1\nd²y/dx² = (1 × 0 − 1 × 1)/1² = −1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Differentiate from first principle y = sin x cos x. [10marks]",
+    "options": [],
+    "modelAnswer": "y = sin x cos x = ½ sin 2x.\n\nf(x + h) − f(x) = ½[sin(2x + 2h) − sin 2x].\nUsing sin A − sin B = 2cos((A + B)/2) sin((A − B)/2):\nsin(2x + 2h) − sin 2x = 2cos(2x + h) sin h.\nSo f(x + h) − f(x) = cos(2x + h) sin h.\n\ndy/dx = lim_(h→0) [f(x + h) − f(x)]/h = lim_(h→0) cos(2x + h) × (sin h/h).\n\nSince lim_(h→0) (sin h)/h = 1:\ndy/dx = cos 2x (= cos²x − sin²x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Applications of Differentiation",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Find a better approximation to the root of the equation eˣ − 3x + 1 = 0 if x₀ = 0.000 is an initial approximation and f′(x₀) ≠ 0 up to 3 iterations. [10marks]",
+    "options": [],
+    "modelAnswer": "Newton–Raphson method: xₙ₊₁ = xₙ − f(xₙ)/f′(xₙ).\nf(x) = eˣ − 3x + 1, f′(x) = eˣ − 3.\n\nIteration 1: f(0) = 1 − 0 + 1 = 2; f′(0) = 1 − 3 = −2.\nx₁ = 0 − 2/(−2) = 1.000.\n\nIteration 2: f(1) = e − 3 + 1 = 0.7183; f′(1) = e − 3 = −0.2817.\nx₂ = 1 − 0.7183/(−0.2817) = 1 + 2.5496 = 3.550.\n\nIteration 3: f(3.550) = e^3.550 − 10.649 + 1 = 25.16; f′(3.550) = e^3.550 − 3 = 31.81.\nx₃ = 3.550 − 25.16/31.81 = 2.759.\n\nNote: the iterations do not settle down, because the equation as printed has no real root. f(x) = eˣ − 3x + 1 has its minimum where f′(x) = 0, i.e., at x = ln 3, and there f(ln 3) = 3 − 3 ln 3 + 1 ≈ 0.704, which is positive. So f(x) > 0 for all x, and the graph never crosses the x-axis. The equation is probably misprinted; it is not possible to tell what was intended."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) Solve the equation (x² sec x tan x + x sec x)dx = xydy given that y(π) = 0. [10 marks]",
+    "options": [],
+    "modelAnswer": "Divide both sides by x:\n(x sec x tan x + sec x) dx = y dy.\n\nThe left side is an exact derivative: d/dx(x sec x) = sec x + x sec x tan x (product rule).\nSo integrating both sides:\nx sec x = y²/2 + C.\n\nUse y(π) = 0: π sec π = 0 + C, and sec π = −1, so C = −π.\n\nx sec x = y²/2 − π\ny² = 2x sec x + 2π, i.e., y² = 2(x sec x + π)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Show that the point P = 2i − 3j + 4k lies on the line r = i − 2j + k + t(i − j + 3k). Let A = 3i − 5j + 3k. Show that AP is perpendicular to i − j + 3k, hence find the distance of the given line from A. [10marks]",
+    "options": [],
+    "modelAnswer": "P on the line: r = (1 + t)i + (−2 − t)j + (1 + 3t)k.\nFor P, 1 + t = 2 gives t = 1. Check the other components: −2 − 1 = −3 ✓ and 1 + 3(1) = 4 ✓.\nSo P = 2i − 3j + 4k lies on the line (at t = 1).\n\nAP = P − A = (2 − 3)i + (−3 + 5)j + (4 − 3)k = −i + 2j + k.\n\nAP · (i − j + 3k) = (−1)(1) + (2)(−1) + (1)(3) = −1 − 2 + 3 = 0.\nThe dot product is zero, so AP is perpendicular to the direction i − j + 3k of the line.\n\nSince P is on the line and AP is perpendicular to it, AP is the shortest distance from A to the line:\nDistance = |AP| = √((−1)² + 2² + 1²) = √6 ≈ 2.45 units."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a). The position vectors of the vertices of triangle PQR are 2i + 3j − 5k, −3i − 7j + 10k and −3i − 5j + 10k, respectively. Find the position vectors of the points S and T on PQ and PR, respectively such that PS/QS = PT/RT = 1/2. Show that ST ∥ QR. [12marks]",
+    "options": [],
+    "modelAnswer": "P = 2i + 3j − 5k, Q = −3i − 7j + 10k, R = −3i − 5j + 10k.\n\nPS : SQ = 1 : 2, so S divides PQ internally in the ratio 1 : 2:\nS = (2P + Q)/3 = [(4 − 3)i + (6 − 7)j + (−10 + 10)k]/3 = ⅓i − ⅓j + 0k.\n\nPT : TR = 1 : 2, so T divides PR internally in the ratio 1 : 2:\nT = (2P + R)/3 = [(4 − 3)i + (6 − 5)j + (−10 + 10)k]/3 = ⅓i + ⅓j + 0k.\n\nST = T − S = 0i + ⅔j + 0k.\nQR = R − Q = (−3 + 3)i + (−5 + 7)j + (10 − 10)k = 0i + 2j + 0k.\n\nST = ⅓ QR, so ST is a scalar multiple of QR. Therefore ST ∥ QR (and ST is one-third as long as QR)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) For the triangle PQR in part (a) above, calculate the cosine of angle Q and hence the area of the triangle. [08marks]",
+    "options": [],
+    "modelAnswer": "At Q, use the vectors QP and QR:\nQP = P − Q = (2 + 3)i + (3 + 7)j + (−5 − 10)k = 5i + 10j − 15k.\nQR = R − Q = 0i + 2j + 0k.\n\nQP · QR = (5)(0) + (10)(2) + (−15)(0) = 20.\n|QP| = √(25 + 100 + 225) = √350 = 5√14.\n|QR| = 2.\n\ncos Q = 20/(5√14 × 2) = 2/√14 = √14/7 ≈ 0.535.\n\nsin Q = √(1 − cos²Q) = √(1 − 4/14) = √(10/14) = √(5/7).\n\nArea = ½|QP||QR| sin Q = ½ × 5√14 × 2 × √(5/7) = 5√10 ≈ 15.8 square units.\n(Check: QP × QR = 30i + 0j + 10k, with magnitude √1000 = 10√10, and ½ × 10√10 = 5√10.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a). Solve the equation x² dy/dx = x² + 2xy + y², given that y(1) = 0. [12marks]",
+    "options": [],
+    "modelAnswer": "Divide by x²: dy/dx = 1 + 2(y/x) + (y/x)². The equation is homogeneous.\n\nLet y = vx, so dy/dx = v + x dv/dx:\nv + x dv/dx = 1 + 2v + v²\nx dv/dx = v² + v + 1.\n\nSeparate the variables:\ndv/(v² + v + 1) = dx/x.\n\nComplete the square: v² + v + 1 = (v + ½)² + ¾.\n∫dv/((v + ½)² + (√3/2)²) = (2/√3) tan⁻¹((2v + 1)/√3).\n\nSo (2/√3) tan⁻¹((2v + 1)/√3) = ln x + C.\n\nUse y(1) = 0, so v = 0 when x = 1:\n(2/√3) tan⁻¹(1/√3) = 0 + C, so C = (2/√3)(π/6) = π/(3√3).\n\nSubstitute v = y/x:\n(2/√3) tan⁻¹((2y + x)/(√3 x)) = ln x + π/(3√3).\n\nMaking y the subject:\ny = (x/2)[√3 tan((√3/2) ln x + π/6) − 1]."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b). Find the equation of the curve through (0, π) for which the normal at any point (x, y) has the slope − sin y eˣ and y(0) = π. [08marks]",
+    "options": [],
+    "modelAnswer": "The slope of the normal is −sin y · eˣ. The tangent is perpendicular to the normal, so its slope is the negative reciprocal:\ndy/dx = −1/(−sin y · eˣ) = 1/(eˣ sin y).\n\nSeparate the variables: sin y dy = e⁻ˣ dx.\nIntegrate: −cos y = −e⁻ˣ + C, i.e., cos y = e⁻ˣ + K.\n\nUse y(0) = π: cos π = e⁰ + K, so −1 = 1 + K and K = −2.\n\nEquation of the curve: cos y = e⁻ˣ − 2.\n(Since cos y ≥ −1, the curve exists only where e⁻ˣ ≥ 1, i.e., for x ≤ 0.)"
+  }
+]

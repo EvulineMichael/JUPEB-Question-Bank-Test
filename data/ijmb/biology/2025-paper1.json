@@ -1,0 +1,193 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "a) The following table presents data obtained from an experiment to determine the amount of biodiesel produced (ml/g of biomass) from the microalaga Scenedesmus cultured under varying nitrogen concentration. Each treatment was replicated ten (10) times.\nNitrogen Concentration in growth media (mg/L)\nUse the data in the table above to answer questions i to viii\ni. What is the range of the volume of biodiesel produced from each treatment (concentration of nitrogen)? 6mks\nii. What is the arithmetic mean volume of biodiesel produced from each treatment? 6mks\niii. Present the mean biodiesel produced from the treatments on a bar chart 8mks\niv. Define and calculate the median volume of biodiesel produced by each treatment? 6mks\nv. Based on the outcome of this experiment, what nitrogen concentration will you recommend for the commercial culture of Scenedesmus for biodiesel production and why? 2mks\nvi. Calculate the variance of the volume of biodiesel produced by the 2.94 x 10⁻³ treatment 4mks\nvii. Calculate the standard deviation of the volume of biodiesel produced by the 2.94 x 10⁻³ treatment 2mks\nviii. Calculate the standard error of the volume of biodiesel produced by the 2.94 x 10⁻³ treatment 2mks",
+    "dataTable": {
+      "headers": [
+        "Replication",
+        "0",
+        "0.73 × 10⁻³",
+        "1.47 × 10⁻³",
+        "2.20 × 10⁻³",
+        "2.94 × 10⁻³"
+      ],
+      "rows": [
+        [
+          "1",
+          "0.82",
+          "1.56",
+          "3.65",
+          "5.55",
+          "2.65"
+        ],
+        [
+          "2",
+          "0.75",
+          "0.97",
+          "4.11",
+          "5.99",
+          "2.88"
+        ],
+        [
+          "3",
+          "0.72",
+          "1.77",
+          "3.99",
+          "6.11",
+          "2.99"
+        ],
+        [
+          "4",
+          "0.45",
+          "1.61",
+          "3.56",
+          "6.55",
+          "3.11"
+        ],
+        [
+          "5",
+          "0.46",
+          "1.56",
+          "3.77",
+          "6.67",
+          "2.75"
+        ],
+        [
+          "6",
+          "0.35",
+          "1.77",
+          "3.89",
+          "6.21",
+          "2.85"
+        ],
+        [
+          "7",
+          "0.67",
+          "1.78",
+          "3.66",
+          "5.11",
+          "2.91"
+        ],
+        [
+          "8",
+          "0.55",
+          "1.99",
+          "3.45",
+          "6.57",
+          "2.31"
+        ],
+        [
+          "9",
+          "0.72",
+          "1.89",
+          "3.83",
+          "6.67",
+          "2.22"
+        ],
+        [
+          "10",
+          "0.85",
+          "1.55",
+          "3.91",
+          "6.33",
+          "2.45"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the paper prints 'microalaga'; this means microalga. Volumes are in ml/g of biomass; nitrogen concentrations are in mg/L.\n\n(i) Range = highest value − lowest value.\n0 mg/L: 0.85 − 0.35 = 0.50\n0.73 × 10⁻³ mg/L: 1.99 − 0.97 = 1.02\n1.47 × 10⁻³ mg/L: 4.11 − 3.45 = 0.66\n2.20 × 10⁻³ mg/L: 6.67 − 5.11 = 1.56\n2.94 × 10⁻³ mg/L: 3.11 − 2.22 = 0.89\n(The range can also be stated as the lowest to highest values, e.g., 0.35–0.85 for the 0 mg/L treatment.)\n\n(ii) Arithmetic mean: x̄ = Σx/n, with n = 10.\n0 mg/L: 6.34/10 = 0.634\n0.73 × 10⁻³ mg/L: 16.45/10 = 1.645\n1.47 × 10⁻³ mg/L: 37.82/10 = 3.782\n2.20 × 10⁻³ mg/L: 61.76/10 = 6.176\n2.94 × 10⁻³ mg/L: 27.12/10 = 2.712\n\n(iii) Bar chart:\n1. Draw the x-axis for nitrogen concentration (mg/L), with five equally spaced, equal-width bars, separated by gaps, labelled 0, 0.73 × 10⁻³, 1.47 × 10⁻³, 2.20 × 10⁻³ and 2.94 × 10⁻³.\n2. Draw the y-axis for mean volume of biodiesel (ml/g of biomass), from 0 to 7, using a suitable scale (e.g., 2 cm to 1 ml/g).\n3. Draw each bar to the height of its mean: 0.634, 1.645, 3.782, 6.176 and 2.712.\n4. Give the chart a title, e.g., 'Mean volume of biodiesel produced by Scenedesmus at different nitrogen concentrations', and label both axes with their units.\nThe chart shows the yield rising to a peak at 2.20 × 10⁻³ mg/L, then falling at 2.94 × 10⁻³ mg/L.\n\n(iv) The median is the middle value of a set of data arranged in order of size. With n = 10 (an even number), it is the mean of the 5th and 6th values.\n0 mg/L (ordered: 0.35, 0.45, 0.46, 0.55, 0.67, 0.72, 0.72, 0.75, 0.82, 0.85): (0.67 + 0.72)/2 = 0.695\n0.73 × 10⁻³ mg/L (0.97, 1.55, 1.56, 1.56, 1.61, 1.77, 1.77, 1.78, 1.89, 1.99): (1.61 + 1.77)/2 = 1.69\n1.47 × 10⁻³ mg/L (3.45, 3.56, 3.65, 3.66, 3.77, 3.83, 3.89, 3.91, 3.99, 4.11): (3.77 + 3.83)/2 = 3.80\n2.20 × 10⁻³ mg/L (5.11, 5.55, 5.99, 6.11, 6.21, 6.33, 6.55, 6.57, 6.67, 6.67): (6.21 + 6.33)/2 = 6.27\n2.94 × 10⁻³ mg/L (2.22, 2.31, 2.45, 2.65, 2.75, 2.85, 2.88, 2.91, 2.99, 3.11): (2.75 + 2.85)/2 = 2.80\n\n(v) Recommend 2.20 × 10⁻³ mg/L. It gave the highest mean biodiesel yield (6.176 ml/g), and the highest median (6.27 ml/g). Increasing the nitrogen further to 2.94 × 10⁻³ mg/L reduced the yield to 2.712 ml/g, so 2.20 × 10⁻³ mg/L is the best (optimum) of the concentrations tested.\n\n(vi) Variance of the 2.94 × 10⁻³ treatment, using s² = Σ(x − x̄)²/(n − 1), with x̄ = 2.712:\nx: 2.65, 2.88, 2.99, 3.11, 2.75, 2.85, 2.91, 2.31, 2.22, 2.45\nx − x̄: −0.062, 0.168, 0.278, 0.398, 0.038, 0.138, 0.198, −0.402, −0.492, −0.262\n(x − x̄)²: 0.0038, 0.0282, 0.0773, 0.1584, 0.0014, 0.0190, 0.0392, 0.1616, 0.2421, 0.0686\nΣ(x − x̄)² = 0.7998\ns² = 0.7998/9 = 0.0889 (ml/g)².\n(If the population formula Σ(x − x̄)²/n is used, the variance is 0.7998/10 = 0.0800.)\n\n(vii) Standard deviation: s = √s² = √0.0889 = 0.298 ml/g.\n(Population formula: √0.0800 = 0.283.)\n\n(viii) Standard error of the mean: SE = s/√n = 0.298/√10 = 0.298/3.162 = 0.094 ml/g.\n(Using the population standard deviation: 0.283/3.162 = 0.089.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "b) Write explanatory notes on the following statistical terms\nI. Continuous variables 1mk\nII. Methods of data collection 2mks\nIII. Pie Chart 2mk",
+    "options": [],
+    "modelAnswer": "(I) Continuous variables: variables that can take any value within a given range, including fractions and decimals, because they are measured rather than counted. Examples: height, mass, length of a leaf, temperature, volume of biodiesel. (In contrast, discrete variables take only whole-number values.)\n\n(II) Methods of data collection: the ways in which information is gathered for study.\n1. Direct observation, e.g., counting animals in a habitat or recording plant growth.\n2. Experimentation: measuring the results of controlled experiments, like the biodiesel experiment above.\n3. Sampling: e.g., using quadrats and transects for plants, or nets and traps for animals.\n4. Questionnaires and interviews.\n5. Secondary sources: existing records, publications and databases.\nPrimary data are collected directly by the investigator; secondary data come from existing sources.\n\n(III) Pie chart: a circular graph divided into sectors, in which each sector represents one category, and the size of the sector is proportional to that category's share of the total. The angle of each sector = (value/total) × 360°. It is useful for showing the proportions of the parts of a whole, e.g., the percentage composition of species in a community."
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Answer the following questions by providing the most appropriate response in the blank spaces. Write down your answers in the answer booklet. Spelling of single word answers and scientific terms must be correct to score. (20mks)\ni. The seedless vascular plants are generally referred to as ________\nii. A plastid that stores starch is called ________\niii. The arrangement of the calyx and corolla in the floral bud is known as ________\niv. ________ refers to the type of reproduction in algae in which the male and female gametes are morphologically identical\nv. The spores produced in ascomycotina are called ________\nvi. Rod shaped bacteria are called ________\nvii. The structure responsible for the absorption of water and nutrients in bryophytes is called ________\nviii. The extinct class of the pteridophyta is called ________\nix. Organisms lacking membrane bound organelles in their cells are referred to as ________\nx. The entire mass of hyphae in fungi is termed ________",
+    "options": [],
+    "modelAnswer": "(i) Pteridophytes\n(ii) Amyloplast (a type of leucoplast)\n(iii) Aestivation (praefloration)\n(iv) Isogamy\n(v) Ascospores\n(vi) Bacilli (singular: bacillus)\n(vii) Rhizoids\n(viii) Psilophytopsida (e.g., Rhynia). This depends on the classification used: some textbooks place the extinct forms in the order Psilophytales of the class Psilopsida.\n(ix) Prokaryotes\n(x) Mycelium"
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Ecology",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Give a brief explanation to the following terms:\ni. Synecology (5mks)\nii. Halophytes (5mks)\niii. Biological control (5mks)\niv. Pollution (5mks)",
+    "options": [],
+    "modelAnswer": "(i) Synecology: the branch of ecology that studies groups of organisms, i.e., communities and populations of different species living together, and how they interact with each other and with their environment. It covers, for example, the structure of communities, food chains and webs, competition, succession and energy flow in ecosystems. (In contrast, autecology studies a single species or individual in relation to its environment.)\n\n(ii) Halophytes: plants adapted to grow in saline (salty) habitats, such as salt marshes, coastal mudflats, mangrove swamps and salty deserts. Examples: mangroves (Rhizophora, Avicennia), Salicornia and Suaeda.\nAdaptations include:\n1. succulent leaves and stems, which store water and dilute the salt;\n2. salt glands, which excrete excess salt;\n3. a high concentration of solutes in their cells, so they can still absorb water from salty soil by osmosis;\n4. in mangroves, pneumatophores (breathing roots) for aeration in waterlogged mud, stilt (prop) roots for support, and vivipary (seeds germinate while still on the parent plant).\n\n(iii) Biological control: the control of pests (insects, weeds or disease organisms) by using their natural enemies, such as predators, parasites or pathogens, instead of chemical pesticides.\nExamples:\n1. Ladybird beetles feed on aphids.\n2. The parasitic wasp Epidinocarsis lopezi was introduced to control the cassava mealybug in Africa.\n3. The bacterium Bacillus thuringiensis kills caterpillars.\n4. Fish (e.g., Gambusia, Tilapia) eat mosquito larvae.\nAdvantages: it causes no chemical pollution, is often specific to the pest, and the pest does not develop resistance. Disadvantages: it acts slowly, and an introduced control organism may itself become a pest.\n\n(iv) Pollution: the release of harmful substances or energy (pollutants) into the environment (air, water or soil), usually by human activity, in amounts that harm living organisms or damage the environment.\nTypes and examples:\n1. Air pollution: smoke, carbon(II) oxide, sulphur(IV) oxide (which causes acid rain), and CFCs (which deplete ozone).\n2. Water pollution: sewage, oil spills, industrial effluents, and fertilizer run-off (which causes eutrophication).\n3. Soil (land) pollution: plastics, pesticides and heavy metals.\n4. Noise, heat (thermal) and radioactive pollution.\nControl: treating sewage and industrial waste before disposal, using cleaner fuels and technologies, recycling, and enforcing environmental laws."
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Structures, Morphology and Characteristics of Microorganisms",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "a. In a TABULAR FORM, present the differences between the viruses and bacteria 12mks",
+    "options": [],
+    "modelAnswer": "In the exam, set these out in two columns headed Viruses and Bacteria.\n\n1. Cellular nature:\nViruses: acellular (not made of cells).\nBacteria: unicellular, prokaryotic cells.\n\n2. Size:\nViruses: very small (about 20–300 nm); seen only with an electron microscope; pass through bacterial filters.\nBacteria: larger (about 0.5–5 μm); visible with a light microscope; retained by bacterial filters.\n\n3. Nucleic acid:\nViruses: contain either DNA or RNA, never both.\nBacteria: contain both DNA and RNA.\n\n4. Structure:\nViruses: a nucleic acid core surrounded by a protein coat (capsid), sometimes with an envelope.\nBacteria: a cell wall (of peptidoglycan), cell membrane, cytoplasm, ribosomes and a nucleoid; some have flagella, pili or a capsule.\n\n5. Ribosomes and enzymes:\nViruses: no ribosomes and no enzymes for metabolism.\nBacteria: have ribosomes (70S) and their own metabolic enzymes.\n\n6. Reproduction:\nViruses: reproduce only inside living host cells, using the host's machinery (replication).\nBacteria: reproduce on their own, by binary fission.\n\n7. Mode of life:\nViruses: obligate intracellular parasites.\nBacteria: free-living (saprophytic or autotrophic), parasitic, or symbiotic.\n\n8. Living outside a host:\nViruses: inert outside a host cell; can be crystallised.\nBacteria: carry out their life processes independently; cannot be crystallised.\n\n9. Growth on culture media:\nViruses: cannot be grown on non-living media; need living cells.\nBacteria: can be grown on non-living culture media (e.g., nutrient agar).\n\n10. Effect of antibiotics:\nViruses: not affected by antibiotics.\nBacteria: many are killed or inhibited by antibiotics.\n\n11. Examples:\nViruses: HIV, tobacco mosaic virus, influenza virus, bacteriophages.\nBacteria: Escherichia coli, Rhizobium, Bacillus, Streptococcus."
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "General Characteristics and Diversity of Plants",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "b. Write short notes on the types and range forms of lichens. 8mks",
+    "options": [],
+    "modelAnswer": "A lichen is a dual organism formed by a symbiotic association (mutualism) between a fungus (the mycobiont, usually an ascomycete) and a photosynthetic partner (the photobiont): a green alga (e.g., Trebouxia) or a cyanobacterium (e.g., Nostoc). The fungus provides shelter, water and minerals, and protects the alga from drying out. The alga makes food by photosynthesis for both partners.\n\nTypes (growth forms) of lichens, based on the form of the thallus:\n1. Crustose lichens: flat, crust-like thalli that are tightly attached to the substratum (rock or bark) over their whole lower surface, and cannot be removed without damaging it. Example: Graphis, Lecanora.\n2. Foliose lichens: leaf-like, lobed thalli, loosely attached to the substratum by rhizines, with distinct upper and lower surfaces. Example: Parmelia, Peltigera.\n3. Fruticose lichens: shrub-like, much-branched thalli, either erect or hanging, attached at a single point. Example: Usnea (old man's beard), Cladonia.\n(Other forms sometimes described are squamulose lichens, with small scale-like lobes, and leprose lichens, which are powdery.)\n\nRange (habitats and distribution): lichens are found almost everywhere on land, from the tropics to the polar regions and high mountains. They grow on bare rocks, tree bark, soil, walls and roofs, and are often pioneer organisms in succession on bare rock, where they help to form soil. They are very sensitive to air pollution, especially sulphur(IV) oxide, so they are used as indicators of air quality."
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Nutrition in Plants",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "a. What is photosynthesis? 5mks",
+    "options": [],
+    "modelAnswer": "Photosynthesis is the process by which green plants (and some other organisms, such as algae and certain bacteria) make their own food (glucose) from carbon(IV) oxide and water, using energy from sunlight absorbed by the green pigment chlorophyll. Oxygen is released as a by-product.\n\nOverall equation:\n6CO₂ + 6H₂O →(light energy, chlorophyll) C₆H₁₂O₆ + 6O₂\n\nIt takes place in the chloroplasts, mainly in the palisade cells of the leaf, in two stages:\n1. The light-dependent stage (in the thylakoids/grana): light energy splits water (photolysis), releasing oxygen, and produces ATP and reduced NADP.\n2. The light-independent stage, or Calvin cycle (in the stroma): ATP and reduced NADP are used to reduce carbon(IV) oxide to glucose.\n\nIt is the source of food and oxygen for almost all living things."
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Plant Tissues and Functions",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "b. Write concise notes on vascular tissues 15mks",
+    "options": [],
+    "modelAnswer": "Vascular tissues are the complex conducting tissues of higher plants (pteridophytes, gymnosperms and angiosperms). There are two: xylem and phloem. Together they form vascular bundles.\n\n1. Xylem: conducts water and dissolved mineral salts upwards from the roots to the leaves, and gives the plant mechanical support. It is made of four kinds of cells:\nVessels: long tubes formed from cells joined end to end, whose end walls have broken down. They are dead, with thick walls strengthened by lignin (in annular, spiral, scalariform, reticulate or pitted patterns). They are the main water-conducting elements in angiosperms.\nTracheids: long, dead, lignified cells with tapering ends and pits in their walls. They conduct water and give support, and are the main conducting cells in pteridophytes and gymnosperms.\nXylem fibres: dead, thick-walled cells that give support.\nXylem parenchyma: the only living cells of the xylem; they store food and help conduct water sideways.\n\n2. Phloem: conducts (translocates) manufactured food, mainly sucrose and amino acids, from the leaves to other parts of the plant (e.g., growing points and storage organs), in both directions. It is made of:\nSieve tubes: living cells joined end to end, with perforated end walls (sieve plates). They have no nucleus when mature, and carry food.\nCompanion cells: small, living cells with dense cytoplasm and a nucleus, next to each sieve tube element. They control its activities and supply energy for transport.\nPhloem parenchyma: stores food.\nPhloem fibres: give support.\n\nArrangement:\nIn the dicot stem, the vascular bundles are arranged in a ring, with phloem towards the outside, xylem towards the inside, and a cambium between them (an open bundle), which allows secondary growth.\nIn the monocot stem, the bundles are scattered and have no cambium (closed bundles).\nIn the root, xylem and phloem lie on alternate radii (a radial arrangement); in dicot roots, the xylem often forms a central star shape.\n\nFunctions of vascular tissue: transport of water, minerals and food; mechanical support (especially xylem); and, through the cambium, secondary growth (formation of wood)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "General Characteristics and Diversity of Plants",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Write explanatory note\na. Angiosperms 10mks\nb. Alternation of generation. 10mks",
+    "options": [],
+    "modelAnswer": "(a) Angiosperms\nAngiosperms are the flowering plants, the largest and most advanced group of plants. Their seeds are enclosed in an ovary, which develops into a fruit; the name means 'enclosed seed'.\n\nCharacteristics:\n1. They produce flowers, which are their reproductive organs. Flowers have sepals, petals, stamens (male) and carpels (female).\n2. Their ovules are enclosed in an ovary. After fertilisation, the ovules become seeds and the ovary becomes a fruit.\n3. They show double fertilisation, forming a diploid zygote and a triploid endosperm.\n4. The sporophyte is the dominant generation; the gametophytes are very reduced (the pollen grain is the male gametophyte, and the embryo sac is the female).\n5. They have well-developed vascular tissue: xylem with vessels, and phloem with sieve tubes and companion cells.\n6. They are pollinated mainly by insects, wind, birds or other animals.\n7. They are found in almost all habitats, and range from small herbs to large trees.\n\nClassification: they are divided into two classes:\nMonocotyledons: one cotyledon in the seed; leaves with parallel veins; scattered vascular bundles; fibrous roots; flower parts in threes. Examples: maize, rice, grasses, palms.\nDicotyledons: two cotyledons; net-veined leaves; vascular bundles in a ring; tap roots; flower parts in fours or fives. Examples: beans, hibiscus, mango.\n\nImportance: they provide food (cereals, fruits, vegetables), timber, fibres (cotton), medicines and beverages, and they are a major source of oxygen.\n\n(b) Alternation of generation\nAlternation of generations is the occurrence in the life cycle of a plant of two distinct generations that follow each other in turn:\n1. Gametophyte generation (haploid, n): produces gametes by mitosis. The gametes fuse at fertilisation to form a diploid zygote.\n2. Sporophyte generation (diploid, 2n): develops from the zygote, and produces haploid spores by meiosis. Each spore grows into a new gametophyte.\nThe cycle therefore alternates between a sexual (gametophyte) and an asexual (sporophyte) generation.\n\nIn different plant groups:\n1. Bryophytes (mosses and liverworts): the gametophyte is the dominant, independent, green plant. The sporophyte (foot, seta and capsule) is attached to the gametophyte and depends on it for food.\n2. Pteridophytes (ferns): the sporophyte is the dominant, independent plant. The gametophyte is a small, independent, short-lived prothallus.\n3. Seed plants (gymnosperms and angiosperms): the sporophyte is dominant. The gametophytes are very reduced and depend on the sporophyte.\n\nSignificance: meiosis in spore formation, and the fusion of gametes, produce genetic variation. Spores allow wide dispersal."
+  }
+]

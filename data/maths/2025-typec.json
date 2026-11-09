@@ -569,26 +569,26 @@
     "options": [],
     "modelAnswer": "(a)(i) Divide numerator and denominator by x⁴:\nlim (5 + 6/x - 1/x² + 4/x³ - 8/x⁴)/(15 + 4/x - 9/x² - 10/x⁴) = 5/15 = 1/3.\n\n(ii) Factor: x³ - 1/27 = (x - 1/3)(x² + x/3 + 1/9).\n\nlim (x - 1/3)(x² + x/3 + 1/9)/(x - 1/3)\n= lim(x² + x/3 + 1/9)\n= 1/9 + 1/9 + 1/9\n= 1/3.\n\n(b) Using first principle:\ndy/dx = lim_{h→0} [5(x+h)² - cos7(x+h) - (5x² - cos7x)]/h\n= lim [10xh + 5h² - cos(7x+7h) + cos7x]/h\n= 10x + lim [-2sin((14x+7h)/2)sin(-7h/2)]/h\n= 10x + 7sin7x.\n\n(c) Let u = cos(2x³ - 3x - 5).\n\ny = sin⁻¹u.\ndy/du = 1/√(1-u²).\ndu/dx = -sin(2x³-3x-5)(6x² - 3).\n\ndy/dx = -(6x² - 3)sin(2x³-3x-5)/√(1-cos²(2x³-3x-5))\n= -(6x² - 3)sin(2x³-3x-5)/|sin(2x³-3x-5)|\n= -(6x² - 3) for sin > 0."
   },
+ {
+  "subject": "Mathematics",
+  "year": 2025,
+  "category": "Correlation and Regression",
+  "type": "Essay",
+  "questionNumber": "5",
+  "question": "(a) The following represent the scores of students in a JUPEB entrance examination:\nScores: 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99\nFrequency: 1, 1, 3, 14, 20, 22, 12, 2\n(i) Construct a cumulative frequency table and draw the Ogive.\n(ii) Use your graph to determine the 50th percentile score.\n(iii) Suppose students scoring <40% will not be admitted and those scoring >85% get waiver. Estimate the number of students admitted without waiver.\n(b) 0.2% of bulbs produced are faulty. Find the probability that 5 out of 1000 bulbs would be faulty.\n(c) The random variable X has probability distribution: P(X=1)=0.1, P(X=2)=0.3, P(X=3)=0.2, P(X=4)=0.4.\n(i) Find the mean. (ii) Find Var(X).",
+  "options": [],
+  "modelAnswer": "(a)(i) Cumulative frequencies: 1, 2, 5, 19, 39, 61, 73, 75.\nOgive plotted with upper class boundaries.\n\n(ii) 50th percentile (median): N/2 = 37.5, in the 60-69 class.\nMedian ≈ 59.5 + ((37.5 - 19)/20) × 10 = 68.75 ≈ 69 marks. A reading from the ogive should be close to this.\n\n(iii) Students scoring ≥40 and ≤85:\n40-49: 3, 50-59: 14, 60-69: 20, 70-79: 22, 80-85: about 7 of the 12 in 80-89 (marks 80 to 85 are 6 of that class's 10 marks).\nTotal ≈ 3 + 14 + 20 + 22 + 7 = 66 students.\n\n(b) Poisson approximation: λ = np = 1000 × 0.002 = 2.\n\nP(X = 5) = e⁻² × 2⁵/5! = 0.1353 × 32/120 = 0.0361.\n\n(c)(i) E(X) = 1(0.1) + 2(0.3) + 3(0.2) + 4(0.4)\n= 0.1 + 0.6 + 0.6 + 1.6\n= 2.9.\n\n(ii) E(X²) = 1(0.1) + 4(0.3) + 9(0.2) + 16(0.4)\n= 0.1 + 1.2 + 1.8 + 6.4\n= 9.5.\n\nVar(X) = E(X²) - [E(X)]² = 9.5 - 8.41 = 1.09."
+},
   {
-    "subject": "Mathematics",
-    "year": 2025,
-    "category": "Correlation and Regression",
-    "type": "Essay",
-    "questionNumber": "5",
-    "question": "(a) The following represent the scores of students in a JUPEB entrance examination:\nScores: 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99\nFrequency: 1, 1, 3, 14, 20, 22, 12, 2\n(i) Construct a cumulative frequency table and draw the Ogive.\n(ii) Use your graph to determine the 50th percentile score.\n(iii) Suppose students scoring <40% will not be admitted and those scoring >85% get waiver. Estimate the number of students admitted without waiver.\n(b) 0.2% of bulbs produced are faulty. Find the probability that 5 out of 1000 bulbs would be faulty.\n(c) The random variable X has probability distribution: P(X=1)=0.1, P(X=2)=0.3, P(X=3)=0.2, P(X=4)=0.4.\n(i) Find the mean. (ii) Find Var(X).",
-    "options": [],
-    "modelAnswer": "(a)(i) Cumulative frequencies: 1, 2, 5, 19, 39, 61, 73, 75.\nOgive plotted with upper class boundaries.\n\n(ii) 50th percentile (median) from graph ≈ 67 marks.\n\n(iii) Students scoring ≥40 and ≤85:\n40-49: 3, 50-59: 14, 60-69: 20, 70-79: 22, 80-85: approximately 8 from the 12 in 80-89.\nTotal ≈ 3 + 14 + 20 + 22 + 8 = 67 students.\n\n(b) Poisson approximation: λ = np = 1000 × 0.002 = 2.\n\nP(X = 5) = e⁻² × 2⁵/5! = 0.1353 × 32/120 = 0.0361.\n\n(c)(i) E(X) = 1(0.1) + 2(0.3) + 3(0.2) + 4(0.4)\n= 0.1 + 0.6 + 0.6 + 1.6\n= 2.9.\n\n(ii) E(X²) = 1(0.1) + 4(0.3) + 9(0.2) + 16(0.4)\n= 0.1 + 1.2 + 1.8 + 6.4\n= 9.5.\n\nVar(X) = E(X²) - [E(X)]² = 9.5 - 8.41 = 1.09."
-  },
-  {
-    "subject": "Mathematics",
-    "year": 2025,
-    "category": "Significance Testing",
-    "type": "Essay",
-    "questionNumber": "6",
-    "question": "(a) Given data on price (x) and number of laptops sold (y):\nx: 10, 15, 20, 25, 30, 35, 40, 45\ny: 68, 61, 56, 52, 48, 37, 31, 25\n(i) Calculate the value of β if y = α + βx.\n(ii) Find the regression line of y on x.\n(iii) Predict the number of laptops sold when price is 28 naira.\n(b) f(x) = x/3 for 0 ≤ x ≤ 1 and f(x) = 2/3 - x/3 for 1 ≤ x ≤ 2. Show that f(x) is a probability density function.\n(c) A die is rolled 420 times with outcomes: 1:63, 2:66, 3:76, 4:73, 5:72, 6:79. Test whether the die is fair at α = 0.05 level of significance.",
-    "options": [],
-    "modelAnswer": "(a) n = 8.\n∑x = 220, ∑y = 378, ∑xy = 9075, ∑x² = 7100.\n\nβ = (8×9075 - 220×378)/(8×7100 - 220²)\n= (72600 - 83160)/(56800 - 48400)\n= -10560/8400\n= -1.257.\n\nα = (378 - (-1.257)(220))/8\n= (378 + 276.54)/8\n= 81.82.\n\nRegression line: y = 81.82 - 1.257x.\n\nFor x = 28:\ny = 81.82 - 1.257(28) = 81.82 - 35.20 = 46.62 ≈ 47 laptops.\n\n(b) ∫₀¹ x/3 dx = [x²/6]₀¹ = 1/6.\n\n∫₁² (2/3 - x/3)dx = [2x/3 - x²/6]₁²\n= (4/3 - 2/3) - (2/3 - 1/6)\n= 2/3 - 1/2\n= 1/6.\n\nTotal = 1/6 + 1/6 = 1/3.\n\nNote: The total is 1/3, not 1. This function is NOT a valid probability density function as given. It would need to be multiplied by 3 (normalized) to make the total area equal to 1.\n\n(c) H₀: die is fair.\n\nExpected frequency per face = 420/6 = 70.\n\nχ² = Σ(O-E)²/E\n= (63-70)²/70 + (66-70)²/70 + (76-70)²/70 + (73-70)²/70 + (72-70)²/70 + (79-70)²/70\n= 49/70 + 16/70 + 36/70 + 9/70 + 4/70 + 81/70\n= 195/70\n= 2.786.\n\ndf = 5, χ²₀.₀₅ = 11.07.\n\n2.786 < 11.07 → Fail to reject H₀.\n\nThe die is fair."
-  },
+  "subject": "Mathematics",
+  "year": 2025,
+  "category": "Significance Testing",
+  "type": "Essay",
+  "questionNumber": "6",
+  "question": "(a) Given data on price (x) and number of laptops sold (y):\nx: 10, 15, 20, 25, 30, 35, 40, 45\ny: 68, 61, 56, 52, 48, 37, 31, 25\n(i) Calculate the value of β if y = α + βx.\n(ii) Find the regression line of y on x.\n(iii) Predict the number of laptops sold when price is 28 naira.\n(b) f(x) = x/3 for 0 ≤ x ≤ 1 and f(x) = 2/3 - x/3 for 1 ≤ x ≤ 2. Show that f(x) is a probability density function.\n(c) A die is rolled 420 times with outcomes: 1:63, 2:66, 3:76, 4:73, 5:72, 6:79. Test whether the die is fair at α = 0.05 level of significance.",
+  "options": [],
+  "modelAnswer": "(a) n = 8.\n∑x = 220, ∑y = 378, ∑xy = 9115, ∑x² = 7100.\n\nβ = (8×9115 - 220×378)/(8×7100 - 220²)\n= (72920 - 83160)/(56800 - 48400)\n= -10240/8400\n= -1.219.\n\nα = (378 - (-1.219)(220))/8\n= (378 + 268.19)/8\n= 80.77.\n\nRegression line: y = 80.77 - 1.219x.\n\nFor x = 28:\ny = 80.77 - 1.219(28) = 80.77 - 34.13 = 46.64 ≈ 47 laptops.\n\n(b) ∫₀¹ x/3 dx = [x²/6]₀¹ = 1/6.\n\n∫₁² (2/3 - x/3)dx = [2x/3 - x²/6]₁²\n= (4/3 - 2/3) - (2/3 - 1/6)\n= 2/3 - 1/2\n= 1/6.\n\nTotal = 1/6 + 1/6 = 1/3.\n\nNote: The total is 1/3, not 1. This function is NOT a valid probability density function as given. It would need to be multiplied by 3 (normalized) to make the total area equal to 1.\n\n(c) H₀: die is fair.\n\nExpected frequency per face = 420/6 = 70.\n\nχ² = Σ(O-E)²/E\n= (63-70)²/70 + (66-70)²/70 + (76-70)²/70 + (73-70)²/70 + (72-70)²/70 + (79-70)²/70\n= 49/70 + 16/70 + 36/70 + 9/70 + 4/70 + 81/70\n= 195/70\n= 2.786.\n\ndf = 5, χ²₀.₀₅ = 11.07.\n\n2.786 < 11.07 → Fail to reject H₀.\n\nThere is no evidence that the die is unfair."
+},
   {
     "subject": "Mathematics",
     "year": 2025,
@@ -600,13 +600,13 @@
     "modelAnswer": "(a) r(t) = ∫v dt = (t³ - 4t)î + (t² + 4t)ĵ + (8t² - 3t³)k̂.\n\nr(2) = (8 - 8)î + (4 + 8)ĵ + (32 - 24)k̂ = 12ĵ + 8k̂.\n\n|r| = √(0 + 144 + 64) = √208 = 14.42 m.\n\na(t) = dv/dt = 6tî + 2ĵ + (16 - 18t)k̂.\n\na(2) = 12î + 2ĵ + (16 - 36)k̂ = 12î + 2ĵ - 20k̂.\n\n|a| = √(144 + 4 + 400) = √548 = 23.41 m/s².\n\n(b) At steady velocity, net force = 0.\n\nThe tractive force equals the frictional force = 300 N.\n\n(c) v = mt² + nt + c.\n\nt = 0, v = 8 → c = 8.\n\nt = 2, v = 4 → 4m + 2n + 8 = 4 → 4m + 2n = -4 → 2m + n = -2.\n\nMinimum at t = 2: dv/dt = 2mt + n = 4m + n = 0 → n = -4m.\n\nSubstitute: 2m - 4m = -2 → -2m = -2 → m = 1, n = -4.\n\nv = t² - 4t + 8.\n\na = dv/dt = 2t - 4.\n\nAt t = 4: a = 8 - 4 = 4 m/s²."
   },
   {
-    "subject": "Mathematics",
-    "year": 2025,
-    "category": "Newtonian Mechanics",
-    "type": "Essay",
-    "questionNumber": "8",
-    "question": "(a) A metal door of dimension 50 cm × 150 cm has a mass 18 kg and is hinged along one 150 cm side.\n(i) moment of inertia about xx, the axis through the centre of gravity.\n(ii) moment of inertia about AB, the line of hinge.\n(iii) radius of gyration about AB.\n(b) A car engine of mass 80 kg hangs from two chains fixed to a crane making angles 40° and 60° with the horizontal frame. Find the tension in each chain.\n(c) A particle of mass 0.8 kg is moving with constant velocity (cî + 2cĵ) m/s, where c is a positive constant. The particle receives an impulse of magnitude 3√10 Ns. Immediately after receiving the impulse the particle has velocity (2cî - cĵ) m/s. Find the value of c.",
-    "options": [],
-    "modelAnswer": "(a) Door dimensions: a = 0.5 m, b = 1.5 m, m = 18 kg.\n\n(i) I_xx = (1/12)m(a² + b²)\n= (1/12)(18)(0.25 + 2.25)\n= 1.5(2.5)\n= 3.75 kg m².\n\n(ii) Distance from centre to hinge = a/2 = 0.25 m.\n\nI_AB = I_xx + md²\n= 3.75 + 18(0.25)²\n= 3.75 + 1.125\n= 4.875 kg m².\n\n(iii) k_AB = √(I_AB/m) = √(4.875/18) = √0.2708 = 0.52 m.\n\n(b) Resolving horizontally:\nT₁cos40° = T₂cos60°.\nT₁(0.7660) = T₂(0.5).\nT₂ = 1.532T₁.\n\nVertically:\nT₁sin40° + T₂sin60° = 80 × 9.8 = 784.\nT₁(0.6428) + 1.532T₁(0.8660) = 784.\n0.6428T₁ + 1.3267T₁ = 784.\n1.9695T₁ = 784.\nT₁ = 398 N.\nT₂ = 1.532(398) = 610 N.\n\n(c) Initial momentum = 0.8(cî + 2cĵ).\nFinal momentum = 0.8(2cî - cĵ).\n\nImpulse = Change in momentum = 0.8[(2cî - cĵ) - (cî + 2cĵ)]\n= 0.8(cî - 3cĵ).\n\n|Impulse| = 0.8√(c² + 9c²) = 0.8c√10.\n\nGiven |Impulse| = 3√10:\n0.8c√10 = 3√10.\nc = 3/0.8 = 3.75."
-  }
+  "subject": "Mathematics",
+  "year": 2025,
+  "category": "Newtonian Mechanics",
+  "type": "Essay",
+  "questionNumber": "8",
+  "question": "(a) A metal door of dimension 50 cm × 150 cm has a mass 18 kg and is hinged along one 150 cm side.\n(i) moment of inertia about xx, the axis through the centre of gravity.\n(ii) moment of inertia about AB, the line of hinge.\n(iii) radius of gyration about AB.\n(b) A car engine of mass 80 kg hangs from two chains fixed to a crane making angles 40° and 60° with the horizontal frame. Find the tension in each chain.\n(c) A particle of mass 0.8 kg is moving with constant velocity (cî + 2cĵ) m/s, where c is a positive constant. The particle receives an impulse of magnitude 3√10 Ns. Immediately after receiving the impulse the particle has velocity (2cî - cĵ) m/s. Find the value of c.",
+  "options": [],
+  "modelAnswer": "(a) Door dimensions: a = 0.5 m, b = 1.5 m, m = 18 kg.\n\n(i) xx runs through the centre, parallel to the hinge, so only the 0.5 m width counts:\nI_xx = (1/12)ma²\n= (1/12)(18)(0.5)²\n= 0.375 kg m².\n\n(ii) Distance from xx to the hinge = a/2 = 0.25 m.\n\nI_AB = I_xx + md²\n= 0.375 + 18(0.25)²\n= 0.375 + 1.125\n= 1.5 kg m².\n\n(iii) k_AB = √(I_AB/m) = √(1.5/18) = √0.0833 = 0.29 m.\n\n(b) Resolving horizontally:\nT₁cos40° = T₂cos60°.\nT₁(0.7660) = T₂(0.5).\nT₂ = 1.532T₁.\n\nVertically:\nT₁sin40° + T₂sin60° = 80 × 9.8 = 784.\nT₁(0.6428) + 1.532T₁(0.8660) = 784.\n0.6428T₁ + 1.3267T₁ = 784.\n1.9695T₁ = 784.\nT₁ = 398 N.\nT₂ = 1.532(398) = 610 N.\n\n(c) Initial momentum = 0.8(cî + 2cĵ).\nFinal momentum = 0.8(2cî - cĵ).\n\nImpulse = Change in momentum = 0.8[(2cî - cĵ) - (cî + 2cĵ)]\n= 0.8(cî - 3cĵ).\n\n|Impulse| = 0.8√(c² + 9c²) = 0.8c√10.\n\nGiven |Impulse| = 3√10:\n0.8c√10 = 3√10.\nc = 3/0.8 = 3.75."
+}
 ]

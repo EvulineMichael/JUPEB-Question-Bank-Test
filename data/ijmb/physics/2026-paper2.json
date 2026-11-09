@@ -1,0 +1,334 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Assume an object of mass 2.22g is placed 7.5 mm in front of a large plane mirror. Find the image position and the nature of the image formed.",
+    "options": [],
+    "modelAnswer": "The mass of the object does not affect the image formed by a mirror.\n\nImage position: a plane mirror forms the image as far behind the mirror as the object is in front, so the image is 7.5 mm behind the mirror (15 mm from the object).\n\nNature of the image: virtual (it cannot be formed on a screen), upright (erect), the same size as the object (magnification = 1), and laterally inverted."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Briefly explain the term “ power of lens” . Two lenses of power +7.3 D and -9.6 D are placed in contact to each other. What is the focal length of the combination? Which type of lens is finally formed.",
+    "options": [],
+    "modelAnswer": "Power of a lens is a measure of its ability to converge or diverge light. It is the reciprocal of the focal length measured in metres: P = 1/f. The unit is the dioptre (D). Converging (convex) lenses have positive power; diverging (concave) lenses have negative power.\n\nFor lenses in contact, the powers add:\nP = P₁ + P₂ = +7.3 + (−9.6) = −2.3 D.\n\nFocal length: f = 1/P = 1/(−2.3) = −0.435 m (−43.5 cm).\n\nThe power and focal length are negative, so the combination behaves as a diverging (concave) lens."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "A ray of light strikes normally one of the face of Pyrex triangular glass prism of angle of refraction 30° and refractive index 1.41. Determine the angle of minimum deviation and the angle of refraction.",
+    "options": [],
+    "modelAnswer": "Here 'angle of refraction 30°' is taken as the refracting angle of the prism, A = 30°. The question asks for two different conditions, so both are worked out.\n\nAngle of minimum deviation D:\nn = sin((A + D)/2)/sin(A/2)\nsin((A + D)/2) = 1.41 × sin 15° = 1.41 × 0.2588 = 0.3649\n(A + D)/2 = 21.4°\nA + D = 42.8°, so D = 42.8° − 30° = 12.8°.\nAt minimum deviation, the angle of refraction inside the prism is r = A/2 = 15°.\n\nFor the ray striking the first face normally (angle of incidence 0°):\nIt enters without bending, so the angle of refraction at the first face is 0°.\nIt meets the second face at an angle of incidence equal to A = 30°.\nAt the second face: sin e = 1.41 × sin 30° = 0.705, so the angle of emergence e = 44.8°.\nThe deviation of this ray is 44.8° − 30° = 14.8°, which is greater than the minimum deviation, as expected."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) Write down the expression for an electrostatic potential energy in vacuum for three charges situated at the corner of an oblique triangle as shown in Figure 1. (b) If q₁ = 1μC, r₁ = 1mm, q₂ = 2.1μC, r₂ = 0.5mm and q₃ = 1μC, r₃ = 0.043mm. Find electrostatic potential energy in vacuum.",
+    "image": {
+      "src": "images/ijmb/physics/2026/phy-2026-paper2-4.png",
+      "alt": "Figure 1: triangle with charge q₁ at the top, q₂ at the bottom left and q₃ at the bottom right; sides labelled r₁ (q₁ to q₂) and r₂, r₃ on the other two sides"
+    },
+    "options": [],
+    "modelAnswer": "Figure 1: a triangle with charge q₁ at the top, q₂ at the bottom left and q₃ at the bottom right; side r₁ joins q₁ and q₂, and the other two sides are labelled r₃ (right side) and r₂ (bottom). These two subscripts are hard to read on the photo.\n\n(a) The total potential energy is the sum of the energies of each pair of charges:\nU = (1/(4πε₀)) × (q₁q₂/r₁₂ + q₂q₃/r₂₃ + q₁q₃/r₁₃).\nReading Figure 1 as r₁ = q₁ to q₂, r₂ = q₂ to q₃ and r₃ = q₁ to q₃:\nU = (1/(4πε₀)) × (q₁q₂/r₁ + q₂q₃/r₂ + q₁q₃/r₃).\n\n(b) Using 1/(4πε₀) = 9 × 10⁹ N m² C⁻²:\nq₁q₂/r₁ = (1 × 10⁻⁶ × 2.1 × 10⁻⁶)/(1 × 10⁻³) = 2.1 × 10⁻⁹\nq₂q₃/r₂ = (2.1 × 10⁻⁶ × 1 × 10⁻⁶)/(0.5 × 10⁻³) = 4.2 × 10⁻⁹\nq₁q₃/r₃ = (1 × 10⁻⁶ × 1 × 10⁻⁶)/(0.043 × 10⁻³) = 2.33 × 10⁻⁸\nSum = 2.96 × 10⁻⁸\nU = 9 × 10⁹ × 2.96 × 10⁻⁸ ≈ 266 J.\n\nNote: if the labels are the other way round (r₂ = q₁ to q₃ and r₃ = q₂ to q₃), then U = 9 × 10⁹ × (2.1 × 10⁻⁹ + 2.0 × 10⁻⁹ + 4.88 × 10⁻⁸) ≈ 476 J.\nAlso, sides of 1 mm, 0.5 mm and 0.043 mm cannot form a triangle (0.5 + 0.043 is less than 1), so one of the printed distances is probably a misprint. The answers above use the values as printed."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "A wire has a resistance R and resistivity ρ. What will be its resistance if the length of the wire is (i) doubled (ii) its diameter is halved?",
+    "options": [],
+    "modelAnswer": "R = ρl/A, with A = πd²/4. The resistivity ρ does not change, because it depends only on the material and temperature.\n\n(i) Length doubled (diameter unchanged): R is proportional to l, so the new resistance = 2R.\n\n(ii) Diameter halved (length unchanged): the area becomes π(d/2)²/4 = A/4. R is inversely proportional to A, so the new resistance = 4R.\n\n(If both changes are made together, the resistance becomes 2 × 4 = 8R.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "If ε₀ and μ₀ are the absolute permittivity and permeability of free space. then evaluate the expression Ω = 2/√(ε₀μ₀). State clearly its unit.",
+    "options": [],
+    "modelAnswer": "ε₀μ₀ = 8.85 × 10⁻¹² × 4π × 10⁻⁷ = 1.112 × 10⁻¹⁷ s² m⁻²\n√(ε₀μ₀) = 3.335 × 10⁻⁹ s m⁻¹\n1/√(ε₀μ₀) = 3.0 × 10⁸ m s⁻¹, which is the speed of light in free space, c.\n\nΩ = 2/√(ε₀μ₀) = 2c ≈ 6.0 × 10⁸ m s⁻¹.\n\nUnit: m s⁻¹ (metre per second), the unit of speed.\nCheck: ε₀ is in F m⁻¹ = C² N⁻¹ m⁻² and μ₀ is in N A⁻², so ε₀μ₀ has units C² A⁻² m⁻² = s² m⁻², and 1/√(ε₀μ₀) is in m s⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Two wires of the same length and of the same materials have different diameters, d₁ and d₂ (d₁ < d₂) determine which wire has greater (i) conductivity? (ii) Conductance?",
+    "options": [],
+    "modelAnswer": "(i) Conductivity: neither. Conductivity (σ = 1/ρ) is a property of the material only, so both wires have the same conductivity.\n\n(ii) Conductance: the wire of diameter d₂. Conductance G = 1/R = σA/l. With the same σ and l, G is proportional to the cross-sectional area A = πd²/4. Since d₂ > d₁, the thicker wire (d₂) has the greater conductance; G₂/G₁ = (d₂/d₁)²."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "a. (i) State the fundamental laws of conservation of electric charges. (ii) What will happened to a neutral body When it gains electrons? (b). write down the Gauss’ law ( without proof) for a closed surface enclosing a net charge q, the net electric flux Φ.",
+    "options": [],
+    "modelAnswer": "(a)(i) Law of conservation of electric charge: electric charge can neither be created nor destroyed. In an isolated system, the total (net) charge always remains constant; charge can only be transferred from one body to another.\n\n(ii) Electrons are negatively charged, so a neutral body that gains electrons becomes negatively charged. Its charge equals the number of electrons gained × (−1.6 × 10⁻¹⁹ C).\n\n(b) Gauss's law: the net electric flux through any closed surface equals the net charge enclosed by the surface divided by the permittivity of free space:\nΦ = q/ε₀ (or ∮E · dA = q/ε₀)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "An electromagnetic wave radiation of wavelength 1500 Å is incident on a metal surface. If the stopping potential is 4.4 volts, Calculate the maximum kinetic energy of the emitted electrons and the wok function of the metal in eV.",
+    "options": [],
+    "modelAnswer": "Note: 'wok function' means work function.\n\nMaximum kinetic energy: K.E._max = eV_s = 4.4 eV (= 4.4 × 1.6 × 10⁻¹⁹ = 7.04 × 10⁻¹⁹ J).\n\nPhoton energy: E = hc/λ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(1500 × 10⁻¹⁰) = 1.32 × 10⁻¹⁸ J = 1.32 × 10⁻¹⁸/(1.6 × 10⁻¹⁹) = 8.25 eV.\n\nWork function: φ = E − K.E._max = 8.25 − 4.4 = 3.85 eV."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "What is Thermonuclear energy? A heavy unstable nucleus is bombarded with a neutron and breaks in to two smaller parts which resulted in the released of 210 MeV and three neutrons are emitted.. The reaction process is ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3(¹₀n) + 210MeV . Explain this process whether it is a fission or fusion process.",
+    "options": [],
+    "modelAnswer": "Thermonuclear energy is the energy released when light nuclei fuse together (nuclear fusion) at extremely high temperatures, of millions of kelvin. The high temperature gives the nuclei enough kinetic energy to overcome their electrostatic repulsion and fuse. It is the source of the energy of the sun and stars.\n\nThe given process is nuclear fission. A heavy nucleus (uranium-235) absorbs a neutron and splits into two lighter nuclei of comparable mass (barium-141 and krypton-92), releasing about 210 MeV of energy and three neutrons. These neutrons can cause further fissions in a chain reaction.\nCheck that the equation balances: mass numbers 235 + 1 = 141 + 92 + 3(1) = 236; atomic numbers 92 + 0 = 56 + 36 + 0 = 92."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "a. (i) What do you understand by the term reflection of light wave? (ii). With the aid of ray diagram, explain the formation of image by a plane mirror. (iii) A light wave is incident on a triangular glsaa prism at an angle of 60°. If the reflected and the refracted waves are mutually perpendicular Sketch the ray diagram and calculate the refractive index of the material.",
+    "options": [],
+    "modelAnswer": "(i) Reflection of light is the bouncing back of light waves into the same medium when they strike a surface. It obeys the laws of reflection: the incident ray, the reflected ray and the normal all lie in the same plane, and the angle of incidence equals the angle of reflection.\n\n(ii) Ray diagram: draw a point object O in front of a plane mirror. Draw two rays from O striking the mirror, and reflect each so that the angle of reflection equals the angle of incidence. Extend the reflected rays backwards behind the mirror (dashed lines); they appear to come from a point I.\nThe reflected rays only appear to come from I, so the image is virtual. I is as far behind the mirror as O is in front. For an extended object, the image is upright, the same size and laterally inverted.\n\n(iii) Note: 'glsaa' means glass.\nSketch: draw the incident ray at 60° to the normal, the reflected ray at 60° on the other side of the normal, and the refracted ray inside the glass at angle r, with a 90° angle marked between the reflected and refracted rays.\nAlong the surface: 60° (reflected) + 90° + r = 180°, so r = 30°.\nn = sin i/sin r = sin 60°/sin 30° = 0.866/0.5 = 1.73.\n(This is Brewster's law: n = tan i = tan 60° = √3 = 1.73.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "b. (i).Assume the angle of minimum deviation for a prism of refractive index 1.75 is equal to the angle of prism. Calculate the angle of prism, given that sin x = 2sin(x/2)cos(x/2).\nii. Consider an astronomical telescope with an objective of focal length 108cm and an eyepiece of focal length 7cm. if the telescope is in its normal adjustment, calculate the angular magnification (magnifying power), the distance of the eye-ring from the eyepiece and the diameter of the eye-ring if the objective diameter is 50mm.",
+    "options": [],
+    "modelAnswer": "(i) n = sin((A + D)/2)/sin(A/2). With D = A:\nn = sin A/sin(A/2) = 2 sin(A/2)cos(A/2)/sin(A/2) = 2cos(A/2).\ncos(A/2) = n/2 = 1.75/2 = 0.875\nA/2 = 29.0°\nA = 57.9° (about 58°).\n\n(ii) Angular magnification in normal adjustment:\nM = f_o/f_e = 108/7 = 15.4.\n\nThe eye-ring is the image of the objective formed by the eyepiece. In normal adjustment, the objective is f_o + f_e = 108 + 7 = 115 cm from the eyepiece.\nUsing 1/f = 1/u + 1/v with f = 7 cm and u = 115 cm:\n1/v = 1/7 − 1/115 = (115 − 7)/805 = 108/805\nv = 7.45 cm.\nThe eye-ring is 7.45 cm behind the eyepiece.\n\nDiameter of the eye-ring = objective diameter × (v/u) = 50 × (7.45/115) = 3.24 mm.\n(Check: this also equals objective diameter/M = 50/15.4 = 3.24 mm.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "a. Study the diagrams in figure 2 and 3 as a guide to answer the following questions: (i). Recopy figure 2 and identify points A, B, C and D. Explain the nature of the object and image formed. (ii). From figure 3, copy the ray diagram and trace the ray to form either the image or object (explain your answer with reasons). Also discuss clearly their nature. (ii). Assume radius of curvature of the lens in figure 3 is 10 cm. if the image is 20 cm from the mirror. Find the nature of the image.",
+    "image": {
+      "src": "images/ijmb/physics/2026/phy-2026-paper2-12a.png",
+      "alt": "Figure 2: convex lens with upright object at A, points A and B left of the lens, C and D right, inverted image at D. Figure 3: convex lens with a small upright object inside the focal length and diverging refracted rays"
+    },
+    "options": [],
+    "modelAnswer": "Figure 2: a convex lens with an upright object at A, points A and B on the axis to the left of the lens, points C and D to the right, and an inverted image at D. Figure 3: a convex lens with a small upright object between the lens and the focal point on the left; the rays diverge after passing through the lens.\n\n(i) Points in figure 2:\nA: position of the object, beyond 2F (more than twice the focal length from the lens).\nB: the principal focus F on the object side.\nC: the principal focus F on the image side; the ray parallel to the axis passes through it after refraction.\nD: position of the image, between F and 2F on the image side.\nNature: the object is real and upright. The image is real (the rays actually meet there), inverted and diminished (smaller than the object).\n\n(ii) Figure 3: the object is inside the focal length of the convex lens. After passing through the lens, the rays diverge and never meet on the other side, so no real image forms. Extend the refracted rays backwards (dashed lines) to the object side; they meet above the axis, further from the lens than the object. This point is the image.\nNature: the image is virtual, upright (erect) and magnified, and on the same side of the lens as the object. The lens is acting as a magnifying glass.\n\n(ii, second part) Note: the question mixes 'lens' and 'mirror'. For a lens, the radius of curvature gives the focal length only if the refractive index is known.\nSign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a converging lens). Lens formula: 1/f = 1/u + 1/v; magnification m = v/u.\nTaking an equiconvex lens of glass (n = 1.5), the lens-maker's formula gives 1/f = (n − 1)(2/R) = 0.5 × 2/10, so f = 10 cm.\nThe image is virtual (as in figure 3), so v = −20 cm:\n1/u = 1/f − 1/v = 1/10 + 1/20 = 3/20, so u = 6.67 cm.\nMagnification m = 20/6.67 = 3.\nThe image is virtual, upright and magnified (3 times), on the same side as the object.\n(If instead f is taken as R/2 = 5 cm, as for a mirror: 1/u = 1/5 + 1/20 = 1/4, so u = 4 cm and m = 5. The image is still virtual, upright and magnified.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "b. (i ) Assume a ray of light travels from one face of triangular glass slab of thickness 12.73 cm and refractive index 1.66. If the angle of incidence is 44°, find the angle of refraction and the literal displacement of the emergent ray.( ii) if an object of mass 3.21 kg is placed 14.73 cm in front of a very long plane mirror. Find the nature of the image formed and the magnification produced",
+    "options": [],
+    "modelAnswer": "(i) Note: 'literal displacement' means lateral displacement, which applies to a parallel-sided (rectangular) slab. The slab is treated as parallel-sided.\n\nAngle of refraction: sin r = sin i/n = sin 44°/1.66 = 0.6947/1.66 = 0.4185, so r = 24.7°.\n\nLateral displacement: d = t sin(i − r)/cos r\n= 12.73 × sin(44° − 24.7°)/cos 24.7°\n= 12.73 × sin 19.3°/cos 24.7°\n= 12.73 × 0.330/0.908\n= 4.62 cm.\n\n(ii) The mass of the object does not affect the image.\nThe image is 14.73 cm behind the mirror. It is virtual, upright, the same size as the object and laterally inverted.\nMagnification = image distance/object distance = 14.73/14.73 = 1."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "a. (i).Distinguish between the following terms: (A) Electric charge and electric current, state clearly their mathematical relationships. (B) Charging by induction and charging by conduction. (ii). If the total charge entering a terminal is given by q = 3.7t³ + 0.09t . Find the current at t = 2.3 seconds. (iii) Consider two positively points charge separated at 100 cm apart repel each other with a force of 18 N. If the sum of charges is 1.9μc. Calculate their separate. You following identity may be useful: (a − b)² = (a + b)² − 4ab.",
+    "options": [],
+    "modelAnswer": "(i)(A) Electric charge (Q) is a property of matter that causes it to experience a force in an electric field. Its unit is the coulomb (C).\nElectric current (I) is the rate of flow of electric charge. Its unit is the ampere (A).\nRelationship: I = Q/t, or I = dQ/dt for a changing current; equivalently Q = It.\n\n(B) Charging by conduction (contact): a charged body touches a neutral conductor, and some charge flows onto it. The conductor gains a charge of the same sign as the charging body.\nCharging by induction: a charged body is brought near a conductor without touching it. Charges in the conductor separate; the conductor is earthed and then the earth connection is removed before the charged body is taken away. The conductor gains a charge of the opposite sign to the charging body, and the charging body loses none of its charge.\n\n(ii) I = dq/dt = 11.1t² + 0.09.\nAt t = 2.3 s: I = 11.1 × (2.3)² + 0.09 = 11.1 × 5.29 + 0.09 = 58.8 A.\n\n(iii) Note: 'their separate' means their separate charges, and 1.9μc means 1.9 μC.\nMethod: F = kq₁q₂/r², so q₁q₂ = Fr²/k = 18 × 1²/(9 × 10⁹) = 2.0 × 10⁻⁹ C².\nWith q₁ + q₂ = 1.9 × 10⁻⁶ C, the identity gives:\n(q₁ − q₂)² = (q₁ + q₂)² − 4q₁q₂ = (1.9 × 10⁻⁶)² − 4 × 2.0 × 10⁻⁹ = 3.61 × 10⁻¹² − 8.0 × 10⁻⁹.\nThis is negative, so there is no real solution: the printed data are inconsistent. Two charges adding up to only 1.9 μC can repel each other at 1 m with a force of at most about 8 × 10⁻³ N, not 18 N. One of the printed values is probably a misprint, and it is not possible to tell which. Students should show the method above."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "b (i) Briefly explain the terms inductor and inductance of inductor. (ii) Four inductors each of inductance 2mH, are connected in (A) series (B) parallel across a 10A a.c supply. In each case, draw the circuit diagram and calculate the equivalent inductance and the energy stored in the circuit. (iii). Calculate the e.m.f. induced in a coil of inductance 12 H by a current changing at the rate of 2.7 As⁻¹.",
+    "options": [],
+    "modelAnswer": "(i) An inductor is a coil of wire, often wound on an iron core, which opposes any change in the current flowing through it by inducing a back e.m.f. (self-induction).\nThe inductance (L) of an inductor is the e.m.f. induced in it per unit rate of change of current: L = E/(dI/dt), or equivalently L = NΦ/I. Its unit is the henry (H).\n\n(ii) Assumptions: no mutual inductance between the coils, and the 10 A is the current through the whole combination.\n(A) Series: draw the four inductors one after the other across the supply.\nL = 2 + 2 + 2 + 2 = 8 mH.\nEnergy stored: W = ½LI² = ½ × 8 × 10⁻³ × 10² = 0.40 J.\n(B) Parallel: draw the four inductors side by side, each connected across the supply.\n1/L = 1/2 + 1/2 + 1/2 + 1/2 = 2, so L = 0.5 mH.\nEnergy stored: W = ½LI² = ½ × 0.5 × 10⁻³ × 10² = 0.025 J.\n\n(iii) E = L × dI/dt = 12 × 2.7 = 32.4 V."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "a(i). Briefly explain the following terms: magnetic flux and magnetic flux density. Electromotive force (emf) and Magnetomotive force (mmf). (ii) If a conductor moves with a velocity of 15 ms⁻¹ at an 30° to a magnetic field produced between two square-faced poles of side length 2 cm. If the flux leaving a pole face is 5 μWb, find the magnitude of the induced e.m.f.",
+    "options": [],
+    "modelAnswer": "(i) Magnetic flux (Φ): the total number of magnetic field lines passing through a given area, Φ = BA cos θ. Unit: weber (Wb).\nMagnetic flux density (B): the magnetic flux per unit area perpendicular to the field, B = Φ/A. Unit: tesla (T) = Wb m⁻².\nElectromotive force (e.m.f.): the energy supplied per unit charge by a source (battery or generator) to drive current round an electric circuit. Unit: volt (V).\nMagnetomotive force (m.m.f.): the 'driving force' that sets up magnetic flux in a magnetic circuit, equal to the product of the current and the number of turns, mmf = NI. Unit: ampere-turn (A).\n\n(ii) Area of a pole face: A = (0.02)² = 4 × 10⁻⁴ m².\nFlux density: B = Φ/A = 5 × 10⁻⁶/(4 × 10⁻⁴) = 0.0125 T.\nThe length of conductor inside the field equals the side of the pole face: l = 0.02 m.\nInduced e.m.f.: E = Blv sin θ = 0.0125 × 0.02 × 15 × sin 30° = 0.0125 × 0.02 × 15 × 0.5 = 1.875 × 10⁻³ V (about 1.9 mV)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "b(i). Distinguish between reluctance and resistance. (ii) The following table 1 gives comparisons between Electrical and Magnetic circuit. Find the values of w, x, y, z in the table1. (III) Use figure 4 to find the equivalent conductance and current in the circuit.",
+    "image": {
+      "src": "images/ijmb/physics/2026/phy-2026-paper2-14b.png",
+      "alt": "Figure 4: 15 V supply with 2 Ω, 3 Ω and 2 Ω resistors in series along the top and 6 Ω, 6 Ω and 4 Ω resistors as shunts to the bottom wire"
+    },
+    "dataTable": {
+      "headers": [
+        "S/N",
+        "Electrical circuit",
+        "Magnetic circuit"
+      ],
+      "rows": [
+        [
+          "1",
+          "Emf",
+          "Mmf"
+        ],
+        [
+          "2",
+          "Current",
+          "X"
+        ],
+        [
+          "3",
+          "resistance",
+          "Y"
+        ],
+        [
+          "4",
+          "I = E/R",
+          "Z"
+        ],
+        [
+          "5",
+          "w",
+          "S = l/(μ₀μᵣA)"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Figure 4: a 15 V supply feeding a ladder network: 2 Ω, 3 Ω and 2 Ω resistors along the top wire, with 6 Ω, 6 Ω and 4 Ω resistors connected down to the bottom wire after each one.\n\n(i) Resistance is the opposition of an electric circuit to the flow of electric current, R = V/I = ρl/A. Unit: ohm (Ω).\nReluctance is the opposition of a magnetic circuit to the setting up of magnetic flux, S = mmf/Φ = l/(μ₀μᵣA). Unit: ampere-turn per weber (A Wb⁻¹).\nResistance dissipates energy as heat; reluctance does not.\n\n(ii)\nX = magnetic flux, Φ (corresponds to current).\nY = reluctance, S (corresponds to resistance).\nZ = Φ = mmf/S (corresponds to I = E/R).\nw = R = ρl/A = l/(σA) (resistance in terms of the dimensions; corresponds to S = l/(μ₀μᵣA)).\n\n(iii) Work from the far end of the ladder:\n2 Ω + 4 Ω = 6 Ω in series.\n6 Ω in parallel with 6 Ω: (6 × 6)/(6 + 6) = 3 Ω.\n3 Ω + 3 Ω = 6 Ω in series.\n6 Ω in parallel with 6 Ω = 3 Ω.\n2 Ω + 3 Ω = 5 Ω in series.\nEquivalent resistance R = 5 Ω.\nEquivalent conductance G = 1/R = 1/5 = 0.2 S.\nCurrent from the supply: I = V/R = 15/5 = 3 A."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "a. (i).State the factors upon which the resistivity of a given materials depend. (ii). Given two wires of same material and length have resistances 5 Ω and 3 Ω respectively. Find the ratio of radii of the two wires. (iii). A small concrete needle of diameter 2 mm and of length 100 m has a resistance of 0.5475 W at 20°C and 0.805 W at 150°C. Find the values of temperature coefficient of resistance, its resistance at 0°C and its resistivity at 0°C and 20°C.",
+    "options": [],
+    "modelAnswer": "(i) Resistivity depends on:\n1. The nature of the material (its atomic structure and number of free electrons).\n2. Temperature: for metals, resistivity increases with temperature.\n3. Impurities in the material: impurities increase resistivity.\nResistivity does not depend on the length or cross-sectional area of the sample.\n\n(ii) R = ρl/(πr²). With the same ρ and l, R is proportional to 1/r², so:\nr₁/r₂ = √(R₂/R₁) = √(3/5) = 0.775.\nThe ratio of radii is r₁ : r₂ = √3 : √5 ≈ 0.775 : 1 (the 5 Ω wire is the thinner one).\n\n(iii) Note: the resistances are printed in 'W'; this means ohms (Ω). The resistivity calculated below (about 1.7 × 10⁻⁸ Ω m) is that of copper, so 'concrete' is probably a misprint for copper.\n\nUsing R = R₀(1 + αθ):\n0.5475 = R₀(1 + 20α) ...(1)\n0.805 = R₀(1 + 150α) ...(2)\nDivide (2) by (1):\n0.805(1 + 20α) = 0.5475(1 + 150α)\n0.805 + 16.1α = 0.5475 + 82.125α\n0.2575 = 66.025α\nα = 3.90 × 10⁻³ °C⁻¹.\n\nResistance at 0°C: R₀ = 0.5475/(1 + 20 × 0.00390) = 0.5475/1.078 = 0.508 Ω.\n\nResistivity: ρ = RA/l, with A = π(1 × 10⁻³)² = 3.14 × 10⁻⁶ m² and l = 100 m.\nAt 0°C: ρ₀ = 0.508 × 3.14 × 10⁻⁶/100 = 1.60 × 10⁻⁸ Ω m.\nAt 20°C: ρ₂₀ = 0.5475 × 3.14 × 10⁻⁶/100 = 1.72 × 10⁻⁸ Ω m."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "b(i). Briefly explain the following terms, ( how are they connected in a given circuit): galvanometer, voltmeter, ammeter (ii) What is the conductance and current through a bulb rated at 100 W, 250 V d.c supply? Calculate the power if it is connected to a 200 V line?",
+    "options": [],
+    "modelAnswer": "(i) Galvanometer: a sensitive instrument for detecting and measuring very small currents. It is connected in series in the part of the circuit being tested, often as a null detector (e.g., in a Wheatstone bridge).\nVoltmeter: an instrument for measuring the potential difference between two points. It has a very high resistance, made by connecting a large resistance (multiplier) in series with a galvanometer. It is connected in parallel across the component.\nAmmeter: an instrument for measuring electric current. It has a very low resistance, made by connecting a small resistance (shunt) in parallel with a galvanometer. It is connected in series in the circuit.\n\n(ii) Resistance of the bulb: R = V²/P = 250²/100 = 625 Ω.\nConductance: G = 1/R = 1/625 = 1.6 × 10⁻³ S.\nCurrent: I = P/V = 100/250 = 0.4 A.\n\nOn a 200 V line, assuming the resistance stays the same:\nP = V²/R = 200²/625 = 64 W."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "a. (i). With the help of a circuit diagram, briefly explain the concepts of electromagnetic induction . Hence, State the laws of electromagnetic induction’ in words (both Faraday’s and Lenz’s laws). (ii). Calculate the induced e.m.f. in a coil of 200 turns when there is a change of flux of 0.025 Wb linking with it in 0.50 seconds.",
+    "options": [],
+    "modelAnswer": "(i) Electromagnetic induction is the production of an e.m.f. (and a current, if the circuit is closed) in a conductor when the magnetic flux linking it changes.\nCircuit diagram: draw a coil connected to a centre-zero galvanometer, with a bar magnet near one end of the coil. When the magnet is pushed into the coil, the galvanometer deflects one way; when it is pulled out, it deflects the other way; when it is held still, there is no deflection. A faster movement gives a larger deflection.\n\nFaraday's law: whenever the magnetic flux linking a circuit changes, an e.m.f. is induced in it. The magnitude of the induced e.m.f. is directly proportional to the rate of change of magnetic flux linkage: E = −N dΦ/dt.\nLenz's law: the direction of the induced current is always such that it opposes the change producing it. (This is the reason for the minus sign in Faraday's law.)\n\n(ii) E = N × ΔΦ/Δt = 200 × 0.025/0.50 = 10 V."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "b. A coil of resistance 5 ohm and inductance 0.120 H in series with a 100 μF capacitor, is connected to a 300 V, 50 Hz a.c. supply. Calculate: (i). the impedance and current flowing, in the circuit. Is the circuit inductive or capacitive? State your reason. (ii) The phase difference between the supply voltage and current, (iii) The resonant frequency.",
+    "options": [],
+    "modelAnswer": "(i) X_L = 2πfL = 2π × 50 × 0.120 = 37.7 Ω.\nX_C = 1/(2πfC) = 1/(2π × 50 × 100 × 10⁻⁶) = 31.8 Ω.\nImpedance: Z = √(R² + (X_L − X_C)²) = √(5² + (37.7 − 31.8)²) = √(25 + 34.4) = 7.71 Ω.\nCurrent: I = V/Z = 300/7.71 = 38.9 A.\nThe circuit is inductive, because the inductive reactance (37.7 Ω) is greater than the capacitive reactance (31.8 Ω). The current therefore lags behind the voltage.\n\n(ii) tan φ = (X_L − X_C)/R = 5.87/5 = 1.17, so φ = 49.6°.\nThe current lags the supply voltage by about 49.6°.\n\n(iii) f₀ = 1/(2π√(LC)) = 1/(2π√(0.120 × 100 × 10⁻⁶)) = 1/(2π × 3.46 × 10⁻³) = 45.9 Hz."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "a. (i) State and briefly discuss the four methods in which electrons can be ejected out of a metal surface. (ii) The equation for the energy of the nth state (Eₙ) of the electron in the hydrogen atom can be expressed (in eV) as: Eₙ = −me⁴/(8ε₀²h²n²). By substituting the values of the constants, find the value of Eₙ (in eV) in terms of n. what is name given to n in this equation? Hence, find the value of E₄ − E₂.\n(ii).From a sodium surface, light of wavelength 3125 Å and 3650 Å causes emission of electrons whose maximum kinetic energy is 2.128 eV and 1.595 eV, respectively. Use these information to determine Planck’s constant and the work function of sodium.(iii).Light of wavelength 2000 Å falls on a metallic surface. If the work function of the surface is 4.2 eV. What is the kinetic energy of the fastest photoelectrons emitted? Also calculate the stopping potential and the threshold wavelength for the metal.",
+    "options": [],
+    "modelAnswer": "Note: the paper labels two parts as (ii). Both are answered below, in order.\n\n(i) Four ways electrons can be ejected from a metal surface. In each, the electrons must gain at least the work function energy:\n1. Thermionic emission: the metal is heated to a high temperature, giving free electrons enough thermal energy to escape (e.g., the cathode of a cathode-ray tube).\n2. Photoelectric emission: light (or other electromagnetic radiation) of frequency above the threshold frequency falls on the metal; each photon gives its energy to one electron.\n3. Field emission: a very strong electric field at the surface pulls electrons out of the cold metal.\n4. Secondary emission: fast-moving electrons or other particles strike the metal surface and knock electrons out of it.\n\n(ii) Using the constants given (m = 9.0 × 10⁻³¹ kg, e = 1.6 × 10⁻¹⁹ C, ε₀ = 8.85 × 10⁻¹² F m⁻¹, h = 6.6 × 10⁻³⁴ J s):\nme⁴ = 9.0 × 10⁻³¹ × (1.6 × 10⁻¹⁹)⁴ = 5.90 × 10⁻¹⁰⁶\n8ε₀²h² = 8 × (8.85 × 10⁻¹²)² × (6.6 × 10⁻³⁴)² = 2.73 × 10⁻⁸⁸\nme⁴/(8ε₀²h²) = 2.16 × 10⁻¹⁸ J = 2.16 × 10⁻¹⁸/(1.6 × 10⁻¹⁹) = 13.5 eV\nSo Eₙ = −13.5/n² eV (about −13.6/n² eV with more precise constants).\nn is the principal quantum number.\nE₄ − E₂ = −13.5/16 − (−13.5/4) = 13.5 × (1/4 − 1/16) = 13.5 × 0.1875 = 2.53 eV.\n(This is the energy of the photon emitted when an electron drops from n = 4 to n = 2.)\n\n(ii, second part) Einstein's equation: hc/λ = φ + K.E._max.\nFor λ₁ = 3125 Å: hc/λ₁ = φ + 2.128 eV ...(1)\nFor λ₂ = 3650 Å: hc/λ₂ = φ + 1.595 eV ...(2)\nSubtract (2) from (1):\nhc(1/λ₁ − 1/λ₂) = 0.533 eV = 0.533 × 1.6 × 10⁻¹⁹ = 8.53 × 10⁻²⁰ J\n1/λ₁ − 1/λ₂ = 1/(3.125 × 10⁻⁷) − 1/(3.650 × 10⁻⁷) = 3.200 × 10⁶ − 2.740 × 10⁶ = 4.60 × 10⁵ m⁻¹\nhc = 8.53 × 10⁻²⁰/4.60 × 10⁵ = 1.85 × 10⁻²⁵ J m\nh = 1.85 × 10⁻²⁵/(3.0 × 10⁸) = 6.18 × 10⁻³⁴ J s.\nWork function, from (1): φ = hc/λ₁ − 2.128 eV = (1.85 × 10⁻²⁵/3.125 × 10⁻⁷)/(1.6 × 10⁻¹⁹) − 2.128 = 3.71 − 2.128 = 1.58 eV.\n(These values follow from the data given. The accepted values are h = 6.63 × 10⁻³⁴ J s and φ ≈ 2.3 eV for sodium.)\n\n(iii) Photon energy: E = hc/λ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(2000 × 10⁻¹⁰) = 9.9 × 10⁻¹⁹ J = 6.19 eV.\nK.E. of the fastest photoelectrons = E − φ = 6.19 − 4.2 = 1.99 eV (3.18 × 10⁻¹⁹ J).\nStopping potential: V_s = K.E._max/e = 1.99 V.\nThreshold wavelength: λ₀ = hc/φ = 1.98 × 10⁻²⁵/(4.2 × 1.6 × 10⁻¹⁹) = 2.95 × 10⁻⁷ m (2946 Å)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "17b",
+    "question": "b (i) State the Heisenberg’s uncertainty principle in words and write down its mathematical form for each of the following conditions: Angular momentum (L) and polar angle (φ). Energy (E) and time (t). position (x) and linear momentum (p).\n(ii) Calculate the de Broglie wavelength of an electron having a kinetic energy of 1000 eV. Also find the wavelength (in Angstrom) of x-rays having the same energy. Hence evaluate the ratio. λ for x-rays / λ for de Broglie of electron",
+    "options": [],
+    "modelAnswer": "(i) Heisenberg's uncertainty principle: it is impossible to measure both the position and the momentum of a particle (or another pair of related quantities) exactly at the same time. The more precisely one is known, the less precisely the other can be known. The product of the uncertainties is never less than about ħ/2, where ħ = h/2π.\nMathematical forms:\nAngular momentum and polar angle: ΔL × Δφ ≥ ħ/2\nEnergy and time: ΔE × Δt ≥ ħ/2\nPosition and linear momentum: Δx × Δp ≥ ħ/2 (= h/4π)\n(Some textbooks write these approximately as ≥ h/2π or ≈ h.)\n\n(ii) K.E. = 1000 eV = 1000 × 1.6 × 10⁻¹⁹ = 1.6 × 10⁻¹⁶ J.\nElectron momentum: p = √(2mK) = √(2 × 9.0 × 10⁻³¹ × 1.6 × 10⁻¹⁶) = 1.70 × 10⁻²³ kg m s⁻¹.\nde Broglie wavelength: λ_e = h/p = 6.6 × 10⁻³⁴/(1.70 × 10⁻²³) = 3.89 × 10⁻¹¹ m = 0.389 Å.\n\nX-ray photon of energy E = 1.6 × 10⁻¹⁶ J:\nλ_x = hc/E = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(1.6 × 10⁻¹⁶) = 1.24 × 10⁻⁹ m = 12.4 Å.\n\nRatio: λ_x/λ_e = 12.4/0.389 = 31.8."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "a(i). What is meant by the terms Natural and artificial radioactivity?. (ii) Explain the following: alpha decay, beta decay and gamma decay in radioactivity. Support your answer with reaction, assume an atom ᴬ_ZX. (iii). Prove the radioactive decay law. Assume N be the number of radioactive nuclei present at any time t. (iv) Complete the following nuclear reactions:\n(A) ⁶₃Li + ? → ⁷₄Be + ¹₀n , (B) ³⁵₁₇Cl + ? → ³²₁₆S + ⁴₂He (C) ⁹₄Be + α − particle → 3(α − particle) + ?. (D) ⁷⁹₃₅Br + ²₁H → ? + 2(¹₀n)",
+    "options": [],
+    "modelAnswer": "(i) Natural radioactivity: the spontaneous disintegration of the unstable nuclei of naturally occurring heavy elements (e.g., uranium, radium), with the emission of α, β or γ radiation, without any outside influence.\nArtificial (induced) radioactivity: radioactivity produced in a normally stable nucleus by bombarding it with particles such as neutrons, protons or α-particles, which makes it unstable (e.g., ²⁷₁₃Al + ⁴₂He → ³⁰₁₅P + ¹₀n, where ³⁰₁₅P is radioactive).\n\n(ii) Alpha decay: the nucleus emits an α-particle (a helium nucleus, ⁴₂He). The mass number falls by 4 and the atomic number by 2:\nᴬ_ZX → ᴬ⁻⁴_(Z−2)Y + ⁴₂He\nBeta decay: a neutron in the nucleus changes into a proton and emits a β-particle (an electron). The mass number is unchanged and the atomic number rises by 1:\nᴬ_ZX → ᴬ_(Z+1)Y + ⁰₋₁e\nGamma decay: an excited nucleus loses energy by emitting a γ-ray photon. The mass number and atomic number are unchanged:\nᴬ_ZX* → ᴬ_ZX + γ\n\n(iii) Note: the decay law comes from experiment and cannot be proved from first principles. What can be shown is that the assumption 'rate of decay ∝ number of undecayed nuclei' leads to the exponential decay law, which agrees with experiment.\nThe rate of decay is proportional to the number of undecayed nuclei N:\n−dN/dt ∝ N, so −dN/dt = λN, where λ is the decay constant.\nRearranging: dN/N = −λ dt.\nIntegrating from N₀ at t = 0 to N at time t:\nln(N/N₀) = −λt\nN = N₀e^(−λt).\n\n(iv) Balance the mass numbers (top) and the atomic numbers (bottom) on each side:\n(A) 6 + A = 7 + 1, so A = 2; 3 + Z = 4 + 0, so Z = 1. The missing particle is ²₁H (a deuteron).\n(B) 35 + A = 32 + 4, so A = 1; 17 + Z = 16 + 2, so Z = 1. The missing particle is ¹₁H (a proton).\n(C) 9 + 4 = 3(4) + A, so A = 1; 4 + 2 = 3(2) + Z, so Z = 0. The missing particle is ¹₀n (a neutron).\n(D) 79 + 2 = A + 2(1), so A = 79; 35 + 1 = Z + 0, so Z = 36. The missing nucleus is ⁷⁹₃₆Kr (krypton-79)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "b(i). Find the binding energy and binding energy per nucleon for a lithium nucleus (⁷₃Li). Given that: ⁷₃Li = 7.000000u , mass of proton = 1.007825u and mass of neutron = 1.008665u, 1u = 931.5MeV.\niii. Consider the fusion process ²₁H + ²₁H → ³₂He + ¹₀n + Q. Given that the mass of deuteron, helium and neutron are respectively 2.015u, 3.017u and 1.009u. Determine the total energy released (Q). 1u = 931.5MeV.",
+    "options": [],
+    "modelAnswer": "Note: the paper numbers these parts (i) and iii; there is no part (ii).\n\n(i) Lithium-7 has 3 protons and 7 − 3 = 4 neutrons.\nMass of nucleons = 3(1.007825) + 4(1.008665) = 3.023475 + 4.034660 = 7.058135 u.\nMass defect: Δm = 7.058135 − 7.000000 = 0.058135 u.\nBinding energy = 0.058135 × 931.5 = 54.2 MeV.\nBinding energy per nucleon = 54.2/7 = 7.74 MeV.\n\nNote: the actual mass of lithium-7 is 7.016004 u, which gives a binding energy of about 39.2 MeV (5.6 MeV per nucleon). The printed value of 7.000000 u is probably a rounded or misprinted value; the answer above uses the value given.\n\n(iii) Mass of reactants = 2 × 2.015 = 4.030 u.\nMass of products = 3.017 + 1.009 = 4.026 u.\nMass defect: Δm = 4.030 − 4.026 = 0.004 u.\nEnergy released: Q = 0.004 × 931.5 = 3.73 MeV."
+  }
+]

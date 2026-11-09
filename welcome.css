@@ -53,6 +53,19 @@
   font-size: 0.7rem; font-weight: 800; color: var(--tab-active-bg);
 }
 
+/* "Which exam are you writing?" */
+.welcome-exams { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.welcome-exams button {
+  padding: 11px 4px; border-radius: 12px; cursor: pointer;
+  border: 2px solid var(--dash-border); background: var(--bg-primary); color: var(--text-primary);
+  font-family: inherit; font-size: 0.9rem; font-weight: 700;
+}
+.welcome-exams button.is-on {
+  border-color: var(--tab-active-bg);
+  background: color-mix(in srgb, var(--tab-active-bg) 12%, var(--bg-secondary));
+  color: var(--tab-active-bg);
+}
+
 .welcome-error { min-height: 1.2em; margin: 12px 0 0; font-size: 0.85rem; color: var(--dash-danger); }
 .welcome-submit {
   width: 100%; margin-top: 8px; padding: 14px; border: none; border-radius: 12px;

@@ -1,0 +1,300 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "A monochromatic light propagating from medium 1 of refractive index n₁ to medium 2 of refractive index n₂. If the angle of incidence is î, and refracted angle is r̂. Under what condition or relationship between n₁ and n₂ the refraction will produce the following results: (i) î = r̂ (ii) î < r̂ (iii) î > r̂.",
+    "options": [],
+    "modelAnswer": "By Snell's law: n₁ sin î = n₂ sin r̂.\n\n(i) î = r̂ when n₁ = n₂: the two media have the same refractive index (optically identical), so the ray passes straight through without bending. (This also happens for any media at normal incidence, î = r̂ = 0.)\n\n(ii) î < r̂ when n₁ > n₂: the light passes from an optically denser medium to a less dense one, and bends away from the normal.\n\n(iii) î > r̂ when n₁ < n₂: the light passes from an optically less dense medium to a denser one, and bends towards the normal."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Calculate the focal length of a combination of a concave lens of focal length 20 cm and a convex lens of focal length 30 cm in contact. Is the system a converging or diverging lens> ignore the tthickness of the lenses.",
+    "options": [],
+    "modelAnswer": "For thin lenses in contact: 1/F = 1/f₁ + 1/f₂.\nUsing real-is-positive: convex lens f₁ = +30 cm; concave lens f₂ = −20 cm.\n\n1/F = 1/30 + 1/(−20) = (2 − 3)/60 = −1/60\nF = −60 cm.\n\nThe combination has a focal length of 60 cm. The negative sign shows it behaves as a diverging lens, because the concave lens is the more powerful of the two."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Consider an object AB placed in front of a concave mirror as shown in figure 1. Copy and complete the ray diagram showing the image formation of the object. What is the nature of the image formed?",
+    "image": {
+      "src": "images/ijmb/physics/2024/phy-2024-paper2-3.png",
+      "alt": "Figure 1: concave mirror with pole O; points F and C on the principal axis; object AB standing on the axis beyond C"
+    },
+    "options": [],
+    "modelAnswer": "Figure 1: a concave mirror with pole O on the right; the principal axis carries F and C; the object AB stands upright on the axis beyond C, with A on the axis.\n\nRay diagram:\n1. Draw a ray from B parallel to the principal axis. After reflection it passes through F.\n2. Draw a ray from B through C. It strikes the mirror normally and reflects back along itself. (Alternatively, a ray from B through F reflects parallel to the axis.)\n3. The reflected rays cross below the axis, between C and F. This point is B′, the image of B. Draw A′B′ from the axis up to B′ to complete the image.\n\nNature of the image: since the object is beyond C, the image is formed between C and F. It is real, inverted and diminished (smaller than the object)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "How can you get an effective capacitance of 6uF from the three capacitors each of capacitances 4uF? Show the calculations and draw the circuit diagram of the final arrangement.",
+    "options": [],
+    "modelAnswer": "Note: 'uF' means μF (microfarad).\n\nArrangement: connect two of the 4 μF capacitors in series, then connect the third 4 μF capacitor in parallel with this series pair.\n\nCalculation:\nTwo in series: 1/C_s = 1/4 + 1/4 = 2/4, so C_s = 2 μF.\nThird in parallel: C = C_s + 4 = 2 + 4 = 6 μF.\n\nCircuit diagram: draw two capacitors (4 μF each) one after the other on one branch. Draw the third 4 μF capacitor on a second branch alongside them. Join the ends of the two branches to the two terminals."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "State any four factors upon which resistance of a resistor depend. An electric kettle has a resistance of 30 Ω What is the power rating of the kettle when it is connected to a 240V power supply?",
+    "options": [],
+    "modelAnswer": "Factors affecting the resistance of a conductor:\n1. Length (l): resistance is directly proportional to length.\n2. Cross-sectional area (A): resistance is inversely proportional to area.\n3. Nature of the material, i.e., its resistivity (ρ): R = ρl/A.\n4. Temperature: for metals, resistance increases with temperature.\n\nPower rating: P = V²/R = 240²/30 = 57 600/30 = 1920 W (1.92 kW)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "The magnetic materials can be classified into three categories. Mention them and give one example for each. What is Curie temperature as applied to magnetism?",
+    "options": [],
+    "modelAnswer": "1. Ferromagnetic materials: strongly attracted by a magnet and can be magnetised strongly. Examples: iron, nickel, cobalt.\n2. Paramagnetic materials: weakly attracted by a magnet. Examples: aluminium, platinum, oxygen.\n3. Diamagnetic materials: weakly repelled by a magnet. Examples: bismuth, copper, water.\n\nCurie temperature: the temperature above which a ferromagnetic material loses its ferromagnetism and becomes paramagnetic. Heat disorders its magnetic domains. For iron it is about 770°C."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Given the instantaneous current in an a.c circuit, I = 1.2sin31.4t, find the maximum current, rms current and the frequency of the current.",
+    "options": [],
+    "modelAnswer": "Compare with I = I₀ sin ωt.\n\nMaximum current: I₀ = 1.2 A.\n\nrms current: I_rms = I₀/√2 = 1.2/1.414 = 0.85 A.\n\nFrequency: ω = 31.4 rad s⁻¹ = 2πf, so f = 31.4/(2 × 3.14) = 5.0 Hz."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Consider an X-rays produced by 30 kV, find the maximum frequency and minimum wavelength of the most accelerated electrons.",
+    "options": [],
+    "modelAnswer": "The most energetic X-ray photon is produced when an electron gives up all its kinetic energy, eV, in a single collision.\n\nMaximum frequency: eV = hf_max\nf_max = eV/h = (1.6 × 10⁻¹⁹ × 30 × 10³)/(6.6 × 10⁻³⁴) = (4.8 × 10⁻¹⁵)/(6.6 × 10⁻³⁴) = 7.27 × 10¹⁸ Hz.\n\nMinimum wavelength: λ_min = c/f_max = (3.0 × 10⁸)/(7.27 × 10¹⁸) = 4.13 × 10⁻¹¹ m (about 0.041 nm)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "If 1 g of radioactive substance takes 50 sec to lose 0.01 g .Find its half-life.",
+    "options": [],
+    "modelAnswer": "After 50 s, the mass remaining is 1 − 0.01 = 0.99 g.\n\nRadioactive decay: N = N₀e^(−λt)\n0.99 = 1 × e^(−50λ)\nln 0.99 = −50λ\nλ = −ln 0.99/50 = 0.01005/50 = 2.01 × 10⁻⁴ s⁻¹.\n\nHalf-life: T½ = 0.693/λ = 0.693/(2.01 × 10⁻⁴) = 3.45 × 10³ s (about 57.5 minutes)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "The stopping potential for photoelectrons emitted from surface illuminated by light of wavelength 5896 Å is 0.63 Volt. Calculate the maximum kinetic energy of photoelectrons.",
+    "options": [],
+    "modelAnswer": "The stopping potential V_s is the potential needed to stop the fastest photoelectrons, so:\nK.E._max = eV_s = 1.6 × 10⁻¹⁹ × 0.63 = 1.01 × 10⁻¹⁹ J (= 0.63 eV).\n\n(The wavelength is not needed for this answer. It gives the photon energy hc/λ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(5896 × 10⁻¹⁰) = 3.36 × 10⁻¹⁹ J = 2.10 eV, so the work function of the surface is 2.10 − 0.63 = 1.47 eV.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "a) (i) Write down the image of the word pqf when viewed by a plane mirror. What is the name of this phenomenoa? Imagine the image of an object placed 12 cm in front of a plane mirror. Describe the nature and characteristics of the image.\n(ii) Calculate the angle of minimum deviation and angle of incidence of a light ray on an equilateral triangular prism of refractive index √(7/3).\n(iii). An object 2 cm high is placed 16 cm infront of concave mirror which produced image 3 cm high. Find the radius of curvature of the mirror.",
+    "options": [],
+    "modelAnswer": "(i) A plane mirror reverses left and right, so the order of the letters is reversed and each letter is reversed: the image of pqf is ꟻpq (a back-to-front f, then p, then q).\nThe phenomenon is lateral inversion.\nFor an object 12 cm in front of a plane mirror, the image is:\n1. virtual (it cannot be formed on a screen);\n2. upright (erect);\n3. the same size as the object;\n4. laterally inverted;\n5. 12 cm behind the mirror, so it is 24 cm from the object.\n\n(ii) For an equilateral prism, A = 60°.\nAt minimum deviation D: n = sin((A + D)/2)/sin(A/2).\nsin((A + D)/2) = n sin 30° = √(7/3) × 0.5 = 1.5275 × 0.5 = 0.7638\n(A + D)/2 = 49.8°\nA + D = 99.6°, so D = 99.6° − 60° = 39.6°.\nAt minimum deviation the angle of incidence is i = (A + D)/2 = 49.8°.\n\n(iii) Sign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a concave mirror or converging lens and negative for a convex mirror or diverging lens). Formula: 1/f = 1/u + 1/v; magnification m = v/u.\nMagnification: m = image height/object height = 3/2 = 1.5.\nThe question does not say whether the image is real or virtual, and a concave mirror can form a magnified image of either kind:\nReal (inverted) image: v = mu = 1.5 × 16 = 24 cm.\n1/f = 1/16 + 1/24 = (3 + 2)/48 = 5/48, so f = 9.6 cm and r = 2f = 19.2 cm.\nVirtual (upright) image: v = −24 cm.\n1/f = 1/16 − 1/24 = 1/48, so f = 48 cm and r = 96 cm.\nThe question does not say which, so both answers are given: r = 19.2 cm (real image) or r = 96 cm (virtual image)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "b (i).Write down the necessary conditions for the total internal reflection to occur. find is the critical angle for a rectangular slab of glass, with refractive index 1.57 in air?\n(ii) Distinguish between a Plane Mirror, a Concave Mirror and a Convex Mirror by viewing an object close to each mirror, without touching them, (ray diagram is not needed). Also state one similarity for these mirrors\n(iii). A small object is placed 20 cm in front of (1) a concave mirror of radius of curvature 30 cm. (2) a convex mirror of focal length 12 cm. in each case find the position, nature and the magnification of the image. Also find the new position, nature and the magnification of the image when the object shifts towards the mirror by 7 cm.",
+    "options": [],
+    "modelAnswer": "(i) Conditions for total internal reflection:\n1. Light must travel from an optically denser medium to a less dense medium (e.g., glass to air).\n2. The angle of incidence in the denser medium must be greater than the critical angle.\n\nCritical angle: sin c = 1/n = 1/1.57 = 0.6369, so c = 39.6°.\n\n(ii) Viewing an object held close to each mirror:\nPlane mirror: the image is virtual, upright and the same size as the object.\nConcave mirror: with the object inside the focal length, the image is virtual, upright and magnified (larger).\nConvex mirror: the image is virtual, upright and diminished (smaller).\nSimilarity: all three form virtual, upright images of an object held close to them. (All three also obey the laws of reflection.)\n\n(iii) Sign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a concave mirror or converging lens and negative for a convex mirror or diverging lens). Formula: 1/f = 1/u + 1/v; magnification m = v/u.\n\n(1) Concave mirror: r = 30 cm, so f = +15 cm.\nObject at u = 20 cm:\n1/v = 1/15 − 1/20 = (4 − 3)/60 = 1/60, so v = +60 cm.\nThe image is 60 cm in front of the mirror; it is real and inverted. Magnification m = 60/20 = 3 (magnified).\nObject moved 7 cm closer, u = 13 cm (inside F):\n1/v = 1/15 − 1/13 = (13 − 15)/195 = −2/195, so v = −97.5 cm.\nThe image is 97.5 cm behind the mirror; it is virtual and upright. Magnification m = 97.5/13 = 7.5 (magnified).\n\n(2) Convex mirror: f = −12 cm.\nObject at u = 20 cm:\n1/v = −1/12 − 1/20 = −(5 + 3)/60 = −8/60, so v = −7.5 cm.\nThe image is 7.5 cm behind the mirror; it is virtual and upright. Magnification m = 7.5/20 = 0.375 (diminished).\nObject moved 7 cm closer, u = 13 cm:\n1/v = −1/12 − 1/13 = −25/156, so v = −6.24 cm.\nThe image is 6.24 cm behind the mirror; it is virtual and upright. Magnification m = 6.24/13 = 0.48 (diminished)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "a. Consider a refraction of a light ray through a parallel sided rectangular glass slab of thickness 't' which incidents on the slab at an angle of incidence î with respect to the angle of refraction r̂ Finally the ray emerges out in the direction parallel to the initial ray. If refractive index of the glass used is μ . (i) Sketch the ray diagram and indicate clearly the lateral displacement. Hence, prove that, the expression for the lateral displacement (d) is given by: d = t sin(î − r̂)/cos r̂ . Define the underlined term, and deduce the expression for d near normal incidence in terms of î and μ (i.e at a very small angle of incidence).What would be the value of d when î = 90° ?",
+    "options": [],
+    "modelAnswer": "Sketch: draw a rectangular glass slab of thickness t. A ray strikes the top surface at point A with angle of incidence î. It bends towards the normal (angle r̂) and travels through the glass to point B on the bottom surface. It emerges parallel to the incident ray. Extend the incident ray straight on (dashed) through the glass. The perpendicular distance between this dashed line and the emergent ray is the lateral displacement d; mark it as BC, where C is the foot of the perpendicular from B to the dashed line.\n\nDefinition: the lateral displacement is the perpendicular distance between the original direction of the incident ray and the emergent ray.\n\nProof:\nIn the glass, the ray travels along AB. Since the slab has thickness t and AB makes angle r̂ with the normal: cos r̂ = t/AB, so AB = t/cos r̂.\nThe angle between the refracted ray AB and the undeviated direction (the dashed line) is (î − r̂).\nIn the right-angled triangle ABC: d = BC = AB sin(î − r̂).\nTherefore d = t sin(î − r̂)/cos r̂.\n\nNear normal incidence (î very small, in radians): sin(î − r̂) ≈ î − r̂ and cos r̂ ≈ 1.\nAlso μ = sin î/sin r̂ ≈ î/r̂, so r̂ = î/μ.\nd ≈ t(î − î/μ) = tî(1 − 1/μ) = tî(μ − 1)/μ.\n\nWhen î = 90° (grazing incidence), the refracted angle r̂ equals the critical angle, and sin(90° − r̂) = cos r̂. So:\nd = t sin(90° − r̂)/cos r̂ = t cos r̂/cos r̂ = t.\nThe lateral displacement equals the thickness of the slab."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "b. (i). Considering a concave reflector of a telescope of radius of curvature 250 cm . What is the focal length of the eyepiece to obtain a magnification 50 times?\nii. Use ray diagram to briefly explain the nature of the focal length when parallel beam of light incident on (A) convex lens (B) concave lens.\n(iii).An object is placed 12 cm from (A) a converging lens (B) diverging lens: of focal length 18 cm. Find the nature of the image.",
+    "options": [],
+    "modelAnswer": "(i) Focal length of the objective (concave mirror): f_o = r/2 = 250/2 = 125 cm.\nMagnifying power of the telescope (normal adjustment): M = f_o/f_e.\nf_e = f_o/M = 125/50 = 2.5 cm.\n\n(ii) (A) Convex lens: a parallel beam of light is refracted so that it converges and actually passes through a point on the other side of the lens, the principal focus F. The focus is real, so the focal length of a convex lens is real (positive).\nSketch: parallel rays entering a convex lens and meeting at F behind it.\n(B) Concave lens: a parallel beam is refracted so that it diverges, as if the rays came from a point on the same side as the incident light. The focus is virtual, so the focal length of a concave lens is virtual (negative).\nSketch: parallel rays spreading out after a concave lens, with dashed lines traced back to meet at F in front of the lens.\n\n(iii) Sign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a concave mirror or converging lens and negative for a convex mirror or diverging lens). Formula: 1/f = 1/u + 1/v; magnification m = v/u.\n(A) Converging lens, f = +18 cm, u = 12 cm (object inside the focal length):\n1/v = 1/18 − 1/12 = (2 − 3)/36 = −1/36, so v = −36 cm.\nThe image is 36 cm from the lens, on the same side as the object. It is virtual, upright and magnified (m = 36/12 = 3).\n(B) Diverging lens, f = −18 cm, u = 12 cm:\n1/v = −1/18 − 1/12 = −(2 + 3)/36 = −5/36, so v = −7.2 cm.\nThe image is 7.2 cm from the lens, on the same side as the object. It is virtual, upright and diminished (m = 7.2/12 = 0.6)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "a (i). Determine the physical quantity whose SI unit is JC⁻¹, VA, and ΩA. In each case, state whether it is a scalar or a vector quantity .The Columbic force on a small sphere of charge 0.8μC and 0.4μC in vacuum is 0.2 N. Calculate the separation between the spheres.\n(ii), State the necessary condition(s) for which Ohm’s law is valid and define a resistance. A current of 6A passes through a copper wire of length 12 mm and 3 mm² cross section. Calculate the current density.\n(iii), What is the charge and energy stored in the circuit shown in figure 2?.",
+    "image": {
+      "src": "images/ijmb/physics/2024/phy-2024-paper2-13a.png",
+      "alt": "Figure 2: 12 μF and 6 μF capacitors in series on the top branch, a 2 μF capacitor on the middle branch in parallel with them, connected across a 24 V battery"
+    },
+    "options": [],
+    "modelAnswer": "Figure 2: a 12 μF and a 6 μF capacitor in series on the top branch; a 2 μF capacitor on the middle branch, in parallel with that pair; both branches connected across a 24 V battery.\n\n(i) J C⁻¹ (joule per coulomb) = volt: electric potential (potential difference). Scalar.\nV A (volt × ampere) = watt: electric power. Scalar.\nΩ A (ohm × ampere) = volt: potential difference (e.m.f.). Scalar.\n\nNote: 'Columbic' means Coulombic (Coulomb) force.\nF = kq₁q₂/r², with k = 1/(4πε₀) = 9 × 10⁹ N m² C⁻².\nr² = kq₁q₂/F = (9 × 10⁹ × 0.8 × 10⁻⁶ × 0.4 × 10⁻⁶)/0.2 = (2.88 × 10⁻³)/0.2 = 0.0144 m²\nr = 0.12 m (12 cm).\n\n(ii) Condition for Ohm's law: the temperature and other physical conditions of the conductor (e.g., strain) must stay constant. Under these conditions, the current through a metallic conductor is directly proportional to the potential difference across it.\nResistance: the ratio of the potential difference across a conductor to the current flowing through it, R = V/I. Unit: ohm (Ω).\n\nCurrent density: J = I/A = 6/(3 × 10⁻⁶) = 2.0 × 10⁶ A m⁻².\n(The length of the wire is not needed.)\n\n(iii) 12 μF and 6 μF in series: C_s = (12 × 6)/(12 + 6) = 72/18 = 4 μF.\nIn parallel with 2 μF: C = 4 + 2 = 6 μF.\n\nTotal charge: Q = CV = 6 × 10⁻⁶ × 24 = 1.44 × 10⁻⁴ C (144 μC).\nEnergy stored: E = ½CV² = ½ × 6 × 10⁻⁶ × 24² = 1.73 × 10⁻³ J.\n(The charge on each of the 12 μF and 6 μF capacitors is 4 μF × 24 V = 96 μC; the 2 μF capacitor holds 2 μF × 24 V = 48 μC.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "b. (i) A 60 V battery is connected across an appliance having a conductance of 0.025 S . Determine the current flowing in the appliance, the power consumed, the energy dissipated and quantity of charges transferred in 10 minutes.\n(ii).Consider a capacitor of capacitive reactance of 4Ω at 250 Hz. Find the capacitance of the circuit, Calculate the reactance at 200/π Hz and the rms current, when it is connected to a 220 V 50 Hz a.c supply.",
+    "options": [],
+    "modelAnswer": "(i) Conductance G = 1/R, so R = 1/0.025 = 40 Ω. t = 10 minutes = 600 s.\nCurrent: I = GV = 0.025 × 60 = 1.5 A.\nPower consumed: P = VI = 60 × 1.5 = 90 W.\nEnergy dissipated: W = Pt = 90 × 600 = 5.4 × 10⁴ J.\nCharge transferred: Q = It = 1.5 × 600 = 900 C.\n\n(ii) X_C = 1/(2πfC), so C = 1/(2πfX_C).\nC = 1/(2π × 250 × 4) = 1/(2000π) = 1.59 × 10⁻⁴ F (159 μF).\n\nAt f = 200/π Hz:\nX_C = 1/(2πfC) = 1/(2π × (200/π) × 1/(2000π)) = 2000π/400 = 5π = 15.7 Ω.\n\nAt 50 Hz:\nX_C = 1/(2π × 50 × 1/(2000π)) = 2000π/(100π) = 20 Ω.\nI_rms = V_rms/X_C = 220/20 = 11 A."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "a(i). Define the following terms: Magnetic field intensity, Magnetic permeability and Magnetic susceptibility.\n(ii) Calculate the magnetic field strength and the magnetomotive force (mmf) required to produce a flux density of 0.25 mT in an air gap of length 12 mm.",
+    "options": [],
+    "modelAnswer": "(i) Magnetic field intensity (magnetising force, H): the magnetising effect of a current or magnet at a point, independent of the medium. H = B/μ. Unit: A m⁻¹.\nMagnetic permeability (μ): the ratio of the magnetic flux density in a medium to the magnetic field intensity producing it, μ = B/H. It measures how easily a material can be magnetised. Unit: H m⁻¹ (or T m A⁻¹). Relative permeability μ_r = μ/μ₀.\nMagnetic susceptibility (χ): the ratio of the intensity of magnetisation M produced in a material to the magnetising field H, χ = M/H. It has no unit, and μ_r = 1 + χ.\n\n(ii) In air, μ = μ₀ = 4π × 10⁻⁷ H m⁻¹. B = 0.25 mT = 2.5 × 10⁻⁴ T; l = 12 mm = 0.012 m.\nMagnetic field strength: H = B/μ₀ = 2.5 × 10⁻⁴/(4π × 10⁻⁷) = 199 A m⁻¹.\nMagnetomotive force: mmf = Hl = 199 × 0.012 = 2.39 A (ampere-turns)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "bi. A straight conductor carries a current of 5.3 A. What is the magnitude of magnetic field at point 20 cm from the conductor?\nii. When the electron in a thermionic tube travels at 3×10⁷ ms⁻¹ inclined at cos⁻¹(0.168) to a field of flux density 18.7T . Calculate the force exerted on the electron in the field.\niii. A flux of 0.025Wb links with a 1500 turns coil and a current of 3 A passes through the coil. Calculate the inductance of the coil, the energy stored in the magnetic field, and the average e.m.f. induced if the current falls to zero in 0.150 μs.",
+    "options": [],
+    "modelAnswer": "(i) For a long straight conductor: B = μ₀I/(2πr)\n= (4π × 10⁻⁷ × 5.3)/(2π × 0.20)\n= (2 × 10⁻⁷ × 5.3)/0.20\n= 5.3 × 10⁻⁶ T.\n\n(ii) F = qvB sin θ, where cos θ = 0.168, so sin θ = √(1 − 0.168²) = √0.9718 = 0.9858.\nF = 1.6 × 10⁻¹⁹ × 3 × 10⁷ × 18.7 × 0.9858\n= 8.85 × 10⁻¹¹ N.\n\n(iii) Inductance: L = NΦ/I = (1500 × 0.025)/3 = 37.5/3 = 12.5 H.\nEnergy stored: W = ½LI² = ½ × 12.5 × 3² = 56.25 J.\nAverage e.m.f.: E = LΔI/Δt = 12.5 × 3/(0.150 × 10⁻⁶) = 2.5 × 10⁸ V.\n(Equivalently, E = NΔΦ/Δt = 1500 × 0.025/(0.150 × 10⁻⁶) = 2.5 × 10⁸ V.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "a (i) Define the terms capacitor and capacitance of a capacitor. Four capacitors of capacitance C₁, C₂, C₃, C₄ are connected in series across a p.d V volt. Draw the circuit diagram and derive the expressions for the equivalent capacitance. Also find the effective capacitance when C₁ = C₄ = 8nF, C₂ = C₃ = 20nF\n(ii) The plates of a parallel plate capacitor have area 90 cm² each separated by 2.5 mm. The capacitor is charged by connecting it to a 400 V supply. How much electrostatic energy is stored by the capacitor?",
+    "options": [],
+    "modelAnswer": "(i) A capacitor is a device for storing electric charge (and electrical energy). It consists of two conductors (plates) separated by an insulator (dielectric).\nThe capacitance of a capacitor is the ratio of the charge Q on either plate to the potential difference V between the plates: C = Q/V. Unit: farad (F).\n\nCircuit diagram: draw C₁, C₂, C₃ and C₄ one after the other in a single line, connected across a supply of p.d. V.\n\nDerivation: in series, the same charge Q is on every capacitor, and the supply p.d. is shared:\nV = V₁ + V₂ + V₃ + V₄ = Q/C₁ + Q/C₂ + Q/C₃ + Q/C₄.\nFor the equivalent capacitance C, V = Q/C, so:\nQ/C = Q(1/C₁ + 1/C₂ + 1/C₃ + 1/C₄)\n1/C = 1/C₁ + 1/C₂ + 1/C₃ + 1/C₄.\n\nEffective capacitance:\n1/C = 1/8 + 1/20 + 1/20 + 1/8 = 0.125 + 0.05 + 0.05 + 0.125 = 0.35 nF⁻¹\nC = 1/0.35 = 2.86 nF (20/7 nF).\n\n(ii) A = 90 cm² = 9.0 × 10⁻³ m²; d = 2.5 mm = 2.5 × 10⁻³ m; V = 400 V.\nC = ε₀A/d = (8.85 × 10⁻¹² × 9.0 × 10⁻³)/(2.5 × 10⁻³) = 3.19 × 10⁻¹¹ F.\nEnergy stored: W = ½CV² = ½ × 3.19 × 10⁻¹¹ × 400² = 2.55 × 10⁻⁶ J."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "b.(i) In terms of resistance R, The temperature coefficient of resistance of a material when the temperature variations is not too large can be written as : α = (R₂ − R₁)/(R₁ΔT). Express α in terms of resistivity ρ. (ii) A given wire has a resistance 2.1 Ω at 27.5 °C and a resistance of 2.7 Ω at 100 °C. Determine the temperature coefficient of the resistance of the wire.\niii. Assume a straight copper wire 0.30 m long moves at a uniform speed of 4 ms⁻¹ perpendicular to a uniform magnetic field of flux density 1.25 T. What is the current flowing in the conductor when (A) its ends are open-circuited. (B) its ends are connected to a load of 2 Ω resistor?",
+    "options": [],
+    "modelAnswer": "(i) R = ρl/A. If the change in length and area with temperature is negligible, R is proportional to ρ, so:\nα = (ρ₂ − ρ₁)/(ρ₁ΔT).\n\n(ii) Using the given formula with R₁ = 2.1 Ω at 27.5°C, R₂ = 2.7 Ω at 100°C and ΔT = 72.5 K:\nα = (2.7 − 2.1)/(2.1 × 72.5) = 0.6/152.25 = 3.94 × 10⁻³ K⁻¹.\n(If α is instead defined relative to the resistance at 0°C, using R = R₀(1 + αθ), the result is α = 0.6/135.75 = 4.42 × 10⁻³ K⁻¹.)\n\n(iii) Induced e.m.f.: E = Blv = 1.25 × 0.30 × 4 = 1.5 V.\n(A) Ends open-circuited: there is no complete circuit, so no current flows (I = 0). An e.m.f. of 1.5 V still exists between the ends.\n(B) Ends connected to a 2 Ω resistor (neglecting the resistance of the wire): I = E/R = 1.5/2 = 0.75 A."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "ai. State the necessary condition(s) for a resonance frequency (f₀) to occur in an L-R-C circuit. What happen to the current at resonance condition? Hence derive the expression for the resonance frequency (f₀).\n(ii) ) A coil takes a current of 2 A from a 12 V d.c. supply. When connected to a 240 V, 50 Hz a.c supply the current is 20 A. Calculate the resistance, impedance, inductive reactance Susceptance, admittance and inductance of the coil.",
+    "options": [],
+    "modelAnswer": "(i) Condition for resonance: the inductive reactance equals the capacitive reactance, X_L = X_C.\nAt resonance the impedance is at its minimum, Z = R, so the current is at its maximum (I = V/R). The current is also in phase with the applied voltage.\n\nDerivation: X_L = X_C\n2πf₀L = 1/(2πf₀C)\nf₀² = 1/(4π²LC)\nf₀ = 1/(2π√(LC)).\n\n(ii) Resistance (from the d.c. supply, where there is no reactance): R = V/I = 12/2 = 6 Ω.\nImpedance (a.c. supply): Z = V/I = 240/20 = 12 Ω.\nInductive reactance: X_L = √(Z² − R²) = √(144 − 36) = √108 = 10.4 Ω.\nInductance: L = X_L/(2πf) = 10.39/(2π × 50) = 0.0331 H (33.1 mH).\nAdmittance: Y = 1/Z = 1/12 = 0.0833 S.\nSusceptance: B = X_L/Z² = 10.39/144 = 0.0722 S.\n(Some textbooks take susceptance simply as 1/X_L = 0.0962 S. The value X_L/Z² is the correct one for a coil with resistance, since Y² = G² + B², where the conductance G = R/Z² = 6/144 = 0.0417 S.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "b. Use Kirchhoff ’s laws to find the current in the 12Ω resistor in the circuit shown in figure 3.",
+    "image": {
+      "src": "images/ijmb/physics/2024/phy-2024-paper2-16b.png",
+      "alt": "Figure 3: 28 V battery with 8 Ω resistor on the left branch, 12 Ω resistor in the middle branch, 10 V battery with 6 Ω and 4 Ω resistors on the right branch"
+    },
+    "options": [],
+    "modelAnswer": "Figure 3: a 28 V battery in series with an 8 Ω resistor on the left branch; a 12 Ω resistor on the middle branch; a 10 V battery in series with 6 Ω and 4 Ω resistors on the right branch; the three branches joined at a top node and at the bottom wire.\n\nAssumption: the positive terminals of both batteries face the top wire. The polarity is hard to read on the scan; if the 10 V battery is the other way round, see the note at the end.\n\nLet V be the potential of the top junction, taking the bottom wire as 0 V. By Kirchhoff's current law, the currents flowing into the junction from the two battery branches equal the current flowing down through the 12 Ω resistor:\nFrom the left branch: I₁ = (28 − V)/8\nFrom the right branch (6 Ω + 4 Ω = 10 Ω): I₂ = (10 − V)/10\nThrough the 12 Ω resistor: I₃ = V/12\n\nI₁ + I₂ = I₃\n(28 − V)/8 + (10 − V)/10 = V/12\nMultiply through by 120:\n15(28 − V) + 12(10 − V) = 10V\n420 − 15V + 120 − 12V = 10V\n540 = 37V\nV = 14.6 V.\n\nCurrent in the 12 Ω resistor: I₃ = V/12 = 14.6/12 = 1.22 A (45/37 A).\n(Check: I₁ = (28 − 14.6)/8 = 1.68 A and I₂ = (10 − 14.6)/10 = −0.46 A, i.e., 0.46 A flows into the 10 V branch; 1.68 − 0.46 = 1.22 A.)\n\nNote: if the 10 V battery's positive terminal faces the bottom, the right-branch current becomes (−10 − V)/10. This gives 37V = 300, V = 8.11 V, and a current of 0.68 A (25/37 A) in the 12 Ω resistor."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "a(i) Briefly explain the concept of the de Broglie hypothesis. Hence, deduce the wavelength connections between particle and wave.\n(ii) Assume the wavelength of light from the spectral emission of sodium is 589nm. Calculate the kinetic energy (in eV) of an electron and a neutron at the same de Broglie wavelength.",
+    "options": [],
+    "modelAnswer": "(i) The de Broglie hypothesis states that, just as light (a wave) can behave as particles (photons), moving material particles such as electrons also have wave properties. Every moving particle has an associated wavelength, called its de Broglie wavelength. This was confirmed by electron diffraction experiments.\n\nDeduction: for a photon, E = hf and E = mc², so its momentum is p = mc = E/c = hf/c = h/λ.\nde Broglie applied the same relation to any particle of momentum p = mv:\nλ = h/p = h/(mv).\nIn terms of kinetic energy K, p = √(2mK), so λ = h/√(2mK).\n\n(ii) Note: the mass of the neutron is not in the list of constants, so m_n = 1.675 × 10⁻²⁷ kg is used.\n\nMomentum for λ = 589 nm:\np = h/λ = 6.6 × 10⁻³⁴/(589 × 10⁻⁹) = 1.12 × 10⁻²⁷ kg m s⁻¹.\n\nKinetic energy: K = p²/(2m).\nElectron (m = 9.0 × 10⁻³¹ kg):\nK = (1.12 × 10⁻²⁷)²/(2 × 9.0 × 10⁻³¹) = 6.98 × 10⁻²⁵ J\n= 6.98 × 10⁻²⁵/(1.6 × 10⁻¹⁹) = 4.36 × 10⁻⁶ eV.\nNeutron (m = 1.675 × 10⁻²⁷ kg):\nK = (1.12 × 10⁻²⁷)²/(2 × 1.675 × 10⁻²⁷) = 3.75 × 10⁻²⁸ J\n= 2.34 × 10⁻⁹ eV.\n\nFor the same wavelength, the heavier neutron has much less kinetic energy (about 1/1860 of the electron's)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "17b",
+    "question": "b (i) Define the term natural radioactivity. Hence, state the radiations emitted by a radioactive element in the order of increasing ionization power.\n(ii) The Radioactive decay law states that: The activity of a radioactive element at any instant is directly proportional to the number of undecayed active atoms present at that instant.” Prove this law.\n(iii). Considering a radioactive isotope G - decays sequence: ^x_y G → G₁ → ^176_71 G₂. When G decays to G₁, α-particle is released. When G₁ decays to G₂, β- particle is released. Determine the value of x and y. also how many neutrons do the G₁-isotope have?",
+    "options": [],
+    "modelAnswer": "(i) Natural radioactivity is the spontaneous disintegration of the unstable nuclei of heavy elements, with the emission of alpha particles, beta particles and gamma rays, without any external influence. It is not affected by temperature, pressure or chemical combination.\nIn order of increasing ionizing power: gamma (γ) rays < beta (β) particles < alpha (α) particles.\n\n(ii) Note: a law of nature cannot be proved from first principles. What can be shown is that this statement leads to the exponential decay law, which agrees with experiment.\nLet N be the number of undecayed atoms at time t. The activity is the rate of decay, A = −dN/dt. The law states that A ∝ N, so:\n−dN/dt = λN, where λ is the decay constant.\nRearranging: dN/N = −λ dt.\nIntegrating from N₀ at t = 0 to N at time t:\nln(N/N₀) = −λt\nN = N₀e^(−λt).\nSince A = λN, the activity also decays exponentially: A = A₀e^(−λt). Experiments confirm this exponential decay, which supports the law.\n\n(iii) In α-decay the mass number falls by 4 and the atomic number by 2. In β-decay the mass number is unchanged and the atomic number rises by 1.\nG₁ → ^176_71 G₂ by β-emission, so G₁ has mass number 176 and atomic number 71 − 1 = 70.\nG → G₁ by α-emission, so G has mass number x = 176 + 4 = 180 and atomic number y = 70 + 2 = 72.\nx = 180, y = 72.\nNeutrons in G₁ = mass number − atomic number = 176 − 70 = 106."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "a(i) For hydrogen atom, the ground state energy is – 13.6 eV. If an electron makes a transition from an energy level – 1.51 eV to – 3.4 eV . Calculate the wavelength of the spectral line emitted.\n(ii).What is mass defect? Determine the binding energy of an α-particle. Given that: Mass of the helium nucleus = ⁴₂He = 4.001265 u , mass of proton = 1.007277 u, mass of neutron = 1.008665 u.\n(iii). Distinguish between: Nuclear Fission and Nuclear Fusion.",
+    "options": [],
+    "modelAnswer": "(i) Energy of the emitted photon: ΔE = −1.51 − (−3.4) = 1.89 eV = 1.89 × 1.6 × 10⁻¹⁹ = 3.02 × 10⁻¹⁹ J.\nλ = hc/ΔE = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(3.02 × 10⁻¹⁹) = 6.55 × 10⁻⁷ m (655 nm, red light).\n(This is the n = 3 to n = 2 transition, the first line of the Balmer series.)\n\n(ii) Mass defect is the difference between the total mass of the separate nucleons (protons and neutrons) in a nucleus and the actual mass of the nucleus. This mass is converted into the binding energy that holds the nucleus together (E = mc²).\n\nAn α-particle (⁴₂He nucleus) has 2 protons and 2 neutrons.\nMass of nucleons = 2(1.007277) + 2(1.008665) = 2.014554 + 2.017330 = 4.031884 u.\nMass defect Δm = 4.031884 − 4.001265 = 0.030619 u.\nBinding energy = 0.030619 × 931 MeV = 28.5 MeV (about 7.1 MeV per nucleon).\n\n(iii)\nNuclear fission: a heavy nucleus (e.g., uranium-235) splits into two lighter nuclei of roughly equal mass, usually when struck by a neutron, releasing energy and more neutrons that can cause a chain reaction. It is used in nuclear reactors and atomic bombs.\nNuclear fusion: two light nuclei (e.g., isotopes of hydrogen) combine to form a heavier nucleus, releasing energy. It needs extremely high temperatures (millions of kelvin). It is the source of the sun's energy and of the hydrogen bomb.\nFusion releases more energy per unit mass of fuel than fission, and produces far less radioactive waste."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "b(i). What do you understand by the terms: thermionic Emission and field emission.\n(ii) In the process of photoelectric effects, briefly explain the effects of \" intensity and frequency of the radiation\" when light is shine on a metal surface.\n(iii) In an experiment, a tungsten cathode which has a threshold wavelength of 2300 Å is irradiated by UV light of wavelength 1800 Å . Calculate the maximum energy of the emitted photoelectron and work function for tungsten in electron volt.",
+    "options": [],
+    "modelAnswer": "(i) Thermionic emission: the emission of electrons from the surface of a metal when it is heated to a high temperature. Heating gives the free electrons enough energy to overcome the work function (e.g., the heated cathode of a cathode-ray tube or X-ray tube).\nField emission: the emission of electrons from a cold metal surface when a very strong electric field is applied at the surface. The field pulls electrons out without heating.\n\n(ii) Intensity: increasing the intensity (brightness) of light above the threshold frequency increases the number of photoelectrons emitted per second, and so the photoelectric current. It does not change their maximum kinetic energy.\nFrequency: no electrons are emitted unless the frequency is above the threshold frequency of the metal, however intense the light. Above the threshold, the maximum kinetic energy of the photoelectrons increases linearly with frequency (K.E._max = hf − φ), and does not depend on intensity.\n\n(iii) λ₀ = 2300 Å = 2.3 × 10⁻⁷ m; λ = 1800 Å = 1.8 × 10⁻⁷ m.\nWork function: φ = hc/λ₀ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(2.3 × 10⁻⁷) = 8.61 × 10⁻¹⁹ J\n= 8.61 × 10⁻¹⁹/(1.6 × 10⁻¹⁹) = 5.38 eV.\nPhoton energy: E = hc/λ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(1.8 × 10⁻⁷) = 1.10 × 10⁻¹⁸ J = 6.88 eV.\nMaximum kinetic energy: K.E._max = E − φ = 6.88 − 5.38 = 1.49 eV (2.39 × 10⁻¹⁹ J)."
+  }
+]

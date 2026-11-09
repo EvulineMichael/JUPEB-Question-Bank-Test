@@ -1007,14 +1007,22 @@ async function getAvailableYears(subject) {
     const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
     const availableYears = [];
 
+    // JUPEB files live in data/, IJMB files in data/ijmb/ (see exam-mode.js)
+    const root = (typeof examDataRoot === 'function') ? examDataRoot() : 'data';
+    const isIJMB = root === 'data/ijmb';
+    // JUPEB papers: 2025-typea.json ... ; IJMB papers: 2016-paper1.json, 2016-paper2.json
+    const variants = isIJMB
+        ? [{ suffix: '-paper1', paper: 'Paper I' }, { suffix: '-paper2', paper: 'Paper II' }]
+        : ['A', 'B', 'C', 'D'].map(t => ({ suffix: `-type${t.toLowerCase()}`, paper: `Type ${t}` }));
+
     for (const year of possibleYears) {
         let foundAny = false;
-        for (const type of ['A', 'B', 'C', 'D']) {
+        for (const v of variants) {
+            const file = `${root}/${subject}/${year}${v.suffix}.json`;
             try {
-                const fileName = `data/${subject}/${year}-type${type.toLowerCase()}.json`;
-                const response = await fetch(fileName); // Direct fetch, no HEAD
+                const response = await fetch(file); // Direct fetch, no HEAD
                 if (response.ok) {
-                    availableYears.push({ year, paper: `Type ${type}`, label: `${year} Type ${type}` });
+                    availableYears.push({ year, paper: v.paper, label: `${year} ${v.paper}`, file });
                     foundAny = true;
                 }
             } catch (error) {
@@ -1023,9 +1031,10 @@ async function getAvailableYears(subject) {
         }
 
         if (!foundAny) {
+            const file = `${root}/${subject}/${year}.json`;
             try {
-                const response = await fetch(`data/${subject}/${year}.json`);
-                if (response.ok) availableYears.push({ year, paper: null, label: String(year) });
+                const response = await fetch(file);
+                if (response.ok) availableYears.push({ year, paper: null, label: String(year), file });
             } catch (error) {
                 // Doesn't exist — skip
             }
@@ -1081,7 +1090,9 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
 
-    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+    const subjects = (typeof examSubjects === 'function')
+        ? examSubjects()
+        : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
 
     // Create a promise for each subject that needs loading
     const loadPromises = subjects.map(async (subject) => {
@@ -1095,13 +1106,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         let allQuestions = [];
         const fetchPromises = availableYears.map(async (yr) => {
             try {
-                let fileName;
-                if (yr.paper) {
-                    const typeLetter = yr.paper.replace('Type ', '').toLowerCase();
-                    fileName = `data/${subject}/${yr.year}-type${typeLetter}.json`;
-                } else {
-                    fileName = `data/${subject}/${yr.year}.json`;
-                }
+                const fileName = yr.file;   // found by getAvailableYears()
                 const response = await fetch(fileName);
                 if (response.ok) {
                     const yearData = await response.json();
@@ -1113,7 +1118,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
                 }
                 return [];
             } catch (error) {
-                console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
+                console.error(`Error loading ${yr.file}:`, error);
                 return [];
             }
         });
@@ -1724,6 +1729,15 @@ function getCurrentCourseTopics() {
   return topics || null;
 }
 
+// The nearest topic before (dir -1) or after (dir 1) that has questions
+function neighbourTopic(topics, idx, dir) {
+  const counts = countsReady() ? topicCounts(pickerSubject) : null;
+  for (let i = idx + dir; i >= 0 && i < topics.length; i += dir) {
+    if (!counts || counts[topics[i]]) return topics[i];
+  }
+  return null;
+}
+
 function renderTopicNav(topic) {
   const topics = getCurrentCourseTopics();
   if (!topics) return ""; // no course context (e.g. reached via a direct link) — just hide it
@@ -1731,8 +1745,8 @@ function renderTopicNav(topic) {
   const idx = topics.indexOf(topic);
   if (idx === -1) return "";
 
-  const prevTopic = idx > 0 ? topics[idx - 1] : null;
-  const nextTopic = idx < topics.length - 1 ? topics[idx + 1] : null;
+  const prevTopic = neighbourTopic(topics, idx, -1);
+  const nextTopic = neighbourTopic(topics, idx, 1);
 
   return `
     <div class="topic-nav-bar">
@@ -1756,10 +1770,12 @@ function wireTopicNavButtons(topic) {
   const idx = topics.indexOf(topic);
 
   document.getElementById("topic-nav-prev")?.addEventListener("click", () => {
-    if (idx > 0) displayQuestions(topics[idx - 1]);
+    const t = neighbourTopic(topics, idx, -1);
+    if (t) displayQuestions(t);
   });
   document.getElementById("topic-nav-next")?.addEventListener("click", () => {
-    if (idx < topics.length - 1) displayQuestions(topics[idx + 1]);
+    const t = neighbourTopic(topics, idx, 1);
+    if (t) displayQuestions(t);
   });
   document.getElementById("topic-nav-back")?.addEventListener("click", () => {
     showScreen("app-content", { customScreenId: "subjects-screen" });
@@ -1993,7 +2009,7 @@ function displayPastQuestions(subject, year, paper = null) {
         </button>
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
             <div>
-                <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
+                <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}${paper ? ' · ' + paper : ''}</span></h2>
                 <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
             </div>
             <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">
@@ -2743,9 +2759,9 @@ function showDashboard() {
 
 function getDashboardData() {
     const userName = localStorage.getItem('jupeb_user_name') || 'Student';
-    const lastSession = JSON.parse(localStorage.getItem('jupeb_last_session') || 'null');
+    const lastSession = JSON.parse(localStorage.getItem(qbKey('jupeb_last_session')) || 'null');
     const streakData = JSON.parse(localStorage.getItem('jupeb_streak') || '{"days":0,"flags":[false,false,false,false,false,false,false]}');
-    const subjectProgress = JSON.parse(localStorage.getItem('jupeb_subject_progress') || '{}');
+    const subjectProgress = JSON.parse(localStorage.getItem(qbKey('jupeb_subject_progress')) || '{}');
     const weakTopics = getWeakTopicsForDashboard();
     const recentActivity = JSON.parse(localStorage.getItem('jupeb_quiz_history') || '[]').slice(-5).reverse();
     
@@ -2809,23 +2825,28 @@ function getDashboardData() {
 // pickerEl, pickerStep, pickerSubject, pickerSubjectName, pickerSet,
 // renderPickerStep(), showScreen() — all already in script.js.
 
+// Storage key for things kept separately per exam (see examKey in exam-mode.js)
+function qbKey(key) {
+  return (typeof examKey === 'function') ? examKey(key) : key;
+}
+
 function getPinnedSubjects() {
   try {
-    return JSON.parse(localStorage.getItem("jupeb_pinned_subjects") || "[]");
+    return JSON.parse(localStorage.getItem(qbKey("jupeb_pinned_subjects")) || "[]");
   } catch (e) {
     return [];
   }
 }
 
 function savePinnedSubjects(list) {
-  localStorage.setItem("jupeb_pinned_subjects", JSON.stringify(list));
+  localStorage.setItem(qbKey("jupeb_pinned_subjects"), JSON.stringify(list));
 }
 
 function renderPinnedSubjects() {
   const container = document.getElementById("dash-pinned-subjects");
   if (!container) return;
 
-  const pinned = getPinnedSubjects().filter(id => SUBJECT_NAMES[id]); // ignore stale ids
+  const pinned = getPinnedSubjects().filter(id => SUBJECT_NAMES[id] && courseStructure[id]); // ignore stale ids and other-exam subjects
 
   if (pinned.length === 0) {
     container.innerHTML = `
@@ -2975,20 +2996,20 @@ function getWeakTopicsForDashboard() {
 // ===== TRACKING FUNCTIONS =====
 function trackStudySession(subject, topic, answered, total) {
     // Save last session
-    localStorage.setItem('jupeb_last_session', JSON.stringify({ subject, topic, answered, total }));
+    localStorage.setItem(qbKey('jupeb_last_session'), JSON.stringify({ subject, topic, answered, total }));
     
     // Update streak
     updateStreak();
     
     // Update subject progress
-    const progress = JSON.parse(localStorage.getItem('jupeb_subject_progress') || '{}');
+    const progress = JSON.parse(localStorage.getItem(qbKey('jupeb_subject_progress')) || '{}');
     if (!progress[subject]) progress[subject] = { answered: 0, total: 0 };
     progress[subject].answered = (progress[subject].answered || 0) + answered;
     // Total for a subject = number of available questions for that subject
     if (allSubjectData[subject] && allSubjectData[subject].length > 0) {
         progress[subject].total = allSubjectData[subject].length;
     }
-    localStorage.setItem('jupeb_subject_progress', JSON.stringify(progress));
+    localStorage.setItem(qbKey('jupeb_subject_progress'), JSON.stringify(progress));
 }
 
 function updateStreak() {
@@ -3256,6 +3277,63 @@ function pickerJumpTo(step) {
     renderPickerStep();
 }
 
+// ===== QUESTION COUNTS IN THE SUBJECT PICKER =====
+// Each subject, course and topic tile shows how many questions it has. A tile
+// with none is greyed out and can't be opened; tapping it shows a short note.
+// Counts match the topic page: identical questions are counted once.
+const _topicCountCache = {};
+function topicCounts(subjectId) {
+    const data = (allSubjectData && allSubjectData[subjectId]) || [];
+    const cached = _topicCountCache[subjectId];
+    if (cached && cached.size === data.length) return cached.counts;
+    const counts = {}, seen = {};
+    data.forEach(q => {
+        if (!q.category) return;
+        const key = (q.question || '').trim().toLowerCase();
+        const set = seen[q.category] || (seen[q.category] = new Set());
+        if (set.has(key)) return;
+        set.add(key);
+        counts[q.category] = (counts[q.category] || 0) + 1;
+    });
+    _topicCountCache[subjectId] = { size: data.length, counts };
+    return counts;
+}
+function courseQuestionCount(subjectId, course) {
+    const counts = topicCounts(subjectId);
+    return (courseStructure[subjectId]?.[course] || []).reduce((n, t) => n + (counts[t] || 0), 0);
+}
+function subjectQuestionCount(subjectId) {
+    return Object.keys(courseStructure[subjectId] || {}).reduce((n, c) => n + courseQuestionCount(subjectId, c), 0);
+}
+// Until the questions have loaded we don't know the counts, so nothing is greyed out yet
+function countsReady() { return window.jupebDataLoaded === true; }
+function countLabel(n) {
+    if (!countsReady()) return 'Loading…';
+    if (n === 0) return 'No questions yet';
+    return n === 1 ? '1 question' : `${n.toLocaleString()} questions`;
+}
+function showPickerNote(text) {
+    let note = document.getElementById('picker-note');
+    if (!note) {
+        note = document.createElement('div');
+        note.id = 'picker-note';
+        note.className = 'picker-note';
+        note.setAttribute('role', 'status');
+        pickerEl.appendChild(note);
+    }
+    note.textContent = text;
+    note.classList.add('is-show');
+    clearTimeout(showPickerNote._t);
+    showPickerNote._t = setTimeout(() => note.classList.remove('is-show'), 2600);
+}
+function pickerEmptyTile(name) {
+    showPickerNote(`No questions in ${name} yet. Check back soon.`);
+}
+// When the questions finish loading while the picker is open, fill in the counts
+document.addEventListener('jupebDataLoaded', () => {
+    if (pickerEl && pickerEl.classList.contains('is-open')) renderPickerStep();
+});
+
 // REPLACE your entire existing renderPickerStep() with this whole function.
 function renderPickerStep() {
     pickerSearch.value = "";
@@ -3283,37 +3361,62 @@ function renderPickerStep() {
 
         pickerGrid.innerHTML = subjects.map(id => {
             const isPinned = pinned.includes(id);
-            const action = pickerPinMode ? `pickerTogglePin('${id}')` : `pickerChooseSubject('${id}')`;
+            const n = subjectQuestionCount(id);
+            const empty = countsReady() && n === 0 && !pickerPinMode;
+            const action = pickerPinMode ? `pickerTogglePin('${id}')`
+                : empty ? `pickerEmptyTile('${SUBJECT_NAMES[id]}')` : `pickerChooseSubject('${id}')`;
             const badge = pickerPinMode
                 ? `<span class="pin-badge ${isPinned ? 'is-pinned' : ''}">${isPinned ? '−' : '+'}</span>`
                 : '';
             return `
-                <button class="subject-tile" data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="${action}">
+                <button class="subject-tile ${empty ? 'is-empty' : ''}" data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="${action}" ${empty ? 'aria-disabled="true"' : ''}>
                     ${badge}
                     <span class="subject-tile-icon">${SUBJECT_ICONS[id] || "📘"}</span>
                     <span class="subject-tile-name">${SUBJECT_NAMES[id]}</span>
+                    <span class="subject-tile-count">${countLabel(n)}</span>
                 </button>`;
         }).join("");
     } else if (pickerStep === "set") {
         pickerSearch.placeholder = "Search courses…";
         const courses = Object.keys(courseStructure[pickerSubject] || {});
-        pickerGrid.innerHTML = courses.map(course => `
-            <button class="subject-tile" data-name="${course.toLowerCase()}" onclick="pickerChooseSet('${escapeHtml(course)}')">
+        pickerGrid.innerHTML = courses.map((course, i) => {
+            const n = courseQuestionCount(pickerSubject, course);
+            const empty = countsReady() && n === 0;
+            return `
+            <button class="subject-tile ${empty ? 'is-empty' : ''}" data-name="${course.toLowerCase()}" data-course-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
                 <span class="subject-tile-icon">📘</span>
                 <span class="subject-tile-name">${escapeHtml(course)}</span>
-            </button>`).join("");
+                <span class="subject-tile-count">${countLabel(n)}</span>
+            </button>`;
+        }).join("");
+
+        pickerGrid.querySelectorAll("button[data-course-index]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const course = courses[parseInt(btn.dataset.courseIndex, 10)];
+                if (btn.classList.contains("is-empty")) pickerEmptyTile(course);
+                else pickerChooseSet(course);
+            });
+        });
     } else if (pickerStep === "topic") {
     pickerSearch.placeholder = "Search topics…";
     const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
-    pickerGrid.innerHTML = topics.map((topic, i) => `
-        <button class="subject-tile" data-name="${topic.toLowerCase()}" data-topic-index="${i}">
+    const counts = topicCounts(pickerSubject);
+    pickerGrid.innerHTML = topics.map((topic, i) => {
+        const n = counts[topic] || 0;
+        const empty = countsReady() && n === 0;
+        return `
+        <button class="subject-tile ${empty ? 'is-empty' : ''}" data-name="${topic.toLowerCase()}" data-topic-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
             <span class="subject-tile-icon">📖</span>
             <span class="subject-tile-name">${escapeHtml(topic)}</span>
-        </button>`).join("");
+            <span class="subject-tile-count">${countLabel(n)}</span>
+        </button>`;
+    }).join("");
 
     pickerGrid.querySelectorAll("button[data-topic-index]").forEach(btn => {
         btn.addEventListener("click", () => {
-            pickerChooseTopic(topics[parseInt(btn.dataset.topicIndex, 10)]);
+            const topic = topics[parseInt(btn.dataset.topicIndex, 10)];
+            if (btn.classList.contains("is-empty")) pickerEmptyTile(topic);
+            else pickerChooseTopic(topic);
         });
     });
 }
@@ -3622,6 +3725,7 @@ document.getElementById("help-report-btn").addEventListener("click", () => openB
 window.jupebDataLoaded = false;
 
 function initJUPEBApp() {
+    if (typeof applyExamMode === 'function') applyExamMode();   // JUPEB or IJMB (exam-mode.js)
     initTheme();
     initSidebar();
     initMobileSidebar();

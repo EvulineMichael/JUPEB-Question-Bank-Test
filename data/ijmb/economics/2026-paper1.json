@@ -1,0 +1,112 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "a. “Other thing being equal” Q=f(p)<o. Using appropriate graphs, explain the statement and identify the “other things”.",
+    "options": [],
+    "modelAnswer": "Note: 'Q = f(p) < o' is read as Q = f(P), with dQ/dP < 0, i.e., quantity demanded is a function of price, and the relationship is negative.\n\nExplanation of the statement\n'Other things being equal' (ceteris paribus) means that all factors other than the one being studied are assumed to stay constant. The statement Q = f(P), with dQ/dP < 0, is the law of demand: other things being equal, the quantity demanded of a commodity varies inversely with its price. When price rises, quantity demanded falls; when price falls, quantity demanded rises.\n\nThe ceteris paribus assumption isolates the effect of price alone. If the other factors were allowed to change at the same time, we could not tell whether a change in quantity demanded was caused by the price change or by something else.\n\nGraph 1 (the law of demand): draw price (P) on the vertical axis and quantity demanded (Q) on the horizontal axis. The demand curve DD slopes downwards from left to right. A fall in price from P₁ to P₂ increases quantity demanded from Q₁ to Q₂. This is a movement along the curve, called an extension of demand (and a rise in price gives a contraction of demand).\n\nGraph 2 (a change in the other things): if any of the 'other things' changes, e.g., consumers' income rises, the whole demand curve shifts, from D₁ to D₂ (to the right for an increase in demand), so more is demanded at every price. A shift to the left (D₁ to D₀) shows a decrease in demand.\n\nThe 'other things' (the determinants of demand held constant):\n1. Income of consumers: for normal goods, a rise in income increases demand.\n2. Prices of related goods: substitutes (e.g., tea and coffee) and complements (e.g., cars and petrol).\n3. Tastes, fashion and preferences.\n4. Size and composition of the population.\n5. Expectations of future prices and incomes.\n6. Advertising and sales promotion.\n7. Government policy, e.g., taxes and subsidies.\n8. Season and weather.\n9. Distribution of income.\n10. Availability of credit."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "b. The market demand and supply schedules for drinks are given by the following:\nQd = 1000 – 100p\nQs = 500 + 100p\nc. Sketch the supply and demand curves and calculate the equilibrium price and quantity.",
+    "options": [],
+    "modelAnswer": "Note: part (b) gives the data and part (c) asks the question, so both are answered here.\n\nEquilibrium occurs where quantity demanded equals quantity supplied: Qd = Qs.\n1000 − 100P = 500 + 100P\n500 = 200P\nP = 2.5.\n\nEquilibrium quantity: Q = 1000 − 100(2.5) = 750 (check: Qs = 500 + 100(2.5) = 750).\nEquilibrium price = 2.5 and equilibrium quantity = 750 units.\n\nSchedule for the sketch:\nP = 0: Qd = 1000, Qs = 500\nP = 1: Qd = 900, Qs = 600\nP = 2: Qd = 800, Qs = 700\nP = 2.5: Qd = 750, Qs = 750 (equilibrium)\nP = 3: Qd = 700, Qs = 800\nP = 4: Qd = 600, Qs = 900\nP = 5: Qd = 500, Qs = 1000\n\nSketch: draw price on the vertical axis and quantity on the horizontal axis.\nThe demand curve is a straight line sloping downwards. It meets the price axis at P = 10 (where Qd = 0) and the quantity axis at Q = 1000 (where P = 0).\nThe supply curve is a straight line sloping upwards, starting from Q = 500 at P = 0.\nThe two lines cross at the equilibrium point E, where P = 2.5 and Q = 750. Mark this point, with dotted lines to each axis.\nAbove P = 2.5 there is excess supply (a surplus); below it there is excess demand (a shortage)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Theory of the Firm",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Discuss the importance of the theory of production.",
+    "options": [],
+    "modelAnswer": "Introduction\nThe theory of production studies the relationship between the inputs (factors of production: land, labour, capital and entrepreneurship) used by a firm and the output it produces. This relationship is often expressed as a production function, Q = f(L, K, ...). The theory includes the laws of returns (the law of diminishing returns and returns to scale) and the choice of the best combination of factors.\n\nImportance of the theory of production:\n\n1. Choice of the best combination of factors: it helps firms find the least-cost combination of inputs for a given output, where MPL/w = MPK/r, or where an isoquant is tangent to an isocost line.\n\n2. Determining the level of output: it shows how output responds to changes in inputs, helping firms decide how much to produce and how many workers to employ.\n\n3. Basis of the theory of costs: cost curves are derived from the production function. For example, diminishing returns explain why short-run marginal and average costs eventually rise.\n\n4. Understanding the laws of returns: the law of diminishing returns warns firms against adding too much of a variable factor to fixed factors, while returns to scale guide decisions on expanding the scale of production.\n\n5. Efficient allocation of resources: by showing how to obtain maximum output from scarce resources, the theory promotes efficiency at the level of the firm and the economy.\n\n6. Determination of factor prices: the marginal productivity theory of distribution, which explains wages, rent and interest, is based on the productivity of factors.\n\n7. Explaining supply: since supply depends on production costs, the theory helps explain the behaviour of supply.\n\n8. Choice of technology: it helps firms and governments decide between labour-intensive and capital-intensive techniques, which matters for employment in developing countries.\n\n9. Economic planning and policy: governments use it to plan for growth, employment, and the expansion of agriculture and industry.\n\n10. Productivity improvement: it shows the importance of technology, skills and organisation in raising output from the same inputs.\n\nConclusion\nThe theory of production is important for firms (choosing inputs, outputs and scale), for the economy (efficient use of scarce resources) and for government policy, and it forms the foundation of cost theory and the theory of distribution."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Theory of the Firm",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Production Isoquant can assume various shapes depending on the degree of substitutability of factors of production. Discuss.",
+    "options": [],
+    "modelAnswer": "Introduction\nAn isoquant (equal-product curve) is a curve showing all the combinations of two factors of production (e.g., labour L and capital K) that produce the same level of output. Its slope is the marginal rate of technical substitution (MRTS), i.e., the rate at which one factor can be substituted for the other while output stays the same. The shape of an isoquant depends on how easily the factors can be substituted for each other.\n\n1. Perfect substitutes: a straight-line (linear) isoquant\nIf the two factors can be substituted for each other at a constant rate (e.g., one machine can always replace two workers), the isoquant is a straight line sloping downwards, and the MRTS is constant at all points.\nSketch: capital on the vertical axis and labour on the horizontal axis, with a straight line joining the two axes.\nExample: two types of fuel that do the same job, or workers of identical skill from two sources.\n\n2. Perfect complements (no substitution): an L-shaped (right-angled) isoquant\nIf the factors must be used in fixed proportions, so that no substitution is possible (e.g., one driver for one bus), the isoquant is L-shaped. Adding more of one factor without more of the other does not increase output. The MRTS is zero along the horizontal part, infinite along the vertical part, and undefined at the corner. This is also called the fixed-proportions (Leontief) production function.\nExample: one operator per machine; one driver per lorry.\n\n3. Imperfect substitutes: a convex isoquant (the normal case)\nIn most cases, factors can be substituted for each other, but not perfectly. As more and more labour is used in place of capital, it becomes harder to replace capital, so the MRTS diminishes. The isoquant therefore slopes downwards and is convex to the origin, i.e., smooth and curved.\nExample: in farming, labour and machinery can replace each other to some extent.\n\n4. Limited techniques: a kinked isoquant\nWhere only a few fixed production techniques are available (each using factors in fixed proportions), the isoquant is made up of straight-line segments with kinks at each technique (the linear programming isoquant). It approaches the smooth convex shape as the number of techniques increases.\n\nConclusion\nThe shape of an isoquant reflects the degree of substitutability between factors: a straight line for perfect substitutes, L-shaped for perfect complements, smooth and convex for imperfect substitutes (the usual case), and kinked where only a few techniques exist. The degree of substitutability is measured by the elasticity of substitution, which is infinite for perfect substitutes and zero for perfect complements."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Theory of the Firm",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "a. Define what is meant by an Isocost curve.",
+    "options": [],
+    "modelAnswer": "An isocost curve (line) shows all the combinations of two factors of production (e.g., labour and capital) that a firm can buy with a given total cost (budget), at given factor prices.\n\nEquation: C = wL + rK, where C is the total outlay, w the price of labour (wage) and r the price of capital.\n\nFeatures:\n1. It is a straight line sloping downwards.\n2. It meets the capital axis at C/r (if all the money is spent on capital) and the labour axis at C/w.\n3. Its slope is −w/r, the ratio of the factor prices.\n4. A higher budget shifts the line outwards, parallel to the original; a change in one factor price changes its slope.\n\nUse: the firm's least-cost combination of inputs (producer's equilibrium) is where the isocost line is tangent to the highest attainable isoquant, i.e., where MRTS = w/r, or MPL/w = MPK/r."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Theory of the Firm",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "b. Write an explanatory notes on the following:\ni. Total physical product.\nii. Average product",
+    "options": [],
+    "modelAnswer": "(i) Total physical product (TPP or TP)\nTotal product is the total quantity of output produced by all the units of a variable factor (e.g., labour) employed, together with the fixed factors, in a given period.\nAs more units of the variable factor are added to fixed factors, TP at first rises at an increasing rate, then rises at a decreasing rate (as diminishing returns set in), reaches a maximum (where marginal product is zero), and then falls (where marginal product is negative).\n\n(ii) Average product (AP)\nAverage product is the output per unit of the variable factor employed:\nAP = TP ÷ number of units of the variable factor (e.g., AP of labour = TP/L).\nAP at first rises, reaches a maximum and then falls. When marginal product (MP) is above AP, AP rises; when MP is below AP, AP falls; and MP cuts AP at its maximum point.\n\nIllustration (labour added to a fixed amount of land):\nLabour 1: TP 10, AP 10, MP 10\nLabour 2: TP 25, AP 12.5, MP 15\nLabour 3: TP 45, AP 15, MP 20\nLabour 4: TP 60, AP 15, MP 15\nLabour 5: TP 70, AP 14, MP 10\nLabour 6: TP 72, AP 12, MP 2\nAP is greatest (15) at 3 to 4 workers, where MP = AP; after that, AP falls."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Basic Economic Principles",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "a. Who is an entrepreneur?",
+    "options": [],
+    "modelAnswer": "An entrepreneur is the person who organises and coordinates the other factors of production (land, labour and capital) to produce goods and services, takes decisions about the business, and bears the risks and uncertainties involved. The entrepreneur is regarded as the fourth factor of production, and their reward is profit (or loss).\n\nExamples: the founder of a manufacturing company, a farmer who runs a commercial farm, or the owner of a small business such as a bakery or a tailoring shop.\n\nCharacteristics: initiative and creativity, willingness to take risks, leadership and organising ability, and the ability to spot opportunities and innovate."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Basic Economic Principles",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "b. What roles dues entrepreneur play in an economy?",
+    "options": [],
+    "modelAnswer": "Note: 'dues' means 'does'.\n\n1. Organisation of the factors of production: the entrepreneur brings together land, labour and capital in the right proportions to produce goods and services.\n\n2. Risk and uncertainty bearing: the entrepreneur bears the risk of loss if the business fails, which other factors are not willing to bear.\n\n3. Decision-making: the entrepreneur decides what to produce, how to produce, how much to produce, where to locate the business, and what prices to charge.\n\n4. Innovation: according to Joseph Schumpeter, entrepreneurs introduce new products, new methods of production, new markets and new forms of organisation, driving economic progress.\n\n5. Employment creation: by establishing businesses, entrepreneurs create jobs and reduce unemployment.\n\n6. Wealth and income creation: entrepreneurs generate income for themselves, their employees and suppliers, raising national income.\n\n7. Capital formation: entrepreneurs mobilise savings and invest them in productive ventures.\n\n8. Economic growth and development: through investment and innovation, entrepreneurs increase output and raise living standards.\n\n9. Efficient use of resources: entrepreneurs put idle resources to productive use, including local raw materials.\n\n10. Competition and consumer welfare: competition among entrepreneurs gives consumers a wider choice, lower prices and better quality.\n\n11. Import substitution and exports: local production reduces dependence on imports, and entrepreneurs can export goods, earning foreign exchange.\n\n12. Government revenue: entrepreneurs and their businesses pay taxes, which fund public services.\n\n13. Balanced regional development: entrepreneurs who set up businesses in rural or less developed areas help to spread development."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Introduction to Economics",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "a. Why is economics regarded as a science?",
+    "options": [],
+    "modelAnswer": "A science is a systematic body of knowledge, built up by observing facts and applying the scientific method, that establishes cause-and-effect relationships. Economics is regarded as a (social) science for the following reasons:\n\n1. It uses the scientific method: economists observe economic phenomena, form hypotheses, collect and analyse data, test the hypotheses, and draw conclusions or generalisations.\n\n2. It is a systematic body of knowledge: its subject matter is organised logically into branches, such as microeconomics and macroeconomics.\n\n3. It has laws, principles and theories: e.g., the law of demand, the law of supply, the law of diminishing returns, and the law of diminishing marginal utility, which explain cause-and-effect relationships.\n\n4. It uses scientific tools: mathematics, statistics, graphs, models and econometrics are used to analyse and measure economic relationships.\n\n5. It can make predictions: economic theories can be used to predict outcomes, e.g., that a rise in price will lead to a fall in quantity demanded, other things being equal.\n\n6. Positive economics: like the natural sciences, economics can make statements about 'what is', which can be tested against facts.\n\n7. Its findings can be verified and revised in the light of new evidence."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Introduction to Economics",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "b. What are its limitations?",
+    "options": [],
+    "modelAnswer": "Limitations of economics as a science:\n\n1. No controlled laboratory experiments: unlike physics or chemistry, economics cannot easily conduct controlled experiments, because it deals with human beings and whole economies.\n\n2. Human behaviour is unpredictable: economics studies human behaviour, which is influenced by emotions, habits, culture and irrational decisions, so it cannot be predicted precisely.\n\n3. Economic laws are tendencies, not exact laws: they hold only on average, and under the assumption of ceteris paribus (other things being equal), which rarely holds in real life.\n\n4. Less accurate predictions: forecasts are often less precise and less reliable than those of the natural sciences.\n\n5. Value judgements: normative economics deals with 'what ought to be', which involves opinions and cannot be tested scientifically.\n\n6. Changing environment: economic conditions, institutions and technology change constantly, so conclusions may become outdated.\n\n7. Lack of universality: economic laws may not apply equally in all countries and at all times, because of differences in institutions, culture and level of development.\n\n8. Problems of data: economic data may be inaccurate, incomplete or unavailable, especially in developing countries.\n\n9. Influence of politics: economic outcomes are affected by political decisions, which are hard to model."
+  }
+]

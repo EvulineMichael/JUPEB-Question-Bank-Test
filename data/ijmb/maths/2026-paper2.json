@@ -1,0 +1,222 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Differentiate y = sin⁻¹(1 − x)e⁻ˣ. [04 marks]",
+    "options": [],
+    "modelAnswer": "Read as a product: y = e⁻ˣ sin⁻¹(1 − x).\n\nProduct rule: dy/dx = e⁻ˣ × d/dx[sin⁻¹(1 − x)] + sin⁻¹(1 − x) × d/dx[e⁻ˣ].\n\nd/dx[sin⁻¹u] = (1/√(1 − u²)) du/dx. With u = 1 − x, du/dx = −1, and 1 − (1 − x)² = 2x − x², so:\nd/dx[sin⁻¹(1 − x)] = −1/√(2x − x²).\n\nd/dx[e⁻ˣ] = −e⁻ˣ.\n\ndy/dx = −e⁻ˣ/√(2x − x²) − e⁻ˣ sin⁻¹(1 − x)\n= −e⁻ˣ[1/√(2x − x²) + sin⁻¹(1 − x)]."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Evaluate lim_(x→9) (x² − 8x − 9)/(3 − √x). [04 marks]",
+    "options": [],
+    "modelAnswer": "Substituting x = 9 gives 0/0, so simplify first.\n\nNumerator: x² − 8x − 9 = (x − 9)(x + 1).\nWrite x − 9 as a difference of squares: x − 9 = (√x − 3)(√x + 3) = −(3 − √x)(√x + 3).\n\nSo (x² − 8x − 9)/(3 − √x) = −(3 − √x)(√x + 3)(x + 1)/(3 − √x) = −(√x + 3)(x + 1), for x ≠ 9.\n\nlim_(x→9) [−(√x + 3)(x + 1)] = −(3 + 3)(9 + 1) = −60."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Solve the differential equation dy/dx = e^(x − 2y) [04 marks]",
+    "options": [],
+    "modelAnswer": "dy/dx = eˣ × e⁻²ʸ.\n\nSeparate the variables: e²ʸ dy = eˣ dx.\nIntegrate both sides: ½e²ʸ = eˣ + C.\n\nSo e²ʸ = 2eˣ + A (where A = 2C), and the general solution is\ny = ½ ln(2eˣ + A)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Find the direction cosines for the resultant of the vectors −i + 2j + 2k and 2i − 3j − k. [04 marks]",
+    "options": [],
+    "modelAnswer": "Resultant: R = (−1 + 2)i + (2 − 3)j + (2 − 1)k = i − j + k.\n\n|R| = √(1² + (−1)² + 1²) = √3.\n\nDirection cosines (each component divided by |R|):\nl = 1/√3, m = −1/√3, n = 1/√3\n(≈ 0.577, −0.577, 0.577).\nCheck: l² + m² + n² = 1/3 + 1/3 + 1/3 = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Obtain the indefinite ∫3x Sin(x² + 5)dx. [04 marks]",
+    "options": [],
+    "modelAnswer": "Substitute u = x² + 5, so du = 2x dx and x dx = ½ du.\n\n∫3x sin(x² + 5) dx = 3 × ½ ∫sin u du = (3/2)(−cos u) + C\n= −(3/2) cos(x² + 5) + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Applications of Differentiation",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Find the relative maxima and minima on the curve y = x³ − 2x² + x + 2. [08 marks]",
+    "options": [],
+    "modelAnswer": "dy/dx = 3x² − 4x + 1.\n\nAt stationary points dy/dx = 0:\n3x² − 4x + 1 = 0\n(3x − 1)(x − 1) = 0\nx = 1/3 or x = 1.\n\nd²y/dx² = 6x − 4.\n\nAt x = 1/3: d²y/dx² = 2 − 4 = −2 < 0, so this is a maximum.\ny = (1/3)³ − 2(1/3)² + 1/3 + 2 = 1/27 − 6/27 + 9/27 + 54/27 = 58/27 ≈ 2.15.\nRelative maximum at (1/3, 58/27).\n\nAt x = 1: d²y/dx² = 6 − 4 = 2 > 0, so this is a minimum.\ny = 1 − 2 + 1 + 2 = 2.\nRelative minimum at (1, 2)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Evaluate ∫₃⁸ dx/(x√(1+x)). [08 marks]",
+    "options": [],
+    "modelAnswer": "Substitute u = √(1 + x), so x = u² − 1 and dx = 2u du.\nLimits: when x = 3, u = 2; when x = 8, u = 3.\n\n∫₃⁸ dx/(x√(1 + x)) = ∫₂³ 2u du/((u² − 1)u) = ∫₂³ 2/(u² − 1) du.\n\nPartial fractions: 2/(u² − 1) = 1/(u − 1) − 1/(u + 1).\n\n= [ln|u − 1| − ln|u + 1|]₂³ = [ln|(u − 1)/(u + 1)|]₂³\n= ln(2/4) − ln(1/3)\n= ln(1/2) + ln 3\n= ln(3/2) ≈ 0.405."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Find ∫x cos xdx. [04 marks]",
+    "options": [],
+    "modelAnswer": "Integration by parts, ∫u dv = uv − ∫v du, with u = x (so du = dx) and dv = cos x dx (so v = sin x):\n\n∫x cos x dx = x sin x − ∫sin x dx = x sin x + cos x + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) If x = tan(ln y), show that (1 + x²)y″ + (2x − 1)y′ = 0. [08 marks]",
+    "options": [],
+    "modelAnswer": "x = tan(ln y), so ln y = tan⁻¹x and y = e^(tan⁻¹x).\n\nDifferentiate: y′ = e^(tan⁻¹x) × 1/(1 + x²) = y/(1 + x²).\nSo (1 + x²)y′ = y.\n\nDifferentiate again (product rule on the left):\n2x y′ + (1 + x²)y″ = y′\n(1 + x²)y″ + 2x y′ − y′ = 0\n(1 + x²)y″ + (2x − 1)y′ = 0, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Differentiate cos⁻¹((1−x)/(1+x)) and express your answer in its simplest form. [08 marks]",
+    "options": [],
+    "modelAnswer": "Let y = cos⁻¹((1 − x)/(1 + x)), with x > 0.\n\nMethod: let x = tan²θ, so √x = tan θ. Then\n(1 − x)/(1 + x) = (1 − tan²θ)/(1 + tan²θ) = cos 2θ.\nSo y = cos⁻¹(cos 2θ) = 2θ = 2 tan⁻¹√x.\n\ndy/dx = 2 × 1/(1 + (√x)²) × 1/(2√x) = 1/(√x(1 + x)).\n\nCheck by the chain rule: let u = (1 − x)/(1 + x), so du/dx = −2/(1 + x)².\n1 − u² = [(1 + x)² − (1 − x)²]/(1 + x)² = 4x/(1 + x)², so √(1 − u²) = 2√x/(1 + x).\ndy/dx = −(du/dx)/√(1 − u²) = [2/(1 + x)²] × [(1 + x)/(2√x)] = 1/(√x(1 + x)).\n\ndy/dx = 1/((1 + x)√x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Find ∫x²/(x²+9) dx. [04 marks]",
+    "options": [],
+    "modelAnswer": "Divide first: x²/(x² + 9) = (x² + 9 − 9)/(x² + 9) = 1 − 9/(x² + 9).\n\n∫x²/(x² + 9) dx = ∫1 dx − 9∫dx/(x² + 3²)\n= x − 9 × (1/3) tan⁻¹(x/3) + C\n= x − 3 tan⁻¹(x/3) + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Differentiate from first principle y = √(x² − 2x). [08 marks]",
+    "options": [],
+    "modelAnswer": "f(x) = √(x² − 2x).\ndy/dx = lim_(h→0) [f(x + h) − f(x)]/h = lim_(h→0) [√((x + h)² − 2(x + h)) − √(x² − 2x)]/h.\n\nMultiply the numerator and denominator by the conjugate, √((x + h)² − 2(x + h)) + √(x² − 2x):\n\nNumerator becomes [(x + h)² − 2(x + h)] − [x² − 2x] = x² + 2xh + h² − 2x − 2h − x² + 2x = 2xh + h² − 2h = h(2x + h − 2).\n\nSo dy/dx = lim_(h→0) h(2x + h − 2)/[h(√((x + h)² − 2(x + h)) + √(x² − 2x))]\n= lim_(h→0) (2x + h − 2)/[√((x + h)² − 2(x + h)) + √(x² − 2x)].\n\nLet h → 0:\ndy/dx = (2x − 2)/(2√(x² − 2x)) = (x − 1)/√(x² − 2x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Using integration by parts, show that nIₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂, given that Iₙ = ∫cosⁿ x dx. [08 marks]",
+    "options": [],
+    "modelAnswer": "Iₙ = ∫cosⁿx dx = ∫cosⁿ⁻¹x · cos x dx.\n\nIntegrate by parts with u = cosⁿ⁻¹x, so du = −(n − 1)cosⁿ⁻²x sin x dx, and dv = cos x dx, so v = sin x:\nIₙ = sin x cosⁿ⁻¹x − ∫sin x × [−(n − 1)cosⁿ⁻²x sin x] dx\n= sin x cosⁿ⁻¹x + (n − 1)∫cosⁿ⁻²x sin²x dx.\n\nUse sin²x = 1 − cos²x:\nIₙ = sin x cosⁿ⁻¹x + (n − 1)∫cosⁿ⁻²x dx − (n − 1)∫cosⁿx dx\nIₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂ − (n − 1)Iₙ.\n\nCollect the Iₙ terms:\nIₙ + (n − 1)Iₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂\nnIₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) Integrate the function f(x) = 1/(x² − 4) with respect to x. [04 marks]",
+    "options": [],
+    "modelAnswer": "Partial fractions: 1/(x² − 4) = 1/((x − 2)(x + 2)) = A/(x − 2) + B/(x + 2).\n1 = A(x + 2) + B(x − 2).\nx = 2: 1 = 4A, so A = 1/4. x = −2: 1 = −4B, so B = −1/4.\n\n∫dx/(x² − 4) = (1/4)∫[1/(x − 2) − 1/(x + 2)] dx\n= (1/4)[ln|x − 2| − ln|x + 2|] + C\n= (1/4) ln|(x − 2)/(x + 2)| + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) If p = i − 2j − k, q = 2i − j + k and r = i − 2j + 3k, show that p × (q + r) = p × q + p × r. [08marks]",
+    "options": [],
+    "modelAnswer": "Left-hand side:\nq + r = (2 + 1)i + (−1 − 2)j + (1 + 3)k = 3i − 3j + 4k.\np × (q + r) = | i   j   k |\n                    | 1  −2  −1 |\n                    | 3  −3   4 |\n= i[(−2)(4) − (−1)(−3)] − j[(1)(4) − (−1)(3)] + k[(1)(−3) − (−2)(3)]\n= i(−8 − 3) − j(4 + 3) + k(−3 + 6)\n= −11i − 7j + 3k.\n\nRight-hand side:\np × q = | i   j   k |\n            | 1  −2  −1 |\n            | 2  −1   1 |\n= i[(−2)(1) − (−1)(−1)] − j[(1)(1) − (−1)(2)] + k[(1)(−1) − (−2)(2)]\n= i(−2 − 1) − j(1 + 2) + k(−1 + 4)\n= −3i − 3j + 3k.\n\np × r = | i   j   k |\n            | 1  −2  −1 |\n            | 1  −2   3 |\n= i[(−2)(3) − (−1)(−2)] − j[(1)(3) − (−1)(1)] + k[(1)(−2) − (−2)(1)]\n= i(−6 − 2) − j(3 + 1) + k(−2 + 2)\n= −8i − 4j + 0k.\n\np × q + p × r = (−3 − 8)i + (−3 − 4)j + (3 + 0)k = −11i − 7j + 3k.\n\nBoth sides equal −11i − 7j + 3k, so p × (q + r) = p × q + p × r."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Solve the differential equation dy/dx − tan x y = x², for y(0) = 1. [12marks]",
+    "options": [],
+    "modelAnswer": "This is a linear equation of the form dy/dx + P(x)y = Q(x), with P(x) = −tan x and Q(x) = x².\n\nIntegrating factor: IF = e^(∫−tan x dx) = e^(ln cos x) = cos x.\n\nMultiply through by cos x:\ncos x dy/dx − sin x · y = x² cos x\nd/dx (y cos x) = x² cos x.\n\nIntegrate x² cos x by parts (twice):\n∫x² cos x dx = x² sin x − ∫2x sin x dx\n= x² sin x − 2[−x cos x + ∫cos x dx]\n= x² sin x + 2x cos x − 2 sin x + C.\n\nSo y cos x = x² sin x + 2x cos x − 2 sin x + C.\n\nUse y(0) = 1: 1 × cos 0 = 0 + 0 − 0 + C, so C = 1.\n\ny cos x = x² sin x + 2x cos x − 2 sin x + 1\ny = x² tan x + 2x − 2 tan x + sec x, i.e., y = (x² − 2)tan x + 2x + sec x."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) Find the particular solution of the equation 2xy dy/dx = y² − 3x², given that y(1) = 1. [12marks]",
+    "options": [],
+    "modelAnswer": "The equation is homogeneous: dy/dx = (y² − 3x²)/(2xy).\n\nLet y = vx, so dy/dx = v + x dv/dx:\nv + x dv/dx = (v²x² − 3x²)/(2vx²) = (v² − 3)/(2v)\nx dv/dx = (v² − 3)/(2v) − v = (v² − 3 − 2v²)/(2v) = −(v² + 3)/(2v).\n\nSeparate the variables:\n2v dv/(v² + 3) = −dx/x\nln(v² + 3) = −ln x + ln A\nv² + 3 = A/x.\n\nSubstitute v = y/x:\ny²/x² + 3 = A/x\ny² + 3x² = Ax.\n\nUse y(1) = 1: 1 + 3 = A, so A = 4.\n\nParticular solution: y² + 3x² = 4x, i.e., y² = 4x − 3x².\n\n(Alternatively, let z = y²: then dz/dx = 2y dy/dx, and the equation becomes x dz/dx − z = −3x², a linear equation, giving the same result.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Given vectors u = i − 2j − 3k and v = 3i + 2j + k, compute the scalar projection of (2u + 3v) on (3u − 2v). [08marks]",
+    "options": [],
+    "modelAnswer": "2u + 3v = (2 + 9)i + (−4 + 6)j + (−6 + 3)k = 11i + 2j − 3k.\n3u − 2v = (3 − 6)i + (−6 − 4)j + (−9 − 2)k = −3i − 10j − 11k.\n\nDot product:\n(2u + 3v)·(3u − 2v) = (11)(−3) + (2)(−10) + (−3)(−11) = −33 − 20 + 33 = −20.\n\n|3u − 2v| = √((−3)² + (−10)² + (−11)²) = √(9 + 100 + 121) = √230.\n\nScalar projection of (2u + 3v) on (3u − 2v) = [(2u + 3v)·(3u − 2v)]/|3u − 2v| = −20/√230 ≈ −1.32.\n(The negative sign shows that the angle between the two vectors is obtuse.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Find the equation of the curve which passes through (a, c) and is such that the gradient of the tangent to the curve at any point (x, y) on it is −x³/y³. [10marks]",
+    "options": [],
+    "modelAnswer": "dy/dx = −x³/y³.\n\nSeparate the variables: y³ dy = −x³ dx.\nIntegrate: y⁴/4 = −x⁴/4 + C, so x⁴ + y⁴ = K (where K = 4C).\n\nThe curve passes through (a, c): a⁴ + c⁴ = K.\n\nEquation of the curve: x⁴ + y⁴ = a⁴ + c⁴."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Find the area of triangle PQR whose position vectors of P, Q, R are 2i − j + 2k, 3i + 4j + 3k, and 2i − 3j − 2k, respectively. [10marks]",
+    "options": [],
+    "modelAnswer": "PQ = Q − P = (3 − 2)i + (4 + 1)j + (3 − 2)k = i + 5j + k.\nPR = R − P = (2 − 2)i + (−3 + 1)j + (−2 − 2)k = 0i − 2j − 4k.\n\nPQ × PR = | i   j   k |\n                  | 1   5   1 |\n                  | 0  −2  −4 |\n= i[(5)(−4) − (1)(−2)] − j[(1)(−4) − (1)(0)] + k[(1)(−2) − (5)(0)]\n= i(−20 + 2) − j(−4) + k(−2)\n= −18i + 4j − 2k.\n\n|PQ × PR| = √(324 + 16 + 4) = √344 = 2√86.\n\nArea of triangle PQR = ½|PQ × PR| = ½ × 2√86 = √86 ≈ 9.27 square units."
+  }
+]
