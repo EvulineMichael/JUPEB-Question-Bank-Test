@@ -1,13 +1,18 @@
-   {
-     "redirects": [
-       {
-         "source": "/:path*",
-         "has": [{ "type": "host", "value": "jupeb-question-bank-test.vercel.app" }],
-         "destination": "https://test.jupebijmbprep.com/:path*",
-         "permanent": false
-       }
-     ],
-     "rewrites": [
-       { "source": "/((?!data/|api/|images/|.*\\.).*)", "destination": "/index.html" }
-     ]
-   }
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "jupeb-question-bank-test.vercel.app" }],
+      "destination": "https://test.jupebijmbprep.com/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/redirect-test",
+      "destination": "https://jupebijmbprep.com",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    { "source": "/((?!data/|api/|images/|.*\\.).*)", "destination": "/index.html" }
+  ]
+}
