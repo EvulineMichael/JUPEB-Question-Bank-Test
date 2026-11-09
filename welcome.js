@@ -31,6 +31,25 @@ function welcomePinKey() {
   return (typeof qbKey === "function") ? qbKey("jupeb_pinned_subjects") : "jupeb_pinned_subjects";
 }
 
+// Quick Access is saved on the device. On a new phone, or on the new web address,
+// it starts empty, so fill it once from the subjects the student gave in the
+// welcome popup. Only once per device and exam, so if they clear it on purpose,
+// it stays cleared.
+function restoreQuickAccess(saved) {
+  if (!saved || !Array.isArray(saved.subjects) || saved.subjects.length === 0) return;
+  const doneKey = (typeof qbKey === "function") ? qbKey("jupeb_pins_restored") : "jupeb_pins_restored";
+  if (localStorage.getItem(doneKey)) return;
+  localStorage.setItem(doneKey, "1");
+  let current = [];
+  try { current = JSON.parse(localStorage.getItem(welcomePinKey()) || "[]"); } catch (e) { current = []; }
+  if (current.length) return;                       // they already have Quick Access here
+  const available = (typeof courseStructure === "object") ? Object.keys(courseStructure) : saved.subjects;
+  const pins = saved.subjects.filter(id => available.includes(id));
+  if (!pins.length) return;
+  localStorage.setItem(welcomePinKey(), JSON.stringify(pins));
+  if (typeof renderPinnedSubjects === "function") renderPinnedSubjects();
+}
+
 function applyPreferredName(user, name) {
   if (!name) return;
   localStorage.setItem("jupeb_user_name", name);
@@ -51,6 +70,7 @@ async function maybeShowWelcome(user, docRef) {
     return;                          // never block the app over this
   }
   if (saved.preferredName) applyPreferredName(user, saved.preferredName);
+  restoreQuickAccess(saved);
   if (saved.profileCompletedAt) return;
 
   // Ask "Which exam are you writing?" only of students added since IJMB arrived

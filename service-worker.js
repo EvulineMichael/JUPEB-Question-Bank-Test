@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v19';
+const CACHE_VERSION = 'v20';
 const CACHE_NAME = `jupeb-qb-${CACHE_VERSION}`;
 
 const ASSETS_TO_CACHE = [

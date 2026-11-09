@@ -308,7 +308,7 @@
 
 <script>
 const RATE_PER_STUDENT = 1000;
-const SITE_URL = 'https://jupeb-question-bank.vercel.app';
+const SITE_URL = window.location.origin;   // whatever address the teacher page is open on
 
 let currentTeacher = null;   // { id: code, ...docData }
 let currentTeacherRef = null;
