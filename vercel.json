@@ -1,4 +1,7 @@
 {
+  "functions": {
+    "api/papers.js": { "includeFiles": "data/**" }
+  },
   "redirects": [
     {
       "source": "/(.*)",

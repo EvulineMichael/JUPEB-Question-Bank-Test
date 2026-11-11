@@ -1181,6 +1181,64 @@ if (q.diagramMissing) {
     return html;
 }
 
+  // ===== LOADING QUESTION PAPERS =====
+  // On the live site, papers come from /api/papers, which checks that the student
+  // is signed in and has paid for this exam. On your own computer (Live Server)
+  // there is no /api, so the files in data/ are read directly, as before.
+  function isLocalDev() {
+      return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  }
+
+  // Returns { years: [...], questions: [...] } for one subject in the current exam
+  async function loadSubjectPapers(subject) {
+      if (isLocalDev()) return loadSubjectPapersFromFiles(subject);
+
+      const empty = { years: [], questions: [] };
+      const user = (typeof auth !== 'undefined') ? auth.currentUser : null;
+      if (!user) return empty;                       // not signed in: no questions
+      const exam = (typeof getCurrentExam === 'function') ? getCurrentExam() : 'jupeb';
+
+      try {
+          const token = await user.getIdToken();
+          const response = await fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
+              headers: { Authorization: 'Bearer ' + token }
+          });
+          if (!response.ok) {
+              console.warn(`No ${subject} papers (${response.status})`);
+              return empty;
+          }
+          const body = await response.json();
+          const years = [];
+          const questions = [];
+          (body.papers || []).forEach(p => {
+              years.push({ year: p.year, paper: p.paper, label: p.label });
+              (p.questions || []).forEach(q => questions.push({ ...q, paper: p.paper || null }));
+          });
+          return { years, questions };
+      } catch (error) {
+          console.error(`Error loading ${subject}:`, error);
+          return empty;
+      }
+  }
+
+  // Local testing only: the old way, reading the files in data/ directly
+  async function loadSubjectPapersFromFiles(subject) {
+      const years = await getAvailableYears(subject);
+      const results = await Promise.all(years.map(async (yr) => {
+          try {
+              const response = await fetch(yr.file);
+              if (!response.ok) return [];
+              const yearData = await response.json();
+              const list = Array.isArray(yearData) ? yearData
+                  : (yearData && Array.isArray(yearData.questions)) ? yearData.questions : [];
+              return list.map(q => ({ ...q, paper: yr.paper || null }));
+          } catch (error) {
+              console.error(`Error loading ${yr.file}:`, error);
+              return [];
+          }
+      }));
+      return { years, questions: results.flat() };
+  }
 async function loadQuestions(forceSubject = null, callback = null) {
     if (forceSubject) {
         currentSubject = forceSubject;
@@ -1194,38 +1252,12 @@ async function loadQuestions(forceSubject = null, callback = null) {
     const loadPromises = subjects.map(async (subject) => {
         if (allSubjectData[subject].length > 0) return; // Skip already-loaded
 
-        const availableYears = await getAvailableYears(subject);
-        allSubjectYears[subject] = availableYears;
-
-        if (availableYears.length === 0) return;
-
-        let allQuestions = [];
-        const fetchPromises = availableYears.map(async (yr) => {
-            try {
-                const fileName = yr.file;   // found by getAvailableYears()
-                const response = await fetch(fileName);
-                if (response.ok) {
-                    const yearData = await response.json();
-                    if (Array.isArray(yearData)) {
-                        return yearData.map(q => ({ ...q, paper: yr.paper || null }));
-                    } else if (yearData.questions && Array.isArray(yearData.questions)) {
-                        return yearData.questions.map(q => ({ ...q, paper: yr.paper || null }));
-                    }
-                }
-                return [];
-            } catch (error) {
-                console.error(`Error loading ${yr.file}:`, error);
-                return [];
-            }
-        });
-
-        const yearResults = await Promise.all(fetchPromises);
-        yearResults.forEach(result => {
-            allQuestions = [...allQuestions, ...result];
-        });
-
-        allSubjectData[subject] = allQuestions;
-        console.log(`Cached ${subject}: ${allQuestions.length} questions from years ${availableYears.map(y => y.label).join(', ')}`);
+                  const loaded = await loadSubjectPapers(subject);
+          allSubjectYears[subject] = loaded.years;
+          allSubjectData[subject] = loaded.questions;
+          if (loaded.years.length) {
+              console.log(`Cached ${subject}: ${loaded.questions.length} questions from ${loaded.years.map(y => y.label).join(', ')}`);
+          }
     });
 
     // Wait for ALL subjects to load simultaneously
@@ -3818,7 +3850,7 @@ function toggleFaqItem(index) {
 // Buttons, not links with a placeholder href — avoids any risk of a bare "#"
 // interacting with your hash-based router (see SCREEN_ROUTES/showScreen).
 document.getElementById("help-whatsapp-btn").addEventListener("click", () => {
-  const message = encodeURIComponent("Hi! I need help with the JUPEB Question Bank app.");
+  const message = encodeURIComponent("Hi! I need help with the JUPEB & IJMB Prep app.");
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank", "noopener");
 });
 
