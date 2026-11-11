@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Panel - JUPEB Question Bank</title>
+<title>Admin Panel - JUPEB &amp; IJMB Prep</title>
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -1372,7 +1372,7 @@ function renderAdminFeedback() {
         </div>
         <div class="user-actions" style="flex-wrap:wrap;justify-content:flex-end;">
           <button class="small ${done ? 'secondary' : 'success'}" data-fb-act="${done ? 'reopen' : 'done'}" data-id="${fbEsc(i.id)}">${done ? '↩ Reopen' : '✓ Done'}</button>
-          <a class="fb-reply" href="mailto:${fbEsc(i.email)}?subject=${encodeURIComponent('Your JUPEB Question Bank feedback')}">✉️ Reply</a>
+          <a class="fb-reply" href="mailto:${fbEsc(i.email)}?subject=${encodeURIComponent('Your JUPEB & IJMB Prep feedback')}">✉️ Reply</a>
           <button class="small danger" data-fb-act="delete" data-id="${fbEsc(i.id)}">🗑️</button>
         </div>
       </div>`;

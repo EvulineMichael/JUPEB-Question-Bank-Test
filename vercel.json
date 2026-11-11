@@ -14,6 +14,11 @@
       "has": [{ "type": "host", "value": "jupeb-question-bank.vercel.app" }],
       "destination": "https://jupebijmbprep.com/$1",
       "permanent": false
+    },
+    {
+      "source": "/data/(.*)",
+      "destination": "/",
+      "permanent": false
     }
   ],
   "rewrites": [

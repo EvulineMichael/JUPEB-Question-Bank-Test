@@ -9,7 +9,7 @@
 
 // The site's name, in one place. Every element marked data-site-name shows it,
 // so renaming the site later means changing only this line.
-const SITE_NAME = 'JUPEB Question Bank';
+const SITE_NAME = 'JUPEB & IJMB Prep';
 function applySiteName() {
   document.querySelectorAll('[data-site-name]').forEach(el => { el.textContent = SITE_NAME; });
 }

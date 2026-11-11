@@ -1,12 +1,12 @@
 {
-  "name": "JUPEB Question Bank",
-  "short_name": "JUPEB QB",
+  "name": "JUPEB & IJMB Prep",
+  "short_name": "JUPEB & IJMB",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f0f2f5",
   "theme_color": "#0d6efd",
-  "description": "JUPEB past questions for Chemistry, Physics and Mathematics",
+  "description": "JUPEB and IJMB past questions organised by topic, with model answers",
   "icons": [
     {
       "src": "./icon-192.png",
