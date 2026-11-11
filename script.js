@@ -1108,7 +1108,7 @@ async function getAvailableYears(subject) {
     const isIJMB = root === 'data/ijmb';
     // JUPEB papers: 2025-typea.json ... ; IJMB papers: 2016-paper1.json, 2016-paper2.json
     const variants = isIJMB
-        ? [{ suffix: '-paper1', paper: 'Paper I' }, { suffix: '-paper2', paper: 'Paper II' }]
+                ? [{ suffix: '-paper1', paper: 'Paper I' }, { suffix: '-paper2', paper: 'Paper II' }, { suffix: '-paper3', paper: 'Paper III' }]
         : ['A', 'B', 'C', 'D'].map(t => ({ suffix: `-type${t.toLowerCase()}`, paper: `Type ${t}` }));
 
     for (const year of possibleYears) {
