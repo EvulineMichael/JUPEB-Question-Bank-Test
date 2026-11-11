@@ -17,6 +17,10 @@ let allSubjectData = {
     government: [],
     crs: [],
     irs: [],
+    accounting: [],
+    businessManagement: [],
+    geography: [],
+    sociology: [],
     literature: []
 };
 let allSubjectYears = {
@@ -28,6 +32,10 @@ let allSubjectYears = {
     government: [],
     crs: [],
     irs: [],
+    accounting: [],
+    businessManagement: [],
+    geography: [],
+    sociology: [],
     literature: []
 };
 
@@ -97,14 +105,18 @@ const FAQ_ITEMS = [
     q: "How do I sign in?",
     a: "Use the \"Sign in with Google\" button with the same Gmail you sent during payment."
   },
-  {
+    {
     q: "Which subjects are available?",
-    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics, Government."
+    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, for both JUPEB and IJMB."
   },
   {
     q: "Which years are covered?",
-    a: "2015–2026, depending on the subject."
+    a: "JUPEB: 2015–2026, depending on the subject. IJMB: 2016 to date."
   },
+  {
+    q: "How do I get IJMB?",
+    a: "Tap IJMB at the top of the menu. If it's locked, the screen shows how to add it for ₦3,000. Send your receipt and Gmail on WhatsApp, and we'll unlock it. Then reload the page and tap IJMB."
+  },,
   {
     q: "How do I browse questions by topic?",
     a: "Click \"Subjects\" in the sidebar → pick a subject → pick a course → pick a topic."
@@ -142,8 +154,8 @@ const FAQ_ITEMS = [
     a: "Go to the sidebar → Settings → Sign Out."
   },
   {
-    q: "What if my access expires?",
-    a: "Message us on WhatsApp to renew."
+    q: "Does my access expire?",
+    a: "No. Your access is for life, with no renewal."
   },
   {
     q: "What if I have a different question?",
@@ -418,6 +430,90 @@ const courseStructure = {
             "Consumer and Producer Surplus", "Optimization", "Linear Programming"
         ]
     },
+    accounting: {
+    "ACC 001 - Basic Financial Accounting": [
+        "Introduction to Financial Accounting",
+        "Structure of the International Accounting Standards Board (IASB)",
+        "Basic Steps in Bookkeeping up to the Trial Balance",
+        "Debit and Credit Entries in Accounting",
+        "Accounting Errors and Corrections",
+        "Bank Reconciliation Statement",
+        "End of Period Adjustments",
+        "Financial Statements of Sole Proprietorship",
+        "Manufacturing Accounts",
+        "Partnership Accounts",
+        "Incomplete Records",
+        "Accounts of Clubs and Societies",
+        "Financial Statements of Limited Liability Companies"
+    ],
+    "ACC 002 - Basic Cost and Management Accounting": [
+        "Introduction to Cost and Management Accounting",
+        "Basic Elements of Cost",
+        "Material Costing",
+        "Quantitative Models for Material and Stock Control",
+        "Labour Costing",
+        "Overhead Costs",
+        "Job Costing",
+        "Costing Techniques",
+        "Cost-Volume-Profit Analysis",
+        "Budgeting",
+        "Investment Appraisal"
+    ],
+    "ACC 003 - Basic Auditing": [
+        "History of Auditing",
+        "Nature and Scope of Auditing",
+        "Audit Framework",
+        "Audit Communication",
+        "Audit Report",
+        "Contemporary Issues in Auditing and Accounting"
+    ],
+    "ACC 004 - Basic Principles of Nigerian Taxation": [
+        "History of Tax in Nigeria",
+        "Tax Authorities in Nigeria",
+        "Tax Administration in Nigeria",
+        "Basis Periods",
+        "Computation of Tax Liabilities"
+    ]
+},
+businessManagement: {
+    "BUS 001 - Business and Its Environment": [
+        "Enterprise",
+        "Business Enterprise",
+        "Size of a Business",
+        "Stakeholders in a Business",
+        "Business Objectives",
+        "Organizations",
+        "Business Communication"
+    ],
+    "BUS 002 - Finance and Accounting": [
+        "Business Finance",
+        "Working Capital Management",
+        "Cost and Break-Even Analysis",
+        "Accounting Fundamentals",
+        "Budgeting"
+    ],
+    "BUS 003 - Management I": [
+        "Management and Leadership",
+        "Motivation",
+        "Human Resource Management (HRM)",
+        "Marketing"
+    ],
+    "BUS 004 - Management II": [
+        "Operations",
+        "Strategic Management"
+    ]
+},
+geography: {
+    "Paper I - Physical Geography": [
+        "Landforms",
+        "Weather and Climate",
+        "Soils and Vegetation"
+    ],
+    "Paper II - Human and Regional Geography": [
+        "Principles of Human Geography",
+        "Regional Geography of West Africa"
+    ]
+},
     economics: {
     "ECN 001 - Principles of Economics I": [
         "Introduction to Economics",
@@ -1790,7 +1886,7 @@ function wireTopicNavButtons(topic) {
 function showPastQuestionsSidebar() {
     const subjects = Object.keys(courseStructure);
     if (welcomeMessage) welcomeMessage.style.display = 'none';   // add this line
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖', accounting: '🧾', businessManagement: '💼', geography: '🌍', sociology: '👥' };
 
     if (!window.jupebDataLoaded) {
         questionsContainer.innerHTML = `
@@ -1826,7 +1922,7 @@ function showPastQuestionsSidebar() {
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
     const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖', accounting: '🧾', businessManagement: '💼' };
     
     let html = '';
     
@@ -1975,7 +2071,7 @@ function displayPastQuestions(subject, year, paper = null) {
     return true; // Show all if no specific paper selected
 });
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖', accounting: '🧾', businessManagement: '💼' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
@@ -3221,7 +3317,11 @@ const SUBJECT_ICONS = {
     irs: "☪️",
     literature: "📖",
     economics: "💰",
-    government: "🏛️"
+    government: "🏛️",
+    accounting: "🧾",
+    geography: "🌍",
+    sociology: "👥",
+   businessManagement: "💼"
 };
 
 const SUBJECT_NAMES = {
@@ -3233,6 +3333,10 @@ const SUBJECT_NAMES = {
     irs: "IRS",
     literature: "Literature",
     economics: "Economics",
+    accounting: "Accounting",
+    businessManagement: "Business Management",
+    geography: "Geography",
+    sociology: "Sociology",
     government: "Government"
 };
 

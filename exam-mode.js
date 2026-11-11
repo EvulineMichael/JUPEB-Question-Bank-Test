@@ -18,7 +18,7 @@ else applySiteName();
 
 // IJMB subjects that have papers. When you add a subject's files under
 // data/ijmb/<subject>/, add the subject here too.
-const IJMB_SUBJECTS = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+const IJMB_SUBJECTS = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature', 'accounting', 'businessManagement', 'geography', 'sociology'];
 
 const ALL_SUBJECTS = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
 const EXAM_LABELS = { jupeb: 'JUPEB', ijmb: 'IJMB' };

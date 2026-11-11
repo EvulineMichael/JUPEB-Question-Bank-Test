@@ -1,0 +1,652 @@
+[
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Financial Statements of Sole Proprietorship",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "The trial balance of Ayodele as at 31st December, 2014 was as follows: (see table)\n\nThe following additional information is given:\ni. Stock on 31st December, 2014 was ₦156, 850\nii. Interest on loan at 5percent is yet to be paid\niii. Stationery of ₦ 180 remained unused\niv. Electricity bill of ₦2,400 has not been paid\nv. Provision for bad debts is to be made at 2 ½ percent on the balance of debtors\nvi. Depreciation is to be written off on the balances of all fixed assets, except freehold premises, at the rate of 2 ½ percent per annum.\nYou are required to prepare Ayodele's:\na. Trading, Profit or loss account for the year ended 31st December, 2014 and\nb. Balance sheet as at that date.\n(24marks)",
+    "dataTable": {
+      "headers": [
+        "Account",
+        "Dr (₦)",
+        "Cr (₦)"
+      ],
+      "rows": [
+        [
+          "Miscellaneous expenses",
+          "86,950",
+          ""
+        ],
+        [
+          "Sales and Purchases returns",
+          "138,400",
+          "92,780"
+        ],
+        [
+          "Electricity",
+          "62,530",
+          ""
+        ],
+        [
+          "Drawings",
+          "530,000",
+          ""
+        ],
+        [
+          "Freehold premises",
+          "3,000,000",
+          ""
+        ],
+        [
+          "Bank balance",
+          "753,340",
+          ""
+        ],
+        [
+          "Sales",
+          "",
+          "3,745,280"
+        ],
+        [
+          "Motor vehicles",
+          "2,878,900",
+          ""
+        ],
+        [
+          "Insurance",
+          "25,600",
+          ""
+        ],
+        [
+          "Capital account",
+          "",
+          "6,596,440"
+        ],
+        [
+          "Debtors",
+          "126,350",
+          ""
+        ],
+        [
+          "Stock on 1st January, 2014",
+          "97,460",
+          ""
+        ],
+        [
+          "Cash in hand",
+          "58,340",
+          ""
+        ],
+        [
+          "Purchases",
+          "1,729,820",
+          ""
+        ],
+        [
+          "Stationery",
+          "36,960",
+          ""
+        ],
+        [
+          "Bad debts",
+          "54,700",
+          ""
+        ],
+        [
+          "Creditors",
+          "",
+          "87,680"
+        ],
+        [
+          "Office equipment",
+          "1,485,840",
+          ""
+        ],
+        [
+          "Provision for bad debts",
+          "",
+          "2,240"
+        ],
+        [
+          "Loan",
+          "",
+          "2,500,000"
+        ],
+        [
+          "Furniture",
+          "882,500",
+          ""
+        ],
+        [
+          "Salaries & wages",
+          "1,178,630",
+          ""
+        ],
+        [
+          "Discounts",
+          "116,490",
+          "218,390"
+        ],
+        [
+          "Total",
+          "13,242,810",
+          "13,242,810"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Workings\nW1. Loan interest: 5% × ₦2,500,000 = ₦125,000 (accrued, none paid).\nW2. Provision for bad debts: 2½% × ₦126,350 = ₦3,158.75. Increase = ₦3,158.75 − ₦2,240 = ₦918.75.\nW3. Depreciation at 2½% (freehold premises excluded):\nMotor vehicles: 2½% × ₦2,878,900 = ₦71,972.50\nOffice equipment: 2½% × ₦1,485,840 = ₦37,146.00\nFurniture: 2½% × ₦882,500 = ₦22,062.50\nTotal = ₦131,181.00\nW4. Electricity: ₦62,530 + ₦2,400 accrued = ₦64,930.\nW5. Stationery: ₦36,960 − ₦180 unused (prepaid) = ₦36,780.\nIn the trial balance, 'Sales and Purchases returns' means sales returns ₦138,400 (Dr) and purchases returns ₦92,780 (Cr). 'Discounts' means discount allowed ₦116,490 (Dr) and discount received ₦218,390 (Cr).\n\n(a) Ayodele: Trading, Profit and Loss Account for the year ended 31st December, 2014\nSales: ₦3,745,280\nLess sales returns: (₦138,400)\nNet sales: ₦3,606,880\nLess cost of sales:\nOpening stock: ₦97,460\nAdd purchases: ₦1,729,820\nLess purchases returns: (₦92,780)\nNet purchases: ₦1,637,040\nGoods available for sale: ₦1,734,500\nLess closing stock: (₦156,850)\nCost of sales: ₦1,577,650\nGross profit: ₦2,029,230\nAdd discount received: ₦218,390\nTotal: ₦2,247,620\nLess expenses:\nMiscellaneous expenses: ₦86,950\nElectricity (W4): ₦64,930\nInsurance: ₦25,600\nStationery (W5): ₦36,780\nBad debts: ₦54,700\nIncrease in provision for bad debts (W2): ₦918.75\nSalaries & wages: ₦1,178,630\nDiscount allowed: ₦116,490\nLoan interest (W1): ₦125,000\nDepreciation: motor vehicles ₦71,972.50, office equipment ₦37,146, furniture ₦22,062.50\nTotal expenses: ₦1,821,179.75\nNet profit: ₦426,440.25\n\n(b) Ayodele: Balance Sheet as at 31st December, 2014\nFixed assets (cost − depreciation = net book value):\nFreehold premises: ₦3,000,000 − nil = ₦3,000,000\nMotor vehicles: ₦2,878,900 − ₦71,972.50 = ₦2,806,927.50\nOffice equipment: ₦1,485,840 − ₦37,146 = ₦1,448,694\nFurniture: ₦882,500 − ₦22,062.50 = ₦860,437.50\nTotal fixed assets: ₦8,116,059\n\nCurrent assets:\nStock: ₦156,850\nDebtors ₦126,350 less provision ₦3,158.75: ₦123,191.25\nPrepaid stationery: ₦180\nBank: ₦753,340\nCash: ₦58,340\nTotal current assets: ₦1,091,901.25\n\nLess current liabilities:\nCreditors: ₦87,680\nAccrued loan interest: ₦125,000\nAccrued electricity: ₦2,400\nTotal current liabilities: ₦215,080\n\nWorking capital: ₦876,821.25\nTotal assets less current liabilities: ₦8,992,880.25\nLess long-term liability, loan: (₦2,500,000)\nNet assets: ₦6,492,880.25\n\nFinanced by:\nCapital: ₦6,596,440\nAdd net profit: ₦426,440.25\nTotal: ₦7,022,880.25\nLess drawings: (₦530,000)\nCapital at 31 December 2014: ₦6,492,880.25\n\nThe balance sheet balances at ₦6,492,880.25."
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Incomplete Records",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Chief Ebere keeps his records by single entry. On 1st January, and 31st December, 2013 he had the following balances: (see table)\nThe summary of his bank account on 31st December, 2013 was as follows: (see table)\n\nThe following additional information is given:\ni. ₦ 50,000 cash received from debtors have not been recorded\nii. Expenses of ₦1,200 have been paid in advance\niii. Discount received and discount allowed during the year were ₦156,900 and ₦82,700 respectively\niv. Bad debts of ₦3,620 are to be written off\nv. Depreciation is to be written off at the rate of 5percent of all fixed asset balances, except land & buildings\nYou are required to prepare for Chief Ebere:\na. Trading, Profit or Loss account for the year ended 31st December, 2013 and\nb. Balance Sheet as at that date\n(22 Marks)",
+    "dataTable": {
+      "headers": [
+        "Item",
+        "1st January (₦)",
+        "31st December (₦)"
+      ],
+      "rows": [
+        [
+          "Stock in hand",
+          "121,500",
+          "148,600"
+        ],
+        [
+          "Accrued expenses",
+          "26,400",
+          "32,400"
+        ],
+        [
+          "Land & buildings at cost",
+          "2,475,000",
+          "2,475,000"
+        ],
+        [
+          "Office equipment at cost",
+          "892,800",
+          "1,578,400"
+        ],
+        [
+          "Furniture at cost",
+          "266,700",
+          "266,700"
+        ],
+        [
+          "Creditors",
+          "72,600",
+          "58,900"
+        ],
+        [
+          "Debtors",
+          "84,900",
+          "292,700"
+        ],
+        [
+          "BANK ACCOUNT (Dr)",
+          "",
+          ""
+        ],
+        [
+          "Balance on 1st January",
+          "186,520",
+          ""
+        ],
+        [
+          "Cash sales",
+          "2,743,960",
+          ""
+        ],
+        [
+          "Cash received from Debtors",
+          "238,500",
+          ""
+        ],
+        [
+          "Total",
+          "3,168,980",
+          ""
+        ],
+        [
+          "BANK ACCOUNT (Cr)",
+          "",
+          ""
+        ],
+        [
+          "payment to creditors",
+          "262,570",
+          ""
+        ],
+        [
+          "cash purchases",
+          "1,616,550",
+          ""
+        ],
+        [
+          "paid for expenses",
+          "163,770",
+          ""
+        ],
+        [
+          "paid for electricity",
+          "48,500",
+          ""
+        ],
+        [
+          "Paid wages",
+          "269,200",
+          ""
+        ],
+        [
+          "Purchase of office equipment",
+          "685,600",
+          ""
+        ],
+        [
+          "Paid for transportation",
+          "32,800",
+          ""
+        ],
+        [
+          "Balance c/d",
+          "89,990",
+          ""
+        ],
+        [
+          "Total",
+          "3,168,980",
+          ""
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Assumptions: the ₦50,000 received from debtors is added to the bank balance and to the receipts from debtors. The closing debtors figure of ₦292,700 is taken as the balance before the ₦3,620 bad debts are written off. 'Accrued expenses' relate to the general expenses. Transportation is treated as an expense in the profit and loss account.\n\nWorkings\nW1. Opening capital (statement of affairs at 1 January 2013):\nAssets: stock ₦121,500 + land & buildings ₦2,475,000 + office equipment ₦892,800 + furniture ₦266,700 + debtors ₦84,900 + bank ₦186,520 = ₦4,027,420\nLess liabilities: accrued expenses ₦26,400 + creditors ₦72,600 = ₦99,000\nOpening capital = ₦3,928,420\n\nW2. Credit sales (total debtors account):\nCredit sales = closing debtors ₦292,700 + receipts (₦238,500 + ₦50,000 = ₦288,500) + discount allowed ₦82,700 − opening debtors ₦84,900 = ₦579,000\nTotal sales = cash sales ₦2,743,960 + credit sales ₦579,000 = ₦3,322,960\n\nW3. Credit purchases (total creditors account):\nCredit purchases = closing creditors ₦58,900 + payments ₦262,570 + discount received ₦156,900 − opening creditors ₦72,600 = ₦405,770\nTotal purchases = cash purchases ₦1,616,550 + ₦405,770 = ₦2,022,320\n\nW4. Expenses charged = paid ₦163,770 − opening accrual ₦26,400 + closing accrual ₦32,400 − prepaid ₦1,200 = ₦168,570\n\nW5. Depreciation at 5%: office equipment 5% × ₦1,578,400 = ₦78,920; furniture 5% × ₦266,700 = ₦13,335.\n(Check: office equipment rose from ₦892,800 to ₦1,578,400, a rise of ₦685,600, which equals the purchase in the bank account.)\n\nW6. Bank at 31 December: ₦89,990 + ₦50,000 unrecorded receipt = ₦139,990.\n\n(a) Chief Ebere: Trading, Profit and Loss Account for the year ended 31st December, 2013\nSales (W2): ₦3,322,960\nLess cost of sales:\nOpening stock: ₦121,500\nAdd purchases (W3): ₦2,022,320\nGoods available for sale: ₦2,143,820\nLess closing stock: (₦148,600)\nCost of sales: ₦1,995,220\nGross profit: ₦1,327,740\nAdd discount received: ₦156,900\nTotal: ₦1,484,640\nLess expenses:\nGeneral expenses (W4): ₦168,570\nElectricity: ₦48,500\nWages: ₦269,200\nTransportation: ₦32,800\nDiscount allowed: ₦82,700\nBad debts: ₦3,620\nDepreciation: office equipment ₦78,920, furniture ₦13,335\nTotal expenses: ₦697,645\nNet profit: ₦786,995\n\n(b) Chief Ebere: Balance Sheet as at 31st December, 2013\nFixed assets (cost − depreciation = net book value):\nLand & buildings: ₦2,475,000 − nil = ₦2,475,000\nOffice equipment: ₦1,578,400 − ₦78,920 = ₦1,499,480\nFurniture: ₦266,700 − ₦13,335 = ₦253,365\nTotal fixed assets: ₦4,227,845\n\nCurrent assets:\nStock: ₦148,600\nDebtors (₦292,700 − ₦3,620 bad debts): ₦289,080\nPrepaid expenses: ₦1,200\nBank (W6): ₦139,990\nTotal current assets: ₦578,870\n\nLess current liabilities:\nCreditors: ₦58,900\nAccrued expenses: ₦32,400\nTotal current liabilities: ₦91,300\n\nWorking capital: ₦487,570\nNet assets: ₦4,715,415\n\nFinanced by:\nOpening capital (W1): ₦3,928,420\nAdd net profit: ₦786,995\nClosing capital: ₦4,715,415\n(No drawings are given.)\n\nThe balance sheet balances at ₦4,715,415."
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Accounting Errors and Corrections",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "The trial balance of Alhaji Jingi as at 31st December, 2014 did not balance. The following errors were discovered:\ni. The sales account was under cast by ₦15,900\nii. Discount allowed of ₦550 was not recorded at all\niii. Motor vehicle repairs of ₦3,720 was debited to motor vehicles account as well as the motor vehicle repairs account\niv. Credit purchases from Mallam Soji for ₦25,000 were debited to discount received account and credited to Mallam Choji account\nv. Bank charges of ₦3,200 were debited to miscellaneous expenses only with no credit entry\nvi. ₦182, 000 was paid to a creditor in full settlement of ₦ 85,000 owed. The debtors account was credited with ₦182, 000 owed. The debtors account was credited with ₦182,000 while discount allowed was debited with ₦3,000\nvii. Furniture purchased on credit for ₦275,000 was recorded by only crediting the furniture account\nviii. The balance of ₦775,000 on sales return account was listed as ₦755,000\nYou are required to:\na. Determine the difference between the totals of the two columns, by clearly indicating the difference caused by each error and\nb. Prepare the suspense account to correct these errors\n(18marks)",
+    "options": [],
+    "modelAnswer": "Note on error (vi): the wording is garbled; it mixes a payment to a creditor with entries in the debtors account, and the amounts do not match. It is taken to mean: ₦182,000 was received from a debtor in full settlement of ₦185,000 owed; the debtor's account was credited with ₦182,000, and discount allowed was debited with ₦3,000, but the matching ₦3,000 credit to the debtor's account was never made.\n\n(a) Effect of each error on the trial balance\n(i) Sales under-cast by ₦15,900: the credit column is understated, so the debit column exceeds the credit column by ₦15,900.\n(ii) Discount allowed of ₦550 not recorded at all: an error of omission; no effect on the totals.\n(iii) Repairs of ₦3,720 debited to both motor vehicles and motor vehicle repairs: an extra debit, so the debit column is too high by ₦3,720.\n(iv) Purchases from Soji debited to discount received and credited to Choji: both a debit and a credit of ₦25,000 were made (wrong accounts), so there is no effect on the totals.\n(v) Bank charges of ₦3,200 debited to miscellaneous expenses with no credit: the credit to bank is missing, so the debit column exceeds the credit column by ₦3,200.\n(vi) Discount allowed of ₦3,000 debited, but the debtor not credited: the debit column exceeds the credit column by ₦3,000.\n(vii) Furniture of ₦275,000 bought on credit, recorded only as a credit to furniture: there is a credit of ₦275,000 with no debit, so the credit column exceeds the debit column by ₦275,000.\n(viii) Sales returns of ₦775,000 listed as ₦755,000: the debit column is understated by ₦20,000, so the credit column exceeds it by ₦20,000.\n\nNet difference:\nErrors making the debit column larger: ₦15,900 + ₦3,720 + ₦3,200 + ₦3,000 = ₦25,820\nErrors making the credit column larger: ₦275,000 + ₦20,000 = ₦295,000\nThe credit column exceeds the debit column by ₦295,000 − ₦25,820 = ₦269,180.\nA suspense account with a debit balance of ₦269,180 was therefore needed to make the trial balance agree.\n\nCorrecting journal entries:\n(i) Dr Suspense ₦15,900; Cr Sales ₦15,900\n(ii) Dr Discount allowed ₦550; Cr Debtors ₦550 (no suspense entry)\n(iii) Dr Suspense ₦3,720; Cr Motor vehicles ₦3,720\n(iv) Dr Purchases ₦25,000; Cr Discount received ₦25,000; and Dr Mallam Choji ₦25,000; Cr Mallam Soji ₦25,000 (no suspense entry)\n(v) Dr Bank charges ₦3,200; Cr Miscellaneous expenses ₦3,200; and Dr Suspense ₦3,200; Cr Bank ₦3,200\n(vi) Dr Suspense ₦3,000; Cr Debtor ₦3,000\n(vii) Dr Furniture ₦550,000 (to cancel the wrong credit of ₦275,000 and record the correct debit of ₦275,000); Cr Creditor (supplier) ₦275,000; Cr Suspense ₦275,000\n(viii) Dr Sales returns (in the trial balance listing) ₦20,000; Cr Suspense ₦20,000\n\n(b) Suspense Account\nDebit side:\nDifference in trial balance: ₦269,180\nSales (i): ₦15,900\nMotor vehicles (iii): ₦3,720\nBank (v): ₦3,200\nDebtor (vi): ₦3,000\nTotal: ₦295,000\n\nCredit side:\nFurniture (vii): ₦275,000\nSales returns (viii): ₦20,000\nTotal: ₦295,000\n\nThe suspense account is cleared (both sides total ₦295,000), which confirms the corrections."
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Accounts of Clubs and Societies",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Bobai Social Club had the following balances on 1st January and 31st December, 2013: (see table)\nThe club had the following receipts and payments account for the year 2013: (see table)\n\nThe following information is also given:\ni. Two workers in the Club's were given salary advance of ₦25,000 each\nii. Expenses of ₦16,400 have not been paid\niii. Bad debts of ₦1,470 are to be written off\niv. Depreciation is to be written off at the rate of 5percent of all fixed assets, except Land & building\nYou are required to prepare Bobai Social Club's:\na. Refreshment trading account\nb. Income and expenditure account for the year ended 31st December, 2013 and\nc. Balance sheet as at that date (18marks)",
+    "dataTable": {
+      "headers": [
+        "Item",
+        "1st January, 2013 (₦)",
+        "31st December, 3013 (₦)"
+      ],
+      "rows": [
+        [
+          "Furniture",
+          "378,900",
+          "378,900"
+        ],
+        [
+          "Debtors for refreshment",
+          "32,450",
+          "45,640"
+        ],
+        [
+          "Sports equipment",
+          "895,600",
+          "1,147,600"
+        ],
+        [
+          "Balance at Bank",
+          "271,540",
+          "568,200"
+        ],
+        [
+          "Cash in hand",
+          "53,700",
+          "63,850"
+        ],
+        [
+          "Subscriptions due",
+          "148.660",
+          "272,400"
+        ],
+        [
+          "Unused stationary",
+          "17,530",
+          "26,960"
+        ],
+        [
+          "Motor vehicles",
+          "1,634,600",
+          "1, 634, 600"
+        ],
+        [
+          "Land & buildings",
+          "3,420,000",
+          "3,420,000"
+        ],
+        [
+          "Stock of refreshments",
+          "87,470",
+          "57,510"
+        ],
+        [
+          "Subscriptions paid in advance",
+          "68,920",
+          "48,670"
+        ],
+        [
+          "RECEIPTS AND PAYMENTS ACCOUNT FOR 2013",
+          "",
+          ""
+        ],
+        [
+          "Receipts: Balance at bank",
+          "271,540",
+          ""
+        ],
+        [
+          "Receipts: Cash in hand",
+          "53,700",
+          ""
+        ],
+        [
+          "Receipts: Sale of refreshment",
+          "1,754,680",
+          ""
+        ],
+        [
+          "Receipts: Cash received from debtors",
+          "269,470",
+          ""
+        ],
+        [
+          "Receipts: Subscriptions",
+          "1,179,600",
+          ""
+        ],
+        [
+          "Payments: salaries & wages",
+          "782,500",
+          ""
+        ],
+        [
+          "Payments: miscellaneous exps.",
+          "164,320",
+          ""
+        ],
+        [
+          "Payments: purchase of refreshments",
+          "1,392,170",
+          ""
+        ],
+        [
+          "Payments: travelling expenses",
+          "186,550",
+          ""
+        ],
+        [
+          "Payments: lighting & cooling",
+          "75,680",
+          ""
+        ],
+        [
+          "Payments: Stationery",
+          "43,720",
+          ""
+        ],
+        [
+          "Payments: Sports equipment",
+          "252,000",
+          ""
+        ],
+        [
+          "Payments: Balance at bank c/d",
+          "568,200",
+          ""
+        ],
+        [
+          "Payments: Cash in hand c/d",
+          "63,850",
+          ""
+        ],
+        [
+          "Total",
+          "3,528,990",
+          ""
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the table prints '31st December, 3013', meaning 2013, and '148.660', meaning ₦148,660.\nAssumptions: the salary advances (₦50,000) are included in salaries & wages paid; the unpaid expenses of ₦16,400 are miscellaneous expenses; the bad debts are refreshment debtors, written off from the closing balance of ₦45,640.\n\nWorkings\nW1. Opening accumulated fund (1 January 2013):\nAssets: furniture ₦378,900 + refreshment debtors ₦32,450 + sports equipment ₦895,600 + bank ₦271,540 + cash ₦53,700 + subscriptions due ₦148,660 + stationery ₦17,530 + motor vehicles ₦1,634,600 + land & buildings ₦3,420,000 + refreshment stock ₦87,470 = ₦6,940,450\nLess subscriptions in advance: ₦68,920\nAccumulated fund = ₦6,871,530\n\nW2. Credit sales of refreshments = closing debtors ₦45,640 + cash received ₦269,470 − opening debtors ₦32,450 = ₦282,660\n\nW3. Subscriptions income = received ₦1,179,600 − due at start ₦148,660 + due at end ₦272,400 + in advance at start ₦68,920 − in advance at end ₦48,670 = ₦1,323,590\n\nW4. Stationery used = opening ₦17,530 + bought ₦43,720 − closing ₦26,960 = ₦34,290\n\nW5. Salaries & wages = ₦782,500 − advances ₦50,000 = ₦732,500. Miscellaneous expenses = ₦164,320 + ₦16,400 = ₦180,720.\n\nW6. Depreciation at 5%: furniture ₦18,945; sports equipment ₦1,147,600 × 5% = ₦57,380; motor vehicles ₦81,730.\n(Check: sports equipment ₦895,600 + ₦252,000 bought = ₦1,147,600.)\n\n(a) Refreshment Trading Account for the year ended 31st December, 2013\nSales: cash ₦1,754,680 + credit (W2) ₦282,660 = ₦2,037,340\nLess cost of refreshments sold:\nOpening stock: ₦87,470\nAdd purchases: ₦1,392,170\nTotal: ₦1,479,640\nLess closing stock: (₦57,510)\nCost of refreshments sold: ₦1,422,130\nProfit on refreshments: ₦615,210\n\n(b) Income and Expenditure Account for the year ended 31st December, 2013\nIncome:\nSubscriptions (W3): ₦1,323,590\nProfit on refreshments: ₦615,210\nTotal income: ₦1,938,800\nLess expenditure:\nSalaries & wages (W5): ₦732,500\nMiscellaneous expenses (W5): ₦180,720\nTravelling expenses: ₦186,550\nLighting & cooling: ₦75,680\nStationery (W4): ₦34,290\nBad debts: ₦1,470\nDepreciation: furniture ₦18,945, sports equipment ₦57,380, motor vehicles ₦81,730\nTotal expenditure: ₦1,369,265\nSurplus (excess of income over expenditure): ₦569,535\n\n(c) Balance Sheet as at 31st December, 2013\nFixed assets (cost − depreciation = net book value):\nLand & buildings: ₦3,420,000 − nil = ₦3,420,000\nMotor vehicles: ₦1,634,600 − ₦81,730 = ₦1,552,870\nSports equipment: ₦1,147,600 − ₦57,380 = ₦1,090,220\nFurniture: ₦378,900 − ₦18,945 = ₦359,955\nTotal fixed assets: ₦6,423,045\n\nCurrent assets:\nStock of refreshments: ₦57,510\nRefreshment debtors (₦45,640 − ₦1,470): ₦44,170\nSubscriptions due: ₦272,400\nUnused stationery: ₦26,960\nSalary advances: ₦50,000\nBank: ₦568,200\nCash: ₦63,850\nTotal current assets: ₦1,083,090\n\nLess current liabilities:\nSubscriptions paid in advance: ₦48,670\nAccrued expenses: ₦16,400\nTotal current liabilities: ₦65,070\n\nWorking capital: ₦1,018,020\nNet assets: ₦7,441,065\n\nFinanced by:\nAccumulated fund at 1 January (W1): ₦6,871,530\nAdd surplus: ₦569,535\nAccumulated fund at 31 December: ₦7,441,065\n\nThe balance sheet balances at ₦7,441,065."
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Accounting Errors and Corrections",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Mr. Thank-God had balances of debtors and creditors of ₦96, 570 and ₦72, 300 respectively, on 1st January, 2014. The sales ledger credit balances and purchases ledger debit balances on that date were ₦5, 280 and ₦3, 750 respectively.\nDuring the year ended 31st December, 2014, the following transactions took place: (see table)\nSales ledger credit balances and purchases ledger debit balances on 31st December, 2014 amounted to ₦7, 860 and ₦4, 920 respectively.\nYou are required to prepare Mr. Thank-God's:\na. Sales ledger control Account and\nb. Purchases ledger control Account\n(18marks)",
+    "dataTable": {
+      "headers": [
+        "Transaction",
+        "₦"
+      ],
+      "rows": [
+        [
+          "Cash paid to creditors",
+          "381,900"
+        ],
+        [
+          "Sales and purchases ledger transfer",
+          "13,650"
+        ],
+        [
+          "Discount allowed",
+          "102,700"
+        ],
+        [
+          "Bills payable accepted",
+          "258,460"
+        ],
+        [
+          "Cash received from debtors",
+          "1,476,250"
+        ],
+        [
+          "Discount received",
+          "98,120"
+        ],
+        [
+          "Bad debts written off",
+          "33,740"
+        ],
+        [
+          "Purchases return to creditors",
+          "59,620"
+        ],
+        [
+          "Credit sales",
+          "1,860,300"
+        ],
+        [
+          "Bills receivable accepted",
+          "166,110"
+        ],
+        [
+          "Credit purchases",
+          "974,830"
+        ],
+        [
+          "Sales return by debtors",
+          "62,970"
+        ],
+        [
+          "Bills receivable dishonored",
+          "24,550"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "(a) Sales Ledger Control Account for the year ended 31st December, 2014\nDebit side:\nBalance b/d (debtors), 1 January 2014: ₦96,570\nCredit sales: ₦1,860,300\nBills receivable dishonoured: ₦24,550\nBalance c/d (credit balances), 31 December 2014: ₦7,860\nTotal: ₦1,989,280\n\nCredit side:\nBalance b/d (credit balances), 1 January 2014: ₦5,280\nCash received from debtors: ₦1,476,250\nDiscount allowed: ₦102,700\nBad debts written off: ₦33,740\nBills receivable accepted: ₦166,110\nSales returns: ₦62,970\nTransfer to purchases ledger (contra): ₦13,650\nBalance c/d (debtors), 31 December 2014 (balancing figure): ₦128,580\nTotal: ₦1,989,280\n\nClosing debtors = ₦1,989,280 − ₦1,860,700 = ₦128,580.\n\n(b) Purchases Ledger Control Account for the year ended 31st December, 2014\nDebit side:\nBalance b/d (debit balances), 1 January 2014: ₦3,750\nCash paid to creditors: ₦381,900\nBills payable accepted: ₦258,460\nDiscount received: ₦98,120\nPurchases returns: ₦59,620\nTransfer from sales ledger (contra): ₦13,650\nBalance c/d (creditors), 31 December 2014 (balancing figure): ₦236,550\nTotal: ₦1,052,050\n\nCredit side:\nBalance b/d (creditors), 1 January 2014: ₦72,300\nCredit purchases: ₦974,830\nBalance c/d (debit balances), 31 December 2014: ₦4,920\nTotal: ₦1,052,050\n\nClosing creditors = ₦1,052,050 − ₦815,500 = ₦236,550.\n\nNotes: the contra (set-off) of ₦13,650 appears in both control accounts: as a credit in the sales ledger control account and a debit in the purchases ledger control account. The opening and closing credit balances in the sales ledger, and debit balances in the purchases ledger, are shown on the opposite sides from the main balances."
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Manufacturing Accounts",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "The Bindawa& sons had the following balances on 31st December, 2012: (see table)\nThe following additional information is given:\ni. Interest is due on the Bank loan at 6percent\nii. One –quarter of rent is to be allocated to the factory\niii. Provision for bad debts is to be made at 2percent on the balance of debtors\niv. Depreciation is to be written off the plant and machinery at 2 ½ percent and at 5percent on the remaining fixed assets.\nYou are required to prepare Bindawa & sons':\na. Manufacturing Account\nb. Trading, Profit or Loss account for the year ended 31st December, 2012 and\nc. Balance sheet as at that date. (18marks)",
+    "dataTable": {
+      "headers": [
+        "Item",
+        "₦"
+      ],
+      "rows": [
+        [
+          "Factory insurance",
+          "37,500"
+        ],
+        [
+          "Bank balance",
+          "962,800"
+        ],
+        [
+          "Rent",
+          "580,000"
+        ],
+        [
+          "Drawings",
+          "750,000"
+        ],
+        [
+          "Factory wages",
+          "1,496,200"
+        ],
+        [
+          "Office salaries",
+          "873,500"
+        ],
+        [
+          "Selling and Administration expenses",
+          "327,400"
+        ],
+        [
+          "Stocks on 1st January, 2012: Raw Materials",
+          "249,730"
+        ],
+        [
+          "Stocks on 1st January, 2012: Work in progress",
+          "585,960"
+        ],
+        [
+          "Stocks on 1st January, 2012: Finished goods",
+          "437,580"
+        ],
+        [
+          "Capital account",
+          "7,073,110"
+        ],
+        [
+          "Bad debts",
+          "62,770"
+        ],
+        [
+          "Returns of raw Materials",
+          "120,350"
+        ],
+        [
+          "Provision for bad debts",
+          "2,480"
+        ],
+        [
+          "Stationery",
+          "84,620"
+        ],
+        [
+          "Plant and machinery",
+          "4,792,150"
+        ],
+        [
+          "Cash in hand",
+          "136,400"
+        ],
+        [
+          "Purchase of Raw Materials",
+          "1,873,940"
+        ],
+        [
+          "Delivery vans",
+          "1,685,000"
+        ],
+        [
+          "Office insurance",
+          "21,500"
+        ],
+        [
+          "Sale of finished goods",
+          "5,964,800"
+        ],
+        [
+          "Factory lighting and cooling",
+          "271,960"
+        ],
+        [
+          "Furniture",
+          "738,240"
+        ],
+        [
+          "Returns of finished goods",
+          "95,810"
+        ],
+        [
+          "Office electricity",
+          "64,830"
+        ],
+        [
+          "Bank loan",
+          "3,000,000"
+        ],
+        [
+          "Stocks on 31st December, 2012: Raw Materials",
+          "376,590"
+        ],
+        [
+          "Stocks on 31st December, 2012: Work in progress",
+          "402,750"
+        ],
+        [
+          "Stocks on 31st December, 2012: Finished goods",
+          "1,594,160"
+        ],
+        [
+          "Sundry Debtors",
+          "168,500"
+        ],
+        [
+          "Sundry Creditors",
+          "135,650"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the balances are listed without debit and credit columns. Taking capital, provision for bad debts, returns of raw materials (purchases returns), sales, bank loan and creditors as credits, and the rest (except the closing stocks) as debits, both sides total ₦16,296,390, so the list balances.\nAssumptions: the remaining three-quarters of rent is charged to the office; returns of finished goods are sales returns; stationery is an office expense.\n\nWorkings\nW1. Loan interest due: 6% × ₦3,000,000 = ₦180,000 (accrued).\nW2. Rent: factory ¼ × ₦580,000 = ₦145,000; office ¾ = ₦435,000.\nW3. Provision for bad debts: 2% × ₦168,500 = ₦3,370. Increase = ₦3,370 − ₦2,480 = ₦890.\nW4. Depreciation: plant and machinery 2½% × ₦4,792,150 = ₦119,803.75 (factory); delivery vans 5% × ₦1,685,000 = ₦84,250; furniture 5% × ₦738,240 = ₦36,912.\n\n(a) Manufacturing Account for the year ended 31st December, 2012\nRaw materials:\nOpening stock of raw materials: ₦249,730\nAdd purchases of raw materials: ₦1,873,940\nLess returns of raw materials: (₦120,350)\nNet purchases: ₦1,753,590\nTotal: ₦2,003,320\nLess closing stock of raw materials: (₦376,590)\nCost of raw materials consumed: ₦1,626,730\nAdd factory wages (direct labour): ₦1,496,200\nPrime cost: ₦3,122,930\nAdd factory overheads:\nFactory insurance: ₦37,500\nFactory rent (W2): ₦145,000\nFactory lighting and cooling: ₦271,960\nDepreciation of plant and machinery (W4): ₦119,803.75\nTotal factory overheads: ₦574,263.75\nTotal factory cost: ₦3,697,193.75\nAdd opening work in progress: ₦585,960\nTotal: ₦4,283,153.75\nLess closing work in progress: (₦402,750)\nCost of production (transferred to trading account): ₦3,880,403.75\n\n(b) Trading, Profit and Loss Account for the year ended 31st December, 2012\nSales: ₦5,964,800\nLess returns of finished goods: (₦95,810)\nNet sales: ₦5,868,990\nLess cost of sales:\nOpening stock of finished goods: ₦437,580\nAdd cost of production: ₦3,880,403.75\nTotal: ₦4,317,983.75\nLess closing stock of finished goods: (₦1,594,160)\nCost of sales: ₦2,723,823.75\nGross profit: ₦3,145,166.25\nLess expenses:\nOffice rent (W2): ₦435,000\nOffice salaries: ₦873,500\nSelling and administration expenses: ₦327,400\nBad debts: ₦62,770\nIncrease in provision for bad debts (W3): ₦890\nStationery: ₦84,620\nOffice insurance: ₦21,500\nOffice electricity: ₦64,830\nLoan interest (W1): ₦180,000\nDepreciation: delivery vans ₦84,250, furniture ₦36,912\nTotal expenses: ₦2,171,672\nNet profit: ₦973,494.25\n\n(c) Balance Sheet as at 31st December, 2012\nFixed assets (cost − depreciation = net book value):\nPlant and machinery: ₦4,792,150 − ₦119,803.75 = ₦4,672,346.25\nDelivery vans: ₦1,685,000 − ₦84,250 = ₦1,600,750\nFurniture: ₦738,240 − ₦36,912 = ₦701,328\nTotal fixed assets: ₦6,974,424.25\n\nCurrent assets:\nStock of raw materials: ₦376,590\nWork in progress: ₦402,750\nStock of finished goods: ₦1,594,160\nDebtors ₦168,500 less provision ₦3,370: ₦165,130\nBank: ₦962,800\nCash: ₦136,400\nTotal current assets: ₦3,637,830\n\nLess current liabilities:\nCreditors: ₦135,650\nAccrued loan interest: ₦180,000\nTotal current liabilities: ₦315,650\n\nWorking capital: ₦3,322,180\nTotal assets less current liabilities: ₦10,296,604.25\nLess long-term liability, bank loan: (₦3,000,000)\nNet assets: ₦7,296,604.25\n\nFinanced by:\nCapital: ₦7,073,110\nAdd net profit: ₦973,494.25\nTotal: ₦8,046,604.25\nLess drawings: (₦750,000)\nClosing capital: ₦7,296,604.25\n\nThe balance sheet balances at ₦7,296,604.25."
+  }
+]
