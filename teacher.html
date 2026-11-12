@@ -414,46 +414,17 @@ function copyLink() {
 
 // ===== REFERRALS LIST =====
 async function loadReferrals() {
-  const el = document.getElementById('referrals-list');
-  try {
-    const snap = await db.collection('authorized_users')
-      .where('referredBy', '==', currentTeacher.id)
-      .get();
-
-    if (snap.empty) {
-      el.innerHTML = '<p class="empty">No referrals yet. Share your link to get started.</p>';
-      return;
-    }
-
-    const rows = [];
-    snap.forEach(doc => {
-      const d = doc.data();
-      rows.push({
-        email: doc.id,
-        date: d.referredAt ? d.referredAt.toDate() : null
-      });
-    });
-
-    rows.sort((a, b) => (b.date || 0) - (a.date || 0));
-
-    el.innerHTML = rows.slice(0, 20).map(r => `
-      <div class="list-item">
-        <span class="email">${r.email}</span>
-        <span class="date">${r.date ? r.date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '—'}</span>
-      </div>
-    `).join('');
-  } catch (err) {
-    console.error(err);
-    el.innerHTML = '<p class="empty">Could not load referrals.</p>';
-  }
+  // Student emails are private, so teachers see their totals (above), not a list of students.
+  document.getElementById('referrals-list').innerHTML =
+    '<p class="empty">For students\' privacy, individual emails aren\'t shown. Your number of referrals and earnings are at the top of this page.</p>';
 }
-
 // ===== PAYOUTS =====
 async function loadPayouts() {
   const el = document.getElementById('payouts-list');
   try {
-    const snap = await db.collection('withdrawals')
+      const snap = await db.collection('withdrawals')
       .where('teacherCode', '==', currentTeacher.id)
+      .where('teacherEmail', '==', currentTeacher.email)
       .get();
 
     if (snap.empty) {
@@ -515,8 +486,9 @@ async function confirmPayout() {
 
   try {
     // Prevent duplicate pending requests
-    const existing = await db.collection('withdrawals')
+        const existing = await db.collection('withdrawals')
       .where('teacherCode', '==', currentTeacher.id)
+      .where('teacherEmail', '==', currentTeacher.email)
       .where('status', '==', 'pending')
       .limit(1)
       .get();

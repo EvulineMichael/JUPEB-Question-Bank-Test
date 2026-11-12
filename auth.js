@@ -21,22 +21,6 @@ document.getElementById('sidebar-overlay').classList.remove('is-open');
   }
 }
 
-// Guest access check
-if (sessionStorage.getItem('jupeb_guest') === 'true') {
-    document.getElementById('login-screen').style.display = 'none';
-    document.getElementById('dashboard-screen').style.display = 'block';
-    document.getElementById('app-content').style.display = 'none';
-    document.getElementById('app-sidebar').style.display = 'flex';
-    document.body.classList.add('has-sidebar');   // add this line
-    document.getElementById('sidebar-toggle').style.display = 'block';
-    renderSidebarUser({ name: "Guest User", isPremium: false, photoURL: null });
-    
-    window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
-    window.userExams = ['jupeb'];
-    
-    if (typeof showDashboard === 'function') showDashboard();
-    if (typeof initJUPEBApp === 'function') initJUPEBApp();
-}
 
 function toggleAccessInfo() {
   const info = document.getElementById('access-info');
