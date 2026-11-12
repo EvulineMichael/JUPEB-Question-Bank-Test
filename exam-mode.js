@@ -175,3 +175,16 @@ function hideExamLock() {
   overlay.classList.remove('is-open');
   document.body.style.overflow = '';
 }
+
+   // ----- Offline notice -----
+   (function offlineNotice() {
+     const bar = document.createElement('div');
+     bar.className = 'offline-bar';
+     bar.setAttribute('role', 'status');
+     bar.textContent = "You're offline. Showing the questions saved on this device.";
+     document.body.appendChild(bar);
+     const update = () => bar.classList.toggle('is-on', !navigator.onLine);
+     window.addEventListener('online', update);
+     window.addEventListener('offline', update);
+     update();
+   })();

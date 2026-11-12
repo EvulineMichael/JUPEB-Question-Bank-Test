@@ -1198,11 +1198,14 @@ if (q.diagramMissing) {
       if (!user) return empty;                       // not signed in: no questions
       const exam = (typeof getCurrentExam === 'function') ? getCurrentExam() : 'jupeb';
 
-      try {
-          const token = await user.getIdToken();
-          const response = await fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
-              headers: { Authorization: 'Bearer ' + token }
-          });
+             try {
+           // Offline, a fresh sign-in token can't be fetched. Ask anyway: the service
+           // worker answers with the copy saved on this device.
+           let token = '';
+           try { token = await user.getIdToken(); } catch (e) { /* offline */ }
+           const response = await fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
+               headers: token ? { Authorization: 'Bearer ' + token } : {}
+           });
           if (!response.ok) {
               console.warn(`No ${subject} papers (${response.status})`);
               return empty;
