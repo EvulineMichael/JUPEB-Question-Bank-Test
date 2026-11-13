@@ -1,0 +1,300 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Assume an object of 7 cm height is placed at a distance of 12 cm from a convex lens of focal length 8 cm, find the height and nature of the image.",
+    "options": [],
+    "modelAnswer": "Sign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a converging lens or mirror). Formula: 1/f = 1/u + 1/v; magnification m = v/u.\n\nf = 8 cm, u = 12 cm.\n1/v = 1/8 − 1/12 = (3 − 2)/24 = 1/24\nv = 24 cm.\nm = v/u = 24/12 = 2.\nImage height = 2 × 7 = 14 cm.\nNature: real, inverted and magnified (twice the size of the object), 24 cm from the lens on the opposite side."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "A ray of light travels from glass to water, such that the angle of incidence is 50⁰. Find the angle of refraction, take the refractive index of glass as 1.52 and that of water as 1.33.",
+    "options": [],
+    "modelAnswer": "Snell's law: n_g sin i = n_w sin r\n1.52 × sin 50° = 1.33 × sin r\nsin r = (1.52 × 0.7660)/1.33 = 0.8755\nr = 61.1°.\n(The ray bends away from the normal because it passes into a less dense medium.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "An equilateral Pyrex glass prism has index of refraction 1.72. Find its angle of minimum deviation.",
+    "options": [],
+    "modelAnswer": "For an equilateral prism, A = 60°.\nn = sin((A + D)/2)/sin(A/2)\nsin((60° + D)/2) = 1.72 × sin 30° = 0.86\n(60° + D)/2 = 59.3°\n60° + D = 118.6°\nD = 58.6°."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "When two capacitors are connected in parallel, the equivalent capacitance is 8μF and when connected in series, the equivalent capacitance is (15/8)μF . Find the values of the two capacitances.",
+    "options": [],
+    "modelAnswer": "Parallel: C₁ + C₂ = 8 ...(1)\nSeries: C₁C₂/(C₁ + C₂) = 15/8, so C₁C₂ = (15/8) × 8 = 15 ...(2)\nC₁ and C₂ are the roots of x² − 8x + 15 = 0:\n(x − 3)(x − 5) = 0, so x = 3 or 5.\nThe capacitances are 3 μF and 5 μF.\n(Check: 3 + 5 = 8 μF; 3 × 5/8 = 15/8 μF.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "An alternating voltage is given by V = 7.3sin(200πt − 1.2)Volts, find the maximum voltage and root mean square (rms) voltage.",
+    "options": [],
+    "modelAnswer": "Compare with V = V₀ sin(ωt − φ).\nMaximum (peak) voltage: V₀ = 7.3 V.\nr.m.s. voltage: V_rms = V₀/√2 = 7.3/1.414 = 5.16 V.\n(Also, ω = 200π rad s⁻¹, so f = 100 Hz.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Define electric flux density and state its unit. Find the velocity at which a conductor 75 mm long cut a magnetic field of flux density 0.6 T if an e.m.f. of 9 V is to be induced in it. Assume the conductor, the field and the direction of motion are mutually perpendicular.",
+    "options": [],
+    "modelAnswer": "Electric flux density (D) is the electric flux per unit area through a surface perpendicular to the field, D = ε₀εᵣE (= charge per unit area, Q/A). Unit: coulomb per square metre (C m⁻²).\nNote: the calculation is about a magnetic field, so 'magnetic flux density' may have been intended: B = Φ/A, the magnetic flux per unit area perpendicular to the field; unit tesla (T = Wb m⁻²).\n\nE = Blv, so v = E/(Bl) = 9/(0.6 × 0.075) = 200 m s⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": ". In a d.c. potentiometer, a balance point is obtained at a length of 400 mm when using a standard cell of 1.0186 Volts. Determine the e.m.f. of a dry cell if the balance is obtained at 650 mm.",
+    "options": [],
+    "modelAnswer": "In a potentiometer the e.m.f. is proportional to the balance length: E₁/E₂ = l₁/l₂.\nE₂ = E₁ × l₂/l₁ = 1.0186 × 650/400 = 1.655 V."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Semiconductors",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Give two examples each of the following terms: conductors, semiconductors or insulators. State the one effect of temperature on conductivity each on conductors and semiconductors.",
+    "options": [],
+    "modelAnswer": "Conductors: copper, silver, aluminium (any metal), graphite.\nSemiconductors: silicon, germanium (also gallium arsenide).\nInsulators: glass, rubber, plastic (PVC), dry wood, mica.\n\nEffect of temperature:\nConductors: conductivity decreases as temperature rises, because the vibrating lattice ions scatter the free electrons more (resistance increases).\nSemiconductors: conductivity increases as temperature rises, because more electrons gain enough energy to break free and become charge carriers (more electron–hole pairs), so resistance decreases."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "Calculate the de Broglie wavelength each of electron and proton all having the same kinetic energy of 100 eV.",
+    "options": [],
+    "modelAnswer": "K.E. = 100 eV = 100 × 1.6 × 10⁻¹⁹ = 1.6 × 10⁻¹⁷ J. λ = h/p = h/√(2mK).\n\nElectron (m = 9.0 × 10⁻³¹ kg):\np = √(2 × 9.0 × 10⁻³¹ × 1.6 × 10⁻¹⁷) = 5.37 × 10⁻²⁴ kg m s⁻¹\nλ = 6.6 × 10⁻³⁴/5.37 × 10⁻²⁴ = 1.23 × 10⁻¹⁰ m (1.23 Å).\n\nProton: the paper does not give its mass; the standard value m = 1.67 × 10⁻²⁷ kg is used.\np = √(2 × 1.67 × 10⁻²⁷ × 1.6 × 10⁻¹⁷) = 2.31 × 10⁻²² kg m s⁻¹\nλ = 6.6 × 10⁻³⁴/2.31 × 10⁻²² = 2.86 × 10⁻¹² m (0.0286 Å).\n\nThe proton's wavelength is much shorter (about 43 times) because its momentum is larger for the same kinetic energy."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "What is meant by the statement that 'the work function of a metal is 0.48 eV . Find the threshold wavelength for this metal.",
+    "options": [],
+    "modelAnswer": "It means that the minimum energy needed to remove an electron from the surface of the metal is 0.48 eV (= 0.48 × 1.6 × 10⁻¹⁹ = 7.68 × 10⁻²⁰ J). A photon must have at least this energy to cause photoelectric emission.\n\nThreshold wavelength: λ₀ = hc/φ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(7.68 × 10⁻²⁰) = 2.58 × 10⁻⁶ m (about 2.58 μm, in the infrared)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "a(i) Consider the ray diagram of formation of an image by a certain mirror as shown in figure 1. From the ray diagram: State (with reasons) the type of the mirror used, identify/ locate the image, the object and their nature (with reasons) also identify point B.\n(ii) Assume that, an object of size 1 cm is placed at a distance of 15 cm from a concave mirror of focal length 10 cm. Find the size, nature and position of the image formed.",
+    "image": {
+      "src": "images/ijmb/physics/2023/phy-2023-paper2-11a.png",
+      "alt": "Figure 1: concave mirror ray diagram with upright object CA at C, inverted image CF at C, focus B, and points D, P, E on the mirror"
+    },
+    "options": [],
+    "modelAnswer": "Figure 1: a curved mirror with points D, P (pole) and E on it. An upright arrow CA stands on the axis at C; an inverted arrow CF hangs below it. Ray A→D is parallel to the axis and reflects through B; ray A→B reaches E and reflects back parallel to the axis to F.\n\n(i) Type of mirror: concave (converging). The ray from A parallel to the axis is reflected through the point B on the axis, so the mirror brings parallel rays to a real focus.\nPoint B is the principal focus (F) of the mirror: rays parallel to the axis pass through it after reflection, and a ray through it is reflected parallel to the axis.\nObject: CA, the upright arrow standing at C. It is real.\nImage: CF, the inverted arrow at the same position C, where the reflected rays actually meet at F.\nC is the centre of curvature (2 × the focal length from P), since the image is formed at the same place as the object.\nNature of the image: real (the rays actually meet there), inverted, and the same size as the object (magnification 1).\n\n(ii) Sign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a converging lens or mirror). Formula: 1/f = 1/u + 1/v; magnification m = v/u.\nf = 10 cm, u = 15 cm.\n1/v = 1/10 − 1/15 = 1/30\nv = 30 cm (in front of the mirror).\nm = v/u = 30/15 = 2.\nImage size = 2 × 1 = 2 cm.\nNature: real, inverted and magnified, 30 cm from the mirror."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "11b. consider an object placed at the following positions : 8.5 cm, 15 cm , 20 cm, 25 cm and 27.7 cm from a convex lens of radius of curvature 20 cm respectively. Determine the position of the object that produce (i) a real diminished image (ii) a magnified real image (iii) a magnified virtual image (iv) an image of the same size as the object.",
+    "options": [],
+    "modelAnswer": "Note: for a lens, the focal length depends on the refractive index, not only on the radius of curvature. The positions given only fit the four cases if f = R/2 = 10 cm (2F = 20 cm), so that value is used. (For an equiconvex glass lens with n = 1.5, f would be 20 cm.)\nSign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; f is positive for a converging lens or mirror). Formula: 1/f = 1/u + 1/v; magnification m = v/u.\n\nu = 8.5 cm: 1/v = 1/10 − 1/8.5, v = −56.7 cm, m = 6.67: virtual, upright, magnified.\nu = 15 cm: v = 30 cm, m = 2: real, inverted, magnified.\nu = 20 cm: v = 20 cm, m = 1: real, inverted, same size.\nu = 25 cm: v = 16.7 cm, m = 0.67: real, inverted, diminished.\nu = 27.7 cm: v = 15.6 cm, m = 0.56: real, inverted, diminished.\n\n(i) Real diminished image: 25 cm and 27.7 cm (beyond 2F).\n(ii) Magnified real image: 15 cm (between F and 2F).\n(iii) Magnified virtual image: 8.5 cm (between the lens and F).\n(iv) Same size: 20 cm (at 2F)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "12a(i). State the factor(s) upon which the refractive index of kerosene depends. Calculate the speed of light in flint glass of refractive index 1.63 when travelling from air.\n12a (ii). What is meant by dispersive power? Calculate the dispersive power of crown glass. Given that, the refractive index for violent colour is 1.5230 and that of red colour is 1.5145.",
+    "options": [],
+    "modelAnswer": "(i) The refractive index of kerosene (or any medium) depends on: the wavelength (colour) of the light; the temperature (which changes the density of the liquid); and the nature and purity of the medium.\nSpeed of light in flint glass: v = c/n = 3.0 × 10⁸/1.63 = 1.84 × 10⁸ m s⁻¹.\n\n(ii) Note: 'violent' means violet.\nDispersive power is the ability of a material to separate white light into its colours. It is the ratio of the angular dispersion (between violet and red) to the mean deviation:\nω = (n_v − n_r)/(n − 1), where n is the mean refractive index.\nn = (1.5230 + 1.5145)/2 = 1.51875\nω = (1.5230 − 1.5145)/(1.51875 − 1) = 0.0085/0.51875 = 0.0164."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "12b (i). When a light ray travelling from a rectangular glass slab to water. The ray travels all the way through the slab to water and finally emerges into air . Sketch the ray diagram and compare clearly the angle of incidence with angle of refraction. Briefly discuss the possibility of total internal reflection to occur.\n12b (ii). A lens has a power of +5 diopter in air . Find its power when completely immersed in water. (Take ₐn_w = 4/3, and ₐn_g = 3/2.",
+    "options": [],
+    "modelAnswer": "(i) Ray diagram: three parallel layers, glass, water and air. Draw the ray in the glass meeting the glass–water boundary at angle i₁ to the normal. In the water it bends away from the normal (angle r₁ > i₁), because water is less dense than glass. At the water–air boundary it bends further away from the normal (r₂ > i₂ = r₁), because air is less dense than water.\nAt each boundary the ray goes from a denser to a less dense medium, so the angle of refraction is greater than the angle of incidence.\nSince the boundaries are parallel, n_g sin i₁ = n_w sin r₁ = n_a sin r₂, so the final angle in air depends only on n_g and n_a.\nTotal internal reflection: because the light travels from a denser to a less dense medium at each boundary, total internal reflection is possible. It occurs at a boundary if the angle of incidence there is greater than the critical angle for that pair of media: glass–water, sin c = n_w/n_g = (4/3)/(3/2) = 0.889, c = 62.7°; water–air, sin c = 1/n_w = 0.75, c = 48.6°. If the angle in the water is greater than 48.6°, the ray is totally reflected at the water surface and does not emerge into air.\n\n(ii) Note: the paper writes ₐn_w = 4/3 (air to water) and ₐn_g = 3/2 (air to glass).\nLens-maker's formula: 1/f = (n_lens/n_medium − 1) × K, where K = (1/r₁ + 1/r₂) depends only on the shape.\nIn air: P_a = (3/2 − 1)K = 0.5K = 5 D, so K = 10 m⁻¹.\nIn water: n_lens/n_water = (3/2)/(4/3) = 9/8, so P_w = (9/8 − 1)K = 0.125 × 10 = 1.25 D.\nThe power in water is +1.25 D (focal length 0.8 m, four times as long as in air)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "13a (i) Define the terms: gold leaf electroscope and electric field strength. (ii) If fₑ is the electrostatic force and f_g the gravitational force, find the magnitude of the ratio fₑ/f_g between two electrons.",
+    "options": [],
+    "modelAnswer": "(i) A gold leaf electroscope is an instrument for detecting electric charge, and for testing its sign and comparing its size. It has a metal cap joined by a metal rod to a thin gold leaf; when the instrument is charged, the leaf diverges from the rod because like charges repel.\nElectric field strength at a point is the force per unit positive charge placed at that point, E = F/q. Unit: N C⁻¹ (or V m⁻¹).\n\n(ii) fₑ = e²/(4πε₀r²) and f_g = Gm²/r². The separation r cancels:\nfₑ/f_g = e²/(4πε₀Gm²) = (9 × 10⁹ × (1.6 × 10⁻¹⁹)²)/(6.67 × 10⁻¹¹ × (9.0 × 10⁻³¹)²)\n= (2.304 × 10⁻²⁸)/(5.40 × 10⁻⁷¹)\n= 4.3 × 10⁴².\nThe electrostatic force is about 4 × 10⁴² times the gravitational force, so gravity is negligible between electrons."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "b(i). What is an electric current? Write down its mathematical form. (ii) Distinguish between direct and alternating current. Use sketch graphs where necessary.\n(ii) What is a conductance? Four resistors of resistances R₁, R₂, R₃ and R₄ are connected in parallel across a battery V volts. Sketch the circuit and derive the expressions for the equivalent resistance and hence, write down the expressions for its equivalent conductance.\n(iii) Two resistors of resistances 2Ω and 5Ω are connected in parallel and the combination is connected to 10Ω in series. Sketch the circuit diagram and determine the equivalent conductance of the circuit.",
+    "options": [],
+    "modelAnswer": "Note: the paper labels two parts as (ii). Both are answered below, in order.\n\n(i) Electric current is the rate of flow of electric charge through a conductor. I = Q/t (or I = dQ/dt). Unit: ampere (A).\n\n(ii) Direct current flows in one direction only, with a constant (or steady) value: sketch a horizontal straight line above the time axis on an I–t graph.\nAlternating current reverses its direction periodically, its value varying with time, usually sinusoidally: I = I₀ sin ωt. Sketch a sine wave on an I–t graph, above and below the time axis.\n\n(ii, second part) Conductance (G) is the reciprocal of resistance, G = 1/R; it measures how easily a conductor lets current flow. Unit: siemens (S = Ω⁻¹).\nCircuit: draw four resistors side by side, each connected directly across the battery.\nEach resistor has the same p.d. V. The total current is the sum of the branch currents:\nI = I₁ + I₂ + I₃ + I₄ = V/R₁ + V/R₂ + V/R₃ + V/R₄.\nWith I = V/R:\n1/R = 1/R₁ + 1/R₂ + 1/R₃ + 1/R₄.\nEquivalent conductance: G = G₁ + G₂ + G₃ + G₄ (= 1/R₁ + 1/R₂ + 1/R₃ + 1/R₄).\n\n(iii) Circuit: 2 Ω and 5 Ω side by side in parallel, with the combination in series with 10 Ω.\nParallel part: R = (2 × 5)/(2 + 5) = 10/7 = 1.43 Ω.\nTotal resistance: R = 1.43 + 10 = 11.43 Ω.\nEquivalent conductance: G = 1/11.43 = 0.0875 S."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "14a (i). Define the terms Magnetic flux and Magnetic flux density. What is the flux density in a magnetic field of cross-sectional area 20 cm² having a flux of 3μWb?\n(ii) Briefly explain the permeability of free space. Write down its mathematical expressions. Determine the magnetic field strength and the magnetomotive force (mmf) required to produce a flux density of 0.25 μT in an air gap of length 12 mm.",
+    "options": [],
+    "modelAnswer": "(i) Magnetic flux (Φ) is the total number of magnetic field lines passing through an area, Φ = BA cos θ. Unit: weber (Wb).\nMagnetic flux density (B) is the magnetic flux per unit area perpendicular to the field, B = Φ/A. Unit: tesla (T = Wb m⁻²).\nB = Φ/A = 3 × 10⁻⁶/(20 × 10⁻⁴) = 1.5 × 10⁻³ T.\n\n(ii) The permeability of free space (μ₀) is a constant that measures how readily a vacuum allows a magnetic field to be set up; it relates the flux density in a vacuum to the magnetising field strength that produces it.\nμ₀ = B/H, with μ₀ = 4π × 10⁻⁷ H m⁻¹. In a material, B = μ₀μᵣH.\nIn the air gap (μᵣ = 1):\nH = B/μ₀ = 0.25 × 10⁻⁶/(4π × 10⁻⁷) = 0.199 A m⁻¹.\nmmf = Hl = 0.199 × 0.012 = 2.39 × 10⁻³ A (ampere-turns)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Force on Conductor and Moving Charge",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "b(i). State the factors upon which the force on the current-carrying conductor in a magnetic field depends.\n(ii) Consider a conductor 50 mm carries a current of 20 A at right angle to a magnetic field of flux density 0.9 T. Calculate the force acting on the conductor. Also, Determine the value of the force if the conductor is inclined at an angle of 30⁰ to the direction of the field.",
+    "options": [],
+    "modelAnswer": "(i) F = BIl sin θ, so the force depends on: the magnetic flux density B; the current I; the length l of conductor in the field; and the angle θ between the conductor and the field (the force is greatest at 90° and zero when the conductor is parallel to the field).\n\n(ii) At right angles: F = BIl = 0.9 × 20 × 0.050 = 0.9 N.\nAt 30° to the field: F = BIl sin 30° = 0.9 × 0.5 = 0.45 N."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "15a (i) With the help of labelled diagram, explain the principle of electromagnetic induction.\n(ii) State the Faraday's and Lenz's laws of electromagnetic induction.",
+    "options": [],
+    "modelAnswer": "(i) Electromagnetic induction is the production of an e.m.f. in a conductor whenever the magnetic flux linking it changes.\nDiagram: a coil connected to a centre-zero galvanometer, with a bar magnet in line with the coil.\nWhen the magnet is pushed into the coil, the galvanometer deflects; when it is withdrawn, it deflects the opposite way; when the magnet is held still, there is no deflection. A faster movement, a stronger magnet, or more turns gives a larger deflection. A current flows only while the flux through the coil is changing.\n\n(ii) Faraday's law: whenever the magnetic flux linking a circuit changes, an e.m.f. is induced, whose magnitude is directly proportional to the rate of change of flux linkage: E = −N dΦ/dt.\nLenz's law: the induced current always flows in a direction that opposes the change producing it."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "b(i) An 0.58 H inductor has a current of 5 A flowing through it. Find the energy stored in the magnetic field of the inductor?\n(ii) Use the circuit in Figure 2 to determine the equivalent inductance at terminals a- b.",
+    "image": {
+      "src": "images/ijmb/physics/2023/phy-2023-paper2-15b.png",
+      "alt": "Figure 2: inductor network between a and b: 10 mH from a to b, in parallel with 25 mH in series with 60 mH, 20 mH and 30 mH in parallel"
+    },
+    "options": [],
+    "modelAnswer": "Figure 2: between terminals a and b: a 10 mH inductor runs directly from a to b; in parallel with it, a 25 mH inductor in series with a group of 60 mH, 20 mH and 30 mH inductors connected in parallel with each other.\n\n(i) W = ½LI² = ½ × 0.58 × 5² = 7.25 J.\n\n(ii) Inductors combine like resistors (assuming no mutual inductance).\n60 mH, 20 mH and 30 mH in parallel: 1/L = 1/60 + 1/20 + 1/30 = (1 + 3 + 2)/60 = 6/60, so L = 10 mH.\nIn series with 25 mH: 25 + 10 = 35 mH.\nIn parallel with 10 mH: L = (10 × 35)/(10 + 35) = 350/45 = 7.78 mH.\nEquivalent inductance at a–b = 7.78 mH."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "16a(i) The unit of capacitance is Farad, hence, define the term Farad. Consider three capacitors of Capacitances 3μF, 6μF and 12μF connected in series across a 250 V supply. Draw the circuit diagram and calculate the equivalent circuit capacitance, the charge on each capacitor and the p.d across each capacitor.\n(ii) The p.d. at the terminals of a battery is 25 V when no load is connected and 24 V when a load taking 10 A is connected. Determine the internal resistance of the battery.",
+    "options": [],
+    "modelAnswer": "(i) The farad is the capacitance of a capacitor that stores a charge of 1 coulomb when the p.d. across it is 1 volt (1 F = 1 C V⁻¹).\nCircuit: the three capacitors joined end to end across the 250 V supply.\n1/C = 1/3 + 1/6 + 1/12 = (4 + 2 + 1)/12 = 7/12, so C = 12/7 = 1.71 μF.\nIn series, each capacitor carries the same charge:\nQ = CV = 1.714 × 10⁻⁶ × 250 = 4.29 × 10⁻⁴ C on each.\nP.d. across each (V = Q/C):\n3 μF: 4.29 × 10⁻⁴/3 × 10⁻⁶ = 142.9 V\n6 μF: 71.4 V\n12 μF: 35.7 V\n(Check: 142.9 + 71.4 + 35.7 = 250 V.)\n\n(ii) With no load, the terminal p.d. equals the e.m.f.: E = 25 V.\nOn load: V = E − Ir, so 24 = 25 − 10r.\nr = 1/10 = 0.1 Ω."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "16b(i) A coil takes a current of 2 A from a 12 V d.c. supply. When connected to a 240 V, 50 Hz a.c supply the current is 20 A. Calculate the resistance, impedance, inductive reactance and inductance of the coil.\n(ii). State the Kirchhoff's laws in words. Use figure 3 to find i₁, i₂ and V and the power dissipated in the 6Ω resistor.",
+    "image": {
+      "src": "images/ijmb/physics/2023/phy-2023-paper2-16b.png",
+      "alt": "Figure 3: 20 V supply with 5 Ω in series, then 10 Ω in parallel with 4 Ω and 6 Ω in series; currents i₁ and i₂ and p.d. V marked"
+    },
+    "options": [],
+    "modelAnswer": "Figure 3: a 20 V supply in series with a 5 Ω resistor (current i₁) feeding a junction; from the junction a 10 Ω resistor (p.d. V across it) goes back to the supply, and a 4 Ω resistor in series with a 6 Ω resistor (current i₂) also goes back to the supply.\n\n(i) On d.c. only the resistance limits the current: R = V/I = 12/2 = 6 Ω.\nOn a.c.: Z = V/I = 240/20 = 12 Ω.\nX_L = √(Z² − R²) = √(144 − 36) = √108 = 10.4 Ω.\nL = X_L/(2πf) = 10.4/(2π × 50) = 0.0331 H (33.1 mH).\nNote: in practice a coil draws less current on a.c. than on d.c.; the figures are used as given.\n\n(ii) Kirchhoff's current law: the algebraic sum of the currents at a junction is zero (current in = current out).\nKirchhoff's voltage law: around any closed loop, the algebraic sum of the e.m.f.s equals the algebraic sum of the potential drops (IR).\n\n4 Ω + 6 Ω = 10 Ω in series; this is in parallel with 10 Ω: 10 × 10/(10 + 10) = 5 Ω.\nTotal resistance = 5 + 5 = 10 Ω.\ni₁ = 20/10 = 2 A.\nV = p.d. across the parallel part = 2 × 5 = 10 V.\ni₂ = V/(4 + 6) = 10/10 = 1 A.\nPower in the 6 Ω resistor: P = i₂²R = 1² × 6 = 6 W."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "17a(i). Balmer series is one of the five spectral series observed in the Hydrogen Spectrum corresponding to the five energy levels of the Hydrogen atom. Mention the other four.\n(ii) Distinguish between the terms 'ionization Potential and work function'. The photoelectric threshold of the photo electric effect of a certain metal is 2750 Å. Find he maximum velocity of the electrons ejected from the metal by light with a wavelength 1800Å.",
+    "options": [],
+    "modelAnswer": "(i) The other four series are: the Lyman series (transitions to n = 1, ultraviolet), the Paschen series (to n = 3, infrared), the Brackett series (to n = 4, infrared) and the Pfund series (to n = 5, infrared). The Balmer series (to n = 2) is in the visible region.\n\n(ii) Ionization potential: the minimum energy (per unit charge, in volts) needed to remove an electron completely from a free gaseous atom, taking it from its ground state to infinity.\nWork function: the minimum energy needed to remove an electron from the surface of a metal (solid).\n\nWork function: φ = hc/λ₀ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(2750 × 10⁻¹⁰) = 7.2 × 10⁻¹⁹ J.\nPhoton energy: E = hc/λ = 1.98 × 10⁻²⁵/(1800 × 10⁻¹⁰) = 1.1 × 10⁻¹⁸ J.\nK.E._max = E − φ = 1.1 × 10⁻¹⁸ − 7.2 × 10⁻¹⁹ = 3.8 × 10⁻¹⁹ J.\n½mv² = 3.8 × 10⁻¹⁹\nv = √(2 × 3.8 × 10⁻¹⁹/9.0 × 10⁻³¹) = 9.19 × 10⁵ m s⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "17b",
+    "question": "17b (i) Name three types of radiations emitted by radioactive sources in order of their relative most penetrating power. Determine, which of the radiations carries a negative charge, is similar to X-rays, is most easily absorbed, Travels with the greatest speed, is not deflected by a magnetic field emitted when decays ²³⁸₉₂U decays to ²³⁴₉₀Th and is similar in nature to cathode rays.\n(ii) Carbon -14 (¹⁴₆C) is radioactive isotope of carbon. It is a radioactive, decaying to nitrogen-14 (¹⁴₇C). Define the underlined term and write down the equations for the radioactive decay. How many protons and neutrons do ¹⁴₇C have?",
+    "options": [],
+    "modelAnswer": "(i) In order of penetrating power, from most to least: gamma (γ) rays, beta (β) particles, alpha (α) particles.\nCarries a negative charge: β particles.\nSimilar to X-rays: γ rays (both are electromagnetic waves).\nMost easily absorbed: α particles.\nTravels with the greatest speed: γ rays (speed of light).\nNot deflected by a magnetic field: γ rays (uncharged).\nEmitted when ²³⁸₉₂U decays to ²³⁴₉₀Th: α particle (the mass number falls by 4 and the atomic number by 2): ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He.\nSimilar in nature to cathode rays: β particles (both are streams of electrons).\n\n(ii) Note: in the paper the underlined term is 'radioactive isotope'. Also, '¹⁴₇C' is a misprint for ¹⁴₇N (nitrogen-14).\nA radioactive isotope (radioisotope) is an isotope of an element whose nuclei are unstable and decay spontaneously, emitting radiation (α, β or γ). Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons.\nDecay equation (beta decay): ¹⁴₆C → ¹⁴₇N + ⁰₋₁e (+ an antineutrino).\n¹⁴₇N has 7 protons and 14 − 7 = 7 neutrons.\n(For comparison, ¹⁴₆C has 6 protons and 8 neutrons.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "18a. (i) with the help of 5abeled diagram, briefly discuss the production of x-rays in a Coolidge tube. Hence, explain the terms: soft and hard x-rays.\n(ii) When X-ray tube produces a continuous spectrum of radiation with its short-wavelength end at 0.45 Å. What is the maximum energy (in eV) of a photon in the radiation? And accelerating voltage (for electrons) is required in such a tube?",
+    "options": [],
+    "modelAnswer": "(i) Note: '5abeled' means labelled.\nDiagram: an evacuated glass tube with a heated filament (cathode) at one end and a tungsten target (anode) set in a copper block at the other, facing the cathode at an angle. A low-voltage supply heats the filament; a high-voltage supply (tens of kV) is connected between cathode and anode. Cooling fins or circulating oil carry heat from the copper block. X-rays leave through a window in the side of the tube.\nAction: the hot filament emits electrons by thermionic emission. The high p.d. accelerates them to very high speeds towards the target. When they strike the target they are suddenly stopped; about 1% of their kinetic energy becomes X-rays and the rest becomes heat. The intensity of the X-rays is controlled by the filament current (number of electrons), and their penetrating power by the accelerating voltage.\nHard X-rays: produced by high accelerating voltages; they have short wavelengths and high energy, so they are very penetrating.\nSoft X-rays: produced by lower accelerating voltages; they have longer wavelengths and lower energy, so they are less penetrating.\n\n(ii) E_max = hc/λ_min = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(0.45 × 10⁻¹⁰) = 4.4 × 10⁻¹⁵ J\n= 4.4 × 10⁻¹⁵/1.6 × 10⁻¹⁹ = 2.75 × 10⁴ eV (27.5 keV).\nAll the kinetic energy of an electron (eV) goes into the most energetic photon, so the accelerating voltage is V = E_max/e = 2.75 × 10⁴ V (27.5 kV)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "18b.(i). Calculate the energy released in MeV when neutron breaks into a proton and electron.\n(ii) Given that, the half-life of radon is 3.8 days. After how many days will one twentieth (1/20 th) of radon sample will remain?",
+    "options": [],
+    "modelAnswer": "(i) The paper does not give the particle masses; standard values are used: neutron 1.008665 u, proton 1.007276 u, electron 0.000549 u.\n¹₀n → ¹₁p + ⁰₋₁e\nMass defect: Δm = 1.008665 − (1.007276 + 0.000549) = 0.000840 u.\nEnergy released = 0.000840 × 931 = 0.78 MeV.\n\n(ii) N/N₀ = (1/2)^(t/T½) = 1/20\nt/T½ = log 20/log 2 = 4.32\nt = 4.32 × 3.8 = 16.4 days."
+  }
+]

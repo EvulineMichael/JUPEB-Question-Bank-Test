@@ -1,0 +1,385 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "a) Explain what happens when carbon(IV) oxide is passed into lime water for a long time. Write the necessary equation(s) to justify your answer.",
+    "options": [],
+    "modelAnswer": "At first the lime water turns milky, because insoluble calcium carbonate is precipitated:\nCa(OH)₂(aq) + CO₂(g) → CaCO₃(s) + H₂O(l)\nWhen CO₂ is passed for a long time (in excess), the milkiness disappears and the solution becomes clear again, because the calcium carbonate reacts with more CO₂ and water to form soluble calcium hydrogencarbonate:\nCaCO₃(s) + H₂O(l) + CO₂(g) → Ca(HCO₃)₂(aq)\n\nNote: the question is printed as part 'a)', but no part (b) follows."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Calculate the relative molecular mass of chloroform from the following data which was obtained by Victor Meyer's method: 0.220 g of chloroform displaced 45 cm³ of air at 20 °C and 100.7 kN m⁻² pressure (saturated vapour pressure of water at 20 °C = 2.32 kN m⁻²).",
+    "options": [],
+    "modelAnswer": "The air is collected over water, so the pressure of the dry air = 100.7 − 2.32 = 98.38 kN m⁻² = 9.838 × 10⁴ N m⁻².\nV = 45 cm³ = 4.5 × 10⁻⁵ m³, T = 20 + 273 = 293 K.\nUsing PV = (m/M)RT:\nM = mRT/(PV) = (0.220 × 8.314 × 293)/(9.838 × 10⁴ × 4.5 × 10⁻⁵)\n= 535.9/4.427\n= 121.\n\n(Alternative: volume at s.t.p. = 45 × (98.38/101.3) × (273/293) = 40.7 cm³; M = 0.220 × 22 400/40.7 = 121.)\nThe relative molecular mass is about 121 (the formula CHCl₃ gives 119.5)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "A metal, Y belongs to group 2 of the periodic table on the basis of this information, answer the following questions:\na) Give the chemical formula of the possible oxide of Y.\nb) Suggest the expected bond type in the oxide.\nc) Write the chemical equation for the reaction of the metal oxide with water.\nd) Write an equation for the effect of adding aqueous hydrogen chloride to the aqueous solution obtained in (c) above.",
+    "options": [],
+    "modelAnswer": "Group 2 metals form Y²⁺ ions.\na) YO (e.g. CaO or MgO).\nb) Ionic (electrovalent) bonding, between Y²⁺ and O²⁻ ions.\nc) YO(s) + H₂O(l) → Y(OH)₂(aq)\nd) Neutralisation: Y(OH)₂(aq) + 2HCl(aq) → YCl₂(aq) + 2H₂O(l)\n(Ionic equation: OH⁻(aq) + H⁺(aq) → H₂O(l).)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "a) Classify the following elements as s, p, d or f - block elements\n(i) A (atomic number = 25)\n(ii) B (atomic number = 11)\n(iii) C (atomic number = 16)\nb) The quantum numbers n, l, m, and s for the electrons in the valence shells of the atoms, Y and Z are given below:\nWrite out the electron configuration of the valence shell in each case.",
+    "dataTable": {
+      "headers": [
+        "Atom",
+        "n",
+        "l",
+        "m",
+        "s"
+      ],
+      "rows": [
+        [
+          "Y",
+          "2",
+          "0",
+          "0",
+          "-½"
+        ],
+        [
+          "Y",
+          "2",
+          "0",
+          "0",
+          "+½"
+        ],
+        [
+          "Z",
+          "3",
+          "0",
+          "0",
+          "-½"
+        ],
+        [
+          "Z",
+          "3",
+          "0",
+          "0",
+          "+½"
+        ],
+        [
+          "Z",
+          "3",
+          "1",
+          "0",
+          "-½"
+        ],
+        [
+          "Z",
+          "3",
+          "1",
+          "0",
+          "+½"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "a)\n(i) A (Z = 25): [Ar]3d⁵4s², the last electron enters a d orbital, so d-block (manganese).\n(ii) B (Z = 11): [Ne]3s¹, s-block (sodium).\n(iii) C (Z = 16): [Ne]3s²3p⁴, p-block (sulphur).\n\nb) n = principal quantum number (shell), l = 0 means an s orbital and l = 1 a p orbital.\nY: two electrons with n = 2, l = 0, so the valence shell is 2s² (Y is beryllium).\nZ: two electrons with n = 3, l = 0 (3s²) and two with n = 3, l = 1 (3p²), so the valence shell is 3s²3p² (Z is silicon).\n\nNote: the paper gives both 3p electrons m = 0 with opposite spins, which places them in the same orbital. By Hund's rule, they should be in different p orbitals (e.g. m = +1 and m = 0) with parallel spins."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Given that the volume of chlorine gas at saturated temperature and pressure is 2.24 dm³, calculate the: (a) mole of chlorine gas; (b) mass of chlorine gas; (c) number of chlorine molecules; (d) number of chlorine atoms.",
+    "options": [],
+    "modelAnswer": "Note: 'saturated temperature and pressure' is taken to mean standard temperature and pressure (s.t.p.), where 1 mole of gas occupies 22.4 dm³.\n(a) n = 2.24/22.4 = 0.100 mol.\n(b) Molar mass of Cl₂ = 2 × 35.5 = 71 g mol⁻¹; mass = 0.100 × 71 = 7.10 g.\n(c) Molecules = 0.100 × 6.023 × 10²³ = 6.023 × 10²² molecules.\n(d) Each molecule has 2 atoms: atoms = 2 × 6.023 × 10²² = 1.205 × 10²³ atoms."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "a) Define the following terms:\ni) Enthalpy of solution (ii) Enthalpy of combustion\nb) The heat of formation of carbon(IV) oxide is given by\nC + O₂ → CO₂; ΔH_f = -393 kJ/mol\nWhat does this information indicate?",
+    "options": [],
+    "modelAnswer": "a)\n(i) Enthalpy of solution: the heat change when one mole of a substance is completely dissolved in a stated (large) amount of solvent, so that further dilution causes no further heat change.\n(ii) Enthalpy of combustion: the heat evolved when one mole of a substance is completely burnt in excess oxygen under standard conditions.\n\nb) It indicates that:\n1. 393 kJ of heat is released when one mole of carbon(IV) oxide is formed from its elements (carbon and oxygen) in their standard states.\n2. The reaction is exothermic (ΔH is negative), so CO₂ is energetically more stable than the elements from which it is formed.\n3. The value is also the standard enthalpy of combustion of carbon (graphite)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Outline five general features of group 1 elements of the periodic table.",
+    "options": [],
+    "modelAnswer": "Any five:\n1. They have one electron in their outermost shell (ns¹ configuration).\n2. They are univalent, forming M⁺ ions with oxidation state +1.\n3. They are soft, light metals with low melting points and low densities.\n4. They are very reactive, strong reducing agents, and react with water to give alkaline hydroxides and hydrogen.\n5. They have the lowest first ionisation energies in their periods.\n6. They form ionic compounds, and their oxides and hydroxides are strongly basic.\n7. They give characteristic flame colours (Li red, Na yellow, K lilac).\n8. Reactivity, atomic radius and metallic character increase down the group."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Chemical Kinetics",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "The rate determining step of a reaction involves reaction between a mole each of P and Q to give a mole of R as a product.\na) Write the rate law for the reaction.\nb) State four things you might do to increase the formation of the product, R.",
+    "options": [],
+    "modelAnswer": "a) The rate-determining step is P + Q → R, so the rate law is: rate = k[P][Q] (first order in each, second order overall).\n\nb) Any four:\n1. Increase the concentration of P and/or Q.\n2. Increase the temperature.\n3. Add a suitable catalyst.\n4. Increase the surface area of the reactants if they are solids (powder them).\n5. Increase the pressure if the reactants are gases.\n6. Remove R as it forms, if the reaction is reversible."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "a) What is inert pair effect?\nb) Give the oxidation state of nitrogen in each of the following compounds:\n(i) NH₃ (ii) NH₂OH (iii) N₂",
+    "options": [],
+    "modelAnswer": "a) The inert pair effect is the reluctance of the pair of ns² electrons in the outer shell of heavier p-block elements (e.g. Tl, Sn, Pb, Bi) to take part in bonding. As a result, the lower oxidation state (2 less than the group valency) becomes more stable down the group, e.g. Pb²⁺ is more stable than Pb⁴⁺.\n\nb)\n(i) NH₃: x + 3(+1) = 0, so N = −3.\n(ii) NH₂OH: x + 2(+1) + (−2) + (+1) = 0, so N = −1.\n(iii) N₂: an element, so N = 0."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "A gas X diffuses four times as rapidly as another gas Y under the same condition of temperature and pressure. If the density of gas Y is 2.88 x 10³ g m⁻³, calculate the density of gas X.",
+    "options": [],
+    "modelAnswer": "Graham's law: rate of diffusion is inversely proportional to the square root of the density.\nr_X/r_Y = √(ρ_Y/ρ_X)\n4 = √(2.88 × 10³/ρ_X)\n16 = 2.88 × 10³/ρ_X\nρ_X = 2.88 × 10³/16 = 180 g m⁻³ (1.80 × 10² g m⁻³)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "a) Tin and lead have variable oxidation states and form complex ion but are not regarded as transition metals. (2 marks)",
+    "options": [],
+    "modelAnswer": "A transition element has a partially filled d subshell in the atom or in one of its common ions. Tin ([Kr]4d¹⁰5s²5p²) and lead ([Xe]4f¹⁴5d¹⁰6s²6p²) have completely filled d subshells (d¹⁰) in the atoms and in their ions (Sn²⁺, Sn⁴⁺, Pb²⁺, Pb⁴⁺). Their variable oxidation states (+2 and +4) come from the p and s electrons (the inert pair effect), not from d electrons, so they are p-block elements, not transition metals."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "b) An aqueous solution of KCl is colourless but that of CuCl₂ is green. (7 marks)",
+    "options": [],
+    "modelAnswer": "Colour in transition metal compounds comes from d–d transitions.\nK⁺ has the configuration [Ar] (1s²2s²2p⁶3s²3p⁶), with no d electrons (3d⁰). It cannot absorb visible light by d–d transitions, and Cl⁻ also has a noble-gas configuration, so KCl(aq) is colourless.\nCu²⁺ has the configuration [Ar]3d⁹, a partially filled d subshell. In solution, water molecules and chloride ions act as ligands and split the 3d orbitals into two sets of different energy. An electron can absorb visible light of a particular wavelength (in the red/orange region) to jump to the higher set (a d–d transition). The light transmitted is the complementary colour.\nIn dilute solution the [Cu(H₂O)₆]²⁺ ion is blue; in CuCl₂ solution some water ligands are replaced by Cl⁻ to form yellow chloro-complexes such as [CuCl₄]²⁻, and the mixture of blue and yellow species appears green."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "11c",
+    "question": "c) Although calcium chloride has a lower melting point than strontium chloride, it has a higher melting point than calcium iodide. (8 marks)",
+    "options": [],
+    "modelAnswer": "Ionic compounds have high melting points because of strong electrostatic attraction between ions. Covalent character reduces the melting point. Fajans' rules: covalent character increases when the cation is small and highly charged (high polarising power) and when the anion is large (easily polarised).\nCaCl₂ vs SrCl₂: Ca²⁺ is smaller than Sr²⁺, so it has a higher charge density and polarises the Cl⁻ ions more. CaCl₂ therefore has more covalent character than SrCl₂ and a lower melting point (about 772 °C vs 874 °C).\nCaCl₂ vs CaI₂: I⁻ is much larger and more polarisable than Cl⁻, so it is distorted more by Ca²⁺. CaI₂ has more covalent character (and a lower lattice energy, because the larger anion keeps the ions farther apart), so the expected melting point is lower than that of CaCl₂.\n\nNote: the measured melting points of CaCl₂ (about 772 °C) and CaI₂ (about 779 °C) are actually very close, with CaI₂ slightly higher. The explanation above is the reasoning the question expects."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "11d",
+    "question": "d) Although oxygen and sulphur belong to the same group of the periodic table, SF₆ is stable but OF₆ is not. (5 marks)",
+    "options": [],
+    "modelAnswer": "In SF₆, sulphur forms six bonds (12 electrons around S), which requires expansion of the octet. Sulphur is in period 3 and has vacant 3d orbitals of suitable energy: on excitation (3s¹3p³3d²), six unpaired electrons are available for bonding (sp³d² hybridisation, octahedral shape). Sulphur is also large enough to fit six fluorine atoms around it.\nOxygen is in period 2 and has no d orbitals in its valence shell (n = 2 has only s and p orbitals), so it cannot expand its octet beyond 8 electrons; its maximum covalency is limited (usually 2). Oxygen is also too small to accommodate six F atoms. Therefore OF₆ cannot exist."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "11e",
+    "question": "e) Occurrence of +3 oxidation state in scandium. (3 marks)",
+    "options": [],
+    "modelAnswer": "Scandium (Z = 21) has the configuration [Ar]3d¹4s². It loses the two 4s electrons and the single 3d electron to form Sc³⁺, which has the stable noble-gas configuration of argon. The total energy needed is outweighed by the high lattice or hydration energy of the small, highly charged Sc³⁺ ion. Removing fewer electrons would not give a stable configuration, so +3 is its only common oxidation state."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "12. a) Outline two similarities between electrochemical and electrolytic cells. (2 marks)",
+    "options": [],
+    "modelAnswer": "Any two:\n1. Both have two electrodes dipping into an electrolyte (or electrolytes).\n2. In both, oxidation takes place at the anode and reduction at the cathode.\n3. In both, electrons flow through the external circuit and ions carry the current through the electrolyte.\n4. Both involve redox reactions."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "b) In a tabular form, state four differences between electrochemical and electrolytic cells. (4 marks)",
+    "options": [],
+    "modelAnswer": "Electrochemical (galvanic) cell vs electrolytic cell:\n1. Energy change: converts chemical energy into electrical energy | converts electrical energy into chemical energy.\n2. Spontaneity: the redox reaction is spontaneous (ΔG < 0) | the reaction is non-spontaneous and is driven by an external supply (ΔG > 0).\n3. Polarity: the anode is negative and the cathode positive | the anode is positive and the cathode negative.\n4. Construction: usually two half-cells joined by a salt bridge | usually one vessel with no salt bridge.\n5. Source: it is itself a source of e.m.f. | it needs an external source of e.m.f. (battery)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "12c",
+    "question": "c) Metal X and Y are both divalent electrodes in an electrochemical cell with E°_X = -2.00 V and E°_Y = -4.25 V at 298 K.\n(i) With suitable reason, which of the metals will serve as the cathode and the anode? (2 marks)\n(ii) Write the reactions at the electrodes. (4 marks)\n(iii) Write the overall reactions in the cell. (1 mark)\n(iv) Determine the emf of the cell. (3 marks)\n(v) Calculate the value of ΔG for the reaction. (3 marks)\n(vi) Is the reaction spontaneous? Explain (2 marks)\n(vii) Calculate the equilibrium constant, K for the system. (4 marks)",
+    "options": [],
+    "modelAnswer": "(i) X is the cathode and Y is the anode. X has the higher (less negative) reduction potential, so X²⁺ is more easily reduced; Y has the more negative potential, so Y is more easily oxidised.\n\n(ii) Anode (oxidation): Y(s) → Y²⁺(aq) + 2e⁻\nCathode (reduction): X²⁺(aq) + 2e⁻ → X(s)\n\n(iii) Y(s) + X²⁺(aq) → Y²⁺(aq) + X(s)\n\n(iv) E°cell = E°cathode − E°anode = −2.00 − (−4.25) = +2.25 V.\n\n(v) ΔG° = −nFE°cell = −2 × 96 500 × 2.25 = −434 250 J mol⁻¹ = −434 kJ mol⁻¹.\n\n(vi) Yes. ΔG° is negative (and E°cell is positive), so the reaction is spontaneous.\n\n(vii) ΔG° = −RT ln K\nln K = −ΔG°/(RT) = 434 250/(8.314 × 298) = 175.3\nlog K = 175.3/2.303 = 76.1\nK = 10⁷⁶·¹ ≈ 1.3 × 10⁷⁶.\nThe very large K shows that the reaction goes virtually to completion.\n\nNote: −4.25 V is more negative than any real standard electrode potential (lithium is about −3.04 V); the values are hypothetical."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "13",
+    "question": "Use the information in the following table to explain the following observations.\na) The atomic radius decreases from Na to Cl. (6 marks)\nb) The ionic radi of the ions of S and Cl are greater than their respective atom. (3 marks)\nc) The ionic radi of the ions of Na, Mg and Al are less than their respective atom. (2 marks)\nd) The first ionisation energy of Al is less than that of Mg. (6 marks)\ne) The first ionisation energy of S is less than that of P. (5 marks)\nf) Which of the elements are s-block elements? (2 marks)\ng) Which of the elements are d-block elements? (1 mark)",
+    "dataTable": {
+      "headers": [
+        "Element",
+        "Na",
+        "Mg",
+        "Al",
+        "Si",
+        "P",
+        "S",
+        "Cl"
+      ],
+      "rows": [
+        [
+          "Atomic radius (nm)",
+          "0.156",
+          "0.136",
+          "0.125",
+          "0.117",
+          "0.111",
+          "0.104",
+          "0.099"
+        ],
+        [
+          "Ionic radius (nm)",
+          "0.095",
+          "0.065",
+          "0.050",
+          "",
+          "",
+          "0.184",
+          "0.181"
+        ],
+        [
+          "First ionisation energy (kJ/mol)",
+          "492",
+          "743",
+          "579",
+          "791",
+          "1060",
+          "1003",
+          "1254"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "a) Across period 3 from Na to Cl, the nuclear charge (number of protons) increases by one at each step, while the added electrons go into the same shell (n = 3). Shielding by the inner electrons stays almost the same, so the effective nuclear charge increases. The outer electrons are pulled closer to the nucleus, and the atomic radius decreases (0.156 nm for Na to 0.099 nm for Cl).\n\nb) S²⁻ (0.184 nm) and Cl⁻ (0.181 nm) are larger than S (0.104 nm) and Cl (0.099 nm) because the atoms gain electrons. The number of electrons becomes greater than the number of protons, so the electron–electron repulsion increases and each electron is held less tightly, making the electron cloud expand.\n\nc) Na⁺, Mg²⁺ and Al³⁺ are smaller than their atoms because the atoms lose their whole outer (3rd) shell. The remaining electrons are in the second shell, which is closer to the nucleus, and the same nuclear charge now attracts fewer electrons, pulling them in more tightly.\n\nd) Mg: [Ne]3s²; Al: [Ne]3s²3p¹. The electron removed from Al is a 3p electron, which is higher in energy than a 3s electron, further from the nucleus and shielded by the 3s² electrons. It is therefore easier to remove, so the first ionisation energy of Al (579 kJ/mol) is less than that of Mg (743 kJ/mol).\n\ne) P: [Ne]3s²3p³, with three unpaired electrons in separate 3p orbitals (a stable half-filled subshell). S: [Ne]3s²3p⁴, where two electrons share one 3p orbital. The repulsion between the paired electrons makes one of them easier to remove, so the first ionisation energy of S (1003 kJ/mol) is less than that of P (1060 kJ/mol).\n\nf) Na and Mg (their outer electrons are in an s subshell).\n\ng) None of the elements in the table are d-block elements; Na to Cl are all s- or p-block elements (Al, Si, P, S and Cl are p-block)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "14. a) Give the formula of:\n(i) an example of cationic complex of chromium; (1 mark)\n(ii) an example of anionic complex of chromium; (1 mark)\n(iii) an example of neutral complex of chromium. (1 mark)",
+    "options": [],
+    "modelAnswer": "Examples (any correct example is acceptable):\n(i) Cationic: [Cr(H₂O)₆]³⁺ (e.g. in [Cr(H₂O)₆]Cl₃) or [Cr(NH₃)₆]³⁺.\n(ii) Anionic: [Cr(CN)₆]³⁻ (e.g. in K₃[Cr(CN)₆]) or [Cr(C₂O₄)₃]³⁻.\n(iii) Neutral: [Cr(CO)₆] or [Cr(NH₃)₃Cl₃]."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "b) State three reasons why chromium is able to exist in the form of the above a(i) - (iii). (3 marks)",
+    "options": [],
+    "modelAnswer": "1. Chromium has vacant (or partly filled) 3d orbitals, together with 4s and 4p orbitals, that can accept lone pairs of electrons from ligands to form coordinate bonds.\n2. Its ions are small and highly charged (high charge density), so they strongly attract ligands.\n3. It shows variable oxidation states (e.g. 0, +2, +3, +6), and the overall charge of the complex depends on the oxidation state and the charges of the ligands, giving cationic, anionic or neutral complexes."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "14c",
+    "question": "c) The compound A, [CoCl(H₂O)₅]Cl₂.H₂O is isomeric with compound B, [Co(H₂O)₆]Cl₃\n(i) Name the type of isomerism. (1 mark)\n(ii) What ions would these two compounds produce when dissolve in polar medium like water? (4 marks)\n(iii) Using a balanced chemical equation, describe a simple chemical test for any of the isomers. (4 marks)\n(iv) Give the oxidation state of cobalt in isomer A and write its full electron configuration. (3 marks)\n(v) What is the coordination number of cobalt in isomer B? (1 mark)\n(vi) Draw the structure of the isomer B. (3 marks)\n(vii) Predict the magnetic property of isomer B and give reason(s) for your answer. (3 marks)",
+    "options": [],
+    "modelAnswer": "(i) Hydrate (solvate) isomerism: the compounds differ in whether water is a ligand or water of crystallisation (a type of ionisation-type isomerism).\n\n(ii) A: [CoCl(H₂O)₅]Cl₂·H₂O → [CoCl(H₂O)₅]²⁺(aq) + 2Cl⁻(aq) (3 ions).\nB: [Co(H₂O)₆]Cl₃ → [Co(H₂O)₆]³⁺(aq) + 3Cl⁻(aq) (4 ions).\n\n(iii) Add excess silver nitrate solution. Only the free (ionisable) chloride ions are precipitated as white AgCl.\nB: [Co(H₂O)₆]Cl₃ + 3AgNO₃ → [Co(H₂O)₆](NO₃)₃ + 3AgCl(s)\nA: [CoCl(H₂O)₅]Cl₂ + 2AgNO₃ → [CoCl(H₂O)₅](NO₃)₂ + 2AgCl(s)\nOne mole of B gives 3 moles of AgCl; one mole of A gives only 2 moles. (B solutions also conduct more, as they contain more ions.)\n\n(iv) In [CoCl(H₂O)₅]²⁺: x + (−1) + 5(0) = +2, so Co = +3.\nCo³⁺ (24 electrons): 1s²2s²2p⁶3s²3p⁶3d⁶.\n\n(v) 6 (six water ligands).\n\n(vi) Octahedral: Co³⁺ at the centre with six H₂O molecules at the corners of an octahedron, each bonded through the oxygen atom by a coordinate bond (O→Co); the three Cl⁻ ions are outside the coordination sphere.\n\n(vii) Co³⁺ is d⁶. In [Co(H₂O)₆]³⁺ the high charge on Co³⁺ makes the crystal-field splitting large, so the six d electrons pair up in the lower t₂g orbitals (t₂g⁶, low spin). With no unpaired electrons, isomer B is diamagnetic.\nNote: if water is treated as a weak-field ligand giving a high-spin d⁶ ion (t₂g⁴e_g²), four unpaired electrons are predicted (paramagnetic); experimentally, however, [Co(H₂O)₆]³⁺ is low spin and diamagnetic."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "15. (a State the following laws or principles and give an application or consequence of each: (3 marks each)\n(i) Heisenberg's uncertainty principle;\n(ii) Fajan's rule;\n(iii) Nernst distribution law;\n(iv) Hund's rule of maximum multiplicity;\n(v) Hess' law of heat summation",
+    "options": [],
+    "modelAnswer": "(i) Heisenberg's uncertainty principle: it is impossible to determine both the exact position and the exact momentum of a small particle such as an electron at the same time (Δx·Δp ≥ h/4π).\nConsequence: electrons cannot be described as moving in fixed orbits (as in Bohr's model); instead we use orbitals, regions of high probability of finding the electron.\n\n(ii) Fajans' rules: an ionic bond acquires covalent character when the cation is small and highly charged and the anion is large and highly charged (easily polarised), or when the cation does not have a noble-gas configuration.\nApplication: explains why AlCl₃ is largely covalent while NaCl is ionic, and why LiCl is more covalent than KCl.\n\n(iii) Nernst distribution (partition) law: at constant temperature, a solute distributes itself between two immiscible solvents so that the ratio of its concentrations in the two solvents is constant (K_D = C₁/C₂), provided it is in the same molecular state in both.\nApplication: solvent extraction (e.g. extracting iodine from water with tetrachloromethane); determining association or dissociation of a solute.\n\n(iv) Hund's rule: when electrons fill orbitals of equal energy (degenerate orbitals), they occupy them singly with parallel spins before any pairing occurs.\nApplication: nitrogen (1s²2s²2p³) has three unpaired 2p electrons; it explains the stability of half-filled subshells and the paramagnetism of O₂-type and transition-metal species.\n\n(v) Hess's law: the total enthalpy change of a reaction is the same whatever route is taken, provided the initial and final states are the same.\nApplication: calculating enthalpy changes that cannot be measured directly, e.g. the enthalpy of formation of CO or of methane from enthalpies of combustion, and lattice energies (Born–Haber cycle)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "b) A piece of impure iron scrap weighing 0.22 g was dissolved in tetraoxosulphate(VI) acid, which oxidised the scrap to Fe²⁺. The resulting solution requires 36.50 cm³ of 0.1 mole of potassium tetraoxomanganate(VII) for complete reaction. Calculate the percentage purity of the iron scrap. (5 marks)",
+    "options": [],
+    "modelAnswer": "Equation: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O (mole ratio MnO₄⁻ : Fe²⁺ = 1 : 5).\nTaking '0.1 mole' to mean 0.1 mol dm⁻³:\nMoles of MnO₄⁻ = 36.50/1000 × 0.1 = 3.65 × 10⁻³ mol.\nMoles of Fe²⁺ = 5 × 3.65 × 10⁻³ = 1.825 × 10⁻² mol.\nMass of Fe = 1.825 × 10⁻² × 56 = 1.022 g.\nPercentage purity = 1.022/0.22 × 100 = 465 %.\n\nNote: a purity above 100 % is impossible, so the data in the paper contain a misprint. If the KMnO₄ concentration was 0.01 mol dm⁻³ (or the scrap weighed 2.2 g), the mass of Fe is 0.1022 g and the purity is 0.1022/0.22 × 100 = 46.5 %. The method above is what the question tests."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Acid-Base Equilibria",
+    "type": "Essay",
+    "questionNumber": "15c",
+    "question": "c) Give any two methods that can be employed to determine the end point of an acid - base titration. (5 marks)",
+    "options": [],
+    "modelAnswer": "Any two:\n1. Use of an acid–base indicator (e.g. phenolphthalein or methyl orange), which changes colour at the end point.\n2. Potentiometric (pH-meter) titration: the pH is measured as the titrant is added, and the end point is the point of steepest change on the pH curve.\n3. Conductometric titration: the conductance is measured, and the end point is where the two straight-line portions of the conductance graph meet.\n4. Thermometric titration: the temperature is measured; the end point is where the temperature stops rising (neutralisation is exothermic)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Equilibrium State",
+    "type": "Essay",
+    "questionNumber": "16",
+    "question": "At 200 °C, the K_c for the reaction\nPCl₅(g) ⇌ PCl₃(g) + Cl₂(g) ΔH = +124 kJ mol⁻¹\nhas a numerical value of 8 × 10⁻³.\na) Write an expression for K_c in terms of the degree of dissociation (∝) and the total volume (V) (3 marks)\nb) What is the unit of K_c? (2 marks)\nc(i) What is the value of K_c for the reverse reaction at the same temperature in terms of ∝ and V? (2 marks)\n(ii) Write the unit for the reverse reaction. (1 mark)\nd) What will be the effect of K_c if:\n(i) more PCl₅ is added ii) pressure is increased iii) temperature is increased? (2 marks)\ne) Predict the effect on the equilibrium composition if:\n(i) more PCl₅ is added; (2 marks)\n(ii) pressure is increased; (2 marks)\n(iii) temperature is increased. (2 marks)\nf) At 200 °C and a total pressure of 1 atmosphere, the PCl₅ is found to be 50 % dissociated. Write an expression for the K_P in terms of ∝ and P. Calculate the equilibrium constant K_P at this temperature. (9 marks)",
+    "options": [],
+    "modelAnswer": "a) Start with 1 mol of PCl₅ in volume V.\nAt equilibrium: PCl₅ = (1 − α) mol, PCl₃ = α mol, Cl₂ = α mol.\nK_c = [PCl₃][Cl₂]/[PCl₅] = (α/V)(α/V)/((1 − α)/V) = α²/((1 − α)V).\n\nb) mol dm⁻³ (concentration units: (mol dm⁻³)²/(mol dm⁻³)).\n\nc)(i) K_c(reverse) = 1/K_c = (1 − α)V/α². Numerically, 1/(8 × 10⁻³) = 125.\n(ii) dm³ mol⁻¹ (mol⁻¹ dm³).\n\nd) K_c depends only on temperature.\n(i) More PCl₅: no change in K_c.\n(ii) Pressure increased: no change in K_c.\n(iii) Temperature increased: K_c increases, because the forward reaction is endothermic (ΔH = +124 kJ mol⁻¹).\n\ne) By Le Chatelier's principle:\n(i) More PCl₅: the equilibrium shifts to the right; more PCl₃ and Cl₂ are formed.\n(ii) Pressure increased: the equilibrium shifts to the left (towards the side with fewer gas molecules, 1 mole instead of 2), so more PCl₅.\n(iii) Temperature increased: the equilibrium shifts to the right (the endothermic direction), so more PCl₃ and Cl₂.\n\nf) Total moles at equilibrium = (1 − α) + α + α = 1 + α.\nPartial pressures: p(PCl₅) = (1 − α)P/(1 + α); p(PCl₃) = p(Cl₂) = αP/(1 + α).\nK_P = [αP/(1 + α)]²/[(1 − α)P/(1 + α)] = α²P/((1 − α)(1 + α)) = α²P/(1 − α²).\nWith α = 0.5 and P = 1 atm:\nK_P = (0.25 × 1)/(1 − 0.25) = 0.25/0.75 = 0.333 atm."
+  }
+]

@@ -1,0 +1,901 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "A situation where, given an upward-sloping supply curve, a manufacturer previously supplying X units of a commodity at ₦10 per unit is now willing to supply the same X units at a price not less than ₦12 per unit, represents",
+    "options": [
+      "a decrease in quantity supplied",
+      "a fall in supply",
+      "an increase in quality supplied",
+      "a rise in supply",
+      "a new equilibrium."
+    ],
+    "answer": "B",
+    "explanation": "The producer now needs a higher price (₦12 instead of ₦10) to supply the same quantity, so the whole supply curve has shifted upwards/left: a decrease (fall) in supply, not a movement along the curve."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Choice is necessary because",
+    "options": [
+      "goods are many and varied and one must therefore choose",
+      "one can not consume everything",
+      "resources are scarce relative to wants",
+      "producers want to be guided as to what to produce",
+      "wants are limited and resources are unlimited."
+    ],
+    "answer": "C",
+    "explanation": "Choice arises because resources are scarce relative to unlimited wants."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "If the marginal utility of commodity X rises above that of commodity y₁ then",
+    "options": [
+      "MUx/MUy > Px/Py",
+      "MUx/MUy = Px/Py",
+      "Px/Py > MUx/MUy",
+      "MUy/MUx > Px/Py",
+      "MUy/MUx > Py/Px"
+    ],
+    "answer": "A",
+    "explanation": "Consumer equilibrium is MUx/MUy = Px/Py. If MUx rises (prices unchanged), the ratio MUx/MUy becomes greater than Px/Py, so the consumer gains by buying more X."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Total revenue will increase if the elasticity of demand is",
+    "options": [
+      "greater than one and price rises",
+      "less than one and price falls",
+      "infinite and price rises",
+      "greater than one and price falls",
+      "equal to one and price rises"
+    ],
+    "answer": "D",
+    "explanation": "When demand is elastic (e > 1), a fall in price increases quantity demanded more than proportionately, so total revenue rises. With e > 1 a price rise reduces TR; with e < 1 a price fall reduces TR; with e = 1 TR is unchanged."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "If a firm sells 3,000 units of a commodity at ₦10 per unit and 5,000 units at ₦8 per unit what is the elasticity of demand.",
+    "options": [
+      "marginal revenue = ₦2.00",
+      "total revenue = ₦40,000",
+      "elasticity of demand = 3.3",
+      "value added = ₦10,000",
+      "elasticity of supply = 3.3"
+    ],
+    "answer": "C",
+    "explanation": "Note: the left edge of the photo cuts off the first letter ('If').\nPED = (ΔQ/Q)/(ΔP/P) = (2000/3000)/(2/10) = 0.667/0.2 = 3.3 (elastic)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Which of the following will not cause an increase in the supply of guinea corn?",
+    "options": [
+      "an improvement in guinea corn farm technology",
+      "a fall in the price of farm machinery",
+      "a decrease in the price of millet",
+      "general improvement in farm technology",
+      "an increase in the price of beans."
+    ],
+    "answer": "E",
+    "explanation": "Better technology (A, D) and cheaper machinery (B) increase supply. A rise in the price of beans, a competing crop, makes farmers switch land and resources to beans, reducing the supply of guinea corn. Note: option C (a fall in the price of millet) also does not increase supply if millet is a substitute in consumption (it affects demand, not supply); E is the clearest answer."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "If the quantity demanded of a commodity rises from 100 units to 110 units as its price falls from ₦10 per units to N9 per unit, the demand elasticity may be classified as:",
+    "options": [
+      "infinite",
+      "unitary",
+      "elastic",
+      "inelastic",
+      "zero."
+    ],
+    "answer": "B",
+    "explanation": "% change in quantity = 10/100 = 10%; % change in price = 1/10 = 10%. PED = 10%/10% = 1, i.e. unitary elasticity."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Pure economic rent exists when:",
+    "options": [
+      "the demand for land is perfectly elastic",
+      "all land is fertile",
+      "some land is fertile",
+      "the supply of land is perfectly inelastic",
+      "transfer earnings are minimal"
+    ],
+    "answer": "D",
+    "explanation": "When the supply of a factor (land) is perfectly inelastic, its transfer earnings are zero, so its whole earnings are economic rent (pure rent)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The most probable effect of an income tax one factor is to",
+    "options": [
+      "increase units of the factor supplied",
+      "reduce units of the factor supplied",
+      "shift the demand for the factor",
+      "reduce demand for the factor",
+      "increase the income of the factor"
+    ],
+    "answer": "B",
+    "explanation": "An income tax on a factor reduces its net (after-tax) reward, so less of the factor is likely to be supplied (e.g. less labour)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "If a government want to increase its total revenue from excise, it should raise the tax on goods that are:",
+    "options": [
+      "substitute",
+      "inferior",
+      "elastic in demand",
+      "infinitely elastic in demand",
+      "inelastic in demand."
+    ],
+    "answer": "E",
+    "explanation": "When demand is inelastic, quantity bought falls only slightly when the tax raises the price, so tax revenue increases."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Which of the following can be regarded as fixed cost?",
+    "options": [
+      "wages",
+      "raw materials",
+      "fuel",
+      "plant and machinery",
+      "interest on short-term loans."
+    ],
+    "answer": "D",
+    "explanation": "Fixed costs do not vary with output in the short run, e.g. the cost of plant and machinery (depreciation), rent on buildings. Wages, raw materials and fuel are variable costs."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Which of the following is not a factor reward?",
+    "options": [
+      "wages",
+      "rent",
+      "interest",
+      "premium",
+      "profit"
+    ],
+    "answer": "D",
+    "explanation": "The factor rewards are rent, wages, interest and profit. A premium is not a factor reward."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Which of the following constitute the income of a retailer who runs a shop in one of the rooms of his house rent out to tenants?",
+    "options": [
+      "wages, rent, and profit",
+      "wages and interest",
+      "wages, interest and profit",
+      "profit",
+      "wages, interest, rent and profit."
+    ],
+    "answer": "A",
+    "explanation": "The retailer earns profit (and the reward for his own labour, wages of management) from the shop, and rent from the rooms let to tenants. No interest is earned, so A is the best answer."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Which of the following is not an advantage of division of labour?",
+    "options": [
+      "increased productivity",
+      "monotony",
+      "efficiency",
+      "development of specialized skills",
+      "introduction of specialized machines."
+    ],
+    "answer": "B",
+    "explanation": "Monotony is a disadvantage of division of labour."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "What would you call a firm which produces and sells as much as it can at a given market price?",
+    "options": [
+      "a monopolist",
+      "a free market producer",
+      "an oligopolistic firm",
+      "competitive firm",
+      "a monopolistically competitive firm."
+    ],
+    "answer": "D",
+    "explanation": "A perfectly competitive firm is a price taker and can sell any quantity at the market price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "When production is based on free enterprise, firms seek to maximize.",
+    "options": [
+      "output",
+      "employment",
+      "innovation",
+      "welfare",
+      "profit"
+    ],
+    "answer": "E",
+    "explanation": "Under free enterprise, firms aim to maximise profit."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Which of the following groups of economists were particularly concerned with the theory of income distribution?",
+    "options": [
+      "J.M. Keynes, Alfred Marshall and John Stuart Mill",
+      "T.R. Malthus, Karl Marx and Frederick Engels",
+      "Adam Smith, David Ricardo and Frederic Engels",
+      "Adam Smith, Paul Samuelson and Richard Lipsey",
+      "Adam Smith, David Ricardo and Karlmarx."
+    ],
+    "answer": "E",
+    "explanation": "The classical economists Adam Smith and David Ricardo (who called distribution 'the principal problem in political economy') and Karl Marx built their theories around how income is distributed among landlords, capitalists and workers."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "A powerful trade union may be able to raise the wages of its members but it could run the risk of",
+    "options": [
+      "Lowering the volume of employment",
+      "being accused of irresponsibility",
+      "having the appointment of its top executive",
+      "causing depression",
+      "receiving stern warning from the management."
+    ],
+    "answer": "A",
+    "explanation": "If wages are raised above the equilibrium level, employers demand less labour, so employment may fall (unemployment)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Precious metals like gold and silver have long been used for money because",
+    "options": [
+      "of their intristic value",
+      "they are the risk metals to be discovered",
+      "of their relative scarcity",
+      "only gold and silver are used for jewelry",
+      "they are the most precious of all metals."
+    ],
+    "answer": "C",
+    "explanation": "Gold and silver were used as money mainly because they are relatively scarce (so they hold value), as well as durable, portable and divisible. Note: their intrinsic value (A, misspelt 'intristic') also contributed, but it arises from their scarcity."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "In order to obtain national income at market prices from national income at factor cost we have to:",
+    "options": [
+      "add indirect taxes and subtract subsidies",
+      "subtract indirect taxes and add subsidies",
+      "add indirect taxes",
+      "subtract subsidies",
+      "add subsidies"
+    ],
+    "answer": "A",
+    "explanation": "NI at market prices = NI at factor cost + indirect taxes − subsidies."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "In computing the national come, we should exclude",
+    "options": [
+      "wages",
+      "pensions",
+      "profits",
+      "salaries",
+      "rent on property."
+    ],
+    "answer": "B",
+    "explanation": "Pensions are transfer payments, so they are excluded. ('national come' is a misprint for national income.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "What is mean by \"a withdrawal\" in national income determination theory?",
+    "options": [
+      "money withdrawn from the central bank",
+      "money withdrawn from the commercial bank",
+      "undistributed profits",
+      "any income that is not passed on to the circular",
+      "maintenance allowance paid to students."
+    ],
+    "answer": "D",
+    "explanation": "A withdrawal (leakage) is any income not passed on in the circular flow of income, i.e. saving, taxes and imports. (Undistributed profits, C, are one example of a withdrawal, but D is the definition.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "What is likely to happen when the demand for Nigeria's exports increases?",
+    "options": [
+      "fall in the external value of the Naira",
+      "rise in the external value of the Naira",
+      "demand for foreign currency will increase in Nigeria",
+      "demand for Naira will fall",
+      "supply of Nigeria's exports will increase."
+    ],
+    "answer": "B",
+    "explanation": "Higher demand for Nigerian exports increases the demand for naira, raising its external value."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Price increase will be equal to an increase in tax if demand is",
+    "options": [
+      "perfectly elastic",
+      "of unitary elasticity",
+      "perfectly inelastic",
+      "exceptional",
+      "shift to the right"
+    ],
+    "answer": "C",
+    "explanation": "When demand is perfectly inelastic, consumers buy the same quantity whatever the price, so the whole tax is passed on and price rises by the full amount of the tax."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The success of devaluation does not depend on",
+    "options": [
+      "whether or not a country trades with the rest of the world",
+      "the goodwill of other countries",
+      "elasticity of demand for a country's imports",
+      "domestic elasticity of supply for a country's exports",
+      "foreign elasticity of demand for a country's export."
+    ],
+    "answer": "B",
+    "explanation": "Devaluation succeeds if demand for exports and imports is elastic (Marshall–Lerner condition) and exports can be increased. It does not depend on the goodwill of other countries (though it may depend on their not retaliating)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Output is increasing at an increasing rate in which of the stages.",
+    "options": [
+      "stage II",
+      "stage II and III",
+      "stage III",
+      "stage I",
+      "stage IV"
+    ],
+    "answer": "D",
+    "explanation": "Note: this line is blurred in the photo and is read as 'increasing at an increasing rate'.\nTotal product increases at an increasing rate in the early part of Stage I, while marginal product is rising."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The major fiscal policy instruments in Nigeria are:",
+    "options": [
+      "taxation, tariff, public expenditure",
+      "taxation, tariff, foreign exchange",
+      "taxation, tariff, interest rate",
+      "taxation, tariff, import",
+      "none of the above"
+    ],
+    "answer": "A",
+    "explanation": "Fiscal policy uses government revenue and expenditure: taxation, tariffs (customs duties) and public expenditure. Interest rates and exchange rates are monetary policy tools."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Socialist mode of planning is based on:",
+    "options": [
+      "mixed plan",
+      "rolling plan",
+      "perspective plan",
+      "central plan",
+      "development plan."
+    ],
+    "answer": "D",
+    "explanation": "Under socialism, planning is centralised: a central planning authority draws up a central (comprehensive) plan for the whole economy."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Agro-allied industry involved",
+    "options": [
+      "production on small scale",
+      "production of only cash crops",
+      "production of only food crops",
+      "production on a joint stock basis",
+      "production enterprise on the farm."
+    ],
+    "answer": "E",
+    "explanation": "Agro-allied industries are linked to agriculture, e.g. production enterprises on the farm that process or use farm produce as raw materials."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The theory of a firm employing the marginal labour at a point at which the marginal or extra product is equal in value to the marginal wage is called.",
+    "options": [
+      "economic rent",
+      "geographical mobility",
+      "marginal product theory of labour",
+      "closed shop",
+      "marginal job"
+    ],
+    "answer": "C",
+    "explanation": "This is the marginal productivity theory of wages: a firm employs labour up to the point where the value of the marginal product of the last worker equals the marginal wage."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The curve which shows different combination of labour and capital that can produce the same level of output is called.",
+    "options": [
+      "isocost",
+      "isoquant",
+      "MP curve",
+      "AP curve",
+      "AR curve"
+    ],
+    "answer": "B",
+    "explanation": "An isoquant shows all the combinations of two inputs (e.g. labour and capital) that produce the same level of output. An isocost shows combinations with the same total cost."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "A production technique is labour intensive when it uses:",
+    "options": [
+      "half of capital input",
+      "less labour in relation to capital",
+      "too many capital input",
+      "more of labour in relation to capital",
+      "equal labour and capital."
+    ],
+    "answer": "D",
+    "explanation": "A labour-intensive technique uses more labour relative to capital (i.e. less capital in relation to labour). Note: the last option is labelled c) in the photo; it is the fifth option (e)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Increasing return to scale occur when:",
+    "options": [
+      "firm is operating below the optimum size",
+      "the expansion of a firm produces greater efficiency",
+      "optimum factor combination is attained",
+      "low satisfaction",
+      "all of the above."
+    ],
+    "answer": "B",
+    "explanation": "Increasing returns to scale arise when expansion brings economies of scale and greater efficiency, so output rises more than proportionately. At the optimum combination (C) returns are constant, and 'low satisfaction' (D) is irrelevant, so 'all of the above' is wrong."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A downward pressure on the price of a commodity toward the equilibrium result firm.",
+    "options": [
+      "increase in demand",
+      "decrease in demand",
+      "decrease in supply",
+      "b and c",
+      "a, b and c"
+    ],
+    "answer": "B",
+    "explanation": "Price falls when demand decreases (or supply increases). An increase in demand or a decrease in supply raises price. ('result firm' is a misprint for 'result from'.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "In deductive economics, economists usually",
+    "options": [
+      "go from theory to fact",
+      "go from facts to theory",
+      "go from theory to thinking",
+      "go from theory to synthesis",
+      "all of the above."
+    ],
+    "answer": "A",
+    "explanation": "Deduction moves from general theory to specific conclusions (facts/predictions); induction moves from facts to theory."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Which of these does not belong?",
+    "options": [
+      "deregulation",
+      "foreign exchange",
+      "hedging",
+      "arbitrage",
+      "all of the above"
+    ],
+    "answer": "A",
+    "explanation": "Foreign exchange, hedging and arbitrage relate to the foreign exchange market; deregulation does not belong."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Which of these economists is a strong advocate of Fiscal Policy?",
+    "options": [
+      "Adam Smith",
+      "J.M. Keynes",
+      "D. Ricard",
+      "Karlmark",
+      "R.G. Lipsey"
+    ],
+    "answer": "B",
+    "explanation": "Keynes advocated active fiscal policy to manage aggregate demand."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "If a firm can sell as much as it wishes at a given market price, that firm is:",
+    "options": [
+      "an industry",
+      "a competitive firm",
+      "a monopolist",
+      "an Oligopolist",
+      "a duopolist."
+    ],
+    "answer": "B",
+    "explanation": "A perfectly competitive firm is a price taker."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Ricardo's law of comparative advantage is based on:",
+    "options": [
+      "Law of diminishing return",
+      "law of increasing relative costs",
+      "law of diminishing marginal utility",
+      "opportunity cost theory",
+      "law of increasing return to scale."
+    ],
+    "answer": "D",
+    "explanation": "Comparative advantage is based on differences in opportunity cost between countries."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Which of the following combinations represent leakages from the circular flow of income?",
+    "options": [
+      "interest and profit",
+      "wages and rent",
+      "taxes, savings and imports",
+      "import, export",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "Leakages are saving, taxes and imports."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "If the demand curve for product B shifts to the right as the price of product A declines, it can be concluded that:",
+    "options": [
+      "A and B are substitute",
+      "A is an inferior good and B is a superior good",
+      "A is a superior good and B is an inferior good",
+      "both A and B are superior goods",
+      "A and B are complementary goods."
+    ],
+    "answer": "E",
+    "explanation": "A fall in A's price raises demand for B, so they are complements."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The price of product X is reduced from ₦15 to ₦5 and as a result, the quantity demanded of it increases from 20 to 30 units. From this we can say:",
+    "options": [
+      "the demand for X is inelastic",
+      "the demand for X is elastic",
+      "the demand for X is of unit elasticity",
+      "the demand for X has declined",
+      "X is an inferior good."
+    ],
+    "answer": "A",
+    "explanation": "Total revenue falls from 15 × 20 = ₦300 to 5 × 30 = ₦150 when price falls, so demand is inelastic. (PED = (10/20)/(10/15) = 0.5/0.667 = 0.75 < 1.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "GNP can be measured by the:",
+    "options": [
+      "total value of all intermediate goods produced in the economy",
+      "total value of all sales in the economy",
+      "total market value of final goods produced in the economy",
+      "net national product plus investment",
+      "none of the above."
+    ],
+    "answer": "C",
+    "explanation": "GNP is measured by the market value of final goods and services (plus net income from abroad); intermediate goods are excluded."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Which of the following is not a leakage in the circular flow of income.",
+    "options": [
+      "import of a Datsun car",
+      "personal saving",
+      "export of crude petroleum",
+      "indirect company tax",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "Exports are an injection, not a leakage."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Which of the following would give rise to a deficit in the Nigerian balance of payment?",
+    "options": [
+      "foreign purchases of Nigerian assets",
+      "dividends earned from overseas companies",
+      "dividends paid to non-resident foreigners",
+      "all of the above",
+      "direct investment by foreign firms in Nigeria."
+    ],
+    "answer": "C",
+    "explanation": "Dividends paid to foreigners are an outflow (debit). Foreign purchases of Nigerian assets, dividends earned abroad and foreign direct investment are inflows (credits)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "In equilibrium, a firm that is a competitor in its output market but a monopolist in its labour market will pay a wage rate:",
+    "options": [
+      "equal to the marginal revenue product",
+      "less than the marginal revenue product",
+      "impossible to determine from the information given",
+      "greater than the marginal revenue product",
+      "equal to the average cost of production."
+    ],
+    "answer": "B",
+    "explanation": "As the sole buyer of labour (a monopsonist), the firm pays a wage below the marginal revenue product."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The degree of cross elasticity coefficient between two commodities tells the extent of their,",
+    "options": [
+      "availability",
+      "substitutability or complementarily",
+      "derivation",
+      "cheapness",
+      "demand or supply."
+    ],
+    "answer": "B",
+    "explanation": "Cross elasticity measures how demand for one good responds to the price of another: positive for substitutes, negative for complements. Its size shows how close the substitutes or complements are."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "If a country is experiencing a recession, an appropriate policy may be:",
+    "options": [
+      "laissez fair leave things as they are",
+      "to decrease the rate of interest and increase government expenditure",
+      "to raise the rate of interest",
+      "to increase taxes",
+      "decrease government expenditure and increase the rate of interest."
+    ],
+    "answer": "B",
+    "explanation": "In a recession, expansionary policy is needed: lower interest rates (monetary) and higher government spending (fiscal) to raise aggregate demand."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The per capita income of a country will increase when:",
+    "options": [
+      "gross national product equals gross domestic product",
+      "population grows faster than gross the gross national output",
+      "population grows as fast the gross national output",
+      "gross national output is greater than population."
+    ],
+    "answer": "D",
+    "explanation": "Note: this question has only four options.\nPer capita income = national output ÷ population. It increases when national output grows faster than population. Option D is the closest; strictly, it is the growth rate of output exceeding that of population that matters."
+  },
+  {
+    "subject": "Economics",
+    "year": 2024,
+    "paper": "Paper III",
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The paradox of value was based on the fact that:",
+    "options": [
+      "marginal rather than total utility was related to price",
+      "total rather than marginal utility was related to price",
+      "total utility exceeded marginal utility",
+      "there was no difference between utility and value",
+      "marginal utility was falling."
+    ],
+    "answer": "A",
+    "explanation": "The paradox of value (water–diamond paradox): water has great total utility but a low price, while diamonds have little total utility but a high price. It is resolved by recognising that price is related to marginal utility, not total utility."
+  }
+]

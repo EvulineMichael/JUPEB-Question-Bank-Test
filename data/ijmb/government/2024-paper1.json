@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Nature of Government and Politics",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Give a concise explanation of political philosophy as an approach to the understanding of politics.",
+    "options": [],
+    "modelAnswer": "Political philosophy (the philosophical or normative approach) studies politics by reasoning about ideas, values and principles rather than only describing facts. It asks normative questions about what ought to be: What is justice? What is the best form of government? Why should citizens obey the state? What are the proper limits of authority, liberty, equality and rights?\nIt relies on logical reasoning, reflection and the analysis of the works of great thinkers such as Plato (The Republic, the ideal state ruled by philosopher-kings), Aristotle (Politics, classification of governments), Hobbes, Locke and Rousseau (social contract theories), Machiavelli and Marx.\nContributions: it provides the ideas and ideals (democracy, rights, social contract, rule of law) on which political institutions are built; it offers standards for judging governments; and it clarifies concepts such as power, authority, legitimacy and sovereignty.\nLimitations: it is often speculative and value-laden, difficult to test empirically, and may not reflect how politics actually works. It is therefore complemented by the historical, institutional and behavioural (scientific) approaches."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Governance and Citizenship",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "What is citizenship? Explain any four means of acquiring citizenship.",
+    "options": [],
+    "modelAnswer": "Citizenship is the legal status of being a full member of a state, which gives a person rights (e.g. to vote, to protection, to a passport) and imposes duties (e.g. to obey laws, pay taxes, defend the country).\n\nMeans of acquiring citizenship (any four):\n1. By birth (jus soli): being born within the territory of a state, e.g. in the USA.\n2. By descent/blood (jus sanguinis): being born to parents (or grandparents) who are citizens, wherever the child is born; this is the main basis in Nigeria.\n3. By registration: e.g. a foreign woman married to a citizen, or persons with special ties, may register as citizens.\n4. By naturalisation: a foreigner who has lived in a country for a stated period, is of good character, and meets other conditions may apply to become a citizen and take an oath of allegiance.\n5. By honorary conferment: citizenship given as an honour to a distinguished foreigner.\n6. By conquest or annexation of territory: people of a territory taken over by a state become its citizens.\n7. By adoption: a foreign child adopted by citizens may acquire citizenship."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Political Parties, Party System and Pressure Groups",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Define political party and discuss any four (4) functions of a political party in a democratic state.",
+    "options": [],
+    "modelAnswer": "A political party is an organised group of people who share common ideas or interests and who seek to win control of government through elections, in order to implement their policies.\n\nFunctions (any four):\n1. Interest aggregation: combining the various demands of individuals and groups into policy programmes (manifestos).\n2. Recruitment and nomination of candidates: selecting and presenting candidates for elections and training future leaders.\n3. Formation of government: the winning party forms the government and carries out its programmes.\n4. Political education and socialisation: informing and educating citizens about political issues and mobilising them to participate.\n5. Opposition: parties not in power criticise and check the government, offering alternative policies.\n6. Link between government and the people: communicating the people's needs to government and explaining government policies to the people.\n7. Promoting national unity and integration when parties cut across ethnic and religious lines.\n8. Ensuring a peaceful change of government through elections."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Constitution and Constitutionalism",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "With relevant examples, explain any four types of constitution.",
+    "options": [],
+    "modelAnswer": "Any four:\n1. Written constitution: the fundamental rules are set out in a single document or a few documents, e.g. the 1999 Constitution of Nigeria and the US Constitution.\n2. Unwritten constitution: the rules are not contained in a single document but found in conventions, customs, statutes, judicial decisions and works of authority, e.g. Britain.\n3. Rigid constitution: it can be amended only through a special, difficult procedure (e.g. two-thirds majorities in the legislature and approval by states), e.g. Nigeria and the USA.\n4. Flexible constitution: it can be amended by the ordinary law-making process (simple majority), e.g. Britain.\n5. Federal constitution: power is shared between a central government and component units (states/regions), e.g. Nigeria, USA, Canada.\n6. Unitary constitution: power is concentrated in the central government, which may delegate some powers to local units, e.g. Britain, France, Ghana.\n7. Presidential and parliamentary constitutions: providing for those systems of government, e.g. the 1999 Constitution (presidential) and the 1960/1963 Constitutions of Nigeria (parliamentary).\n8. Monarchical and republican constitutions: e.g. Britain (monarchy) and Nigeria (republic)."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "The State, Structure and Types of Government",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Discuss the principle of checks and balances in a presidential system of government.",
+    "options": [],
+    "modelAnswer": "Checks and balances is the principle by which each of the three arms of government (legislature, executive and judiciary) has powers to limit and control the others, so that no arm becomes too powerful or abuses its powers. It complements the separation of powers (associated with Montesquieu) and is a key feature of presidential systems such as those of the USA and Nigeria.\n\nExamples:\nExecutive on the legislature: the president can veto bills passed by the legislature, and can propose bills and the budget.\nLegislature on the executive: the legislature can override the president's veto (by a two-thirds majority), confirm or reject appointments of ministers, ambassadors and judges, control finance by approving the budget, investigate the executive, ratify treaties (in some countries) and impeach and remove the president.\nExecutive on the judiciary: the president appoints judges (on the recommendation of a judicial body, with legislative confirmation) and can grant pardons.\nJudiciary on the executive and legislature: through judicial review, the courts can declare executive actions and laws unconstitutional and void.\nLegislature on the judiciary: it can determine the structure of courts by law and take part in removing judges.\n\nImportance: prevents tyranny and abuse of power, protects citizens' rights, promotes accountability and good governance. Criticisms: it can cause delays and deadlock between the arms, especially when different parties control the executive and legislature."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Public Administration",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Examine any four major problems facing public corporations in developing countries.",
+    "options": [],
+    "modelAnswer": "Public corporations are government-owned enterprises set up to provide essential goods and services (e.g. electricity, railways, water). Problems (any four):\n1. Political interference: appointment of board members and staff on political grounds and interference in day-to-day management.\n2. Corruption and mismanagement: embezzlement, inflated contracts and poor accountability.\n3. Inadequate funding and dependence on government subsidies; delays in releasing funds.\n4. Overstaffing and poor recruitment practices (nepotism, ethnic quotas over merit), leading to low productivity.\n5. Poor maintenance and obsolete equipment, leading to breakdowns and poor service.\n6. Conflicting objectives: they are expected to make profits and also provide social services at low prices.\n7. Lack of autonomy and excessive bureaucracy (red tape).\n8. Lack of skilled personnel and modern technology.\n9. Poor pricing policies, non-payment of bills by government agencies and consumers.\n10. Lack of competition (monopoly), which reduces efficiency."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "International Relations",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Discuss any four challenges facing ECOWAS.",
+    "options": [],
+    "modelAnswer": "The Economic Community of West African States (ECOWAS) was established in 1975 (Treaty of Lagos) to promote economic integration and cooperation among West African states. Challenges (any four):\n1. Political instability and unconstitutional changes of government: military coups in member states (Mali in 2020 and 2021, Guinea in 2021, Burkina Faso in 2022, Niger in 2023) have undermined its democratic principles and led to sanctions and tension.\n2. Withdrawal of member states: Mali, Burkina Faso and Niger announced their withdrawal in January 2024, and their exit became effective on 29 January 2025; they formed the Alliance of Sahel States (AES). This reduced the bloc to 12 members and weakened regional integration and security cooperation.\n3. Insecurity: terrorism and insurgency in the Sahel and Lake Chad region, banditry, piracy in the Gulf of Guinea and cross-border crime.\n4. Language and colonial divisions: differences between Anglophone, Francophone and Lusophone states, and continued ties of some members to former colonial powers.\n5. Multiple currencies and weak monetary integration: the planned single currency (the 'Eco') has been repeatedly delayed; the CFA franc zone (UEMOA) operates separately.\n6. Poor implementation of protocols: e.g. free movement of persons and goods is hampered by border closures, harassment at borders and non-tariff barriers.\n7. Inadequate funding: many members fail to pay their dues, and the organisation depends on a few countries such as Nigeria and on foreign donors.\n8. Similar (competitive rather than complementary) economies producing mainly primary products, and poor transport and communication links between members.\n9. Conflicting loyalties and overlapping regional organisations."
+  }
+]

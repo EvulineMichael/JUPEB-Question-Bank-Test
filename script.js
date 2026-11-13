@@ -1188,7 +1188,10 @@ if (q.diagramMissing) {
   function isLocalDev() {
       return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
   }
-
+// Give up waiting after a while, so one stuck step can't leave subjects on "Loading…"
+function withTimeout(promise, ms) {
+    return Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))]);
+}
   // Returns { years: [...], questions: [...] } for one subject in the current exam
   async function loadSubjectPapers(subject) {
       if (isLocalDev()) return loadSubjectPapersFromFiles(subject);
@@ -1201,11 +1204,11 @@ if (q.diagramMissing) {
              try {
            // Offline, a fresh sign-in token can't be fetched. Ask anyway: the service
            // worker answers with the copy saved on this device.
-           let token = '';
-           try { token = await user.getIdToken(); } catch (e) { /* offline */ }
-           const response = await fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
-               headers: token ? { Authorization: 'Bearer ' + token } : {}
-           });
+                   let token = '';
+        try { token = await withTimeout(user.getIdToken(), 4000); } catch (e) { /* offline or slow */ }
+        const response = await withTimeout(fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
+            headers: token ? { Authorization: 'Bearer ' + token } : {}
+        }), 30000);
           if (!response.ok) {
               console.warn(`No ${subject} papers (${response.status})`);
               return empty;

@@ -1,0 +1,90 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Diversity and General Characteristics of Animals",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "1(a) Explain the following:\n(i) Plasmids\n(ii) Economic importance of termites\n(iii) Mouth to mouth resuscitation\n(iv) Feeding in Planaria",
+    "options": [],
+    "modelAnswer": "(i) Plasmids are small, circular, double-stranded DNA molecules found in the cytoplasm of bacteria (and some yeasts), separate from the main chromosomal DNA. They replicate independently and often carry genes for antibiotic resistance, toxin production or conjugation (F plasmid). They can be transferred between bacteria and are used as vectors in genetic engineering to carry foreign genes (e.g. the human insulin gene) into host cells.\n\n(ii) Economic importance of termites:\nHarmful: they destroy wooden buildings, furniture, books and paper; damage crops (e.g. groundnut, maize, yam) and trees; destroy stored food; their mounds hinder farming and construction.\nUseful: they decompose dead wood and plant matter, recycling nutrients; aerate and mix the soil; mound soil is used for building and making bricks and is fertile; winged termites are eaten by man and animals (rich in protein); used as fish and poultry feed.\n\n(iii) Mouth-to-mouth resuscitation is a first-aid method of artificial respiration for a person who has stopped breathing (e.g. drowning, electric shock). The victim is laid on the back, the airway cleared and the head tilted back with the chin lifted. The rescuer pinches the victim's nose, seals his or her mouth over the victim's mouth and blows in steadily until the chest rises, then removes the mouth to let the air come out. This is repeated about 12–20 times per minute (with chest compressions if there is no pulse) until the victim breathes or help arrives. The exhaled air of the rescuer contains about 16% oxygen, enough to keep the victim alive.\n\n(iv) Feeding in Planaria: Planaria is a free-living flatworm that feeds on small animals and dead organic matter (carnivorous/scavenger). It finds food by chemoreception. It protrudes a muscular pharynx through a mouth on the middle of its ventral surface; the pharynx secretes digestive enzymes onto the food and sucks the partly digested food into the much-branched gut (one anterior and two posterior branches). Digestion is completed intracellularly in the cells of the gut lining. The gut has no anus: undigested material is expelled through the mouth. The branched gut distributes food to all parts of the body."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Assuming uniform colour (C) is dominant over spotted (c) in cattle. When a cross is made between a pure breed (homozygous) black bull (BBCC) with a white spotted cow (bbcc):\n(i) Use Punnet diagram to show the result of the F₁ generation\n(ii) What will be the phenotype of the calves in the F₁ generation?\n(iii) Show the types and ratio of offspring that are possible when two of the F₁ generations are mated.\n(v) Name all the new combinations that have arisen from the cross above (1b iii)",
+    "options": [],
+    "modelAnswer": "Note: the paper goes from (iii) to (v); there is no part (iv). B (black) is taken as dominant over b (white).\n\n(i) Parents: BBCC (black, uniform) × bbcc (white, spotted).\nGametes: BC (from the bull) and bc (from the cow).\nPunnett square: every square is BbCc.\nF₁ genotype: all BbCc.\n\n(ii) All the F₁ calves are black with uniform colour (heterozygous for both genes).\n\n(iii) F₁ × F₁: BbCc × BbCc.\nEach parent forms four kinds of gametes in equal numbers: BC, Bc, bC, bc.\nA 4 × 4 Punnett square gives 16 combinations:\nB_C_ (black, uniform): 9\nB_cc (black, spotted): 3\nbbC_ (white, uniform): 3\nbbcc (white, spotted): 1\nPhenotypic ratio: 9 black uniform : 3 black spotted : 3 white uniform : 1 white spotted.\n(Genotypes: 1 BBCC, 2 BBCc, 2 BbCC, 4 BbCc, 1 BBcc, 2 Bbcc, 1 bbCC, 2 bbCc, 1 bbcc.)\n\n(v) The new combinations (not seen in either original parent) are: black spotted (B_cc) and white uniform (bbC_)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Fill in the blank spaces. Spellings of one word answer and scientific names must be correct to score.\n(i) ____a____ is the connective tissue that stores fat and cushions and insulates the body.\n(ii)Energy-producing mitochondria, small organelles found free-floating in the ____b____ of the cell.\n(iii) The type of respiration that occurs through the skin is called ____c____ respiration.\n(iv) DNA consists of ____d____ polynucleotide chains\n(v) ____e____ removal of metabolic waste products from the body of mammals.\n(vi) ____f____ links the nervous system to endocrine system.\n(vii) The two systems ____g____, and ____h____ regulation of biological activities in the body.\n(viii) ____i____ is the tissue that forms the tooth from the dental crown to the tooth root.\n(iv) ____j____ produces bile which aids in digesting fat.",
+    "options": [],
+    "modelAnswer": "Note: the last blank is numbered (iv) again in the paper; it should be (ix).\na) Adipose tissue.\nb) Cytoplasm.\nc) Cutaneous respiration.\nd) Two (a double helix).\ne) Excretion.\nf) Hypothalamus.\ng) Nervous system and h) endocrine system.\ni) Dentine (it forms the bulk of the tooth, from the crown to the root).\nj) Liver."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Endocrine System",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) Explain the process of regulation of blood sugar in blood.\n(b) Outline five (5) economic importance of annelids.",
+    "options": [],
+    "modelAnswer": "(a) Blood glucose is kept at about 70–110 mg per 100 cm³ (about 4–6 mmol/L) by negative feedback, controlled mainly by the islets of Langerhans in the pancreas and the liver.\nWhen blood glucose rises (e.g. after a meal): the β-cells of the islets secrete insulin. Insulin makes body cells (especially muscle) take up glucose and use it in respiration, and causes the liver and muscles to convert excess glucose to glycogen (glycogenesis) and the excess to fat. Blood glucose falls back to normal.\nWhen blood glucose falls (e.g. during fasting or exercise): the α-cells secrete glucagon, which causes the liver to break glycogen down to glucose (glycogenolysis) and to make glucose from amino acids and fats (gluconeogenesis). The glucose is released into the blood, so the level rises to normal.\nAdrenaline (from the adrenal medulla, in stress) also raises blood glucose by glycogenolysis, and cortisol promotes gluconeogenesis.\nFailure of insulin production or action causes diabetes mellitus (high blood sugar and glucose in the urine).\n\n(b) Any five:\n1. Earthworms improve soil fertility by burrowing, which aerates and drains the soil and mixes the layers.\n2. Their casts and decomposing bodies add nutrients and humus to the soil (vermicomposting).\n3. They are used as fish bait and as food for poultry, fish and some people (protein source).\n4. Leeches are used in medicine to remove blood clots and in microsurgery (hirudin is an anticoagulant).\n5. Some leeches are parasites that suck blood from man and livestock.\n6. Earthworms are intermediate hosts of some parasites of poultry and pigs (e.g. gapeworm).\n7. They are used in research and teaching, and as indicators of soil health."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a). Explain the gene theory of inheritance.\n(b). Briefly explain the blood circulation system in fish.",
+    "options": [],
+    "modelAnswer": "(a) The gene (chromosome) theory of inheritance, developed from Mendel's work and the studies of Sutton, Boveri and Morgan, states that:\n1. Hereditary characters are controlled by discrete units called genes, passed from parents to offspring through the gametes.\n2. Genes are located on chromosomes in a linear order, each at a fixed position (locus).\n3. Genes occur in pairs (alleles) in diploid organisms, one from each parent; one allele may be dominant over the other (recessive).\n4. During meiosis, the members of each pair of alleles separate (segregate), so each gamete gets only one allele of each gene (Mendel's first law).\n5. Genes on different chromosomes assort independently (Mendel's second law); genes on the same chromosome tend to be inherited together (linkage) unless separated by crossing over.\n6. Fertilisation restores the pairs, and the combination of alleles (genotype) determines the characteristics (phenotype), together with the environment.\n7. Genes are made of DNA and can change by mutation, producing new variations.\n\n(b) Fish have a single circulation: blood passes through the heart only once in each complete circuit.\nThe heart is two-chambered (one atrium and one ventricle, with a sinus venosus and a conus/bulbus arteriosus) and contains only deoxygenated blood.\nDeoxygenated blood from the body enters the sinus venosus, then the atrium, then the ventricle. The ventricle pumps it through the ventral aorta to the gills (afferent branchial arteries), where it is oxygenated in the gill capillaries. Oxygenated blood is collected by the efferent branchial arteries into the dorsal aorta, which carries it to all parts of the body. After giving up oxygen in the tissues, blood returns through veins (cardinal veins, hepatic portal system) to the sinus venosus.\nBecause blood loses pressure in the gill capillaries, it flows to the body at low pressure."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) Draw and label the transverse section of a mammalian heart with arrows to show the direction of blood flow.\n(b) Give one function of each chamber of the heart drawn.",
+    "options": [],
+    "modelAnswer": "(a) Diagram (longitudinal/vertical section, as usually drawn): four chambers, the right and left atria at the top and the right and left ventricles below, separated by the septum; the left ventricle wall is much thicker than the right.\nLabels: right atrium, left atrium, right ventricle, left ventricle, septum, venae cavae (superior and inferior) entering the right atrium, pulmonary artery leaving the right ventricle, pulmonary veins entering the left atrium, aorta leaving the left ventricle, tricuspid valve (between right atrium and right ventricle), bicuspid (mitral) valve (between left atrium and left ventricle), semilunar valves (at the bases of the aorta and pulmonary artery), chordae tendineae and papillary muscles.\nArrows: venae cavae → right atrium → tricuspid valve → right ventricle → pulmonary artery (to lungs); pulmonary veins → left atrium → bicuspid valve → left ventricle → aorta (to body).\n\n(b)\nRight atrium: receives deoxygenated blood from the body through the venae cavae and pumps it into the right ventricle.\nRight ventricle: pumps deoxygenated blood through the pulmonary artery to the lungs.\nLeft atrium: receives oxygenated blood from the lungs through the pulmonary veins and pumps it into the left ventricle.\nLeft ventricle: pumps oxygenated blood at high pressure through the aorta to all parts of the body (hence its thick muscular wall)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Sense Organ",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Explain the mechanism of perception of taste in man.\n(b) Mention five (5) adaptations of a toad.",
+    "options": [],
+    "modelAnswer": "(a) Taste (gustation) is perceived by taste buds, located mainly in the papillae on the upper surface of the tongue (also on the soft palate and pharynx).\nEach taste bud is a group of gustatory (taste receptor) cells and supporting cells, with a taste pore opening on the surface; the receptor cells have microvilli (taste hairs) projecting into the pore.\nMechanism: substances in food dissolve in saliva and enter the taste pore. The dissolved chemicals bind to receptors on the microvilli, or ions pass through channels, depolarising the receptor cells (a receptor potential). This triggers release of neurotransmitter onto sensory nerve endings, generating nerve impulses. The impulses are carried by the facial (VII), glossopharyngeal (IX) and vagus (X) nerves to the medulla and thalamus, and finally to the gustatory area of the cerebral cortex, where the taste is interpreted.\nThe basic tastes are sweet, salty, sour, bitter and umami. Taste is strongly helped by smell (flavour).\n\n(b) Any five:\n1. Moist, glandular skin for cutaneous respiration; poison (parotoid) glands behind the eyes for defence against predators.\n2. Warty, dull-coloured skin for camouflage.\n3. Long, sticky, protrusible tongue attached at the front of the mouth for catching insects.\n4. Long, strong hind limbs for hopping and burrowing.\n5. Webbed hind feet for swimming.\n6. Bulging eyes on top of the head, with a nictitating membrane to protect the eyes in water.\n7. Tympanic membrane (eardrum) for hearing; vocal sacs for croaking to attract mates.\n8. Lungs, skin and buccal cavity for breathing on land and in water.\n9. Aestivation and hibernation to survive unfavourable seasons; nocturnal habits to reduce water loss.\n10. External fertilisation in water; eggs in gelatinous strings for protection."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "(a) Explain the adaptations of reproductive egg cell of mammals.\n(b) Outline five (5) characteristics of mosquito larva.",
+    "options": [],
+    "modelAnswer": "(a) Adaptations of the mammalian ovum (egg cell):\n1. It is large, with a large amount of cytoplasm containing nutrients (a little yolk) to support the zygote in its early divisions.\n2. It is haploid (one set of chromosomes), so fertilisation restores the diploid number.\n3. It has a protective glycoprotein layer, the zona pellucida, which binds sperm of the same species and changes after fertilisation to block entry of other sperm (prevents polyspermy).\n4. It is surrounded by follicle cells (corona radiata) that protect and nourish it.\n5. It contains cortical granules that release enzymes to harden the zona pellucida after one sperm enters.\n6. It is non-motile and is moved along the oviduct by cilia and muscular contractions, so it does not need to use energy.\n7. It contains mitochondria and other organelles needed for the early development of the embryo.\n8. It is released at the right time (ovulation) and survives about 24 hours, when the uterus is prepared for implantation.\n\n(b) Any five (e.g. Culex/Anopheles larva):\n1. It is aquatic, living in still or slow-moving water.\n2. The body is divided into a head, a broad thorax and a nine-segmented abdomen; it has no legs.\n3. It breathes air at the water surface through spiracles at the end of a respiratory siphon (Culex, Aedes) or through spiracles on the abdomen (Anopheles, which has no siphon and lies parallel to the surface; Culex hangs at an angle).\n4. It has mouth brushes on the head which sweep food (algae, bacteria, organic particles) into the mouth.\n5. It has anal gills (papillae) for osmoregulation and bristles (hairs) on the body.\n6. It moves by jerky (wriggling) movements, so it is called a 'wriggler'.\n7. It moults four times (four instars) before becoming a pupa."
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Define specific latent heat of vaporization of a liquid. A heater which is rated 45 W will evaporate 0.6 kg of boiling of boiling water in 30 seconds. Calculate the specific latent heat of vaporization of water.",
+    "options": [],
+    "modelAnswer": "The specific latent heat of vaporization of a liquid is the quantity of heat needed to change unit mass (1 kg) of the liquid at its boiling point completely into vapour, without any change in temperature. Unit: J kg⁻¹.\n\nHeat supplied = heat to vaporise the water: Pt = mL\nL = Pt/m = (45 × 30)/0.6 = 2250 J kg⁻¹.\n\nNote: the accepted value for water is about 2.26 × 10⁶ J kg⁻¹. The answer 2250 J kg⁻¹ follows from the figures as printed; '0.6 kg' is probably a misprint for 0.6 g, which gives L = 1350/(0.6 × 10⁻³) = 2.25 × 10⁶ J kg⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Temperature and Thermometry",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "A constant volume hydrogen thermometer registered a pressure of 120cmHg when placed in an ice-box and a pressure of 156.6 cmHg at steam point. In a bath of molten metallic lead, the reading is 243.1cmHg. What is the melting point of lead on the temperature scale used?",
+    "options": [],
+    "modelAnswer": "θ = (P_θ − P₀)/(P₁₀₀ − P₀) × 100°C\n= (243.1 − 120)/(156.6 − 120) × 100\n= (123.1/36.6) × 100\n= 336.3°C.\n(The accepted melting point of lead is 327.5°C.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "A rubber cord has a circular cross-section of radius R and of length L. When it is stretched along its axis, within its elastic limit, it experiences a radial strain β as well as normal longitudinal strain α. If the volume of the cord remains constant. What is the ratio β/α ? (State the assumptions you have made).",
+    "options": [],
+    "modelAnswer": "Original volume: V = πR²L.\nRadial strain β = ΔR/R, so the new radius is R(1 + β).\nLongitudinal strain α = ΔL/L, so the new length is L(1 + α).\nNew volume = π R²(1 + β)² L(1 + α).\n\nVolume is constant:\nπR²L = πR²L(1 + β)²(1 + α)\n1 = (1 + 2β + β²)(1 + α)\n0 = 2β + α + β² + 2αβ + αβ²\nAssumption: the strains are very small, so the terms β², αβ and αβ² are negligible.\n0 = 2β + α\nβ/α = −1/2.\nThe negative sign shows that the radius decreases as the length increases. (The ratio of lateral to longitudinal strain is Poisson's ratio, 0.5 for a material that keeps its volume constant.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "A sample of blood is put in a centrifuge of radius 25 cm and the mass of a corpuscle is 3×10⁻¹⁰ kg. Find (i) the centripetal force required to make it settle out of the plasma if the number circulations per second required is 120 rev/s (ii) the orbital angular momentum.",
+    "options": [],
+    "modelAnswer": "ω = 2πf = 2π × 120 = 240π = 754 rad s⁻¹. r = 0.25 m.\n\n(i) F = mω²r = 3 × 10⁻¹⁰ × (754)² × 0.25 = 4.26 × 10⁻⁵ N.\n\n(ii) L = mωr² = 3 × 10⁻¹⁰ × 754 × (0.25)² = 1.41 × 10⁻⁸ kg m² s⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Wave Theory of Light",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "A beam of light is incident on a liquid of refractive index 1.40. What is the angle of refraction of the beam if the reflected rays are completely polarized?",
+    "options": [],
+    "modelAnswer": "The reflected light is completely polarized when the angle of incidence is the Brewster angle, given by tan i_B = n.\ntan i_B = 1.40, so i_B = 54.5°.\nAt the Brewster angle the reflected and refracted rays are perpendicular, so i_B + r = 90°.\nr = 90° − 54.5° = 35.5°."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Two stereo speakers A and B are 2m apart and playing the same 10³ Hz musical note. A listener P is 6 m away at a point on the central line as shown in figure 2. How far can he be from the center line before he reaches the first note. Take the velocity of sound in air as 330 ms⁻¹.",
+    "image": {
+      "src": "images/ijmb/physics/2024/phy-2024-paper1-10.png",
+      "alt": "Figure 2: speakers A and B 2 m apart; listener P 6 m away on the central line"
+    },
+    "options": [],
+    "modelAnswer": "Figure 2: speakers A and B 2 m apart on a vertical line; the listener P is 6 m away on the perpendicular line through the midpoint of AB.\n\nNote: 'first note' is taken to mean the first point of silence (the first minimum of the interference pattern). The question's own value of 330 m s⁻¹ is used.\nλ = v/f = 330/1000 = 0.33 m.\nOn the central line the path difference is zero (loud). The first minimum occurs where the path difference = λ/2 = 0.165 m.\nUsing d sin θ = λ/2: sin θ = 0.165/2 = 0.0825, θ = 4.73°.\nDistance from the central line: y = 6 tan θ = 6 × 0.0828 = 0.50 m.\n(Solving the exact geometry, √(36 + (y + 1)²) − √(36 + (y − 1)²) = 0.165, also gives y = 0.50 m.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) A body starts from an origin with an initial velocity u and moves along the x-axis. Derive the expression for the final velocity v of the body in term of its constant acceleration a and distance covered s.",
+    "options": [],
+    "modelAnswer": "Acceleration: a = (v − u)/t ...(1)\nWith constant acceleration, distance = average velocity × time:\ns = ½(u + v)t, so t = 2s/(u + v) ...(2)\nSubstitute (2) into (1):\na = (v − u)(u + v)/(2s)\n2as = v² − u²\nv² = u² + 2as, so v = √(u² + 2as).\n(If the body starts from rest, u = 0 and v = √(2as).)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) A train passes a station A at 50 kmh⁻¹ and maintains this speed for 20 km and then is uniformly retarded stopping at station B which is 24 km from A. A second train starts from A at instant the first train passes. It is uniformly accelerated for part of the journey and uniformly retarded for the rest, stopping at B at the same time as the first train.\n(i) On the same diagram, sketch the velocity-time graph for the two trains.\n(ii) Find the greatest speed of the second train on the journey.",
+    "options": [],
+    "modelAnswer": "First train: time at constant speed = 20/50 = 0.40 h. It then slows uniformly from 50 km h⁻¹ to 0 over the last 4 km; average speed 25 km h⁻¹, so time = 4/25 = 0.16 h. Total time = 0.56 h.\n\n(i) Velocity–time graph (time in hours, velocity in km h⁻¹):\nFirst train: a horizontal line at 50 km h⁻¹ from t = 0 to 0.40 h, then a straight line down to zero at t = 0.56 h (a trapezium).\nSecond train: a straight line rising from zero at t = 0 to a peak, then falling to zero at t = 0.56 h (a triangle).\nThe areas under the two graphs are equal (both = 24 km).\n\n(ii) Area of the triangle = distance:\n½ × 0.56 × v_max = 24\nv_max = 48/0.56 = 85.7 km h⁻¹ (about 23.8 m s⁻¹)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Work, Energy and Power",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "(a) State the law of conservation of energy and linear momentum.",
+    "options": [],
+    "modelAnswer": "Law of conservation of energy: energy can neither be created nor destroyed, but can be changed from one form to another; the total energy of an isolated system remains constant.\n\nLaw of conservation of linear momentum: when no external force acts on a system of colliding or interacting bodies, the total linear momentum of the system remains constant (total momentum before = total momentum after)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "(b) If a particle is freely projected under the action of gravity in a non-retarding medium. Find the angle which it must be projected to obtain maximum range Rmax. In this case if the maximum height is H, Find the relation between H and Rmax.",
+    "options": [],
+    "modelAnswer": "Note: the right edge of the photo cuts off part of the last line; it is read as 'Find the relation between H and Rmax'.\n\nFor a projectile launched with speed u at angle θ to the horizontal:\nRange R = u² sin 2θ/g.\nR is greatest when sin 2θ = 1, i.e. 2θ = 90°, so θ = 45°.\nThen R_max = u²/g.\n\nMaximum height: H = u² sin²θ/(2g). At θ = 45°, sin²45° = ½, so H = u²/(4g).\nComparing: H = R_max/4 (or R_max = 4H)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Work, Energy and Power",
+    "type": "Essay",
+    "questionNumber": "12c",
+    "question": "(c). The force required to draw back the string of an archer's bow by a distance x from its equilibrium position is given by F = kx . If all the energy stored in the bow is communicated to the arrow, show that, the maximum range of the arrow is given by 2kx/3mg. Where m is the mass of the arrow.",
+    "options": [],
+    "modelAnswer": "Energy stored in the bow (area under the F–x graph): E = ½kx².\nAll of it becomes kinetic energy of the arrow: ½mu² = ½kx², so u² = kx²/m.\nMaximum range (projected at 45°): R_max = u²/g = kx²/(mg).\n\nNote: the expression printed in the paper, 2kx/(3mg), cannot be right: kx/(mg) is a ratio of two forces and has no units, so it cannot be a distance. The correct result is R_max = kx²/(mg)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Temperature and Thermometry",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "(a) Explain the meaning of the statement that 'a temperature is 50⁰ on a scale of a particular thermometer.",
+    "options": [],
+    "modelAnswer": "On a thermometer's scale, temperature is defined from a thermometric property X (e.g. length of a liquid column, gas pressure, resistance) using the fixed points:\nθ = (X_θ − X₀)/(X₁₀₀ − X₀) × 100,\nwhere X₀ and X₁₀₀ are the values at the ice point and the steam point.\nA temperature of 50° on that scale means the thermometric property has a value exactly halfway between its values at the ice point and the steam point. Different kinds of thermometer agree at the fixed points but may not all read 50° at the same actual temperature, because their properties do not all vary uniformly with temperature."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "(b). Show that, the coefficient of volume expansitivity is three times the coefficient of linear expansitivity. (γ = 3α).",
+    "options": [],
+    "modelAnswer": "Take a cube of side l₀ at 0°C, of a material with linear expansivity α. When heated through θ, each side becomes l = l₀(1 + αθ).\nNew volume: V = l³ = l₀³(1 + αθ)³ = V₀(1 + 3αθ + 3α²θ² + α³θ³).\nα is very small (about 10⁻⁵ K⁻¹), so the α² and α³ terms are negligible:\nV = V₀(1 + 3αθ).\nBy definition of volume expansivity γ, V = V₀(1 + γθ).\nComparing: γ = 3α."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "(a). Explain the following terms: flow, turbulent, coefficient of viscosity and thermal velocity.",
+    "options": [],
+    "modelAnswer": "Note: 'thermal velocity' is taken to be a misprint for terminal velocity.\n\nFlow (steady or streamline flow): the motion of a fluid in which every particle passing a given point follows the same path with the same velocity as the particles before it; the streamlines do not cross.\nTurbulent flow: flow above a critical velocity, in which the motion is irregular, with eddies and whirls, and the velocity at a point changes continually.\nCoefficient of viscosity (η): the tangential force per unit area needed to maintain unit velocity gradient between parallel layers of a fluid, η = F/(A dv/dx). Unit: N s m⁻² (Pa s).\nTerminal velocity: the constant maximum velocity reached by a body falling through a fluid, when the viscous drag plus the upthrust equals its weight, so the resultant force is zero."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "(b). Prove the Poiseiulle's formula using dimensional analysis, (Take the value of k = π/8 ). Briefly describe how one may measure the coefficient of viscosity for water from the knowledge of the formula.",
+    "options": [],
+    "modelAnswer": "Assume the volume flowing per second through a tube depends on the pressure gradient P/l, the radius r and the viscosity η:\nV/t = k (P/l)^a r^b η^c.\nDimensions: V/t = [L³T⁻¹]; P/l = [ML⁻²T⁻²]; r = [L]; η = [ML⁻¹T⁻¹].\n[L³T⁻¹] = [ML⁻²T⁻²]^a [L]^b [ML⁻¹T⁻¹]^c\nM: 0 = a + c\nT: −1 = −2a − c\nL: 3 = −2a + b − c\nFrom the first two: a = 1, c = −1. Then b = 3 + 2a + c = 4.\nV/t = k P r⁴/(ηl), and with k = π/8:\nV/t = πPr⁴/(8ηl) (Poiseuille's formula).\n\nMeasurement: water flows from a constant-head tank through a long, narrow horizontal capillary tube. The head h is measured, so P = ρgh. The volume V of water collected in a measured time t is found (e.g. by weighing). The length l of the tube is measured, and the radius r is found accurately (e.g. with a travelling microscope or from a mercury thread). Then η = πρghr⁴t/(8lV). The flow must be slow and streamline, and the temperature recorded, since η depends on it."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "14c",
+    "question": "(c) Two horizontal tubes are joined at C as shown in figure 3. Water flows from A to B. The pressure at the free end of B is atmospheric and at A the pressure is 5.0 cm of water above atmospheric pressure. Tube A is 32 cm long and 0.08 cm in diameter; tube B is 16 cm long and 0.06 cm in diameter. What is the pressure in Nm⁻² at point C where the tubes are joined?",
+    "image": {
+      "src": "images/ijmb/physics/2024/phy-2024-paper1-14c.png",
+      "alt": "Figure 3: wide tube A joined at C to a narrower tube B"
+    },
+    "options": [],
+    "modelAnswer": "Figure 3: a wider horizontal tube A joined at C to a narrower tube B.\n\nThe same volume per second flows through both tubes. By Poiseuille's formula, V/t = πΔPr⁴/(8ηl), so the pressure drop across each tube is proportional to l/r⁴.\nTube A: l/r⁴ = 32/(0.04)⁴ = 1.25 × 10⁷\nTube B: l/r⁴ = 16/(0.03)⁴ = 1.975 × 10⁷\n(the same units are used for both, so they cancel in the ratio)\nFraction of the total pressure drop across B = 1.975/(1.25 + 1.975) = 0.612.\nExcess pressure at C (above atmospheric) = 0.612 × 5.0 = 3.06 cm of water.\nIn N m⁻²: P = hρg = 0.0306 × 1000 × 10 = 306 N m⁻² above atmospheric pressure.\n(With g = 9.8 m s⁻², this is 300 N m⁻². g = 10 m s⁻² and ρ = 1000 kg m⁻³ are taken from the paper's constants list, which is blurred in the copy used.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "(a) Define bulk modulus and modulus of rigidity.",
+    "options": [],
+    "modelAnswer": "Bulk modulus (K): the ratio of the bulk (volume) stress to the volume strain, K = −ΔP/(ΔV/V) = −VΔP/ΔV. The minus sign shows that the volume decreases as the pressure increases. Unit: N m⁻² (Pa).\n\nModulus of rigidity (shear modulus, G or η): the ratio of the shear (tangential) stress to the shear strain, G = (F/A)/θ, where θ is the angle of shear. Unit: N m⁻² (Pa)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "15c",
+    "question": "(c) A wire of length 4 m, radius 1 mm is extended by 2.5 mm by a load of 200 N. calculate the energy stored in the wire and the strain energy per unit volume.",
+    "options": [],
+    "modelAnswer": "Energy stored: W = ½Fe = ½ × 200 × 2.5 × 10⁻³ = 0.25 J.\nVolume of the wire: V = πr²l = π × (1 × 10⁻³)² × 4 = 1.257 × 10⁻⁵ m³.\nStrain energy per unit volume = 0.25/1.257 × 10⁻⁵ = 1.99 × 10⁴ J m⁻³.\n(Check: ½ × stress × strain = ½ × (200/3.14 × 10⁻⁶) × (2.5 × 10⁻³/4) = 1.99 × 10⁴ J m⁻³.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "(a). State the first law of thermodynamics a applied to a fixed mass of ideal gas.",
+    "options": [],
+    "modelAnswer": "First law of thermodynamics: the heat ΔQ supplied to a fixed mass of gas equals the increase in its internal energy ΔU plus the external work ΔW done by the gas:\nΔQ = ΔU + ΔW (with ΔW = PΔV).\nIt is a statement of the conservation of energy. For an ideal gas, the internal energy depends only on its temperature."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "(b) Explain how the equation of the first law is applied when the gas is (i) heated at constant volume (ii) compressed adiabatically.",
+    "options": [],
+    "modelAnswer": "Using ΔQ = ΔU + ΔW:\n\n(i) Heated at constant volume: ΔV = 0, so no work is done (ΔW = PΔV = 0). Then ΔQ = ΔU: all the heat supplied increases the internal energy, and the temperature (and pressure) rise. (ΔQ = nC_vΔT.)\n\n(ii) Compressed adiabatically: no heat enters or leaves (ΔQ = 0), so 0 = ΔU + ΔW, i.e. ΔU = −ΔW. Work is done on the gas (ΔW is negative), so the internal energy increases by the work done on it and the temperature rises. (PV^γ = constant.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "(a). A certain string has a linear mass density of 0.25 kgm⁻¹ and is stretched with a tension of 25 N. One end is given a sinusoidal motion with frequency 5 Hz and amplitude 0.01 m. At time t = 0, the end has zero displacement and is moving in the +y direction. Given the progressive wave y = 0.01 sin 2π(t/0.2 − x/2).\n(i), Find the wave speed, amplitude, angular frequency, period, wavelength and wave number.\n(ii), Write a wave function describing the wave. (iii) find the position of the point x= 0.25 at time t= 0.1s. (iv). Find the transverse velocity of the point at x = 0.25 m at t = 0.1s. (v) Find the slope of the string at the point x = 0.25 m at time t = 0.1s. Comment on the result you obtained.",
+    "options": [],
+    "modelAnswer": "Compare with y = A sin 2π(t/T − x/λ).\n\n(i) Wave speed: v = √(T/μ) = √(25/0.25) = 10 m s⁻¹.\nAmplitude A = 0.01 m.\nPeriod T = 0.2 s (f = 5 Hz).\nAngular frequency ω = 2π/T = 10π = 31.4 rad s⁻¹.\nWavelength λ = 2 m (check: v = fλ = 5 × 2 = 10 m s⁻¹).\nWave number k = 2π/λ = π = 3.14 rad m⁻¹.\n\n(ii) y = 0.01 sin(10πt − πx) m (= 0.01 sin 2π(t/0.2 − x/2)). At x = 0, t = 0 it gives y = 0, moving in the +y direction, as stated.\n\n(iii) At x = 0.25 m, t = 0.1 s: phase = 2π(0.1/0.2 − 0.25/2) = 2π(0.375) = 0.75π (135°).\ny = 0.01 sin 135° = 0.01 × 0.707 = 7.07 × 10⁻³ m.\n\n(iv) v_y = ∂y/∂t = 0.01 × 10π cos(10πt − πx) = 0.1π cos 135° = 0.314 × (−0.707) = −0.222 m s⁻¹.\n\n(v) Slope = ∂y/∂x = −0.01π cos(10πt − πx) = −0.0314 × (−0.707) = +0.0222.\nComment: v_y = −v × slope (−10 × 0.0222 = −0.222 m s⁻¹), which is true for every point on a wave travelling in the +x direction. The slope is very small, which justifies the small-amplitude assumption used to derive the wave equation."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Wave Theory of Light",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "(a) (i). State the Brewster's law. (ii) Prove that, when light strike a glass plate at Brewster's angle, the refracted ray is perpendicular to the reflected ray.",
+    "options": [],
+    "modelAnswer": "(i) Brewster's law: when unpolarized light is incident on the surface of a transparent medium at the polarizing angle i_B, the reflected light is completely plane-polarized, and the tangent of the polarizing angle equals the refractive index of the medium: tan i_B = n.\n\n(ii) Snell's law: n = sin i_B/sin r.\nBrewster's law: n = tan i_B = sin i_B/cos i_B.\nEquating: sin r = cos i_B = sin(90° − i_B), so r = 90° − i_B, i.e. i_B + r = 90°.\nThe reflected ray makes angle i_B with the normal on one side and the refracted ray makes angle r on the other, so the angle between them is 180° − (i_B + r) = 180° − 90° = 90°. The reflected and refracted rays are perpendicular."
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Wave Theory of Light",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "(b). What are the conditions under which interference pattern could be observed?",
+    "options": [],
+    "modelAnswer": "1. The two sources must be coherent: same frequency (wavelength) and a constant phase difference. In practice they are obtained from a single source (e.g. Young's double slits).\n2. The waves should have equal or nearly equal amplitudes, so the dark fringes are dark.\n3. The sources should be narrow and close together, and the screen far enough away, so the fringes are wide enough to see.\n4. The waves must overlap, and for light (transverse waves) they must be polarized in the same plane (or unpolarized).\n5. Monochromatic light gives the clearest pattern."
+  }
+]

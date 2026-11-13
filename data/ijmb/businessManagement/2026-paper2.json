@@ -1,0 +1,90 @@
+[
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Business Enterprise",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Define partnership and explain its characteristics or the tests to establish whether there is partnership or not.",
+    "options": [],
+    "modelAnswer": "A partnership is the relationship that exists between persons (usually 2 to 20) carrying on a business in common with a view to profit (as defined in the Partnership Act). The partners contribute capital and/or skills and share profits and losses in an agreed ratio.\n\nCharacteristics / tests for the existence of a partnership:\n1. Agreement: there must be an agreement (oral, written or implied by conduct) between the partners, often a partnership deed.\n2. Two or more persons: at least two persons, and (for most businesses) not more than twenty.\n3. Carrying on a business: there must be a business (trade, occupation or profession), not just co-ownership of property.\n4. Profit motive and sharing of profits (and losses): sharing of profits is strong evidence of partnership, though not conclusive on its own.\n5. Mutual agency: each partner is an agent of the firm and of the other partners and can bind them by acts done in the ordinary course of business.\n6. Unlimited liability: general partners are jointly and severally liable for the firm's debts.\n7. Utmost good faith: partners must be honest and fair with one another.\n8. Restriction on transfer of interest: a partner cannot transfer his share without the consent of the others.\n9. No separate legal entity (in Nigeria a partnership is not a corporate body), and lack of continuity."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Operations",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "What distinguish production process from production management? Explain the basic patterns or types of production process.",
+    "options": [],
+    "modelAnswer": "The production process is the sequence of operations and activities through which inputs (materials, labour, capital) are transformed into outputs (goods and services). Production management is the managerial function of planning, organising, directing and controlling the production process, i.e. deciding what, how much, when and how to produce, and ensuring quality, efficiency and timely delivery.\nDifference: the production process is the actual transformation activity; production management is the management of that activity.\n\nBasic types of production process:\n1. Job (unit) production: one-off products made to customers' individual specifications, e.g. tailoring, ship building, custom furniture. Flexible but costly.\n2. Batch production: a limited quantity of identical products is made at a time, then the process switches to another batch, e.g. bakery, clothing, pharmaceuticals.\n3. Mass (flow/line) production: large quantities of standardised products made continuously on an assembly line, e.g. cars, beverages. Low unit costs but inflexible.\n4. Continuous (process) production: non-stop production of a homogeneous product through a fixed sequence, e.g. oil refining, cement, chemicals.\n(Other classifications: analytical, synthetic, conditioning and extractive processes.)"
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Marketing",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "What is marketing research and its five major objectives? Briefly explain the procedure for conducting marketing research.",
+    "options": [],
+    "modelAnswer": "Marketing research is the systematic gathering, recording and analysis of data about problems relating to the marketing of goods and services, to help managers make better marketing decisions.\n\nObjectives (any five):\n1. To identify customers' needs, wants and preferences.\n2. To estimate market size, demand and sales potential.\n3. To test new products and evaluate product acceptance.\n4. To study competitors and their strategies.\n5. To determine appropriate prices.\n6. To evaluate the effectiveness of advertising and promotion.\n7. To select suitable distribution channels.\n8. To reduce marketing risks and uncertainty.\n\nProcedure for conducting marketing research:\n1. Define the problem and research objectives.\n2. Develop the research plan: decide on information needed, sources (secondary and primary data), methods (survey, observation, experiment), sampling and budget.\n3. Collect the data (secondary data from records and publications; primary data through questionnaires, interviews, observation).\n4. Process and analyse the data (editing, coding, tabulating, statistical analysis).\n5. Interpret the findings and draw conclusions.\n6. Prepare and present the report with recommendations to management.\n7. Follow up on implementation."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Operations",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Define plant layout. What are the eight major factors you will take into consideration when selecting where to locate a factory?",
+    "options": [],
+    "modelAnswer": "Plant layout is the arrangement of machines, equipment, work areas, storage spaces, service facilities and workers within a factory, so that materials flow smoothly and production is efficient, safe and economical. Types include process (functional), product (line), fixed-position and cellular layouts.\n\nFactors to consider in locating a factory (plant location):\n1. Nearness to raw materials (especially bulky or perishable ones).\n2. Nearness to the market (customers), especially for perishable or bulky finished goods.\n3. Availability of labour (skilled and unskilled) and its cost.\n4. Transport and communication facilities (roads, rail, ports, airports, telecommunications).\n5. Availability of power and water supply.\n6. Availability and cost of land and buildings, and room for expansion.\n7. Government policy: incentives, tax holidays, industrial estates, zoning laws and regulations.\n8. Availability of finance and banking facilities.\n9. Security and political stability of the area.\n10. Climate and environmental factors, waste disposal, and community attitudes.\n11. Nearness to supporting industries and services (external economies), and competition.\n(Any eight.)"
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Human Resource Management (HRM)",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Distinguish between training and development programs. List and explain five major reasons why human resource management is important.",
+    "options": [],
+    "modelAnswer": "Training is a short-term process of teaching employees specific skills and knowledge to perform their present jobs better (mainly for operative staff, e.g. operating a machine). Development is a long-term process of broadening knowledge, abilities and attitudes to prepare employees (especially managers) for future responsibilities and growth.\nDifferences: training is job-oriented and short-term; development is career-oriented and long-term; training focuses on technical skills, development on conceptual and human skills; training is often initiated by management, while development also depends on the individual's initiative.\n\nReasons why HRM is important (any five):\n1. Attracts and retains competent staff through good recruitment, selection and rewards.\n2. Improves employee performance and productivity through training and development.\n3. Motivates employees and improves morale through fair pay, recognition and welfare.\n4. Ensures the right number of people with the right skills at the right time (human resource planning).\n5. Maintains good employee relations and reduces conflict, absenteeism and labour turnover.\n6. Ensures compliance with labour laws and protects the organisation from legal problems.\n7. Helps the organisation adapt to change and achieve competitive advantage.\n8. Supports health and safety and the welfare of employees."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Business Enterprise",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Explain why one man control is the best in the world, provided that man is capable enough to manage everything.",
+    "options": [],
+    "modelAnswer": "The statement is a well-known saying about the sole proprietorship (one-man business): one-man control is the best in the world if that man is big enough (capable enough) to manage everything.\n\nWhy one-man control can be the best:\n1. Quick decisions: the owner does not need to consult partners or a board, so he can act promptly and seize opportunities.\n2. Unity of command and direction: there is no conflict among owners, and control is complete.\n3. Strong motivation: since all profits go to the owner, he works hard and efficiently.\n4. Flexibility: the business can easily adapt to changes in demand and conditions.\n5. Personal contact with customers and employees, giving better service and loyalty.\n6. Secrecy and privacy of business affairs.\n7. Economy: low costs of administration and fewer formalities.\n\nThe condition 'provided that man is capable enough': as the business grows, one person may lack the capital, skills, time and energy to manage everything. Unlimited liability, lack of continuity and limited capital are the main weaknesses. One-man control is therefore best only where the business is small or the owner has exceptional ability; otherwise partnership or a company is more suitable."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Business Finance",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Define a bond and explain its four features. Explain three major ways open to a company to raise the necessary finance of its business.",
+    "options": [],
+    "modelAnswer": "A bond is a long-term debt instrument (security) issued by a company or government to borrow money from investors, in which the issuer promises to pay interest periodically and repay the principal (face value) on a specified maturity date.\n\nFeatures (any four):\n1. Face (par) value: the amount repaid to the bondholder at maturity.\n2. Coupon (interest) rate: the fixed or floating rate of interest paid periodically.\n3. Maturity date: the date when the principal is repaid.\n4. Issuer and credit rating: the borrower and an assessment of its ability to repay.\n5. Security: a bond may be secured on assets (e.g. mortgage debentures) or unsecured.\n6. Trust deed (indenture): the legal agreement setting out the terms, with a trustee protecting bondholders.\n7. Transferability: bonds can be traded on the capital market.\n8. Redemption/call provisions and priority over shareholders on liquidation.\n\nThree major ways a company can raise finance:\n1. Equity (share) capital: issuing ordinary or preference shares to the public or existing shareholders (public offer, rights issue, private placement).\n2. Debt finance: issuing bonds/debentures, or borrowing through bank loans, overdrafts and leasing.\n3. Internal sources: retained earnings (ploughed-back profits), depreciation funds and sale of assets.\n(Other sources: trade credit, government grants, venture capital.)"
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Marketing",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Define marketing. How do industrial markets differ from consumer markets? Outline and explain the steps in the marketing process.",
+    "options": [],
+    "modelAnswer": "Marketing is the process of identifying, anticipating and satisfying customers' needs and wants profitably by creating, pricing, promoting and distributing goods and services that offer value.\n\nIndustrial (business) markets consist of organisations that buy goods and services for use in producing other goods, for resale, or for running their operations (e.g. machinery, raw materials). Consumer markets consist of individuals and households that buy goods and services for personal consumption.\nDifferences:\n1. Buyers: fewer, larger buyers in industrial markets; many small buyers in consumer markets.\n2. Purchase decisions: industrial buying is rational, technical and involves several people (buying centre); consumer buying is often individual and may be emotional.\n3. Demand: industrial demand is derived from consumer demand and is often inelastic; consumer demand is direct.\n4. Relationship: close, long-term relationships and negotiation in industrial markets; impersonal in consumer markets.\n5. Promotion: personal selling dominates industrial markets; advertising dominates consumer markets.\n6. Order size and distribution: large orders and direct channels in industrial markets; small purchases through intermediaries in consumer markets.\n\nSteps in the marketing process:\n1. Understanding the market and customers' needs (marketing research).\n2. Designing a customer-driven marketing strategy: segmentation, targeting and positioning.\n3. Developing the marketing mix (4Ps): product, price, place (distribution) and promotion.\n4. Building profitable customer relationships (delivering value and satisfaction).\n5. Capturing value from customers: sales, profits, loyalty and market share, followed by evaluation and control."
+  }
+]

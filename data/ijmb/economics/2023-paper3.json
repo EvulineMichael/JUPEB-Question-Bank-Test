@@ -1,0 +1,868 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The Long-run as used in economics implies a period.",
+    "options": [
+      "long enough for both fixed and variable factors of production to change",
+      "of 25 years",
+      "of one financial year",
+      "long enough for fixed factors of production to change."
+    ],
+    "answer": "A",
+    "explanation": "The long run is a period long enough for all factors of production, both fixed and variable, to be changed. In the short run at least one factor (e.g. plant) is fixed."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The theory of a firm employing the marginal labour at a point at which the marginal or extra product is equal in value to the marginal wage is called.",
+    "options": [
+      "economic rent",
+      "geographical mobility",
+      "closed shop",
+      "the marginal product theory of labour"
+    ],
+    "answer": "D",
+    "explanation": "This is the marginal productivity theory of wages: a firm employs labour up to the point where the value of the marginal product of the last worker equals the marginal wage."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Output is increasing at a decreasing rate in which of the stages.",
+    "options": [
+      "stage III",
+      "stage II and I",
+      "stage II",
+      "stage III and II"
+    ],
+    "answer": "C",
+    "explanation": "In the law of variable proportions, total product increases at a decreasing rate in Stage II (marginal product is falling but still positive, from the point where AP is maximum to where MP is zero)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The major Fiscal policy instruments in Nigeria are:",
+    "options": [
+      "taxation, tariff, public expenditure",
+      "taxation, tariff, foreign exchange",
+      "taxation, tariff, interest rate",
+      "taxation, tariff, imports"
+    ],
+    "answer": "A",
+    "explanation": "Fiscal policy uses government revenue and expenditure: taxation, tariffs (customs duties) and public expenditure. Interest rates and exchange rates are monetary policy tools."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Socialist mode of planning is base on:",
+    "options": [
+      "development plan",
+      "rolling plan",
+      "central plan",
+      "perspective plan"
+    ],
+    "answer": "C",
+    "explanation": "Under socialism, planning is centralised: a central planning authority draws up a central (comprehensive) plan for the whole economy."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Agro-allied industry involved",
+    "options": [
+      "production enterpris on the farm",
+      "production on a joint stock basis",
+      "production of only cash crops",
+      "production of only food crops."
+    ],
+    "answer": "A",
+    "explanation": "Agro-allied industries are linked to agriculture, e.g. production enterprises on the farm that process or use farm produce as raw materials."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Which of the three stages in the law of variable proportion the most important:",
+    "options": [
+      "stage III",
+      "stage IV",
+      "stage I",
+      "stage II."
+    ],
+    "answer": "D",
+    "explanation": "Stage II is the most important (rational) stage: a rational producer operates there, because in Stage I output can still be raised by adding more of the variable factor, and in Stage III total product falls (MP is negative). Note: the law has only three stages, so 'stage IV' does not exist."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The curve which shows different combination of labour and capital that can produce the same level of output is called:",
+    "options": [
+      "Iso-cost",
+      "Isoquant",
+      "MP curve",
+      "AP curve."
+    ],
+    "answer": "B",
+    "explanation": "An isoquant shows all the combinations of two inputs (e.g. labour and capital) that produce the same level of output. An isocost shows combinations with the same total cost."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "A production technique is labour intensive when it uses:",
+    "options": [
+      "half of capital input",
+      "less labour in relation to capital",
+      "less of capital in relation to labour",
+      "equal amount of labour and capital."
+    ],
+    "answer": "C",
+    "explanation": "A labour-intensive technique uses more labour relative to capital (i.e. less capital in relation to labour)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Increasing return to scale occur when:",
+    "options": [
+      "firm is operating below the optimum size",
+      "the expansion of a firm produces economics and greater efficiency",
+      "optimum factor combination or proportion is attained",
+      "all of the above"
+    ],
+    "answer": "B",
+    "explanation": "Increasing returns to scale occur when a proportionate increase in all inputs gives a more than proportionate increase in output, because expansion brings economies of scale and greater efficiency ('economics' is a misprint for economies). This happens while the firm is below its optimum size (so A is also broadly true), but at the optimum combination (C) returns are constant, so 'all of the above' is not correct. B is the best answer."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "When the quantity of a good does not change at all as price changes, demand is said to be:",
+    "options": [
+      "perfectly elastic",
+      "unit elasticity",
+      "perfectly elastic",
+      "elastic."
+    ],
+    "answer": "A",
+    "explanation": "The correct answer is perfectly inelastic demand (elasticity = 0, a vertical demand curve). It is not among the options: options A and C are identical ('perfectly elastic'), so one of them is a misprint for 'perfectly inelastic'. Option A is marked as the closest (it appears as 'perfectly inelastic' in the 2025 and 2026 versions of this question)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A downward pressure on the price of a commodity toward the equilibrium result from:",
+    "options": [
+      "increase in demand",
+      "decrease in demand",
+      "decrease in supply",
+      "b and C."
+    ],
+    "answer": "B",
+    "explanation": "Price is pushed down by a decrease in demand (or an increase in supply). An increase in demand or a decrease in supply pushes price up, so option D ('b and C') is wrong. Only B is correct."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Under the gold standard, a surplus of payment means",
+    "options": [
+      "a shipmen of gold away from the surplus country",
+      "an inflow of gold into the country having a surplus",
+      "a general fall in prices",
+      "increased mining of gold."
+    ],
+    "answer": "B",
+    "explanation": "Under the gold standard, balance-of-payments surpluses and deficits were settled in gold, so a surplus country received an inflow of gold. (The extra gold would then raise its money supply and prices.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "In deductive economics, economists usually",
+    "options": [
+      "go from theory to fact",
+      "go from facts to theory",
+      "go from theory to thinking",
+      "go from theory to synthesis."
+    ],
+    "answer": "A",
+    "explanation": "Deduction reasons from general principles or theories (assumptions) to particular conclusions, which are then tested against facts. Going from facts to theory (B) is induction."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Which of these does not belong?",
+    "options": [
+      "deregulation",
+      "foreign exchange",
+      "hedging",
+      "arbitrage."
+    ],
+    "answer": "A",
+    "explanation": "Foreign exchange, hedging (protecting against exchange-rate risk) and arbitrage (buying a currency in one market and selling in another for profit) all relate to the foreign exchange market. Deregulation (removal of government controls) does not belong."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Which of these economists is a strong advocate of fiscal policy?",
+    "options": [
+      "Adam Smith",
+      "J.M. Keynes",
+      "David Ricardo",
+      "Karl Marx."
+    ],
+    "answer": "B",
+    "explanation": "John Maynard Keynes argued that government should use fiscal policy (spending and taxation) to manage aggregate demand, especially to fight unemployment and depression."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The rate at which one input can be substituted for another and still maintain the same level of output is called:",
+    "options": [
+      "marginal rate of technical substitution",
+      "marginal rate of technical arbitration",
+      "marginal rate of technical substitutability",
+      "marginal rate of technical labour."
+    ],
+    "answer": "A",
+    "explanation": "The marginal rate of technical substitution (MRTS) is the rate at which one input can replace another while output stays the same; it is the slope of the isoquant."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "In market structure, monopoly means:",
+    "options": [
+      "one seller with close substitutes goods",
+      "one seller with no close substitute good",
+      "one seller with complementary goods",
+      "all of the above"
+    ],
+    "answer": "B",
+    "explanation": "A monopoly is a market with a single seller of a product that has no close substitutes, with barriers to entry."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "If a firm can sell as much as it wishes at a given market price, that firm is:",
+    "options": [
+      "an industry",
+      "a competitive firm",
+      "a monopolist",
+      "an oligopolist"
+    ],
+    "answer": "B",
+    "explanation": "A perfectly competitive firm is a price taker: it faces a horizontal demand curve and can sell any quantity at the market price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Ricardo's law of comparative advantage is based on:",
+    "options": [
+      "the law of diminishing return",
+      "the law of increasing relative costs",
+      "the law of diminishing marginal utility",
+      "the opportunity cost theory"
+    ],
+    "answer": "D",
+    "explanation": "Comparative advantage depends on differences in opportunity cost: a country should specialise in the good it can produce at a lower opportunity cost. (Ricardo stated it in terms of labour costs; it is now explained by opportunity cost.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "If the production possibility curve of an economy moves from position A to B as shown in the graph below, then:",
+    "image": {
+      "src": "images/ijmb/economics/2023/eco-2023-paper3-21.png",
+      "alt": "Production possibility curves A (inner) and B (outer) with Food on the vertical axis and Housing on the horizontal axis; both curves meet the housing axis at the same point, B reaches higher on the food axis"
+    },
+    "options": [
+      "the economy has increased the efficiency of production of housing.",
+      "the economy has increase the efficiency of production of food.",
+      "the economy has put to work previously idle resources.",
+      "the economy has moved to a more full employment position."
+    ],
+    "answer": "B",
+    "explanation": "In the graph, curve B lies outside curve A on the food axis but both curves meet the housing axis at the same point. Only the maximum output of food has increased, so the economy has become more efficient (e.g. better technology) in producing food. Employing idle resources would be a movement from inside the curve to the curve, not a shift of the curve."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The fundamental problem of economics is:",
+    "options": [
+      "achieving money income",
+      "scarcity of productive resources",
+      "establishment of prices of good",
+      "scarcity of electricity."
+    ],
+    "answer": "B",
+    "explanation": "The basic economic problem is scarcity: resources are limited relative to unlimited wants, so choices must be made."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "If the demand curve for product B shifts to the right as the price of product A declines, it can be concluded that:",
+    "options": [
+      "A and B are substitute goods",
+      "A and B are complementary goods",
+      "A is inferior good and B is a superior good",
+      "A is a superior good and B is an inferior good"
+    ],
+    "answer": "B",
+    "explanation": "A fall in the price of A increases the quantity of A bought and so increases demand for B: they are used together (complements). For substitutes, a fall in A's price would reduce demand for B."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "GNP can be measured by:",
+    "options": [
+      "the total value of all intermediate goods produced in the economy.",
+      "the total market value of final goods produced in the economy",
+      "the total value of all sales in the economy",
+      "none of these."
+    ],
+    "answer": "B",
+    "explanation": "GNP (like GDP) is measured by the market value of final goods and services; intermediate goods are excluded to avoid double counting. (Strictly, GNP also adds net income from abroad.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Which of the following is not a leakage in the circular flow of income:",
+    "options": [
+      "import of a Datsun car",
+      "personal saving",
+      "expert of crude petroleum",
+      "indirect company tax."
+    ],
+    "answer": "C",
+    "explanation": "Leakages (withdrawals) are savings, taxes and imports. Exports are an injection, not a leakage. ('expert' is a misprint for export.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Suppose the government imposes a price support of OE on the market for grains, the amount of grains that farmers will desire to market is:",
+    "image": {
+      "src": "images/ijmb/economics/2023/eco-2023-paper3-26.png",
+      "alt": "Demand and supply graph: demand DD and supply S intersect at price OD and quantity OB; at the higher price OE, demand is at F (quantity OA) and supply at G (quantity OC); I is above B and H is below G at price level D"
+    },
+    "options": [
+      "OA",
+      "OB",
+      "OC",
+      "GC"
+    ],
+    "answer": "C",
+    "explanation": "At the support price OE, farmers supply the quantity on the supply curve at G, which is OC. Consumers demand only OA (at F on the demand curve)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The effect of government interference is to:",
+    "image": {
+      "src": "images/ijmb/economics/2023/eco-2023-paper3-26.png",
+      "alt": "Demand and supply graph: demand DD and supply S intersect at price OD and quantity OB; at the higher price OE, demand is at F (quantity OA) and supply at G (quantity OC); I is above B and H is below G at price level D"
+    },
+    "options": [
+      "create a surplus of grains amounting to BC",
+      "increase supply by BC",
+      "decrease supply by AB",
+      "none of the above."
+    ],
+    "answer": "B",
+    "explanation": "Before the price support, equilibrium quantity was OB. At OE, quantity supplied rises from OB to OC, i.e. by BC, while quantity demanded falls to OA. The resulting surplus is AC (FG), not BC, so A is wrong; B best describes the effect."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "If the price support is effective, the income of the grains producers will:",
+    "image": {
+      "src": "images/ijmb/economics/2023/eco-2023-paper3-26.png",
+      "alt": "Demand and supply graph: demand DD and supply S intersect at price OD and quantity OB; at the higher price OE, demand is at F (quantity OA) and supply at G (quantity OC); I is above B and H is below G at price level D"
+    },
+    "options": [
+      "decrease by the difference between the areas OECC and ODHB",
+      "increase by the difference between the areas OEGC and ODHB",
+      "increase by the area BIGC",
+      "decrease by the area DHIE"
+    ],
+    "answer": "B",
+    "explanation": "With an effective price support (government buys the surplus), farmers sell OC at price OE, so their income is the area OEGC. Before, they sold OB at price OD (the rectangle labelled ODHB in the options). Income therefore increases by the difference between OEGC and the original area."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "A market is said to be purely competitive if:",
+    "options": [
+      "the product is standardized",
+      "no individual seller has control over the market price of the product",
+      "there is a very large number of independent sellers",
+      "all of the above"
+    ],
+    "answer": "D",
+    "explanation": "Pure competition requires a homogeneous (standardised) product, a large number of buyers and sellers, and no single seller able to influence price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "In equilibrium, a firm that is a competitor in its output market but a monopolist in the labour market will pay a wage rate.",
+    "options": [
+      "equal to the marginal revenue product",
+      "less than the marginal revenue product",
+      "impossible to determine from the information given",
+      "greater than the marginal revenue product"
+    ],
+    "answer": "B",
+    "explanation": "A firm that is the sole buyer of labour (strictly a monopsonist) faces an upward-sloping labour supply curve, so its marginal cost of labour exceeds the wage. It employs where MRP = marginal cost of labour and pays a wage below the MRP (monopsonistic exploitation)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Under the soviet planning system:",
+    "options": [
+      "each enterprise draws up its own plan which the central authorities then combine into one big plan.",
+      "Plans are drawn up in final form at the center and handed down to enterprises in finished form.",
+      "The planning process takes place at the enterprise and are given to the central authorities to modify.",
+      "The planning process begins at the center and suggestions for modifications are made at the enterprise."
+    ],
+    "answer": "D",
+    "explanation": "Note: the paper labels these options a), a), b), c); they are taken in printed order as A–D. In the Soviet system, the central planning agency (Gosplan) drew up preliminary targets ('control figures') which were sent down to enterprises; enterprises proposed modifications, which went back up before the final plan was approved. So planning began at the centre with suggestions for modification from enterprises."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "A profit-maximizing firm produces the level of output at the point where.",
+    "options": [
+      "marginal cost crosses the average variable cost",
+      "marginal cost equals marginal revenue",
+      "average fixed cost equals marginal revenue",
+      "all of the above."
+    ],
+    "answer": "B",
+    "explanation": "Profit is maximised where MC = MR (with MC cutting MR from below)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "A dual economy is one in which:",
+    "options": [
+      "there exists a modern industrialized sector as well as a traditional sector.",
+      "there exists a traditional sector and government sector.",
+      "there exists an agricultural sector and a monetary sector",
+      "none of the above"
+    ],
+    "answer": "A",
+    "explanation": "A dual economy (e.g. W.A. Lewis's model) has a modern, industrial (capitalist) sector existing side by side with a traditional, mainly subsistence agricultural sector."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The organization of petroleum exporting countries (OPEC) is an example of:",
+    "options": [
+      "perfect competition",
+      "duopoly",
+      "cartel",
+      "monopsony"
+    ],
+    "answer": "C",
+    "explanation": "OPEC is a cartel: a group of producers that coordinate output (quotas) to influence the price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which of the following will not cause an increase in the supply of guinea corn?",
+    "options": [
+      "an improvement in guinea corn farm technology",
+      "a fall in the price of farm machinery",
+      "a decrease in the price of millet",
+      "general improvement in farm technology"
+    ],
+    "answer": "C",
+    "explanation": "Better technology (A, D) and cheaper inputs such as machinery (B) lower costs and increase supply. A change in the price of millet, a substitute in consumption, affects the demand for guinea corn rather than its supply. Note: if millet is treated as a competing crop in production, a fall in its price would make farmers grow more guinea corn; the expected answer is still C."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Choice is necessary because:",
+    "options": [
+      "goods are many and varied and one must therefore choose",
+      "one cannot consume everything",
+      "resources are scarce relative to wants",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "Choice arises because resources are scarce relative to unlimited human wants."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Which of the following is not a factor reward?",
+    "options": [
+      "wages",
+      "rent",
+      "interest",
+      "premium"
+    ],
+    "answer": "D",
+    "explanation": "The factor rewards are rent (land), wages (labour), interest (capital) and profit (entrepreneur). A premium (e.g. an insurance premium) is not a factor reward."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Which of the following is not an advantage of division of labour?",
+    "options": [
+      "increased productivity",
+      "monotony",
+      "efficiency",
+      "development of specialize machinery."
+    ],
+    "answer": "B",
+    "explanation": "Monotony (boredom from repeating the same task) is a disadvantage of division of labour."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "When production is based on free enterprise, firms seek to maximize.",
+    "options": [
+      "profit",
+      "output",
+      "innovation",
+      "profit"
+    ],
+    "answer": "A",
+    "explanation": "Under free enterprise, firms aim to maximise profit. Note: options A and D are identical ('profit'); A is marked."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "In computing the national income, we should exclude.",
+    "options": [
+      "wages",
+      "rent on property",
+      "pensions",
+      "salaries"
+    ],
+    "answer": "C",
+    "explanation": "Pensions are transfer payments (not payments for current production), so they are excluded to avoid double counting."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Which among the following is the correct chain of distribution?",
+    "options": [
+      "manufacturer → wholesaler → retailer → consumer",
+      "manufacturer → wholesaler → consumer → retailer",
+      "manufacturer → retailer → wholesaler → consumer",
+      "manufacturer → consumer → wholesaler → retailer"
+    ],
+    "answer": "A",
+    "explanation": "Goods normally pass from the manufacturer to the wholesaler, then the retailer, and finally the consumer."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Which of the following combinations represents leakages from the circular flow of income?",
+    "options": [
+      "interest and profit",
+      "wages and rent",
+      "taxes, saving and import",
+      "imports, exports and earning from tourism."
+    ],
+    "answer": "C",
+    "explanation": "The leakages (withdrawals) are saving, taxes and imports. Exports and tourism earnings are injections."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "What is meant by \"a withdrawal\" in national income determination theory?",
+    "options": [
+      "money withdrawn from the central bank",
+      "money withdrawn from commercial banks",
+      "undistributed profits",
+      "maintenance allowance paid to students."
+    ],
+    "answer": "C",
+    "explanation": "A withdrawal is income not passed on in the circular flow (saving, taxes, imports). Undistributed (retained) profits are business saving, so they are a withdrawal."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "What is likely to happen when the demand for Nigeria's export increases?",
+    "options": [
+      "supply of Nigeria's exports will increase",
+      "demand for Naira will fall",
+      "fall in the external value of the Naira",
+      "rise in the external value of the Naira"
+    ],
+    "answer": "D",
+    "explanation": "Foreigners need more naira to pay for Nigerian exports, so demand for the naira rises and its external value (exchange rate) rises."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The relationship between quantity demanded and price of Giffen goods is:",
+    "options": [
+      "proportional",
+      "inverse",
+      "positive",
+      "parallel"
+    ],
+    "answer": "C",
+    "explanation": "For a Giffen good, quantity demanded rises when price rises (an upward-sloping demand curve), so the relationship is positive (direct)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "An upward pressure on the price of a commodity towards the equilibrium result from:",
+    "options": [
+      "increase in demand",
+      "decrease in demand",
+      "increase in supply",
+      "decrease in supply."
+    ],
+    "answer": "A",
+    "explanation": "Price is pushed up by an increase in demand or a decrease in supply, so both A and D are correct. A is marked; D is also correct."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The unit price of a firm's out put in an imperfect market is similar to its:",
+    "options": [
+      "marginal revenue",
+      "average revenue",
+      "marginal product",
+      "average product."
+    ],
+    "answer": "B",
+    "explanation": "Price per unit is always equal to average revenue (AR = TR/Q = P). In imperfect markets, marginal revenue is less than price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Among the disadvantages of monopoly is that it leads to:",
+    "options": [
+      "higher output and lower prices",
+      "lower output and higher prices",
+      "higher output and higher prices",
+      "lower output and lower prices"
+    ],
+    "answer": "B",
+    "explanation": "Compared with competition, a monopolist restricts output and charges a higher price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Which of the following describes \"Oligopoly\"?",
+    "options": [
+      "a few sellers in the market",
+      "a few buyers in the market",
+      "many sellers in the market",
+      "many buyers in the market"
+    ],
+    "answer": "A",
+    "explanation": "Oligopoly is a market dominated by a few sellers. A few buyers is oligopsony."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "An economy that uses price for allocating resources is called:",
+    "options": [
+      "controlled economy",
+      "liberal economy",
+      "free market economy",
+      "socialist economy."
+    ],
+    "answer": "C",
+    "explanation": "In a free market (capitalist) economy, resources are allocated by the price mechanism."
+  }
+]
