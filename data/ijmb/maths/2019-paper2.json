@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Differentiate y = cosece^√x.",
+    "options": [],
+    "modelAnswer": "Reading note: the expression is read as y = cosec(e^√x), the cosecant of e^√x.\n\nChain rule, working from the outside in:\nd/du(cosec u) = −cosec u cot u, with u = e^√x.\ndu/dx = e^√x × d/dx(√x) = e^√x × 1/(2√x).\n\ndy/dx = −cosec(e^√x) cot(e^√x) × e^√x/(2√x)\n= −e^√x cosec(e^√x) cot(e^√x)/(2√x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Evaluate lim_(x→1) ((1 − x³)/(1 − x)).",
+    "options": [],
+    "modelAnswer": "At x = 1 both top and bottom are 0, so factorise the numerator:\n1 − x³ = (1 − x)(1 + x + x²).\n(1 − x³)/(1 − x) = 1 + x + x² (for x ≠ 1).\nlim_(x→1) (1 + x + x²) = 1 + 1 + 1 = 3.\n(L'Hôpital's rule gives the same: −3x²/(−1) = 3x² → 3.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Show that the vectors i − j − k and i + 2j − k are perpendicular",
+    "options": [],
+    "modelAnswer": "Two vectors are perpendicular when their scalar (dot) product is zero.\n(i − j − k)·(i + 2j − k) = (1)(1) + (−1)(2) + (−1)(−1) = 1 − 2 + 1 = 0.\nSince the dot product is 0, the angle between them is 90°, so the vectors are perpendicular."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Solve the equation dy/dx = sin x(1 + y).",
+    "options": [],
+    "modelAnswer": "Separate the variables:\ndy/(1 + y) = sin x dx.\nIntegrate both sides: ln|1 + y| = −cos x + C.\n1 + y = e^(C) e^(−cos x) = Ae^(−cos x), where A is an arbitrary constant.\ny = Ae^(−cos x) − 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Evaluate ∫₀^(π/4) 3sec²x/(4 + 3tan x) dx.",
+    "options": [],
+    "modelAnswer": "Let u = 4 + 3tan x. Then du/dx = 3sec²x, so the numerator is exactly du.\n∫ 3sec²x/(4 + 3tan x) dx = ln|4 + 3tan x| + C.\nLimits: tan(π/4) = 1 and tan 0 = 0.\n[ln(4 + 3tan x)] from 0 to π/4 = ln 7 − ln 4 = ln(7/4) ≈ 0.5596."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a). Find dy/dx and d²y/dx² at (1,1) if x² + y² + 3gx + 3fy + c = 0",
+    "options": [],
+    "modelAnswer": "Differentiate implicitly:\n2x + 2y y′ + 3g + 3f y′ = 0\ny′(2y + 3f) = −(2x + 3g)\ndy/dx = −(2x + 3g)/(2y + 3f).\nAt (1, 1): dy/dx = −(2 + 3g)/(2 + 3f).\n\nDifferentiate 2x + 2y y′ + 3g + 3f y′ = 0 again:\n2 + 2(y′)² + 2y y″ + 3f y″ = 0\ny″ = −2[1 + (y′)²]/(2y + 3f).\nAt (1, 1):\nd²y/dx² = −2[1 + (2 + 3g)²/(2 + 3f)²]/(2 + 3f)\n= −2[(2 + 3f)² + (2 + 3g)²]/(2 + 3f)³.\n(Since (1, 1) lies on the curve, the constants satisfy 2 + 3g + 3f + c = 0.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b). If y = e^(−ax)cos 2bx, show that y″ + 2ay′ + (a² + 4b²)y = 0.",
+    "options": [],
+    "modelAnswer": "y = e^(−ax) cos 2bx\ny′ = −ae^(−ax) cos 2bx − 2be^(−ax) sin 2bx = −ay − 2be^(−ax) sin 2bx.\nSo y′ + ay = −2be^(−ax) sin 2bx ... (1)\n\nDifferentiate (1):\ny″ + ay′ = −2b[−ae^(−ax) sin 2bx + 2be^(−ax) cos 2bx]\n= 2abe^(−ax) sin 2bx − 4b²e^(−ax) cos 2bx.\nFrom (1), 2be^(−ax) sin 2bx = −(y′ + ay), so 2abe^(−ax) sin 2bx = −a(y′ + ay).\nAlso 4b²e^(−ax) cos 2bx = 4b²y.\ny″ + ay′ = −a(y′ + ay) − 4b²y\ny″ + ay′ + ay′ + a²y + 4b²y = 0\ny″ + 2ay′ + (a² + 4b²)y = 0, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a). Differentiate from first principle y = cos²3x.",
+    "options": [],
+    "modelAnswer": "y + δy = cos²(3x + 3δx).\nδy = cos²(3x + 3δx) − cos²3x.\nUse cos²A − cos²B = (cos A − cos B)(cos A + cos B) = −sin(A + B) sin(A − B):\nδy = −sin(6x + 3δx) sin(3δx).\nδy/δx = −sin(6x + 3δx) × sin(3δx)/δx = −3 sin(6x + 3δx) × [sin(3δx)/(3δx)].\nAs δx → 0, sin(3δx)/(3δx) → 1 and sin(6x + 3δx) → sin 6x.\ndy/dx = −3 sin 6x (= −6 sin 3x cos 3x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b). Find ∫ dx/((x − 1)(x − 2)(x + 3)).",
+    "options": [],
+    "modelAnswer": "Partial fractions: 1/((x − 1)(x − 2)(x + 3)) = A/(x − 1) + B/(x − 2) + C/(x + 3).\n1 = A(x − 2)(x + 3) + B(x − 1)(x + 3) + C(x − 1)(x − 2).\nx = 1: 1 = A(−1)(4) → A = −1/4.\nx = 2: 1 = B(1)(5) → B = 1/5.\nx = −3: 1 = C(−4)(−5) → C = 1/20.\n\n∫ = −(1/4) ln|x − 1| + (1/5) ln|x − 2| + (1/20) ln|x + 3| + K.\n(Check: −1/4 + 1/5 + 1/20 = 0, as the x² coefficients must cancel.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a). If y = cosh(k cos⁻¹x), show that (1 − x²)y″ − xy′ − k²y = 0.",
+    "options": [],
+    "modelAnswer": "y = cosh(k cos⁻¹x).\ny′ = sinh(k cos⁻¹x) × k × (−1/√(1 − x²)) = −k sinh(k cos⁻¹x)/√(1 − x²).\nSo √(1 − x²) y′ = −k sinh(k cos⁻¹x).\n\nDifferentiate again (product rule on the left):\n√(1 − x²) y″ − (x/√(1 − x²)) y′ = −k cosh(k cos⁻¹x) × k × (−1/√(1 − x²)) = k²y/√(1 − x²).\nMultiply through by √(1 − x²):\n(1 − x²)y″ − xy′ = k²y\n(1 − x²)y″ − xy′ − k²y = 0, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b). Using integration by parts, evaluate the following\n(i) ∫₁² x² log x dx, (ii) ∫₀¹ cos⁻¹x dx.",
+    "options": [],
+    "modelAnswer": "Here log means the natural logarithm (ln).\n\n(i) Let u = ln x, dv = x² dx, so du = dx/x and v = x³/3.\n∫ x² ln x dx = (x³/3) ln x − ∫ (x³/3)(1/x) dx = (x³/3) ln x − x³/9.\nFrom 1 to 2: [(8/3) ln 2 − 8/9] − [0 − 1/9] = (8/3) ln 2 − 7/9\n≈ 1.8484 − 0.7778 = 1.0706.\n\n(ii) Let u = cos⁻¹x, dv = dx, so du = −dx/√(1 − x²) and v = x.\n∫ cos⁻¹x dx = x cos⁻¹x + ∫ x/√(1 − x²) dx = x cos⁻¹x − √(1 − x²).\nFrom 0 to 1: [1 × cos⁻¹1 − 0] − [0 − √1] = (0 − 0) − (0 − 1) = 1.\n∫₀¹ cos⁻¹x dx = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a). Solve the equation (x² + y²)dx − 3xydy = 0.",
+    "options": [],
+    "modelAnswer": "dy/dx = (x² + y²)/(3xy), which is homogeneous. Put y = vx, dy/dx = v + x dv/dx:\nv + x dv/dx = (1 + v²)/(3v)\nx dv/dx = (1 + v²)/(3v) − v = (1 + v² − 3v²)/(3v) = (1 − 2v²)/(3v).\n\nSeparate: 3v dv/(1 − 2v²) = dx/x.\nIntegrate: −(3/4) ln|1 − 2v²| = ln x + C.\nln|1 − 2v²| = −(4/3) ln x + C₁ → 1 − 2v² = A x^(−4/3).\nSubstitute v = y/x: (x² − 2y²)/x² = A x^(−4/3)\nx² − 2y² = A x^(2/3).\nCubing to remove the fractional power: (x² − 2y²)³ = Kx², where K = A³ is an arbitrary constant."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b). The vertices of ΔPQR are represented by the vectors i + 3j + k, 3i − j + k and i + j − 3k, respectively. Calculate the cosine of the angles of ΔPQR and obtain its area.",
+    "options": [],
+    "modelAnswer": "P = (1, 3, 1), Q = (3, −1, 1), R = (1, 1, −3).\nPQ = Q − P = (2, −4, 0), |PQ| = √20\nPR = R − P = (0, −2, −4), |PR| = √20\nQR = R − Q = (−2, 2, −4), |QR| = √24\n\nAngle P (between PQ and PR): PQ·PR = 0 + 8 + 0 = 8. cos P = 8/(√20 × √20) = 8/20 = 0.4.\nAngle Q (between QP = (−2, 4, 0) and QR = (−2, 2, −4)): QP·QR = 4 + 8 + 0 = 12. cos Q = 12/(√20 × √24) = 12/√480 = 0.5477.\nAngle R (between RP = (0, 2, 4) and RQ = (2, −2, 4)): RP·RQ = 0 − 4 + 16 = 12. cos R = 12/(√20 × √24) = 0.5477.\n(The triangle is isosceles, since |PQ| = |PR|, so angles Q and R are equal: P ≈ 66.4°, Q = R ≈ 56.8°, and they add to 180°.)\n\nArea = ½|PQ × PR|.\nPQ × PR = ((−4)(−4) − (0)(−2), (0)(0) − (2)(−4), (2)(−2) − (−4)(0)) = (16, 8, −4).\n|PQ × PR| = √(256 + 64 + 16) = √336 = 4√21.\nArea = ½ × 4√21 = 2√21 ≈ 9.17 square units."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a). Calculate the unit vector in direction of 3a + 2b, given that the vectors a = i − 2j + k and b = i + 2j − k. Hence obtain the angle between it and vectors b.",
+    "options": [],
+    "modelAnswer": "3a = 3i − 6j + 3k; 2b = 2i + 4j − 2k.\n3a + 2b = 5i − 2j + k.\n|3a + 2b| = √(25 + 4 + 1) = √30.\nUnit vector = (5i − 2j + k)/√30.\n\nAngle with b: (3a + 2b)·b = (5)(1) + (−2)(2) + (1)(−1) = 5 − 4 − 1 = 0.\ncos θ = 0, so θ = 90°: the vector 3a + 2b is perpendicular to b."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b). Solve the equation y dy/dx = sec²x e^(2tan x − 10y²).",
+    "options": [],
+    "modelAnswer": "Write e^(2tan x − 10y²) = e^(2tan x) × e^(−10y²) and separate:\ny e^(10y²) dy = sec²x e^(2tan x) dx.\nLeft: ∫ y e^(10y²) dy = e^(10y²)/20 (since d/dy e^(10y²) = 20y e^(10y²)).\nRight: ∫ sec²x e^(2tan x) dx = e^(2tan x)/2 (since d/dx e^(2tan x) = 2sec²x e^(2tan x)).\ne^(10y²)/20 = e^(2tan x)/2 + C\ne^(10y²) = 10e^(2tan x) + K (K = 20C).\nEquivalently y² = (1/10) ln(10e^(2tan x) + K)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a). Solve the equation cos x dy/dx − y sin x = cos²x − 1.",
+    "options": [],
+    "modelAnswer": "The left side is an exact derivative: d/dx(y cos x) = cos x dy/dx − y sin x.\nThe right side: cos²x − 1 = −sin²x.\nd/dx(y cos x) = −sin²x.\ny cos x = −∫ sin²x dx = −∫ (1 − cos 2x)/2 dx = −x/2 + (sin 2x)/4 + C.\ny = (sin 2x/4 − x/2 + C)/cos x = (sin 2x − 2x + 4C)/(4 cos x)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b).Given that a = i − 3j + k and b = 2i − j + k, find the projection of the vector 3a + b on a − 3b.",
+    "options": [],
+    "modelAnswer": "3a + b = (3i − 9j + 3k) + (2i − j + k) = 5i − 10j + 4k.\na − 3b = (i − 3j + k) − (6i − 3j + 3k) = −5i + 0j − 2k.\n(3a + b)·(a − 3b) = (5)(−5) + (−10)(0) + (4)(−2) = −25 − 8 = −33.\n|a − 3b| = √(25 + 0 + 4) = √29.\nScalar projection of 3a + b on a − 3b = −33/√29 ≈ −6.13.\n(The negative sign means the angle between them is obtuse.)\nVector projection = (−33/29)(−5i − 2k) = (165i + 66k)/29."
+  }
+]

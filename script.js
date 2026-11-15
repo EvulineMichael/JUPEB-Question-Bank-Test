@@ -547,6 +547,18 @@ geography: {
         "International Economic Institutions"
     ]
 },
+sociology: {
+    "SOC 001 - Introduction to Sociology": [
+        "Introduction to Sociology",
+        "Society and Culture",
+        "Social Structure and Social Interaction"
+    ],
+    "SOC 002 - Social Institutions and Social Change": [
+        "Social Institutions",
+        "Social Stratification and Inequality",
+        "Social Change and Nigerian/African Social Structure"
+    ]
+},
 crs: {
     "CRS 001 - Old Testament Studies": [
         "Formation and Composition of the Old Testament",
@@ -1252,7 +1264,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
 
     const subjects = (typeof examSubjects === 'function')
         ? examSubjects()
-        : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+        : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature', 'sociology'];
 
     // Create a promise for each subject that needs loading
     const loadPromises = subjects.map(async (subject) => {

@@ -1,0 +1,123 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Explain the following terms:\n(i) Colour blindness\n(ii) Co-dominance\n(iii) Co-enzymes\n(iv) Heterogamic sex",
+    "options": [],
+    "modelAnswer": "(i) Colour blindness: an inherited inability to distinguish certain colours, most commonly red and green, because some cone cells in the retina are defective. It is caused by a recessive allele on the X chromosome (sex-linked). Males (XᶜY, only one X) are affected far more often than females, who need two copies (XᶜXᶜ). A carrier mother (XᴺXᶜ) can pass it to half her sons.\n\n(ii) Co-dominance: a form of inheritance in which both alleles of a gene in a heterozygote are fully and equally expressed, so neither is dominant or recessive and the heterozygote shows both traits. Examples: the AB blood group (IᴬIᴮ), where both antigens A and B are present; roan coat colour in cattle (red and white hairs). Also the sickle-cell trait (HbA HbS), which shows both normal and sickle haemoglobin.\n\n(iii) Co-enzymes: small, non-protein organic molecules that bind loosely to enzymes and are needed for the enzymes to work. They often carry chemical groups, atoms or electrons between reactions. Many are derived from vitamins. Examples: NAD⁺ and NADP⁺ (from niacin, vitamin B₃), FAD (from riboflavin, B₂), coenzyme A (from pantothenic acid). They are a type of cofactor.\n\n(iv) Heterogametic sex: the sex that has two different sex chromosomes and therefore produces two kinds of gametes with respect to sex chromosomes. In humans and other mammals the male (XY) is heterogametic, producing X-bearing and Y-bearing sperm, and so determines the sex of the offspring. In birds, butterflies and some fish the female (ZW) is heterogametic. (The other sex, e.g. the human female XX, is homogametic.)\nNote: the paper prints \"Heterogamic\"; the usual term is heterogametic."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Assuming uniform colour (C) is dominant over spotted (c) in cattle. When a cross is made between a pure breed (homozygous) black bull (BBCC) with a white spotted cow (bbcc):\n(i) Use Punnet diagram to show the result of the F₁ generation\n(ii) What will be the phenotype of the calves in the F₁ generation?\n(iii) Show the types and ratio of offspring that are possible when two of the F₁generations aremated.\n(iv)Name all the new combinations that have arisen from the cross above (1b iii)",
+    "options": [],
+    "modelAnswer": "Note: the paper does not say so directly, but the genotypes imply that black (B) is dominant over white (b), and uniform (C) over spotted (c). The two genes assort independently.\n\n(i) Parents: BBCC (black, uniform) × bbcc (white, spotted).\nGametes: the bull gives only BC; the cow gives only bc.\nPunnett square: every square is BC × bc = BbCc.\nAll F₁ offspring are BbCc (100%).\n\n(ii) All F₁ calves are black with uniform colour (black, unspotted), since B and C are dominant.\n\n(iii) F₁ × F₁: BbCc × BbCc.\nEach parent produces four kinds of gametes in equal numbers: BC, Bc, bC, bc.\nA 4 × 4 Punnett square gives 16 combinations, which fall into four phenotypes:\n• Black, uniform (B_C_): 9\n• Black, spotted (B_cc): 3\n• White, uniform (bbC_): 3\n• White, spotted (bbcc): 1\nPhenotypic ratio 9 : 3 : 3 : 1.\n(Genotypes: BBCC 1, BBCc 2, BbCC 2, BbCc 4, BBcc 1, Bbcc 2, bbCC 1, bbCc 2, bbcc 1, i.e. 9 genotypes in the ratio 1:2:2:4:1:2:1:2:1.)\n\n(iv) New combinations (recombinants) are those not seen in either original parent:\n• black spotted (BBcc, Bbcc): 3/16;\n• white uniform (bbCC, bbCc): 3/16.\nThese arise from independent assortment (Mendel's second law)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Living Things in Nature and Biological Molecules",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Fill in the blank spaces. Spellings of one word answer and scientific names must be correct to score\n(i) A nucleotide has ____, ____ and ____ components\n(ii) Sucrose is digested to ____ and ____\n(iii) The \"bleeders' disease\" is known as ____\n(v) A condition in which a gene fails to express itself in the presence of dominant allele is ____\n(vi) The scientific name of the giant African land Snail is ____\n(vii) Urine is approximately 95% ____, 2% ____, 1% sodiumchloride and other smaller amounts of nitrogenous compounds and mineral salts.",
+    "options": [],
+    "modelAnswer": "Note: the paper skips number (iv).\n\n(i) a phosphate group, a pentose sugar (ribose or deoxyribose) and a nitrogenous base\n(ii) glucose and fructose (by the enzyme sucrase/invertase)\n(iii) haemophilia (hemophilia)\n(v) recessiveness (the allele is recessive)\n(vi) Achatina achatina (also given in some texts as Achatina fulica, now Lissachatina fulica). Write the genus with a capital letter and the species in small letters, underlined when handwritten.\n(vii) water (95%) and urea (2%)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Introduction to Chordates",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Give four adaptations of the following vertebrate taxa\n(i) Proboscidea\n(ii) Phythonidae\n(iii) Chamaeleonidae\n(iv) Chiroptera",
+    "options": [],
+    "modelAnswer": "Note: \"Phythonidae\" is a misprint for Pythonidae (pythons).\n\n(i) Proboscidea (elephants):\n1. A long, muscular trunk (proboscis), formed from the nose and upper lip, for breathing, smelling, grasping food, drinking and communication.\n2. Tusks (enlarged incisors) for digging, stripping bark, defence and fighting.\n3. Large, flat grinding molars that are replaced one after another, for chewing tough plant material.\n4. Large ears with many blood vessels for losing body heat; massive pillar-like legs with padded feet to support the huge weight; thick skin.\n\n(ii) Pythonidae (pythons):\n1. Constriction: powerful muscles to coil around and suffocate prey (non-venomous).\n2. Loosely joined jaws (flexible lower jaw with elastic ligaments) to swallow prey much larger than the head.\n3. Heat-sensitive pits on the lips to detect warm-blooded prey in the dark.\n4. Backward-curved teeth to grip prey; forked tongue and Jacobson's organ for smell; vestigial hind limbs (spurs); scales for movement and protection; camouflage colouring.\n\n(iii) Chamaeleonidae (chameleons):\n1. A long, sticky, protrusible tongue that can be shot out rapidly to catch insects.\n2. Eyes that move independently, giving 360° vision and accurate judgement of distance.\n3. Ability to change skin colour, for camouflage, communication and temperature control.\n4. Zygodactylous feet (toes fused into opposing groups of two and three) and a prehensile tail for gripping branches; laterally flattened body.\n\n(iv) Chiroptera (bats):\n1. Forelimbs modified into wings: a thin skin membrane (patagium) stretched over very long finger bones, for true flight.\n2. Echolocation: they emit high-pitched sounds and detect the echoes with large ears to locate prey and obstacles in the dark.\n3. Hind limbs and clawed feet adapted for hanging upside down while resting.\n4. Light body and a keeled sternum for the attachment of flight muscles; nocturnal habit; sharp teeth for insects, or specialised snouts and tongues in fruit and nectar bats."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Invertebrates",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) Outline fifteen(15) characteristics of the phylum Arthropoda",
+    "options": [],
+    "modelAnswer": "1. They have jointed appendages (legs, antennae, mouthparts); the name means 'jointed foot'.\n2. The body is covered by a hard chitinous exoskeleton (cuticle).\n3. They moult (ecdysis) periodically to grow.\n4. They are bilaterally symmetrical.\n5. They are triploblastic (three germ layers).\n6. The body is segmented (metamerically).\n7. Segments are grouped into regions (tagmatisation): head, thorax and abdomen, or cephalothorax and abdomen.\n8. The body cavity is a haemocoel (blood-filled), and the true coelom is reduced.\n9. They have an open circulatory system, with a dorsal tubular heart.\n10. The nervous system has a dorsal brain and a double ventral nerve cord with ganglia.\n11. They have a complete digestive tract with a mouth and an anus.\n12. Respiration is through the body surface, gills, tracheae or book lungs.\n13. Excretion is by Malpighian tubules or green (antennal) glands.\n14. They have compound and/or simple eyes, and antennae as sense organs.\n15. Sexes are usually separate (dioecious), and fertilisation is usually internal.\n16. Development is often by metamorphosis (with larval stages).\n17. Muscles are striated and attached to the inside of the exoskeleton.\n18. There are no cilia on the outer surface.\n19. It is the largest animal phylum, found in all habitats; examples: insects, crustaceans, arachnids, millipedes and centipedes.\n(Any fifteen.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Ecologic and Economic Importance of Animals",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) List any five (5) economic importance of Protozoa.",
+    "options": [],
+    "modelAnswer": "1. Cause of human diseases: malaria (Plasmodium), amoebic dysentery (Entamoeba histolytica), sleeping sickness (Trypanosoma gambiense), leishmaniasis (Leishmania), giardiasis (Giardia).\n2. Cause of livestock diseases: nagana in cattle (Trypanosoma brucei), coccidiosis in poultry (Eimeria), babesiosis.\n3. Food chains: they feed on bacteria and algae and are food for small animals and fish larvae in aquatic ecosystems.\n4. Sewage treatment: ciliates (e.g. Vorticella, Paramecium) feed on bacteria and help purify sewage.\n5. Geological importance: shells of foraminifera and radiolarians form chalk and limestone deposits, and are used to locate oil deposits.\n6. Symbiosis: flagellates in the gut of termites digest cellulose for them (mutualism).\n7. Research: Amoeba and Paramecium are used as model organisms in teaching and research.\n8. Indicators of water pollution."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Introduction to Chordates",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Make a large (8-9cm) diagram of the lateral view of a bony fish",
+    "options": [],
+    "modelAnswer": "Diagram (8–9 cm): side (lateral) view of a bony fish such as tilapia, with the head to the left, a streamlined spindle-shaped body, and the tail to the right.\nLabels:\n• Head: mouth, nostril (nasal opening), eye, operculum (gill cover), opercular opening.\n• Trunk: scales (overlapping), lateral line running along the side, dorsal fin (with spiny and soft rays), pectoral fin (just behind the operculum), pelvic fin (below), anus (vent), urinogenital opening, anal fin.\n• Tail: caudal peduncle and caudal (tail) fin, often homocercal (symmetrical lobes).\nDraw neatly with a sharp pencil, label lines ruled and not crossing, and give a title (e.g. 'Lateral view of tilapia') with the magnification."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Introduction to Chordates",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Mention the adaptation of a bony for efficient movement in water.",
+    "options": [],
+    "modelAnswer": "Note: \"a bony\" is a misprint for a bony fish.\n\nAdaptations of a bony fish for efficient movement in water:\n1. Streamlined (spindle-shaped) body, which reduces water resistance.\n2. Smooth, overlapping scales pointing backwards, and a coat of mucus, which reduce friction.\n3. Strong myotomes (W-shaped blocks of muscle) along the body, whose alternate contraction produces side-to-side swimming movements.\n4. Caudal (tail) fin, which provides the main forward thrust and helps steering.\n5. Dorsal and anal fins, which prevent rolling and yawing (maintain stability).\n6. Paired pectoral and pelvic fins, used for balancing, steering, braking and preventing pitching.\n7. Swim bladder, which adjusts buoyancy so the fish can stay at any depth without effort.\n8. No neck; the head joins the body directly, keeping the shape streamlined.\n9. Lateral line system, which detects water currents and vibrations, helping it orient and avoid obstacles.\n10. Flexible backbone (vertebral column), allowing lateral bending."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Write short notes on any four (4) of the following:\n(a) Osmoregulation\n(b) Short-sightedness\n(c) Involuntary/Reflex action\n(d) Economic importance of phylum Annelida\n(e) Gene pool",
+    "options": [],
+    "modelAnswer": "(Notes on all five are given; students answer any four.)\n\n(a) Osmoregulation: the control of the water content and solute (salt) concentration of body fluids so that they stay within narrow limits, which is part of homeostasis.\n• In humans it is done mainly by the kidneys, under the control of antidiuretic hormone (ADH) from the pituitary. When the blood is too concentrated, more ADH is released and more water is reabsorbed in the collecting ducts, producing concentrated urine; the reverse happens when the blood is dilute.\n• Freshwater fish gain water by osmosis and produce large amounts of dilute urine; marine fish lose water, drink seawater and excrete salts through the gills.\n• Amoeba and Paramecium use contractile vacuoles to expel excess water.\n\n(b) Short-sightedness (myopia): a defect of vision in which near objects are seen clearly but distant objects appear blurred. It happens because the eyeball is too long or the lens is too thick (too strongly converging), so light from distant objects is focused in front of the retina. It is corrected with a diverging (concave) lens, which spreads the rays before they enter the eye so they focus on the retina.\n\n(c) Involuntary/reflex action: a rapid, automatic response to a stimulus that does not involve conscious control by the brain, e.g. withdrawing the hand from a hot object, the knee jerk, blinking, sneezing, the pupil reflex. The impulse travels along a reflex arc: receptor → sensory neurone → relay neurone (spinal cord) → motor neurone → effector. It is fast and protective. Involuntary actions also include the control of heartbeat, breathing and peristalsis by the autonomic nervous system and the medulla oblongata.\n\n(d) Economic importance of phylum Annelida:\nBeneficial:\n• Earthworms improve soil fertility and aeration by burrowing, mixing the soil and adding casts (humus).\n• They are used as fish bait and as food for poultry and fish (vermiculture).\n• Vermicomposting of organic waste.\n• Leeches (Hirudo medicinalis) are used in medicine to remove blood clots; their saliva contains the anticoagulant hirudin.\n• Some polychaetes (e.g. palolo worm) are eaten.\n• Annelids are important in food chains.\nHarmful:\n• Leeches suck the blood of humans and livestock.\n• Some burrowing worms damage dams or seedlings.\n• They can act as intermediate hosts of parasites.\n\n(e) Gene pool: the total collection of all the genes and their different alleles present in all the individuals of an interbreeding population at a given time. A large gene pool with high genetic diversity helps a population adapt to environmental changes. A small gene pool (e.g. in endangered species) reduces adaptability. The gene pool changes through mutation, natural selection, migration (gene flow) and genetic drift, which are the basis of evolution."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Enumerate any six (6) primary functions of the liver",
+    "options": [],
+    "modelAnswer": "1. Regulation of blood sugar: excess glucose is converted to glycogen and stored (under insulin); glycogen is converted back to glucose when needed (under glucagon).\n2. Deamination of excess amino acids and formation of urea (ornithine cycle), which is excreted by the kidneys.\n3. Production of bile, which emulsifies fats; it is stored in the gall bladder.\n4. Detoxification: breaking down harmful substances such as alcohol, drugs and poisons.\n5. Storage of vitamins (A, D, B₁₂) and minerals (iron, copper).\n6. Synthesis of plasma proteins (albumin, fibrinogen, prothrombin) and of cholesterol.\n7. Breakdown of old red blood cells; the haemoglobin is broken down, iron is stored, and bile pigments are formed.\n8. Production of heat (thermoregulation), because of its high metabolic activity.\n9. Formation of red blood cells in the fetus.\n10. Fat metabolism, and the breakdown of hormones.\n(Any six.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Write notes on:\ni. Closed circulation\nii. Open circulation.",
+    "options": [],
+    "modelAnswer": "(i) Closed circulation: a circulatory system in which the blood always flows inside a continuous system of blood vessels (arteries, capillaries and veins) and does not come into direct contact with the tissues. Exchange of materials occurs across the capillary walls via tissue fluid.\n• The blood is pumped by a heart under high pressure, so it flows quickly and can be directed to particular organs.\n• Transport is efficient, which suits active animals.\n• It may be single (fish: blood passes through the heart once per circuit) or double (mammals and birds: pulmonary and systemic circuits).\n• Examples: vertebrates (humans, fish), annelids (earthworm), cephalopods (octopus).\n\n(ii) Open circulation: a circulatory system in which the blood (haemolymph) is pumped by the heart into open spaces or sinuses (the haemocoel), where it bathes the tissues and organs directly before returning slowly to the heart through openings (ostia).\n• Blood flows at low pressure and slowly, and there are few vessels and no capillaries.\n• The blood usually plays little part in oxygen transport in insects, which use tracheae.\n• Examples: arthropods (insects, crustaceans) and most molluscs (snails).\n\nMain difference: in closed circulation blood is confined to vessels, giving high pressure and rapid flow; in open circulation blood flows freely through body spaces at low pressure."
+  }
+]

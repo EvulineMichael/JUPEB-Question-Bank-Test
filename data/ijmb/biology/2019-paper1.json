@@ -1,0 +1,171 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "The following data presents the yield (number of seeds produced per pod) in a newly released variety of cowpea from 10 (ten) samples in a trial experiment. The experiment was designed to investigate the effect of planting density on yield.\nUse the information provided on the table to answer i to viii\ni. Calculate the mean number of seeds produced from each treatment\nii. Present the means produced in (i) above in a bar chart\niii. Based on the means, what preliminary conclusions can you make on the outcome of the experiment\niv. Calculate the modal yield for each treatment\nv. Calculate the median yield for each treatment\nvi. Calculate the variance of the best treatment\nvii. Calculate the standard deviation of the best treatment\nviii. Calculate the standard error of the best treatment\nix. Calculate the range of the worst treatment",
+    "options": [],
+    "modelAnswer": "Table: seeds per pod for 10 samples at planting densities of 1, 2, 3, 4 and 5 plants per stand (the five treatments).\nNote: the instruction says \"i to viii\", but the paper has nine parts (i to ix).\n\nSorted values for each treatment:\n• Density 1: 6, 6, 6, 7, 7, 7, 7, 8, 8, 8 (total 70)\n• Density 2: 7, 7, 7, 8, 8, 8, 8, 9, 9, 9 (total 80)\n• Density 3: 7, 7, 8, 8, 9, 9, 10, 10, 11, 11 (total 90)\n• Density 4: 5, 5, 5, 5, 6, 6, 6, 6, 7, 7 (total 58)\n• Density 5: 2, 3, 3, 3, 3, 4, 4, 4, 5, 5 (total 36)\n\n(i) Mean = total/10:\nDensity 1 = 7.0; density 2 = 8.0; density 3 = 9.0; density 4 = 5.8; density 5 = 3.6 seeds per pod.\n\n(ii) Bar chart: planting density (1, 2, 3, 4, 5 plants per stand) on the x-axis and mean number of seeds per pod on the y-axis (scale 0–10). Draw separate bars of equal width with gaps between them, of heights 7.0, 8.0, 9.0, 5.8 and 3.6. Give the chart a title and label both axes.\n\n(iii) Preliminary conclusions:\n• Yield rises as planting density increases from 1 to 3 plants per stand, reaching a peak at 3 (9.0 seeds per pod).\n• Above 3 plants per stand, yield falls sharply (5.8 at density 4 and 3.6 at density 5), probably because of competition among plants for light, water and nutrients.\n• The best (optimum) planting density is 3 plants per stand; the worst is 5 plants per stand.\nThese conclusions are preliminary; a statistical test (e.g. analysis of variance) is needed to confirm that the differences are significant.\n\n(iv) Mode (most frequent value):\n• Density 1: 7 (occurs 4 times).\n• Density 2: 8 (4 times).\n• Density 3: no single mode. 7, 8, 9, 10 and 11 each occur twice, so the data are multimodal (there is no unique mode).\n• Density 4: bimodal, 5 and 6 (each 4 times).\n• Density 5: 3 (4 times).\n\n(v) Median (with 10 values, the mean of the 5th and 6th sorted values):\n• Density 1: (7 + 7)/2 = 7\n• Density 2: (8 + 8)/2 = 8\n• Density 3: (9 + 9)/2 = 9\n• Density 4: (6 + 6)/2 = 6\n• Density 5: (3 + 4)/2 = 3.5\n\n(vi) Variance of the best treatment (density 3, mean = 9):\nDeviations (x − 9): −2, −2, −1, −1, 0, 0, 1, 1, 2, 2.\nSquares: 4, 4, 1, 1, 0, 0, 1, 1, 4, 4. Σ(x − x̄)² = 20.\nSample variance s² = Σ(x − x̄)²/(n − 1) = 20/9 = 2.22.\n(If divided by n, the population variance = 20/10 = 2.0.)\n\n(vii) Standard deviation: s = √2.22 = 1.49 seeds per pod (√2.0 = 1.41 if n is used).\n\n(viii) Standard error: SE = s/√n = 1.49/√10 = 1.49/3.162 = 0.47.\n\n(ix) Range of the worst treatment (density 5): highest − lowest = 5 − 2 = 3 seeds per pod.",
+    "dataTable": {
+      "headers": [
+        "Sample No.",
+        "Density 1",
+        "Density 2",
+        "Density 3",
+        "Density 4",
+        "Density 5"
+      ],
+      "rows": [
+        [
+          "1",
+          "07",
+          "08",
+          "10",
+          "07",
+          "04"
+        ],
+        [
+          "2",
+          "08",
+          "08",
+          "08",
+          "06",
+          "03"
+        ],
+        [
+          "3",
+          "06",
+          "09",
+          "11",
+          "05",
+          "05"
+        ],
+        [
+          "4",
+          "07",
+          "07",
+          "07",
+          "06",
+          "03"
+        ],
+        [
+          "5",
+          "06",
+          "07",
+          "09",
+          "05",
+          "05"
+        ],
+        [
+          "6",
+          "08",
+          "09",
+          "09",
+          "06",
+          "02"
+        ],
+        [
+          "7",
+          "07",
+          "07",
+          "10",
+          "07",
+          "03"
+        ],
+        [
+          "8",
+          "06",
+          "08",
+          "08",
+          "06",
+          "04"
+        ],
+        [
+          "9",
+          "07",
+          "09",
+          "07",
+          "05",
+          "03"
+        ],
+        [
+          "10",
+          "08",
+          "08",
+          "11",
+          "05",
+          "04"
+        ]
+      ]
+    }
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "a) What are the similarities between algae and fungi?",
+    "options": [],
+    "modelAnswer": "1. Both are eukaryotic organisms (cells with a true nucleus and membrane-bound organelles).\n2. Both have simple thalloid bodies that are not differentiated into true roots, stems and leaves.\n3. Both lack vascular tissues (no xylem or phloem).\n4. Both have cell walls (cellulose in most algae, chitin in most fungi).\n5. Both may be unicellular (e.g. Chlamydomonas, yeast) or multicellular and filamentous (e.g. Spirogyra, Rhizopus).\n6. Both reproduce asexually (spores, fragmentation) and sexually.\n7. Both have simple, mostly unicellular sex organs (no jacket of sterile cells), and the zygote does not form an embryo.\n8. Both were traditionally placed together in the Thallophyta.\n9. Both are important in the ecosystem (algae as producers, fungi as decomposers)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "b) Give the major diagnostic features of each class of the bryophyta",
+    "options": [],
+    "modelAnswer": "The bryophytes are divided into three classes:\n\n1. Hepaticae (Hepaticopsida, liverworts), e.g. Marchantia, Riccia:\n• The gametophyte is a flat, dorsiventral, lobed thallus (or leafy with leaves in two or three rows, without midribs).\n• It is anchored by unicellular rhizoids.\n• The sporophyte is simple and short-lived; the capsule has no columella and no stomata.\n• Elaters (spiral hygroscopic cells) are present among the spores to help dispersal.\n• Asexual reproduction is by gemmae in gemma cups (Marchantia).\n\n2. Anthocerotae (Anthocerotopsida, hornworts), e.g. Anthoceros:\n• The gametophyte is a simple, lobed thallus.\n• Each cell has usually one large chloroplast with a pyrenoid.\n• The sporophyte is long, horn-like and green, with a basal meristem that allows continued growth.\n• The capsule has a central columella and stomata on its wall; pseudo-elaters are present.\n• Symbiotic cyanobacteria (Nostoc) often live in the thallus.\n\n3. Musci (Bryopsida, mosses), e.g. Funaria, Polytrichum:\n• The gametophyte has an erect, leafy stem with spirally arranged leaves (often with a midrib).\n• It is anchored by multicellular, branched rhizoids.\n• There is a filamentous protonema stage before the leafy plant.\n• The sporophyte has a long seta and a complex capsule with a columella, operculum (lid) and peristome teeth for spore dispersal; no elaters."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Plant Reproduction",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Briefly explain the following terms\ni. Heterospory\nii. Ecological succession\niii. Natural selection\niv. Alternation of generations",
+    "options": [],
+    "modelAnswer": "(i) Heterospory: the production of two different kinds of spores by the same plant species: small microspores, which develop into male gametophytes, and large megaspores, which develop into female gametophytes. It occurs in some pteridophytes (e.g. Selaginella, Marsilea) and in all seed plants, and is considered an evolutionary step towards the seed habit. (Contrast: homospory, one type of spore.)\n\n(ii) Ecological succession: the gradual, orderly and predictable change in the species composition of a community in an area over time, until a stable climax community is reached. Primary succession begins on bare areas never before colonised (e.g. bare rock, sand dunes), starting with pioneer species such as lichens and mosses. Secondary succession occurs on areas previously colonised but disturbed (e.g. abandoned farmland, after a bush fire). Each stage (sere) changes the environment in a way that favours the next.\n\n(iii) Natural selection: the process, proposed by Charles Darwin (with Alfred Wallace), by which individuals with variations better suited to their environment survive and reproduce more successfully than others ('survival of the fittest'). They pass these favourable characteristics to their offspring, so over many generations the population changes, leading to adaptation and evolution. Example: the peppered moth (industrial melanism); bacteria becoming resistant to antibiotics.\n\n(iv) Alternation of generations: the occurrence in the life cycle of plants of two distinct generations that alternate with each other:\n• a haploid (n) gametophyte generation, which produces gametes by mitosis;\n• a diploid (2n) sporophyte generation, which produces spores by meiosis.\nGametes fuse to form a zygote that grows into the sporophyte; spores grow into the gametophyte. In bryophytes the gametophyte is dominant; in ferns and seed plants the sporophyte is dominant."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Economic and Ecological Importance of Plants",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "i. Enumerate the economic and ecological importance of algae\nii. What are the factors that contributed to the success of the pteridophytes as land plants",
+    "options": [],
+    "modelAnswer": "(i) Economic and ecological importance of algae:\nEconomic:\n1. Food: some algae are eaten (e.g. Porphyra/nori, Ulva, Spirulina), rich in protein and vitamins.\n2. Agar, alginates and carrageenan, extracted from red and brown seaweeds, are used in food, cosmetics, medicine and microbiology (agar culture media).\n3. Fertiliser: seaweeds are used as manure; nitrogen-fixing blue-green algae (e.g. Anabaena, Nostoc) enrich rice fields.\n4. Diatomaceous earth (from diatoms) is used in filters, abrasives, insulation and toothpaste.\n5. Biofuels, and sources of iodine and potash.\n6. Research: Chlorella and Chlamydomonas are used in studies of photosynthesis.\n7. Harmful: algal blooms block water pipes, spoil drinking water and can produce toxins that kill fish and livestock.\nEcological:\n1. Producers: phytoplankton form the base of aquatic food chains.\n2. They release a large share of the world's oxygen by photosynthesis and absorb CO₂.\n3. Nitrogen fixation by cyanobacteria.\n4. Symbiosis: algae in lichens, and in corals (zooxanthellae).\n5. Pioneer colonisers of bare rocks (in lichens), starting succession.\n6. Eutrophication: excessive algal growth in polluted water reduces oxygen and kills fish.\n\n(ii) Factors that contributed to the success of pteridophytes as land plants:\n1. Vascular tissues (xylem and phloem) for conduction of water and food, allowing them to grow tall.\n2. True roots for anchorage and absorption of water and minerals.\n3. True stems and leaves (fronds/megaphylls), giving a larger surface for photosynthesis.\n4. A waxy cuticle that reduces water loss.\n5. Stomata for gaseous exchange and control of transpiration.\n6. Lignified tissues giving mechanical support.\n7. A dominant, independent sporophyte generation.\n8. Spores with tough walls, produced in large numbers and dispersed by wind.\n9. In some, heterospory, a step towards the seed habit.\n(Limitation: they still depend on water for fertilisation.)"
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "What are the structural advancements exhibited by the gymnosperms over the pteridophytes.",
+    "options": [],
+    "modelAnswer": "1. Seed habit: gymnosperms produce seeds (ovules that develop into seeds), protecting and nourishing the embryo; pteridophytes have no seeds.\n2. Independence from water for fertilisation: male gametes are carried to the ovule in pollen grains and reach the egg through a pollen tube; pteridophytes need water for swimming sperm.\n3. Heterospory is universal, with the megaspore retained permanently inside the ovule (megasporangium).\n4. Highly reduced gametophytes, which depend on the sporophyte (the female gametophyte stays inside the ovule).\n5. Presence of pollen grains and pollination.\n6. Secondary growth by a vascular cambium, producing wood, so many gymnosperms are large trees; pteridophytes generally lack secondary growth.\n7. Better-developed vascular tissue and supporting tissue (abundant tracheids, resin canals).\n8. Sporophylls organised into cones (strobili): male and female cones.\n9. Xerophytic adaptations (needle-like leaves, thick cuticle, sunken stomata), allowing life in drier habitats.\n10. A well-developed tap root system."
+  },
+  {
+    "subject": "Biology",
+    "year": 2019,
+    "paper": "Paper I",
+    "category": "Plant Morphology/Anatomy",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Citing relevant examples, give the different types of root modification in plants.",
+    "options": [],
+    "modelAnswer": "Roots are modified to perform functions other than anchorage and absorption.\n\nA. Modifications of tap roots (food storage):\n1. Conical roots: broad at the top and tapering, e.g. carrot.\n2. Fusiform (spindle-shaped) roots: swollen in the middle, e.g. radish.\n3. Napiform roots: swollen and spherical at the top, e.g. turnip, beetroot.\n\nB. Modifications of adventitious roots:\n1. Tuberous (storage) roots: swollen with stored food, e.g. sweet potato, cassava (root tubers).\n2. Prop roots: grow down from branches to the soil to support the heavy crown, e.g. banyan, Ficus.\n3. Stilt roots: grow from the lower nodes of the stem to give extra support, e.g. maize, sugarcane, mangrove (Rhizophora).\n4. Climbing roots: arise from nodes and cling to supports, e.g. black pepper, Ficus pumila.\n5. Clinging/epiphytic (aerial) roots: absorb moisture from the air with a spongy velamen tissue, e.g. orchids.\n6. Haustoria (sucking roots): penetrate the host to absorb food, e.g. Cuscuta (dodder), mistletoe (Loranthus).\n7. Buttress roots: plank-like roots at the base of large trees for support, e.g. silk cotton tree (Ceiba).\n8. Pneumatophores (breathing roots): grow upward out of waterlogged mud to absorb oxygen, e.g. mangrove (Avicennia).\n9. Assimilatory (photosynthetic) roots: green roots that carry out photosynthesis, e.g. Tinospora, some orchids.\n10. Contractile roots: shorten to pull bulbs or corms deeper into the soil, e.g. onion, Crocus.\n11. Root nodules: contain nitrogen-fixing bacteria (Rhizobium), e.g. groundnut, cowpea and other legumes."
+  }
+]

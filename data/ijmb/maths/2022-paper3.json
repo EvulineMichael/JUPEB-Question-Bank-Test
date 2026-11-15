@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Find the equation of a straight line which is perpendicular to the line x − 3y + 2 = 0 and passes through the mid-point of the line joining the points (3, −2) and (−1,5) .",
+    "options": [],
+    "modelAnswer": "Gradient of x − 3y + 2 = 0: 3y = x + 2 → y = x/3 + 2/3, so m₁ = 1/3.\nPerpendicular gradient: m₂ = −1/m₁ = −3.\n\nMid-point of (3, −2) and (−1, 5): ((3 − 1)/2, (−2 + 5)/2) = (1, 3/2).\n\nEquation: y − 3/2 = −3(x − 1)\n2y − 3 = −6x + 6\n6x + 2y − 9 = 0 (or y = −3x + 9/2)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Show that f(x) = 5e⁻⁵ˣ, 0 ≤ x ≤ ∞ is a probability density function, hence find the probability for x ≤ 3.",
+    "options": [],
+    "modelAnswer": "A function is a p.d.f. if f(x) ≥ 0 for all x in the range and the total area under it is 1.\n1. 5e⁻⁵ˣ > 0 for every x, since an exponential is always positive.\n2. ∫₀^∞ 5e⁻⁵ˣ dx = [−e⁻⁵ˣ]₀^∞ = (0) − (−1) = 1.\nBoth conditions hold, so f(x) is a probability density function.\n\nP(X ≤ 3) = ∫₀³ 5e⁻⁵ˣ dx = [−e⁻⁵ˣ]₀³ = −e⁻¹⁵ + 1 = 1 − e⁻¹⁵.\ne⁻¹⁵ ≈ 3.06 × 10⁻⁷, so P(X ≤ 3) ≈ 0.9999997 (practically 1)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "A bag contains 15 balls out of which 7 are yellow balls, 3 white balls and the rest are black. A ball is picked from the bag at random. Find the probability that the ball is black.",
+    "options": [],
+    "modelAnswer": "Number of black balls = 15 − 7 − 3 = 5.\nP(black) = 5/15 = 1/3."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Find the equation of the circle whose centre is the mid-point of (−1, 2) and (2,3) and radius 5.",
+    "options": [],
+    "modelAnswer": "Centre = ((−1 + 2)/2, (2 + 3)/2) = (1/2, 5/2).\nEquation: (x − 1/2)² + (y − 5/2)² = 5² = 25.\nExpand: x² − x + 1/4 + y² − 5y + 25/4 = 25\nx² + y² − x − 5y + 26/4 − 25 = 0\nx² + y² − x − 5y − 37/2 = 0\nor, multiplying by 2: 2x² + 2y² − 2x − 10y − 37 = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Find the focus of the parabola y² = 3(x + 1).",
+    "options": [],
+    "modelAnswer": "Compare with the standard form Y² = 4aX, where Y = y and X = x + 1.\n4a = 3 → a = 3/4.\nThe vertex is where X = 0 and Y = 0: (−1, 0).\nFor Y² = 4aX the focus is at X = a, Y = 0, so x + 1 = 3/4 → x = −1/4.\nFocus: (−1/4, 0).\n(The directrix is X = −a: x + 1 = −3/4, so x = −7/4.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Obtain the equation of the conic whose parametric equations are y = 5 + 4 tan θ,\nx = 7 + 3 sec θ and describe it completely.",
+    "options": [],
+    "modelAnswer": "sec θ = (x − 7)/3 and tan θ = (y − 5)/4.\nUsing sec²θ − tan²θ = 1:\n(x − 7)²/9 − (y − 5)²/16 = 1.\n\nThis is a hyperbola. Comparing with (x − h)²/a² − (y − k)²/b² = 1:\n• Centre: (7, 5); a = 3, b = 4.\n• Transverse axis: along the line y = 5 (parallel to the x-axis), length 2a = 6.\n• Conjugate axis: along x = 7, length 2b = 8.\n• Vertices: (7 ± 3, 5) = (10, 5) and (4, 5).\n• c² = a² + b² = 9 + 16 = 25 → c = 5. Foci: (7 ± 5, 5) = (12, 5) and (2, 5).\n• Eccentricity: e = c/a = 5/3.\n• Directrices: x = 7 ± a/e = 7 ± 9/5, that is x = 8.8 and x = 5.2.\n• Asymptotes: y − 5 = ±(4/3)(x − 7), that is 4x − 3y − 13 = 0 and 4x + 3y − 43 = 0.\n• Length of each latus rectum: 2b²/a = 32/3."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Write the following in polar form\n(i) 3x+2y= 8, (ii) x² = √(x² + y²)",
+    "options": [],
+    "modelAnswer": "Use x = r cos θ, y = r sin θ and x² + y² = r².\n\n(i) 3r cos θ + 2r sin θ = 8\nr(3 cos θ + 2 sin θ) = 8, or r = 8/(3 cos θ + 2 sin θ).\n\n(ii) r² cos²θ = √(r²) = r (taking r ≥ 0).\nDivide by r (r ≠ 0): r cos²θ = 1, so r = sec²θ.\n(The origin, r = 0, also satisfies the original equation.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Obtain the equation of the conic whose parametric equations are y = k + 2t,\nx = h + t² and obtain condition for which the line y = mx + c touches it.",
+    "options": [],
+    "modelAnswer": "From y = k + 2t: t = (y − k)/2.\nSubstitute into x = h + t²: x − h = (y − k)²/4.\n(y − k)² = 4(x − h).\nThis is a parabola with vertex (h, k), axis y = k, and a = 1 (focus at (h + 1, k)).\n\nCondition for tangency:\nFrom the line, x = (y − c)/m (m ≠ 0). Substitute:\n(y − k)² = 4[(y − c)/m − h]\nm(y − k)² = 4(y − c) − 4mh\nmy² − 2mky + mk² − 4y + 4c + 4mh = 0\nmy² − (2mk + 4)y + (mk² + 4c + 4mh) = 0.\n\nThe line touches the parabola when this quadratic in y has equal roots (discriminant = 0):\n(2mk + 4)² − 4m(mk² + 4c + 4mh) = 0\n4m²k² + 16mk + 16 − 4m²k² − 16mc − 16m²h = 0\nDivide by 16: mk + 1 − mc − m²h = 0.\n\nCondition: mc = 1 + mk − m²h, that is c = k − mh + 1/m.\n(Check: with h = k = 0 this becomes c = 1/m, the known condition for y = mx + c to touch y² = 4x.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Describe the locus of the points P(x, y) equidistant from the points A(3, −2) and B(−3, 5).",
+    "options": [],
+    "modelAnswer": "PA = PB, so PA² = PB²:\n(x − 3)² + (y + 2)² = (x + 3)² + (y − 5)²\nx² − 6x + 9 + y² + 4y + 4 = x² + 6x + 9 + y² − 10y + 25\n−6x + 4y + 13 = 6x − 10y + 34\n−12x + 14y − 21 = 0\n12x − 14y + 21 = 0.\n\nDescription: the locus is a straight line, the perpendicular bisector of AB.\n• It passes through the mid-point of AB, (0, 3/2): 12(0) − 14(3/2) + 21 = 0 ✓.\n• Its gradient is 12/14 = 6/7; the gradient of AB is (5 + 2)/(−3 − 3) = −7/6, and (6/7)(−7/6) = −1, so it is perpendicular to AB."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Find the equation of the tangent to the ellipse (x − h)²/a² + (y − k)²/b² = 1, at the point (x₁, y₁). Hence, obtain the equation of the tangent to the ellipse (x + 2)²/16 + y²/4 = 1, at the point (−2, 2).",
+    "options": [],
+    "modelAnswer": "Differentiate implicitly:\n2(x − h)/a² + 2(y − k)/b² × dy/dx = 0\ndy/dx = −b²(x − h)/[a²(y − k)].\nAt (x₁, y₁) the gradient is −b²(x₁ − h)/[a²(y₁ − k)].\n\nTangent: y − y₁ = −b²(x₁ − h)/[a²(y₁ − k)] × (x − x₁).\nMultiply out: (y − y₁)(y₁ − k)/b² + (x − x₁)(x₁ − h)/a² = 0.\nWrite x − x₁ = (x − h) − (x₁ − h) and y − y₁ = (y − k) − (y₁ − k):\n(x − h)(x₁ − h)/a² + (y − k)(y₁ − k)/b² = (x₁ − h)²/a² + (y₁ − k)²/b² = 1 (because (x₁, y₁) lies on the ellipse).\n\nTangent at (x₁, y₁): (x − h)(x₁ − h)/a² + (y − k)(y₁ − k)/b² = 1.\n\nApplication: (x + 2)²/16 + y²/4 = 1 has h = −2, k = 0, a² = 16, b² = 4.\nCheck the point (−2, 2): 0/16 + 4/4 = 1 ✓, so it is on the ellipse.\nTangent: (x + 2)(−2 + 2)/16 + (y)(2)/4 = 1\n0 + y/2 = 1 → y = 2.\n(This makes sense: (−2, 2) is the top end of the minor axis, where the tangent is horizontal.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Sketch the curve r = 2(1 + sin 3θ) in polar form for 0 ≤ θ ≤ 360⁰.",
+    "options": [],
+    "modelAnswer": "Table of values (r = 2 + 2 sin 3θ):\nθ: 0°, 15°, 30°, 45°, 60°, 75°, 90°, 105°, 120°, 135°, 150°, 165°, 180°\nr: 2, 3.41, 4, 3.41, 2, 0.59, 0, 0.59, 2, 3.41, 4, 3.41, 2\nThe pattern then repeats every 120°: r = 4 at θ = 30°, 150°, 270°; r = 0 at θ = 90°, 210°, 330°; r = 2 at θ = 0°, 60°, 120°, 180°, 240°, 300°.\n\nKey features of the sketch:\n• r is never negative (0 ≤ r ≤ 4), so the curve lies wholly in the region r ≤ 4.\n• It has three large loops (petals) pointing along θ = 30°, 150° and 270°, each reaching r = 4.\n• The curve passes through the pole at θ = 90°, 210° and 330°, where it forms cusps pointing inward.\n• It crosses the initial line (θ = 0°) and θ = 180° at r = 2.\n• Since sin 3θ has period 120°, the curve has three-fold symmetry, and it is symmetric about the line θ = 90° (the y-axis).\nJoin the plotted points smoothly to obtain a three-lobed curve (a 'three-leaved' limaçon-type shape)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) Two numbers are selected at random from integers 10 to 40, both inclusive, repetition being allowed. Find the probability that:\n(i) Both are multiples of 5 (ii) both are powers of 2\n(iii) One is power of 2 and the other is a multiple of 5. What are the corresponding probabilities if repetition is not allowed?",
+    "options": [],
+    "modelAnswer": "Integers from 10 to 40 inclusive: 40 − 10 + 1 = 31.\nMultiples of 5: 10, 15, 20, 25, 30, 35, 40 → 7 numbers.\nPowers of 2: 16, 32 → 2 numbers. (No number is both.)\nThe two numbers are taken in order (first and second selection).\n\nWith repetition allowed (31 × 31 = 961 equally likely outcomes):\n(i) P(both multiples of 5) = (7/31)(7/31) = 49/961 ≈ 0.0510.\n(ii) P(both powers of 2) = (2/31)(2/31) = 4/961 ≈ 0.0042.\n(iii) P(one power of 2, other multiple of 5) = (2/31)(7/31) + (7/31)(2/31) = 28/961 ≈ 0.0291.\n\nWithout repetition (31 × 30 = 930 outcomes):\n(i) (7/31)(6/30) = 42/930 = 7/155 ≈ 0.0452.\n(ii) (2/31)(1/30) = 2/930 = 1/465 ≈ 0.0022.\n(iii) (2/31)(7/30) + (7/31)(2/30) = 28/930 = 14/465 ≈ 0.0301.\n(Counting unordered pairs gives the same results without repetition, e.g. (i) ⁷C₂/³¹C₂ = 21/465 = 7/155.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Normal Distribution",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) If X ≈ N(74, 9) find:\n(i) P(X ≤ 73) (ii) P(70 ≤ X ≤ 78).",
+    "options": [],
+    "modelAnswer": "N(74, 9) means mean μ = 74 and variance σ² = 9, so σ = 3.\nStandardise with Z = (X − μ)/σ.\n\n(i) Z = (73 − 74)/3 = −0.3333.\nP(X ≤ 73) = P(Z ≤ −0.3333) = 1 − Φ(0.3333) = 1 − 0.6306 = 0.3694.\n\n(ii) Z₁ = (70 − 74)/3 = −1.3333; Z₂ = (78 − 74)/3 = 1.3333.\nP(70 ≤ X ≤ 78) = Φ(1.3333) − Φ(−1.3333) = 2Φ(1.3333) − 1\n= 2(0.9088) − 1 = 0.8176.\n(Tables give Φ(0.33) = 0.6293 and Φ(1.33) = 0.9082, which round to 0.371 and 0.816; both are acceptable.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) For a Binomial distribution with 5 trials and P = 1/4, find the probability that:\n(i) Exactly 3 trials are successful; (ii) At least 2 trials are successful;\n(iii) less than 4 trials are successful; (iv) all the 5 trials are successful\n(v) none of the trials is successful.",
+    "options": [],
+    "modelAnswer": "n = 5, p = 1/4, q = 3/4. P(X = r) = ⁵Cᵣ pʳ q⁵⁻ʳ, and every probability has denominator 4⁵ = 1024.\nP(0) = (3/4)⁵ = 243/1024\nP(1) = 5(1/4)(3/4)⁴ = 405/1024\nP(2) = 10(1/4)²(3/4)³ = 270/1024\nP(3) = 10(1/4)³(3/4)² = 90/1024\nP(4) = 5(1/4)⁴(3/4) = 15/1024\nP(5) = (1/4)⁵ = 1/1024\n(Check: 243 + 405 + 270 + 90 + 15 + 1 = 1024 ✓.)\n\n(i) P(X = 3) = 90/1024 = 45/512 ≈ 0.0879.\n(ii) P(X ≥ 2) = 1 − P(0) − P(1) = 1 − 648/1024 = 376/1024 = 47/128 ≈ 0.3672.\n(iii) P(X < 4) = 1 − P(4) − P(5) = 1 − 16/1024 = 1008/1024 = 63/64 ≈ 0.9844.\n(iv) P(X = 5) = 1/1024 ≈ 0.00098.\n(v) P(X = 0) = 243/1024 ≈ 0.2373."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) If a card is randomly selected from a deck of cards, find the probability that it is\n(i) A spade or a diamond; (ii) An ace or a heart.",
+    "options": [],
+    "modelAnswer": "A standard deck has 52 cards: 4 suits of 13, with 4 aces.\n\n(i) Spades and diamonds cannot happen together (mutually exclusive):\nP(spade or diamond) = 13/52 + 13/52 = 26/52 = 1/2.\n\n(ii) Aces and hearts overlap (the ace of hearts), so use P(A ∪ B) = P(A) + P(B) − P(A ∩ B):\nP(ace or heart) = 4/52 + 13/52 − 1/52 = 16/52 = 4/13."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Three balls are drawn at random without replacement from a bag containing 10 black, 13 white and 11 red balls. Find the probability that\n(i) the balls are of the same color (ii) 2 of the balls are black and one is white.",
+    "options": [],
+    "modelAnswer": "Total balls = 10 + 13 + 11 = 34.\nNumber of ways to choose 3: ³⁴C₃ = (34 × 33 × 32)/6 = 5984.\n\n(i) Same colour:\nAll black: ¹⁰C₃ = 120; all white: ¹³C₃ = 286; all red: ¹¹C₃ = 165.\nTotal = 120 + 286 + 165 = 571.\nP(same colour) = 571/5984 ≈ 0.0954.\n\n(ii) 2 black and 1 white: ¹⁰C₂ × ¹³C₁ = 45 × 13 = 585.\nP = 585/5984 ≈ 0.0978."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) If X ≈ P₀(2.5), find (i) P(x = 1) (ii) P(x ≥ 2) (ii) P(x ≤ 2).",
+    "options": [],
+    "modelAnswer": "Note: the paper labels the last two parts both as (ii).\nX follows a Poisson distribution with λ = 2.5: P(X = r) = e^(−λ) λʳ/r!.\ne^(−2.5) = 0.082085.\nP(0) = 0.082085\nP(1) = 2.5 × 0.082085 = 0.205212\nP(2) = (2.5²/2) × 0.082085 = 3.125 × 0.082085 = 0.256516\n\n(i) P(X = 1) ≈ 0.2052.\n(ii) P(X ≥ 2) = 1 − P(0) − P(1) = 1 − 0.082085 − 0.205212 = 0.7127.\n(ii, second) P(X ≤ 2) = P(0) + P(1) + P(2) = 0.082085 + 0.205212 + 0.256516 = 0.5438."
+  }
+]
