@@ -105,7 +105,7 @@
       "an increase in the price of beans."
     ],
     "answer": "E",
-    "explanation": "Better technology (A, D) and cheaper machinery (B) increase supply. A rise in the price of beans, a competing crop, makes farmers switch land and resources to beans, reducing the supply of guinea corn. Note: option C (a fall in the price of millet) also does not increase supply if millet is a substitute in consumption (it affects demand, not supply); E is the clearest answer."
+    "explanation": "Better technology (A, D) and cheaper machinery (B) all increase the supply of guinea corn.\n\nA fall in the price of millet (C), a crop competing for the same land, makes farmers switch to guinea corn, so it also increases supply.\n\nA rise in the price of beans (E), another competing crop, pulls land and resources away from guinea corn, so it reduces supply. E is the answer."
   },
   {
     "subject": "Economics",
@@ -465,7 +465,7 @@
       "stage IV"
     ],
     "answer": "D",
-    "explanation": "Note: this line is blurred in the photo and is read as 'increasing at an increasing rate'.\nTotal product increases at an increasing rate in the early part of Stage I, while marginal product is rising."
+    "explanation": "In Stage I of production, marginal product is rising at first, so total product (output) increases at an increasing rate.\n\nIn Stage II output still rises but at a decreasing rate, and in Stage III it falls."
   },
   {
     "subject": "Economics",
@@ -573,7 +573,7 @@
       "equal labour and capital."
     ],
     "answer": "D",
-    "explanation": "A labour-intensive technique uses more labour relative to capital (i.e. less capital in relation to labour). Note: the last option is labelled c) in the photo; it is the fifth option (e)."
+    "explanation": "A labour-intensive technique uses relatively more labour than capital (a high labour-to-capital ratio), e.g. hand weeding instead of using machines."
   },
   {
     "subject": "Economics",

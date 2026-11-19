@@ -151,7 +151,7 @@
     "question": "A hydraulic lift has a narrow cylinder of diameter 4 cm and wide cylinder of diameter 30 cm. Calculate the force that must be applied to the liquid in the small cylinder to lift a 1500 kg car.",
     "options": ["298.6 N", "266.7 N", "843.8 N", "587.2 N"],
     "answer": "B",
-    "explanation": "P₁ = P₂ → F₁/A₁ = F₂/A₂.\n\nF₁ = F₂ × (A₁/A₂) = (1500 × 9.8) × (4²/30²)\n= 14700 × (16/900)\n= 14700 × 0.01778\n= 261.3 N ≈ 266.7 N (using g = 10 m/s²)."
+    "explanation": "Pressure is the same throughout the liquid: F₁/A₁ = F₂/A₂.\n\nThe area ratio is the square of the diameter ratio: A₁/A₂ = (4/30)² = 16/900.\nWeight of the car (g = 10 m/s²) = 1500 × 10 = 15 000 N.\n\nF₁ = 15 000 × 16/900 ≈ 266.7 N.\n\n(With g = 9.8 m/s² you get 261.3 N; the options use g = 10.)"
   },
   {
     "subject": "Physics",
@@ -404,6 +404,8 @@
     "question": "Two parallel current-carrying conductors attract each other when the current in them flow in opposite direction; this is a statement of",
     "options": ["Ohm's law.", "Faraday's law.", "Lenz's law.", "Ampere's law."],
     "answer": "D",
+    "reviewNote": "The statement in this question is wrong as printed: parallel conductors carrying currents in the SAME direction attract; currents in opposite directions repel.\n\nThe law the examiners meant is Ampère's law (option D), which describes the force between current-carrying conductors.",
+    "excludeFromQuiz": true,
     "explanation": "Note: The question statement is incorrect — parallel currents in the SAME direction attract; opposite directions repel.\n\nThe law being referenced is Ampere's law (force between parallel currents)."
   },
   {
@@ -492,6 +494,8 @@
     "question": "Evaluate the de Broglie wavelength of electron waves passing through a potential difference of 200 V.",
     "options": ["19.3 × 10⁻⁹ m", "3.20 × 10⁻⁹ m", "6.19 × 10⁻⁹ m", "9.8 × 10⁻⁹ m"],
     "answer": "B",
+    "reviewNote": "Working: λ = h/√(2meV) = 6.63×10⁻³⁴ / √(2 × 9.11×10⁻³¹ × 1.6×10⁻¹⁹ × 200) ≈ 8.7 × 10⁻¹¹ m (0.087 nm).\n\nNone of the printed options matches this, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "λ = h/√(2meV) = √(150/V) Å = √(150/200) = 0.866 Å = 8.66 × 10⁻¹¹ m.\n\nThe correct value is 8.66 × 10⁻¹¹ m, which is not among the options. The closest option has been selected."
   },
   {
@@ -657,7 +661,7 @@
     "questionNumber": "4c",
     "question": "(c) The voltage from an electromagnetic wave travelling on a transmission line is given by V(x,t) = 10e^{-α} sin(4πx × 10^9 t - 30πx) where x is the distance in meters from the transmitter.\n(i) Find the frequency, wavelength and phase velocity of the wave.\n(ii) Find the voltage at x = 2.1 × 10^{-2} cm and t = 0.32 s.\n(iii) If the amplitude of the wave is measured to be 2V, find α.",
     "options": [],
-    "modelAnswer": "(i) ω = 4π × 10⁹ rad/s, k = 30π rad/m.\n\nf = ω/2π = 2 × 10⁹ Hz = 2 GHz.\nλ = 2π/k = 2π/(30π) = 1/15 m ≈ 6.67 cm.\nv = ω/k = (4π × 10⁹)/(30π) = 1.333 × 10⁸ m/s.\n\n(ii) Requires exact evaluation of sin function — depends on α.\n\n(iii) Amplitude = 10e^(-α) = 2.\ne^(-α) = 0.2.\nα = -ln(0.2) = 1.61 Np/m."
+    "modelAnswer": "(i) ω = 4π × 10⁹ rad/s, k = 30π rad/m.\n\nf = ω/2π = 2 × 10⁹ Hz = 2 GHz.\nλ = 2π/k = 2π/(30π) = 1/15 m ≈ 6.67 cm.\nv = ω/k = (4π × 10⁹)/(30π) = 1.333 × 10⁸ m/s.\n\n(ii) Read the phase as ωt − kx = 4π × 10⁹ t − 30πx (the printed 'x' after 4π is a misprint).\nx = 2.1 × 10⁻² cm = 2.1 × 10⁻⁴ m, t = 0.32 s.\nωt = 4π × 10⁹ × 0.32 = 1.28π × 10⁹ = 6.4 × 10⁸ × 2π, a whole number of cycles, so it adds nothing to the sine.\nkx = 30π × 2.1 × 10⁻⁴ = 0.0063π ≈ 0.0198 rad.\nV = 10e^(−α) sin(−0.0198) ≈ 10e^(−α) × (−0.0198) ≈ −0.198 e^(−α) V.\nUsing the amplitude from (iii), 10e^(−α) = 2 V: V ≈ 2 × (−0.0198) ≈ −0.040 V.\n\n(iii) Amplitude = 10e^(-α) = 2.\ne^(-α) = 0.2.\nα = -ln(0.2) = 1.61 Np/m."
   },
   {
     "subject": "Physics",

@@ -1,0 +1,324 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Measurement",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Differentiate between the following terms:\ni) Accuracy and Precision\nii) Systematic and Random errors [2 marks]",
+    "options": [],
+    "modelAnswer": "i) Accuracy is the closeness of a measured value to the true/accepted value; precision is the closeness of repeated measurements to each other (reproducibility).\n\nii) Systematic errors are consistent, reproducible errors that shift all results in the same direction (e.g., faulty calibration); random errors are unpredictable fluctuations that scatter results about the mean (e.g., reading fluctuations)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) (i) Draw the structures and name the shapes of (i) NHCl₂ (ii) BCl₃\n(ii) Predict the precipitate obtained when sodium sulphate and lead nitrate solutions are mixed together in a test-tube. Write the balanced chemical equation for the process showing the state of each substance. [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) NHCl₂ (dichloroamine): central N with one H and two Cl atoms plus a lone pair → trigonal pyramidal shape (VSEPR: 3 bonding pairs + 1 lone pair).\nBCl₃: central B bonded to three Cl atoms, no lone pair → trigonal planar shape (120° bond angles).\n\n(ii) Precipitate: white lead(II) sulphate (PbSO₄).\nNa₂SO₄(aq) + Pb(NO₃)₂(aq) → PbSO₄(s) + 2NaNO₃(aq)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Five isotopes of Zn occur in nature: ⁶⁴Zn (48.6 %) with an atomic mass of 63.9291 amu; ⁶⁶Zn (27.9 %) with an atomic mass of 65.9260 amu; ⁶⁷Zn (4.1 %) with an atomic mass of 66.9721 amu; ⁶⁸Zn (18.8 %) with an atomic mass of 67.9249 amu and ⁷⁰Zn (0.6 %) with an atomic mass of 69.9253 amu. Calculate the atomic weight of Zn. [2 marks]",
+    "options": [],
+    "modelAnswer": "Atomic weight = Σ(abundance × mass)/100\n= (0.486 × 63.9291) + (0.279 × 65.9260) + (0.041 × 66.9721) + (0.188 × 67.9249) + (0.006 × 69.9253)\n= 31.0695 + 18.3934 + 2.7459 + 12.7699 + 0.4196\n= 65.3983 amu ≈ 65.40 amu."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "1d",
+    "question": "(d) The ion of an element (M³⁺) has 2 electrons in the K shell, 8 electrons in the L shell and 10 electrons in the M shell.\n(i) Deduce the number of protons in the nucleus of the ion M³⁺?\n(ii) Write the electronic configuration of the neutral element. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Total electrons in M³⁺ = 2 + 8 + 10 = 20. Since M³⁺ has lost 3 electrons, the neutral atom has 20 + 3 = 23 electrons → 23 protons.\n\n(ii) Neutral element (Z = 23, Vanadium): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d³ 4s² (or [Ar] 3d³ 4s²)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) (i) Why do metals conduct electricity? [1 mark]\n(ii) Identify all the intermolecular forces present in water and arrange them in order of increasing strength. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Metals conduct electricity because they have delocalized (free) valence electrons that are mobile and can carry charge through the lattice.\n\n(ii) Intermolecular forces in water: London dispersion forces (weakest) < dipole–dipole interactions < hydrogen bonding (strongest)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) The first ionization energies of the elements in period 3 are shown in the following table. Explain the irregularities observed. [2 Marks]",
+    "dataTable": {
+      "headers": ["Element", "Na", "Mg", "Al", "Si", "P", "S", "Cl"],
+      "rows": [
+        ["I.E (KJ/Mol)", "495.8", "737.6", "577.4", "786.3", "1061.4", "999.3", "1255.3"]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "General trend: ionization energy increases across the period due to increasing nuclear charge and decreasing atomic radius.\n\nIrregularities:\n1. Al (577.4) < Mg (737.6): Al's outermost electron is in the 3p subshell, which is higher in energy and more shielded than Mg's 3s electron, so it is easier to remove.\n2. S (999.3) < P (1061.4): P has a half-filled 3p³ configuration (extra stability), while S has a paired 3p⁴ electron; the paired electron in S experiences greater repulsion, making it easier to remove."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) (i) Define the term Lattice Energy?\n(ii) Sodium and aluminium both react with bromine to form the corresponding bromides. Write the formulae of the more covalent bromide. Give a reason for your choice. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Lattice energy is the energy released when one mole of an ionic solid is formed from its constituent gaseous ions (or the energy required to separate one mole of an ionic solid into its gaseous ions).\n\n(ii) More covalent bromide: AlBr₃. Reason: Al³⁺ is smaller and has a higher charge than Na⁺, giving it a high charge density; according to Fajan's rules, this strongly polarizes the Br⁻ ion, giving AlBr₃ considerable covalent character. NaBr is essentially ionic."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "2d",
+    "question": "(d) Define the following concentration units (I) Molality (II) Mole fraction (III) Molarity (IV) Mole concentration.\n(ii) Calculate how many mole of CO₂ are there in 12.0g of CO₂. [Nₐ = 6.02 x 10²³] [3 marks]",
+    "options": [],
+    "modelAnswer": "(I) Molality: the number of moles of solute per kilogram of solvent (mol/kg).\n(II) Mole fraction: the ratio of the number of moles of one component to the total number of moles of all components in the mixture.\n(III) Molarity: the number of moles of solute per cubic decimetre (litre) of solution (mol/dm³).\n(IV) Mole concentration: the amount (moles) of a substance per unit volume of solution (essentially molarity).\n\n(ii) Moles CO₂ = mass/molar mass = 12.0/44 = 0.273 mol.\nNumber of molecules = 0.273 × 6.02 × 10²³ = 1.64 × 10²³ molecules."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Acid-Base Equilibria",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) What is a buffer solution? [2½ mark]\n(ii) Mention the two (2) types of buffer solution and state the component of each.",
+    "options": [],
+    "modelAnswer": "(i) A buffer solution is a solution that resists appreciable changes in pH when small amounts of acid or base are added, or when it is diluted.\n\n(ii) Types:\n1. Acidic buffer — a weak acid and its salt with a strong base (e.g., CH₃COOH + CH₃COONa).\n2. Basic buffer — a weak base and its salt with a strong acid (e.g., NH₄OH + NH₄Cl)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Consider this cell reaction Zn(s) + 2H⁺ → Zn²⁺ + H₂. If the voltage of Zn/H⁺ is 0.45V at 25°C and the concentration of Zn²⁺ is 1.0 M, calculate the concentration of H⁺.\n[R = 8.314 J/K/mol, F = 96500C]. [2 marks]",
+    "options": [],
+    "modelAnswer": "E°cell = 0 − (−0.76) = +0.76 V. n = 2.\nNernst: E = E° − (0.0592/n) log([Zn²⁺]P_H₂/[H⁺]²), with P_H₂ = 1 atm.\n0.45 = 0.76 − (0.0592/2) log(1/[H⁺]²)\n0.45 = 0.76 − 0.0296 × (−2 log[H⁺])\n0.45 = 0.76 + 0.0592 log[H⁺]\n0.0592 log[H⁺] = −0.31\nlog[H⁺] = −5.236\n[H⁺] = 5.81 × 10⁻⁶ M."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Kinetics",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) The following data were experimentally obtained for the homogeneous reaction at 900°C:\n2NO(g) + 2H₂(g) → N₂(g) + 2H₂O(g)\n\ni) Calculate the order of the reaction with respect to each of the reactants.\nii) Calculate the overall order of reaction.\niii) Write the rate expression for the reaction.\niv) Is the reaction elementary or not? Justify your answer. [4 marks]",
+    "dataTable": {
+      "headers": ["S/N", "[NO] (mol/dm³)", "[H₂] (mol/dm³)", "Rate (mol/dm³s)"],
+      "rows": [
+        ["1", "0.005", "0.025", "0.00003"],
+        ["2", "0.015", "0.025", "0.00009"],
+        ["3", "0.015", "0.10", "0.00036"]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "i) Order w.r.t. NO: compare runs 1 and 2 ([H₂] constant): rate ratio = 0.00009/0.00003 = 3; [NO] ratio = 0.015/0.005 = 3 → 3^x = 3 → x = 1 (first order in NO).\nOrder w.r.t. H₂: compare runs 2 and 3 ([NO] constant): rate ratio = 0.00036/0.00009 = 4; [H₂] ratio = 0.10/0.025 = 4 → 4^y = 4 → y = 1 (first order in H₂).\n\nii) Overall order = 1 + 1 = 2 (second order).\n\niii) Rate = k[NO][H₂].\nk = 0.00003/(0.005 × 0.025) = 0.24 dm³ mol⁻¹ s⁻¹. Rate = 0.24[NO][H₂].\n\niv) The reaction is not elementary. Justification: the stoichiometric coefficients of the reactants (2 and 2) do not match the experimentally determined orders (1 and 1), so the reaction proceeds via a multi-step mechanism."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "3d",
+    "question": "(d) At 25°C and 1-atmosphere pressure, which of the following gases [CH₄, SO₂, O₂, H₂] shows the greatest deviation from ideal behaviour? Give two reasons for your choice. [1½ marks]",
+    "options": [],
+    "modelAnswer": "SO₂ shows the greatest deviation from ideal behaviour.\n\nReasons:\n1. It has the largest molecular size and the strongest intermolecular forces (dipole–dipole and London forces) among the listed gases, so attractive forces between molecules are significant.\n2. It is the most polarizable/has the highest molar mass (64 g/mol), so the finite volume of its molecules is significant compared with the ideal-gas assumption."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Solutions and Colligative Properties",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) The freezing point of pure benzene is 5.5°C but when 4.0 g of an organic solute X is dissolved in 50.0g of benzene the resulting solution freezes at 3.76°C. [Kf = 5.12]\ni. Calculate the molecular weight of solute X.\nii. Determine the molecular formula of solute X, if its empirical formula is C₃H₂Br. [4 marks]",
+    "options": [],
+    "modelAnswer": "i) ΔTf = 5.5 − 3.76 = 1.74°C.\nΔTf = Kf × m → m = 1.74/5.12 = 0.3399 mol/kg.\nMoles of X in 0.050 kg benzene = 0.3399 × 0.050 = 0.01699 mol.\nMolar mass = 4.0/0.01699 = 235.4 g/mol ≈ 235 g/mol.\n\nii) Empirical formula C₃H₂Br has empirical mass = 36 + 2 + 80 = 118.\nn = 235/118 ≈ 2 → molecular formula = C₆H₄Br₂."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Chemical Kinetics",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Define the following terms:\ni) Rate of reaction\nii) Order of a reaction\niii) Molecularity of a reaction [1½ Marks]",
+    "options": [],
+    "modelAnswer": "i) Rate of reaction: the change in concentration of a reactant or product per unit time (mol dm⁻³ s⁻¹).\nii) Order of a reaction: the sum of the powers to which the concentration terms are raised in the experimentally determined rate law.\niii) Molecularity of a reaction: the number of reacting species (atoms, ions or molecules) that collide simultaneously in an elementary step."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) A 45.60 g sample of a gaseous fluorocarbon contains 7.94 g of carbon and 37.66 g of fluorine and occupies 7.40 L at STP. Determine the approximate molar mass of the fluorocarbon and give its molecular formula. [2 marks]",
+    "options": [],
+    "modelAnswer": "Moles of gas at STP = 7.40/22.4 = 0.3304 mol.\nMolar mass = 45.60/0.3304 = 138.0 g/mol.\nMoles C = 7.94/12 = 0.6617; Moles F = 37.66/19 = 1.982.\nRatio C:F = 0.6617:1.982 = 1:3 → empirical formula CF₃ (mass = 12 + 57 = 69).\nn = 138/69 = 2 → molecular formula = C₂F₆."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) State the IUPAC nomenclature of following complexes:\n(i) [Ni(NH₃)₄]SO₄\n(ii) [Cd(CN)₄]²⁻\n(iii) [Co(OH)₂(H₂O)₄]²⁺\n(iv) [Co(NH₃)₆]Cl₃ [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) [Ni(NH₃)₄]SO₄ — tetraamminenickel(II) sulphate.\n(ii) [Cd(CN)₄]²⁻ — tetracyanocadmate(II) ion.\n(iii) [Co(OH)₂(H₂O)₄]²⁺ — tetraaquadihydroxocobalt(IV) ion. (Note: charge balance gives Co = +4; this is unusual — the question may intend [Co(OH)₂(H₂O)₄]⁺ for Co(III). Flagged for examiner clarification.)\n(iv) [Co(NH₃)₆]Cl₃ — hexaamminecobalt(III) chloride."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Down the group IV elements, a variation in the relative stabilities of the higher and lower oxidation states of the elements in their oxides exists. Illustrate and suggest with balanced equations in each case a chemical evidence showing that:\n(i) CO is less stable than CO₂\n(ii) PbO is more stable than PbO₂ [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) CO is less stable than CO₂:\n2CO + O₂ → 2CO₂ (CO is readily oxidized to CO₂, showing CO is less stable).\n\n(ii) PbO is more stable than PbO₂:\n2PbO₂ → 2PbO + O₂ (on heating, PbO₂ decomposes to the more stable PbO, releasing oxygen)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) Explain the reason why Li₂CO₃ decomposes unlike other members of the group IA elements. [2 marks]",
+    "options": [],
+    "modelAnswer": "Li₂CO₃ decomposes on heating to Li₂O and CO₂ because the Li⁺ ion is very small with a high charge density, which strongly polarizes the large CO₃²⁻ carbonate ion, weakening the C–O bond and making decomposition favourable. The larger alkali metal ions (Na⁺, K⁺, etc.) have lower charge density and do not polarize the carbonate ion sufficiently, so their carbonates are stable to heat."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "5d",
+    "question": "(d) (i) How is the radioactive decay constant related to the half-life of a radioactive substance?\n(ii) Predict the type of radiation emitted by the following radioactive elements: ²¹⁰Po, ²³⁴Th, ⁸⁷Rb.\n(iii) State two (2) uses of radioactivity. [3½ Marks]",
+    "options": [],
+    "modelAnswer": "(i) The decay constant λ is related to half-life T½ by λ = ln2/T½ = 0.693/T½ (or T½ = 0.693/λ).\n\n(ii) ²¹⁰Po: alpha (α) emission (decays to ²⁰⁶Pb, mass decreases by 4).\n²³⁴Th: beta (β⁻) emission (decays to ²³⁴Pa, atomic number increases by 1).\n⁸⁷Rb: beta (β⁻) emission (decays to ⁸⁷Sr, atomic number increases by 1).\n\n(iii) Uses of radioactivity:\n1. Medical diagnosis and treatment (e.g., iodine-131 for thyroid, cobalt-60 in radiotherapy).\n2. Carbon dating (carbon-14) in archaeology and geology.\n\n(Also: industrial radiography, sterilization, tracing, nuclear power.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) (i) Arrange the hydrogen halides in order of increasing thermal stability.\n(ii) Explain the trend in thermal stability of the hydrogen halides. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Increasing thermal stability: HI < HBr < HCl < HF.\n\n(ii) The H–X bond strength decreases down the group as the halogen atom gets larger (bond length increases, overlap with H 1s orbital becomes less effective). HF has the strongest H–X bond (shortest bond, best overlap) and is most stable; HI has the weakest bond and is least stable (decomposes most readily)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) (i) Write balanced chemical equations for the reaction of chlorine with (i) cold NaOH and (ii) hot NaOH.\n(ii) State the oxidation states of chlorine in the products. [4 marks]",
+    "options": [],
+    "modelAnswer": "(i) Cold NaOH (dilute): Cl₂ + 2NaOH → NaCl + NaClO + H₂O.\nHot NaOH (concentrated): 3Cl₂ + 6NaOH → 5NaCl + NaClO₃ + 3H₂O.\n\n(ii) Oxidation states of chlorine in products:\nNaCl: −1.\nNaClO (cold): +1.\nNaClO₃ (hot): +5."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) With a balanced chemical equation, for the formation of the oxides and chlorides of the following elements: (i) Potassium (ii) Barium (iii) Aluminium",
+    "options": [],
+    "modelAnswer": "(i) Potassium:\nOxide: 4K + O₂ → 2K₂O.\nChloride: 2K + Cl₂ → 2KCl.\n\n(ii) Barium:\nOxide: 2Ba + O₂ → 2BaO.\nChloride: Ba + Cl₂ → BaCl₂.\n\n(iii) Aluminium:\nOxide: 4Al + 3O₂ → 2Al₂O₃.\nChloride: 2Al + 3Cl₂ → 2AlCl₃."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Periodicity",
+    "type": "Essay",
+    "questionNumber": "6d",
+    "question": "(d) What is allotropy? [1 mark]",
+    "options": [],
+    "modelAnswer": "Allotropy is the existence of an element in two or more different structural forms (allotropes) in the same physical state, which have different physical properties but similar chemical properties (e.g., diamond and graphite for carbon; O₂ and O₃ for oxygen)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Write an equation to show how and under what conditions Propanoic acid can be converted to:\n(i) CH₃CH(Cl)COOH\n(ii) CH₃CH₂CH₂OH\n(iii) CH₃CH₂COOCH₃\n(iv) CH₃CHClCOCl [2 Marks]",
+    "options": [],
+    "modelAnswer": "(i) CH₃CH₂COOH + Cl₂ →(UV light/red P) CH₃CH(Cl)COOH + HCl (α-halogenation).\n\n(ii) CH₃CH₂COOH →(LiAlH₄, dry ether) CH₃CH₂CH₂OH (reduction).\n\n(iii) CH₃CH₂COOH + CH₃OH →(conc. H₂SO₄, heat) CH₃CH₂COOCH₃ + H₂O (esterification; product is methyl propanoate).\n\n(iv) CH₃CH₂COOH + SOCl₂ → CH₃CH₂COCl + SO₂ + HCl (acid chloride formation), followed by α-chlorination → CH₃CHClCOCl.\n\nNote: The question originally wrote CH₃CH₂COOCH₂H — corrected to CH₃CH₂COOCH₃."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Write equations to illustrate the following reactions.\n(i) Sulphonation of nitrobenzene followed by reduction\n(ii) Reduction of nitrobenzene followed by sulphonation [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Sulphonation of nitrobenzene: C₆H₅NO₂ + H₂SO₄(conc.) →(heat) m-NO₂C₆H₄SO₃H + H₂O (m-nitrobenzenesulphonic acid).\nThen reduction: m-NO₂C₆H₄SO₃H + 6[H] →(Sn/HCl) m-NH₂C₆H₄SO₃H + 2H₂O (m-aminobenzenesulphonic acid).\n\n(ii) Reduction of nitrobenzene: C₆H₅NO₂ + 6[H] →(Sn/HCl) C₆H₅NH₂ + 2H₂O (aniline).\nThen sulphonation: C₆H₅NH₂ + H₂SO₄ →(heat) p-NH₂C₆H₄SO₃H + H₂O (p-aminobenzenesulphonic acid, sulphanilic acid)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) (i) Draw the structure of the following compounds:\n2, 2, 9 – trimethyldeca-3, 7-diene; Heptan-1, 3, 5-triol\n(ii) In the preparation of aspirin, give the structure and name of the acetylation product of salicylic acid.\n(iii) Give the IUPAC name of salicylic acid and identify the functional groups present. [3½ marks]",
+    "image": {
+      "src": "/images/questions/chemistry/2026/type-c/chem-2026-essay-7c.png",
+      "alt": "Structural formula of salicylic acid showing a benzene ring with an -OH group and a -COOH group adjacent to each other"
+    },
+    "options": [],
+    "modelAnswer": "(i) 2,2,9-trimethyldeca-3,7-diene: CH₃–C(CH₃)₂–CH=CH–CH₂–CH₂–CH=CH–CH(CH₃)–CH₃ (a deca-3,7-diene chain with two methyl groups at C2 and one at C9).\nHeptan-1,3,5-triol: HOCH₂–CH₂–CH(OH)–CH₂–CH(OH)–CH₂–CH₃.\n\n(ii) Acetylation product: aspirin (acetylsalicylic acid) — benzene ring with –COOH and –OCOCH₃ (acetoxy) groups adjacent to each other. Structure: 2-acetoxybenzoic acid.\n\n(iii) IUPAC name of salicylic acid: 2-hydroxybenzoic acid.\nFunctional groups: carboxyl (–COOH) and hydroxyl/phenol (–OH)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "7d",
+    "question": "(d) (i) What are petrochemicals?\n(ii) List three application of petrochemicals. [2½ Marks]",
+    "options": [],
+    "modelAnswer": "(i) Petrochemicals are chemical compounds derived from petroleum (crude oil) or natural gas, used as raw materials for making many useful products.\n\n(ii) Applications:\n1. Production of plastics and polymers (e.g., polyethylene, PVC, polystyrene).\n2. Production of detergents, paints, solvents and pharmaceuticals.\n3. Production of synthetic fibres (e.g., nylon, polyester) and fertilizers/pesticides."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) A compound J is an alcohol with molecular formula C₅H₁₀O. On oxidation gave K. K reacts with 2,4-dinitrophenylhydrazine to form a yellow crystal solid and form a silver mirror with Tollens' reagent.\n(i) Give the structure and name of compounds J and K. [2 marks]\n(ii) What is the general name of compound obtained from the reaction of K and 2, 4-dinitrophenyl hydrazine. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) K gives a silver mirror with Tollens' reagent and a yellow-orange precipitate with 2,4-DNPH, so K is an aldehyde: pentanal (CH₃CH₂CH₂CH₂CHO, C₅H₁₀O).\nJ, on oxidation to an aldehyde, must be a primary alcohol with five carbons: pentan-1-ol (CH₃CH₂CH₂CH₂CH₂OH, C₅H₁₀O).\n\nNote: The original question stated K = C₄H₈O, but this would mean a carbon is lost during oxidation of J (C₅H₁₀O), which is chemically inconsistent. The corrected K is C₅H₁₀O (pentanal).\n\n(ii) The product is a 2,4-dinitrophenylhydrazone (a hydrazone)."
+  },
+  {
+  "subject": "Chemistry",
+  "year": 2026,
+  "category": "Aromatic Compounds",
+  "type": "Essay",
+  "questionNumber": "8b",
+  "question": "(b) Bromination of ethane and benzene are represented as follows:\nCH₃−CH₃ →(Br₂/catalyst) CH₃CH₂Br ... Rxn 1\nBenzene + Br₂/catalyst → Bromobenzene + HBr ... Rxn 2\n(i) What type of reaction is occurring in reactions 1 and 2 respectively. [2 marks]\n(ii) Suggest a catalyst for reaction 2.",
+  "image": {
+    "src": "/images/questions/chemistry/2026/type-c/chem-2026-essay-8b.png",
+    "alt": "Reaction scheme showing the bromination of ethane (CH₃−CH₃ + Br₂/catalyst → CH₃CH₂Br + HBr, Rxn 1) and the bromination of benzene (benzene ring + Br₂/catalyst → bromobenzene ring + HBr, Rxn 2)"
+  },
+  "options": [],
+  "modelAnswer": "(i) Reaction 1 (ethane → bromoethane): free radical substitution.\nReaction 2 (benzene → bromobenzene): electrophilic substitution.\n\n(ii) Catalyst for reaction 2: anhydrous AlCl₃ (or FeBr₃, iron with bromine)."
+},
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) Organic reactions are broadly classified into three (3) major types: substitution, addition and elimination. With an appropriate example, briefly explain each of these reaction types. [3 marks]",
+    "options": [],
+    "modelAnswer": "1. Substitution: an atom or group in a molecule is replaced by another atom or group. Example: CH₄ + Cl₂ →(UV) CH₃Cl + HCl (chlorination of methane).\n\n2. Addition: two or more molecules combine to form a single product, with no loss of atoms, typically across a double/triple bond. Example: CH₂=CH₂ + HBr → CH₃CH₂Br (electrophilic addition to ethene).\n\n3. Elimination: a molecule loses atoms/groups from adjacent carbons to form a double or triple bond. Example: C₂H₅OH →(conc. H₂SO₄, 180°C) CH₂=CH₂ + H₂O (dehydration of ethanol)."
+  }
+]

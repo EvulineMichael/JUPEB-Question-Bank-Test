@@ -93,6 +93,8 @@
       "Ogboni"
     ],
     "answer": "D",
+    "reviewNote": "In the Old Oyo Empire, the Alaafin was chosen by the Oyo Mesi, the council of seven kingmakers led by the Bashorun. The Oyo Mesi is not among the options.\n\nThe Ogboni (the examiners' answer, D) was a powerful council of elders and earth priests that checked the Oyo Mesi and played a part in the Alaafin's installation, but it did not select him. So no option is fully correct.",
+    "excludeFromQuiz": true,
     "explanation": "⚠️ The Alaafin was actually selected by the Oyomesi (Oyo Mesi), a council of seven kingmakers. However, this option is not listed. Of the available options, the Ogboni (D) is the closest — it was a powerful secret society in the Oyo Empire with significant political influence, though its primary role was judicial and religious, not the selection of the Alaafin."
 },
   {
@@ -333,6 +335,8 @@
       "Only unwritten constitution is permissible"
     ],
     "answer": "A",
+    "reviewNote": "In a federal system, power is divided by the constitution between the central government and the component units (states or regions); each is supreme in its own sphere. The constitution is usually written and rigid, and it is supreme over the laws of every unit.\n\nNone of the options describes this correctly. Option A (the central government has power over everything) describes a unitary system, not a federal one. The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "In a federal system, the central government has certain enumerated powers over the whole country, such as defence and foreign affairs. The component units have powers over local matters. The constitution is supreme and usually rigid."
   },
   {
@@ -429,6 +433,8 @@
       "political rascality"
     ],
     "answer": "A",
+    "reviewNote": "Getting involved in the political activities of a society (voting, campaigning, joining parties, protesting) is called political participation. That term is not among the options.\n\nPolitical education (the examiners' answer, A) means teaching people about politics, which can lead to participation but is not the same thing.",
+    "excludeFromQuiz": true,
     "explanation": "⚠️ The correct term is 'political participation' — the process by which citizens engage in political activities like voting, campaigning, and protesting. However, this option is not listed. Of the available options, 'political education' (A) is the closest — it involves learning about and engaging with the political system, which is a precursor to participation. 'Political philosophy' is the study of ideas, 'political culture' refers to societal beliefs and attitudes, and 'political rascality' refers to political dishonesty or thuggery."
 },
   {

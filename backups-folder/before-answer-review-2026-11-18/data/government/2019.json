@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The approach that focuses on the use of logic in political analysis is the ______ approach.",
+    "options": [
+      "institutional",
+      "legal",
+      "philosophical",
+      "historical"
+    ],
+    "answer": "C",
+    "explanation": "The philosophical approach to political analysis focuses on the use of logic, reasoning, and abstract principles to understand political phenomena. It involves normative questions about what ought to be, rather than empirical analysis."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Quantitative data in political analysis refers to the use of",
+    "options": [
+      "expressions.",
+      "inference.",
+      "words.",
+      "numeric values."
+    ],
+    "answer": "D",
+    "explanation": "Quantitative data refers to numerical values that can be measured, counted, and statistically analyzed. In political analysis, it includes data like election results, survey statistics, and economic indicators."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Which of the following is NOT a source of political power in a state?",
+    "options": [
+      "Wealth.",
+      "Popular support.",
+      "Knowledge.",
+      "Religion."
+    ],
+    "answer": "D",
+    "explanation": "While religion can influence political power, it is not typically considered a direct source of political power. Sources of political power include wealth, popular support, knowledge, charisma, and force. Religion can legitimize power but is not a source itself."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "According to Aristotle, the purpose of the State is to",
+    "options": [
+      "promote the interest of the rulers.",
+      "promote the interest the oligarchs.",
+      "promote the interest of the aristocrats.",
+      "promote good life."
+    ],
+    "answer": "D",
+    "explanation": "Aristotle argued that the state exists to promote the good life for its citizens — the highest form of human flourishing. He believed the state is a natural institution that enables citizens to achieve virtue and happiness."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Which of the following is NOT an example of informal institution of government?",
+    "options": [
+      "Political parties.",
+      "Pressure groups.",
+      "National assembly.",
+      "Interest group."
+    ],
+    "answer": "C",
+    "explanation": "The National Assembly is a formal institution of government (a legislative body established by the constitution). Political parties, pressure groups, and interest groups are informal institutions that influence governance but are not part of the formal structure of government."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Politics is described as a behavioural science because",
+    "options": [
+      "its object of study is human behaviour.",
+      "it makes use of explanatory method.",
+      "its premises are uncertain.",
+      "human behaviour is important."
+    ],
+    "answer": "A",
+    "explanation": "Politics is described as a behavioural science because its object of study is human behaviour — how individuals and groups behave in political contexts. Behaviouralism emphasizes the empirical study of political behaviour."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The traditional approach to the study of politics has been described as non-scientific because the",
+    "options": [
+      "approach is utopian and idealistic.",
+      "findings are based on facts.",
+      "method is based on empirical observation.",
+      "approach is authentic"
+    ],
+    "answer": "A",
+    "explanation": "⚠️ The traditional approach is non-scientific because it is normative — based on value judgments about what ought to be, not empirical evidence. This option is not listed. Of the available options, 'utopian and idealistic' (A) is closest — it suggests the approach deals with ideals rather than observable facts. Options B and C describe the scientific (behavioural) approach, not the traditional one."
+},
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The exercise of the sovereign power of a state cannot be hindered by",
+    "options": [
+      "international law.",
+      "membership of international organisations.",
+      "constitution.",
+      "political party manifesto."
+    ],
+    "answer": "D",
+    "explanation": "A political party manifesto is a document of policy intentions and has no legal authority to hinder the exercise of sovereign power. Sovereign power is supreme within a state, though it can be limited by international law, treaty obligations (membership in international organizations), and constitutional provisions."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The authority of the Emir of Kano is an example of",
+    "options": [
+      "constitutional authority.",
+      "charismatic authority.",
+      "traditional authority.",
+      "legal-rational authority."
+    ],
+    "answer": "C",
+    "explanation": "The authority of the Emir of Kano is traditional authority — based on custom, tradition, and hereditary succession. It is derived from long-standing cultural practices and the reverence for traditional institutions."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "In Nigeria, public expenditure is controlled by the",
+    "options": [
+      "Courts.",
+      "National Assembly.",
+      "Federal Executive Council.",
+      "Electorate."
+    ],
+    "answer": "B",
+    "explanation": "In Nigeria, public expenditure is controlled by the National Assembly through the appropriation process. The legislature reviews, approves, and monitors government budgets and spending to ensure accountability."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The rationale for dividing the functions of government into different arms is to",
+    "options": [
+      "make governance complex and interesting.",
+      "increase efficiency and accountability.",
+      "create more job for the people.",
+      "enrich the public office holders."
+    ],
+    "answer": "B",
+    "explanation": "The separation of government functions into different arms (Executive, Legislature, Judiciary) is designed to increase efficiency, prevent abuse of power, ensure checks and balances, and promote accountability in governance."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Sociology as a social science discipline is significant to the study of politics because it helps to understand",
+    "options": [
+      "the functions of the organs of government.",
+      "how groups make political decision.",
+      "the reasons for an individual's decision.",
+      "the power relations in government."
+    ],
+    "answer": "C",
+    "explanation": "Sociology helps understand the social context of political behaviour, including the reasons for an individual's decisions and actions in the political arena. It examines how social factors (class, ethnicity, religion) influence political behaviour."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "A government that acquires political power constitutionally and acts in accordance with the accepted norms of the society is called a",
+    "options": [
+      "totalitarian government.",
+      "legal government.",
+      "legalized government.",
+      "legitimate government."
+    ],
+    "answer": "D",
+    "explanation": "A legitimate government is one that acquires political power through constitutional means and acts in accordance with the accepted norms, values, and laws of the society. It is recognized by the people as having the right to govern."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Public Corporations are financed by",
+    "options": [
+      "revenue from taxes.",
+      "private funds.",
+      "entrepreneurial funds.",
+      "political parties."
+    ],
+    "answer": "A",
+    "explanation": "Public corporations are financed primarily through government funding, which comes from tax revenue. While some public corporations generate internal revenue, their capital and operational funding largely comes from government appropriations derived from taxes."
+},
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "______ is NOT a source of internally generated revenue for a local government.",
+    "options": [
+      "Licence",
+      "Market levy",
+      "Local rates",
+      "Grants"
+    ],
+    "answer": "D",
+    "explanation": "Grants are not internally generated revenue for local government — they are transfers from the federal or state government. Internally generated revenue includes licences, market levies, local rates, and other locally collected taxes and fees."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "A major factor which determines a country's foreign policy is",
+    "options": [
+      "national interest.",
+      "leadership preference.",
+      "world peace.",
+      "governance process."
+    ],
+    "answer": "A",
+    "explanation": "National interest is the primary determinant of a country's foreign policy — it guides all foreign policy decisions, including security, economic, and diplomatic objectives. Leadership preference and governance process also influence, but national interest is the core factor."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The main argument of the Social Contract theory is that the state is a product of",
+    "options": [
+      "natural evolution with the consent of man.",
+      "agreement between man and nature.",
+      "agreement between men who had no previous governmental organisation.",
+      "agreement between God and man with special reference to the Kings."
+    ],
+    "answer": "C",
+    "explanation": "Social Contract theory (Hobbes, Locke, Rousseau) argues that the state is a product of agreement between individuals who previously lived in a state of nature without government. They voluntarily surrendered some rights to a sovereign for protection and order."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Africa Before European Invasion and Colonial Conquest",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The first African civilization was the",
+    "options": [
+      "Nubian civilization.",
+      "Egyptian civilization.",
+      "Catharge civilization.",
+      "Kongo civilization."
+    ],
+    "answer": "B",
+    "explanation": "The Egyptian civilization is recognized as the first major African civilization, emerging around 3100 BC along the Nile River. Nubian civilization was also ancient but developed later. Carthage was in North Africa but was founded later."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "One negative effect of the exclusion of educated elites from the British colonial policy was that it",
+    "options": [
+      "brought about increase in the power of the traditional rulers.",
+      "led to constant political violence in the colonies.",
+      "slowed down constitutional and economic development in the colonies.",
+      "encouraged higher level of political participation in the British colonies."
+    ],
+    "answer": "C",
+    "explanation": "Excluding educated elites from governance slowed down constitutional and economic development, as these elites were not able to contribute to policy formulation and development. It also created resentment that fuelled nationalist movements."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Which of the following was NOT part of the colonial administrative divisions in the British colonial territory?",
+    "options": [
+      "Native administration.",
+      "Native treasury.",
+      "Central administration.",
+      "Indigenat court."
+    ],
+    "answer": "D",
+    "explanation": "Indigenat courts were part of the French colonial system, not the British. The British colonial administrative divisions included native administrations, native treasuries, and central administration. The French operated a system of direct rule with assimilation policies."
+  },
+ {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The fascist government that existed in Italy in the 1930s was headed by",
+    "options": [
+      "Adolf Hitler.",
+      "Joseph Stalin.",
+      "Benito Mussolini.",
+      "Winston Churchill."
+    ],
+    "answer": "C",
+    "explanation": "Benito Mussolini was the fascist dictator of Italy in the 1930s and leader of the National Fascist Party. Hitler led Nazi Germany, Stalin led the Soviet Union, and Churchill was the British Prime Minister."
+},
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The Europeans needed African markets during the colonial era because",
+    "options": [
+      "European buyers were stingy.",
+      "Africans had more money.",
+      "European market was not profitable.",
+      "Europeans manufacturers engaged in excess production."
+    ],
+    "answer": "D",
+    "explanation": "European manufacturers needed African markets to sell their surplus manufactured goods (excess production) during the Industrial Revolution. Africa served as a market for European industrial products and a source of raw materials."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Resistance to colonial invasion of African territories can be described as",
+    "options": [
+      "violent and aggressive.",
+      "violence and non-violent.",
+      "violent and combative.",
+      "violent, non-violent and complex."
+    ],
+    "answer": "D",
+    "explanation": "African resistance to colonial invasion was violent, non-violent, and complex — varying across regions and societies. Some resisted through armed warfare, others through diplomacy, migration, or passive resistance. The nature of resistance was diverse and multifaceted."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The Hausa society in pre-colonial West Africa is an example of",
+    "options": [
+      "decentralized society.",
+      "centralized society.",
+      "militarized society.",
+      "federalized society."
+    ],
+    "answer": "B",
+    "explanation": "The Hausa society in pre-colonial West Africa was a centralized society with a structured political system centered around Emirs and the Sultan (in Sokoto). It had a hierarchical administration and a strong central authority, unlike decentralized Igbo societies."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Apartheid rule as an official policy was introduced in South Africa in",
+    "options": [
+      "1942.",
+      "1944.",
+      "1946.",
+      "1948."
+    ],
+    "answer": "D",
+    "explanation": "Apartheid was officially introduced as a formal policy in South Africa in 1948 when the National Party came to power. It institutionalized racial segregation and discrimination against non-whites."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "A major reason why the British colonial policy was very successful in the Hausa/Fulani society was because",
+    "options": [
+      "the northerners admired the British.",
+      "the British were able to subjugate them easily.",
+      "there was in existence a highly centralized system.",
+      "there was the existence of Christianity."
+    ],
+    "answer": "C",
+    "explanation": "British colonial policy (indirect rule) succeeded in the Hausa/Fulani society because there was already a highly centralized system of administration under the Emirs and the Sultan. The British used this existing structure to govern with minimal disruption."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The main reason for the establishment of Armed Forces in African colonies was to protect the",
+    "options": [
+      "colonial subject from external attacks.",
+      "Africans who abide by colonial rule.",
+      "interests of the colonial masters.",
+      "interests of the traditional rulers."
+    ],
+    "answer": "C",
+    "explanation": "The main reason for establishing Armed Forces in African colonies was to protect the interests of the colonial masters — to suppress resistance, maintain law and order, and protect colonial economic interests. They were not established to protect the colonized subjects."
+  },
+ {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "In a democracy, franchise can be limited by",
+    "options": [
+      "sex.",
+      "education.",
+      "wealth.",
+      "age."
+    ],
+    "answer": "D",
+    "explanation": "In modern democracies, age is the most widely accepted limitation on franchise — citizens must reach a minimum age (typically 18) to vote. Restrictions based on sex, education, and wealth are considered undemocratic and have been abolished in most democracies."
+},
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Which of these international organisations was Nigeria a founding member?",
+    "options": [
+      "OAU.",
+      "ECOMOG.",
+      "AU.",
+      "ECOWAS."
+    ],
+    "answer": "A",
+    "explanation": "Nigeria was a founding member of the Organization of African Unity (OAU), established in 1963. ECOWAS was established in 1975 with Nigeria as a member but not a founding member (Nigeria was one of the founders of ECOWAS as well, but the question likely refers to OAU). The AU succeeded the OAU in 2002."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The emergence of nationalism in Africa was as a result of the ills of",
+    "options": [
+      "imperialism.",
+      "independence.",
+      "slavery.",
+      "colonialism."
+    ],
+    "answer": "D",
+    "explanation": "Nationalism in Africa emerged primarily as a response to the ills of colonialism — exploitation, loss of sovereignty, cultural suppression, racial discrimination, and economic exploitation. Colonialism united Africans in opposition to foreign domination."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The two main figures at the centre of the 1962 Action Group crisis were",
+    "options": [
+      "Chief Obafemi Awolowo and Nnamdi Azikiwe.",
+      "Chief Obafemi Awolowo and Chief S.L. Akintola.",
+      "Chief Obafemi Awolowo and Sir Ahmadu Bello.",
+      "Chief Obafemi Awolowo and Alhaji Adegbene."
+    ],
+    "answer": "B",
+    "explanation": "The 1962 Action Group crisis was centered on Chief Obafemi Awolowo (leader of the Action Group) and Chief Samuel Ladoke Akintola (his deputy). The conflict was over leadership and ideology, leading to a split in the party."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The highest decision making body during the military regime of President Ibrahim Babangida was called",
+    "options": [
+      "Armed Forces Ruling Council.",
+      "Supreme Military Council.",
+      "Provisional Ruling Council.",
+      "Supreme Military Supervisory Council."
+    ],
+    "answer": "A",
+    "explanation": "During General Ibrahim Babangida's military regime, the highest decision-making body was the Armed Forces Ruling Council (AFRC). It was the supreme policy-making organ until it was replaced by the National Council of States later."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "One of the agencies introduced by the military government in Nigeria to promote national integration was the",
+    "options": [
+      "National Youth Service Corps.",
+      "Nigeria Youth Service Corps.",
+      "National Youth Service Commission.",
+      "Nigerian Youth Service Commission."
+    ],
+    "answer": "A",
+    "explanation": "The National Youth Service Corps (NYSC) was established in 1973 by the military government of General Yakubu Gowon to promote national integration and unity by deploying graduates to serve in states other than their own."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Which of the following political parties contested the 1993 presidential elections?",
+    "options": [
+      "NRC and SDP.",
+      "AD and APP.",
+      "UNCP and NDP.",
+      "PRP and DPP."
+    ],
+    "answer": "A",
+    "explanation": "The two political parties that contested the 1993 presidential elections in Nigeria were the National Republican Convention (NRC) and the Social Democratic Party (SDP). They were the two parties created by Babangida's transition program."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which political ideology advocates a classless society?",
+    "options": [
+      "Capitalism.",
+      "Communism.",
+      "Socialism.",
+      "Mixed Economy."
+    ],
+    "answer": "B",
+    "explanation": "Communism advocates a classless society where the means of production are collectively owned and social classes are abolished. Capitalism is based on class divisions (owners vs workers). Socialism advocates social ownership but accepts some class structures. A mixed economy combines public and private ownership."
+},
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "One-party system of government could lead to",
+    "options": [
+      "gerontocracy.",
+      "stateless society.",
+      "autocracy.",
+      "liberal democracy."
+    ],
+    "answer": "C",
+    "explanation": "A one-party system could lead to autocracy (rule by a single authority) or authoritarianism, as there is no opposition to check the ruling party's power. Gerontocracy is rule by the elderly, not directly related to party systems."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Professional pressure groups usually cater for the interest of",
+    "options": [
+      "all workers.",
+      "the general public.",
+      "non-members only.",
+      "members only."
+    ],
+    "answer": "D",
+    "explanation": "Professional pressure groups (e.g., Nigeria Medical Association, Nigerian Bar Association) typically cater to the interests of their members only — they protect and promote the professional and economic interests of their members."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Which of the following is the major difference between public and private administration?",
+    "options": [
+      "Profit motive.",
+      "Public responsibility.",
+      "Nature of functions",
+      "Secrecy of service."
+    ],
+    "answer": "A",
+    "explanation": "The major difference between public and private administration is profit motive — private administration is driven by profit, while public administration is driven by public service and welfare. While both have other differences, profit motive is the fundamental distinguishing factor."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Increasing globalisation will ultimately favour",
+    "options": [
+      "unindustrialised economies.",
+      "industrialised economies.",
+      "institutionalised economies.",
+      "international economies."
+    ],
+    "answer": "B",
+    "explanation": "Increasing globalisation will ultimately favour industrialized economies because they have the capital, technology, infrastructure, and competitive industries to benefit from global trade and investment. Unindustrialized economies may struggle to compete."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Removal of trade barriers in the global economy will be more beneficial to",
+    "options": [
+      "semi-developed economies.",
+      "underdeveloped economies.",
+      "over-developed economies.",
+      "under-aged economies."
+    ],
+    "answer": "C",
+    "explanation": "Removal of trade barriers will be more beneficial to over-developed (industrialized) economies because their industries are more competitive and can penetrate markets more easily. Underdeveloped economies may face increased competition and loss of local industries."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "A major difference between power and authority is that",
+    "options": [
+      "authority and power both involve the use of force.",
+      "degree of coercion in authority is more than that of power.",
+      "authority is legitimate while power is not.",
+      "authority is not legitimate, but power is."
+    ],
+    "answer": "C",
+    "explanation": "Authority is legitimate power — it is accepted as right and proper by those subject to it. Power can be exercised without legitimacy (through coercion or force). Authority is based on consent, while power may be based on force."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The purpose of the calabash as an element of Yoruba pre-colonial political system is to",
+    "options": [
+      "check the dictatorial rule of a King.",
+      "bless the King for prosperity.",
+      "serve as a protection against evil spirits.",
+      "settle disputes between the king and his chiefs."
+    ],
+    "answer": "A",
+    "explanation": "The calabash in Yoruba pre-colonial political system was used as a symbol to check the dictatorial rule of a King. It served as a warning to the Oba that his subjects could depose him if he became tyrannical."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Military Intervention in Africa",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Under the various military rule in Africa, the functions of the organs of government can be described as",
+    "options": [
+      "fused.",
+      "fragmented.",
+      "separated.",
+      "diffused."
+    ],
+    "answer": "A",
+    "explanation": "Under military rule, the functions of the organs of government are fused — the executive, legislative, and judicial functions are concentrated in the military leadership. There is no separation of powers as in democratic systems."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "One negative effect of colonialism in Africa was that it",
+    "options": [
+      "introduced Christianity.",
+      "was authoritarian and dictatorial.",
+      "replaced slavery with colonial practices.",
+      "hated the educated elites."
+    ],
+    "answer": "B",
+    "explanation": "One negative effect of colonialism was that it was authoritarian and dictatorial — colonial rule imposed foreign domination, suppressed local political systems, and denied Africans democratic participation. This had lasting effects on governance in post-colonial Africa."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Which of the following distinguishes the behavioural political scientist?",
+    "options": [
+      "Emphasis on quantitative analysis.",
+      "Value judgments more important than data collection.",
+      "Focus on the content of constitution.",
+      "Making the institutions the subject matter."
+    ],
+    "answer": "A",
+    "explanation": "Behavioural political scientists are distinguished by their emphasis on quantitative analysis — they use empirical methods, data collection, and statistical analysis to study political behaviour. They focus on observable behaviour rather than institutions or values."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Which of the following factors cannot make a government illegitimate?",
+    "options": [
+      "Arbitrary use of power.",
+      "Political corruption.",
+      "Punishment of citizens who are criminals.",
+      "Injustice from government to the people."
+    ],
+    "answer": "C",
+    "explanation": "Punishment of citizens who are criminals does not make a government illegitimate — it is a legitimate function of government to punish lawbreakers. Arbitrary use of power, political corruption, and injustice are factors that can undermine legitimacy."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The Bashorun is the ______ in the Yoruba pre-colonial system.",
+    "options": [
+      "Prime Minister",
+      "Principal Minister",
+      "Second-in-Command",
+      "Commander-in-Chief"
+    ],
+    "answer": "A",
+    "explanation": "The Bashorun was the Prime Minister in the Oyo Yoruba pre-colonial political system. He was the head of the Oyo Mesi (Council of Chiefs) and played a crucial role in advising and checking the power of the Alaafin."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "A major defect of political parties in Nigeria's first republic was that",
+    "options": [
+      "all the parties had few members.",
+      "membership of the parties were based on ethnic affiliation.",
+      "the parties were too violent in their campaigns.",
+      "all the parties were bankrupt."
+    ],
+    "answer": "B",
+    "explanation": "A major defect of political parties in Nigeria's First Republic was that membership was based on ethnic affiliation — the NCNC was Igbo-dominated, the Action Group was Yoruba-dominated, and the NPC was Hausa-Fulani dominated. This led to ethnic tension and instability."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "While nationalism started early in the British colonies, it was delayed in French colonies because of the",
+    "options": [
+      "nature of French colonial policy.",
+      "nature of intercommunity collaboration.",
+      "ban on the use of expatriate administration.",
+      "ban on press freedoms."
+    ],
+    "answer": "A",
+    "explanation": "Nationalism was delayed in French colonies because of the nature of French colonial policy — assimilation and centralization discouraged African political organization and identity. French policies granted some rights to assimilated Africans, delaying anti-colonial movements."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Public Corporations are controlled by the legislature through",
+    "options": [
+      "daily monitoring of their activities.",
+      "discipline of staff.",
+      "approval of their annual budgets.",
+      "recruitment of staff."
+    ],
+    "answer": "C",
+    "explanation": "Public corporations are controlled by the legislature through the approval of their annual budgets and oversight functions. The legislature reviews and approves budgets, monitors performance, and holds public corporations accountable."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Basic Concepts of Government",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) What is Political Socialization?\n(b) Outline and explain three agents of political socialization.",
+    "options": [],
+    "modelAnswer": "(a) Political Socialization:\nPolitical socialization is the process by which individuals learn and internalize the political values, beliefs, attitudes, and norms of their society. It is how political culture is transmitted from one generation to the next, shaping how people understand their political system and their role within it.\n\n(b) Three Agents of Political Socialization:\n1. Family: The family is the first and most influential agent of political socialization. Children learn political attitudes and values from their parents through observation, discussion, and reinforcement. Family influences political party identification, political ideology, and trust in government.\n\n2. Education/School: Schools play a crucial role in teaching civic education, patriotism, and the principles of democracy. Through subjects like Government and Social Studies, students learn about the constitution, rights, responsibilities, and the political system. Teachers and school activities shape political understanding.\n\n3. Media: The mass media (television, radio, newspapers, social media) are powerful agents of political socialization. They inform citizens about political events, shape public opinion, and influence political attitudes and values. Media exposure affects political awareness and participation."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) Explain Parliamentary system of government.\n(b) Discuss four differences between Parliamentary and Presidential Systems of government.",
+    "options": [],
+    "modelAnswer": "(a) Parliamentary System of Government:\nA parliamentary system is a system of government where the executive branch derives its legitimacy from and is directly accountable to the legislature (parliament). The head of government (Prime Minister) is the leader of the majority party in parliament and is responsible to it. The head of state (Monarch or President) is separate and ceremonial.\n\n(b) Four Differences between Parliamentary and Presidential Systems:\n1. Executive-Legislative Relationship: In a parliamentary system, the executive and legislature are fused — the Prime Minister and cabinet are members of parliament. In a presidential system, there is a strict separation of powers — the President is separate from the legislature.\n\n2. Head of Government and Head of State: In a parliamentary system, the head of government (Prime Minister) and head of state (Monarch or President) are separate. In a presidential system, the President is both head of government and head of state.\n\n3. Tenure: In a parliamentary system, the government's tenure depends on the confidence of parliament — it can be removed through a vote of no confidence. In a presidential system, the President has a fixed term and can only be removed through impeachment.\n\n4. Accountability: In a parliamentary system, the executive is directly accountable to the legislature — it must answer questions, defend policies, and can be dismissed by parliament. In a presidential system, the executive is not accountable to the legislature in the same way, though there are checks and balances."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) What is Coup d'etat?\n(b) Advance four reasons why Coup d'etat is said to be an aberration.",
+    "options": [],
+    "modelAnswer": "(a) Coup d'etat:\nA coup d'etat is the sudden, illegal, and unconstitutional seizure of political power by a small group of people (usually the military or armed forces) to overthrow an existing government. It is often carried out with force or the threat of force.\n\n(b) Four reasons why Coup d'etat is said to be an aberration:\n1. Violation of Constitution: A coup d'etat is unconstitutional — it violates the provisions of the constitution and the established legal order of the state. It is a disregard for the rule of law and constitutional governance.\n\n2. Disruption of Democratic Governance: A coup d'etat disrupts the democratic process and the will of the people expressed through elections. It undermines popular sovereignty and denies citizens their right to choose their leaders.\n\n3. Lack of Popular Support: Coup d'etats are carried out by a small group without the consent or support of the majority of the people. They are not legitimate because they lack popular approval and are imposed on the people.\n\n4. Breach of Military Professionalism: A coup d'etat violates military professionalism — the military is supposed to be apolitical and protect the state, not interfere in politics. Coups undermine the professionalism and discipline of the armed forces."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Public Administration",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "The low productivity and inefficiency of public corporations in Nigeria are as a result of its many challenges. Discuss any five of these challenges.",
+    "options": [],
+    "modelAnswer": "1. Political Interference: Public corporations are often subjected to political interference — politicians appoint unqualified persons as board members and CEOs based on patronage rather than merit. This compromises efficiency and professionalism.\n\n2. Lack of Autonomy: Public corporations lack operational autonomy — they are subject to government control, bureaucratic procedures, and treasury regulations that limit their flexibility and responsiveness.\n\n3. Poor Management and Leadership: Many public corporations are poorly managed — managers lack expertise, experience, and accountability. Corruption, mismanagement, and inefficiency are common, leading to low productivity.\n\n4. Inadequate Funding: Public corporations often face underfunding — government budget allocations are insufficient to meet operational and capital needs. This leads to dilapidated infrastructure, staff shortages, and low morale.\n\n5. Bureaucratic Bottlenecks: Public corporations are hindered by excessive bureaucracy, red tape, and rigid procedures. Decision-making is slow, innovation is stifled, and responsiveness to change is limited.\n\n6. Low Staff Morale and Motivation: Staff in public corporations often lack motivation due to poor working conditions, low pay, lack of career progression, and job insecurity. This reduces productivity and efficiency.\n\n7. Corruption and Fraud: Corruption is rampant in public corporations — embezzlement, mismanagement of funds, contract inflation, and extortion undermine efficiency and increase costs.\n\n8. Over-Staffing: Public corporations are often over-staffed with unqualified personnel. This increases costs, reduces productivity, and creates inefficiency."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Define the policy of Indirect Rule.\n(b) List and discuss four defects of the policy on British colonies.",
+    "options": [],
+    "modelAnswer": "(a) Indirect Rule:\nIndirect rule is a colonial policy used by the British in administering their colonies, especially in Africa. It involved governing through traditional rulers (chiefs, emirs, kings) who maintained their authority while being supervised by British colonial officials. The traditional rulers collected taxes, maintained law and order, and administered justice under the oversight of the British.\n\n(b) Four defects of Indirect Rule:\n1. Cultural Disruption and Misuse of Traditional Institutions: Indirect rule disrupted traditional political systems by imposing foreign authority on traditional rulers. It transformed chiefs into agents of colonial administration, weakening their legitimacy and altering their traditional roles. In some areas, warrant chiefs were created where none existed.\n\n2. Abuse of Power by Traditional Rulers: Traditional rulers appointed under indirect rule often abused their powers — they collected excessive taxes, exploited the people, and used force to maintain order. This led to resentment, protests, and resistance (e.g., Aba Women's Riot of 1929).\n\n3. Fostered Ethnic Divisions: Indirect rule deepened ethnic divisions by treating different ethnic groups as separate political units. It created divisions between 'ruling' and 'subject' peoples, laying the foundation for ethnic conflicts in post-colonial states.\n\n4. Slow Progress in Constitutional Development: Indirect rule delayed constitutional and political development by excluding educated elites from governance. It limited political participation and slowed the demand for independence. It was seen as paternalistic and undemocratic.\n\n5. Inefficiency and Corruption: The system was inefficient — traditional rulers often lacked the capacity to administer modern governance. Corruption was common as rulers enriched themselves at the expense of the people.\n\n6. Resistance and Unrest: Indirect rule faced resistance in many areas, especially in societies without centralized authority. The people saw it as oppressive and resisted through protests, revolts, and nationalist movements."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Discuss elaborately, five of the achievements of the National Council of Nigeria and Cameroon in Nigeria's First Republic.",
+    "options": [],
+    "modelAnswer": "The National Council of Nigeria and Cameroon (NCNC) was a major political party in Nigeria's First Republic, led by Nnamdi Azikiwe and Herbert Macaulay.\n\nFive Achievements of the NCNC:\n1. Unification of Diverse Groups: The NCNC was one of the first nationalist parties to unite diverse ethnic, regional, and religious groups across Nigeria. It brought together Igbo, Yoruba, and minority groups under one nationalist movement, promoting national consciousness.\n\n2. Championing Nationalism and Decolonization: The NCNC played a leading role in the struggle for independence. It agitated for self-government, organized nationalist protests, and participated in constitutional conferences that led to Nigeria's independence in 1960.\n\n3. Promotion of Education and Social Development: The NCNC established schools, scholarships, and educational institutions. It promoted the education of Nigerians to produce the human capital needed for independence and development.\n\n4. Advocacy for Social Justice: The NCNC fought against social injustices — exploitation, taxation without representation, and political marginalization. It advocated for the rights of workers, farmers, and the marginalized.\n\n5. Producing Nigeria's First Indigenous Governor-General: Nnamdi Azikiwe, the leader of the NCNC, became Nigeria's first indigenous Governor-General in 1960 and later the first President of Nigeria in 1963. This was a major achievement for the party and the country.\n\n6. Establishment of Constitutional Reforms: The NCNC played a key role in constitutional reforms leading to the 1954 federal constitution, which established the federal structure of Nigeria. It advocated for regional autonomy and fair representation."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Explain any five effects of colonialism on African societies.",
+    "options": [],
+    "modelAnswer": "1. Political Effects: Colonialism destroyed traditional political systems, replacing them with foreign institutions. It created arbitrary boundaries that divided ethnic groups and forced diverse peoples into single states. This has caused political instability and ethnic conflict in post-colonial Africa.\n\n2. Economic Effects: Colonialism transformed African economies into producers of raw materials for European industries. Africa became dependent on exports of primary commodities and imports of manufactured goods. This created economic dependency, underdevelopment, and unequal terms of trade.\n\n3. Social Effects: Colonialism disrupted traditional social structures, family systems, and cultural practices. It introduced Western education, religion, and values, leading to cultural alienation. It also created a new elite class of educated Africans, while marginalizing traditional authorities.\n\n4. Cultural Effects: Colonialism undermined African cultures, languages, and identities. Indigenous languages and customs were suppressed, and European languages (English, French, Portuguese) were imposed. Africans were made to feel inferior to Europeans, leading to a loss of cultural pride and confidence.\n\n5. Psychological Effects: Colonialism created a mindset of inferiority and dependency among Africans. It fostered a colonial mentality where Western ideas and systems were seen as superior. This has persisted in post-colonial Africa, affecting self-esteem, initiative, and self-reliance.\n\n6. Demographic Effects: Colonialism led to population displacement, migration, and urbanization. It also introduced new diseases and health challenges. Forced labour and taxation disrupted traditional livelihoods and created social dislocation."
+  },
+  {
+    "subject": "Government",
+    "year": 2019,
+    "category": "Military Intervention in Africa",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) What is Military Rule?\n(b) Discuss three characteristics of military regimes in Africa.",
+    "options": [],
+    "modelAnswer": "(a) Military Rule:\nMilitary rule is a system of government in which the armed forces control political power, usually after overthrowing a civilian government through a coup d'etat. Military rule is authoritarian, characterized by the suspension of the constitution, dissolution of democratic institutions, and governance by military decrees.\n\n(b) Three characteristics of military regimes in Africa:\n1. Authoritarian and Dictatorial Governance: Military regimes are authoritarian — power is concentrated in the hands of the military leadership, and there is no separation of powers. The military rules by decrees, and civil liberties are restricted. The military leadership makes laws, executes them, and administers justice, often without judicial independence.\n\n2. Suspension of the Constitution and Democratic Institutions: Military regimes suspend the constitution, dissolve the legislature, and ban political parties. Governance is based on military decrees and proclamations. There are no elections, and the people have no say in governance. This undermines the rule of law and democratic accountability.\n\n3. Centralization of Power: Military regimes centralize power in the hands of the military leadership. Key positions in government are held by military officers. The military controls the economy, the media, and all aspects of public life. There is no room for opposition or dissent.\n\n4. Intervention in Politics: Military regimes represent a departure from the principle of military professionalism — the military is supposed to be apolitical. Military intervention in politics creates instability, disrupts development, and undermines civilian supremacy.\n\n5. Transition Programs: Military regimes often promise to return to civilian rule through transition programs. These programs involve the establishment of political parties, drafting of new constitutions, and eventual elections. However, the transition process is often manipulated to keep the military in power or to ensure friendly civilian successors."
+  }
+]

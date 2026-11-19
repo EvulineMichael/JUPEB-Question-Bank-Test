@@ -45,6 +45,7 @@
     "question": "Using the diagram from question 3, compute its displacement.",
     "options": ["4 m", "5 m", "20 m", "80 m"],
     "answer": "D",
+    "image": {"src": "/images/questions/physics/2024/phy-2024-obj-3.png", "alt": "Velocity-time graph from question 3"},
     "explanation": "Displacement = area under the velocity-time graph.\n\nThe graph is a rectangle:\nWidth = 4 s\nHeight = 20 m/s\n\nDisplacement = 4 × 20 = 80 m."
 },
   {
@@ -67,6 +68,8 @@
     "question": "A car travels at a uniform speed through a level circular curve on the road. Which of the following correctly describes the magnitude of the acceleration, velocity and force acting on the car?",
     "options": ["Constant, changing, changing", "Constant, constant, constant", "Constant, changing, constant", "Changing, changing, changing"],
     "answer": "C",
+    "reviewNote": "The question asks about the magnitudes. At uniform speed round a level curve:\n- acceleration: v²/r, constant in size (its direction keeps changing towards the centre)\n- velocity: its size (the speed) is constant; only its direction changes\n- force: mv²/r, constant in size\n\nSo strictly, option B (constant, constant, constant) describes the magnitudes. The examiners' answer is C, treating velocity as 'changing' because its direction changes. Because both readings are defensible, this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Speed is constant, but the direction of motion changes, so velocity changes.\n\nThe magnitudes of the centripetal acceleration (v²/r) and centripetal force (mv²/r) remain constant because speed and radius are constant.\n\nAcceleration – constant magnitude, velocity – changing, force – constant magnitude."
   },
   {
@@ -78,6 +81,8 @@
     "question": "A ball is dropped from a height with a velocity of 40 m/s, it hits the ground and rebounds with a velocity v₁ to a height h. Assuming that g = 10 m/s² and the coefficient of restitution is 0.6, find v₁ and h.",
     "options": ["-36 m/s, 25 m", "-24 m/s, 51 m", "-12 m/s, 49 m", "36 m/s, 17 m"],
     "answer": "B",
+    "reviewNote": "Working: rebound speed v₁ = e × 40 = 0.6 × 40 = 24 m/s (upwards). Rebound height h = v₁²/2g = 576/20 = 28.8 m.\n\nNo printed option gives both 24 m/s and 28.8 m, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "e = v₁/u = 0.6 → v₁ = 0.6 × 40 = 24 m/s upward (negative if downward is positive).\n\nh = v₁²/(2g) = 576/20 = 28.8 m.\n\nThe correct values are v₁ = 24 m/s (upward) and h = 28.8 m.\n\nNote: None of the options match exactly. Option B has the correct velocity magnitude (24 m/s) but an incorrect height. The closest option has been selected."
   },
   {
@@ -265,7 +270,7 @@
     "question": "A proton moves directly vertically downwards into a horizontal magnetic field B = 0.5 T from west to east, given that the speed of the proton is 5.6 × 10⁶ m/s, calculate the force acting on the proton.",
     "options": ["8.0 × 10⁻¹³ N", "4.0 × 10⁻¹² N", "4.8 × 10⁻¹³ N", "8.0 × 10⁻²⁶ N"],
     "answer": "C",
-    "explanation": "F = qvB sinθ.\n\nθ = 90° (velocity perpendicular to field).\nF = 1.6×10⁻¹⁹ × 5.6×10⁶ × 0.5 = 4.48 × 10⁻¹³ N.\n\nThe exact value is 4.48 × 10⁻¹³ N. The closest option is 4.8 × 10⁻¹³ N."
+    "explanation": "F = qvB sin θ, with θ = 90° (the velocity is perpendicular to the field).\n\nF = 1.6×10⁻¹⁹ × 5.6×10⁶ × 0.5 = 4.5 × 10⁻¹³ N.\n\nThis matches option C (4.8 × 10⁻¹³ N) to the precision the paper uses; the other options are far off."
   },
   {
     "subject": "Physics",
@@ -591,7 +596,7 @@
     "questionNumber": "1d",
     "question": "(c) Using dimensional analysis, find the relation between the viscous force F on a spherical body of radius r, angular velocity ω and its coefficient of viscosity, η.",
     "options": [],
-    "modelAnswer": "F = k × η^a × r^b × ω^c.\n\nDimensions:\n[F] = MLT⁻², [η] = ML⁻¹T⁻¹, [r] = L, [ω] = T⁻¹.\n\nSolving: a = 1, b = 2, c = -1.\n\nF ∝ ηr²/ω."
+    "modelAnswer": "Let F = k η^a r^b ω^c, where k is a dimensionless constant.\n\nDimensions:\n[F] = MLT⁻², [η] = ML⁻¹T⁻¹, [r] = L, [ω] = T⁻¹\n\nSo MLT⁻² = (ML⁻¹T⁻¹)^a (L)^b (T⁻¹)^c = M^a L^(−a+b) T^(−a−c)\n\nEquate the powers:\nM: a = 1\nL: −a + b = 1 → b = 2\nT: −a − c = −2 → c = 1\n\nTherefore F = k η r² ω, i.e. F ∝ η r² ω.\n\nCheck: ηr²ω has dimensions (ML⁻¹T⁻¹)(L²)(T⁻¹) = MLT⁻², the dimensions of force. ✓"
   },
   {
     "subject": "Physics",

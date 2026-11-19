@@ -106,8 +106,8 @@
     "questionNumber": 10,
     "question": "Which of the following characteristics shows that hydrogen resembles halogens?",
     "options": ["Hydrogen is the lightest", "H atom contains one electron", "H forms ionic hydrides with alkali metals", "Hydrogen has three isotopes"],
-    "answer": "B",
-    "explanation": "Hydrogen and halogens both have one electron in their outermost shell."
+    "answer": "C",
+    "explanation": "Hydrogen resembles the halogens because, like them, it is one electron short of a noble-gas configuration (H has 1 electron; helium has 2). So it can gain one electron to form a −1 ion.\n\nWith alkali metals it forms ionic hydrides such as Na⁺H⁻, just as chlorine forms Na⁺Cl⁻. It is also diatomic (H₂, like Cl₂).\n\nOption B (one electron in its shell) is how hydrogen resembles the alkali metals, not the halogens, which have 7 outer electrons."
   },
   {
     "subject": "Chemistry",
@@ -536,7 +536,7 @@
     "question": "The substance that adsorbs and activates reactants to form products which cannot break away is",
     "options": ["Catalyst.", "Metal", "Adsorbate.", "Precipitate"],
     "answer": "A",
-    "explanation": "Note: The question wording is unusual — the description suggests catalyst poisoning.\n\nA catalyst adsorbs reactants, activates them, and forms products.\n\nThe closest option has been selected."
+    "explanation": "A catalyst adsorbs reactant molecules on its surface, weakening their bonds (activating them) so that they react to form products. Of the options, only a catalyst does this.\n\n(If products stay stuck to the surface, the catalyst becomes 'poisoned' and stops working.)"
   },
   {
     "subject": "Chemistry",
@@ -667,7 +667,7 @@
     "questionNumber": "4a",
     "question": "(a) (i) Define Nuclear binding energy\n(ii) A compound is used in an experiment 6.5 days after it was prepared. If the sample originally contained 0.35g of phosphorus-32 with a half-life of 15 days. How many grams was used in the experiment?",
     "options": [],
-    "modelAnswer": "(i) Nuclear binding energy: energy required to separate all nucleons in a nucleus into individual nucleons.\n\n(ii) N = 0.35 × (1/2)^(6.5/15) = 0.259 g remaining.\n\nNote: The question asks for grams used, but 0.259 g is the amount remaining.\nGrams used = 0.35 − 0.259 = 0.091 g."
+    "modelAnswer": "(i) Nuclear binding energy: energy required to separate all nucleons in a nucleus into individual nucleons.\n\n(ii) N = 0.35 × (1/2)^(6.5/15) = 0.259 g remaining.\n\nThe phosphorus-32 still present after 6.5 days is what is used in the experiment, so about 0.259 g (≈ 0.26 g) of P-32 was used.\n(The amount that had decayed before the experiment is 0.35 − 0.259 = 0.091 g; give this as well if you are unsure which the examiner wants.)"
   },
   {
     "subject": "Chemistry",

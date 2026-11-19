@@ -264,6 +264,8 @@
       "The boycott of the Muslims by the Pagans."
     ],
     "answer": "B",
+    "reviewNote": "The 'Year of Sorrow' ('Amul-Huzn, about 619 CE) was named after two deaths that came close together: the Prophet's uncle and protector Abu Talib, and his wife Khadijah.\n\nSo options A (Abu Talib) and B (Khadijah, the examiners' answer) are both correct, and this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "The year of sorrow ('Amu-l Huzn) was labeled after the death of Khadijah (the Prophet's wife) in 619 C.E. The question specifies the labeling — the year was named after the sorrow of losing both Khadijah and Abu Talib, but among the given options, Khadijah's death is the defining event."
   },
   {
@@ -599,8 +601,8 @@
       "Hadith Mash'hur.",
       "Hadith Da'if."
     ],
-    "answer": "B",
-    "explanation": "Hadith 1 of an-Nawawi's collection ('Innamal-a'malu binniyat' — Actions are judged by intentions) is Mutawatir — it has been transmitted by a large number of narrators and is widely accepted as authentic."
+    "answer": "A",
+    "explanation": "Hadith 1 of an-Nawawi ('Actions are judged by intentions…') is a famous example of a hadith ahad. In its first generations it was reported by only one narrator at each stage: 'Umar ibn al-Khattab, then 'Alqamah, then Muhammad ibn Ibrahim at-Taymi, then Yahya ibn Sa'id al-Ansari. Only after Yahya did hundreds of people narrate it.\n\nA mutawatir hadith must be reported by large numbers in every generation, so this hadith is not mutawatir, even though it is completely authentic (sahih). Scholars call it ahad, and more specifically gharib."
   },
   {
     "subject": "IRS",

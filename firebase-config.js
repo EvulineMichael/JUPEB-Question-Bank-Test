@@ -1,7 +1,21 @@
+// ===== SIGN-IN THROUGH THE SITE'S OWN ADDRESS =====
+// Phones often lose the Google sign-in when it runs on a different address
+// (jupeb-question-bank.firebaseapp.com). vercel.json forwards /__/auth/ on this site to
+// Firebase, so sign-in can run on jupebijmbprep.com itself and the phone can use the
+// full-page sign-in, which is far more reliable there.
+// Before switching this to true, add these to Google Cloud Console → APIs & Services →
+// Credentials → the "Web client (auto created by Google Service)" → Authorized redirect URIs:
+//   https://jupebijmbprep.com/__/auth/handler
+//   https://test.jupebijmbprep.com/__/auth/handler
+// (and make sure both domains are in Firebase → Authentication → Settings → Authorized domains).
+const USE_SITE_AUTH_DOMAIN = false;
+const SITE_AUTH_HOSTS = ['jupebijmbprep.com', 'www.jupebijmbprep.com', 'test.jupebijmbprep.com'];
+const SITE_HANDLES_AUTH = USE_SITE_AUTH_DOMAIN && SITE_AUTH_HOSTS.includes(location.hostname);
+
 // Firebase Configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAY1AMutEKCUKwi8rcgldJIrgn3LJGfDPo",
-  authDomain: "jupeb-question-bank.firebaseapp.com",
+  authDomain: SITE_HANDLES_AUTH ? location.hostname : "jupeb-question-bank.firebaseapp.com",
   projectId: "jupeb-question-bank",
   storageBucket: "jupeb-question-bank.firebasestorage.app",
   messagingSenderId: "746059285176",

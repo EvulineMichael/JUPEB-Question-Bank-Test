@@ -1,0 +1,264 @@
+[
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Partnership Accounts",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Davu and Eze are partners sharing profit and losses in the ratio of 2:1. Their balance sheet on 1st January, 2015 was as follows: (see table)\nOn the same date they agreed to admit Femi as a partner. Femi was to contribute ₦2,000,000 cash as capital and share 1/5 of the profits and losses. He was also to pay ₦300,000 to the existing partners as goodwill. It was agreed that the goodwill account would not remain in the books of the partnership.\nYou are required to:\na. Calculate the new sharing ratio for the three partners\nb. Show the goodwill account and\nc. Prepare the partners' capital accounts (in columnar form) (20 marks)",
+    "dataTable": {
+      "headers": [
+        "Liabilities",
+        "₦",
+        "Assets",
+        "₦"
+      ],
+      "rows": [
+        [
+          "Capital Accounts: Davu 5,000,000; Eze 2,500,000",
+          "7,500,000",
+          "Land & Buildings",
+          "2,680,000"
+        ],
+        [
+          "Current Accounts: Davu 678,950; Eze 436,720",
+          "1,115,670",
+          "Motor Vehicles",
+          "3,750,000"
+        ],
+        [
+          "Eze Loan",
+          "500,000",
+          "Office Equipment",
+          "1,190,000"
+        ],
+        [
+          "Creditors",
+          "72,500",
+          "Furniture",
+          "864,500"
+        ],
+        [
+          "",
+          "",
+          "(Fixed assets total)",
+          "8,484,500"
+        ],
+        [
+          "",
+          "",
+          "Stock",
+          "427,360"
+        ],
+        [
+          "",
+          "",
+          "Bank Balance",
+          "182,060"
+        ],
+        [
+          "",
+          "",
+          "Debtors",
+          "94,250"
+        ],
+        [
+          "Total",
+          "9,188,170",
+          "Total",
+          "9,188,170"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: part of the date is unclear on the scan; it is read as 1st January, 2015.\n\n(a) New profit-sharing ratio\nFemi takes 1/5, leaving 4/5 for Davu and Eze, shared in their old ratio of 2:1:\nDavu: 2/3 × 4/5 = 8/15\nEze: 1/3 × 4/5 = 4/15\nFemi: 1/5 = 3/15\nNew ratio, Davu : Eze : Femi = 8 : 4 : 3.\n\nSacrificing ratio (old share − new share):\nDavu: 2/3 − 8/15 = 10/15 − 8/15 = 2/15\nEze: 1/3 − 4/15 = 5/15 − 4/15 = 1/15\nDavu and Eze sacrifice in the ratio 2 : 1, so Femi's goodwill of ₦300,000 is shared Davu ₦200,000 and Eze ₦100,000.\n\n(b) Goodwill Account\nFemi pays ₦300,000 into the business as a premium for goodwill. It is credited to the old partners in their sacrificing ratio, so no goodwill account remains in the books.\nDebit side:\nCapital account: Davu ₦200,000\nCapital account: Eze ₦100,000\nTotal: ₦300,000\nCredit side:\nBank (premium paid by Femi): ₦300,000\nTotal: ₦300,000\nThe account is closed, with no balance.\n\nAlternative method: the full goodwill implied by Femi's payment is ₦300,000 ÷ 1/5 = ₦1,500,000.\nStep 1: Dr Goodwill ₦1,500,000; Cr Davu ₦1,000,000 and Eze ₦500,000 (old ratio 2:1).\nStep 2: write it off, Cr Goodwill ₦1,500,000; Dr Davu ₦800,000, Eze ₦400,000 and Femi ₦300,000 (new ratio 8:4:3).\nFemi's ₦300,000 premium is credited to his capital.\nThis method gives exactly the same closing capital balances.\n\n(c) Partners' Capital Accounts (columnar form), showing Davu / Eze / Femi\nCredit side:\nBalance b/d: ₦5,000,000 / ₦2,500,000 / —\nBank (capital introduced): — / — / ₦2,000,000\nGoodwill: ₦200,000 / ₦100,000 / —\nTotals: ₦5,200,000 / ₦2,600,000 / ₦2,000,000\nDebit side:\nBalance c/d: ₦5,200,000 / ₦2,600,000 / ₦2,000,000\nTotals: ₦5,200,000 / ₦2,600,000 / ₦2,000,000\n\nThe current accounts (Davu ₦678,950; Eze ₦436,720) are not affected. The bank balance rises by ₦2,300,000 (capital ₦2,000,000 + goodwill ₦300,000), to ₦2,482,060.\n(If the ₦300,000 were paid privately to Davu and Eze outside the business, no entries would be made in the firm's books, and the capitals would stay at ₦5,000,000 and ₦2,500,000.)"
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Partnership Accounts",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Njoku and Asake agreed to go into a joint venture to buy and sell palm oil. They contributed ₦900,000 and ₦450,000 respectively and agreed to share any profit or loss in the ratio of their contributions. Miscellaneous expenses paid by Njoku and Asake amounted to ₦120,000 and ₦95,000 respectively. The [illegible] palm oil was purchased and Njoku sold all of it for ₦2,482,600 after a period of three months. Five days after the sale, Njoku paid Asake his entitlement into his bank account at the Sterling bank.\nYou are required to record all the joint venture transactions in:\na. The books of Njoku and\nb. The books of Asake (25marks)",
+    "options": [],
+    "modelAnswer": "Note: one word in the question is unreadable on the scan. The answer assumes that the contributions (₦900,000 by Njoku and ₦450,000 by Asake, ₦1,350,000 in total) were used to buy the palm oil, with no separate joint bank account. Each venturer records his own transactions in a 'Joint Venture with ...' personal account, and a memorandum joint venture account is used to find the profit.\n\nProfit-sharing ratio = ratio of contributions = 900,000 : 450,000 = 2 : 1.\n\nMemorandum Joint Venture Account\nDebit side:\nPurchases of palm oil: Njoku ₦900,000 + Asake ₦450,000 = ₦1,350,000\nMiscellaneous expenses: Njoku ₦120,000 + Asake ₦95,000 = ₦215,000\nProfit: Njoku (2/3) ₦611,733.33 and Asake (1/3) ₦305,866.67, total ₦917,600\nTotal: ₦2,482,600\nCredit side:\nSales (by Njoku): ₦2,482,600\nTotal: ₦2,482,600\n\nProfit = ₦2,482,600 − ₦1,350,000 − ₦215,000 = ₦917,600.\n\nAsake's entitlement = his contribution ₦450,000 + his expenses ₦95,000 + his profit share ₦305,866.67 = ₦850,866.67.\n\n(a) In the books of Njoku: Joint Venture with Asake Account\nDebit side:\nBank (purchases of palm oil, his contribution): ₦900,000\nBank (miscellaneous expenses): ₦120,000\nProfit and loss account (share of profit): ₦611,733.33\nBank (paid to Asake, settlement): ₦850,866.67\nTotal: ₦2,482,600\nCredit side:\nBank (sale of palm oil): ₦2,482,600\nTotal: ₦2,482,600\n\n(b) In the books of Asake: Joint Venture with Njoku Account\nDebit side:\nBank (purchases of palm oil, his contribution): ₦450,000\nBank (miscellaneous expenses): ₦95,000\nProfit and loss account (share of profit): ₦305,866.67\nTotal: ₦850,866.67\nCredit side:\nBank (received from Njoku, settlement into his Sterling Bank account): ₦850,866.67\nTotal: ₦850,866.67\n\nCheck: Njoku receives ₦2,482,600 and pays out ₦900,000 + ₦120,000 + ₦850,866.67 = ₦1,870,866.67, keeping ₦611,733.33, which is his profit share. Asake recovers his outlay of ₦545,000 plus his profit of ₦305,866.67.\n(Profit shares are rounded to the nearest kobo: ₦917,600 ÷ 3 = ₦305,866.67.)"
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Financial Statements of Limited Liability Companies",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Fiditi company Plc advertised an issue of 10,000,000 ordinary shares of ₦1 each to be issued at a discount of 15k per share. A total of 12,500,000 shares were applied for with the required application money of 30k per share. The remaining money for the shares was due as follows:\n25k per share on allotment and\n30k per share on first and final call\nThe shares were allotted on a pro-data basis and all the allottees paid their amounts when they became due.\nYou are required to:\na. Calculate the number of shares issued to Adoke and Baidu who applied for 720,000 and 560,000 shares respectively and\nb. Record the issue of shares in the books of Fiditi company Plc. (27 marks)",
+    "options": [],
+    "modelAnswer": "Note: 'pro-data' means pro-rata. The issue price is ₦1 − 15k = 85k, and the payments add up correctly: 30k + 25k + 30k = 85k.\nIt is assumed that the excess application money on the pro-rata allotment is not refunded, but used towards the amount due on allotment.\n\n(a) Pro-rata allotment\nAllotment ratio = 10,000,000 shares offered ÷ 12,500,000 shares applied for = 4/5 (80%).\nAdoke: 4/5 × 720,000 = 576,000 shares\nBaidu: 4/5 × 560,000 = 448,000 shares\n\nAs an illustration of their payments:\nAdoke: application money 720,000 × 30k = ₦216,000. Of this, ₦172,800 is needed on application (576,000 × 30k), leaving ₦43,200 excess towards allotment. Allotment due is 576,000 × 25k = ₦144,000, so Adoke pays ₦100,800 on allotment.\nBaidu: application money 560,000 × 30k = ₦168,000. Of this, ₦134,400 is needed on application, leaving ₦33,600 excess. Allotment due is ₦112,000, so Baidu pays ₦78,400 on allotment.\n\n(b) Record of the issue in the books of Fiditi Company Plc\nKey figures:\nApplication money received: 12,500,000 × 30k = ₦3,750,000\nApplication money on allotted shares: 10,000,000 × 30k = ₦3,000,000\nExcess application money (2,500,000 × 30k): ₦750,000, transferred to allotment\nDue on allotment: 10,000,000 × 25k = ₦2,500,000\nCash received on allotment: ₦2,500,000 − ₦750,000 = ₦1,750,000\nDiscount on issue: 10,000,000 × 15k = ₦1,500,000 (debited on allotment)\nDue on first and final call: 10,000,000 × 30k = ₦3,000,000\n\nJournal entries:\n1. Dr Bank ₦3,750,000; Cr Application account ₦3,750,000 (application money received)\n2. Dr Application ₦3,000,000; Cr Ordinary share capital ₦3,000,000 (application money on allotted shares transferred to capital)\n3. Dr Application ₦750,000; Cr Allotment ₦750,000 (excess application money transferred to allotment)\n4. Dr Allotment ₦2,500,000 and Dr Discount on issue of shares ₦1,500,000; Cr Ordinary share capital ₦4,000,000 (amount due on allotment, and discount)\n5. Dr Bank ₦1,750,000; Cr Allotment ₦1,750,000 (allotment money received)\n6. Dr First and final call ₦3,000,000; Cr Ordinary share capital ₦3,000,000 (call made)\n7. Dr Bank ₦3,000,000; Cr First and final call ₦3,000,000 (call money received)\n\nLedger accounts:\nApplication Account: Dr share capital ₦3,000,000 and allotment ₦750,000 = ₦3,750,000. Cr bank ₦3,750,000.\nAllotment Account: Dr share capital ₦2,500,000. Cr application ₦750,000 and bank ₦1,750,000 = ₦2,500,000.\nFirst and Final Call Account: Dr share capital ₦3,000,000. Cr bank ₦3,000,000.\nOrdinary Share Capital Account: Cr application ₦3,000,000, allotment ₦4,000,000 (₦2,500,000 + discount ₦1,500,000) and call ₦3,000,000 = ₦10,000,000.\nDiscount on Issue of Shares Account: Dr share capital ₦1,500,000.\nBank Account: Dr application ₦3,750,000, allotment ₦1,750,000 and call ₦3,000,000 = ₦8,500,000.\n\nCheck: cash received ₦8,500,000 = 10,000,000 shares × 85k. Share capital ₦10,000,000 (nominal value) − discount ₦1,500,000 = ₦8,500,000."
+  },
+  {
+    "subject": "Accounting",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Financial Statements of Limited Liability Companies",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "The appropriation account of Abet Company limited for the year ended 31st December, 2013 was as follows: (see table)\nThe company's balance sheet as at 31st December, 2013 was as follows: (see table)\nGiven that the Company is charged income tax at the rate of 40%\nYou are required to calculate the company's:\na. Current ratio\nb. Quick assets ratio\nc. Book value per share\nd. Interest cover\ne. Earnings per share\nf. Dividend cover\ng. Dividend payout ratio (28marks)",
+    "dataTable": {
+      "headers": [
+        "Item",
+        "₦",
+        "₦"
+      ],
+      "rows": [
+        [
+          "Net profit after tax",
+          "",
+          "4,275,000"
+        ],
+        [
+          "Transfer to: General Reserve",
+          "128,950",
+          ""
+        ],
+        [
+          "Transfer to: Capital Red. Reserve fund",
+          "93,600",
+          ""
+        ],
+        [
+          "Patents & Trademarks written off",
+          "150,000",
+          ""
+        ],
+        [
+          "Dividends paid: Preference (8% gross)",
+          "320,000",
+          ""
+        ],
+        [
+          "Dividends paid: Ordinary (12% Gross)",
+          "720,000",
+          "1,412,550"
+        ],
+        [
+          "Balance transferred to retained earnings",
+          "",
+          "3,862,450"
+        ],
+        [
+          "BALANCE SHEET AS AT 31 DECEMBER 2013",
+          "",
+          ""
+        ],
+        [
+          "Ordinary shares of ₦2 each",
+          "6,000,000",
+          ""
+        ],
+        [
+          "8% Preference shares of ₦1 each",
+          "4,000,000",
+          ""
+        ],
+        [
+          "General reserve",
+          "527,650",
+          ""
+        ],
+        [
+          "Retained Earnings",
+          "4,185,730",
+          ""
+        ],
+        [
+          "Capital Red. Reserve fund",
+          "176,400",
+          ""
+        ],
+        [
+          "7% Debentures",
+          "1,400,000",
+          ""
+        ],
+        [
+          "Creditors",
+          "438,220",
+          ""
+        ],
+        [
+          "Accrued Expenses",
+          "69,820",
+          ""
+        ],
+        [
+          "Bills payable",
+          "226,900",
+          ""
+        ],
+        [
+          "Total (liabilities side)",
+          "17,024,720",
+          ""
+        ],
+        [
+          "Freehold Premises",
+          "7,250,000",
+          ""
+        ],
+        [
+          "Plant & Machinery",
+          "3,640,500",
+          ""
+        ],
+        [
+          "Motor vehicles",
+          "2,259,350",
+          ""
+        ],
+        [
+          "Office Equipment",
+          "1,305,200",
+          ""
+        ],
+        [
+          "Furniture",
+          "642,900",
+          ""
+        ],
+        [
+          "Stock",
+          "437,750",
+          ""
+        ],
+        [
+          "Bank balance",
+          "728,500",
+          ""
+        ],
+        [
+          "Cash in hand",
+          "145,740",
+          ""
+        ],
+        [
+          "Debtors",
+          "585,120",
+          ""
+        ],
+        [
+          "Prepayments",
+          "29,660",
+          ""
+        ],
+        [
+          "Total (assets side)",
+          "17,024,720",
+          ""
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: in the appropriation account, ₦4,275,000 − ₦1,412,550 = ₦2,862,450, not ₦3,862,450 as printed. The ratios below do not depend on this figure. Both sides of the balance sheet total ₦17,024,720, as printed.\n\nWorkings\nCurrent assets: stock ₦437,750 + bank ₦728,500 + cash ₦145,740 + debtors ₦585,120 + prepayments ₦29,660 = ₦1,926,770\nCurrent liabilities: creditors ₦438,220 + accrued expenses ₦69,820 + bills payable ₦226,900 = ₦734,940\nNumber of ordinary shares: ₦6,000,000 ÷ ₦2 = 3,000,000 shares\nProfit before tax: ₦4,275,000 ÷ (1 − 0.40) = ₦7,125,000 (tax = ₦2,850,000)\nDebenture interest: 7% × ₦1,400,000 = ₦98,000\nProfit before interest and tax (PBIT): ₦7,125,000 + ₦98,000 = ₦7,223,000\nEarnings available to ordinary shareholders: ₦4,275,000 − preference dividend ₦320,000 = ₦3,955,000\nOrdinary dividend: 12% × ₦6,000,000 = ₦720,000 (24k per share)\n\n(a) Current ratio = current assets ÷ current liabilities = ₦1,926,770 ÷ ₦734,940 = 2.62 : 1\n\n(b) Quick assets (acid test) ratio = (current assets − stock) ÷ current liabilities = ₦1,489,020 ÷ ₦734,940 = 2.03 : 1\n\n(c) Book value per ordinary share = ordinary shareholders' funds ÷ number of ordinary shares.\nOrdinary shareholders' funds = ordinary share capital ₦6,000,000 + general reserve ₦527,650 + retained earnings ₦4,185,730 + capital redemption reserve fund ₦176,400 = ₦10,889,780 (preference capital excluded).\nBook value per share = ₦10,889,780 ÷ 3,000,000 = ₦3.63 per share.\n\n(d) Interest cover = PBIT ÷ debenture interest = ₦7,223,000 ÷ ₦98,000 = 73.7 times\n\n(e) Earnings per share = earnings for ordinary shareholders ÷ number of ordinary shares = ₦3,955,000 ÷ 3,000,000 = ₦1.32 (131.8k) per share\n\n(f) Dividend cover = earnings for ordinary shareholders ÷ ordinary dividend = ₦3,955,000 ÷ ₦720,000 = 5.49 times\n\n(g) Dividend payout ratio = ordinary dividend ÷ earnings for ordinary shareholders × 100 = ₦720,000 ÷ ₦3,955,000 × 100 = 18.2%\n(Equivalently, dividend per share ÷ EPS = 24k ÷ 131.8k = 18.2%; it is the reciprocal of the dividend cover.)"
+  }
+]

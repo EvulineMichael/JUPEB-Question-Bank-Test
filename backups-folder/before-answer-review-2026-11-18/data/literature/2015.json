@@ -1,0 +1,904 @@
+[
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Pick the ODD item out in the list.",
+    "options": [
+      "Euripides",
+      "Aeschylus",
+      "Henrik Ibsen",
+      "Aristophanes"
+    ],
+    "answer": "C",
+    "explanation": "Euripides, Aeschylus, and Aristophanes are all ancient Greek playwrights. Henrik Ibsen is a modern Norwegian playwright (19th century), making him the odd one out."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The plays written by ______ relied heavily on the use of deus ex machina, the unexpected introduction of a god to solve the dilemma of the character and bring the play to their conclusion.",
+    "options": [
+      "Wole Soyinka",
+      "Euripides",
+      "Ola Rotimi",
+      "Sophocles"
+    ],
+    "answer": "B",
+    "explanation": "Euripides was known for his frequent use of deus ex machina — a contrived device where a god is lowered onto the stage to resolve the plot. This technique was criticized by Aristotle but used extensively by Euripides."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The play Lysistrata is a",
+    "options": [
+      "satire",
+      "tragedy",
+      "melodrama",
+      "farce"
+    ],
+    "answer": "A",
+    "explanation": "Lysistrata by Aristophanes is a satirical comedy — it uses humour and exaggeration to critique the Peloponnesian War and gender relations. It is a social and political satire."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Sophocles' best known plays are",
+    "options": [
+      "Oedipus Rex and The Flies",
+      "Antigone and Oedipus at Colonus",
+      "Oedipus Rex and Electra",
+      "Antigone and Electra."
+    ],
+    "answer": "B",
+    "explanation": "Sophocles' best known plays are Antigone and Oedipus at Colonus (along with Oedipus Rex). Oedipus Rex and Antigone are two of the three Theban plays. The Flies is by Sartre. Oedipus at Colonus is a key Sophoclean play."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Greek drama originated from",
+    "options": [
+      "festivals",
+      "initiations",
+      "weddings",
+      "dithyrambs"
+    ],
+    "answer": "D",
+    "explanation": "Greek drama originated from dithyrambs — choral hymns sung in honour of Dionysus. These evolved into tragedy and comedy. Over time, the performance of dithyrambs became formalized into theatrical performances."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Which of these plays does not have an eponymous title?",
+    "options": [
+      "Hedda Gabler",
+      "Macbeth",
+      "Fences",
+      "Lysistrata"
+    ],
+    "answer": "C",
+"explanation": "Fences is not eponymous — the title refers to the fence being built, not a character. Hedda Gabler, Macbeth, and Lysistrata are all eponymous (named after the main character)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The generation of incompatible interest often between a character and an opposing character Is known as",
+    "options": [
+      "conflict",
+      "dramatic irony",
+      "dialogue",
+      "climax"
+    ],
+    "answer": "A",
+    "explanation": "Conflict is the struggle between opposing forces or characters — it is the central element of drama that drives the plot. It can be internal or external and is essential for dramatic tension."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The major feature of drama is",
+    "options": [
+      "action and character",
+      "dialogue and action",
+      "character and dialogue",
+      "action and epilogue"
+    ],
+    "answer": "B",
+    "explanation": "The major features of drama are dialogue and action — drama is meant to be performed, and it relies on spoken dialogue and physical action to convey the story. Character is also important, but dialogue and action are the primary defining features."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Drama is different from poetry because a play",
+    "options": [
+      "uses elevated language",
+      "involves tragic elements",
+      "exists mainly in actions",
+      "uses many characters."
+    ],
+    "answer": "C",
+    "explanation": "Drama exists mainly in actions — it is meant to be performed on stage, while poetry is primarily a written or spoken literary form. Drama relies on physical action, staging, and performance."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "A dramatic form whose outcome is funny and its actions rather hard to believe is a type of play called a",
+    "options": [
+      "poetic drama",
+      "comedy",
+      "farce",
+      "melodrama"
+    ],
+    "answer": "C",
+    "explanation": "A farce is a type of comedy characterized by exaggerated, improbable situations, slapstick humour, and ridiculous actions. The outcome is funny, but the actions are often hard to believe."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "A tragic flaw in a play refers to the",
+    "options": [
+      "slip made by a character which results in his fall",
+      "element of plot whose prominence makes an artistic work faulty",
+      "typographical error which recurs in a work of drama",
+      "unsuccessful play written by an otherwise remarkable dramatist"
+    ],
+    "answer": "A",
+    "explanation": "A tragic flaw (hamartia) is a character trait or error in judgment that leads to the downfall of a tragic hero. It is a key element of Greek tragedy, as seen in Oedipus Rex, where Oedipus' pride and determination lead to his fall."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A literary technique which recalls an earlier scene or incident is called",
+    "options": [
+      "foreshadowing",
+      "look-back",
+      "foreknowledge",
+      "flashback"
+    ],
+    "answer": "D",
+    "explanation": "A flashback is a literary technique that interrupts the chronological flow of a narrative to recall an earlier scene or incident. Foreshadowing hints at events to come, while flashback looks backward."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Who gave the world its first treaty on drama?",
+    "options": [
+      "Sophocles",
+      "Aeschylus",
+      "Aristotle",
+      "Plato"
+    ],
+    "answer": "C",
+    "explanation": "Aristotle gave the world its first treatise on drama — the Poetics. In this work, he defined tragedy, discussed plot, character, and introduced concepts like catharsis and hamartia."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "The first part of every play is known as a/an",
+    "options": [
+      "resolution",
+      "conflict",
+      "exposition",
+      "climax"
+    ],
+    "answer": "C",
+    "explanation": "Exposition is the first part of a play — it introduces the characters, setting, and initial situation. It provides necessary background information to help the audience understand the plot."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Which one of these is NOT a major theme in Chinua Achebe's A Man of the People?",
+    "options": [
+      "The struggle for power",
+      "The influence of greed",
+      "The prevailing aura of corruption",
+      "The excesses of the colonial masters"
+    ],
+    "answer": "D",
+    "explanation": "The excesses of the colonial masters is NOT a major theme in A Man of the People — the novel focuses on post-independence Nigeria, examining corruption, greed, and the struggle for power among African politicians. Colonialism is not the central focus."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Chief Nanga in Chinua Achebe's A Man of the People is used by the novelist as",
+    "options": [
+      "the supreme example of power in developing nations",
+      "the example of a man's rise from obscurity to national fame",
+      "the greed of the educated elites",
+      "the death of conscience in post independence Africa"
+    ],
+    "answer": "D",
+    "explanation": "Chief Nanga represents the death of conscience in post-independence Africa — he is a corrupt politician who exploits his position for personal gain, manipulates the people, and represents the moral decay of the political class."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Chinua Achebe's A Man of the People was written in",
+    "options": [
+      "the first person narrative",
+      "second person narrative",
+      "third person narrative",
+      "omniscient narrative"
+    ],
+    "answer": "A",
+    "explanation": "A Man of the People is written in the first person narrative — the story is told from the perspective of Odili, the protagonist, using 'I' and 'we.' This gives the reader insight into his thoughts and experiences."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "One of the most popular ways to develop characters and move a plot forward in literary works is through",
+    "options": [
+      "dialogue",
+      "metaphor",
+      "exposition",
+      "narrative"
+    ],
+    "answer": "A",
+    "explanation": "Dialogue is one of the most popular ways to develop characters and move a plot forward in literary works. Through dialogue, readers learn about characters' personalities, relationships, and motivations, and the plot progresses through conversations."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "A novella ranges between",
+    "options": [
+      "10,000-60,000 words",
+      "30,000-70,000 words",
+      "100,000-200,000 words",
+      "1,000-5,000 words"
+    ],
+    "answer": "A",
+    "explanation": "A novella typically ranges between 10,000 and 60,000 words. It is longer than a short story but shorter than a full novel. A novel usually exceeds 60,000-100,000 words."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The novel is believed to have first been written",
+    "options": [
+      "16th century",
+      "18th century",
+      "17th century",
+      "19th century"
+    ],
+    "answer": "C",
+    "explanation": "The novel is believed to have first emerged in the 17th century — with works like Cervantes' Don Quixote (1605) considered one of the first modern novels. The 18th century saw the rise of the English novel (Defoe, Richardson, Fielding)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "What is the end of the central conflict?",
+    "options": [
+      "Falling action",
+      "Resolution",
+      "Climax",
+      "Rising action"
+    ],
+    "answer": "B",
+    "explanation": "Resolution is the end of the central conflict — it is where the conflicts are resolved, and the story reaches its conclusion. The falling action follows the climax and leads to the resolution."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The English novel has no",
+    "options": [
+      "good dialogue",
+      "good characterization",
+      "clear plot",
+      "rigid framework"
+    ],
+    "answer": "D",
+    "explanation": "The English novel has no rigid framework — it is a flexible genre that can take various forms and styles. Unlike some traditional literary forms, the novel allows for experimentation and innovation."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The author often referred to as the father of the English novel is",
+    "options": [
+      "Daniel Defoe",
+      "Henry Fielding",
+      "William Blake",
+      "Walter crane"
+    ],
+    "answer": "A",
+    "explanation": "Daniel Defoe is often referred to as the father of the English novel for his work Robinson Crusoe (1719). Henry Fielding is also a significant early novelist, but Defoe is more commonly credited as the pioneer."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "What is the major thematic preoccupation in Chimamanda Adichie's novel, Half of a Yellow Sun?",
+    "options": [
+      "War",
+      "Love",
+      "Betrayal",
+      "Injustice"
+    ],
+    "answer": "A",
+    "explanation": "The major thematic preoccupation in Half of a Yellow Sun is war — the novel is set during the Nigerian Civil War (Biafran War) and explores its devastating impact on individuals, families, and society."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Complete this quotation in Pride and Prejudice by Jane Austen: 'It is a truth universally acknowledged that a single man in possession of a good fortune, must be in want of a ___'",
+    "options": [
+      "house",
+      "title",
+      "wife",
+      "dog"
+    ],
+    "answer": "C",
+    "explanation": "The famous opening line of Pride and Prejudice reads: 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.' This sets the tone for the novel's focus on marriage and social class."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The Bennet family in Austen's Pride and Prejudice live in the village of",
+    "options": [
+      "Pemberley",
+      "Longbourn",
+      "Rosings",
+      "London"
+    ],
+    "answer": "B",
+    "explanation": "The Bennet family lives at Longbourn, a small estate in the village of Longbourn in Hertfordshire. Pemberley is Mr. Darcy's estate, and Rosings is Lady Catherine de Bourgh's estate."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Mr. Bingley, in Austen's Pride and Prejudice, when he attends the ball in Meryton, seems to be quite taken in with",
+    "options": [
+      "Elizabeth",
+      "Jane",
+      "Lydia",
+      "Charlotte Lucas"
+    ],
+    "answer": "B",
+    "explanation": "Mr. Bingley is immediately taken with Jane Bennet at the Meryton ball. He dances with her twice and is clearly attracted to her. His friend Darcy, however, is less impressed with the social gathering."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Poetry is the language of",
+    "options": [
+      "mind",
+      "heart",
+      "love",
+      "emotions"
+    ],
+    "answer": "D",
+    "explanation": "Poetry is often described as the language of emotions — it is a medium for expressing feelings, passions, and deep emotional experiences. It appeals to the heart and emotions rather than pure reason."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Obscurity of language is mostly associated with",
+    "options": [
+      "prose",
+      "poetry",
+      "haiku",
+      "drama"
+    ],
+    "answer": "B",
+    "explanation": "Obscurity of language is mostly associated with poetry — poetic language can be dense, allusive, and ambiguous, requiring careful interpretation. Prose is generally more straightforward and direct."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The masked voice in poetry is called",
+    "options": [
+      "speaker",
+      "poet",
+      "persona",
+      "protagonist"
+    ],
+    "answer": "C",
+    "explanation": "The masked voice in poetry is called persona — it is the speaker or narrator adopted by the poet, who may be different from the poet themselves. The persona is the 'mask' through which the poet speaks."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "A lyric poem that celebrates the simple idyllic pleasures of country life is called",
+    "options": [
+      "sonnet",
+      "panegyric",
+      "myth",
+      "pastoral"
+    ],
+    "answer": "D",
+    "explanation": "A pastoral poem celebrates the simple, idyllic pleasures of country life — it idealizes rural life, shepherds, and nature. Pastoral poetry contrasts the simplicity of the countryside with the corruption of city life."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "A poem whose speaker addresses one or more silent listeners is called",
+    "options": [
+      "apostrophe",
+      "meditation",
+      "dramatic monologue",
+      "narrative"
+    ],
+    "answer": "C",
+    "explanation": "A dramatic monologue is a poem in which a speaker addresses one or more silent listeners, revealing their character, thoughts, and emotions through their speech. Robert Browning is famous for this form."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "A poem featuring expansive settings, supernatural characters and heroic feats is called",
+    "options": [
+      "ovid",
+      "ode",
+      "ballad",
+      "epic"
+    ],
+    "answer": "D",
+    "explanation": "An epic poem features expansive settings, supernatural characters, and heroic feats. It is a long narrative poem that celebrates the deeds of a heroic figure. Examples include Homer's Iliad and Milton's Paradise Lost."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Paradise Lost by John Milton is an example of",
+    "options": [
+      "religious poem",
+      "legend",
+      "myth",
+      "epic"
+    ],
+    "answer": "D",
+    "explanation": "Paradise Lost is an epic poem — it is a long narrative work in blank verse that tells the story of the Fall of Man, Satan's rebellion, and the redemption through Christ. It has epic conventions like invocation, elevated style, and grand themes."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "A poem rooted in oral tradition and meant to be sung is called",
+    "options": [
+      "epic",
+      "lyric",
+      "ballad",
+      "blank verse"
+    ],
+    "answer": "C",
+    "explanation": "A ballad is a poem rooted in oral tradition and meant to be sung. It tells a story in simple, repetitive language, often with a refrain. Ballads were originally folk songs passed down orally."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Epic poems are traditionally divided into",
+    "options": [
+      "lines",
+      "stanzas",
+      "books",
+      "epochs"
+    ],
+    "answer": "C",
+    "explanation": "Epic poems are traditionally divided into books — each book is a major division, like chapters in a novel. Homer's Iliad and Odyssey, Virgil's Aeneid, and Milton's Paradise Lost are all divided into books."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "A long lyric poem written in praise of a natural object is called",
+    "options": [
+      "praise poem",
+      "ballad",
+      "epic",
+      "ode"
+    ],
+    "answer": "D",
+    "explanation": "An ode is a long lyric poem written in praise of a natural object, a person, or an abstract idea. It is characterized by elevated style and serious tone. Examples include Keats' 'Ode to a Nightingale'."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "In poetry, language that evokes a physical sensation through one or more of the five senses is called",
+    "options": [
+      "tone",
+      "symbol",
+      "imagery",
+      "emotion"
+    ],
+    "answer": "C",
+    "explanation": "Imagery is language that evokes a physical sensation through one or more of the five senses — visual, auditory, tactile, olfactory, and gustatory. It creates vivid mental pictures for the reader."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Economy of words in poetry is mostly achieved through the use of",
+    "options": [
+      "diction",
+      "language",
+      "images",
+      "mood"
+    ],
+    "answer": "C",
+    "explanation": "Economy of words in poetry is mostly achieved through the use of images — imagery condenses meaning and emotion into vivid, concise language, allowing poets to say more with fewer words."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Who is portrayed as a god in the passage?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'And Sango was there...' Please refer to original past question paper.",
+    "options": [
+      "Sango",
+      "Amusa",
+      "De Pereira",
+      "the girl"
+    ],
+    "answer": "A",
+    "explanation": "Sango is portrayed as a god in the passage — his name suggests he may be associated with the Yoruba deity Sango (god of thunder and lightning). The passage describes him in a religious context."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The hero of the extract is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'And Sango was there...' Please refer to original past question paper.",
+    "options": [
+      "Sango",
+      "Amusa",
+      "De Pereira",
+      "the crowd"
+    ],
+    "answer": "A",
+    "explanation": "Sango appears to be the central figure/hero of the extract — the passage focuses on his experience and perspective, making him the protagonist of this scene."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The expression '... like a cork on an angry sea', exemplifies",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'And Sango was there...' Please refer to original past question paper.",
+    "options": [
+      "simile",
+      "oxymoron",
+      "metaphor",
+      "personification"
+    ],
+    "answer": "A",
+    "explanation": "The expression '... like a cork on an angry sea' is a simile — it compares the man's movement to a cork using the word 'like'. This is a direct comparison using 'like' or 'as.'"
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The passage uses ______ narrative view point.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'And Sango was there...' Please refer to original past question paper.",
+    "options": [
+      "first person",
+      "second person",
+      "third person",
+      "all-knowing"
+    ],
+    "answer": "C",
+    "explanation": "The passage uses third person narrative viewpoint — the narrator refers to characters as 'he' and 'she' and does not participate in the events. The narrator is outside the story."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The mood of the extract towards the end is that of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'And Sango was there...' Please refer to original past question paper.",
+    "options": [
+      "danger",
+      "excitement",
+      "indifference",
+      "formality"
+    ],
+    "answer": "A",
+    "explanation": "The mood towards the end is one of danger — the description of the crowd's pressure and the girl in trouble creates a sense of imminent threat and urgency."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "What is the subject-matter of this poem?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'If you think me too generous...' Please refer to original past question paper.",
+    "options": [
+      "Food",
+      "Wealth",
+      "Sex",
+      "Talent"
+    ],
+    "answer": "A",
+    "explanation": "The subject-matter of the poem is food — the speaker mentions 'hunger is a god that gnaws' and refers to 'this thing the Lord gave,' suggesting a gift related to sustenance."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The poem is written with",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'If you think me too generous...' Please refer to original past question paper.",
+    "options": [
+      "end rhymes",
+      "eye rhymes",
+      "blank verse",
+      "free verse"
+    ],
+    "answer": "D",
+    "explanation": "The poem is written in free verse — it does not have a regular rhyme scheme or meter. Free verse allows the poet to express ideas without being constrained by traditional poetic structures."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The Language of the poem is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'If you think me too generous...' Please refer to original past question paper.",
+    "options": [
+      "sarcastic",
+      "indifferent",
+      "polite",
+      "casual"
+    ],
+    "answer": "D",
+    "explanation": "The language of the poem is casual — the speaker uses a conversational tone, addressing the reader directly in a relaxed manner. This makes the poem accessible and relatable."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The statement, 'hunger is a god' is of what literary device?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'If you think me too generous...' Please refer to original past question paper.",
+    "options": [
+      "Simile",
+      "Metaphor",
+      "Paradox",
+      "Apostrophe"
+    ],
+    "answer": "B",
+    "explanation": "'Hunger is a god' is a metaphor — it directly compares hunger to a god without using 'like' or 'as.' It implies that hunger has power and control over people, like a deity."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "What does this statement 'man-made life' refers to in the above extract?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'If you think me too generous...' Please refer to original past question paper.",
+    "options": [
+      "Earth",
+      "Heaven",
+      "Labour",
+      "Sea"
+    ],
+    "answer": "A",
+    "explanation": "'Man-made life' refers to Earth — the world created and shaped by human beings. It contrasts with the divine or natural order, suggesting the harsh realities and injustices of human society."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The phrase 'does decency' is an example of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'If you think me too generous...' Please refer to original past question paper.",
+    "options": [
+      "litotes",
+      "alliteration",
+      "personification",
+      "metaphor"
+    ],
+    "answer": "B",
+    "explanation": "The phrase 'does decency' is an example of alliteration — the repetition of the initial 'd' sound in 'does' and 'decency.' Alliteration creates rhythm and emphasis in the line."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The Classical Tradition",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the terms 'hubris' and 'hamartia' as they relate to Sophocles' Oedipus Rex.",
+    "options": [],
+    "modelAnswer": "Hubris and hamartia are key concepts in Greek tragedy, particularly in Sophocles' Oedipus Rex.\n\nHubris (excessive pride or arrogance): In Oedipus Rex, Oedipus displays hubris throughout the play. He is confident in his own intelligence and abilities, believing he can outwit fate. He proudly declares that he solved the Sphinx's riddle and saved Thebes, and he refuses to listen to the warnings of Tiresias and others. His hubris leads him to defy the gods and pursue the truth about Laius' murder, despite warnings that he will regret it. Ultimately, his arrogance blinds him to the truth of his own identity and actions.\n\nHamartia (tragic flaw): Oedipus' hamartia is his excessive pride and determination to uncover the truth. His tragic flaw is his refusal to accept the limits of human knowledge and his insistence on knowing everything. This leads him to discover that he has killed his father and married his mother, fulfilling the prophecy he tried to avoid. His hamartia causes his downfall — he blinds himself and is exiled from Thebes.\n\nIn conclusion, hubris and hamartia are central to Oedipus Rex. Oedipus' pride and determination to know the truth lead to his tragic downfall, making him the classic example of a tragic hero."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Examine the technique of disguise in EITHER Twelfth Night OR Merchant of Venice.",
+    "options": [],
+    "modelAnswer": "In Twelfth Night, disguise is a central technique used by Shakespeare to explore themes of identity, love, and deception. The play features extensive use of disguise, most notably through the character of Viola.\n\nViola's Disguise as Cesario: After being shipwrecked, Viola disguises herself as a man, Cesario, to enter the service of Duke Orsino. This disguise creates a complex love triangle — Viola (as Cesario) falls in love with Orsino, while Olivia falls in love with Cesario (believing him to be a man). This cross-gender disguise creates dramatic irony and comedic situations.\n\nPurpose of Disguise:\n- Exploration of Identity: Disguise allows characters to explore different aspects of their identity. Viola's disguise as a man allows her to navigate a patriarchal society and express her feelings in ways she could not as a woman.\n- Comedic Effect: Disguise creates comic confusion — characters misinterpret situations, leading to humorous misunderstandings. The confusion around Viola's identity is a source of comedy throughout the play.\n- Thematic Exploration: Disguise explores themes of love, appearance vs reality, and the fluidity of gender and identity.\n\nThe Unmasking: In the final scene, Viola reveals her true identity, and the confusion is resolved. The disguise is removed, and order is restored.\n\nConclusion: Disguise in Twelfth Night serves multiple functions — it drives the plot, creates comedy, and explores deeper themes about identity, love, and the nature of appearance versus reality."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "How does Ngugi use his major African characters to reinforce the themes of forgiveness, reconciliation and acceptance in A Grain of Wheat?",
+    "options": [],
+    "modelAnswer": "In A Grain of Wheat, Ngugi wa Thiong'o uses his major African characters to reinforce the themes of forgiveness, reconciliation, and acceptance in post-colonial Kenya.\n\nMugo: Mugo is a central character who struggles with guilt and the need for forgiveness. He betrayed Kihika, a freedom fighter, and his guilt haunts him throughout the novel. At the end, Mugo confesses his betrayal, accepting responsibility for his actions. This act of confession and acceptance allows him to find a form of redemption and contributes to the theme of reconciliation.\n\nKihika: Kihika represents the ideal of sacrifice and forgiveness. Even in his death, he inspires others to forgive and reconcile. His character embodies the theme of forgiveness — he is seen as a martyr who died for his people.\n\nGikonyo and Mumbi: Their relationship represents the theme of reconciliation. Gikonyo is imprisoned during the Emergency, and Mumbi has a child with Karanja. After Gikonyo's release, they struggle to reconcile their love. In the end, they accept each other and rebuild their relationship, symbolizing the possibility of forgiveness and reconciliation in post-colonial Kenya.\n\nKaranja: Karanja represents the need for acceptance and redemption. He collaborates with the colonial authorities and faces rejection from the community. His character shows the consequences of betrayal and the difficulty of being accepted after betrayal.\n\nConclusion: Ngugi uses his characters to illustrate the importance of forgiveness, reconciliation, and acceptance — themes that are essential for healing the wounds of colonialism and the struggle for independence."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "By closely referring to the actions or inactions of the major characters in Jane Austen's Pride and Prejudice, describe the extent to which the lives of men and women are shaped by marriage and the desire to be married.",
+    "options": [],
+    "modelAnswer": "In Pride and Prejudice, Jane Austen explores the extent to which the lives of men and women are shaped by marriage and the desire to be married. The novel is set in a society where marriage is central to social status, economic security, and personal happiness.\n\nMrs. Bennet: Mrs. Bennet is obsessed with getting her daughters married. She sees marriage as the only way for women to secure their future, as the Bennet estate is entailed away from the female line. Her frantic efforts to marry off her daughters shape the plot and highlight the pressure placed on women to marry.\n\nElizabeth Bennet: Elizabeth, however, challenges this view — she rejects Mr. Collins' proposal and initially rejects Mr. Darcy because she values love and respect over social status and financial security. She wants to marry for love, not for convenience. Her refusal to marry for material gain shows her independence and intelligence.\n\nCharlotte Lucas: Charlotte accepts Mr. Collins' proposal out of practicality — she is 27 and has no fortune. She sees marriage as a necessity for economic survival. Her choice reflects the limited options available to women in that society.\n\nMr. Darcy: Darcy's desire to marry Elizabeth reveals that marriage can transcend class boundaries. Despite his wealth and status, he overcomes his pride and proposes to Elizabeth, demonstrating that true love can overcome social obstacles.\n\nLydia Bennet: Lydia's rash and impulsive elopement with Mr. Wickham shows the dangers of marrying without thought — her marriage is based on superficial attraction and leads to social disgrace.\n\nConclusion: Austen shows that marriage shapes the lives of both men and women in the society of Pride and Prejudice. For women, marriage is often a necessity for economic survival and social status. However, the novel advocates for marriage based on love, mutual respect, and understanding, as seen in Elizabeth and Darcy's relationship."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Identify and discuss the thematic thrust of Chaucer's 'The Canterbury Tales'.",
+    "options": [],
+    "modelAnswer": "Chaucer's The Canterbury Tales is a collection of stories told by a group of pilgrims on their journey to Canterbury. The thematic thrust of the work is multifaceted.\n\nSocial Commentary: Chaucer critiques the social classes of medieval England — the clergy, nobility, and commoners. He satirizes the corruption of the Church (e.g., the Pardoner, the Friar), the materialism of the middle class, and the pretensions of the nobility. He exposes the hypocrisy and moral failings of his society.\n\nHuman Nature: Chaucer explores human nature — the desires, flaws, and motivations of his characters. The tales reveal the complexities of human behaviour, including greed, lust, pride, and the desire for power. The pilgrims represent different aspects of human nature.\n\nThe Role of Love and Marriage: Many tales explore love and marriage — the Wife of Bath's Tale discusses the nature of marriage and female desire, while the Miller's Tale presents a comedic view of adultery. Chaucer examines the tension between romantic love, social expectations, and marital obligations.\n\nReligion and Piety: The pilgrimage itself is a religious act, but many of the pilgrims are not pious. Chaucer critiques religious hypocrisy and the corruption of the Church while also showing genuine faith in some characters (like the Parson).\n\nAppearance vs Reality: Chaucer contrasts the public personas of the pilgrims with their private flaws. For example, the Pardoner preaches against greed but is himself greedy. This theme of appearance versus reality runs throughout the work.\n\nJustice and Morality: Many tales explore themes of justice, morality, and the consequences of sin. The Pardoner's Tale warns against greed, while the Knight's Tale explores themes of chivalry and honour.\n\nConclusion: The thematic thrust of The Canterbury Tales is a rich tapestry of social commentary, human nature, love, religion, and morality. Chaucer uses the pilgrimage framework to explore the complexities of medieval society and human experience."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "In John Milton's Paradise Lost, Satan is presented as a character with many traits. Examine one of his soliloquies and identify the character traits and poetic techniques that make him seem appealing or forgivable.",
+    "options": [],
+    "modelAnswer": "In Paradise Lost, Satan is presented as a complex and compelling character. His soliloquies reveal his inner thoughts and motivations, making him seem appealing or forgivable despite his rebellion against God.\n\nOne of Satan's most famous soliloquies occurs in Book I, where he declares, 'Better to reign in Hell than serve in Heaven.' This speech reveals several character traits:\n\nPride: Satan's pride is evident — he refuses to submit to God and prefers to rule in Hell rather than be a servant in Heaven. His pride makes him defiant and uncompromising.\n\nCourage: Satan displays courage and resilience — he does not despair after his fall but resolves to continue the fight against God. His determination and strength in the face of defeat are admirable.\n\nPersuasiveness: Satan is a skilled rhetorician — he uses persuasive language to convince the other fallen angels to follow him. His eloquence makes him seem charismatic and convincing.\n\nPoetic techniques used in the soliloquy:\n\nHeroic Blank Verse: Milton uses blank verse (unrhymed iambic pentameter) to elevate Satan's speeches, giving them a heroic quality. This makes Satan seem like an epic hero.\n\nImagery: Milton uses vivid imagery — 'the burning marl' and 'the sulphurous flood' — to create a powerful picture of Hell. The imagery makes Satan's defiance seem grand and dramatic.\n\nRhetorical Questions: Satan's soliloquy is filled with rhetorical questions that engage the reader and express his determination and defiance.\n\nWhy Satan seems appealing or forgivable:\n- Humanization: Satan is presented as a complex character with emotions — pride, jealousy, ambition — that readers can understand and relate to.\n- Rebellion against Tyranny: Satan's rebellion against God can be seen as a fight against tyranny, making him a sympathetic figure for those who value freedom.\n- Eloquence and Intelligence: Satan's intelligence and eloquence make him charismatic and persuasive, making readers admire his strength of will.\n\nConclusion: Milton's portrayal of Satan is compelling because of his complex character traits and the poetic techniques used in his soliloquies. While he is ultimately evil and proud, his eloquence, courage, and defiance make him a memorable and even sympathetic character."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Write short notes on the following:\nA. Imagery\nB. Theme\nC. Voice\nD. Analogy\nE. Tragedy",
+    "options": [],
+    "modelAnswer": "A. Imagery: Imagery is the use of language to create vivid mental pictures and evoke sensory experiences (visual, auditory, tactile, olfactory, and gustatory). It appeals to the senses and helps the reader imagine the scene, characters, and emotions. For example, 'the golden sun sank below the horizon' creates visual imagery.\n\nB. Theme: Theme is the central idea or underlying message of a literary work. It is the universal truth or insight about life, human nature, or society that the author conveys through the story. Themes can be explicit or implicit, and they give a work its meaning and purpose.\n\nC. Voice: Voice is the distinctive style, tone, and perspective of a writer or speaker. It reflects the personality, attitude, and point of view of the author or the narrator. Voice gives a work its individuality and emotional impact.\n\nD. Analogy: Analogy is a comparison between two things that are similar in some respects. It is used to explain an unfamiliar or complex idea by comparing it to something familiar. For example, 'life is like a journey' is an analogy.\n\nE. Tragedy: Tragedy is a form of drama that depicts the downfall of a noble or admirable protagonist, often due to a tragic flaw (hamartia) or external forces. It evokes pity and fear in the audience and leads to catharsis — an emotional release. Examples include Oedipus Rex and Macbeth."
+  },
+  {
+    "subject": "Literature",
+    "year": 2015,
+    "category": "Introduction to Prose Fiction",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Explain what you understand by characterization and discuss any THREE types of characters.",
+    "options": [],
+    "modelAnswer": "Characterization is the process by which an author reveals the personality, traits, and motivations of characters in a literary work. It is through characterization that characters come to life and drive the plot. Characterization can be direct (the author tells the reader about the character) or indirect (the reader infers character traits through actions, dialogue, and interactions).\n\nThree types of characters:\n1. Protagonist: The protagonist is the central character of the story — the one around whom the plot revolves. The protagonist is often the hero or the main figure who faces the central conflict. Example: Oedipus in Oedipus Rex, Elizabeth Bennet in Pride and Prejudice.\n\n2. Antagonist: The antagonist is the character who opposes the protagonist. The antagonist creates conflict and obstacles for the protagonist. The antagonist can be a person, a group, or even a force of nature. Example: Creon in Antigone (opposes Antigone), Satan in Paradise Lost.\n\n3. Round Character: A round character is complex and multifaceted, with a range of emotions, motivations, and traits. They are realistic and undergo development throughout the story. Example: Hamlet is a round character because of his complexity and internal conflicts.\n\n4. Flat Character: A flat character is simple and one-dimensional — they have few traits and do not undergo significant development. They are often used for comic relief or to serve a specific function in the plot. Example: Polonius in Hamlet is a flat character.\n\n5. Dynamic Character: A dynamic character undergoes significant change or development during the story. They learn, grow, or transform as a result of events. Example: Ebenezer Scrooge in A Christmas Carol is a dynamic character.\n\n6. Static Character: A static character does not change or develop during the story — they remain the same throughout. Example: Sherlock Holmes is often a static character.\n\nConclusion: Characterization is essential for creating engaging and believable characters. The different types of characters serve different functions in the narrative and contribute to the overall meaning and impact of the work."
+  }
+]

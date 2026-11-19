@@ -128,8 +128,8 @@
     "questionNumber": 17,
     "question": "The entropy of a thermodynamic system increases, when the system is made to convert",
     "options": ["heat into work at constant temperature.", "heat into work in a cyclic operation.", "work into heat in a cyclic operation.", "work into heat at a constant temperature."],
-    "answer": "C",
-    "explanation": "Converting work into heat increases disorder (entropy).\n\nConverting heat into work decreases entropy or requires compensation."
+    "answer": "D",
+    "explanation": "Entropy is a property of the system's state, so in any cyclic operation the system returns to its starting state and its entropy change is zero. That rules out options B and C.\n\nWhen work is turned into heat that the system absorbs at a constant temperature T (for example, stirring a liquid at constant temperature), the system's entropy rises by ΔS = Q/T > 0.\nTurning heat into work at constant temperature (option A) removes heat from the system, so its entropy falls."
   },
   {
     "subject": "Physics",
@@ -195,6 +195,8 @@
     "question": "A near-sighted student has a near point of 0.1 m and a focal length of 5.0 cm. What is the student's far point?",
     "options": ["0.200 m", "8.000 m", "0.125 m", "2.100 m"],
     "answer": "A",
+    "reviewNote": "The data given (near point 0.1 m and a focal length of 5.0 cm) do not lead to any of the printed options, so part of the question is probably missing or misprinted. It is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "For a near-sighted (myopic) eye, the correcting lens is concave (negative focal length).\n\nThe given values do not produce any of the listed options. The far point comes out to 0.05 m, which is not among the choices.\n\nThis indicates that the question or the options likely contain an error. The closest option has been selected."
   },
   {
@@ -348,8 +350,8 @@
     "questionNumber": 37,
     "question": "The velocity of electrons emitted from the surface of a metal of work function 4.92 eV when irradiated is 2.084 × 10⁷ m/s. Determine the wavelength of the radiation.",
     "options": ["0.8 nm", "1.0 nm", "1.1 nm", "1.2 nm"],
-    "answer": "A",
-    "explanation": "KE = ½mv² = 0.5 × 9.11×10⁻³¹ × (2.084×10⁷)² = 1.98 × 10⁻¹⁶ J = 1.24 eV.\n\nhf = φ + KE = 4.92 + 1.24 = 6.16 eV.\n\nλ = hc/E = 1240/6.16 = 201 nm = 0.201 μm.\n\nThe correct value is approximately 201 nm, which is not among the options. The closest option has been selected."
+    "answer": "B",
+    "explanation": "Kinetic energy of the electrons:\nKE = ½mv² = ½ × 9.11×10⁻³¹ × (2.084×10⁷)² = 1.98 × 10⁻¹⁶ J\n= 1.98×10⁻¹⁶ ÷ 1.6×10⁻¹⁹ ≈ 1235 eV.\n\nPhoton energy = work function + KE = 4.92 + 1235 ≈ 1240 eV.\n\nλ = hc/E = (1240 eV·nm) ÷ 1240 eV ≈ 1.0 nm."
   },
   {
     "subject": "Physics",
@@ -415,7 +417,7 @@
     "question": "What is the equivalent of 1.007277 amu in MeV?",
     "options": ["1.60 × 10⁻¹⁹", "6.02 × 10²³", "931.48", "937.77"],
     "answer": "D",
-    "explanation": "1 amu = 931.5 MeV/c².\n\n1.007277 amu = 1.007277 × 931.5 = 938.27 MeV.\n\nThe correct value is approximately 938.27 MeV. The closest option is 937.77 MeV."
+    "explanation": "Using 1 u = 931 MeV:\n1.007277 × 931 = 937.77 MeV.\n\n(With the more precise 931.5 MeV the value is about 938.3 MeV; the paper uses 931.)"
   },
   {
     "subject": "Physics",
@@ -572,7 +574,7 @@
     "questionNumber": "3c",
     "question": "(c) (i) A Carnot engine operates between two reservoirs at 450 K and 600 K. What is the coefficient of performance of the engine?\n(ii) A Carnot engine whose low-temperature reservoir is at 200 K has an efficiency of 45%. By how much must the temperature of the high-temperature reservoir be raised if the efficiency is to be increased to 50%?",
     "options": [],
-    "modelAnswer": "(i) Efficiency η = 1 - T_cold/T_hot = 1 - 450/600 = 25%.\n\n(ii) η₁ = 1 - 200/T_H1 = 0.45 → T_H1 = 363.6 K.\nη₂ = 1 - 200/T_H2 = 0.50 → T_H2 = 400 K.\nIncrease = 400 - 363.6 = 36.4 K."
+    "modelAnswer": "(i) 'Coefficient of performance' (COP) normally describes a heat pump or refrigerator run between the two reservoirs:\nCOP (refrigerator) = T_cold/(T_hot − T_cold) = 450/(600 − 450) = 450/150 = 3.0\nIf the examiner means the engine's efficiency instead:\nη = 1 − T_cold/T_hot = 1 − 450/600 = 0.25 = 25%\nGive both in the exam and say which is which.\n\n(ii) η₁ = 1 - 200/T_H1 = 0.45 → T_H1 = 363.6 K.\nη₂ = 1 - 200/T_H2 = 0.50 → T_H2 = 400 K.\nIncrease = 400 - 363.6 = 36.4 K."
   },
   {
     "subject": "Physics",
@@ -666,7 +668,7 @@
     "questionNumber": "7b",
     "question": "(b) Estimate the change in energy ΔE of an electron that jumps from the L shell to the K shell of Molybdenum (Z = 42).",
     "options": [],
-    "modelAnswer": "E_K = -13.6 × 42²/1² = -24.0 keV.\nE_L = -13.6 × 42²/2² = -6.0 keV.\n\nΔE = E_L - E_K = -6.0 - (-24.0) = +18.0 keV."
+    "modelAnswer": "For a K-shell (Kα) transition, the remaining K electron screens one unit of nuclear charge, so the effective charge is (Z − 1) = 41 (Moseley's law):\nE_K ≈ −13.6 × 41²/1² eV = −22.9 keV\nE_L ≈ −13.6 × 41²/2² eV = −5.7 keV\nΔE = E_L − E_K ≈ 13.6 × 41² × (1 − 1/4) eV ≈ 17.1 keV\nThe electron loses about 17 keV, which is emitted as a Kα X-ray photon. (The measured value for molybdenum is 17.5 keV.)\nWithout the screening correction (using Z = 42), you get about 18.0 keV, a rougher estimate."
   },
   {
     "subject": "Physics",
@@ -686,7 +688,7 @@
     "questionNumber": "8a",
     "question": "(a) (i) What do you understand by the term 'binding energy'?\n(ii) Calculate the binding energy per nucleon of the Helium nucleus ⁴₂He. (mass of proton = 1.0073 u, mass of neutron = 1.0073 u, mass of helium nucleus = 4.0015 u)",
     "options": [],
-    "modelAnswer": "(i) Binding energy is the energy required to separate all nucleons in a nucleus into individual free nucleons.\n\n(ii) Mass defect = 2(1.0073) + 2(1.0073) - 4.0015 = 0.0277 u.\nTotal BE = 0.0277 × 931.5 = 25.80 MeV.\nBE per nucleon = 25.80/4 = 6.45 MeV/nucleon."
+    "modelAnswer": "(i) Binding energy is the energy required to separate all nucleons in a nucleus into individual free nucleons.\n\n(ii) Mass defect = 2(1.0073) + 2(1.0073) - 4.0015 = 0.0277 u.\nTotal BE = 0.0277 × 931.5 = 25.80 MeV.\nBE per nucleon = 25.80/4 = 6.45 MeV/nucleon (with the masses as printed).\n\nNote: the paper gives the neutron the same mass as the proton (1.0073 u). The real neutron mass is 1.0087 u. With it:\nMass defect = 2(1.0073) + 2(1.0087) − 4.0015 = 0.0305 u\nBE = 0.0305 × 931.5 ≈ 28.4 MeV, i.e. about 7.1 MeV per nucleon (the accepted value for helium-4).\nUse the printed values in the exam, but know the true figure."
   },
   {
     "subject": "Physics",

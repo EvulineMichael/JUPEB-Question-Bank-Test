@@ -320,6 +320,8 @@
     "question": "How many grams of water at 20°C must be added to 35 g of ice at 0°C to melt it completely? (Specific heat capacity of water = 4.2 × 10³ Jkg⁻¹K⁻¹, Specific latent heat of fusion of ice = 3.4 × 10⁵ Jkg⁻¹)",
     "options": ["320.2 g", "445.2 g", "125.6 g", "129.8 g"],
     "answer": "D",
+    "reviewNote": "Working: heat to melt the ice = 0.035 × 3.4×10⁵ = 11 900 J. Heat from water cooling from 20 °C to 0 °C = m × 4200 × 20.\n\nm = 11 900 / 84 000 = 0.142 kg = 142 g.\n\nNone of the printed options matches this, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Heat to melt ice = 0.035 × 3.4×10⁵ = 11,900 J.\n\nHeat lost by water = m × 4200 × 20 = 84,000m.\n\n84,000m = 11,900.\nm = 11,900/84,000 = 0.1417 kg = 141.7 g.\n\nThe correct value is approximately 142 g, which is not among the options. The closest option has been selected."
   },
   {
@@ -419,7 +421,7 @@
     "question": "A 200 turn coil having an axial length of 30 mm and a radius of 10 mm is pivoted in a magnetic field having a flux density of 0.8 T. If the coil carries a current of 0.5 A, calculate the torque acting on the coil.",
     "options": ["4.8 Nm", "0.48 Nm", "0.048 Nm", "0.0048 Nm"],
     "answer": "C",
-    "explanation": "τ = BINA sinθ.\n\nFor maximum torque, sinθ = 1.\nA = πr² = π(0.01)² = 3.14 × 10⁻⁴ m².\n\nτ = 0.8 × 0.5 × 200 × 3.14×10⁻⁴ = 0.02512 Nm.\n\nNote: The calculated value (0.025 Nm) doesn't match any option exactly. The closest option has been selected."
+    "explanation": "For a rectangular coil, area A = axial length × diameter = 0.030 m × 0.020 m = 6.0 × 10⁻⁴ m².\n\nMaximum torque τ = BANI = 0.8 × 6.0×10⁻⁴ × 200 × 0.5 = 0.048 N m."
   },
   {
     "subject": "Physics",
@@ -485,6 +487,8 @@
     "question": "Calculate the maximum kinetic energy of liberated electrons when Caesium with a work function of 25 × 10⁻¹⁸ J is illuminated by light of frequency 8.6 × 10¹⁵ Hz.",
     "options": ["2.7 × 10⁻¹⁹ J", "6.4 × 10⁻¹⁹ J", "3.3 × 10⁻¹⁸ J", "5.4 × 10⁻¹⁸ J"],
     "answer": "A",
+    "reviewNote": "As printed, the photon energy hf = 6.63×10⁻³⁴ × 8.6×10¹⁵ = 5.7 × 10⁻¹⁸ J is less than the work function (25 × 10⁻¹⁸ J), so no electrons would be emitted.\n\nIf the work function is 2.5 × 10⁻¹⁸ J (a likely misprint), KE_max = 5.7×10⁻¹⁸ − 2.5×10⁻¹⁸ ≈ 3.2 × 10⁻¹⁸ J (close to option C). Because of the misprint, the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "hf = 6.63×10⁻³⁴ × 8.6×10¹⁵ = 5.70 × 10⁻¹⁸ J.\n\nφ = 25 × 10⁻¹⁸ J = 2.5 × 10⁻¹⁷ J.\n\nSince hf < φ, no electrons would be emitted — the photon energy is insufficient to overcome the work function.\n\nThe question likely has an error in either the work function or frequency. The closest option has been selected."
   },
   {

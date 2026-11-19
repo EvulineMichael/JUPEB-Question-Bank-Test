@@ -52,6 +52,8 @@
     "question": "Find tan 75° in surd form.",
     "options": ["(√3 - 2)/2", "(√3 + 2)/2", "(2 - √3)/2", "(√2 - 3)/2"],
     "answer": "B",
+    "reviewNote": "tan 75° = tan(45° + 30°) = (1 + 1/√3)/(1 − 1/√3) = (√3 + 1)/(√3 − 1) = (√3 + 1)²/2 = 2 + √3.\n\n2 + √3 is not among the printed options (B is half of it), so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "tan75° = tan(45°+30°) = (tan45+tan30)/(1-tan45 tan30) = (1 + 1/√3)/(1 - 1/√3) = (√3+1)/(√3-1).\n\nRationalize: ((√3+1)²)/(3-1) = (3+2√3+1)/2 = (4+2√3)/2 = 2+√3.\n\nThe correct value is 2 + √3, which is not among the options. Option B, (√3 + 2)/2, is half of the correct value. This appears to be an error in the options. The closest option has been selected."
   },
   {
@@ -96,6 +98,8 @@
     "question": "Which form of partial fraction is equivalent to the algebraic fraction: f(x)/[(x² + 1)(x - b)²]?",
     "options": ["(Ax + B)/(x² + a) + (Cx + D)/(x - b)²", "(Ax + B)/(x² + a) + C/(x - b) + D/(x - b)²", "(Ax + B)/(x² + a) + (Cx + D)/(x - b) + (Ex + F)/(x - b)²", "(Ax + B)/(x² + a) + C/(x - b) + D/(x - b)²"],
     "answer": "D",
+    "reviewNote": "Options B and D are printed the same in this copy of the paper, so this question is left out of quizzes.\n\nCorrect answer: (Ax + B)/(x² + a) + C/(x - b) + D/(x - b)²\n\nFor the irreducible quadratic factor (x²+1), the numerator is linear (Ax+B). For the repeated linear factor (x-b)², the numerators are constants: C/(x-b) + D/(x-b)².",
+    "excludeFromQuiz": true,
     "explanation": "For the irreducible quadratic factor (x²+1), the numerator is linear (Ax+B). For the repeated linear factor (x-b)², the numerators are constants: C/(x-b) + D/(x-b)²."
   },
   {
@@ -162,7 +166,7 @@
     "question": "Estimate the value of the product log₂3 × log₂4 × log₄5 × log₅6 × log₆7 × log₇8.",
     "options": ["1", "2", "3", "4"],
     "answer": "C",
-    "explanation": "Use change of base:\nlog₂3 × log₃4 = log₂4 = 2 (note: log₂4 = 2 directly)\n\nlog₄5 × log₅6 = log₄6\nlog₄6 × log₆7 = log₄7\nlog₄7 × log₇8 = log₄8 = 3/2\n\nProduct = 2 × (3/2) = 3."
+    "explanation": "The second factor should read log₃4 (the chain of logs only links up that way): log₂3 × log₃4 × log₄5 × log₅6 × log₆7 × log₇8.\n\nChange of base: logₐb × log_b c = logₐc. Each step cancels the middle number:\nlog₂3 × log₃4 = log₂4\nlog₂4 × log₄5 = log₂5 … and so on, down to log₂8.\n\nlog₂8 = 3, because 2³ = 8."
   },
   {
     "subject": "Mathematics",
@@ -304,8 +308,8 @@
     "questionNumber": 28,
     "question": "Evaluate ∫₀² 12x² dx = 1372 to get the value of z.",
     "options": ["-14", "14", "7", "8"],
-    "answer": "B",
-    "explanation": "The integral ∫₀² 12x² dx = [4x³]₀² = 4(8) - 0 = 32, not 1372.\n\nThe question as stated appears to contain an error. There is no variable z in the equation. If the intent was to solve for z where z² = 196 (since 1372/7 = 196), then z = 14.\n\nThis question appears to be misstated. The closest plausible answer has been selected."
+    "answer": "C",
+    "explanation": "The upper limit should read z, not 2: ∫₀ᶻ 12x² dx = 1372.\n\n∫₀ᶻ 12x² dx = [4x³]₀ᶻ = 4z³\n4z³ = 1372 → z³ = 343 → z = 7."
   },
   {
     "subject": "Mathematics",
@@ -426,6 +430,8 @@
     "question": "Three points A, B and C have spatial coordinates (-5, -2, 3), (-2, 5, 3) and (4, 5, 2) respectively. Find the scalar product of displacement vectors AB and BC.",
     "options": ["-42.0", "-14.0", "-18.0", "-24.0"],
     "answer": "C",
+    "reviewNote": "AB = (3, 7, 0), BC = (6, 0, −1), so AB · BC = 18 + 0 + 0 = 18.\n\nThe printed options are all negative, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "AB = B - A = (-2+5, 5+2, 3-3) = (3, 7, 0).\nBC = C - B = (4+2, 5-5, 2-3) = (6, 0, -1).\n\nAB · BC = (3)(6) + (7)(0) + (0)(-1) = 18 + 0 + 0 = 18.\n\nThe correct value is 18, which is not among the options. The closest option is -18, which suggests a possible sign error in the options. The closest option has been selected."
   },
   {

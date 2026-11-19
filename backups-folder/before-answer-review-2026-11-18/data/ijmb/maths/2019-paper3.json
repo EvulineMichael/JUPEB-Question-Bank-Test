@@ -1,0 +1,178 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Given the points P(2, −3) and Q(−2, 5), find the coordinates of the mid-point A of PQ and its distance from B(−1, 3).",
+    "options": [],
+    "modelAnswer": "Mid-point A = ((2 + (−2))/2, (−3 + 5)/2) = (0, 1).\nDistance AB = √((0 − (−1))² + (1 − 3)²) = √(1 + 4) = √5 ≈ 2.236 units."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Calculate the value of M of the distribution with probability density function f(x) = M sin x, where 0 ≤ x ≤ π.",
+    "options": [],
+    "modelAnswer": "For a p.d.f. the total area is 1:\n∫₀^π M sin x dx = M[−cos x]₀^π = M(−cos π + cos 0) = M(1 + 1) = 2M.\n2M = 1 → M = 1/2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Calculate, P(A) given that P(B) = 0.72, P(A ∪ B) = 0.98, if A and B are mutually exclusive events.",
+    "options": [],
+    "modelAnswer": "For mutually exclusive events, P(A ∩ B) = 0, so P(A ∪ B) = P(A) + P(B).\n0.98 = P(A) + 0.72 → P(A) = 0.26."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Find the equation of the circle whose centre is (−2, 1) and radius √5.",
+    "options": [],
+    "modelAnswer": "(x − (−2))² + (y − 1)² = (√5)²\n(x + 2)² + (y − 1)² = 5.\nExpanding: x² + 4x + 4 + y² − 2y + 1 = 5 → x² + y² + 4x − 2y = 0.\n(The circle passes through the origin.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Find the eccentricity and foci of the ellipse x²/25 + y²/4 = 1.",
+    "options": [],
+    "modelAnswer": "a² = 25, b² = 4, so a = 5, b = 2 (major axis along the x-axis).\nb² = a²(1 − e²): 4 = 25(1 − e²) → e² = 21/25 → e = √21/5 ≈ 0.917.\nFoci: (±ae, 0) = (±√21, 0) ≈ (±4.58, 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a). Show that the equation y² − 2y − 4x + 5 = 0 represents a parabola. Find the coordinates of its vertex, focus and the equations of its directrix and axis.",
+    "options": [],
+    "modelAnswer": "Complete the square in y:\ny² − 2y = 4x − 5\n(y − 1)² − 1 = 4x − 5\n(y − 1)² = 4x − 4 = 4(x − 1).\nThis has the form Y² = 4aX with Y = y − 1, X = x − 1 and a = 1, so it is a parabola (opening to the right).\n• Vertex (X = 0, Y = 0): (1, 1).\n• Focus (X = a, Y = 0): (2, 1).\n• Directrix X = −a: x − 1 = −1 → x = 0 (the y-axis).\n• Axis Y = 0: y = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b). Find the equation of the circle which passes through the points (1, 2), (1, 0) and (0, 2).",
+    "options": [],
+    "modelAnswer": "Let the circle be x² + y² + 2gx + 2fy + c = 0.\n(1, 2): 1 + 4 + 2g + 4f + c = 0 → 2g + 4f + c = −5 ... (1)\n(1, 0): 1 + 2g + c = 0 → 2g + c = −1 ... (2)\n(0, 2): 4 + 4f + c = 0 → 4f + c = −4 ... (3)\n(1) − (2): 4f = −4 → f = −1.\nFrom (3): −4 + c = −4 → c = 0.\nFrom (2): 2g = −1 → g = −1/2.\nCircle: x² + y² − x − 2y = 0, centre (1/2, 1), radius √(1/4 + 1) = √5/2.\n(Check (0, 2): 0 + 4 − 0 − 4 = 0 ✓. The points (1, 0) and (0, 2) lie at the ends of a diameter, since the angle at (1, 2) is a right angle.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a). Show that the equation x² + 4y² + 2x + 8y + 1 = 0 represents an ellipse. Hence, find the value of its eccentricity, centre and the equations of its directrix.",
+    "options": [],
+    "modelAnswer": "Complete the squares:\n(x² + 2x) + 4(y² + 2y) = −1\n(x + 1)² − 1 + 4[(y + 1)² − 1] = −1\n(x + 1)² + 4(y + 1)² = 4\n(x + 1)²/4 + (y + 1)²/1 = 1.\nThis is an ellipse with a² = 4, b² = 1 (a = 2, b = 1), major axis parallel to the x-axis.\n• Centre: (−1, −1).\n• Eccentricity: b² = a²(1 − e²) → 1 = 4(1 − e²) → e² = 3/4 → e = √3/2 ≈ 0.866.\n• Directrices: x + 1 = ±a/e = ±2/(√3/2) = ±4/√3, i.e. x = −1 + 4/√3 ≈ 1.309 and x = −1 − 4/√3 ≈ −3.309.\n(Foci: x + 1 = ±ae = ±√3, i.e. (−1 ± √3, −1).)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b). Show that the locus of points which move so that its distance from the origin is twice its distance from the point (3, 0) is a circle.",
+    "options": [],
+    "modelAnswer": "Let P(x, y) be a point on the locus. Distance from O = 2 × distance from (3, 0):\n√(x² + y²) = 2√((x − 3)² + y²).\nSquare: x² + y² = 4[(x − 3)² + y²] = 4x² − 24x + 36 + 4y²\n0 = 3x² + 3y² − 24x + 36\nx² + y² − 8x + 12 = 0.\nComplete the square: (x − 4)² + y² = 16 − 12 = 4.\nThis is a circle with centre (4, 0) and radius 2, as required. (It is a circle of Apollonius.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a). Find the equations of the tangents to the hyperbola x²/16 − y²/4 = 1 from the point (−2, 1).",
+    "options": [],
+    "modelAnswer": "Here a² = 16, b² = 4. The line y = mx + c touches x²/a² − y²/b² = 1 when c² = a²m² − b² = 16m² − 4.\nA line through (−2, 1) with gradient m: y − 1 = m(x + 2), so c = 2m + 1.\n(2m + 1)² = 16m² − 4\n4m² + 4m + 1 = 16m² − 4\n12m² − 4m − 5 = 0\nm = [4 ± √(16 + 240)]/24 = (4 ± 16)/24 → m = 5/6 or m = −1/2.\n\nm = 5/6: c = 2(5/6) + 1 = 8/3. Tangent: y = (5/6)x + 8/3, i.e. 5x − 6y + 16 = 0.\nIt touches the hyperbola at (−a²m/c, −b²/c) = (−5, −3/2). Check: 25/16 − (9/4)/4 = 25/16 − 9/16 = 1 ✓.\n\nm = −1/2: c = 0, giving y = −x/2, i.e. x + 2y = 0.\nNote: this line is an asymptote of the hyperbola (the asymptotes are y = ±x/2). It satisfies the tangency condition but touches the curve only 'at infinity', so it is not a true tangent. The point (−2, 1) lies on this asymptote.\nSo the only proper tangent from (−2, 1) is 5x − 6y + 16 = 0. The standard method gives the pair 5x − 6y + 16 = 0 and x + 2y = 0, and students should point out that the second is the asymptote."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b). Sketch the curve r = 2(1 − sin θ) in polar form, for 0 ≤ θ ≤ 360°.",
+    "options": [],
+    "modelAnswer": "Table of values:\nθ: 0°, 30°, 60°, 90°, 120°, 150°, 180°, 210°, 240°, 270°, 300°, 330°, 360°\nr: 2, 1, 0.27, 0, 0.27, 1, 2, 3, 3.73, 4, 3.73, 3, 2\n(r = 2 − 2 sin θ; e.g. at 60°, r = 2 − √3 ≈ 0.27; at 240°, r = 2 + √3 ≈ 3.73.)\n\nFeatures of the sketch:\n• The curve is a cardioid (heart-shaped).\n• It passes through the pole (r = 0) at θ = 90°, forming a cusp pointing upwards (along the positive y-axis).\n• Its maximum r = 4 is at θ = 270°, the point (0, −4) on the negative y-axis.\n• It cuts the initial line at r = 2 when θ = 0° and 180°, i.e. at (2, 0) and (−2, 0).\n• It is symmetric about the line θ = 90°/270° (the y-axis), since sin(180° − θ) = sin θ.\n• r is never negative (0 ≤ r ≤ 4)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) The number of deaths in a small town follows a poison law with an average of 2 deaths a week. Find the probability that in a certain week:\n(i) at least two deaths occur; (ii) at most two deaths occur; (iii) there are exactly two deaths.",
+    "options": [],
+    "modelAnswer": "Note: \"poison law\" means the Poisson distribution.\n\nλ = 2: P(X = r) = e^(−2) 2^r/r!, with e^(−2) = 0.13534.\nP(0) = 0.13534; P(1) = 2 × 0.13534 = 0.27067; P(2) = (4/2) × 0.13534 = 0.27067.\n\n(i) P(X ≥ 2) = 1 − P(0) − P(1) = 1 − 3e^(−2) = 1 − 0.40601 = 0.5940.\n(ii) P(X ≤ 2) = P(0) + P(1) + P(2) = 5e^(−2) = 0.6767.\n(iii) P(X = 2) = 2e^(−2) = 0.2707."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b). If a card is randomly selected from a deck of cards, find the probability that it is\n(i) A queen or a Diamond; (ii) A king of Diamond.",
+    "options": [],
+    "modelAnswer": "A standard deck has 52 cards: 4 queens and 13 diamonds, one of which is the queen of diamonds.\n(i) P(queen or diamond) = 4/52 + 13/52 − 1/52 = 16/52 = 4/13.\n(ii) There is exactly one king of diamonds: P = 1/52."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) If 20% of the bolts produced by a machine are defective, determine, using binomial distribution, the probability that out of 5 bolts selected at random:\n(i) 1; (ii) 0 and (iii) less than 2 will be defective.",
+    "options": [],
+    "modelAnswer": "n = 5, p = 0.2, q = 0.8. P(X = r) = ⁵Cᵣ (0.2)^r (0.8)^(5−r).\n(i) P(X = 1) = 5 × 0.2 × 0.8⁴ = 5 × 0.2 × 0.4096 = 0.4096.\n(ii) P(X = 0) = 0.8⁵ = 0.32768.\n(iii) P(X < 2) = P(0) + P(1) = 0.32768 + 0.4096 = 0.73728."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Normal Distribution",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) The age of students in a certain class is normally distributed with mean 18years and standard deviation of 4 years, determine the probability of a student with the age between 15years and 25years.",
+    "options": [],
+    "modelAnswer": "μ = 18, σ = 4. Standardise with Z = (X − μ)/σ:\nZ₁ = (15 − 18)/4 = −0.75; Z₂ = (25 − 18)/4 = 1.75.\nP(15 < X < 25) = Φ(1.75) − Φ(−0.75) = 0.9599 − (1 − 0.7734) = 0.9599 − 0.2266 = 0.7333.\nAbout 73.3% of the students are aged between 15 and 25."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "paper": "Paper III",
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "11",
+    "question": "The following are marks obtained by eight students out of a maximum of 10 marks for each subject in a test:\n(i) Verify that for the above data x̄ = ȳ = 7\n(ii) Calculate the correlation coefficient, r.\n(iii) Interpret the value of this coefficient.\n(iv) Calculate Spearman's rank correlation coefficient.\n(v) Interpret the value of the coefficient\n(vi) Do the values in (ii) and (iv) above show any correspondence?\n(vii) Plot the points (x, y) on the scatter diagram.\n(viii) Does the scatter diagram indicate the same type of result as in (ii) and (iv)?\n(ix) Calculate the equation of the line of x on y.",
+    "options": [],
+    "modelAnswer": "Data (Statistics X, Economics Y) for the eight students: (6, 7), (8, 6), (7, 8), (6, 8), (9, 5), (5, 9), (8, 7), (7, 6).\n\n(i) ΣX = 6 + 8 + 7 + 6 + 9 + 5 + 8 + 7 = 56, so x̄ = 56/8 = 7.\nΣY = 7 + 6 + 8 + 8 + 5 + 9 + 7 + 6 = 56, so ȳ = 56/8 = 7. Verified.\n\n(ii) Deviations from the mean (x − 7, y − 7): (−1, 0), (1, −1), (0, 1), (−1, 1), (2, −2), (−2, 2), (1, 0), (0, −1).\nΣ(x − x̄)² = 1 + 1 + 0 + 1 + 4 + 4 + 1 + 0 = 12\nΣ(y − ȳ)² = 0 + 1 + 1 + 1 + 4 + 4 + 0 + 1 = 12\nΣ(x − x̄)(y − ȳ) = 0 − 1 + 0 − 1 − 4 − 4 + 0 + 0 = −10\nr = −10/√(12 × 12) = −10/12 = −0.833.\n\n(iii) There is a strong negative (inverse) linear relationship: students who score high in Statistics tend to score low in Economics, and vice versa.\n\n(iv) Ranks (highest mark = rank 1; tied marks share the average rank):\nX ranks: 6.5, 2.5, 4.5, 6.5, 1, 8, 2.5, 4.5\nY ranks: 4.5, 6.5, 2.5, 2.5, 8, 1, 4.5, 6.5\nd: 2, −4, 2, 4, −7, 7, −2, −2; d²: 4, 16, 4, 16, 49, 49, 4, 4; Σd² = 146.\nR = 1 − 6Σd²/(n(n² − 1)) = 1 − (6 × 146)/(8 × 63) = 1 − 876/504 = −0.738.\n(Because there are many tied ranks, the exact tie-corrected value, the Pearson correlation of the ranks, is −0.802; the usual formula answer is −0.74.)\n\n(v) There is a fairly strong negative correlation between the rankings: students ranked high in Statistics tend to be ranked low in Economics.\n\n(vi) Yes. Both coefficients are negative and fairly large (−0.83 and −0.74), so they agree that there is a strong inverse relationship.\n\n(vii) Scatter diagram: plot X (Statistics, 0–10) on the horizontal axis and Y (Economics, 0–10) on the vertical axis, and mark the eight points (6, 7), (8, 6), (7, 8), (6, 8), (9, 5), (5, 9), (8, 7) and (7, 6).\n\n(viii) Yes. The points slope downwards from top left (5, 9) to bottom right (9, 5) and lie fairly close to a straight line, showing a negative correlation, as in (ii) and (iv).\n\n(ix) Regression line of x on y: x − x̄ = b(y − ȳ), with b = Σ(x − x̄)(y − ȳ)/Σ(y − ȳ)² = −10/12 = −5/6.\nx − 7 = −(5/6)(y − 7)\nx = −(5/6)y + 35/6 + 7 = 77/6 − (5/6)y\nx = 12.83 − 0.833y (or 6x + 5y = 77)."
+  }
+]

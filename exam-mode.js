@@ -86,6 +86,8 @@ function applyExamMode() {
 document.addEventListener('jupebDataLoaded', () => {
   if (!currentExamIs('ijmb') || typeof courseStructure !== 'object' || typeof allSubjectData !== 'object') return;
   Object.keys(courseStructure).forEach(id => {
+    // keep subjects that only failed to load (offline / slow), so a retry can fill them in
+    if (typeof subjectLoadFailed === 'function' && subjectLoadFailed(id)) return;
     if (!(allSubjectData[id] || []).length) delete courseStructure[id];
   });
   if (typeof renderPinnedSubjects === 'function') renderPinnedSubjects();

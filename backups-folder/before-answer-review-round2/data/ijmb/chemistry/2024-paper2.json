@@ -1,0 +1,233 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Which type(s) of intermolecular force hold the molecules together in:\n(a) methyl bromide, CH₃Br\n(b) butane, C₄H₁₀\n(c) hexanol, C₆H₁₃OH (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Methyl bromide, CH₃Br: the C–Br bond is polar, so the molecule is polar. Its molecules are held by dipole–dipole forces, together with London dispersion (van der Waals) forces.\n\n(b) Butane, C₄H₁₀: a non-polar hydrocarbon. Its molecules are held only by London dispersion (van der Waals) forces.\n\n(c) Hexanol, C₆H₁₃OH: the –OH group allows hydrogen bonding between molecules, the strongest of these forces. There are also dipole–dipole forces, and significant London dispersion forces from its six-carbon chain."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Write the general formula and the molecular formula of each constituents of the typical alkane mixtures in petrol (contain C6 to C10 carbon atoms). (5 mark)",
+    "options": [],
+    "modelAnswer": "General formula of the alkanes: CₙH₂ₙ₊₂.\n\nMolecular formulae of the C6 to C10 alkanes:\nC6: hexane, C₆H₁₄\nC7: heptane, C₇H₁₆\nC8: octane, C₈H₁₈\nC9: nonane, C₉H₂₀\nC10: decane, C₁₀H₂₂\n(Petrol contains straight-chain and branched isomers of these, e.g., 2,2,4-trimethylpentane, an isomer of C₈H₁₈.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Indicate for each of the following unsaturated compounds whether they have cis-trans isomers or not:\n(a) 1-bromo-1,2-dichloroehene\n(b) but-1-ene\n(c) 1,1-dichloropropene\n(d) pent-2-ene\n(e) buta-1,3-diene (5 marks)",
+    "options": [],
+    "modelAnswer": "Rule: cis-trans (geometric) isomerism is possible about a C=C double bond only if each carbon of the double bond carries two different groups.\n\n(a) 1-bromo-1,2-dichloroethene, BrClC=CHCl: yes. C1 carries Br and Cl, and C2 carries H and Cl, so each carbon has two different groups.\nNote: 'dichloroehene' means dichloroethene.\n\n(b) But-1-ene, CH₂=CHCH₂CH₃: no. C1 carries two identical H atoms.\n\n(c) 1,1-dichloropropene, Cl₂C=CHCH₃: no. C1 carries two identical Cl atoms.\n\n(d) Pent-2-ene, CH₃CH=CHCH₂CH₃: yes. C2 carries H and CH₃, and C3 carries H and C₂H₅. It exists as cis- and trans-pent-2-ene.\n\n(e) Buta-1,3-diene, CH₂=CH–CH=CH₂: no. Each double bond has a terminal CH₂ group, which carries two identical H atoms."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Petroleum is separated into its fractions by fractional distillation and many of the fractions are then subjected to a process called cracking. Name the two types of cracking and state the conditions required for each. (5 marks)",
+    "options": [],
+    "modelAnswer": "1. Thermal cracking: large hydrocarbon molecules are broken into smaller ones by heat alone. Conditions: high temperature (about 450–750°C, up to about 900°C) and high pressure (up to about 70 atm), with no catalyst. It gives a high proportion of alkenes.\n\n2. Catalytic cracking: the hydrocarbons are broken down in the presence of a catalyst. Conditions: a lower temperature (about 450–550°C), a pressure only slightly above atmospheric, and a catalyst such as zeolites or a mixture of aluminium oxide and silicon(IV) oxide (aluminosilicates). It gives branched alkanes and aromatic hydrocarbons, which are useful in high-grade petrol.\n\n(A third type, hydrocracking, uses hydrogen with a catalyst under high pressure.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alkyl Halides",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "An organic compound contains 29.3 % carbon, 5.7 % hydrogen and 65 % bromine. Calculate the empirical formula of the compound. [H=1; C=12; Br=80] (5 marks)",
+    "options": [],
+    "modelAnswer": "Divide each percentage by the relative atomic mass:\nC: 29.3/12 = 2.442\nH: 5.7/1 = 5.70\nBr: 65/80 = 0.8125\n\nDivide by the smallest value (0.8125):\nC: 2.442/0.8125 = 3.0\nH: 5.70/0.8125 = 7.0\nBr: 0.8125/0.8125 = 1\n\nEmpirical formula = C₃H₇Br.\n(Check: the percentages add up to 29.3 + 5.7 + 65 = 100%.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "(a) What is enolization? (1 mark)\n(b) Give the structure of the keto-enol isomeric forms of ethanal and propanone. (4 marks)",
+    "options": [],
+    "modelAnswer": "(a) Enolization is the conversion of a carbonyl compound (the keto form) into its enol form. A hydrogen atom on the carbon next to the C=O group (the α-carbon) moves to the carbonyl oxygen, and the double bond shifts to lie between the carbon atoms, giving a C=C–OH group. It is catalysed by acids or bases. The keto and enol forms are tautomers (keto–enol tautomerism), and for simple aldehydes and ketones the keto form is far more stable.\n\n(b)\nEthanal:\nKeto form: CH₃–CHO (ethanal) ⇌ enol form: CH₂=CH–OH (ethenol, vinyl alcohol)\n\nPropanone:\nKeto form: CH₃–CO–CH₃ (propanone) ⇌ enol form: CH₂=C(OH)–CH₃ (prop-1-en-2-ol)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) Give the general molecular formula of dialkanoic acids. (1 mark)\n(b) Give the systematic name and structure of the first two members of the dialkanoic acid series. (4 marks)",
+    "options": [],
+    "modelAnswer": "(a) Dialkanoic acids contain two –COOH groups. General formula: CₙH₂ₙ(COOH)₂, where n = 0, 1, 2, ... (equivalently CₙH₂ₙ₋₂O₄, where n ≥ 2 is the total number of carbon atoms).\n\n(b)\n1. Ethanedioic acid (oxalic acid): HOOC–COOH, (COOH)₂.\n2. Propanedioic acid (malonic acid): HOOC–CH₂–COOH."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) Plastics that cannot be softened or melted by heat or pressure are known as?\n(b) Give the structure and IUPAC nomenclature of the monomer unit of each of the following polymers: (i) –(–CH₂–CH(CH₃)–)ₙ– (ii) –(–CH₂–CCl₂–)ₙ– (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Thermosetting plastics (thermosets), e.g., Bakelite. Once set, their cross-linked structure cannot be softened again by heating.\n\n(b)\n(i) Monomer: CH₂=CH–CH₃, propene. The polymer is poly(propene).\n(ii) Monomer: CH₂=CCl₂, 1,1-dichloroethene. The polymer is poly(1,1-dichloroethene)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "(a) Name the types of isomerism that can be exhibited by alkenes with four or more carbon atoms. (3 marks)\n(b) List two (2) general methods for the laboratory preparation of alkenes. (2 marks)",
+    "options": [],
+    "modelAnswer": "(a)\n1. Chain (skeletal) isomerism: e.g., but-1-ene and 2-methylpropene.\n2. Position isomerism, i.e., different positions of the double bond: e.g., but-1-ene and but-2-ene.\n3. Geometric (cis-trans) isomerism: e.g., cis- and trans-but-2-ene.\n(Alkenes can also be functional-group isomers of cycloalkanes, e.g., but-1-ene and cyclobutane, both C₄H₈.)\n\n(b)\n1. Dehydration of alkanols: heating an alkanol with excess concentrated H₂SO₄ (about 170°C for ethanol), or passing its vapour over heated aluminium oxide. E.g., C₂H₅OH → CH₂=CH₂ + H₂O.\n2. Dehydrohalogenation of haloalkanes: heating a haloalkane with hot, concentrated ethanolic (alcoholic) KOH. E.g., CH₃CH₂Br + KOH → CH₂=CH₂ + KBr + H₂O."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "(a) Name the type of isomerism found in disubstituted benzenes. (1 mark)\n(b) Draw and name the four (4) aromatic structural isomers of C₈H₁₀. (4 marks)",
+    "options": [],
+    "modelAnswer": "(a) Position isomerism: the two substituents can be at the 1,2- (ortho), 1,3- (meta) or 1,4- (para) positions on the benzene ring.\n\n(b) Draw each as a benzene ring with the groups attached:\n1. Ethylbenzene: C₆H₅–CH₂CH₃ (one ethyl group on the ring).\n2. 1,2-dimethylbenzene (o-xylene): two –CH₃ groups on adjacent carbons.\n3. 1,3-dimethylbenzene (m-xylene): two –CH₃ groups separated by one ring carbon.\n4. 1,4-dimethylbenzene (p-xylene): two –CH₃ groups on opposite carbons of the ring."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Identify the functional group(s) in the following compounds and the series to which they belong\n(i) CH₃CH₂CH₂CHO\n(ii) CH₃CH₂NH₂\n(iii) CH₃CH₂CH₂Cl\n(iv) CH₃CH₂CH₂CH₂OH\n(v) CH₂=CHCH₂CH₂Br\n(vi) CH₃CH₂COCH₃\n(vii) CH₃COOH\n(viii) CH₃CH₂OCH₃\n(ix) CH₃CH₂COOR (18 marks)",
+    "options": [],
+    "modelAnswer": "(i) CH₃CH₂CH₂CHO (butanal): aldehyde group, –CHO. Series: alkanals (aldehydes).\n\n(ii) CH₃CH₂NH₂ (ethanamine): amino group, –NH₂. Series: alkanamines (primary amines).\n\n(iii) CH₃CH₂CH₂Cl (1-chloropropane): halo (chloro) group, –Cl. Series: haloalkanes (alkyl halides).\n\n(iv) CH₃CH₂CH₂CH₂OH (butan-1-ol): hydroxyl group, –OH. Series: alkanols (alcohols); this is a primary alkanol.\n\n(v) CH₂=CHCH₂CH₂Br (4-bromobut-1-ene): two functional groups, the C=C double bond and the bromo group, –Br. Series: it is both an alkene and a haloalkene (bromoalkene).\n\n(vi) CH₃CH₂COCH₃ (butanone): carbonyl (keto) group, C=O between two carbons. Series: alkanones (ketones).\n\n(vii) CH₃COOH (ethanoic acid): carboxyl group, –COOH. Series: alkanoic (carboxylic) acids.\n\n(viii) CH₃CH₂OCH₃ (methoxyethane): ether linkage, C–O–C. Series: alkoxyalkanes (ethers).\n\n(ix) CH₃CH₂COOR (an alkyl propanoate): ester group, –COO–R. Series: alkyl alkanoates (esters)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Classify the following reactions as addition, substitution, elimination or hydrolysis\n(i) CH₃CH₂CH(OH)CH₃ → CH₃CH=CHCH₃ + H₂O\n(ii) CH₃CH₂COOCH₃ + H₂O → CH₃CH₂COOH + CH₃OH\n(iii) CH₃CH₂CH=CHCH₃ + H₂ → CH₃CH₂CH₂CH₂CH₃\n(iv) CH₃CH₂CH(Br)CH₃ + OH⁻ → CH₃CH₂CH(OH)CH₃ + Br⁻ (8 marks)",
+    "options": [],
+    "modelAnswer": "(i) Elimination (dehydration): a molecule of water is removed from butan-2-ol, forming a C=C double bond (but-2-ene).\n\n(ii) Hydrolysis: the ester, methyl propanoate, reacts with water and splits into propanoic acid and methanol.\n\n(iii) Addition (hydrogenation): hydrogen adds across the C=C double bond of pent-2-ene, forming pentane.\n\n(iv) Substitution (nucleophilic substitution): the OH⁻ ion replaces the Br atom of 2-bromobutane, forming butan-2-ol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "(a) Give the structures and names of the products of the addition of 2-methylbut-2-ene to:\n(i) hydrogen\n(ii) bromine\n(iii) hydrogen chloride\n(iv) aqueous potassium hydroxide (12 marks)",
+    "options": [],
+    "modelAnswer": "2-methylbut-2-ene: (CH₃)₂C=CHCH₃.\n\n(i) Hydrogen (with a Ni or Pt catalyst, heat):\n(CH₃)₂C=CHCH₃ + H₂ → (CH₃)₂CH–CH₂CH₃\nProduct: 2-methylbutane.\n\n(ii) Bromine:\n(CH₃)₂C=CHCH₃ + Br₂ → (CH₃)₂CBr–CHBrCH₃\nProduct: 2,3-dibromo-2-methylbutane. (The red-brown colour of bromine disappears.)\n\n(iii) Hydrogen chloride (Markovnikov's rule: the H adds to the carbon of the double bond that already has more hydrogen atoms):\n(CH₃)₂C=CHCH₃ + HCl → (CH₃)₂CCl–CH₂CH₃\nMajor product: 2-chloro-2-methylbutane, formed via the more stable tertiary carbocation.\n(Minor product: (CH₃)₂CH–CHClCH₃, 2-chloro-3-methylbutane.)\n\n(iv) Aqueous potassium hydroxide: no reaction. OH⁻ is a nucleophile, and the electron-rich C=C double bond of an alkene is attacked by electrophiles, not nucleophiles, so alkenes do not add aqueous KOH.\nNote: if the question intends addition of water (hydration, using dilute acid such as H₂SO₄), the product is (CH₃)₂C(OH)–CH₂CH₃, 2-methylbutan-2-ol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "(b) What class of alkanols are likely to be produced by the reduction of\n(i) Alkanoic acids\n(ii) Alkanones\n(iii) Alkanoates\n(iv) Alkanal\n(v) Alkanoic anhydride (10 marks)",
+    "options": [],
+    "modelAnswer": "(i) Alkanoic acids → primary alkanols (e.g., with LiAlH₄): RCOOH → RCH₂OH.\n\n(ii) Alkanones → secondary alkanols: RCOR′ → RCH(OH)R′.\n\n(iii) Alkanoates (esters) → primary alkanols: RCOOR′ → RCH₂OH + R′OH. The acid part always gives a primary alkanol; the alcohol part R′OH is released unchanged.\n\n(iv) Alkanal → primary alkanols: RCHO → RCH₂OH.\n\n(v) Alkanoic anhydride → primary alkanols: (RCO)₂O → 2RCH₂OH."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Amines",
+    "type": "Essay",
+    "questionNumber": "12c",
+    "question": "(c) Give the structure of the likely products of the reaction between methyl chloride and ammonia. (3 marks)",
+    "options": [],
+    "modelAnswer": "Ammonia acts as a nucleophile and substitutes the chlorine atom. Because the amine produced is itself a nucleophile, further substitution gives a mixture of products:\n\n1. CH₃NH₂ (methylamine, a primary amine): CH₃Cl + NH₃ → CH₃NH₂ + HCl (present as CH₃NH₃⁺Cl⁻)\n2. (CH₃)₂NH (dimethylamine, a secondary amine)\n3. (CH₃)₃N (trimethylamine, a tertiary amine)\n4. (CH₃)₄N⁺Cl⁻ (tetramethylammonium chloride, a quaternary ammonium salt)\n\nUsing a large excess of ammonia makes methylamine the main product."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "(a) (i) What are isomers?\n(ii) Draw structural formulae of the alkene isomers with molecular formula C₅H₁₀ and name them. (11 marks)",
+    "options": [],
+    "modelAnswer": "(i) Isomers are compounds that have the same molecular formula but different structural formulae (different arrangements of their atoms), and so have different physical and/or chemical properties.\n\n(ii) The alkene isomers of C₅H₁₀:\n1. Pent-1-ene: CH₂=CH–CH₂–CH₂–CH₃\n2. Pent-2-ene: CH₃–CH=CH–CH₂–CH₃, which exists as two geometric isomers, cis-pent-2-ene and trans-pent-2-ene\n3. 2-Methylbut-1-ene: CH₂=C(CH₃)–CH₂–CH₃\n4. 3-Methylbut-1-ene: CH₂=CH–CH(CH₃)–CH₃\n5. 2-Methylbut-2-ene: (CH₃)₂C=CH–CH₃\n\nThere are five structural isomers (six alkenes in all, counting the cis and trans forms of pent-2-ene)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "(b) For the reactions of hydrogen chloride with 2-methylpropene:\n(i) draw the structure of the two (2) possible carbocation intermediates\n(ii) explain which carbocation is the more stable\n(iii) Give the formula and name of the major product\n(iv) Give the formula and name of the minor product. (8 marks)",
+    "options": [],
+    "modelAnswer": "2-methylpropene: (CH₃)₂C=CH₂. H⁺ from HCl adds to one carbon of the double bond, leaving a positive charge on the other.\n\n(i)\n1. If H⁺ adds to the CH₂ carbon: (CH₃)₃C⁺, a tertiary carbocation (the 2-methylprop-2-yl or tert-butyl cation).\n2. If H⁺ adds to the central carbon: (CH₃)₂CH–CH₂⁺, a primary carbocation (the 2-methylpropyl or isobutyl cation).\n\n(ii) The tertiary carbocation, (CH₃)₃C⁺, is more stable. The positive carbon is attached to three methyl groups, which are electron-releasing (+I inductive effect and hyperconjugation). They spread out (disperse) the positive charge. The primary carbocation has only one alkyl group attached to the positive carbon, so its charge is more concentrated.\n\n(iii) Major product: (CH₃)₃CCl, 2-chloro-2-methylpropane, formed from the more stable tertiary carbocation (Markovnikov's rule).\n\n(iv) Minor product: (CH₃)₂CHCH₂Cl, 1-chloro-2-methylpropane, formed from the less stable primary carbocation."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "13c",
+    "question": "(c) Which of these pair of IUPAC nomenclature is most likely to be correct?\n(i) 2,3-dimethylpentane and 2-methyl-3-methylpentane\n(ii) 3-methyl-3-ethylheptane and 3-ethyl-3-methylheptane\n(iii) 2,3-dimethyl-4-ethylheptane and 4-ethyl-2,3-dimethylheptane (6 marks)",
+    "options": [],
+    "modelAnswer": "(i) 2,3-dimethylpentane. Identical substituents are grouped together with a multiplying prefix (di-, tri-), not written separately as 'methyl-...-methyl'.\n\n(ii) 3-ethyl-3-methylheptane. Different substituents are listed in alphabetical order: ethyl (e) comes before methyl (m).\n\n(iii) 4-ethyl-2,3-dimethylheptane. Substituents are listed alphabetically, ignoring multiplying prefixes such as di-, so 'ethyl' comes before 'dimethyl' (alphabetised under m)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "(a) (i) Draw the structures of the two straight-chain isomeric alkanols with molecular formula, C₄H₁₀O (2 marks)\n(ii) Draw the structures of the oxidation products obtained when the two isomeric alkanols are oxidised separately by acidified potassium heptaoxochromate(VI). Write equations for any reactions which occur, using [O] to represent the oxidising agent. (6 marks)\n(iii) Draw the structure and give the name of the alkanol with molecular formula C₄H₁₀O which is resistant to oxidation by acidified potassium heptaoxochromate(VI). (2 marks)",
+    "options": [],
+    "modelAnswer": "(i)\n1. Butan-1-ol (a primary alkanol): CH₃–CH₂–CH₂–CH₂–OH\n2. Butan-2-ol (a secondary alkanol): CH₃–CH₂–CH(OH)–CH₃\n\n(ii) With acidified K₂Cr₂O₇, the orange solution turns green as Cr(VI) is reduced to Cr³⁺.\n\nButan-1-ol is oxidised first to butanal, then to butanoic acid:\nCH₃CH₂CH₂CH₂OH + [O] → CH₃CH₂CH₂CHO + H₂O (butanal)\nCH₃CH₂CH₂CHO + [O] → CH₃CH₂CH₂COOH (butanoic acid)\n(Distilling the aldehyde off as it forms stops the reaction at butanal; heating under reflux with excess oxidant gives butanoic acid.)\n\nButan-2-ol is oxidised to butanone:\nCH₃CH₂CH(OH)CH₃ + [O] → CH₃CH₂COCH₃ + H₂O (butanone)\nButanone, a ketone, is not oxidised further.\n\n(iii) 2-Methylpropan-2-ol, (CH₃)₃C–OH, a tertiary alkanol. The carbon bearing the –OH group has no hydrogen atom attached, so it cannot be oxidised by acidified K₂Cr₂O₇ (the orange colour remains)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Alkyl Halides",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "(b). State the possible products that could be formed when the following haloalkanes undergo elimination. If more than one product is formed, identify them and explain how each is formed.\n(i) 1-bromobutane\n(ii) 2-bromobutane\n(iii) 1-bromo-2-methylpropane\n(iv) 2-bromo-2-methylpropane (8 marks)",
+    "options": [],
+    "modelAnswer": "Elimination takes place on heating with hot, concentrated ethanolic KOH. HBr is removed: the Br atom leaves from one carbon, and an H atom is removed from a neighbouring carbon, forming a C=C double bond.\n\n(i) 1-bromobutane, CH₃CH₂CH₂CH₂Br: the only neighbouring carbon is C2, so one product forms: but-1-ene, CH₂=CHCH₂CH₃.\n\n(ii) 2-bromobutane, CH₃CHBrCH₂CH₃: H can be removed from either neighbouring carbon, so more than one product forms.\nRemoving H from C1 gives but-1-ene, CH₂=CHCH₂CH₃ (minor).\nRemoving H from C3 gives but-2-ene, CH₃CH=CHCH₃, as both cis- and trans-but-2-ene (major).\nBut-2-ene is the major product because the more substituted alkene is more stable (Saytzeff's rule).\n\n(iii) 1-bromo-2-methylpropane, (CH₃)₂CHCH₂Br: the only neighbouring carbon is C2, so one product forms: 2-methylpropene, (CH₃)₂C=CH₂.\n\n(iv) 2-bromo-2-methylpropane, (CH₃)₃CBr: the three neighbouring carbons are identical CH₃ groups, so only one product forms: 2-methylpropene, (CH₃)₂C=CH₂."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2024,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "14c",
+    "question": "(c) Ethanoic acid can be formed from bromoethane in two steps. Give reagents and conditions for each step. Include in your answer the name of the mechanism for the first step and an equation for the second step (8 marks)",
+    "options": [],
+    "modelAnswer": "Step 1: bromoethane → ethanol.\nReagent: aqueous sodium hydroxide (or aqueous potassium hydroxide).\nConditions: heat under reflux.\nCH₃CH₂Br + NaOH(aq) → CH₃CH₂OH + NaBr\nMechanism: nucleophilic substitution (S_N2). The OH⁻ ion attacks the carbon bonded to bromine, and Br⁻ is displaced.\n\nStep 2: ethanol → ethanoic acid.\nReagent: acidified potassium heptaoxodichromate(VI) (K₂Cr₂O₇ with dilute H₂SO₄), in excess.\nConditions: heat under reflux, so that the ethanal formed first is oxidised further to the acid.\nEquation: CH₃CH₂OH + 2[O] → CH₃COOH + H₂O\nThe orange solution turns green."
+  }
+]

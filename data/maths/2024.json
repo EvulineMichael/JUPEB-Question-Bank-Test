@@ -74,6 +74,8 @@
     "question": "Given that (10x + 21)/[(x - 2)(x + 5)] = k/(x - 2) + 3/(x + 5), determine the value of k.",
     "options": ["-7", "-3", "3", "7"],
     "answer": "D",
+    "reviewNote": "As printed, the identity cannot hold: putting x = 2 gives k = 41/7, but putting x = −5 gives −29 = −21. If the numerator is 10x + 29 (a likely misprint), x = 2 gives 49 = 7k, so k = 7 (option D). Because of the misprint, the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Multiply both sides by (x-2)(x+5):\n10x + 21 = k(x+5) + 3(x-2).\n\nAt x = 2: 10(2) + 21 = k(7) + 0 → 41 = 7k → k = 41/7.\n\nThis doesn't match any option exactly. The question likely has a typo (perhaps 10x + 21 should be 10x + 35, giving k = 7). The closest option has been selected."
   },
   {
@@ -296,6 +298,8 @@
     "question": "A parabola y² = 4ax has focus (1, 2) and directrix x = 4. Obtain the equation of the parabola.",
     "options": ["y² - 4y - 10x - 11 = 0", "y² + 4y - 10x - 11 = 0", "y² - 4y + 10x - 11 = 0", "y² - 4y - 10x + 11 = 0"],
     "answer": "A",
+    "reviewNote": "Distance to focus = distance to directrix: (x − 1)² + (y − 2)² = (x − 4)², which simplifies to y² − 4y + 6x − 11 = 0.\n\nThis is not among the printed options, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Distance to focus = distance to directrix:\n√[(x-1)² + (y-2)²] = |x-4|.\n\nSquare: (x-1)² + (y-2)² = (x-4)².\nx² - 2x + 1 + y² - 4y + 4 = x² - 8x + 16.\ny² - 4y + 6x - 11 = 0.\n\nThis doesn't match any option exactly. The question likely has different focus or directrix values. The closest option has been selected."
   },
   {

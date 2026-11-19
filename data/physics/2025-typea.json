@@ -19,6 +19,8 @@
     "question": "Given two displacements A = (8i + 3j - 2k) m and B = (4i - 6j + 8k) m. Determine the magnitude of the displacement 3A - B.",
     "options": ["9 m", "11 m", "15 m", "25 m"],
     "answer": "D",
+    "reviewNote": "Working: 3A − B = (24 − 4)i + (9 + 6)j + (−6 − 8)k = 20i + 15j − 14k.\n|3A − B| = √(400 + 225 + 196) = √821 ≈ 28.7 m.\n\nNone of the printed options matches this, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j - 14k.\n\nMagnitude = √(20² + 15² + 14²) = √821 ≈ 28.7 m.\n\nThe correct value is approximately 28.7 m, which is not among the options. The closest option has been selected."
   },
   {
@@ -41,7 +43,7 @@
     "question": "An attempt was made to determine the volume V of a cylinder. The radius r was measured as 3.30 ± 0.05 cm and the length L was measured as 25 ± 0.4 cm. Evaluate the value of V and the uncertainty in this value using the relation: V = πr²L.",
     "options": ["(869 ± 0.02) cm³", "(869 ± 0.45) cm³", "(869 ± 4.00) cm³", "(869 ± 40.00) cm³"],
     "answer": "D",
-    "explanation": "V = π(3.30)²(25) = 3.14 × 10.89 × 25 = 855 cm³.\n\nΔV/V = 2Δr/r + ΔL/L = 2(0.05/3.30) + 0.4/25 = 0.0303 + 0.016 = 0.0463.\n\nΔV = 855 × 0.0463 = 39.6 ≈ 40 cm³.\n\nThe correct volume is 855 cm³ with uncertainty ±40 cm³. The options use 869 cm³ (likely a typo) but the uncertainty matches ±40. The closest option has been selected."
+    "explanation": "ΔV/V = 2(Δr/r) + ΔL/L = 2(0.05/3.30) + 0.4/25 = 0.030 + 0.016 = 0.046 (4.6%).\n\nWith the paper's V = 869 cm³, ΔV = 0.046 × 869 ≈ 40 cm³, so V = (869 ± 40) cm³.\n\n(Using the printed values exactly, V = π × 3.30² × 25 ≈ 855 cm³; either way the uncertainty is about ±40 cm³, which only option D has.)"
   },
   {
     "subject": "Physics",
@@ -195,6 +197,8 @@
     "question": "Two forces having magnitude 5 N and 4 N have an angle of 30° between them. What is the scalar product?",
     "options": ["10√3 N", "20√3 N", "10√3 N", "5√3 N"],
     "answer": "A",
+    "reviewNote": "Options A and C are printed the same in this copy of the paper, so this question is left out of quizzes.\n\nCorrect answer: 10√3 N\n\nScalar product = |A||B|cosθ = 5 × 4 × cos30° = 20 × (√3/2) = 10√3 N.\n\nNote: Options A and C are identical.",
+    "excludeFromQuiz": true,
     "explanation": "Scalar product = |A||B|cosθ = 5 × 4 × cos30° = 20 × (√3/2) = 10√3 N.\n\nNote: Options A and C are identical."
   },
   {
@@ -375,6 +379,8 @@
     "question": "A boat is moving northward with a velocity of 18 m/s, and a crosswind is blowing from the east with a velocity of 15 m/s. Determine the resultant velocity of the boat.",
     "options": ["33.0 m/s north", "23.4 m/s north-east", "17.2 m/s east", "3.0 m/s north-east"],
     "answer": "B",
+    "reviewNote": "Magnitude: √(18² + 15²) = √549 ≈ 23.4 m/s.\n\nDirection: a wind blowing FROM the east pushes the boat towards the west, so the resultant points north-west, about tan⁻¹(15/18) ≈ 39.8° west of north.\n\nOption B gives the right speed but says north-east, so no option is fully correct as printed.",
+    "excludeFromQuiz": true,
     "explanation": "Resultant = √(18² + 15²) = √549 = 23.43 m/s.\n\nDirection: tanθ = 15/18, θ = 39.8° east of north (north-east)."
   },
   {

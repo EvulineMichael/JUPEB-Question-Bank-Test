@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Find the equation of a straight line which passes through the point of intersection of the lines 3x − y = 0 and 2x + 3y = 0 and perpendicular to the line x − 5y = 2. [04marks]",
+    "options": [],
+    "modelAnswer": "Point of intersection: from 3x − y = 0, y = 3x. Substituting into 2x + 3y = 0 gives 2x + 9x = 0, so x = 0 and y = 0. The lines meet at the origin (0, 0).\n\nThe line x − 5y = 2 can be written y = (1/5)x − 2/5, so its gradient is 1/5.\nThe gradient of a line perpendicular to it is −5.\n\nThe required line passes through (0, 0) with gradient −5:\ny = −5x, or 5x + y = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Calculate the value of k and mean of the distribution with probability density function f(x) = ke^(−3x) where 0 ≤ x ≤ ∞. [05marks]",
+    "options": [],
+    "modelAnswer": "The total probability must be 1:\n∫₀^∞ ke^(−3x) dx = k[−e^(−3x)/3]₀^∞ = k(0 + 1/3) = k/3 = 1, so k = 3.\n\nMean: E(X) = ∫₀^∞ x × 3e^(−3x) dx.\nUsing integration by parts:\n= [−xe^(−3x)]₀^∞ + ∫₀^∞ e^(−3x) dx = 0 + [−e^(−3x)/3]₀^∞ = 1/3.\n\nk = 3 and the mean = 1/3 ≈ 0.333.\n(This is an exponential distribution with parameter λ = 3, whose mean is 1/λ.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Calculate P(A∪B) where P(A) = 0.4, P(B) = 0.42 if A and B are mutually exclusive events. [03marks]",
+    "options": [],
+    "modelAnswer": "For mutually exclusive events, P(A ∩ B) = 0, so:\nP(A ∪ B) = P(A) + P(B) = 0.4 + 0.42 = 0.82."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Find the equation of a circle whose centre is at (1,−2) and radius √13. [04marks]",
+    "options": [],
+    "modelAnswer": "(x − a)² + (y − b)² = r², with centre (a, b) = (1, −2) and r² = 13:\n(x − 1)² + (y + 2)² = 13.\n\nExpanding: x² − 2x + 1 + y² + 4y + 4 = 13\nx² + y² − 2x + 4y − 8 = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Find the eccentricity and foci of the hyperbola x²/36 − y²/25 = 1. [04marks]",
+    "options": [],
+    "modelAnswer": "Comparing with x²/a² − y²/b² = 1: a² = 36 (a = 6) and b² = 25 (b = 5).\n\nFor a hyperbola, b² = a²(e² − 1):\n25 = 36(e² − 1), so e² = 1 + 25/36 = 61/36.\ne = √61/6 ≈ 1.302.\n\nFoci: (±ae, 0) = (±√61, 0) ≈ (±7.81, 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "6. (a). Show that the equation x² − 8y − 6x + 1 = 0 represents a parabola. Find the coordinates of its vertex, focus and the equations of its directrix, axis and lactus rectum. Hence sketch the curve. [14marks]",
+    "options": [],
+    "modelAnswer": "Note: 'lactus rectum' means latus rectum.\n\nComplete the square in x:\nx² − 6x = 8y − 1\n(x − 3)² − 9 = 8y − 1\n(x − 3)² = 8y + 8 = 8(y + 1).\n\nThis has the form (x − h)² = 4a(y − k), so it represents a parabola, with h = 3, k = −1 and 4a = 8 (a = 2).\nThe parabola opens upwards.\n\nVertex: (h, k) = (3, −1).\nFocus: (h, k + a) = (3, 1).\nDirectrix: y = k − a, i.e., y = −3.\nAxis of symmetry: x = 3.\nLatus rectum: the line through the focus perpendicular to the axis, y = 1. Its length is 4a = 8, with end points (−1, 1) and (7, 1).\n\nSketch: an upward-opening U-shaped curve, symmetrical about the line x = 3, with its lowest point at the vertex (3, −1). It passes through (−1, 1) and (7, 1), the ends of the latus rectum. Mark the focus (3, 1) inside the curve, and the directrix y = −3 as a horizontal line below the vertex. The curve cuts the x-axis at x = 3 ± 2√2, i.e., about 0.17 and 5.83 (where y = 0, (x − 3)² = 8)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b). Find the equation of a straight line which is parallel to PQ with P(2,5), Q(−1,2) and bisects, the line joining the points A(−2,2) and B(4,6). [06marks]",
+    "options": [],
+    "modelAnswer": "Gradient of PQ = (2 − 5)/(−1 − 2) = (−3)/(−3) = 1.\nA line parallel to PQ also has gradient 1.\n\nThe line bisects AB, so it passes through the midpoint of AB:\nmidpoint = ((−2 + 4)/2, (2 + 6)/2) = (1, 4).\n\nEquation: y − 4 = 1(x − 1), so y = x + 3, or x − y + 3 = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "7. (a). Show that the equation 9x² + 16y² − 18x − 32y − 119 = 0 represents an ellipse. Find the co-ordinates of its centre, foci and the equations of its directries and axes. Hence sketch the ellipse. [14marks]",
+    "options": [],
+    "modelAnswer": "Note: 'directries' means directrices.\n\nComplete the squares:\n9(x² − 2x) + 16(y² − 2y) = 119\n9[(x − 1)² − 1] + 16[(y − 1)² − 1] = 119\n9(x − 1)² + 16(y − 1)² = 119 + 9 + 16 = 144.\n\nDivide by 144:\n(x − 1)²/16 + (y − 1)²/9 = 1.\nThis is the standard form of an ellipse, with a² = 16 (a = 4) and b² = 9 (b = 3), with its major axis parallel to the x-axis.\n\nCentre: (1, 1).\n\nEccentricity: b² = a²(1 − e²), so 9 = 16(1 − e²), giving e² = 7/16 and e = √7/4 ≈ 0.661.\n\nFoci: (1 ± ae, 1) = (1 ± √7, 1) ≈ (3.65, 1) and (−1.65, 1).\n\nDirectrices: x = 1 ± a/e = 1 ± 4/(√7/4) = 1 ± 16/√7, i.e., x = 1 + 16√7/7 ≈ 7.05 and x = 1 − 16√7/7 ≈ −5.05.\n\nAxes: major axis y = 1 (length 2a = 8); minor axis x = 1 (length 2b = 6).\n\nSketch: an oval centred at (1, 1), extending from x = −3 to x = 5 along the line y = 1, and from y = −2 to y = 4 along the line x = 1. Mark the foci on the major axis, and the two directrices as vertical lines outside the ellipse."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b). Show that r = 3/(1−cos θ) is a polar form of a parabola. [06marks]",
+    "options": [],
+    "modelAnswer": "r = 3/(1 − cos θ), so r − r cos θ = 3.\n\nIn Cartesian coordinates, r = √(x² + y²) and r cos θ = x:\n√(x² + y²) − x = 3\n√(x² + y²) = x + 3.\n\nSquare both sides:\nx² + y² = x² + 6x + 9\ny² = 6x + 9 = 6(x + 3/2).\n\nThis is the equation of a parabola, with vertex (−3/2, 0), opening to the right, with its focus at the pole (origin), since 4a = 6 gives a = 3/2.\n\n(Alternatively: the polar equation of a conic with focus at the pole is r = l/(1 − e cos θ). Here e = 1, which defines a parabola, and the semi-latus rectum l = 3.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "8. (a). Find the condition for which the line y = mx + c touches the parabola y² + 12x = 0. Hence obtain theequation of the tangent whose slope is 3. [10marks]",
+    "options": [],
+    "modelAnswer": "Substitute y = mx + c into y² = −12x:\n(mx + c)² + 12x = 0\nm²x² + (2mc + 12)x + c² = 0.\n\nThe line touches the parabola when this quadratic has equal roots (discriminant = 0):\n(2mc + 12)² − 4m²c² = 0\n4m²c² + 48mc + 144 − 4m²c² = 0\n48mc + 144 = 0\nmc = −3, i.e., c = −3/m.\n\nCondition: c = −3/m.\n\nFor slope m = 3: c = −3/3 = −1.\nThe tangent is y = 3x − 1.\n\n(Check: substituting gives 9x² + 6x + 1 = (3x + 1)² = 0, a repeated root at x = −1/3, so the line touches the parabola at (−1/3, −2).)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b). Sketch the curve r = 2(1−cos θ) in polar form. [10marks]",
+    "options": [],
+    "modelAnswer": "r = 2(1 − cos θ) is a cardioid (heart-shaped curve).\n\nTable of values:\nθ = 0: r = 0\nθ = π/3 (60°): r = 1\nθ = π/2 (90°): r = 2\nθ = 2π/3 (120°): r = 3\nθ = π (180°): r = 4\nθ = 4π/3 (240°): r = 3\nθ = 3π/2 (270°): r = 2\nθ = 5π/3 (300°): r = 1\nθ = 2π (360°): r = 0\n\nFeatures:\n1. Symmetry: since cos(−θ) = cos θ, the curve is symmetrical about the initial line (θ = 0).\n2. Cusp: the curve passes through the pole at θ = 0, forming a cusp (point) there.\n3. Maximum: r is greatest (r = 4) at θ = π, i.e., at the point (−4, 0) in Cartesian terms.\n4. It cuts the line θ = π/2 at r = 2, i.e., at (0, 2) and (0, −2).\n5. r is never negative, since 1 − cos θ ≥ 0.\n\nSketch: plot the points and join them smoothly. The result is a heart shape, with its cusp at the pole, extending to the left as far as 4 units along θ = π, and reaching 2 units above and below the pole."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "9. (a) For a Binomial distribution with 5 trials and p = 0.4, find the probability that:\n(i) six trials are successful (ii) only two are successful (iii) None ofthe trials is successful\n(iv) Exactly four are successful [12marks]",
+    "options": [],
+    "modelAnswer": "X ~ B(5, 0.4), with q = 1 − p = 0.6, and P(X = r) = ⁵Cᵣ (0.4)ʳ (0.6)⁵⁻ʳ.\n\n(i) Six successes are impossible with only 5 trials, so P(X = 6) = 0.\n\n(ii) P(X = 2) = ⁵C₂ (0.4)²(0.6)³ = 10 × 0.16 × 0.216 = 0.3456.\n\n(iii) P(X = 0) = (0.6)⁵ = 0.07776.\n\n(iv) P(X = 4) = ⁵C₄ (0.4)⁴(0.6) = 5 × 0.0256 × 0.6 = 0.0768."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b). If a card is randomly selected from a deck of cards, find the probability that it is\n(i) A red card or a heart. (ii) A Queen or a spade. [08marks]",
+    "options": [],
+    "modelAnswer": "A standard deck has 52 cards: 26 red (13 hearts and 13 diamonds), and 4 suits of 13 cards each.\n\n(i) Every heart is a red card, so 'red or heart' is just 'red':\nP(red or heart) = P(red) + P(heart) − P(red and heart) = 26/52 + 13/52 − 13/52 = 26/52 = 1/2.\n\n(ii) P(Queen or spade) = P(Queen) + P(spade) − P(Queen of spades)\n= 4/52 + 13/52 − 1/52 = 16/52 = 4/13 ≈ 0.308."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "10. (a) Three balls are drawn at random without replacement from a bag containing 18 blue, 9 Redand 13 yellow balls. Find the probability that:\n(i) the balls are of different coluors (ii) 2 of the balls are yellow and one is red. [10marks]",
+    "options": [],
+    "modelAnswer": "Total number of balls = 18 + 9 + 13 = 40.\nNumber of ways of choosing 3 balls = ⁴⁰C₃ = (40 × 39 × 38)/6 = 9,880.\n\n(i) Different colours (one of each):\nNumber of ways = 18 × 9 × 13 = 2,106.\nP = 2,106/9,880 = 1053/4940 ≈ 0.213.\n\n(ii) Two yellow and one red:\nNumber of ways = ¹³C₂ × 9 = 78 × 9 = 702.\nP = 702/9,880 = 351/4940 ≈ 0.0711."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) The death rate in a certain village follows a poison distribution with an average death of 2 per annum. What is the probability that in a certain year there will be\n(i) no death, (ii) at least 4 deaths and (iii) exactly 6 deaths? [10marks]",
+    "options": [],
+    "modelAnswer": "Note: 'poison' means Poisson.\n\nX ~ Poisson(λ = 2), with P(X = r) = e⁻²2ʳ/r!, where e⁻² = 0.13534.\n\n(i) P(X = 0) = e⁻² = 0.1353.\n\n(ii) P(X ≥ 4) = 1 − [P(0) + P(1) + P(2) + P(3)]\n= 1 − e⁻²(1 + 2 + 2 + 4/3)\n= 1 − 0.13534 × 6.3333\n= 1 − 0.8571 = 0.1429.\n\n(iii) P(X = 6) = e⁻² × 2⁶/6! = 0.13534 × 64/720 = 0.0120."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "11. (a) The following are marks obtained by ten students out of a maximum of 10 marks for each subject in a test:\nCommerce X: 10, 9, 8, 8, 7, 7, 6, 6, 5, 4\nEconomics Y: 6, 6, 7, 7, 8, 8, 9, 9, 10, 10\n(i) Calculate x̄ and ȳ\n(ii) Calculate the correlation coefficient r.\n(iii) Interpret the value of this coefficient.\n(iv) Calculate Spearman's rank correlation coefficients.\n(v) Interpret the values of the coefficient\n(vi) Do the values in (ii) and (iv) above show any correspondence? [14marks]",
+    "options": [],
+    "modelAnswer": "(i) x̄ = Σx/n = 70/10 = 7; ȳ = Σy/n = 80/10 = 8.\n\n(ii) Pearson's product-moment correlation coefficient:\nx − x̄: 3, 2, 1, 1, 0, 0, −1, −1, −2, −3\ny − ȳ: −2, −2, −1, −1, 0, 0, 1, 1, 2, 2\nΣ(x − x̄)(y − ȳ) = −6 − 4 − 1 − 1 + 0 + 0 − 1 − 1 − 4 − 6 = −24\nΣ(x − x̄)² = 9 + 4 + 1 + 1 + 0 + 0 + 1 + 1 + 4 + 9 = 30\nΣ(y − ȳ)² = 4 + 4 + 1 + 1 + 0 + 0 + 1 + 1 + 4 + 4 = 20\nr = −24/√(30 × 20) = −24/√600 = −24/24.495 = −0.980.\n\n(iii) r = −0.98 shows a very strong negative linear correlation: students who scored higher in Commerce tended to score lower in Economics.\n\n(iv) Spearman's rank correlation coefficient (ranking from highest = 1, with tied marks given the average of their ranks):\nRanks of X: 1, 2, 3.5, 3.5, 5.5, 5.5, 7.5, 7.5, 9, 10\nRanks of Y: 9.5, 9.5, 7.5, 7.5, 5.5, 5.5, 3.5, 3.5, 1.5, 1.5\nd = Rx − Ry: −8.5, −7.5, −4, −4, 0, 0, 4, 4, 7.5, 8.5\nd²: 72.25, 56.25, 16, 16, 0, 0, 16, 16, 56.25, 72.25; Σd² = 321\nrₛ = 1 − 6Σd²/[n(n² − 1)] = 1 − (6 × 321)/(10 × 99) = 1 − 1926/990 = 1 − 1.945 = −0.945.\n(Because there are many tied ranks, this formula is approximate. Calculating Pearson's r on the ranks themselves gives about −0.994.)\n\n(v) rₛ ≈ −0.95 shows a very strong negative relationship between the rankings: the higher a student is ranked in Commerce, the lower they tend to be ranked in Economics.\n\n(vi) Yes. Both coefficients are strongly negative and close to −1 (r = −0.98 and rₛ ≈ −0.95), so they agree that there is a very strong negative relationship between the marks in the two subjects."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Normal Distribution",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b). If X ≈ N(60, 6.25) Find: (i) P(X ≤ 58), (ii) P(X ≥ 64) and (iii) P(54 ≤ X ≤ 62). [06marks]",
+    "options": [],
+    "modelAnswer": "In the notation N(μ, σ²), μ = 60 and σ² = 6.25, so σ = 2.5.\nStandardise using z = (x − 60)/2.5.\n\n(i) P(X ≤ 58) = P(Z ≤ (58 − 60)/2.5) = P(Z ≤ −0.8) = 1 − Φ(0.8) = 1 − 0.7881 = 0.2119.\n\n(ii) P(X ≥ 64) = P(Z ≥ (64 − 60)/2.5) = P(Z ≥ 1.6) = 1 − Φ(1.6) = 1 − 0.9452 = 0.0548.\n\n(iii) P(54 ≤ X ≤ 62) = P(−2.4 ≤ Z ≤ 0.8) = Φ(0.8) − Φ(−2.4) = 0.7881 − (1 − 0.9918) = 0.7881 − 0.0082 = 0.7799.\n\n(If 6.25 were taken as the standard deviation instead of the variance, the answers would be 0.3745, 0.2611 and 0.4570. The standard notation N(μ, σ²) gives the variance, as used above.)"
+  }
+]

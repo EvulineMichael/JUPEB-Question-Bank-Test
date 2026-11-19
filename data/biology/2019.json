@@ -351,21 +351,6 @@
     "answer": "D",
     "explanation": "A points to the polyhedral structure at top → Head (capsid).\nB points to the long segmented cylindrical structure → Sheath (contractile tail sheath).\nC points to the short connecting piece → Collar (neck region)."
 },
-  {
-    "subject": "Biology",
-    "year": 2019,
-    "category": "Structures, Morphology and Characteristics of Microorganisms",
-    "type": "Objective",
-    "questionNumber": 30,
-    "question": "Use the diagram below to answer Questions 30 to 32.\n30. The parts labeled A, B, and C are respectively.",
-    "image": {
-        "src": "/images/questions/biology/2019/bio-2019-obj-30.png",
-        "alt": "Diagram of a bacteriophage showing labeled parts A (head), B (sheath), and C (collar)"
-    },
-    "options": ["Head, Collar, Sheath", "Head, Neck and Sheath", "Head, Sheath and Neck", "Head, Sheath and Collar"],
-    "answer": "D",
-    "explanation": "A points to the polyhedral structure at top → Head (capsid).\nB points to the long segmented cylindrical structure → Sheath (contractile tail sheath).\nC points to the short connecting piece → Collar (neck region)."
-},
 {
     "subject": "Biology",
     "year": 2019,
@@ -375,6 +360,7 @@
     "question": "What is the name of the diagram represented?",
     "options": ["Bacteriophage virus.", "Sperm cell.", "Stem cell.", "Bacteria."],
     "answer": "A",
+    "image": {"src": "/images/questions/biology/2019/bio-2019-obj-30.png", "alt": "Labelled diagram used for questions 30 to 32"},
     "explanation": "The structure — polyhedral head, collar, contractile tail sheath, base plate, and tail fibers — is the classic anatomy of a bacteriophage (a virus that infects bacteria)."
 },
 {
@@ -386,6 +372,7 @@
     "question": "Which of the following occurs at the part labeled DNA?",
     "options": ["Replication.", "Death.", "Growth.", "Development."],
     "answer": "A",
+    "image": {"src": "/images/questions/biology/2019/bio-2019-obj-30.png", "alt": "Labelled diagram used for questions 30 to 32"},
     "explanation": "Once the bacteriophage injects its DNA into a host bacterium, the DNA is replicated many times using host cell enzymes and nucleotides.\n\nDNA replication is the direct, relevant process."
 },
   {

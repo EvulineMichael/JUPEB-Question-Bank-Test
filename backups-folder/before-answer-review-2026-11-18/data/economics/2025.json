@@ -1,0 +1,897 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "One of the following reduces the level of economic activities within an economy.",
+    "options": [
+      "Investment.",
+      "Savings.",
+      "Pensions.",
+      "Exports."
+    ],
+    "answer": "B",
+    "explanation": "Savings represent a leakage from the circular flow of income. When households save, they reduce consumption expenditure, which reduces aggregate demand and economic activity. Investment, pensions, and exports are injections that increase economic activity."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Households and firms are the primary focus of",
+    "options": [
+      "household econometrics analysis.",
+      "Macroeconomics.",
+      "Microeconomics.",
+      "firm level economics."
+    ],
+    "answer": "C",
+    "explanation": "Microeconomics studies the behaviour of individual economic units — households and firms. Macroeconomics studies the economy as a whole (aggregates)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The production possibility curve demonstrates basically the phenomenon of",
+    "options": [
+      "scarcity.",
+      "needs.",
+      "scale of preference.",
+      "resource."
+    ],
+    "answer": "A",
+    "explanation": "The production possibility curve (PPC) illustrates the fundamental economic problem of scarcity — limited resources available to produce alternative goods. It shows the trade-offs and opportunity costs faced by an economy."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "A country enjoying a steady annual increase in per capita income is said to be experiencing",
+    "options": [
+      "technological growth.",
+      "industrial growth.",
+      "economic growth.",
+      "increased growth."
+    ],
+    "answer": "C",
+    "explanation": "Economic growth is defined as a sustained increase in real GDP or per capita income over time. An increase in per capita income indicates economic growth (though not necessarily economic development, which is broader)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Which of these is an economic system built upon the system of loaning a loyal person land in return for taxes and military services?",
+    "options": [
+      "Capitalism.",
+      "Militarism.",
+      "Mixed economic system.",
+      "Feudalism."
+    ],
+    "answer": "D",
+    "explanation": "Feudalism was a medieval economic system where lords granted land to vassals (loyal persons) in exchange for military service and taxes. It was based on land ownership, loyalty, and obligations."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Goods which can be enjoyed by all in a society are called",
+    "options": [
+      "normal goods.",
+      "substitute goods.",
+      "public goods.",
+      "intermediate goods."
+    ],
+    "answer": "C",
+    "explanation": "Public goods are non-excludable and non-rivalrous — anyone can enjoy them without reducing availability for others (e.g., national defence, street lighting, public parks)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "When there are no leakages out of a two-sector circular income flow,",
+    "options": [
+      "Output = Savings = Expenditure.",
+      "Expenditure = Output = Transfers.",
+      "Savings = Output = Investment.",
+      "Output = Income = Expenditure."
+    ],
+    "answer": "D",
+    "explanation": "In a two-sector economy (households and firms) with no leakages (savings, taxes, imports) and no injections, the fundamental identity is: Output = Income = Expenditure. This is the basic circular flow equilibrium."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Which of the following describes a document containing statements of intended expenditures and expected revenues of government within a particular period?",
+    "options": [
+      "A development budget.",
+      "A surplus budget.",
+      "A national budget.",
+      "An exigency budget."
+    ],
+    "answer": "C",
+    "explanation": "A national budget is a government document that outlines planned expenditures and expected revenues for a fiscal period. It is a financial plan for government operations. A development budget focuses specifically on capital projects."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The demand curve of a perfectly competitive firm is perfectly elastic while that of a monopolist is",
+    "options": [
+      "upward sloping.",
+      "downward sloping.",
+      "a straight line.",
+      "curved."
+    ],
+    "answer": "B",
+    "explanation": "A monopolist faces a downward-sloping demand curve because it is the sole producer and must lower price to sell additional units. In perfect competition, the firm faces a perfectly elastic (horizontal) demand curve."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Personal disposable income can also be expressed as the sum of households' expenditure on",
+    "options": [
+      "consumption and savings.",
+      "savings and tax.",
+      "investment and depreciation.",
+      "consumption and exports."
+    ],
+    "answer": "A",
+    "explanation": "Personal disposable income (Yd) is the income households have left after paying taxes and receiving transfers. It is either consumed (C) or saved (S): Yd = C + S. Therefore, disposable income = consumption + savings."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The law of diminishing marginal utility will fail in the case of",
+    "options": [
+      "novelty and variety in consumption.",
+      "homogenous products.",
+      "fixed income and prices of goods.",
+      "continuity in consumption."
+    ],
+    "answer": "A",
+    "explanation": "The law of diminishing marginal utility assumes continuous consumption of the same good without variation. If there is novelty and variety (e.g., new flavours, different experiences), the marginal utility may not diminish as expected."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "In 2022, the Buhari Administration escalated the stock of national debt and was unable to offset same by increasing tax revenue. Economists refer to the action of the government as",
+    "options": [
+      "external borrowing.",
+      "budget financing.",
+      "deficit financing.",
+      "debt rescheduling."
+    ],
+    "answer": "C",
+    "explanation": "Deficit financing occurs when a government spends more than it earns in revenue and borrows to finance the deficit. This increases the national debt. Since tax revenue did not increase, the deficit was financed through borrowing."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Workers who saved all through their work life are most likely to dis-save as",
+    "options": [
+      "pensioners.",
+      "wage earners.",
+      "shareholders.",
+      "entrepreneurs."
+    ],
+    "answer": "A",
+    "explanation": "Dis-saving occurs when people spend more than their current income, drawing down past savings. Pensioners often dis-save (use accumulated savings) during retirement as they have no active wage income."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Choices in economics are made as a result of",
+    "options": [
+      "human attitudes.",
+      "laissez faire.",
+      "scarce resources.",
+      "abundant resources."
+    ],
+    "answer": "C",
+    "explanation": "The fundamental economic problem is scarcity — limited resources relative to unlimited wants. Because resources are scarce, choices must be made about how to allocate them. Abundant resources would eliminate the need for choice."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "A growing working-age population provides opportunities for economic growth by",
+    "options": [
+      "reducing the birth rate.",
+      "increasing the number of potential entrants into the labour force.",
+      "increasing the rate of unemployment.",
+      "increasing supply of goods and services."
+    ],
+    "answer": "B",
+    "explanation": "A growing working-age population increases the potential labour force, providing opportunities for economic growth (demographic dividend). If these workers are productively employed, they contribute to output and growth."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The largest proportion of aggregate expenditure in the macroeconomic analysis of Keynes is",
+    "options": [
+      "investment.",
+      "government.",
+      "consumption.",
+      "foreign sector."
+    ],
+    "answer": "C",
+    "explanation": "In Keynesian analysis, consumption expenditure (C) typically represents the largest component of aggregate demand (AD = C + I + G + X - M). Consumption accounts for about 60-70% of GDP in many economies."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The ratio of a country's import and export prices is called",
+    "options": [
+      "balance of payment.",
+      "exchange rate.",
+      "terms of trade.",
+      "real exchange rate."
+    ],
+    "answer": "C",
+    "explanation": "Terms of trade is the ratio of a country's export prices to its import prices (Export Price Index / Import Price Index × 100). It measures the relative price of a country's exports compared to its imports."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The ECOWAS Treaty was signed in the year",
+    "options": [
+      "1975",
+      "1978",
+      "1984",
+      "1986"
+    ],
+    "answer": "A",
+    "explanation": "The Economic Community of West African States (ECOWAS) was established on May 28, 1975, with the signing of the Treaty of Lagos by 15 West African countries."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "One of the following does not depict a type of market structure.",
+    "options": [
+      "Perfect competition.",
+      "Imperfect competition.",
+      "Monopolistic competition.",
+      "Oligopolistic competition."
+    ],
+    "answer": "B",
+    "explanation": "'Imperfect competition' is a broad category that includes monopolistic competition and oligopoly. It is not a distinct market structure itself; rather, it is a general term covering all market structures between perfect competition and pure monopoly. The standard market structures are perfect competition, monopolistic competition, oligopoly, and monopoly."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Macroeconomics deals with the behavior of",
+    "options": [
+      "aggregates in the economy.",
+      "individuals in the economy.",
+      "monopolies in the economy.",
+      "oligopolies in the economy."
+    ],
+    "answer": "A",
+    "explanation": "Macroeconomics studies the economy as a whole by focusing on aggregate variables — national income, total employment, general price level, and economic growth. Microeconomics studies individuals and firms."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "A major factor that determines the size of the multiplier is the",
+    "options": [
+      "average propensity to consume.",
+      "aggregate consumption level.",
+      "marginal propensity to consume.",
+      "marginal propensity to save."
+    ],
+    "answer": "C",
+    "explanation": "The multiplier is calculated as 1/(1 - MPC). Therefore, the size of the multiplier is directly determined by the marginal propensity to consume (MPC). A higher MPC means a larger multiplier. MPS also determines it (1/MPS), but MPC is the more direct factor."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "A combination of high-level economic growth, reduction in poverty, reduction in unemployment, and income inequality refers to",
+    "options": [
+      "development.",
+      "societal growth.",
+      "societal development.",
+      "economic development."
+    ],
+    "answer": "D",
+    "explanation": "Economic development is a broader concept than economic growth. It includes growth plus improvements in welfare — reduction in poverty, unemployment, inequality, and improvements in health, education, and living standards."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "One of the following is not the rationale for regional integration.",
+    "options": [
+      "Promoting production specialization among nations.",
+      "Stimulating increased trading activities among the regions.",
+      "Increasing the variety of goods available to citizens within the regions.",
+      "Undermining economic growth and development among the regions."
+    ],
+    "answer": "D",
+    "explanation": "Regional integration aims to promote economic growth and development by increasing trade, specialization, and variety of goods. Undermining economic growth and development is the opposite of the rationale for regional integration."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The marginal propensity to save is described as the ratio of change in desired level of savings to the change in",
+    "options": [
+      "real income.",
+      "disposable income.",
+      "consumption.",
+      "investment."
+    ],
+    "answer": "B",
+    "explanation": "The marginal propensity to save (MPS) is the change in savings divided by the change in disposable income: MPS = ΔS/ΔYd. Savings is a function of disposable income (income after tax)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Economic growth is said to be meaningful if it",
+    "options": [
+      "accommodates the accelerator model of investment.",
+      "leads only to a country's domestic production cost reduction.",
+      "leads to improvement in the condition of living of the people over time.",
+      "leads to improvement in local technology only."
+    ],
+    "answer": "C",
+    "explanation": "Meaningful economic growth is growth that improves the standard of living of the population over time. Growth that only benefits a few or does not improve welfare is not meaningful development."
+  },
+{
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The value of X is given as: 30, 50, 80, 90 and 10. The mean deviation for the set of numbers is",
+    "options": ["20.4", "26.4", "30.0", "25.5"],
+    "answer": "B",
+    "explanation": "Mean = 52. Deviations: 22, 2, 28, 38, 42. Sum = 132. Mean deviation = 132/5 = 26.4."
+},
+{
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The standard deviation for the set of numbers is",
+    "options": ["30", "40", "35", "27"],
+    "answer": "A",
+    "explanation": "Variance = 4480/5 = 896. SD = √896 ≈ 30."
+},
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "The variance of the set of numbers is",
+    "options": ["800", "900", "1600", "1000"],
+    "answer": "B",
+    "explanation": "Variance = 4480/5 = 896. Closest option is 900."
+},
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "If the Naira's exchange rate against the US dollar strengthens,",
+    "options": [
+      "imports will become more expensive and domestic goods cheaper.",
+      "domestic goods will become more attractive than foreign goods.",
+      "imports will become cheaper and domestic goods more expensive.",
+      "the US dollar will become scarce."
+    ],
+    "answer": "C",
+    "explanation": "A stronger naira (appreciation) means it takes fewer naira to buy a dollar. Imports become cheaper for Nigerians (domestic currency buys more foreign goods), while domestic goods become more expensive for foreign buyers."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "A favorable movement in terms of trade means that the average export prices must have",
+    "options": [
+      "risen relative to average import prices.",
+      "risen relative to average export prices.",
+      "fallen relative to average export prices.",
+      "fallen relative to average import prices."
+    ],
+    "answer": "A",
+    "explanation": "A favorable (improving) terms of trade means the prices of a country's exports have risen relative to the prices of its imports. This means the country can buy more imports for each unit of exports."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "International trade can be restricted in all the following ways EXCEPT",
+    "options": [
+      "imposing import duties.",
+      "removing import duties.",
+      "imposing embargo on imports.",
+      "introducing import quotas."
+    ],
+    "answer": "B",
+    "explanation": "Removing import duties (tariffs) is a trade liberalization measure that encourages international trade, not restricts it. Imposing import duties, embargoes, and quotas are all trade restrictions (protectionist policies)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Donbay Nigeria Ltd is a firm that produces plastic tables and chairs. It is owned by a popular family in the South Western part of Nigeria. Donbay Nigeria Ltd is part of the",
+    "options": [
+      "primary sector.",
+      "tertiary sector.",
+      "public sector.",
+      "private sector."
+    ],
+    "answer": "D",
+    "explanation": "Donbay Ltd is owned by a family (private ownership), so it belongs to the private sector. It is involved in manufacturing (plastic furniture), which is the secondary sector, but the question asks about sector of ownership (public vs private)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The components of national income that tend to increase the amount of planned expenditure on domestic goods and services are called",
+    "options": [
+      "stocks.",
+      "injections.",
+      "withdrawals.",
+      "leakages."
+    ],
+    "answer": "B",
+    "explanation": "Injections are additions to the circular flow of income — investment (I), government spending (G), and exports (X). They increase planned expenditure and aggregate demand. Leakages/withdrawals reduce planned expenditure."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Economic development is hindered by all of the following EXCEPT",
+    "options": [
+      "political instability.",
+      "low level of technology.",
+      "low level of income.",
+      "high level of income."
+    ],
+    "answer": "D",
+    "explanation": "A high level of income is generally associated with higher economic development, not a hindrance. Political instability, low technology, and low income are all obstacles to development."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Technological progress in an economy tends to be",
+    "options": [
+      "less labor intensive and more capital intensive.",
+      "more labor intensive and more capital intensive.",
+      "less labor intensive and less capital intensive.",
+      "more labor intensive and less capital intensive."
+    ],
+    "answer": "A",
+    "explanation": "Technological progress typically substitutes capital for labour — production becomes less labour-intensive and more capital-intensive as firms adopt new technologies, machinery, and automation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Nigeria experienced an increase in real national and per capita income between 1999 and 2014, implying that Nigeria experienced",
+    "options": [
+      "economic development.",
+      "income development.",
+      "economic growth.",
+      "sustainable development."
+    ],
+    "answer": "C",
+    "explanation": "An increase in real national income and per capita income indicates economic growth. Economic development is a broader concept that includes improvements in welfare, poverty reduction, and equity, which may not have occurred despite growth."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Which of these describes a situation when there are alternative services or products a customer can choose from?",
+    "options": [
+      "Derived demand.",
+      "Competitive demand.",
+      "Complementary demand.",
+      "Composite demand."
+    ],
+    "answer": "B",
+    "explanation": "Competitive demand occurs when goods or services are substitutes — consumers can choose between alternative products. Examples include tea vs coffee, or different brands of the same product."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The production possibility curve",
+    "options": [
+      "is convex to the origin.",
+      "is parallel to the Y axis.",
+      "is concave to the origin.",
+      "slopes upward from left to right."
+    ],
+    "answer": "C",
+    "explanation": "The standard production possibility curve is concave to the origin (bowed outward), reflecting the law of increasing opportunity costs. As production of one good increases, the opportunity cost of producing additional units rises."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Government intervention occurs in business activity to forestall all of the following EXCEPT",
+    "options": [
+      "eliminating market failure.",
+      "encouraging market failure.",
+      "regulating monopoly power.",
+      "improving market infrastructure."
+    ],
+    "answer": "B",
+    "explanation": "Government intervention is designed to correct market failures, not encourage them. Governments intervene to eliminate market failure, regulate monopolies, provide public goods, and improve infrastructure."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "A potential measure of economic welfare that takes cognizance of changes in population size is the",
+    "options": [
+      "GDP per capita.",
+      "GDP.",
+      "NNP.",
+      "GDP deflator."
+    ],
+    "answer": "A",
+    "explanation": "GDP per capita divides GDP by population, accounting for population size. It is a better measure of economic welfare than GDP alone, as it reflects average income per person."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The total cash in a typical economy is either held by the banks or the",
+    "options": [
+      "government.",
+      "central bank.",
+      "world bank.",
+      "public."
+    ],
+    "answer": "D",
+    "explanation": "The total cash (currency) in circulation in an economy is held by either commercial banks (as reserves/vault cash) or by the public (households and firms outside the banking system). The central bank issues the cash."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The theory of comparative advantage analyses the possibility of mutually beneficial trade between countries using",
+    "options": [
+      "rate of specialization.",
+      "relative resource endowment.",
+      "cost of production in both countries.",
+      "opportunity cost of production in both countries."
+    ],
+    "answer": "D",
+    "explanation": "The theory of comparative advantage (Ricardo) uses the concept of opportunity cost — a country should specialize in producing goods where it has the lowest opportunity cost. This analysis is based on comparing opportunity costs between countries."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The relevant concept which shows by how much expenditure on consumption will increase, given a unit increase in income is the",
+    "options": [
+      "average propensity to consume.",
+      "marginal propensity to consume.",
+      "autonomous consumption level.",
+      "propensity to consume."
+    ],
+    "answer": "B",
+    "explanation": "The marginal propensity to consume (MPC) measures the change in consumption expenditure resulting from a unit change in income: MPC = ΔC/ΔY. It is the key parameter in the consumption function and multiplier."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The retail sales tax typifies the",
+    "options": [
+      "Progressive tax system.",
+      "Regressive tax system.",
+      "Proportional tax system.",
+      "Direct-Indirect tax system."
+    ],
+    "answer": "B",
+    "explanation": "Retail sales tax is a consumption tax that takes a larger percentage of income from lower-income households than from higher-income households, making it regressive. This is because lower-income households spend a larger proportion of their income on taxable goods."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "On the Keynesian cross, the aggregate expenditure curve in comparison to the real output curve",
+    "options": [
+      "rises much faster.",
+      "falls at a faster rate.",
+      "rises at a lower rate.",
+      "is constant."
+    ],
+    "answer": "C",
+    "explanation": "In the Keynesian cross diagram, the aggregate expenditure (AE) curve has a slope equal to the marginal propensity to consume (MPC), which is between 0 and 1. The real output curve is the 45-degree line with a slope of 1. Therefore, the AE curve rises at a lower rate (less steeply) than the 45-degree line."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Mortality rate is the measure of the number of",
+    "options": [
+      "female deaths in a population during a particular period of time.",
+      "babies that die at birth in a population during a particular period of time.",
+      "deaths in a population during a particular period of time.",
+      "deaths due to pregnancy or child birth in a population during a particular period of time."
+    ],
+    "answer": "C",
+    "explanation": "Mortality rate (or death rate) is a measure of the number of deaths in a population during a particular period, usually expressed per 1,000 or 100,000 people. Options A, B, and D are specific types of mortality."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "What will be the reaction of the business sector to a fall in actual aggregate consumption caused by surplus savings in the economy? There will be",
+    "options": [
+      "an increase in the price of assets.",
+      "a reduction in the price of assets.",
+      "a cutback on planned investment.",
+      "an increase in demand for loanable funds."
+    ],
+    "answer": "C",
+    "explanation": "Surplus savings (savings exceeding investment) reduce aggregate demand and consumption. Businesses respond by reducing planned investment because they expect lower future demand and have idle capacity. This is the paradox of thrift."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The fundamental law of consumption implies that households generally",
+    "options": [
+      "consume all the increase in their income.",
+      "consume some part of the increase in their income.",
+      "save more than they consume the increase.",
+      "maintain their consumption pattern."
+    ],
+    "answer": "B",
+    "explanation": "The fundamental law of consumption (Keynesian) states that as income increases, consumption increases, but not by as much as the increase in income. Therefore, households consume some part (MPC) and save the rest (MPS)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Most African exports are extracted from mining, fishing and forestry, meaning that majority of Africa's exports are from",
+    "options": [
+      "tertiary production.",
+      "primary production.",
+      "secondary production.",
+      "intermediate production."
+    ],
+    "answer": "B",
+    "explanation": "Mining, fishing, and forestry are all primary production activities — extracting natural resources. Most African exports are primary products (oil, minerals, cocoa, coffee, timber). Secondary production is manufacturing; tertiary is services."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Malthus opined that while resources tend to grow arithmetically, population exhibited",
+    "options": [
+      "binary growth.",
+      "exponential growth.",
+      "steady growth.",
+      "differential growth."
+    ],
+    "answer": "B",
+    "explanation": "Malthus argued that population grows geometrically (exponentially) — 1, 2, 4, 8, 16, etc. — while food supply grows arithmetically — 1, 2, 3, 4, 5, etc. This is the core of the Malthusian population theory."
+  },
+ {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Introduction to Economics",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) With the use of examples, distinguish between positive economics and normative economics",
+    "options": [],
+    "modelAnswer": "Positive Economics deals with facts, empirical evidence, and 'what is' — objective and testable statements. Example: 'Inflation in Nigeria is 15%'. Normative Economics deals with value judgments and 'what ought to be' — subjective and prescriptive statements. Example: 'The government should reduce inflation'."
+},
+{
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Market Structure",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) In a perfectly competitive market, Marginal Revenue (MR) = 4q + 6 and Marginal Cost (MC) = 5q - 12\n(i) Calculate the value of q (the profit maximizing quantity)\n(ii) Calculate the price at which the firm will sell its product",
+    "options": [],
+    "modelAnswer": "(i) Profit maximization: MR = MC. 4q + 6 = 5q - 12 → -q = -18 → q = 18.\n(ii) In perfect competition, P = MR = 4(18) + 6 = 78."
+},
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Government Intervention",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) A variety of reasons have been advanced for government intervention in the economy. In this context, what is government intervention?\n(b) List and explain FIVE reasons why government intervenes in Nigerian economy.",
+    "options": [],
+    "modelAnswer": "(a) Government Intervention:\nGovernment intervention refers to the actions taken by the government to influence or regulate economic activities, including markets, prices, production, and distribution of goods and services. It involves policies, laws, regulations, and direct participation in the economy to achieve social and economic goals.\n\n(b) Five reasons why government intervenes in the Nigerian economy:\n1. Correcting Market Failures: Markets may fail to allocate resources efficiently due to externalities, public goods, or information asymmetry. Government intervenes to correct these failures by regulating pollution, providing public goods, and enforcing contracts.\n2. Redistribution of Income: Nigeria has high income inequality. Government intervenes through taxation (progressive taxes) and transfer payments (welfare, subsidies) to redistribute income and reduce poverty.\n3. Stabilizing the Economy: Government uses fiscal and monetary policies to stabilize economic fluctuations (inflation, recession, unemployment). For example, Nigeria uses monetary policy (CBN) to control inflation and fiscal policy to stimulate growth during recessions.\n4. Promoting Economic Growth and Development: Government invests in infrastructure (roads, power, education, healthcare) and provides incentives for investment to foster economic growth and development.\n5. Regulating Monopolies and Anti-Competitive Practices: Government regulates monopolies and cartels to prevent exploitation of consumers, promote competition, and protect consumer welfare. For example, the Federal Competition and Consumer Protection Commission (FCCPC) regulates unfair trade practices."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Money and Banking",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) With examples, distinguish between fiat money and commodity money\n(b) List and explain FIVE functions of Development Banks",
+    "options": [],
+    "modelAnswer": "(a) Fiat Money vs Commodity Money:\nFiat money is currency declared by a government to be legal tender, but it has no intrinsic value — its value comes from government decree and public trust. Examples: Nigerian naira, US dollar, British pound.\n\nCommodity money is money whose value comes from the commodity from which it is made — it has intrinsic value and can be used for other purposes. Examples: gold, silver, salt, cattle, cowries, cocoa.\n\n(b) Five functions of Development Banks:\n1. Provide Long-Term Finance for Development Projects: Development banks provide long-term loans for infrastructure, industrialization, agriculture, and other developmental projects that commercial banks may consider too risky or long-term.\n2. Promote Industrialization: They support the establishment and growth of industries, especially in strategic sectors (manufacturing, energy, technology), by providing finance, technical assistance, and advisory services.\n3. Support Small and Medium Enterprises (SMEs): Development banks provide credit, training, and mentorship to SMEs, which are crucial for job creation and economic growth.\n4. Mobilize Savings and Capital: They mobilize savings from the public and international sources to channel into productive investments, promoting capital formation.\n5. Provide Technical Assistance: Development banks offer technical expertise, feasibility studies, project appraisal, and managerial support to ensure the success of financed projects."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Money and Banking",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) What is liquidity demand for money?\n(b) What is balanced budget?\n(c) Discuss the life-cycle hypothesis.",
+    "options": [],
+    "modelAnswer": "(a) Liquidity Demand for Money:\nLiquidity demand for money refers to the desire of individuals and firms to hold money (cash) rather than other assets because money is the most liquid asset — it can be used immediately for transactions. Keynes identified three motives: transactionary, precautionary, and speculative. Liquidity preference theory explains why people hold money.\n\n(b) Balanced Budget:\nA balanced budget occurs when government revenue (taxes, grants, other income) equals government expenditure (spending) in a given period. This means there is no budget deficit or surplus. A balanced budget is often seen as a sign of fiscal discipline.\n\n(c) Life-Cycle Hypothesis:\nThe life-cycle hypothesis (Modigliani and Brumberg) suggests that individuals plan their consumption and savings over their lifetime. They earn income during their working years and save during these years to finance consumption during retirement. Consumption is relatively stable throughout life, while income varies. The hypothesis implies that:\n- Younger workers (low income) may borrow.\n- Middle-aged workers (high income) save.\n- Retirees (low income) dis-save (use past savings).\n\nThe life-cycle hypothesis explains why the average propensity to consume (APC) may vary over a person's life and why savings rates may be influenced by age distribution of the population."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Trade",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Using an illustration, explain the theory of comparative advantage",
+    "options": [],
+    "modelAnswer": "(a) Theory of Comparative Advantage:\nThe theory of comparative advantage (David Ricardo) states that countries should specialize in producing goods where they have the lowest opportunity cost, and trade with other countries. Even if one country is more efficient at producing all goods (absolute advantage), both countries can still benefit from trade if they specialize based on comparative advantage.\n\nIllustration:\nConsider two countries: Country A and Country B, producing two goods: Rice and Cloth.\n\nCountry A: With 10 units of labour, can produce 20 bags of Rice or 10 yards of Cloth.\nCountry B: With 10 units of labour, can produce 15 bags of Rice or 15 yards of Cloth.\n\nOpportunity costs:\nCountry A: 1 Rice = 10/20 = 0.5 Cloth; 1 Cloth = 20/10 = 2 Rice.\nCountry B: 1 Rice = 15/15 = 1 Cloth; 1 Cloth = 15/15 = 1 Rice.\n\nCountry A has lower opportunity cost in producing Rice (0.5 Cloth vs 1 Cloth). Country A should specialize in Rice.\nCountry B has lower opportunity cost in producing Cloth (1 Rice vs 2 Rice). Country B should specialize in Cloth.\n\nBoth countries gain by trading: Country A exports Rice to Country B, and Country B exports Cloth to Country A. Total output increases, and both countries consume more than they could without trade."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Population",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Explain the following:\n(a) Optimum population;\n(b) Population explosion;\n(c) Floating exchange rate;\n(d) Malthusian population theory;\n(e) Balance of payments.",
+    "options": [],
+    "modelAnswer": "(a) Optimum Population: The level of population that, given the available resources and technology, maximizes output per capita (standard of living). At optimum population, there is the highest possible per capita income, full employment, and sustainable use of resources. If population exceeds optimum, there is overpopulation and declining living standards.\n\n(b) Population Explosion: A sudden, rapid, and sustained increase in population growth rate, often due to declining death rates (better healthcare, sanitation) while birth rates remain high. Population explosion creates pressure on resources, infrastructure, and the environment. Nigeria experienced population explosion in the 1970s-1990s.\n\n(c) Floating Exchange Rate: An exchange rate system where the value of a country's currency is determined by market forces of demand and supply in the foreign exchange market, without direct government intervention. Exchange rates fluctuate freely based on trade flows, capital movements, and economic conditions.\n\n(d) Malthusian Population Theory: Thomas Malthus (1798) argued that population grows geometrically (1, 2, 4, 8, 16) while food supply grows arithmetically (1, 2, 3, 4, 5). Therefore, population will eventually outstrip food supply, leading to famine, disease, and misery (positive checks). He advocated for preventive checks (moral restraint, delayed marriage) to control population growth.\n\n(e) Balance of Payments: A systematic record of all economic transactions between residents of a country and the rest of the world over a period (usually one year). It consists of the current account (trade in goods, services, income, transfers), the capital account, and the financial account. A BOP surplus means more inflows than outflows; a deficit means the opposite."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Explain any THREE determinants of aggregate expenditure.",
+    "options": [],
+    "modelAnswer": "1. Disposable Income: Consumption is directly determined by disposable income. 2. Interest Rates: Investment is inversely related to interest rates. 3. Government Spending: Government expenditure directly adds to aggregate expenditure."
+},
+{
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Explain THREE reasons for wage differentials in most organizations",
+    "options": [],
+    "modelAnswer": "1. Education and Skills: Workers with higher education and specialized skills command higher wages. 2. Experience and Seniority: More experienced workers earn higher wages. 3. Occupational and Industry Differences: Wages vary across occupations based on demand, risk, and unionization."
+},
+{
+    "subject": "Economics",
+    "year": 2025,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) List and explain any THREE causes of unemployment",
+    "options": [],
+    "modelAnswer": "1. Structural Unemployment: Caused by changes in economic structure making skills obsolete. 2. Cyclical Unemployment: Caused by recessions and falling aggregate demand. 3. Frictional Unemployment: Temporary unemployment during job search and transitions."
+},
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "category": "International Economic Institutions",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) Identify any FIVE functions of IMF\n(b) What is currency devaluation?\n(c) Under what conditions should Nigeria devalue its currency?",
+    "options": [],
+    "modelAnswer": "(a) Five functions of the International Monetary Fund (IMF):\n1. Surveillance of Member Economies: The IMF monitors global economic developments and provides policy advice to member countries to promote stability and growth.\n2. Financial Assistance (Lending): The IMF provides loans to countries facing balance of payments deficits, helping them stabilize their economies and avoid default. Loans are conditional on policy reforms (conditionality).\n3. Technical Assistance and Capacity Building: The IMF provides technical advice and training on fiscal policy, monetary policy, exchange rate management, and financial sector reforms.\n4. Promotion of International Monetary Cooperation: The IMF promotes cooperation among countries on monetary policies, exchange rate stability, and international trade to foster global economic stability.\n5. Crisis Prevention and Management: The IMF helps prevent financial crises through early warning systems and assists in managing crises when they occur.\n\n(b) Currency Devaluation:\nCurrency devaluation is a deliberate downward adjustment in the value of a country's currency under a fixed exchange rate regime. It is a policy decision by the government or central bank to officially reduce the exchange rate of the domestic currency against a foreign currency. This makes exports cheaper and imports more expensive.\n\n(c) Conditions for Nigeria to devalue its currency:\n1. Persistent Balance of Payments Deficits: If Nigeria has chronic BOP deficits and low foreign reserves, devaluation can correct the deficit by making exports cheaper and imports more expensive.\n2. Declining Competitiveness of Exports: If Nigerian goods have become too expensive relative to foreign goods, devaluation can make exports more competitive and boost demand.\n3. High Import Dependency: If Nigeria imports more than it exports, devaluation can discourage imports and encourage local production (import substitution).\n4. Low Foreign Reserves: If foreign reserves are critically low and cannot defend the currency, devaluation may be necessary to stabilize the exchange rate.\n5. Pressure from International Financial Institutions: The IMF or World Bank may require devaluation as part of a structural adjustment program or loan condition.\n6. Economic Recession: During a recession, devaluation can stimulate demand by boosting net exports and supporting domestic industries.\n\nHowever, devaluation has risks: it can increase inflation (higher import costs), raise the cost of foreign debt servicing, and reduce real incomes. It should be accompanied by complementary policies (fiscal discipline, export diversification, inflation control)."
+  }
+]

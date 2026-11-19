@@ -1,0 +1,171 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "a) The following table presents a sampled data set obtained from a medical examination conducted during the screening exercise of 103 admitted IJMB students. Use the data to answer the question that follow.\ni) What is the proportion of the sample to the number of the admitted IJMB students? 1mk\nii) If a ballot was cast to obtain the above data set, give the appropriate name for the sampling technique used. 1mk\niii) Represent the whole data of Blood group of the students on a pie chart. 12 mks\niv) If the sample collected is a represented sample of the students admitted, What is the median weight of admitted students? 3mks\nv) On the basis of gender, represent the data of the Genotype of the students on a bar chart. 9 mks\nvi) Write shorts notes on experimentation as a method of data collection. 4 mks",
+    "dataTable": {
+      "headers": [
+        "S/No",
+        "Gender",
+        "Height (m)",
+        "Weight (Kg)",
+        "Blood Group",
+        "Genotype"
+      ],
+      "rows": [
+        [
+          "1",
+          "M",
+          "1.7",
+          "65",
+          "A",
+          "AA"
+        ],
+        [
+          "2",
+          "F",
+          "1.45",
+          "68",
+          "A",
+          "AS"
+        ],
+        [
+          "3",
+          "M",
+          "1.6",
+          "73",
+          "O",
+          "AA"
+        ],
+        [
+          "4",
+          "M",
+          "1.8",
+          "64",
+          "O",
+          "AA"
+        ],
+        [
+          "5",
+          "F",
+          "1.8",
+          "60",
+          "O",
+          "AA"
+        ],
+        [
+          "6",
+          "M",
+          "1.65",
+          "65",
+          "AB",
+          "AA"
+        ],
+        [
+          "7",
+          "M",
+          "1.67",
+          "65",
+          "B",
+          "SS"
+        ],
+        [
+          "8",
+          "F",
+          "1.55",
+          "60",
+          "O",
+          "AS"
+        ],
+        [
+          "9",
+          "F",
+          "1.6",
+          "45",
+          "A",
+          "AA"
+        ],
+        [
+          "10",
+          "F",
+          "1.3",
+          "48",
+          "O",
+          "SS"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the right edge of the photo cuts off the ends of a few words (e.g. 'examinatio', 'ba'); they are completed above as the obvious words.\n\ni) Proportion = sample size/population = 10/103 = 0.097 (about 9.7%, or 10 : 103).\n\nii) Simple random sampling (the lottery/ballot method), where every student has an equal chance of being chosen.\n\niii) Blood group frequencies (total 10): A = 3 (students 1, 2, 9); B = 1 (student 7); AB = 1 (student 6); O = 5 (students 3, 4, 5, 8, 10).\nAngle of each sector = (frequency/total) × 360°:\nA: 3/10 × 360° = 108°\nB: 1/10 × 360° = 36°\nAB: 1/10 × 360° = 36°\nO: 5/10 × 360° = 180°\n(Check: 108 + 36 + 36 + 180 = 360°.)\nDraw a circle and divide it into sectors of these angles with a protractor; label each sector with the blood group and its angle or percentage (A 30%, B 10%, AB 10%, O 50%), and give the chart a title, e.g. 'Blood groups of sampled IJMB students'.\n\niv) Weights in ascending order: 45, 48, 60, 60, 64, 65, 65, 65, 68, 73.\nn = 10 (even), so the median is the mean of the 5th and 6th values:\nMedian = (64 + 65)/2 = 64.5 kg.\n\nv) Genotype by gender:\nMales (students 1, 3, 4, 6, 7): AA = 4, AS = 0, SS = 1.\nFemales (students 2, 5, 8, 9, 10): AA = 2, AS = 2, SS = 1.\nBar chart: genotype (AA, AS, SS) on the horizontal axis and number of students (0 to 4) on the vertical axis. For each genotype draw two bars side by side, one for males and one for females, with a key (e.g. shaded for males, plain for females), labelled axes and a title. Bar heights: AA (M 4, F 2), AS (M 0, F 2), SS (M 1, F 1).\n\nvi) Experimentation is a method of collecting data in which the investigator deliberately changes one factor (the independent variable) and measures its effect on another (the dependent variable), while keeping all other conditions constant (controlled variables). A control set-up is included for comparison, and the experiment is replicated to make the results reliable. It allows cause-and-effect relationships to be established, e.g. testing the effect of fertiliser on plant growth. Its disadvantages are that it can be costly and time-consuming, and laboratory conditions may not reflect natural conditions."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "General Characteristics and Diversity of Plants",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "b. Give the most appropriate word(s) or phrases which fill in the blank spaces in the questions below. Write down your answers in the booklet. Spellings of one word answers must be correct to score.\ni) A supportive cell with evenly thickened walls is a ______ cell.\nii) Growth movement in response to touch is called ______.\niii) Primary roots that grow vertically downwards and give off smaller lateral roots are called ______\niv) An inflorescence in which the pedicels all arise from a common point at the apex of the peduncle is called ______\nv) A carotenoid pigment found in carrot is called ______.\nvi) A simple, dry, and usually indehiscent fruit with seed attached to the fruit wall at only point is called ______\nvii) A plastid that stores starch is called ______\nviii) Spores produced as a result of sexual reproduction in Mucor are called ______\nix) Special roots found in parasitic vascular plants, which are used for attachment and absorption are called ______\nx) The general name for vascular seed plants is ______ 10 mks",
+    "options": [],
+    "modelAnswer": "i) Sclerenchyma (its walls are evenly and heavily thickened with lignin; collenchyma walls are thickened unevenly, mainly at the corners).\nii) Thigmotropism (haptotropism).\niii) Tap roots (a tap root system).\niv) Umbel.\nv) Carotene (β-carotene).\nvi) Achene.\nvii) Amyloplast (a type of leucoplast).\nviii) Zygospores.\nix) Haustoria (singular: haustorium).\nx) Spermatophytes (Spermatophyta)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Write short notes on ALL of the following\na) Lichens 5 mks\nb) Air pollution 5 mks\nc) Heterospory 5 mks\nd) Asexual reproduction 5 mks",
+    "options": [],
+    "modelAnswer": "a) Lichens: a lichen is a symbiotic (mutualistic) association between a fungus (mycobiont, usually an ascomycete) and an alga or cyanobacterium (phycobiont). The alga photosynthesises and supplies food; the fungus provides anchorage, absorbs water and minerals, and protects the alga from drying. Forms: crustose (crust-like, e.g. on rocks), foliose (leaf-like) and fruticose (shrubby). They reproduce mainly vegetatively by soredia, isidia and fragmentation. Importance: pioneers in colonising bare rock and starting soil formation; indicators of air pollution (sensitive to SO₂); food for reindeer (reindeer moss); sources of dyes (litmus), antibiotics and perfumes.\n\nb) Air pollution: the presence in the atmosphere of harmful substances in amounts that damage living things or property. Pollutants: SO₂ and oxides of nitrogen (from burning fossil fuels; cause acid rain), carbon monoxide (from vehicle exhausts; combines with haemoglobin), CO₂ and methane (greenhouse gases, global warming), CFCs (ozone layer depletion), smoke, dust and soot (respiratory diseases), lead from leaded petrol. Effects: respiratory diseases, acid rain damaging plants, buildings and lakes, reduced photosynthesis (dust on leaves), climate change. Control: use of cleaner fuels, filters and scrubbers in factories, catalytic converters, afforestation, legislation.\n\nc) Heterospory: the production of two kinds of spores of different sizes by the same plant: small microspores (which develop into male gametophytes) and large megaspores (which develop into female gametophytes). Found in Selaginella, some ferns (e.g. Marsilea, Salvinia) and all seed plants. It is important in evolution because the retention of the megaspore inside the megasporangium led to the development of the seed habit. (Homospory is the production of one kind of spore, e.g. in most ferns and mosses.)\n\nd) Asexual reproduction: reproduction by a single parent without the fusion of gametes, producing offspring genetically identical to the parent (a clone), by mitosis. Types: binary fission (bacteria, Amoeba), budding (yeast, Hydra), spore formation (Mucor, ferns), fragmentation (Spirogyra), vegetative propagation (bulbs, corms, rhizomes, tubers, stolons; artificial methods such as cuttings, grafting, layering). Advantages: rapid, needs only one parent, preserves good characters. Disadvantages: no genetic variation, so less adaptability to environmental change, and overcrowding."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Microorganisms and their Application in Biotechnology",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Discuss the economic importance of Bacteria. 20 mks",
+    "options": [],
+    "modelAnswer": "Beneficial (useful) bacteria:\n1. Soil fertility: nitrogen-fixing bacteria (Rhizobium in root nodules of legumes; free-living Azotobacter, Clostridium) convert atmospheric nitrogen into nitrogen compounds; nitrifying bacteria (Nitrosomonas, Nitrobacter) convert ammonia to nitrates for plants.\n2. Decomposition: saprophytic bacteria decompose dead organisms and wastes, recycling nutrients (carbon and nitrogen cycles) and cleaning the environment.\n3. Food industry: Lactobacillus in making yoghurt, cheese and butter; fermentation of foods such as ogi, garri (cassava fermentation) and vinegar (Acetobacter).\n4. Medicine: production of antibiotics (streptomycin from Streptomyces), vaccines, and hormones such as insulin by genetically engineered bacteria (E. coli).\n5. Industry: retting of fibres (jute, flax), curing of tea, tobacco and leather tanning; production of enzymes, organic acids and alcohols; biogas (methane) production.\n6. Sewage treatment: bacteria break down organic matter in sewage.\n7. Digestion: bacteria in the gut of ruminants digest cellulose; gut bacteria in man synthesise vitamins B12 and K.\n8. Biotechnology and research: genetic engineering (plasmids as vectors), bioremediation of oil spills, biological control of pests (Bacillus thuringiensis).\n\nHarmful bacteria:\n1. Diseases of man: tuberculosis (Mycobacterium tuberculosis), cholera (Vibrio cholerae), typhoid (Salmonella typhi), tetanus, pneumonia, gonorrhoea, syphilis, leprosy, diphtheria.\n2. Diseases of animals: anthrax, bovine tuberculosis, brucellosis.\n3. Diseases of plants: bacterial blight of cassava and rice, soft rot, citrus canker, wilts.\n4. Food spoilage and food poisoning (Clostridium botulinum, Salmonella, Staphylococcus).\n5. Denitrifying bacteria (Pseudomonas) reduce soil fertility by converting nitrates to nitrogen gas.\n6. Biodeterioration: damage to stored goods, timber, leather and textiles.\n7. Bioterrorism: some bacteria (e.g. anthrax) can be used as biological weapons."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Plant Reproduction",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "a) Citing relevant examples, describe three mechanisms of seed/fruit dispersal in angiosperms 15 mks\nb) What is soil profile? 5 mks",
+    "options": [],
+    "modelAnswer": "a) Any three:\n1. Dispersal by wind (anemochory): fruits and seeds are light and have wings or hairs that increase surface area. Examples: winged fruits of Combretum, Terminalia and Triplochiton (obeche); hairy (plumed) seeds of cotton, Calotropis and Tridax; pappus of Tridax; very light, tiny seeds of orchids.\n2. Dispersal by animals (zoochory): (a) fleshy, brightly coloured, edible fruits are eaten and the seeds pass out undamaged in faeces or are dropped, e.g. mango, guava, pawpaw, tomato, oil palm; (b) fruits with hooks, spines or sticky surfaces cling to fur or clothing, e.g. Desmodium, Boerhavia, Bidens (black jack), Urena.\n3. Dispersal by water (hydrochory): fruits are light, buoyant and have fibrous or spongy coats that trap air and are waterproof, e.g. coconut (fibrous mesocarp), water lily, Raphia palm.\n4. Self (explosive/mechanical) dispersal (autochory): dry dehiscent fruits split open forcibly when ripe, throwing out the seeds, e.g. pods of beans, pea, Crotalaria, flamboyant, and the capsule of balsam and okra.\n\nb) A soil profile is a vertical section through the soil from the surface down to the underlying parent rock, showing the different layers (horizons): the O horizon (organic litter and humus), A horizon (topsoil, dark, rich in humus, living organisms and roots; zone of leaching), B horizon (subsoil, zone of accumulation of leached minerals such as iron, aluminium and clay), C horizon (weathered parent material) and R horizon (unweathered bedrock). It is used to study soil formation and fertility."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Economic and Ecological Importance of Plants",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Write explanatory notes on the following:\na) Potato blight 10 mks\nb) Climate change 10 mks",
+    "options": [],
+    "modelAnswer": "a) Potato blight (late blight) is a destructive disease of potato (and tomato) caused by the fungus-like oomycete Phytophthora infestans. It caused the Irish potato famine (1845–1849).\nConditions: spreads rapidly in cool (about 10–25 °C), humid, wet weather.\nSymptoms: water-soaked dark brown or black patches on leaves, often with a white mould (sporangia) on the underside; leaves and stems wither and die; tubers develop reddish-brown dry rot and may rot completely in storage.\nSpread: sporangia are carried by wind and rain splash to other plants; zoospores swim in water films and infect leaves; the pathogen survives in infected tubers.\nControl: planting resistant varieties and disease-free seed tubers; spraying with fungicides (e.g. Bordeaux mixture, copper fungicides, metalaxyl); destroying infected plants and crop residues; crop rotation; earthing up to protect tubers; good spacing for air circulation; harvesting in dry weather.\n\nb) Climate change is a long-term change in the average weather patterns (temperature, rainfall, wind) of the Earth or a region, now mainly caused by human activities that increase greenhouse gases.\nCauses: burning of fossil fuels (CO₂), deforestation (less CO₂ absorbed), agriculture (methane from livestock and rice fields, nitrous oxide from fertilisers), industrial processes, CFCs; natural causes include volcanic eruptions and changes in solar radiation.\nMechanism: greenhouse gases trap long-wave (infrared) radiation from the Earth, causing global warming (the enhanced greenhouse effect).\nEffects: rise in global temperature; melting of glaciers and polar ice and rise in sea level (coastal flooding); changes in rainfall (droughts, floods, desertification); more extreme weather; loss of biodiversity and habitats; reduced crop yields and food insecurity; spread of diseases such as malaria to new areas.\nMitigation: use of renewable energy (solar, wind, hydro), afforestation and reducing deforestation, energy efficiency, reducing emissions (international agreements such as the Paris Agreement), climate-smart agriculture."
+  },
+  {
+    "subject": "Biology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "a) Describe the morphological range forms of algae giving NAMED examples. 15 mks\nb) Write short notes on the mitochondria. 5 mks",
+    "options": [],
+    "modelAnswer": "a) Algae show a range of body (thallus) forms:\n1. Unicellular motile: single cells with flagella, e.g. Chlamydomonas, Euglena.\n2. Unicellular non-motile: single cells without flagella, e.g. Chlorella, diatoms.\n3. Colonial (motile): groups of cells held together in a definite shape, e.g. Volvox, Pandorina, Eudorina.\n4. Colonial (non-motile)/coenobium, e.g. Hydrodictyon (water net), Pediastrum.\n5. Palmelloid: non-motile cells embedded in a common mucilage, e.g. Tetraspora.\n6. Filamentous unbranched: cells joined end to end in a thread, e.g. Spirogyra, Ulothrix, Oedogonium.\n7. Filamentous branched, e.g. Cladophora; heterotrichous (prostrate and erect branches), e.g. Stigeoclonium, Fritschiella.\n8. Siphonaceous (coenocytic): a tubular, multinucleate thallus without cross walls, e.g. Vaucheria, Caulerpa.\n9. Thalloid/parenchymatous: flat, leaf-like or large complex thalli, e.g. Ulva (sea lettuce), and the large seaweeds Fucus, Laminaria and Sargassum (with holdfast, stipe and blade).\n\nb) Mitochondria are rod-shaped or spherical organelles found in the cytoplasm of eukaryotic cells (about 0.5–1 μm wide). Each has a double membrane: a smooth outer membrane and a folded inner membrane forming cristae, which enclose a fluid matrix. The matrix contains enzymes of the Krebs cycle, circular DNA and 70S ribosomes; the cristae carry the enzymes of the electron transport chain and ATP synthase. Function: site of aerobic respiration, producing energy as ATP ('powerhouse of the cell'). They are numerous in very active cells (e.g. muscle and liver cells, sperm), and can divide on their own."
+  }
+]

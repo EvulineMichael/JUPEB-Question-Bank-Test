@@ -1,0 +1,156 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Given that sin θ = 4/5, compute the value of tan θ − cos θ. [4marks]",
+    "options": [],
+    "modelAnswer": "Taking θ acute: cos θ = 3/5 (from the 3, 4, 5 triangle), tan θ = 4/3.\ntan θ − cos θ = 4/3 − 3/5 = (20 − 9)/15 = 11/15.\n(If θ is obtuse, cos θ = −3/5 and tan θ = −4/3, giving −4/3 + 3/5 = −11/15.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "If α and β are the roots of the equation 2x² + 3x + 6 = 0, find (α − β)². [4marks]",
+    "options": [],
+    "modelAnswer": "α + β = −3/2, αβ = 6/2 = 3.\n(α − β)² = (α + β)² − 4αβ = 9/4 − 12 = −39/4.\n(It is negative because the roots are complex.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Express (1/2 − i√3/2)²⁴ in the form x + iy. [4marks]",
+    "options": [],
+    "modelAnswer": "1/2 − i√3/2 = cos(π/3) − i sin(π/3) = cos(−π/3) + i sin(−π/3).\nBy De Moivre's theorem: (cos(−π/3) + i sin(−π/3))²⁴ = cos(−8π) + i sin(−8π) = 1 + 0i.\nAnswer: 1 (x = 1, y = 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Real Numbers",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "If x and y are positive integers such that x + xy + y = 54, find the value of x + y. [4marks]",
+    "options": [],
+    "modelAnswer": "Add 1 to both sides: x + xy + y + 1 = 55, so (x + 1)(y + 1) = 55.\n55 = 1 × 55 = 5 × 11. Since x and y are positive, x + 1 ≥ 2 and y + 1 ≥ 2, so {x + 1, y + 1} = {5, 11}.\nx and y are 4 and 10 (in some order), so x + y = 14.\n(Check: 4 + 40 + 10 = 54 ✓)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Solve the equation 6 sin²x + cos x − 5 = 0 for 0 ≤ x ≤ 360⁰. [4marks]",
+    "options": [],
+    "modelAnswer": "Replace sin²x by 1 − cos²x:\n6 − 6cos²x + cos x − 5 = 0\n6cos²x − cos x − 1 = 0\n(2cos x − 1)(3cos x + 1) = 0\ncos x = ½ or cos x = −⅓.\ncos x = ½: x = 60°, 300°.\ncos x = −⅓: x = 109.5°, 250.5°.\nx = 60°, 109.5°, 250.5°, 300°."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Matrices",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Given that A = (1 3 1; 0 2 0; 1 4 3), B = (2 0 −1; 3 4 5; −1 0 6), show that (AB)ᵀ = AᵀBᵀ. [10marks]",
+    "options": [],
+    "modelAnswer": "Note: each matrix is written row by row, with rows separated by semicolons. As printed, the statement (AB)ᵀ = AᵀBᵀ is false in general; the correct property is (AB)ᵀ = BᵀAᵀ. The working below shows this.\n\nAB:\nRow 1: (2 + 9 − 1, 0 + 12 + 0, −1 + 15 + 6) = (10, 12, 20)\nRow 2: (0 + 6 + 0, 0 + 8 + 0, 0 + 10 + 0) = (6, 8, 10)\nRow 3: (2 + 12 − 3, 0 + 16 + 0, −1 + 20 + 18) = (11, 16, 37)\nAB = (10 12 20; 6 8 10; 11 16 37)\n(AB)ᵀ = (10 6 11; 12 8 16; 20 10 37)\n\nAᵀ = (1 0 1; 3 2 4; 1 0 3), Bᵀ = (2 3 −1; 0 4 0; −1 5 6).\n\nBᵀAᵀ:\nRow 1: (2 + 9 − 1, 0 + 6 + 0, 2 + 12 − 3) = (10, 6, 11)\nRow 2: (0 + 12 + 0, 0 + 8 + 0, 0 + 16 + 0) = (12, 8, 16)\nRow 3: (−1 + 15 + 6, 0 + 10 + 0, −1 + 20 + 18) = (20, 10, 37)\nBᵀAᵀ = (10 6 11; 12 8 16; 20 10 37) = (AB)ᵀ ✓\n\nAᵀBᵀ = (1 8 5; 2 37 21; −1 18 17), which is not equal to (AB)ᵀ.\nSo (AB)ᵀ = BᵀAᵀ, not AᵀBᵀ."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Using mathematical induction, show that Σ_(r=1)^n (r − 1)(r + 1) = (n/6)(n − 1)(2n + 5). [10marks]",
+    "options": [],
+    "modelAnswer": "Let P(n): Σ_(r=1)^n (r − 1)(r + 1) = (n/6)(n − 1)(2n + 5).\n\nn = 1: LHS = (0)(2) = 0; RHS = (1/6)(0)(7) = 0. True.\n\nAssume P(k): Σ_(r=1)^k (r − 1)(r + 1) = (k/6)(k − 1)(2k + 5).\n\nFor n = k + 1, add the (k + 1)th term, k(k + 2):\nSum = (k/6)(k − 1)(2k + 5) + k(k + 2)\n= (k/6)[(k − 1)(2k + 5) + 6(k + 2)]\n= (k/6)[2k² + 3k − 5 + 6k + 12]\n= (k/6)(2k² + 9k + 7)\n= (k/6)(k + 1)(2k + 7).\nRHS of P(k + 1) = ((k + 1)/6)(k)(2(k + 1) + 5) = (k(k + 1)/6)(2k + 7). These are equal, so P(k + 1) is true.\n\nBy induction, the result holds for all positive integers n."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Logarithms",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Find the set of values of x for which 7^(x+8) = 8^(x+7). [10marks]",
+    "options": [],
+    "modelAnswer": "Take logarithms: (x + 8) log 7 = (x + 7) log 8\nx(log 7 − log 8) = 7 log 8 − 8 log 7\nx = (8 log 7 − 7 log 8)/(log 8 − log 7).\nlog 7 = 0.84510, log 8 = 0.90309:\nNumerator = 6.76080 − 6.32163 = 0.43917; denominator = 0.05799.\nx = 0.43917/0.05799 ≈ 7.573.\nThe solution set is {x : x ≈ 7.57}."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Polynomials",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) When 5x³ + px² + x + q is divided by (x − 2), the remainder is 3. Given that (x − 1) is also a factor, find the values of p and q, hence factorize the expression completely. [10 marks]",
+    "options": [],
+    "modelAnswer": "Let f(x) = 5x³ + px² + x + q.\nf(2) = 3: 40 + 4p + 2 + q = 3, so 4p + q = −39 ...(1)\nf(1) = 0: 5 + p + 1 + q = 0, so p + q = −6 ...(2)\n(1) − (2): 3p = −33, so p = −11, and q = 5.\n\nf(x) = 5x³ − 11x² + x + 5 = (x − 1)(5x² − 6x − 5).\nThe quadratic 5x² − 6x − 5 has discriminant 36 + 100 = 136, which is not a perfect square, so it does not factorise over the rational numbers. Its roots are x = (3 ± √34)/5.\nComplete factorisation: f(x) = (x − 1)(5x² − 6x − 5) = 5(x − 1)(x − (3 + √34)/5)(x − (3 − √34)/5)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Show that tan⁻¹(x/(x + y)) + tan⁻¹(y/(2x + y)) = π/4. [08 marks]",
+    "options": [],
+    "modelAnswer": "Let A = tan⁻¹(x/(x + y)) and B = tan⁻¹(y/(2x + y)).\ntan(A + B) = [x/(x + y) + y/(2x + y)]/[1 − xy/((x + y)(2x + y))]\nNumerator = [x(2x + y) + y(x + y)]/[(x + y)(2x + y)] = (2x² + 2xy + y²)/[(x + y)(2x + y)].\nDenominator = [(x + y)(2x + y) − xy]/[(x + y)(2x + y)] = (2x² + 2xy + y²)/[(x + y)(2x + y)].\ntan(A + B) = 1, so A + B = π/4 (for positive x and y), as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) If z = x + iy, evaluate (z)² − (z̄)² + 2zz̄. [06 marks]",
+    "options": [],
+    "modelAnswer": "z² = x² − y² + 2ixy; z̄² = x² − y² − 2ixy; zz̄ = x² + y².\nz² − z̄² + 2zz̄ = 4ixy + 2(x² + y²) = 2(x² + y²) + 4xyi."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Solve the equation 81^(sin²x) + 81^(cos²x) = 30. [14 marks]",
+    "options": [],
+    "modelAnswer": "Since cos²x = 1 − sin²x, 81^(cos²x) = 81/81^(sin²x).\nLet u = 81^(sin²x): u + 81/u = 30, so u² − 30u + 81 = 0, (u − 27)(u − 3) = 0.\nu = 27: 81^(sin²x) = 27, i.e., 3^(4sin²x) = 3³, so sin²x = 3/4 and sin x = ±√3/2.\nu = 3: 3^(4sin²x) = 3¹, so sin²x = 1/4 and sin x = ±½.\nFor 0° ≤ x ≤ 360°: x = 30°, 60°, 120°, 150°, 210°, 240°, 300°, 330°.\n(General solution: x = nπ ± π/6 or x = nπ ± π/3.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Show that |z − i| = |2z + i| represents a circle where z = x + iy. Sketch the set of points which satisfy the inequality |z − i| ≥ |2z + i|. [12 marks]",
+    "options": [],
+    "modelAnswer": "z − i = x + (y − 1)i; 2z + i = 2x + (2y + 1)i.\n|z − i|² = |2z + i|²: x² + (y − 1)² = 4x² + (2y + 1)²\nx² + y² − 2y + 1 = 4x² + 4y² + 4y + 1\n3x² + 3y² + 6y = 0\nx² + y² + 2y = 0, i.e., x² + (y + 1)² = 1.\nThis is a circle with centre (0, −1) and radius 1.\n\nInequality |z − i| ≥ |2z + i|: x² + (y − 1)² ≥ 4x² + (2y + 1)², which gives x² + y² + 2y ≤ 0, i.e., x² + (y + 1)² ≤ 1.\nThe set is the circle and its interior: the closed disc with centre (0, −1) and radius 1 (it touches the origin). Sketch: draw the circle with a solid line and shade inside it."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Show that: sin⁴θ = 3/8 − cos 2θ/2 + cos 4θ/8 [08 marks]",
+    "options": [],
+    "modelAnswer": "sin²θ = (1 − cos 2θ)/2, so sin⁴θ = (1 − cos 2θ)²/4 = (1 − 2cos 2θ + cos²2θ)/4.\ncos²2θ = (1 + cos 4θ)/2.\nsin⁴θ = [1 − 2cos 2θ + ½ + ½cos 4θ]/4 = [3/2 − 2cos 2θ + ½cos 4θ]/4\n= 3/8 − (cos 2θ)/2 + (cos 4θ)/8, as required."
+  }
+]

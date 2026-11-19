@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Differentiate (1 + sin x)/(1 + cos x).",
+    "options": [],
+    "modelAnswer": "Quotient rule: d/dx(u/v) = (v u′ − u v′)/v².\nu = 1 + sin x, u′ = cos x; v = 1 + cos x, v′ = −sin x.\ndy/dx = [(1 + cos x)cos x − (1 + sin x)(−sin x)]/(1 + cos x)²\n= [cos x + cos²x + sin x + sin²x]/(1 + cos x)²\nUsing cos²x + sin²x = 1:\ndy/dx = (1 + sin x + cos x)/(1 + cos x)²."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Find the direction cosines of the vector 2i + 2j − k.",
+    "options": [],
+    "modelAnswer": "Magnitude: |v| = √(2² + 2² + (−1)²) = √9 = 3.\nDirection cosines are the components divided by the magnitude:\nl = 2/3, m = 2/3, n = −1/3.\n(Check: l² + m² + n² = 4/9 + 4/9 + 1/9 = 1 ✓.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Evaluate lim_(x→0) (x − sin x)/(½x³ − x⁴).",
+    "options": [],
+    "modelAnswer": "Reading note: the denominator is read from the scan as ½x³ − x⁴.\n\nAt x = 0 both top and bottom are 0, so use the series sin x = x − x³/6 + x⁵/120 − ...\nx − sin x = x³/6 − x⁵/120 + ...\n½x³ − x⁴ = x³(½ − x).\n(x − sin x)/(½x³ − x⁴) = x³(1/6 − x²/120 + ...)/[x³(½ − x)] = (1/6 − x²/120 + ...)/(½ − x).\nAs x → 0: limit = (1/6)/(1/2) = 1/3.\n\n(By L'Hôpital's rule three times: (1 − cos x)/(3x²/2 − 4x³) → sin x/(3x − 12x²) → cos x/(3 − 24x) → 1/3, the same answer.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "If y = eˣ sin x, show that y″ − 2y′ + 2y = 0.",
+    "options": [],
+    "modelAnswer": "y = eˣ sin x\ny′ = eˣ sin x + eˣ cos x = eˣ(sin x + cos x)\ny″ = eˣ(sin x + cos x) + eˣ(cos x − sin x) = 2eˣ cos x\n\ny″ − 2y′ + 2y = 2eˣ cos x − 2eˣ(sin x + cos x) + 2eˣ sin x\n= 2eˣ cos x − 2eˣ sin x − 2eˣ cos x + 2eˣ sin x\n= 0, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Show that ∫₀¹ dx/[(1 + x)[2 + log(1 + x)]] = log((log 2e²)/2).",
+    "options": [],
+    "modelAnswer": "Here log means the natural logarithm (ln).\nSubstitute u = 2 + ln(1 + x). Then du/dx = 1/(1 + x), so du = dx/(1 + x).\nLimits: x = 0 → u = 2 + ln 1 = 2; x = 1 → u = 2 + ln 2.\n∫₀¹ dx/[(1 + x)(2 + ln(1 + x))] = ∫ from 2 to 2 + ln 2 of du/u\n= [ln u] from 2 to 2 + ln 2\n= ln(2 + ln 2) − ln 2\n= ln((2 + ln 2)/2).\n\nNow 2 = ln e², so 2 + ln 2 = ln e² + ln 2 = ln(2e²).\nTherefore the integral = ln((ln 2e²)/2) = log((log 2e²)/2), as required.\n(Numerically ≈ ln(2.6931/2) = ln 1.3466 ≈ 0.2976.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) If y = xeʸ, show that:\n(i) (1 − y)y′ = eʸ\n(ii) (1 − y)y″ = (2 − y)(y′)²",
+    "options": [],
+    "modelAnswer": "(i) Differentiate y = xeʸ implicitly with respect to x (product rule):\ny′ = eʸ + xeʸ y′.\nBut xeʸ = y, so y′ = eʸ + y y′.\ny′ − y y′ = eʸ → (1 − y)y′ = eʸ, as required.\n\n(ii) Differentiate (1 − y)y′ = eʸ with respect to x:\n(1 − y)y″ + y′(−y′) = eʸ y′\n(1 − y)y″ − (y′)² = eʸ y′.\nFrom (i), eʸ = (1 − y)y′, so eʸ y′ = (1 − y)(y′)².\n(1 − y)y″ = (y′)² + (1 − y)(y′)² = (y′)²(1 + 1 − y)\n(1 − y)y″ = (2 − y)(y′)², as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Evaluate ∫₃⁸ 1/(x√(1 + x)) dx.",
+    "options": [],
+    "modelAnswer": "Reading note: the limits are read from the scan as 3 (lower) and 8 (upper). They make √(1 + x) a whole number at both ends, which supports this reading.\n\nLet u = √(1 + x), so u² = 1 + x, x = u² − 1 and dx = 2u du.\nLimits: x = 3 → u = 2; x = 8 → u = 3.\n∫ dx/(x√(1 + x)) = ∫ 2u du/[(u² − 1)u] = ∫ 2/(u² − 1) du.\n\nPartial fractions: 2/(u² − 1) = 1/(u − 1) − 1/(u + 1).\n∫₂³ [1/(u − 1) − 1/(u + 1)] du = [ln((u − 1)/(u + 1))] from 2 to 3\n= ln(2/4) − ln(1/3)\n= ln(1/2) + ln 3\n= ln(3/2) ≈ 0.4055."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a). Differentiate from first principle y = √(7x − 5).",
+    "options": [],
+    "modelAnswer": "y + δy = √(7(x + δx) − 5) = √(7x + 7δx − 5).\nδy = √(7x + 7δx − 5) − √(7x − 5).\nMultiply top and bottom by the conjugate √(7x + 7δx − 5) + √(7x − 5):\nδy = [(7x + 7δx − 5) − (7x − 5)]/[√(7x + 7δx − 5) + √(7x − 5)]\n= 7δx/[√(7x + 7δx − 5) + √(7x − 5)].\nδy/δx = 7/[√(7x + 7δx − 5) + √(7x − 5)].\nAs δx → 0:\ndy/dx = 7/[√(7x − 5) + √(7x − 5)] = 7/(2√(7x − 5))."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Maclaurin and Taylor Series",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b). Find the first four terms of the series expansion of the function f(x) = 1/(3x − 1) for |x| < 1, ascending powers of x.",
+    "options": [],
+    "modelAnswer": "Write f(x) = 1/(3x − 1) = −1/(1 − 3x) = −(1 − 3x)⁻¹.\nBinomial (or geometric) series: (1 − t)⁻¹ = 1 + t + t² + t³ + ..., valid for |t| < 1.\nWith t = 3x:\n(1 − 3x)⁻¹ = 1 + 3x + 9x² + 27x³ + ...\nf(x) = −1 − 3x − 9x² − 27x³ − ...\n\nNote: the paper states |x| < 1, but the series only converges when |3x| < 1, that is |x| < 1/3.\n(Maclaurin check: f(0) = −1; f′(x) = −3(3x − 1)⁻², f′(0) = −3; f″(x) = 18(3x − 1)⁻³, f″(0)/2! = −9; f‴(x) = −162(3x − 1)⁻⁴, f‴(0)/3! = −27 ✓.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Applications of Integration",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Sketch the graph of the function y = x³ − 2x² − 5x + 6 and obtain the area bounded by the curve and x-axis.",
+    "options": [],
+    "modelAnswer": "Sketch:\nRoots: x = 1 gives 1 − 2 − 5 + 6 = 0, so (x − 1) is a factor.\nx³ − 2x² − 5x + 6 = (x − 1)(x² − x − 6) = (x − 1)(x − 3)(x + 2).\nThe curve cuts the x-axis at x = −2, 1 and 3, and the y-axis at y = 6.\nTurning points: dy/dx = 3x² − 4x − 5 = 0 → x = (4 ± √76)/6 = (2 ± √19)/3, so x ≈ −0.79 and x ≈ 2.12.\nAt x ≈ −0.79, y ≈ 8.21 (maximum, since d²y/dx² = 6x − 4 < 0).\nAt x ≈ 2.12, y ≈ −4.06 (minimum, since 6x − 4 > 0).\nShape: a cubic with positive x³ coefficient; it rises from bottom left, crosses at x = −2, peaks near (−0.79, 8.21), crosses at x = 1, dips to about (2.12, −4.06), crosses at x = 3 and rises to the right. The curve is above the x-axis for −2 < x < 1 and below it for 1 < x < 3.\n\nArea:\n∫ (x³ − 2x² − 5x + 6) dx = x⁴/4 − 2x³/3 − 5x²/2 + 6x = F(x).\nF(1) = 1/4 − 2/3 − 5/2 + 6 = 37/12.\nF(−2) = 4 + 16/3 − 10 − 12 = −38/3 = −152/12.\nF(3) = 81/4 − 18 − 45/2 + 18 = −9/4 = −27/12.\n\nRegion above the axis: ∫ from −2 to 1 = F(1) − F(−2) = 37/12 + 152/12 = 189/12 = 63/4.\nRegion below the axis: ∫ from 1 to 3 = F(3) − F(1) = −27/12 − 37/12 = −64/12 = −16/3 (the minus sign only shows it is below the axis).\n\nTotal area = 63/4 + 16/3 = 189/12 + 64/12 = 253/12 ≈ 21.08 square units.\n(Integrating straight from −2 to 3 would wrongly give 63/4 − 16/3 = 125/12, because the part below the axis cancels part of the area.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Differentiate tan⁻¹(√(1 + x²) + x).",
+    "options": [],
+    "modelAnswer": "Let y = tan⁻¹u, where u = √(1 + x²) + x.\ndy/dx = (1/(1 + u²)) × du/dx.\n\ndu/dx = x/√(1 + x²) + 1 = (x + √(1 + x²))/√(1 + x²) = u/√(1 + x²).\n\n1 + u² = 1 + (1 + x²) + 2x√(1 + x²) + x²\n= 2(1 + x²) + 2x√(1 + x²)\n= 2√(1 + x²)[√(1 + x²) + x] = 2√(1 + x²) u.\n\ndy/dx = [u/√(1 + x²)]/[2√(1 + x²) u] = 1/(2(1 + x²)).\n\n(Alternative: put x = tan θ. Then √(1 + x²) + x = sec θ + tan θ = tan(π/4 + θ/2), so y = π/4 + θ/2 = π/4 + ½tan⁻¹x, and dy/dx = 1/(2(1 + x²)).)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) Solve the equation dy/dx − y tan x = sin²x, y(π/2) = 0.",
+    "options": [],
+    "modelAnswer": "This is linear: dy/dx + P(x)y = Q(x) with P = −tan x, Q = sin²x.\nIntegrating factor: e^(∫−tan x dx) = e^(ln cos x) = cos x.\nMultiply through by cos x:\ncos x dy/dx − y sin x = sin²x cos x\nd/dx(y cos x) = sin²x cos x.\nIntegrate: y cos x = ∫ sin²x cos x dx = sin³x/3 + C.\n\nCondition y(π/2) = 0: at x = π/2, cos x = 0 and sin x = 1, so\n0 = 1/3 + C → C = −1/3.\n\ny cos x = (sin³x − 1)/3, that is\ny = (sin³x − 1)/(3 cos x).\n\nNote: at x = π/2 the left side y cos x is 0 whatever y is, so the condition really fixes C through the equation y cos x = sin³x/3 + C. The solution also tends to 0 as x → π/2, so it is consistent with y(π/2) = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Find the angles the vector a = 3i + j − 2k makes with the coordinate axes",
+    "options": [],
+    "modelAnswer": "|a| = √(3² + 1² + (−2)²) = √14 ≈ 3.742.\ncos α = 3/√14 = 0.8018 → α ≈ 36.70° (with the x-axis)\ncos β = 1/√14 = 0.2673 → β ≈ 74.50° (with the y-axis)\ncos γ = −2/√14 = −0.5345 → γ ≈ 122.31° (with the z-axis)\n(Check: cos²α + cos²β + cos²γ = 9/14 + 1/14 + 4/14 = 1 ✓.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) Solve the equation yxdx − (1 + x²)dy = 0, y(0) = 1.",
+    "options": [],
+    "modelAnswer": "Separate the variables:\nxy dx = (1 + x²) dy\ndy/y = x dx/(1 + x²).\nIntegrate: ln y = ½ ln(1 + x²) + C.\ny(0) = 1: ln 1 = ½ ln 1 + C → C = 0.\nln y = ½ ln(1 + x²) → y = √(1 + x²).\n(Check: dy/dx = x/√(1 + x²), so (1 + x²)dy/dx = x√(1 + x²) = xy ✓.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Given the vectors a = 3i + j − k and b = 2i − j − k , compute the projection of (3a − 2b) on the vector (2a + 3b).",
+    "options": [],
+    "modelAnswer": "3a − 2b = (9i + 3j − 3k) − (4i − 2j − 2k) = 5i + 5j − k.\n2a + 3b = (6i + 2j − 2k) + (6i − 3j − 3k) = 12i − j − 5k.\n\nDot product: (5)(12) + (5)(−1) + (−1)(−5) = 60 − 5 + 5 = 60.\n|2a + 3b| = √(144 + 1 + 25) = √170 ≈ 13.038.\n\nScalar projection of (3a − 2b) on (2a + 3b) = 60/√170 ≈ 4.602.\nVector projection = (60/170)(12i − j − 5k) = (6/17)(12i − j − 5k) = (72i − 6j − 30k)/17."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Solve the differential equation for\ndy/dx = (x² − 3xy + 4y²)/x²\nif y(1) = 0",
+    "options": [],
+    "modelAnswer": "The right side is homogeneous: dy/dx = 1 − 3(y/x) + 4(y/x)².\nPut y = vx, so dy/dx = v + x dv/dx.\nv + x dv/dx = 1 − 3v + 4v²\nx dv/dx = 4v² − 4v + 1 = (2v − 1)².\n\nSeparate: dv/(2v − 1)² = dx/x.\nIntegrate: −1/(2(2v − 1)) = ln x + C.\n\ny(1) = 0 → at x = 1, v = 0: −1/(2(−1)) = 0 + C → C = 1/2.\n−1/(2(2v − 1)) = ln x + 1/2\n1/(2v − 1) = −(2 ln x + 1)\n2v − 1 = −1/(1 + 2 ln x)\n2v = 2 ln x/(1 + 2 ln x)\nv = ln x/(1 + 2 ln x).\n\nSince y = vx:\ny = x ln x/(1 + 2 ln x).\n(Check: at x = 1, ln 1 = 0, so y = 0 ✓; substituting back into the equation gives zero difference.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Determine the value of y if the vectors yi − 2j, j − k and k − i are linearly dependent.",
+    "options": [],
+    "modelAnswer": "Three vectors in space are linearly dependent when the determinant of their components is zero (their scalar triple product is zero).\nyi − 2j = (y, −2, 0); j − k = (0, 1, −1); k − i = (−1, 0, 1).\n\nDeterminant with rows (y, −2, 0), (0, 1, −1), (−1, 0, 1):\n= y[(1)(1) − (−1)(0)] − (−2)[(0)(1) − (−1)(−1)] + 0\n= y(1) + 2(0 − 1)\n= y − 2.\nSet y − 2 = 0 → y = 2.\n\nCheck: with y = 2, 2i − 2j = −2(j − k) − 2(k − i) = −2j + 2k − 2k + 2i = 2i − 2j ✓."
+  }
+]

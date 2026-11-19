@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Differentiate cos⁻¹((1−x)/(1+x)). You may simplify your answer. [04marks]",
+    "options": [],
+    "modelAnswer": "Let y = cos⁻¹(u), where u = (1 − x)/(1 + x).\ndu/dx = [(1 + x)(−1) − (1 − x)(1)]/(1 + x)² = −2/(1 + x)².\n\ndy/dx = −1/√(1 − u²) × du/dx = 2/[(1 + x)²√(1 − u²)].\n\n1 − u² = [(1 + x)² − (1 − x)²]/(1 + x)² = 4x/(1 + x)², so √(1 − u²) = 2√x/(1 + x).\n\ndy/dx = 2/[(1 + x)² × 2√x/(1 + x)] = 1/[√x(1 + x)] (for x > 0).\n\n(Alternative: put x = tan²θ; then (1 − x)/(1 + x) = cos 2θ, so y = 2θ = 2tan⁻¹√x, and dy/dx = 2 × 1/(1 + x) × 1/(2√x) = 1/[√x(1 + x)].)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Evaluate lim_(x→9) ((x−9)/(√x−3)). [04marks]",
+    "options": [],
+    "modelAnswer": "Direct substitution gives 0/0, so factorise the numerator as a difference of squares:\nx − 9 = (√x − 3)(√x + 3).\n\n(x − 9)/(√x − 3) = √x + 3, for x ≠ 9.\n\nlim_(x→9) (√x + 3) = 3 + 3 = 6."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Find the values of β such that βi − 2j − βk is perpendicular to βi + 4j − βk. [04marks]",
+    "options": [],
+    "modelAnswer": "Two vectors are perpendicular when their dot product is zero:\n(βi − 2j − βk)·(βi + 4j − βk) = β² − 8 + β² = 2β² − 8.\n\n2β² − 8 = 0, so β² = 4 and β = ±2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Solve the equation dy/dt = t²(1+y). [04marks]",
+    "options": [],
+    "modelAnswer": "Separate the variables:\ndy/(1 + y) = t² dt.\n\nIntegrate:\nln|1 + y| = t³/3 + c.\n\n1 + y = Ae^(t³/3), where A = ±e^c.\n\ny = Ae^(t³/3) − 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Evaluate ∫₀² 7x/(10+x²) dx. [04marks]",
+    "options": [],
+    "modelAnswer": "The numerator is a multiple of the derivative of the denominator, since d/dx(10 + x²) = 2x:\n∫ 7x/(10 + x²) dx = (7/2) ln(10 + x²) + c.\n\n∫₀² 7x/(10 + x²) dx = (7/2)[ln(10 + x²)]₀² = (7/2)(ln 14 − ln 10) = (7/2) ln 1.4\n= 3.5 × 0.33647 = 1.178 (to 3 decimal places)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "6. (a). Find dy/dx and d²y/dx² at (1,1) if (x−h)²/a² + (y−k)²/b² = 1. [10marks]",
+    "options": [],
+    "modelAnswer": "Differentiate implicitly with respect to x:\n2(x − h)/a² + 2(y − k)/b² × dy/dx = 0\n\ndy/dx = −b²(x − h)/[a²(y − k)].\n\nAt (1, 1): dy/dx = −b²(1 − h)/[a²(1 − k)].\n\nSecond derivative: differentiate dy/dx = −(b²/a²) × (x − h)/(y − k):\nd²y/dx² = −(b²/a²) × [(y − k) − (x − h)dy/dx]/(y − k)²\n= −(b²/a²) × [(y − k) + b²(x − h)²/(a²(y − k))]/(y − k)²\n= −(b²/a²) × [a²(y − k)² + b²(x − h)²]/[a²(y − k)³].\n\nFrom the equation of the ellipse, b²(x − h)² + a²(y − k)² = a²b², so:\nd²y/dx² = −(b²/a²) × a²b²/[a²(y − k)³] = −b⁴/[a²(y − k)³].\n\nAt (1, 1): d²y/dx² = −b⁴/[a²(1 − k)³].\n\n(This assumes that (1, 1) lies on the curve, i.e., (1 − h)²/a² + (1 − k)²/b² = 1, and k ≠ 1.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b). If y = e⁵ˣ sin 4x, show that y″ − 10y′ + 41y = 0. [10marks]",
+    "options": [],
+    "modelAnswer": "y = e^(5x) sin 4x\n\ny′ = 5e^(5x) sin 4x + 4e^(5x) cos 4x = e^(5x)(5 sin 4x + 4 cos 4x)\n\ny″ = 5e^(5x)(5 sin 4x + 4 cos 4x) + e^(5x)(20 cos 4x − 16 sin 4x)\n= e^(5x)(25 sin 4x + 20 cos 4x + 20 cos 4x − 16 sin 4x)\n= e^(5x)(9 sin 4x + 40 cos 4x)\n\ny″ − 10y′ + 41y = e^(5x)[(9 sin 4x + 40 cos 4x) − 10(5 sin 4x + 4 cos 4x) + 41 sin 4x]\n= e^(5x)[(9 − 50 + 41) sin 4x + (40 − 40) cos 4x]\n= e^(5x)[0] = 0, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "7. (a). Differentiate from first principle y = 100 + 3x − 5x³. [10marks]",
+    "options": [],
+    "modelAnswer": "Let y + δy = 100 + 3(x + δx) − 5(x + δx)³.\n\n(x + δx)³ = x³ + 3x²δx + 3x(δx)² + (δx)³.\n\ny + δy = 100 + 3x + 3δx − 5x³ − 15x²δx − 15x(δx)² − 5(δx)³.\n\nSubtract y = 100 + 3x − 5x³:\nδy = 3δx − 15x²δx − 15x(δx)² − 5(δx)³.\n\nDivide by δx:\nδy/δx = 3 − 15x² − 15xδx − 5(δx)².\n\nAs δx → 0:\ndy/dx = lim_(δx→0) δy/δx = 3 − 15x²."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b). Find ∫(x²+1)dx/(x(x−1)(x+1)). [10marks]",
+    "options": [],
+    "modelAnswer": "Partial fractions:\n(x² + 1)/[x(x − 1)(x + 1)] = A/x + B/(x − 1) + C/(x + 1)\nx² + 1 = A(x − 1)(x + 1) + Bx(x + 1) + Cx(x − 1).\n\nx = 0: 1 = −A, so A = −1.\nx = 1: 2 = 2B, so B = 1.\nx = −1: 2 = 2C, so C = 1.\n\n∫ (x² + 1)/[x(x − 1)(x + 1)] dx = ∫ [−1/x + 1/(x − 1) + 1/(x + 1)] dx\n= −ln|x| + ln|x − 1| + ln|x + 1| + c\n= ln|(x² − 1)/x| + c."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "8. (a). If y = sinh(k sin⁻¹x), show that (1−x²)y″ − xy′ − k²y = 0. [06marks]",
+    "options": [],
+    "modelAnswer": "y = sinh(k sin⁻¹x).\n\ny′ = cosh(k sin⁻¹x) × k/√(1 − x²).\nSo √(1 − x²) y′ = k cosh(k sin⁻¹x).\n\nDifferentiate again:\n√(1 − x²) y″ − x/√(1 − x²) × y′ = k sinh(k sin⁻¹x) × k/√(1 − x²) = k²y/√(1 − x²).\n\nMultiply through by √(1 − x²):\n(1 − x²)y″ − xy′ = k²y.\n\nTherefore (1 − x²)y″ − xy′ − k²y = 0, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b). Using integration by parts, show that nIₙ = sin x cosⁿ⁻¹x + (n−1)Iₙ₋₂, given that Iₙ = ∫cosⁿx dx. Hence evaluate ∫₀^(π/2) cos⁵x dx. [14marks]",
+    "options": [],
+    "modelAnswer": "Iₙ = ∫ cosⁿx dx = ∫ cosⁿ⁻¹x × cos x dx.\n\nIntegrate by parts, with u = cosⁿ⁻¹x and dv = cos x dx, so du = −(n − 1)cosⁿ⁻²x sin x dx and v = sin x:\nIₙ = sin x cosⁿ⁻¹x + (n − 1)∫ cosⁿ⁻²x sin²x dx.\n\nReplace sin²x by 1 − cos²x:\nIₙ = sin x cosⁿ⁻¹x + (n − 1)∫ cosⁿ⁻²x dx − (n − 1)∫ cosⁿx dx\nIₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂ − (n − 1)Iₙ.\n\nCollect the Iₙ terms:\nIₙ + (n − 1)Iₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂\nnIₙ = sin x cosⁿ⁻¹x + (n − 1)Iₙ₋₂, as required.\n\nHence, for the definite integral from 0 to π/2, the term sin x cosⁿ⁻¹x is zero at both limits (cos(π/2) = 0 and sin 0 = 0), so Jₙ = ∫₀^(π/2) cosⁿx dx satisfies Jₙ = ((n − 1)/n)Jₙ₋₂.\nJ₁ = ∫₀^(π/2) cos x dx = [sin x]₀^(π/2) = 1.\nJ₃ = (2/3)J₁ = 2/3.\nJ₅ = (4/5)J₃ = (4/5)(2/3) = 8/15.\n\n∫₀^(π/2) cos⁵x dx = 8/15."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "9. (a). Solve the equation (2x−y)dx − ydy = 0. [12marks]",
+    "options": [],
+    "modelAnswer": "Rearrange: dy/dx = (2x − y)/y. This is homogeneous, so put y = vx, giving dy/dx = v + x dv/dx:\nv + x dv/dx = (2 − v)/v\nx dv/dx = (2 − v − v²)/v = −(v² + v − 2)/v = −(v + 2)(v − 1)/v.\n\nSeparate the variables:\nv/[(v + 2)(v − 1)] dv = −dx/x.\n\nPartial fractions: v/[(v + 2)(v − 1)] = (2/3)/(v + 2) + (1/3)/(v − 1).\n\nIntegrate:\n(2/3)ln|v + 2| + (1/3)ln|v − 1| = −ln|x| + c.\nMultiply by 3:\n2ln|v + 2| + ln|v − 1| + 3ln|x| = 3c\n(v + 2)²(v − 1)x³ = A.\n\nSubstitute v = y/x:\n((y + 2x)/x)² × ((y − x)/x) × x³ = A\n(y + 2x)²(y − x) = A, where A is a constant.\n\n(Check: differentiating (y + 2x)²(y − x) = A implicitly gives 3(y + 2x)[(y − 2x)dx + y dy] = 0, which is equivalent to the original equation.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b). The vertices of ΔABC are represented by the vectors 2i+j+k, i−2j+k and i+j−2k, respectively. Show that ΔABC is an isosceles triangle and obtain its area. [08marks]",
+    "options": [],
+    "modelAnswer": "A = (2, 1, 1), B = (1, −2, 1), C = (1, 1, −2).\n\nAB = B − A = −i − 3j, so |AB| = √(1 + 9 + 0) = √10.\nAC = C − A = −i − 3k, so |AC| = √(1 + 0 + 9) = √10.\nBC = C − B = 3j − 3k, so |BC| = √(0 + 9 + 9) = √18 = 3√2.\n\nSince |AB| = |AC| = √10, the triangle is isosceles.\n\nArea = ½|AB × AC|.\nAB × AC = |i j k; −1 −3 0; −1 0 −3| = i[(−3)(−3) − 0] − j[(−1)(−3) − 0] + k[0 − (−3)(−1)] = 9i − 3j − 3k.\n|AB × AC| = √(81 + 9 + 9) = √99 = 3√11.\n\nArea = ½ × 3√11 = (3√11)/2 ≈ 4.97 square units."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "10. (a). Calculate the unit vector in direction of the sum of the vectors a = 3i − j + 3k and b = 3i + j − k. Hence obtain the angle between it and vectors a. [10marks]",
+    "options": [],
+    "modelAnswer": "a + b = (3 + 3)i + (−1 + 1)j + (3 − 1)k = 6i + 2k.\n|a + b| = √(36 + 0 + 4) = √40 = 2√10.\n\nUnit vector: û = (6i + 2k)/(2√10) = (3i + k)/√10 ≈ 0.949i + 0.316k.\n\nAngle between û and a:\na · û = (3 × 3 + 0 + 3 × 1)/√10 = 12/√10.\n|a| = √(9 + 1 + 9) = √19, and |û| = 1.\ncos θ = (12/√10)/√19 = 12/√190 = 0.8706.\nθ = cos⁻¹(0.8706) ≈ 29.5°."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b). Solve the equation y dy/dx = xe^(x²−3y²). [10marks]",
+    "options": [],
+    "modelAnswer": "Write e^(x² − 3y²) = e^(x²)e^(−3y²), and separate the variables:\ny e^(3y²) dy = x e^(x²) dx.\n\nIntegrate both sides (using d/dy e^(3y²) = 6y e^(3y²) and d/dx e^(x²) = 2x e^(x²)):\n(1/6)e^(3y²) = (1/2)e^(x²) + c.\n\nMultiply by 6:\ne^(3y²) = 3e^(x²) + A, where A = 6c.\n\n(Equivalently, y² = (1/3) ln(3e^(x²) + A).)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "11. (a). Solve the equation (x+2)dy/dx − 2y = (x+2)⁻¹. [10marks]",
+    "options": [],
+    "modelAnswer": "Divide by (x + 2) to get the standard linear form:\ndy/dx − 2y/(x + 2) = (x + 2)⁻².\n\nIntegrating factor:\nIF = e^(∫ −2/(x + 2) dx) = e^(−2ln(x + 2)) = (x + 2)⁻².\n\nMultiply through by the IF:\nd/dx[y(x + 2)⁻²] = (x + 2)⁻² × (x + 2)⁻² = (x + 2)⁻⁴.\n\nIntegrate:\ny(x + 2)⁻² = −(1/3)(x + 2)⁻³ + C.\n\ny = C(x + 2)² − 1/[3(x + 2)]."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b).Given that p = i+3j+2k and q = i−3j−3k, find the projection of the vector p − 2q on 2p+q. [10marks]",
+    "options": [],
+    "modelAnswer": "p − 2q = (1 − 2)i + (3 + 6)j + (2 + 6)k = −i + 9j + 8k.\n2p + q = (2 + 1)i + (6 − 3)j + (4 − 3)k = 3i + 3j + k.\n\n(p − 2q)·(2p + q) = (−1)(3) + (9)(3) + (8)(1) = −3 + 27 + 8 = 32.\n|2p + q| = √(9 + 9 + 1) = √19.\n\nScalar projection of p − 2q on 2p + q = 32/√19 = (32√19)/19 ≈ 7.34.\n\nVector projection = (32/19)(3i + 3j + k) = (96i + 96j + 32k)/19."
+  }
+]

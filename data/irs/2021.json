@@ -168,6 +168,8 @@
       "Dried leaves"
     ],
     "answer": "B",
+    "reviewNote": "During the Prophet's lifetime the Qur'an was written on whatever was available: palm-leaf stalks, thin white stones (tablets), pieces of leather and parchment, and the shoulder blades (scapulae) of camels and other animals.\n\nSo the scapula of a camel (the examiners' answer, B) WAS used. Among the options, 'dried leaves' (D) is the only doubtful one, since palm stalks rather than leaves were used. Because the key is wrong, this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Scapular of cow or camel (shoulder blade bones) were actually used as writing materials for the Qur'an. However, among the options, scapular bones were indeed used, making this question problematic. Dried animal skin, tablets, and dried leaves were all used. Based on the options given, B is the intended answer as the least commonly associated material."
   },
   {
@@ -494,6 +496,8 @@
       "Matn."
     ],
     "answer": "A",
+    "reviewNote": "'Sunnah' is often used interchangeably with 'hadith'. But isnad (the chain of narrators) and matn (the text) are the two parts of a hadith, not other names for it, and 'Sunni' names a Muslim group.\n\nSo A (Sunni), C (Isnad) and D (Matn) are all 'not used interchangeably for hadith'. The examiners' answer is A. This question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Sunni is NOT a term used interchangeably for Hadith. Sunni refers to a follower of the Sunni branch of Islam. Sunnah is sometimes used interchangeably with Hadith, while Isnad and Matn are components of Hadith."
   },
   {

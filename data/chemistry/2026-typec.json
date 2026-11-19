@@ -171,7 +171,7 @@
     "questionNumber": "5a",
     "question": "(a) State the IUPAC nomenclature of following complexes:\n(i) [Ni(NH₃)₄]SO₄\n(ii) [Cd(CN)₄]²⁻\n(iii) [Co(OH)₂(H₂O)₄]²⁺\n(iv) [Co(NH₃)₆]Cl₃ [4 marks]",
     "options": [],
-    "modelAnswer": "(i) [Ni(NH₃)₄]SO₄ — tetraamminenickel(II) sulphate.\n(ii) [Cd(CN)₄]²⁻ — tetracyanocadmate(II) ion.\n(iii) [Co(OH)₂(H₂O)₄]²⁺ — tetraaquadihydroxocobalt(IV) ion. (Note: charge balance gives Co = +4; this is unusual — the question may intend [Co(OH)₂(H₂O)₄]⁺ for Co(III). Flagged for examiner clarification.)\n(iv) [Co(NH₃)₆]Cl₃ — hexaamminecobalt(III) chloride."
+    "modelAnswer": "(i) [Ni(NH₃)₄]SO₄: tetraamminenickel(II) sulphate\n(ii) [Cd(CN)₄]²⁻: tetracyanidocadmate(II) ion (older name: tetracyanocadmate(II))\n(iii) [Co(OH)₂(H₂O)₄]²⁺: tetraaquadihydroxidocobalt(IV) ion (older name: tetraaquadihydroxocobalt(IV))\nCheck: x + 2(−1) + 4(0) = +2, so x = +4. Cobalt(IV) is very unusual; the paper probably meant the +1 ion [Co(OH)₂(H₂O)₄]⁺, which would be cobalt(III). Name whatever formula is printed, and show the charge working.\n(iv) [Co(NH₃)₆]Cl₃: hexaamminecobalt(III) chloride\n\nRules used: list ligands in alphabetical order (aqua before hydroxido), give the number of each with di-, tri-, tetra-, and end with the metal and its oxidation state in Roman numerals. If the complex is an anion, the metal name ends in -ate (cadmate)."
   },
   {
     "subject": "Chemistry",
@@ -251,7 +251,7 @@
     "questionNumber": "7a",
     "question": "(a) Write an equation to show how and under what conditions Propanoic acid can be converted to:\n(i) CH₃CH(Cl)COOH\n(ii) CH₃CH₂CH₂OH\n(iii) CH₃CH₂COOCH₃\n(iv) CH₃CHClCOCl [2 Marks]",
     "options": [],
-    "modelAnswer": "(i) CH₃CH₂COOH + Cl₂ →(UV light/red P) CH₃CH(Cl)COOH + HCl (α-halogenation).\n\n(ii) CH₃CH₂COOH →(LiAlH₄, dry ether) CH₃CH₂CH₂OH (reduction).\n\n(iii) CH₃CH₂COOH + CH₃OH →(conc. H₂SO₄, heat) CH₃CH₂COOCH₃ + H₂O (esterification; product is methyl propanoate).\n\n(iv) CH₃CH₂COOH + SOCl₂ → CH₃CH₂COCl + SO₂ + HCl (acid chloride formation), followed by α-chlorination → CH₃CHClCOCl.\n\nNote: The question originally wrote CH₃CH₂COOCH₂H — corrected to CH₃CH₂COOCH₃."
+    "modelAnswer": "(i) CH₃CH₂COOH + Cl₂ →(UV light/red P) CH₃CH(Cl)COOH + HCl (α-halogenation).\n\n(ii) CH₃CH₂COOH →(LiAlH₄, dry ether) CH₃CH₂CH₂OH (reduction).\n\n(iii) CH₃CH₂COOH + CH₃OH →(conc. H₂SO₄, heat) CH₃CH₂COOCH₃ + H₂O (esterification; product is methyl propanoate).\n\n(iv) CH₃CH₂COOH + SOCl₂ → CH₃CH₂COCl + SO₂ + HCl (acid chloride formation), followed by α-chlorination → CH₃CHClCOCl."
   },
   {
     "subject": "Chemistry",
@@ -295,7 +295,7 @@
     "questionNumber": "8a",
     "question": "(a) A compound J is an alcohol with molecular formula C₅H₁₀O. On oxidation gave K. K reacts with 2,4-dinitrophenylhydrazine to form a yellow crystal solid and form a silver mirror with Tollens' reagent.\n(i) Give the structure and name of compounds J and K. [2 marks]\n(ii) What is the general name of compound obtained from the reaction of K and 2, 4-dinitrophenyl hydrazine. [1 mark]",
     "options": [],
-    "modelAnswer": "(i) K gives a silver mirror with Tollens' reagent and a yellow-orange precipitate with 2,4-DNPH, so K is an aldehyde: pentanal (CH₃CH₂CH₂CH₂CHO, C₅H₁₀O).\nJ, on oxidation to an aldehyde, must be a primary alcohol with five carbons: pentan-1-ol (CH₃CH₂CH₂CH₂CH₂OH, C₅H₁₀O).\n\nNote: The original question stated K = C₄H₈O, but this would mean a carbon is lost during oxidation of J (C₅H₁₀O), which is chemically inconsistent. The corrected K is C₅H₁₀O (pentanal).\n\n(ii) The product is a 2,4-dinitrophenylhydrazone (a hydrazone)."
+    "modelAnswer": "(i) K gives a silver mirror with Tollens' reagent, so it is an aldehyde, and its reaction with 2,4-DNPH confirms a C=O group. So J must be a primary alcohol, which oxidises to an aldehyde.\n\nNote on the formula: an alcohol C₅H₁₀O would have to contain a ring or a C=C bond. The question almost certainly means J = C₅H₁₂O (a saturated alcohol), which oxidises to K = C₅H₁₀O.\n\nJ: pentan-1-ol, CH₃CH₂CH₂CH₂CH₂OH (C₅H₁₂O).\nK: pentanal, CH₃CH₂CH₂CH₂CHO (C₅H₁₀O), formed by mild oxidation (e.g. acidified K₂Cr₂O₇, distilling the aldehyde off as it forms):\nCH₃(CH₂)₃CH₂OH + [O] → CH₃(CH₂)₃CHO + H₂O\n\n(Any primary C₅ alcohol fits, e.g. 2-methylbutan-1-ol giving 2-methylbutanal; pentan-1-ol is the simplest answer.)\n\n(ii) The product of an aldehyde or ketone with 2,4-dinitrophenylhydrazine is a 2,4-dinitrophenylhydrazone (yellow/orange crystals)."
   },
   {
   "subject": "Chemistry",

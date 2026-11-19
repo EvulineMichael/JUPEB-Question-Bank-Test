@@ -1,0 +1,90 @@
+[
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "What are the major contributions of Emile Durkheim to the development of Sociology as a scientific study of society?",
+    "options": [],
+    "modelAnswer": "Émile Durkheim (1858–1917), a French sociologist, did more than anyone to make sociology an academic and scientific discipline. His main contributions:\n\n1. Establishing sociology as an academic discipline: he set up the first university department of sociology in Europe (Bordeaux, 1895) and founded the journal L'Année Sociologique (1898).\n\n2. Social facts: in The Rules of Sociological Method (1895) he defined the subject matter of sociology as social facts: ways of acting, thinking and feeling that are external to the individual and exercise constraint over them (e.g. laws, language, customs, religion). He insisted that social facts must be treated as 'things' and explained by other social facts, not by individual psychology. This gave sociology its own distinct subject matter.\n\n3. Scientific method: he applied systematic, objective and comparative methods, using statistics, to the study of society.\n\n4. Suicide (1897): he showed that even something as personal as suicide has social causes. Using statistics from different countries, he found suicide rates vary with the degree of social integration and regulation, and identified four types: egoistic (too little integration), altruistic (too much integration), anomic (too little regulation) and fatalistic (too much regulation). This was a model of empirical sociological research.\n\n5. The Division of Labour in Society (1893): mechanical solidarity (traditional, based on likeness) and organic solidarity (modern, based on interdependence).\n\n6. Anomie: a state of normlessness in times of rapid social change, which leads to deviance and social problems.\n\n7. Religion: in The Elementary Forms of Religious Life (1912) he defined religion as beliefs and practices about sacred things that unite people into a moral community; in worshipping the sacred, society worships itself. This shows the integrative function of religion.\n\n8. Functionalism: by asking what function social institutions perform for society as a whole, he laid the foundation for structural functionalism.\n\n9. Crime as normal: he argued that some crime is normal and functional; punishing it reaffirms shared values and can bring change.\n\nConclusion: Durkheim gave sociology its subject matter (social facts), its method and its first major empirical study, which is why he is often called the father of academic sociology."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Identify and discuss the two major events that led the development of Sociology as a discipline.",
+    "options": [],
+    "modelAnswer": "Note: the paper prints \"led the development\"; it means \"led to the development\".\n\nThe two major events are the French Revolution and the Industrial Revolution (often called the 'two great revolutions' of the late 18th and 19th centuries).\n\n1. The French Revolution (1789):\n• It overthrew the monarchy, the aristocracy and the power of the church, and proclaimed liberty, equality and fraternity.\n• It destroyed the old social order based on tradition, religion and inherited privilege, causing great disorder and political instability.\n• Thinkers like Auguste Comte (who coined the word 'sociology' in 1838) wanted to understand how social order could be restored, and saw the need for a 'science of society' to guide reconstruction.\n• It raised new questions about authority, the individual, rights and democracy, which became sociological concerns.\n\n2. The Industrial Revolution (from about 1760, starting in Britain):\n• It changed production from home-based farming and crafts to factory production using machines.\n• It caused rapid urbanisation, as people moved to towns to work in factories, creating overcrowding, slums, poor sanitation, crime, poverty, child labour and family breakdown.\n• It created new social classes (the industrial capitalists and the working class) and class conflict.\n• Thinkers like Marx (capitalism and class struggle), Durkheim (division of labour, anomie) and Weber (rationalisation, bureaucracy) set out to explain these changes.\n\nOther contributing factors:\n• The Enlightenment, which encouraged reason and the belief that society could be studied scientifically.\n• The success of the natural sciences.\n• Colonialism and travel, which exposed Europeans to other cultures.\nConclusion: the two revolutions produced massive social change and disorder, and sociology arose to understand and manage these changes."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Briefly explain the major features of Weber's ideal type of bureaucracy and the obstacles to their full realization in Nigeria.",
+    "options": [],
+    "modelAnswer": "Max Weber described bureaucracy as the most rational and efficient form of organisation. Its ideal-type features:\n1. Hierarchy of authority: offices are arranged in a chain of command, each lower office supervised by a higher one.\n2. Division of labour and specialisation: each official has clearly defined duties and areas of competence.\n3. Written rules and regulations: work is governed by fixed, written rules applied consistently.\n4. Impersonality: officials treat everyone equally according to the rules, without favour, emotion or personal interest.\n5. Appointment and promotion on merit: officials are chosen by qualifications (examinations, certificates) and promoted by seniority or achievement.\n6. Career and fixed salary: officials are full-time, salaried and have job security and pensions.\n7. Separation of office from the person: officials do not own their position or its resources and cannot use them for private gain.\n8. Written records (files): decisions and actions are documented.\n\nObstacles to their full realisation in Nigeria:\n1. Corruption and bribery, which replace rules with payment.\n2. Nepotism and ethnicity: appointments and promotions based on 'who you know', kinship or ethnicity ('man-know-man') rather than merit. Federal character, though meant to ensure fairness, can conflict with strict merit.\n3. Political interference: politicians influence appointments, transfers and decisions; the civil service is not insulated from politics.\n4. Primordial loyalties: officials feel obligations to family, hometown and ethnic group, which clash with impersonality (the 'two publics' problem described by Peter Ekeh).\n5. Weak enforcement of rules and impunity: rules exist on paper but are not applied consistently.\n6. Poor pay and conditions, encouraging moonlighting and corruption.\n7. Red tape, inefficiency and poor record-keeping, despite formal rules.\n8. Inadequate training and facilities.\nConclusion: Nigeria's bureaucracy has the formal structure Weber described, but social, political and economic factors prevent it from working as his ideal type."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "Define socialization.",
+    "options": [],
+    "modelAnswer": "Socialisation is the lifelong process by which individuals learn and internalise the norms, values, beliefs, language, skills and roles of their society or group, so that they become functioning members of it and develop a sense of self (personality). It is how culture is transmitted from one generation to the next. It includes primary socialisation (in early childhood, mainly in the family) and secondary socialisation (later in life, through school, peers, work, religion and the media)."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "Discuss four (4) agents of socialization in society.",
+    "options": [],
+    "modelAnswer": "Four agents of socialisation:\n\n1. The family: the first and most important agent (primary socialisation). The child learns language, basic manners, values, religion, gender roles and attitudes from parents and siblings. Its social class, ethnic group and religion also shape the child's outlook.\n\n2. The school: provides formal education (knowledge and skills), and also teaches discipline, punctuality, obedience to authority, competition, cooperation and national values (the 'hidden curriculum'). It prepares children for adult roles and work.\n\n3. Peer groups: friends and age-mates of similar age and status. They teach the child to interact as an equal, and they influence fashion, language, music, attitudes and behaviour, especially during adolescence, sometimes in ways that conflict with parents' values.\n\n4. The mass media: television, radio, newspapers, films, the internet and social media spread information, values and lifestyles, provide role models, and shape opinions and tastes, both positively and negatively.\n\nOther acceptable agents: religious institutions (moral values, beliefs, discipline); the workplace (occupational roles and skills); the community and age grades; and the state/government through laws and civic education."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Examine the advantages and disadvantages of the following forms of social sanctions.\na. Positive sanctions\nb. social sanctions",
+    "options": [],
+    "modelAnswer": "Note: part (b) is printed as \"social sanctions\", which is the general term covering both kinds. It is almost certainly a misprint for negative sanctions, the usual pair with positive sanctions, and is answered that way below.\n\nSocial sanctions are rewards and punishments used to encourage conformity to norms.\n\n(a) Positive sanctions (rewards for conforming, e.g. praise, prizes, promotion, national honours, scholarships)\nAdvantages:\n• They encourage and reinforce desirable behaviour.\n• They motivate others to imitate the good behaviour and create role models.\n• They build self-esteem, loyalty and morale.\n• They promote conformity without fear or resentment.\nDisadvantages:\n• People may behave well only for the reward (extrinsic motivation), not out of conviction.\n• They can create jealousy, rivalry or a sense of unfairness among those not rewarded.\n• Rewards can be costly and lose value if overused, or if given for political or personal reasons rather than merit.\n• They may not stop determined deviants.\n\n(b) Negative sanctions (punishments for deviance, e.g. fines, imprisonment, dismissal, ridicule, ostracism)\nAdvantages:\n• They deter people from breaking norms (fear of punishment).\n• They protect society and victims, and remove dangerous offenders.\n• They reaffirm the society's values and the boundaries of acceptable behaviour (Durkheim).\n• They can reform the offender.\nDisadvantages:\n• They may create fear, resentment and rebellion rather than genuine acceptance of norms.\n• Harsh or unfair punishment can be abused, used to oppress the powerless or silence dissent.\n• Labelling can push offenders into further deviance (secondary deviance), and prisons may harden criminals.\n• They are costly to enforce and may be applied selectively (e.g. the poor punished, the powerful spared).\nConclusion: a balance of positive and negative sanctions, applied fairly, is the most effective form of social control."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Discuss the basic assumptions of rational choice theory in explaining deviance behaviour.",
+    "options": [],
+    "modelAnswer": "Rational choice theory (associated with Cesare Beccaria and Jeremy Bentham in classical criminology, and later Ronald Clarke and Derek Cornish) explains deviance as a calculated decision. Its basic assumptions:\n\n1. Humans are rational actors: people have free will and make choices on purpose, after thinking about them.\n2. Cost–benefit calculation: before acting, people weigh the expected benefits of deviance (money, pleasure, status, revenge) against its expected costs (chance of being caught, severity of punishment, loss of reputation, guilt).\n3. Pursuit of self-interest: people seek to maximise pleasure or gain and minimise pain or loss (the hedonistic principle).\n4. Deviance occurs when benefits outweigh costs: if a person believes the gain is greater and the risk small, they choose deviance. An example is a fraudster who expects large profits with little chance of prosecution.\n5. Deterrence: punishment must be certain, swift and proportionate (severe enough to outweigh the gain) to discourage crime.\n6. Opportunity and situation matter: crime happens when a motivated offender meets an opportunity, such as an unprotected target and the absence of a guardian (linked to routine activity theory). Reducing opportunities (situational crime prevention: locks, CCTV, street lighting, security) reduces crime.\n7. Limited (bounded) rationality: the decision may be based on incomplete information or quick judgment, but it is still a choice.\n\nCriticisms:\n• It ignores social causes such as poverty, unemployment and socialisation.\n• It cannot explain crimes of passion or crimes committed under drugs or mental illness.\n• It assumes everyone has equal information and freedom of choice."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Discuss the following concepts in sociology\na. cultural relativity\nb. culture shock\nc. reference group\nd. culture lap",
+    "options": [],
+    "modelAnswer": "Note: (d) is printed as \"culture lap\"; the term is culture lag.\n\n(a) Cultural relativity (cultural relativism): the principle that a culture should be understood and judged by its own values and standards, not by those of another culture. Practices that seem strange to outsiders make sense within their own context, e.g. eating with the hand, or different marriage customs. It is the opposite of ethnocentrism and promotes tolerance and objective study of other cultures.\n\n(b) Culture shock: the feelings of confusion, disorientation, anxiety and frustration a person experiences when suddenly exposed to an unfamiliar culture, way of life or set of norms. Examples are a student from a village moving to a big city or studying abroad, who faces a new language, food, dress, climate and values. It usually passes through stages (honeymoon, frustration, adjustment, adaptation).\n\n(c) Reference group: a group that a person uses as a standard for judging their own behaviour, values, attitudes or achievements, whether or not they belong to it (Herbert Hyman, Robert Merton). A student may model their dress and ambitions on successful professionals or celebrities. Reference groups can lead to relative deprivation when people compare themselves unfavourably with others.\n\n(d) Culture lag: a concept from William F. Ogburn (1922). It is the gap that arises when one part of culture, usually material culture (technology, tools, machines), changes faster than the non-material culture (norms, values, laws, beliefs) that must adjust to it. The resulting delay causes problems. Examples:\n• Laws that have not caught up with the internet, leading to cybercrime and misuse of social media.\n• Modern medical technology, such as life support or IVF, raising ethical questions society has not yet resolved."
+  }
+]

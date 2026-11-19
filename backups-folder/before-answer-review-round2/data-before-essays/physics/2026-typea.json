@@ -1,0 +1,242 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) State two similarities and two differences between friction and viscosity. [2 marks]",
+    "options": [],
+    "modelAnswer": "Similarities:\n1. Both oppose relative motion between surfaces/layers.\n2. Both convert mechanical energy into heat.\n\nDifferences:\n1. Friction occurs between solid surfaces in contact; viscosity occurs within fluids (liquids/gases).\n2. Friction is largely independent of the area of contact and depends on the normal force; viscosity depends on the velocity gradient and the area of the fluid layers."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Two identical drops of water with radius 0.2 cm join to form a big drop. Calculate the loss or gain in surface energy during this process. (Surface tension of water = 0.72Nm⁻¹) [5 marks]",
+    "options": [],
+    "modelAnswer": "Volume conserved: 2 × (4/3)πr³ = (4/3)πR³ → R = r·2^(1/3) = 0.2 × 1.26 = 0.252 cm.\n\nInitial surface area = 2 × 4πr² = 2 × 4π(0.002)² = 8π × 4 × 10⁻⁶ = 1.005 × 10⁻⁴ m².\nFinal surface area = 4πR² = 4π(0.00252)² = 4π × 6.35 × 10⁻⁶ = 7.98 × 10⁻⁵ m².\nΔA = 7.98 × 10⁻⁵ − 1.005 × 10⁻⁴ = −2.07 × 10⁻⁵ m².\n\nLoss in surface energy = γ × |ΔA| = 0.72 × 2.07 × 10⁻⁵ = 1.49 × 10⁻⁵ J."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) State two differences between ductile and brittle materials. [3 marks]",
+    "options": [],
+    "modelAnswer": "1. Ductile materials undergo considerable plastic deformation before fracture (can be drawn into wires); brittle materials fracture with little or no plastic deformation.\n2. Ductile materials absorb large amounts of energy before breaking (tough); brittle materials absorb little energy and break suddenly.\n\n(Also: ductile materials show necking before fracture; brittle materials fail by crack propagation.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) Distinguish between linear velocity and angular velocity. [2 marks]",
+    "options": [],
+    "modelAnswer": "Linear velocity is the rate of change of linear displacement (v = ds/dt), measured in m/s, along a straight or curved path. Angular velocity is the rate of change of angular displacement (ω = dθ/dt), measured in rad/s, about an axis of rotation. They are related by v = ωr."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) A torque of 350 Nm turns a wheel about it axis. If the moment of inertia of the wheel is 50 kgm². Calculate the angular velocity attained in 10 seconds and the kinetic energy gained. [3½ marks]",
+    "options": [],
+    "modelAnswer": "α = τ/I = 350/50 = 7 rad/s².\nω = αt = 7 × 10 = 70 rad/s.\nKE = ½Iω² = ½ × 50 × 70² = 25 × 4900 = 1.225 × 10⁵ J = 122.5 kJ."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) The displacement of an object along x-axis is given by x = -3t² + 12t + 5 where x is in meters and t in seconds.\ni. What is the velocity of the object at time, t = 0?\nii. Determine the acceleration of the object at t = 0. [2½ marks]",
+    "options": [],
+    "modelAnswer": "v = dx/dt = −6t + 12.\n(i) At t = 0: v = 12 m/s.\n(ii) a = dv/dt = −6 m/s² (constant). At t = 0: a = −6 m/s²."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "2d",
+    "question": "(d) Differentiate between centripetal acceleration and angular acceleration. [2 marks]",
+    "options": [],
+    "modelAnswer": "Centripetal acceleration is the acceleration directed towards the centre of a circular path, responsible for changing the direction of linear velocity (a = v²/r = ω²r). Angular acceleration is the rate of change of angular velocity (α = dω/dt), responsible for changing the magnitude of angular velocity. Centripetal acceleration is radial; angular acceleration is along the axis of rotation."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) What is critical angle?\n(ii) State two conditions for total internal reflection to occur. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) The critical angle is the angle of incidence in the denser medium for which the angle of refraction in the less dense medium is 90°.\n\n(ii) 1. Light must travel from a denser to a less dense medium.\n2. The angle of incidence must exceed the critical angle."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) A man's head is located at 20cm in front of a concave mirror with a radius of curvature 30cm. Determine the image distance if the man's head is moved 10cm towards the mirror and deduce the characteristics of the image formed. [3 marks]",
+    "options": [],
+    "modelAnswer": "f = R/2 = 15 cm. New object distance u = 20 − 10 = 10 cm.\n\n1/f = 1/u + 1/v → 1/15 = 1/10 + 1/v → 1/v = 1/15 − 1/10 = (2−3)/30 = −1/30.\nv = −30 cm (virtual image, 30 cm behind the mirror).\n\nCharacteristics: virtual, erect, magnified (m = −v/u = 30/10 = 3)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) i. 250g of a liquid at 98°C is poured into a copper calorimeter of mass 600g containing 500g of water at 30°C. Find the temperature of the mixture. [Specific heat capacity of copper = 390 J/Kg°C, Specific heat capacity of water = 4200 J/Kg°C and Specific heat capacity of liquid = 2200 J/Kg°C]\nii. A copper tube 50 cm thick and area 0.8 m² is heated at one end through 100°C while the other end is maintained at 23°C. Calculate how much heat is conducted in 30 minutes. [Thermal conductivity is 380Wm⁻¹k⁻¹] [5 marks]",
+    "options": [],
+    "modelAnswer": "i. Heat lost by liquid = heat gained by calorimeter + water.\n0.25 × 2200 × (98 − θ) = 0.6 × 390 × (θ − 30) + 0.5 × 4200 × (θ − 30)\n550(98 − θ) = 234(θ − 30) + 2100(θ − 30) = 2334(θ − 30)\n53900 − 550θ = 2334θ − 70020\n123920 = 2884θ → θ = 42.97°C ≈ 43.0°C.\n\nii. Q = kAΔT·t/d = 380 × 0.8 × (100 − 23) × (30 × 60)/0.5\n= 380 × 0.8 × 77 × 1800/0.5 = 380 × 0.8 × 77 × 3600 = 8.43 × 10⁷ J.\n\nNote: The question states \"50 cm thick\" — this is physically unrealistic. If the intended thickness is 5 cm (0.05 m), Q = 8.43 × 10⁸ J. Please verify the original question."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) i. What is the evidence that sound is a form of energy?\nii. Briefly explain transverse and longitudinal waves giving two examples each. [5 marks]",
+    "options": [],
+    "modelAnswer": "i. Sound can do work — it can set objects into vibration, is converted to electrical energy by a microphone, and carries energy that can be measured (intensity).\n\nii. Transverse waves: particles vibrate perpendicular to the direction of wave propagation. Examples: light waves, waves on a string/water ripples.\nLongitudinal waves: particles vibrate parallel to the direction of wave propagation. Examples: sound waves, compression waves in a spring."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) A uniform string of length 200 cm and mass 6 g is kept under a tension of 70N in horizontal direction.\ni. How long will it take a transverse pulse to cross the whole length of the string?\nii. If the string is replaced by another of the same material but of doubled thickness and of length 70 cm, determine the new tension such that the wave will cross the entire length within the same time interval as in (i). [5 marks]",
+    "options": [],
+    "modelAnswer": "i. μ = m/L = 0.006/2 = 0.003 kg/m. v = √(T/μ) = √(70/0.003) = √23333 = 152.75 m/s.\nt = L/v = 2/152.75 = 0.0131 s.\n\nii. Doubled thickness → cross-sectional area ×4 → μ' = 4μ = 0.012 kg/m. L' = 0.70 m.\nSame time: v' = L'/t = 0.70/0.0131 = 53.44 m/s.\nT' = μ'v'² = 0.012 × 53.44² = 0.012 × 2856 = 34.27 N."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) List two conditions that makes the impedance of a circuit to have minimum value. [2 marks]",
+    "options": [],
+    "modelAnswer": "1. The circuit is at resonance (X_L = X_C), so the reactance cancels.\n2. The resistance is very small (ideally zero), since Z = √(R² + (X_L − X_C)²) is minimum when R = 0 and X_L = X_C."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Force on Conductor and Moving Charge",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) State the Fleming's left hand rule and its application. [3 marks]",
+    "options": [],
+    "modelAnswer": "Fleming's left hand rule: If the thumb, forefinger and middle finger of the left hand are held mutually perpendicular, with the forefinger pointing in the direction of the magnetic field and the middle finger in the direction of the current, then the thumb points in the direction of the force (motion).\n\nApplication: It is used to determine the direction of force on a current-carrying conductor in a magnetic field — the principle of the electric motor."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) i. A capacitor is discharged through a 10 MΩ resistor and it is found that the time constant is 200 s. Calculate the value of the capacitor.\nii. Calculate the time for the potential across a 100 μF capacitor to fall to 80 per cent of its original value if it is discharged through a 20 kΩ resistor. [5 marks]",
+    "options": [],
+    "modelAnswer": "i. τ = RC → C = τ/R = 200/(10 × 10⁶) = 2 × 10⁻⁵ F = 20 μF.\n\nii. V = V₀e^(−t/RC) → 0.8 = e^(−t/τ), τ = 20 × 10³ × 100 × 10⁻⁶ = 2 s.\nt = −τ ln 0.8 = −2 × (−0.2231) = 0.446 s."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Define the term electric potential. [1½ marks]",
+    "options": [],
+    "modelAnswer": "Electric potential at a point is the work done per unit positive charge in bringing a small test charge from infinity to that point against the electric field. It is measured in volts (J/C)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) i. List three factors that affect the resistance of a wire.\nii. State Kirchhoff's laws. [3½ marks]",
+    "options": [],
+    "modelAnswer": "i. 1. Length of the wire (R ∝ L).\n2. Cross-sectional area (R ∝ 1/A).\n3. Nature/material of the wire (resistivity) — also temperature.\n\nii. Kirchhoff's current law: The algebraic sum of currents at a junction is zero (sum of currents entering = sum leaving).\nKirchhoff's voltage law: The algebraic sum of potential differences around any closed loop is zero."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) A charge Q is in a conducting sphere of radius 10 mm. If work of 25 J is done in bringing the charge to the surface of the sphere from infinity, determine:\ni. the potential;\nii. the charge on the sphere. [5 marks]",
+    "options": [],
+    "modelAnswer": "i. W = QV → V = W/Q. Also V = kQ/r = Q/(4πε₀r).\nFrom W = QV = Q²/(4πε₀r): Q² = W × 4πε₀r = 25 × 4π × 8.854 × 10⁻¹² × 0.01 = 2.782 × 10⁻¹¹.\nQ = 5.27 × 10⁻⁶ C.\nV = W/Q = 25/(5.27 × 10⁻⁶) = 4.74 × 10⁶ V.\n\nii. Q = 5.27 × 10⁻⁶ C ≈ 5.3 μC."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) State the types of X-ray spectra and describe their respective origin. [4 marks]",
+    "options": [],
+    "modelAnswer": "Two types: continuous (bremsstrahlung) spectrum and characteristic (line) spectrum.\n\nContinuous spectrum: produced when fast electrons are decelerated on striking the target — the kinetic energy lost appears as X-ray photons of continuously varying energy (up to a maximum set by the accelerating voltage).\n\nCharacteristic spectrum: produced when a bombarding electron knocks out an inner-shell electron of the target atom; an electron from a higher shell falls into the vacancy, emitting a photon of energy equal to the difference between the two shell energies — giving sharp lines characteristic of the target element."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) i. A beam of X-rays of wavelength 0.6nm is incident on a crystal and gives a first order maximum when the glancing angle is 15°. Calculate the atomic spacing.\nii. Compare and contrast between α-radiation and β-radiation. [4 marks]",
+    "options": [],
+    "modelAnswer": "i. Bragg's law: nλ = 2d sinθ → d = nλ/(2 sinθ) = 1 × 0.6 × 10⁻⁹/(2 sin 15°) = 0.6 × 10⁻⁹/(2 × 0.2588) = 1.16 × 10⁻⁹ m = 1.16 nm.\n\nii. Similarities: both are ionizing radiations emitted from radioactive nuclei; both are deflected by electric/magnetic fields.\nDifferences: α-particles are helium nuclei (charge +2, mass 4 u), have short range and high ionizing power; β-particles are fast electrons (charge −1, negligible mass), have longer range and lower ionizing power. α is deflected slightly, β strongly; α is stopped by paper, β by a few mm of aluminium."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) In a time of 42.0 minutes, the count rate from a sample of copper-66 is found to decrease from 3.62 × 10⁴ Bq to 1.21 × 10² Bq. Calculate the half-life of copper-66. [2 marks]",
+    "options": [],
+    "modelAnswer": "A = A₀(1/2)^(t/T½) → 1.21 × 10² = 3.62 × 10⁴ × (1/2)^(42/T½).\n\n(1/2)^(42/T½) = 1.21 × 10²/(3.62 × 10⁴) = 3.343 × 10⁻³.\n(42/T½) ln 2 = −ln(3.343 × 10⁻³) = 5.701.\n42/T½ = 5.701/0.6931 = 8.225.\nT½ = 42/8.225 = 5.11 minutes."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) State two observations associated with photoelectric effect that cannot be explained by the wave theory of light. [2 marks]",
+    "options": [],
+    "modelAnswer": "1. The existence of a threshold frequency: below it, no electrons are emitted regardless of the intensity of light — wave theory predicts emission at any frequency given enough intensity.\n2. The maximum kinetic energy of emitted electrons depends on the frequency (not intensity) of light, and emission is instantaneous — wave theory predicts a time delay while energy builds up."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) What are radioisotopes? [2 marks]",
+    "options": [],
+    "modelAnswer": "Radioisotopes are isotopes of an element that are unstable and undergo spontaneous radioactive decay, emitting alpha, beta or gamma radiation to become more stable. Example: carbon-14, cobalt-60, iodine-131."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) i. Distinguish between thermionic emission and photoelectric emission.\nii. Calculate the minimum wavelength of an electron accelerated through a potential difference of 200V. [6 marks]",
+    "options": [],
+    "modelAnswer": "i. Thermionic emission: emission of electrons from a heated metal surface due to thermal energy. Photoelectric emission: emission of electrons from a metal surface when irradiated with light of sufficient frequency (photon energy).\n\nii. λ_min = hc/(eV) = (6.626 × 10⁻³⁴ × 3 × 10⁸)/(1.6 × 10⁻¹⁹ × 200)\n= 1.988 × 10⁻²⁵/(3.2 × 10⁻¹⁷) = 6.21 × 10⁻⁹ m = 6.21 nm."
+  }
+]

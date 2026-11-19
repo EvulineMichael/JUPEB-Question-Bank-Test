@@ -206,6 +206,8 @@
     "question": "A plant researcher while carrying out a project on Piper nigrum found out that some of the leaves were yellowish. This can be due to the fact that the soil samples lacked",
     "options": ["nitrogen.", "phosphorus.", "magnesium.", "zinc."],
     "answer": "A",
+    "reviewNote": "Yellowing of leaves (chlorosis) happens when a plant cannot make enough chlorophyll. Two of the options cause it:\n- Nitrogen (A): needed for chlorophyll and proteins; lack of it yellows the older leaves first, all over.\n- Magnesium (C): the central atom of every chlorophyll molecule; lack of it yellows the leaf between the veins.\n\nWithout more detail about the pattern of yellowing, both are correct. The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "Yellowish leaves (chlorosis) can be caused by nitrogen deficiency. Note: magnesium deficiency can also cause chlorosis, but nitrogen is the most common cause."
   },
   {

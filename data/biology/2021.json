@@ -382,6 +382,8 @@
     "question": "Which of the following statement(s) is/are true of adult butterfly? I. It is a specialist reproductive stage II. Needs vast amounts of energy which are supplied by nectar. III. Aids the dispersal of the species",
     "options": ["II and III only", "I and III only", "I and II only", "I, II and III"],
     "answer": "A",
+    "reviewNote": "All three statements are true of the adult butterfly:\nI. It is the specialised reproductive stage of the life cycle (the caterpillar is the feeding and growing stage).\nII. Flight takes a lot of energy, which it gets from sugary nectar.\nIII. Because it flies, it carries the species to new places (dispersal).\n\nThat makes D (I, II and III) correct, but the key is A (II and III only). Because the key and the biology disagree, this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Adult butterflies feed on nectar (energy) and aid in species dispersal. Statement I is less accurate as the adult is not solely reproductive."
   },
   {
@@ -503,6 +505,8 @@
     "question": "Which one of the following provided the least supportive evidence to theory of evolution?",
     "options": ["Embryology.", "Paleontology.", "Natural selection.", "Geography."],
     "answer": "D",
+    "reviewNote": "The evidence for evolution usually listed is: fossils (palaeontology), comparative embryology, comparative anatomy, molecular biology and the geographical distribution of species (biogeography).\n\nNatural selection (C) is not evidence for evolution at all: it is Darwin's explanation of how evolution happens. So C, not geography, is arguably the 'least supportive evidence'. The examiners' answer is D (geography). Because both can be argued, this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Geography is the least direct evidence for evolution compared to embryology, paleontology, and natural selection."
   },
   {

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUPEB &amp; IJMB Prep</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="welcome.css">
+<link rel="stylesheet" href="exam-mode.css">
+ <link rel="stylesheet" href="topic-counts.css">
+<link rel="stylesheet" href="motion.css">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#0d6efd">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="JUPEB &amp; IJMB">
+
+<!-- Service Worker Registration -->
+<script>
+  if ('serviceWorker' in navigator) {
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(reg => reg.unregister());
+      });
+    } else {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(reg => console.log('SW registered:', reg.scope))
+          .catch(err => console.log('SW failed:', err));
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        const banner = document.createElement('div');
+        banner.style.cssText = `position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0d6efd;color:white;padding:14px 24px;border-radius:12px;z-index:9999;font-size:0.9rem;box-shadow:0 4px 16px rgba(0,0,0,0.3);cursor:pointer;text-align:center;font-family:'Segoe UI',sans-serif;white-space:nowrap;`;
+        banner.textContent = '🔄 Update available — tap to refresh';
+        banner.addEventListener('click', () => window.location.reload());
+        document.body.appendChild(banner);
+      });
+    }
+  }
+</script>
+<script>
+  // Notify user when a new version is available
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      // New service worker took over - show update notification
+      const updateBanner = document.createElement('div');
+      updateBanner.style.cssText = `
+        position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+        background: #0d6efd; color: white; padding: 14px 24px; border-radius: 12px;
+        z-index: 9999; font-size: 0.9rem; box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        cursor: pointer; text-align: center; font-family: 'Segoe UI', sans-serif;
+      `;
+      updateBanner.textContent = '🔄 Update available — tap to refresh';
+      updateBanner.addEventListener('click', () => window.location.reload());
+      document.body.appendChild(updateBanner);
+    });
+  }
+</script>
+</head>
+<body>
+    <!-- Persistent Sidebar -->
+<button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open menu">☰</button>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<aside class="app-sidebar" id="app-sidebar" style="display:none;">
+  <button class="sidebar-collapse-btn" id="app-sidebar-collapse-btn" aria-label="Collapse sidebar">
+    <span aria-hidden="true">‹</span>
+  </button>
+
+  <div class="sidebar-brand">
+    <div class="sidebar-logo">📚 <span class="sidebar-label">JUPEB</span></div>
+    <p class="sidebar-tagline sidebar-label">Study smarter. Score higher.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <button class="sidebar-link is-active" data-screen="dashboard-screen" onclick="goToDashboard()" data-tooltip="Home">
+        <span class="sidebar-icon">🏠</span> <span class="sidebar-label">Home</span>
+    </button>
+    <button class="sidebar-link" data-screen="subjects-screen" onclick="openSubjectPicker()" data-tooltip="Subjects">
+      <span class="sidebar-icon">📚</span> <span class="sidebar-label">Subjects</span>
+    </button>
+    <button class="sidebar-link" data-screen="quiz-screen" onclick="goToQuizMode()" data-tooltip="Quiz Mode">
+      <span class="sidebar-icon">📝</span> <span class="sidebar-label">Quiz Mode</span>
+    </button>
+    <button class="sidebar-link" data-screen="past-papers-screen" onclick="goToPastPapers()" data-tooltip="Past Papers">
+      <span class="sidebar-icon">📄</span> <span class="sidebar-label">Past Papers</span>
+    </button>
+  </nav>
+
+  <nav class="sidebar-nav sidebar-nav--secondary">
+    <button class="sidebar-link" data-screen="settings-screen" onclick="goToSettings()" data-tooltip="Settings">
+      <span class="sidebar-icon">⚙️</span> <span class="sidebar-label">Settings</span>
+    </button>
+    <button class="sidebar-link" data-screen="help-screen" onclick="goToHelp()" data-tooltip="Help & Support">
+      <span class="sidebar-icon">❓</span> <span class="sidebar-label">Help &amp; Support</span>
+    </button>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="sidebar-avatar" id="sidebar-avatar">ST</div>
+    <div class="sidebar-user-info sidebar-label">
+      <p class="sidebar-user-name" id="sidebar-user-name">Student</p>
+      <p class="sidebar-user-plan" id="sidebar-user-plan">⭐ Premium Plan</p>
+    </div>
+  </div>
+</aside>
+<!-- ===== HOME SCREEN =====
+     Replaces the WHOLE old <div id="login-screen" ...> ... </div> block.
+     Keep id="login-screen" (the app shows/hides it). Keep these ids and functions,
+     because auth.js and script.js use them: auth-status, access-info, login-sun-icon,
+     login-moon-icon, signInWithGoogle(), toggleAccessInfo(), toggleTheme().
+     The icon goes in images/jupeb-icon.png -->
+<div id="login-screen" style="display:block;">
+  <div class="home">
+
+    <header class="home-top">
+      <div class="home-brand">
+        <img src="images/jupeb-icon.png" alt="" width="40" height="40">
+        <span data-site-name>JUPEB &amp; IJMB Prep</span>
+      </div>
+      <div class="home-top-actions">
+        <button class="home-signin-top" onclick="signInWithGoogle()">Sign in</button>
+        <button class="home-theme" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle theme">
+          <svg id="login-sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="login-moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Slideshow -->
+    <section class="home-hero" id="home-hero" aria-roledescription="carousel" aria-label="Why students use JUPEB &amp; IJMB Prep">
+      <div class="home-segs" id="home-segs"></div>
+      <div class="home-slides" id="home-slides">
+
+        <article class="home-slide home-slide--blue">
+          <span class="home-eyebrow">Past questions</span>
+          <h2>2,000+ past questions</h2>
+          <p>Every JUPEB year from 2015 to 2026, organised by subject, topic and year.</p>
+          <div class="home-chips">
+            <span>🧪 Chemistry</span><span>⚛️ Physics</span><span>📐 Maths</span><span>🧬 Biology</span><span>✝️ CRS</span><span>☪️ IRS</span><span>📖 Literature</span><span>💰 Economics</span><span>🏛️ Government</span>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--amber">
+          <span class="home-eyebrow">New · IJMB</span>
+          <h2>IJMB past questions</h2>
+          <p>Essay questions with step-by-step model answers. Get IJMB on its own, or JUPEB and IJMB together.</p>
+          <div class="home-chips">
+     <span>🧪 Chemistry</span><span>⚛️ Physics</span><span>📐 Maths</span><span>🧬 Biology</span><span>✝️ CRS</span><span>☪️ IRS</span><span>📖 Literature</span><span>💰 Economics</span><span>🏛️ Government</span>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--violet">
+          <span class="home-eyebrow">Explanations</span>
+          <h2>Every answer explained</h2>
+          <p>Learn why an answer is right, not just what it is.</p>
+          <div class="home-demo">
+            <div class="home-demo-q">Which phenomenon posed a challenge to the wave theory of light?</div>
+            <div class="home-demo-opt">✓ Photoelectric effect observations.</div>
+            <div class="home-demo-why">💡 Einstein explained it with photons, which classical wave theory could not do.</div>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--orange">
+          <span class="home-eyebrow">Quiz mode</span>
+          <h2>Practise like it's exam day</h2>
+          <p>Timed quizzes, so exam conditions feel familiar before the real thing.</p>
+          <div class="home-demo">
+            <div class="home-quiz-top"><span class="home-timer">⏱ 29:41</span><span>Question 12 of 40</span></div>
+            <div class="home-bar"><i style="width:30%"></i></div>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--green">
+          <span class="home-eyebrow">Progress</span>
+          <h2>Know your weak spots</h2>
+          <p>We track the topics you struggle with, so you know exactly what to revise.</p>
+          <div class="home-demo">
+            <div class="home-row"><span>Atomic Structure</span><div class="home-bar"><i style="width:58%"></i></div></div>
+            <div class="home-row"><span>Mole Concept</span><div class="home-bar"><i style="width:44%"></i></div></div>
+            <div class="home-row"><span>Stoichiometry</span><div class="home-bar"><i style="width:31%"></i></div></div>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--rose">
+          <span class="home-eyebrow">Community</span>
+          <h2>Join 100+ students</h2>
+          <p>Students are already studying with us, one question at a time.</p>
+          <div class="home-demo home-demo--people">
+            <div class="home-avatars"><span></span><span></span><span></span><span></span><span class="home-avatar-more">100+</span></div>
+            <div class="home-people-note">studying with JUPEB &amp; IJMB Prep</div>
+          </div>
+        </article>
+
+        <article class="home-slide home-slide--teal">
+          <span class="home-eyebrow">On your phone</span>
+          <h2>Study on any phone</h2>
+          <p>Add it to your home screen and open it like an app.</p>
+          <div class="home-demo home-demo--phone">
+            <div class="home-phone"><img src="images/jupeb-icon.png" alt="" width="46" height="46"><small>JUPEB &amp; IJMB</small></div>
+            <div class="home-phone-steps"><strong>Share</strong> → <strong>Add to Home Screen</strong></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="home-cta">
+      <div id="auth-status"></div>
+
+      <div class="home-price">
+        <span class="home-price-amount">₦5,000</span>
+        <span class="home-price-note">per exam · lifetime access</span>
+      </div>
+      <p class="home-price-bundle">JUPEB + IJMB together: <strong>₦8,000</strong></p>
+
+      <ul class="home-perks">
+        <li>JUPEB, IJMB, or both</li>
+        <li>All 9 JUPEB subjects, 2015–2026</li>
+        <li>Every answer explained</li>
+        <li>Lifetime access, one payment</li>
+      </ul>
+
+      <button class="home-btn home-btn--primary" id="home-get-access" onclick="toggleAccessInfo()">Get access</button>
+      <button class="home-btn home-btn--google" onclick="signInWithGoogle()">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        <span class="home-paid-hint">Already paid?&nbsp;</span>Sign in with Google
+      </button>
+      <button class="home-link" id="home-sample-open">Try 5 free questions</button>
+
+      <!-- How to get access (opened by the Get access button) -->
+      <div id="access-info" class="home-access" style="display:none;">
+        <h3>How to get access</h3>
+        <p class="home-exam-pick-label">Which exam do you want?</p>
+        <div class="home-exam-pick" id="home-exam-pick" role="radiogroup" aria-label="Choose your exam">
+          <button type="button" role="radio" class="is-on" aria-checked="true" data-exam="JUPEB" data-price="₦5,000">JUPEB<span>₦5,000</span></button>
+          <button type="button" role="radio" aria-checked="false" data-exam="IJMB" data-price="₦5,000">IJMB<span>₦5,000</span></button>
+          <button type="button" role="radio" aria-checked="false" data-exam="JUPEB + IJMB" data-price="₦8,000">Both<span>₦8,000</span></button>
+        </div>
+        <ol class="home-steps">
+          <li><strong>Pay <span id="home-pay-amount">₦5,000</span></strong> to Moniepoint <span class="home-mono">5282798033</span> (Michael Evuline).</li>
+          <li><strong>Send your receipt and your Gmail address</strong> to us on WhatsApp. This is the Gmail you'll sign in with.</li>
+          <li><strong>Sign in with that Gmail</strong> once we've activated you. That's it. Access is for life.</li>
+        </ol>
+        <a class="home-btn home-btn--whatsapp" id="home-wa-btn" href="https://wa.me/2349035801863" target="_blank" rel="noopener">Send receipt on WhatsApp</a>
+        <button class="home-link" onclick="toggleAccessInfo()">Close</button>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="home-faq">
+      <h3>Questions? Answers.</h3>
+      <div class="home-faq-list">
+      <details class="home-faq-item"><summary>How much does it cost?</summary><p>₦5,000 per exam (JUPEB or IJMB), or ₦8,000 for both, paid once. You get lifetime access, with no subscription. Already have one exam? Add the other for ₦3,000.</p></details>
+      <details class="home-faq-item"><summary>How do I get access?</summary><p>Choose JUPEB, IJMB or both and pay, then send your receipt and your Gmail address to us on WhatsApp. We activate that Gmail, and you sign in with it. Tap "Get access" above for the details.</p></details>
+      <details class="home-faq-item"><summary>Which subjects and years are covered?</summary><p>JUPEB: Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, with past questions from 2015 to 2026 depending on the subject. IJMB: essay past questions with model answers in all nine subjects, from 2016 onwards.</p></details>
+      <details class="home-faq-item"><summary>Are the answers correct?</summary><p>Yes, but always cross-check with your textbook, because no answer bank is 100% perfect. If you spot a mistake, tell us and we fix it quickly.</p></details>
+      <details class="home-faq-item"><summary>Does it work on my phone?</summary><p>Yes. It works on any phone, tablet or laptop, and you can add it to your home screen and open it like an app.</p></details>
+      <details class="home-faq-item"><summary>Can I use it on more than one device?</summary><p>Yes. Just sign in with the same Gmail.</p></details>
+      <details class="home-faq-item"><summary>I paid but I can't sign in.</summary><p>Sign in with the exact Gmail you sent us with your receipt. If it still doesn't work, message us on WhatsApp and we'll sort it out.</p></details>
+      <details class="home-faq-item"><summary>Is this the official JUPEB or IJMB website?</summary><p>No. <span data-site-name>JUPEB &amp; IJMB Prep</span> is an independent study tool. It is not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB).</p></details>
+      </div>
+    </section>
+
+    <!-- Free sample (only exists on this screen, so it disappears after sign-in) -->
+    <div class="home-modal" id="home-sample" aria-hidden="true">
+      <div class="home-modal-backdrop" id="home-sample-backdrop"></div>
+      <div class="home-modal-card" role="dialog" aria-label="Free sample questions">
+        <button class="home-modal-close" id="home-sample-close" aria-label="Close">×</button>
+        <div id="home-sample-body"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <!-- Drop-in replacement for the existing #dashboard-screen block.
+     Assumes goToBrowseQuestions(), goToQuizMode(), goToPastPapers(), startQuickPractice()
+     already exist in script.js (unchanged). Link dashboard.css and dashboard.js. -->
+<div id="dashboard-screen" style="display:none;">
+  <div class="dash-shell">
+
+    <!-- Header -->
+    <div class="dashboard-header">
+  <div class="dash-greeting">
+    <h2 id="dash-greeting-text">Good morning</h2>
+    <p id="dash-user-name">Ready to make today a productive study session?</p>
+  </div>
+  <div class="dash-header-actions">
+    <span class="dash-date" id="dash-date"></span>
+    <button class="bell-btn" id="bell-btn" aria-label="Updates and feedback">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span class="bell-dot" id="bell-dot"></span>
+    </button>
+  </div>
+</div>
+
+
+
+    <!-- Top row: continue session + streak -->
+    <div class="dashboard-row dashboard-row--top">
+      <div class="dash-card dash-continue-card" id="dash-continue-card">
+        <p class="dash-eyebrow">Continue your last session</p>
+        <h3 id="dash-continue-topic">Pick a subject to begin</h3>
+        <p id="dash-continue-text" class="dash-subtext">You haven't started studying yet.</p>
+        <div class="dash-progress-track">
+          <div class="dash-progress-fill" id="dash-continue-fill" style="width:0%"></div>
+        </div>
+        <button class="dash-btn-primary" onclick="openSubjectPicker()">
+          Continue Practicing <span aria-hidden="true">›</span>
+        </button>
+      </div>
+
+      <div class="dash-card dash-streak-card" id="dash-streak-card">
+        <h3>🔥 Study Streak</h3>
+        <p id="dash-streak-text" class="dash-streak-number">0 <span>days</span></p>
+        <p id="dash-streak-subtext" class="dash-subtext">Start studying today to build your streak</p>
+        <div class="streak-dots" id="streak-dots">
+          <span class="streak-dot">M</span><span class="streak-dot">T</span><span class="streak-dot">W</span>
+          <span class="streak-dot">T</span><span class="streak-dot">F</span><span class="streak-dot">S</span>
+          <span class="streak-dot">S</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subjects -->
+   <div class="dash-card dash-subjects-card">
+  <div class="dash-card-heading"><h3>Quick Access</h3></div>
+  <p class="dash-subtext" style="margin:-6px 0 14px;">Choose your favorite subjects to easily access them.</p>
+  <div id="dash-pinned-subjects" class="dash-subject-grid">
+    <!-- populated by renderPinnedSubjects() -->
+  </div>
+</div>
+
+    <!-- Quick practice -->
+    <div class="dash-card dash-quick-practice-card">
+      <h3>⚡ Quick Practice</h3>
+      <p class="dash-subtext">Answer random questions from any topic</p>
+      <p class="dash-subtext dash-subtext--muted">10 Questions · All Topics</p>
+      <button class="dash-btn-primary" onclick="startQuickPractice()">Start Quiz</button>
+    </div>
+
+    <!-- Weak topics + recent activity -->
+    <div class="dashboard-row dashboard-row--bottom">
+      <div class="dash-card dash-weak-topics-card">
+        <div class="dash-card-heading">
+          <h3>⚠️ Weak Topics</h3>
+          <button class="dash-link-btn" onclick="goToQuizMode()">View all</button>
+        </div>
+        <div id="dash-weak-topics">
+          <p class="dash-subtext">Answer 10+ questions to unlock weak area tracking.</p>
+        </div>
+      </div>
+
+      <div class="dash-card dash-recent-card">
+        <div class="dash-card-heading">
+          <h3>🕐 Recent Activity</h3>
+        </div>
+        <div id="dash-recent-activity">
+          <p class="dash-subtext">No activity yet — your study sessions will show here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- App Content (Hidden until authorized) -->
+    <div id="app-content" style="display:none;">
+    <div class="main-container">
+        <main id="questions-area">
+            <div class="welcome-message" id="welcome-message">
+                <h2>📚 Welcome to JUPEB &amp; IJMB Prep</h2>
+                <p>Click "Subjects" in the sidebar to get started.</p>
+            </div>
+            <div id="questions-container"></div>
+        </main>
+    </div>
+</div>
+
+<!-- Settings screen. Replace "settings-screen" placeholder with this. -->
+<div class="app-screen" id="settings-screen" style="display:none;">
+  <div class="dash-shell">
+    <div class="dashboard-header">
+      <button class="dash-back-btn" onclick="goToDashboard()" aria-label="Back to dashboard">
+        <span aria-hidden="true">←</span> Back to Dashboard
+      </button>
+      <div class="dash-greeting">
+        <h2>Settings</h2>
+        <p>Manage your account and preferences.</p>
+      </div>
+    </div>
+
+    <!-- Study preferences -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Study Preferences</h3></div>
+
+      <label class="settings-label" for="settings-default-length">Default quiz length</label>
+      <select id="settings-default-length" class="settings-select">
+        <option value="10">10 Questions</option>
+        <option value="20">20 Questions</option>
+        <option value="50">50 Questions</option>
+      </select>
+
+      <label class="settings-label" for="settings-default-timer">Default timer</label>
+      <select id="settings-default-timer" class="settings-select">
+        <option value="0">No Timer</option>
+        <option value="1800">30 min</option>
+        <option value="3600">60 min</option>
+        <option value="5400">90 min</option>
+      </select>
+    </div>
+
+    <!-- Appearance -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Appearance</h3></div>
+      <div class="settings-row">
+        <div>
+          <p class="settings-row-title">Dark Mode</p>
+          <p class="dash-subtext">Switch between light and dark theme</p>
+        </div>
+        <label class="settings-switch">
+          <input type="checkbox" id="settings-theme-toggle" />
+          <span class="settings-switch-track"></span>
+        </label>
+      </div>
+    </div>
+
+
+
+    <!-- Account -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Account</h3></div>
+
+      <div class="settings-account-row">
+        <div class="settings-avatar" id="settings-avatar">ST</div>
+        <div class="settings-account-info">
+          <p class="settings-account-email" id="settings-email">student@example.com</p>
+        </div>
+      </div>
+
+      <label class="settings-label" for="settings-name-input">What should we call you?</label>
+      <div class="settings-name-row">
+        <input type="text" id="settings-name-input" class="settings-input" placeholder="Your preferred name" />
+        <button class="dash-btn-primary" id="settings-name-save">Save</button>
+      </div>
+      <p class="dash-subtext" id="settings-name-status"></p>
+
+      <button class="settings-danger-btn" id="settings-signout-btn">Sign Out</button>
+    </div>
+
+  </div>
+</div>
+<!-- Help & Support screen. Replace "help-screen" placeholder with this. -->
+<div class="app-screen" id="help-screen" style="display:none;">
+  <div class="dash-shell">
+    <div class="dashboard-header">
+      <button class="dash-back-btn" onclick="goToDashboard()" aria-label="Back to dashboard">
+        <span aria-hidden="true">←</span> Back to Dashboard
+      </button>
+      <div class="dash-greeting">
+        <h2>Help &amp; Support</h2>
+        <p>Answers, contact, and reporting a problem.</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="dash-card">
+      <div class="dash-card-heading"><h3>Frequently Asked Questions</h3></div>
+      <div class="help-faq-list" id="help-faq-list">
+        <!-- items injected by help.js from FAQ_ITEMS; shows an empty state until FAQ_ITEMS has content -->
+      </div>
+    </div>
+
+    <!-- Contact + report bug -->
+    <div class="dashboard-row dashboard-row--bottom">
+      <div class="dash-card">
+        <div class="dash-card-heading"><h3>💬 Contact Support</h3></div>
+        <p class="dash-subtext">Questions, payment issues, or anything else — reach us directly.</p>
+        <button class="dash-btn-primary help-contact-btn" id="help-whatsapp-btn">
+          Chat on WhatsApp
+        </button>
+      </div>
+
+      <div class="dash-card">
+        <div class="dash-card-heading"><h3>🐞 Report a Problem</h3></div>
+        <p class="dash-subtext">Wrong answer, broken question, or a bug in the app.</p>
+        <button class="dash-btn-primary help-contact-btn" id="help-report-btn">
+          Report an Issue
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Stub Screens -->
+<div class="app-screen" id="progress-screen" style="display:none;padding:40px;">
+  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
+  <h2 style="color:var(--text-primary);">📈 Progress</h2>
+  <p style="color:var(--text-secondary);">Your detailed progress will appear here.</p>
+</div>
+
+<!-- Subject Picker Overlay -->
+<div class="subject-picker" id="subject-picker" aria-hidden="true">
+  <div class="subject-picker-backdrop" id="subject-picker-backdrop"></div>
+  <div class="subject-picker-panel" role="dialog" aria-modal="true" aria-label="Choose a subject">
+    <button class="subject-picker-close" id="subject-picker-close" aria-label="Close">×</button>
+    <div class="subject-picker-topbar">
+      <button class="subject-picker-back" id="subject-picker-back" aria-label="Go back">
+        <span aria-hidden="true">←</span> Back
+      </button>
+      <nav class="subject-picker-crumbs" id="subject-picker-crumbs" aria-label="Breadcrumb"></nav>
+    </div>
+    <input type="text" class="subject-picker-search" id="subject-picker-search" placeholder="Search…" autocomplete="off" />
+    <div class="subject-picker-grid" id="subject-picker-grid"></div>
+  </div>
+</div>
+<div class="survey-overlay" id="survey-overlay" style="display:none;">
+  <div class="survey-modal">
+    <div class="survey-header">
+      <div class="survey-emoji">👋</div>
+      <h2>Welcome to JUPEB &amp; IJMB Prep</h2>
+      <p>Before we get started, help us understand how you found us. Takes 20 seconds.</p>
+    </div>
+
+    <div class="survey-body">
+      <label class="survey-label">How did you hear about us? <span class="survey-required">*</span></label>
+      <select id="survey-source" class="survey-select">
+        <option value="">— Select one —</option>
+        <option value="Referred by a friend">Referred by a friend</option>
+        <option value="Referred by a teacher">Referred by a teacher</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Google search">Google search</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <div id="survey-other-wrap" style="display:none;">
+        <label class="survey-label">Please specify</label>
+        <input type="text" id="survey-other" class="survey-input" placeholder="e.g. Friend's WhatsApp status" />
+      </div>
+
+      <div id="survey-referrer-wrap" style="display:none;">
+        <label class="survey-label">Who referred you? <span class="survey-optional">(optional)</span></label>
+        <input type="text" id="survey-referrer" class="survey-input" placeholder="Their name" />
+        <p class="survey-hint">Skip this if you found us yourself.</p>
+      </div>
+    </div>
+
+    <div class="survey-footer">
+      <button class="survey-submit" id="survey-submit">Continue →</button>
+      <p class="survey-error" id="survey-error" style="display:none;"></p>
+    </div>
+  </div>
+</div>
+<!-- ========== PART 2: the bell panel ==========
+     Paste once as a DIRECT child of <body>, next to your other overlays
+     (the subject picker and the survey), NOT inside any screen. -->
+<div class="bell-backdrop" id="bell-backdrop"></div>
+<section class="bell-panel" id="bell-panel" role="dialog" aria-label="Updates and feedback" aria-hidden="true">
+  <div class="bell-head">
+    <div class="bell-tabs">
+      <button class="bell-tab is-active" data-tab="updates">Updates</button>
+      <button class="bell-tab" data-tab="feedback">Feedback</button>
+    </div>
+    <button class="bell-close" id="bell-close" aria-label="Close">×</button>
+  </div>
+ 
+  <div class="bell-body" id="bell-pane-updates">
+    <details class="bell-guide" id="bell-guide" open>
+      <summary>📲 Add JUPEB &amp; IJMB Prep to your home screen</summary>
+      <p>Open it like an app, in one tap.</p>
+      <ul>
+        <li><strong>Android (Chrome):</strong> tap the ⋮ menu, then “Install app” (or “Add to Home screen”).</li>
+        <li><strong>iPhone (Safari):</strong> tap the Share button, then “Add to Home Screen”.</li>
+      </ul>
+      <p class="bell-guide-note">Opened this link from WhatsApp or Instagram? Open it in Chrome or Safari first.</p>
+      <button class="bell-link" id="bell-guide-hide">Don't show this again</button>
+    </details>
+    <div id="bell-updates-list"></div>
+  </div>
+ 
+  <div class="bell-body" id="bell-pane-feedback" hidden>
+    <label class="bell-label" for="bell-fb-type">What is this about?</label>
+    <select class="bell-field" id="bell-fb-type">
+      <option>Wrong answer</option>
+      <option>Bug</option>
+      <option>Suggestion</option>
+      <option>Other</option>
+    </select>
+ 
+    <label class="bell-label" for="bell-fb-message">Your message</label>
+    <textarea class="bell-field" id="bell-fb-message" rows="4" maxlength="1000" placeholder="Tell us what happened…"></textarea>
+ 
+    <label class="bell-label" for="bell-fb-context">Where did it happen? <span class="bell-optional">(optional)</span></label>
+    <input class="bell-field" id="bell-fb-context" maxlength="200" placeholder="e.g. Chemistry · Atomic Structure · Question 3">
+ 
+    <p class="bell-msg" id="bell-fb-status" role="status"></p>
+    <button class="bell-send" id="bell-fb-send">Send feedback</button>
+  </div>
+</section>
+ 
+<!-- ===== WELCOME STEP =====
+     Asks every student once: name, subjects, school, and (only if they didn't come
+     through a teacher's link) how they heard about us.
+
+     Paste once as a DIRECT child of <body>, directly ABOVE the Footer comment line.
+     Not inside login-screen or any other screen. -->
+<div class="welcome-overlay" id="welcome-overlay" aria-hidden="true">
+  <div class="welcome-card" role="dialog" aria-labelledby="welcome-title">
+    <div class="welcome-head">
+      <div class="welcome-emoji">👋</div>
+      <h2 id="welcome-title">Welcome!</h2>
+      <p>Tell us a little about you so we can set things up for you. It takes 20 seconds.</p>
+    </div>
+
+    <div id="welcome-exam-wrap" hidden>
+      <div class="welcome-label">Which exam are you writing?</div>
+      <div class="welcome-exams" id="welcome-exams" role="radiogroup" aria-label="Which exam are you writing?">
+        <button type="button" role="radio" aria-checked="false" data-exams="jupeb">JUPEB</button>
+        <button type="button" role="radio" aria-checked="false" data-exams="ijmb">IJMB</button>
+        <button type="button" role="radio" aria-checked="false" data-exams="jupeb,ijmb">Both</button>
+      </div>
+    </div>
+
+    <label class="welcome-label" for="welcome-name">What should we call you?</label>
+    <input class="welcome-input" id="welcome-name" maxlength="40" autocomplete="given-name">
+
+    <div class="welcome-label">Which subjects are you taking? <span class="welcome-hint">Pick all that apply</span></div>
+    <div class="welcome-subjects" id="welcome-subjects"></div>
+
+    <label class="welcome-label" for="welcome-school">Your school or study centre</label>
+    <input class="welcome-input" id="welcome-school" maxlength="80" placeholder="e.g. University of Lagos">
+
+    <div id="welcome-source-wrap" hidden>
+      <label class="welcome-label" for="welcome-source">How did you hear about us?</label>
+      <select class="welcome-input" id="welcome-source">
+        <option value="">Select one</option>
+        <option value="Referred by a friend">A friend told me</option>
+        <option value="Referred by a teacher">A teacher told me</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Google search">Google search</option>
+        <option value="Other">Other</option>
+      </select>
+      <input class="welcome-input" id="welcome-source-other" maxlength="80" placeholder="Please tell us where" hidden>
+    </div>
+
+    <p class="welcome-error" id="welcome-error" role="alert"></p>
+    <button class="welcome-submit" id="welcome-submit">Continue →</button>
+    <button class="welcome-later" id="welcome-later">Not now</button>
+  </div>
+</div>
+<!-- Back to Top Button -->
+<button id="back-to-top" style="display:none;">↑ Back to Top</button>
+
+<!-- Footer -->
+<footer class="app-footer">
+    <div class="footer-content">
+        <div class="footer-top">
+            <span class="footer-tagline">Helping you ace JUPEB and IJMB, one question at a time...</span>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <span class="footer-brand" data-site-name>JUPEB &amp; IJMB Prep</span>
+                <span class="footer-version desktop-only">v2.0</span>
+            </div>
+            <div class="footer-center">
+                <span class="footer-copyright">&copy; 2026 <span data-site-name>JUPEB &amp; IJMB Prep</span></span>
+                <span class="footer-dot desktop-only">•</span>
+                <span class="footer-updated desktop-only">Updated: August 1, 2026</span>
+            </div>
+            <div class="footer-right desktop-only">
+                <span class="footer-contact">Contact: +234 903 580 1863</span>
+                <a href="https://wa.me/2349035801863" target="_blank" rel="noopener noreferrer" class="footer-link" title="Message on WhatsApp">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+        <p style="font-size:0.8rem;">⚠️ Answers may not be 100% accurate. Always cross-check with your textbooks and research tools.</p>
+        <p style="margin-bottom:4px;">Disclaimer: Not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB)</p>
+</div>
+    </div>
+</footer>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script src="topic-resources.js"></script>
+<script src="script.js"></script>
+<script src="exam-mode.js"></script>
+<script src="auth.js"></script>
+<script src="home-screen.js"></script>
+     <script src="welcome.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>

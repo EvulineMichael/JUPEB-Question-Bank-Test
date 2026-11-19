@@ -1,0 +1,123 @@
+[
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the contributions of Ibn Khaldun to the development of scientific study of society.",
+    "options": [],
+    "modelAnswer": "Ibn Khaldun (1332–1406), a North African Muslim scholar born in Tunis, is widely regarded as a forerunner (sometimes called a 'father') of sociology, centuries before Comte. His main work is the Muqaddimah (Introduction, 1377) to his universal history, the Kitab al-'Ibar. His contributions:\n\n1. A new science of society ('ilm al-'umran, the science of human social organisation or civilisation): he argued that society and history follow regular laws that can be studied, just as nature can.\n\n2. Scientific and critical method: he criticised historians who accepted reports without checking them. He insisted on testing reports against observation, reason and the nature of society, removing exaggeration and bias. This anticipates empirical, objective social research.\n\n3. 'Asabiyyah (group solidarity or social cohesion): the central concept of his theory. Strong group feeling, found especially among desert/nomadic (Bedouin) peoples, makes a group able to conquer and found a state.\n\n4. Cyclical theory of the rise and fall of dynasties: a group with strong 'asabiyyah takes power; its rulers then become settled, urban and luxurious; solidarity weakens over about three or four generations (about 120 years); the dynasty declines and is replaced by a new group with stronger solidarity.\n\n5. Rural versus urban life (badawa and hadara): he compared nomadic and sedentary societies, showing how environment and way of life shape character, much as Durkheim and Tönnies later compared traditional and modern societies.\n\n6. Economic sociology: he discussed division of labour, labour as the source of value, the effect of taxation on production (high taxes reduce economic activity), and the role of the economy in social life.\n\n7. Influence of environment and climate on human character and culture.\n\nConclusion: by treating society as a subject with its own laws, using critical evidence-based methods, and developing concepts like 'asabiyyah and social cycles, Ibn Khaldun laid early foundations of scientific sociology."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "Define Science",
+    "options": [],
+    "modelAnswer": "Science is a systematic and organised body of knowledge obtained through observation, experimentation and logical reasoning, using methods that can be checked and repeated by others, in order to describe, explain and predict phenomena. It is also the method itself: the scientific method of observing, forming hypotheses, testing them with evidence, and drawing conclusions."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "Discuss four (4) characteristics of scientific endeavor as it relates to sociology.",
+    "options": [],
+    "modelAnswer": "Sociology is a science because it studies society using scientific methods. Four characteristics of scientific endeavour, as they relate to sociology:\n\n1. Empiricism: knowledge is based on evidence gathered through the senses (observation, surveys, interviews, records), not on speculation, opinion or faith. Sociologists collect data on actual social behaviour, e.g. a survey of unemployment among graduates.\n\n2. Objectivity (value neutrality): the researcher should not let personal feelings, prejudices or values distort the findings. Weber stressed value-free sociology; sociologists use standard methods so that results reflect reality, not the researcher's bias.\n\n3. Verifiability and replicability: findings can be checked by other researchers repeating the study. Sociologists report their methods clearly so others can test them.\n\n4. Systematic and theoretical: research follows an orderly procedure (identifying a problem, reviewing literature, forming hypotheses, collecting and analysing data, drawing conclusions), and findings are organised into theories (e.g. functionalism, conflict theory) that explain social life.\n\nOther acceptable characteristics:\n• Cumulative: new knowledge builds on old.\n• Generalisation: it seeks general patterns, not single cases.\n• Ethical neutrality: researchers report findings honestly.\n• Predictability: it aims to predict trends, e.g. population growth or crime rates.\n• Tentativeness: findings are open to revision when new evidence appears.\n(Sociology is not as exact as physics, because humans have free will and are affected by being studied, but it still uses these scientific principles.)"
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Describe the three levels of social interaction in the society.",
+    "options": [],
+    "modelAnswer": "Social interaction is the way people act and react towards one another. Sociologists study it at three levels:\n\n1. Micro level (interpersonal): face-to-face interaction between individuals and in small groups, e.g. conversation between friends, a lecturer and a student, a family meal. It deals with symbols, gestures, language, roles and the meanings people give to situations. Symbolic interactionism and Goffman's dramaturgy (presentation of self) work at this level.\n\n2. Meso level (intermediate): interaction within and between organisations, communities and groups larger than a small group but smaller than a whole society, e.g. a university, a church, a trade union, a local community, an ethnic association, a company. It links individuals to the wider society.\n\n3. Macro level (societal): interaction between large-scale social structures, institutions and whole societies, e.g. the relationship between the economy and the political system, social classes, ethnic groups at national level, or between nations (globalisation). Functionalism and conflict theory mostly analyse this level.\n\nThe three levels are linked: individual interactions build up into organisations and institutions, and the large structures in turn shape everyday interaction.\n(Some textbooks instead describe the forms of interaction (cooperation, competition, conflict, accommodation, assimilation). If the question is read that way, these may be discussed, but the micro–meso–macro levels best answer 'levels'.)"
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "Define Social control.",
+    "options": [],
+    "modelAnswer": "Social control refers to the processes, mechanisms and means by which a society or group ensures that its members conform to its norms, values and rules, and by which deviant behaviour is prevented, discouraged or punished. It operates through internalised values learned in socialisation (self-control) and through external pressure from formal agents (police, courts, laws) and informal agents (family, peers, religion, community), using positive and negative sanctions."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "Discuss four (4) informal agents of social control in the society.",
+    "options": [],
+    "modelAnswer": "Informal agents of social control use unwritten rules, approval and disapproval rather than law. Four of them:\n\n1. The family: the first agent. Parents teach right and wrong and reward or punish children (praise, gifts, scolding, denial of privileges). Respect for elders and fear of bringing shame on the family keep members in line throughout life.\n\n2. Peer groups: friends and age-mates control behaviour through acceptance, approval, teasing, ridicule or exclusion. The wish to belong makes people conform to group norms, whether good or bad.\n\n3. Religion: religious teachings set moral standards. The belief in reward (heaven, blessings) and punishment (hell, divine wrath), and the influence of religious leaders, sermons and the religious community, encourage conformity. Traditional religion uses oaths, taboos and fear of ancestors or deities.\n\n4. The community/neighbourhood and public opinion: gossip, ridicule, praise, ostracism, and the importance of a good name in the community. In traditional settings, age grades, elders and chiefs also exercise informal control.\n\nOther acceptable agents: the mass media (shaping attitudes, exposing wrongdoing), customs, folkways and mores, and the workplace culture (colleagues' approval)."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Define social group and highlight five (5) basic differences between primary and secondary groups.",
+    "options": [],
+    "modelAnswer": "A social group is two or more people who interact regularly, share common interests or goals, have a sense of belonging (a 'we' feeling), and recognise themselves and are recognised by others as members. A mere crowd or a category (e.g. all left-handed people) is not a group.\n\nPrimary group (Charles Horton Cooley): a small group with close, personal, intimate and lasting relationships, e.g. family, close friends.\nSecondary group: a larger, more impersonal group formed for a specific purpose, e.g. a university, a company, a political party.\n\nDifferences:\n1. Size: primary groups are small; secondary groups are usually large.\n2. Nature of relationships: primary relationships are personal, intimate and face-to-face; secondary relationships are impersonal, formal and often indirect.\n3. Purpose: primary groups are ends in themselves (relationships valued for their own sake); secondary groups are means to an end (formed to achieve specific goals).\n4. Duration: primary groups are long-lasting, often lifelong; secondary groups are often temporary, and people join and leave easily.\n5. Social control: primary groups control members informally (love, advice, disapproval); secondary groups use formal rules and regulations.\n6. Involvement: in a primary group the whole personality is involved; in a secondary group only a part (the specific role) is involved.\n7. Formation: primary groups form naturally and spontaneously; secondary groups are deliberately organised.\n(Any five well-explained differences earn full marks.)"
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "Define Psychology.",
+    "options": [],
+    "modelAnswer": "Psychology is the scientific study of the mind and behaviour: how individuals think, feel, perceive, learn, remember and act, and the mental processes behind behaviour. It focuses mainly on the individual, whereas sociology focuses on groups and society."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "Discuss four (4) subject matter of Psychology.",
+    "options": [],
+    "modelAnswer": "Note: the question means four subject areas (areas of study) of psychology. Four of them:\n\n1. Behaviour: observable actions of individuals and how they are shaped by the environment, rewards and punishment (behaviourism: Watson, Skinner).\n\n2. Cognition (mental processes): perception, attention, memory, thinking, reasoning, problem-solving, language and learning.\n\n3. Emotion and motivation: feelings such as fear, anger and joy, and the drives and needs that push people to act (e.g. Maslow's hierarchy of needs).\n\n4. Personality and individual differences: why people differ in character, intelligence and temperament, and how personality develops (Freud's psychoanalysis, trait theories).\n\nOther acceptable areas:\n• Human development (growth from infancy to old age).\n• Abnormal behaviour and mental disorders.\n• Social psychology (how others influence the individual), which links psychology to sociology.\n• The biological bases of behaviour (brain and nervous system)."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "Define ethnocentrism",
+    "options": [],
+    "modelAnswer": "Ethnocentrism (a term popularised by W. G. Sumner) is the tendency to judge other cultures by the standards of one's own culture, and to regard one's own group, customs and ways of life as natural, correct and superior, while seeing other cultures as strange, inferior or wrong. It is the opposite of cultural relativism."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "With good examples, describe the manifestation of ethnocentric Behavioural patterns in Nigeria.",
+    "options": [],
+    "modelAnswer": "Nigeria has over 250 ethnic groups, and ethnocentrism shows in several ways:\n\n1. Ethnic stereotypes and derogatory names: groups label one another with insulting names and fixed images (e.g. one group seen as money-loving, another as lazy or violent), and jokes that belittle others.\n\n2. Ethnic politics and voting: politicians appeal to ethnic loyalty; people vote for 'their own' regardless of merit; there are fears of domination by other groups and agitation over which zone should produce the president.\n\n3. Nepotism and favouritism in employment, admissions and appointments: officials favour people of their own ethnic group. The 'federal character' and 'state of origin' debates are partly a reaction to this.\n\n4. Discrimination against 'non-indigenes' or 'settlers': people living outside their state of origin may be denied land, jobs, scholarships or political office (indigene/settler conflicts, e.g. in Jos).\n\n5. Resistance to inter-ethnic marriage: some families oppose marriage outside the ethnic group.\n\n6. Religious and regional intolerance: viewing one's own religion or region as superior, sometimes leading to violent clashes.\n\n7. Language pride and ridicule: mocking other groups' accents, languages, food or dress.\n\nEffects: ethnic conflict, distrust, weak national unity, and poor choice of leaders.\nRemedies: national integration programmes such as the NYSC and Unity Schools, intergroup marriage and interaction, civic education, and fair application of federal character."
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "National Income Accounting",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the difficulties encountered in comparing the standard of living between the different countries of the world.",
+    "options": [],
+    "modelAnswer": "Per capita income (national income divided by population) is often used to compare standards of living between countries, but the comparison faces several difficulties:\n1. Different currencies and exchange rates: incomes must be converted into a common currency, and official exchange rates may not reflect actual purchasing power (hence the use of purchasing power parity).\n2. Differences in the cost of living and prices: the same income buys different quantities of goods in different countries.\n3. Income distribution: the same per capita income may hide great inequality in one country and fairly even distribution in another.\n4. Non-marketed and subsistence output: in developing countries much production (subsistence farming, housework) is not recorded, so income is understated.\n5. Different degrees of accuracy of statistics: data collection and population census figures differ in reliability.\n6. Differences in the composition of output: a large share spent on defence or capital goods does not raise current living standards as much as consumer goods.\n7. Differences in climate and needs: people in cold countries must spend on heating and warm clothing, which raises income without raising welfare.\n8. Differences in tastes, culture and consumption patterns.\n9. Non-monetary factors: leisure, working hours, quality of the environment, life expectancy, literacy, health care and security are not captured by income figures.\n10. Size of the informal sector and the black market, and differences in tax systems and government provision of free services."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "International Trade",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Identify and discuss arguments for and against protectionist policy",
+    "options": [],
+    "modelAnswer": "Protectionism is the use of measures such as tariffs, import quotas, import bans, subsidies to local producers, exchange control and administrative barriers to restrict imports and protect domestic industries.\n\nArguments for protection:\n1. Infant industry argument: new local industries need protection until they grow and can compete with established foreign firms.\n2. To correct a balance of payments deficit by reducing imports.\n3. To protect employment in domestic industries.\n4. To prevent dumping (sale of goods abroad below cost).\n5. To raise government revenue through import duties.\n6. Strategic and security reasons: to ensure local production of essential goods such as food and defence equipment.\n7. To diversify the economy and reduce dependence on a few exports.\n8. To discourage the import of harmful or undesirable goods.\n9. To improve the terms of trade.\n\nArguments against protection:\n1. It reduces the gains from specialisation and international trade based on comparative advantage.\n2. Consumers pay higher prices and have less choice.\n3. It may protect inefficient industries that never become competitive.\n4. It invites retaliation from trading partners, reducing exports.\n5. It encourages smuggling, corruption and black markets.\n6. It may raise the cost of imported raw materials and machinery, increasing production costs.\n7. It may lead to monopoly power for protected local firms.\n8. It conflicts with international agreements (e.g. WTO rules, ECOWAS trade liberalisation)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Population",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "3 a. Discuss the concept of declining population.\nb. How would you explain the features of a declining population.",
+    "options": [],
+    "modelAnswer": "a) A declining population is one whose total size is falling over time, because the death rate exceeds the birth rate and/or emigration exceeds immigration (negative natural increase or net migration). It is associated with low fertility, ageing populations and, in some cases, war, famine or epidemics. Examples include Japan, Italy and several Eastern European countries.\nCauses: low birth rates (late marriage, family planning, high cost of raising children, women's education and employment); ageing population with more deaths; emigration of young people; wars, disease and disasters.\n\nb) Features (characteristics) of a declining population:\n1. Low birth rate, often below the replacement level of about 2.1 children per woman.\n2. A high proportion of old people and a small proportion of children (an ageing population); the population pyramid has a narrow base and a wide top.\n3. A high dependency ratio of the aged, putting pressure on pensions and health care.\n4. A shrinking labour force, leading to labour shortages and possible reliance on immigrant labour.\n5. Low labour mobility and a less adaptable workforce.\n6. Falling demand for goods and services (especially children's goods), which may reduce investment.\n7. A smaller tax base and heavier tax burden on workers.\n8. Possible fall in economies of scale and economic growth.\n9. Some advantages: less pressure on land, housing and social amenities, and possibly higher per capita income."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "National Income Accounting",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "4 a. Distinguish between Nominal Gross Domestic Product (GDP) and Real GDP.\nb. Mention and explain the three methods of measuring gross domestic product (GDP).",
+    "options": [],
+    "modelAnswer": "a) Nominal GDP is the total market value of all final goods and services produced within a country in a year, measured at current prices (prices of that year). It can rise because of inflation even if output does not increase.\nReal GDP is GDP measured at constant prices (prices of a base year), so the effect of price changes is removed. It shows the actual change in the volume of output and is a better measure of economic growth.\nReal GDP = (Nominal GDP/GDP deflator) × 100 (or Nominal GDP × base-year price index/current price index).\n\nb) The three methods:\n1. Output (product) method: GDP is the sum of the market values of all final goods and services produced by all sectors of the economy (agriculture, manufacturing, services, etc.) in a year. To avoid double counting, only final goods are counted, or the value added at each stage of production is added up.\n2. Income method: GDP is the sum of all incomes earned by the owners of the factors of production in producing the output: wages and salaries (labour), rent (land), interest (capital) and profits (entrepreneurship). Transfer payments (pensions, gifts, unemployment benefits) are excluded because they are not payments for current production.\n3. Expenditure method: GDP is the total expenditure on final goods and services produced in the country: GDP = C + I + G + (X − M), where C is household consumption, I is investment, G is government expenditure on goods and services, and X − M is net exports.\nIn theory, the three methods give the same total, because output = income = expenditure."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Growth and Development",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Differentiate between \"Balanced and Unbalanced\" growth",
+    "options": [],
+    "modelAnswer": "Balanced growth (associated with Ragnar Nurkse, Rosenstein-Rodan and others, including the 'big push' idea): a strategy of development in which investment is spread simultaneously over many sectors and industries (agriculture, industry, infrastructure, consumer goods), so that the different sectors grow together and provide markets for each other. It aims to break the vicious circle of poverty and the problem of a small market. Criticisms: it requires huge amounts of capital, skills and planning capacity, which developing countries lack.\n\nUnbalanced growth (associated with Albert Hirschman and Hans Singer): a strategy in which investment is concentrated deliberately in a few key or 'leading' sectors with strong forward and backward linkages. The resulting shortages and bottlenecks in other sectors create pressures and incentives for investment there, so growth spreads to the rest of the economy over time. It is considered more realistic for countries with scarce resources. Criticisms: it can create serious imbalances, inflation and regional inequality, and the linkages may not materialise.\n\nDifferences:\n1. Balanced growth invests in all sectors at once; unbalanced growth invests in selected sectors first.\n2. Balanced growth needs very large resources; unbalanced growth economises on scarce resources.\n3. Balanced growth aims to avoid shortages; unbalanced growth deliberately creates imbalances to stimulate investment.\n4. Balanced growth relies on complementary demand between sectors; unbalanced growth relies on linkages from leading sectors."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "International Economic Institutions",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Briefly explain the following terms and their functions:\ni. Africa development Bank (ADB)\nii. Organisation of Petroleum Exporting Countries (OPEC)\niii. World Bank (WB)",
+    "options": [],
+    "modelAnswer": "Note: the bank's official name is the African Development Bank (AfDB).\n\ni) African Development Bank: a regional multilateral development bank established in 1964 (began operations in 1966), with headquarters in Abidjan, Côte d'Ivoire. Its members are African countries plus non-African countries.\nFunctions: grants loans for development projects in member countries (agriculture, infrastructure, energy, education, health); provides concessional loans to poorer members through the African Development Fund; gives technical assistance and policy advice; promotes regional integration and private-sector investment; mobilises resources for Africa's development.\n\nii) Organisation of the Petroleum Exporting Countries: an intergovernmental organisation of major oil-exporting countries, founded in 1960 in Baghdad, with headquarters in Vienna, Austria. Nigeria joined in 1971.\nFunctions: coordinates and unifies the petroleum policies of member countries; stabilises oil prices in international markets, mainly by setting production quotas; secures a steady income for producers and a regular supply to consumers; ensures a fair return on capital for investors in the industry; promotes cooperation among members.\n\niii) World Bank: an international financial institution established in 1944 at the Bretton Woods Conference, with headquarters in Washington, D.C. Its main arms are the International Bank for Reconstruction and Development (IBRD) and the International Development Association (IDA).\nFunctions: provides long-term loans for development projects (roads, power, agriculture, education, health) to member countries; gives interest-free credits and grants to the poorest countries through IDA; offers technical assistance and policy advice; encourages private foreign investment (through the IFC and MIGA); aims to reduce poverty and promote sustainable development."
+  }
+]

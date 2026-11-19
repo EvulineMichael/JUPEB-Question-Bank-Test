@@ -87,7 +87,7 @@
     "questionNumber": "3a",
     "question": "(a) Given the following half-cell reactions:\nCr³⁺(aq) + 3e⁻ → Cr(s)  E° = -0.74 V\nNO₃⁻(aq) + 4H⁺(aq) + 3e⁻ → NO(g) + 2H₂O(l)  E° = +0.96 V\n(i) Write the balanced chemical equation for the cell reaction\n(ii) Determine the equilibrium constant at 300 K for the cell\n(R = 8.314 J/mol.K, F = 96500 C) [4 marks]",
     "options": [],
-    "modelAnswer": "(i) Cathode (reduction): NO₃⁻ + 4H⁺ + 3e⁻ → NO + 2H₂O\nAnode (oxidation): Cr → Cr³⁺ + 3e⁻\nOverall: Cr(s) + NO₃⁻(aq) + 4H⁺(aq) → Cr³⁺(aq) + NO(g) + 2H₂O(l)\n\n(ii) E°cell = 0.96 − (−0.74) = 1.70 V. n = 3.\nE°cell = (RT/nF) ln K → ln K = nFE°/RT = (3 × 96500 × 1.70)/(8.314 × 300) = 492150/2494.2 = 197.32.\nK = e^197.32 ≈ 2.1 × 10⁸⁵."
+    "modelAnswer": "(i) Cathode (reduction): NO₃⁻ + 4H⁺ + 3e⁻ → NO + 2H₂O\nAnode (oxidation): Cr → Cr³⁺ + 3e⁻\nOverall: Cr(s) + NO₃⁻(aq) + 4H⁺(aq) → Cr³⁺(aq) + NO(g) + 2H₂O(l)\n\n(ii) E°cell = 0.96 − (−0.74) = 1.70 V. n = 3.\nE°cell = (RT/nF) ln K → ln K = nFE°/RT = (3 × 96500 × 1.70)/(8.314 × 300) = 492150/2494.2 = 197.32.\nK = e^197.32. Convert to a power of ten: log₁₀K = 197.32/2.303 = 85.70, so K = 10^85.70 ≈ 5.0 × 10⁸⁵.\n(Such a huge K means the reaction goes essentially to completion.)"
   },
   {
     "subject": "Chemistry",
@@ -233,7 +233,7 @@
       "alt": "Structure of cyclohexene showing a six-membered carbon ring with one C=C double bond"
     },
     "options": [],
-    "modelAnswer": "(i) Type of polymerization: addition polymerization.\n\nProducts:\ni) With one molecule of H₂: cyclohexane.\nii) With one molecule of acidified KMnO₄: cyclohexane-1,2-diol (cis-1,2-cyclohexanediol)."
+    "modelAnswer": "(i) Type of polymerization: addition polymerization.\n\nProducts:\ni) With one molecule of H₂: cyclohexane.\nii) With acidified KMnO₄ the product depends on the conditions:\n• Hot, concentrated acidified KMnO₄ breaks the C=C bond completely and oxidises both ends to COOH, giving hexanedioic acid (adipic acid), HOOC(CH₂)₄COOH.\n• Cold, dilute (usually alkaline) KMnO₄ only adds two OH groups across the double bond, giving cyclohexane-1,2-diol.\nBecause the question says 'acidified', hexanedioic acid is the expected answer."
   },
   {
     "subject": "Chemistry",

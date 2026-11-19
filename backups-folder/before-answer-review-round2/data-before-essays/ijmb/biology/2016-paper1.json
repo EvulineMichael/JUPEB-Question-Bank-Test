@@ -1,0 +1,183 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "Following is a table presenting data on the concentration (mg) of Chlorophyll in the leaves of tomato plants grown over a period of 16 weeks with or without the application of nitrogenous fertilizer.\n\na) Used the data to answer the questions that follow:\ni. Plot a histogram to represent the data.\nii. Compute the percentage increase in chlorophyll content from week 2 to week 10 in each category of plants.\niii. Compute the percentage change from week 12 to week 16 in the control plants.\niv. State your observation on the trend of chlorophyll concentration in the two categories of plants.\nv. What is the role of nitrogenous substances in chlorophyll structure.",
+    "dataTable": {
+      "headers": [
+        "Time",
+        "No fertilizer",
+        "Fertilizer applied"
+      ],
+      "rows": [
+        [
+          "2",
+          "15.5",
+          "16.5"
+        ],
+        [
+          "4",
+          "20.5",
+          "29.0"
+        ],
+        [
+          "6",
+          "44.0",
+          "57.0"
+        ],
+        [
+          "8",
+          "49.0",
+          "80.5"
+        ],
+        [
+          "10",
+          "70.5",
+          "150.0"
+        ],
+        [
+          "12",
+          "80.0",
+          "170.0"
+        ],
+        [
+          "14",
+          "75.0",
+          "175.0"
+        ],
+        [
+          "16",
+          "65.0",
+          "180.0"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "(i) Note: a histogram is strictly used for frequency data of a continuous variable. These data are measurements taken at fixed times, so a side-by-side (compound) bar chart is the appropriate graph.\nHow to plot:\n1. Draw the x-axis for time (weeks: 2, 4, 6, 8, 10, 12, 14, 16) and the y-axis for chlorophyll concentration (mg), from 0 to 200 mg using a suitable scale (e.g., 2 cm to 20 mg).\n2. At each week, draw two bars side by side: one for 'No fertilizer' and one for 'Fertilizer applied', each reaching its value from the table.\n3. Shade or colour the two categories differently and add a key.\n4. Give the graph a title, e.g., 'Chlorophyll concentration in tomato leaves with and without nitrogenous fertilizer', and label both axes with their units.\n\n(ii) Percentage increase = (final − initial)/initial × 100.\nNo fertilizer: (70.5 − 15.5)/15.5 × 100 = 55.0/15.5 × 100 = 354.8%.\nFertilizer applied: (150.0 − 16.5)/16.5 × 100 = 133.5/16.5 × 100 = 809.1%.\n\n(iii) The control plants are those grown with no fertilizer.\nPercentage change = (65.0 − 80.0)/80.0 × 100 = −15.0/80.0 × 100 = −18.75%.\nChlorophyll content fell by 18.75% from week 12 to week 16.\n\n(iv) Observations:\n1. In both categories, chlorophyll concentration increased with time in the early weeks.\n2. In the control plants, it rose from 15.5 mg to a peak of 80.0 mg at week 12, then declined to 65.0 mg at week 16.\n3. In the fertilized plants, it rose throughout, from 16.5 mg to 180.0 mg. The sharpest rise was between weeks 8 and 10 (80.5 to 150.0 mg); the rise then slowed and began to level off (170.0, 175.0, 180.0 mg).\n4. At every week, fertilized plants had more chlorophyll than control plants, and the gap widened with time; by week 16 they had about 2.8 times as much (180.0/65.0).\n5. Conclusion: nitrogenous fertilizer increases chlorophyll production and keeps the level from declining.\n\n(v) Role of nitrogenous substances in chlorophyll structure:\n1. Nitrogen is a structural component of the chlorophyll molecule. Chlorophyll has a porphyrin (tetrapyrrole) head made of four pyrrole rings, each containing a nitrogen atom; the four nitrogen atoms hold the central magnesium ion (chlorophyll a is C₅₅H₇₂O₅N₄Mg).\n2. Nitrogen is also needed to make the enzymes and proteins used in chlorophyll synthesis.\n3. Shortage of nitrogen therefore reduces chlorophyll formation, causing chlorosis (yellowing), which appears first in older leaves because nitrogen is mobile in the plant."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Biological Methods and Application",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "b) Explain the following statistical terms:\ni. Discrete variable\nii. Variance\niii. Measures of central tendency.",
+    "options": [],
+    "modelAnswer": "(i) A discrete variable is one that can take only distinct, separate (countable) values, usually whole numbers, with no values in between. Examples: number of leaves on a plant, number of seeds in a pod, number of petals on a flower. (In contrast, a continuous variable, such as plant height, can take any value within a range.)\n\n(ii) Variance is a measure of dispersion: it shows how widely a set of values is spread about the mean. It is the mean of the squared deviations from the mean:\nσ² = Σ(x − x̄)²/n (for a sample, s² = Σ(x − x̄)²/(n − 1)).\nThe square root of the variance is the standard deviation. A large variance means the values are widely scattered; a small variance means they are close to the mean.\n\n(iii) Measures of central tendency are single values that represent the centre, or typical value, of a set of data. The three main ones are:\n1. Mean: the sum of all values divided by the number of values (x̄ = Σx/n).\n2. Median: the middle value when the data are arranged in order (the average of the two middle values if n is even).\n3. Mode: the value that occurs most frequently."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Taxonomy of Lower and Higher Plants",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "c) Answer the following questions by providing the most appropriate responses in the blank spaces. Write down your answers in the answer booklet.\ni. The fruiting body of Ascomycetes is ________.\nii. During photosynthesis in C4 plants, the primary carbon acceptor is ________.\niii. The plant hormone that regulates apical dominance is ________.\niv. Sexual reproduction in Oomycetes is by ________.\nv. The respiratory process that yields alcohol in plant cells is called ________.",
+    "options": [],
+    "modelAnswer": "(i) Ascocarp (types include cleistothecium, perithecium and apothecium).\n\n(ii) Phosphoenolpyruvate (PEP). It combines with CO₂ (catalysed by PEP carboxylase) to form the 4-carbon compound oxaloacetate.\n\n(iii) Auxin (indole-3-acetic acid, IAA), produced by the apical bud. It suppresses the growth of lateral buds.\n\n(iv) Oogamy: fusion of a male nucleus from an antheridium with an egg in an oogonium, forming a thick-walled oospore.\n\n(v) Alcoholic fermentation (anaerobic respiration), which yields ethanol and carbon dioxide."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Plant Tissues and Functions",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) What are meristems and their functions?",
+    "options": [],
+    "modelAnswer": "Meristems are regions of actively dividing, undifferentiated cells in plants. Meristematic cells are small, thin-walled, have dense cytoplasm and large nuclei, have few or no vacuoles, and have no intercellular spaces. They divide repeatedly by mitosis to produce new cells, which then differentiate into permanent tissues.\n\nTypes and functions:\n1. Apical meristems: found at the tips of roots and shoots. They cause primary growth, increasing the length of the plant, and give rise to new leaves, branches and flowers.\n2. Lateral meristems: the vascular cambium and the cork cambium (phellogen). They cause secondary growth, increasing the girth (thickness) of stems and roots. Vascular cambium produces secondary xylem and phloem; cork cambium produces cork (bark).\n3. Intercalary meristems: found at the bases of internodes and leaves, especially in grasses. They allow regrowth of leaves and stems after grazing or cutting.\n\nGeneral functions of meristems: producing new cells for growth, forming all the plant's tissues and organs, and repairing wounds."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Growth in Higher Plants and Growth Regulators",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Outline how named physical factors of the environment influence plant growth.",
+    "options": [],
+    "modelAnswer": "1. Light: needed for photosynthesis, which provides the food for growth. It controls the direction of growth (phototropism) and flowering (photoperiodism). Plants grown in darkness become etiolated: tall, thin and yellow.\n\n2. Temperature: controls the rate of enzyme-catalysed processes such as photosynthesis and respiration. Growth is fastest at an optimum temperature and slows when it is too high or too low. Some plants need a cold period before they flower (vernalization) or before seeds germinate.\n\n3. Water: needed for seed germination, for photosynthesis, and for transporting nutrients. It keeps cells turgid; cell enlargement depends on water uptake. Shortage causes wilting and stunted growth; waterlogging deprives roots of oxygen.\n\n4. Soil (edaphic) factors: soil texture, aeration and pH affect root growth and how readily mineral nutrients are available to the plant.\n\n5. Gravity: causes roots to grow downwards and shoots upwards (geotropism).\n\n6. Wind and humidity: wind increases transpiration and can deform or break plants; humidity affects the rate of transpiration and water loss."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Plant Reproduction",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Describe the process of double fertilization in angiosperms.",
+    "options": [],
+    "modelAnswer": "Double fertilization is the fusion of two male gametes from one pollen grain with two different nuclei in the embryo sac. It occurs only in angiosperms.\n\n1. After pollination, the pollen grain lands on a compatible stigma, absorbs sugary fluid and germinates, producing a pollen tube.\n2. The pollen tube grows down through the style towards the ovary, digesting the tissues with enzymes. The tube nucleus leads at the tip, followed by the generative nucleus.\n3. The generative nucleus divides by mitosis to form two male gametes (male nuclei).\n4. The pollen tube enters the ovule, usually through the micropyle, and penetrates the embryo sac, often through a synergid. The tip bursts and releases the two male gametes; the tube nucleus degenerates.\n5. First fusion: one male gamete (n) fuses with the egg cell (n) to form a diploid zygote (2n), which develops into the embryo.\n6. Second fusion (triple fusion): the other male gamete (n) fuses with the two polar nuclei (or the diploid secondary nucleus) to form a triploid primary endosperm nucleus (3n), which develops into the endosperm, the food store for the developing embryo.\n7. The synergids and antipodal cells degenerate.\n\nAfter fertilization, the ovule becomes the seed, the integuments become the testa (seed coat), and the ovary becomes the fruit.\n\nDiagram: draw a labelled longitudinal section of an ovule showing the pollen tube entering through the micropyle, the egg cell, synergids, polar nuclei, antipodal cells, nucellus and integuments."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Plant Reproduction",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Explain the term ‘alternation of generations’.",
+    "options": [],
+    "modelAnswer": "Alternation of generations is the occurrence in the life cycle of a plant of two distinct generations that follow each other in turn:\n1. Gametophyte generation (haploid, n): produces gametes by mitosis. The gametes fuse at fertilization to form a diploid zygote.\n2. Sporophyte generation (diploid, 2n): develops from the zygote and produces haploid spores by meiosis. Each spore grows into a new gametophyte.\n\nThe cycle therefore alternates between a sexual (gametophyte) and an asexual (sporophyte) generation. In mosses the gametophyte is the dominant generation and the sporophyte depends on it. In ferns and seed plants the sporophyte is dominant."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Plant Reproduction",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Describe the life cycle of a named moss.",
+    "options": [],
+    "modelAnswer": "Named moss: Funaria hygrometrica (or Polytrichum).\n\n1. The main plant is the gametophyte (haploid). It is a leafy shoot attached to the soil by rhizoids.\n2. Sex organs form at the tips of the shoots. Male organs (antheridia) produce many biflagellate antherozoids; female organs (archegonia) are flask-shaped, each containing one egg in its swollen venter. In Funaria, antheridia are on the main shoot and archegonia on a side branch of the same plant.\n3. Fertilization needs water: antherozoids swim through a film of rain or dew to the archegonium, attracted chemically, and one fuses with the egg to form a diploid zygote.\n4. The zygote divides to form the sporophyte, which consists of a foot (embedded in the gametophyte for absorbing food and water), a long stalk (seta), and a capsule. The sporophyte depends on the gametophyte for nourishment.\n5. Inside the capsule, spore mother cells undergo meiosis to form haploid spores.\n6. When the capsule is ripe, the lid (operculum) falls off. The hygroscopic peristome teeth open in dry weather and close in wet weather, releasing the spores gradually.\n7. A spore that lands in a moist place germinates into a green, branched filament called the protonema.\n8. Buds form on the protonema and grow into new leafy gametophyte shoots, completing the cycle.\n\nThis life cycle shows alternation of a dominant haploid gametophyte with a dependent diploid sporophyte.\n\nDiagram: draw a labelled life-cycle diagram showing the leafy gametophyte, antheridium, archegonium, zygote, sporophyte (foot, seta, capsule), spores and protonema."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Microorganisms and their Application in Biotechnology",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) State the beneficial roles of bacteria in agriculture and food processing giving specific examples.",
+    "options": [],
+    "modelAnswer": "In agriculture:\n1. Nitrogen fixation: Rhizobium in the root nodules of legumes, and free-living Azotobacter and Clostridium, convert atmospheric nitrogen into nitrogen compounds that plants can use. Cyanobacteria such as Anabaena and Nostoc fix nitrogen in rice fields.\n2. Nitrification: Nitrosomonas converts ammonium compounds to nitrites, and Nitrobacter converts nitrites to nitrates, which plants absorb.\n3. Decomposition: saprophytic bacteria break down dead organic matter, releasing nutrients and forming humus, which improves soil fertility (e.g., in compost making).\n4. Biological pest control: Bacillus thuringiensis produces a toxin that kills insect pests.\n5. Silage making: lactic acid bacteria ferment stored fodder for livestock.\n6. Retting: Clostridium species soften plant stems to release fibres such as jute and flax.\n\nIn food processing:\n1. Yoghurt: Lactobacillus bulgaricus and Streptococcus thermophilus ferment milk sugar (lactose) to lactic acid.\n2. Cheese and butter: Lactococcus lactis (Streptococcus lactis) sours and curdles milk.\n3. Vinegar: Acetobacter oxidises ethanol to acetic acid.\n4. Fermented local foods: lactic acid bacteria (e.g., Lactobacillus plantarum, Leuconostoc) in the fermentation of cassava for garri and fufu and of cereals for ogi; Bacillus subtilis in the fermentation of locust beans for iru (dawadawa).\n5. Pickles and sauerkraut: lactic acid bacteria ferment vegetables.\n6. Vitamins: some bacteria are used to produce vitamins, such as vitamin B₁₂."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Microorganisms and their Application in Biotechnology",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) State the ways of food processing by which bacterial activity is controlled.",
+    "options": [],
+    "modelAnswer": "1. Heating: boiling, pasteurization (e.g., milk at 72°C for 15 s) and sterilization kill bacteria.\n2. Canning: food is heated in sealed cans, killing bacteria and preventing reinfection.\n3. Refrigeration and freezing: low temperatures slow or stop bacterial growth.\n4. Drying (dehydration), e.g., sun-drying fish, grains and meat: removes the water bacteria need.\n5. Salting: high salt concentration draws water out of bacterial cells by osmosis (e.g., salted fish and meat).\n6. Sugaring: high sugar concentration works the same way (e.g., jams and syrups).\n7. Smoking: dries the food and coats it with antibacterial chemicals (e.g., smoked fish).\n8. Pickling: vinegar (acetic acid) lowers the pH below the level at which most bacteria can grow.\n9. Chemical preservatives, e.g., sodium benzoate, sulphur dioxide and nitrites.\n10. Irradiation: gamma rays or ultraviolet light kill bacteria.\n11. Vacuum packing: removing air stops the growth of aerobic bacteria."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Structures, Morphology and Characteristics of Microorganisms",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) Outline the general characteristics of viruses.",
+    "options": [],
+    "modelAnswer": "1. Viruses are acellular: they have no cell membrane, cytoplasm, ribosomes or organelles.\n2. They are extremely small (about 20 to 300 nm), pass through bacterial filters, and can be seen only with an electron microscope.\n3. Each virus contains only one type of nucleic acid, either DNA or RNA, never both.\n4. The nucleic acid is enclosed in a protein coat (capsid) made of subunits called capsomeres. Some viruses also have an outer lipid envelope.\n5. They are obligate intracellular parasites: they reproduce only inside living host cells, using the host's enzymes and ribosomes.\n6. Outside a host cell they are inert, show no metabolism, and can be crystallised (e.g., tobacco mosaic virus).\n7. They are host-specific, infecting particular plants, animals or bacteria (bacteriophages).\n8. They can mutate, producing new strains.\n9. They are not affected by antibiotics.\n10. Many cause diseases, e.g., tobacco mosaic and cassava mosaic in plants; HIV/AIDS, measles and polio in humans.\n\nDiagram: draw a labelled bacteriophage showing the head (capsid), nucleic acid, tail sheath, tail fibres and base plate."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper I",
+    "category": "Ecology",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Write explanatory notes on the following ecological terms.\n(a) Acid rain\n(b) Ozone layer depletion\n(c) Ecological succession\n(d) Community.",
+    "options": [],
+    "modelAnswer": "(a) Acid rain: rain, snow or fog that is more acidic than normal, with a pH below about 5.6.\nCause: burning fossil fuels in vehicles, power stations and industries releases sulphur dioxide (SO₂) and nitrogen oxides (NOₓ). These dissolve in atmospheric water and are oxidised to form sulphuric acid and nitric acid.\nEffects: it leaches nutrients from the soil and damages leaves, harming crops and forests. It acidifies lakes and rivers, killing fish and other aquatic organisms. It corrodes buildings, metals and monuments.\nControl: reducing emissions with scrubbers and catalytic converters, using low-sulphur fuels, and adding lime to acidified lakes and soils.\n\n(b) Ozone layer depletion: the thinning of the ozone (O₃) layer in the stratosphere, which shields the earth from harmful ultraviolet (UV) radiation.\nCause: chlorofluorocarbons (CFCs) from refrigerators, air conditioners and aerosol sprays, as well as halons and nitrogen oxides. In the stratosphere, UV light breaks CFCs down to release chlorine atoms. These destroy ozone in a chain reaction:\nCl + O₃ → ClO + O₂\nClO + O → Cl + O₂\nThe chlorine atom is regenerated, so one atom can destroy thousands of ozone molecules.\nEffects: more UV radiation reaches the earth, causing skin cancer, cataracts and weakened immunity in humans, damage to crops, and harm to plankton and other aquatic life.\nControl: phasing out CFCs (the Montreal Protocol, 1987) and using ozone-friendly substitutes.\n\n(c) Ecological succession: the gradual, orderly change in the species composition of a community over time, until a stable climax community is reached.\nThe series of communities is called a sere, and each stage is a seral stage.\nPrimary succession starts on bare ground with no soil, e.g., bare rock or new volcanic land. Pioneer organisms such as lichens break down the rock and begin forming soil. They are followed by mosses, then grasses and herbs, then shrubs, and finally trees.\nSecondary succession starts on ground where soil already exists but the vegetation has been removed, e.g., abandoned farmland or land cleared by fire. It is faster than primary succession.\nAs succession proceeds, soil depth and fertility, species diversity and biomass increase. The climax community is stable and in balance with the climate.\n\n(d) Community: all the populations of different species of organisms living together and interacting in a particular area at a particular time, e.g., all the plants, animals and microorganisms in a pond or a forest.\nFeatures of a community: species composition and diversity; dominant species, which give the community its character; stratification (layering), e.g., in a forest; feeding relationships (food chains and webs); and interactions between species such as competition, predation, parasitism and mutualism.\nA community together with its non-living environment forms an ecosystem."
+  }
+]

@@ -1,0 +1,216 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Dynamics (Newton's Laws and Forces)",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) (i) State two differences between a perfectly elastic collision and a perfectly inelastic collision. [1 mark]\n(ii) State the Impulse-Momentum theorem. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) 1. In a perfectly elastic collision, kinetic energy is conserved; in a perfectly inelastic collision, kinetic energy is not conserved (lost as heat/deformation).\n2. In a perfectly elastic collision, the bodies separate after collision; in a perfectly inelastic collision, the bodies stick together and move with a common velocity.\n\n(ii) Impulse-Momentum theorem: The impulse acting on a body is equal to the change in momentum of the body (FΔt = Δp = mv − mu)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Dynamics (Newton's Laws and Forces)",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) (i) A 7500kg truck travelling at 5m/s east collides with a 1500kg car moving at 20m/s in a direction 30° south of west. After collision, the two vehicles remain tangled together. With what speed and in what direction does the wreckage begin to move? [5 marks]\n(ii) If the earth is a sphere of radius 6.38 × 10⁶ m and the acceleration, g due to gravity on the earth is 9.8 m/s², find the average density of the earth. [Take Gravitational Constant G = 6.67 × 10⁻¹¹ Nm²/kg²]. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) Take east as +x and north as +y.\nTruck momentum: p₁ = 7500 × 5 = 37500 kg m/s (east, +x).\nCar momentum: 20 m/s at 30° south of west → components: x = −20cos30° = −17.32 m/s; y = −20sin30° = −10 m/s.\np₂ = 1500(−17.32, −10) = (−25980, −15000) kg m/s.\nTotal momentum: P = (37500 − 25980, −15000) = (11520, −15000) kg m/s.\nTotal mass = 9000 kg.\nVelocity components: vx = 11520/9000 = 1.28 m/s; vy = −15000/9000 = −1.667 m/s.\nSpeed = √(1.28² + 1.667²) = √(1.638 + 2.779) = √4.417 = 2.10 m/s.\nDirection: θ = tan⁻¹(1.667/1.28) = 52.5° south of east.\n\n(ii) g = GM/R² → M = gR²/G = (9.8 × (6.38 × 10⁶)²)/(6.67 × 10⁻¹¹) = (9.8 × 4.070 × 10¹³)/(6.67 × 10⁻¹¹) = 3.989 × 10¹⁴/6.67 × 10⁻¹¹ = 5.98 × 10²⁴ kg.\nVolume = (4/3)πR³ = (4/3)π(6.38 × 10⁶)³ = 1.088 × 10²¹ m³.\nDensity = M/V = 5.98 × 10²⁴/1.088 × 10²¹ = 5.50 × 10³ kg/m³."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) Define:\n(i) Young's Modulus. [1 mark]\n(ii) Stress. [1 mark]\n(iii) Strain. [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Young's modulus is the ratio of tensile stress to tensile strain within the elastic limit of a material.\n(ii) Stress is the force acting per unit cross-sectional area of a material (σ = F/A), measured in N/m² or Pa.\n(iii) Strain is the fractional change in dimension (extension per unit original length) of a material (ε = e/L), dimensionless."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) State Hooke's Law and write the mathematical expression. [2 marks]",
+    "options": [],
+    "modelAnswer": "Hooke's Law: The extension of an elastic material is directly proportional to the applied force (or stress is directly proportional to strain), provided the elastic limit is not exceeded.\nMathematical expression: F = ke (or σ = Eε), where k is the force constant and e is the extension."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) A wire of length 1 m and cross-sectional area 100 cm² is fixed at one end. A mass of 10 kg is attached to the other end, which produces an extension of 2 cm. If the elastic limit is not exceeded, calculate the:\n(i) strain [1 mark]\n(ii) stress [1 mark]\n(iii) Young Modulus [1 mark]\n(iv) force constant [1 mark]\n(v) the energy stored in the wire. [g = 9.8 m/s²] [1 mark]",
+    "options": [],
+    "modelAnswer": "L = 1 m; A = 100 cm² = 100 × 10⁻⁴ = 0.01 m²; m = 10 kg; e = 2 cm = 0.02 m.\n(i) Strain = e/L = 0.02/1 = 0.02.\n(ii) Stress = F/A = (10 × 9.8)/0.01 = 98/0.01 = 9800 N/m².\n(iii) Young modulus E = stress/strain = 9800/0.02 = 4.9 × 10⁵ N/m².\n(iv) Force constant k = F/e = 98/0.02 = 4900 N/m.\n(v) Energy stored = ½Fe = ½ × 98 × 0.02 = 0.98 J."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) State two properties of the image formed by a concave mirror of focal length 15cm when the object is kept at the following positions:\n(i) 35cm;\n(ii) 30cm;\n(iii) 15cm; and\n(iv) 10cm respectively. [3½ marks]",
+    "options": [],
+    "modelAnswer": "f = 15 cm.\n(i) u = 35 cm (beyond C=30 cm): 1/v = 1/15 − 1/35 = (7−3)/105 = 4/105 → v = 26.25 cm. Image: real, inverted, diminished (between F and C).\n(ii) u = 30 cm (at C): v = 30 cm. Image: real, inverted, same size, at C.\n(iii) u = 15 cm (at F): v = ∞. Image: at infinity, highly magnified, real and inverted.\n(iv) u = 10 cm (between F and P): 1/v = 1/15 − 1/10 = (2−3)/30 = −1/30 → v = −30 cm. Image: virtual, erect, magnified, behind the mirror."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) (i) Explain the term \"dispersion of light\". [1 mark]\n(ii) A parallel beam of white light incident on a 60° prism passes symmetrically through a prism. Calculate the deviations of the blue and red light caused by refraction through the prism assuming refractive indices for red and blue light of 1.604 and 1.620 respectively.\n(iii) From (ii) above, the light emerging from the prism is focused on to a screen by means of a lens of focal length 25cm. If the linear dispersion on the screen is fθ where f is the focal length and θ is the angular dispersion in radian, calculate the length of the spectrum seen on the screen. [5½ marks]",
+    "options": [],
+    "modelAnswer": "(i) Dispersion of light is the splitting of white light into its constituent colours (spectrum) when it passes through a refracting medium such as a prism, due to different refractive indices for different wavelengths.\n\n(ii) Symmetrical passage: r₁ = r₂ = A/2 = 30°.\nFor red: sin i = n sin r = 1.604 × sin 30° = 0.802 → i = 53.3°. Deviation δ_red = 2i − A = 106.6° − 60° = 46.6°.\nFor blue: sin i = 1.620 × 0.5 = 0.810 → i = 54.1°. δ_blue = 108.2° − 60° = 48.2°.\n\n(iii) Angular dispersion θ = δ_blue − δ_red = 48.2° − 46.6° = 1.6° = 0.0279 rad.\nLength of spectrum = fθ = 0.25 × 0.0279 = 6.98 × 10⁻³ m ≈ 7.0 mm."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Explain the following terms as related to wave motion:\n(i) amplitude [1 mark]\n(ii) wavelength [1 mark]\n(iii) frequency [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Amplitude: the maximum displacement of a particle from its equilibrium position in a wave.\n(ii) Wavelength: the distance between two successive points in phase on a wave (e.g., crest to crest), measured in metres.\n(iii) Frequency: the number of complete oscillations (cycles) made by a particle per second, measured in hertz (Hz)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) If Y = 45sin(500πt - 0.25πx) is an equation for a plane travelling wave, where Y is the displacement in cm, time, t is in seconds. Calculate the:\n(i) wavelength of the wave [2½ marks]\n(ii) speed [1½ marks]\n(iii) frequency [1½ marks]\n(iv) period. [1½ marks]",
+    "options": [],
+    "modelAnswer": "Compare with Y = A sin(ωt − kx): ω = 500π rad/s; k = 0.25π rad/m.\n(i) Wavelength λ = 2π/k = 2π/(0.25π) = 8 m.\n(ii) Speed v = ω/k = 500π/(0.25π) = 2000 m/s.\n(iii) Frequency f = ω/(2π) = 500π/(2π) = 250 Hz.\n(iv) Period T = 1/f = 1/250 = 0.004 s = 4 ms."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) State Kirchhoff's laws. [2 marks]",
+    "options": [],
+    "modelAnswer": "Kirchhoff's current law (junction rule): The algebraic sum of currents at a junction in a circuit is zero (sum of currents entering = sum of currents leaving).\n\nKirchhoff's voltage law (loop rule): The algebraic sum of the potential differences around any closed loop in a circuit is zero."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) In the circuit shown above, the cell A has an emf of 2 V and negligible internal resistance. OP is a uniform wire of length 1.0 m and resistance of 5.0 Ω. Cell B has an emf of 1.5 V and internal resistance of 0.8 Ω. G is a center-zero galvanometer. Calculate the length OX:\n(i) required to produce no deflection in G [2 marks]\n(ii) When a 1.0 Ω resistor is placed in parallel with B [2 marks]\n(iii) When a 1.0 Ω resistor is placed in series with A [2 marks]\n(iv) When a 1.0 Ω resistor is placed in series with B [2 marks]",
+    "image": {
+      "src": "/images/questions/physics/2026/type-c/phy-2026-essay-5b.png",
+      "alt": "Potentiometer circuit diagram. Cell A is connected across the full length OP of a uniform wire. Cell B is in series with a galvanometer G, connected to point O and a sliding contact X on the wire OP."
+    },
+    "options": [],
+    "modelAnswer": "Potentiometer: potential gradient along OP = 2 V/1.0 m = 2 V/m. Balanced when p.d. across OX equals the emf (or terminal p.d.) of cell B.\n\n(i) No deflection: V_OX = 1.5 V → OX = 1.5/2 = 0.75 m.\n\n(ii) 1.0 Ω in parallel with B: terminal p.d. of B = E × R_ext/(R_ext + r), where R_ext = 1.0 Ω. V = 1.5 × 1.0/(1.0 + 0.8) = 0.833 V. OX = 0.833/2 = 0.417 m.\n\n(iii) 1.0 Ω in series with A: new current in potentiometer wire: I = 2/(5.0 + 1.0) = 0.333 A; p.d. across OP = 0.333 × 5.0 = 1.667 V; gradient = 1.667 V/m. OX = 1.5/1.667 = 0.900 m.\n\n(iv) 1.0 Ω in series with B: total resistance of B branch = 0.8 + 1.0 = 1.8 Ω; no current at balance, so terminal p.d. = emf = 1.5 V (no current flows through B at balance). OX = 1.5/2 = 0.75 m."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) (i) State Faraday's law of electromagnetic induction. [2 marks]\n(ii) Define magnetic flux. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) Faraday's law: The magnitude of the induced e.m.f. in a circuit is directly proportional to the rate of change of magnetic flux linkage through the circuit (E = −N dΦ/dt).\n\n(ii) Magnetic flux is the total number of magnetic field lines passing through a given surface area; it is the product of the magnetic flux density and the area perpendicular to the field (Φ = BA cosθ), measured in webers (Wb)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Force on Conductor and Moving Charge",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) An electron is travelling at right angle to a uniform magnetic field of flux density 2.0 mT. The speed of the electron is 7.10 × 10⁷ m/s. Calculate:\n(i) the radius of the circular path described by this electron; and [1 mark]\n(ii) the magnetic force. [2 marks]\n[Assume the charge and mass are -1.6 × 10⁻¹⁹ C and mₑ = 9.1 × 10⁻³¹ kg respectively for an electron].",
+    "options": [],
+    "modelAnswer": "(i) r = mv/(qB) = (9.1 × 10⁻³¹ × 7.10 × 10⁷)/(1.6 × 10⁻¹⁹ × 2.0 × 10⁻³) = (6.461 × 10⁻²³)/(3.2 × 10⁻²²) = 0.202 m.\n\n(ii) F = qvB = 1.6 × 10⁻¹⁹ × 7.10 × 10⁷ × 2.0 × 10⁻³ = 2.27 × 10⁻¹⁴ N."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) The north pole of a bar magnet is placed on top of a square coil of cross-sectional area 4.0 × 10⁻⁴ m². The coil has 700 turns. When the magnet is quickly removed from the coil in a time of 0.4 s, the average induced e.m.f. in the coil is 32 mV. Calculate the magnetic flux density at the pole of the magnet. [3 marks]",
+    "options": [],
+    "modelAnswer": "E = NΔΦ/Δt → ΔΦ = EΔt/N = (32 × 10⁻³ × 0.4)/700 = 1.28 × 10⁻²/700 = 1.829 × 10⁻⁵ Wb.\nΔΦ = B × A (flux changes from BA to 0) → B = ΔΦ/A = 1.829 × 10⁻⁵/4.0 × 10⁻⁴ = 0.0457 T ≈ 4.57 × 10⁻² T."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) How does the Compton effect differ from the photoelectric effect? [2 marks]",
+    "options": [],
+    "modelAnswer": "In the photoelectric effect, a photon is completely absorbed by an electron, ejecting it from a metal surface (the photon disappears). In the Compton effect, a photon collides with a loosely bound/free electron and is scattered with reduced energy (increased wavelength), while the electron recoils — the photon is not completely absorbed. Compton effect involves X-rays/gamma rays and shows both particle nature and momentum conservation; photoelectric effect demonstrates the particle nature of light and depends on threshold frequency."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) The radius of the sun is 6.96 × 10⁸ m, and its total power output is 3.85 × 10²⁶ W. Assuming the sun's surface emits as a black body, calculate:\n(i) its surface temperature; and [3 marks]\n(ii) the maximum wavelength of light from the sun. [2 marks]",
+    "options": [],
+    "modelAnswer": "(i) P = σAT⁴ → T⁴ = P/(σA) = 3.85 × 10²⁶/(5.67 × 10⁻⁸ × 4π(6.96 × 10⁸)²)\nA = 4π(6.96 × 10⁸)² = 4π × 4.844 × 10¹⁷ = 6.087 × 10¹⁸ m².\nσA = 5.67 × 10⁻⁸ × 6.087 × 10¹⁸ = 3.452 × 10¹¹.\nT⁴ = 3.85 × 10²⁶/3.452 × 10¹¹ = 1.115 × 10¹⁵ → T = (1.115 × 10¹⁵)^(1/4) = 5.78 × 10³ K ≈ 5780 K.\n\n(ii) Wien's law: λ_max = b/T = 2.898 × 10⁻³/5780 = 5.01 × 10⁻⁷ m = 501 nm."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) The wavelength of the yellow spectral emission line of sodium is 590 nm. At what kinetic energy would an electron have that wavelength as its de Broglie wavelength? [3 marks]",
+    "options": [],
+    "modelAnswer": "λ = h/p → p = h/λ = 6.626 × 10⁻³⁴/590 × 10⁻⁹ = 1.123 × 10⁻²⁷ kg m/s.\nKE = p²/(2m) = (1.123 × 10⁻²⁷)²/(2 × 9.11 × 10⁻³¹) = 1.261 × 10⁻⁵⁴/1.822 × 10⁻³⁰ = 6.92 × 10⁻²⁵ J.\nIn eV: 6.92 × 10⁻²⁵/1.6 × 10⁻¹⁹ = 4.33 × 10⁻⁶ eV."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Differentiate between nuclear fission and nuclear fusion [2 marks]",
+    "options": [],
+    "modelAnswer": "Nuclear fission is the splitting of a heavy nucleus (e.g., U-235) into two lighter nuclei of comparable mass, with release of energy and neutrons. Nuclear fusion is the joining of two light nuclei (e.g., deuterium and tritium) to form a heavier nucleus, with release of a large amount of energy. Fission occurs at ordinary temperatures with heavy elements; fusion requires extremely high temperatures (thermonuclear) and involves light elements."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Define:\n(i) half-life of a radioactive substance [1 mark]\n(ii) Nuclear binding energy [1 mark]",
+    "options": [],
+    "modelAnswer": "(i) Half-life: the time taken for half of the radioactive nuclei in a given sample to decay (or for the activity to fall to half its original value).\n\n(ii) Nuclear binding energy: the energy required to separate all the nucleons (protons and neutrons) of a nucleus completely into individual free nucleons."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) (i) Write down the Einstein's Energy-Mass relation.\n(ii) The thermonuclear process that powers the sun can be written as: 4¹₁H → ⁴₂He + 2⁰₁e. Neglecting the mass of the positron, calculate the energy released in each reaction given that mass of Helium atom is 4.00386 amu; mass of Hydrogen atom is 1.00813 amu; 1 amu = 1.66 × 10⁻²⁷ kg and speed of light c = 3.00 × 10⁸ ms⁻¹. [3 marks]",
+    "options": [],
+    "modelAnswer": "(i) E = mc².\n\n(ii) Mass of reactants = 4 × 1.00813 = 4.03252 amu.\nMass of products (neglecting positron mass) = 4.00386 amu.\nΔm = 4.03252 − 4.00386 = 0.02866 amu.\nΔm in kg = 0.02866 × 1.66 × 10⁻²⁷ = 4.758 × 10⁻²⁹ kg.\nE = mc² = 4.758 × 10⁻²⁹ × (3.00 × 10⁸)² = 4.758 × 10⁻²⁹ × 9.0 × 10¹⁶ = 4.28 × 10⁻¹² J."
+  },
+  {
+    "subject": "Physics",
+    "year": 2026,
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "8d",
+    "question": "(d) (i) Determine the wavelength of the X-ray that was Bragg-diffracted by a cobalt crystal of interatomic spacing of 4.07 × 10⁻¹⁰ m if the first order scattering angle is 24°. [3 marks]",
+    "options": [],
+    "modelAnswer": "Bragg's law: nλ = 2d sinθ → λ = 2d sinθ/n = 2 × 4.07 × 10⁻¹⁰ × sin 24°/1 = 2 × 4.07 × 10⁻¹⁰ × 0.4067 = 3.31 × 10⁻¹⁰ m = 0.331 nm."
+  }
+]

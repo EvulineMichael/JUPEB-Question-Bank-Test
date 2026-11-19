@@ -1,0 +1,101 @@
+[
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "What are the major contributions of Max Weber to the development of Sociology as a scientific study of society?",
+    "options": [],
+    "modelAnswer": "Max Weber (1864–1920), a German sociologist, is one of the three classical founders of sociology (with Durkheim and Marx). His main contributions are:\n\n1. Verstehen (interpretive understanding): Weber argued that sociology must understand the meanings people attach to their actions, not just observe behaviour from outside. He defined sociology as the science that seeks the interpretive understanding of social action in order to explain its causes and effects.\n\n2. Theory of social action: He classified action into four types: instrumentally rational (means–end), value-rational (guided by a belief, e.g. religious duty), affectual (driven by emotion) and traditional (done because it has always been done).\n\n3. The ideal type: a methodological tool, an abstract model built from the typical features of a phenomenon (e.g. bureaucracy, capitalism), against which real cases can be compared and measured.\n\n4. The Protestant Ethic and the Spirit of Capitalism (1905): he showed that ideas can cause social change. Calvinist beliefs (predestination, hard work, thrift, worldly success as a sign of grace) encouraged the disciplined, saving and reinvesting behaviour that helped modern capitalism grow. This balanced Marx's purely economic explanation.\n\n5. Bureaucracy and rationalisation: he described bureaucracy as the most efficient form of modern organisation (hierarchy, written rules, specialisation, impersonality, appointment on merit) and warned that growing rationalisation could trap people in an 'iron cage'.\n\n6. Authority and power: he distinguished three types of legitimate authority: traditional, charismatic and legal-rational.\n\n7. Social stratification: he went beyond Marx's class by adding three dimensions: class (economic position in the market), status (social honour or prestige) and party (political power).\n\n8. Value-free sociology: he insisted that researchers keep their personal values out of their analysis, which helped establish sociology as an objective, scientific discipline.\n\nConclusion: through his methods (Verstehen, ideal types, value neutrality) and his studies of religion, bureaucracy, authority and stratification, Weber gave sociology both a scientific method and a body of theory still used today."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Identify the three (3) major sociological perspectives and discuss the functionalist assumptions that society is a stable and orderly society.",
+    "options": [],
+    "modelAnswer": "The three major sociological perspectives are:\n1. Structural functionalism (Durkheim, Parsons, Merton): society is a system of interrelated parts, each performing functions that keep the whole stable.\n2. Conflict theory (Marx, Dahrendorf): society is marked by inequality and struggle between groups over scarce resources such as wealth and power; change comes from conflict.\n3. Symbolic interactionism (Mead, Blumer, Cooley): society is built through everyday interaction, and people act on the meanings and symbols they share.\n\nFunctionalist assumptions that society is stable and orderly:\n1. Society as a system: like the human body (the organic analogy), society is made of parts (family, economy, religion, education, polity) that depend on one another.\n2. Functional prerequisites: every society has basic needs (e.g. Parsons' AGIL: adaptation, goal attainment, integration, latency/pattern maintenance), and institutions exist to meet them.\n3. Value consensus: members share common values and norms, which bind them together and make order possible.\n4. Equilibrium: society tends towards balance. When one part changes, the others adjust to restore stability.\n5. Socialisation and social control: the family, school and religion pass on shared values, and sanctions keep people in line, so behaviour is predictable.\n6. Every part has a function: even things that look negative may have functions (e.g. Durkheim argued that punishing crime reaffirms shared values). Merton added manifest and latent functions, and dysfunctions.\n7. Change is gradual and evolutionary: it comes by slow adjustment, not sudden revolution.\n\nCriticism (brief): conflict theorists argue functionalism overstates consensus, ignores inequality and power, and cannot easily explain conflict and rapid change."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Discuss the basic arguments of any three (3) sociological theories of social deviance.",
+    "options": [],
+    "modelAnswer": "Deviance is behaviour that breaks the norms of a society or group. Three sociological theories (any three were acceptable):\n\n1. Anomie / strain theory (Robert K. Merton): society sets cultural goals (e.g. wealth, success) and approved means of reaching them (education, hard work). When people cannot reach the goals through approved means, they experience strain and may adapt by:\n• Conformity (accept goals and means; not deviant)\n• Innovation (accept goals, use illegal means, e.g. fraud, armed robbery)\n• Ritualism (abandon goals, keep rules rigidly)\n• Retreatism (reject both, e.g. drug addicts, vagrants)\n• Rebellion (replace both with new goals and means, e.g. revolutionaries).\nDurkheim's earlier idea of anomie (normlessness in times of rapid change) underlies this theory.\n\n2. Differential association theory (Edwin Sutherland): deviance is learned through interaction with others, especially in close, intimate groups. People learn techniques of crime and the attitudes and motives that justify it. A person becomes deviant when the definitions favourable to breaking the law outweigh those unfavourable to it. The frequency, duration, priority and intensity of the contacts matter.\n\n3. Labelling theory (Howard Becker, Edwin Lemert): no act is deviant in itself; deviance is behaviour that people label as deviant. Becker: 'the deviant is one to whom the label has been successfully applied.' Lemert distinguished primary deviance (the first act, often unnoticed) from secondary deviance (when the person accepts the label and it becomes their master status, leading to further deviance). Powerful groups decide what is labelled deviant.\n\nOther acceptable theories: control theory (Travis Hirschi: people conform because of strong social bonds of attachment, commitment, involvement and belief; deviance occurs when these bonds are weak); Marxist/conflict theory (laws reflect ruling-class interests); rational choice theory (people weigh costs and benefits)."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Introduction to Sociology",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "With appropriate illustrations, differentiate between the following pairs of concepts.\n(a) Mechanic and Organic solidarity\n(b) Gesellschaft and Gemeinschaft",
+    "options": [],
+    "modelAnswer": "Note: the paper prints \"Mechanic\" solidarity; the term is mechanical solidarity.\n\n(a) Mechanical and organic solidarity (Émile Durkheim, The Division of Labour in Society, 1893)\nMechanical solidarity:\n• Found in simple, traditional societies (small villages, pre-industrial communities).\n• Based on likeness: people do similar work and share the same beliefs, values and way of life.\n• A strong collective conscience binds them, and the individual is absorbed into the group.\n• Low division of labour.\n• Law is repressive (punitive): offences against shared beliefs are punished harshly.\n• Illustration: a traditional farming village where everyone farms, worships the same deity and follows the same customs.\nOrganic solidarity:\n• Found in complex, modern industrial societies.\n• Based on difference and interdependence: specialised roles make people depend on one another, like the organs of a body.\n• The collective conscience is weaker, and individualism grows.\n• High division of labour.\n• Law is restitutive: it aims to restore things to normal (e.g. compensation in civil and contract law).\n• Illustration: a city like Lagos, where a banker, a mechanic, a doctor and a farmer all rely on one another's services.\n\n(b) Gemeinschaft and Gesellschaft (Ferdinand Tönnies, 1887)\nGemeinschaft (community):\n• Close, personal, face-to-face relationships based on kinship, friendship and neighbourhood.\n• Relationships are valued for their own sake; strong sense of belonging, tradition and shared sentiment.\n• Social control is informal (custom, gossip, religion).\n• Illustration: a rural kindred or extended family in a village.\nGesellschaft (society/association):\n• Impersonal, formal, contractual relationships based on self-interest.\n• Relationships are a means to an end (e.g. buyer and seller, employer and employee).\n• Social control is formal (laws, police, courts).\n• Illustration: a large corporation or a big city where people deal with strangers for business.\n\nBoth pairs describe the shift from traditional to modern society, but Durkheim saw organic solidarity as a new form of cohesion, while Tönnies saw Gesellschaft as a loss of community."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Discuss the positive and negative sanctions as means of social control in Nigeria",
+    "options": [],
+    "modelAnswer": "Social control is the set of ways a society makes people conform to its norms. Sanctions are rewards or punishments used to enforce norms.\n\nPositive sanctions (rewards for conformity):\n• Formal: national honours (e.g. the national honours awards such as MFR, OON), scholarships, promotions, certificates, prizes for best students, long-service awards, salary increases.\n• Informal: praise, applause, smiles, gifts, respect in the community, chieftaincy titles given to people of good character.\nRole: they encourage and reinforce good behaviour, set role models, and motivate others to conform.\n\nNegative sanctions (punishments for deviance):\n• Formal: fines, imprisonment, death penalty, dismissal from work, suspension or expulsion from school, withdrawal of licences, sanctions by bodies like the EFCC and the courts.\n• Informal: gossip, ridicule, frowning, ostracism (being shunned by the community), denial of a title, curses or exclusion from family gatherings, and, in some communities, banishment or traditional oath-taking.\nRole: they discourage deviance, punish offenders, warn others (deterrence), and reaffirm the society's values.\n\nAssessment in Nigeria:\n• Informal sanctions remain strong in rural areas and close-knit groups, where family and community opinion matter.\n• Formal sanctions are weakened by corruption, delays in the courts, selective enforcement and impunity of powerful people, which can reduce their deterrent effect.\n• Positive sanctions are sometimes devalued when awards are given for political loyalty rather than merit.\nConclusion: both kinds of sanction are needed; effective social control in Nigeria requires fair, consistent enforcement and rewards that genuinely recognise merit."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "Define status and role.",
+    "options": [],
+    "modelAnswer": "Status is a socially defined position that a person occupies in a group or society, e.g. student, mother, doctor, chief. It may be:\n• Ascribed: given at birth or without effort (sex, age, royal birth, ethnicity).\n• Achieved: earned through effort or choice (lawyer, graduate, husband).\nA master status is the one that dominates a person's identity (e.g. 'president').\n\nRole is the expected behaviour attached to a status: the rights, duties and obligations a person in that position is expected to perform. For example, the status of 'teacher' carries the role of preparing lessons, teaching and assessing students.\nIn short (Ralph Linton): a person occupies a status and plays a role. Related ideas: role set (several roles attached to one status), role conflict (clash between roles of different statuses) and role strain (difficulty meeting the demands of one role)."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Social Structure and Social Interaction",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "Explain the concept of emotion and anxiety.",
+    "options": [],
+    "modelAnswer": "Emotion: a feeling state (such as joy, anger, fear, love, grief or shame) involving physical changes, thoughts and expressive behaviour. Sociologists stress that although emotions have a biological basis, how and when they are felt and shown is shaped by culture and social norms. Arlie Hochschild called these 'feeling rules' (e.g. one should be sad at a funeral), and described 'emotional labour', where workers such as flight attendants must manage their emotions as part of their job.\n\nAnxiety: a state of worry, unease or fear about a threat or uncertain outcome, often accompanied by tension, restlessness and physical symptoms such as a racing heart. Unlike fear, which responds to a present danger, anxiety is usually about the future or an unclear threat. Sociologically, anxiety is linked to social conditions: role strain and role conflict, insecurity of jobs, rapid social change, anomie (Durkheim), pressure to succeed, and fear of social rejection or failure (e.g. examination anxiety).\n\nRelationship: anxiety is one type of emotion. Both are learned and expressed within a social context and influence how individuals interact and perform their roles."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "Distinguish between cultural diffusion and cultural assimilation.",
+    "options": [],
+    "modelAnswer": "Cultural diffusion is the spread of cultural traits (ideas, objects, practices, technology, beliefs) from one society or group to another through contact such as trade, migration, colonialism, travel, education and the mass media. The receiving group adopts some traits but usually keeps its own culture. Example: the spread of Western dress, mobile phones and English language into Nigeria, or of Nigerian music (Afrobeats) and food abroad.\n\nCultural assimilation is the process by which a minority or immigrant group gives up its own culture and adopts the culture of the dominant group, until it becomes hard to tell the two apart. Example: children of immigrants who speak only the host language and follow only the host customs.\n\nKey differences:\n• Diffusion involves the transfer of particular traits; assimilation involves the absorption of a whole group.\n• Diffusion can go both ways between societies; assimilation is one-way (minority into majority).\n• In diffusion the receiving culture survives; in assimilation the minority culture largely disappears."
+  },
+  {
+    "subject": "Sociology",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Society and Culture",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "Discuss the problems associated with each.",
+    "options": [],
+    "modelAnswer": "Problems associated with cultural diffusion:\n• Erosion of indigenous culture: local languages, dress, values and crafts decline (e.g. many young Nigerians cannot speak their mother tongue).\n• Cultural imperialism: the culture of powerful nations (through media and globalisation) dominates weaker ones.\n• Culture conflict and culture lag: new traits clash with existing values, and the non-material culture fails to keep pace with new technology (e.g. social-media misuse, cybercrime).\n• Adoption of harmful traits: drug use, indecent dressing, materialism and other practices considered undesirable.\n• Generation gap between youths who adopt new ways and elders who hold on to tradition.\n\nProblems associated with cultural assimilation:\n• Loss of identity and heritage: the minority group loses its language, customs and history.\n• Psychological stress and marginality: people may feel they belong fully to neither culture.\n• Discrimination and pressure: assimilation is often forced, and those who resist may be excluded or treated as inferior.\n• Reduced cultural diversity in society as a whole.\n• Conflict and resistance: forced assimilation can lead to resentment and ethnic tension."
+  }
+]

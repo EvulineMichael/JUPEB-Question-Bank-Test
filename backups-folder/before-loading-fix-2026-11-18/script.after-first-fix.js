@@ -1,0 +1,4214 @@
+// Sidebar state
+let isSidebarCollapsed = false;
+let isMobileMenuOpen = false;
+
+// Global variables
+let questionsData = [];
+let currentSubject = "chemistry";
+let currentTopic = null;
+
+// Cache all subject data for instant switching
+let allSubjectData = {
+    chemistry: [],
+    physics: [],
+    maths: [],
+    biology: [],
+    economics: [],
+    government: [],
+    crs: [],
+    irs: [],
+    accounting: [],
+    businessManagement: [],
+    geography: [],
+    sociology: [],
+    literature: []
+};
+let allSubjectYears = {
+    chemistry: [],
+    physics: [],
+    maths: [],
+    biology: [],
+    economics: [],
+    government: [],
+    crs: [],
+    irs: [],
+    accounting: [],
+    businessManagement: [],
+    geography: [],
+    sociology: [],
+    literature: []
+};
+
+// ===== REFERRAL CAPTURE =====
+// In script.js, DELETE the old REFERRAL_CODES object and the old captureReferral()
+// and paste this in their place. Teacher codes now live only in Firestore
+// (the Teachers tab in admin.html), so there is no second list to keep in sync.
+
+// 1) When the page opens with ?ref=CODE, remember the code in this browser.
+(function captureReferral() {
+  const ref = new URLSearchParams(window.location.search).get("ref");
+  const code = ref ? ref.trim().toUpperCase() : "";
+  if (/^[A-Z]{3}\d{3}$/.test(code)) {            // same format admin.html enforces
+    localStorage.setItem("jupeb_referral_code", code);
+    // Clean the URL so the code doesn't linger in the address bar
+    window.history.replaceState({}, "", window.location.pathname);
+  }
+})();
+
+// 2) Called from auth.js right after sign-in (see the auth.js edit).
+//    Checks the code belongs to a real, active teacher, then saves a CLAIM on the
+//    student's survey doc. It never touches teacher money; you credit from admin.html.
+//    Returns the teacher code the student came through, or null.
+async function recordReferralClaim(user) {
+  const surveyRef = db.collection("surveys").doc(user.email);
+
+  // Did they already come through a link before? (first link wins; this also covers
+  // someone who tried the link before they were authorized)
+  let claimCode = null;
+  try {
+    const existing = await surveyRef.get();
+    claimCode = existing.exists ? (existing.data().referralCode || null) : null;
+  } catch (err) {
+    console.error("Could not read referral claim:", err);
+  }
+
+  const storedCode = localStorage.getItem("jupeb_referral_code");
+  if (!storedCode) return claimCode;
+
+  if (claimCode) {                                  // already claimed, don't overwrite
+    localStorage.removeItem("jupeb_referral_code");
+    return claimCode;
+  }
+
+  try {
+    const teacher = await db.collection("teachers").doc(storedCode).get();
+    if (teacher.exists && teacher.data().active !== false) {
+      await surveyRef.set({
+        email: user.email,
+        name: user.displayName || null,
+        referralCode: storedCode,
+        viaLink: true,
+        capturedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, { merge: true });
+      claimCode = storedCode;
+    }
+    localStorage.removeItem("jupeb_referral_code"); // real or not, it has been dealt with
+  } catch (err) {
+    console.error("Referral capture failed:", err);  // keep the code so the next sign-in retries
+  }
+  return claimCode;
+}
+// Edit this list whenever your answers change — the empty state disappears
+// automatically once this array has content.
+const FAQ_ITEMS = [
+  {
+    q: "How do I sign in?",
+    a: "Use the \"Sign in with Google\" button with the same Gmail you sent during payment."
+  },
+    {
+    q: "Which subjects are available?",
+    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, for both JUPEB and IJMB."
+  },
+  {
+    q: "Which years are covered?",
+    a: "JUPEB: 2015–2026, depending on the subject. IJMB: 2016 to date."
+  },
+  {
+    q: "How do I get IJMB?",
+    a: "Tap IJMB at the top of the menu. If it's locked, the screen shows how to add it for ₦3,000. Send your receipt and Gmail on WhatsApp, and we'll unlock it. Then reload the page and tap IJMB."
+  },,
+  {
+    q: "How do I browse questions by topic?",
+    a: "Click \"Subjects\" in the sidebar → pick a subject → pick a course → pick a topic."
+  },
+  {
+    q: "What is Quiz Mode?",
+    a: "Practice questions with a timer under exam-like conditions."
+  },
+  {
+    q: "What are Weak Areas?",
+    a: "Topics you consistently score low on. The site tracks them automatically after you answer enough questions."
+  },
+  {
+    q: "How do I access Past Papers?",
+    a: "Click \"Past Papers\" in the sidebar → pick a subject → pick a year."
+  },
+  {
+    q: "Are the answers correct?",
+    a: "Yes, but always cross-check with your textbook — no answer bank is 100% perfect."
+  },
+  {
+    q: "Does the site work on my phone?",
+    a: "Yes. It's fully mobile-friendly and can be installed as an app."
+  },
+  {
+    q: "What if I see a wrong answer or a broken question?",
+    a: "Message us on WhatsApp: 09035801863. We fix issues quickly."
+  },
+  {
+    q: "Can I use the same account on multiple devices?",
+    a: "Yes. Just sign in with the same Gmail."
+  },
+  {
+    q: "How do I sign out?",
+    a: "Go to the sidebar → Settings → Sign Out."
+  },
+  {
+    q: "Does my access expire?",
+    a: "No. Your access is for life, with no renewal."
+  },
+  {
+    q: "What if I have a different question?",
+    a: "Message us on WhatsApp: 09035801863."
+  },
+];
+
+// ===== THEME =====
+function updateThemeIcons() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const navbarThemeToggle = document.getElementById('navbar-theme-toggle');
+    const headerThemeToggle = document.getElementById('header-theme-toggle');
+    if (currentTheme === 'dark') {
+        const moonIcon = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+        if (navbarThemeToggle) navbarThemeToggle.innerHTML = moonIcon;
+        if (headerThemeToggle) headerThemeToggle.innerHTML = moonIcon;
+    } else {
+        const sunIcon = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+        if (navbarThemeToggle) navbarThemeToggle.innerHTML = sunIcon;
+        if (headerThemeToggle) headerThemeToggle.innerHTML = sunIcon;
+    }
+    const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
+    if (sidebarThemeToggle) {
+        const sidebarSun = sidebarThemeToggle.querySelector('.sidebar-sun-icon');
+        const sidebarMoon = sidebarThemeToggle.querySelector('.sidebar-moon-icon');
+        if (currentTheme === 'dark') {
+            if (sidebarSun) sidebarSun.style.display = 'none';
+            if (sidebarMoon) sidebarMoon.style.display = 'block';
+        } else {
+            if (sidebarSun) sidebarSun.style.display = 'block';
+            if (sidebarMoon) sidebarMoon.style.display = 'none';
+        }
+    }
+    const loginSun = document.getElementById('login-sun-icon');
+const loginMoon = document.getElementById('login-moon-icon');
+if (currentTheme === 'dark') {
+    if (loginSun) loginSun.style.display = 'none';
+    if (loginMoon) loginMoon.style.display = 'block';
+} else {
+    if (loginSun) loginSun.style.display = 'block';
+    if (loginMoon) loginMoon.style.display = 'none';
+}
+}
+let activeSidebarScreen = "dashboard-screen";
+
+function setActiveSidebarLink(screenId) {
+    document.querySelectorAll(".sidebar-link").forEach(link => {
+        link.classList.toggle("is-active", link.dataset.screen === screenId);
+    });
+}
+
+document.addEventListener("screenchange", (e) => {
+    setActiveSidebarLink(e.detail.screenId);
+    closeSidebar();
+});
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    updateThemeIcons();
+    updateSidebarThemeButton();
+}
+// ===== SURVEY MODAL =====
+// Place in script.js, anywhere after your other function definitions.
+//
+// Usage from auth.js: showSurvey(user, docRef, onComplete)
+// onComplete is called once the survey is saved (or immediately, if the
+// user has already completed it before) — it's where your existing
+// dashboard-reveal logic goes, so the survey sits cleanly *before* it
+// rather than being tangled up with it.
+
+let _surveyContext = null; // holds user/docRef until submit
+
+function showSurvey(user, docRef) {
+    console.log("showSurvey() called");
+    _surveyContext = { user, docRef };
+
+    const overlay = document.getElementById("survey-overlay");
+    if (!overlay) return;
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function hideSurvey() {
+    console.log("hideSurvey() called");
+    const overlay = document.getElementById("survey-overlay");
+    if (!overlay) return;
+    overlay.style.display = "none";
+    document.body.style.overflow = "";
+}
+
+document.getElementById("survey-source")?.addEventListener("change", (e) => {
+    const source = e.target.value;
+    const otherWrap = document.getElementById("survey-other-wrap");
+    const referrerWrap = document.getElementById("survey-referrer-wrap");
+
+    if (otherWrap) {
+        otherWrap.style.display = (source === "Other") ? "block" : "none";
+    }
+    if (referrerWrap) {
+        referrerWrap.style.display =
+            (source === "Referred by a friend" || source === "Referred by a teacher") ? "block" : "none";
+    }
+});
+
+document.getElementById("survey-submit")?.addEventListener("click", async () => {
+    const sourceEl = document.getElementById("survey-source");
+    const otherEl = document.getElementById("survey-other");
+    const referrerEl = document.getElementById("survey-referrer");
+    const errorEl = document.getElementById("survey-error");
+    const submitBtn = document.getElementById("survey-submit");
+
+    if (!sourceEl || !errorEl || !submitBtn || !_surveyContext) return;
+
+    const source = sourceEl.value.trim();
+    if (!source) {
+        errorEl.textContent = "Please select how you heard about us.";
+        errorEl.style.display = "block";
+        return;
+    }
+
+    let finalSource = source;
+    if (source === "Other") {
+        const otherText = otherEl?.value.trim();
+        if (!otherText) {
+            errorEl.textContent = "Please tell us how you heard about us.";
+            errorEl.style.display = "block";
+            return;
+        }
+        finalSource = `Other: ${otherText}`;
+    }
+
+    errorEl.style.display = "none";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Saving...";
+
+    const { user, docRef } = _surveyContext;
+
+    try {
+        const refCode = localStorage.getItem("jupeb_referral_code") || null;
+
+await db.collection("surveys").doc(user.email).set({
+    email: user.email,
+    name: user.displayName || null,
+    source: finalSource,
+    referredBy: referrerEl?.value.trim() || null,
+    referralCode: refCode,
+    submittedAt: firebase.firestore.FieldValue.serverTimestamp()
+});
+// After successful submit
+localStorage.removeItem("jupeb_referral_code");
+
+        await docRef.update({ hasSeenSurvey: true });
+
+        hideSurvey();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Continue →";
+        _surveyContext = null;
+        // No callback to fire — the dashboard was already showing underneath
+    } catch (error) {
+        console.error("Survey submit error:", error);
+        errorEl.textContent = "Could not save. Please try again.";
+        errorEl.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Continue →";
+    }
+});
+
+
+function updateSidebarThemeButton() {
+    const icon = document.getElementById('sidebar-theme-icon');
+    const text = document.getElementById('sidebar-theme-text');
+    if (!icon || !text) return;
+    
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+        icon.textContent = '☀️';
+        text.textContent = 'Light Mode';
+    } else {
+        icon.textContent = '🌙';
+        text.textContent = 'Dark Mode';
+    }
+}
+
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    updateThemeIcons();
+}
+
+function setupThemeListeners() {
+    const navbarThemeToggle = document.getElementById('navbar-theme-toggle');
+    const headerThemeToggle = document.getElementById('header-theme-toggle');
+    if (navbarThemeToggle) navbarThemeToggle.addEventListener('click', toggleTheme);
+    if (headerThemeToggle) headerThemeToggle.addEventListener('click', toggleTheme);
+    const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
+    if (sidebarThemeToggle) sidebarThemeToggle.addEventListener('click', toggleTheme);
+}
+
+// ===== COURSE STRUCTURE =====
+const courseStructure = {
+    chemistry: {
+    "CHM 001 - General Chemistry": [
+        "Measurement", "Mole Concept", "Atomic Structure", "Chemical Bonding"
+    ],
+    "CHM 002 - Physical Chemistry": [
+        "Nature of Matter", "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
+        "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
+        "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
+    ],
+    "CHM 003 - Inorganic Chemistry": [
+        "Periodicity", "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
+        "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
+    ],
+    "CHM 004 - Organic Chemistry": [
+        "Separation and Purification Techniques", "Structure and Bonding in Organic Compounds",
+        "Organic Reactions", "Isomerism in Organic Compounds", "Alkanes, Alkenes, Alkynes", "Alcohols",
+        "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
+        "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
+    ]
+},
+    physics: {
+    "PHY 001 - Mechanics & Properties of Matter": [
+        "Physical Quantities and Units", "Vectors", "Kinematics", "Dynamics (Newton's Laws and Forces)",
+        "The Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
+        "Elasticity", "Hydrostatics", "Hydrodynamics"
+    ],
+    "PHY 002 - Heat, Waves & Optics": [
+        "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", 
+        "Waves", "Sound Waves", "Geometric Optics (Light)", 
+        "Lenses and Optical Instruments", "Wave Theory of Light"
+    ],
+    "PHY 003 - Electricity & Magnetism": [
+        "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
+        "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
+    ],
+    "PHY 004 - Modern Physics": [
+        "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
+        "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
+    ]
+    },
+    maths: {
+        "MAT 001 - Pure Mathematics": [
+            "Real Numbers", "Set Theory", "Mappings", "Quadratic Equations", "Polynomials",
+            "Partial Fractions", "Binomial Theorem", "Logarithms", "Matrices", "Inequalities",
+            "Trigonometry", "Coordinate Geometry", "Complex Numbers", "Sequences and Series"
+        ],
+        "MAT 002 - Calculus": [
+            "Functions", "Limits and Continuity", "Differentiation", "Applications of Differentiation",
+            "Maclaurin and Taylor Series", "Integration", "Applications of Integration",
+            "First Order Differential Equations", "Second Order Differential Equations"
+        ],
+        "MAT 003 - Statistics": [
+            "Introduction to Statistics", "Measures of Location", "Measures of Dispersion",
+            "Combinatorics", "Probability", "Random Variables", "Normal Distribution",
+            "Significance Testing", "Correlation and Regression"
+        ],
+        "MAT 004A - Applied Mechanics": [
+            "Vectors", "Kinematics", "Newtonian Mechanics", "Forces and Equilibrium", "Equilibrium of Rigid Bodies"
+        ],
+        "MAT 004B - Business Mathematics": [
+            "Mathematics of Finance", "Marginal Concepts", "Production and Cost Functions",
+            "Consumer and Producer Surplus", "Optimization", "Linear Programming"
+        ]
+    },
+    accounting: {
+    "ACC 001 - Basic Financial Accounting": [
+        "Introduction to Financial Accounting",
+        "Structure of the International Accounting Standards Board (IASB)",
+        "Basic Steps in Bookkeeping up to the Trial Balance",
+        "Debit and Credit Entries in Accounting",
+        "Accounting Errors and Corrections",
+        "Bank Reconciliation Statement",
+        "End of Period Adjustments",
+        "Financial Statements of Sole Proprietorship",
+        "Manufacturing Accounts",
+        "Partnership Accounts",
+        "Incomplete Records",
+        "Accounts of Clubs and Societies",
+        "Financial Statements of Limited Liability Companies"
+    ],
+    "ACC 002 - Basic Cost and Management Accounting": [
+        "Introduction to Cost and Management Accounting",
+        "Basic Elements of Cost",
+        "Material Costing",
+        "Quantitative Models for Material and Stock Control",
+        "Labour Costing",
+        "Overhead Costs",
+        "Job Costing",
+        "Costing Techniques",
+        "Cost-Volume-Profit Analysis",
+        "Budgeting",
+        "Investment Appraisal"
+    ],
+    "ACC 003 - Basic Auditing": [
+        "History of Auditing",
+        "Nature and Scope of Auditing",
+        "Audit Framework",
+        "Audit Communication",
+        "Audit Report",
+        "Contemporary Issues in Auditing and Accounting"
+    ],
+    "ACC 004 - Basic Principles of Nigerian Taxation": [
+        "History of Tax in Nigeria",
+        "Tax Authorities in Nigeria",
+        "Tax Administration in Nigeria",
+        "Basis Periods",
+        "Computation of Tax Liabilities"
+    ]
+},
+businessManagement: {
+    "BUS 001 - Business and Its Environment": [
+        "Enterprise",
+        "Business Enterprise",
+        "Size of a Business",
+        "Stakeholders in a Business",
+        "Business Objectives",
+        "Organizations",
+        "Business Communication"
+    ],
+    "BUS 002 - Finance and Accounting": [
+        "Business Finance",
+        "Working Capital Management",
+        "Cost and Break-Even Analysis",
+        "Accounting Fundamentals",
+        "Budgeting"
+    ],
+    "BUS 003 - Management I": [
+        "Management and Leadership",
+        "Motivation",
+        "Human Resource Management (HRM)",
+        "Marketing"
+    ],
+    "BUS 004 - Management II": [
+        "Operations",
+        "Strategic Management"
+    ]
+},
+geography: {
+    "Paper I - Physical Geography": [
+        "Landforms",
+        "Weather and Climate",
+        "Soils and Vegetation"
+    ],
+    "Paper II - Human and Regional Geography": [
+        "Principles of Human Geography",
+        "Regional Geography of West Africa"
+    ]
+},
+    economics: {
+    "ECN 001 - Principles of Economics I": [
+        "Introduction to Economics",
+        "Basic Economic Principles",
+        "Tools and Methods of Economic Analysis",
+        "The Price System",
+        "Theory of Consumer Behavior",
+        "Theory of the Firm",
+        "Market Structure",
+        "Theory of Income Distribution",
+        "Government Intervention"
+    ],
+    "ECN 002 - Principles of Economics II": [
+        "Circular Flow of Income",
+        "National Income Accounting",
+        "Theory of National Income Determination",
+        "Money and Banking",
+        "Inflation and Unemployment",
+        "Public Finance"
+    ],
+    "ECN 003 - Applied Economics I": [
+        "Economic Structure of West Africa",
+        "Growth and Development",
+        "Population",
+        "International Trade"
+    ],
+    "ECN 004 - Applied Economics II": [
+        "Measurement and Application in Macroeconomics",
+        "Applied Issues in Labour Economics",
+        "Stabilization Policies in Developing Countries",
+        "International Economic Institutions"
+    ]
+},
+sociology: {
+    "SOC 001 - Introduction to Sociology": [
+        "Introduction to Sociology",
+        "Society and Culture",
+        "Social Structure and Social Interaction"
+    ],
+    "SOC 002 - Social Institutions and Social Change": [
+        "Social Institutions",
+        "Social Stratification and Inequality",
+        "Social Change and Nigerian/African Social Structure"
+    ]
+},
+crs: {
+    "CRS 001 - Old Testament Studies": [
+        "Formation and Composition of the Old Testament",
+        "Mosaic Authorship of the Pentateuch",
+        "The Rise of Monarchy in Israel",
+        "The Divided Kingdoms and the Exiles",
+        "The Rise of Prophecy in Israel"
+    ],
+    "CRS 002 - New Testament Studies": [
+        "Historical Background of the New Testament",
+        "The Synopsis, Materials and Canonization of the New Testament",
+        "The Synoptic Gospels and the Synoptic Problem",
+        "Modern Criticism of the Gospel",
+        "Literature and Theology of the Synoptic Gospels"
+    ],
+    "CRS 003 - History of Christianity in West Africa": [
+        "Previous Attempts at Christianizing Africa",
+        "Establishing Christianity in Sierra Leone",
+        "The Planting of Christianity in the Gold Coast (Ghana)",
+        "The Planting of Christianity in Nigeria",
+        "The Rise of the African Independent Churches",
+        "Pentecostalism in Nigeria",
+        "Proliferation of Churches in Nigeria"
+    ],
+    "CRS 004 - Religion and Society": [
+        "Relationship Between Religion and Society",
+        "Sociological Theories of Religion",
+        "Measures of Religion",
+        "Functions of Religion",
+        "Religion, Peace and Conflict Resolution",
+        "Religious Personality and Human Values",
+        "Christianity Response to Contemporary Issues"
+    ]
+},
+literature: {
+    "LIT 001 - Introduction to Drama": [
+        "Introduction",
+        "The Classical Tradition",
+        "European Drama (The Renaissance Tradition)",
+        "European Drama (The Modern Tradition)",
+        "American Drama (The Modern Tradition)",
+        "African Drama (The Modern Tradition)"
+    ],
+    "LIT 002 - Prose Fiction": [
+        "Introduction",
+        "The European Prose Tradition",
+        "African Prose (Modern African Novel)"
+    ],
+    "LIT 003 - Introduction to Poetry": [
+        "Introduction",
+        "The Classical Tradition",
+        "European Poetry (The Medieval and Renaissance Traditions)",
+        "European Poetry (19th and 20th Centuries)",
+        "American Poetry (The Modern Tradition)",
+        "African Poetry (The Modern Tradition)"
+    ],
+    "LIT 004 - Unseen Prose and Poetry": [
+        "Unseen Prose and Poetry"
+    ]
+},
+government: {
+    "GOV 001 - Elements of Government": [
+        "Nature of Government and Politics",
+        "Basic Concepts of Government",
+        "The State, Structure and Types of Government",
+        "Constitution and Constitutionalism",
+        "Governance and Citizenship"
+    ],
+    "GOV 002 - Fundamentals of Government": [
+        "Political Ideas and Thoughts",
+        "Political Parties, Party System and Pressure Groups",
+        "Public Opinion and Propaganda",
+        "Elections and Electoral System",
+        "Political and Social Change",
+        "Public Administration",
+        "International Relations"
+    ],
+    "GOV 003 - Nigerian Government and Politics": [
+        "Pre-Colonial Systems of Government in Nigeria",
+        "Colonial Administration in Nigeria",
+        "Development of Political Parties in Nigeria",
+        "Elections and Electoral Process in Nigeria",
+        "Major Political Crises in Nigeria",
+        "Reasons for Military Rule of Military Regimes",
+        "Nigerian Foreign Policy"
+    ],
+    "GOV 004 - African Government and Politics": [
+        "Africa Before European Invasion and Colonial Conquest",
+        "Colonial Systems of Administration in Africa",
+        "Constitutional Development of Selected West African Countries",
+        "The Nationalist Movement in West Africa",
+        "Military Intervention in Africa",
+        "Democratization and Political Process in Africa"
+    ]
+},
+   biology: {
+        "BIO 001 - General Biology": [
+            "Origin of Living Things",
+            "Living Things in Nature and Biological Molecules",
+            "Cell Organisation, Structure and Functions",
+            "Cell Division, Principles of Genetics, Variations and Heredity",
+            "Systematics, Taxonomy and Nomenclature",
+            "Ecology",
+            "Biological Methods and Application",
+            "Evolution",
+            "Enzymes"
+        ],
+        "BIO 002 - Microbiology": [
+            "History of the Discovery of Microorganisms",
+            "Types and Taxonomic Groupings of Microorganisms",
+            "Structures, Morphology and Characteristics of Microorganisms",
+            "Microbial Ecology",
+            "Microbial Nucleic Acids in Information Storage and Transfer",
+            "Microorganisms and their Application in Biotechnology"
+        ],
+        "BIO 003 - Botany": [
+            "General Characteristics and Diversity of Plants",
+            "Taxonomy of Lower and Higher Plants",
+            "Plant Conservation",
+            "Plant Tissues and Functions",
+            "Plant Morphology/Anatomy",
+            "Nutrition in Plants",
+            "Transport System in Plants",
+            "Respiration",
+            "Plant Reproduction",
+            "Growth in Higher Plants and Growth Regulators",
+            "Crop Improvement",
+            "Economic and Ecological Importance of Plants"
+        ],
+        "BIO 004 - Zoology": [
+            "Diversity and General Characteristics of Animals",
+            "Systematics (Taxonomy) of Animals",
+            "Evolution of Animals",
+            "Invertebrates",
+            "Introduction to Chordates",
+            "Ecologic and Economic Importance of Animals",
+            "Physiological Processes",
+            "Transport of Substances across Membranes",
+            "Nervous System",
+            "Sense Organ",
+            "Endocrine System"
+        ]
+    },
+    irs: {
+    "ISS 001 - History of Islam": [
+        "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
+        "The Biography of Muhammad",
+        "Life and Achievements of the Khulafa Rashidūn",
+        "An Overview of the Umayyad and Abbasid Dynasties",
+        "Life and Achievements of 'Umar ibn Abdul Aziz",
+        "Life and Achievements of Hārūn ar-Rāshid",
+        "Impact of the Spread of Islam to West Africa",
+        "The Hausa-Fulani Jihād",
+        "The Kanem-Bornu Empire",
+        "Muslim-Non-Muslim Relations"
+    ],
+    "ISS 002 - Tawhid & Ibadat": [
+        "Definition and Types of Tawhid",
+        "Types and Implications of Shirk",
+        "Nature and Implication of Engaging in Different Forms of Shirk",
+        "The Islamic Concept of Ibadah",
+        "Forms and Purposes of Taharah",
+        "The Observance, Types, and Values of Salāt",
+        "The Regulations Governing Zakat and Sadaqah",
+        "The Regulations Governing Sawm",
+        "Types of Fasts and the Significance of Fasting",
+        "The Conditions, Performance, and Performance of Hajj and Umrah",
+        "Islamic Marriage and Divorce and Comparison with Marriage and Divorce Practices in Other Cultures"
+    ],
+    "ISS 003 - Qur'anic Studies": [
+        "Analysis of the Names and Attributes of the Qur'an",
+        "Authenticity of the Qur'an as a Divine Book",
+        "Arrangement and Means of Preserving the Qur'anic Text",
+        "The Emergence of ar-Rasm al-'Uthmānī",
+        "The Distinction between the Makki and Madani Suwar",
+        "Asbāb an-Nuzūl and an-Nāsikh wal-Mansūkh",
+        "Ethics of Interpreting the Qur'an",
+        "A Study of the Text, Translation, and Interpretation of the Juz' 'Amma"
+    ],
+    "ISS 004 - Introduction to the Study of Hadith": [
+        "Definition and Values of Hadith",
+        "The Relationship between Hadith and Sunnah",
+        "Types of Hadith (Nabawi and Qudsi)",
+        "Basic Form of the Hadith (Isnād and Matn)",
+        "Determining the Authenticity of Hadith",
+        "The Ruwāt and the Muhaddithūn",
+        "The Six Standard Works and Biographies of Compilers",
+        "The Mu'jam of at-Tabarānī and Jāmi' of Ibn 'Athīr",
+        "Textual Analyses of an-Nawawī's Collection",
+        "A Critical Appraisal of Sahīh al-Bukhārī"
+    ]
+}
+};
+
+// DOM Elements
+const categoriesList = document.getElementById("categories-list");
+const questionsContainer = document.getElementById("questions-container");
+const sidebarTitle = document.getElementById("sidebar-title");
+const welcomeMessage = document.getElementById("welcome-message");
+const backToTopBtn = document.getElementById("back-to-top");
+
+// ===== SIDEBAR =====
+function initSidebar() {
+    const sidebar = document.getElementById('categories-sidebar');
+    const collapseBtn = document.getElementById('sidebar-collapse-btn');
+    if (!sidebar || !collapseBtn) return;
+    const savedState = localStorage.getItem('sidebarCollapsed');
+    if (savedState === 'true') {
+        sidebar.classList.add('sidebar-collapsed');
+        isSidebarCollapsed = true;
+    }
+    collapseBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-collapsed');
+        isSidebarCollapsed = sidebar.classList.contains('sidebar-collapsed');
+        localStorage.setItem('sidebarCollapsed', isSidebarCollapsed);
+    });
+}
+// Sidebar collapse toggle. Add this wherever your other sidebar JS lives.
+
+const sidebarCollapseBtn = document.getElementById("app-sidebar-collapse-btn");
+
+function setSidebarCollapsed(collapsed) {
+  document.body.classList.toggle("sidebar-collapsed", collapsed);
+  localStorage.setItem("jupeb_sidebar_collapsed", collapsed ? "true" : "false");
+}
+
+sidebarCollapseBtn?.addEventListener("click", () => {
+  const isCollapsed = document.body.classList.contains("sidebar-collapsed");
+  setSidebarCollapsed(!isCollapsed);
+});
+
+// Restore preference on load — call this once your sidebar is actually
+// shown (i.e. alongside wherever you add body.classList.add('has-sidebar')).
+function restoreSidebarCollapseState() {
+  const wasCollapsed = localStorage.getItem("jupeb_sidebar_collapsed") === "true";
+  setSidebarCollapsed(wasCollapsed);
+}
+
+function initMobileSidebar() {
+    const originalHamburger = document.getElementById('hamburger-btn');
+    const navbarHamburger = document.getElementById('navbar-hamburger');
+    const closeBtn = document.getElementById('sidebar-close-btn');
+    const sidebar = document.getElementById('categories-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if ((!originalHamburger && !navbarHamburger) || !sidebar || !overlay) return;
+
+    let swipeArea = document.querySelector('.swipe-area');
+    if (!swipeArea) {
+        swipeArea = document.createElement('div');
+        swipeArea.className = 'swipe-area';
+        document.body.appendChild(swipeArea);
+    }
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+
+    function openMobileMenu() {
+        sidebar.classList.add('sidebar-open');
+        overlay.classList.add('active');
+        if (originalHamburger) originalHamburger.style.display = 'none';
+        if (navbarHamburger) navbarHamburger.style.display = 'none';
+        isMobileMenuOpen = true;
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+        sidebar.classList.remove('sidebar-open');
+        overlay.classList.remove('active');
+        if (window.innerWidth <= 768) {
+            if (originalHamburger) originalHamburger.style.display = 'flex';
+            if (navbarHamburger) navbarHamburger.style.display = 'flex';
+        } else {
+            if (originalHamburger) originalHamburger.style.display = 'none';
+            if (navbarHamburger) navbarHamburger.style.display = 'none';
+        }
+        isMobileMenuOpen = false;
+        document.body.style.overflow = '';
+    }
+
+    function resetHamburgerVisibility() {
+        if (window.innerWidth <= 768) {
+            if (!isMobileMenuOpen) {
+                if (originalHamburger) originalHamburger.style.display = 'flex';
+                if (navbarHamburger) navbarHamburger.style.display = 'flex';
+            }
+        } else {
+            if (originalHamburger) originalHamburger.style.display = 'none';
+            if (navbarHamburger) navbarHamburger.style.display = 'none';
+        }
+    }
+
+    document.body.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.body.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        const swipeDistanceX = touchEndX - touchStartX;
+        const swipeDistanceY = Math.abs(touchEndY - touchStartY);
+
+        if (Math.abs(swipeDistanceX) < swipeDistanceY) return;
+
+        if (swipeDistanceX > 50 && !isMobileMenuOpen && window.innerWidth <= 768) {
+            openMobileMenu();
+        } else if (swipeDistanceX < -50 && isMobileMenuOpen && window.innerWidth <= 768) {
+            closeMobileMenu();
+        }
+    }, { passive: true });
+
+    if (originalHamburger) originalHamburger.addEventListener('click', openMobileMenu);
+    if (navbarHamburger) navbarHamburger.addEventListener('click', openMobileMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMobileMenu);
+    overlay.addEventListener('click', closeMobileMenu);
+
+    document.addEventListener('click', (e) => {
+        if (isMobileMenuOpen && window.innerWidth <= 768) {
+            if (e.target.closest('.topic-btn') || e.target.closest('.course-header')) {
+                setTimeout(closeMobileMenu, 200);
+            }
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        resetHamburgerVisibility();
+        if (window.innerWidth > 768 && isMobileMenuOpen) closeMobileMenu();
+    });
+
+    resetHamburgerVisibility();
+}
+
+function autoOpenSidebarOnMobile() {
+    if (window.innerWidth <= 768) {
+        const sidebar = document.getElementById('categories-sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        const originalHamburger = document.getElementById('hamburger-btn');
+        const navbarHamburger = document.getElementById('navbar-hamburger');
+        
+        if (sidebar && !sidebar.classList.contains('sidebar-open')) {
+            sidebar.classList.add('sidebar-open');
+            if (overlay) overlay.classList.add('active');
+            if (originalHamburger) originalHamburger.style.display = 'none';
+            if (navbarHamburger) navbarHamburger.style.display = 'none';
+            isMobileMenuOpen = true;
+            document.body.style.overflow = 'hidden';
+        }
+    }
+}
+
+function handleSidebarResponsive() {
+    const sidebar = document.getElementById('categories-sidebar');
+    if (!sidebar) return;
+    if (window.innerWidth <= 768) sidebar.classList.remove('sidebar-collapsed');
+}
+
+// ===== NOTIFICATION BELL (updates + feedback) =====
+// Paste into script.js, anywhere after your other functions (it runs on load).
+// Needs the globals you already have: db, auth, firebase.
+
+const BELL_FEEDBACK_TYPES = ["Wrong answer", "Bug", "Suggestion", "Other"];
+const BELL_REFRESH_MS = 5 * 60 * 1000;      // don't re-read updates more often than this
+let bellUpdates = [];
+let bellLastLoad = 0;
+let bellTab = "updates";
+
+function bellEsc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, c =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function bellMillis(ts) {
+    return ts && typeof ts.toMillis === "function" ? ts.toMillis() : 0;
+}
+function bellDate(ts) {
+    const ms = bellMillis(ts);
+    return ms ? new Date(ms).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "";
+}
+function bellIsOpen() {
+    const panel = document.getElementById("bell-panel");
+    return !!panel && panel.classList.contains("is-open");
+}
+
+// ----- Updates (newest 10, posted from Firestore) -----
+async function loadBellUpdates(force) {
+    if (!force && Date.now() - bellLastLoad < BELL_REFRESH_MS) return;
+    bellLastLoad = Date.now();
+    try {
+        const snap = await db.collection("updates").orderBy("createdAt", "desc").limit(10).get();
+        bellUpdates = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    } catch (err) {
+        console.error("Could not load updates:", err);
+        bellLastLoad = 0;                       // try again next time
+    }
+    renderBellUpdates();
+    if (bellIsOpen() && bellTab === "updates") markBellSeen();
+    refreshBellDot();
+}
+
+function renderBellUpdates() {
+    const list = document.getElementById("bell-updates-list");
+    if (list) {
+        list.innerHTML = bellUpdates.length
+            ? bellUpdates.map(u => `
+                <article class="bell-update">
+                    <h4>${bellEsc(u.title)}</h4>
+                    <p>${bellEsc(u.body)}</p>
+                    <time>${bellEsc(bellDate(u.createdAt))}</time>
+                </article>`).join("")
+            : `<p class="bell-empty">No updates yet. News and new features will show up here.</p>`;
+    }
+    const guide = document.getElementById("bell-guide");
+    if (guide) guide.hidden = localStorage.getItem("jupeb_guide_hidden") === "1";
+}
+
+// The red dot: shows if there is an update newer than the last one they looked at,
+// or if they have never opened the home-screen tip. Kept in this browser only.
+function refreshBellDot() {
+    const dot = document.getElementById("bell-dot");
+    if (!dot) return;
+    const lastSeen = Number(localStorage.getItem("jupeb_updates_seen") || 0);
+    const newest = bellUpdates.length ? bellMillis(bellUpdates[0].createdAt) : 0;
+    const guideUnseen = localStorage.getItem("jupeb_guide_hidden") !== "1" &&
+                        localStorage.getItem("jupeb_guide_seen") !== "1";
+    dot.classList.toggle("is-on", newest > lastSeen || guideUnseen);
+}
+
+function markBellSeen() {
+    localStorage.setItem("jupeb_guide_seen", "1");
+    if (bellUpdates.length) {
+        localStorage.setItem("jupeb_updates_seen", String(bellMillis(bellUpdates[0].createdAt)));
+    }
+    refreshBellDot();
+}
+
+// ----- Open / close -----
+function switchBellTab(name) {
+    bellTab = name;
+    document.querySelectorAll(".bell-tab").forEach(b =>
+        b.classList.toggle("is-active", b.dataset.tab === name));
+    const updatesPane = document.getElementById("bell-pane-updates");
+    const feedbackPane = document.getElementById("bell-pane-feedback");
+    if (updatesPane) updatesPane.hidden = name !== "updates";
+    if (feedbackPane) feedbackPane.hidden = name !== "feedback";
+    if (name === "updates") markBellSeen();
+}
+
+// openBell("updates")  or  openBell("feedback", { type: "Wrong answer", context: "Chemistry · Atomic Structure" })
+function openBell(tab, prefill) {
+    const panel = document.getElementById("bell-panel");
+    const backdrop = document.getElementById("bell-backdrop");
+    if (!panel || !backdrop) return;
+
+    if (prefill) {
+        if (prefill.type && BELL_FEEDBACK_TYPES.includes(prefill.type)) {
+            document.getElementById("bell-fb-type").value = prefill.type;
+        }
+        if (prefill.context) document.getElementById("bell-fb-context").value = prefill.context;
+    }
+    panel.classList.add("is-open");
+    backdrop.classList.add("is-open");
+    panel.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    switchBellTab(tab || "updates");
+    loadBellUpdates();                          // refreshes only if the data is stale
+}
+
+function closeBell() {
+    const panel = document.getElementById("bell-panel");
+    const backdrop = document.getElementById("bell-backdrop");
+    if (!panel || !backdrop) return;
+    panel.classList.remove("is-open");
+    backdrop.classList.remove("is-open");
+    panel.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+// ----- Feedback -----
+async function submitBellFeedback() {
+    const typeEl = document.getElementById("bell-fb-type");
+    const msgEl = document.getElementById("bell-fb-message");
+    const ctxEl = document.getElementById("bell-fb-context");
+    const statusEl = document.getElementById("bell-fb-status");
+    const btn = document.getElementById("bell-fb-send");
+    if (!typeEl || !msgEl || !statusEl || !btn) return;
+
+    const say = (text, ok) => {
+        statusEl.textContent = text;
+        statusEl.className = "bell-msg " + (ok ? "is-ok" : "is-error");
+    };
+
+    const type = typeEl.value;
+    const message = (msgEl.value || "").trim();
+    const context = ((ctxEl && ctxEl.value) || "").trim();
+
+    if (!BELL_FEEDBACK_TYPES.includes(type)) return say("Please choose what this is about.", false);
+    if (!message) return say("Please write a short message.", false);
+
+    const user = (typeof auth !== "undefined" && auth) ? auth.currentUser : null;
+    if (!user) return say("Please sign in to send feedback.", false);
+
+    if (Date.now() - Number(localStorage.getItem("jupeb_last_feedback") || 0) < 30000) {
+        return say("Please wait a few seconds before sending another.", false);
+    }
+
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    try {
+        const data = {
+            email: user.email,
+            name: user.displayName || null,
+            type,
+            message: message.slice(0, 1000),
+            page: location.pathname,
+            ua: navigator.userAgent.slice(0, 200),
+            status: "new",
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+        };
+        if (context) data.context = context.slice(0, 200);
+
+        await db.collection("feedback").add(data);
+        localStorage.setItem("jupeb_last_feedback", String(Date.now()));
+        msgEl.value = "";
+        if (ctxEl) ctxEl.value = "";
+        say("Thank you! We've received your feedback.", true);
+    } catch (err) {
+        console.error("Feedback failed:", err);
+        say("Could not send. Please try again.", false);
+    }
+    btn.disabled = false;
+    btn.textContent = "Send feedback";
+}
+
+// ----- Wiring (runs once, on load) -----
+(function initBell() {
+    document.getElementById("bell-btn")?.addEventListener("click", () => openBell("updates"));
+    document.getElementById("bell-close")?.addEventListener("click", closeBell);
+    document.getElementById("bell-backdrop")?.addEventListener("click", closeBell);
+    document.querySelectorAll(".bell-tab").forEach(b =>
+        b.addEventListener("click", () => switchBellTab(b.dataset.tab)));
+    document.getElementById("bell-fb-send")?.addEventListener("click", submitBellFeedback);
+    document.getElementById("bell-guide-hide")?.addEventListener("click", () => {
+        localStorage.setItem("jupeb_guide_hidden", "1");
+        renderBellUpdates();
+        refreshBellDot();
+    });
+    document.addEventListener("keydown", e => {
+        if (e.key === "Escape" && bellIsOpen()) closeBell();
+    });
+})();
+// ===== DATA LOADING =====
+async function getAvailableYears(subject) {
+    const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+    const availableYears = [];
+
+    // JUPEB files live in data/, IJMB files in data/ijmb/ (see exam-mode.js)
+    const root = (typeof examDataRoot === 'function') ? examDataRoot() : 'data';
+    const isIJMB = root === 'data/ijmb';
+    // JUPEB papers: 2025-typea.json ... ; IJMB papers: 2016-paper1.json, 2016-paper2.json
+    const variants = isIJMB
+                ? [{ suffix: '-paper1', paper: 'Paper I' }, { suffix: '-paper2', paper: 'Paper II' }, { suffix: '-paper3', paper: 'Paper III' }]
+        : ['A', 'B', 'C', 'D'].map(t => ({ suffix: `-type${t.toLowerCase()}`, paper: `Type ${t}` }));
+
+    for (const year of possibleYears) {
+        let foundAny = false;
+        for (const v of variants) {
+            const file = `${root}/${subject}/${year}${v.suffix}.json`;
+            try {
+                const response = await fetch(file); // Direct fetch, no HEAD
+                if (response.ok) {
+                    availableYears.push({ year, paper: v.paper, label: `${year} ${v.paper}`, file });
+                    foundAny = true;
+                }
+            } catch (error) {
+                // File doesn't exist — skip
+            }
+        }
+
+        if (!foundAny) {
+            const file = `${root}/${subject}/${year}.json`;
+            try {
+                const response = await fetch(file);
+                if (response.ok) availableYears.push({ year, paper: null, label: String(year), file });
+            } catch (error) {
+                // Doesn't exist — skip
+            }
+        }
+    }
+
+    return availableYears;
+}
+// ===== QUESTION BODY RENDERER =====
+// Detects and renders equation, dataTable, and diagram fields
+function renderQuestionBody(q) {
+    let html = '';
+    
+    // 1. Question text
+    html += `<div class="question-text">${escapeHtml(q.question)}</div>`;
+    
+    // 2. LaTeX equation (if present)
+    if (q.equation) {
+        html += `<div class="question-equation">\\[${q.equation}\\]</div>`;
+    }
+    
+    // 3. Data table (if present)
+    if (q.dataTable && q.dataTable.headers && q.dataTable.rows) {
+        html += `<div class="question-table-wrap"><table class="question-table">
+            <thead><tr>${q.dataTable.headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>
+            <tbody>${q.dataTable.rows.map(row => 
+                `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`
+            ).join('')}</tbody>
+        </table></div>`;
+    }
+    
+    // 4. Image (if present)
+if (q.image && q.image.src) {
+    html += `
+        <div class="question-diagram">
+            <img src="${q.image.src}" 
+                 alt="${escapeHtml(q.image.alt || 'Question diagram')}" 
+                 style="max-width:100%;height:auto;border-radius:8px;" 
+                 loading="lazy" />
+        </div>`;
+}
+
+// 5. Diagram missing warning (if flagged)
+if (q.diagramMissing) {
+    html += `<div class="quiz-diagram-note">⚠️ ${escapeHtml(q.diagramNote || 'Diagram missing — refer to past paper.')}</div>`;
+}
+    
+    return html;
+}
+
+  // ===== LOADING QUESTION PAPERS =====
+  // On the live site, papers come from /api/papers, which checks that the student
+  // is signed in and has paid for this exam. On your own computer (Live Server)
+  // there is no /api, so the files in data/ are read directly, as before.
+  function isLocalDev() {
+      return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  }
+// Give up waiting after a while, so one stuck step can't leave subjects on "Loading…"
+function withTimeout(promise, ms) {
+    return Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))]);
+}
+  // The copy of a papers answer saved on this device by the service worker, if any
+  async function savedPapersResponse(url) {
+      if (!('caches' in window)) return null;
+      try {
+          const saved = await caches.match(new URL(url, location.origin).href);
+          return saved && saved.ok ? saved : null;
+      } catch (e) { return null; }
+  }
+
+  // Returns { years, questions, failed } for one subject in the current exam.
+  // failed = true means "couldn't get an answer" (offline, slow, sign-in not ready),
+  // which is different from a subject that simply has no papers yet.
+  async function loadSubjectPapers(subject) {
+      if (isLocalDev()) return loadSubjectPapersFromFiles(subject);
+
+      const empty = { years: [], questions: [], failed: false };
+      const user = (typeof auth !== 'undefined') ? auth.currentUser : null;
+      if (!user) return { ...empty, failed: true };
+      const exam = (typeof getCurrentExam === 'function') ? getCurrentExam() : 'jupeb';
+      const url = `/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`;
+
+      // Online, give the sign-in token time to arrive on a slow connection. Offline it
+      // can't be refreshed, so don't wait: the saved copy is used instead.
+      const getToken = async (forceRefresh) => {
+          try { return await withTimeout(user.getIdToken(forceRefresh), navigator.onLine ? 20000 : 2000); }
+          catch (e) { return ''; }
+      };
+      const ask = (token) => withTimeout(fetch(url, { headers: token ? { Authorization: 'Bearer ' + token } : {} }), 30000);
+
+      let response = null;
+      try {
+          let token = await getToken(false);
+          response = await ask(token);
+          if (response.status === 401 && navigator.onLine) {   // token missing or stale: get a fresh one, ask once more
+              token = await getToken(true);
+              if (token) response = await ask(token);
+          }
+      } catch (error) {
+          response = null;                                     // offline, timed out, or the network dropped
+      }
+      if (!response || !response.ok) {
+          const saved = await savedPapersResponse(url);
+          if (saved) response = saved;
+      }
+      if (!response) return { ...empty, failed: true };
+      if (!response.ok) {
+          console.warn(`No ${subject} papers (${response.status})`);
+          return { ...empty, failed: response.status !== 403 };   // 403: this exam isn't unlocked, so nothing to show
+      }
+      try {
+          const body = await response.json();
+          const years = [];
+          const questions = [];
+          (body.papers || []).forEach(p => {
+              years.push({ year: p.year, paper: p.paper, label: p.label });
+              (p.questions || []).forEach(q => questions.push({ ...q, paper: p.paper || null }));
+          });
+          return { years, questions, failed: false };
+      } catch (error) {
+          console.error(`Error reading ${subject} papers:`, error);
+          return { ...empty, failed: true };
+      }
+  }
+
+  // Local testing only: the old way, reading the files in data/ directly
+  async function loadSubjectPapersFromFiles(subject) {
+      const years = await getAvailableYears(subject);
+      const results = await Promise.all(years.map(async (yr) => {
+          try {
+              const response = await fetch(yr.file);
+              if (!response.ok) return [];
+              const yearData = await response.json();
+              const list = Array.isArray(yearData) ? yearData
+                  : (yearData && Array.isArray(yearData.questions)) ? yearData.questions : [];
+              return list.map(q => ({ ...q, paper: yr.paper || null }));
+          } catch (error) {
+              console.error(`Error loading ${yr.file}:`, error);
+              return [];
+          }
+      }));
+      return { years, questions: results.flat() };
+  }
+async function loadQuestions(forceSubject = null, callback = null) {
+    if (forceSubject) {
+        currentSubject = forceSubject;
+    }
+
+    const subjects = (typeof examSubjects === 'function')
+        ? examSubjects()
+        : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature', 'sociology'];
+
+    // Create a promise for each subject that needs loading
+    const failed = [];
+    const loadPromises = subjects.map(async (subject) => {
+        if (allSubjectData[subject].length > 0) return; // Skip already-loaded
+
+          const loaded = await loadSubjectPapers(subject);
+          if (loaded.failed) { failed.push(subject); return; }   // left empty, so the next try loads it again
+          allSubjectYears[subject] = loaded.years;
+          allSubjectData[subject] = loaded.questions;
+          if (loaded.years.length) {
+              console.log(`Cached ${subject}: ${loaded.questions.length} questions from ${loaded.years.map(y => y.label).join(', ')}`);
+          }
+    });
+
+    // Wait for ALL subjects to load simultaneously
+    await Promise.all(loadPromises);
+    window.jupebFailedSubjects = failed;
+
+    questionsData = allSubjectData[currentSubject] || [];
+    window.currentSubjectYears = allSubjectYears[currentSubject] || [];
+
+    renderCategories();
+    showWelcomeMessage();
+    autoOpenSidebarOnMobile();
+
+    if (callback) callback();
+}
+
+function getAvailableCategoriesFromJSON() {
+    const categories = new Set();
+    questionsData.forEach(q => { if (q.category) categories.add(q.category); });
+    return categories;
+}
+
+function getQuestionCountForTopic(topic) {
+    return questionsData.filter(q => q.category === topic).length;
+}
+
+function renderCategories() {
+    if (!categoriesList) return;
+    const courses = courseStructure[currentSubject];
+    const availableCategories = getAvailableCategoriesFromJSON();
+    if (!courses || Object.keys(courses).length === 0) {
+        categoriesList.innerHTML = '<p class="loading">📭 No categories available.</p>';
+        return;
+    }
+let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
+                     currentSubject === 'maths' ? 'Mathematics' : 
+                     currentSubject === 'biology' ? 'Biology' :
+                     currentSubject === 'government' ? 'Government' :
+                     currentSubject === 'economics' ? 'Economics' : 
+                     currentSubject === 'crs' ? 'CRS':
+                     currentSubject === 'irs' ? 'IRS':
+                     currentSubject === 'literature' ? 'Literature': 'Chemistry';
+    const yearsLoaded = window.currentSubjectYears || [];
+    sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.map(y => y.label).join(', ')})</span>`;
+
+    let html = '';
+    let courseIndex = 0;
+    for (const [courseName, topics] of Object.entries(courses)) {
+        const courseId = `course-${currentSubject}-${courseIndex}`;
+        html += `<div class="course-group"><div class="course-header" data-course-id="${courseId}"><h4>📘 ${courseName}</h4><span class="dropdown-icon">▼</span></div><div class="course-topics" id="${courseId}">`;
+        topics.forEach(topic => {
+            const hasQuestions = availableCategories.has(topic);
+            const questionCount = getQuestionCountForTopic(topic);
+            const statusIcon = hasQuestions ? "✅" : "⏳";
+html += `<button class="topic-btn" data-topic="${escapeHtml(topic)}" ${!hasQuestions ? 'disabled' : ''}>
+    ${statusIcon} <span class="topic-text">📖 ${escapeHtml(topic)}</span>
+    ${hasQuestions ? `<span class="question-count">${questionCount}</span>` : ''}
+</button>`;
+    });
+        html += `</div></div>`;
+        courseIndex++;
+    }
+    categoriesList.innerHTML = html;
+
+    document.querySelectorAll(".course-header").forEach(header => {
+        header.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const courseId = header.dataset.courseId;
+            const topicsDiv = document.getElementById(courseId);
+            document.querySelectorAll(".course-topics").forEach(div => { if (div.id !== courseId) div.classList.remove("show"); });
+            document.querySelectorAll(".course-header").forEach(h => { if (h.dataset.courseId !== courseId) h.classList.remove("open"); });
+            topicsDiv.classList.toggle("show");
+            header.classList.toggle("open");
+        });
+    });
+
+    document.querySelectorAll(".topic-btn:not([disabled])").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
+            btn.classList.add("active-topic");
+            currentTopic = btn.dataset.topic;
+            displayQuestions(currentTopic);
+        });
+    });
+}
+function renderTopicResources(topic) {
+    // Guard against missing file or empty object
+    if (typeof TOPIC_RESOURCES === "undefined") return "";
+    
+    const resources = TOPIC_RESOURCES[topic];
+    if (!resources || resources.length === 0) return "";
+    
+    const iconFor = (type) => {
+        if (type === "video") return "🎬";
+        if (type === "article") return "📄";
+        return "🔗";
+    };
+    
+    const links = resources.map(r => {
+        const icon = iconFor(r.type);
+        return `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer"
+                   style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;
+                          background:var(--bg-card);border:1px solid var(--dash-border);
+                          border-radius:8px;color:var(--text-primary);text-decoration:none;
+                          font-size:0.85rem;transition:all 0.15s ease;">
+            <span>${icon}</span><span>${escapeHtml(r.title)}</span>
+        </a>`;
+    }).join("");
+    
+    return `
+        <div style="margin:0 0 20px;padding:16px;background:var(--bg-card);
+                    border:1px solid var(--dash-border);border-radius:12px;">
+            <div style="font-size:0.8rem;font-weight:600;color:var(--tab-active-bg);
+                        text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;">
+                📚 Learn this topic
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                ${links}
+            </div>
+        </div>`;
+}
+// ===== DISPLAY QUESTIONS (STUDY MODE) =====
+function displayQuestions(topic) {
+    if (welcomeMessage) welcomeMessage.style.display = "none";
+    const quizTab = document.getElementById('quiz-mode-tab');
+    if (quizTab) quizTab.classList.remove('active');
+
+    // Show loading state immediately
+    questionsContainer.innerHTML = `
+        <div class="loading-container" style="text-align:center;padding:60px 20px;">
+            <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+            <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading ${escapeHtml(topic)} questions...</p>
+        </div>
+    `;
+
+    // Use setTimeout to allow the loading state to render
+    setTimeout(() => {
+        // Use a local copy instead of modifying the global
+        let allQuestions = questionsData.filter(q => q.category === topic);
+
+// Deduplicate: keep only one copy of identical questions
+// Prefer Type A (or first loaded) when duplicates exist
+const seen = new Set();
+allQuestions = allQuestions.filter(q => {
+    const key = q.question.trim().toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+});
+        
+        // SEPARATE Objective and Essay questions
+        const objectiveQuestions = allQuestions.filter(q => q.type === "Objective");
+        const essayQuestions = allQuestions.filter(q => q.type === "Essay");
+        
+        // Sort objective questions by year (newest first) then by question number
+        objectiveQuestions.sort((a, b) => {
+            if (b.year !== a.year) return b.year - a.year;
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Sort essay questions by year (newest first) then by question number
+        essayQuestions.sort((a, b) => {
+            if (b.year !== a.year) return b.year - a.year;
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+
+        const totalQuestions = objectiveQuestions.length + essayQuestions.length;
+        
+        if (totalQuestions === 0) {
+            questionsContainer.innerHTML = `<div class="welcome-message"><h2>📭 No questions found</h2><p>No questions for "${escapeHtml(topic)}" yet.</p></div>`;
+            return;
+        }
+
+        // Get unique years for display
+        const allYears = [...new Set(allQuestions.map(q => q.year))].sort((a, b) => b - a);
+
+let questionsHtml = `<div class="study-topic-head"><span class="qz-kicker">Topic</span><h2>${escapeHtml(topic)}</h2><p>${totalQuestions} question${totalQuestions === 1 ? '' : 's'} · ${allYears.length > 1 ? `${allYears[allYears.length - 1]}–${allYears[0]}` : allYears.join('')}</p></div>`;
+questionsHtml += renderTopicResources(topic);
+questionsHtml += renderTopicNav(topic);
+
+let questionIndex = 1;
+        
+        // --- SECTION 1: OBJECTIVE QUESTIONS ---
+        if (objectiveQuestions.length > 0) {
+            questionsHtml += `
+                <div class="past-section-header"><h3 class="study-section study-section--obj">Multiple-choice questions <span>${objectiveQuestions.length}</span></h3></div>`;
+            
+            objectiveQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, q.year, questionIndex);
+                questionIndex++;
+            });
+        }
+        
+        // --- SECTION 2: ESSAY QUESTIONS ---
+        if (essayQuestions.length > 0) {
+            questionsHtml += `
+                <div class="past-section-header"><h3 class="study-section study-section--essay">Essay questions <span>${essayQuestions.length}</span></h3></div>`;
+            
+            essayQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, q.year, questionIndex);
+                questionIndex++;
+            });
+        }
+
+        questionsContainer.innerHTML = questionsHtml;
+
+        // Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}
+
+        // Set up event listeners for show answer buttons
+        document.querySelectorAll('.show-answer-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const qIdx = btn.dataset.qIdx;
+                const answerDisplay = document.getElementById(`answer-${qIdx}`);
+                if (answerDisplay.classList.contains('show')) {
+                    answerDisplay.classList.remove('show');
+                    btn.textContent = 'Show answer';
+                    document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
+                } else {
+                    answerDisplay.classList.add('show');
+                    btn.textContent = 'Hide answer';
+                    const answer = btn.dataset.answer;
+                    document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
+                        if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
+                    });
+                }
+            });
+        });
+        wireTopicNavButtons(topic); 
+
+        document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const essayIdx = btn.dataset.essayIdx;
+                const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
+                if (answerDisplay.style.display === 'none') {
+                    answerDisplay.style.display = 'block';
+                    btn.textContent = 'Hide model answer';
+                } else {
+                    answerDisplay.style.display = 'none';
+                    btn.textContent = 'Show model answer';
+                }
+            });
+        });
+
+        document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100); // Small delay to ensure loading state renders
+}
+
+function showWelcomeMessage() {
+    if (welcomeMessage) welcomeMessage.style.display = "block";
+    questionsContainer.innerHTML = "";
+    document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
+    currentTopic = null;
+}
+
+// ===== EVENT LISTENERS =====
+function setupEventListeners() {
+    // Subject dropdown items
+    document.querySelectorAll('.subject-dropdown-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const subject = item.dataset.subject;
+            
+            // Update active states
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.add('active');
+            
+            // Close dropdown
+            document.getElementById('subjects-dropdown-menu').classList.remove('show');
+            document.getElementById('subjects-dropdown-btn').classList.remove('open');
+            
+            // Switch subject
+            currentSubject = subject;
+            currentTopic = null;
+            clearQuizTimer();
+            questionsData = allSubjectData[currentSubject] || [];
+            window.currentSubjectYears = allSubjectYears[currentSubject] || [];
+            renderCategories();
+            showWelcomeMessage();
+            autoOpenSidebarOnMobile();
+        });
+    });
+
+    // Quiz mode tab
+    const quizModeTab = document.getElementById('quiz-mode-tab');
+    if (quizModeTab) {
+        quizModeTab.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.remove('active');
+            quizModeTab.classList.add('active');
+            clearQuizTimer();
+            showQuizLobby();
+        });
+    }
+
+    // Past questions tab
+    const pastQuestionsTab = document.getElementById('past-questions-tab');
+    if (pastQuestionsTab) {
+        pastQuestionsTab.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.remove('active');
+            pastQuestionsTab.classList.add('active');
+            clearQuizTimer();
+            showPastQuestionsSidebar();
+        });
+    }
+
+    // Back to top
+    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    window.addEventListener("scroll", () => {
+        backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+}
+
+function escapeHtml(text) {
+    if (!text) return "";
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function shuffleOptions(question) {
+    if (question.type !== 'Objective' || !question.options || !question.answer) return question;
+    
+    const labels = ['A','B','C','D','E','F'];
+    const originalIndex = labels.indexOf(question.answer.trim().toUpperCase());
+    if (originalIndex === -1 || originalIndex >= question.options.length) return question;
+    
+    const correctText = question.options[originalIndex];
+    const shuffled = [...question.options];
+    
+    // Fisher-Yates shuffle
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    const newCorrectLetter = labels[shuffled.indexOf(correctText)];
+    
+    return { ...question, options: shuffled, answer: newCorrectLetter, originalAnswer: question.answer };
+}
+
+// ===== STICKY NAVBAR =====
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+function handleNavbarOnScroll() {
+    const navbar = document.getElementById('sticky-navbar');
+    const mainHeader = document.querySelector('header');
+    if (!navbar) return;
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > 80) {
+        if (currentScrollY < lastScrollY) {
+            navbar.classList.add('visible');
+            if (mainHeader) mainHeader.classList.add('header-hidden');
+        } else {
+            navbar.classList.remove('visible');
+            if (mainHeader) mainHeader.classList.remove('header-hidden');
+        }
+    } else {
+        navbar.classList.remove('visible');
+        if (mainHeader) mainHeader.classList.remove('header-hidden');
+    }
+    lastScrollY = currentScrollY;
+    ticking = false;
+}
+
+function initStickyNavbar() {
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => { handleNavbarOnScroll(); ticking = false; });
+            ticking = true;
+        }
+    });
+    handleNavbarOnScroll();
+}
+
+// ============================================================
+// ===== QUIZ MODE ==============================================
+// ============================================================
+
+// ----- QUIZ STATE -----
+let quizState = {
+    subject: null,
+    mode: null,
+    filter: null,
+    selectedTopics: [],
+    count: 40,
+    timed: false,
+    totalTime: 0,
+    questions: [],
+    currentIndex: 0,
+    answers: {},
+    flagged: new Set(),
+    startTime: null,
+    timerInterval: null,
+    timeRemaining: 0,
+    submitted: false,
+    weakAreas: {},
+    history: []
+};
+
+// ----- WEAK AREAS CONFIG -----
+const WEAK_AREA_CONFIG = {
+    MIN_ATTEMPTS_TO_JUDGE: 3,
+    WEAK_THRESHOLD: 0.6,
+    STRONG_THRESHOLD: 0.7,
+    TOTAL_QUESTIONS_TO_UNLOCK: 10
+};
+
+function clearQuizTimer() {
+    clearInterval(quizState.timerInterval);
+}
+
+function getPracticeStats() {
+    const subjectWeak = quizState.weakAreas[currentSubject] || {};
+    const totalTopics = getAllTopicsForSubject().length;
+    
+    let totalAttempts = 0;
+    let totalCorrect = 0;
+    let topicsWithAttempts = 0;
+    let topicsAboveThreshold = 0;
+    let weakTopicsList = [];
+    
+    Object.entries(subjectWeak).forEach(([topic, data]) => {
+        if (data.attempts > 0) {
+            topicsWithAttempts++;
+            totalAttempts += data.attempts;
+            totalCorrect += data.correct;
+            
+            const pct = data.correct / data.attempts;
+            
+            if (data.attempts >= WEAK_AREA_CONFIG.MIN_ATTEMPTS_TO_JUDGE) {
+                if (pct < WEAK_AREA_CONFIG.WEAK_THRESHOLD) {
+                    weakTopicsList.push({ topic, pct, attempts: data.attempts, correct: data.correct });
+                }
+                if (pct >= WEAK_AREA_CONFIG.STRONG_THRESHOLD) {
+                    topicsAboveThreshold++;
+                }
+            }
+        }
+    });
+    
+    const progressToUnlock = Math.min(100, Math.round((totalAttempts / WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK) * 100));
+    
+    return {
+        totalAttempts, totalCorrect, topicsWithAttempts, topicsAboveThreshold,
+        weakTopicsList, totalTopics, progressToUnlock,
+        isUnlocked: totalAttempts >= WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK,
+        questionsRemaining: Math.max(0, WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK - totalAttempts)
+    };
+}
+
+function getWeakAreasMessage(stats) {
+    if (stats.totalAttempts === 0) {
+        return { icon: '🌱', title: 'Start Your Journey', desc: `Answer <strong>${stats.questionsRemaining}+ questions</strong> to unlock`, progressText: `${stats.progressToUnlock}% to unlock` };
+    }
+    if (!stats.isUnlocked) {
+        return { icon: '📊', title: 'Gathering Data...', desc: `<strong>${stats.questionsRemaining} more questions</strong> needed.`, progressText: `${stats.progressToUnlock}% to unlock` };
+    }
+    if (stats.weakTopicsList.length === 0) {
+        return { icon: '🎉', title: 'All Topics Strong!', desc: `${stats.topicsWithAttempts} topics analyzed`, progressText: 'Keep it up!' };
+    }
+    return {
+        icon: '⚡', title: `${stats.weakTopicsList.length} Weak Area${stats.weakTopicsList.length > 1 ? 's' : ''} Found`,
+        desc: stats.weakTopicsList.map(w => `${w.topic.split(' ').slice(0, 2).join(' ')}... (${Math.round(w.pct * 100)}%)`).join('<br>'),
+        progressText: `Click to focus practice`
+    };
+}
+
+function getWeakTopics() {
+    const weak = quizState.weakAreas[currentSubject] || {};
+    if (!quizState.history || quizState.history.length === 0) return [];
+    return Object.entries(weak)
+        .filter(([, data]) => data && data.attempts >= WEAK_AREA_CONFIG.MIN_ATTEMPTS_TO_JUDGE && (data.correct / data.attempts) < WEAK_AREA_CONFIG.WEAK_THRESHOLD)
+        .map(([topic]) => topic);
+}
+
+function getWeakAreasCount() {
+    if (!quizState.history || quizState.history.length === 0) return 0;
+    return getWeakTopics().length;
+}
+
+// ----- ENTRY POINT -----
+function showQuizLobby() {
+    if (welcomeMessage) welcomeMessage.style.display = 'none';
+    loadQuizPersistentData();
+
+    quizState.subject = currentSubject;
+    quizState.mode = null;
+    quizState.filter = null;
+    quizState.selectedTopics = [];
+    
+    questionsData = allSubjectData[currentSubject] || [];
+    window.currentSubjectYears = allSubjectYears[currentSubject] || [];
+
+    const stats = getPracticeStats();
+    const msg = getWeakAreasMessage(stats);
+    const hasWeakTopics = stats.weakTopicsList.length > 0;
+
+    const QUIZ_SUBJECTS = [
+        ['chemistry', '🧪', 'Chemistry'], ['physics', '⚛️', 'Physics'], ['maths', '📐', 'Mathematics'],
+        ['biology', '🧬', 'Biology'], ['crs', '🕊️', 'CRS'], ['irs', '☪️', 'IRS'],
+        ['literature', '📖', 'Literature'], ['economics', '💰', 'Economics'], ['government', '🏛️', 'Government']
+    ];
+    const pastScores = (quizState.history || []).map(h => Number(h.score)).filter(Number.isFinite);
+    const avgScore = pastScores.length ? Math.round(pastScores.reduce((a, b) => a + b, 0) / pastScores.length) : null;
+
+    questionsContainer.innerHTML = `
+        <div class="quiz-lobby">
+            <div class="qz-hero">
+                <div class="qz-hero-text">
+                    <span class="qz-kicker">Quiz mode</span>
+                    <h2>Test yourself like it's exam day</h2>
+                    <p class="quiz-subtitle">Pick a subject, choose how you want to practise, and go.</p>
+                </div>
+                <div class="qz-hero-stats">
+                    <div><strong>${pastScores.length}</strong><span>Quizzes taken</span></div>
+                    <div><strong>${avgScore === null ? '–' : avgScore + '%'}</strong><span>Average score</span></div>
+                </div>
+            </div>
+
+            <!-- STEP 1: Subject (the chips drive the hidden select, which setupLobbyListeners() listens to) -->
+            <div class="quiz-step" id="qstep-0">
+                <div class="quiz-step-label"><span class="step-number">1</span> Choose a subject</div>
+                <div class="qz-subjects" role="radiogroup" aria-label="Subject">
+                    ${QUIZ_SUBJECTS.map(([id, icon, name]) => `
+                    <button type="button" class="qz-subject ${id === currentSubject ? 'is-on' : ''}" data-subject="${id}" role="radio" aria-checked="${id === currentSubject}">
+                        <span class="qz-subject-icon" aria-hidden="true">${icon}</span><span>${name}</span>
+                    </button>`).join('')}
+                </div>
+                <select id="quiz-subject-select" class="qz-hidden-select" aria-hidden="true" tabindex="-1">
+                    ${QUIZ_SUBJECTS.map(([id, , name]) => `<option value="${id}" ${id === currentSubject ? 'selected' : ''}>${name}</option>`).join('')}
+                </select>
+            </div>
+
+            <!-- STEP 2: Mode -->
+            <div class="quiz-step" id="qstep-1">
+                <div class="quiz-step-label"><span class="step-number">2</span> Choose how to practise</div>
+                <div class="quiz-mode-grid">
+                    <button class="quiz-mode-card" data-mode="practice">
+                        <div class="qmc-icon qz-tone-blue"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+                        <div class="qmc-title">Practice quiz</div>
+                        <div class="qmc-desc">Pick topics or go random. 10, 20 or 50 questions: set it in Settings.</div>
+                    </button>
+                    <button class="quiz-mode-card" data-mode="exam">
+                        <div class="qmc-icon qz-tone-violet"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+                        <div class="qmc-title">Past exam</div>
+                        <div class="qmc-desc">Every question from one exam year, in one go.</div>
+                    </button>
+                    <button class="quiz-mode-card weak-area-card ${!stats.isUnlocked && stats.totalAttempts === 0 ? 'disabled' : ''} ${stats.isUnlocked && !hasWeakTopics ? 'all-strong' : ''}"
+                            data-mode="weak" ${!hasWeakTopics ? 'disabled' : ''}>
+                        <div class="qmc-icon qz-tone-orange">${msg.icon}</div>
+                        <div class="qmc-title">${msg.title}</div>
+                        <div class="qmc-desc">${msg.desc}</div>
+                        ${!stats.isUnlocked ? `<div class="weak-progress-bar"><div class="weak-progress-fill" style="width:${stats.progressToUnlock}%"></div></div><div class="weak-progress-label">${msg.progressText}</div>` : ''}
+                        ${stats.isUnlocked && hasWeakTopics ? `<div class="weak-topics-preview">${stats.weakTopicsList.slice(0, 3).map(w => `<span class="weak-topic-tag">${w.topic.split(' ').slice(0, 2).join(' ')} ${Math.round(w.pct * 100)}%</span>`).join('')}${stats.weakTopicsList.length > 3 ? `<span class="weak-topic-tag">+${stats.weakTopicsList.length - 3} more</span>` : ''}</div>` : ''}
+                    </button>
+                </div>
+                ${!stats.isUnlocked ? `<div class="weak-info-box"><p>💡 <strong>How weak areas work:</strong> after you answer <strong>${WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK}+ questions</strong>, topics where you score below <strong>${Math.round(WEAK_AREA_CONFIG.WEAK_THRESHOLD * 100)}%</strong> show up here for focused practice.</p></div>` : ''}
+            </div>
+
+            <div class="quiz-step hidden" id="qstep-2">
+                <div class="quiz-step-label"><span class="step-number">3</span> <span id="qstep-2-label">Select filter</span></div>
+                <div id="quiz-filter-options"></div>
+            </div>
+
+            <div class="quiz-step hidden" id="qstep-3">
+                <div class="quiz-step-label"><span class="step-number">4</span> Timer</div>
+                <div class="quiz-timer-grid">
+                    <button class="quiz-timer-btn active" data-time="0"><strong>No timer</strong><span>Go at your pace</span></button>
+                    <button class="quiz-timer-btn" data-time="1800"><strong>30 min</strong><span>Quick round</span></button>
+                    <button class="quiz-timer-btn" data-time="3600"><strong>60 min</strong><span>Standard</span></button>
+                    <button class="quiz-timer-btn" data-time="5400"><strong>90 min</strong><span>Full exam</span></button>
+                </div>
+            </div>
+
+            <div class="quiz-step hidden" id="qstep-4">
+                <div class="quiz-step-label"><span class="step-number">5</span> Ready?</div>
+                <div class="quiz-summary" id="quiz-summary"></div>
+                <button class="quiz-start-btn" id="quiz-start-btn">
+                    Start quiz
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+            </div>
+        </div>
+    `;
+
+    // Subject chips choose the subject through the hidden <select>
+    document.querySelectorAll('.qz-subject').forEach(btn => btn.addEventListener('click', () => {
+        const select = document.getElementById('quiz-subject-select');
+        if (!select || select.value === btn.dataset.subject) return;
+        select.value = btn.dataset.subject;
+        select.dispatchEvent(new Event('change'));
+    }));
+
+    setupLobbyListeners();
+}
+
+// ===== TOPIC NAVIGATION (Prev / Next / Back to course) =====
+// Relies on pickerSubject, pickerSet, courseStructure, pickerStep, pickerEl,
+// renderPickerStep(), showScreen(), escapeHtml() — all already in script.js.
+
+function getCurrentCourseTopics() {
+  if (!pickerSubject || !pickerSet) return null;
+  const topics = courseStructure[pickerSubject]?.[pickerSet];
+  return topics || null;
+}
+
+// The nearest topic before (dir -1) or after (dir 1) that has questions
+function neighbourTopic(topics, idx, dir) {
+  const counts = countsReady() ? topicCounts(pickerSubject) : null;
+  for (let i = idx + dir; i >= 0 && i < topics.length; i += dir) {
+    if (!counts || counts[topics[i]]) return topics[i];
+  }
+  return null;
+}
+
+function renderTopicNav(topic) {
+  const topics = getCurrentCourseTopics();
+  if (!topics) return ""; // no course context (e.g. reached via a direct link) — just hide it
+
+  const idx = topics.indexOf(topic);
+  if (idx === -1) return "";
+
+  const prevTopic = neighbourTopic(topics, idx, -1);
+  const nextTopic = neighbourTopic(topics, idx, 1);
+
+  return `
+    <div class="topic-nav-bar">
+      <button class="topic-nav-btn" id="topic-nav-prev" ${!prevTopic ? "disabled" : ""}>
+        ← ${prevTopic ? escapeHtml(prevTopic) : "Previous"}
+      </button>
+      <button class="topic-nav-btn topic-nav-back" id="topic-nav-back">
+        📋 Back to ${escapeHtml(pickerSet)}
+      </button>
+      <button class="topic-nav-btn" id="topic-nav-next" ${!nextTopic ? "disabled" : ""}>
+        ${nextTopic ? escapeHtml(nextTopic) : "Next"} →
+      </button>
+    </div>`;
+}
+
+// Call this once, right after questionsContainer.innerHTML is set in
+// displayQuestions() — see wiring note below.
+function wireTopicNavButtons(topic) {
+  const topics = getCurrentCourseTopics();
+  if (!topics) return;
+  const idx = topics.indexOf(topic);
+
+  document.getElementById("topic-nav-prev")?.addEventListener("click", () => {
+    const t = neighbourTopic(topics, idx, -1);
+    if (t) displayQuestions(t);
+  });
+  document.getElementById("topic-nav-next")?.addEventListener("click", () => {
+    const t = neighbourTopic(topics, idx, 1);
+    if (t) displayQuestions(t);
+  });
+  document.getElementById("topic-nav-back")?.addEventListener("click", () => {
+    showScreen("app-content", { customScreenId: "subjects-screen" });
+    pickerStep = "topic";
+    pickerEl.classList.add("is-open");
+    pickerEl.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    renderPickerStep();
+  });
+}
+// ===== PAST QUESTIONS MODE =====
+function showPastQuestionsSidebar() {
+    const subjects = Object.keys(courseStructure);
+    if (welcomeMessage) welcomeMessage.style.display = 'none';   // add this line
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖', accounting: '🧾', businessManagement: '💼', geography: '🌍', sociology: '👥' };
+
+    if (!window.jupebDataLoaded) {
+        questionsContainer.innerHTML = `
+            <div class="pp-page">
+                <div class="pp-hero"><div><span class="qz-kicker">Past papers</span><h2>Every paper, year by year</h2></div></div>
+                <div class="study-loading"><span class="study-spinner"></span><p>Loading past papers…</p></div>
+            </div>`;
+        document.addEventListener("jupebDataLoaded", () => showPastQuestionsSidebar(), { once: true });
+        return;
+    }
+
+    const nameOf = (s) => (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[s]) || (s.charAt(0).toUpperCase() + s.slice(1));
+    const cards = subjects.map(subject => {
+        const years = (allSubjectYears[subject] || []).slice()
+            .sort((a, b) => b.year - a.year || String(a.paper || '').localeCompare(String(b.paper || '')));
+        if (!years.length) return '';
+        const yearNums = years.map(y => y.year);
+        const newest = Math.max(...yearNums), oldest = Math.min(...yearNums);
+        const search = `${nameOf(subject)} ${subject} ${yearNums.join(' ')}`.toLowerCase();
+        return `
+            <article class="pp-subject" data-search="${escapeHtml(search)}">
+                <div class="pp-subject-head">
+                    <span class="pp-subject-icon" aria-hidden="true">${subjectEmojis[subject] || '📘'}</span>
+                    <div>
+                        <h3>${escapeHtml(nameOf(subject))}</h3>
+                        <p>${years.length} paper${years.length === 1 ? '' : 's'} · ${oldest === newest ? newest : `${oldest}–${newest}`}</p>
+                    </div>
+                </div>
+                <div class="pp-years">
+                    ${years.map(yr => `
+                    <button class="pp-year ${yr.year === newest ? 'is-latest' : ''}" data-year="${yr.year}" onclick="displayPastQuestions('${subject}', ${yr.year}, '${yr.paper || ''}')">
+                        <span>${yr.year}</span>${yr.paper ? `<small>${escapeHtml(yr.paper)}</small>` : ''}
+                    </button>`).join('')}
+                </div>
+            </article>`;
+    }).join('');
+
+    questionsContainer.innerHTML = `
+        <div class="pp-page">
+            <div class="pp-hero">
+                <div>
+                    <span class="qz-kicker">Past papers</span>
+                    <h2>Every paper, year by year</h2>
+                    <p>Pick a subject and a year. Read the questions, reveal answers when you're ready, or take the paper as a quiz.</p>
+                </div>
+                <label class="pp-search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    <input type="search" id="pp-search" placeholder="Search a subject or year" autocomplete="off">
+                </label>
+            </div>
+            <div class="pp-grid" id="pp-grid">${cards}</div>
+            <p class="pp-empty" id="pp-empty" hidden>No papers match that. Try another subject or year.</p>
+        </div>`;
+
+    const searchEl = document.getElementById('pp-search');
+    searchEl?.addEventListener('input', () => {
+        const q = searchEl.value.trim().toLowerCase();
+        let shown = 0;
+        document.querySelectorAll('#pp-grid .pp-subject').forEach(card => {
+            const match = !q || q.split(/\s+/).every(word => card.dataset.search.includes(word));
+            card.hidden = !match;
+            if (match) shown++;
+        });
+        document.getElementById('pp-empty').hidden = shown > 0;
+    });
+}
+
+// Helper function to build the past questions sidebar
+function buildPastQuestionsSidebar() {
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖', accounting: '🧾', businessManagement: '💼' };
+    
+    let html = '';
+    
+    subjects.forEach(subject => {
+        const years = allSubjectYears[subject] || [];
+        const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
+        const subjectId = `past-subject-${subject}`;
+        
+        if (years.length === 0) {
+            html += `
+                <div class="course-group">
+                    <div class="course-header" style="opacity:0.5;cursor:default;">
+                        <h4>${subjectEmojis[subject]} ${displayName}</h4>
+                        <span style="font-size:0.7rem;color:var(--text-secondary);">(No data)</span>
+                    </div>
+                </div>`;
+        } else {
+            html += `
+                <div class="course-group">
+                    <div class="course-header" data-course-id="${subjectId}">
+                        <h4>${subjectEmojis[subject]} ${displayName}</h4>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                    <div class="course-topics" id="${subjectId}">
+                        ${(() => {
+    // Group years with same year number
+    const yearGroups = {};
+    years.forEach(yr => {
+        if (!yearGroups[yr.year]) yearGroups[yr.year] = [];
+        yearGroups[yr.year].push(yr);
+    });
+    
+    let yearButtons = '';
+    for (const [yearNum, entries] of Object.entries(yearGroups).sort((a, b) => b[0] - a[0])) {
+        if (entries.length === 1 && !entries[0].paper) {
+            // Single file, no paper type
+            yearButtons += `
+                <button class="topic-btn" data-subject="${subject}" data-year="${yearNum}" data-paper="">
+                    📖 📅 ${yearNum}
+                </button>`;
+        } else {
+            // Has paper types - show as sub-items
+            yearButtons += `
+                <div class="past-year-group">
+                    <div class="past-year-header" style="font-weight:600;padding:8px 12px;color:var(--text-primary);font-size:0.85rem;">
+                        📅 ${yearNum}
+                    </div>`;
+            entries.sort((a, b) => (a.paper || '').localeCompare(b.paper || ''));
+            entries.forEach(entry => {
+                yearButtons += `
+                    <button class="topic-btn" data-subject="${subject}" data-year="${yearNum}" data-paper="${entry.paper || ''}" style="padding-left:28px;">
+                        📖 ${entry.paper || 'Standard'}
+                    </button>`;
+            });
+            yearButtons += `</div>`;
+        }
+    }
+    return yearButtons;
+})()}
+                    </div>
+                </div>`;
+        }
+    });
+    
+    categoriesList.innerHTML = html;
+    sidebarTitle.innerHTML = '📄 Past Questions';
+    
+    // Set up event listeners for dropdowns
+    document.querySelectorAll(".course-header").forEach(header => {
+        header.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const courseId = header.dataset.courseId;
+            if (!courseId) return; // Skip if no data
+            const topicsDiv = document.getElementById(courseId);
+            if (!topicsDiv) return;
+            document.querySelectorAll(".course-topics").forEach(div => { 
+                if (div.id !== courseId) div.classList.remove("show"); 
+            });
+            document.querySelectorAll(".course-header").forEach(h => { 
+                if (h.dataset.courseId !== courseId) h.classList.remove("open"); 
+            });
+            topicsDiv.classList.toggle("show");
+            header.classList.toggle("open");
+        });
+    });
+    
+    // Set up event listeners for year buttons
+    document.querySelectorAll('.topic-btn').forEach(btn => {
+        btn.addEventListener("click", () => {
+    document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
+    btn.classList.add("active-topic");
+    const subject = btn.dataset.subject;
+    const year = parseInt(btn.dataset.year);
+    const paper = btn.dataset.paper || null;
+    displayPastQuestions(subject, year, paper);
+});
+    });
+    
+    // Clear the questions area if no year is selected
+    if (!document.querySelector('.topic-btn.active-topic')) {
+        showWelcomeMessage();
+    }
+    
+    autoOpenSidebarOnMobile();
+}
+
+function displayPastQuestions(subject, year, paper = null) {
+    if (welcomeMessage) welcomeMessage.style.display = 'none';
+    const quizTab = document.getElementById('quiz-mode-tab');
+    if (quizTab) quizTab.classList.remove('active');
+    
+    // Check if data is loaded
+    const data = allSubjectData[subject] || [];
+    if (data.length === 0) {
+        questionsContainer.innerHTML = `
+            <div class="study-loading"><span class="study-spinner"></span><p>Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year}…</p><small>This only takes a moment.</small></div>`;
+        // Try reloading data
+        loadQuestions(subject).then(() => {
+            // Retry after data loads
+            setTimeout(() => {
+                displayPastQuestions(subject, year);
+            }, 500);
+        });
+        return;
+    }
+    
+    // Show loading state immediately
+    questionsContainer.innerHTML = `
+        <div class="study-loading"><span class="study-spinner"></span><p>Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year}…</p></div>`;
+    
+    // Use setTimeout to allow the loading state to render
+    setTimeout(() => {
+        // Read DIRECTLY from allSubjectData - never touch questionsData
+        let allQuestions = data.filter(q => {
+    if (q.year !== year) return false;
+    if (paper) return q.paper === paper;
+    return true; // Show all if no specific paper selected
+});
+        
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', irs: '☪️', literature: '📖', accounting: '🧾', businessManagement: '💼' };
+        const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
+        
+        if (allQuestions.length === 0) {
+            questionsContainer.innerHTML = `<div class="welcome-message"><h2>📭 No questions found</h2><p>No questions for ${displayName} ${year}.</p></div>`;
+            return;
+        }
+        
+        // SEPARATE Objective and Essay questions
+        const objectiveQuestions = allQuestions.filter(q => q.type === "Objective");
+        const essayQuestions = allQuestions.filter(q => q.type === "Essay");
+        
+        // Sort objective questions by question number
+        objectiveQuestions.sort((a, b) => {
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Sort essay questions by question number
+        essayQuestions.sort((a, b) => {
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Build the HTML
+        const paperTitle = (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[subject]) || displayName;
+        let questionsHtml = `
+    <div class="past-questions-header pp-paper-head">
+        <button class="pp-back" onclick="goToPastPapers()">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All past papers
+        </button>
+        <div class="pp-paper-row">
+            <div class="pp-paper-title">
+                <span class="pp-subject-icon pp-subject-icon--lg" aria-hidden="true">${subjectEmojis[subject] || '📘'}</span>
+                <div>
+                    <h2>${escapeHtml(paperTitle)} <span>${year}${paper ? ' · ' + escapeHtml(paper) : ''}</span></h2>
+                    <div class="pp-chips">
+                        ${objectiveQuestions.length ? `<span class="pp-chip pp-chip--obj">${objectiveQuestions.length} multiple choice</span>` : ''}
+                        ${essayQuestions.length ? `<span class="pp-chip pp-chip--essay">${essayQuestions.length} essay</span>` : ''}
+                    </div>
+                </div>
+            </div>
+            <div class="pp-paper-actions">
+                <button class="pp-btn pp-btn--ghost" id="pp-reveal-all" data-on="0">Show all answers</button>
+                ${objectiveQuestions.length ? `<button class="past-take-quiz-btn pp-btn pp-btn--primary" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">Take as a quiz</button>` : ''}
+            </div>
+        </div>
+    </div>`;
+
+        // --- SECTION 1: OBJECTIVE QUESTIONS ---
+        if (objectiveQuestions.length > 0) {
+            questionsHtml += `
+                <div class="past-section-header"><h3 class="study-section study-section--obj">Multiple-choice questions <span>${objectiveQuestions.length}</span></h3></div>`;
+
+            let questionIndex = 1;
+            objectiveQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, year, questionIndex);
+                questionIndex++;
+            });
+        }
+
+        // --- SECTION 2: ESSAY QUESTIONS ---
+        if (essayQuestions.length > 0) {
+            questionsHtml += `
+                <div class="past-section-header"><h3 class="study-section study-section--essay">Essay questions <span>${essayQuestions.length}</span></h3></div>`;
+            
+            let questionIndex = 1;
+            essayQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, year, questionIndex);
+                questionIndex++;
+            });
+        }
+
+        questionsContainer.innerHTML = questionsHtml;
+
+// Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}      
+
+        // Set up event listeners for show answer buttons
+        document.querySelectorAll('.show-answer-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const qIdx = btn.dataset.qIdx;
+                const answerDisplay = document.getElementById(`answer-${qIdx}`);
+                if (answerDisplay.classList.contains('show')) {
+                    answerDisplay.classList.remove('show');
+                    btn.textContent = 'Show answer';
+                    document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
+                } else {
+                    answerDisplay.classList.add('show');
+                    btn.textContent = 'Hide answer';
+                    const answer = btn.dataset.answer;
+                    document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
+                        if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
+                    });
+                }
+            });
+        });
+
+        document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const essayIdx = btn.dataset.essayIdx;
+                const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
+                if (answerDisplay.style.display === 'none') {
+                    answerDisplay.style.display = 'block';
+                    btn.textContent = 'Hide model answer';
+                } else {
+                    answerDisplay.style.display = 'none';
+                    btn.textContent = 'Show model answer';
+                }
+            });
+        });
+
+        const revealBtn = document.getElementById('pp-reveal-all');
+        revealBtn?.addEventListener('click', () => {
+            const showAll = revealBtn.dataset.on !== '1';
+            document.querySelectorAll('#questions-container .show-answer-btn').forEach(btn => {
+                const open = document.getElementById(`answer-${btn.dataset.qIdx}`)?.classList.contains('show');
+                if (open !== showAll) btn.click();
+            });
+            document.querySelectorAll('#questions-container .show-essay-answer-btn').forEach(btn => {
+                const box = document.getElementById(`essay-answer-${btn.dataset.essayIdx}`);
+                const open = box && box.style.display !== 'none';
+                if (open !== showAll) btn.click();
+            });
+            revealBtn.dataset.on = showAll ? '1' : '0';
+            revealBtn.textContent = showAll ? 'Hide all answers' : 'Show all answers';
+        });
+
+        document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100); // Small delay to ensure loading state renders
+}
+
+function buildQuestionCard(q, year, questionIndex) {
+    const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
+    const optionLabels = ['A','B','C','D','E','F'];
+    const isObjective = q.type === "Objective";
+    let html = `<div class="question-card" data-question-idx="${questionIndex}">
+        <div class="question-header">
+            <span class="question-number-badge">Q${qNumberDisplay}</span>
+            <span class="question-year">${year}</span>
+            <span class="question-type ${isObjective ? 'is-obj' : 'is-essay'}">${isObjective ? "Multiple choice" : "Essay"}</span>
+            ${q.diagramMissing ? '<span class="question-diagram-badge">Diagram missing</span>' : ''}
+        </div>
+        ${renderQuestionBody(q)}`;
+    if (q.diagramMissing) html += `<div class="question-warning"><strong>Diagram missing.</strong> ${escapeHtml(q.diagramNote || 'Refer to the original paper.')}</div>`;
+    if (isObjective && q.options?.length > 0) {
+        html += `<ul class="options-list" id="options-list-${questionIndex}">`;
+        q.options.forEach((opt, optIdx) => {
+            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><span class="option-letter">${optionLabels[optIdx]}</span><span class="option-body">${escapeHtml(opt)}</span></li>`;
+        });
+        html += `</ul>`;
+        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">Show answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">Correct answer: <strong>${q.answer}</strong></div><div class="explanation"><span class="explanation-label">Why</span>${formatModelAnswer(q.explanation)}</div></div>`;
+    }
+    if (q.type === "Essay") {
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">Show model answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><span class="explanation-label">Model answer</span>${formatModelAnswer(q.modelAnswer)}</div></div>`;
+        else if (!q.diagramMissing) html += `<div class="essay-note">Essay question. Answer it in your notebook.</div>`;
+    }
+    return html + `</div>`;
+}
+// ===== FORMAT MODEL ANSWER =====
+function formatModelAnswer(text) {
+    if (!text) return "";
+    
+    const paragraphs = text.split("\n\n");
+    
+    return paragraphs.map(paragraph => {
+        const lines = paragraph.split("\n");
+        const firstLine = lines[0] || "";
+        
+        const isHeader = /^\([iIvVxX]+\)\s|^Final Answers|^Finding|^Actual directions|^Step\s\d/.test(firstLine);
+        
+        let paragraphHtml;
+        
+        if (isHeader) {
+            const header = escapeHtml(firstLine);
+            const restLines = lines.slice(1);
+            const restHtml = processLinesForVisuals(restLines);
+            paragraphHtml = `<strong style="display:block;margin-top:12px;color:#17a2b8;">${header}</strong>${restHtml ? `<br>${restHtml}` : ''}`;
+        } else {
+            paragraphHtml = processLinesForVisuals(lines);
+        }
+        
+        return paragraphHtml;
+    }).join("<div style='height:10px;'></div>");
+}
+// ===== PROCESS LINES FOR VISUALS (IMAGES & TABLES) =====
+function processLinesForVisuals(lines) {
+    const imageRegex = /\[IMAGE:\s*([^\|]+)\s*\|\s*([^\]]+)\]/g;
+    const tableRegex = /\[TABLE:\s*([^\]]+)\]/g;
+    
+    return lines.map(line => {
+        // 1. Check for TABLE marker first
+        if (tableRegex.test(line)) {
+            return line.replace(tableRegex, (match, tableData) => {
+                return renderTableFromMarker(tableData);
+            });
+        }
+        
+        // 2. Check for IMAGE marker
+        if (imageRegex.test(line)) {
+            return line.replace(imageRegex, (match, src, alt) => {
+                return `<div class="question-diagram" style="margin:12px 0;"><img src="${src.trim()}" alt="${escapeHtml(alt.trim())}" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy" /></div>`;
+            });
+        }
+        
+        // 3. Plain text — escape it
+        return escapeHtml(line);
+    }).join("<br>");
+}
+function buildQuestionCard(q, year, questionIndex) {
+    const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
+    const optionLabels = ['A','B','C','D','E','F'];
+    const isObjective = q.type === "Objective";
+    let html = `<div class="question-card" data-question-idx="${questionIndex}">
+        <div class="question-header">
+            <span class="question-number-badge">Q${qNumberDisplay}</span>
+            <span class="question-year">${year}</span>
+            <span class="question-type ${isObjective ? 'is-obj' : 'is-essay'}">${isObjective ? "Multiple choice" : "Essay"}</span>
+            ${q.diagramMissing ? '<span class="question-diagram-badge">Diagram missing</span>' : ''}
+        </div>
+        ${renderQuestionBody(q)}`;
+    if (q.diagramMissing) html += `<div class="question-warning"><strong>Diagram missing.</strong> ${escapeHtml(q.diagramNote || 'Refer to the original paper.')}</div>`;
+    if (isObjective && q.options?.length > 0) {
+        html += `<ul class="options-list" id="options-list-${questionIndex}">`;
+        q.options.forEach((opt, optIdx) => {
+            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><span class="option-letter">${optionLabels[optIdx]}</span><span class="option-body">${escapeHtml(opt)}</span></li>`;
+        });
+        html += `</ul>`;
+        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">Show answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">Correct answer: <strong>${q.answer}</strong></div><div class="explanation"><span class="explanation-label">Why</span>${formatModelAnswer(q.explanation)}</div></div>`;
+    }
+    if (q.type === "Essay") {
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">Show model answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><span class="explanation-label">Model answer</span>${formatModelAnswer(q.modelAnswer)}</div></div>`;
+        else if (!q.diagramMissing) html += `<div class="essay-note">Essay question. Answer it in your notebook.</div>`;
+    }
+    return html + `</div>`;
+}
+
+// ===== RENDER TABLE FROM MARKER =====
+function renderTableFromMarker(tableData) {
+    // Format: col1 | col2 | col3 | row1c1 | row1c2 | row1c3 | row2c1 | row2c2 | row2c3 | ...
+    const cells = tableData.split("|").map(cell => cell.trim());
+    
+    // First 3 cells are headers
+    const headers = cells.slice(0, 3);
+    const rowData = cells.slice(3);
+    
+    let html = `<div class="question-table-wrap"><table class="question-table">`;
+    html += `<thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>`;
+    html += `<tbody>`;
+    
+    for (let i = 0; i < rowData.length; i += 3) {
+        const rowCells = rowData.slice(i, i + 3);
+        html += `<tr>${rowCells.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`;
+    }
+    
+    html += `</tbody></table></div>`;
+    return html;
+}
+
+function processLinesForImages(lines) {
+    const imageRegex = /\[IMAGE:\s*([^\|]+)\s*\|\s*([^\]]+)\]/g;
+    
+    return lines.map(line => {
+        // Check if this line contains an image marker
+        if (imageRegex.test(line)) {
+            return line.replace(imageRegex, (match, src, alt) => {
+                return `<div class="question-diagram" style="margin:12px 0;"><img src="${src.trim()}" alt="${escapeHtml(alt.trim())}" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy" /></div>`;
+            });
+        }
+        return escapeHtml(line);
+    }).join("<br>");
+}
+
+function takePastQuestionsAsQuiz(subject, year, paper = null) {
+    currentSubject = subject;
+    questionsData = allSubjectData[subject] || [];
+    window.currentSubjectYears = allSubjectYears[subject] || [];
+    quizState.subject = subject;
+    quizState.mode = 'exam';
+    quizState.filter = { year: year, paper: paper };
+    quizState.selectedTopics = [];
+    quizState.timed = false;
+    quizState.totalTime = 0;
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    const quizTab = document.getElementById('quiz-mode-tab');
+    if (quizTab) quizTab.classList.add('active');
+    clearQuizTimer();
+    showQuizLobby();
+    setTimeout(() => {
+        const examCard = document.querySelector('.quiz-mode-card[data-mode="exam"]');
+        if (examCard) examCard.click();
+        setTimeout(() => {
+    const yearBtn = document.querySelector(`.quiz-year-btn[data-filter="${year}"][data-paper="${paper || ''}"]`);
+    if (yearBtn) yearBtn.click();
+}, 150);
+    }, 100);
+}
+
+function setupLobbyListeners() {
+    // Subject dropdown in quiz lobby
+const quizSubjectSelect = document.getElementById('quiz-subject-select');
+if (quizSubjectSelect) {
+    quizSubjectSelect.addEventListener('change', () => {
+        const newSubject = quizSubjectSelect.value;
+        if (newSubject === currentSubject) return;
+        
+        currentSubject = newSubject;
+        quizState.subject = newSubject;
+        questionsData = allSubjectData[currentSubject] || [];
+        window.currentSubjectYears = allSubjectYears[currentSubject] || [];
+        
+        quizState.mode = null;
+        quizState.filter = null;
+        quizState.selectedTopics = [];
+        document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
+        document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
+            b.classList.remove('active'); 
+            if (b.dataset.time === '0') b.classList.add('active'); 
+        });
+        quizState.timed = false;
+        quizState.totalTime = 0;
+        
+        ['qstep-2','qstep-3','qstep-4'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.add('hidden');
+        });
+        
+        showQuizLobby();
+    });
+}
+    
+    document.querySelectorAll('.quiz-mode-card:not([disabled])').forEach(card => {
+        card.addEventListener('click', () => {
+            document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
+            card.classList.add('selected');
+            quizState.mode = card.dataset.mode;
+            quizState.filter = null;
+            quizState.selectedTopics = [];
+            quizState.timed = false;
+            quizState.totalTime = 0;
+            document.querySelectorAll('.quiz-timer-btn').forEach(b => { b.classList.remove('active'); if (b.dataset.time === '0') b.classList.add('active'); });
+            showQuizStep2();
+        });
+    });
+}
+
+function showQuizStep2() {
+    ['qstep-3','qstep-4'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
+
+    if (quizState.mode === 'weak') {
+        document.getElementById('qstep-2').classList.add('hidden');
+        quizState.filter = 'weak';
+        showQuizStep3();
+        return;
+    }
+
+    const step2 = document.getElementById('qstep-2');
+    const label = document.getElementById('qstep-2-label');
+    const filterOptions = document.getElementById('quiz-filter-options');
+    step2.classList.remove('hidden');
+    step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    if (quizState.mode === 'practice') {
+        label.textContent = 'Pick topics, or go random';
+        const allTopics = getAllTopicsForSubject();
+        filterOptions.innerHTML = `
+            <div class="quiz-filter-search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                <input type="text" id="topic-search" placeholder="Search topics" class="quiz-search-input">
+            </div>
+            <p class="multi-select-hint">Tap topics to include them, or leave them all off for a random mix. Selected: <span id="selected-count">0</span></p>
+            <div class="quiz-filter-list" id="topic-filter-list">
+                ${allTopics.map(t => `<button class="quiz-filter-btn multi-select-topic" data-filter="${escapeHtml(t.name)}"><span>${escapeHtml(t.name)}</span><span class="filter-count">${t.count}q</span></button>`).join('')}
+            </div>
+            <button class="quiz-confirm-topics-btn" id="confirm-topics-btn">Continue (random mix)</button>`;
+        
+        document.getElementById('topic-search').addEventListener('input', function() {
+            const q = this.value.toLowerCase();
+            document.querySelectorAll('#topic-filter-list .quiz-filter-btn').forEach(btn => {
+                btn.style.display = btn.dataset.filter.toLowerCase().includes(q) ? '' : 'none';
+            });
+        });
+
+        document.querySelectorAll('.multi-select-topic').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const topicName = btn.dataset.filter;
+                if (quizState.selectedTopics.includes(topicName)) {
+                    quizState.selectedTopics = quizState.selectedTopics.filter(t => t !== topicName);
+                    btn.classList.remove('selected');
+                } else {
+                    quizState.selectedTopics.push(topicName);
+                    btn.classList.add('selected');
+                }
+                const countEl = document.getElementById('selected-count');
+                const confirmBtn = document.getElementById('confirm-topics-btn');
+                if (countEl) countEl.textContent = quizState.selectedTopics.length;
+                if (confirmBtn) confirmBtn.textContent = `Continue (${quizState.selectedTopics.length === 0 ? 'random mix' : quizState.selectedTopics.length + (quizState.selectedTopics.length === 1 ? ' topic' : ' topics')})`;
+            });
+        });
+
+        document.getElementById('confirm-topics-btn').addEventListener('click', () => {
+            quizState.filter = quizState.selectedTopics.length > 0 ? quizState.selectedTopics : 'all';
+            showQuizStep3();
+        });
+
+    } else if (quizState.mode === 'exam') {
+    label.textContent = 'Pick an exam year';
+    
+    // Build list of unique year-paper combinations
+    const yearPapers = [];
+    questionsData.forEach(q => {
+        const key = `${q.year}|||${q.paper || 'standard'}`;
+        if (!yearPapers.find(yp => yp.key === key)) {
+            yearPapers.push({ 
+                key, 
+                year: q.year, 
+                paper: q.paper, 
+                label: q.paper ? `${q.year} — ${q.paper}` : `${q.year}`,
+                count: 0 
+            });
+        }
+        const entry = yearPapers.find(yp => yp.key === key);
+        if (q.type === 'Objective' && q.options && q.options.length > 0 && q.answer) {
+            entry.count++;
+        }
+    });
+    
+    const yearsWithCounts = yearPapers
+        .filter(yp => yp.count > 0)
+        .sort((a, b) => b.year - a.year || (a.paper || '').localeCompare(b.paper || ''));
+        
+        if (yearsWithCounts.length === 0) {
+            filterOptions.innerHTML = `<p class="no-data-message">No quiz-ready questions found.</p>`;
+        } else {
+filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => `<button class="quiz-year-btn" data-filter="${y.year}" data-paper="${y.paper || ''}"><span class="year-num">${y.year}</span>${y.paper ? `<span class="year-paper">${escapeHtml(y.paper)}</span>` : ''}<span class="year-count">${y.count} questions</span></button>`).join('')}</div>`;
+            filterOptions.querySelectorAll('.quiz-year-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterOptions.querySelectorAll('.quiz-year-btn').forEach(b => b.classList.remove('selected'));
+                    btn.classList.add('selected');
+                    quizState.filter = { year: parseInt(btn.dataset.filter), paper: btn.dataset.paper || null };
+                    showQuizStep3();
+                });
+            });
+        }
+    }
+}
+
+function showQuizStep3() {
+    const available = getAvailableQuestions().length;
+    // Practice length comes from Settings (10, 20 or 50; 10 by default)
+    const practiceLength = parseInt(localStorage.getItem('jupeb_default_quiz_length'), 10) || 10;
+    quizState.count = Math.min(available, quizState.mode === 'practice' ? practiceLength : available);
+    ['qstep-3'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
+    showQuizStep4();
+}
+
+function showQuizStep4() {
+    const step4 = document.getElementById('qstep-3');
+    step4.classList.remove('hidden');
+    step4.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    document.getElementById('qstep-4').classList.add('hidden');
+
+    document.querySelectorAll('.quiz-timer-btn').forEach(btn => {
+        const newBtn = btn.cloneNode(true);
+        btn.parentNode.replaceChild(newBtn, btn);
+    });
+    // Start on the timer chosen in Settings
+    const defaultTime = localStorage.getItem('jupeb_default_timer') || '0';
+    const defaultBtn = document.querySelector(`.quiz-timer-btn[data-time="${defaultTime}"]`);
+    if (defaultBtn) {
+        document.querySelectorAll('.quiz-timer-btn').forEach(b => b.classList.toggle('active', b === defaultBtn));
+        quizState.timed = parseInt(defaultTime, 10) > 0;
+        quizState.totalTime = parseInt(defaultTime, 10);
+    }
+    document.querySelectorAll('.quiz-timer-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.quiz-timer-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const t = parseInt(btn.dataset.time);
+            quizState.timed = t > 0;
+            quizState.totalTime = t;
+            showQuizStep5();
+        });
+    });
+
+    showQuizStep5();
+}
+
+function showQuizStep5() {
+    const step5 = document.getElementById('qstep-4');
+    step5.classList.remove('hidden');
+    step5.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    const modeLabels = {
+        practice: quizState.filter === 'all' ? 'Random mix' : 'Selected topics',
+        exam: `Past exam · ${quizState.filter.paper ? quizState.filter.year + ' ' + quizState.filter.paper : quizState.filter.year}`,
+        weak: 'Weak areas'
+    };
+    const modeLabel = modeLabels[quizState.mode] || quizState.mode;
+    const timerLabel = !quizState.timed ? 'No timer' : quizState.totalTime >= 3600 ? `${quizState.totalTime/3600}h` : `${quizState.totalTime/60} min`;
+    const finalCount = Math.min(quizState.count, getAvailableQuestions().length);
+
+    const subjectLabel = (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[currentSubject]) || (currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1));
+    document.getElementById('quiz-summary').innerHTML = `
+        <div class="quiz-summary-grid">
+            <div class="qs-item"><span class="qs-label">Subject</span><span class="qs-value">${subjectLabel}</span></div>
+            <div class="qs-item"><span class="qs-label">Mode</span><span class="qs-value">${modeLabel}</span></div>
+            <div class="qs-item"><span class="qs-label">Questions</span><span class="qs-value">${finalCount}</span></div>
+            <div class="qs-item"><span class="qs-label">Timer</span><span class="qs-value">${timerLabel}</span></div>
+        </div>`;
+
+    const startBtn = document.getElementById('quiz-start-btn');
+    const newBtn = startBtn.cloneNode(true);
+    startBtn.parentNode.replaceChild(newBtn, startBtn);
+    document.getElementById('quiz-start-btn').addEventListener('click', () => startQuiz());
+}
+
+// ----- HELPERS -----
+function getAllTopicsForSubject() {
+    const courses = courseStructure[currentSubject] || {};
+    const result = [];
+    for (const topics of Object.values(courses)) {
+        for (const topic of topics) {
+            const count = questionsData.filter(q => q.category === topic && q.type === 'Objective').length;
+            if (count > 0) result.push({ name: topic, count });
+        }
+    }
+    return result;
+}
+
+function getAvailableQuestions() {
+    let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer &&
+        !q.diagramMissing);
+    
+    if (quizState.mode === 'practice') {
+        if (quizState.filter !== 'all') {
+            const topics = Array.isArray(quizState.filter) ? quizState.filter : [quizState.filter];
+            pool = pool.filter(q => topics.includes(q.category));
+        }
+        if (pool.length > 50) pool = shuffleArray(pool).slice(0, 50);
+    } else if (quizState.mode === 'exam') {
+    const filter = quizState.filter;
+    pool = pool.filter(q => {
+        if (q.year !== filter.year) return false;
+        if (filter.paper) return q.paper === filter.paper;
+        return true;
+    });
+} else if (quizState.mode === 'weak') {
+        const weakTopics = getWeakTopics();
+        if (weakTopics.length > 0) pool = pool.filter(q => weakTopics.includes(q.category));
+    }
+    return pool;
+}
+
+function shuffleArray(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function formatTime(seconds) {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s.toString().padStart(2,'0')}`;
+}
+
+// ----- PERSISTENT DATA -----
+function loadQuizPersistentData() {
+    try {
+        const weak = localStorage.getItem('jupeb_weak_areas');
+        if (weak) {
+            const parsed = JSON.parse(weak);
+            if (typeof parsed === 'object' && !Array.isArray(parsed)) quizState.weakAreas = parsed;
+            else { quizState.weakAreas = {}; localStorage.removeItem('jupeb_weak_areas'); }
+        }
+        const hist = localStorage.getItem('jupeb_quiz_history');
+        if (hist) {
+            const parsed = JSON.parse(hist);
+            if (Array.isArray(parsed)) quizState.history = parsed;
+            else { quizState.history = []; localStorage.removeItem('jupeb_quiz_history'); }
+        }
+    } catch(e) {
+        quizState.weakAreas = {};
+        quizState.history = [];
+    }
+}
+
+function saveQuizPersistentData() {
+    try {
+        localStorage.setItem('jupeb_weak_areas', JSON.stringify(quizState.weakAreas));
+        localStorage.setItem('jupeb_quiz_history', JSON.stringify(quizState.history.slice(-50)));
+    } catch(e) {}
+}
+
+function updateWeakAreas(questions, answers) {
+    if (!quizState.weakAreas[currentSubject]) quizState.weakAreas[currentSubject] = {};
+    questions.forEach((q, i) => {
+        const cat = q.category;
+        if (!quizState.weakAreas[currentSubject][cat]) quizState.weakAreas[currentSubject][cat] = { attempts: 0, correct: 0 };
+        quizState.weakAreas[currentSubject][cat].attempts++;
+        if (answers[i] && answers[i].toUpperCase() === q.answer.toUpperCase()) quizState.weakAreas[currentSubject][cat].correct++;
+    });
+    saveQuizPersistentData();
+}
+
+// ----- START QUIZ -----
+function startQuiz() {
+    const pool = shuffleArray(getAvailableQuestions());
+    const finalCount = Math.min(quizState.count, pool.length);
+    quizState.questions = pool.slice(0, finalCount).map(q => shuffleOptions(q));
+    quizState.currentIndex = 0;
+    quizState.answers = {};
+    quizState.flagged = new Set();
+    quizState.submitted = false;
+    quizState.startTime = Date.now();
+    quizState.timeRemaining = quizState.totalTime;
+    renderQuizExam();
+    if (quizState.timed && quizState.totalTime > 0) startTimer();
+}
+
+function startTimer() {
+    clearInterval(quizState.timerInterval);
+    quizState.timerInterval = setInterval(() => {
+        quizState.timeRemaining--;
+        updateTimerDisplay();
+        if (quizState.timeRemaining <= 0) { clearInterval(quizState.timerInterval); submitQuiz(true); }
+    }, 1000);
+}
+
+function updateTimerDisplay() {
+    const el = document.getElementById('quiz-timer-display');
+    if (!el) return;
+    el.textContent = formatTime(quizState.timeRemaining);
+    if (quizState.timeRemaining <= 300) el.classList.add('timer-warning');
+}
+
+// ----- RENDER EXAM -----
+function renderQuizExam() {
+    const q = quizState.questions[quizState.currentIndex];
+    const total = quizState.questions.length;
+    const answered = Object.keys(quizState.answers).length;
+    const progress = Math.round((answered / total) * 100);
+    const optionLabels = ['A','B','C','D','E'];
+
+    const navDots = quizState.questions.map((_, i) => {
+        let cls = 'nav-dot';
+        if (i === quizState.currentIndex) cls += ' current';
+        else if (quizState.answers[i] !== undefined) cls += ' answered';
+        if (quizState.flagged.has(i)) cls += ' flagged';
+        return `<button class="${cls}" data-idx="${i}">${i+1}</button>`;
+    }).join('');
+
+    const isFlagged = quizState.flagged.has(quizState.currentIndex);
+    questionsContainer.innerHTML = `
+        <div class="quiz-exam-wrapper">
+            <div class="quiz-top-bar">
+                <div class="quiz-meta">
+                    <div class="qz-top-row">
+                        <span class="quiz-progress-text">Question <strong>${quizState.currentIndex + 1}</strong> of ${total}</span>
+                        <span class="quiz-stats-inline">${answered} answered · ${quizState.flagged.size} flagged</span>
+                    </div>
+                    <div class="quiz-progress-bar-wrap"><div class="quiz-progress-bar-fill" style="width:${progress}%"></div></div>
+                </div>
+                <div class="quiz-top-actions">
+                    ${quizState.timed ? `<div class="quiz-timer-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg><span id="quiz-timer-display">${formatTime(quizState.timeRemaining)}</span></div>` : ''}
+                    <button class="quiz-submit-early-btn" id="quiz-submit-early">Submit</button>
+                </div>
+            </div>
+            <div class="quiz-navigator" id="quiz-navigator" aria-label="Jump to a question">${navDots}</div>
+            <div class="quiz-question-card" data-anim-key="${quizState.currentIndex}">
+                <div class="quiz-q-meta">
+                    <span class="quiz-q-badge num-badge">Q${q.questionNumber.toString().padStart(2, '0')}</span>
+                    <span class="quiz-q-badge year-badge">${q.year}</span>
+                    <span class="quiz-q-badge cat-badge">${escapeHtml(q.category)}</span>
+                    ${q.diagramMissing ? '<span class="quiz-q-badge diagram-badge">Diagram missing</span>' : ''}
+                    ${isFlagged ? '<span class="quiz-q-badge flag-badge">🚩 Flagged</span>' : ''}
+                </div>
+                ${renderQuestionBody(q)}
+                <div class="quiz-options" id="quiz-options">
+                    ${q.options.filter(o => o && o.trim()).map((opt, i) => {
+                        const label = optionLabels[i];
+                        const isSelected = quizState.answers[quizState.currentIndex] === label;
+                        return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${label}" aria-pressed="${isSelected}"><span class="option-label">${label}</span><span class="option-text">${escapeHtml(opt)}</span></button>`;
+                    }).join('')}
+                </div>
+                <div class="quiz-card-actions">
+                    <button class="quiz-flag-btn ${isFlagged ? 'flagged' : ''}" id="quiz-flag-btn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>${isFlagged ? 'Unflag' : 'Flag'}
+                    </button>
+                    <div class="quiz-nav-btns">
+                        <button class="quiz-prev-btn" id="quiz-prev-btn" ${quizState.currentIndex === 0 ? 'disabled' : ''}>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span>Previous</span>
+                        </button>
+                        <button class="quiz-next-btn" id="quiz-next-btn">
+                            <span>${quizState.currentIndex === total - 1 ? 'Review' : 'Next'}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p class="qz-shortcuts">Keyboard: <kbd>A</kbd>–<kbd>E</kbd> to answer · <kbd>←</kbd> <kbd>→</kbd> to move · <kbd>F</kbd> to flag</p>
+        </div>`;
+    // Keep the current question visible in the strip of numbers
+    document.querySelector('#quiz-navigator .nav-dot.current')?.scrollIntoView({ block: 'nearest', inline: 'center' });
+// Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}
+
+    setupExamListeners();
+    updateTimerDisplay();
+}
+
+function setupExamListeners() {
+    document.querySelectorAll('.quiz-option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            quizState.answers[quizState.currentIndex] = btn.dataset.label;
+            document.querySelectorAll('.quiz-option-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            updateNavigatorDot(quizState.currentIndex);
+        });
+    });
+    document.querySelectorAll('.nav-dot').forEach(dot => {
+        dot.addEventListener('click', () => { quizState.currentIndex = parseInt(dot.dataset.idx); renderQuizExam(); });
+    });
+    document.getElementById('quiz-prev-btn').addEventListener('click', () => {
+        if (quizState.currentIndex > 0) { quizState.currentIndex--; renderQuizExam(); }
+    });
+    document.getElementById('quiz-next-btn').addEventListener('click', () => {
+        if (quizState.currentIndex < quizState.questions.length - 1) { quizState.currentIndex++; renderQuizExam(); }
+        else showQuizReviewScreen();
+    });
+    document.getElementById('quiz-flag-btn').addEventListener('click', () => {
+        if (quizState.flagged.has(quizState.currentIndex)) quizState.flagged.delete(quizState.currentIndex);
+        else quizState.flagged.add(quizState.currentIndex);
+        renderQuizExam();
+    });
+    document.getElementById('quiz-submit-early').addEventListener('click', () => showQuizReviewScreen());
+}
+
+function updateNavigatorDot(idx) {
+    const dot = document.querySelector(`.nav-dot[data-idx="${idx}"]`);
+    if (!dot) return;
+    if (quizState.answers[idx] !== undefined) dot.classList.add('answered');
+    if (quizState.flagged.has(idx)) dot.classList.add('flagged');
+}
+
+// ----- REVIEW SCREEN -----
+function showQuizReviewScreen() {
+    const total = quizState.questions.length;
+    const answered = Object.keys(quizState.answers).length;
+    const unanswered = total - answered;
+    const flaggedList = [...quizState.flagged];
+
+    questionsContainer.innerHTML = `
+        <div class="quiz-review-screen">
+            <span class="qz-kicker">Almost done</span>
+            <h2>Review before you submit</h2>
+            <div class="quiz-review-stats">
+                <div class="review-stat"><span class="rs-num">${total}</span><span class="rs-label">Total</span></div>
+                <div class="review-stat answered"><span class="rs-num">${answered}</span><span class="rs-label">Answered</span></div>
+                <div class="review-stat unanswered"><span class="rs-num">${unanswered}</span><span class="rs-label">Unanswered</span></div>
+                <div class="review-stat flagged-stat"><span class="rs-num">${flaggedList.length}</span><span class="rs-label">Flagged</span></div>
+            </div>
+            ${flaggedList.length > 0 ? `<div class="review-flagged-section"><span>🚩 Flagged questions</span><div>${flaggedList.map(i => `<button class="review-jump-btn" data-idx="${i}">Q${i+1}</button>`).join('')}</div></div>` : ''}
+            ${unanswered > 0 ? `<p class="review-warning">You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Unanswered questions count as wrong.</p>` : '<p class="review-all-done">Every question is answered. Nice work.</p>'}
+            <div class="review-actions">
+                <button class="review-back-btn" id="review-back-btn">Back to the quiz</button>
+                <button class="review-submit-btn" id="review-submit-btn">Submit and see results</button>
+            </div>
+        </div>`;
+
+    document.querySelectorAll('.review-jump-btn').forEach(btn => {
+        btn.addEventListener('click', () => { quizState.currentIndex = parseInt(btn.dataset.idx); renderQuizExam(); });
+    });
+    document.getElementById('review-back-btn').addEventListener('click', () => renderQuizExam());
+    document.getElementById('review-submit-btn').addEventListener('click', () => submitQuiz(false));
+}
+
+// ===== DASHBOARD =====
+
+// ===== DASHBOARD NAVIGATION =====
+function goToBrowseQuestions() {
+    openSubjectPicker();
+}
+
+function goToQuizMode() {
+    showScreen("app-content", { 
+        customScreenId: "quiz-screen", 
+        customPath: "/quiz-mode" 
+    });
+    showQuizLobby();
+}
+
+function goToPastPapers() {
+    showScreen("app-content", { customScreenId: "past-papers-screen" });
+    showPastQuestionsSidebar();
+}
+function runRouteInit() {
+    if (welcomeMessage) welcomeMessage.style.display = 'none'; 
+    const path = location.pathname.replace("/", "") || "dashboard";
+    if (path === "past-papers") showPastQuestionsSidebar();
+    else if (path === "quiz-mode") showQuizLobby();
+    else if (path === "subjects") openSubjectPicker();
+    else showDashboard();
+}
+
+function startQuickPractice() {
+    goToQuizMode();
+    setTimeout(() => {
+        const practiceCard = document.querySelector('.quiz-mode-card[data-mode="practice"]');
+        if (practiceCard) practiceCard.click();
+    }, 200);
+}
+function showDashboard() {
+    const data = getDashboardData();
+    renderDashboard(data);
+}
+
+function getDashboardData() {
+    const userName = localStorage.getItem('jupeb_user_name') || 'Student';
+    const lastSession = JSON.parse(localStorage.getItem(qbKey('jupeb_last_session')) || 'null');
+    const streakData = JSON.parse(localStorage.getItem('jupeb_streak') || '{"days":0,"flags":[false,false,false,false,false,false,false]}');
+    const subjectProgress = JSON.parse(localStorage.getItem(qbKey('jupeb_subject_progress')) || '{}');
+    const weakTopics = getWeakTopicsForDashboard();
+    const recentActivity = JSON.parse(localStorage.getItem('jupeb_quiz_history') || '[]').slice(-5).reverse();
+    
+    // Build subjects array
+    const subjectMeta = {
+        chemistry: { name: 'Chemistry', icon: '🧪' },
+        physics: { name: 'Physics', icon: '⚛️' },
+        maths: { name: 'Mathematics', icon: '📐' },
+        biology: { name: 'Biology', icon: '🧬' },
+        crs: { name: 'CRS', icon: '🕊️' },
+        irs: { name: 'IRS', icon: '☪️' },
+        literature: { name: 'Literature', icon: '📖' },
+        economics: { name: 'Economics', icon: '💰' },
+        government: { name: 'Government', icon: '🏛️' }
+    };
+    
+    const subjects = Object.entries(subjectMeta).map(([key, meta]) => {
+        const progress = subjectProgress[key] || { answered: 0, total: 0 };
+        return {
+            name: meta.name,
+            icon: meta.icon,
+            answered: progress.answered || 0,
+            total: progress.total || 0
+        };
+    });
+    
+        // Build weak topics
+    const weakTopicNames = getWeakTopics();
+    const weakTopicDetails = weakTopicNames.map(name => {
+        const weakData = (quizState.weakAreas[window.currentSubject] || {})[name] || {};
+        const pct = weakData.attempts > 0 ? Math.round((weakData.correct / weakData.attempts) * 100) : 0;
+        return { name, score: pct };
+    });
+    
+    // Build recent activity
+    const activity = recentActivity.map(entry => ({
+        label: entry.mode === 'exam' ? 'Completed Past Exam' : entry.mode === 'practice' ? 'Practiced Questions' : 'Weak Area Practice',
+        meta: `${entry.subject} · ${entry.total} questions · ${entry.score}%`,
+        when: entry.date || 'Today',
+        mode: entry.mode,
+        subject: entry.subject,
+        total: entry.total,
+        score: entry.score
+    }));
+    
+    return {
+        userName,
+        lastSession,
+        streakDays: streakData.days || 0,
+        streakDayFlags: streakData.flags || [false,false,false,false,false,false,false],
+        subjects,
+        weakTopics: weakTopicDetails,
+        recentActivity: activity
+    };
+}
+// ===== PINNED SUBJECTS (dashboard quick access) =====
+// Pins are stored in localStorage, so they persist whenever the student comes
+// back on the same browser/device. Relies on SUBJECT_ICONS, SUBJECT_NAMES,
+// pickerEl, pickerStep, pickerSubject, pickerSubjectName, pickerSet,
+// renderPickerStep(), showScreen() — all already in script.js.
+
+// ===== PINNED SUBJECTS (dashboard quick access) =====
+// Pins are stored in localStorage, so they persist whenever the student comes
+// back on the same browser/device. Relies on SUBJECT_ICONS, SUBJECT_NAMES,
+// pickerEl, pickerStep, pickerSubject, pickerSubjectName, pickerSet,
+// renderPickerStep(), showScreen() — all already in script.js.
+
+// Storage key for things kept separately per exam (see examKey in exam-mode.js)
+function qbKey(key) {
+  return (typeof examKey === 'function') ? examKey(key) : key;
+}
+
+function getPinnedSubjects() {
+  try {
+    return JSON.parse(localStorage.getItem(qbKey("jupeb_pinned_subjects")) || "[]");
+  } catch (e) {
+    return [];
+  }
+}
+
+function savePinnedSubjects(list) {
+  localStorage.setItem(qbKey("jupeb_pinned_subjects"), JSON.stringify(list));
+}
+
+function renderPinnedSubjects() {
+  const container = document.getElementById("dash-pinned-subjects");
+  if (!container) return;
+
+  const pinned = getPinnedSubjects().filter(id => SUBJECT_NAMES[id] && courseStructure[id]); // ignore stale ids and other-exam subjects
+
+  if (pinned.length === 0) {
+    container.innerHTML = `
+      <div class="pinned-empty">
+        <p>You haven't pinned any subjects yet.</p>
+        <button class="dash-btn-primary" onclick="openSubjectPickerForPinning()">Pick subjects</button>
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = pinned.map(id => `
+    <button class="dash-subject-tile is-clickable" onclick="openPinnedSubject('${id}')">
+      <span class="db-subj-icon" aria-hidden="true">${SUBJECT_ICONS[id] || "📘"}</span>
+      <span class="db-subj-name">${SUBJECT_NAMES[id]}</span>
+    </button>`).join("") + `
+    <button class="dash-add-subject-tile" onclick="openSubjectPickerForPinning()">
+      <span class="plus-icon" aria-hidden="true">+</span>
+      <span>Edit</span>
+    </button>`;
+}
+
+// Jump straight into a pinned subject's course list (skips subject selection)
+function openPinnedSubject(subjectId) {
+  pickerPinMode = false;
+  pickerSubject = subjectId;
+  pickerSubjectName = SUBJECT_NAMES[subjectId];
+  pickerSet = null;
+  pickerStep = "set";
+
+  showScreen("app-content", { customScreenId: "subjects-screen" });
+  pickerEl.classList.add("is-open");
+  pickerEl.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  renderPickerStep();
+}
+
+// Pin-mode helpers (these live next to the picker code too — keep ONE copy)
+function openSubjectPickerForPinning() {
+  pickerPinMode = true;
+  pickerStep = "subject";
+  pickerSubject = null;
+  pickerSubjectName = null;
+  pickerSet = null;
+
+  // No showScreen() here: pinning happens on top of the dashboard.
+  pickerEl.classList.add("is-open");
+  pickerEl.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  renderPickerStep();
+  setTimeout(() => pickerSearch.focus(), 200);
+}
+
+function pickerTogglePin(subjectId) {
+  const pinned = getPinnedSubjects();
+  const index = pinned.indexOf(subjectId);
+  if (index === -1) pinned.push(subjectId);
+  else pinned.splice(index, 1);
+
+  savePinnedSubjects(pinned);
+  renderPickerStep();
+  renderPinnedSubjects();
+}
+// Icons for the recent-activity rows, by quiz mode
+const ACTIVITY_KINDS = {
+    exam:     { tone: "db-tone-violet", icon: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>' },
+    practice: { tone: "db-tone-blue",   icon: '<svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>' },
+    weak:     { tone: "db-tone-orange", icon: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>' }
+};
+
+// The percentage and ring on the "continue" card
+function setContinueProgress(pct) {
+    const label = document.getElementById("db-continue-pct");
+    if (label) label.textContent = `${pct}%`;
+    const ring = document.getElementById("db-continue-ring");
+    if (ring) {
+        const length = 2 * Math.PI * 50;              // r = 50 in the SVG
+        ring.style.strokeDashoffset = String(length * (1 - Math.min(100, Math.max(0, pct)) / 100));
+    }
+}
+
+// The four numbers under the banner, from what this browser has saved
+function renderDashboardStats() {
+    let history = [];
+    try { history = JSON.parse(localStorage.getItem('jupeb_quiz_history') || '[]'); } catch (e) {}
+    let progress = {};
+    try { progress = JSON.parse(localStorage.getItem(qbKey('jupeb_subject_progress')) || '{}'); } catch (e) {}
+
+    const scores = history.map(h => Number(h.score)).filter(Number.isFinite);
+    const fromProgress = Object.values(progress).reduce((sum, p) => sum + (Number(p && p.answered) || 0), 0);
+    const fromHistory = history.reduce((sum, h) => sum + (Number(h.total) || 0), 0);
+    const values = {
+        "db-stat-answered": Math.max(fromProgress, fromHistory),
+        "db-stat-quizzes": history.length,
+        "db-stat-avg": scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0,
+        "db-stat-best": scores.length ? Math.round(Math.max(...scores)) : 0
+    };
+    Object.entries(values).forEach(([id, value]) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.dataset.value = value;
+        el.textContent = value.toLocaleString() + (el.dataset.suffix || "");
+    });
+}
+
+function renderDashboard(data = {}) {
+    console.log('renderDashboard called with:', data);
+    const {
+        userName = "Student",
+        lastSession = null,
+        streakDays = 0,
+        streakDayFlags = [false, false, false, false, false, false, false],
+        subjects = [],
+        weakTopics = [],
+        recentActivity = []
+    } = data;
+
+    // Greeting
+    const hour = new Date().getHours();
+    const part = hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening";
+    document.getElementById("dash-greeting-text").textContent = `Good ${part}, ${userName} 👋`;
+    document.getElementById("dash-date").textContent = new Date().toLocaleDateString(undefined, {
+        weekday: "long", month: "short", day: "numeric"
+    });
+    // Update subtitle
+document.getElementById("dash-user-name").textContent = 
+    "Ready to make today a productive study session?";
+
+    // Continue last session
+    const topicEl = document.getElementById("dash-continue-topic");
+    const textEl = document.getElementById("dash-continue-text");
+    const fillEl = document.getElementById("dash-continue-fill");
+    if (lastSession && lastSession.topic) {
+        topicEl.textContent = lastSession.topic;
+        const pct = Math.round((lastSession.answered / lastSession.total) * 100) || 0;
+        textEl.textContent = `${lastSession.subject} · ${lastSession.answered} / ${lastSession.total} questions completed`;
+        fillEl.style.width = `${pct}%`;
+        setContinueProgress(pct);
+    } else {
+        topicEl.textContent = "Pick a subject to begin";
+        textEl.textContent = "You haven't started studying yet.";
+        fillEl.style.width = "0%";
+        setContinueProgress(0);
+    }
+
+    // Numbers row
+    renderDashboardStats();
+
+    // Streak
+    document.getElementById("dash-streak-text").innerHTML = `${streakDays} <span>days</span>`;
+    document.getElementById("dash-streak-subtext").textContent =
+        streakDays > 0 ? "Keep it up! Consistency is key." : "Start studying today to build your streak";
+    document.querySelectorAll("#streak-dots .streak-dot").forEach((dot, i) => {
+        dot.classList.toggle("is-complete", !!streakDayFlags[i]);
+        dot.classList.remove("is-today");
+    });
+    const todayIndex = (new Date().getDay() + 6) % 7;
+    const todayDot = document.querySelectorAll("#streak-dots .streak-dot")[todayIndex];
+    if (todayDot) todayDot.classList.add("is-today");
+
+    
+    // Weak topics
+    const weakEl = document.getElementById("dash-weak-topics");
+    if (weakTopics.length) {
+        weakEl.innerHTML = weakTopics.map(t => `
+            <div class="dash-weak-row">
+                <span class="db-weak-name" title="${t.name}">${t.name}</span>
+                <div class="dash-progress-track"><div class="dash-progress-fill" style="width:${t.score}%"></div></div>
+                <span class="dash-weak-pct">${t.score}%</span>
+            </div>`).join("");
+    } else {
+        weakEl.innerHTML = '<p class="db-empty">Answer 10+ questions to unlock weak area tracking.</p>';
+    }
+
+    // Recent activity
+    const recentEl = document.getElementById("dash-recent-activity");
+    if (recentActivity.length) {
+        recentEl.innerHTML = recentActivity.map(a => {
+            const score = Number(a.score);
+            const hasScore = Number.isFinite(score);
+            const scoreClass = !hasScore ? "" : score >= 70 ? "" : score >= 50 ? " db-score--mid" : " db-score--low";
+            const kind = ACTIVITY_KINDS[a.mode] || ACTIVITY_KINDS.weak;
+            const subjectName = (typeof SUBJECT_NAMES === "object" && SUBJECT_NAMES[a.subject]) || a.subject;
+            const meta = a.subject ? `${subjectName}${a.total ? ` · ${a.total} questions` : ""}` : (a.meta || "");
+            return `
+            <div class="dash-activity-row">
+                <span class="db-act-icon ${kind.tone}" aria-hidden="true">${kind.icon}</span>
+                <div class="db-act-body"><strong>${a.label}</strong><span>${meta}</span></div>
+                <div class="db-act-side">
+                    ${hasScore ? `<span class="db-score${scoreClass}">${score}%</span>` : ""}
+                    <span class="db-act-when">${a.when}</span>
+                </div>
+            </div>`;
+        }).join("");
+    } else {
+        recentEl.innerHTML = '<p class="db-empty">No activity yet. Your study sessions will show here.</p>';
+    }
+     if (typeof renderPinnedSubjects === 'function') {
+        renderPinnedSubjects();
+    }
+    if (typeof loadBellUpdates === 'function') loadBellUpdates();
+}
+
+function getWeakTopicsForDashboard() {
+    return getWeakTopics();
+}
+
+// ===== TRACKING FUNCTIONS =====
+function trackStudySession(subject, topic, answered, total) {
+    // Save last session
+    localStorage.setItem(qbKey('jupeb_last_session'), JSON.stringify({ subject, topic, answered, total }));
+    
+    // Update streak
+    updateStreak();
+    
+    // Update subject progress
+    const progress = JSON.parse(localStorage.getItem(qbKey('jupeb_subject_progress')) || '{}');
+    if (!progress[subject]) progress[subject] = { answered: 0, total: 0 };
+    progress[subject].answered = (progress[subject].answered || 0) + answered;
+    // Total for a subject = number of available questions for that subject
+    if (allSubjectData[subject] && allSubjectData[subject].length > 0) {
+        progress[subject].total = allSubjectData[subject].length;
+    }
+    localStorage.setItem(qbKey('jupeb_subject_progress'), JSON.stringify(progress));
+}
+
+function updateStreak() {
+    const today = new Date().toDateString();
+    const streak = JSON.parse(localStorage.getItem('jupeb_streak') || '{"days":0,"lastDate":null,"flags":[false,false,false,false,false,false,false]}');
+    
+    if (streak.lastDate === today) return; // Already logged today
+    
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toDateString();
+    
+    if (streak.lastDate === yesterdayStr) {
+        // Consecutive
+        streak.days = (streak.days || 0) + 1;
+    } else if (streak.lastDate !== today) {
+        // Reset
+        streak.days = 1;
+    }
+    
+    streak.lastDate = today;
+    
+    // Update flags for current week
+    const dayIndex = (new Date().getDay() + 6) % 7; // Mon=0..Sun=6
+    streak.flags = streak.flags || [false,false,false,false,false,false,false];
+    streak.flags[dayIndex] = true;
+    
+    localStorage.setItem('jupeb_streak', JSON.stringify(streak));
+}
+
+function startQuickPractice() {
+    goToQuizMode();
+    setTimeout(() => {
+        const practiceCard = document.querySelector('.quiz-mode-card[data-mode="practice"]');
+        if (practiceCard) practiceCard.click();
+    }, 200);
+}
+function goToDashboard() {
+    // Check if quiz is in progress
+    if (typeof quizState !== 'undefined' && quizState.questions && quizState.questions.length > 0 && !quizState.submitted) {
+        const confirmed = confirm("Leave this quiz? Your progress won't be saved.");
+        if (!confirmed) {
+            // Push the quiz state back so back gesture doesn't desync
+            history.pushState({ screenId: "app-content" }, "", "#questions");
+            return;
+        }
+        clearQuizTimer();
+    }
+    showScreen("dashboard-screen");
+    showDashboard();
+}
+// ===== HASH ROUTING (Browser Back Support) =====
+const SCREEN_ROUTES = {
+    "login-screen": "login",
+    "dashboard-screen": "dashboard",
+    "app-content": "questions",
+    "progress-screen": "progress",
+    "settings-screen": "settings",
+    "help-screen": "help",
+    // Custom routes (not actual screens, but valid URLs)
+    "quiz-screen": "quiz-mode",
+    "past-papers-screen": "past-papers",
+    "subjects-screen": "subjects"
+};
+
+
+function showScreen(screenId, { pushHistory = true, customScreenId = null, customPath = null } = {}) {
+    // Close subject picker if it's open
+    const picker = document.getElementById("subject-picker");
+    if (picker && picker.classList.contains("is-open")) {
+        picker.classList.remove("is-open");
+        picker.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
+    if (welcomeMessage) welcomeMessage.style.display = 'none';
+
+    Object.keys(SCREEN_ROUTES).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = (id === screenId) ? "block" : "none";
+    });
+
+    // login-screen isn't part of SCREEN_ROUTES (it's controlled by auth
+    // state, not the URL hash) — handle it explicitly so it's never
+    // visible at the same time as a routed screen.
+    const loginEl = document.getElementById("login-screen");
+    if (loginEl) loginEl.style.display = (screenId === "login-screen") ? "block" : "none";
+
+    const dispatchId = customScreenId || screenId;
+    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: dispatchId } }));
+
+     if (pushHistory) {
+        const path = customPath || ("/" + SCREEN_ROUTES[screenId]);
+        if (location.pathname !== path) {
+            history.pushState({ screenId, customScreenId }, "", path);
+        }
+    }
+}
+
+// Browser back/forward
+window.addEventListener("popstate", () => {
+    runRouteInit();
+});
+
+function screenFromHash() {
+    const path = location.pathname.replace("/", "");
+    
+    // If it's a custom sub-screen, map it back to app-content
+    if (path === "quiz-mode" || path === "past-papers") {
+        return "app-content";
+    }
+    if (path === "subjects") {
+        return "app-content"; // Subject picker will need to be reopened
+    }
+    
+    const match = Object.entries(SCREEN_ROUTES).find(([, p]) => p === path);
+    return match ? match[0] : "dashboard-screen";
+}
+
+
+// Stub navigation
+function goToProgress() { showScreen("progress-screen"); }
+function goToSettings() {
+    showScreen("settings-screen");
+    if (typeof renderSettings === 'function') renderSettings();
+    if (typeof syncSettingsOptions === 'function') syncSettingsOptions();
+}
+function goToHelp() {
+  showScreen("help-screen");
+  renderHelp();
+}
+
+// Sidebar behaviour
+const sidebarToggle = document.getElementById("sidebar-toggle");
+const sidebarOverlay = document.getElementById("sidebar-overlay");
+const appSidebar = document.getElementById("app-sidebar");
+
+function openSidebar() {
+    appSidebar.classList.add("is-open");
+    sidebarOverlay.classList.add("is-open");
+}
+function closeSidebar() {
+    appSidebar.classList.remove("is-open");
+    sidebarOverlay.classList.remove("is-open");
+}
+sidebarToggle?.addEventListener("click", () => {
+    appSidebar.classList.contains("is-open") ? closeSidebar() : openSidebar();
+});
+sidebarOverlay?.addEventListener("click", closeSidebar);
+
+document.addEventListener("screenchange", (e) => {
+    document.querySelectorAll(".sidebar-link").forEach(link => {
+        link.classList.toggle("is-active", link.dataset.screen === e.detail.screenId);
+    });
+    closeSidebar();
+});
+
+// Populate sidebar user
+function renderSidebarUser({ name = "Student", isPremium = true, photoURL = null } = {}) {
+    const nameEl = document.getElementById("sidebar-user-name");
+    const planEl = document.getElementById("sidebar-user-plan");
+    const avatarEl = document.getElementById("sidebar-avatar");
+    
+    if (nameEl) nameEl.textContent = name;
+    if (planEl) planEl.textContent = isPremium ? "⭐ Premium Plan" : "Free Plan";
+    
+    if (avatarEl) {
+        if (photoURL) {
+            avatarEl.innerHTML = `<img src="${photoURL}" alt="${name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
+        } else {
+            const initials = name
+                .split(" ")
+                .map(w => w[0])
+                .slice(0, 2)
+                .join("")
+                .toUpperCase();
+            avatarEl.textContent = initials;
+        }
+    }
+}
+function goToWeakAreas() {
+    showScreen("app-content");
+    showQuizLobby();
+    
+    setTimeout(() => {
+        const weakCard = document.querySelector('.quiz-mode-card[data-mode="weak"]:not([disabled])');
+        if (weakCard) weakCard.click();
+    }, 200);
+}
+
+// ===== SUBJECT PICKER (Multi-Level) =====
+let pickerStep = "subject";     // "subject" | "set" | "topic"
+let pickerSubject = null;       // selected subject id
+let pickerSubjectName = null;   // selected subject display name
+let pickerSet = null;           // selected course name (e.g., "CHM 001 - General Chemistry")
+
+const pickerEl = document.getElementById("subject-picker");
+const pickerGrid = document.getElementById("subject-picker-grid");
+const pickerSearch = document.getElementById("subject-picker-search");
+const pickerBackdrop = document.getElementById("subject-picker-backdrop");
+const pickerClose = document.getElementById("subject-picker-close");
+const pickerBackBtn = document.getElementById("subject-picker-back");
+const pickerCrumbs = document.getElementById("subject-picker-crumbs");
+
+const SUBJECT_ICONS = {
+    chemistry: "🧪",
+    physics: "⚛️",
+    maths: "📐",
+    biology: "🧬",
+    crs: "✝️",
+    irs: "☪️",
+    literature: "📖",
+    economics: "💰",
+    government: "🏛️",
+    accounting: "🧾",
+    geography: "🌍",
+    sociology: "👥",
+   businessManagement: "💼"
+};
+
+const SUBJECT_NAMES = {
+    chemistry: "Chemistry",
+    physics: "Physics",
+    maths: "Mathematics",
+    biology: "Biology",
+    crs: "CRS",
+    irs: "IRS",
+    literature: "Literature",
+    economics: "Economics",
+    accounting: "Accounting",
+    businessManagement: "Business Management",
+    geography: "Geography",
+    sociology: "Sociology",
+    government: "Government"
+};
+
+function openSubjectPicker() {
+    pickerPinMode = false;   // add this line
+    pickerStep = "subject";
+    pickerSubject = null;
+    pickerSubjectName = null;
+    pickerSet = null;
+    pickerEl.classList.add("is-open");
+    pickerEl.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    renderPickerStep();
+    setTimeout(() => pickerSearch.focus(), 200);
+    
+    history.pushState(
+        { screenId: "app-content", customScreenId: "subjects-screen" }, 
+        "", 
+        "/subjects"
+    );
+    
+    document.dispatchEvent(new CustomEvent("screenchange", { detail: { screenId: "subjects-screen" } }));
+}
+
+function closeSubjectPicker() {
+    pickerEl.classList.remove("is-open");
+    pickerEl.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    pickerPinMode = false;                                            // add
+    if (typeof renderPinnedSubjects === 'function') renderPinnedSubjects();  // add
+}
+
+function pickerGoBack() {
+    if (pickerStep === "topic") { pickerStep = "set"; pickerSet = null; }
+    else if (pickerStep === "set") { pickerStep = "subject"; pickerSubject = null; pickerSubjectName = null; }
+    renderPickerStep();
+}
+
+function pickerJumpTo(step) {
+    if (step === "subject") { pickerStep = "subject"; pickerSubject = null; pickerSubjectName = null; pickerSet = null; }
+    if (step === "set") { pickerStep = "set"; pickerSet = null; }
+    renderPickerStep();
+}
+
+// ===== QUESTION COUNTS IN THE SUBJECT PICKER =====
+// Each subject, course and topic tile shows how many questions it has. A tile
+// with none is greyed out and can't be opened; tapping it shows a short note.
+// Counts match the topic page: identical questions are counted once.
+const _topicCountCache = {};
+function topicCounts(subjectId) {
+    const data = (allSubjectData && allSubjectData[subjectId]) || [];
+    const cached = _topicCountCache[subjectId];
+    if (cached && cached.size === data.length) return cached.counts;
+    const counts = {}, seen = {};
+    data.forEach(q => {
+        if (!q.category) return;
+        const key = (q.question || '').trim().toLowerCase();
+        const set = seen[q.category] || (seen[q.category] = new Set());
+        if (set.has(key)) return;
+        set.add(key);
+        counts[q.category] = (counts[q.category] || 0) + 1;
+    });
+    _topicCountCache[subjectId] = { size: data.length, counts };
+    return counts;
+}
+function courseQuestionCount(subjectId, course) {
+    const counts = topicCounts(subjectId);
+    return (courseStructure[subjectId]?.[course] || []).reduce((n, t) => n + (counts[t] || 0), 0);
+}
+function subjectQuestionCount(subjectId) {
+    return Object.keys(courseStructure[subjectId] || {}).reduce((n, c) => n + courseQuestionCount(subjectId, c), 0);
+}
+// Until the questions have loaded we don't know the counts, so nothing is greyed out yet
+function countsReady() { return window.jupebDataLoaded === true; }
+function countLabel(n) {
+    if (!countsReady()) return 'Loading…';
+    if (n === 0) return 'No questions yet';
+    return n === 1 ? '1 question' : `${n.toLocaleString()} questions`;
+}
+function showPickerNote(text) {
+    let note = document.getElementById('picker-note');
+    if (!note) {
+        note = document.createElement('div');
+        note.id = 'picker-note';
+        note.className = 'picker-note';
+        note.setAttribute('role', 'status');
+        pickerEl.appendChild(note);
+    }
+    note.textContent = text;
+    note.classList.add('is-show');
+    clearTimeout(showPickerNote._t);
+    showPickerNote._t = setTimeout(() => note.classList.remove('is-show'), 2600);
+}
+function pickerEmptyTile(name) {
+    showPickerNote(`No questions in ${name} yet. Check back soon.`);
+}
+// When the questions finish loading while the picker is open, fill in the counts
+document.addEventListener('jupebDataLoaded', () => {
+    if (pickerEl && pickerEl.classList.contains('is-open')) renderPickerStep();
+});
+
+// Each subject's accent colour in the picker
+const SUBJECT_TONES = {
+    chemistry: '#10b981', physics: '#6366f1', maths: '#0ea5e9', biology: '#22c55e',
+    crs: '#f59e0b', irs: '#14b8a6', literature: '#ec4899', economics: '#eab308',
+    government: '#ef4444', accounting: '#64748b', businessManagement: '#f97316',
+    geography: '#06b6d4', sociology: '#a855f7'
+};
+// "CHM 001 - General Chemistry" → { code: "CHM 001", title: "General Chemistry" }
+function splitCourseName(name) {
+    const i = name.indexOf(' - ');
+    return i === -1 ? { code: '', title: name } : { code: name.slice(0, i), title: name.slice(i + 3) };
+}
+const PICKER_CHEVRON = '<svg class="sp-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+
+function renderPickerStep() {
+    pickerSearch.value = "";
+    pickerBackBtn.classList.toggle("is-visible", pickerStep !== "subject");
+    const emptyNote = document.getElementById("sp-empty");
+    if (emptyNote) emptyNote.hidden = true;
+
+    // Breadcrumb
+    const crumbs = [];
+    if (pickerStep === "subject") {
+        crumbs.push(`<span class="crumb is-current">${pickerPinMode ? "Quick access" : "All subjects"}</span>`);
+    } else if (pickerStep === "set") {
+        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">Subjects</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">${escapeHtml(pickerSubjectName)}</span>`);
+    } else if (pickerStep === "topic") {
+        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">Subjects</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb" onclick="pickerJumpTo('set')">${escapeHtml(pickerSubjectName)}</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">${escapeHtml(splitCourseName(pickerSet).code || pickerSet)}</span>`);
+    }
+    pickerCrumbs.innerHTML = crumbs.join("");
+
+    // Step tracker, heading, footer
+    const order = ["subject", "set", "topic"];
+    document.querySelectorAll("#sp-steps li").forEach(li => {
+        const i = order.indexOf(li.dataset.step), cur = order.indexOf(pickerStep);
+        li.classList.toggle("is-done", i < cur);
+        li.classList.toggle("is-current", i === cur);
+    });
+    const stepsEl = document.getElementById("sp-steps");
+    if (stepsEl) stepsEl.hidden = pickerPinMode;
+    const titleEl = document.getElementById("sp-title");
+    const subEl = document.getElementById("sp-sub");
+    const footer = document.getElementById("sp-footer");
+    if (footer) footer.hidden = !pickerPinMode;
+    pickerGrid.className = `subject-picker-grid sp-grid--${pickerStep}`;
+    pickerEl.style.setProperty("--sp-tone", SUBJECT_TONES[pickerSubject] || "var(--tab-active-bg)");
+
+    if (pickerStep === "subject") {
+        pickerSearch.placeholder = "Search subjects";
+        // Subjects with questions first; "coming soon" ones at the end
+        const subjects = Object.keys(courseStructure).sort((a, b) =>
+            countsReady() ? (subjectQuestionCount(b) > 0 || subjectLoadFailed(b)) - (subjectQuestionCount(a) > 0 || subjectLoadFailed(a)) : 0);
+        const pinned = pickerPinMode ? getPinnedSubjects() : [];
+        if (titleEl) titleEl.textContent = pickerPinMode ? "Pick your subjects" : "What do you want to study?";
+        if (subEl) subEl.textContent = pickerPinMode
+            ? "Tap a subject to add it to Quick Access on your dashboard. Tap again to remove it."
+            : `${subjects.length} subjects, each split into courses and topics.`;
+        const footText = document.getElementById("sp-footer-text");
+        if (footText) footText.textContent = `${pinned.length} subject${pinned.length === 1 ? '' : 's'} pinned`;
+
+        pickerGrid.innerHTML = subjects.map(id => {
+            const isPinned = pinned.includes(id);
+            const n = subjectQuestionCount(id);
+            const courses = Object.keys(courseStructure[id] || {}).length;
+            const failedLoad = countsReady() && subjectLoadFailed(id);
+            const empty = countsReady() && n === 0 && !pickerPinMode && !failedLoad;
+            const action = pickerPinMode ? `pickerTogglePin('${id}')`
+                : failedLoad ? `retryQuestionLoad()`
+                : empty ? `pickerEmptyTile('${SUBJECT_NAMES[id]}')` : `pickerChooseSubject('${id}')`;
+            const badge = pickerPinMode
+                ? `<span class="pin-badge ${isPinned ? 'is-pinned' : ''}" aria-hidden="true">${isPinned ? '✓' : '+'}</span>`
+                : '';
+            return `
+                <button class="subject-tile sp-subject ${empty ? 'is-empty' : ''} ${isPinned ? 'is-pinned' : ''}" style="--tone:${SUBJECT_TONES[id] || '#0d6efd'}"
+                        data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="${action}" ${empty ? 'aria-disabled="true"' : ''} ${pickerPinMode ? `aria-pressed="${isPinned}"` : ''}>
+                    ${badge}
+                    <span class="subject-tile-icon">${SUBJECT_ICONS[id] || "📘"}</span>
+                    <span class="subject-tile-name">${SUBJECT_NAMES[id]}</span>
+                    <span class="subject-tile-count">${failedLoad && !pickerPinMode ? "Couldn't load · tap to retry" : empty ? 'Coming soon' : `${courses} course${courses === 1 ? '' : 's'} · ${countLabel(n)}`}</span>
+                </button>`;
+        }).join("");
+    } else if (pickerStep === "set") {
+        pickerSearch.placeholder = "Search courses";
+        const courses = Object.keys(courseStructure[pickerSubject] || {});
+        if (titleEl) titleEl.textContent = pickerSubjectName;
+        if (subEl) subEl.textContent = `Choose a course · ${courses.length} course${courses.length === 1 ? '' : 's'} · ${countLabel(subjectQuestionCount(pickerSubject))}`;
+        pickerGrid.innerHTML = courses.map((course, i) => {
+            const n = courseQuestionCount(pickerSubject, course);
+            const empty = countsReady() && n === 0;
+            const { code, title } = splitCourseName(course);
+            const topics = (courseStructure[pickerSubject][course] || []).length;
+            return `
+            <button class="subject-tile sp-course ${empty ? 'is-empty' : ''}" data-name="${course.toLowerCase()}" data-course-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
+                <span class="sp-code">${escapeHtml(code || String(i + 1))}</span>
+                <span class="sp-row-text">
+                    <span class="subject-tile-name">${escapeHtml(title)}</span>
+                    <span class="subject-tile-count">${topics} topic${topics === 1 ? '' : 's'} · ${empty ? 'Coming soon' : countLabel(n)}</span>
+                </span>
+                ${PICKER_CHEVRON}
+            </button>`;
+        }).join("");
+
+        pickerGrid.querySelectorAll("button[data-course-index]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const course = courses[parseInt(btn.dataset.courseIndex, 10)];
+                if (btn.classList.contains("is-empty")) pickerEmptyTile(course);
+                else pickerChooseSet(course);
+            });
+        });
+    } else if (pickerStep === "topic") {
+        pickerSearch.placeholder = "Search topics";
+        const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
+        const counts = topicCounts(pickerSubject);
+        const { code, title } = splitCourseName(pickerSet);
+        if (titleEl) titleEl.textContent = title;
+        if (subEl) subEl.textContent = `${code ? code + ' · ' : ''}${topics.length} topic${topics.length === 1 ? '' : 's'} · ${countLabel(courseQuestionCount(pickerSubject, pickerSet))}`;
+        pickerGrid.innerHTML = topics.map((topic, i) => {
+            const n = counts[topic] || 0;
+            const empty = countsReady() && n === 0;
+            return `
+            <button class="subject-tile sp-topic ${empty ? 'is-empty' : ''}" data-name="${topic.toLowerCase()}" data-topic-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
+                <span class="sp-num">${String(i + 1).padStart(2, '0')}</span>
+                <span class="subject-tile-name">${escapeHtml(topic)}</span>
+                <span class="subject-tile-count">${empty ? 'Soon' : countsReady() ? n : '…'}</span>
+                ${PICKER_CHEVRON}
+            </button>`;
+        }).join("");
+
+        pickerGrid.querySelectorAll("button[data-topic-index]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const topic = topics[parseInt(btn.dataset.topicIndex, 10)];
+                if (btn.classList.contains("is-empty")) pickerEmptyTile(topic);
+                else pickerChooseTopic(topic);
+            });
+        });
+    }
+    // Start each step at the top of the list
+    const body = pickerEl.querySelector(".sp-body");
+    if (body) body.scrollTop = 0;
+}
+
+let pickerPinMode = false; // true when the picker is open for pinning, not browsing
+function pickerChooseSubject(subjectId) {
+    pickerSubject = subjectId;
+    pickerSubjectName = SUBJECT_NAMES[subjectId];
+    pickerStep = "set";
+    renderPickerStep();
+}
+
+function pickerChooseSet(courseName) {
+    pickerSet = courseName;
+    pickerStep = "topic";
+    renderPickerStep();
+}
+
+function pickerChooseTopic(topicName) {
+    const subjectId = pickerSubject;
+    const setId = pickerSet;
+    closeSubjectPicker();
+    
+    // Set current subject
+    currentSubject = subjectId;
+    questionsData = allSubjectData[subjectId] || [];
+    window.currentSubjectYears = allSubjectYears[subjectId] || [];
+    
+    // Show question bank
+    showScreen("app-content");
+    displayQuestions(topicName);
+}
+
+function filterPickerTiles(query) {
+    const q = query.trim().toLowerCase();
+    let shown = 0;
+    pickerGrid.querySelectorAll(".subject-tile").forEach(tile => {
+        const hide = !!q && !tile.dataset.name.includes(q);
+        tile.classList.toggle("is-hidden", hide);
+        if (!hide) shown++;
+    });
+    const emptyNote = document.getElementById("sp-empty");
+    if (emptyNote) emptyNote.hidden = shown > 0;
+}
+
+// Set up picker events
+pickerSearch?.addEventListener("input", (e) => filterPickerTiles(e.target.value));
+pickerBackdrop?.addEventListener("click", closeSubjectPicker);
+pickerClose?.addEventListener("click", closeSubjectPicker);
+pickerBackBtn?.addEventListener("click", pickerGoBack);
+document.addEventListener("keydown", (e) => {
+    if (!pickerEl?.classList.contains("is-open")) return;
+    if (e.key === "Escape") closeSubjectPicker();
+});
+// ----- SUBMIT & DEBRIEF -----
+function submitQuiz(timeUp = false) {
+    clearInterval(quizState.timerInterval);
+    quizState.submitted = true;
+    const questions = quizState.questions;
+    const answers = quizState.answers;
+    const total = questions.length;
+    let correct = 0, incorrect = 0, skipped = 0;
+
+    questions.forEach((q, i) => {
+        if (answers[i] === undefined) skipped++;
+        else if (answers[i].toUpperCase() === q.answer.toUpperCase()) correct++;
+        else incorrect++;
+    });
+
+    const score = Math.round((correct / total) * 100);
+    const timeTaken = Math.round((Date.now() - quizState.startTime) / 1000);
+
+    updateWeakAreas(questions, answers);
+    quizState.history.push({ date: new Date().toLocaleDateString(), subject: currentSubject, mode: quizState.mode, total, correct, score, timeTaken });
+    saveQuizPersistentData();
+
+    const topicBreakdown = {};
+    questions.forEach((q, i) => {
+        const cat = q.category;
+        if (!topicBreakdown[cat]) topicBreakdown[cat] = { correct: 0, total: 0 };
+        topicBreakdown[cat].total++;
+        if (answers[i] && answers[i].toUpperCase() === q.answer.toUpperCase()) topicBreakdown[cat].correct++;
+    });
+
+    const gradeInfo = getGrade(score);
+    const circumference = 327;
+    const dashOffset = circumference - (circumference * score / 100);
+
+    const subjectLabel = (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[currentSubject]) || currentSubject;
+    const tone = score >= 70 ? 'great' : score >= 50 ? 'ok' : 'low';
+    questionsContainer.innerHTML = `
+        <div class="quiz-debrief">
+            ${timeUp ? '<div class="time-up-banner">⏰ Time is up. Your answers were submitted automatically.</div>' : ''}
+            <div class="debrief-hero debrief-hero--${tone}">
+                <div class="debrief-score-ring">
+                    <svg viewBox="0 0 120 120" class="score-ring-svg"><circle cx="60" cy="60" r="52" class="ring-track"/><circle cx="60" cy="60" r="52" class="ring-fill" style="stroke-dashoffset:${dashOffset}"/></svg>
+                    <div class="score-ring-label"><span class="score-pct">${score}%</span><span class="score-grade">Grade ${gradeInfo.grade}</span></div>
+                </div>
+                <div class="debrief-summary-text">
+                    <span class="debrief-kicker">${escapeHtml(subjectLabel)} · ${total} question${total === 1 ? '' : 's'}</span>
+                    <h2>${gradeInfo.message}</h2>
+                    <div class="debrief-stats-row">
+                        <div class="ds-item correct-item"><span class="ds-num">${correct}</span><span class="ds-label">Correct</span></div>
+                        <div class="ds-item incorrect-item"><span class="ds-num">${incorrect}</span><span class="ds-label">Wrong</span></div>
+                        <div class="ds-item skipped-item"><span class="ds-num">${skipped}</span><span class="ds-label">Skipped</span></div>
+                        <div class="ds-item time-item"><span class="ds-num">${formatTime(timeTaken)}</span><span class="ds-label">Time</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="debrief-actions">
+                <button class="da-btn primary" id="review-answers-btn">Review answers</button>
+                <button class="da-btn secondary" id="retry-wrong-btn" ${incorrect === 0 ? 'disabled' : ''}>Retry wrong ones (${incorrect})</button>
+                <button class="da-btn secondary" id="new-quiz-btn">New quiz</button>
+            </div>
+            <div class="debrief-section">
+                <h3>How you did by topic</h3>
+                <div class="topic-breakdown">
+                    ${Object.entries(topicBreakdown).sort((a,b) => (a[1].correct/a[1].total) - (b[1].correct/b[1].total)).map(([cat, data]) => {
+                        const pct = Math.round((data.correct / data.total) * 100);
+                        const level = pct >= 70 ? 'good' : pct >= 50 ? 'mid' : 'low';
+                        return `<div class="topic-row topic-row--${level}"><span class="topic-name">${escapeHtml(cat)}</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:${pct}%"></div></div><span class="topic-pct">${data.correct}/${data.total}</span></div>`;
+                    }).join('')}
+                </div>
+            </div>
+            <div id="answer-review-section" style="display:none">
+                <div class="debrief-section">
+                    <h3>Question review</h3>
+                    ${questions.map((q, i) => {
+                        const userAns = answers[i];
+                        const correctAns = q.answer.toUpperCase();
+                        const isCorrect = userAns && userAns.toUpperCase() === correctAns;
+                        const isSkipped = !userAns;
+                        const optLabels = ['A','B','C','D','E'];
+                        const status = isCorrect ? 'Correct' : isSkipped ? 'Skipped' : 'Wrong';
+                        return `<div class="review-q-card ${isCorrect ? 'rq-correct' : isSkipped ? 'rq-skipped' : 'rq-wrong'}">
+                            <div class="rq-header">
+                                <span class="rq-num">Q${i+1}</span><span class="rq-year">${q.year} · paper Q${q.questionNumber.toString().padStart(2, '0')}</span><span class="rq-cat">${escapeHtml(q.category)}</span><span class="rq-status">${status}</span>
+                            </div>
+                            <div class="rq-question">${escapeHtml(q.question)}</div>
+                            <div class="rq-options">
+                                ${q.options.filter(o => o && o.trim()).map((opt, oi) => {
+                                    const label = optLabels[oi];
+                                    let cls = 'rq-opt';
+                                    if (label === correctAns) cls += ' rq-opt-correct';
+                                    else if (label === userAns) cls += ' rq-opt-wrong';
+                                    return `<div class="${cls}"><span class="rq-letter">${label}</span><span>${escapeHtml(opt)}</span></div>`;
+                                }).join('')}
+                            </div>
+                            ${!isCorrect && !isSkipped ? `<div class="rq-your-ans">You answered <strong>${userAns}</strong>. The correct answer is <strong>${correctAns}</strong>.</div>` : isSkipped ? `<div class="rq-your-ans">The correct answer is <strong>${correctAns}</strong>.</div>` : ''}
+                            ${q.explanation ? `<div class="rq-explanation"><span class="rq-why">Why</span>${formatModelAnswer(q.explanation)}</div>` : ''}
+                        </div>`;
+                    }).join('')}
+                </div>
+            </div>
+        </div>`;
+    if (score >= 70 && typeof celebrate === 'function') celebrate();
+
+    document.getElementById('review-answers-btn').addEventListener('click', function() {
+        const section = document.getElementById('answer-review-section');
+        const visible = section.style.display !== 'none';
+        section.style.display = visible ? 'none' : 'block';
+        this.textContent = visible ? 'Review answers' : 'Hide review';
+        if (!visible) section.scrollIntoView({ behavior: 'smooth' });
+    });
+    document.getElementById('retry-wrong-btn').addEventListener('click', () => {
+        const wrongQs = questions.filter((q, i) => answers[i] && answers[i].toUpperCase() !== q.answer.toUpperCase());
+        if (wrongQs.length === 0) return;
+        quizState.questions = shuffleArray(wrongQs);
+        quizState.currentIndex = 0; quizState.answers = {}; quizState.flagged = new Set();
+        quizState.submitted = false; quizState.startTime = Date.now(); quizState.timeRemaining = quizState.totalTime;
+        renderQuizExam();
+        if (quizState.timed && quizState.totalTime > 0) startTimer();
+    });
+    document.getElementById('new-quiz-btn').addEventListener('click', () => showQuizLobby());
+    questionsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function getGrade(score) {
+    if (score >= 70) return { grade: 'A', color: '#22c55e', message: 'Excellent work! 🎉' };
+    if (score >= 60) return { grade: 'B', color: '#84cc16', message: 'Good job! 👍' };
+    if (score >= 50) return { grade: 'C', color: '#f59e0b', message: 'You passed. Keep pushing 📈' };
+    if (score >= 45) return { grade: 'D', color: '#f97316', message: 'Just below the pass mark 💪' };
+    return { grade: 'F', color: '#ef4444', message: "Keep going. You've got this 📚" };
+}
+// Settings screen logic. Call renderSettings() whenever the screen is shown
+// (e.g. from goToSettings()), after Firebase auth has resolved.
+
+function renderSettings() {
+  const user = firebase.auth().currentUser; // adjust to however you access the current user
+  if (!user) return;
+
+  // --- Account: photo, email, preferred name ---
+  const avatarEl = document.getElementById("settings-avatar");
+  if (user.photoURL) {
+    avatarEl.innerHTML = `<img src="${user.photoURL}" alt="">`;
+  } else {
+    const initials = (user.displayName || "Student")
+      .split(" ").map(w => w[0]).slice(0, 2).join("").toUpperCase();
+    avatarEl.textContent = initials;
+  }
+
+  document.getElementById("settings-email").textContent = user.email || "";
+
+    const savedName = localStorage.getItem("jupeb_user_name");
+  document.getElementById("settings-name-input").value =
+    savedName || (user.displayName ? user.displayName.split(" ")[0] : "");
+  const heroName = document.getElementById("settings-hero-name");
+  if (heroName) heroName.textContent = savedName || user.displayName || "Student";
+  const badges = document.getElementById("settings-badges");
+  if (badges) {
+    const exams = (typeof userExamList === "function") ? userExamList() : ["jupeb"];
+    badges.innerHTML = '<span class="set-badge set-badge--gold">⭐ Lifetime access</span>' +
+      exams.map(x => `<span class="set-badge">${x === "ijmb" ? "IJMB" : "JUPEB"}</span>`).join("");
+  }
+
+  // --- Appearance ---
+  const themeToggle = document.getElementById("settings-theme-toggle");
+  themeToggle.checked = document.documentElement.getAttribute("data-theme") === "dark";
+
+
+  // --- Study preferences ---
+  document.getElementById("settings-default-length").value =
+    localStorage.getItem("jupeb_default_quiz_length") || "10";
+  document.getElementById("settings-default-timer").value =
+    localStorage.getItem("jupeb_default_timer") || "0";
+}
+
+// Preferred name — falls back to Google display name everywhere it's read,
+// e.g. in getDashboardData(): userName = localStorage.getItem('jupeb_preferred_name') || googleName
+document.getElementById("settings-name-save").addEventListener("click", () => {
+    const name = document.getElementById("settings-name-input").value.trim();
+    const statusEl = document.getElementById("settings-name-status");
+    if (!name) {
+        statusEl.textContent = "Please enter a name.";
+        return;
+    }
+
+    localStorage.setItem("jupeb_user_name", name);
+
+    // Update sidebar display
+    const user = firebase.auth().currentUser;
+    if (user) db.collection("surveys").doc(user.email).set({ preferredName: name }, { merge: true }).catch(() => {});
+    if (typeof renderSidebarUser === 'function' && user) {
+        renderSidebarUser({
+            name: name,
+            isPremium: true,
+            photoURL: user.photoURL || null
+        });
+    }
+
+    const heroName = document.getElementById("settings-hero-name");
+    if (heroName) heroName.textContent = name;
+    statusEl.textContent = "✓ Saved";
+    setTimeout(() => (statusEl.textContent = ""), 2000);
+});
+
+document.getElementById("settings-signout-btn").addEventListener("click", () => {
+  const confirmed = confirm("Sign out of your account?");
+  if (!confirmed) return;
+    firebase.auth().signOut().then(() => {
+    window.location.replace("/");
+  });
+});
+
+document.getElementById("settings-theme-toggle").addEventListener("change", (e) => {
+    const desiredTheme = e.target.checked ? "dark" : "light";
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    if (currentTheme !== desiredTheme) {
+        toggleTheme(); // This handles localStorage, icons, and sidebar button
+    }
+});
+
+
+document.getElementById("settings-default-length").addEventListener("change", (e) => {
+  localStorage.setItem("jupeb_default_quiz_length", e.target.value);
+});
+document.getElementById("settings-default-timer").addEventListener("change", (e) => {
+  localStorage.setItem("jupeb_default_timer", e.target.value);
+});
+
+// Help & Support screen logic. Call renderHelp() from goToHelp().
+
+
+const WHATSAPP_NUMBER = "2349035801863"; // international format, no + or spaces
+const SUPPORT_EMAIL = "jupeb.qbank@gmail.com";
+
+function renderHelp() {
+  const listEl = document.getElementById("help-faq-list");
+  const items = FAQ_ITEMS.filter(Boolean);
+  const countEl = document.getElementById("help-faq-count");
+  if (countEl) countEl.textContent = `${items.length} questions`;
+  const emailLink = document.getElementById("help-email-link");
+  if (emailLink) emailLink.href = `mailto:${SUPPORT_EMAIL}`;
+  const emailText = document.getElementById("help-email-text");
+  if (emailText) emailText.textContent = SUPPORT_EMAIL;
+  const search = document.getElementById("help-search");
+  if (search) search.value = "";
+  const empty = document.getElementById("help-faq-empty");
+  if (empty) empty.hidden = true;
+
+  if (items.length === 0) {
+    listEl.innerHTML = `<p class="dash-subtext">No FAQs yet — check back soon!</p>`;
+  } else {
+    listEl.innerHTML = items.map((item, i) => `
+      <div class="help-faq-item" data-index="${i}">
+        <button class="help-faq-question" onclick="toggleFaqItem(${i})" aria-expanded="false">
+          <span class="help-faq-num">${String(i + 1).padStart(2, "0")}</span>
+          <span class="help-faq-q">${item.q}</span>
+          <span class="help-faq-caret" aria-hidden="true"></span>
+        </button>
+        <div class="help-faq-answer"><p>${item.a}</p></div>
+      </div>`).join("");
+  }
+}
+
+function toggleFaqItem(index) {
+  document.querySelectorAll(".help-faq-item").forEach(el => {
+    if (Number(el.dataset.index) === index) {
+      el.classList.toggle("is-open");
+    } else {
+      el.classList.remove("is-open"); // accordion: only one open at a time
+    }
+    el.querySelector(".help-faq-question")?.setAttribute("aria-expanded", el.classList.contains("is-open"));
+  });
+}
+
+// Buttons, not links with a placeholder href — avoids any risk of a bare "#"
+// interacting with your hash-based router (see SCREEN_ROUTES/showScreen).
+document.getElementById("help-whatsapp-btn").addEventListener("click", () => {
+  const message = encodeURIComponent("Hi! I need help with the JUPEB & IJMB Prep app.");
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank", "noopener");
+});
+
+document.getElementById("help-report-btn").addEventListener("click", () => openBell("feedback"));
+// ============================================================
+// ===== INIT ===================================================
+// ============================================================
+window.jupebDataLoaded = false;
+
+function initJUPEBApp() {
+    if (typeof applyExamMode === 'function') applyExamMode();   // JUPEB or IJMB (exam-mode.js)
+    initTheme();
+    initSidebar();
+    initMobileSidebar();
+    handleSidebarResponsive();
+    setupThemeListeners();
+    initStickyNavbar();
+    setupEventListeners();
+    loadQuestions(null, onQuestionsLoaded);
+}
+
+function onQuestionsLoaded() {
+    console.log('All data loaded!');
+    window.jupebDataLoaded = true;
+    document.dispatchEvent(new CustomEvent("jupebDataLoaded"));
+    if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
+        showPastQuestionsSidebar();
+    }
+    updateLoadProblemBar();
+}
+
+// ===== WHEN SOME SUBJECTS COULDN'T LOAD =====
+// (offline with nothing saved yet, a very slow connection, or sign-in not ready)
+function subjectLoadFailed(id) {
+    return Array.isArray(window.jupebFailedSubjects) && window.jupebFailedSubjects.includes(id);
+}
+let _retryingLoad = false;
+function retryQuestionLoad() {
+    if (_retryingLoad) return;
+    _retryingLoad = true;
+    updateLoadProblemBar(true);
+    loadQuestions(null, () => { _retryingLoad = false; onQuestionsLoaded(); });
+}
+function updateLoadProblemBar(retrying = false) {
+    let bar = document.getElementById('load-problem-bar');
+    const failed = window.jupebFailedSubjects || [];
+    if (!retrying && failed.length === 0) { if (bar) bar.classList.remove('is-on'); return; }
+    if (!bar) {
+        bar = document.createElement('div');
+        bar.id = 'load-problem-bar';
+        bar.className = 'load-problem-bar';
+        bar.setAttribute('role', 'status');
+        document.body.appendChild(bar);
+    }
+    bar.innerHTML = retrying
+        ? '<span class="load-problem-spinner" aria-hidden="true"></span><span>Loading questions…</span>'
+        : `<span>${failed.length === 1 ? `${SUBJECT_NAMES[failed[0]] || failed[0]} didn't load.` : "Some subjects didn't load."} ${navigator.onLine ? 'Check your connection.' : "You're offline."}</span><button type="button" onclick="retryQuestionLoad()">Retry</button>`;
+    bar.classList.add('is-on');
+}
+// Back online: try the missing subjects again by themselves
+window.addEventListener('online', () => {
+    if ((window.jupebFailedSubjects || []).length && window.jupebDataLoaded) retryQuestionLoad();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // App waits for Firebase auth before loading
+});
+
+window.addEventListener('resize', () => { handleSidebarResponsive(); });

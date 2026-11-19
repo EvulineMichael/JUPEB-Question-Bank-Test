@@ -1,0 +1,112 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "1A",
+    "question": "The ratio of specific the heat capacities of a gas at constant pressure and at constant volume plays an important part in many calculations involving the expansion and contraction of gases. The ratio of is given by Cₚ/Cᵥ = γ.\nLet the V₁ be the specific volume of air at the ambient temperature T₀ and at a high pressure P₁. If the gas is expanded adiabatically to the atmospheric pressure P₀, its new specific volume, V₀, would be given by:\np₁V₁^γ = p₀V₀^γ or (p₀/p₁) = (V₁/V₀)^γ ..........1\nConsidering the isothermal process that occurs on going from the initial stage to the final stage (i.e. ignoring the adiabatic expansion), the following equation is obtained:\np₁V₁ = p₀V₀ or V₁/V₀ = P₂/P₁ ..........2\nEliminating V₀ and V₁ from equations (1) and (2), gives\nP₁/P₀ = (P₁/P₂)^γ ..........3\nWhere P₂ is its final pressure respectively.\nOne of the popular methods to determine γ is by Clément and Desormes methods, the following readings were obtained: (see Table 3.1, P₀ = 101325 Nm⁻²)\na. Transform equation (3) into a suitable straight line graph to determine γ.\nb. Form a composite table to plot a suitable graph.\nc. Use your graph to determine the value of γ.\nd. Given that P₁ = 101952 ± 12.01 and P₀ = 101325 ± 04.5, Evaluate the error in P₁ − P₀.",
+    "dataTable": {
+      "headers": [
+        "S/N",
+        "P₁ (Nm⁻²)",
+        "P₂ (Nm⁻²)"
+      ],
+      "rows": [
+        [
+          "1",
+          "101922.0",
+          "101453.7"
+        ],
+        [
+          "2",
+          "102138.3",
+          "101556.7"
+        ],
+        [
+          "3",
+          "102324.6",
+          "101609.6"
+        ],
+        [
+          "4",
+          "102510.9",
+          "101662.4"
+        ],
+        [
+          "5",
+          "102697.2",
+          "101715.2"
+        ],
+        [
+          "6",
+          "102883.5",
+          "101717.9"
+        ],
+        [
+          "7",
+          "103069.8",
+          "101820.5"
+        ],
+        [
+          "8",
+          "103256.1",
+          "101873.0"
+        ],
+        [
+          "9",
+          "103442.4",
+          "101985.5"
+        ],
+        [
+          "10",
+          "103628.7",
+          "101987.9"
+        ],
+        [
+          "11",
+          "103815.0",
+          "102030.3"
+        ],
+        [
+          "12",
+          "104001.3",
+          "102182.6"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: equation (2) is printed as p₁V₁ = p₀V₀; for the isothermal step it should be p₁V₁ = p₂V₀ (which agrees with V₁/V₀ = P₂/P₁, as also printed). Equation (3) follows correctly from (1) and this corrected (2). The table is labelled 'Table 3.1' although it belongs to question 1A.\n\n(a) Straight-line form: take logarithms of both sides of equation (3):\nlog(P₁/P₀) = γ log(P₁/P₂).\nThis has the form y = mx, with y = log(P₁/P₀) and x = log(P₁/P₂).\nA graph of log(P₁/P₀) (y-axis) against log(P₁/P₂) (x-axis) is a straight line through the origin, with gradient = γ.\n\n(b) Composite table (logarithms to base 10, P₀ = 101325 Nm⁻²):\n1: log(P₁/P₂) = 2.000 × 10⁻³; log(P₁/P₀) = 2.551 × 10⁻³\n2: log(P₁/P₂) = 2.480 × 10⁻³; log(P₁/P₀) = 3.472 × 10⁻³\n3: log(P₁/P₂) = 3.045 × 10⁻³; log(P₁/P₀) = 4.263 × 10⁻³\n4: log(P₁/P₂) = 3.610 × 10⁻³; log(P₁/P₀) = 5.053 × 10⁻³\n5: log(P₁/P₂) = 4.173 × 10⁻³; log(P₁/P₀) = 5.842 × 10⁻³\n6: log(P₁/P₂) = 4.948 × 10⁻³; log(P₁/P₀) = 6.629 × 10⁻³\n7: log(P₁/P₂) = 5.296 × 10⁻³; log(P₁/P₀) = 7.415 × 10⁻³\n8: log(P₁/P₂) = 5.857 × 10⁻³; log(P₁/P₀) = 8.199 × 10⁻³\n9: log(P₁/P₂) = 6.160 × 10⁻³; log(P₁/P₀) = 8.982 × 10⁻³\n10: log(P₁/P₂) = 6.931 × 10⁻³; log(P₁/P₀) = 9.763 × 10⁻³\n11: log(P₁/P₂) = 7.531 × 10⁻³; log(P₁/P₀) = 10.543 × 10⁻³\n12: log(P₁/P₂) = 7.662 × 10⁻³; log(P₁/P₀) = 11.322 × 10⁻³\n\n(c) Plot log(P₁/P₀) against log(P₁/P₂), and draw the best straight line through the origin.\nMost of the points (readings 2, 3, 4, 5, 7, 8, 10 and 11) lie very close to a line of gradient 1.40. Readings 1, 6, 9 and 12 scatter slightly off it.\nGradient = γ ≈ 1.40.\n(Check: a least-squares line through the origin gives about 1.42; individual readings, using the approximation γ ≈ (P₁ − P₀)/(P₁ − P₂), mostly give 1.40. The accepted value of γ for air, a diatomic gas, is 1.40.)\n\n(d) For a difference, the absolute errors add:\nP₁ − P₀ = 101952 − 101325 = 627 Nm⁻².\nError = 12.01 + 4.5 = 16.51 Nm⁻² (≈ 16.5).\nP₁ − P₀ = (627 ± 16.5) Nm⁻², a percentage error of 16.51/627 × 100 ≈ 2.6%.\n(Note: '04.5' is read as 4.5.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "2A",
+    "question": "You are provided with a wide test tube fitted with a mm scale (e.g by inserting a strip of mm graph paper marked at cm intervals from the bottom inside it), amount of water, a deep beaker and some lead shots. Use figure 2.1 as a guide to carry out the following instructions:\nMeasure and record the internal radius (r) of your test tube : r = ..................\ni. Place some lead shots or any piece of metal (e.g pendulum bob) to make it float vertically in the liquid and record this level as (x₀).\nii. Add the weights (W) in the tube and in steps for five more readings. In each case, the reading (x) of the scale against the liquid level is noted.\niii. Evaluate the depth of immersion (d).\niv. Tabulate your readings.\nv. Plot a graph of (d) against the weights (W), determine the slope (s) of the graph.\nvi. Evaluate β = 1/(πr²s), where r = internal radius of the test tube.\nvii. State three necessary precautions taken to ensure accurate results.",
+    "image": {
+      "src": "images/ijmb/physics/2016/phy-2016-paper3-2A.png",
+      "alt": "Figure 2.1: a test tube with lead shots floating upright in water in a beaker"
+    },
+    "options": [],
+    "modelAnswer": "Note: this is a practical experiment, so the readings depend on the apparatus used. The answer below explains how to carry out, record and process the experiment, and what result to expect.\n\nPrinciple: by Archimedes' principle (the law of flotation), a floating body displaces its own weight of liquid. When an extra weight W is added to the tube, it sinks further by a depth d, so that the extra weight of water displaced equals W:\nW = (area of cross-section) × d × ρg, so d = W/(Aρg).\nA graph of d against W is a straight line, with slope s = 1/(Aρg). The cross-sectional area of the tube is A = πr² (using the tube's radius; strictly, the external radius gives the area of water displaced, but the question specifies the internal radius).\nHence β = 1/(πr²s) = ρg, the weight per unit volume (specific weight) of water. If W is in newtons and lengths are in metres, β should be close to 1000 × 9.8 ≈ 9.8 × 10³ N m⁻³. If W is recorded as a mass in grams and d in cm, β gives the density of water, about 1 g cm⁻³.\n\nProcedure and recording:\n1. Measure the radius r of the tube (e.g., with vernier calipers: measure the diameter and halve it).\n2. Float the tube upright, with enough lead shot to keep it vertical, and read the scale at the water surface: x₀.\n3. Add a known weight W (e.g., extra lead shots or small masses), let the tube settle, and read the new level x. Repeat for five more increasing weights.\n4. The depth of immersion for each weight is d = x − x₀.\n\nTable (columns): S/N; W (N or g); x (cm); d = x − x₀ (cm).\n\nGraph: plot d (y-axis) against W (x-axis). Draw the best straight line through the points (it should pass close to the origin), and find its slope s = Δd/ΔW, using a large triangle.\nThen calculate β = 1/(πr²s).\n\nPrecautions (any three):\n1. Ensure the tube floats vertically, without touching the sides or bottom of the beaker.\n2. Read the scale at eye level with the water surface, to avoid parallax error (read the bottom of the meniscus).\n3. Allow the tube to come to rest before taking each reading.\n4. Make sure the tube is dry inside, and that no water enters it.\n5. Add the weights gently, without splashing.\n6. Repeat readings and take the average."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper III",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "3A",
+    "question": "Connect the circuit as shown in figure 3.1. Set the voltmeter reading V₀ = 1.5 volts, adjust the position of s until a suitable voltage is applied across the lamp and record the current passing through the filament from the ammeter A.\nRepeat the same procedure by increasing successive values of V for five more values and record the corresponding values of I. Evaluate log I and log V. Tabulate your readings.\na. Plot a graph of log I against log V. Determine the slope n of the graph and the intercept k on log I axis.\nb. Evaluate G = kV₀ⁿ, where V₀ is your first voltmeter reading for your experiment.\nc. State two necessary precautions taken to ensure accurate results",
+    "image": {
+      "src": "images/ijmb/physics/2016/phy-2016-paper3-3A.png",
+      "alt": "Figure 3.1: a bulb in series with an ammeter A, a voltmeter V across the bulb, connected through the sliding contact S of a rheostat PQ to a battery"
+    },
+    "options": [],
+    "modelAnswer": "Note: this is a practical experiment, so the readings depend on the apparatus used. The answer below explains how to carry out, record and process the experiment, and what result to expect.\n\nPrinciple: for a filament lamp, the current is not proportional to the voltage (it does not obey Ohm's law), because the filament's resistance rises as it heats up. The relationship can be written as I = aVⁿ. Taking logarithms:\nlog I = n log V + log a.\nA graph of log I against log V is therefore a straight line, with slope n and intercept log a on the log I axis.\n\nProcedure and recording:\n1. Connect the circuit as in Figure 3.1: the rheostat (potential divider PQ with sliding contact S) controls the voltage across the bulb; the ammeter is in series with the bulb, and the voltmeter is across it.\n2. Adjust S so that the voltmeter reads V₀ = 1.5 V, and record the current I.\n3. Increase V in steps (e.g., 2.0, 2.5, 3.0, 3.5, 4.0 V, within the lamp's rating) and record each corresponding current.\n4. Calculate log V and log I for each reading.\n\nTable (columns): S/N; V (V); I (A); log V; log I.\n\n(a) Plot log I (y-axis) against log V (x-axis), and draw the best straight line. Find its slope n = Δ(log I)/Δ(log V) from a large triangle, and read the intercept k on the log I axis (where log V = 0).\nFor a tungsten filament lamp, n is typically about 0.5–0.6 (less than 1, because the resistance increases with temperature).\n\n(b) The question defines G = kV₀ⁿ. Substitute the values of k and n from the graph, and V₀ = 1.5 V.\n(Note: since k is read as an intercept on the log I axis, k is a logarithm. The current predicted by the line at V₀ is I = 10ᵏ × V₀ⁿ; comparing this with the measured current at 1.5 V checks the fit. Students should follow the definition used by their supervisor.)\n\n(c) Precautions (any two):\n1. Ensure all connections are clean and tight.\n2. Read the meters at eye level, to avoid parallax error.\n3. Allow the reading to become steady before recording it (let the filament reach a steady temperature).\n4. Open the switch between readings, to avoid unnecessary heating and draining of the battery.\n5. Do not exceed the rated voltage of the bulb.\n6. Check and correct for zero errors on the meters."
+  }
+]

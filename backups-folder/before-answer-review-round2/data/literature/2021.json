@@ -1,0 +1,974 @@
+[
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Aeschylus introduced an actor known as the",
+    "options": [
+      "Antagonist to drama.",
+      "Deuteragonist to drama.",
+      "protagonist to drama.",
+      "tritagonist to drama."
+    ],
+    "answer": "B",
+    "explanation": "Aeschylus introduced the deuteragonist (second actor) to drama, reducing the role of the chorus and allowing for dialogue between two characters. This was a major development in Greek theatre."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "In a typical Greek theatre, the altar of the gods is located at the",
+    "options": [
+      "centre of the stage.",
+      "right side of the stage.",
+      "entrance of the theatre.",
+      "orchestra."
+    ],
+    "answer": "D",
+    "explanation": "In a typical Greek theatre, the altar of the gods (thymele) was located in the orchestra — the circular performance space where the chorus performed and where sacrifices were made."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Exodus in Greek theatre occurs after the",
+    "options": [
+      "parados.",
+      "epilogue.",
+      "stasimon.",
+      "prologue."
+    ],
+    "answer": "A",
+    "explanation": "Exodus in Greek theatre occurs after the parados — it is the final section of the play, the last episode, where the chorus exits. The parados is the entrance of the chorus, which occurs earlier in the play."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The Classical Tradition",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "According to Aristotle, comedy originated from",
+    "options": [
+      "choral songs.",
+      "phallic songs.",
+      "heroic songs.",
+      "satiric songs."
+    ],
+    "answer": "B",
+    "explanation": "According to Aristotle, comedy originated from phallic songs — songs sung in honour of Dionysus during the phallic procession. These were the forerunners of comedy, which evolved into the satirical and humorous form."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "One difference between Greek and Renaissance tragedies is that in Renaissance, there is",
+    "options": [
+      "a protagonist who introduces the theme.",
+      "the interference of God in the affairs of men.",
+      "a prologue which gives the background to the action.",
+      "a comic character who douses the tragic tension."
+    ],
+    "answer": "D",
+    "explanation": "One difference between Greek and Renaissance tragedies is that in Renaissance drama, there is a comic character who douses the tragic tension. Shakespeare and other Renaissance playwrights often used comic relief in tragedies. Greek tragedies maintained a serious tone throughout."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "A dramatic work with a sensational plot is",
+    "options": [
+      "satiric.",
+      "melodramatic.",
+      "tragicomedic.",
+      "farciacal."
+    ],
+    "answer": "B",
+    "explanation": "A melodramatic work has a sensational plot with exaggerated emotions, strong action, and often a moralistic tone. It is characterized by stereotypical characters and dramatic events designed to elicit strong emotional responses."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "A plot is linear when the",
+    "options": [
+      "play ends in the same way it begins.",
+      "actions are without complications.",
+      "incidents progress chronologically.",
+      "events are linked by similar characters."
+    ],
+    "answer": "C",
+    "explanation": "A linear plot is one where incidents progress chronologically — events unfold in a straightforward, sequential order without flashbacks or disruptions. It follows a clear cause-and-effect structure."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Drama (The Modern Tradition)",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Of all the periods, Modern drama pays more attention to",
+    "options": [
+      "character.",
+      "plot.",
+      "diction.",
+      "theme."
+    ],
+    "answer": "A",
+    "explanation": "Modern drama pays more attention to character than to plot. Playwrights like Ibsen and Chekhov focused on psychological depth and character development, exploring the inner lives and motivations of their characters."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "In drama, in medias res is the",
+    "options": [
+      "giving of details in the middle of the exposition.",
+      "opening of a plot in the middle of action.",
+      "using flashback in the middle of the plot.",
+      "resolving conflict in the middle of the play."
+    ],
+    "answer": "B",
+    "explanation": "In medias res (Latin for 'in the middle of things') is the opening of a plot in the middle of action. It starts the story at a critical point, and background information is revealed later through flashbacks or exposition."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "In Marxist drama, a veritable tool against oppression is",
+    "options": [
+      "unity.",
+      "religion.",
+      "poverty.",
+      "wealth."
+    ],
+    "answer": "A",
+    "explanation": "In Marxist drama, unity is a veritable tool against oppression — the working class must unite and struggle collectively against exploitation and oppression. Class consciousness and solidarity are central to Marxist ideology."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "As reflected in African drama, it may be concluded that the effect of the meeting with Europe on Africa is",
+    "options": [
+      "exploitative.",
+      "emancipating.",
+      "disappointing.",
+      "two-edged."
+    ],
+    "answer": "D",
+    "explanation": "As reflected in African drama, the effect of the meeting with Europe on Africa is two-edged — it brought both positive (education, Christianity, modernity) and negative (exploitation, cultural disruption, oppression) consequences."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Interlude is a",
+    "options": [
+      "comic play that is sung.",
+      "lengthy dramatic composition.",
+      "play conveying information.",
+      "short dramatic entertainment."
+    ],
+    "answer": "D",
+    "explanation": "An interlude is a short dramatic entertainment, often performed during banquets or between acts of a longer play. It was popular in the medieval and Elizabethan periods and often had comic or moralistic themes."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Drama (The Renaissance Tradition)",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Unlike Modern drama, stage setting in Elizabethan theatre was reflected in",
+    "options": [
+      "costume.",
+      "directions.",
+      "lighting.",
+      "dialogue."
+    ],
+    "answer": "D",
+    "explanation": "Unlike Modern drama, stage setting in Elizabethan theatre was reflected in dialogue — the setting was described through the characters' words, as there were minimal stage sets and props. The audience used their imagination to visualize the setting."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "A defining element of the modern novel is",
+    "options": [
+      "voice",
+      "human characters",
+      "realism",
+      "episodic plot"
+    ],
+    "answer": "C",
+    "explanation": "A defining element of the modern novel is realism — the representation of everyday life, society, and human psychology with accuracy and detail. Modern novels focus on the complexities of human experience and social conditions."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "An idea that recurs throughout a story is",
+    "options": [
+      "image.",
+      "motif.",
+      "subject.",
+      "theme."
+    ],
+    "answer": "B",
+    "explanation": "A motif is an idea, object, or image that recurs throughout a story. It is a repeated element that has symbolic significance and helps to reinforce the theme. A theme is the central idea or underlying message."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "A new generation African novelist is",
+    "options": [
+      "Ayi Kwei Armah.",
+      "Ngugi wa Thiong'o.",
+      "Uzo Iweala.",
+      "Elechi Amadi."
+    ],
+    "answer": "C",
+    "explanation": "Uzo Iweala is a new generation African novelist, known for works like Beasts of No Nation. Armah, Ngugi, and Amadi are first-generation or early-generation African writers."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "What distinguishes literature from other disciplines is the use of human",
+    "options": [
+      "history",
+      "imagination",
+      "interaction",
+      "mystery"
+    ],
+    "answer": "B",
+    "explanation": "What distinguishes literature from other disciplines is the use of human imagination — literature is a creative art that expresses ideas, emotions, and experiences through imaginative language. It transforms reality through the power of imagination."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The dominant figure of speech in the statement 'Givers never lack' is",
+    "options": [
+      "consonance.",
+      "paradox.",
+      "litotes.",
+      "oxymoron."
+    ],
+    "answer": "B",
+    "explanation": "'Givers never lack' is an example of paradox — a statement that appears self-contradictory but contains a deeper truth. It suggests that generosity leads to abundance, even though it seems logically contradictory."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "A plot that does not show a chain connection between one event and another is",
+    "options": [
+      "organic.",
+      "chronological.",
+      "linear.",
+      "episodic."
+    ],
+    "answer": "D",
+    "explanation": "An episodic plot does not show a chain connection between one event and another — it consists of a series of loosely connected episodes or scenes that are not necessarily causally linked. This is common in picaresque novels."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "A prose narrative that ridicules an entity to precipitate change is",
+    "options": [
+      "sarcastic.",
+      "ironic.",
+      "didactic.",
+      "satiric."
+    ],
+    "answer": "D",
+    "explanation": "A satiric prose narrative ridicules an entity to precipitate change — satire uses humour, exaggeration, and irony to criticize and provoke reform. It aims to expose folly and vice."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The Victorian era differs markedly from the Romantic period because in the Victorian period,",
+    "options": [
+      "poetry became most popular.",
+      "Criticism became most popular.",
+      "Drama became most popular.",
+      "Prose became most popular."
+    ],
+    "answer": "D",
+    "explanation": "The Victorian era differs from the Romantic period because prose became most popular — the novel emerged as the dominant literary form in the Victorian period, with writers like Dickens, Eliot, and the Brontë sisters."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The novel is developed from an earlier form called",
+    "options": [
+      "novella.",
+      "romance.",
+      "picaresque.",
+      "gothic."
+    ],
+    "answer": "B",
+    "explanation": "The novel is developed from an earlier form called romance — which was a narrative form characterized by chivalry, adventure, and idealized love. The novel evolved from the romance into a more realistic and complex form."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The European Prose Tradition",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "A prominent female novelist of the Victorian period is",
+    "options": [
+      "Mary Ann Evans",
+      "Edith Wharton",
+      "Toni Morrison",
+      "Doris Lessing"
+    ],
+    "answer": "A",
+    "explanation": "Mary Ann Evans, better known by her pen name George Eliot, was a prominent female novelist of the Victorian period. She wrote novels like The Mill on the Floss and Middlemarch. Edith Wharton and Toni Morrison are later American writers."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "A major shift evident in African post-colonial writing from that of the colonial is reflected in the conflict between",
+    "options": [
+      "African leaders and their people.",
+      "men and women.",
+      "Colonialists and the colonised.",
+      "man and nature."
+    ],
+    "answer": "A",
+    "explanation": "A major shift evident in African post-colonial writing is reflected in the conflict between African leaders and their people. Post-colonial literature focuses on internal conflicts, corruption, and the failures of African leadership, rather than the colonialist vs colonized binary."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The principle of rewarding and punishing action in drama is called",
+    "options": [
+      "Poetic License.",
+      "Poetic Justice.",
+      "Poetic Diction.",
+      "Poetic Retribution."
+    ],
+    "answer": "B",
+    "explanation": "Poetic Justice is the principle of rewarding and punishing action in drama — it is the idea that virtue is rewarded and vice is punished, ensuring that justice prevails in the narrative."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Drama",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The term 'bathos' is also known as",
+    "options": [
+      "rising action.",
+      "climax.",
+      "exposition.",
+      "anticlimax."
+    ],
+    "answer": "D",
+    "explanation": "Bathos is also known as anticlimax — it is a sudden shift from a noble or elevated tone to a trivial or ridiculous one, often producing a comic effect. It is the opposite of pathos."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "A metrical line of four feet is",
+    "options": [
+      "pentameter.",
+      "heptameter.",
+      "tetrametre.",
+      "monometre."
+    ],
+    "answer": "C",
+    "explanation": "A metrical line of four feet is tetrameter. Pentameter has five feet, heptameter has seven, and monometer has one."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Poetry (19th and 20th Centuries)",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Which of these periods is not reflected in the poems studied?",
+    "options": [
+      "Renaissance.",
+      "Victorian.",
+      "Modern.",
+      "Classical."
+    ],
+    "answer": "D",
+    "explanation": "The Classical period (Greek and Roman poetry) is not typically reflected in the poems studied for JUPEB Literature-in-English. The Renaissance, Victorian, and Modern periods are commonly studied."
+},
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Poetry (19th and 20th Centuries)",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The predominant theme in T. S. Eliot's 'The Wasteland' concerns",
+    "options": [
+      "death.",
+      "darkness.",
+      "dryness.",
+      "danger."
+    ],
+    "answer": "C",
+    "explanation": "The predominant theme in T.S. Eliot's 'The Wasteland' concerns dryness — the poem portrays a spiritual and cultural wasteland, a world devoid of water, fertility, and meaning. It is a critique of the modern world's spiritual emptiness."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "'Thou wast not born for death, immortal Bird!' The expression from 'Ode to a Nightingale' illustrates",
+    "options": [
+      "apostrophe.",
+      "euphemism.",
+      "antithesis.",
+      "hyperbole."
+    ],
+    "answer": "A",
+    "explanation": "The expression is an example of apostrophe — the poet directly addresses the nightingale as if it were present and could hear him, speaking to an abstract idea or an absent figure."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The rhyme scheme is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The royal throne of kings, this scept'red isle...' from Shakespeare's Richard II. Please refer to original past question paper.",
+    "options": [
+      "aba.",
+      "abc.",
+      "abb.",
+      "aab."
+    ],
+    "answer": "B",
+    "explanation": "The rhyme scheme of the extract is abc — the three lines do not rhyme with each other, following an abc pattern. The lines are from Shakespeare's Richard II, where John of Gaunt praises England."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The last line illustrates the use of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'The royal throne of kings, this scept'red isle...' from Shakespeare's Richard II. Please refer to original past question paper.",
+    "options": [
+      "allusion.",
+      "apostrophe.",
+      "metaphor.",
+      "hyperbole."
+    ],
+    "answer": "C",
+    "explanation": "The last line ('This other Eden, demi-paradise') is a metaphor — it compares England to Eden, suggesting it is a paradise. This metaphorical description elevates England to a near-divine status."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Poetry (The Modern Tradition)",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The persona in 'Song of Ocol' espouses",
+    "options": [
+      "Western values.",
+      "African values.",
+      "spiritual values.",
+      "moral values."
+    ],
+    "answer": "A",
+    "explanation": "The persona in Okot p'Bitek's 'Song of Ocol' espouses Western values — Ocol is a modern African who has embraced Western education, Christianity, and culture, and he criticizes traditional African values."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Poetry (The Modern Tradition)",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "In 'Eye of the Earth', the persona eulogises",
+    "options": [
+      "physical nature.",
+      "spiritual forces.",
+      "ancestral cord.",
+      "romantic love."
+    ],
+    "answer": "A",
+    "explanation": "In Niyi Osundare's 'Eye of the Earth', the persona eulogises physical nature — the poem celebrates the beauty, power, and resilience of the natural environment, specifically the earth."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The type of rhyme used is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'We brought away from battle...' by Thomas Love Peacock. Please refer to original past question paper.",
+    "options": [
+      "enclosed rhyme.",
+      "coupled rhyme.",
+      "alternate rhyme.",
+      "eye rhyme."
+    ],
+    "answer": "B",
+    "explanation": "The type of rhyme used is coupled rhyme — the lines rhyme in pairs (AABB). The rhyme scheme of the stanza is AABB, with each couplet rhyming internally (battle/cattle, them/owned them)."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The second line illustrates",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'We brought away from battle...' by Thomas Love Peacock. Please refer to original past question paper.",
+    "options": [
+      "euphemism.",
+      "paradox.",
+      "personification.",
+      "litotes."
+    ],
+    "answer": "A",
+    "explanation": "The second line ('And much their land bemoaned them') illustrates euphemism — it is a mild expression used to soften the harsh reality of the defeat and loss in battle. 'Bemoaned' is softer than saying they were killed or defeated."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "It can be inferred from the poem that the persona is the",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'We brought away from battle...' by Thomas Love Peacock. Please refer to original past question paper.",
+    "options": [
+      "victim.",
+      "vassal.",
+      "victor.",
+      "villain."
+    ],
+    "answer": "C",
+    "explanation": "It can be inferred that the persona is the victor — they have 'brought away' cattle and the head of the owner, indicating they have won in battle. The poem celebrates the spoils of war, from the perspective of the victorious side."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Prose Fiction",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The essential elements that define plot are",
+    "options": [
+      "cause and effect.",
+      "theme and suspense.",
+      "structure and setting.",
+      "conflict and climax."
+    ],
+    "answer": "A",
+    "explanation": "The essential elements that define plot are cause and effect — plot is the sequence of events in a narrative, with each event being caused by previous events and leading to subsequent ones. A well-structured plot has a clear cause-and-effect chain."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Criticism that sees meaning of a text basically through the author's life is",
+    "options": [
+      "philosophical.",
+      "sociological.",
+      "biographical.",
+      "analytical."
+    ],
+    "answer": "C",
+    "explanation": "Biographical criticism sees meaning of a text basically through the author's life — it interprets the text by examining the author's biography, experiences, and personal background."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The systematic study of versification is",
+    "options": [
+      "prosody.",
+      "eulogy.",
+      "cacophony.",
+      "melody."
+    ],
+    "answer": "A",
+    "explanation": "Prosody is the systematic study of versification — it includes the analysis of metre, rhythm, rhyme, and the structure of verse. Eulogy is a praise speech, cacophony is harsh sound, and melody is musical quality."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The expression '...ran like a golden thread' illustrates",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'The thought that he would drive Anne Murchison home...' by John Cheever. Please refer to original past question paper.",
+    "options": [
+      "metaphor.",
+      "simile.",
+      "personification.",
+      "hyperbole."
+    ],
+    "answer": "B",
+    "explanation": "The expression '...ran like a golden thread' is a simile — it compares the thought to a golden thread using 'like.' The comparison suggests that the thought is bright, valuable, and connecting."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The expression '...he laughed uproariously at dull jokes' denotes",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'The thought that he would drive Anne Murchison home...' by John Cheever. Please refer to original past question paper.",
+    "options": [
+      "litotes.",
+      "hyperbole.",
+      "paradox.",
+      "irony."
+    ],
+    "answer": "B",
+    "explanation": "The expression denotes hyperbole — it exaggerates the laughter at dull jokes for effect. Laughing 'uproariously' (excessively) at 'dull' (boring) jokes is an obvious exaggeration used to show the character's distracted state of mind as he thinks about driving Anne Murchison home."  
+},
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "'... stretched, yawned, sighed and grunted' contains which images?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'The thought that he would drive Anne Murchison home...' by John Cheever. Please refer to original past question paper.",
+    "options": [
+      "Kinesthetic, visual and auditory.",
+      "Kinesthetic, thermal and tactile.",
+      "Kinesthetic, thermal and olfactory.",
+      "Kinesthetic, tactile and auditory."
+    ],
+    "answer": "D",
+    "explanation": "The expressions contain kinesthetic (stretched, movement), tactile (physical actions), and auditory (yawned, sighed) images. These appeal to the senses of movement, touch, and sound."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "It can be deduced from the passage that the character being described is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'The thought that he would drive Anne Murchison home...' by John Cheever. Please refer to original past question paper.",
+    "options": [
+      "responsible.",
+      "pretentious.",
+      "comedic.",
+      "bored."
+    ],
+    "answer": "B",
+    "explanation": "It can be deduced that the character is pretentious — he laughs at dull jokes, dries a tear for a kitten, and acts out emotions, but his true thoughts are elsewhere (thinking of driving Anne Murchison home). He is putting on a performance."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Poetry",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "A character saying he will not do a thing and then going ahead to do it exemplifies",
+    "options": [
+      "paralipsis.",
+      "innuendo.",
+      "paradox.",
+      "chiasmus."
+    ],
+    "answer": "C",
+    "explanation": "A character saying he will not do a thing and then going ahead to do it exemplifies paradox — it is a self-contradictory statement that contains a deeper truth about human behaviour or the nature of decision-making."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The poem is a/an",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'There was a young lady of Riga...' (Anonymous). Please refer to original past question paper.",
+    "options": [
+      "dirge.",
+      "epitaph.",
+      "allegory.",
+      "limerick."
+    ],
+    "answer": "D",
+    "explanation": "The poem is a limerick — a humorous five-line poem with a specific rhyme scheme (AABBA) and rhythm. Limericks are known for their playful, nonsensical content and are often anonymous."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The last line in the poem evidences the presence of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'There was a young lady of Riga...' (Anonymous). Please refer to original past question paper.",
+    "options": [
+      "irony",
+      "pun",
+      "paradox",
+      "antithesis"
+    ],
+    "answer": "A",
+    "explanation": "The last line ('And a smile on the face of the tiger') evidences the presence of irony — it is unexpected and humorous. The tiger ate the lady and is smiling, which is ironic because the rider was smiling at the start, and now the tiger is."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The dominant device presented here is",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'A succession of loud and shrill screams...' by Edgar Allan Poe. Please refer to original past question paper.",
+    "options": [
+      "personification.",
+      "metaphor.",
+      "hyperbole.",
+      "onomatopoeia."
+    ],
+    "answer": "D",
+    "explanation": "The dominant device presented is onomatopoeia — words like 'screams' imitate the sound they describe, creating a vivid auditory effect. The passage conveys the horror of the moment."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The image evoked from the expression is that of a",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'A succession of loud and shrill screams...' by Edgar Allan Poe. Please refer to original past question paper.",
+    "options": [
+      "screaming man.",
+      "terrible man.",
+      "frightened dog.",
+      "barking dog."
+    ],
+    "answer": "A",
+    "explanation": "The image evoked is that of a screaming man — the phrase 'bursting suddenly from the throat of the chained form' indicates that a chained person is screaming, creating a disturbing image of suffering and terror."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Seeing that there's no other way, I turn his absence into a chair. I can sit in it, gaze out through the window (Roo Barson - 'After a Death') To the persona, the chair becomes a symbol of",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'After a Death' by Roo Barson. Please refer to original past question paper.",
+    "options": [
+      "grief.",
+      "consolation.",
+      "rejection.",
+      "loss."
+    ],
+    "answer": "B",
+    "explanation": "To the persona, the chair becomes a symbol of consolation — it represents a way to cope with the absence of the loved one. The persona turns grief into something bearable, finding comfort in the chair."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The Classical Tradition",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Examine the statement that identifying the tragic hero of Sophocles' Antigone is contentious.",
+    "options": [],
+    "modelAnswer": "The statement that identifying the tragic hero of Sophocles' Antigone is contentious is valid because there are strong arguments for both Antigone and Creon as the tragic hero.\n\nArguments for Antigone as Tragic Hero: Antigone is the protagonist — she defies King Creon's decree and buries her brother Polyneices, acting out of love and loyalty to family and the gods. She suffers a tragic death and shows courage, stubbornness, and devotion. Her hamartia (tragic flaw) is her excessive pride and defiance of the state, which leads to her downfall. She evokes pity and fear, fulfilling Aristotle's definition of a tragic hero.\n\nArguments for Creon as Tragic Hero: Creon is also a central character and experiences a reversal of fortune (peripeteia). His hamartia is his hubris — he refuses to listen to reason, even from his own family, and insists on enforcing the law. He loses his son Haemon, his wife Eurydice, and his moral authority, and his downfall is greater than Antigone's.\n\nScholarly Debate: Scholars have debated whether Antigone or Creon is the true tragic hero. Some argue that the play is about the conflict between divine law and human law, and both characters embody aspects of this conflict.\n\nConclusion: The identification of the tragic hero is contentious because both Antigone and Creon exhibit the qualities of a tragic hero — noble status, hamartia, peripeteia, and suffering. The ambiguity is intentional, reflecting the complexity of the conflict."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The Classical Tradition",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Demonstrate how irony is used as a device in King Oedipus.",
+    "options": [],
+    "modelAnswer": "In Sophocles' King Oedipus, irony is used extensively as a dramatic device, especially dramatic irony, to create tension and deepen the tragedy.\n\nDramatic Irony: The audience knows the truth about Oedipus' identity before he does. Oedipus searches for the murderer of Laius, unaware that he himself is the murderer. The audience knows that he is the killer and that he is married to his mother, creating a powerful sense of dramatic irony.\n\nOedipus' Declarations: Oedipus declares that the murderer of Laius will be punished and exiled. He curses the unknown criminal, not realizing he is cursing himself. This is a prime example of verbal irony — his words have a double meaning.\n\nJocasta's Warning: Jocasta tells Oedipus not to worry about prophecies, as she believes her son was killed. The audience knows she is wrong, and her words are ironic because she is unknowingly referring to Oedipus himself.\n\nTiresias' Warnings: Tiresias, the blind prophet, knows the truth and tells Oedipus that he is the pollution of Thebes. Oedipus refuses to believe him, accusing him of being in league with Creon. The irony lies in Tiresias' blindness — he is physically blind but sees the truth, while Oedipus is sighted but blind to the truth.\n\nOedipus' Self-Blinding: Oedipus blinds himself upon discovering the truth. The irony is that he is now physically blind, but he finally sees the truth. His physical blindness symbolizes his previous spiritual blindness.\n\nConclusion: Irony in King Oedipus creates dramatic tension, highlights the themes of fate and blindness, and intensifies the tragedy. The audience's knowledge of the truth makes Oedipus' ignorance and eventual discovery more powerful."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Show how I Will Marry When I Want is a Marxist drama.",
+    "options": [],
+    "modelAnswer": "Ngugi wa Thiong'o's I Will Marry When I Want is a Marxist drama that critiques capitalism, class struggle, and the exploitation of the poor by the rich.\n\nClass Struggle: The play focuses on the conflict between the poor peasant farmers (the Kingundas) and the wealthy bourgeoisie (the Kiois). The Kiois represent the ruling class who exploit the poor for economic gain. The Kingundas represent the oppressed working class.\n\nExploitation: The play exposes the exploitation of the poor by the rich. The Kiois offer the Kingundas money and land in exchange for their daughter's hand in marriage. This transaction reflects the commodification of women and the economic manipulation of the poor.\n\nAlienation: The play shows the alienation of the poor from their culture, religion, and land. The Kiois use religion and money to control the Kingundas. The bourgeoisie alienate the poor from their own identity and community.\n\nFalse Consciousness: The poor are initially deceived by the promises of the rich. Kiguunda and Wangeci believe that their daughter's marriage to the Kiois' son will improve their lives. However, they eventually realize that the rich are exploiting them.\n\nClass Consciousness: The play advocates for class consciousness and resistance. Kiguunda refuses to sell his daughter and chooses to stand up against the rich. The play calls for the oppressed to unite and resist exploitation.\n\nThe Role of Religion: The play critiques religion as a tool of oppression. The wealthy use Christianity to manipulate the poor and justify their exploitation. The play presents religion as a distraction from the real issues of class struggle.\n\nConclusion: I Will Marry When I Want is a Marxist drama that exposes class struggle, exploitation, and the need for the oppressed to resist. Ngugi uses drama to critique capitalism and advocate for social justice."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Drama (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Discuss armed robbery as a symbol of failure of governance in Once Upon Four Robbers.",
+    "options": [],
+    "modelAnswer": "In Femi Osofisan's Once Upon Four Robbers, armed robbery is used as a symbol of the failure of governance and the collapse of social order in post-colonial Africa.\n\nArmed Robbery as a Symptom of Injustice: The robbers in the play are products of a society that has failed them. They are poor, marginalized, and excluded from the benefits of society. Armed robbery becomes their means of survival in a corrupt and unjust system.\n\nThe Failure of Leadership: The play critiques the government's failure to provide social justice, economic opportunities, and security. The robbers' actions reflect the desperation of the masses abandoned by corrupt leaders.\n\nState Violence vs. Criminal Violence: The play exposes the hypocrisy of the state — the state uses violence to maintain power, while criminals also use violence. The distinction between legitimate (state) violence and illegitimate (criminal) violence is blurred.\n\nCorruption and Greed: The play shows that the state is just as corrupt as the criminals. The wealthy exploit the poor, and the government is complicit in this exploitation. The robbers are a product of systemic corruption.\n\nLack of Social Contract: The play suggests that there is a broken social contract — the government has failed its people, and the people have no reason to obey the law. Armed robbery is a rebellion against an unjust system.\n\nSymbolism of the Robbers: The robbers symbolize the marginalized, the oppressed, and the voiceless. Their actions are a cry for justice and a protest against the failure of governance.\n\nConclusion: Armed robbery in Once Upon Four Robbers symbolizes the failure of governance — the collapse of social order, the corruption of leadership, and the desperation of the oppressed."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Explain the significance of Coketown in Charles Dickens' Hard Times.",
+    "options": [],
+    "modelAnswer": "Coketown in Charles Dickens' Hard Times is a fictional industrial town that symbolizes the dehumanizing effects of industrialization, utilitarianism, and capitalism on society.\n\nSymbol of Industrialization: Coketown is a grim, polluted, and monotonous industrial city. It is dominated by factories, machinery, and smoke. The town represents the harsh realities of the Industrial Revolution — the mechanization of labour and the loss of human values.\n\nUtilitarianism: Coketown embodies the principles of utilitarianism — the philosophy of Thomas Gradgrind and Josiah Bounderby, which prioritizes facts, figures, and practicality over imagination and emotion. The town is a physical manifestation of the utilitarian mindset.\n\nClass Division: Coketown is divided by class — the wealthy industrialists live in comfort, while the working class live in poverty and squalor. The town represents the social and economic inequality of Victorian England.\n\nAlienation and Dehumanization: The people of Coketown are reduced to cogs in the industrial machine. Workers are treated as interchangeable parts, and their humanity is ignored. The town symbolizes the alienation of individuals under industrial capitalism.\n\nLoss of Community: Coketown lacks community and compassion. The emphasis on facts and self-interest undermines social bonds. The town represents the breakdown of community and the isolation of individuals.\n\nRedemption and Hope: Despite its grimness, Coketown also represents the possibility of redemption — through characters like Sissy Jupe, who embodies compassion, imagination, and humanity.\n\nConclusion: Coketown is a powerful symbol in Hard Times, representing the dehumanizing effects of industrialization, utilitarianism, and class division. It critiques the failures of Victorian industrial society."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "The European Prose Tradition",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Describe the treatment of women in the Victorian era as portrayed in George Eliot's The Mill on the Floss.",
+    "options": [],
+    "modelAnswer": "In The Mill on the Floss, George Eliot portrays the treatment of women in the Victorian era as restrictive, patriarchal, and oppressive, with limited opportunities for self-fulfilment.\n\nMaggie's Struggle: Maggie Tulliver, the protagonist, faces limited options as a woman. She is intelligent, passionate, and emotionally complex, but society restricts her to traditional roles. She is expected to be submissive, domestic, and obedient.\n\nEducation and Intellect: Maggie is denied the formal education that is available to her brother Tom. Her desire for knowledge and self-expression is seen as inappropriate for a woman. The novel critiques the Victorian belief that women are intellectually inferior to men.\n\nMarriage and Independence: Victorian women were expected to marry for economic and social security. Maggie's refusal to conform to expectations leads to social isolation. The novel highlights the limited choices available to women.\n\nFamily and Duty: Maggie is pressured to sacrifice her own desires for her family. Her love for Philip Wakem and Stephen Guest is complicated by family obligations. She is torn between duty and personal happiness.\n\nSexual Double Standard: The novel exposes the double standard in sexual morality — men like Stephen Guest are forgiven, while women like Maggie are judged harshly for their actions. Victorian society punished women for transgressing moral norms.\n\nConclusion: The Mill on the Floss portrays the treatment of women in the Victorian era as oppressive, patriarchal, and limiting. Eliot critiques the social constraints placed on women and the consequences of defying them."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Highlight the significance of the strike in Sembene Ousmane's God's Bits of Wood.",
+    "options": [],
+    "modelAnswer": "In Sembene Ousmane's God's Bits of Wood, the strike is significant as a symbol of resistance, solidarity, and the struggle for dignity in the face of colonial oppression.\n\nSymbol of Resistance: The strike on the Dakar-Niger railway is a protest against the exploitation of African workers by the French colonial authorities. The workers refuse to accept subhuman wages and conditions, demanding respect and justice.\n\nSolidarity and Unity: The strike brings together workers from different ethnic and religious backgrounds. Despite their differences, they unite in the fight for their rights. The strike demonstrates the power of collective action.\n\nRole of Women: The strike highlights the important role of women in the struggle. Women support the strike by mobilizing, protesting, and organizing. They show courage and resilience, challenging traditional gender roles.\n\nEconomic and Political Impact: The strike disrupts the colonial economy and exposes the dependency of the colonial administration on African labour. It forces the authorities to negotiate and eventually grant concessions.\n\nSymbol of Colonial Oppression: The strike represents the broader struggle against colonialism and the exploitation of African people. The strikers' demands are for dignity, fairness, and a decent life.\n\nEmpowerment and Transformation: The strike leads to empowerment and transformation — workers and women gain confidence and a sense of agency. They realize their collective power.\n\nConclusion: The strike in God's Bits of Wood is a powerful symbol of resistance, solidarity, and the fight for justice. It represents the struggle of the working class against colonial oppression and the birth of a new consciousness."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Prose (Modern African Novel)",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Comment on Chinua Achebe's mode of narration in Anthills of the Savannah.",
+    "options": [],
+    "modelAnswer": "Chinua Achebe's Anthills of the Savannah employs a complex and innovative mode of narration that reflects the fragmentation and instability of post-colonial African society.\n\nMultiple Perspectives: The novel uses multiple narrators and shifting perspectives. Different characters narrate different sections — Ikem, Chris, Beatrice, and others — providing a polyphonic view of events. This allows Achebe to present a nuanced and multifaceted picture of the political situation.\n\nThird-Person Limited Omniscience: The narration is often in the third person, but it is limited to the consciousness of a particular character at a time. The narrative follows the thoughts and perspectives of different characters, creating a sense of fragmentation.\n\nThe Oral Tradition: Achebe incorporates elements of the oral tradition — proverbs, folktales, and storytelling — into the narrative. The novel uses the form of a story told by a narrator, reflecting the importance of oral culture in African society.\n\nIrony and Critique: The narration is ironic and critical of the post-colonial leadership. Through the thoughts of the characters, Achebe exposes the corruption, incompetence, and moral failure of the leadership.\n\nReflective and Introspective: The narration is reflective and introspective — characters engage in self-analysis and philosophical reflection. The novel explores questions of justice, freedom, and the role of the intellectual in society.\n\nNon-Linear Structure: The narrative structure is non-linear, with flashbacks and shifts in time. This reflects the disordered state of the nation and the difficulty of finding order and meaning.\n\nConclusion: Achebe's mode of narration in Anthills of the Savannah is innovative and multi-layered, reflecting the fragmentation and instability of post-colonial Africa."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Poetry (19th and 20th Centuries)",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "Discuss T. S. Eliot's The Wasteland as a representation of the 20th century poem.",
+    "options": [],
+    "modelAnswer": "T.S. Eliot's The Wasteland is a quintessential representation of 20th-century poetry, reflecting the fragmentation, disillusionment, and spiritual crisis of the modern world.\n\nFragmentation: The poem is fragmented in structure, using disjointed images, multiple voices, and abrupt shifts. This reflects the fragmentation of modern society and the breakdown of traditional values.\n\nMyth and Allusion: The poem is filled with allusions to mythology, religion, and literature — to the Grail legend, Dante, the Bible, and classical mythology. The use of allusion reflects the loss of meaning and the search for order in a chaotic world.\n\nTheme of Spiritual Emptiness: The poem portrays a world that is spiritually barren — a 'wasteland' where people are disconnected from each other and from God. The lack of water and fertility symbolizes the loss of spiritual vitality.\n\nUrban Decay: The poem depicts the decay of the modern city — London is portrayed as an urban wasteland, filled with alienated, dehumanized individuals. The city symbolizes the failure of modern civilization.\n\nMultiple Voices: The poem uses multiple voices, including Tiresias, the narrator, and various characters. This polyphonic style reflects the diversity and confusion of modern life.\n\nCultural and Historical Context: The poem is a product of the post-World War I era, a period of disillusionment and crisis. It reflects the collapse of European civilization and the loss of cultural and moral authority.\n\nConclusion: The Wasteland is a quintessential 20th-century poem — it captures the fragmentation, disillusionment, and spiritual crisis of the modern age. Its innovative style and profound themes make it a landmark of modernist poetry."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "African Poetry (The Modern Tradition)",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Describe the presentation of the earth in Niyi Osundare's 'Homecall' in Eye of the Earth.",
+    "options": [],
+    "modelAnswer": "In Niyi Osundare's 'Homecall,' the earth is presented as a living, resilient, and sacred entity that is connected to human existence and identity.\n\nThe Earth as a Living Entity: The earth is personified as a living, breathing being. It is portrayed as a mother figure that nurtures and sustains life. The earth is not merely soil but a source of life and identity.\n\nResilience and Endurance: The earth is presented as resilient — it endures exploitation and destruction but continues to survive and regenerate. The poem celebrates the earth's capacity to heal and renew itself.\n\nConnection to Ancestral Roots: The earth is associated with ancestral roots and cultural identity. Returning to the earth is a return to one's heritage and origins. The earth connects the present with the past.\n\nEcological Consciousness: The poem reflects an ecological consciousness — it warns against the destruction of the environment and calls for a respectful relationship with nature.\n\nThe Earth as a Symbol of Home: The earth is a symbol of home — of belonging, security, and identity. The 'homecall' is a call to return to the earth, to one's roots, and to a simpler, more harmonious way of life.\n\nPolitical and Social Critique: The poem critiques the exploitation of the earth for economic gain. The destruction of the environment is linked to greed and oppression.\n\nConclusion: In 'Homecall,' Osundare presents the earth as a living, resilient, and sacred entity that is essential to human identity and survival. The poem celebrates the earth's power and warns against its destruction."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Introduction to Poetry",
+    "type": "Essay",
+    "questionNumber": "11",
+    "question": "Explain the theme of injustice in Gbemisola Adeoti's 'Hard lines'.",
+    "options": [],
+    "modelAnswer": "In Gbemisola Adeoti's 'Hard lines,' the theme of injustice is central — the poem exposes the exploitation, oppression, and suffering of the poor and marginalized in society.\n\nEconomic Injustice: The poem highlights the economic inequality between the rich and the poor. The rich exploit the poor, accumulating wealth while the poor suffer in poverty. The poem criticizes the unjust distribution of resources.\n\nSocial Injustice: The poem exposes the social injustices faced by the poor — they are neglected, discriminated against, and denied basic rights. Their voices are ignored.\n\nPolitical Injustice: The poem criticizes the political system that perpetuates injustice. Leaders are corrupt and self-serving, ignoring the needs of the people. The poor have no power to change their situation.\n\nHuman Suffering: The poem portrays the suffering of the poor — hunger, disease, and despair. The images of suffering evoke a sense of injustice and outrage.\n\nResistance and Anger: The poem expresses anger and resistance against injustice. The speaker challenges the status quo and calls for change.\n\nMoral Outrage: The poem evokes moral outrage — the injustice is not just economic or political but also moral. The exploitation of the poor is a violation of human dignity.\n\nConclusion: The theme of injustice in 'Hard lines' exposes the exploitation and suffering of the poor and calls for social justice. Adeoti uses poetry to critique inequality and advocate for change."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "European Poetry (The Medieval and Renaissance Traditions)",
+    "type": "Essay",
+    "questionNumber": "12",
+    "question": "Discuss the significance of dreams as a technique for recreating man in Faerie Queen.",
+    "options": [],
+    "modelAnswer": "In Edmund Spenser's Faerie Queen, dreams are used as a technique to recreate man — they represent the inner life, spiritual struggles, and the journey of the soul towards virtue.\n\nDreams as Visions: Dreams in the Faerie Queen are visionary — they reveal deeper truths about the human condition. Characters receive divine guidance through dreams and visions. Dreams serve as a means of moral and spiritual revelation.\n\nDreams and Allegory: The Faerie Queen is an allegorical poem, and dreams function within the allegorical framework. They represent the struggle between good and evil, the temptations of the world, and the search for redemption.\n\nDreams and Human Consciousness: Dreams represent the subconscious mind — the hidden desires, fears, and conflicts of the soul. Through dreams, Spenser explores the complexity of human consciousness and the inner life.\n\nDreams as a Technique of Transformation: Dreams transform the characters — they lead to self-discovery, repentance, and moral growth. The characters learn from their dreams and are changed by them.\n\nDreams and Spiritual Awakening: Dreams serve as a means of spiritual awakening — they alert the characters to their sins and guide them towards virtue. The characters are reborn through their dream experiences.\n\nConclusion: Dreams in the Faerie Queen are a significant technique for recreating man — they explore the inner life, moral struggles, and spiritual journey of the individual."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "13",
+    "question": "Use the questions below to show your understanding of the passage that follows:\n\n(a) Justifying your choice, state the point of view employed in the passage.\n(b) Evaluate the subject's perception of the audience.\n(c) Which critical approach is most suitable in the analysis of the passage? Justify your choice.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Passage: 'Why stop fasting at this particular moment...' by Franz Kafka. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(a) Point of View: The passage employs a third-person limited point of view — it focuses on the thoughts and feelings of the hunger artist, revealing his inner conflicts and perceptions. The narrator is outside the story but has access to the hunger artist's consciousness.\n\n(b) Subject's Perception of the Audience: The hunger artist perceives the audience as impatient, fickle, and lacking understanding of his art. He feels that the audience does not truly appreciate his sacrifice and dedication. He believes they are easily satisfied and cannot comprehend his ability to fast beyond the limits. He feels isolated and misunderstood.\n\n(c) Critical Approach: The most suitable critical approach is psychological criticism — the passage explores the hunger artist's inner psyche, his obsessions, and his sense of alienation. It examines the motivations and perceptions of the subject, making a psychological interpretation highly relevant. It focuses on the internal world of the character."
+  },
+  {
+    "subject": "Literature",
+    "year": 2021,
+    "category": "Unseen Prose and Poetry",
+    "type": "Essay",
+    "questionNumber": "14",
+    "question": "Use the questions below to show an understanding of the poem that follows:\n\n(a) With reference to the words, phrases and devices employed, explain the concern of this poem.\n(b) Which critical approach is most suitable in the analysis of the passage? Justify your choice.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Poem: 'Save us from the night...' by Roo Borson. Please refer to original past question paper.",
+    "options": [],
+    "modelAnswer": "(a) Concern of the Poem: The poem expresses a plea for deliverance from the darkness and emptiness of modern life. It uses night imagery — 'night,' 'bleak open highways,' 'fluorescent oases,' 'gunning of immortal engines' — to convey a sense of alienation, anxiety, and spiritual emptiness. The persona seeks safety from the overwhelming, soulless aspects of modern existence.\n\nDevices: The poem uses visual imagery (night, highways, gas stations), auditory imagery (the gunning of engines), and personification ('ghoulish slices of pie'). The tone is one of desperation and a desire for salvation.\n\n(b) Critical Approach: The most suitable critical approach is pragmatic criticism — the poem addresses the audience directly and seeks to evoke a response. It is concerned with the effects of the poem on the reader. It appeals to the reader's experience of alienation and desire for spiritual safety."
+  }
+]

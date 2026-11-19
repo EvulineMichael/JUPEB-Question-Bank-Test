@@ -45,6 +45,8 @@
       "m, ms⁻²"
     ],
     "answer": "C",
+    "reviewNote": "Options C and D are printed the same in this copy of the paper, so this question is left out of quizzes.\n\nCorrect answer: m, ms⁻²\n\nFor dimensional consistency:\nP/t must have the same unit as V (m/s), so P = V × t → unit = (m/s) × s = m (metre).\nQt must also have the same unit as V, so Q = V/t → unit = (m/s)/s = m/s².\n\nNote: Options C and D are identical.",
+    "excludeFromQuiz": true,
     "explanation": "For dimensional consistency:\nP/t must have the same unit as V (m/s), so P = V × t → unit = (m/s) × s = m (metre).\nQt must also have the same unit as V, so Q = V/t → unit = (m/s)/s = m/s².\n\nNote: Options C and D are identical."
   },
   {
@@ -429,6 +431,8 @@
       "0.1 Nm²/C"
     ],
     "answer": "A",
+    "reviewNote": "The net electric flux through any closed surface with no charge inside it is zero (Gauss's law): field lines enter one side of the ball and leave the other.\n\nThe flux that passes through the ball (lines entering it) equals E × its cross-section: Φ = E × πr² = 150 × π × 0.05² ≈ 1.18 N m²/C.\n\nThe key, 4.7 N m²/C, multiplies E by the whole surface area 4πr², which is not a flux in a uniform field. No option is correct.",
+    "excludeFromQuiz": true,
     "explanation": "For a sphere in a uniform electric field, the maximum flux through the full spherical surface is:\nΦ = E × 4πr² = 150 × 4π × (0.05)² = 150 × 0.0314 = 4.7 Nm²/C.\n\nNote: The net flux through a closed sphere in a uniform field is zero, but the question asks for the maximum flux that can pass through it, which uses the total surface area."
   },
   {

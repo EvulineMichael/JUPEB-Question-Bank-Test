@@ -188,8 +188,8 @@
       "D",
       "P"
     ],
-    "answer": "D",
-    "explanation": "The Priestly Source (P) stresses on the central shrine and worship — it emphasizes the Tabernacle, priesthood, sacrifices, and holiness. It is concerned with religious institutions and proper worship practices."
+    "answer": "C",
+    "explanation": "The Deuteronomic source (D) is the one that insists on a single central shrine: Deuteronomy 12 commands Israel to worship and sacrifice only 'at the place the LORD your God will choose', which became Jerusalem. This matches King Josiah's reform (621 BC), when the 'book of the law' was found and local shrines were destroyed.\n\nThe Priestly source (P) is concerned with worship, priesthood, sacrifice and holiness in general, but centralisation of worship is the hallmark of D."
   },
   {
     "subject": "CRS",
@@ -621,6 +621,8 @@
       "Rehoboam's unwise decision"
     ],
     "answer": "B",
+    "reviewNote": "The kingdom divided after Solomon's death (about 931 BC) because of Solomon's heavy taxes, forced labour and idolatry, and Rehoboam's harsh refusal to lighten the burden (1 Kings 11–12).\n\nTwo options are not causes of the division: Saul's disobedience (A) cost Saul's family the throne, and 'David's bad economic policy' (B) is not a biblical cause. The examiners' answer is B.",
+    "excludeFromQuiz": true,
     "explanation": "David's bad economic policy is NOT recorded as a factor that led to the division of the Kingdom. The division was caused by Saul's disobedience (as a pattern), Solomon's bad rule (heavy taxation and idolatry), and Rehoboam's unwise decision (harsh response to the people's request)."
   },
   {

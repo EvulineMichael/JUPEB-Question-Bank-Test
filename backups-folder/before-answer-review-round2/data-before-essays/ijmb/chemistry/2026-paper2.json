@@ -1,0 +1,164 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "The structure of the main constituent in antifreeze is\nWhat is the\n(a) molecular formula\n(b) Empirical formula\n(c) IUPAC nomenclature (5 marks)",
+    "image": {
+      "src": "images/ijmb/chemistry/2026/chem-2026-paper2-1.png",
+      "alt": "Displayed formula of propane-1,2,3-triol: a three-carbon chain with one OH group on each carbon and the remaining bonds to H"
+    },
+    "options": [],
+    "modelAnswer": "Figure: displayed formula of a three-carbon chain, HOCH₂–CH(OH)–CH₂OH, with one –OH group on each carbon.\n\n(a) Molecular formula: C₃H₈O₃.\n(Count: 3 C; 5 H on carbon + 3 H in the OH groups = 8 H; 3 O.)\n\n(b) Empirical formula: C₃H₈O₃. The numbers 3, 8 and 3 have no common factor, so the empirical formula is the same as the molecular formula.\n\n(c) IUPAC name: propane-1,2,3-triol (common name glycerol, or glycerine).\n\nNote: the structure shown is propane-1,2,3-triol, which is used in some antifreeze mixtures. The main constituent of most commercial antifreeze is ethane-1,2-diol (ethylene glycol), HOCH₂CH₂OH."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Identify the reaction process induced by each of the following reagents:\n(a) concentrated HNO₃/H₂SO₄\n(b) LiAlH₄\n(c) acidified KMnO₄\n(d) CH₃Cl/AlCl₃\n(e) Na/liquid NH₃ (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Concentrated HNO₃/H₂SO₄: nitration, i.e., electrophilic substitution of a –NO₂ group onto an aromatic ring (e.g., benzene → nitrobenzene). The acids generate the nitronium ion, NO₂⁺.\n\n(b) LiAlH₄: reduction (e.g., of aldehydes, ketones, carboxylic acids, esters and amides to alcohols or amines).\n\n(c) Acidified KMnO₄: oxidation (e.g., of primary alcohols to carboxylic acids, or of alkenes to diols and cleavage products).\n\n(d) CH₃Cl/AlCl₃: Friedel–Crafts alkylation (methylation), an electrophilic substitution of a –CH₃ group onto an aromatic ring (e.g., benzene → methylbenzene).\n\n(e) Na/liquid NH₃: reduction by dissolving metal, e.g., the reduction of alkynes to trans-alkenes, or the Birch reduction of benzene rings."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) Define Isotopy.\n(b) Give the formula of the three (3) known isotopes of carbon. (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Isotopy is the existence of atoms of the same element that have the same atomic number (the same number of protons) but different mass numbers, because they contain different numbers of neutrons. These atoms are called isotopes. They have the same chemical properties but slightly different physical properties.\n\n(b)\n1. Carbon-12: ¹²₆C (6 protons, 6 neutrons)\n2. Carbon-13: ¹³₆C (6 protons, 7 neutrons)\n3. Carbon-14: ¹⁴₆C (6 protons, 8 neutrons; radioactive, used in carbon dating)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "The structures of the amino acids alanine and glycine are shown below.\n(a) (i) Alanine exists as a pair of stereoisomers. Explain the meaning of the term stereoisomers.\n(ii) State how you could distinguish between the stereoisomers.\n(b) Give the formulae of the peptides which are formed when alanine and glycine react together (5 marks)",
+    "image": {
+      "src": "images/ijmb/chemistry/2026/chem-2026-paper2-4.png",
+      "alt": "Structures of alanine, H₂N–CH(CH₃)–COOH, and glycine, H₂N–CH₂–COOH"
+    },
+    "options": [],
+    "modelAnswer": "Figure: alanine, H₂N–CH(CH₃)–COOH, and glycine, H₂N–CH₂–COOH, drawn with the central carbon of each in the middle.\n\n(a)(i) Stereoisomers are compounds that have the same molecular formula and the same structural formula (the same atoms bonded in the same order), but a different arrangement of their atoms in space.\nAlanine's central carbon is chiral: it carries four different groups (–H, –CH₃, –NH₂ and –COOH). So alanine exists as two optical isomers (enantiomers), which are non-superimposable mirror images of each other. Glycine has two H atoms on its central carbon, so it is not chiral.\n\n(ii) The two optical isomers rotate the plane of plane-polarised light by equal amounts but in opposite directions. Using a polarimeter, one (the dextrorotatory, + or d-, isomer) rotates the light clockwise, and the other (the laevorotatory, − or l-, isomer) rotates it anticlockwise.\n\n(b) The –COOH of one amino acid reacts with the –NH₂ of the other, eliminating water and forming a peptide bond, –CO–NH–. Two different dipeptides can form from alanine and glycine:\n1. Ala–Gly: H₂N–CH(CH₃)–CO–NH–CH₂–COOH\n2. Gly–Ala: H₂N–CH₂–CO–NH–CH(CH₃)–COOH\nBoth have the molecular formula C₅H₁₀N₂O₃.\n(If each amino acid also reacts with itself, Ala–Ala and Gly–Gly are formed as well.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "In the chlorination of decane (C₁₀H₂₄),\n(a) what is the likely mechanism for the process\n(b) what type of bond fission is involved\n(c) how many different structural isomers can be produced for C₁₀H₂₃Cl\n(d) draw the molecular formula of one of the isomer and name it (5 marks)",
+    "options": [],
+    "modelAnswer": "Misprint note: decane is C₁₀H₂₂ (CₙH₂ₙ₊₂), not C₁₀H₂₄, and its monochloro derivative is C₁₀H₂₁Cl, not C₁₀H₂₃Cl.\n\n(a) Free-radical substitution, in ultraviolet light (or on heating). It is a chain reaction with initiation, propagation and termination steps:\nInitiation: Cl₂ → 2Cl•\nPropagation: C₁₀H₂₂ + Cl• → C₁₀H₂₁• + HCl, then C₁₀H₂₁• + Cl₂ → C₁₀H₂₁Cl + Cl•\nTermination: two radicals combine, e.g., Cl• + Cl• → Cl₂\n\n(b) Homolytic fission: each covalent bond (Cl–Cl, C–H) breaks evenly, so each atom keeps one electron of the shared pair and free radicals are formed.\n\n(c) Five. Straight-chain decane is symmetrical, so there are only five different positions for one Cl atom: 1-, 2-, 3-, 4- and 5-chlorodecane. (C6 to C10 are equivalent to C5 to C1.)\n\n(d) For example, 1-chlorodecane: CH₃–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂Cl, i.e., CH₃(CH₂)₈CH₂Cl.\n(Others: 2-chlorodecane, CH₃CHCl(CH₂)₇CH₃; 5-chlorodecane, CH₃(CH₂)₃CHCl(CH₂)₄CH₃.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "How many pie (π) electrons are present in each of the following molecules?\n(a) Propyne\n(b) Buta-1,3-diene\n(c) Cyclohexene\n(d) Hexane\n(e) Propanal (5 marks)",
+    "options": [],
+    "modelAnswer": "Each π bond contains 2 π electrons. A double bond has one π bond; a triple bond has two.\n\n(a) Propyne, CH≡C–CH₃: one triple bond = 2 π bonds = 4 π electrons.\n(b) Buta-1,3-diene, CH₂=CH–CH=CH₂: two C=C bonds = 2 π bonds = 4 π electrons.\n(c) Cyclohexene, C₆H₁₀: one C=C bond = 1 π bond = 2 π electrons.\n(d) Hexane, C₆H₁₄: only single bonds = 0 π electrons.\n(e) Propanal, CH₃CH₂CHO: one C=O bond = 1 π bond = 2 π electrons."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "List five (5) primary petrochemical feed stocks in the petrochemical industry (5 marks)",
+    "options": [],
+    "modelAnswer": "Any five:\n1. Ethene (ethylene)\n2. Propene (propylene)\n3. Butenes and buta-1,3-diene (the C4 alkenes)\n4. Benzene\n5. Methylbenzene (toluene)\n6. Dimethylbenzenes (xylenes)\n7. Methane (natural gas), and synthesis gas (a mixture of CO and H₂) made from it\n(Ethene, propene and butadiene are the olefins; benzene, toluene and xylene are the aromatics, often called BTX.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Classify the following substituent groups as “activating” or “deactivating” in aromatic substitution reactions.\n(a) -NO₂\n(b) -SO₃H\n(c) -OH\n(d) -COOH\n(e) -NH₂ (5 marks)",
+    "options": [],
+    "modelAnswer": "Activating groups release electrons into the benzene ring, making electrophilic substitution faster (and directing to the 2- and 4-positions). Deactivating groups withdraw electrons, making it slower (and directing to the 3-position).\n\n(a) –NO₂: deactivating.\n(b) –SO₃H: deactivating.\n(c) –OH: activating.\n(d) –COOH: deactivating.\n(e) –NH₂: activating."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "Give the molecular formula and name of the sixth, seventh, eighth, ninth and tenth member of the alkane homologous series. (5 marks)",
+    "options": [],
+    "modelAnswer": "Alkanes have the general formula CₙH₂ₙ₊₂, and the nth member has n carbon atoms.\n\nSixth: C₆H₁₄, hexane.\nSeventh: C₇H₁₆, heptane.\nEighth: C₈H₁₈, octane.\nNinth: C₉H₂₀, nonane.\nTenth: C₁₀H₂₂, decane."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Give the structure of the first member of the following homologous series:\n(a) Alkyne\n(b) Alkanone\n(c) Alkanoic acid\n(d) Alkanamide\n(e) Alkanol (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Alkyne: ethyne, HC≡CH (H–C≡C–H).\n\n(b) Alkanone: propanone, CH₃COCH₃ (CH₃–CO–CH₃). The first ketone has three carbons, because the C=O group must be between two carbon atoms.\n\n(c) Alkanoic acid: methanoic acid, HCOOH (H–CO–OH).\n\n(d) Alkanamide: methanamide, HCONH₂ (H–CO–NH₂).\n\n(e) Alkanol: methanol, CH₃OH (H₃C–OH)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Explain, with illustrative examples, what is meant by the terms:\n(i) saponification (ii) esterification (iii) ethanoylation (iv) decarboxylation (15 marks)",
+    "options": [],
+    "modelAnswer": "(i) Saponification: the alkaline hydrolysis of an ester, especially of a fat or oil, by boiling with sodium or potassium hydroxide. A fat gives soap (the sodium salt of a fatty acid) and propane-1,2,3-triol (glycerol).\nExample: (C₁₇H₃₅COO)₃C₃H₅ (glyceryl tristearate) + 3NaOH → 3C₁₇H₃₅COONa (sodium stearate, soap) + C₃H₅(OH)₃\nSimple ester: CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH\n\n(ii) Esterification: the reaction of a carboxylic acid with an alkanol to form an ester and water, catalysed by concentrated H₂SO₄ and heat. It is reversible.\nExample: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ (ethyl ethanoate) + H₂O\n\n(iii) Ethanoylation (acetylation): the introduction of an ethanoyl group, CH₃CO–, into a molecule, replacing a hydrogen atom of an –OH or –NH₂ group. Ethanoyl chloride or ethanoic anhydride is used.\nExamples: C₂H₅OH + CH₃COCl → CH₃COOC₂H₅ + HCl\nC₆H₅NH₂ (phenylamine) + (CH₃CO)₂O → C₆H₅NHCOCH₃ (N-phenylethanamide) + CH₃COOH\n(The ethanoylation of 2-hydroxybenzoic acid gives aspirin.)\n\n(iv) Decarboxylation: the removal of a carboxyl group as carbon(IV) oxide from a carboxylic acid or its salt. It is usually done by heating the sodium salt with soda lime (NaOH/CaO), giving an alkane with one carbon atom fewer.\nExample: CH₃COONa + NaOH →(heat, soda lime) CH₄ + Na₂CO₃"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) List five (5) main fractions of the fractional distillation of crude oil and their uses. (10 marks)",
+    "options": [],
+    "modelAnswer": "Any five (approximate carbon ranges in brackets):\n1. Refinery gases (C1–C4): fuel gas, bottled cooking gas (LPG), and feedstock for petrochemicals.\n2. Petrol/gasoline (C5–C10): fuel for car engines.\n3. Naphtha (C7–C10): feedstock for the petrochemical industry (e.g., for making plastics) and for reforming into petrol.\n4. Kerosene/paraffin (C10–C16): jet (aviation) fuel, and fuel for lamps and cooking stoves.\n5. Diesel oil/gas oil (C14–C20): fuel for diesel engines (lorries, buses, generators, trains) and for heating.\n6. Lubricating oil (C20–C35): lubricants for engines and machines; also waxes and petroleum jelly.\n7. Fuel oil (C30–C40): fuel for ships, power stations and industrial boilers.\n8. Bitumen/asphalt (above C40): road surfacing and roofing."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "(a) An organic compound (0.30 g) with relative molar mass = 180, was analysed and found to contain 0.120 g of carbon and 0.02 g of hydrogen. What is the empirical formula, molecular formula and molecular structure of the compound? (12 marks)",
+    "options": [],
+    "modelAnswer": "Mass of oxygen (by difference) = 0.30 − (0.120 + 0.02) = 0.160 g.\n\nMoles of each element:\nC: 0.120/12 = 0.010\nH: 0.02/1 = 0.020\nO: 0.160/16 = 0.010\n\nDivide by the smallest (0.010): C : H : O = 1 : 2 : 1.\nEmpirical formula = CH₂O (empirical formula mass = 12 + 2 + 16 = 30).\n\nn = relative molar mass/empirical formula mass = 180/30 = 6.\nMolecular formula = (CH₂O)₆ = C₆H₁₂O₆.\n\nMolecular structure: C₆H₁₂O₆ with relative molar mass 180 is a hexose sugar, such as glucose. Open-chain structure of glucose (an aldohexose):\nCHO–CH(OH)–CH(OH)–CH(OH)–CH(OH)–CH₂OH, i.e., HOCH₂(CHOH)₄CHO\n(Its isomer fructose, a ketohexose, HOCH₂(CHOH)₃COCH₂OH, has the same formula. Glucose also exists in ring forms.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2026,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "(b) Give the structure of the organic product obtainable in the reaction of ethanamide with\n(i) Phosphorus(V) oxide\n(ii) Dioxonitrite(III) acid\n(iii) Bromine and potassium hydroxide solution\n(iv) Lithium tetrahydridoaluminate\n(v) Hydrochloric acid (10 marks)",
+    "options": [],
+    "modelAnswer": "Ethanamide: CH₃CONH₂.\n\n(i) Phosphorus(V) oxide, heat: dehydration.\nCH₃CONH₂ → CH₃C≡N + H₂O\nProduct: CH₃CN, ethanenitrile.\n\n(ii) Dioxonitrite(III) acid (nitrous acid, HNO₂, made from NaNO₂ and dilute HCl): nitrogen is evolved.\nCH₃CONH₂ + HNO₂ → CH₃COOH + N₂ + H₂O\nProduct: CH₃COOH, ethanoic acid.\n\n(iii) Bromine and potassium hydroxide solution, warm (Hofmann degradation): the product has one carbon atom fewer.\nCH₃CONH₂ + Br₂ + 4KOH → CH₃NH₂ + K₂CO₃ + 2KBr + 2H₂O\nProduct: CH₃NH₂, methylamine (methanamine).\n\n(iv) Lithium tetrahydridoaluminate (LiAlH₄), in dry ether: reduction.\nCH₃CONH₂ + 4[H] → CH₃CH₂NH₂ + H₂O\nProduct: CH₃CH₂NH₂, ethylamine (ethanamine).\n\n(v) Hydrochloric acid, heat under reflux: acid hydrolysis.\nCH₃CONH₂ + H₂O + HCl → CH₃COOH + NH₄Cl\nProduct: CH₃COOH, ethanoic acid (with ammonium chloride)."
+  }
+]

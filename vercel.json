@@ -1,17 +1,29 @@
 {
   "functions": {
-    "api/papers.js": { "includeFiles": "data/**" }
+    "api/papers.js": {
+      "includeFiles": "data/**"
+    }
   },
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "jupeb-question-bank-test.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "jupeb-question-bank-test.vercel.app"
+        }
+      ],
       "destination": "https://test.jupebijmbprep.com/$1",
       "permanent": false
     },
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "jupeb-question-bank.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "jupeb-question-bank.vercel.app"
+        }
+      ],
       "destination": "https://jupebijmbprep.com/$1",
       "permanent": false
     },
@@ -22,6 +34,17 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!data/|api/|images/|.*\\.).*)", "destination": "/index.html" }
+    {
+      "source": "/__/auth/:path*",
+      "destination": "https://jupeb-question-bank.firebaseapp.com/__/auth/:path*"
+    },
+    {
+      "source": "/__/firebase/:path*",
+      "destination": "https://jupeb-question-bank.firebaseapp.com/__/firebase/:path*"
+    },
+    {
+      "source": "/((?!data/|api/|images/|.*\\.).*)",
+      "destination": "/index.html"
+    }
   ]
 }

@@ -1,0 +1,222 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Given that sec θ = 25/24, compute the value of cot θ + cos θ. [4 marks]",
+    "options": [],
+    "modelAnswer": "cos θ = 24/25. Taking θ acute: sin θ = √(1 − 576/625) = 7/25 (from the 7, 24, 25 triangle).\ncot θ = cos θ/sin θ = 24/7.\ncot θ + cos θ = 24/7 + 24/25 = (600 + 168)/175 = 768/175 ≈ 4.389.\n(If θ were in the fourth quadrant, sin θ = −7/25, giving −24/7 + 24/25 = −432/175.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "If α and β are the roots of the equation x² − 5x + 6 = 0, find α − β. [4 marks]",
+    "options": [],
+    "modelAnswer": "α + β = 5, αβ = 6.\n(α − β)² = (α + β)² − 4αβ = 25 − 24 = 1, so α − β = ±1.\n(The roots are 3 and 2, so α − β = 1 if α = 3 and β = 2.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Express ((√2 + 3i)/(√2 − 3i))² in the form a + ib. [4 marks]",
+    "options": [],
+    "modelAnswer": "(√2 + 3i)/(√2 − 3i) = (√2 + 3i)²/[(√2)² + 3²] = (2 + 6√2 i − 9)/11 = (−7 + 6√2 i)/11.\nSquare: [(−7)² + 2(−7)(6√2 i) + (6√2 i)²]/121 = (49 − 84√2 i − 72)/121 = (−23 − 84√2 i)/121.\nAnswer: −23/121 − (84√2/121)i ≈ −0.190 − 0.982i."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "If the 16ᵗʰ term of an AP is 3 times the 4ᵗʰ term, prove that the 23ʳᵈ term is 5 times the 3ʳᵈ term. [4 marks]",
+    "options": [],
+    "modelAnswer": "Tₙ = a + (n − 1)d.\nT₁₆ = 3T₄: a + 15d = 3(a + 3d) = 3a + 9d, so 2a = 6d and a = 3d.\nT₂₃ = a + 22d = 3d + 22d = 25d.\nT₃ = a + 2d = 3d + 2d = 5d.\nT₂₃ = 25d = 5 × 5d = 5T₃, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Logarithms",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Solve the equation 1ˣ = 3. [4 marks]",
+    "options": [],
+    "modelAnswer": "For every real x, 1ˣ = 1, so 1ˣ can never equal 3. The equation has no real solution.\n(Taking logarithms gives x ln 1 = ln 3, i.e., 0 = ln 3, which is impossible.)\nNote: the question may be misprinted; for example, 3ˣ = 1 would give x = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Polynomials",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Given that x − 1 is a factor of the polynomial px² + qx + r, and when the polynomial is divided by x + 1 and x − 2 leaves remainders of 2 and 8, respectively. Calculate the values of p, q and r. [10marks]",
+    "options": [],
+    "modelAnswer": "Let f(x) = px² + qx + r.\nf(1) = 0: p + q + r = 0 ...(1)\nf(−1) = 2: p − q + r = 2 ...(2)\nf(2) = 8: 4p + 2q + r = 8 ...(3)\n(1) − (2): 2q = −2, so q = −1. Then p + r = 1 ...(4)\n(3): 4p − 2 + r = 8, so 4p + r = 10 ...(5)\n(5) − (4): 3p = 9, so p = 3 and r = −2.\np = 3, q = −1, r = −2 (f(x) = 3x² − x − 2 = (x − 1)(3x + 2))."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Binomial Theorem",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Obtain the first four terms of the binomial expansion of (x − y)¹⁰ and use it to estimate the value of (0.99)¹⁰, correct to 3 decimal points. [10marks]",
+    "options": [],
+    "modelAnswer": "(x − y)¹⁰ = x¹⁰ − ¹⁰C₁x⁹y + ¹⁰C₂x⁸y² − ¹⁰C₃x⁷y³ + ...\n= x¹⁰ − 10x⁹y + 45x⁸y² − 120x⁷y³ + ...\n\nWith x = 1, y = 0.01:\n(0.99)¹⁰ ≈ 1 − 10(0.01) + 45(0.0001) − 120(0.000001)\n= 1 − 0.1 + 0.0045 − 0.00012 = 0.90438\n≈ 0.904 (to 3 decimal places)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Prove that 2⁴ⁿ − 1 is always divisible by 5. [10marks]",
+    "options": [],
+    "modelAnswer": "Proof by mathematical induction (n a positive integer).\nn = 1: 2⁴ − 1 = 15 = 5 × 3, divisible by 5.\nAssume true for n = k: 2⁴ᵏ − 1 = 5m, for some integer m.\nFor n = k + 1: 2⁴⁽ᵏ⁺¹⁾ − 1 = 16 × 2⁴ᵏ − 1 = 16(5m + 1) − 1 = 80m + 15 = 5(16m + 3), divisible by 5.\nSo by induction, 2⁴ⁿ − 1 is divisible by 5 for all positive integers n.\n\n(Alternatively: 2⁴ⁿ − 1 = 16ⁿ − 1 = (16 − 1)(16ⁿ⁻¹ + 16ⁿ⁻² + ... + 1) = 15 × (integer), which is divisible by 5, and indeed by 15.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Matrices",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Solve the following simultaneous linear equations using Cramer's rule;\nx + 2y − 2z = 1\nx − 3y + 8z = 6\n2x − 3y − z = −2 [10marks]",
+    "options": [],
+    "modelAnswer": "D = |1 2 −2; 1 −3 8; 2 −3 −1| = 1(3 + 24) − 2(−1 − 16) + (−2)(−3 + 6) = 27 + 34 − 6 = 55.\n\nDₓ = |1 2 −2; 6 −3 8; −2 −3 −1| = 1(3 + 24) − 2(−6 + 16) + (−2)(−18 − 6) = 27 − 20 + 48 = 55.\nD_y = |1 1 −2; 1 6 8; 2 −2 −1| = 1(−6 + 16) − 1(−1 − 16) + (−2)(−2 − 12) = 10 + 17 + 28 = 55.\nD_z = |1 2 1; 1 −3 6; 2 −3 −2| = 1(6 + 18) − 2(−2 − 12) + 1(−3 + 6) = 24 + 28 + 3 = 55.\n\nx = Dₓ/D = 1, y = D_y/D = 1, z = D_z/D = 1.\n(Check: 1 + 2 − 2 = 1 ✓; 1 − 3 + 8 = 6 ✓; 2 − 3 − 1 = −2 ✓.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Logarithms",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Solve the equation log₅(x² + 9) − log₅(x + 1) = 1 [06marks]",
+    "options": [],
+    "modelAnswer": "log₅[(x² + 9)/(x + 1)] = 1, so (x² + 9)/(x + 1) = 5.\nx² + 9 = 5x + 5\nx² − 5x + 4 = 0\n(x − 1)(x − 4) = 0, so x = 1 or x = 4.\nBoth are valid (x + 1 > 0 and x² + 9 > 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Logarithms",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Solve the equation 49ˣ − 42ˣ = 36ˣ. [14marks]",
+    "options": [],
+    "modelAnswer": "Divide by 36ˣ: (49/36)ˣ − (42/36)ˣ = 1, i.e., (7/6)²ˣ − (7/6)ˣ − 1 = 0.\nLet u = (7/6)ˣ (u > 0): u² − u − 1 = 0, so u = (1 + √5)/2 ≈ 1.618 (rejecting the negative root).\n(7/6)ˣ = (1 + √5)/2\nx = log[(1 + √5)/2]/log(7/6) = 0.20899/0.06695 ≈ 3.122."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) Given that z₁ = 1 − 2i, z₂ = 3 + 2i and z₃ = 1 + i, simplify the following\n(i) z₁z̄₂z₃\n(ii) z̄₁z₂ − z₂z̄₃\n(iii) z̄₂z₃/z₁ [08 marks]",
+    "options": [],
+    "modelAnswer": "Note: the bars (complex conjugates) are read from the photo as shown in the question.\nz̄₁ = 1 + 2i, z̄₂ = 3 − 2i, z̄₃ = 1 − i.\n\n(i) z₁z̄₂ = (1 − 2i)(3 − 2i) = 3 − 2i − 6i + 4i² = −1 − 8i.\nz₁z̄₂z₃ = (−1 − 8i)(1 + i) = −1 − i − 8i − 8i² = 7 − 9i.\n\n(ii) z̄₁z₂ = (1 + 2i)(3 + 2i) = 3 + 2i + 6i − 4 = −1 + 8i.\nz₂z̄₃ = (3 + 2i)(1 − i) = 3 − 3i + 2i + 2 = 5 − i.\nz̄₁z₂ − z₂z̄₃ = (−1 + 8i) − (5 − i) = −6 + 9i.\n\n(iii) z̄₂z₃ = (3 − 2i)(1 + i) = 3 + 3i − 2i + 2 = 5 + i.\n(5 + i)/(1 − 2i) = (5 + i)(1 + 2i)/(1 + 4) = (5 + 10i + i − 2)/5 = (3 + 11i)/5 = 0.6 + 2.2i."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Show that if ω is one complex cube root of unity then ω² is also another complex cube root of unity and 1 + ω + ω² = 0. [08 marks]",
+    "options": [],
+    "modelAnswer": "ω is a complex cube root of unity, so ω³ = 1 and ω ≠ 1.\n(ω²)³ = (ω³)² = 1² = 1, so ω² is also a cube root of unity.\nIt is not equal to 1: if ω² = 1, then ω = ω³/ω² = 1/1 = 1, which is a contradiction. The only real cube root of unity is 1, so ω² is complex. Also ω² ≠ ω (otherwise ω = 1), so it is the other complex root.\nExplicitly, ω = −½ + (√3/2)i and ω² = −½ − (√3/2)i.\n\nω³ − 1 = 0, so (ω − 1)(ω² + ω + 1) = 0.\nSince ω ≠ 1, 1 + ω + ω² = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9c",
+    "question": "(c) Given that z = x + iy, show that |z + i| = |1 + i| is the circle x² + y² + 2y − 1 = 0 [04 marks]",
+    "options": [],
+    "modelAnswer": "z + i = x + (y + 1)i, so |z + i| = √(x² + (y + 1)²).\n|1 + i| = √2.\nx² + (y + 1)² = 2\nx² + y² + 2y + 1 = 2\nx² + y² + 2y − 1 = 0: a circle with centre (0, −1) and radius √2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) Given that tan A = 1/5, tan B = 1/2 and A + B + C = 45⁰, find the value of tan C. [08 marks]",
+    "options": [],
+    "modelAnswer": "tan(A + B) = (1/5 + 1/2)/(1 − 1/10) = (7/10)/(9/10) = 7/9.\nC = 45° − (A + B):\ntan C = (tan 45° − tan(A + B))/(1 + tan 45° tan(A + B)) = (1 − 7/9)/(1 + 7/9) = (2/9)/(16/9) = 1/8."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Find the square roots of −i and 3 + 4i. [08 marks]",
+    "options": [],
+    "modelAnswer": "Square roots of −i: let (a + ib)² = −i, so a² − b² = 0 and 2ab = −1.\na = −b, and −2b² = −1, so b = ±1/√2, a = ∓1/√2.\n√(−i) = ±(1 − i)/√2 = ±(√2/2)(1 − i).\nCheck: (1 − i)²/2 = (1 − 2i − 1)/2 = −i ✓\n\nSquare roots of 3 + 4i: a² − b² = 3 and 2ab = 4 (ab = 2). Also a² + b² = |3 + 4i| = 5.\nSo a² = 4, b² = 1; with ab > 0: a = ±2, b = ±1.\n√(3 + 4i) = ±(2 + i).\nCheck: (2 + i)² = 4 + 4i − 1 = 3 + 4i ✓"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "10c",
+    "question": "(c) Show that (1 + cos x)/(1 − cos x) = cosec²x + 2cosec x cot x + cot²x [04 marks]",
+    "options": [],
+    "modelAnswer": "Multiply numerator and denominator by (1 + cos x):\n(1 + cos x)/(1 − cos x) = (1 + cos x)²/(1 − cos²x) = (1 + 2cos x + cos²x)/sin²x\n= 1/sin²x + 2cos x/sin²x + cos²x/sin²x\n= cosec²x + 2cosec x cot x + cot²x, as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Solve the equation sin²x − sin x − cos²x = 0 [08 marks]",
+    "options": [],
+    "modelAnswer": "Replace cos²x by 1 − sin²x:\nsin²x − sin x − 1 + sin²x = 0\n2sin²x − sin x − 1 = 0\n(2sin x + 1)(sin x − 1) = 0\nsin x = 1 or sin x = −½.\nFor 0° ≤ x ≤ 360°: x = 90°, 210°, 330°.\n(General solution: x = 90° + 360°n, or x = 210° + 360°n, or x = 330° + 360°n.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Given that sin 2x = 2 sin x cos x, cos 2x = cos²x − sin²x, obtain an expression for sin x, cos x in terms of tan(x/2). [08marks]",
+    "options": [],
+    "modelAnswer": "Let t = tan(x/2). Write x = 2(x/2):\nsin x = 2 sin(x/2) cos(x/2) = 2 sin(x/2)cos(x/2)/[cos²(x/2) + sin²(x/2)].\nDivide numerator and denominator by cos²(x/2):\nsin x = 2t/(1 + t²).\n\ncos x = cos²(x/2) − sin²(x/2) = [cos²(x/2) − sin²(x/2)]/[cos²(x/2) + sin²(x/2)].\nDivide by cos²(x/2):\ncos x = (1 − t²)/(1 + t²)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11c",
+    "question": "(c) If cos(x + θ) = sin(x − ∅), find the value of tan x in terms of θ and ∅. [04marks]",
+    "options": [],
+    "modelAnswer": "cos x cos θ − sin x sin θ = sin x cos ∅ − cos x sin ∅\ncos x (cos θ + sin ∅) = sin x (sin θ + cos ∅)\ntan x = (cos θ + sin ∅)/(sin θ + cos ∅)."
+  }
+]

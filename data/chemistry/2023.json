@@ -19,6 +19,8 @@
     "question": "Alkanes, ketones, and carboxylic acids are solvents used in the preparation of soap. They have sharp boiling points because of the:",
     "options": ["van der Waal's forces", "hydrogen bonding", "dipole-dipole interactions", "London forces"],
     "answer": "B",
+    "reviewNote": "This question cannot be answered as printed. Alkanes, ketones and carboxylic acids are not 'solvents used in the preparation of soap', and they do not share one type of intermolecular force: alkanes have only London (dispersion) forces, ketones add dipole–dipole forces, and only carboxylic acids form hydrogen bonds.\n\nThe examiners' answer is B (hydrogen bonding), which applies only to the carboxylic acids.",
+    "excludeFromQuiz": true,
     "explanation": "Note: The question premise about soap preparation solvents is unclear.\n\nCarboxylic acids exhibit strong hydrogen bonding via the -COOH group, giving sharp boiling points.\n\nAmong the options, hydrogen bonding is the strongest force."
   },
   {
@@ -85,6 +87,8 @@
     "question": "Hydrogen gas can be prepared from the following laboratory methods EXCEPT:",
     "options": ["action of zinc on dilute acids", "action of water on Potassium Hydride", "action of sodium on water", "electrolysis of water."],
     "answer": "B",
+    "reviewNote": "Every method listed gives hydrogen:\n- zinc + dilute acid: Zn + 2HCl → ZnCl₂ + H₂ (the usual laboratory method)\n- potassium hydride + water: KH + H₂O → KOH + H₂\n- sodium + water: 2Na + 2H₂O → 2NaOH + H₂\n- electrolysis of water: hydrogen at the cathode\n\nThe question means 'not a safe laboratory method'. Both B and C are violent reactions, so it is not clear which one is meant. The examiners' answer is B.",
+    "excludeFromQuiz": true,
     "explanation": "Potassium hydride (KH) reacts violently and dangerously with water — unsuitable for routine laboratory preparation.\n\nZinc with dilute acids, sodium with water, and electrolysis are standard methods."
   },
   {
@@ -217,6 +221,8 @@
     "question": "What reaction occurs at the anode during the electrolysis of brine using the diaphragm cell?",
     "options": ["Hydroxide ions are produced.", "Hydrogen gas is liberated.", "Chloride ions are oxidized.", "Chlorine gas is produced."],
     "answer": "C",
+    "reviewNote": "At the anode of the diaphragm cell: 2Cl⁻ → Cl₂ + 2e⁻.\n\nThis single reaction is described by two options: chloride ions are oxidised (C) and chlorine gas is produced (D). Both are correct, so this question is left out of quizzes. Hydrogen and hydroxide ions (A, B) are formed at the cathode.",
+    "excludeFromQuiz": true,
     "explanation": "At the anode: 2Cl⁻ → Cl₂ + 2e⁻ — chloride ions are oxidized.\n\nNote: Both C (process) and D (product) are correct; C describes the reaction itself."
   },
   {
@@ -261,6 +267,8 @@
     "question": "The reaction between steam and heated magnesium metal produces compound X and hydrogen gas. Which of the following is NOT a property of compound X formed?",
     "options": ["It has high solubility in water.", "It is a basic oxide.", "It melts at high temperature.", "It is a strong reducing agent."],
     "answer": "A",
+    "reviewNote": "Magnesium reacts with steam: Mg + H₂O → MgO + H₂, so X is magnesium oxide.\n\nMgO is a basic oxide (B) with a very high melting point, about 2850 °C (C). Two statements are NOT properties of MgO:\n- A: it is only very slightly soluble in water\n- D: it is not a reducing agent (magnesium metal is; its oxide is not)\n\nThe examiners' answer is A, but D is also correct.",
+    "excludeFromQuiz": true,
     "explanation": "Compound X = MgO (magnesium oxide).\n\nMgO is a basic oxide with high melting point (~2852°C) and is a strong reducing agent.\n\nHowever, MgO has very low solubility in water — option A is the incorrect property."
   },
   {
@@ -294,6 +302,8 @@
     "question": "The name of this compound: CH₃CH₂CH₂C≡CH is:",
     "options": ["1-butene.", "1-butyne.", "propyne.", "acetylene."],
     "answer": "B",
+    "reviewNote": "CH₃CH₂CH₂C≡CH has five carbons with a triple bond at C-1, so its IUPAC name is pent-1-yne.\n\nThat name is not among the printed options, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Note: CH₃CH₂CH₂C≡CH has 5 carbons — the correct IUPAC name is pent-1-yne.\n\nThis is not among the options. The closest available option is 1-butyne (B). The examiner likely intended a 4-carbon chain or there is a typo."
   },
   {
@@ -349,6 +359,8 @@
     "question": "For the reaction, 2NO(g) + Cl₂(g) → 2NOCl(g), which of the following will favour forward reaction?",
     "options": ["Addition of Ar.", "Removal of Cl₂.", "Increase in temperature.", "Increase in volume of container."],
     "answer": "A",
+    "reviewNote": "2NO(g) + Cl₂(g) ⇌ 2NOCl(g) is exothermic and has fewer gas moles on the right. The forward reaction is favoured by adding Cl₂ or NO, increasing pressure (smaller volume) or lowering temperature.\n\nEach printed option either has no effect (adding Ar at constant volume) or favours the reverse reaction, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Note: Addition of an inert gas (Ar) at constant volume does not affect partial pressures — no effect on equilibrium.\n\nNone of the options clearly favour the forward reaction.\n\nThe closest option has been selected."
   },
   {
@@ -393,6 +405,8 @@
     "question": "Carbon reacts with steam according to the equation below:\nH₂O(g) + C(s) → H₂(g) + CO(g)\nThe correct ratio for the equilibrium constant Kp derived from the equation is given as:",
     "options": ["atm²mol⁻²", "mol atm⁻²", "mol³ atm⁻¹", "no units"],
     "answer": "A",
+    "reviewNote": "Kp = (P_H₂ × P_CO) / P_H₂O. C(s) is a solid and is left out. The units are atm × atm / atm = atm.\n\n'atm' is not among the printed options, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Kp = (P_H₂ × P_CO)/P_H₂O.\n\nΔn = 2 − 1 = 1 → Kp has units of atm.\n\nNote: None of the options give 'atm'. The closest option has been selected."
   },
   {
@@ -448,6 +462,8 @@
     "question": "Boyle's law states that:",
     "options": ["PV = nRT", "V ∝ T", "PV = constant", "P ∝ 1/V"],
     "answer": "C",
+    "reviewNote": "Boyle's law: at constant temperature, the volume of a fixed mass of gas is inversely proportional to its pressure.\n\nThis can be written as P ∝ 1/V (option D) or as PV = constant (option C). Both say the same thing, so this question is left out of quizzes. PV = nRT is the ideal gas equation and V ∝ T is Charles's law.",
+    "excludeFromQuiz": true,
     "explanation": "Boyle's law: PV = constant (at constant T and n).\n\nNote: Both C (PV = constant) and D (P ∝ 1/V) are equivalent statements. C is the standard expression."
   },
   {
@@ -480,8 +496,8 @@
     "questionNumber": 53,
     "question": "Which of the following would give the same carboxylic acid upon hydrolysis?",
     "options": ["(CH₃)₂CHCN / CH₃CH₂OH", "CH₃CH₂CN / CH₃CH₂CH₂OH", "(CH₃)₂CHCN / (CH₃)₂CHOH", "CH₃CH₂CH₂CH₂CN / CH₃CH(CH₃)OH"],
-    "answer": "C",
-    "explanation": "Nitriles hydrolyze to R-COOH.\n\n(CH₃)₂CHCN → (CH₃)₂CHCOOH.\nOxidation of (CH₃)₂CHOH also gives (CH₃)₂CHCOOH.\n\nBoth share the same carbon skeleton."
+    "answer": "B",
+    "explanation": "A nitrile R–CN is hydrolysed to the acid R–COOH (the CN carbon becomes the COOH carbon). A primary alcohol R–CH₂OH is oxidised (not hydrolysed) to R–COOH.\n\nB: CH₃CH₂CN → CH₃CH₂COOH (propanoic acid); CH₃CH₂CH₂OH → CH₃CH₂COOH (propanoic acid). Same acid.\n\nC: (CH₃)₂CHCN gives (CH₃)₂CHCOOH, but (CH₃)₂CHOH is a secondary alcohol and oxidises to propanone (a ketone), not an acid.\nA gives 2-methylpropanoic acid and ethanoic acid; D gives pentanoic acid and propanone."
   },
   {
     "subject": "Chemistry",
@@ -503,6 +519,8 @@
     "question": "The IUPAC name of the structure below is: CH₃CHClCH₂C≡C(CH₃)₂.",
     "options": ["1-chloro-4-methylpent-3-yne", "1-chloro-4-methylpent-2-yne", "5-chloro-2-methylpent-3-yne", "5-chloro-2-methylpent-2-yne"],
     "answer": "C",
+    "reviewNote": "The structure as printed, CH₃CHClCH₂C≡C(CH₃)₂, is impossible: the last carbon would have five bonds (a triple bond plus two methyl groups).\n\nWithout knowing the intended structure, the name cannot be checked. Note also that IUPAC numbering gives the triple bond the lowest number, so a name like '5-chloro-2-methylpent-3-yne' (the key) would not be written that way.",
+    "excludeFromQuiz": true,
     "explanation": "5-carbon chain with triple bond at C3 and Cl at C5:\n5-chloro-2-methylpent-3-yne."
   },
   {
@@ -583,7 +601,7 @@
     "questionNumber": "3b",
     "question": "(b) Complete the following nuclear reactions:\n(i) ²¹¹₈₉Ac + ⁴₂He → ²¹³₉₀Th + ?\n(ii) ²³⁹₉₄Pu → ⁴₂He + ?\n(iii) ⁹₄Be + ⁴₂He → ¹²₆C + ?\n(iv) ²¹⁰₈₃Bi → ⁴₂He + ?",
     "options": [],
-    "modelAnswer": "(i) Note: The original equation doesn't balance. Corrected: ²¹¹₈₉Ac + ⁴₂He → ²¹⁴₉₁Pa + ¹₀n.\n\n(ii) ²³⁹₉₄Pu → ⁴₂He + ²³⁵₉₂U.\n\n(iii) ⁹₄Be + ⁴₂He → ¹²₆C + ¹₀n.\n\n(iv) ²¹⁰₈₃Bi → ⁴₂He + ²⁰⁶₈₁Tl."
+    "modelAnswer": "(i) Balance mass numbers and atomic numbers:\nMass: 211 + 4 = 213 + A → A = 2\nAtomic number: 89 + 2 = 90 + Z → Z = 1\nThe missing particle is ²₁H (a deuteron):\n²¹¹₈₉Ac + ⁴₂He → ²¹³₉₀Th + ²₁H\n\n(ii) ²³⁹₉₄Pu → ⁴₂He + ²³⁵₉₂U.\n\n(iii) ⁹₄Be + ⁴₂He → ¹²₆C + ¹₀n.\n\n(iv) ²¹⁰₈₃Bi → ⁴₂He + ²⁰⁶₈₁Tl."
   },
   {
     "subject": "Chemistry",
@@ -683,7 +701,7 @@
     "questionNumber": "6b",
     "question": "(b) Suggest reasons for the following:\n(i) Ionisation energy of Manganese (Mn) is greater than Iron (Fe) despite the trend ionisation energy increases across the period on the periodic table.\n(ii) Compounds of Sc³⁺ and Zn²⁺ are mostly white while those of Ti³⁺ and Cu²⁺ are coloured.\n(iii) Ionization energy of gallium (Ga) is slightly higher than that of aluminum (Al).",
     "options": [],
-    "modelAnswer": "(i) Mn: [Ar] 3d⁵ 4s² — stable half-filled d⁵. Removing an electron from this stable configuration requires more energy. Fe: [Ar] 3d⁶ 4s² — removal gives stable d⁵, less energy needed.\n\n(ii) Sc³⁺ (3d⁰) and Zn²⁺ (3d¹⁰) have no unpaired d-electrons — no d-d transitions → white. Ti³⁺ (3d¹) and Cu²⁺ (3d⁹) have unpaired d-electrons → d-d transitions absorb visible light → coloured.\n\n(iii) Ga has intervening 3d electrons that shield poorly. Higher effective nuclear charge on the outer 4p electron → higher ionization energy than Al."
+    "modelAnswer": "(i) Note: for the FIRST ionisation energy the data actually show Mn (717 kJ mol⁻¹) slightly below Fe (762 kJ mol⁻¹), because the first electron comes from 4s in both. The statement is true for the THIRD ionisation energy (Mn²⁺ → Mn³⁺: 3248 kJ mol⁻¹; Fe²⁺ → Fe³⁺: 2957 kJ mol⁻¹), which is almost certainly what is meant.\n\nReason: Mn²⁺ is [Ar] 3d⁵, a half-filled d subshell with one electron in each d orbital. This arrangement is especially stable (maximum exchange energy, no paired electrons), so removing an electron from it takes extra energy.\nFe²⁺ is [Ar] 3d⁶: it has one paired electron, which is repelled by its partner, and removing it leaves the stable half-filled 3d⁵ of Fe³⁺. So less energy is needed.\n\n(ii) Sc³⁺ (3d⁰) and Zn²⁺ (3d¹⁰) have no unpaired d-electrons — no d-d transitions → white. Ti³⁺ (3d¹) and Cu²⁺ (3d⁹) have unpaired d-electrons → d-d transitions absorb visible light → coloured.\n\n(iii) Ga has intervening 3d electrons that shield poorly. Higher effective nuclear charge on the outer 4p electron → higher ionization energy than Al."
   },
   {
     "subject": "Chemistry",

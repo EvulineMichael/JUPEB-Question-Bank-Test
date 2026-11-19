@@ -626,6 +626,8 @@
       "60."
     ],
     "answer": "D",
+    "reviewNote": "Y = C + I = 20 + 0.7Y + 60, so 0.3Y = 80 and Y ≈ 266.7.\n\nThis is not among the printed options (if I were 160, Y would be 600, option B, so the paper probably has a misprint). The question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Y = C + I = 20 + 0.7Y + 60, so 0.3Y = 80 and Y = 266.67.\nThe correct answer, 266.67, is not among the options; D (60) is the numerically closest option and is marked. If autonomous spending were 180 (e.g. I = 160), Y would be 180/0.3 = 600 (option B), so the paper's figures probably contain a misprint."
   },
   {
@@ -677,7 +679,7 @@
       "average cost."
     ],
     "answer": "D",
-    "explanation": "Note: the question number is cut off at the left edge of the photo, and the question is ambiguous.\nPrice is the amount received per unit sold (average revenue). In the long run under perfect competition, price equals average cost (normal profit), and firms base prices on average cost (cost-plus pricing), so average cost is the cost item most closely related to price."
+    "explanation": "Price is the amount received per unit sold, i.e. average revenue. Of the cost items listed, average cost (cost per unit) is the one compared with price: in long-run competitive equilibrium price equals average cost, and many firms set prices by adding a margin to average cost."
   },
   {
     "subject": "Economics",
@@ -694,6 +696,8 @@
       "all of the above."
     ],
     "answer": "B",
+    "reviewNote": "An inferior good is one whose demand falls as income rises: its income effect works against the substitution effect but is usually smaller. When the income effect is larger than the substitution effect (option B's wording), the good is a Giffen good, a special kind of inferior good.\n\nNo option states the general definition, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Note: none of the options states the standard definition clearly. An inferior good is one whose demand falls as income rises, i.e. its income effect works against (opposes) the substitution effect. Using the Slutsky sign convention (substitution effect negative, income effect positive for an inferior good), B describes an income effect that opposes the substitution effect; if it exceeds the substitution effect, the good is a Giffen good (a special inferior good). B is marked as the closest option."
   },
   {
@@ -728,6 +732,8 @@
       "all of the above."
     ],
     "answer": "A",
+    "reviewNote": "A demand curve shifts when something other than the good's own price changes. Both a change in the price of other goods (substitutes or complements, option A) and a change in money income (option C) shift the demand curve.\n\nA change in the good's own price (B) only causes a movement along the curve, so 'all of the above' (D) is wrong. Because A and C are both correct, this question is left out of quizzes. The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "Changes in the prices of other goods (A) and in money income (C) both shift the demand curve, so both are correct. A change in the good's own price (B) causes a movement along the curve, so 'all of the above' is wrong. A is marked; C is also correct."
   },
   {

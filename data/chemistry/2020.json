@@ -151,7 +151,9 @@
     "question": "In which of the following species is sp² hybrid orbitals NOT involved?",
     "options": ["PCl₃", "BF₃", "C₂H₄", "CO₂"],
     "answer": "A",
-    "explanation": "PCl₃ has sp³ hybridization (3 bonds + 1 lone pair).\nBF₃ is sp².\nC₂H₄ is sp².\nCO₂ is sp.\n\nNote: Both PCl₃ (sp³) and CO₂ (sp) do not involve sp² hybridization. The question likely intended only PCl₃ as the answer, but CO₂ is also valid. The closest option has been selected."
+    "reviewNote": "sp² hybrid orbitals are not involved in two of these species:\n- PCl₃: phosphorus has 3 bond pairs and 1 lone pair, so it is sp³ (option A).\n- CO₂: the carbon forms two double bonds in a straight line (180°), so it is sp (option D).\n\nBF₃ (boron) and C₂H₄ (each carbon) are sp². Because A and D are both correct, this question is left out of quizzes. The examiners' answer is A.",
+    "excludeFromQuiz": true,
+    "explanation": "PCl₃: phosphorus has 3 bonds and 1 lone pair, so it is sp³. No sp² orbitals are involved.\n\nBF₃: boron is sp². C₂H₄: each carbon is sp².\nCO₂: carbon is sp, but each oxygen (one σ bond and two lone pairs) is sp² hybridised, so sp² orbitals are involved."
   },
   {
     "subject": "Chemistry",
@@ -711,7 +713,7 @@
     "questionNumber": "5a",
     "question": "(a) (i) Use balanced chemical equations to illustrate what happens when the following compounds are added to water:\n(a) NaCl (b) SO3 (c) Al2O3 (d) Na2O\n(ii) Predict the pH of the solutions.",
     "options": [],
-    "modelAnswer": "(i) (a) NaCl(s) → Na⁺(aq) + Cl⁻(aq)\n(b) SO₃(g) + H₂O(l) → H₂SO₄(aq)\n(c) Al₂O₃(s) + 3H₂O(l) → 2Al(OH)₃(s)\n(d) Na₂O(s) + H₂O(l) → 2NaOH(aq)\n\n(ii) (a) pH ≈ 7 (neutral)\n(b) pH < 7 (acidic)\n(c) pH slightly < 7 (weakly acidic)\n(d) pH > 7 (strongly basic)"
+    "modelAnswer": "(i) (a) NaCl(s) → Na⁺(aq) + Cl⁻(aq)\n(b) SO₃(g) + H₂O(l) → H₂SO₄(aq)\n(c) Al₂O₃: no reaction. Aluminium oxide is insoluble in water, so nothing dissolves. (It is amphoteric: it reacts with acids and with alkalis, but not with water.)\n(d) Na₂O(s) + H₂O(l) → 2NaOH(aq)\n\n(ii) (a) pH ≈ 7 (neutral)\n(b) pH < 7 (acidic)\n(c) pH ≈ 7 (the water is unchanged, because the oxide does not dissolve)\n(d) pH > 7 (strongly basic)"
   },
   {
     "subject": "Chemistry",
@@ -829,6 +831,6 @@
     "questionNumber": "8d",
     "question": "(d) Arrange the following carboxylic acids in order of increasing acidity. Justify your answer.\n3-chloropentanoic acid; pentanoic acid; 2,2-dichloropentanoic acid; 3,3-dichloropentanoic acid; 2-chloropentanoic acid; 4-chloropentanoic acid.",
     "options": [],
-    "modelAnswer": "Order of increasing acidity:\nPentanoic acid < 4-chloropentanoic acid < 3-chloropentanoic acid < 2-chloropentanoic acid < 3,3-dichloropentanoic acid < 2,2-dichloropentanoic acid\n\nJustification:\nChlorine exerts an electron-withdrawing inductive effect (−I) that stabilizes the carboxylate anion.\n\nThe closer Cl is to –COOH (α > β > γ), the stronger the effect.\n\nMore Cl atoms = greater electron withdrawal = stronger acid."
+    "modelAnswer": "Order of increasing acidity:\nPentanoic acid < 4-chloropentanoic acid < 3-chloropentanoic acid < 3,3-dichloropentanoic acid < 2-chloropentanoic acid < 2,2-dichloropentanoic acid\n\nJustification:\nChlorine exerts an electron-withdrawing inductive effect (−I) that stabilizes the carboxylate anion.\n\nThe closer Cl is to –COOH (α > β > γ), the stronger the effect.\n\nMore Cl atoms = greater electron withdrawal = stronger acid, but distance matters more than number: the inductive effect fades quickly along the chain (roughly by half for each extra C–C bond). So a single Cl on C2 has more effect than two Cl atoms on C3, which is why 2-chloropentanoic acid is stronger than 3,3-dichloropentanoic acid."
   }
 ]

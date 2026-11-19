@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Differentiate cos⁻¹(2 + x) sin 5x. [04 marks]",
+    "options": [],
+    "modelAnswer": "Product rule, with u = cos⁻¹(2 + x) and v = sin 5x:\ndu/dx = −1/√(1 − (2 + x)²), dv/dx = 5 cos 5x.\n\nd/dx[cos⁻¹(2 + x) sin 5x] = −sin 5x/√(1 − (2 + x)²) + 5 cos 5x cos⁻¹(2 + x).\n\n(This is defined for −3 < x < −1, where |2 + x| < 1.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Evaluate lim_(y→9) (√y − 3)/(y² − 8y − 9). [04 marks]",
+    "options": [],
+    "modelAnswer": "Direct substitution gives 0/0. Factorise:\ny² − 8y − 9 = (y − 9)(y + 1) = (√y − 3)(√y + 3)(y + 1).\n\n(√y − 3)/[(√y − 3)(√y + 3)(y + 1)] = 1/[(√y + 3)(y + 1)].\n\nlim_(y→9) = 1/[(3 + 3)(9 + 1)] = 1/60."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Solve the equation dy/dx = sin x/cos y [04 marks]",
+    "options": [],
+    "modelAnswer": "Separate the variables: cos y dy = sin x dx.\nIntegrate: sin y = −cos x + C.\nSolution: sin y + cos x = C (or y = sin⁻¹(C − cos x))."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Find the direction cosines of the vectors i − 2j + k and i + 2j − k, hence the cosine of the angle between them. [04 marks]",
+    "options": [],
+    "modelAnswer": "a = i − 2j + k: |a| = √(1 + 4 + 1) = √6.\nDirection cosines of a: (1/√6, −2/√6, 1/√6).\nb = i + 2j − k: |b| = √6.\nDirection cosines of b: (1/√6, 2/√6, −1/√6).\n\ncos θ = l₁l₂ + m₁m₂ + n₁n₂ = (1 − 4 − 1)/6 = −4/6 = −2/3.\n(θ ≈ 131.8°.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Find ∫ 5x³e^(x⁴) dx. [04 marks]",
+    "options": [],
+    "modelAnswer": "Let u = x⁴, so du = 4x³ dx.\n∫ 5x³e^(x⁴) dx = (5/4)∫ eᵘ du = (5/4)e^(x⁴) + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) A curve C has parametric equations: x = t + t⁻¹ and y = tᵐ + t⁻ᵐ.\nShow that (x² − 4)(dy/dx)² = m²(y² − 4). [12marks]",
+    "options": [],
+    "modelAnswer": "Note: the questions in Section B are printed as 1, 2 and 3; they are numbered 6, 7 and 8 here.\n\ndx/dt = 1 − t⁻² = (1/t)(t − t⁻¹).\ndy/dt = m(tᵐ⁻¹ − t⁻ᵐ⁻¹) = (m/t)(tᵐ − t⁻ᵐ).\ndy/dx = (dy/dt)/(dx/dt) = m(tᵐ − t⁻ᵐ)/(t − t⁻¹).\n\nx² − 4 = (t + t⁻¹)² − 4 = t² − 2 + t⁻² = (t − t⁻¹)².\ny² − 4 = (tᵐ + t⁻ᵐ)² − 4 = (tᵐ − t⁻ᵐ)².\n\n(x² − 4)(dy/dx)² = (t − t⁻¹)² × m²(tᵐ − t⁻ᵐ)²/(t − t⁻¹)² = m²(tᵐ − t⁻ᵐ)² = m²(y² − 4), as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Find the indefinite integral ∫ eᵗ/((eᵗ − 3)(eᵗ + 3)) dt. (You may use x = eᵗ). [08marks]",
+    "options": [],
+    "modelAnswer": "Let x = eᵗ, so dx = eᵗ dt:\n∫ eᵗ/((eᵗ − 3)(eᵗ + 3)) dt = ∫ dx/((x − 3)(x + 3)).\nPartial fractions: 1/((x − 3)(x + 3)) = (1/6)[1/(x − 3) − 1/(x + 3)].\n∫ = (1/6)ln|x − 3| − (1/6)ln|x + 3| + C = (1/6) ln|(x − 3)/(x + 3)| + C.\n= (1/6) ln|(eᵗ − 3)/(eᵗ + 3)| + C."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Given that Iₙ = ∫ tanⁿx dx, show that (n − 1)Iₙ = tanⁿ⁻¹x − (n − 1)Iₙ₋₂, using integration by part. Hence obtain I₃ [10marks]",
+    "options": [],
+    "modelAnswer": "Iₙ = ∫ tanⁿ⁻²x tan²x dx = ∫ tanⁿ⁻²x (sec²x − 1) dx = ∫ tanⁿ⁻²x sec²x dx − Iₙ₋₂.\n\nFor the first integral, integrate by parts (or substitute u = tan x, du = sec²x dx):\n∫ tanⁿ⁻²x sec²x dx = tanⁿ⁻¹x/(n − 1).\n\nIₙ = tanⁿ⁻¹x/(n − 1) − Iₙ₋₂.\nMultiply by (n − 1): (n − 1)Iₙ = tanⁿ⁻¹x − (n − 1)Iₙ₋₂, as required.\n\nI₃ (n = 3): 2I₃ = tan²x − 2I₁, so I₃ = ½tan²x − I₁.\nI₁ = ∫ tan x dx = −ln|cos x| = ln|sec x|.\nI₃ = ½tan²x + ln|cos x| + C (or ½tan²x − ln|sec x| + C)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Differentiate cos⁻¹((1 − x²)/(1 + x²)) and express in its simplest form. [10marks]",
+    "options": [],
+    "modelAnswer": "Let x = tan θ. Then (1 − x²)/(1 + x²) = (1 − tan²θ)/(1 + tan²θ) = cos 2θ.\nSo y = cos⁻¹(cos 2θ) = 2θ = 2 tan⁻¹x (for x ≥ 0).\ndy/dx = 2/(1 + x²).\n(For x < 0, y = −2tan⁻¹x, and dy/dx = −2/(1 + x²).)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Applications of Differentiation",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Find the maxima and minima of the function f(x) = x(1 − x²) and points at which they occur, sketch the curve for x∈ℜ. Hence, obtain the area bounded by curve and x-axis. [12marks]",
+    "options": [],
+    "modelAnswer": "Note: printed as question 3(a); numbered 8 here.\n\nf(x) = x − x³; f′(x) = 1 − 3x²; f″(x) = −6x.\nStationary points: 1 − 3x² = 0, so x = ±1/√3.\nAt x = 1/√3: f″ < 0, so maximum; f(1/√3) = (1/√3)(1 − 1/3) = 2/(3√3) = 2√3/9 ≈ 0.385. Maximum point (0.577, 0.385).\nAt x = −1/√3: f″ > 0, so minimum; f(−1/√3) = −2√3/9 ≈ −0.385. Minimum point (−0.577, −0.385).\n\nSketch: the curve cuts the x-axis at x = −1, 0 and 1. It comes down from the top left (f → +∞ as x → −∞), reaches the minimum at (−0.577, −0.385), passes through the origin (point of inflection), rises to the maximum at (0.577, 0.385), and goes down to −∞ as x → +∞. It is symmetrical about the origin (an odd function).\n\nArea between the curve and the x-axis (from −1 to 1, two equal parts by symmetry):\nArea = 2∫₀¹ (x − x³) dx = 2[x²/2 − x⁴/4]₀¹ = 2(½ − ¼) = ½ square unit."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Differentiate from first principle y = cos 3x. [08marks]",
+    "options": [],
+    "modelAnswer": "y + δy = cos 3(x + δx).\nδy = cos(3x + 3δx) − cos 3x = −2 sin(3x + 3δx/2) sin(3δx/2).\nδy/δx = −2 sin(3x + 3δx/2) × sin(3δx/2)/δx = −3 sin(3x + 3δx/2) × [sin(3δx/2)/(3δx/2)].\nAs δx → 0, sin(3δx/2)/(3δx/2) → 1, so\ndy/dx = −3 sin 3x."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) If a = 3i − 2j + k, b = i − 5j + k and c = 2i + j + 2k, show that a·(b + c) = a·b + a·c. [08marks]",
+    "options": [],
+    "modelAnswer": "b + c = 3i − 4j + 3k.\na·(b + c) = (3)(3) + (−2)(−4) + (1)(3) = 9 + 8 + 3 = 20.\na·b = 3 + 10 + 1 = 14.\na·c = 6 − 2 + 2 = 6.\na·b + a·c = 14 + 6 = 20 = a·(b + c), as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Solve the equation dy/dx − xy = 3x, for y(0) = 3. [12marks]",
+    "options": [],
+    "modelAnswer": "Linear equation: integrating factor = e^(∫−x dx) = e^(−x²/2).\nd/dx[y e^(−x²/2)] = 3x e^(−x²/2).\ny e^(−x²/2) = −3e^(−x²/2) + C\ny = −3 + Ce^(x²/2).\ny(0) = 3: 3 = −3 + C, so C = 6.\ny = 6e^(x²/2) − 3."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) Find the particular solution of the equation 2x² dy/dx = y² − 3xy, given that y(1) = 1. [12marks]",
+    "options": [],
+    "modelAnswer": "Homogeneous: put y = vx, dy/dx = v + x dv/dx:\n2x²(v + x dv/dx) = v²x² − 3vx²\n2v + 2x dv/dx = v² − 3v\n2x dv/dx = v² − 5v = v(v − 5).\nSeparate: 2 dv/[v(v − 5)] = dx/x.\nPartial fractions: 2/[v(v − 5)] = (2/5)[1/(v − 5) − 1/v].\n(2/5) ln|(v − 5)/v| = ln|x| + c, so (v − 5)/v = Kx^(5/2).\nWith v = y/x: (y − 5x)/y = Kx^(5/2).\ny(1) = 1: (1 − 5)/1 = K, so K = −4.\n(y − 5x)/y = −4x^(5/2)\ny − 5x = −4x^(5/2)y\ny = 5x/(1 + 4x^(5/2))."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Given vectors a = i − j − k and b = 2i − 3j + k, compute the projection of (2a + b) on (a − 2b). [08marks]",
+    "options": [],
+    "modelAnswer": "2a + b = 4i − 5j − k.\na − 2b = −3i + 5j − 3k; |a − 2b| = √(9 + 25 + 9) = √43.\n(2a + b)·(a − 2b) = −12 − 25 + 3 = −34.\nScalar projection = −34/√43 ≈ −5.18.\n(Vector projection = (−34/43)(−3i + 5j − 3k).)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Find the equation of the curve which satisfies the differential equation b² dx/y − a² dy/x = 0 and passes through the point (0, b). [10marks]",
+    "options": [],
+    "modelAnswer": "Multiply by xy: b²x dx − a²y dy = 0, so b²x dx = a²y dy.\nIntegrate: b²x²/2 = a²y²/2 + c, i.e., b²x² − a²y² = C.\nAt (0, b): 0 − a²b² = C.\nb²x² − a²y² = −a²b²\nDivide by −a²b²: y²/b² − x²/a² = 1.\nThe curve is a hyperbola, y²/b² − x²/a² = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Find the area of triangle ABC whose position vectors of A, B, C are i − j + 2k, i + 4j − 3k, and i − 3j + 2k, respectively. [10marks]",
+    "options": [],
+    "modelAnswer": "AB = B − A = 0i + 5j − 5k; AC = C − A = 0i − 2j + 0k.\nAB × AC = i[(5)(0) − (−5)(−2)] − j[(0)(0) − (−5)(0)] + k[(0)(−2) − (5)(0)] = −10i.\n|AB × AC| = 10.\nArea = ½ × 10 = 5 square units."
+  }
+]

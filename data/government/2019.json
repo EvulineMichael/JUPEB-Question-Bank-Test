@@ -109,7 +109,7 @@
       "approach is authentic"
     ],
     "answer": "A",
-    "explanation": "⚠️ The traditional approach is non-scientific because it is normative — based on value judgments about what ought to be, not empirical evidence. This option is not listed. Of the available options, 'utopian and idealistic' (A) is closest — it suggests the approach deals with ideals rather than observable facts. Options B and C describe the scientific (behavioural) approach, not the traditional one."
+    "explanation": "The traditional approach (philosophical, legal, historical and institutional) is called non-scientific because it is normative: it asks what the ideal state ought to be and relies on value judgments, not on observation and measurement.\n\nThat is what 'utopian and idealistic' (option A) means. Options B and C describe the scientific (behavioural) approach, which uses facts and empirical observation."
 },
   {
     "subject": "Government",
@@ -461,6 +461,8 @@
       "ECOWAS."
     ],
     "answer": "A",
+    "reviewNote": "Nigeria was a founding member of more than one of these organisations:\n- OAU (A): founded in Addis Ababa in 1963, with Nigeria among the 32 founding states.\n- ECOWAS (D): founded by the Treaty of Lagos in 1975, with Nigeria (under Gowon) as a leading founder.\n- AU (C): replaced the OAU in 2002, with Nigeria a founding member.\nECOMOG is a peacekeeping force, not a membership organisation.\n\nBecause A, C and D are all correct, this question is left out of quizzes. The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "Nigeria was a founding member of the Organization of African Unity (OAU), established in 1963. ECOWAS was established in 1975 with Nigeria as a member but not a founding member (Nigeria was one of the founders of ECOWAS as well, but the question likely refers to OAU). The AU succeeded the OAU in 2002."
   },
   {

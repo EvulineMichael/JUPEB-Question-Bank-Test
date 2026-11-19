@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Elections & Electoral System",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The first franchise in the history of the democratic process in Nigeria is",
+    "options": [
+      "property franchise.",
+      "universal franchise.",
+      "male franchise.",
+      "female franchise."
+    ],
+    "answer": "A",
+    "explanation": "The first franchise (right to vote) in Nigeria was based on property qualifications — only those who owned property or paid certain taxes could vote. This was introduced during the colonial era, particularly under the Clifford Constitution of 1922."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The colonial masters introduced the office of Warrant Chief in what region of Nigeria?",
+    "options": [
+      "Western Nigeria.",
+      "Northern Nigeria.",
+      "Lagos colony.",
+      "Eastern Nigeria."
+    ],
+    "answer": "D",
+    "explanation": "The office of Warrant Chief was introduced in Eastern Nigeria (Igbo society) by the British colonial administration. Since the Igbo had no centralized traditional rulers, the British appointed Warrant Chiefs to serve as intermediaries for tax collection and administration."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The constitution that introduced restricted franchise into Nigerian politics was the",
+    "options": [
+      "Lyttleton Constitution.",
+      "Clifford Constitution.",
+      "Macpherson Constitution.",
+      "Richards Constitution."
+    ],
+    "answer": "B",
+    "explanation": "The Clifford Constitution of 1922 introduced restricted franchise (limited voting rights based on property and income qualifications) for the Legislative Council elections in Lagos and Calabar. It was the first constitution to introduce elected representation."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "In a parliamentary system, the functions of the Head of State and the Head of Government are vested in",
+    "options": [
+      "an individual.",
+      "inner cabinet.",
+      "two different individuals.",
+      "the ministerial council."
+    ],
+    "answer": "C",
+    "explanation": "In a parliamentary system, the functions of the Head of State and Head of Government are vested in two different individuals. The Head of State (Monarch or President) is ceremonial, while the Head of Government (Prime Minister) exercises executive power."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "In the pre-colonial Igbo society, community policing was a function of",
+    "options": [
+      "assembly of Ezes.",
+      "clan elders.",
+      "age-grades.",
+      "the title holders."
+    ],
+    "answer": "C",
+    "explanation": "In pre-colonial Igbo society, community policing was a function of age-grades — groups of people of similar age who were responsible for maintaining law and order, security, and communal duties. They acted as a community police force."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The permanent members of the United Nations Security Council are",
+    "options": [
+      "Germany, France, Poland, Hungary, and China.",
+      "USA, Russia, France, Britain, China.",
+      "Britain, Japan, Australia, Germany, and USA.",
+      "Russia, France, Japan, USA and Britain."
+    ],
+    "answer": "B",
+    "explanation": "The five permanent members of the UN Security Council are the USA, Russia, France, Britain, and China. They have veto power over substantive resolutions."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Government-owned companies operating in the economic sector are referred to as",
+    "options": [
+      "public investments.",
+      "public services.",
+      "public enterprises.",
+      "public utilities."
+    ],
+    "answer": "C",
+    "explanation": "Government-owned companies operating in the economic sector are referred to as public enterprises (or public corporations). They are established to provide essential services and promote economic development. Public utilities are a specific type of public enterprise."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The political party formed in 1923 by Herbert Macaulay was",
+    "options": [
+      "National Council of Nigeria and Cameroon.",
+      "Nigerian National Democratic Party.",
+      "Nigerian Council of Nigerian Citizens.",
+      "United National Independent Party."
+    ],
+    "answer": "B",
+    "explanation": "Herbert Macaulay formed the Nigerian National Democratic Party (NNDP) in 1923. It was the first political party in Nigeria and dominated Lagos politics in the 1920s and 1930s."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "A member of the Commonwealth that currently recognizes the British Monarch as its Head of State is",
+    "options": [
+      "Ghana.",
+      "Geneva.",
+      "Australia.",
+      "Singapore."
+    ],
+    "answer": "C",
+    "explanation": "Australia is a member of the Commonwealth that currently recognizes the British Monarch (King Charles III) as its Head of State. Ghana and Singapore are republics, and Geneva is a city, not a country."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "In Nigeria's federalism, the constitutional matters, where the federal and the state governments exercise joint jurisdiction is called",
+    "options": [
+      "concurrent list.",
+      "federalist list.",
+      "residual list.",
+      "exclusive list."
+    ],
+    "answer": "A",
+    "explanation": "The concurrent list contains matters where both the federal and state governments can legislate. The exclusive list is for federal government only, and the residual list is for state governments only."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The chairman of the United Nations Security Council emerges through",
+    "options": [
+      "rotation.",
+      "consensus.",
+      "election.",
+      "selection."
+    ],
+    "answer": "A",
+    "explanation": "The chairman of the UN Security Council rotates monthly among its 15 members in alphabetical order of their English names. This ensures all members have a turn to preside."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The process of law making by the legislature begins with",
+    "options": [
+      "initiating a bill.",
+      "commencing debate.",
+      "public hearing.",
+      "the first reading."
+    ],
+    "answer": "A",
+    "explanation": "The process of lawmaking begins with initiating a bill — proposing a new law. A bill can be initiated by a government minister, a private member, or a committee. After initiation, it proceeds through readings, debate, and committee stages."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Nigeria's first involvement in United Nations Peacekeeping operation was in",
+    "options": [
+      "Lebanon.",
+      "Congo.",
+      "Angola.",
+      "Somalia."
+    ],
+    "answer": "B",
+    "explanation": "Nigeria's first involvement in UN Peacekeeping was in Congo (1960) during the Congo Crisis. Nigeria contributed troops to the UN Operation in the Congo (ONUC) to help restore order and prevent secession."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "A primary agent of political socialization is the",
+    "options": [
+      "government.",
+      "mass media.",
+      "political party.",
+      "family."
+    ],
+    "answer": "D",
+    "explanation": "The family is the primary agent of political socialization — it is the first and most influential institution in shaping political attitudes, values, and beliefs. Children learn about politics, authority, and citizenship from their parents and family."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "The concept of behaviouralism in political studies simply means the",
+    "options": [
+      "application of science in the study of politics.",
+      "study of political behavior.",
+      "study of voting behaviour of people in a state.",
+      "study of individuals that lives in a state."
+    ],
+    "answer": "B",
+    "explanation": "Behaviouralism in political studies means the study of political behavior — the empirical and scientific study of the actions, attitudes, and interactions of individuals and groups in the political process. It emphasizes observable and measurable political activity."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The principle of federal character was first enunciated in the",
+    "options": [
+      "1989 Constitution.",
+      "1963 Constitution.",
+      "1999 Constitution.",
+      "1979 Constitution."
+    ],
+    "answer": "D",
+    "explanation": "The principle of federal character was first enshrined in the 1979 Constitution of Nigeria. It was later retained in the 1999 Constitution. It ensures fair representation of all ethnic groups in federal appointments."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "One of the major problems of Nigeria's federalism is",
+    "options": [
+      "lack of revenue to cater for the federation.",
+      "inadequate manpower to fill vacancies.",
+      "imbalance in the structure of the federation.",
+      "existence of viable federating units."
+    ],
+    "answer": "C",
+    "explanation": "One major problem of Nigeria's federalism is the imbalance in the structure of the federation — economic, political, and population disparities between states and regions. This has led to tensions, resource allocation conflicts, and demands for restructuring."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Withholding of executive assent to a bill passed by the legislature underscores the principle of",
+    "options": [
+      "probity and accountability.",
+      "separation of powers.",
+      "collective responsibility.",
+      "checks and balances."
+    ],
+    "answer": "D",
+    "explanation": "Withholding executive assent to a bill passed by the legislature is an example of checks and balances — it allows the executive to check the power of the legislature. The legislature can override a veto with a supermajority."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "In the British parliamentary system of government, the monarch can be referred to as",
+    "options": [
+      "Queen-in-Parliament.",
+      "Queen-in-Assembly.",
+      "Queen-in-Community.",
+      "Queen-in-Legislature."
+    ],
+    "answer": "A",
+    "explanation": "In the British parliamentary system, the monarch is referred to as the Queen-in-Parliament — the monarch is part of the legislative process, giving royal assent to bills passed by Parliament. This is a constitutional convention."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Parliamentary supremacy exists in",
+    "options": [
+      "Britain.",
+      "France.",
+      "Austria.",
+      "Belgium."
+    ],
+    "answer": "A",
+    "explanation": "Parliamentary supremacy (parliamentary sovereignty) exists in Britain — Parliament is supreme and can make, amend, or repeal any law. There is no constitutional limit on its authority. France, Austria, and Belgium have constitutional courts that limit parliamentary power."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The philosophical statement 'Man is born free but everywhere in chains' is credited to",
+    "options": [
+      "Thomas Hobbes.",
+      "Martin Luther King.",
+      "Charles Darwins.",
+      "Jean Jack Rousseau."
+    ],
+    "answer": "D",
+    "explanation": "The statement 'Man is born free but everywhere in chains' is from Jean-Jacques Rousseau's 'The Social Contract' (1762). It expresses his belief that humans are naturally free but are constrained by society and government."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Which of the following programmes was introduced by the Murtala-Obasanjo regime?",
+    "options": [
+      "Operation Feed the Nation.",
+      "War Against Indiscipline.",
+      "Operation Green Revolution.",
+      "Structural Adjustment Programme."
+    ],
+    "answer": "A",
+    "explanation": "Operation Feed the Nation (OFN) was introduced by the Murtala-Obasanjo military regime in 1976 to encourage agricultural production and reduce food imports. War Against Indiscipline was introduced by Buhari's regime, and SAP by Babangida."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Totalitarianism is characterized by",
+    "options": [
+      "dominance of colonial power.",
+      "existence of strong units.",
+      "presence of opposition groups.",
+      "a single recognized party."
+    ],
+    "answer": "D",
+    "explanation": "Totalitarianism is characterized by a single recognized party that controls all aspects of life. The state has absolute control over the citizenry, and opposition is suppressed. Totalitarian regimes have no political pluralism."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Which of the following is a critical element of Max Weber's ideal bureaucracy?",
+    "options": [
+      "neutrality.",
+      "hierarchy.",
+      "redundancy.",
+      "flexibility."
+    ],
+    "answer": "B",
+    "explanation": "Hierarchy is a critical element of Max Weber's ideal bureaucracy — a clear chain of command where each level is subordinate to the one above. Other elements include specialization, written rules, impersonality, and merit-based appointments."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "According to the Marxist theory, those who own the means of production and distribution in a capitalist society are the",
+    "options": [
+      "bourgeoisie.",
+      "feudal lords.",
+      "proletariats.",
+      "shareholders."
+    ],
+    "answer": "A",
+    "explanation": "According to Marxist theory, the bourgeoisie are the owners of the means of production and distribution in a capitalist society. They exploit the proletariat (working class), who sell their labour for wages."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Which of the following books was not written by Karl Marx?",
+    "options": [
+      "The Communist Manifesto.",
+      "Das Capital 1&2.",
+      "Wealth of the Nations.",
+      "The Critique of Political Economy."
+    ],
+    "answer": "C",
+    "explanation": "'Wealth of the Nations' was written by Adam Smith, not Karl Marx. Marx wrote 'The Communist Manifesto' (with Engels), 'Das Kapital', and 'The Critique of Political Economy'."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "A political ideology which emphasizes state ownership and control of the means of Production and distribution is referred to as",
+    "options": [
+      "communalism.",
+      "socialism.",
+      "fascism.",
+      "feudalism."
+    ],
+    "answer": "B",
+    "explanation": "Socialism emphasizes state ownership and control of the means of production and distribution — it advocates for collective ownership and economic planning to achieve social equality. Communalism is collective ownership by communities."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "In a capitalist system, the working class are referred to as the",
+    "options": [
+      "proletariat.",
+      "slaves.",
+      "bourgeoisie.",
+      "serfs."
+    ],
+    "answer": "A",
+    "explanation": "In a capitalist system, the working class are referred to as the proletariat — they sell their labour for wages and do not own the means of production. The bourgeoisie are the capitalist class who own the means of production."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The following are examples of political ideology EXCEPT",
+    "options": [
+      "fascism.",
+      "capitalism.",
+      "nazism.",
+      "atheism."
+    ],
+    "answer": "D",
+    "explanation": "Atheism is not a political ideology — it is the belief that there is no God. Fascism, capitalism, and Nazism are all political ideologies or systems. Atheism is a religious/philosophical position, not a political one."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Fascism was an ideology propagated in",
+    "options": [
+      "Germany.",
+      "Italy.",
+      "Israel.",
+      "Russia."
+    ],
+    "answer": "B",
+    "explanation": "Fascism was propagated in Italy under Benito Mussolini (1922-1943). Nazism was propagated in Germany under Adolf Hitler. The two are related but distinct ideologies."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Nigerian Foreign Policy",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The following factors enhanced Nigeria's foreign relations EXCEPT",
+    "options": [
+      "economic dependence.",
+      "non-interference.",
+      "peaceful co-existence.",
+      "respect for territoriality."
+    ],
+    "answer": "A",
+    "explanation": "Economic dependence does NOT enhance Nigeria's foreign relations — it makes Nigeria vulnerable and limits its independence in foreign policy. Non-interference, peaceful coexistence, and respect for territoriality are principles that enhance foreign relations."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Laws made by local governments are called",
+    "options": [
+      "Bye-laws.",
+      "By-laws.",
+      "Buy-laws.",
+      "Boys laws."
+    ],
+    "answer": "A",
+    "explanation": "Laws made by local governments are called bye-laws (or by-laws) — they are local regulations made by local authorities under powers delegated to them by higher levels of government. The correct spelling is 'Bye-laws' in British English."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The Emirate system in the administration of the Hausa/Fulani society was",
+    "options": [
+      "democratic.",
+      "stoical.",
+      "hierarchical.",
+      "secular."
+    ],
+    "answer": "C",
+    "explanation": "The Emirate system in the Hausa/Fulani society was hierarchical — it had a clear chain of authority from the Sultan of Sokoto down to the Emirs, District Heads, and Village Heads. It was a centralized and stratified system, not democratic or secular."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The International Court of Justice is located in",
+    "options": [
+      "Amsterdam.",
+      "the Hague.",
+      "Rotterdam.",
+      "the Netherland."
+    ],
+    "answer": "B",
+    "explanation": "The International Court of Justice (ICJ) is located in the Hague, Netherlands. It is the principal judicial organ of the United Nations, established in 1945."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The first Premier of the Western region was",
+    "options": [
+      "Ladoke Akintola.",
+      "Obafemi Awolowo.",
+      "Olufemi Awolowo.",
+      "Ladipo Akintola."
+    ],
+    "answer": "B",
+    "explanation": "The first Premier of the Western region was Chief Obafemi Awolowo. He served from 1954 to 1959. He was the leader of the Action Group party. Ladoke Akintola succeeded him in 1959."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The Macpherson Constitution was promulgated in the year",
+    "options": [
+      "1952",
+      "1955",
+      "1953",
+      "1951"
+    ],
+    "answer": "D",
+    "explanation": "The Macpherson Constitution was promulgated in 1951. It was named after Governor-General Sir John Macpherson and was a major constitutional development that increased African participation in governance."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "What is the minimum age requirement for voting in Nigeria?",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "19"
+    ],
+    "answer": "B",
+    "explanation": "The minimum age requirement for voting in Nigeria is 18 years. This is provided in the 1999 Constitution and the Electoral Act. Citizens who are 18 years and above are eligible to vote."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Where the constitution is supreme, unconstitutional acts of the executive and the legislature can be checked by the courts through",
+    "options": [
+      "recall process.",
+      "judicial review.",
+      "vote of no confidence.",
+      "impeachment clause."
+    ],
+    "answer": "B",
+    "explanation": "Judicial review is the power of the courts to review and declare unconstitutional acts of the executive and legislature void. It is a critical feature of constitutionalism and the rule of law."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The first military coup d'etat in Nigeria claimed the life of a Head of State named",
+    "options": [
+      "General Yakubu Gowon.",
+      "General Murtala Mohammed.",
+      "General Aguiyi Ironsi.",
+      "General Tunde Idiagbon."
+    ],
+    "answer": "C",
+    "explanation": "The first military coup d'etat in Nigeria (January 15, 1966) claimed the life of General Aguiyi Ironsi, who was the Head of State at the time. He was killed during the coup led by Major Kaduna Nzeogwu. Gowon survived the coup and succeeded Ironsi."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Centralization of power is the basic feature of a",
+    "options": [
+      "confederal government.",
+      "unitary government.",
+      "federal government.",
+      "presidential government."
+    ],
+    "answer": "B",
+    "explanation": "Centralization of power is the basic feature of a unitary government — all political power is concentrated in the central government. Local governments exist but derive their powers from the central government. Confederation is decentralized, and federalism shares powers."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The following are the major sources of local government revenue in Nigeria EXCEPT",
+    "options": [
+      "local taxes.",
+      "intergovernmental grants.",
+      "allowance from Petroleum funds.",
+      "loans from organizations."
+    ],
+    "answer": "C",
+    "explanation": "Allowance from Petroleum funds is NOT a major source of local government revenue — local governments do not receive direct allocations from petroleum funds. Their main revenue sources include local taxes, intergovernmental grants (statutory allocations), and loans from organizations."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Elections & Electoral System",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Election performs the function of",
+    "options": [
+      "recruitment of the leaders in a modern state.",
+      "testing the popularity of politicians.",
+      "deceiving the populace in the society.",
+      "elimination of opponents who are in office."
+    ],
+    "answer": "A",
+    "explanation": "Elections perform the function of recruitment of leaders in a modern state — they provide a mechanism for selecting political leaders and representatives. While elections may also test popularity, the primary function is recruitment and legitimization."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The following are sources of Constitution EXCEPT",
+    "options": [
+      "precedents.",
+      "conventions.",
+      "customs.",
+      "nationalism."
+    ],
+    "answer": "D",
+    "explanation": "Nationalism is NOT a source of a constitution — it is a political ideology or movement. Sources of a constitution include precedents (judicial decisions), conventions (practices), customs (traditions), statutes, and historical documents."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The structure of the civil service is based on",
+    "options": [
+      "hierarchical organization.",
+      "vertical organization.",
+      "horizontal organization.",
+      "patronage organization."
+    ],
+    "answer": "A",
+    "explanation": "The structure of the civil service is based on hierarchical organization — a clear chain of command from top to bottom. Officials are arranged in ranks, with each rank subordinate to the one above. This ensures order, discipline, and accountability."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Which of these blocs existed in Africa before the establishment of the Organisation of African Unity (OAU)?",
+    "options": [
+      "Monrovia, Accra and Casablanca.",
+      "Brazzaville, Zimbabwe and Monrovia.",
+      "Casablanca, Brazzaville and Monrovia.",
+      "Algiers, Monrovia and Casablanca."
+    ],
+    "answer": "C",
+    "explanation": "Before the OAU was established in 1963, three blocs existed: the Casablanca Group (radical states), the Brazzaville Group (moderate Francophone states), and the Monrovia Group (moderate Anglophone states). These groups merged to form the OAU."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Oligarchy is a form of government which",
+    "options": [
+      "protects the interest of the common people.",
+      "disregards the views of the minority.",
+      "enhances the interest of the ruling few.",
+      "enhances the electoral chances of the majority."
+    ],
+    "answer": "C",
+    "explanation": "Oligarchy is a form of government which enhances the interest of the ruling few — power is concentrated in the hands of a small, privileged group, often based on wealth, family, or military power."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Elections & Electoral System",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Major ways of maintaining confidence in the electoral process are the following EXCEPT",
+    "options": [
+      "periodic free and fair election.",
+      "limited franchise is observed.",
+      "electoral officers are regularly trained.",
+      "neutrality of law enforcement agencies."
+    ],
+    "answer": "B",
+    "explanation": "Limited franchise (restricted voting rights) does NOT maintain confidence in the electoral process — it undermines democratic participation. Free and fair elections, trained electoral officers, and neutral law enforcement are essential for maintaining confidence."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The Jihad that conquered the Hausaland was led by",
+    "options": [
+      "Usman Dan Fodio.",
+      "Ahmed Dan Fodio.",
+      "Umar Dan Fodio.",
+      "Sheik Dan Fodio."
+    ],
+    "answer": "A",
+    "explanation": "The Jihad that conquered Hausaland was led by Usman Dan Fodio (also known as Shehu Usman Dan Fodio). He led the Fulani Jihad (1804-1808) which established the Sokoto Caliphate."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "A plan of action adopted by one state in regards to its diplomatic dealings with other countries is called the",
+    "options": [
+      "foreign policy.",
+      "foreign business.",
+      "foreign intervention.",
+      "foreign diplomacy."
+    ],
+    "answer": "A",
+    "explanation": "A plan of action adopted by one state in regards to its diplomatic dealings with other countries is called foreign policy — it is a set of principles and strategies guiding a state's international relations. Diplomacy is the practice of foreign policy."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The following were former Head of State in Nigeria EXCEPT",
+    "options": [
+      "General Aguiyi Ironsi.",
+      "General Yakubu Gowon.",
+      "General Turkur Buratai.",
+      "General Olusegun Obasanjo."
+    ],
+    "answer": "C",
+    "explanation": "General Turkur Buratai is NOT a former Head of State in Nigeria — he was a Chief of Army Staff. Aguiyi Ironsi, Yakubu Gowon, and Olusegun Obasanjo were all military Heads of State in Nigeria. Buratai served as Army Chief under President Buhari."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Basic Concepts of Government",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) Define Sovereignty.\n(b) Explain any FIVE types of Sovereignty.",
+    "options": [],
+    "modelAnswer": "(a) Sovereignty:\nSovereignty is the supreme and absolute authority of a state within its territory. It is the power of the state to make and enforce laws without external interference. Sovereignty is the defining characteristic of a state, distinguishing it from other political organizations.\n\n(b) Five types of Sovereignty:\n1. Legal Sovereignty: This is the supreme legal authority of the state — the power to make and enforce laws. It is exercised by the legislature (or constitution). In Britain, Parliament is legally sovereign.\n\n2. Political Sovereignty: This is the power of the people to determine who governs and how — popular sovereignty. It is expressed through elections, public opinion, and political participation. Political sovereignty resides with the electorate.\n\n3. Internal Sovereignty: This is the supreme authority of the state over all individuals and groups within its territory. It means the state has the final say in all matters within its borders.\n\n4. External Sovereignty: This is the independence of the state from external control — it is recognized by other states through diplomatic relations and international law. It means the state is not subject to the authority of any external power.\n\n5. De Facto Sovereignty: This is sovereignty that exists in practice, even if not legally recognized. A military government that has seized power may exercise de facto sovereignty until it gains legal recognition.\n\n6. De Jure Sovereignty: This is sovereignty based on legal right and constitutional authority. It is sovereignty that is recognized by law and by other states. A government that comes to power through constitutional means exercises de jure sovereignty."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) List FIVE main Organs of the Economic Commission of West African States (ECOWAS).\n(b) Explain FIVE major problems confronting ECOWAS.",
+    "options": [],
+    "modelAnswer": "(a) Five main Organs of ECOWAS:\n1. Authority of Heads of State and Government — the supreme decision-making body.\n2. Council of Ministers — composed of ministers from member states.\n3. Community Parliament — the legislative arm.\n4. Economic and Social Council — advisory body.\n5. ECOWAS Commission — the executive secretariat.\n6. Community Court of Justice — judicial arm.\n\n(b) Five problems confronting ECOWAS:\n1. Financial Challenges: ECOWAS faces chronic funding shortages — member states often fail to pay their financial contributions, limiting the organization's ability to implement programs.\n\n2. Political Instability: Military coups, civil wars, and political instability in member states (e.g., Mali, Guinea, Burkina Faso) undermine regional integration and disrupt implementation of policies.\n\n3. Lack of Political Will: Member states often lack the political will to implement ECOWAS protocols and decisions — they prioritize national interests over regional integration.\n\n4. Free Movement Issues: The protocol on free movement of people, goods, and services is not fully respected — member states impose restrictions, border closures, and informal barriers.\n\n5. Unequal Benefits: The benefits of integration are unevenly distributed — larger economies benefit more than smaller ones, creating resentment and unequal development.\n\n6. Multiple Memberships: Some member states belong to other regional organizations (e.g., UEMOA), leading to conflicting obligations, duplication of efforts, and policy inconsistencies.\n\n7. Poor Infrastructure: Inadequate transportation, communication, and energy infrastructure limits regional trade and integration."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Explain FIVE main objectives of the National Council of Nigeria and Cameroon (NCNC).",
+    "options": [],
+    "modelAnswer": "The National Council of Nigeria and Cameroon (NCNC) was a major nationalist party in Nigeria, led by Herbert Macaulay and later Nnamdi Azikiwe.\n\nFive main objectives of the NCNC:\n1. Independence and Self-Government: The NCNC's primary objective was to achieve independence for Nigeria from British colonial rule. It agitated for self-government and participated in constitutional conferences leading to independence.\n\n2. Promotion of National Unity: The NCNC sought to unite diverse ethnic and regional groups across Nigeria. It aimed to promote national consciousness and unity, overcoming ethnic and regional divisions.\n\n3. Protection of the Rights of Nigerians: The NCNC fought for the rights and welfare of Nigerians — it opposed taxation without representation, exploitation, and political marginalization.\n\n4. Promotion of Social and Economic Development: The NCNC advocated for social welfare, education, healthcare, and economic development. It promoted the interests of workers, farmers, and the poor.\n\n5. Opposition to Colonial Policies: The NCNC opposed oppressive colonial policies — it organized protests, strikes, and campaigns against unjust laws and taxation.\n\n6. Constitutional Reforms: The NCNC demanded constitutional reforms to increase African representation, regional autonomy, and federalism.\n\n7. Promotion of Pan-Africanism: The NCNC supported Pan-African unity and solidarity with other African nationalist movements struggling against colonialism."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Elections & Electoral System",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) What is an Electoral System?\n(b) Outline and discuss any FIVE benefits of a good Electoral System.",
+    "options": [],
+    "modelAnswer": "(a) Electoral System:\nAn electoral system is a set of rules and procedures that govern how elections are conducted and how votes are translated into political representation. It includes the method of voting, the counting of votes, and the allocation of seats. Examples include first-past-the-post, proportional representation, and the alternative vote system.\n\n(b) Five benefits of a good electoral system:\n1. Ensures Free and Fair Elections: A good electoral system guarantees that elections are conducted transparently and fairly — votes are counted accurately, and the results reflect the will of the people. This builds public confidence in the democratic process.\n\n2. Promotes Political Participation: A good electoral system encourages citizens to participate in the political process — voting, campaigning, and engaging with political parties. It makes citizens feel their votes matter.\n\n3. Ensures Accountability of Leaders: A good electoral system holds leaders accountable to the people — they can be voted out if they fail to perform. This ensures that politicians serve the interests of the people.\n\n4. Promotes Peaceful Transfer of Power: A good electoral system facilitates the peaceful transfer of power — election outcomes are accepted by all parties, reducing the risk of violence and political instability.\n\n5. Enhances Representation: A good electoral system ensures that diverse groups (women, minorities, ethnic groups) are represented in government. It promotes inclusivity and reflects the diversity of society.\n\n6. Legitimizes Government: A good electoral system gives governments legitimacy — they are elected by the people and have a mandate to govern. This strengthens democracy and the rule of law."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Governance & Citizenship",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Define citizenship.\n(b) Identify and explain FOUR processes of acquiring citizenship.",
+    "options": [],
+    "modelAnswer": "(a) Citizenship:\nCitizenship is the legal status of being a member of a particular state or country. It confers certain rights (e.g., right to vote, right to work, right to protection) and duties (e.g., paying taxes, obeying laws, national service). Citizenship implies a relationship between the individual and the state.\n\n(b) Four processes of acquiring citizenship:\n1. Citizenship by Birth (Jus Sanguinis): This is citizenship acquired by birth to parents who are citizens of the country — regardless of the place of birth. It is based on blood or descent. Example: A child born to Nigerian parents anywhere in the world is a Nigerian citizen.\n\n2. Citizenship by Birth (Jus Soli): This is citizenship acquired by being born within the territory of a country — regardless of the parents' nationality. It is based on place of birth. Example: A child born in the USA (with exceptions for diplomats) is a US citizen.\n\n3. Citizenship by Registration: This is citizenship acquired by registering with the authorities after meeting certain conditions — usually for persons who have lived in the country for a specified period (e.g., 15 years in Nigeria). It is often for those with a connection to the country.\n\n4. Citizenship by Naturalization: This is citizenship acquired by legal process after meeting requirements such as residency, language proficiency, and good character. It is for foreigners who have lived in the country for a long period and wish to become citizens.\n\n5. Citizenship by Marriage: This is citizenship acquired by marriage to a citizen of the country. In Nigeria, a foreign woman married to a Nigerian man can become a Nigerian citizen.\n\n6. Citizenship by Adoption: In some countries, a child adopted by citizens acquires citizenship."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "International Relations",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "(a) Define an International Organisation.\n(b) Explain FIVE major roles of international Organisations.",
+    "options": [],
+    "modelAnswer": "(a) International Organisation:\nAn international organization is a formal institution with membership from multiple states, established to promote cooperation, coordination, and collective action on matters of common interest. Examples include the United Nations (UN), African Union (AU), ECOWAS, World Bank, and the International Monetary Fund (IMF).\n\n(b) Five major roles of international organizations:\n1. Promoting Peace and Security: International organizations play a key role in maintaining peace and security — the UN Security Council authorizes peacekeeping missions, mediates conflicts, and imposes sanctions to prevent war.\n\n2. Facilitating Economic Cooperation: Organizations like the IMF, World Bank, and WTO promote economic cooperation, provide loans and technical assistance, and establish rules for international trade and finance.\n\n3. Protecting Human Rights: International organizations promote and protect human rights — the UN Human Rights Council, UNICEF, and WHO advocate for the rights of children, women, and vulnerable groups. They monitor violations and hold states accountable.\n\n4. Providing Humanitarian Assistance: International organizations provide humanitarian aid during disasters, conflicts, and pandemics. WHO leads global health responses, and UN agencies provide food, shelter, and medical care to affected populations.\n\n5. Promoting Sustainable Development: International organizations promote sustainable development through the Sustainable Development Goals (SDGs) — they provide funding, expertise, and technical assistance to developing countries.\n\n6. Facilitating International Cooperation: International organizations provide a platform for states to cooperate on global issues — climate change, migration, terrorism, and disease control. They enable dialogue, negotiation, and collective action."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Discuss FIVE features of the Presidential System of government in Nigeria.",
+    "options": [],
+    "modelAnswer": "Nigeria operates a presidential system of government under the 1999 Constitution.\n\nFive features of the Presidential System of government in Nigeria:\n1. Separation of Powers: There is a clear separation of powers between the executive, legislature, and judiciary. Each branch has distinct functions and is independent of the others. The President is not a member of the National Assembly.\n\n2. Executive Vest in the President: The executive power is vested in the President, who is the Head of State, Head of Government, and Commander-in-Chief of the Armed Forces. The President is directly elected by the people.\n\n3. Fixed Tenure: The President serves a fixed term of four years (renewable once) — the term is not dependent on the confidence of the legislature. The President can only be removed through impeachment.\n\n4. Checks and Balances: The principle of checks and balances prevents any branch from becoming too powerful — the President can veto bills, but the legislature can override the veto. The judiciary can declare executive actions unconstitutional.\n\n5. President is Head of State and Head of Government: In the Nigerian presidential system, the President is both Head of State (ceremonial) and Head of Government (executive). There is no separate Prime Minister.\n\n6. Appointment of Ministers: The President appoints ministers, who must be confirmed by the Senate. Ministers are not members of the National Assembly and are responsible to the President.\n\n7. Fixed Elections: Elections are held at regular intervals — every four years. The President cannot dissolve the legislature or call early elections."
+  },
+  {
+    "subject": "Government",
+    "year": 2021,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) What is a coup d'etat?\n(b) Explain FIVE justifications for the 1966 military intervention in Nigerian Politics.",
+    "options": [],
+    "modelAnswer": "(a) Coup d'etat:\nA coup d'etat is the sudden, illegal, and unconstitutional seizure of political power by a small group of people (usually the military or armed forces) to overthrow an existing government. It is often carried out with force or the threat of force.\n\n(b) Five justifications for the 1966 military intervention in Nigerian Politics:\n1. Political Instability and Corruption: The military justified the coup on the grounds that the civilian government was corrupt, inefficient, and mismanaging the economy. The first republic was plagued by corruption, electoral malpractices, and political violence.\n\n2. Ethnic and Regional Tensions: The 1964 federal elections and 1965 Western Region elections were characterized by widespread rigging, violence, and ethnic divisions. The military claimed the government was unable to manage ethnic tensions and maintain national unity.\n\n3. Breakdown of Law and Order: The military argued that the government had failed to maintain law and order — political violence, killings, and intimidation were rampant. The military claimed it intervened to restore peace and stability.\n\n4. Economic Mismanagement: The military justified intervention by citing the government's failure to manage the economy — unemployment, poverty, and economic decline were major concerns. The military promised better economic management and development.\n\n5. Abrogation of the Constitution: The military claimed that the civilian government had abrogated the constitution by failing to uphold the rule of law and allowing political leaders to act above the law. The military argued it intervened to uphold constitutional principles.\n\n6. Failure of the Political Class: The military held the political class responsible for Nigeria's problems — it argued that politicians had failed the people and needed to be removed for the country's survival."
+  }
+]

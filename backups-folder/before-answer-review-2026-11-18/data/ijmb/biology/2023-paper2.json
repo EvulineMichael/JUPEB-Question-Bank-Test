@@ -1,0 +1,112 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Explain the following terms:\n(i) Ovoviviparity (2½ Marks)\n(ii) Moulting (2½ Marks)\n(iii) Glands (2½ Marks)\n(iv) Chiasmata (2½ Marks)",
+    "options": [],
+    "modelAnswer": "(i) Ovoviviparity: a type of reproduction in which fertilised eggs are kept and develop inside the mother's body (in the oviduct or uterus). The embryo is nourished by the yolk of its egg, not through a placenta. The eggs hatch inside the mother, and the young are born alive. Examples: some sharks, guppies, vipers and boas, and some insects. (Compare oviparous animals, which lay eggs, and viviparous animals, whose embryos are nourished through a placenta.)\n\n(ii) Moulting (ecdysis): the periodic shedding of the hard outer covering of an animal, such as the chitinous exoskeleton of arthropods (insects, crustaceans). The exoskeleton cannot stretch, so moulting allows the animal to grow: a new, soft cuticle forms underneath, and the animal expands before it hardens. In insects, it is controlled by the hormone ecdysone. The term is also used for the shedding of skin by snakes, and of feathers or hair by birds and mammals.\n\n(iii) Glands: a cell, group of cells or organ that produces and secretes useful substances, such as hormones, enzymes, mucus, sweat or milk.\nExocrine glands release their secretions through ducts, e.g., salivary glands, sweat glands, the pancreas (digestive juice).\nEndocrine (ductless) glands release hormones directly into the blood, e.g., the thyroid, pituitary and adrenal glands.\n\n(iv) Chiasmata (singular: chiasma): the points where the non-sister chromatids of a pair of homologous chromosomes cross over and remain in contact during prophase I of meiosis. At each chiasma, the chromatids break and exchange segments (crossing over). This produces new combinations of alleles, so it increases genetic variation in the gametes."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) A child with blood group AB is a source of dispute between two contesting fathers; Father P with blood group B and Father Z with blood group O. The mother of the child has blood group A. Using crossings, show how the blood groups of the child, disputing fathers and that of the mother can be used in resolving the dispute. (20 Marks)",
+    "options": [],
+    "modelAnswer": "ABO blood group is controlled by three alleles: Iᴬ and Iᴮ (codominant) and Iᴼ (recessive to both).\nGenotypes: group A = IᴬIᴬ or IᴬIᴼ; group B = IᴮIᴮ or IᴮIᴼ; group AB = IᴬIᴮ; group O = IᴼIᴼ.\n\nThe child (AB) has genotype IᴬIᴮ. One allele came from each parent. The mother is group A, so she gave Iᴬ. The Iᴮ allele must therefore have come from the father.\n\nCrosses with Father P (group B):\n1. Mother IᴬIᴬ × Father P IᴮIᴮ\nGametes: Iᴬ × Iᴮ\nOffspring: all IᴬIᴮ (group AB).\n2. Mother IᴬIᴼ × Father P IᴮIᴼ\nGametes: Iᴬ, Iᴼ × Iᴮ, Iᴼ\nOffspring: IᴬIᴮ (AB), IᴬIᴼ (A), IᴮIᴼ (B), IᴼIᴼ (O), in the ratio 1 : 1 : 1 : 1.\nIn both cases a group AB child is possible.\n\nCrosses with Father Z (group O):\n1. Mother IᴬIᴬ × Father Z IᴼIᴼ\nGametes: Iᴬ × Iᴼ\nOffspring: all IᴬIᴼ (group A).\n2. Mother IᴬIᴼ × Father Z IᴼIᴼ\nGametes: Iᴬ, Iᴼ × Iᴼ\nOffspring: IᴬIᴼ (A) and IᴼIᴼ (O), in the ratio 1 : 1.\nIn neither case can a group AB child be produced, because a group O man has no Iᴮ allele to pass on.\n\nConclusion: Father Z (group O) cannot be the father. Father P (group B) could be the father.\n\nNote: a blood group test can rule a man out as the father, but it cannot prove that he is the father, because many other men also have group B. A DNA test would be needed to confirm paternity."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Diversity and General Characteristics of Animals",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Fill in the blank spaces. Spellings of one word answer and scientific names must be correct to score. (10 Marks)\n(i) The two types of cells in photoreceptors are ___a___ and ___b___.\n(ii) ___c___, ___d___ and ___e___ are types of gaseous exchange found in the class Amphibia.\n(iii) ___f___ gland is known to maintain hormonal balance in the body.\n(iv) The ___g___ eye defect can be corrected by use of concave lens.\n(v) The ___h___ form the structural and functional unit of ___i___ system that specialized in the transmission of nerve impulses.\n(vi) ___j___ is the main site of cellular respiration and also involved in energy storage in a cell.",
+    "options": [],
+    "modelAnswer": "a: rods\nb: cones\nc: cutaneous (through the skin)\nd: buccal (buccopharyngeal, through the lining of the mouth)\ne: pulmonary (through the lungs)\n(Tadpoles also use gills: branchial respiration.)\nf: pituitary (the 'master gland')\ng: myopia (short-sightedness)\nh: neurones (nerve cells)\ni: nervous\nj: mitochondrion (mitochondria), where ATP is produced"
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Nervous System",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Write short notes on the following:\n(a) Autonomic Nervous System (10 Marks)\n(b) Mouth to mouth resuscitation (10 Marks)",
+    "options": [],
+    "modelAnswer": "(a) Autonomic Nervous System (ANS)\nThe autonomic nervous system is the part of the peripheral nervous system that controls involuntary (automatic) activities of the internal organs, such as heartbeat, breathing rate, digestion, sweating and the diameter of blood vessels. It works without conscious control and is regulated by the hypothalamus and medulla oblongata. Its motor pathways use two neurones, which meet at a synapse in a ganglion outside the central nervous system.\n\nIt has two divisions, which usually have opposite (antagonistic) effects on the same organ:\n1. Sympathetic nervous system: its nerves leave the spinal cord in the thoracic and lumbar regions, and its ganglions lie close to the spinal cord. It prepares the body for 'fight or flight' in emergencies. Its main neurotransmitter at the effector is noradrenaline. Effects: it increases heart rate and blood pressure; dilates the pupils and the bronchioles; increases sweating; raises blood glucose; and slows digestion (reducing peristalsis and secretion).\n2. Parasympathetic nervous system: its nerves leave the brain (cranial nerves, e.g., the vagus nerve) and the sacral region of the spinal cord, and its ganglions lie close to or in the effector organs. It controls 'rest and digest' activities. Its neurotransmitter is acetylcholine. Effects: it slows the heart rate; constricts the pupils and bronchioles; and stimulates digestion (increasing peristalsis and the secretion of saliva and digestive juices).\n\nThe balance between the two divisions keeps the internal environment steady (homeostasis).\n\n(b) Mouth to mouth resuscitation\nMouth-to-mouth resuscitation (rescue breathing, or artificial respiration) is a first-aid method of supplying air to the lungs of a person who has stopped breathing, e.g., after drowning, electric shock, suffocation or poisoning. Exhaled air still contains about 16% oxygen, which is enough to keep the casualty alive until normal breathing returns or medical help arrives.\n\nProcedure:\n1. Check that the area is safe, and that the casualty is not responding and not breathing normally. Call for help or emergency services.\n2. Lay the casualty flat on their back on a firm surface.\n3. Clear the mouth and airway of any obstruction, such as vomit, water or loose dentures.\n4. Open the airway: tilt the head back and lift the chin, so the tongue does not block the throat.\n5. Pinch the casualty's nose closed, so that air does not escape through it.\n6. Take a breath, seal your lips around the casualty's mouth, and blow steadily for about one second, watching for the chest to rise.\n7. Remove your mouth and let the chest fall as the air comes out.\n8. Repeat at about 10–12 breaths per minute. Current first-aid guidelines combine rescue breaths with chest compressions (cardiopulmonary resuscitation, CPR): 30 compressions followed by 2 breaths if there is no circulation.\n9. Continue until the casualty starts breathing on their own, medical help takes over, or you are too exhausted to continue. Once breathing returns, place the casualty in the recovery position.\n\nPrecautions: use a face shield if one is available, to reduce the risk of infection. For a baby, cover both the mouth and nose with your mouth, and give gentle puffs."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Introduction to Chordates",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Outline ten (10) characteristics of the class mammalia (20 Marks)",
+    "options": [],
+    "modelAnswer": "Any ten:\n1. The body is covered with hair (fur).\n2. Females have mammary glands, which secrete milk to feed the young.\n3. Most are viviparous: the young develop inside the uterus, nourished through a placenta, and are born alive. (The monotremes, such as the duck-billed platypus, lay eggs.)\n4. They are homoiothermic (warm-blooded): they keep a constant body temperature.\n5. The skin contains sweat glands and sebaceous (oil) glands.\n6. They have external ears (pinnae), and three small bones in the middle ear (malleus, incus and stapes).\n7. A muscular diaphragm separates the thoracic cavity from the abdominal cavity, and helps in breathing.\n8. The heart has four chambers (two atria and two ventricles), with complete separation of oxygenated and deoxygenated blood. Only the left aortic arch is present.\n9. The red blood cells are biconcave and have no nucleus when mature.\n10. The teeth are of different kinds (heterodont: incisors, canines, premolars and molars), set in sockets in the jaw (thecodont), and replaced only once (diphyodont: milk teeth and permanent teeth).\n11. Most have seven cervical (neck) vertebrae.\n12. Each half of the lower jaw consists of a single bone (the dentary).\n13. The brain, especially the cerebrum, is large and well developed.\n14. Fertilisation is internal, and the young receive parental care.\n15. The skull has two occipital condyles."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Endocrine System",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Explain how low and high blood glucose levels are return to normal level (15 Marks)",
+    "options": [],
+    "modelAnswer": "The normal blood glucose level in humans is about 80–100 mg per 100 cm³ of blood (about 4–6 mmol dm⁻³). It is kept nearly constant by negative feedback, mainly by two hormones from the islets of Langerhans in the pancreas, with the liver as the main target organ.\n\nHigh blood glucose (e.g., after a meal rich in carbohydrate):\n1. The rise in glucose is detected by the beta (β) cells of the islets of Langerhans, which secrete more insulin into the blood. Glucagon secretion falls.\n2. Insulin increases the permeability of body cells, especially muscle, liver and fat cells, to glucose, so more glucose is taken up from the blood.\n3. In the liver and muscles, insulin stimulates the conversion of glucose to glycogen for storage (glycogenesis).\n4. It increases the rate at which cells use glucose in respiration.\n5. It stimulates the conversion of excess glucose into fat in adipose tissue.\n6. It inhibits the production of new glucose by the liver (gluconeogenesis).\nAs a result, the blood glucose level falls back to normal, and insulin secretion then decreases (negative feedback).\n\nLow blood glucose (e.g., during fasting or exercise):\n1. The fall in glucose is detected by the alpha (α) cells of the islets of Langerhans, which secrete glucagon. Insulin secretion falls.\n2. Glucagon stimulates liver cells to break down stored glycogen into glucose (glycogenolysis), which is released into the blood.\n3. It stimulates the liver to make new glucose from non-carbohydrate sources, such as amino acids and glycerol (gluconeogenesis).\n4. Cells use more fatty acids for respiration, saving glucose.\nAs a result, the blood glucose level rises back to normal, and glucagon secretion then decreases.\n\nOther hormones also help raise blood glucose: adrenaline (from the adrenal medulla, in stress or excitement) stimulates glycogenolysis, and cortisol (from the adrenal cortex) stimulates gluconeogenesis.\n\nFailure of this control, as when the pancreas produces too little insulin or cells do not respond to it, leads to diabetes mellitus."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Cell Organisation, Structure and Functions",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Outline five (5) functions of connective tissues (5 Marks)",
+    "options": [],
+    "modelAnswer": "Any five:\n1. Binding and supporting: connective tissue binds other tissues and organs together and holds them in place (e.g., areolar tissue; tendons join muscle to bone; ligaments join bone to bone).\n2. Structural support and framework: bone and cartilage form the skeleton, which supports the body and allows movement.\n3. Protection: bone protects delicate organs (e.g., the skull protects the brain), and fat cushions organs such as the kidneys against shock.\n4. Storage: adipose tissue stores fat as an energy reserve; bone stores calcium and phosphate.\n5. Insulation: fat beneath the skin reduces heat loss.\n6. Transport: blood, a fluid connective tissue, carries oxygen, nutrients, hormones and wastes around the body.\n7. Defence: macrophages, white blood cells and lymphocytes in connective tissues fight infection.\n8. Repair: fibroblasts produce fibres that form scar tissue to repair damaged tissues.\n9. Production of blood cells: red bone marrow makes blood cells."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Invertebrates",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "With the aid of well labeled diagrams, explain the process of conjugation in Paramecium. (20 Marks)",
+    "options": [],
+    "modelAnswer": "Diagrams: draw a labelled series of stages showing two paramecia joined at their oral grooves by a cytoplasmic bridge; the macronucleus breaking down; the micronucleus dividing by meiosis into four nuclei, three of which degenerate; the remaining nucleus dividing into stationary and migratory pronuclei; the migratory pronuclei crossing the bridge; fusion to form the zygote nucleus; separation of the exconjugants; and the later divisions that produce four daughter cells from each exconjugant.\n\nConjugation is a form of sexual reproduction in Paramecium (a ciliate protozoan), in which two individuals temporarily join and exchange micronuclear material. Each Paramecium has a large macronucleus, which controls the everyday life of the cell, and a small diploid micronucleus, which is involved in reproduction. Conjugation occurs between individuals of different (compatible) mating types, often when food is scarce.\n\nStages:\n1. Pairing: two compatible paramecia (conjugants) come together and stick to each other at their oral grooves. The pellicle and cell membranes break down at the point of contact, forming a cytoplasmic bridge between them.\n2. Macronucleus breaks down: in each conjugant, the macronucleus starts to disintegrate and is eventually absorbed into the cytoplasm.\n3. Meiosis: in each conjugant, the diploid micronucleus divides twice by meiosis, forming four haploid micronuclei.\n4. Three degenerate: three of the four haploid nuclei degenerate, and one survives.\n5. Pronuclei form: the surviving nucleus divides by mitosis into two pronuclei, a larger stationary (female) pronucleus and a smaller migratory (male) pronucleus.\n6. Exchange: the migratory pronucleus of each conjugant passes across the cytoplasmic bridge into the other conjugant.\n7. Fertilisation: in each conjugant, the incoming migratory pronucleus fuses with the stationary pronucleus, forming a diploid zygote nucleus (synkaryon). Each conjugant now contains new combinations of genes from both partners.\n8. Separation: the two conjugants separate, and are now called exconjugants.\n9. Nuclear divisions: in each exconjugant, the synkaryon divides three times by mitosis, forming eight nuclei. Four of these enlarge to become macronuclei. Of the other four, three degenerate, and the remaining one becomes the micronucleus.\n10. Cell divisions: each exconjugant then divides twice by binary fission. The micronucleus divides at each fission, and the macronuclei are shared out. Each exconjugant therefore gives rise to four daughter paramecia, each with one macronucleus and one micronucleus. In all, one pair of conjugants produces eight new individuals.\n\nSignificance of conjugation:\n1. It brings about genetic recombination, which produces variation and helps the species adapt to changing conditions.\n2. It rejuvenates the population: after many generations of binary fission, paramecia decline in vigour, and conjugation restores it.\n3. A new macronucleus is formed, replacing the old one."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Cell Organisation, Structure and Functions",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Mention the characteristics of the following muscle cells\n(i) Skeletal (5 Marks)\n(ii) Cardiac (5 Marks)\n(iii) Smooth (5 Marks)",
+    "options": [],
+    "modelAnswer": "(i) Skeletal (striated, voluntary) muscle:\n1. Its cells (fibres) are long and cylindrical, and they are unbranched.\n2. Each fibre has many nuclei (it is multinucleate, a syncytium), lying near the edge under the cell membrane (sarcolemma).\n3. The fibres show clear cross-striations (light and dark bands) under the microscope, due to the arrangement of actin and myosin filaments.\n4. It is under voluntary control, supplied by the somatic (motor) nervous system.\n5. It contracts quickly and powerfully, but tires (fatigues) quickly.\n6. It is attached to bones by tendons, and brings about movement of the skeleton.\n\n(ii) Cardiac muscle:\n1. It is found only in the wall of the heart.\n2. Its cells are short, cylindrical and branched, joined end to end by intercalated discs, which allow impulses to pass quickly from cell to cell.\n3. Each cell has one (sometimes two) centrally placed nucleus.\n4. It is striated, but the striations are fainter than in skeletal muscle.\n5. It is involuntary, and myogenic: it contracts rhythmically on its own, without nervous stimulation, although the autonomic nervous system changes its rate.\n6. It never tires (it does not fatigue), and its cells contain many mitochondria.\n\n(iii) Smooth (unstriated, visceral, involuntary) muscle:\n1. Its cells are spindle-shaped (tapered at both ends) and unbranched.\n2. Each cell has a single, centrally placed nucleus.\n3. It has no striations.\n4. It is involuntary, controlled by the autonomic nervous system and by hormones.\n5. It contracts slowly and rhythmically, and can remain contracted for a long time without tiring.\n6. It is found in the walls of hollow internal organs, such as the alimentary canal, blood vessels, bladder, uterus and the iris of the eye."
+  },
+  {
+    "subject": "Biology",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Outline the functions of the mammalian skin (5 Marks)",
+    "options": [],
+    "modelAnswer": "1. Protection: it forms a waterproof barrier that prevents the entry of pathogens and protects underlying tissues from mechanical injury and from drying out. Melanin pigment protects against harmful ultraviolet rays.\n2. Temperature regulation: when hot, sweating (cooling by evaporation) and vasodilation of skin capillaries increase heat loss. When cold, vasoconstriction, shivering and the raising of hairs (which traps a layer of air) reduce heat loss. The fat layer beneath the skin insulates the body.\n3. Excretion: sweat glands remove water, mineral salts and small amounts of urea.\n4. Sensation: receptors in the skin detect touch, pressure, pain, heat and cold.\n5. Synthesis of vitamin D: the skin makes vitamin D when exposed to sunlight.\n6. Storage: fat is stored in the subcutaneous (adipose) layer as an energy reserve.\n7. Secretion: sebaceous glands secrete sebum, which keeps the skin and hair supple and waterproof and has antiseptic properties. In females, the mammary glands (modified skin glands) secrete milk."
+  }
+]

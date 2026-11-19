@@ -1,0 +1,90 @@
+[
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Motivation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Explain Abraham Maslow's motivational theory based on hierarchy of needs and Fredrick Herzberg's motivation hygiene theory.",
+    "options": [],
+    "modelAnswer": "Maslow's hierarchy of needs (1943): human needs are arranged in a hierarchy, and people are motivated to satisfy lower-level needs before higher ones; a satisfied need no longer motivates.\n1. Physiological needs: food, water, shelter, clothing (at work: basic pay).\n2. Safety/security needs: protection from danger, job security, pensions, safe working conditions.\n3. Social (belongingness) needs: love, friendship, acceptance (at work: good colleagues, teamwork).\n4. Esteem needs: self-respect, recognition, status, achievement (at work: titles, praise, promotion).\n5. Self-actualisation: realising one's full potential, growth and creativity (at work: challenging jobs).\nImplication: managers should identify the level of needs of each worker and provide matching rewards. Criticism: needs do not always follow a strict order and differ across cultures.\n\nHerzberg's two-factor (motivation–hygiene) theory: from studies of accountants and engineers, Herzberg found two separate sets of factors:\nHygiene (maintenance) factors: company policy and administration, supervision, salary, interpersonal relations, working conditions, job security and status. When they are inadequate they cause dissatisfaction; when adequate they prevent dissatisfaction but do not motivate.\nMotivators: achievement, recognition, the work itself, responsibility, advancement and growth. These produce satisfaction and motivate people to perform better.\nImplication: managers should first remove dissatisfaction by providing adequate hygiene factors, then motivate through job enrichment (more responsibility, challenge and recognition). Criticism: based on a small sample, and pay can motivate some workers."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Organizations",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Define organizational structure. Explain four common types of organizational structure and enumerate two merits of each type of this organizational structure.",
+    "options": [],
+    "modelAnswer": "Organisational structure is the formal framework by which jobs, tasks, authority and responsibility are divided, grouped and coordinated in an organisation; it is usually shown by an organisation chart.\n\n1. Line (military) structure: authority flows directly from the top to the bottom in a single chain of command.\nMerits: simple and easy to understand; clear authority and responsibility, quick decisions.\n2. Line and staff structure: line managers have command authority, supported by staff specialists (e.g. legal, HR, accounts) who advise.\nMerits: line managers benefit from expert advice; reduces the burden on line managers while keeping unity of command.\n3. Functional structure: activities are grouped by function (production, marketing, finance, HR), each headed by a specialist.\nMerits: specialisation and efficiency; easier supervision and training within functions.\n4. Divisional structure: the organisation is divided into self-contained divisions by product, region or customer.\nMerits: focus on particular products/markets and quicker response; divisions can be held accountable as profit centres.\n5. Matrix structure: combines functional and project/product structures, so staff report to both a functional manager and a project manager.\nMerits: flexible use of specialists across projects; improved coordination and communication.\n(Any four types with two merits each.)"
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "What is control and its measurement? Examine the various reasons why people resist change and how you can gain workers commitment to change?",
+    "options": [],
+    "modelAnswer": "Control is the management function of monitoring activities to ensure they are carried out as planned and correcting significant deviations. It involves:\n1. Setting standards (targets for output, quality, cost, time).\n2. Measuring actual performance (through observation, reports, statistics, budgets).\n3. Comparing actual performance with standards.\n4. Taking corrective action where there are deviations.\nMeasurement of performance uses quantitative measures (output per worker, sales, costs, profit, budgets, ratios) and qualitative measures (customer satisfaction, quality, behaviour).\n\nReasons why people resist change:\n1. Fear of the unknown and uncertainty.\n2. Fear of losing jobs, income, status or power.\n3. Habit and comfort with existing ways.\n4. Lack of information or misunderstanding of the change and its purpose.\n5. Lack of trust in management.\n6. Fear of failure or inability to learn new skills.\n7. Peer and group pressure, and the belief that the change is not in the organisation's interest.\n\nHow to gain workers' commitment to change:\n1. Education and communication: explain the need, benefits and process.\n2. Participation and involvement in planning and implementing the change.\n3. Facilitation and support: training, counselling and resources.\n4. Negotiation and agreement, offering incentives where appropriate.\n5. Introducing change gradually and showing early benefits.\n6. Strong leadership, building trust, and rewarding those who support the change."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Explain how Mary Parker Follet and Chester Bernard provided a link between the classical thought and human relations thought and set the stage for new management thinking?",
+    "options": [],
+    "modelAnswer": "Note: the names are usually spelt Mary Parker Follett and Chester Barnard.\n\nMary Parker Follett (1868–1933): although writing in the classical period, she stressed the human side of organisations:\n1. Management is 'the art of getting things done through people'.\n2. Conflict should be resolved by integration (finding solutions that satisfy both sides) rather than domination or compromise.\n3. 'Power with' rather than 'power over': shared power and participation.\n4. The 'law of the situation': orders should come from the facts of the situation, not personal authority.\n5. Coordination through direct contact, early in planning, and as a continuous process.\nShe linked the classical concern for structure and coordination with a concern for people and groups.\n\nChester Barnard (1886–1961), The Functions of the Executive (1938):\n1. Organisations are cooperative social systems that depend on people's willingness to contribute.\n2. Acceptance theory of authority: authority depends on subordinates accepting orders, not just on position.\n3. Recognised the importance of informal organisation alongside the formal structure.\n4. The executive's functions: maintaining communication, securing essential efforts from members, and formulating purpose.\n5. Balance between the organisation's effectiveness (goal achievement) and efficiency (satisfying members' motives).\n\nLink and new thinking: both kept classical concerns (structure, authority, coordination, executive functions) but emphasised human factors (cooperation, acceptance, groups, participation). Their ideas prepared the way for the human relations movement, behavioural science, systems theory and modern participative management."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Differentiate between a leader and leadership. Why is trust the essence of leadership? Briefly explain authoritarian, laissez fair and democratic types of leadership.",
+    "options": [],
+    "modelAnswer": "A leader is a person who influences others and has managerial authority or followers. Leadership is the process (ability) of influencing a group of people towards the achievement of goals. The leader is the person; leadership is what the person does.\n\nWhy trust is the essence of leadership:\n1. Followers willingly follow only leaders they believe to be honest, competent and fair.\n2. Trust makes followers accept the leader's decisions and vision, and take risks.\n3. It encourages open communication, cooperation and commitment.\n4. It reduces the need for close supervision and control.\n5. Without trust, followers comply only grudgingly, and influence is lost. Elements of trust include integrity, competence, consistency, loyalty and openness.\n\nTypes of leadership:\n1. Authoritarian (autocratic): the leader makes decisions alone, gives orders and expects obedience, with little or no consultation. Useful in emergencies, but may lower morale and creativity.\n2. Laissez-faire (free-rein): the leader gives little direction and leaves decisions to subordinates. Works with highly skilled, motivated staff, but can lead to confusion and lack of coordination.\n3. Democratic (participative): the leader involves subordinates in decision-making, consults and delegates, while retaining final responsibility. It improves morale and commitment but may be slow."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Motivation",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "What is motivation? Outline the basic importance of David C. McClelland's need theory of motivation and explain the specific motivating needs he discovered.",
+    "options": [],
+    "modelAnswer": "Motivation is the process that arouses, directs and sustains a person's behaviour towards achieving a goal; at work, the willingness to exert high effort to achieve organisational goals while satisfying individual needs.\n\nImportance of McClelland's need (acquired needs) theory:\n1. It shows that needs are learnt (acquired) from experience and culture, not just inborn.\n2. It helps managers identify the dominant need of each employee and match jobs, rewards and roles to it.\n3. It helps in selecting and developing managers and entrepreneurs (e.g. those with high need for achievement).\n4. It helps in designing training to develop needs such as achievement.\n\nThe three needs:\n1. Need for achievement (nAch): the drive to excel and succeed, to meet standards and to accomplish challenging goals. High achievers prefer moderate risks, personal responsibility and quick feedback; they make good entrepreneurs.\n2. Need for power (nPow): the desire to influence, control and have impact on others. Socialised (institutional) power motivates effective managers.\n3. Need for affiliation (nAff): the desire for friendly, close relationships and to be liked and accepted. High-affiliation people work well in teams and service roles but may avoid tough decisions."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Distinguish between management and administration. Clearly itemize and explain the attributes of a successful manager.",
+    "options": [],
+    "modelAnswer": "Administration is mainly concerned with determining objectives and major policies, a top-level, thinking function (common in government and non-profit organisations). Management is concerned with executing those policies, i.e. planning, organising, directing and controlling operations to achieve goals; it is a doing function (common in business).\nDifferences:\n1. Function: administration formulates policy; management implements it.\n2. Level: administration is at the top; management operates mainly at middle and lower levels.\n3. Decisions: administration makes broad, policy decisions; management makes operational decisions within the policy.\n4. Usage: 'administration' is common in public and non-profit bodies; 'management' in business.\n(Some writers treat the two terms as having the same meaning.)\n\nAttributes of a successful manager:\n1. Leadership ability: inspiring and directing others.\n2. Communication skills.\n3. Decision-making and problem-solving ability.\n4. Technical knowledge of the job.\n5. Human (interpersonal) skills and emotional intelligence.\n6. Conceptual and analytical skills; ability to plan and think strategically.\n7. Integrity and ethical behaviour.\n8. Self-confidence, initiative and drive.\n9. Flexibility and adaptability to change.\n10. Organising and time-management skills."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Business Enterprise",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Differentiate between economic environment and business environment. List and explain five elements of economic environment that influence the management of business?",
+    "options": [],
+    "modelAnswer": "The business environment is the total of all internal and external factors that affect a business: political, economic, social, technological, legal, ecological and internal factors. The economic environment is one part of the external business environment, made up of the economic conditions and forces that affect the business.\nDifference: the business environment is broad and includes non-economic factors (politics, law, culture, technology); the economic environment covers only economic factors.\n\nElements of the economic environment (any five):\n1. Inflation (general price level): affects costs, prices, wages and demand.\n2. Interest rates: affect the cost of borrowing and investment.\n3. Exchange rates: affect the cost of imported inputs and the price of exports.\n4. Level of income and economic growth (GDP): affects purchasing power and demand.\n5. Unemployment: affects demand and the supply and cost of labour.\n6. Government fiscal and monetary policies: taxes, government spending, money supply and credit.\n7. Economic system (capitalist, socialist, mixed) and the level of competition.\n8. Infrastructure: power, transport and communication, which affect operating costs."
+  }
+]

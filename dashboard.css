@@ -1,0 +1,513 @@
+/* =====================================================================
+   DASHBOARD
+   Markup: #dashboard-screen in index.html, filled in by renderDashboard()
+   and renderPinnedSubjects() in script.js. Everything is scoped to
+   #dashboard-screen, so Settings and Help (which reuse .dash-card and
+   .dash-shell) keep their own look. Loaded after style.css, so these
+   rules win over the older dashboard rules there.
+   ===================================================================== */
+
+#dashboard-screen {
+  --db-primary: var(--tab-active-bg);
+  --db-accent: #7c3aed;
+  --db-surface: var(--bg-secondary);
+  --db-tint: color-mix(in srgb, var(--text-primary) 3.5%, var(--bg-secondary));
+  --db-border: var(--dash-border);
+  --db-text: var(--text-primary);
+  --db-muted: var(--text-secondary);
+  --db-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05), 0 2px 8px -2px rgba(15, 23, 42, 0.05);
+  --db-shadow: 0 2px 4px rgba(15, 23, 42, 0.04), 0 18px 40px -16px rgba(15, 23, 42, 0.18);
+  --db-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  color: var(--db-text);
+  -webkit-font-smoothing: antialiased;
+}
+[data-theme="dark"] #dashboard-screen {
+  --db-accent: #8b5cf6;
+  --db-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --db-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 18px 40px -16px rgba(0, 0, 0, 0.6);
+}
+:where(#dashboard-screen) :where(h2, h3, p) { margin: 0; }
+#dashboard-screen button { font-family: inherit; }
+
+/* Icon colours */
+#dashboard-screen .db-tone-blue   { --tone: #2563eb; }
+#dashboard-screen .db-tone-violet { --tone: #7c3aed; }
+#dashboard-screen .db-tone-orange { --tone: #ea580c; }
+#dashboard-screen .db-tone-green  { --tone: #16a34a; }
+#dashboard-screen .db-tone-amber  { --tone: #d97706; }
+#dashboard-screen .db-tone-red    { --tone: #dc2626; }
+[data-theme="dark"] #dashboard-screen .db-tone-blue   { --tone: #60a5fa; }
+[data-theme="dark"] #dashboard-screen .db-tone-violet { --tone: #a78bfa; }
+[data-theme="dark"] #dashboard-screen .db-tone-orange { --tone: #fb923c; }
+[data-theme="dark"] #dashboard-screen .db-tone-green  { --tone: #4ade80; }
+[data-theme="dark"] #dashboard-screen .db-tone-amber  { --tone: #fbbf24; }
+[data-theme="dark"] #dashboard-screen .db-tone-red    { --tone: #f87171; }
+#dashboard-screen :is(.db-stat-icon, .db-action-icon, .db-head-icon, .db-act-icon) {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  color: var(--tone, var(--db-primary));
+  background: color-mix(in srgb, var(--tone, var(--db-primary)) 12%, transparent);
+}
+#dashboard-screen :is(.db-stat-icon, .db-action-icon, .db-head-icon, .db-act-icon) svg {
+  fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ---------- Page ---------- */
+#dashboard-screen .dash-shell { max-width: 1240px; padding: 32px 36px 56px; gap: 24px; }
+
+/* ---------- Header ---------- */
+#dashboard-screen .dashboard-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+#dashboard-screen .db-date {
+  display: block; margin-bottom: 4px; font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--db-muted);
+}
+#dashboard-screen .dash-greeting h2 { font-size: clamp(1.25rem, 1.2vw + 1rem, 1.85rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.2; }
+#dashboard-screen #dash-user-name { margin-top: 6px; font-size: 0.95rem; color: var(--db-muted); }
+#dashboard-screen .dash-header-actions { display: flex; align-items: center; gap: 10px; }
+#dashboard-screen .bell-btn {
+  width: 44px; height: 44px; border-radius: 14px;
+  background: var(--db-surface); border: 1px solid var(--db-border); box-shadow: var(--db-shadow-sm);
+  color: var(--db-text);
+}
+#dashboard-screen .bell-btn:hover { border-color: var(--db-primary); color: var(--db-primary); }
+#dashboard-screen .bell-dot { top: 9px; right: 10px; }
+
+/* ---------- Cards ---------- */
+#dashboard-screen .dash-card {
+  position: relative; padding: 24px; border-radius: 22px;
+  background: var(--db-surface); border: 1px solid var(--db-border); box-shadow: var(--db-shadow-sm);
+}
+#dashboard-screen .db-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+#dashboard-screen .db-card-head h3 { display: flex; align-items: center; gap: 10px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+#dashboard-screen .db-head-icon { width: 32px; height: 32px; border-radius: 10px; font-size: 0.95rem; }
+#dashboard-screen .db-head-icon svg { width: 17px; height: 17px; }
+#dashboard-screen .db-muted { font-size: 0.88rem; line-height: 1.5; color: var(--db-muted); margin-top: 4px; }
+#dashboard-screen .db-empty {
+  padding: 22px 16px; border-radius: 14px; text-align: center;
+  background: var(--db-tint); border: 1px dashed var(--db-border);
+  font-size: 0.88rem; line-height: 1.5; color: var(--db-muted);
+}
+#dashboard-screen .dash-link-btn {
+  padding: 6px 10px; margin: -4px -6px 0 0; border-radius: 8px;
+  font-size: 0.85rem; font-weight: 600; color: var(--db-primary);
+  transition: background 0.15s ease;
+}
+#dashboard-screen .dash-link-btn:hover { background: color-mix(in srgb, var(--db-primary) 10%, transparent); }
+
+/* ---------- Rows ---------- */
+/* ---------- Layout ----------
+   Phones: one column. Tablets / small laptops: a two-column grid.
+   Wide screens: a main column plus a side rail. The .db-main and .db-rail
+   wrappers only exist as columns on wide screens; below that they "dissolve"
+   (display: contents) and the order classes set the sequence of cards. */
+#dashboard-screen .db-layout { display: flex; flex-direction: column; gap: 20px; }
+#dashboard-screen .db-main, #dashboard-screen .db-rail { display: contents; }
+#dashboard-screen .db-o-hero      { order: 1; }
+#dashboard-screen .db-o-streak    { order: 2; }
+#dashboard-screen .db-o-stats     { order: 3; }
+#dashboard-screen .db-o-start     { order: 4; }
+#dashboard-screen .db-o-countdown { order: 5; }
+#dashboard-screen .db-o-subjects  { order: 6; }
+#dashboard-screen .db-o-weak      { order: 7; }
+#dashboard-screen .db-o-recent    { order: 8; }
+#dashboard-screen .db-o-tip       { order: 9; }
+#dashboard-screen .db-block { display: flex; flex-direction: column; gap: 14px; }
+
+@media (min-width: 640px) and (max-width: 1279px) {
+  #dashboard-screen .db-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+  #dashboard-screen :is(.db-o-hero, .db-o-stats, .db-o-start, .db-o-subjects, .db-o-tip) { grid-column: 1 / -1; }
+  #dashboard-screen :is(.db-o-streak, .db-o-countdown, .db-o-weak, .db-o-recent) { align-self: stretch; }
+  /* pair the small cards side by side */
+  #dashboard-screen .db-o-countdown { order: 2; }
+  #dashboard-screen .db-o-stats     { order: 4; }
+}
+@media (min-width: 1280px) {
+  #dashboard-screen .db-layout { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 24px; align-items: start; }
+  #dashboard-screen .db-main, #dashboard-screen .db-rail { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+  #dashboard-screen .db-rail { position: sticky; top: 24px; }
+}
+
+/* ---------- Continue card (blue banner) ---------- */
+#dashboard-screen .db-hero {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 30px; overflow: hidden; color: #fff; border: none;
+  background: linear-gradient(135deg, #0d6efd 0%, #2b55e6 55%, #6d3df0 100%);
+  box-shadow: 0 24px 48px -24px rgba(13, 110, 253, 0.7);
+}
+[data-theme="dark"] #dashboard-screen .db-hero { background: linear-gradient(135deg, #1d5fe0 0%, #2a47c4 55%, #5b32c9 100%); }
+#dashboard-screen .db-hero::before, #dashboard-screen .db-hero::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none; }
+#dashboard-screen .db-hero::before { width: 320px; height: 320px; right: -90px; top: -160px; background: radial-gradient(circle, rgba(255, 255, 255, 0.22), transparent 70%); }
+#dashboard-screen .db-hero::after { width: 240px; height: 240px; left: 30%; bottom: -170px; background: radial-gradient(circle, rgba(255, 255, 255, 0.14), transparent 70%); }
+#dashboard-screen .db-hero > * { position: relative; z-index: 1; }
+#dashboard-screen .db-hero-text { flex: 1; min-width: 0; }
+#dashboard-screen .db-hero-eyebrow {
+  display: inline-block; margin-bottom: 12px; padding: 5px 11px; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+}
+#dashboard-screen .db-hero h3 { font-size: clamp(1.3rem, 1vw + 1rem, 1.7rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 6px; }
+#dashboard-screen .db-hero-sub { font-size: 0.92rem; opacity: 0.88; }
+#dashboard-screen .db-hero-progress { display: flex; align-items: center; gap: 12px; margin: 20px 0 22px; max-width: 420px; }
+#dashboard-screen .db-hero-progress .dash-progress-track { flex: 1; margin: 0; height: 8px; background: rgba(255, 255, 255, 0.22); }
+#dashboard-screen .db-hero-progress .dash-progress-fill { background: #fff; box-shadow: 0 0 12px rgba(255, 255, 255, 0.6); }
+#dashboard-screen #db-continue-pct { font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; min-width: 3ch; }
+
+#dashboard-screen .db-hero-art { position: relative; width: 128px; height: 128px; flex-shrink: 0; }
+#dashboard-screen .db-ring { width: 100%; height: 100%; transform: rotate(-90deg); }
+#dashboard-screen .db-ring circle { fill: none; stroke-width: 10; }
+#dashboard-screen .db-ring-track { stroke: rgba(255, 255, 255, 0.18); }
+#dashboard-screen .db-ring-fill {
+  stroke: #fff; stroke-linecap: round;
+  stroke-dasharray: 314.16; stroke-dashoffset: 314.16;
+  transition: stroke-dashoffset 1.2s var(--db-ease) 0.3s;
+}
+#dashboard-screen .db-ring-icon {
+  position: absolute; inset: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.14); font-size: 2rem;
+}
+
+/* Buttons */
+#dashboard-screen .db-btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px;
+  border-radius: 12px; border: none; cursor: pointer;
+  font-size: 0.92rem; font-weight: 600;
+  transition: transform 0.2s var(--db-ease), box-shadow 0.2s ease;
+}
+#dashboard-screen .db-btn svg { transition: transform 0.2s var(--db-ease); }
+#dashboard-screen .db-btn--light { background: #fff; color: #0b3fb5; box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.35); }
+#dashboard-screen .db-btn:active { transform: scale(0.98); }
+#dashboard-screen .dash-btn-primary {
+  padding: 11px 20px; border-radius: 12px; font-weight: 600;
+  background: linear-gradient(135deg, var(--db-primary), color-mix(in srgb, var(--db-primary) 70%, var(--db-accent)));
+  box-shadow: 0 10px 22px -10px color-mix(in srgb, var(--db-primary) 80%, transparent);
+  transition: transform 0.2s var(--db-ease), box-shadow 0.2s ease;
+}
+@media (hover: hover) {
+  #dashboard-screen .db-btn:hover { transform: translateY(-1px); box-shadow: 0 12px 26px -8px rgba(0, 0, 0, 0.4); }
+  #dashboard-screen .db-btn:hover svg { transform: translateX(3px); }
+  #dashboard-screen .dash-btn-primary:hover { transform: translateY(-1px); filter: none; }
+}
+
+/* ---------- Streak ---------- */
+#dashboard-screen .db-streak { display: flex; flex-direction: column; }
+#dashboard-screen .db-streak .db-card-head { margin-bottom: 10px; }
+#dashboard-screen .db-streak .db-head-icon { background: color-mix(in srgb, #f59e0b 16%, transparent); }
+#dashboard-screen .dash-streak-number { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; margin: 0; font-variant-numeric: tabular-nums; }
+#dashboard-screen .dash-streak-number span { font-size: 1rem; font-weight: 600; letter-spacing: 0; color: var(--db-muted); margin-left: 4px; }
+#dashboard-screen .streak-dots { display: flex; justify-content: space-between; gap: 6px; margin-top: auto; padding-top: 20px; }
+#dashboard-screen .streak-dot {
+  width: 38px; height: 38px; border-radius: 12px; font-size: 0.78rem; font-weight: 700;
+  background: var(--db-tint); border: 1px solid var(--db-border); color: var(--db-muted);
+  transition: transform 0.2s var(--db-ease);
+}
+#dashboard-screen .streak-dot.is-complete {
+  background: linear-gradient(135deg, #fbbf24, #f97316 55%, #ef4444); border-color: transparent; color: #fff;
+  box-shadow: 0 6px 14px -6px rgba(239, 68, 68, 0.7);
+}
+#dashboard-screen .streak-dot.is-today { outline: none; border: 2px solid var(--dash-warning); color: var(--db-text); }
+#dashboard-screen .streak-dot.is-today.is-complete { border-color: #fff; box-shadow: 0 0 0 2px var(--dash-warning), 0 6px 14px -6px rgba(239, 68, 68, 0.7); }
+
+/* ---------- Numbers ---------- */
+#dashboard-screen .db-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (min-width: 640px) { #dashboard-screen .db-stats { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 18px; } }
+#dashboard-screen .db-stat {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 18px 20px; border-radius: 20px;
+  background: var(--db-surface); border: 1px solid var(--db-border); box-shadow: var(--db-shadow-sm);
+}
+#dashboard-screen .db-stat-icon { width: 46px; height: 46px; border-radius: 14px; }
+#dashboard-screen .db-stat-icon svg { width: 22px; height: 22px; }
+#dashboard-screen .db-stat strong { display: block; font-size: 1.55rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+#dashboard-screen .db-stat span:not(.db-stat-icon) { display: block; margin-top: 2px; font-size: 0.8rem; font-weight: 500; color: var(--db-muted); }
+
+/* ---------- Start studying ---------- */
+#dashboard-screen .db-section-title { margin: 0; }
+#dashboard-screen .db-section-title h3 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
+#dashboard-screen .db-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (min-width: 640px) { #dashboard-screen .db-actions { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 18px; } }
+#dashboard-screen .db-action {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+  padding: 20px; border-radius: 20px; text-align: left; cursor: pointer;
+  background: var(--db-surface); border: 1px solid var(--db-border); box-shadow: var(--db-shadow-sm); color: var(--db-text);
+  transition: transform 0.25s var(--db-ease), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+#dashboard-screen .db-action::after {      /* arrow in the corner */
+  content: ""; position: absolute; top: 26px; right: 22px; width: 7px; height: 7px;
+  border: solid var(--db-muted); border-width: 2px 2px 0 0; transform: rotate(45deg);
+  opacity: 0.5; transition: transform 0.25s var(--db-ease), opacity 0.2s ease, border-color 0.2s ease;
+}
+#dashboard-screen .db-action-icon { width: 44px; height: 44px; border-radius: 14px; margin-bottom: 12px; transition: transform 0.3s var(--db-ease); }
+#dashboard-screen .db-action-icon svg { width: 22px; height: 22px; }
+#dashboard-screen .db-action strong { font-size: 0.98rem; font-weight: 700; }
+#dashboard-screen .db-action span:not(.db-action-icon) { font-size: 0.82rem; color: var(--db-muted); }
+#dashboard-screen .db-action:active { transform: scale(0.98); }
+#dashboard-screen .db-action:focus-visible,
+#dashboard-screen .dash-subject-tile:focus-visible,
+#dashboard-screen .dash-add-subject-tile:focus-visible { outline: 3px solid color-mix(in srgb, var(--db-primary) 45%, transparent); outline-offset: 2px; }
+@media (hover: hover) {
+  #dashboard-screen .db-action:hover { transform: translateY(-3px); box-shadow: var(--db-shadow); border-color: color-mix(in srgb, var(--db-primary) 35%, var(--db-border)); }
+  #dashboard-screen .db-action:hover::after { transform: translateX(3px) rotate(45deg); opacity: 1; border-color: var(--db-primary); }
+  #dashboard-screen .db-action:hover .db-action-icon { transform: scale(1.08) rotate(-4deg); }
+}
+
+/* ---------- Quick access (pinned subjects) ---------- */
+#dashboard-screen .db-subjects .db-card-head { margin-bottom: 18px; }
+#dashboard-screen .dash-subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); gap: 12px; }
+#dashboard-screen .dash-subject-tile {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  padding: 18px 10px 16px; border-radius: 18px; text-align: center; cursor: pointer;
+  background: var(--db-tint); border: 1px solid var(--db-border); color: var(--db-text);
+  transition: transform 0.25s var(--db-ease), box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+#dashboard-screen .db-subj-icon {
+  width: 50px; height: 50px; border-radius: 16px; display: flex; align-items: center; justify-content: center;
+  background: var(--db-surface); border: 1px solid var(--db-border); box-shadow: var(--db-shadow-sm);
+  font-size: 1.5rem; transition: transform 0.3s var(--db-ease);
+}
+#dashboard-screen .db-subj-name { font-size: 0.86rem; font-weight: 600; line-height: 1.25; }
+#dashboard-screen .dash-add-subject-tile {
+  min-height: 0; padding: 18px 10px 16px; border-radius: 18px; gap: 10px;
+  border: 1.5px dashed var(--db-border); color: var(--db-muted); font-size: 0.86rem; font-weight: 600;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+#dashboard-screen .dash-add-subject-tile .plus-icon {
+  width: 50px; height: 50px; border-radius: 16px; display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; font-weight: 400; background: color-mix(in srgb, var(--db-primary) 8%, transparent); color: var(--db-primary);
+  transition: transform 0.3s var(--db-ease);
+}
+#dashboard-screen .dash-add-subject-tile:hover { border-color: var(--db-primary); color: var(--db-primary); background: color-mix(in srgb, var(--db-primary) 4%, transparent); }
+#dashboard-screen .dash-subject-tile:active { transform: scale(0.97); }
+#dashboard-screen .pinned-empty {
+  grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; gap: 14px;
+  padding: 26px 16px; border-radius: 16px; background: var(--db-tint); border: 1px dashed var(--db-border);
+}
+#dashboard-screen .pinned-empty p { font-size: 0.9rem; color: var(--db-muted); }
+@media (hover: hover) {
+  #dashboard-screen .dash-subject-tile:hover {
+    transform: translateY(-3px); background: var(--db-surface);
+    border-color: color-mix(in srgb, var(--db-primary) 40%, var(--db-border)); box-shadow: var(--db-shadow);
+  }
+  #dashboard-screen .dash-subject-tile:hover .db-subj-icon { transform: scale(1.1) rotate(-6deg); }
+  #dashboard-screen .dash-add-subject-tile:hover .plus-icon { transform: rotate(90deg); }
+}
+
+/* ---------- Weak topics ---------- */
+#dashboard-screen .dash-weak-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(70px, 1.1fr) auto; align-items: center; gap: 14px;
+  padding: 12px 0; margin: 0; border-bottom: 1px solid var(--db-border); font-size: 0.9rem;
+}
+#dashboard-screen .dash-weak-row:last-child { border-bottom: none; padding-bottom: 0; }
+#dashboard-screen .dash-weak-row:first-child { padding-top: 0; }
+#dashboard-screen .db-weak-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#dashboard-screen .dash-weak-row .dash-progress-track { margin: 0; height: 8px; background: var(--db-tint); border: 1px solid var(--db-border); }
+#dashboard-screen .dash-weak-row .dash-progress-fill { background: linear-gradient(90deg, #f97316, var(--dash-danger)) !important; }
+#dashboard-screen .dash-weak-pct {
+  min-width: 48px; padding: 3px 8px; border-radius: 999px; text-align: center;
+  font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  color: var(--dash-danger); background: color-mix(in srgb, var(--dash-danger) 12%, transparent);
+}
+
+/* ---------- Recent activity ---------- */
+#dashboard-screen .dash-activity-row {
+  display: flex; align-items: center; gap: 14px; padding: 12px 0; font-size: 0.9rem;
+  border-bottom: 1px solid var(--db-border);
+}
+#dashboard-screen .dash-activity-row:first-child { padding-top: 0; }
+#dashboard-screen .dash-activity-row:last-child { border-bottom: none; padding-bottom: 0; }
+#dashboard-screen .db-act-icon { width: 40px; height: 40px; border-radius: 12px; }
+#dashboard-screen .db-act-icon svg { width: 19px; height: 19px; }
+#dashboard-screen .db-act-body { flex: 1; min-width: 0; }
+#dashboard-screen .db-act-body strong { display: block; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#dashboard-screen .db-act-body span { display: block; margin-top: 2px; font-size: 0.8rem; color: var(--db-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#dashboard-screen .db-act-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
+#dashboard-screen .db-score {
+  padding: 3px 9px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  --score: var(--dash-success);
+  color: var(--score); background: color-mix(in srgb, var(--score) 13%, transparent);
+}
+#dashboard-screen .db-score--mid { --score: #d97706; }
+#dashboard-screen .db-score--low { --score: var(--dash-danger); }
+[data-theme="dark"] #dashboard-screen .db-score--mid { --score: #fbbf24; }
+#dashboard-screen .db-act-when { font-size: 0.75rem; color: var(--db-muted); white-space: nowrap; }
+
+/* ---------- Tablets and phones ---------- */
+@media (max-width: 900px) {
+  #dashboard-screen .dash-shell { padding: 14px 16px 40px; gap: 18px; }
+  #dashboard-screen .dashboard-header { padding-left: 0; min-height: 0; }
+  #dashboard-screen .db-header-btn span { display: none; }
+  #dashboard-screen .db-header-btn { width: 40px; padding: 0; justify-content: center; }
+  #dashboard-screen #dash-date { display: block; font-size: 0.7rem; margin-bottom: 2px; }
+  #dashboard-screen .dash-greeting h2 { font-size: 1.15rem; }
+  #dashboard-screen .bell-btn { width: 40px; height: 40px; border-radius: 12px; }
+  #dashboard-screen .dash-card { padding: 20px; border-radius: 20px; }
+  #dashboard-screen .db-hero { padding: 24px 22px; }
+  #dashboard-screen .db-btn { width: 100%; justify-content: center; padding: 13px 18px; }
+  #dashboard-screen .db-stats, #dashboard-screen .db-actions { gap: 12px; }
+  #dashboard-screen .db-stat { flex-direction: column; align-items: flex-start; gap: 12px; padding: 16px; }
+  #dashboard-screen .db-stat-icon { width: 40px; height: 40px; border-radius: 12px; }
+  #dashboard-screen .db-stat strong { font-size: 1.35rem; }
+  #dashboard-screen .db-action { padding: 16px; }
+  #dashboard-screen .db-action-icon { width: 40px; height: 40px; border-radius: 12px; margin-bottom: 10px; }
+  #dashboard-screen .db-action::after { top: 22px; right: 18px; }
+  #dashboard-screen .dash-subject-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  #dashboard-screen .dash-subject-tile { padding: 14px 6px 12px; gap: 8px; }
+  #dashboard-screen .db-subj-icon { width: 44px; height: 44px; font-size: 1.3rem; border-radius: 14px; }
+  #dashboard-screen .db-subj-name { font-size: 0.78rem; }
+  #dashboard-screen .dash-add-subject-tile { grid-column: auto; flex-direction: column; min-height: 0; padding: 14px 6px 12px; font-size: 0.78rem; }
+  #dashboard-screen .dash-add-subject-tile .plus-icon { width: 44px; height: 44px; border-radius: 14px; font-size: 1.3rem; }
+  #dashboard-screen .dash-btn-primary { width: auto; }
+}
+@media (max-width: 520px) {
+  #dashboard-screen .db-hero-art { display: none; }
+  #dashboard-screen .streak-dot { width: 34px; height: 34px; border-radius: 10px; }
+}
+@media (min-width: 521px) and (max-width: 900px) {
+  #dashboard-screen .db-hero-art { width: 104px; height: 104px; }
+  #dashboard-screen .db-ring-icon { inset: 18px; font-size: 1.6rem; }
+}
+
+/* =====================================================================
+   MOTION. Replays each time the dashboard opens (display none → block).
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  #dashboard-screen .dashboard-header { animation: db-fade-down 0.6s var(--db-ease) backwards; }
+  #dashboard-screen [class*="db-o-"] { animation: db-rise 0.6s var(--db-ease) backwards; }
+  #dashboard-screen .db-o-hero      { animation-delay: 0.05s; }
+  #dashboard-screen .db-o-streak    { animation-delay: 0.12s; }
+  #dashboard-screen .db-o-stats     { animation-delay: 0.16s; }
+  #dashboard-screen .db-o-countdown { animation-delay: 0.2s; }
+  #dashboard-screen .db-o-start     { animation-delay: 0.22s; }
+  #dashboard-screen .db-o-weak      { animation-delay: 0.28s; }
+  #dashboard-screen .db-o-subjects  { animation-delay: 0.3s; }
+  #dashboard-screen .db-o-tip       { animation-delay: 0.36s; }
+  #dashboard-screen .db-o-recent    { animation-delay: 0.38s; }
+  #dashboard-screen :is(.db-stats, .db-actions) > * { animation: db-rise 0.55s var(--db-ease) backwards; }
+  #dashboard-screen :is(.db-stats, .db-actions) > :nth-child(1) { animation-delay: 0.18s; }
+  #dashboard-screen :is(.db-stats, .db-actions) > :nth-child(2) { animation-delay: 0.24s; }
+  #dashboard-screen :is(.db-stats, .db-actions) > :nth-child(3) { animation-delay: 0.3s; }
+  #dashboard-screen :is(.db-stats, .db-actions) > :nth-child(4) { animation-delay: 0.36s; }
+
+  #dashboard-screen .db-hero::before { animation: db-float 10s ease-in-out infinite; }
+  #dashboard-screen .db-hero::after  { animation: db-float 13s ease-in-out -5s infinite reverse; }
+  #dashboard-screen .db-ring-icon { animation: db-bob 4s ease-in-out infinite; }
+  #dashboard-screen .dash-progress-fill { transform-origin: left center; animation: db-grow 1.1s var(--db-ease) 0.35s backwards; }
+  #dashboard-screen .dash-progress-fill { position: relative; overflow: hidden; }
+  #dashboard-screen .db-hero .dash-progress-fill::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    transform: translateX(-100%); animation: db-glide 2.8s ease-in-out 1.6s infinite;
+  }
+
+  #dashboard-screen .streak-dot { animation: db-pop 0.45s var(--db-ease) backwards; }
+  #dashboard-screen .streak-dot:nth-child(1) { animation-delay: 0.3s; }
+  #dashboard-screen .streak-dot:nth-child(2) { animation-delay: 0.35s; }
+  #dashboard-screen .streak-dot:nth-child(3) { animation-delay: 0.4s; }
+  #dashboard-screen .streak-dot:nth-child(4) { animation-delay: 0.45s; }
+  #dashboard-screen .streak-dot:nth-child(5) { animation-delay: 0.5s; }
+  #dashboard-screen .streak-dot:nth-child(6) { animation-delay: 0.55s; }
+  #dashboard-screen .streak-dot:nth-child(7) { animation-delay: 0.6s; }
+  #dashboard-screen .streak-dot.is-today { animation: db-pop 0.45s var(--db-ease) backwards, db-pulse 2.2s ease-out 1.2s infinite; }
+  #dashboard-screen .db-streak .db-head-icon { animation: db-flicker 2.4s ease-in-out infinite; }
+
+  #dashboard-screen .dash-subject-grid > * { animation: db-pop 0.45s var(--db-ease) backwards; }
+  #dashboard-screen .dash-subject-grid > :nth-child(1) { animation-delay: 0.3s; }
+  #dashboard-screen .dash-subject-grid > :nth-child(2) { animation-delay: 0.35s; }
+  #dashboard-screen .dash-subject-grid > :nth-child(3) { animation-delay: 0.4s; }
+  #dashboard-screen .dash-subject-grid > :nth-child(4) { animation-delay: 0.45s; }
+  #dashboard-screen .dash-subject-grid > :nth-child(5) { animation-delay: 0.5s; }
+  #dashboard-screen .dash-subject-grid > :nth-child(n+6) { animation-delay: 0.55s; }
+
+  #dashboard-screen :is(.dash-weak-row, .dash-activity-row) { animation: db-slide-in 0.45s ease backwards; }
+  #dashboard-screen :is(.dash-weak-row, .dash-activity-row):nth-child(1) { animation-delay: 0.4s; }
+  #dashboard-screen :is(.dash-weak-row, .dash-activity-row):nth-child(2) { animation-delay: 0.46s; }
+  #dashboard-screen :is(.dash-weak-row, .dash-activity-row):nth-child(3) { animation-delay: 0.52s; }
+  #dashboard-screen :is(.dash-weak-row, .dash-activity-row):nth-child(4) { animation-delay: 0.58s; }
+  #dashboard-screen :is(.dash-weak-row, .dash-activity-row):nth-child(n+5) { animation-delay: 0.64s; }
+
+  #dashboard-screen .dash-wave { display: inline-block; transform-origin: 70% 80%; animation: db-wave 2.2s ease-in-out 0.6s 2; }
+  #dashboard-screen .bell-btn { transition: transform 0.3s var(--db-ease), border-color 0.15s ease, color 0.15s ease; }
+  #dashboard-screen .bell-btn:hover { transform: rotate(-12deg); }
+  #dashboard-screen .bell-dot.is-on { animation: db-pulse-red 2s ease-out infinite; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #dashboard-screen .db-ring-fill { transition: none; }
+}
+
+@keyframes db-rise      { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes db-fade-down { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+@keyframes db-slide-in  { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: none; } }
+@keyframes db-pop       { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: none; } }
+@keyframes db-grow      { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes db-glide     { 0% { transform: translateX(-100%); } 60%, 100% { transform: translateX(100%); } }
+@keyframes db-float     { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-24px, 18px) scale(1.1); } }
+@keyframes db-bob       { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes db-flicker   { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.08) rotate(-4deg); } }
+@keyframes db-wave      { 0%, 60%, 100% { transform: rotate(0); } 10%, 30% { transform: rotate(16deg); } 20%, 40% { transform: rotate(-8deg); } }
+@keyframes db-pulse     { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--dash-warning) 55%, transparent); } 80%, 100% { box-shadow: 0 0 0 10px transparent; } }
+@keyframes db-pulse-red { 0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); } 80%, 100% { box-shadow: 0 0 0 8px transparent; } }
+
+/* =====================================================================
+   Header button, exam countdown, study tip (added with the nav redesign)
+   ===================================================================== */
+#dashboard-screen .db-header-btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border-radius: 14px; cursor: pointer;
+  background: var(--db-surface); border: 1px solid var(--db-border); box-shadow: var(--db-shadow-sm);
+  color: var(--db-muted); font-size: 0.88rem; font-weight: 500;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+#dashboard-screen .db-header-btn:hover { border-color: var(--db-primary); color: var(--db-primary); }
+#dashboard-screen .db-header-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* Stat tiles: a soft colour wash in the corner */
+#dashboard-screen .db-stat { position: relative; overflow: hidden; }
+#dashboard-screen .db-stat::after {
+  content: ""; position: absolute; right: -30px; top: -30px; width: 100px; height: 100px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, color-mix(in srgb, var(--tone, var(--db-primary)) 14%, transparent), transparent 70%);
+}
+#dashboard-screen .db-stat:has(.db-tone-blue)   { --tone: #2563eb; }
+#dashboard-screen .db-stat:has(.db-tone-violet) { --tone: #7c3aed; }
+#dashboard-screen .db-stat:has(.db-tone-green)  { --tone: #16a34a; }
+#dashboard-screen .db-stat:has(.db-tone-amber)  { --tone: #d97706; }
+
+/* Exam countdown */
+#dashboard-screen .db-countdown {
+  background:
+    radial-gradient(300px 160px at 100% 0%, color-mix(in srgb, var(--db-accent) 12%, transparent), transparent 70%),
+    var(--db-surface);
+}
+#dashboard-screen .db-countdown-num { display: flex; align-items: baseline; gap: 8px; }
+#dashboard-screen .db-countdown-num strong {
+  font-size: 2.8rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums;
+  background: linear-gradient(120deg, var(--db-primary), var(--db-accent)); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+#dashboard-screen .db-countdown-num span { font-size: 0.95rem; font-weight: 600; color: var(--db-muted); }
+#dashboard-screen .db-countdown-date { margin-top: 8px; font-size: 0.86rem; color: var(--db-muted); }
+#dashboard-screen .db-countdown-bar { margin-top: 16px; height: 8px; border-radius: 999px; background: var(--db-tint); border: 1px solid var(--db-border); overflow: hidden; }
+#dashboard-screen .db-countdown-bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--db-primary), var(--db-accent)); }
+#dashboard-screen .db-countdown-msg { font-size: 0.9rem; line-height: 1.55; color: var(--db-muted); margin-bottom: 14px; }
+#dashboard-screen .db-countdown-form { display: flex; flex-direction: column; gap: 8px; }
+#dashboard-screen .db-countdown-form[hidden] { display: none; }
+#dashboard-screen .db-countdown-row { display: flex; gap: 8px; }
+#dashboard-screen .db-date-input {
+  flex: 1; min-width: 0; height: 42px; padding: 0 12px; border-radius: 12px;
+  background: var(--db-tint); border: 1px solid var(--db-border); color: var(--db-text);
+  font-family: inherit; font-size: 0.9rem; color-scheme: light dark;
+}
+#dashboard-screen .db-date-input:focus { outline: none; border-color: var(--db-primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--db-primary) 20%, transparent); }
+#dashboard-screen .db-countdown .dash-btn-primary { height: 42px; padding: 0 18px; width: auto; }
+#dashboard-screen .db-countdown-set { width: 100%; }
+
+/* Study tip */
+#dashboard-screen .db-tip {
+  background:
+    radial-gradient(280px 160px at 0% 100%, color-mix(in srgb, #f59e0b 13%, transparent), transparent 70%),
+    var(--db-surface);
+}
+#dashboard-screen .db-tip-text { font-size: 0.95rem; line-height: 1.6; color: var(--db-text); }
+#dashboard-screen .db-tip-text.is-changing { animation: db-tip-in 0.4s var(--db-ease); }
+@keyframes db-tip-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* Rail cards on wide screens: a little tighter */
+@media (min-width: 1280px) {
+  #dashboard-screen .db-rail .dash-card { padding: 22px; }
+  #dashboard-screen .db-rail .streak-dot { width: 34px; height: 34px; border-radius: 10px; }
+  #dashboard-screen .db-rail .dash-streak-number { font-size: 2.3rem; }
+}

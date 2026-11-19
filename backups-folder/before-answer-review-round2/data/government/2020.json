@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Politics according to Harold Lasswell is defined as",
+    "options": [
+      "activities of political parties and pressure groups.",
+      "authoritative allocation of values.",
+      "who gets what, when and how.",
+      "activities associated with the governance of a state."
+    ],
+    "answer": "C",
+    "explanation": "Harold Lasswell famously defined politics as 'who gets what, when and how.' This definition emphasizes the distribution of power and resources in society. David Easton defined politics as the 'authoritative allocation of values.'"
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The sub-discipline of politics which focuses on the similarities and differences between political systems is called",
+    "options": [
+      "comparative study.",
+      "comparative relations.",
+      "comparative politics.",
+      "comparative systems."
+    ],
+    "answer": "C",
+    "explanation": "Comparative politics is the sub-discipline of political science that studies and compares political systems, institutions, processes, and behaviours across different countries to identify similarities and differences."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The only political institution that can use legitimate force to command obedience of people in a State is called",
+    "options": [
+      "Police.",
+      "Government.",
+      "Army.",
+      "Customs."
+    ],
+    "answer": "B",
+    "explanation": "Government is the only political institution that possesses the legitimate authority to use force (coercion) to command obedience within a state. This is a key characteristic of government — the monopoly of legitimate force."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Which of the following is NOT a form of political activity?",
+    "options": [
+      "Voter registration.",
+      "Voting in an election.",
+      "Contesting an election.",
+      "Getting a job in an electoral institution."
+    ],
+    "answer": "D",
+    "explanation": "Getting a job in an electoral institution is not a form of political activity — it is employment. Political activities include voter registration, voting, contesting elections, campaigning, and political participation. Working in an electoral institution is administrative, not political."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Which of the following is NOT a feature of a nation?",
+    "options": [
+      "Common ancestral history.",
+      "Common language.",
+      "Homogeneity.",
+      "Heterogeneity."
+    ],
+    "answer": "D",
+    "explanation": "Heterogeneity (diversity) is NOT a feature of a nation. A nation is characterized by common ancestral history, common language, culture, and homogeneity (shared identity). Heterogeneity describes diversity within a society, which is more characteristic of a state or multi-ethnic society."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The branch of politics that deals with the study of relations among States is called",
+    "options": [
+      "Comparative Politics.",
+      "International Relations.",
+      "International Relationship.",
+      "Political Theory."
+    ],
+    "answer": "B",
+    "explanation": "International Relations is the branch of political science that studies the relationships between states, international organizations, non-state actors, and the global system. It covers diplomacy, conflict, cooperation, and international law."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "In-depth interview as a data collection procedure is an example of",
+    "options": [
+      "exploratory method.",
+      "quantitative method.",
+      "qualitative method.",
+      "inductive method."
+    ],
+    "answer": "C",
+    "explanation": "In-depth interviews are a qualitative method of data collection — they gather non-numerical, descriptive information about people's experiences, opinions, and perspectives. Quantitative methods use numerical data and statistical analysis."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Sovereignty in an absolute monarchical system is vested in the",
+    "options": [
+      "constitution.",
+      "people.",
+      "king.",
+      "Parliament."
+    ],
+    "answer": "C",
+    "explanation": "In an absolute monarchy, sovereignty is vested in the king (monarch) — the monarch has supreme and unrestricted power. The constitution (if any) is subordinate to the monarch's will, and the people or parliament have no authority."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Government is a necessity in human society because it maintains",
+    "options": [
+      "different human associations.",
+      "peace and conflicts.",
+      "numerous ethnic groups.",
+      "law and order."
+    ],
+    "answer": "D",
+    "explanation": "Government is necessary in human society because it maintains law and order — it establishes and enforces laws, resolves disputes, and ensures the security and stability of society. Without government, there would be chaos (state of nature)."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Definite territory as a feature of a state implies that it is located",
+    "options": [
+      "everywhere without boundary.",
+      "in a particular geographical area with unlimited boundary.",
+      "in a particular geographical area with limited boundary.",
+      "anywhere there is access to land."
+    ],
+    "answer": "C",
+    "explanation": "A state has a definite territory — a specific geographical area with recognized and limited boundaries. Sovereignty is exercised within these boundaries. A state cannot have unlimited or undefined boundaries."
+  },
+{
+    "subject": "Government",
+    "year": 2020,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The type of influence where 'A' is able to anticipate the behaviour of 'B' is called",
+    "options": [
+      "indirect influence.",
+      "exclusive influence.",
+      "manifest influence.",
+      "implicit influence."
+    ],
+    "answer": "D",
+    "explanation": "Implicit influence is the closest match — it refers to influence that is understood without being directly expressed. When 'A' anticipates 'B's behaviour, it involves implicit understanding and expectations rather than direct persuasion or observable action. Manifest influence is direct and observable, which does not fit the concept of anticipation."
+},
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The most suitable form of government for a multi-ethnic society is the",
+    "options": [
+      "parliamentary system.",
+      "federal system.",
+      "unitary system.",
+      "confederal system."
+    ],
+    "answer": "B",
+    "explanation": "A federal system is most suitable for a multi-ethnic society because it accommodates diversity by allowing regions or states to have some autonomy while maintaining a central government for common affairs. It helps to manage ethnic tensions and promote unity in diversity."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Value-free political science means that the discipline should",
+    "options": [
+      "be inter-disciplinary.",
+      "concern itself with quantifiable knowledge.",
+      "emphasize reliable and objective knowledge.",
+      "deal with the ideal."
+    ],
+    "answer": "C",
+    "explanation": "Value-free political science means that the discipline should emphasize reliable and objective knowledge, free from personal biases, values, or normative judgments. It seeks to study politics scientifically, based on facts and empirical evidence rather than opinions."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Feudalism is an ideology in which",
+    "options": [
+      "there is a non-stratified social structure.",
+      "political leadership is based on land ownership.",
+      "the fundamental rights of the citizens are denied.",
+      "there is equality of wealth distribution."
+    ],
+    "answer": "B",
+    "explanation": "Feudalism is a political and social system based on land ownership — land is the source of power and wealth. Lords own land and grant it to vassals in exchange for military service and loyalty. It is hierarchical and stratified, not egalitarian."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "A system in which the major factors of production, distribution and exchange are in the hands of private individuals is called",
+    "options": [
+      "Socialism.",
+      "Capitalism.",
+      "Communism.",
+      "Feudalism."
+    ],
+    "answer": "B",
+    "explanation": "Capitalism is an economic system where the major factors of production, distribution, and exchange are owned and controlled by private individuals and firms, driven by profit motive and market competition. Socialism and communism advocate for collective or state ownership."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The third tier of administrative unit in the Nigerian federation is the",
+    "options": [
+      "state government.",
+      "federal government.",
+      "community government.",
+      "local government."
+    ],
+    "answer": "D",
+    "explanation": "The third tier of administrative unit in the Nigerian federation is the local government — after the federal and state governments. It is the tier closest to the people, responsible for grassroots development and local services."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Public Opinion & Propaganda",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The act of manipulating and distorting information by a state is",
+    "options": [
+      "sanction.",
+      "dialogue.",
+      "propaganda.",
+      "lies."
+    ],
+    "answer": "C",
+    "explanation": "Propaganda is the act of manipulating and distorting information by a state to influence public opinion and shape perceptions in favour of the state's interests. It involves selective presentation of facts, misinformation, and biased communication."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Which one of the following is NOT a proponent of the Social Contract theory?",
+    "options": [
+      "Jean Jacques Rousseau.",
+      "Thomas Aquinas.",
+      "Thomas Hobbes.",
+      "John Locke."
+    ],
+    "answer": "B",
+    "explanation": "Thomas Aquinas is NOT a proponent of the Social Contract theory. He was a medieval theologian and philosopher who wrote about natural law and divine law, not social contract. Hobbes, Locke, and Rousseau are the key social contract theorists."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Africa Before European Invasion and Colonial Conquest",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The Ghana empire in pre-colonial West Africa was founded by the",
+    "options": [
+      "Gao people.",
+      "Timbuktu people.",
+      "Soninke people.",
+      "Madingo people."
+    ],
+    "answer": "C",
+    "explanation": "The Ghana Empire was founded by the Soninke people. It was one of the earliest and most powerful empires in West Africa, flourishing between the 6th and 13th centuries. The Gao people founded the Songhai Empire."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The first set of Europeans to come into Africa were the",
+    "options": [
+      "Portuguese explorers.",
+      "British missionaries.",
+      "Russian miners.",
+      "American slave traders."
+    ],
+    "answer": "A",
+    "explanation": "The first set of Europeans to come into Africa were the Portuguese explorers in the 15th century. Prince Henry the Navigator sponsored expeditions along the West African coast. They were followed by the British, French, Dutch, and others."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The policy of indirect rule was NOT adopted in one of the following colonies.",
+    "options": [
+      "Tanganyika.",
+      "Gold Coast.",
+      "Dahomey.",
+      "Kenya."
+    ],
+    "answer": "C",
+    "explanation": "Dahomey was a French colony where the policy of assimilation (direct rule) was adopted, not indirect rule. Tanganyika, Gold Coast (Ghana), and Kenya were British colonies where indirect rule was used in varying degrees."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Africa Before European Invasion and Colonial Conquest",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Africa is regarded as the cradle of human civilization because",
+    "options": [
+      "Africa is the largest continent.",
+      "early civilizations developed in Africa.",
+      "the first set of human skeletons were discovered in Africa.",
+      "Africa is the richest continent in both human and material resources."
+    ],
+    "answer": "B",
+    "explanation": "Africa is regarded as the cradle of human civilization because early civilizations (Egyptian, Nubian, Axumite, Ghana, Mali, Songhai) developed in Africa. Archaeological evidence shows that human civilization began in Africa. The discovery of early hominid fossils in East Africa also supports this."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Which of the following is a significance of the Berlin Conference that took place between 1884 and 1885?",
+    "options": [
+      "It made the Europeans to develop the politics and economy of Africa.",
+      "It enabled the Europeans to settle communal conflicts in various African Territories.",
+      "It enhanced amicable sharing of African territories among the Europeans.",
+      "It made the Europeans to be the legitimate owners of African territories."
+    ],
+    "answer": "C",
+    "explanation": "The Berlin Conference (1884-1885) was significant because it enhanced the amicable sharing of African territories among European powers. It established the principle of effective occupation and laid down rules for the partition of Africa, without consulting Africans."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The 1970 abolition of non-White political representation in Apartheid South Africa implies that blacks",
+    "options": [
+      "are to vacate all the lands in South Africa.",
+      "no longer have citizenship status like the whites.",
+      "are free to rule themselves.",
+      "are as free as the Whites in their separate lands."
+    ],
+    "answer": "B",
+    "explanation": "The 1970 abolition of non-White political representation in Apartheid South Africa meant that blacks no longer had citizenship status like whites — they were stripped of political rights and representation, and their citizenship was transferred to the Bantustans (homelands)."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "African societies where Europeans were forcibly settled at the expense of the inhabitants is called",
+    "options": [
+      "surrogate colony.",
+      "exploitation colony.",
+      "plantation colony.",
+      "settler colony."
+    ],
+    "answer": "D",
+    "explanation": "A settler colony is a colony where Europeans were forcibly settled at the expense of the indigenous inhabitants. The settlers took over land, displaced Africans, and established permanent European communities. Examples include South Africa, Kenya, Algeria, and Southern Rhodesia."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Which of the following is NOT a function of the Colonial Governor?",
+    "options": [
+      "Appointment of public officers.",
+      "Law making.",
+      "Prerogative of mercy.",
+      "Appointment of secretary of colonies."
+    ],
+    "answer": "D",
+    "explanation": "Appointment of secretary of colonies was NOT a function of the Colonial Governor — this was a function of the British Colonial Office (in London). The Governor's functions included appointment of public officers, law making (with the legislative council), and exercising the prerogative of mercy."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "One negative effect of colonialism in Africa was that it",
+    "options": [
+      "introduced Christianity.",
+      "was authoritarian and dictatorial.",
+      "replaced slavery with colonial practices.",
+      "hated the educated elites."
+    ],
+    "answer": "B",
+    "explanation": "One negative effect of colonialism was that it was authoritarian and dictatorial — colonial rule imposed foreign domination, suppressed local political systems, and denied Africans democratic participation. This had lasting effects on governance in post-colonial Africa."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Administrative accountability in the Civil Service is enforced through",
+    "options": [
+      "ministerial responsibility.",
+      "judicial responsibility.",
+      "mass media.",
+      "interest groups."
+    ],
+    "answer": "A",
+    "explanation": "Administrative accountability in the Civil Service is enforced through ministerial responsibility — ministers are accountable to parliament for the actions and performance of their ministries and departments. This ensures civil servants are answerable to elected officials and the public."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "One feature of Public Corporations that was weakened by privatization is",
+    "options": [
+      "government control.",
+      "social control.",
+      "national integration.",
+      "social harmony."
+    ],
+    "answer": "A",
+    "explanation": "Government control is a key feature of public corporations that is weakened by privatization. Privatization transfers ownership and control from the government to private individuals or firms, reducing government influence over the corporation's operations and policies."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The 1962 political crisis in the Western region was aggravated by the ideological differences between",
+    "options": [
+      "Obafemi Awolowo and D.S Majekodunmi.",
+      "D.S Majekodunmi and S.L Akintola.",
+      "Kofo Abayomi and Samuel Akinsanya.",
+      "S.L Akintola and Obafemi Awolowo."
+    ],
+    "answer": "D",
+    "explanation": "The 1962 Western Region crisis was aggravated by ideological differences between Chief S.L. Akintola (Premier) and Chief Obafemi Awolowo (leader of the Action Group). Their conflict over leadership and policy led to a split in the Action Group and the declaration of a state of emergency in the region."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "One of these political parties did NOT contest the 1979 General Elections in Nigeria.",
+    "options": [
+      "UPN.",
+      "GNPP.",
+      "PRP.",
+      "NAP."
+    ],
+    "answer": "D",
+    "explanation": "NAP (Nigeria Advance Party) did NOT contest the 1979 General Elections in Nigeria. The five parties that contested were: UPN, GNPP, PRP, NPN, and NPP. NAP was formed later and did not contest in 1979."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The three political parties registered by the Independent National Electoral Commission to contest the 1999 elections were",
+    "options": [
+      "PDP, ANPP, APC.",
+      "APP, PDP, AD.",
+      "PDP, ANPP, AD.",
+      "PDP, CAN, AD."
+    ],
+    "answer": "C",
+    "explanation": "The three political parties registered by INEC to contest the 1999 elections were: PDP (People's Democratic Party), ANPP (All Nigeria Peoples Party), and AD (Alliance for Democracy). APP, not ANPP, was the initial name but both were used interchangeably. Option C is the correct set."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The major cause of the 1993 General Election Crisis in Nigeria was the",
+    "options": [
+      "annulment of the June 12 elections.",
+      "introduction of two-party system for the first time in Nigeria.",
+      "refusal of the winner of the election to let go his mandate.",
+      "death of Chief M.K.O Abiola."
+    ],
+    "answer": "A",
+    "explanation": "The major cause of the 1993 General Election Crisis was the annulment of the June 12 presidential elections by General Ibrahim Babangida. The elections were widely believed to have been won by Chief M.K.O Abiola, but the results were annulled, leading to a political crisis."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Elections & Electoral Process in Nigeria",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The option A4 model was used in the conduct of the",
+    "options": [
+      "1983 elections.",
+      "1993 elections.",
+      "1999 elections.",
+      "2007 elections."
+    ],
+    "answer": "B",
+    "explanation": "The Option A4 model was used in the conduct of the 1993 elections in Nigeria. It was a voting system where voters queued behind candidates' photographs. It was part of Babangida's transition program."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "A major characteristic of Fascism is that the government is",
+    "options": [
+      "democratic.",
+      "autocratic.",
+      "popular.",
+      "decentralized."
+    ],
+    "answer": "B",
+    "explanation": "A major characteristic of Fascism is that the government is autocratic — ruled by a dictator with absolute power. Fascism is authoritarian, anti-democratic, and suppresses political opposition, individual rights, and dissent."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Political parties are formed to",
+    "options": [
+      "educate the electorate.",
+      "organize international conferences.",
+      "advise on the appointment of judges.",
+      "hire personnel for political leaders."
+    ],
+    "answer": "A",
+    "explanation": "Political parties are formed to educate the electorate — they inform citizens about policies, campaign for votes, and promote political participation. While they also have other functions, voter education is a primary purpose. Advising on judicial appointments is not a party function."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "One paramount objective of pressure groups is to",
+    "options": [
+      "influence the public.",
+      "influence government decisions.",
+      "organize strikes and demonstrations.",
+      "criticize the actions of government."
+    ],
+    "answer": "B",
+    "explanation": "One paramount objective of pressure groups is to influence government decisions — they seek to shape public policy, legislation, and administrative actions in their favour. While they may use strikes and demonstrations, their ultimate goal is to influence government."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Public Opinion & Propaganda",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Which of these factors will NOT promote public opinion?",
+    "options": [
+      "Press freedom.",
+      "Opinion polls.",
+      "Selection of sampling.",
+      "Freedom of Speech."
+    ],
+    "answer": "C",
+    "explanation": "Selection of sampling is NOT a factor that promotes public opinion — it is a technical aspect of research that can affect the accuracy of opinion polls, but it does not promote public opinion itself. Press freedom, opinion polls, and freedom of speech are essential for public opinion to develop and be expressed."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Elections & Electoral System",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Electoral College has been criticised because it",
+    "options": [
+      "is very expensive.",
+      "creates more seats in the legislature.",
+      "sometimes negate the wishes of the electorate.",
+      "makes the legislature too responsive."
+    ],
+    "answer": "C",
+    "explanation": "The Electoral College has been criticized because it sometimes negates the wishes of the electorate — a candidate can win the popular vote but lose the electoral college vote (as happened in the US in 2000 and 2016). This undermines the principle of popular sovereignty."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The principle of separation of powers in a presidential system can be enhanced through",
+    "options": [
+      "cheek and balances.",
+      "checks and balances.",
+      "cheeks and balances.",
+      "choice and balances."
+    ],
+    "answer": "B",
+    "explanation": "The principle of separation of powers in a presidential system can be enhanced through checks and balances — each branch of government has some control over the others, preventing any branch from becoming too powerful. The correct spelling is 'checks and balances.'"
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The abrogation of delegated legislation in a state may undermine the",
+    "options": [
+      "constituency of the legislature.",
+      "efficiency of the legislature.",
+      "bureaucracy of the legislature.",
+      "autocracy of the legislature."
+    ],
+    "answer": "B",
+    "explanation": "The abrogation of delegated legislation may undermine the efficiency of the legislature. Delegated legislation allows the executive to make detailed rules without parliament passing primary legislation for every minor matter. Abrogating it would overload parliament and slow down governance."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Why is the Igbo political system described as fragmented?",
+    "options": [
+      "The political system depends on the village as a political unit.",
+      "The system deals mainly with civil cases.",
+      "It was a war ridden society.",
+      "Political authority was exercised by many institutions."
+    ],
+    "answer": "A",
+    "explanation": "The Igbo political system is described as fragmented because the political system depends on the village as a political unit — there was no central authority or single leader. Each village and lineage had its own council, with decisions made through consensus. This is a decentralized (acephalous) system."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Democratization & Political Process in Africa",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Which of the following hinders the practice of democracy in Africa?",
+    "options": [
+      "High level of literacy.",
+      "Mass poverty.",
+      "Over population.",
+      "Multi-party system."
+    ],
+    "answer": "B",
+    "explanation": "Mass poverty hinders the practice of democracy in Africa — poverty limits political participation, creates vulnerability to manipulation, and undermines the capacity of citizens to hold governments accountable. High literacy and multi-party systems promote democracy."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The Aba women riot of 1929 cannot be described as a resistance to colonialism because ...",
+    "options": [
+      "the revolt was organized only by the women.",
+      "the revolt was against a particular colonial policy and not colonial rule.",
+      "the revolt took place after colonialism had started.",
+      "the revolt was against the men."
+    ],
+    "answer": "B",
+    "explanation": "The Aba Women Riot of 1929 cannot be described as a resistance to colonialism because the revolt was against a particular colonial policy (taxation and warrant chiefs) and not colonial rule itself. It was a protest against specific grievances, not a general anti-colonial struggle."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The application of Rule of Law in a democracy is usually constrained by which of the following?",
+    "options": [
+      "Executive oversight.",
+      "Legislative oversight.",
+      "Judicial review.",
+      "Emergency powers."
+    ],
+    "answer": "D",
+    "explanation": "The application of Rule of Law in a democracy is usually constrained by emergency powers — during emergencies (war, natural disasters, insurgency), governments may suspend some rights and operate outside normal legal procedures. Executive and legislative oversight and judicial review actually promote the rule of law."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "In John Locke's analysis of sovereignty, all rights are",
+    "options": [
+      "surrendered to the community.",
+      "partially surrendered to the community.",
+      "fully surrendered to the community.",
+      "surrendered to the leviathan."
+    ],
+    "answer": "B",
+    "explanation": "In John Locke's analysis of sovereignty, all rights are partially surrendered to the community. Unlike Hobbes, Locke argued that individuals retain certain natural rights (life, liberty, property) and only surrender some rights to the state for protection, with the right to resist tyranny."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Nigerian Foreign Policy",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The activities of Nigeria in the international community are primarily influenced by",
+    "options": [
+      "diplomacy.",
+      "propaganda.",
+      "national interest.",
+      "military power."
+    ],
+    "answer": "C",
+    "explanation": "The activities of Nigeria in the international community are primarily influenced by national interest — the protection and promotion of Nigeria's security, economic, and political interests. While diplomacy and propaganda are tools, national interest is the overarching guide."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "One of the significance of the 1999 Constitution is that it",
+    "options": [
+      "established Nigeria as a unitary state.",
+      "makes all public office holders to be immune.",
+      "provides for a presidential system of government.",
+      "makes the parliament to be supreme."
+    ],
+    "answer": "C",
+    "explanation": "One significance of the 1999 Constitution is that it provides for a presidential system of government in Nigeria — with an executive President, a bicameral National Assembly, and an independent judiciary. It established Nigeria as a federal republic, not a unitary state."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The British policy of Indirect Rule is different from the French policy of Assimilation because of the",
+    "options": [
+      "respect for the citizenry.",
+      "respect for traditional institutions.",
+      "pace of economic development.",
+      "pace of political development."
+    ],
+    "answer": "B",
+    "explanation": "The British policy of Indirect Rule is different from the French policy of Assimilation because of the respect for traditional institutions — Indirect Rule preserved and used traditional rulers and institutions, while Assimilation sought to replace them with French culture and administration."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Most Africans who joined the colonial Army did so because they",
+    "options": [
+      "were good nationalists.",
+      "admired the Europeans.",
+      "had no jobs in the civil service.",
+      "liked to serve their fatherland."
+    ],
+    "answer": "C",
+    "explanation": "Most Africans who joined the colonial Army did so because they had no jobs in the civil service — economic necessity and lack of alternative employment opportunities drove many to enlist. Nationalist sentiments were not the primary motivation."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Basic Concepts of Government",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) What is a State?\n(b) Explain any three theories of the State.",
+    "options": [],
+    "modelAnswer": "(a) A State:\nA state is a political community with a defined territory, a permanent population, a government, and sovereignty. It is the highest political authority within its territory, recognized by other states. The state is distinct from the government (which is the machinery of rule) and from the nation (which is a cultural/ethnic community).\n\n(b) Three theories of the State:\n1. Social Contract Theory (Hobbes, Locke, Rousseau): This theory argues that the state is a product of an agreement between individuals who lived in a state of nature. They voluntarily surrendered some of their rights to a sovereign in exchange for protection, order, and security. Hobbes believed the state is a Leviathan, Locke believed it protects natural rights, and Rousseau believed it expresses the general will.\n\n2. Force Theory: This theory holds that the state was created through conquest and force. Powerful individuals or groups used military strength to subjugate others and establish control over territory and people. The state emerged from the need to maintain order through coercive power.\n\n3. Evolutionary (Natural) Theory: This theory suggests that the state evolved naturally over time from the family to the clan, then to the tribe, and eventually to the state. It developed through the gradual growth of social institutions, customs, and political organization. The state is not created by agreement but by organic development.\n\n4. Divine Right Theory: This theory holds that the state was created by God and that rulers derive their authority from divine will. Kings and monarchs are appointed by God and are accountable only to Him. This theory was used to justify absolute monarchy."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) Explain the concept of Confederalism.\n(b) Discuss any four features of a Confederate State.",
+    "options": [],
+    "modelAnswer": "(a) Confederalism:\nConfederalism is a political system in which independent states or sovereign political units come together to form a confederation for specific purposes (defence, economic cooperation, foreign policy). The central government is weak and subordinate to the member states, which retain most of their sovereignty. Member states can withdraw from the confederation at any time.\n\n(b) Four features of a Confederate State:\n1. Weak Central Government: The central government has limited powers — it can only act on matters delegated to it by the member states. It does not have direct authority over citizens of member states.\n\n2. Sovereignty of Member States: Member states retain their sovereignty and independence. They are autonomous and have the right to secede from the confederation.\n\n3. Unanimous Consent: Major decisions often require unanimous consent of all member states. Each state has an equal voice, regardless of size or population.\n\n4. Voluntary Membership: Membership in a confederation is voluntary — states join by agreement and can leave at any time. There is no compulsion to remain.\n\n5. Limited Objectives: The confederation is formed for specific purposes — usually defence, trade, or foreign relations — and does not interfere in the internal affairs of member states.\n\n6. No Direct Taxation: The central government cannot levy taxes directly on citizens; it relies on contributions from member states for its finances."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Political Ideas & Thoughts",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) What is political ideology?\n(b) Explain any four roles of political ideology in a political system.",
+    "options": [],
+    "modelAnswer": "(a) Political Ideology:\nPolitical ideology is a set of beliefs, values, and ideas that explain how society should be organized and governed. It provides a framework for understanding political power, the role of government, and the relationship between the state and citizens. Examples include capitalism, socialism, communism, fascism, liberalism, and conservatism.\n\n(b) Four roles of political ideology in a political system:\n1. Provides a Framework for Understanding Politics: Ideology offers a lens through which citizens and leaders interpret political events, policies, and institutions. It explains why things are the way they are and what should be done.\n\n2. Guides Political Action and Policy: Ideology shapes the policies and actions of governments and political parties. It determines priorities — e.g., capitalism prioritizes free markets, while socialism prioritizes welfare and equality.\n\n3. Legitimizes Political Authority: Ideology legitimizes the authority of rulers and governments — it provides moral and intellectual justification for their power. For example, democracy legitimizes authority through popular sovereignty.\n\n4. Mobilizes Citizens and Groups: Ideology motivates and mobilizes citizens to participate in politics, join movements, and support parties. It creates solidarity and collective action — e.g., nationalism, socialism, or liberation ideologies.\n\n5. Provides a Basis for Political Discourse: Ideology creates a common language for political debate and discussion. It allows citizens, politicians, and analysts to articulate positions, critique policies, and propose alternatives."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "International Relations",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) Briefly explain the origin of ECOWAS.\n(b) Discuss any four problems confronting ECOWAS as a sub-regional organization.",
+    "options": [],
+    "modelAnswer": "(a) Origin of ECOWAS:\nThe Economic Community of West African States (ECOWAS) was established on May 28, 1975, with the signing of the Treaty of Lagos by 15 West African countries. The treaty aimed to promote economic integration, cooperation, and development among member states. Its founding members were: Nigeria, Ghana, Benin, Togo, Sierra Leone, Liberia, Guinea, Ivory Coast, Mali, Niger, Senegal, Gambia, Burkina Faso, Guinea-Bissau, and Mauritania. The organization was established to foster trade, economic cooperation, and eventually a common market in West Africa.\n\n(b) Four problems confronting ECOWAS:\n1. Financial Challenges: ECOWAS faces chronic funding shortages — member states often fail to pay their financial contributions, limiting the organization's ability to implement programs and projects.\n\n2. Political Instability: Political instability, military coups, and conflicts in member states (e.g., Mali, Burkina Faso, Guinea, Niger) undermine regional integration and disrupt implementation of policies.\n\n3. Lack of Political Will: Member states often lack the political will to implement ECOWAS protocols and decisions — they prioritize national interests over regional integration, slowing progress.\n\n4. Free Movement Issues: The protocol on free movement of people, goods, and services is not fully respected — member states impose restrictions, border closures, and informal barriers, undermining regional integration.\n\n5. Economic Diversion and Unequal Benefits: The benefits of integration are unevenly distributed — larger economies (Nigeria, Ghana) benefit more than smaller ones, creating resentment. There is also trade diversion rather than creation.\n\n6. Multiple Memberships: Some member states belong to other regional organizations (e.g., UEMOA), leading to conflicting obligations, duplication of efforts, and policy inconsistencies.\n\n7. Poor Infrastructure: Inadequate transportation, communication, and energy infrastructure limits regional trade and integration."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Nigerian Foreign Policy",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) What is foreign policy?\n(b) Explain four determinants of Nigeria's foreign policy.",
+    "options": [],
+    "modelAnswer": "(a) Foreign Policy:\nForeign policy is a set of principles, strategies, and actions adopted by a state to guide its relations with other states, international organizations, and non-state actors. It aims to protect and promote the national interest, ensure security, and achieve diplomatic, economic, and political objectives.\n\n(b) Four determinants of Nigeria's foreign policy:\n1. National Interest: The primary determinant of Nigeria's foreign policy is national interest — the protection of Nigeria's sovereignty, territorial integrity, security, and economic well-being. This includes the promotion of trade, investment, and development.\n\n2. Historical Factors: Nigeria's history of colonialism, anti-apartheid struggle, and leadership in African liberation movements shape its foreign policy. Nigeria is committed to African unity, decolonization, and Pan-Africanism.\n\n3. Geographical Location: Nigeria's position in West Africa influences its foreign policy — it plays a leadership role in ECOWAS and the region, promoting regional integration, peacekeeping, and stability.\n\n4. Economic Factors: Nigeria's economic interests — oil exports, trade relations, and foreign investment — shape its foreign policy. It seeks to diversify its economy, attract FDI, and secure favourable terms of trade.\n\n5. International Obligations: Nigeria's membership in the UN, AU, ECOWAS, OPEC, and other organizations influences its foreign policy. It is bound by treaties, conventions, and international law.\n\n6. Leadership and Ideology: The ideology and preferences of leaders influence foreign policy direction — e.g., emphasis on African affairs, non-alignment, or global partnerships.\n\n7. Security Concerns: Security challenges (terrorism, insurgency, piracy, border disputes) influence Nigeria's foreign policy, leading to cooperation with international partners on security matters."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Discuss any five decisions reached at the 1957 London Constitutional Conference pointing out the significance of each.",
+    "options": [],
+    "modelAnswer": "The 1957 London Constitutional Conference was held in May-June 1957 to discuss Nigeria's constitutional future and progress towards independence. The main decisions and their significance:\n\n1. Grant of Self-Government to the Eastern and Western Regions: The Conference decided that the Eastern and Western regions would be granted self-government in 1957. Significance: This accelerated the process of decolonization and demonstrated Nigeria's readiness for independence.\n\n2. Creation of a Separate Region for the North: The Conference decided that the Northern Region would also be granted self-government, but not immediately — it would be delayed until 1959 to allow the North to prepare. Significance: This recognized the North's unique political and administrative challenges and ensured its participation in the independence process.\n\n3. Establishment of a Federal Government: The Conference reaffirmed Nigeria's federal structure and recommended the establishment of a federal government with strong powers. Significance: It laid the foundation for Nigeria's federal system, balancing regional autonomy with central authority.\n\n4. Appointment of a Prime Minister: The Conference recognized the office of the Prime Minister as the head of government, with the Governor-General as the ceremonial head of state. Significance: It established the parliamentary system of government, with a Prime Minister responsible to parliament.\n\n5. Preparation for Independence: The Conference set a target for Nigeria's independence — 1960 — and discussed the necessary constitutional arrangements. Significance: It set a clear timeline for independence and ensured that Nigeria would become independent on October 1, 1960.\n\n6. Creation of the Federal Capital: The Conference discussed the establishment of Lagos as the federal capital and its separation from the Western Region. Significance: This created a neutral federal capital, free from regional influence, and established Lagos as the centre of federal administration."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) What is Colonialism?\n(b) List and explain four reasons why the Europeans invaded Africa.",
+    "options": [],
+    "modelAnswer": "(a) Colonialism:\nColonialism is the policy and practice of acquiring and maintaining political control over a foreign territory, colonizing it with settlers, and exploiting its resources for the benefit of the colonizing power. It involves the domination of one people by another, often with economic exploitation, cultural imposition, and political subjugation.\n\n(b) Four reasons why Europeans invaded Africa:\n1. Economic Exploitation: Europe needed raw materials for its industries (cocoa, palm oil, rubber, cotton, minerals, gold, diamonds). Africa provided these resources, and Europe wanted to control their supply. Africa also served as a market for European manufactured goods.\n\n2. The Industrial Revolution: The Industrial Revolution created demand for raw materials and markets for surplus goods. European industries needed a steady supply of raw materials and outlets for their products, which Africa provided.\n\n3. Strategic and Military Interests: Europe wanted to establish strategic military bases to protect trade routes and enhance naval power. Control of the Suez Canal, Cape Route, and other strategic locations was important for global trade and military dominance.\n\n4. National Prestige and Competition: European powers competed for prestige and global influence. Colonization was a symbol of national power and greatness. The 'scramble for Africa' was driven by competition among European powers (Britain, France, Germany, Belgium, Portugal).\n\n5. Religious and Missionary Motives: European missionaries wanted to spread Christianity and 'civilize' Africans. The missionary motive was often used to justify colonization, with the goal of converting Africans to Christianity and ending 'paganism.'\n\n6. Humanitarian and Anti-Slavery Motives: Europe claimed to be ending the slave trade and bringing civilization and democracy to Africa. While this was used as a justification, the primary motives were economic and strategic.\n\n7. Scientific Exploration: European explorers were curious about Africa's geography, resources, and peoples. Their expeditions paved the way for colonization."
+  },
+  {
+    "subject": "Government",
+    "year": 2020,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) Explain any three principles of 1884-1885 Berlin Conference.\n(b) Discuss two significance of the Conference.",
+    "options": [],
+    "modelAnswer": "(a) Three principles of the Berlin Conference (1884-1885):\n1. Effective Occupation Principle: A European power could claim a territory in Africa only if it established effective occupation and administration. The power must demonstrate control, establish government, and maintain law and order. This prevented countries from making claims without actual presence.\n\n2. Notification of Occupation: European powers were required to notify other signatory powers when they claimed or occupied a territory. This was to ensure transparency and reduce conflicts among colonizers.\n\n3. Free Trade and Navigation: The Conference declared that trade should be free in the Congo Basin and that navigation on the Niger and Congo rivers should be free for all nations. This was to ensure access to resources and prevent monopolies.\n\n4. Abolition of Slavery: The Conference committed European powers to work towards abolishing slavery and the slave trade in Africa. This was a humanitarian principle, though it was not effectively enforced.\n\n5. Territorial Boundaries: The Conference established boundaries between European territories in Africa, based on agreements among colonizers rather than on African ethnic or geographical realities. This created arbitrary borders.\n\n(b) Two significance of the Berlin Conference:\n1. Partition of Africa: The Berlin Conference legitimized and formalized the partition of Africa among European powers. It set the rules for colonization and led to the scramble for Africa, resulting in almost all of Africa being colonized by 1900. African territories were divided without regard to ethnic groups, cultures, or historical boundaries.\n\n2. Creation of Arbitrary Boundaries: The Conference created artificial boundaries that divided ethnic groups, kingdoms, and peoples. This has had lasting consequences — post-colonial African states inherited these boundaries, leading to ethnic conflicts, instability, and challenges to nation-building. The borders established by the Conference became the basis of modern African states.\n\n3. End of African Sovereignty: The Conference marked the end of African sovereignty — African states and kingdoms lost their independence and became subjects of European colonial rule. Traditional political systems were disrupted, and African leaders were stripped of their authority.\n\n4. Race for Africa: The Conference accelerated the European scramble for Africa, as countries rushed to claim territories before others did. It set off a race that led to the rapid colonization of most of Africa by 1914.\n\n5. Economic Exploitation: The Conference opened Africa to economic exploitation — it gave Europeans free access to African resources, land, and labour. This led to the extraction of minerals, exploitation of labour, and the transformation of African economies into providers of primary products."
+  }
+]

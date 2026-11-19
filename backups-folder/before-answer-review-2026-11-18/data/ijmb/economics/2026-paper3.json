@@ -1,0 +1,852 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Increasing returns to scale occur when:",
+    "options": [
+      "firm is operating bellow the optimum size",
+      "the expansion of a firm produces economics and greater efficiency",
+      "optimum factor combination or proportion is attained",
+      "all of the above"
+    ],
+    "answer": "B",
+    "explanation": "Increasing returns to scale arise when expansion brings economies of scale and greater efficiency ('economics' is a misprint for economies), so output rises more than proportionately. This happens below the optimum size (A is broadly true too), but at the optimum combination (C) returns are constant, so 'all of the above' is not correct."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "A production techniques is labour intensive when it uses:",
+    "options": [
+      "half of capital input",
+      "less of labour in relation to capital",
+      "more of labour in relation to capital",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "A labour-intensive technique uses more labour relative to capital (i.e. less capital in relation to labour)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The curve which produces the same level of output is called:",
+    "options": [
+      "Isocost",
+      "Isoquant",
+      "MP curve",
+      "AP curve."
+    ],
+    "answer": "B",
+    "explanation": "An isoquant shows all the combinations of two inputs (e.g. labour and capital) that produce the same level of output. An isocost shows combinations with the same total cost."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The long-run as used in economics implies a period:",
+    "options": [
+      "long enough for both fixed and variable factors of production to change.",
+      "of 25 years",
+      "of one financial year",
+      "long enough for fixed factors of production to change."
+    ],
+    "answer": "A",
+    "explanation": "The long run is a period long enough for all factors of production, both fixed and variable, to be changed. In the short run at least one factor (e.g. plant) is fixed."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Agro-allied industry involved:",
+    "options": [
+      "production enterprises on the firm",
+      "production on a joint stock basis",
+      "production of only cash crops",
+      "production of only food crops."
+    ],
+    "answer": "A",
+    "explanation": "Agro-allied industries are linked to agriculture, e.g. production enterprises on the farm that process or use farm produce as raw materials. ('firm' in option A is a misprint for farm.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Socialist mode of planning is based on:",
+    "options": [
+      "Development plan",
+      "rolling plan",
+      "central plan",
+      "perspective plan."
+    ],
+    "answer": "C",
+    "explanation": "Under socialism, planning is centralised: a central planning authority draws up a central (comprehensive) plan for the whole economy."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The major fiscal policy instruments in Nigeria are:",
+    "options": [
+      "taxation, tariff, public expenditure",
+      "taxation, tariff, interest exchange",
+      "taxation, tariff, interest rate",
+      "taxation, tariff, imports."
+    ],
+    "answer": "A",
+    "explanation": "Fiscal policy uses government revenue and expenditure: taxation, tariffs (customs duties) and public expenditure. Interest rates and exchange rates are monetary policy tools."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Out-put is increasing at a decreasing rate is in which of the stages:",
+    "options": [
+      "stage III",
+      "stage II and I",
+      "stage II",
+      "stage III and II."
+    ],
+    "answer": "C",
+    "explanation": "In the law of variable proportions, total product increases at a decreasing rate in Stage II (marginal product is falling but still positive, from the point where AP is maximum to where MP is zero)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Which of the three stages in the law of variable proportion the most important?",
+    "options": [
+      "stage III",
+      "stage IV",
+      "stage I",
+      "stage II."
+    ],
+    "answer": "D",
+    "explanation": "Stage II is the most important (rational) stage: a rational producer operates there, because in Stage I output can still be raised by adding more of the variable factor, and in Stage III total product falls (MP is negative). Note: the law has only three stages, so 'stage IV' does not exist."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "The theory of a firm employing the marginal labour at a point at which the marginal or extra product is equal in value to the marginal wage is called:",
+    "options": [
+      "economic rent",
+      "geographical mobility",
+      "closed shop",
+      "the marginal product theory of labour."
+    ],
+    "answer": "D",
+    "explanation": "This is the marginal productivity theory of wages: a firm employs labour up to the point where the value of the marginal product of the last worker equals the marginal wage."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "When the quantity of a good does not change at all as price changes demand is said to be:",
+    "options": [
+      "perfectly inelastic",
+      "unit elasticity",
+      "perfectly elastic",
+      "elastic."
+    ],
+    "answer": "A",
+    "explanation": "If quantity demanded does not change at all as price changes, elasticity is zero: perfectly inelastic demand (a vertical demand curve)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A downward pressure on the price of a commodity toward the equilibrium result from:",
+    "options": [
+      "increase in demand",
+      "decrease in demand",
+      "decrease in supply",
+      "b and c."
+    ],
+    "answer": "B",
+    "explanation": "Price is pushed down by a decrease in demand (or an increase in supply). A decrease in supply raises price, so 'b and c' is wrong."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Under the gold standard, a surplus of payment means:",
+    "options": [
+      "a shipmen of gold away from the surplus country",
+      "an inflow of gold into the country having a surplus",
+      "a general fall in prices",
+      "increased mining of gold."
+    ],
+    "answer": "B",
+    "explanation": "Under the gold standard, payment surpluses were settled in gold, so the surplus country received an inflow of gold."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "In deductive economics, economists usually:",
+    "options": [
+      "go from theory to fact",
+      "go from facts to theory",
+      "go from theory to thinking",
+      "go from theory to synthesis."
+    ],
+    "answer": "A",
+    "explanation": "Deduction reasons from general theory to particular conclusions (facts/predictions); going from facts to theory is induction."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Which of these economists is a strong advocate of fiscal policy?",
+    "options": [
+      "J.M. Keynes",
+      "Adam smith",
+      "David Ricardo",
+      "Karlmarx."
+    ],
+    "answer": "A",
+    "explanation": "Keynes advocated active fiscal policy (government spending and taxation) to manage aggregate demand."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Which of these economists is associated with theory of population?",
+    "options": [
+      "Adam smith",
+      "David Ricardo",
+      "Rev. T. Malthus",
+      "J.M. Keymes."
+    ],
+    "answer": "C",
+    "explanation": "The Rev. Thomas Robert Malthus put forward the Malthusian theory of population (1798)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The theory of division of labour is best associated with:",
+    "options": [
+      "Ricardo",
+      "Keynes",
+      "Marx",
+      "Adam smith."
+    ],
+    "answer": "D",
+    "explanation": "Adam Smith explained division of labour in The Wealth of Nations (1776), with the pin factory example."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The private sector in Nigeria is made up of:",
+    "options": [
+      "household",
+      "corporate bodies",
+      "incorporated business and household.",
+      "joint stock companies."
+    ],
+    "answer": "C",
+    "explanation": "The private sector is made up of households and privately owned businesses (incorporated companies and others)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Which of the following cost items refers to price?",
+    "options": [
+      "variable cost",
+      "opportunity cost",
+      "fixed cost",
+      "average cost."
+    ],
+    "answer": "D",
+    "explanation": "Note: the question is ambiguous. Price is the amount received per unit (average revenue); in long-run competitive equilibrium price equals average cost, and firms often set prices from average cost (cost-plus pricing), so average cost is the cost item most closely related to price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The balance budget multiplier is equal to:",
+    "options": [
+      "-b",
+      "-1",
+      ".1",
+      "1/1-b"
+    ],
+    "answer": "C",
+    "explanation": "When government spending and taxes rise by the same amount, the government spending multiplier 1/(1 − b) and the tax multiplier −b/(1 − b) add up to (1 − b)/(1 − b) = 1. The balanced budget multiplier is therefore 1. Option C is printed '.1' (read as 1, probably a misprint) and is marked as the closest option."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The basis for all economic activities is:",
+    "options": [
+      "scarcity",
+      "poverty",
+      "opportunity cost",
+      "unemployment."
+    ],
+    "answer": "A",
+    "explanation": "Scarcity of resources relative to wants is the basis of all economic activity and choice."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Which of the following is not a leakage in the circular flow of income:",
+    "options": [
+      "import of a Datsun car",
+      "personal saving",
+      "export of crude petroleum.",
+      "indirect company tax."
+    ],
+    "answer": "C",
+    "explanation": "Exports are an injection, not a leakage. Saving, taxes and imports are leakages."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "In a market structure, monopoly means:",
+    "options": [
+      "one seller with close substitute",
+      "one seller with no close substitute",
+      "one seller with complementary goods",
+      "all of the above."
+    ],
+    "answer": "B",
+    "explanation": "A monopoly is a single seller of a product with no close substitutes."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "If a firm can sell as much as it wishes at a given market price, that firm is:",
+    "options": [
+      "an industry",
+      "competitive firm",
+      "a monopolist",
+      "a oligopolist."
+    ],
+    "answer": "B",
+    "explanation": "A perfectly competitive firm is a price taker and can sell any quantity at the market price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Ricardo's law of comparative advantage is based on:",
+    "options": [
+      "the law of diminishing return",
+      "the law of increasing relative costs",
+      "the law of diminishing marginal utility",
+      "the opportunity cost theory."
+    ],
+    "answer": "D",
+    "explanation": "Comparative advantage is based on differences in opportunity cost between countries."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "If the demand curve for product B shifts to the right as the price of product adelines, it can be concluded that:",
+    "options": [
+      "a and b are substitute goods",
+      "a and b are complementary goods.",
+      "a is inferior good and b is a superior good",
+      "a is a superior good and b is an inferior good"
+    ],
+    "answer": "B",
+    "explanation": "A fall in the price of A ('adelines' means A declines) increases demand for B, so they are complements."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "GNP can be measured by:",
+    "options": [
+      "the total market value of final goods produced in the economy.",
+      "the total value of all intermediate goods produced in the economy.",
+      "the total value of all sales in the economy.",
+      "none of above."
+    ],
+    "answer": "A",
+    "explanation": "GNP is measured by the market value of final goods and services (plus net income from abroad); intermediate goods are excluded to avoid double counting."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "A market is said to be purely competitive if:",
+    "options": [
+      "the product is standardized",
+      "no individual seller has control over the market price of the product",
+      "there is a very large number of independent sellers.",
+      "all of the above."
+    ],
+    "answer": "D",
+    "explanation": "Pure competition needs a standardised product, many independent sellers, and no seller able to influence price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "At equilibrium, a firm that is a competitor in its output market but a monopolist in its labour market will paya wage rate.",
+    "options": [
+      "equal to the marginal revenue product",
+      "less than the marginal revenue product.",
+      "impossible to determine from the importation given.",
+      "greater than the marginal revenue product."
+    ],
+    "answer": "B",
+    "explanation": "As the sole buyer of labour (a monopsonist), the firm pays a wage below the marginal revenue product."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "A dual economy is one in which:",
+    "options": [
+      "there is exists a modern industrialized sector as well as traditional sector",
+      "there exists a traditional sector and government sector.",
+      "there exists an agricultural sector and a monetary sector.",
+      "none of the above."
+    ],
+    "answer": "A",
+    "explanation": "A dual economy has a modern industrial sector alongside a traditional, mainly subsistence sector."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The organization of petroleum exporting countries (OPEC) is an example of:",
+    "options": [
+      "perfect competition",
+      "duopoly",
+      "cartel",
+      "monopsony."
+    ],
+    "answer": "C",
+    "explanation": "OPEC is a cartel: producers that coordinate output to influence price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Which of the following will not cause an increase n the supply of guinea corn?",
+    "options": [
+      "an improvement in guinea corn farm technology",
+      "a fall in the price of farm machinery",
+      "a decrease in the price of milled.",
+      "general improvement in farm technology."
+    ],
+    "answer": "C",
+    "explanation": "Better technology (A, D) and cheaper machinery (B) increase supply. A change in the price of millet ('milled' is a misprint), a substitute in consumption, affects the demand for guinea corn rather than its supply."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Choice is necessary because:",
+    "options": [
+      "goods are many and varied and ore most therefore choose",
+      "one cannot consume everything",
+      "resources are scarce relative to wants",
+      "all of the above"
+    ],
+    "answer": "C",
+    "explanation": "Choice arises because resources are scarce relative to unlimited wants."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of Income Distribution",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Which of the following is not a factor reward?",
+    "options": [
+      "wages",
+      "rents",
+      "interest",
+      "premium."
+    ],
+    "answer": "D",
+    "explanation": "The factor rewards are rent, wages, interest and profit; a premium is not one."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which of the following is not an advantage of division of labour?",
+    "options": [
+      "increased productivity",
+      "monotony",
+      "efficiency",
+      "development of speacialise machinery."
+    ],
+    "answer": "B",
+    "explanation": "Monotony is a disadvantage of division of labour."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "When production is based on free enterprise, firms seek to maximize",
+    "options": [
+      "profit",
+      "output",
+      "innovation",
+      "choice."
+    ],
+    "answer": "A",
+    "explanation": "Under free enterprise, firms aim to maximise profit."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The unit price of a firm's output is similar to its:",
+    "options": [
+      "marginal revenue",
+      "marginal product",
+      "average product",
+      "average revenue."
+    ],
+    "answer": "D",
+    "explanation": "Price per unit always equals average revenue (AR = TR/Q = P)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The degree of cross elasticity coefficient between two commodities tells the extend of their:",
+    "options": [
+      "demand or supply",
+      "cheapness",
+      "scarcity",
+      "existence."
+    ],
+    "answer": "A",
+    "explanation": "The correct answer is substitutability or complementarity: cross elasticity is positive for substitutes and negative for complements, and its size shows how close they are. This is not among the options; A ('demand or supply') is marked as the closest, since cross elasticity measures how the demand for one good responds to the price of another."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "An economic system which is regulated by invisible hand is called:",
+    "options": [
+      "planned economy",
+      "market economy",
+      "communist economy",
+      "feudalistic economy."
+    ],
+    "answer": "B",
+    "explanation": "Adam Smith's 'invisible hand' is the price mechanism of a free market economy."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Economic development can be defined briefly as:",
+    "options": [
+      "economic growth plus change",
+      "economic growth minus change",
+      "growth in savings",
+      "growth in income per capita."
+    ],
+    "answer": "A",
+    "explanation": "Economic development is often summed up as 'growth plus change': a rise in output together with structural, social and institutional change (better health, education, reduced poverty). Growth in income per capita (D) on its own describes economic growth."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "A commodity has a perfectly inelastic demand. The imposition of a specific tax would raise the price of the commodity.",
+    "options": [
+      "exactly by the amount of tax imposed",
+      "to a monopoly price",
+      "out of the reach of the consumers",
+      "higher than the amount of tax imposed."
+    ],
+    "answer": "A",
+    "explanation": "With perfectly inelastic demand, quantity bought does not change, so the whole tax is passed on to consumers and price rises by exactly the amount of the tax."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Among the disadvantages and monopoly is that it lead to:",
+    "options": [
+      "higher output and lower price",
+      "lower output and higher price",
+      "higher out and higher prices",
+      "lower output and lower prices."
+    ],
+    "answer": "B",
+    "explanation": "A monopolist restricts output and charges a higher price than under competition."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The populations of a country is regarded to be greater than the optimum if:",
+    "options": [
+      "output per capita increases as population increases",
+      "output per capita decreases as population increase",
+      "output per capita decreases as population decreases",
+      "output per capita remains constant as population increases."
+    ],
+    "answer": "B",
+    "explanation": "Population is above the optimum (over-population) when further increases reduce output per head."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Two commodities X and Y substitute if:",
+    "options": [
+      "their cross elasticity is less than unity",
+      "the price of X falls resulting in the fall of Y.",
+      "their cross elasticity is positive",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "For substitutes, a rise in the price of one raises demand for the other, so cross elasticity of demand is positive."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Which of these is not included in National income computation?",
+    "options": [
+      "the income made of musician",
+      "the income of farmers",
+      "the income of soldiers",
+      "the income of aged parents which was sent by a working son."
+    ],
+    "answer": "D",
+    "explanation": "Money sent by a son to his aged parents is a private transfer payment, not a payment for current production, so it is excluded (it was already counted as the son's income)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "If the marginal utility of commodity X rises above that of commodity Y, then",
+    "options": [
+      "MUx/MUy > Px/Py",
+      "MUx/MUy = Px/Py",
+      "Px/Py > MUx/MUy",
+      "MUy/MUx > Px/Py"
+    ],
+    "answer": "A",
+    "explanation": "Equilibrium is MUx/MUy = Px/Py. If MUx rises with prices unchanged, MUx/MUy becomes greater than Px/Py, so the consumer buys more X."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "If a firm sells 3,000 units of a commodity at ₦10 per unit and 5,000 units at ₦8 per unit. Calculate the elasticity of demand.",
+    "options": [
+      "marginal revenue = ₦2.00",
+      "total revenue = ₦ 40,000",
+      "elasticity of demand = 3.3",
+      "value added = ₦10,000."
+    ],
+    "answer": "C",
+    "explanation": "PED = (ΔQ/Q)/(ΔP/P) = (2000/3000)/(2/10) = 0.667/0.2 = 3.3."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "If the quantity demanded of a commodity rises from 100 units to110 units as its price falls from ₦10 per unit to ₦9 per unit, the demand elasticity may be classified as:",
+    "options": [
+      "infinite",
+      "unitary",
+      "elastic",
+      "inelastic."
+    ],
+    "answer": "B",
+    "explanation": "% change in quantity = 10/100 = 10%; % change in price = 1/10 = 10%; PED = 1 (unitary)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "A profit-maximizing firm produces the level of output at the point where",
+    "options": [
+      "marginal cost crosses the average variable cost.",
+      "marginal cost crosses the average total cost",
+      "average total cost intersects with the vertical axis",
+      "marginal cost equals marginal revenue."
+    ],
+    "answer": "D",
+    "explanation": "Profit is maximised where MC = MR."
+  },
+  {
+    "subject": "Economics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Suppose the price of tooth paste falls from ₦ 2.00 to ₦1.90, the quantity demanded increases from 110 to 118; then the price elasticity of demand for tooth paste is :-",
+    "options": [
+      "0.79",
+      "1.37",
+      "3.94",
+      "2.09."
+    ],
+    "answer": "B",
+    "explanation": "Using the arc (midpoint) formula:\n% change in quantity = 8/[(110 + 118)/2] = 8/114 = 7.02%\n% change in price = 0.10/[(2.00 + 1.90)/2] = 0.10/1.95 = 5.13%\nPED = 7.02/5.13 = 1.37.\n(With the simple formula, 7.27%/5% = 1.45; the option list matches the arc method.)"
+  }
+]

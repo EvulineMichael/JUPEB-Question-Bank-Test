@@ -77,7 +77,7 @@
       "Taxes and quantity demanded."
     ],
     "answer": "D",
-    "explanation": "Higher taxes reduce disposable income, which decreases quantity demanded. While option C (taxes and quantity bought) is also inverse, the question's answer key indicates D as the most likely response."  },
+    "explanation": "A tax raises the price buyers pay and reduces their disposable income, so as taxes rise, the quantity demanded falls: an inverse relationship.\n\nPrice and quantity supplied move together (direct). Income and quantity consumed also move together for normal goods. Option C says much the same as D; the examiners' answer is D, 'taxes and quantity demanded'."  },
   {
     "subject": "Economics",
     "year": 2020,
@@ -594,6 +594,8 @@
     "question": "A country's GDP is 50bn. Its current account balance is 8% of GDP, and capital and financial account balance is 4billion. What are the country's balances on net errors and omissions?",
     "options": ["2billion.", "20billion.", "28billion.", "4billion."],
     "answer": "A",
+    "reviewNote": "Current account = 8% of 50bn = 4bn. With a capital and financial account of 4bn, the balance of payments identity (CA + KA + net errors and omissions = 0) gives net errors and omissions of −8bn (or 0 if the two accounts have opposite signs).\n\nNone of the printed options follows from the data, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "BOP identity: Current Account + Capital/Financial Account + Net Errors & Omissions = 0. CA = 8% of 50bn = 4bn. Capital/Financial Account = 4bn. 4bn + 4bn + NEO = 0 → NEO = -8bn. But this doesn't match options. Wait: If CA is 8% of GDP (positive), then CA = 4bn. If Capital Account = 4bn, then NEO must be -8bn. None of the options. Assuming CA is surplus (4bn) and Capital is deficit (4bn), then NEO = 0. Most likely the intended answer is 2bn based on different interpretation. Given options, A (2bn) is the closest plausible."
   },
   {
@@ -738,6 +740,8 @@
       "real national income has decreased."
     ],
     "answer": "A",
+    "reviewNote": "Real national income grows by about 12% − 10% = 2% (more exactly, 1.12 ÷ 1.10 ≈ 1.018, a rise of 1.8%). So real national income has increased: option A is true.\n\nBut population grew by 3%, faster than real income, so real income per head fell: 1.018 ÷ 1.03 ≈ 0.988, a fall of about 1.2%. So option B is also true.\n\nBecause two options are correct, this question is left out of quizzes. The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "Real national income = Nominal national income / Price level. Real national income increased by 12% - 10% = 2% (since inflation = 10%). Real income per capita = Real national income / Population. Real national income increased by 2%, population increased by 3%, so real income per capita decreased by approximately 1%. However, real national income has increased (option A is correct)."
   },
   {

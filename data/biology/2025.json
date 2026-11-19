@@ -41,6 +41,8 @@
     "question": "The following are sex-linked disorder EXCEPT",
     "options": ["Sickle cell anaemia", "Haemophilia", "Colour Blindness", "Baldness"],
     "answer": "A",
+    "reviewNote": "Two of the options are not sex-linked:\n- Sickle cell anaemia (A) is autosomal recessive: the gene is on chromosome 11.\n- Pattern baldness (D) is sex-influenced, not sex-linked: its gene is mainly autosomal, but it shows up more in males because of male hormones.\n\nHaemophilia and red–green colour blindness are true X-linked disorders. The examiners' answer is A, which is the clearest choice, but D is also not sex-linked.",
+    "excludeFromQuiz": true,
     "explanation": "Sickle cell anaemia is an autosomal recessive disorder, not sex-linked."
   },
   {
@@ -536,6 +538,8 @@
     "question": "Iliac artery supplies blood to",
     "options": ["leg", "stomach", "pelvis", "womb"],
     "answer": "A",
+    "reviewNote": "The common iliac artery divides into the internal iliac artery, which supplies the pelvis and its organs (including the womb), and the external iliac artery, which continues into the leg as the femoral artery.\n\nSo 'iliac artery' supplies both the leg (A) and the pelvis (C). The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "The iliac artery supplies blood to the lower limbs (legs)."
   },
   {

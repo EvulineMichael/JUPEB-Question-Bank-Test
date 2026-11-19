@@ -1,0 +1,123 @@
+[
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "a) Explain the following terms:\ni. Genetic variations\nii. Linkage\niii. Crossing over\niv. Colour blindness",
+    "options": [],
+    "modelAnswer": "(i) Genetic variations are differences in the genetic make-up (genes and alleles) of individuals of the same species, which cause differences in their characteristics. They can be passed on to offspring.\nTypes: continuous variation, with a range of intermediate forms (e.g., height, weight), and discontinuous variation, with distinct classes (e.g., ABO blood groups, tongue rolling).\nSources: mutation, crossing over and independent assortment during meiosis, and random fertilization of gametes.\n\n(ii) Linkage is the tendency of genes located close together on the same chromosome to be inherited together, so they do not assort independently as Mendel's second law predicts. Genes on the same chromosome form a linkage group. Linkage can be broken by crossing over.\nSex linkage is a special case: genes carried on the sex chromosomes (mainly the X chromosome) are inherited with sex, e.g., the genes for colour blindness and haemophilia.\n\n(iii) Crossing over is the exchange of corresponding segments between non-sister chromatids of a pair of homologous chromosomes. It happens during prophase I of meiosis, at points called chiasmata.\nIt produces new combinations of alleles (recombinants) and so increases genetic variation. Genes far apart on a chromosome cross over more often than genes close together, which is used to map gene positions.\n\n(iv) Colour blindness is an inherited inability to distinguish certain colours, usually red and green.\nIt is caused by a recessive allele (c) carried on the X chromosome, so it is sex-linked. Males (XY) have only one X, so a single recessive allele makes a male colour blind (XᶜY). A female must inherit two recessive alleles (XᶜXᶜ) to be colour blind; a female with one (XᴺXᶜ) has normal vision but is a carrier. This is why colour blindness is much more common in males.\nExample cross: carrier mother (XᴺXᶜ) × normal father (XᴺY) gives XᴺXᴺ (normal daughter), XᴺXᶜ (carrier daughter), XᴺY (normal son) and XᶜY (colour-blind son). Half of the sons are expected to be colour blind."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "b) A child with blood group AB is a source of dispute between two contesting fathers one with blood group B and the other father with blood group O. the mother of the child has blood group A. Show using crossings how the blood group of the child, disputing fathers and that of the child's mother can be used in resolving the dispute.",
+    "options": [],
+    "modelAnswer": "ABO blood group is controlled by three alleles: Iᴬ and Iᴮ (codominant) and Iᴼ (recessive to both).\nGenotypes: group A = IᴬIᴬ or IᴬIᴼ; group B = IᴮIᴮ or IᴮIᴼ; group AB = IᴬIᴮ; group O = IᴼIᴼ.\n\nThe child (AB) has genotype IᴬIᴮ. One allele came from each parent. The mother is group A, so she gave Iᴬ. The Iᴮ allele must therefore have come from the father.\n\nCrosses with the group B man:\n1. Mother IᴬIᴬ × man IᴮIᴮ\nGametes: Iᴬ × Iᴮ\nOffspring: all IᴬIᴮ (group AB).\n2. Mother IᴬIᴼ × man IᴮIᴼ\nGametes: Iᴬ, Iᴼ × Iᴮ, Iᴼ\nOffspring: IᴬIᴮ (AB), IᴬIᴼ (A), IᴮIᴼ (B), IᴼIᴼ (O), in the ratio 1 : 1 : 1 : 1.\nIn both cases a group AB child is possible.\n\nCrosses with the group O man:\n1. Mother IᴬIᴬ × man IᴼIᴼ\nGametes: Iᴬ × Iᴼ\nOffspring: all IᴬIᴼ (group A).\n2. Mother IᴬIᴼ × man IᴼIᴼ\nGametes: Iᴬ, Iᴼ × Iᴼ\nOffspring: IᴬIᴼ (A) and IᴼIᴼ (O), in the ratio 1 : 1.\nIn neither case can a group AB child be produced, because a group O man has no Iᴮ allele to pass on.\n\nConclusion: the man with blood group O cannot be the father. The man with blood group B could be the father.\n\nNote: a blood group test can rule a man out as the father, but it cannot prove that he is the father, because many other men also have group B. A DNA test would be needed to confirm paternity."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Systematics (Taxonomy) of Animals",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "c) Fill in the blank spaces.\ni. A nucleotide has three components, namely, ________, ________ and ________.\nii. The animal kingdom is made up of many phylogenetic phyla which include the followings.\n1. Protozoa\n2. ________\n3. ________\n4. Nematoda\n5. ________\n6. ________\n7. Arthropoda\n8. Vertebrata\niii. Three types of animal connectic tissues are ________, ________ and ________.",
+    "options": [],
+    "modelAnswer": "(i) A pentose sugar (ribose in RNA, deoxyribose in DNA), a phosphate group, and a nitrogenous base (adenine, guanine, cytosine, thymine or uracil).\n\n(ii) Following the order from simple to complex:\n2. Coelenterata (Cnidaria)\n3. Platyhelminthes\n5. Annelida\n6. Mollusca\n(Porifera, which comes between Protozoa and Coelenterata, and Echinodermata are other phyla that could also fit these blanks.)\nNote: in modern classification, Protozoa are placed in the kingdom Protista, and Vertebrata is a subphylum of the phylum Chordata, not a phylum.\n\n(iii) Any three of: bone, cartilage, blood, areolar (loose) connective tissue, adipose tissue, dense fibrous connective tissue (e.g., tendons and ligaments).\nMisprint note: the paper prints 'connectic tissues'; this means connective tissues."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Invertebrates",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "a) List any ten characteristics of the phylum. Annelida",
+    "options": [],
+    "modelAnswer": "Characteristics of Annelida (any ten):\n1. They are triploblastic (three germ layers).\n2. They are bilaterally symmetrical.\n3. They have a true coelom (body cavity), which acts as a hydrostatic skeleton.\n4. The body is long, cylindrical or flattened, and worm-like.\n5. The body is metamerically segmented: divided into a series of similar ring-like segments, both externally and internally.\n6. Most have bristles called chaetae (setae) for locomotion; leeches lack them.\n7. The body is covered by a thin, moist cuticle, and gaseous exchange takes place through the skin.\n8. They have a complete digestive tract from mouth to anus.\n9. They have a closed blood circulatory system; the blood contains haemoglobin dissolved in the plasma.\n10. Excretion is by paired nephridia in most segments.\n11. The nervous system consists of cerebral ganglia and a ventral nerve cord with a pair of ganglia in each segment.\n12. They may be hermaphrodite (earthworms, leeches) or have separate sexes (many marine forms).\n13. Earthworms and leeches have a clitellum, which secretes the cocoon in which eggs develop.\n14. Marine forms develop through a trochophore larva.\n\nExamples: earthworm (Lumbricus), ragworm (Nereis), leech (Hirudo)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Ecologic and Economic Importance of Animals",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "b) Give TEN (10) importance of earth worms in agriculture.",
+    "options": [],
+    "modelAnswer": "1. Their burrows aerate the soil, supplying oxygen to plant roots and soil organisms.\n2. Their burrows improve drainage and water infiltration, reducing waterlogging and run-off.\n3. They mix the soil by bringing subsoil to the surface and carrying organic matter down.\n4. They pull dead leaves and organic matter into the soil and help decompose it into humus.\n5. Their casts are rich in plant nutrients (nitrogen, phosphorus, potassium), increasing soil fertility.\n6. Their mucus binds soil particles into crumbs, improving soil structure.\n7. Calcium carbonate from their calciferous glands helps neutralise soil acidity.\n8. Loosened soil makes it easier for roots to penetrate.\n9. They are used to produce vermicompost, an organic fertilizer.\n10. They are a protein-rich feed for poultry and fish, and are used as fish bait.\n11. Their presence indicates healthy, fertile soil.\n12. They increase the activity of beneficial soil microorganisms, which live in their gut and casts."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Sense Organ",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "a) Using a suitable labeled diagram, show the path of a sound vibration from the pinna to the inner ear naming the structures encountered at each point.",
+    "options": [],
+    "modelAnswer": "Diagram: draw a labelled section of the human ear showing the pinna, external auditory canal, tympanic membrane, malleus, incus, stapes, oval window, round window, Eustachian tube, semicircular canals, cochlea and auditory nerve, with arrows marking the path of sound.\n\nPath of a sound vibration:\n1. Pinna (outer ear): collects sound waves and directs them into the ear.\n2. External auditory canal (meatus): carries the sound waves to the eardrum.\n3. Tympanic membrane (eardrum): vibrates when the sound waves strike it. It separates the outer ear from the middle ear.\n4. Ear ossicles in the middle ear: malleus (hammer), then incus (anvil), then stapes (stirrup). They transmit the vibrations and amplify them.\n5. Oval window: the stapes pushes on this membrane, passing the vibrations into the inner ear.\n6. Cochlea (inner ear): the vibrations set up pressure waves in the perilymph of the vestibular canal, which pass to the endolymph of the cochlear duct and the basilar membrane.\n7. Organ of Corti: sensory hair cells on the basilar membrane are stimulated and produce nerve impulses.\n8. Auditory nerve: carries the impulses to the hearing centre of the brain.\n\nThe round window bulges outwards to release the pressure waves after they have passed through the cochlea. The Eustachian tube connects the middle ear to the pharynx and keeps the air pressure equal on both sides of the eardrum."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Sense Organ",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "b) Briefly discuss the mechanism of hearing.",
+    "options": [],
+    "modelAnswer": "1. Sound waves collected by the pinna travel along the external auditory canal and make the tympanic membrane vibrate.\n2. The ear ossicles (malleus, incus, stapes) transmit the vibrations across the middle ear. Because the ossicles act as levers, and the eardrum is much larger than the oval window (about 20 times), the vibrations are amplified about 20 times by the time they reach the oval window.\n3. The stapes moves the oval window in and out, setting up pressure waves in the perilymph of the cochlea.\n4. These pressure waves make the basilar membrane vibrate. Different parts of the membrane respond to different frequencies: high-pitched sounds near the base of the cochlea and low-pitched sounds near the apex.\n5. As the basilar membrane vibrates, the sensory hair cells of the organ of Corti are pressed against the overlying tectorial membrane. The bending of their hairs stimulates the cells to produce nerve impulses.\n6. The impulses travel along the auditory nerve to the auditory centre in the temporal lobe of the cerebrum, where they are interpreted as sound. Pitch depends on which part of the basilar membrane is stimulated; loudness depends on the amplitude of vibration and the number of hair cells stimulated.\n7. The round window bulges outwards to release the pressure from the cochlea, allowing the fluid to vibrate freely."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Evolution",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "a) Explain the term evolution",
+    "options": [],
+    "modelAnswer": "Evolution is the gradual change in the heritable characteristics of populations of organisms over many generations, by which new species develop from pre-existing, usually simpler, forms. It explains the diversity of living things and their adaptations to their environments.\n\nEvidence for evolution includes:\n1. Fossil records showing a sequence of change over time.\n2. Comparative anatomy, e.g., homologous structures such as the forelimbs of vertebrates.\n3. Comparative embryology: similar early embryos in different vertebrates.\n4. Molecular evidence: similarities in DNA and proteins.\n5. Geographical distribution of organisms.\n\nThe main theories of how evolution occurs are Lamarckism and Darwinism (natural selection)."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Evolution",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "b) In a tabular form state the differences between Darwinism and Lamarkism.",
+    "options": [],
+    "modelAnswer": "Misprint note: the paper prints 'Lamarkism'; the correct spelling is Lamarckism.\n\nIn the exam, set these out in two columns headed Darwinism and Lamarckism.\n\n1. Proposer:\nDarwinism: proposed by Charles Darwin (On the Origin of Species, 1859).\nLamarckism: proposed by Jean-Baptiste Lamarck (1809).\n\n2. Basic idea:\nDarwinism: evolution occurs by natural selection.\nLamarckism: evolution occurs by use and disuse of organs and the inheritance of acquired characters.\n\n3. Origin of variation:\nDarwinism: variations occur naturally and at random, and are already present in the population.\nLamarckism: variations are acquired during an organism's lifetime in response to the needs of the environment.\n\n4. Role of the environment:\nDarwinism: the environment selects the best-adapted individuals.\nLamarckism: the environment directly causes changes in the organism.\n\n5. Inheritance:\nDarwinism: only inherited (genetic) variations are passed on; acquired characters are not inherited.\nLamarckism: characters acquired during life are passed on to offspring.\n\n6. Key processes:\nDarwinism: overproduction, struggle for existence and survival of the fittest.\nLamarckism: an inner urge or need, and use and disuse of organs.\n\n7. Example (giraffe's long neck):\nDarwinism: giraffes with naturally longer necks reached more food, survived and passed on the trait.\nLamarckism: giraffes stretched their necks to reach leaves, and the lengthened necks were passed to their offspring.\n\n8. Present status:\nDarwinism: accepted, and combined with genetics as neo-Darwinism (the modern synthesis).\nLamarckism: largely rejected. For example, Weismann cut off the tails of mice for many generations, but their offspring were still born with tails."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Physiological Processes",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Write notes on any FOUR (4) of the following:\na) Pituitary gland\nb) Sexual reproduction\nc) Factors affecting growth\nd) Competitive inhibitors\ne) Insulin\nf) Transportation of carbon dioxide in man.",
+    "options": [],
+    "modelAnswer": "Students choose any four. Notes on all six are given below.\n\n(a) Pituitary gland: a small, pea-sized endocrine gland at the base of the brain, attached to the hypothalamus by a stalk (infundibulum). It is called the 'master gland' because many of its hormones control other endocrine glands. It is itself controlled by the hypothalamus.\nAnterior lobe hormones: growth hormone (GH), thyroid-stimulating hormone (TSH), adrenocorticotrophic hormone (ACTH), follicle-stimulating hormone (FSH), luteinising hormone (LH) and prolactin.\nPosterior lobe: stores and releases antidiuretic hormone (ADH) and oxytocin, which are made in the hypothalamus.\nDisorders: too much growth hormone in childhood causes gigantism (acromegaly in adults); too little causes dwarfism. Lack of ADH causes diabetes insipidus.\n\n(b) Sexual reproduction: the production of offspring by the fusion of two haploid gametes, usually from two parents (a sperm from the male and an ovum from the female), to form a diploid zygote.\nGametes are produced by meiosis. Fertilization may be external (e.g., most fish and frogs) or internal (e.g., reptiles, birds, mammals). Some animals, such as earthworms, are hermaphrodites but usually cross-fertilize.\nAdvantages: offspring show variation, which helps species adapt to changing environments and is the raw material for evolution.\nDisadvantages: it usually needs two parents, is slower, and uses more energy than asexual reproduction.\n\n(c) Factors affecting growth:\nInternal factors: heredity (genes set the growth potential); hormones such as growth hormone, thyroxine, insulin and the sex hormones.\nExternal factors: nutrition (enough proteins, vitamins and minerals); diseases and parasites, which slow growth; temperature, which especially affects ectotherms; light (e.g., for vitamin D formation in skin); oxygen supply; space and overcrowding.\n\n(d) Competitive inhibitors: substances whose molecules resemble the shape of an enzyme's normal substrate. They bind to the active site, usually reversibly, and block the substrate from binding, which slows the reaction.\nBecause inhibitor and substrate compete for the same site, the inhibition can be overcome by increasing the substrate concentration. (Non-competitive inhibitors, in contrast, bind elsewhere on the enzyme and change the shape of the active site.)\nExamples: malonate competes with succinate for the enzyme succinate dehydrogenase; sulphonamide drugs compete with para-aminobenzoic acid (PABA) in bacteria, stopping the bacteria making folic acid.\n\n(e) Insulin: a protein hormone secreted by the beta cells of the islets of Langerhans in the pancreas, in response to a rise in blood glucose (e.g., after a meal).\nEffects: it increases the uptake of glucose by body cells, especially liver, muscle and fat cells; stimulates the conversion of glucose to glycogen in the liver and muscles; promotes the use of glucose in respiration and the formation of fat; and reduces the production of new glucose by the liver. The overall effect is to lower blood glucose.\nIts action is opposed by glucagon, from the alpha cells of the pancreas. Together they keep blood glucose constant by negative feedback.\nLack of insulin, or failure of cells to respond to it, causes diabetes mellitus: high blood glucose, glucose in the urine, and excessive thirst and urination. It can be treated with insulin injections.\n\n(f) Transportation of carbon dioxide in man: CO₂ produced by respiring tissues diffuses into the blood and is carried in three ways (percentages are approximate and vary between textbooks):\n1. As hydrogencarbonate ions in the plasma (about 70%). In the red blood cells, the enzyme carbonic anhydrase speeds up the reaction CO₂ + H₂O → H₂CO₃, and the carbonic acid dissociates into H⁺ + HCO₃⁻. The HCO₃⁻ ions diffuse into the plasma, and chloride ions move into the red cells to balance the charge; this is the chloride shift. The H⁺ ions are buffered by haemoglobin, which helps haemoglobin release oxygen to the tissues (the Bohr effect).\n2. As carbamino-haemoglobin (about 20–23%): CO₂ combines with the amino groups of haemoglobin.\n3. Dissolved in the plasma (about 5–7%).\nIn the lungs the reactions are reversed: CO₂ is released, diffuses into the alveoli, and is breathed out."
+  },
+  {
+    "subject": "Biology",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Evolution",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Discuss in detail the genetic basis of Natural selection.",
+    "options": [],
+    "modelAnswer": "Natural selection is the process by which individuals with characteristics better suited to their environment survive and reproduce more than others, so that their characteristics become more common in later generations. Its genetic basis is as follows.\n\n1. Genetic variation is the raw material. Individuals in a population differ genetically, and only these inherited (genetic) differences can be passed on and acted on by selection. Variation acquired during an individual's lifetime is not inherited. Variation arises from:\n(a) Mutation: changes in genes (gene mutations) or in chromosome structure or number. This is the only source of new alleles.\n(b) Independent assortment of chromosomes during meiosis.\n(c) Crossing over between homologous chromosomes in prophase I of meiosis.\n(d) Random fertilization: any male gamete can fuse with any female gamete.\n(e) Gene flow: movement of alleles between populations through migration.\n\n2. Gene pool and allele frequency. All the alleles in a population make up its gene pool. By the Hardy–Weinberg principle, allele frequencies stay constant from generation to generation unless something changes them. Natural selection is one of the main forces that does.\n\n3. Overproduction and struggle for existence. Organisms produce more offspring than the environment can support, so individuals compete for food, space and mates, and face predators and disease.\n\n4. Differential survival and reproduction. Individuals whose alleles give them an advantage (greater fitness) are more likely to survive and reproduce. Those with less favourable alleles tend to die before reproducing or leave fewer offspring.\n\n5. Inheritance of favourable alleles. The survivors pass their favourable alleles to their offspring. Over many generations the frequency of these alleles in the gene pool increases, and the frequency of unfavourable alleles falls. The population becomes better adapted; this change in allele frequency is evolution.\n\n6. Types of selection:\n(a) Stabilising selection favours the average phenotype, e.g., human birth weight.\n(b) Directional selection favours one extreme, shifting the population in that direction.\n(c) Disruptive selection favours both extremes, which can split a population into two forms.\n\n7. Examples:\n(a) Industrial melanism in the peppered moth (Biston betularia): in soot-polluted areas, the allele for dark colour increased because dark moths were better camouflaged on blackened tree trunks.\n(b) Sickle-cell allele and malaria: heterozygotes (HbᴬHbˢ) are resistant to malaria, so the sickle-cell allele stays common in malarial regions such as West Africa.\n(c) Antibiotic resistance in bacteria and insecticide resistance in mosquitoes: resistant mutants survive treatment and multiply.\n\n8. Speciation. When populations are isolated, for example geographically, selection acts differently on each. Their gene pools diverge until they can no longer interbreed, forming new species.\n\nThis combination of Darwin's natural selection with Mendelian genetics is called neo-Darwinism (the modern synthesis)."
+  }
+]

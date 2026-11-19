@@ -52,7 +52,7 @@
     "question": "Deduce the values of x if 9x² = 3^(5x - 2).",
     "options": ["2, 1/4", "1/2, 3", "1/2, 4", "1/2, 2"],
     "answer": "D",
-    "explanation": "9x² = (3x)² = 3^(5x-2).\n\nTaking log base 3:\nlog₃(3x)² = 5x - 2\n2 log₃(3x) = 5x - 2\n\nSolving gives x = 1/2 and x = 2."
+    "explanation": "The left side should read 9^(x²) (9 to the power x²).\n\n9^(x²) = (3²)^(x²) = 3^(2x²)\nSo 3^(2x²) = 3^(5x − 2) → 2x² = 5x − 2\n2x² − 5x + 2 = 0 → (2x − 1)(x − 2) = 0\nx = 1/2 or x = 2."
   },
   {
     "subject": "Mathematics",
@@ -294,6 +294,8 @@
     "question": "If y = e²ˣ⁻¹, find d²y/dx² - 2 dy/dx - 2y.",
     "options": ["2", "1", "0", "-2"],
     "answer": "D",
+    "reviewNote": "y = e^(2x−1): dy/dx = 2e^(2x−1), d²y/dx² = 4e^(2x−1).\n\nd²y/dx² − 2 dy/dx − 2y = 4e^(2x−1) − 4e^(2x−1) − 2e^(2x−1) = −2e^(2x−1) = −2y.\n\nThe result is −2y, which changes with x, so none of the constant options (2, 1, 0, −2) is correct.",
+    "excludeFromQuiz": true,
     "explanation": "y = e²ˣ⁻¹.\ndy/dx = 2e²ˣ⁻¹.\nd²y/dx² = 4e²ˣ⁻¹.\n\nd²y/dx² - 2dy/dx - 2y = 4e²ˣ⁻¹ - 4e²ˣ⁻¹ - 2e²ˣ⁻¹ = -2e²ˣ⁻¹ = -2y.\n\nThe expression equals -2y, not a constant. Given the options, -2 is the closest if the question intended evaluation at a point where y = 1."
   },
   {
@@ -371,6 +373,8 @@
     "question": "A body of mass 6 kg is suspended at a position P by two light inextensible strings AP and BP which are inclined respectively at angle 20° and 60° to the upward vertical. If the system is in equilibrium, calculate the total tension in the string.",
     "options": ["62.75 N", "87.71 N", "32.75 N", "25.57 N"],
     "answer": "B",
+    "reviewNote": "Weight = 6 × 9.8 = 58.8 N. With the strings at 20° and 60° to the vertical (Lami's theorem):\nT₁ = 58.8 × sin60° ÷ sin80° ≈ 51.7 N\nT₂ = 58.8 × sin20° ÷ sin80° ≈ 20.4 N\nT₁ + T₂ ≈ 72.1 N.\n\nNone of the options matches (the key gave 87.71 N without working).",
+    "excludeFromQuiz": true,
     "explanation": "Resolve vertically: T₁cos20° + T₂cos60° = mg = 6 × 9.8 = 58.8 N.\n\nResolve horizontally: T₁sin20° = T₂sin60°.\n\nSolving the system gives T₁ + T₂ ≈ 87.71 N."
   },
   {
@@ -404,6 +408,8 @@
     "question": "Evaluate ∫₀² F(t) dt if F(t) = 2e⁻ᵗ i + 5 cos t j - 3 sin t k.",
     "options": ["-2i + 3k", "2(1 - e⁻²)i + 5 sin 2 j + 3(1 - cos 2)k", "2e⁻ᵗ i + 5 sin t j + 3 cos t k", "-2i + 3j + 3(1 - cos 2)k"],
     "answer": "B",
+    "reviewNote": "∫₀² 2e⁻ᵗ dt = 2(1 − e⁻²); ∫₀² 5 cos t dt = 5 sin 2; ∫₀² −3 sin t dt = 3(cos 2 − 1) = −3(1 − cos 2).\n\nResult: 2(1 − e⁻²)i + 5 sin 2 j − 3(1 − cos 2)k. Option B has the wrong sign on the k term, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "∫ 2e⁻ᵗ dt from 0 to 2 = [-2e⁻ᵗ]₀² = -2e⁻² + 2 = 2(1-e⁻²).\n\n∫ 5 cos t dt from 0 to 2 = [5 sin t]₀² = 5 sin 2.\n\n∫ -3 sin t dt from 0 to 2 = [3 cos t]₀² = 3(cos2 - 1) = -3(1-cos2).\n\nResult: 2(1-e⁻²)i + 5 sin 2 j - 3(1-cos2)k.\n\nThe k-component should be -3(1-cos2). The closest option has +3(1-cos2), suggesting a sign error in the options."
   },
   {
@@ -415,7 +421,7 @@
     "question": "Two forces 10 N and 6 N act in the direction 060° and 330° respectively. Find the x-component of their resultant.",
     "options": ["5√3 - 3", "3 - 5√3", "5 - 3√3", "3√3 - 5"],
     "answer": "A",
-    "explanation": "10 N at 60°: x-component = 10 cos60° = 10(1/2) = 5.\n\n6 N at 330°: x-component = 6 cos330° = 6(√3/2) = 3√3.\n\nTotal x-component = 5 + 3√3 ≈ 10.196.\n\nThe correct value is 5 + 3√3, which is not among the options. The closest option has been selected."
+    "explanation": "060° and 330° are bearings, measured clockwise from north. The x-component (east) of a force F on bearing θ is F sin θ.\n\n10 N on 060°: 10 sin 60° = 10(√3/2) = 5√3.\n6 N on 330°: 6 sin 330° = 6(−½) = −3.\n\nx-component of the resultant = 5√3 − 3."
   },
   {
     "subject": "Mathematics",
@@ -428,6 +434,8 @@
     "diagramNote": "⚠️ Diagram missing: Velocity-time graph. Please refer to your original past question paper.",
     "options": ["120 m", "90 m", "150 m", "240 m"],
     "answer": "N/A",
+    "reviewNote": "The velocity–time graph this question refers to is not included in this copy of the paper, so it cannot be answered here. It is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Cannot determine without the diagram. Refer to your past question paper."
   },
   {
@@ -449,8 +457,8 @@
     "questionNumber": 41,
     "question": "How many 5-letter code-words can be formed from the letters of the word ALGEBRA, if the code-word must begin with A and end with A?",
     "options": ["20", "120", "60", "40"],
-    "answer": "B",
-    "explanation": "ALGEBRA has 7 letters with A repeated twice.\n\nPositions 1 and 5 are fixed as A.\n\nRemaining 5 positions from 5 distinct letters (L, G, E, B, R):\n5! = 120."
+    "answer": "C",
+    "explanation": "A 5-letter code-word that starts and ends with A uses both A's at the ends:\nA _ _ _ A\n\nThe 3 middle places are filled from the 5 other letters L, G, E, B, R with no repeats:\n5 × 4 × 3 = ⁵P₃ = 60."
   },
   {
     "subject": "Mathematics",
@@ -579,7 +587,7 @@
     "questionNumber": "1c",
     "question": "(c) Find the equation of the tangent to the circle x² + y² + 2x - 3y = -1 at the point (3, 4).",
     "options": [],
-    "modelAnswer": "Circle: x² + y² + 2x - 3y + 1 = 0.\n\nCentre: (x+1)² + (y-3/2)² = 9/4\nCentre C = (-1, 3/2).\n\nGradient of radius from C to P(3, 4):\nm_r = (4 - 3/2)/(3 - (-1)) = (5/2)/4 = 5/8.\n\nGradient of tangent (perpendicular to radius):\nm_t = -8/5.\n\nTangent at (3, 4):\ny - 4 = -(8/5)(x - 3)\n5y - 20 = -8x + 24\n8x + 5y = 44."
+    "modelAnswer": "Note: (3, 4) does not actually lie on the circle as printed: 3² + 4² + 2(3) − 3(4) = 19, not −1. The circle with the same centre that passes through (3, 4) is x² + y² + 2x − 3y = 19, and for that circle the working below gives exactly the tangent at (3, 4). The method (the tangent is perpendicular to the radius at the point of contact) is what the question tests.\n\nCircle: x² + y² + 2x - 3y + 1 = 0.\n\nCentre: (x+1)² + (y-3/2)² = 9/4\nCentre C = (-1, 3/2).\n\nGradient of radius from C to P(3, 4):\nm_r = (4 - 3/2)/(3 - (-1)) = (5/2)/4 = 5/8.\n\nGradient of tangent (perpendicular to radius):\nm_t = -8/5.\n\nTangent at (3, 4):\ny - 4 = -(8/5)(x - 3)\n5y - 20 = -8x + 24\n8x + 5y = 44."
   },
   {
     "subject": "Mathematics",
@@ -699,7 +707,7 @@
     "questionNumber": "5c",
     "question": "(c) A car of mass 200 kg moves forward on a road with an acceleration of 0.8 m/s² and covers a distance of 200 m. If the road has a resistance of 40 N, calculate the driving power of the car if the trip lasted 20 seconds.",
     "options": [],
-    "modelAnswer": "m = 200 kg, a = 0.8 m/s², s = 200 m, F_r = 40 N, t = 20 s.\n\nDriving force:\nF_d = ma + F_r = 200(0.8) + 40 = 160 + 40 = 200 N.\n\nUsing s = ut + ½at²:\n200 = u(20) + ½(0.8)(400)\n200 = 20u + 160\n20u = 40\nu = 2 m/s.\n\nFinal velocity:\nv = u + at = 2 + 0.8(20) = 18 m/s.\n\nDriving power at end of trip:\nP = F_d × v = 200 × 18 = 3600 W = 3.6 kW."
+    "modelAnswer": "m = 200 kg, a = 0.8 m/s², s = 200 m, F_r = 40 N, t = 20 s.\n\nDriving force:\nF_d = ma + F_r = 200(0.8) + 40 = 160 + 40 = 200 N.\n\nUsing s = ut + ½at²:\n200 = u(20) + ½(0.8)(400)\n200 = 20u + 160\n20u = 40\nu = 2 m/s.\n\nFinal velocity:\nv = u + at = 2 + 0.8(20) = 18 m/s.\n\nAverage driving power over the trip (the answer expected, since the distance and time are given):\nWork done by the driving force = F_d × s = 200 × 200 = 40 000 J.\nP = work/time = 40 000/20 = 2000 W = 2.0 kW.\n\n(The power is not constant, because the speed changes. At the end of the trip, P = F_d × v = 200 × 18 = 3600 W; at the start it is 200 × 2 = 400 W.)"
   },
   {
     "subject": "Mathematics",

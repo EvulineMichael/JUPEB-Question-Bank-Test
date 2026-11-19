@@ -1,0 +1,319 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a). Write down one difference and one similarities of real and virtual images. Mention any two uses each of plane mirror, concave and convex mirror.",
+    "options": [],
+    "modelAnswer": "Difference: a real image is formed where rays of light actually meet, so it can be caught (projected) on a screen. A virtual image is formed where rays only appear to come from (they diverge), so it cannot be caught on a screen.\n(Another difference: real images formed by a single mirror or lens are inverted, while virtual images are upright.)\n\nSimilarity: both can be seen by the eye (and photographed), and both are formed by reflection or refraction of light from an object.\n\nUses of a plane mirror (any two): looking glass (dressing mirror); periscopes; kaleidoscopes; making a room look bigger; in the optical lever of measuring instruments.\nUses of a concave mirror (any two): shaving and make-up mirrors (magnified upright image when close); dentists' mirrors; reflectors in car headlamps, torches and searchlights (with the lamp at the focus); solar concentrators and reflecting telescopes.\nUses of a convex mirror (any two): driving (rear-view and side) mirrors, because they give a wide field of view; security mirrors in shops and at blind corners on roads."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "A ray of light travelling on a medium at an angle of cos⁻¹(1/√2) and refracted at an angle of sin⁻¹(1/√2) in the medium. Calculate the velocity of light in the medium.",
+    "options": [],
+    "modelAnswer": "Note: as printed, both angles are 45° (cos⁻¹(1/√2) = 45° and sin⁻¹(1/√2) = 45°), which would mean no bending of the ray, so the question may be misprinted.\n\nAngle of incidence i = cos⁻¹(1/√2) = 45°; angle of refraction r = sin⁻¹(1/√2) = 45°.\nRefractive index n = sin i/sin r = sin 45°/sin 45° = 1.\nVelocity of light in the medium v = c/n = (3.0 × 10⁸)/1 = 3.0 × 10⁸ m s⁻¹.\n\n(If the angle of refraction were meant to be 30°, then n = sin 45°/sin 30° = 0.7071/0.5 = 1.414 and v = 3.0 × 10⁸/1.414 = 2.12 × 10⁸ m s⁻¹.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "A concave mirror has a focal length of 25.3 cm. An object, of height 1.45 cm is placed 46 cm in front of the mirror. Determine the: the radius of curvature of the mirror, the image position, size and nature of the image.",
+    "options": [],
+    "modelAnswer": "Using the real-is-positive convention: f = +25.3 cm, u = 46 cm.\n\nRadius of curvature: r = 2f = 2 × 25.3 = 50.6 cm.\n\nImage position: 1/v = 1/f − 1/u = 1/25.3 − 1/46\nv = uf/(u − f) = (46 × 25.3)/(46 − 25.3) = 1163.8/20.7 = 56.2 cm in front of the mirror.\n\nMagnification: m = v/u = 56.2/46 = 1.22.\nImage height = 1.22 × 1.45 = 1.77 cm.\n\nNature: the object is between F and C, so the image is real, inverted and magnified, formed beyond C (56.2 cm in front of the mirror)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "A charge of 1μC on a small sphere of mass 1μg is placed in a uniform electric field of 3NC⁻¹. Calculate the acceleration produced by this filed.",
+    "options": [],
+    "modelAnswer": "Force F = qE = (1 × 10⁻⁶ C)(3 N C⁻¹) = 3 × 10⁻⁶ N.\nMass m = 1 μg = 1 × 10⁻⁶ g = 1 × 10⁻⁹ kg.\nAcceleration a = F/m = (3 × 10⁻⁶)/(1 × 10⁻⁹) = 3.0 × 10³ m s⁻².\n(Note: 'filed' means field.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a). Define the term Coulomb. Calculate the Coulombic force between two electrons situated at 1.6Å apart in vacuum.",
+    "options": [],
+    "modelAnswer": "Definition: the coulomb (C) is the SI unit of electric charge. One coulomb is the quantity of charge that passes a point in a circuit when a steady current of one ampere flows for one second (1 C = 1 A s).\n\nForce between two electrons, using Coulomb's law F = Kq₁q₂/r²:\nq₁ = q₂ = 1.6 × 10⁻¹⁹ C; r = 1.6 Å = 1.6 × 10⁻¹⁰ m; K = 9 × 10⁹ N m² C⁻².\nF = (9 × 10⁹)(1.6 × 10⁻¹⁹)²/(1.6 × 10⁻¹⁰)² = (9 × 10⁹)(2.56 × 10⁻³⁸)/(2.56 × 10⁻²⁰) = 9 × 10⁹ × 10⁻¹⁸ = 9.0 × 10⁻⁹ N.\nThe force is repulsive, because both charges are negative."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "A 2.5μF capacitor is connected in series with a non-inductive resistor of 300Ω across a mains of rms value 50 V, 1000/2πHz. .Calculate: the thermal values of the current in the circuit and the p.d across the capacitor.",
+    "options": [],
+    "modelAnswer": "Note: 'thermal values' means the r.m.s. (effective or heating) values.\n\nf = 1000/2π Hz, so ω = 2πf = 1000 rad s⁻¹.\nCapacitive reactance: X꜀ = 1/(ωC) = 1/(1000 × 2.5 × 10⁻⁶) = 400 Ω.\nImpedance: Z = √(R² + X꜀²) = √(300² + 400²) = √250000 = 500 Ω.\n\nr.m.s. current: I = V/Z = 50/500 = 0.10 A.\np.d. across the capacitor: V꜀ = IX꜀ = 0.10 × 400 = 40 V.\n(For completeness, the p.d. across the resistor is IR = 0.10 × 300 = 30 V; √(30² + 40²) = 50 V, as expected.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Ten 1.5 V cells, each having an internal resistance of 0.2Ω, are connected in series to a load of 58 Ω. Determine the current flowing in the circuit and the p.d at the battery terminals.",
+    "options": [],
+    "modelAnswer": "Total e.m.f. E = 10 × 1.5 = 15 V.\nTotal internal resistance r = 10 × 0.2 = 2.0 Ω.\n\nCurrent: I = E/(R + r) = 15/(58 + 2) = 15/60 = 0.25 A.\nTerminal p.d.: V = IR = 0.25 × 58 = 14.5 V.\n(Check: lost volts = Ir = 0.25 × 2 = 0.5 V, and 15 − 0.5 = 14.5 V.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Light is directed onto a metal surface for which the work function is 2eV. If the light's frequency is f such that hf = 5eV. What is the maximum speed of the emitted electrons?",
+    "options": [],
+    "modelAnswer": "Einstein's photoelectric equation: ½mv²max = hf − Φ = 5 eV − 2 eV = 3 eV.\n3 eV = 3 × 1.6 × 10⁻¹⁹ = 4.8 × 10⁻¹⁹ J.\n\nvmax = √(2 × KE/m) = √(2 × 4.8 × 10⁻¹⁹/9.0 × 10⁻³¹) = √(1.067 × 10¹²) = 1.03 × 10⁶ m s⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "State the Heisenberg Uncertainty Principle involving energy. What is the minimum uncertainty in the energy state of an atom if an electron remains in this state for 10⁻⁸s?",
+    "options": [],
+    "modelAnswer": "Statement: it is impossible to know simultaneously and exactly both the energy of a system and the time interval during which it has that energy. The product of the uncertainty in energy (ΔE) and the uncertainty in time (Δt) is at least of the order of Planck's constant: ΔE·Δt ≥ h/4π (i.e., ħ/2).\n\nMinimum uncertainty in energy:\nΔE = h/(4πΔt) = 6.6 × 10⁻³⁴/(4π × 10⁻⁸) = 5.25 × 10⁻²⁷ J (≈ 3.3 × 10⁻⁸ eV).\n\n(Some textbooks use ΔE·Δt ≥ h/2π; this gives ΔE = 1.05 × 10⁻²⁶ J. The order of magnitude is the same.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Semiconductors",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Briefly explain the concepts of \"insulators, semiconductors and conductors in terms of the forbidden energy gap. What is N-type semiconductor?",
+    "options": [],
+    "modelAnswer": "In solids, the allowed electron energies form bands: the valence band (filled with bonding electrons) and the conduction band (where electrons are free to move). They are separated by the forbidden energy gap (band gap), Eg, in which no electron energy states exist.\n\n1. Insulators: the forbidden gap is very large (typically more than about 5 eV, e.g., diamond). At ordinary temperatures, electrons cannot gain enough energy to cross into the conduction band, so there are almost no free electrons, and the material does not conduct.\n\n2. Semiconductors: the forbidden gap is small (about 1 eV, e.g., silicon about 1.1 eV and germanium about 0.7 eV). At room temperature, some electrons gain enough thermal energy to cross into the conduction band, leaving holes in the valence band, so the material conducts slightly. Conductivity increases with temperature.\n\n3. Conductors (metals): there is no forbidden gap; the valence and conduction bands overlap (or the conduction band is partly filled), so there are many free electrons, and the material conducts very well.\n\nN-type semiconductor: a pure (intrinsic) semiconductor, such as silicon or germanium, doped with a small amount of a pentavalent impurity (with five valence electrons), such as phosphorus, arsenic or antimony. Four of the impurity's electrons form bonds, and the fifth is free to conduct. The majority charge carriers are therefore electrons (negative, hence 'N-type'), and holes are the minority carriers. The impurity atoms are called donors."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(i). Explain how to differentiate between a plane mirror, a concave and a convex mirror, without touching them in terms of image formed.\n(ii) Explain the following rules for ray diagram:\n(A) A ray of light parallel to the principal axis.\n(B) A ray of light passing through Centre of curvature of a mirror.\n(C) A ray of light passing through the principal focus of a mirror.\n(iii). Complete the table for the image formation by a concave mirror for different positions of the object. ( 1 to 8 ) in Table 1.",
+    "dataTable": {
+      "headers": [
+        "Position of object",
+        "Position of image",
+        "Size of image",
+        "Nature of image"
+      ],
+      "rows": [
+        [
+          "At infinity",
+          "(1)",
+          "(2)",
+          "Real and inverted"
+        ],
+        [
+          "At C",
+          "(3)",
+          "(4)",
+          "(5)"
+        ],
+        [
+          "Between C and F",
+          "Beyond C",
+          "(6)",
+          "Real and inverted"
+        ],
+        [
+          "At F",
+          "(7)",
+          "Highly enlarged",
+          "(8)"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "(i) Look at your face (or an object) in each mirror, moving gradually closer to and away from it:\n1. Plane mirror: the image is always upright and the same size as the object, at all distances.\n2. Concave mirror: when the object is very close, the image is upright and magnified. As the object moves farther away, the image becomes inverted (and real).\n3. Convex mirror: the image is always upright and diminished, at all distances, and the mirror gives a wide field of view.\n\n(ii) Rules for ray diagrams:\n(A) A ray parallel to the principal axis is reflected through the principal focus F (for a concave mirror), or appears to come from F behind the mirror (for a convex mirror).\n(B) A ray passing through the centre of curvature C strikes the mirror normally, and is reflected back along its own path.\n(C) A ray passing through the principal focus F (or directed towards F, for a convex mirror) is reflected parallel to the principal axis.\n\n(iii) Completed Table 1 (concave mirror):\nObject at infinity: (1) image at F; (2) highly diminished (point-sized); real and inverted.\nObject at C: (3) image at C; (4) same size as the object; (5) real and inverted.\nObject between C and F: image beyond C; (6) magnified; real and inverted.\nObject at F: (7) image at infinity; highly enlarged; (8) real and inverted (formed at infinity)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "b(i). State the necessary conditions for the total internal reflection to occur. What are the factors on which the refractive index of a medium depends?\n(ii) A 1.2 cm long pin is placed perpendicular to the principal axis of a convex mirror of focal length 12 cm, at a distance of 8 cm from it. Sketch the ray diagram and find the location, height and the nature of the image.\n(iii) An astronomical telescope in normal use has an angular magnification of 8 and the lenses are at a distance of 45cm apart. What is the focal length of the lenses?",
+    "options": [],
+    "modelAnswer": "(i) Conditions for total internal reflection:\n1. Light must travel from an optically denser medium to a less dense medium (e.g., from glass to air).\n2. The angle of incidence in the denser medium must be greater than the critical angle.\n\nFactors on which the refractive index depends:\n1. The nature (optical density) of the medium.\n2. The wavelength (colour) of the light: e.g., glass has a larger refractive index for violet light than for red, which causes dispersion.\n3. The temperature (and, for gases, the pressure) of the medium.\n4. The medium from which the light comes (relative refractive index).\n\n(ii) Convex mirror, using the real-is-positive convention: f = −12 cm (virtual focus), u = +8 cm.\n1/v = 1/f − 1/u = −1/12 − 1/8 = −(2 + 3)/24 = −5/24.\nv = −4.8 cm, i.e., the image is 4.8 cm behind the mirror.\nMagnification m = |v|/u = 4.8/8 = 0.6, so the image height = 0.6 × 1.2 = 0.72 cm.\nNature: virtual, upright (erect) and diminished.\nRay diagram: draw the convex mirror, with F and C behind it, 12 cm and 24 cm from the pole. Draw a ray from the top of the pin parallel to the axis, reflected so that it appears to come from F; and a ray directed towards C, reflected straight back. The reflected rays, traced back behind the mirror, meet at the top of the image, 4.8 cm behind the mirror.\n\n(iii) In normal adjustment: angular magnification M = f₀/fₑ = 8, and the separation of the lenses = f₀ + fₑ = 45 cm.\nf₀ = 8fₑ, so 8fₑ + fₑ = 45, giving 9fₑ = 45 and fₑ = 5 cm.\nf₀ = 40 cm.\nThe objective has a focal length of 40 cm, and the eyepiece 5 cm."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "(i). State and give the geometrical interpretations of the laws of refraction using a rectangular glass prism. Hence, show that, n₁v₁ = n₂v₂ where v₁, v₂ velocities of light in medium 1 and 2 of refractive indices n₁ and n₂ respectively.\n(ii) A ray of light making an angle of 30⁰ with the normal, enters a glass plate 4 cm thick. Calculate the distance the light ray travels in the glass before it leaves the plate. What angles does the emergent ray make with the normal?",
+    "options": [],
+    "modelAnswer": "(i) Laws of refraction:\n1. The incident ray, the refracted ray and the normal at the point of incidence all lie in the same plane.\n2. Snell's law: for two given media, the ratio of the sine of the angle of incidence to the sine of the angle of refraction is a constant (the refractive index): sin i/sin r = n.\n\nGeometrical interpretation using a rectangular glass block ('prism'): a ray entering the block from air bends towards the normal (r < i), because glass is optically denser. On leaving through the parallel opposite face, it bends away from the normal by the same amount, so the emergent ray is parallel to the incident ray, but laterally displaced. Measuring i and r for several rays and plotting sin i against sin r gives a straight line through the origin, whose gradient is n.\n\nShowing n₁v₁ = n₂v₂: the absolute refractive index of a medium is n = c/v, where c is the speed of light in a vacuum.\nFor medium 1, n₁ = c/v₁, so n₁v₁ = c.\nFor medium 2, n₂ = c/v₂, so n₂v₂ = c.\nTherefore n₁v₁ = n₂v₂ (= c).\n(Equivalently, Snell's law in general form is n₁ sin θ₁ = n₂ sin θ₂, and sin θ₁/sin θ₂ = v₁/v₂.)\n\n(ii) Note: the question does not give the refractive index of the glass. A typical value, n = 1.5, is assumed.\nsin r = sin 30°/1.5 = 0.5/1.5 = 0.333, so r = 19.5°.\nDistance travelled in the glass = thickness/cos r = 4/cos 19.5° = 4/0.943 = 4.24 cm.\nThe faces of the plate are parallel, so the emergent ray makes the same angle with the normal as the incident ray: 30° (whatever the refractive index)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "b. An object 4cm high is placed at a distance of 40cm from a converging lens of focal length 15cm. A diverging lens of focal length 10cm is placed a distance 30cm from the first lens. Find the position, size and the nature of the final image.",
+    "options": [],
+    "modelAnswer": "Using the real-is-positive convention.\n\nFirst lens (converging, f₁ = +15 cm, u₁ = 40 cm):\n1/v₁ = 1/15 − 1/40 = (8 − 3)/120 = 5/120, so v₁ = 24 cm.\nThe first image is real, inverted, 24 cm beyond the first lens. Magnification m₁ = 24/40 = 0.6.\n\nSecond lens (diverging, f₂ = −10 cm), 30 cm from the first lens:\nThe first image lies 30 − 24 = 6 cm in front of the second lens, so it acts as a real object for it: u₂ = +6 cm.\n1/v₂ = 1/f₂ − 1/u₂ = −1/10 − 1/6 = −(3 + 5)/30 = −8/30, so v₂ = −3.75 cm.\nThe final image is 3.75 cm in front of the diverging lens, on the same side as the light comes from, i.e., between the two lenses, 30 − 3.75 = 26.25 cm from the converging lens.\nMagnification m₂ = 3.75/6 = 0.625.\n\nTotal magnification m = m₁ × m₂ = 0.6 × 0.625 = 0.375.\nFinal image height = 0.375 × 4 = 1.5 cm.\n\nNature of the final image: virtual (formed by the diverging lens), diminished, and inverted relative to the original object (the first lens inverts it, and the diverging lens keeps that orientation)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "(i). Explain in details the term \"capacitor\".\n(ii). You are provided with three identical capacitors each of capacitances 2μF. what are the maximum and minimum capacitance could you obtain with these capacitors? What arrangement of these capacitors would give a resultant capacitance of 3μF? Sketch its diagram.",
+    "options": [],
+    "modelAnswer": "(i) A capacitor is a device for storing electric charge and electrical energy. It consists of two conducting plates separated by an insulator (dielectric), such as air, paper, mica or ceramic. When a potential difference is applied across it, equal and opposite charges (+Q and −Q) build up on the plates, and energy is stored in the electric field between them.\nIts capacitance is C = Q/V, measured in farads (F). For a parallel-plate capacitor, C = εA/d, where A is the area of overlap of the plates, d is their separation, and ε is the permittivity of the dielectric.\nEnergy stored: W = ½CV² = ½QV = Q²/2C.\nUses: smoothing in power supplies, tuning circuits in radios, timing circuits, blocking d.c. while passing a.c., and camera flash units.\n\n(ii) Three 2 μF capacitors:\nMaximum capacitance: all in parallel, C = 2 + 2 + 2 = 6 μF.\nMinimum capacitance: all in series, 1/C = 1/2 + 1/2 + 1/2 = 3/2, so C = 2/3 μF ≈ 0.67 μF.\n\nFor 3 μF: connect two capacitors in series (giving 2 × 2/(2 + 2) = 1 μF), then connect this pair in parallel with the third capacitor: 1 + 2 = 3 μF.\nSketch: two capacitors joined end to end in one branch, and the third capacitor in a separate branch alongside them, with both branches connected between the same two terminals."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "(i). Define the terms inductor and inductance of inductor.\n(ii). Four inductors each of inductance 2mH, are connected in parallel across a 10A a.c supply. Calculate the equivalent inductance and the energy stored.",
+    "options": [],
+    "modelAnswer": "(i) An inductor is a coil of wire (often wound on an iron or ferrite core) that opposes changes in the current flowing through it, by producing a back e.m.f. through self-induction. It stores energy in its magnetic field.\nInductance (self-inductance), L, is the property of a coil by which a changing current in it induces an e.m.f. in the coil itself. It is the ratio of the induced e.m.f. to the rate of change of current: ε = −L dI/dt. Equivalently, it is the magnetic flux linkage per unit current (L = NΦ/I). Its unit is the henry (H): one henry is the inductance of a coil in which a current changing at 1 A s⁻¹ induces an e.m.f. of 1 V.\n\n(ii) For identical inductors in parallel (assuming no mutual inductance): 1/L = 1/2 + 1/2 + 1/2 + 1/2 = 2 mH⁻¹, so L = 0.5 mH = 5 × 10⁻⁴ H.\nEnergy stored: W = ½LI² = ½ × 5 × 10⁻⁴ × 10² = 0.025 J (25 mJ).\n(Taking the 10 A as the current through the combination. If 10 A is the r.m.s. value, this is the average energy; the peak energy would be twice as large.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "(i). Define magnetic flux and magnetic flux density. State their possible units.\n(ii). Assume the maximum working flux of a lifting magnet is 1.8T and the effective area of a pole face is circular in cross section. If the total magnetic flux produced is 0.353Wb. Calculate the radius of the pole.",
+    "options": [],
+    "modelAnswer": "(i) Magnetic flux (Φ) through an area is the product of the magnetic flux density and the area perpendicular to the field: Φ = BA cos θ, where θ is the angle between the field and the normal to the area. It measures the total magnetic field passing through the area. Unit: the weber (Wb), equal to 1 T m² (or 1 V s).\nMagnetic flux density (B) is the magnetic flux per unit area perpendicular to the field (B = Φ/A). It can also be defined by the force on a current-carrying conductor: B = F/(Il). Unit: the tesla (T), equal to 1 Wb m⁻² (or 1 N A⁻¹ m⁻¹).\n\n(ii) Note: the question calls 1.8 T a 'flux'; it is the maximum working flux density.\nΦ = BA, so A = Φ/B = 0.353/1.8 = 0.196 m².\nA = πr², so r = √(A/π) = √(0.196/3.142) = √0.0624 = 0.25 m (25 cm)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "(i). State the mathematical form of Gauss's law of electrostatic and state the meaning of each symbol in the equation.\n(ii). Distinguish between resistance and reluctance. Calculate the permeance of reluctance 5/9 per Hery.\n(iii). Two wires of same material and length have resistances 5 Ω and 10 Ω respectively. Find the ratio of radii of the two wires.",
+    "options": [],
+    "modelAnswer": "(i) Gauss's law: the total electric flux through any closed surface is equal to the total charge enclosed divided by the permittivity of free space:\n∮ E·dA = Q/ε₀.\nE = electric field strength; dA = an element of area of the closed (Gaussian) surface; ∮ = integral over the whole closed surface; Q = total charge enclosed by the surface; ε₀ = permittivity of free space (8.85 × 10⁻¹² F m⁻¹).\n\n(ii) Resistance is the opposition of a conductor to the flow of electric current: R = V/I, measured in ohms (Ω); it depends on the material, length and cross-sectional area (R = ρl/A).\nReluctance is the opposition of a magnetic circuit to the establishment of magnetic flux: S = (magnetomotive force)/(flux) = l/(μA), measured in ampere-turns per weber (A Wb⁻¹), equivalent to H⁻¹. It is the magnetic analogue of resistance.\nPermeance is the reciprocal of reluctance: P = 1/S = 1/(5/9) = 9/5 = 1.8 H (henry, or Wb per ampere-turn).\n(Note: 'per Hery' means per henry, H⁻¹.)\n\n(iii) R = ρl/A = ρl/(πr²). The wires have the same material (ρ) and length (l), so R ∝ 1/r², i.e., r ∝ 1/√R.\nr₁/r₂ = √(R₂/R₁) = √(10/5) = √2 ≈ 1.41.\nThe ratio of the radius of the 5 Ω wire to that of the 10 Ω wire is √2 : 1 (≈ 1.41 : 1)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "(i). State the law of electromagnetic induction and derive its mathematical relations.\n(ii). Calculate the mutual inductance between two coils when a current changing at 200As⁻¹ in one coil induces an emf of 1.5V in the other.",
+    "options": [],
+    "modelAnswer": "(i) Laws of electromagnetic induction:\n1. Faraday's law: whenever the magnetic flux linking a circuit changes, an e.m.f. is induced in it. The magnitude of the induced e.m.f. is directly proportional to the rate of change of magnetic flux linkage.\n2. Lenz's law: the direction of the induced e.m.f. (and current) is such as to oppose the change producing it.\nCombined: ε = −N dΦ/dt, where N is the number of turns, and the minus sign expresses Lenz's law.\n\nDerivation for a moving conductor: consider a straight rod of length l moving with velocity v perpendicular to a uniform magnetic field B, sliding on conducting rails. In a time dt, it sweeps out an area dA = lv dt, so the change in flux is dΦ = B dA = Blv dt.\nInduced e.m.f.: ε = dΦ/dt = Blv.\n(This is consistent with energy conservation: the work done against the magnetic force BIl in moving the rod equals the electrical energy εI produced.)\n\n(ii) Mutual inductance: ε = M dI/dt, so M = ε/(dI/dt) = 1.5/200 = 7.5 × 10⁻³ H = 7.5 mH."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "(i). The arms of a Wheatstone bridge ABCD ( fig. 16.1), have the following resistances: AB: R₁ = 100Ω ± 1.0%, BC: R₂ = 100Ω ± 0.5% , CD: unkown resistance Rₓ, DA: R₃ = 432.5Ω ± 0.2%. Determine the value of the unknown resistance and its relative error.\n(ii). A coil of copper wire has a resistance of 100Ω when its temperature is 0°C. Determine its resistance at 70 ⁰C if the temperature coefficient of resistance of copper at 0°C is 0.0043°C⁻¹.",
+    "image": {
+      "src": "images/ijmb/physics/2016/phy-2016-paper2-16a.png",
+      "alt": "Figure 16.1: Wheatstone bridge ABCD with R1 on AB, R2 on BC, Rx on CD, R3 on DA, a galvanometer between A and C, and a cell V across B and D"
+    },
+    "options": [],
+    "modelAnswer": "(i) At balance, the galvanometer (between A and C) reads zero, and the ratios of adjacent arms are equal:\nR₁/R₂ = R₃/Rₓ (AB/BC = AD/DC).\nRₓ = R₂R₃/R₁ = (100 × 432.5)/100 = 432.5 Ω.\n\nRelative error: for a product or quotient, the percentage errors add:\n%error in Rₓ = 1.0% + 0.5% + 0.2% = 1.7%.\nAbsolute error = 1.7% × 432.5 = 7.4 Ω.\nRₓ = 432.5 Ω ± 1.7% (i.e., 432.5 ± 7.4 Ω).\n\n(ii) R_θ = R₀(1 + αθ) = 100(1 + 0.0043 × 70) = 100(1 + 0.301) = 130.1 Ω."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "(i). Calculate the effective resistance between points A and B in figure 16.2.\n(ii). Briefly define the following terms: ammeter, voltmeter, ohmmeter moving coil galvanometer, and current sensitivity of a galvanometer.\n(iii). Draw a circuit diagram to show, how the alternating voltmeter and ammeter connected in a circuit of load resistance 12.72kΩ with 210Va.c mains?",
+    "image": {
+      "src": "images/ijmb/physics/2016/phy-2016-paper2-16b.png",
+      "alt": "Figure 16.2: three diamond-shaped resistor networks in series between A and B; each diamond has 5 ohm and 10 ohm resistors in its upper branch and 10 ohm and 5 ohm resistors in its lower branch"
+    },
+    "options": [],
+    "modelAnswer": "(i) Figure 16.2 consists of three identical 'diamond' sections connected in series between A and B. In each section, the upper branch has a 5 Ω and a 10 Ω resistor in series (15 Ω), and the lower branch has a 10 Ω and a 5 Ω resistor in series (15 Ω).\nEach section: two 15 Ω branches in parallel = (15 × 15)/(15 + 15) = 7.5 Ω.\nThree sections in series: R = 3 × 7.5 = 22.5 Ω.\n\n(ii) Definitions:\n1. Ammeter: an instrument for measuring electric current. It is connected in series with the circuit, and has a very low resistance.\n2. Voltmeter: an instrument for measuring potential difference between two points. It is connected in parallel across the component, and has a very high resistance.\n3. Ohmmeter: an instrument for measuring electrical resistance directly, using an internal battery and a calibrated scale.\n4. Moving-coil galvanometer: a sensitive instrument for detecting and measuring small currents. It consists of a coil pivoted (or suspended) in a radial magnetic field between the poles of a permanent magnet; the current produces a torque that rotates the coil against a spring, and the deflection is proportional to the current.\n5. Current sensitivity of a galvanometer: the deflection produced per unit current (θ/I = NBA/k, where N = number of turns, B = flux density, A = area of the coil and k = the torsional constant of the spring). It is measured, e.g., in divisions per microampere or radians per ampere.\n\n(iii) Circuit: the 210 V a.c. mains supply, an a.c. ammeter and the 12.72 kΩ load resistor are connected in series in a single loop. The a.c. voltmeter is connected in parallel across the load resistor.\nExpected readings: the current is I = V/R = 210/12720 = 0.0165 A (16.5 mA), and the voltmeter reads about 210 V (r.m.s.)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "(i). Explain in details the modes of production and action of a modern x-rays tube. (Labeled diagram is needed) and mention any two good characteristics of the target material in the productions of x- rays and one good characteristics of the anode.\n(ii). Briefly explain the terms hard and soft x-rays. State five properties of x-rays.\n(iii). A Coolidge tube operates at 24800 V. Determine the maximum frequency the radiation emitted from tube.",
+    "options": [],
+    "modelAnswer": "Note: diagrams cannot be shown here; the diagram is described in words.\n\n(i) Production of X-rays in a modern (Coolidge) X-ray tube:\n1. The tube is a highly evacuated glass envelope, so that electrons can travel without colliding with gas molecules.\n2. The cathode is a tungsten filament, heated by a low-voltage supply. It emits electrons by thermionic emission. A focusing cup around the filament directs the electrons into a narrow beam.\n3. A very high p.d. (tens of kilovolts) between the cathode and the anode accelerates the electrons to very high speeds.\n4. The electrons strike a target of a heavy metal, usually tungsten, set in the anode. They are suddenly decelerated, and part of their kinetic energy is converted into X-rays (braking radiation, or bremsstrahlung, giving a continuous spectrum). Electrons can also knock out inner-shell electrons of the target atoms, producing characteristic X-ray lines.\n5. Only about 1% of the electrons' energy becomes X-rays; the rest becomes heat, so the anode must be cooled, e.g., by copper fins, circulating oil or water, or a rotating anode.\n6. The intensity of the X-rays is controlled by the filament current (the number of electrons). Their quality (penetrating power) is controlled by the accelerating voltage.\nDiagram: an evacuated glass tube with a heated filament cathode at one end, connected to a low-voltage supply; an anode at the other end, with a sloping tungsten target facing the cathode, set in a copper block with cooling fins; a high-voltage supply between cathode and anode; and X-rays emerging sideways through a window from the target.\n\nGood characteristics of the target material (any two): high atomic number (so it produces X-rays efficiently); high melting point (to withstand the intense heat); good thermal conductivity; low vapour pressure.\nGood characteristic of the anode (any one): it must be a good conductor of heat (e.g., copper), and be efficiently cooled, to remove the large amount of heat produced.\n\n(ii) Hard X-rays: X-rays of high frequency (short wavelength) and high energy, with high penetrating power. They are produced at high accelerating voltages, and used, e.g., in radiotherapy and industrial radiography.\nSoft X-rays: X-rays of lower frequency (longer wavelength) and lower energy, with low penetrating power. They are produced at lower voltages, and used, e.g., for imaging soft tissue.\n\nProperties of X-rays (any five):\n1. They are electromagnetic waves of very short wavelength (about 10⁻¹¹ to 10⁻⁸ m).\n2. They travel in straight lines at the speed of light in a vacuum.\n3. They are not deflected by electric or magnetic fields (they carry no charge).\n4. They penetrate matter, especially materials of low density, and are absorbed more by dense materials such as bone and lead.\n5. They affect photographic plates.\n6. They cause fluorescence in some substances.\n7. They ionise gases.\n8. They can be diffracted by crystals.\n9. They damage living cells.\n10. They eject photoelectrons from metals.\n\n(iii) The maximum frequency occurs when an electron's entire kinetic energy (eV) is converted into one X-ray photon:\nhf_max = eV\nf_max = eV/h = (1.6 × 10⁻¹⁹ × 24800)/(6.6 × 10⁻³⁴) = (3.968 × 10⁻¹⁵)/(6.6 × 10⁻³⁴) = 6.0 × 10¹⁸ Hz."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "17b",
+    "question": "(b)(i). State five Shortcomings of Bohr's theory?\n(ii) If the Wavelength of Balmer first line is 6563Å. Calculate the wavelength of second line.",
+    "options": [],
+    "modelAnswer": "(i) Shortcomings of Bohr's theory (any five):\n1. It explains only the spectra of hydrogen and hydrogen-like ions (with one electron, e.g., He⁺ and Li²⁺), not those of atoms with many electrons.\n2. It cannot explain the relative intensities of spectral lines.\n3. It cannot explain the fine structure of spectral lines (each line is actually made up of several closely spaced lines).\n4. It cannot explain the splitting of spectral lines in a magnetic field (the Zeeman effect) or an electric field (the Stark effect).\n5. It combines classical physics with quantum ideas arbitrarily: it does not explain why electrons in stationary orbits do not radiate energy.\n6. It assumes electrons move in definite circular orbits with exact positions and momenta, which contradicts the Heisenberg uncertainty principle and the wave nature of electrons.\n7. It does not explain chemical bonding or the shapes of molecules.\n\n(ii) Balmer series: 1/λ = R(1/2² − 1/n²).\nFirst line (n = 3): 1/λ₁ = R(1/4 − 1/9) = 5R/36.\nSecond line (n = 4): 1/λ₂ = R(1/4 − 1/16) = 3R/16.\nλ₂/λ₁ = (5/36)/(3/16) = (5 × 16)/(36 × 3) = 80/108 = 20/27.\nλ₂ = 6563 × 20/27 = 4861 Å (about 4.86 × 10⁻⁷ m)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "(i). State any four properties each of α, β, and γ, rays emitted by radioactive atoms.\n(ii) State and derive the radioactive law of disintegration.\n(iii) Calculate the time required for 60% of a sample of radon to completely decay. Given T½ of radon = 3.8 days.",
+    "options": [],
+    "modelAnswer": "(i) Properties (any four each):\nAlpha (α) particles:\n1. They are helium nuclei (2 protons and 2 neutrons), with a charge of +2e.\n2. They are deflected by electric and magnetic fields (slightly, because of their large mass).\n3. They have very strong ionising power.\n4. They have low penetrating power: they are stopped by a sheet of paper, or a few centimetres of air.\n5. They travel at about 5–10% of the speed of light.\n6. They affect photographic plates and cause fluorescence.\nBeta (β) particles:\n1. They are high-speed electrons (charge −e), emitted from the nucleus.\n2. They are deflected by electric and magnetic fields more than α particles, and in the opposite direction.\n3. They have moderate ionising power.\n4. They have moderate penetrating power: they are stopped by a few millimetres of aluminium.\n5. They travel at speeds up to about 99% of the speed of light.\n6. They affect photographic plates.\nGamma (γ) rays:\n1. They are electromagnetic waves of very short wavelength (high-energy photons).\n2. They carry no charge, and are not deflected by electric or magnetic fields.\n3. They have weak ionising power.\n4. They have very high penetrating power: they are reduced only by several centimetres of lead or thick concrete.\n5. They travel at the speed of light.\n6. They affect photographic plates.\n\n(ii) Law of radioactive disintegration: the rate of decay of a radioactive substance at any instant is directly proportional to the number of undecayed nuclei present at that instant.\ndN/dt ∝ −N, so dN/dt = −λN, where λ is the decay constant.\nDerivation: separate the variables: dN/N = −λ dt.\nIntegrate from N₀ (at t = 0) to N (at time t): ln(N/N₀) = −λt.\nN = N₀e^(−λt).\nHalf-life: when N = N₀/2, e^(−λT½) = ½, so T½ = ln 2/λ = 0.693/λ.\n\n(iii) If 60% has decayed, the remaining fraction is N/N₀ = 0.40.\nλ = 0.693/3.8 = 0.1824 day⁻¹.\n0.40 = e^(−λt), so t = ln(1/0.40)/λ = 0.9163/0.1824 = 5.0 days.\n(Equivalently, t = T½ × log(1/0.4)/log 2 = 3.8 × 1.322 = 5.0 days.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Semiconductors",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "(b). Show labeled sketches of PNP and NPN junction transistor and diode valves. Illustrate your answer with their respective circuit symbols.",
+    "options": [],
+    "modelAnswer": "Note: diagrams cannot be shown here; each sketch and symbol is described in words.\n\n1. NPN junction transistor:\nSketch: a thin layer of p-type semiconductor (the base) sandwiched between two layers of n-type semiconductor (the emitter and the collector). Label the three regions emitter (E), base (B) and collector (C), and the two junctions (emitter–base and collector–base). The emitter is more heavily doped than the collector, and the base is very thin and lightly doped.\nCircuit symbol: a circle (optional), with a vertical line for the base; the base lead enters from the left. Two slanting lines meet the base line: the collector at the top, and the emitter at the bottom. The emitter has an arrow pointing outwards (away from the base), showing conventional current flowing out of the emitter.\n\n2. PNP junction transistor:\nSketch: a thin layer of n-type semiconductor (the base) sandwiched between two layers of p-type semiconductor (the emitter and the collector), labelled E, B and C in the same way.\nCircuit symbol: the same as for NPN, except that the arrow on the emitter points inwards (towards the base).\n\n3. Diode valve (thermionic vacuum diode):\nSketch: an evacuated glass bulb containing a cathode (a filament or an indirectly heated metal cylinder coated with oxides) and a surrounding metal anode (plate). The heater is connected to a low-voltage supply, so the cathode emits electrons by thermionic emission. When the anode is positive with respect to the cathode, the electrons are attracted to it and current flows; when it is negative, no current flows. The valve therefore conducts in one direction only (rectification).\nCircuit symbol: a circle (the envelope) containing a cathode (a short line or arc, with the heater filament shown as a small inverted V below it) and an anode (a flat plate opposite the cathode), with leads to the cathode, heater and anode.\n\n(For comparison, the symbol for a semiconductor p–n junction diode is a triangle pointing towards a bar: the triangle is the anode (p side), and the bar is the cathode (n side); current flows in the direction of the arrow.)"
+  }
+]

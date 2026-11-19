@@ -173,6 +173,8 @@
     "question": "Which of the following statements is not true?",
     "options": ["The conjugate base of a weak acid is a strong base", "The conjugate base of an acid is formed from a base", "The conjugate base of an acid is formed from proton loss", "the conjugate base of a weak acid is a salt"],
     "answer": "D",
+    "reviewNote": "More than one statement here is not true:\n- B is false: a conjugate base is formed from an acid (by losing a proton), not from a base.\n- D is false: the conjugate base of a weak acid is an ion (e.g. CH₃COO⁻), not a salt, though it is often supplied as a salt.\n- A is an over-simplification: the conjugate base of a weak acid is a relatively strong base, but it is usually still a weak base.\n\nC is true. Because several options are 'not true', this question is left out of quizzes. The examiners' answer is D.",
+    "excludeFromQuiz": true,
     "explanation": "The conjugate base of a weak acid is not a salt — it is the species formed after proton donation."
   },
   {
@@ -282,8 +284,8 @@
     "questionNumber": 26,
     "question": "How many optical isomers would 2,3-dibromobutanoic acid have?",
     "options": ["2", "8", "6", "4"],
-    "answer": "A",
-    "explanation": "2,3-dibromobutanoic acid has two chiral centres.\n\nThe presence of a meso compound reduces the total number of optical (enantiomeric) isomers to 2.\n\nNote: Total stereoisomers = 3 (2 enantiomers + 1 meso compound)."
+    "answer": "D",
+    "explanation": "CH₃–CHBr–CHBr–COOH has two chiral centres, C2 and C3. Each carries four different groups:\nC2: H, Br, COOH and CHBrCH₃\nC3: H, Br, CH₃ and CHBrCOOH\n\nThe two ends of the molecule are different (COOH and CH₃), so there is no internal mirror plane and no meso form. The number of optical isomers is 2ⁿ = 2² = 4 (two pairs of enantiomers).\n\n(A meso form, giving only 3 stereoisomers, needs identical ends, as in 2,3-dibromobutane or tartaric acid.)"
   },
   {
     "subject": "Chemistry",
@@ -338,6 +340,8 @@
     "question": "Which of the following reactions will not give secondary alcohol as product?",
     "options": ["Reduction of ketone using LiAlH₄", "Reaction of Grignard reagent with ethanol", "Reaction of Grignard reagent with methanol", "Acid catalysed hydration of propene"],
     "answer": "C",
+    "reviewNote": "As printed, both B and C fail to give a secondary alcohol: a Grignard reagent reacts with any alcohol (ethanol or methanol) simply to form an alkane.\n\nThe paper probably meant ethanal and methanal. RMgX + ethanal gives a secondary alcohol; RMgX + methanal gives a primary alcohol, which would make C the answer. Because of the misprint, the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Reduction of ketone gives secondary alcohol.\nHydration of propene gives propan-2-ol (secondary).\nGrignard + methanol gives methane (not an alcohol).\nGrignard + ethanol gives ethane (not an alcohol).\n\nNote: Both B and C do NOT give secondary alcohol. The question is flawed — the closest option has been selected."
   },
   {
@@ -801,7 +805,7 @@
     "questionNumber": "7c",
     "question": "(c) Give the IUPAC nomenclature of the following compounds:\n(i) CH3CH2CHICONH2\n(ii) Cl(C6H5)COOH\n(iii) CH3CH2COOCH2CH3",
     "options": [],
-    "modelAnswer": "(i) 3-iodobutanamide.\n(ii) 2-chlorobenzoic acid (or chlorobenzoic acid depending on Cl position).\n(iii) Ethyl propanoate."
+    "modelAnswer": "(i) 2-iodobutanamide. Number from the amide carbon: C1 is CONH₂, so the CHI next to it is C2 (CH₃–CH₂–CHI–CONH₂).\n(ii) 2-chlorobenzoic acid (or chlorobenzoic acid depending on Cl position).\n(iii) Ethyl propanoate."
   },
   {
     "subject": "Chemistry",

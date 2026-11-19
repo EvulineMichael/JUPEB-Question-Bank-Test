@@ -140,7 +140,7 @@
     "question": "The study of groups of organisms is called",
     "options": ["Ecology", "Autecology", "Gynecology", "Synecology"],
     "answer": "D",
-    "explanation": "Synecology is the study of groups of organisms (communities).\n\nNote: Option C 'Gynecology' appears to be a typo for 'Autecology' (study of individual species)."
+    "explanation": "Synecology is the study of groups of organisms (communities) and their relationships with the environment.\n\nAutecology is the study of a single species or individual. Ecology is the whole field. Gynecology is a branch of medicine, not ecology."
   },
   {
     "subject": "Biology",
@@ -349,6 +349,8 @@
     "question": "Which of these is a trace element?",
     "options": ["Iron", "Copper", "Calcium", "Sulphur"],
     "answer": "B",
+    "reviewNote": "Trace elements (micronutrients) are minerals needed in very small amounts. Both iron (A) and copper (B) are trace elements in human nutrition and plant nutrition: iron is needed for haemoglobin and for making chlorophyll, copper for some enzymes.\n\nCalcium and sulphur are major elements (macronutrients), needed in larger amounts. The examiners' answer is B (copper), but iron is equally correct.",
+    "excludeFromQuiz": true,
     "explanation": "Copper is a trace element required in minute amounts."
   },
   {

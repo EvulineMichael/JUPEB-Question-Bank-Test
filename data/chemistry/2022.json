@@ -228,6 +228,8 @@
     "question": "Deduce X in the reaction below\nC₆H₅NHCH₃ + HONO → 0°C → X",
     "options": ["C₆H₅N=NCH₃", "C₆H₅NHNO₂", "C₆H₅NO₂", "C₆H₅N=NCH₃"],
     "answer": "A",
+    "reviewNote": "Options A and D are printed the same in this copy of the paper, so this question is left out of quizzes.\n\nCorrect answer: C₆H₅N=NCH₃\n\nN-methylaniline (secondary amine) reacts with nitrous acid at 0°C to form an N-nitroso compound.\n\nNote: Options A and D are identical.",
+    "excludeFromQuiz": true,
     "explanation": "N-methylaniline (secondary amine) reacts with nitrous acid at 0°C to form an N-nitroso compound.\n\nNote: Options A and D are identical."
   },
   {
@@ -239,6 +241,8 @@
     "question": "Which of the following statement is NOT true about the effect of an increase in the temperature on the distribution of molecular speeds in a gas?",
     "options": ["The most probable speed increases.", "The collision of the molecule increases.", "The area under the distribution curve becomes broader.", "The area under the distribution curve remains the same."],
     "answer": "D",
+    "reviewNote": "When temperature rises, the most probable speed increases (A, true), collisions increase (B, true), and the curve becomes lower and broader. The total area under the curve stays the same, because it represents the total number of molecules (D, true).\n\nOption C's wording ('the area … becomes broader') is the incorrect statement: the curve broadens, the area does not change. Because the printed key (D) is a true statement, the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "All statements are true: most probable speed increases (A), collisions increase (B), curve broadens (C), and area remains the same (D).\n\nThe examiner's intended answer is D — while the area remains constant, the distribution flattens.\n\nNote: This question is ambiguous."
   },
   {
@@ -250,6 +254,8 @@
     "question": "A mixture of gases contained in a vessel of 5.0 dm³ is found to be 15 % CO₂, 25 % O₂ and 75 % N₂ by volume. Calculate the partial pressure of ammonia gas at 25°C (R = 8.314, T = 298)",
     "options": ["0.15 atm.", "0.99 atm.", "0.23 atm.", "1.28 atm."],
     "answer": "C",
+    "reviewNote": "This question is misprinted: it asks for the partial pressure of ammonia, which is not in the mixture, and the percentages add up to 115%. It is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Note: The question asks for ammonia, which is not in the mixture.\n\nThe percentages total 115%, which is impossible.\n\nThe question contains errors in the source material. The closest option has been selected."
   },
   {
@@ -261,6 +267,8 @@
     "question": "In which reaction will the pressure equilibrium constant (Kp) equals the concentration equilibrium constant (Kc)?",
     "options": ["PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)", "2H₂(g) + O₂(g) ⇌ 2H₂O(g)", "2SO₂(g) + O₂(g) ⇌ 2SO₃(g)", "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)"],
     "answer": "A",
+    "reviewNote": "Kp = Kc only when Δn (moles of gaseous products − moles of gaseous reactants) = 0.\nA: Δn = +1. B: Δn = −1. C: Δn = −1. D: Δn = −2.\n\nNo printed option has Δn = 0, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Kp = Kc when Δn = 0 (moles of gaseous products = moles of gaseous reactants).\n\nNone of the options have Δn = 0.\n\nNote: This question has an error — no option satisfies the condition. The closest option has been selected."
   },
   {
@@ -721,7 +729,7 @@
     "questionNumber": "5c",
     "question": "(c) Give the name of the following complex:\n(i) K₄[Fe(CN)₆]\n(ii) [Co(SO₃)₂Cl₃]⁴⁻\n(iii) [Ni(NH₂CH₂CH₂NH₂)₂Cl₂]²⁺",
     "options": [],
-    "modelAnswer": "(i) Potassium hexacyanoferrate(II).\n(ii) Trichlorodisulfitocobaltate(III) ion.\n(iii) Dichlorobis(ethylenediamine)nickel(II) ion."
+    "modelAnswer": "(i) Potassium hexacyanoferrate(II).\n(ii) Trichlorodisulfitocobaltate(III) ion.\n(iii) Dichloridobis(ethylenediamine)nickel(IV) ion.\nCheck the oxidation state: en is neutral and each Cl is −1, so x + 2(0) + 2(−1) = +2, giving x = +4.\n(Nickel(IV) is very unusual. With the common nickel(II), the complex [Ni(en)₂Cl₂] would be neutral, so the '2+' in the paper may be a misprint. Name the formula exactly as printed and show the working.)"
   },
   {
     "subject": "Chemistry",

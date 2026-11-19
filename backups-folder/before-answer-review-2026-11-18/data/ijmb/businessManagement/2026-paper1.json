@@ -1,0 +1,90 @@
+[
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Motivation",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "What is expectancy theory of motivation? Itemize and explain its three components, formula and examples.",
+    "options": [],
+    "modelAnswer": "Victor Vroom's expectancy theory (1964) states that a person is motivated to act in a certain way when he or she expects that the effort will lead to good performance, that the performance will lead to a reward, and that the reward is valued.\n\nThree components:\n1. Expectancy (E): the belief that effort will lead to performance (effort → performance), from 0 to 1. Example: a student believes that studying hard will lead to a good grade.\n2. Instrumentality (I): the belief that performance will lead to a reward (performance → reward), from 0 to 1. Example: the student believes a good grade will lead to a scholarship.\n3. Valence (V): the value or attractiveness of the reward to the person (from −1 to +1). Example: how much the student wants the scholarship.\n\nFormula: Motivation (Motivational Force) = E × I × V.\nBecause it is a product, if any one component is zero, motivation is zero. Example: a salesperson will work hard for a promotion only if he believes extra effort will raise sales (E), higher sales will lead to promotion (I), and he values the promotion (V).\nImplications for managers: clarify the link between effort and performance (training, resources), tie rewards to performance, and offer rewards that employees value."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "What is the difference between Management and Scientific management? Explain why Frederick Taylor is still considered to be the father of scientific management.",
+    "options": [],
+    "modelAnswer": "Management is the general process of planning, organising, leading and controlling resources to achieve organisational goals; it applies to all types of organisations and covers all aspects of running them. Scientific management is a particular approach (school of thought) within management, developed by F.W. Taylor, which uses scientific methods (observation, measurement, time and motion studies) to find the 'one best way' to do each task and so increase efficiency and productivity. Management is the broad field; scientific management is one theory or method within it, focused mainly on the shop floor and workers' tasks.\n\nWhy Taylor is still regarded as the father of scientific management:\n1. He was the first to apply systematic, scientific study to work (time and motion studies) instead of rule of thumb.\n2. He formulated the principles of scientific management (The Principles of Scientific Management, 1911): science not rule of thumb, scientific selection and training, cooperation, and division of responsibility between management and workers.\n3. He introduced techniques such as work standardisation, the differential piece-rate system, functional foremanship and planning departments.\n4. His work greatly increased productivity (e.g. at Midvale and Bethlehem Steel) and influenced industrial engineering, operations management and quality control.\n5. Many modern practices (work study, standard costing, incentive pay, lean production, efficiency studies) still build on his ideas."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Organizations",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "What is bureaucracy? Briefly discuss four advantages and disadvantages of bureaucracy.",
+    "options": [],
+    "modelAnswer": "Bureaucracy, as described by Max Weber, is a form of organisation based on a hierarchy of authority, division of labour and specialisation, formal written rules and procedures, impersonal relationships, merit-based appointment and promotion, and the keeping of written records. Weber considered it the most rational and efficient form of organisation.\n\nAdvantages (any four):\n1. Clear hierarchy and lines of authority.\n2. Specialisation increases efficiency and expertise.\n3. Rules and procedures ensure consistency, predictability and fairness.\n4. Impersonality reduces favouritism and discrimination.\n5. Merit-based recruitment and promotion, and career security.\n6. Written records ensure accountability and continuity.\n\nDisadvantages (any four):\n1. Red tape: too many rules and procedures cause delays.\n2. Rigidity: it adapts slowly to change.\n3. Impersonality may make it insensitive to people's needs and lower morale.\n4. Excessive paperwork and costs.\n5. Officials may follow rules for their own sake (goal displacement) and avoid responsibility.\n6. Discourages initiative, creativity and innovation; communication is slow through many levels."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Why do plans fail? Identify and briefly explain the three theories of motivation that are need-based and their general focus.",
+    "options": [],
+    "modelAnswer": "Why plans fail:\n1. Unclear or unrealistic objectives.\n2. Lack of commitment and support from top management.\n3. Inadequate information and poor forecasting.\n4. Lack of resources (finance, skilled staff, equipment).\n5. Resistance to change and lack of participation by those who implement the plan.\n6. Poor communication of the plan.\n7. Rigid plans that are not adapted to changes in the environment.\n8. Poor implementation, coordination and control (no monitoring).\n\nNeed-based (content) theories of motivation, which focus on what motivates people, i.e. the needs people try to satisfy:\n1. Maslow's hierarchy of needs: five needs (physiological, safety, social, esteem, self-actualisation) satisfied in order from lowest to highest.\n2. Herzberg's two-factor (motivation–hygiene) theory: hygiene factors (pay, conditions, supervision) prevent dissatisfaction; motivators (achievement, recognition, responsibility, growth) create satisfaction.\n3. McClelland's acquired needs theory: the needs for achievement, power and affiliation, learnt from experience.\n(Alderfer's ERG theory, which groups needs into existence, relatedness and growth, is another need-based theory.)\nGeneral focus: identifying internal needs that energise behaviour, so managers can provide rewards and jobs that satisfy them."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Organizations",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "What is informal organization? Itemize and explain the two reasons why informal organizations exist and the four main activities of the management process.",
+    "options": [],
+    "modelAnswer": "An informal organisation is the network of personal and social relationships, groups, norms and communication channels (the 'grapevine') that arise naturally among people at work, outside the formal structure designed by management.\n\nTwo reasons why informal organisations exist:\n1. To satisfy social and psychological needs: friendship, belonging, recognition, security and support that the formal organisation does not provide.\n2. To get work done and share information more easily: informal communication and cooperation help people overcome the rigidity and gaps of the formal structure, and give members protection and a sense of identity (shared norms and interests).\n\nThe four main activities (functions) of the management process:\n1. Planning: setting objectives and deciding how to achieve them.\n2. Organising: arranging tasks, people and resources and establishing the structure of authority.\n3. Leading (directing): motivating, communicating with and guiding people.\n4. Controlling: monitoring performance, comparing it with standards and correcting deviations."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "What is leadership? Identify and explain three key approaches to the study of leadership.",
+    "options": [],
+    "modelAnswer": "Leadership is the process of influencing the activities of individuals or a group towards the achievement of goals in a given situation.\n\nThree key approaches:\n1. Trait approach: effective leaders possess certain personal qualities (intelligence, self-confidence, drive, integrity, sociability) that distinguish them from non-leaders; leaders are 'born'. Weakness: no consistent set of traits has been found, and the situation is ignored.\n2. Behavioural approach: what leaders do is more important than who they are; it studies leadership styles, e.g. autocratic, democratic and laissez-faire (Lewin), task-oriented and people-oriented behaviour (Ohio State and Michigan studies), and Blake and Mouton's Managerial Grid. It implies that leadership can be learnt.\n3. Contingency (situational) approach: the most effective leadership style depends on the situation, e.g. the nature of the task, followers' maturity and leader–member relations. Examples: Fiedler's contingency model, Hersey and Blanchard's situational leadership, House's path–goal theory.\n(Modern approaches also include transformational and transactional leadership.)"
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Management and Leadership",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "What is authority? Compare and contrast line, staff and functional authority. Briefly explain authoritarian, laissez fair and democratic types of leadership.",
+    "options": [],
+    "modelAnswer": "Authority is the legitimate right attached to a managerial position to give orders, make decisions and expect them to be obeyed.\n\nLine authority: the direct authority of a superior over a subordinate along the chain of command (e.g. a production manager over supervisors). It is the right to command and is essential for the main activities of the organisation.\nStaff authority: the right to advise, assist and support line managers, without the power to command them (e.g. legal adviser, HR specialist, accountant advising the production department).\nFunctional authority: the limited right of a specialist (staff) manager to give orders to line personnel in other departments, but only in his or her specialised area (e.g. the safety officer can instruct production staff on safety procedures).\nComparison: all three are forms of authority used to achieve goals. Line authority is command authority over the main activities; staff authority is advisory only; functional authority is command authority limited to a specialised function across departments. Functional authority may weaken unity of command.\n\nTypes of leadership:\n1. Authoritarian (autocratic): the leader decides alone, gives orders and expects obedience.\n2. Laissez-faire (free-rein): the leader gives little direction and leaves decisions to subordinates.\n3. Democratic (participative): the leader involves subordinates in decisions while keeping final responsibility."
+  },
+  {
+    "subject": "Business Management",
+    "year": 2026,
+    "paper": "Paper I",
+    "category": "Strategic Management",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "What is globalization? Briefly explain the four important conditions that managers must consider in the globalization of their actions.",
+    "options": [],
+    "modelAnswer": "Globalisation is the process by which the world's economies and businesses become increasingly interconnected and interdependent through the movement of goods, services, capital, people, information and technology across national borders.\n\nNote: textbooks differ on 'the four conditions'; the main environmental conditions managers must consider in going global are:\n1. Economic environment: the type of economic system, level of income, inflation, interest and exchange rates, taxes and market size of the foreign country.\n2. Political and legal environment: political stability, government policies, laws and regulations on trade, investment, labour and repatriation of profits, and the risk of expropriation.\n3. Cultural (socio-cultural) environment: language, religion, values, customs, attitudes to work and consumer preferences (national culture).\n4. Technological environment and infrastructure: level of technology, communication and transport systems.\nManagers must also consider the global attitude of the organisation (ethnocentric, polycentric or geocentric), competition, and the methods of entry (exporting, licensing, franchising, joint ventures, foreign subsidiaries)."
+  }
+]

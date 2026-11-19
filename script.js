@@ -1204,27 +1204,75 @@ if (q.diagramMissing) {
 function withTimeout(promise, ms) {
     return Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))]);
 }
-  // Returns { years: [...], questions: [...] } for one subject in the current exam
+  // The copy of a papers answer saved on this device by the service worker, if any
+  async function savedPapersResponse(url) {
+      if (!('caches' in window)) return null;
+      try {
+          const saved = await caches.match(new URL(url, location.origin).href);
+          return saved && saved.ok ? saved : null;
+      } catch (e) { return null; }
+  }
+
+  // Returns { years, questions, failed } for one subject in the current exam.
+  // failed = true means "couldn't get an answer" (offline, slow, sign-in not ready),
+  // which is different from a subject that simply has no papers yet.
   async function loadSubjectPapers(subject) {
       if (isLocalDev()) return loadSubjectPapersFromFiles(subject);
 
-      const empty = { years: [], questions: [] };
+      const empty = { years: [], questions: [], failed: false };
+      const errors = (window.jupebLoadErrors = window.jupebLoadErrors || {});
+      delete errors[subject];
       const user = (typeof auth !== 'undefined') ? auth.currentUser : null;
-      if (!user) return empty;                       // not signed in: no questions
+      if (!user) { errors[subject] = 'Not signed in yet.'; return { ...empty, failed: true }; }
       const exam = (typeof getCurrentExam === 'function') ? getCurrentExam() : 'jupeb';
+      const url = `/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`;
 
-             try {
-           // Offline, a fresh sign-in token can't be fetched. Ask anyway: the service
-           // worker answers with the copy saved on this device.
-                   let token = '';
-        try { token = await withTimeout(user.getIdToken(), 4000); } catch (e) { /* offline or slow */ }
-        const response = await withTimeout(fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
-            headers: token ? { Authorization: 'Bearer ' + token } : {}
-        }), 30000);
-          if (!response.ok) {
-              console.warn(`No ${subject} papers (${response.status})`);
-              return empty;
+      // Online, give the sign-in token time to arrive on a slow connection. Offline it
+      // can't be refreshed, so don't wait: the saved copy is used instead.
+      const getToken = async (forceRefresh) => {
+          try { return await withTimeout(user.getIdToken(forceRefresh), navigator.onLine ? 20000 : 2000); }
+          catch (e) { return ''; }
+      };
+      const ask = (token) => withTimeout(fetch(url, { headers: token ? { Authorization: 'Bearer ' + token } : {} }), 30000);
+
+      let response = null;
+      let gotToken = false;
+      try {
+          let token = await getToken(false);
+          gotToken = !!token;
+          response = await ask(token);
+          if (response.status === 401 && navigator.onLine) {   // token missing or stale: get a fresh one, ask once more
+              token = await getToken(true);
+              gotToken = gotToken || !!token;
+              if (token) response = await ask(token);
           }
+      } catch (error) {
+          response = null;                                     // offline, timed out, or the network dropped
+      }
+      // Keep what the server said, so the student (and you) can see why it failed
+      let serverSaid = '';
+      if (response && !response.ok) {
+          try {
+              const info = await response.clone().json();
+              serverSaid = [info.error, info.detail].filter(Boolean).join(' ');
+          } catch (e) { /* not JSON, e.g. a Vercel error page */ }
+          serverSaid = `${serverSaid || 'The server could not send the questions.'} (error ${response.status}${gotToken ? '' : ', no sign-in token'})`;
+      }
+      if (!response || !response.ok) {
+          const saved = await savedPapersResponse(url);
+          if (saved) response = saved;
+      }
+      if (!response) {
+          errors[subject] = navigator.onLine ? `No answer from the server${gotToken ? '' : ' (no sign-in token)'}.` : "You're offline and these questions aren't saved on this device yet.";
+          console.warn(`${subject}: ${errors[subject]}`);
+          return { ...empty, failed: true };
+      }
+      if (!response.ok) {
+          errors[subject] = serverSaid;
+          console.warn(`${subject}: ${serverSaid}`);
+          return { ...empty, failed: response.status !== 403 };   // 403: this exam isn't unlocked, so nothing to show
+      }
+      try {
           const body = await response.json();
           const years = [];
           const questions = [];
@@ -1232,10 +1280,10 @@ function withTimeout(promise, ms) {
               years.push({ year: p.year, paper: p.paper, label: p.label });
               (p.questions || []).forEach(q => questions.push({ ...q, paper: p.paper || null }));
           });
-          return { years, questions };
+          return { years, questions, failed: false };
       } catch (error) {
-          console.error(`Error loading ${subject}:`, error);
-          return empty;
+          console.error(`Error reading ${subject} papers:`, error);
+          return { ...empty, failed: true };
       }
   }
 
@@ -1267,10 +1315,12 @@ async function loadQuestions(forceSubject = null, callback = null) {
         : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature', 'sociology'];
 
     // Create a promise for each subject that needs loading
+    const failed = [];
     const loadPromises = subjects.map(async (subject) => {
         if (allSubjectData[subject].length > 0) return; // Skip already-loaded
 
-                  const loaded = await loadSubjectPapers(subject);
+          const loaded = await loadSubjectPapers(subject);
+          if (loaded.failed) { failed.push(subject); return; }   // left empty, so the next try loads it again
           allSubjectYears[subject] = loaded.years;
           allSubjectData[subject] = loaded.questions;
           if (loaded.years.length) {
@@ -1280,6 +1330,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
 
     // Wait for ALL subjects to load simultaneously
     await Promise.all(loadPromises);
+    window.jupebFailedSubjects = failed;
 
     questionsData = allSubjectData[currentSubject] || [];
     window.currentSubjectYears = allSubjectYears[currentSubject] || [];
@@ -1360,6 +1411,34 @@ html += `<button class="topic-btn" data-topic="${escapeHtml(topic)}" ${!hasQuest
         });
     });
 }
+// ===== TOPIC SUMMARIES =====
+// Short revision notes for each topic, from notes/<subject>.js (window.TOPIC_NOTES).
+// Keyed by subject, then by the exact topic name in courseStructure, because some topic
+// names appear in more than one subject (e.g. "Atomic Structure", "Vectors").
+function renderTopicNotes(topic) {
+    const bySubject = (typeof TOPIC_NOTES === 'object' && TOPIC_NOTES) ? TOPIC_NOTES[currentSubject] : null;
+    const notes = bySubject && bySubject[topic];
+    if (!notes) return '';
+    const items = (arr, cls = '') => (arr && arr.length)
+        ? `<ul class="${cls}">${arr.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul>` : '';
+    const open = localStorage.getItem('jupeb_notes_collapsed') !== '1';
+    return `
+        <details class="topic-notes" ${open ? 'open' : ''}>
+            <summary>
+                <span class="tn-icon" aria-hidden="true">📝</span>
+                <span class="tn-head"><span class="tn-title">Topic summary</span><span class="tn-hint">What this topic covers, in a few minutes</span></span>
+                <span class="tn-caret" aria-hidden="true"></span>
+            </summary>
+            <div class="tn-body">
+                ${notes.summary ? `<p class="tn-lead">${escapeHtml(notes.summary)}</p>` : ''}
+                ${notes.points && notes.points.length ? `<h4>Key ideas</h4>${items(notes.points)}` : ''}
+                ${notes.formulas && notes.formulas.length ? `<h4>Formulas to know</h4>${items(notes.formulas, 'tn-formulas')}` : ''}
+                ${notes.tip ? `<div class="tn-tip"><strong>Exam tip</strong><span>${escapeHtml(notes.tip)}</span></div>` : ''}
+                <p class="tn-note">A quick revision guide. Use your textbook and the explained answers below for full detail.</p>
+            </div>
+        </details>`;
+}
+
 function renderTopicResources(topic) {
     // Guard against missing file or empty object
     if (typeof TOPIC_RESOURCES === "undefined") return "";
@@ -1455,22 +1534,17 @@ allQuestions = allQuestions.filter(q => {
         // Get unique years for display
         const allYears = [...new Set(allQuestions.map(q => q.year))].sort((a, b) => b - a);
 
-let questionsHtml = `<h2 style="margin-bottom:10px;color:#0d6efd;">📖 ${escapeHtml(topic)}</h2>`;
+let questionsHtml = `<div class="study-topic-head"><span class="qz-kicker">Topic</span><h2>${escapeHtml(topic)}</h2><p>${totalQuestions} question${totalQuestions === 1 ? '' : 's'} · ${allYears.length > 1 ? `${allYears[allYears.length - 1]}–${allYears[0]}` : allYears.join('')}</p></div>`;
+questionsHtml += renderTopicNav(topic);
+questionsHtml += renderTopicNotes(topic);
 questionsHtml += renderTopicResources(topic);
-questionsHtml += renderTopicNav(topic); 
-questionsHtml += `<p style="margin-bottom:20px;color:#6c757d;padding-bottom:10px;border-bottom:1px solid #e9ecef;">${totalQuestions} question(s) | 📅 Years: ${allYears.join(", ")}</p>`;
 
 let questionIndex = 1;
         
         // --- SECTION 1: OBJECTIVE QUESTIONS ---
         if (objectiveQuestions.length > 0) {
             questionsHtml += `
-                <div class="past-section-header">
-                    <h3 style="color:#0d6efd;font-size:1.1rem;margin:24px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
-                        📝 Multiple-Choice Questions
-                        <span style="font-size:0.8rem;font-weight:normal;color:var(--text-secondary);">(${objectiveQuestions.length})</span>
-                    </h3>
-                </div>`;
+                <div class="past-section-header"><h3 class="study-section study-section--obj">Multiple-choice questions <span>${objectiveQuestions.length}</span></h3></div>`;
             
             objectiveQuestions.forEach((q) => {
                 questionsHtml += buildQuestionCard(q, q.year, questionIndex);
@@ -1481,12 +1555,7 @@ let questionIndex = 1;
         // --- SECTION 2: ESSAY QUESTIONS ---
         if (essayQuestions.length > 0) {
             questionsHtml += `
-                <div class="past-section-header">
-                    <h3 style="color:#059669;font-size:1.1rem;margin:32px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
-                        ✍️ Essay Questions
-                        <span style="font-size:0.8rem;font-weight:normal;color:var(--text-secondary);">(${essayQuestions.length})</span>
-                    </h3>
-                </div>`;
+                <div class="past-section-header"><h3 class="study-section study-section--essay">Essay questions <span>${essayQuestions.length}</span></h3></div>`;
             
             essayQuestions.forEach((q) => {
                 questionsHtml += buildQuestionCard(q, q.year, questionIndex);
@@ -1508,11 +1577,11 @@ if (window.MathJax && window.MathJax.typesetPromise) {
                 const answerDisplay = document.getElementById(`answer-${qIdx}`);
                 if (answerDisplay.classList.contains('show')) {
                     answerDisplay.classList.remove('show');
-                    btn.textContent = '🔍 Show Answer';
+                    btn.textContent = 'Show answer';
                     document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
                 } else {
                     answerDisplay.classList.add('show');
-                    btn.textContent = '🙈 Hide Answer';
+                    btn.textContent = 'Hide answer';
                     const answer = btn.dataset.answer;
                     document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
                         if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
@@ -1528,10 +1597,10 @@ if (window.MathJax && window.MathJax.typesetPromise) {
                 const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
                 if (answerDisplay.style.display === 'none') {
                     answerDisplay.style.display = 'block';
-                    btn.textContent = '🙈 Hide Model Answer';
+                    btn.textContent = 'Hide model answer';
                 } else {
                     answerDisplay.style.display = 'none';
-                    btn.textContent = '📝 Show Model Answer';
+                    btn.textContent = 'Show model answer';
                 }
             });
         });
@@ -1795,72 +1864,101 @@ function showQuizLobby() {
     const msg = getWeakAreasMessage(stats);
     const hasWeakTopics = stats.weakTopicsList.length > 0;
 
+    const QUIZ_SUBJECTS = [
+        ['chemistry', '🧪', 'Chemistry'], ['physics', '⚛️', 'Physics'], ['maths', '📐', 'Mathematics'],
+        ['biology', '🧬', 'Biology'], ['crs', '🕊️', 'CRS'], ['irs', '☪️', 'IRS'],
+        ['literature', '📖', 'Literature'], ['economics', '💰', 'Economics'], ['government', '🏛️', 'Government']
+    ];
+    const pastScores = (quizState.history || []).map(h => Number(h.score)).filter(Number.isFinite);
+    const avgScore = pastScores.length ? Math.round(pastScores.reduce((a, b) => a + b, 0) / pastScores.length) : null;
+
     questionsContainer.innerHTML = `
         <div class="quiz-lobby">
-            <div class="quiz-lobby-header">
-                <h2>📝 Quiz Mode</h2>
-                <p class="quiz-subtitle">Choose your subject and configure your session</p>
+            <div class="qz-hero">
+                <div class="qz-hero-text">
+                    <span class="qz-kicker">Quiz mode</span>
+                    <h2>Test yourself like it's exam day</h2>
+                    <p class="quiz-subtitle">Pick a subject, choose how you want to practise, and go.</p>
+                </div>
+                <div class="qz-hero-stats">
+                    <div><strong>${pastScores.length}</strong><span>Quizzes taken</span></div>
+                    <div><strong>${avgScore === null ? '–' : avgScore + '%'}</strong><span>Average score</span></div>
+                </div>
             </div>
 
-            <!-- STEP 0: Choose Subject -->
-<div class="quiz-step" id="qstep-0">
-    <div class="quiz-step-label"><span class="step-number">1</span> Choose Subject</div>
-    <div class="quiz-subject-select">
-        <select id="quiz-subject-select" style="width:100%;padding:14px 16px;border:2px solid var(--border-color);border-radius:12px;background:var(--bg-secondary);color:var(--text-primary);font-size:1rem;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22currentColor%22 stroke-width=%222%22><polyline points=%226 9 12 15 18 9%22/></svg>');background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;">
-            <option value="chemistry" ${currentSubject === 'chemistry' ? 'selected' : ''}>🧪 Chemistry</option>
-            <option value="physics" ${currentSubject === 'physics' ? 'selected' : ''}>⚛️ Physics</option>
-            <option value="maths" ${currentSubject === 'maths' ? 'selected' : ''}>📐 Mathematics</option>
-            <option value="biology" ${currentSubject === 'biology' ? 'selected' : ''}>🧬 Biology</option>
-            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>🕊️ CRS</option>
-            <option value="irs" ${currentSubject === 'irs' ? 'selected' : ''}>☪️ IRS</option>
-            <option value="literature" ${currentSubject === 'literature' ? 'selected' : ''}>📖 Literature</option>
-            <option value="economics" ${currentSubject === 'economics' ? 'selected' : ''}>💰 Economics</option>
-<option value="government" ${currentSubject === 'government' ? 'selected' : ''}>🏛️ Government</option>
-        </select>
-    </div>
-</div>
+            <!-- STEP 1: Subject (the chips drive the hidden select, which setupLobbyListeners() listens to) -->
+            <div class="quiz-step" id="qstep-0">
+                <div class="quiz-step-label"><span class="step-number">1</span> Choose a subject</div>
+                <div class="qz-subjects" role="radiogroup" aria-label="Subject">
+                    ${QUIZ_SUBJECTS.map(([id, icon, name]) => `
+                    <button type="button" class="qz-subject ${id === currentSubject ? 'is-on' : ''}" data-subject="${id}" role="radio" aria-checked="${id === currentSubject}">
+                        <span class="qz-subject-icon" aria-hidden="true">${icon}</span><span>${name}</span>
+                    </button>`).join('')}
+                </div>
+                <select id="quiz-subject-select" class="qz-hidden-select" aria-hidden="true" tabindex="-1">
+                    ${QUIZ_SUBJECTS.map(([id, , name]) => `<option value="${id}" ${id === currentSubject ? 'selected' : ''}>${name}</option>`).join('')}
+                </select>
+            </div>
 
+            <!-- STEP 2: Mode -->
             <div class="quiz-step" id="qstep-1">
-                <div class="quiz-step-label"><span class="step-number">2</span> Choose Quiz Mode</div>
+                <div class="quiz-step-label"><span class="step-number">2</span> Choose how to practise</div>
                 <div class="quiz-mode-grid">
                     <button class="quiz-mode-card" data-mode="practice">
-                        <div class="qmc-icon">📝</div><div class="qmc-title">Practice Quiz</div><div class="qmc-desc">Select topics or random • Up to 50 questions</div>
+                        <div class="qmc-icon qz-tone-blue"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+                        <div class="qmc-title">Practice quiz</div>
+                        <div class="qmc-desc">Pick topics or go random. 10, 20 or 50 questions: set it in Settings.</div>
                     </button>
                     <button class="quiz-mode-card" data-mode="exam">
-                        <div class="qmc-icon">📅</div><div class="qmc-title">Past Exam</div><div class="qmc-desc">Questions from a specific exam year</div>
+                        <div class="qmc-icon qz-tone-violet"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+                        <div class="qmc-title">Past exam</div>
+                        <div class="qmc-desc">Every question from one exam year, in one go.</div>
                     </button>
-                    <button class="quiz-mode-card weak-area-card ${!stats.isUnlocked && stats.totalAttempts === 0 ? 'disabled' : ''} ${stats.isUnlocked && !hasWeakTopics ? 'all-strong' : ''}" 
+                    <button class="quiz-mode-card weak-area-card ${!stats.isUnlocked && stats.totalAttempts === 0 ? 'disabled' : ''} ${stats.isUnlocked && !hasWeakTopics ? 'all-strong' : ''}"
                             data-mode="weak" ${!hasWeakTopics ? 'disabled' : ''}>
-                        <div class="qmc-icon">${msg.icon}</div><div class="qmc-title">${msg.title}</div><div class="qmc-desc">${msg.desc}</div>
+                        <div class="qmc-icon qz-tone-orange">${msg.icon}</div>
+                        <div class="qmc-title">${msg.title}</div>
+                        <div class="qmc-desc">${msg.desc}</div>
                         ${!stats.isUnlocked ? `<div class="weak-progress-bar"><div class="weak-progress-fill" style="width:${stats.progressToUnlock}%"></div></div><div class="weak-progress-label">${msg.progressText}</div>` : ''}
                         ${stats.isUnlocked && hasWeakTopics ? `<div class="weak-topics-preview">${stats.weakTopicsList.slice(0, 3).map(w => `<span class="weak-topic-tag">${w.topic.split(' ').slice(0, 2).join(' ')} ${Math.round(w.pct * 100)}%</span>`).join('')}${stats.weakTopicsList.length > 3 ? `<span class="weak-topic-tag">+${stats.weakTopicsList.length - 3} more</span>` : ''}</div>` : ''}
                     </button>
                 </div>
-                ${!stats.isUnlocked ? `<div class="weak-info-box"><p>💡 <strong>How Weak Areas work:</strong> After answering <strong>${WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK}+ questions</strong>, topics where you score below <strong>${Math.round(WEAK_AREA_CONFIG.WEAK_THRESHOLD * 100)}%</strong> will appear here for focused practice.</p></div>` : ''}
+                ${!stats.isUnlocked ? `<div class="weak-info-box"><p>💡 <strong>How weak areas work:</strong> after you answer <strong>${WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK}+ questions</strong>, topics where you score below <strong>${Math.round(WEAK_AREA_CONFIG.WEAK_THRESHOLD * 100)}%</strong> show up here for focused practice.</p></div>` : ''}
             </div>
 
             <div class="quiz-step hidden" id="qstep-2">
-                <div class="quiz-step-label"><span class="step-number">3</span> <span id="qstep-2-label">Select Filter</span></div>
+                <div class="quiz-step-label"><span class="step-number">3</span> <span id="qstep-2-label">Select filter</span></div>
                 <div id="quiz-filter-options"></div>
             </div>
 
             <div class="quiz-step hidden" id="qstep-3">
                 <div class="quiz-step-label"><span class="step-number">4</span> Timer</div>
                 <div class="quiz-timer-grid">
-                    <button class="quiz-timer-btn active" data-time="0">⏱️ No Timer</button>
-                    <button class="quiz-timer-btn" data-time="1800">30 min</button>
-                    <button class="quiz-timer-btn" data-time="3600">60 min</button>
-                    <button class="quiz-timer-btn" data-time="5400">90 min</button>
+                    <button class="quiz-timer-btn active" data-time="0"><strong>No timer</strong><span>Go at your pace</span></button>
+                    <button class="quiz-timer-btn" data-time="1800"><strong>30 min</strong><span>Quick round</span></button>
+                    <button class="quiz-timer-btn" data-time="3600"><strong>60 min</strong><span>Standard</span></button>
+                    <button class="quiz-timer-btn" data-time="5400"><strong>90 min</strong><span>Full exam</span></button>
                 </div>
             </div>
 
             <div class="quiz-step hidden" id="qstep-4">
                 <div class="quiz-step-label"><span class="step-number">5</span> Ready?</div>
                 <div class="quiz-summary" id="quiz-summary"></div>
-                <button class="quiz-start-btn" id="quiz-start-btn">🚀 Start Quiz</button>
+                <button class="quiz-start-btn" id="quiz-start-btn">
+                    Start quiz
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
             </div>
         </div>
     `;
+
+    // Subject chips choose the subject through the hidden <select>
+    document.querySelectorAll('.qz-subject').forEach(btn => btn.addEventListener('click', () => {
+        const select = document.getElementById('quiz-subject-select');
+        if (!select || select.value === btn.dataset.subject) return;
+        select.value = btn.dataset.subject;
+        select.dispatchEvent(new Event('change'));
+    }));
 
     setupLobbyListeners();
 }
@@ -1940,33 +2038,68 @@ function showPastQuestionsSidebar() {
 
     if (!window.jupebDataLoaded) {
         questionsContainer.innerHTML = `
-            <h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>
-            <p style="color:var(--text-secondary);">Loading past papers…</p>`;
+            <div class="pp-page">
+                <div class="pp-hero"><div><span class="qz-kicker">Past papers</span><h2>Every paper, year by year</h2></div></div>
+                <div class="study-loading"><span class="study-spinner"></span><p>Loading past papers…</p></div>
+            </div>`;
         document.addEventListener("jupebDataLoaded", () => showPastQuestionsSidebar(), { once: true });
         return;
     }
 
-    let html = `<h2 style="margin-bottom:20px;color:var(--tab-active-bg);">📄 Past Questions</h2>`;
-    html += `<p style="color:var(--text-secondary);margin-bottom:24px;">Select a subject and year to view past questions.</p>`;
+    const nameOf = (s) => (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[s]) || (s.charAt(0).toUpperCase() + s.slice(1));
+    const cards = subjects.map(subject => {
+        const years = (allSubjectYears[subject] || []).slice()
+            .sort((a, b) => b.year - a.year || String(a.paper || '').localeCompare(String(b.paper || '')));
+        if (!years.length) return '';
+        const yearNums = years.map(y => y.year);
+        const newest = Math.max(...yearNums), oldest = Math.min(...yearNums);
+        const search = `${nameOf(subject)} ${subject} ${yearNums.join(' ')}`.toLowerCase();
+        return `
+            <article class="pp-subject" data-search="${escapeHtml(search)}">
+                <div class="pp-subject-head">
+                    <span class="pp-subject-icon" aria-hidden="true">${subjectEmojis[subject] || '📘'}</span>
+                    <div>
+                        <h3>${escapeHtml(nameOf(subject))}</h3>
+                        <p>${years.length} paper${years.length === 1 ? '' : 's'} · ${oldest === newest ? newest : `${oldest}–${newest}`}</p>
+                    </div>
+                </div>
+                <div class="pp-years">
+                    ${years.map(yr => `
+                    <button class="pp-year ${yr.year === newest ? 'is-latest' : ''}" data-year="${yr.year}" onclick="displayPastQuestions('${subject}', ${yr.year}, '${yr.paper || ''}')">
+                        <span>${yr.year}</span>${yr.paper ? `<small>${escapeHtml(yr.paper)}</small>` : ''}
+                    </button>`).join('')}
+                </div>
+            </article>`;
+    }).join('');
 
-    subjects.forEach(subject => {
-        const years = allSubjectYears[subject] || [];
-        const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
-        if (years.length > 0) {
-            html += `<div class="dash-card" style="margin-bottom:16px;">
-                <h3 style="margin-bottom:12px;">${subjectEmojis[subject]} ${displayName}</h3>
-                <div style="display:flex;flex-wrap:wrap;gap:8px;">`;
-            years.forEach(yr => {
-                html += `<button onclick="displayPastQuestions('${subject}', ${yr.year}, '${yr.paper || ''}')"
-                    style="padding:8px 16px;background:var(--bg-card);border:1px solid var(--dash-border);border-radius:8px;cursor:pointer;color:var(--text-primary);font-size:0.85rem;">
-                    ${yr.label}
-                </button>`;
-            });
-            html += `</div></div>`;
-        }
+    questionsContainer.innerHTML = `
+        <div class="pp-page">
+            <div class="pp-hero">
+                <div>
+                    <span class="qz-kicker">Past papers</span>
+                    <h2>Every paper, year by year</h2>
+                    <p>Pick a subject and a year. Read the questions, reveal answers when you're ready, or take the paper as a quiz.</p>
+                </div>
+                <label class="pp-search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    <input type="search" id="pp-search" placeholder="Search a subject or year" autocomplete="off">
+                </label>
+            </div>
+            <div class="pp-grid" id="pp-grid">${cards}</div>
+            <p class="pp-empty" id="pp-empty" hidden>No papers match that. Try another subject or year.</p>
+        </div>`;
+
+    const searchEl = document.getElementById('pp-search');
+    searchEl?.addEventListener('input', () => {
+        const q = searchEl.value.trim().toLowerCase();
+        let shown = 0;
+        document.querySelectorAll('#pp-grid .pp-subject').forEach(card => {
+            const match = !q || q.split(/\s+/).every(word => card.dataset.search.includes(word));
+            card.hidden = !match;
+            if (match) shown++;
+        });
+        document.getElementById('pp-empty').hidden = shown > 0;
     });
-
-    questionsContainer.innerHTML = html;
 }
 
 // Helper function to build the past questions sidebar
@@ -2079,7 +2212,7 @@ function buildPastQuestionsSidebar() {
     autoOpenSidebarOnMobile();
 }
 
-function displayPastQuestions(subject, year, paper = null) {
+function displayPastQuestions(subject, year, paper = null, _triedLoading = false) {
     if (welcomeMessage) welcomeMessage.style.display = 'none';
     const quizTab = document.getElementById('quiz-mode-tab');
     if (quizTab) quizTab.classList.remove('active');
@@ -2087,30 +2220,28 @@ function displayPastQuestions(subject, year, paper = null) {
     // Check if data is loaded
     const data = allSubjectData[subject] || [];
     if (data.length === 0) {
+        if (_triedLoading) {
+            // Tried once already: say why instead of loading forever
+            const reason = (window.jupebLoadErrors || {})[subject];
+            questionsContainer.innerHTML = `
+                <div class="study-loading">
+                    <p>${escapeHtml((typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[subject]) || subject)} didn't load.</p>
+                    <small>${reason ? escapeHtml(reason) : 'Check your connection and try again.'}</small>
+                    <button class="pp-btn pp-btn--primary" style="margin-top:14px" onclick="displayPastQuestions('${subject}', ${year}, ${paper ? `'${paper}'` : 'null'})">Try again</button>
+                </div>`;
+            return;
+        }
         questionsContainer.innerHTML = `
-            <div class="loading-container" style="text-align:center;padding:60px 20px;">
-                <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
-                <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year} questions...</p>
-                <p style="margin-top:8px;font-size:0.85rem;color:var(--text-secondary);">Please wait, data is still loading...</p>
-            </div>
-        `;
-        // Try reloading data
+            <div class="study-loading"><span class="study-spinner"></span><p>Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year}…</p><small>This only takes a moment.</small></div>`;
         loadQuestions(subject).then(() => {
-            // Retry after data loads
-            setTimeout(() => {
-                displayPastQuestions(subject, year);
-            }, 500);
+            setTimeout(() => displayPastQuestions(subject, year, paper, true), 300);
         });
         return;
     }
     
     // Show loading state immediately
     questionsContainer.innerHTML = `
-        <div class="loading-container" style="text-align:center;padding:60px 20px;">
-            <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
-            <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year} questions...</p>
-        </div>
-    `;
+        <div class="study-loading"><span class="study-spinner"></span><p>Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year}…</p></div>`;
     
     // Use setTimeout to allow the loading state to render
     setTimeout(() => {
@@ -2148,46 +2279,46 @@ function displayPastQuestions(subject, year, paper = null) {
         });
         
         // Build the HTML
+        const paperTitle = (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[subject]) || displayName;
         let questionsHtml = `
-    <div class="past-questions-header">
-        <button class="dash-back-btn" onclick="goToPastPapers()" style="margin-bottom:12px;">
-            <span aria-hidden="true">←</span> Back to Past Papers
+    <div class="past-questions-header pp-paper-head">
+        <button class="pp-back" onclick="goToPastPapers()">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All past papers
         </button>
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
-            <div>
-                <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}${paper ? ' · ' + paper : ''}</span></h2>
-                <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
+        <div class="pp-paper-row">
+            <div class="pp-paper-title">
+                <span class="pp-subject-icon pp-subject-icon--lg" aria-hidden="true">${subjectEmojis[subject] || '📘'}</span>
+                <div>
+                    <h2>${escapeHtml(paperTitle)} <span>${year}${paper ? ' · ' + escapeHtml(paper) : ''}</span></h2>
+                    <div class="pp-chips">
+                        ${objectiveQuestions.length ? `<span class="pp-chip pp-chip--obj">${objectiveQuestions.length} multiple choice</span>` : ''}
+                        ${essayQuestions.length ? `<span class="pp-chip pp-chip--essay">${essayQuestions.length} essay</span>` : ''}
+                    </div>
+                </div>
             </div>
-            <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">
-                📝 Take This as a Quiz
-            </button>
+            <div class="pp-paper-actions">
+                <button class="pp-btn pp-btn--ghost" id="pp-reveal-all" data-on="0">Show all answers</button>
+                ${objectiveQuestions.length ? `<button class="past-take-quiz-btn pp-btn pp-btn--primary" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">Take as a quiz</button>` : ''}
+            </div>
         </div>
     </div>`;
-        
+
         // --- SECTION 1: OBJECTIVE QUESTIONS ---
         if (objectiveQuestions.length > 0) {
             questionsHtml += `
-                <div class="past-section-header">
-                    <h3 style="color:#0d6efd;font-size:1.2rem;margin:24px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
-                        📝 Multiple-Choice Questions
-                    </h3>
-                </div>`;
-            
+                <div class="past-section-header"><h3 class="study-section study-section--obj">Multiple-choice questions <span>${objectiveQuestions.length}</span></h3></div>`;
+
             let questionIndex = 1;
             objectiveQuestions.forEach((q) => {
                 questionsHtml += buildQuestionCard(q, year, questionIndex);
                 questionIndex++;
             });
         }
-        
+
         // --- SECTION 2: ESSAY QUESTIONS ---
         if (essayQuestions.length > 0) {
             questionsHtml += `
-                <div class="past-section-header">
-                    <h3 style="color:#059669;font-size:1.2rem;margin:32px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
-                        ✍️ Essay Questions
-                    </h3>
-                </div>`;
+                <div class="past-section-header"><h3 class="study-section study-section--essay">Essay questions <span>${essayQuestions.length}</span></h3></div>`;
             
             let questionIndex = 1;
             essayQuestions.forEach((q) => {
@@ -2210,11 +2341,11 @@ if (window.MathJax && window.MathJax.typesetPromise) {
                 const answerDisplay = document.getElementById(`answer-${qIdx}`);
                 if (answerDisplay.classList.contains('show')) {
                     answerDisplay.classList.remove('show');
-                    btn.textContent = '🔍 Show Answer';
+                    btn.textContent = 'Show answer';
                     document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
                 } else {
                     answerDisplay.classList.add('show');
-                    btn.textContent = '🙈 Hide Answer';
+                    btn.textContent = 'Hide answer';
                     const answer = btn.dataset.answer;
                     document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
                         if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
@@ -2229,12 +2360,28 @@ if (window.MathJax && window.MathJax.typesetPromise) {
                 const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
                 if (answerDisplay.style.display === 'none') {
                     answerDisplay.style.display = 'block';
-                    btn.textContent = '🙈 Hide Model Answer';
+                    btn.textContent = 'Hide model answer';
                 } else {
                     answerDisplay.style.display = 'none';
-                    btn.textContent = '📝 Show Model Answer';
+                    btn.textContent = 'Show model answer';
                 }
             });
+        });
+
+        const revealBtn = document.getElementById('pp-reveal-all');
+        revealBtn?.addEventListener('click', () => {
+            const showAll = revealBtn.dataset.on !== '1';
+            document.querySelectorAll('#questions-container .show-answer-btn').forEach(btn => {
+                const open = document.getElementById(`answer-${btn.dataset.qIdx}`)?.classList.contains('show');
+                if (open !== showAll) btn.click();
+            });
+            document.querySelectorAll('#questions-container .show-essay-answer-btn').forEach(btn => {
+                const box = document.getElementById(`essay-answer-${btn.dataset.essayIdx}`);
+                const open = box && box.style.display !== 'none';
+                if (open !== showAll) btn.click();
+            });
+            revealBtn.dataset.on = showAll ? '1' : '0';
+            revealBtn.textContent = showAll ? 'Hide all answers' : 'Show all answers';
         });
 
         document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -2244,26 +2391,29 @@ if (window.MathJax && window.MathJax.typesetPromise) {
 function buildQuestionCard(q, year, questionIndex) {
     const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
     const optionLabels = ['A','B','C','D','E','F'];
+    const isObjective = q.type === "Objective";
     let html = `<div class="question-card" data-question-idx="${questionIndex}">
         <div class="question-header">
-            <span class="question-year">📅 ${year}</span>
-            <span class="question-number-badge">🔢 Q${qNumberDisplay}</span>
-            <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
-            ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
+            <span class="question-number-badge">Q${qNumberDisplay}</span>
+            <span class="question-year">${year}</span>
+            <span class="question-type ${isObjective ? 'is-obj' : 'is-essay'}">${isObjective ? "Multiple choice" : "Essay"}</span>
+            ${q.diagramMissing ? '<span class="question-diagram-badge">Diagram missing</span>' : ''}
+            ${q.excludeFromQuiz ? '<span class="question-review-badge" title="Left out of quizzes after review">Not used in quizzes</span>' : ''}
         </div>
         ${renderQuestionBody(q)}`;
-    if (q.diagramMissing) html += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
-    if (q.type === "Objective" && q.options?.length > 0) {
+    if (q.diagramMissing) html += `<div class="question-warning"><strong>Diagram missing.</strong> ${escapeHtml(q.diagramNote || 'Refer to the original paper.')}</div>`;
+    if (isObjective && q.options?.length > 0) {
         html += `<ul class="options-list" id="options-list-${questionIndex}">`;
         q.options.forEach((opt, optIdx) => {
-            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
+            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><span class="option-letter">${optionLabels[optIdx]}</span><span class="option-body">${escapeHtml(opt)}</span></li>`;
         });
         html += `</ul>`;
-        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${formatModelAnswer(q.explanation)}</div></div>`;
+        if (q.excludeFromQuiz && q.reviewNote) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="">Show answer</button><div class="answer-display answer-display--review" id="answer-${questionIndex}"><div class="correct-answer">Note on this question</div><div class="explanation">${formatModelAnswer(q.reviewNote)}</div></div>`;
+        else if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">Show answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">Correct answer: <strong>${q.answer}</strong></div><div class="explanation"><span class="explanation-label">Why</span>${formatModelAnswer(q.explanation)}</div></div>`;
     }
     if (q.type === "Essay") {
-        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${formatModelAnswer(q.modelAnswer)}</div></div>`;
-        else if (!q.diagramMissing) html += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">Show model answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><span class="explanation-label">Model answer</span>${formatModelAnswer(q.modelAnswer)}</div></div>`;
+        else if (!q.diagramMissing) html += `<div class="essay-note">Essay question. Answer it in your notebook.</div>`;
     }
     return html + `</div>`;
 }
@@ -2320,26 +2470,29 @@ function processLinesForVisuals(lines) {
 function buildQuestionCard(q, year, questionIndex) {
     const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
     const optionLabels = ['A','B','C','D','E','F'];
+    const isObjective = q.type === "Objective";
     let html = `<div class="question-card" data-question-idx="${questionIndex}">
         <div class="question-header">
-            <span class="question-year">📅 ${year}</span>
-            <span class="question-number-badge">🔢 Q${qNumberDisplay}</span>
-            <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
-            ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
+            <span class="question-number-badge">Q${qNumberDisplay}</span>
+            <span class="question-year">${year}</span>
+            <span class="question-type ${isObjective ? 'is-obj' : 'is-essay'}">${isObjective ? "Multiple choice" : "Essay"}</span>
+            ${q.diagramMissing ? '<span class="question-diagram-badge">Diagram missing</span>' : ''}
+            ${q.excludeFromQuiz ? '<span class="question-review-badge" title="Left out of quizzes after review">Not used in quizzes</span>' : ''}
         </div>
         ${renderQuestionBody(q)}`;
-    if (q.diagramMissing) html += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
-    if (q.type === "Objective" && q.options?.length > 0) {
+    if (q.diagramMissing) html += `<div class="question-warning"><strong>Diagram missing.</strong> ${escapeHtml(q.diagramNote || 'Refer to the original paper.')}</div>`;
+    if (isObjective && q.options?.length > 0) {
         html += `<ul class="options-list" id="options-list-${questionIndex}">`;
         q.options.forEach((opt, optIdx) => {
-            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
+            if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><span class="option-letter">${optionLabels[optIdx]}</span><span class="option-body">${escapeHtml(opt)}</span></li>`;
         });
         html += `</ul>`;
-        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${formatModelAnswer(q.explanation)}</div></div>`;
+        if (q.excludeFromQuiz && q.reviewNote) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="">Show answer</button><div class="answer-display answer-display--review" id="answer-${questionIndex}"><div class="correct-answer">Note on this question</div><div class="explanation">${formatModelAnswer(q.reviewNote)}</div></div>`;
+        else if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">Show answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">Correct answer: <strong>${q.answer}</strong></div><div class="explanation"><span class="explanation-label">Why</span>${formatModelAnswer(q.explanation)}</div></div>`;
     }
     if (q.type === "Essay") {
-        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${formatModelAnswer(q.modelAnswer)}</div></div>`;
-        else if (!q.diagramMissing) html += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">Show model answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><span class="explanation-label">Model answer</span>${formatModelAnswer(q.modelAnswer)}</div></div>`;
+        else if (!q.diagramMissing) html += `<div class="essay-note">Essay question. Answer it in your notebook.</div>`;
     }
     return html + `</div>`;
 }
@@ -2470,15 +2623,18 @@ function showQuizStep2() {
     step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
     if (quizState.mode === 'practice') {
-        label.textContent = 'Select Topics or Random';
+        label.textContent = 'Pick topics, or go random';
         const allTopics = getAllTopicsForSubject();
         filterOptions.innerHTML = `
-            <div class="quiz-filter-search"><input type="text" id="topic-search" placeholder="🔍 Search topics..." class="quiz-search-input"></div>
-            <p class="multi-select-hint">Select specific topics, or leave empty for random mix. Selected: <span id="selected-count">0</span></p>
+            <div class="quiz-filter-search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                <input type="text" id="topic-search" placeholder="Search topics" class="quiz-search-input">
+            </div>
+            <p class="multi-select-hint">Tap topics to include them, or leave them all off for a random mix. Selected: <span id="selected-count">0</span></p>
             <div class="quiz-filter-list" id="topic-filter-list">
                 ${allTopics.map(t => `<button class="quiz-filter-btn multi-select-topic" data-filter="${escapeHtml(t.name)}"><span>${escapeHtml(t.name)}</span><span class="filter-count">${t.count}q</span></button>`).join('')}
             </div>
-            <button class="quiz-confirm-topics-btn" id="confirm-topics-btn">Continue (Random Mix)</button>`;
+            <button class="quiz-confirm-topics-btn" id="confirm-topics-btn">Continue (random mix)</button>`;
         
         document.getElementById('topic-search').addEventListener('input', function() {
             const q = this.value.toLowerCase();
@@ -2501,7 +2657,7 @@ function showQuizStep2() {
                 const countEl = document.getElementById('selected-count');
                 const confirmBtn = document.getElementById('confirm-topics-btn');
                 if (countEl) countEl.textContent = quizState.selectedTopics.length;
-                if (confirmBtn) confirmBtn.textContent = `Continue (${quizState.selectedTopics.length === 0 ? 'Random Mix' : quizState.selectedTopics.length + ' topic(s)'})`;
+                if (confirmBtn) confirmBtn.textContent = `Continue (${quizState.selectedTopics.length === 0 ? 'random mix' : quizState.selectedTopics.length + (quizState.selectedTopics.length === 1 ? ' topic' : ' topics')})`;
             });
         });
 
@@ -2511,7 +2667,7 @@ function showQuizStep2() {
         });
 
     } else if (quizState.mode === 'exam') {
-    label.textContent = 'Select Exam Year & Paper';
+    label.textContent = 'Pick an exam year';
     
     // Build list of unique year-paper combinations
     const yearPapers = [];
@@ -2527,7 +2683,7 @@ function showQuizStep2() {
             });
         }
         const entry = yearPapers.find(yp => yp.key === key);
-        if (q.type === 'Objective' && q.options && q.options.length > 0 && q.answer) {
+        if (q.type === 'Objective' && q.options && q.options.length > 0 && q.answer && !q.diagramMissing && !q.excludeFromQuiz) {
             entry.count++;
         }
     });
@@ -2539,7 +2695,7 @@ function showQuizStep2() {
         if (yearsWithCounts.length === 0) {
             filterOptions.innerHTML = `<p class="no-data-message">No quiz-ready questions found.</p>`;
         } else {
-filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => `<button class="quiz-year-btn" data-filter="${y.year}" data-paper="${y.paper || ''}"><span class="year-num">${y.label}</span><span class="year-count">${y.count}q</span></button>`).join('')}</div>`;
+filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => `<button class="quiz-year-btn" data-filter="${y.year}" data-paper="${y.paper || ''}"><span class="year-num">${y.year}</span>${y.paper ? `<span class="year-paper">${escapeHtml(y.paper)}</span>` : ''}<span class="year-count">${y.count} questions</span></button>`).join('')}</div>`;
             filterOptions.querySelectorAll('.quiz-year-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     filterOptions.querySelectorAll('.quiz-year-btn').forEach(b => b.classList.remove('selected'));
@@ -2554,7 +2710,9 @@ filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y =
 
 function showQuizStep3() {
     const available = getAvailableQuestions().length;
-    quizState.count = Math.min(available, quizState.mode === 'practice' ? 50 : available);
+    // Practice length comes from Settings (10, 20 or 50; 10 by default)
+    const practiceLength = parseInt(localStorage.getItem('jupeb_default_quiz_length'), 10) || 10;
+    quizState.count = Math.min(available, quizState.mode === 'practice' ? practiceLength : available);
     ['qstep-3'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
     showQuizStep4();
 }
@@ -2569,6 +2727,14 @@ function showQuizStep4() {
         const newBtn = btn.cloneNode(true);
         btn.parentNode.replaceChild(newBtn, btn);
     });
+    // Start on the timer chosen in Settings
+    const defaultTime = localStorage.getItem('jupeb_default_timer') || '0';
+    const defaultBtn = document.querySelector(`.quiz-timer-btn[data-time="${defaultTime}"]`);
+    if (defaultBtn) {
+        document.querySelectorAll('.quiz-timer-btn').forEach(b => b.classList.toggle('active', b === defaultBtn));
+        quizState.timed = parseInt(defaultTime, 10) > 0;
+        quizState.totalTime = parseInt(defaultTime, 10);
+    }
     document.querySelectorAll('.quiz-timer-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.quiz-timer-btn').forEach(b => b.classList.remove('active'));
@@ -2589,17 +2755,18 @@ function showQuizStep5() {
     step5.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
     const modeLabels = {
-        practice: quizState.filter === 'all' ? 'Random Practice' : 'Selected Topics',
-        exam: `Past Exam: ${quizState.filter.paper ? quizState.filter.year + ' — ' + quizState.filter.paper : quizState.filter.year}`,
-        weak: 'Weak Areas Focus'
+        practice: quizState.filter === 'all' ? 'Random mix' : 'Selected topics',
+        exam: `Past exam · ${quizState.filter.paper ? quizState.filter.year + ' ' + quizState.filter.paper : quizState.filter.year}`,
+        weak: 'Weak areas'
     };
     const modeLabel = modeLabels[quizState.mode] || quizState.mode;
     const timerLabel = !quizState.timed ? 'No timer' : quizState.totalTime >= 3600 ? `${quizState.totalTime/3600}h` : `${quizState.totalTime/60} min`;
     const finalCount = Math.min(quizState.count, getAvailableQuestions().length);
 
+    const subjectLabel = (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[currentSubject]) || (currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1));
     document.getElementById('quiz-summary').innerHTML = `
         <div class="quiz-summary-grid">
-            <div class="qs-item"><span class="qs-label">Subject</span><span class="qs-value">${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)}</span></div>
+            <div class="qs-item"><span class="qs-label">Subject</span><span class="qs-value">${subjectLabel}</span></div>
             <div class="qs-item"><span class="qs-label">Mode</span><span class="qs-value">${modeLabel}</span></div>
             <div class="qs-item"><span class="qs-label">Questions</span><span class="qs-value">${finalCount}</span></div>
             <div class="qs-item"><span class="qs-label">Timer</span><span class="qs-value">${timerLabel}</span></div>
@@ -2626,7 +2793,7 @@ function getAllTopicsForSubject() {
 
 function getAvailableQuestions() {
     let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer &&
-        !q.diagramMissing);
+        !q.diagramMissing && !q.excludeFromQuiz);
     
     if (quizState.mode === 'practice') {
         if (quizState.filter !== 'all') {
@@ -2749,45 +2916,57 @@ function renderQuizExam() {
         return `<button class="${cls}" data-idx="${i}">${i+1}</button>`;
     }).join('');
 
+    const isFlagged = quizState.flagged.has(quizState.currentIndex);
     questionsContainer.innerHTML = `
         <div class="quiz-exam-wrapper">
             <div class="quiz-top-bar">
                 <div class="quiz-meta">
-                    <span class="quiz-progress-text">${quizState.currentIndex + 1} / ${total}</span>
+                    <div class="qz-top-row">
+                        <span class="quiz-progress-text">Question <strong>${quizState.currentIndex + 1}</strong> of ${total}</span>
+                        <span class="quiz-stats-inline">${answered} answered · ${quizState.flagged.size} flagged</span>
+                    </div>
                     <div class="quiz-progress-bar-wrap"><div class="quiz-progress-bar-fill" style="width:${progress}%"></div></div>
-                    <span class="quiz-stats-inline">${answered} answered · ${quizState.flagged.size} flagged</span>
                 </div>
                 <div class="quiz-top-actions">
-                    ${quizState.timed ? `<div class="quiz-timer-box"><span>⏱</span><span id="quiz-timer-display">${formatTime(quizState.timeRemaining)}</span></div>` : ''}
+                    ${quizState.timed ? `<div class="quiz-timer-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg><span id="quiz-timer-display">${formatTime(quizState.timeRemaining)}</span></div>` : ''}
                     <button class="quiz-submit-early-btn" id="quiz-submit-early">Submit</button>
                 </div>
             </div>
-            <div class="quiz-navigator" id="quiz-navigator">${navDots}</div>
-           <div class="quiz-question-card">
+            <div class="quiz-navigator" id="quiz-navigator" aria-label="Jump to a question">${navDots}</div>
+            <div class="quiz-question-card" data-anim-key="${quizState.currentIndex}">
                 <div class="quiz-q-meta">
-                    <span class="quiz-q-badge year-badge">📅 ${q.year}</span>
-                    <span class="quiz-q-badge num-badge">🔢 Q${q.questionNumber.toString().padStart(2, '0')}</span>
-                    <span class="quiz-q-badge cat-badge">🏷️ ${escapeHtml(q.category)}</span>
-                    ${q.diagramMissing ? '<span class="quiz-q-badge diagram-badge">⚠️ Diagram</span>' : ''}
-                    ${quizState.flagged.has(quizState.currentIndex) ? '<span class="quiz-q-badge flag-badge">🚩 Flagged</span>' : ''}
+                    <span class="quiz-q-badge num-badge">Q${q.questionNumber.toString().padStart(2, '0')}</span>
+                    <span class="quiz-q-badge year-badge">${q.year}</span>
+                    <span class="quiz-q-badge cat-badge">${escapeHtml(q.category)}</span>
+                    ${q.diagramMissing ? '<span class="quiz-q-badge diagram-badge">Diagram missing</span>' : ''}
+                    ${isFlagged ? '<span class="quiz-q-badge flag-badge">🚩 Flagged</span>' : ''}
                 </div>
                 ${renderQuestionBody(q)}
                 <div class="quiz-options" id="quiz-options">
                     ${q.options.filter(o => o && o.trim()).map((opt, i) => {
                         const label = optionLabels[i];
                         const isSelected = quizState.answers[quizState.currentIndex] === label;
-                        return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${label}"><span class="option-label">${label}</span><span class="option-text">${escapeHtml(opt)}</span></button>`;
+                        return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${label}" aria-pressed="${isSelected}"><span class="option-label">${label}</span><span class="option-text">${escapeHtml(opt)}</span></button>`;
                     }).join('')}
                 </div>
                 <div class="quiz-card-actions">
-                    <button class="quiz-flag-btn ${quizState.flagged.has(quizState.currentIndex) ? 'flagged' : ''}" id="quiz-flag-btn">${quizState.flagged.has(quizState.currentIndex) ? '🚩 Unflag' : '🏳️ Flag'}</button>
+                    <button class="quiz-flag-btn ${isFlagged ? 'flagged' : ''}" id="quiz-flag-btn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>${isFlagged ? 'Unflag' : 'Flag'}
+                    </button>
                     <div class="quiz-nav-btns">
-                        <button class="quiz-prev-btn" id="quiz-prev-btn" ${quizState.currentIndex === 0 ? 'disabled' : ''}>← Prev</button>
-                        <button class="quiz-next-btn" id="quiz-next-btn">${quizState.currentIndex === total - 1 ? 'Review →' : 'Next →'}</button>
+                        <button class="quiz-prev-btn" id="quiz-prev-btn" ${quizState.currentIndex === 0 ? 'disabled' : ''}>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span>Previous</span>
+                        </button>
+                        <button class="quiz-next-btn" id="quiz-next-btn">
+                            <span>${quizState.currentIndex === total - 1 ? 'Review' : 'Next'}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </button>
                     </div>
                 </div>
             </div>
+            <p class="qz-shortcuts">Keyboard: <kbd>A</kbd>–<kbd>E</kbd> to answer · <kbd>←</kbd> <kbd>→</kbd> to move · <kbd>F</kbd> to flag</p>
         </div>`;
+    // Keep the current question visible in the strip of numbers
+    document.querySelector('#quiz-navigator .nav-dot.current')?.scrollIntoView({ block: 'nearest', inline: 'center' });
 // Re-render MathJax for new LaTeX content
 if (window.MathJax && window.MathJax.typesetPromise) {
     MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
@@ -2827,7 +3006,6 @@ function setupExamListeners() {
 function updateNavigatorDot(idx) {
     const dot = document.querySelector(`.nav-dot[data-idx="${idx}"]`);
     if (!dot) return;
-    dot.classList.remove('current');
     if (quizState.answers[idx] !== undefined) dot.classList.add('answered');
     if (quizState.flagged.has(idx)) dot.classList.add('flagged');
 }
@@ -2841,18 +3019,19 @@ function showQuizReviewScreen() {
 
     questionsContainer.innerHTML = `
         <div class="quiz-review-screen">
-            <h2>📋 Review Before Submitting</h2>
+            <span class="qz-kicker">Almost done</span>
+            <h2>Review before you submit</h2>
             <div class="quiz-review-stats">
                 <div class="review-stat"><span class="rs-num">${total}</span><span class="rs-label">Total</span></div>
                 <div class="review-stat answered"><span class="rs-num">${answered}</span><span class="rs-label">Answered</span></div>
                 <div class="review-stat unanswered"><span class="rs-num">${unanswered}</span><span class="rs-label">Unanswered</span></div>
                 <div class="review-stat flagged-stat"><span class="rs-num">${flaggedList.length}</span><span class="rs-label">Flagged</span></div>
             </div>
-            ${flaggedList.length > 0 ? `<div class="review-flagged-section">🚩 Flagged: ${flaggedList.map(i => `<button class="review-jump-btn" data-idx="${i}">Q${i+1}</button>`).join('')}</div>` : ''}
-            ${unanswered > 0 ? `<p class="review-warning">⚠️ ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}.</p>` : '<p class="review-all-done">✅ All questions answered!</p>'}
+            ${flaggedList.length > 0 ? `<div class="review-flagged-section"><span>🚩 Flagged questions</span><div>${flaggedList.map(i => `<button class="review-jump-btn" data-idx="${i}">Q${i+1}</button>`).join('')}</div></div>` : ''}
+            ${unanswered > 0 ? `<p class="review-warning">You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Unanswered questions count as wrong.</p>` : '<p class="review-all-done">Every question is answered. Nice work.</p>'}
             <div class="review-actions">
-                <button class="review-back-btn" id="review-back-btn">← Continue Quiz</button>
-                <button class="review-submit-btn" id="review-submit-btn">✅ Submit & See Results</button>
+                <button class="review-back-btn" id="review-back-btn">Back to the quiz</button>
+                <button class="review-submit-btn" id="review-submit-btn">Submit and see results</button>
             </div>
         </div>`;
 
@@ -2946,7 +3125,11 @@ function getDashboardData() {
     const activity = recentActivity.map(entry => ({
         label: entry.mode === 'exam' ? 'Completed Past Exam' : entry.mode === 'practice' ? 'Practiced Questions' : 'Weak Area Practice',
         meta: `${entry.subject} · ${entry.total} questions · ${entry.score}%`,
-        when: entry.date || 'Today'
+        when: entry.date || 'Today',
+        mode: entry.mode,
+        subject: entry.subject,
+        total: entry.total,
+        score: entry.score
     }));
     
     return {
@@ -2997,18 +3180,19 @@ function renderPinnedSubjects() {
   if (pinned.length === 0) {
     container.innerHTML = `
       <div class="pinned-empty">
-        <button class="dash-btn-primary" onclick="openSubjectPickerForPinning()">Pick Subjects</button>
+        <p>You haven't pinned any subjects yet.</p>
+        <button class="dash-btn-primary" onclick="openSubjectPickerForPinning()">Pick subjects</button>
       </div>`;
     return;
   }
 
   container.innerHTML = pinned.map(id => `
-    <div class="dash-subject-tile is-clickable" onclick="openPinnedSubject('${id}')">
-      <span style="font-size:1.4rem;">${SUBJECT_ICONS[id] || "📘"}</span>
-      <h4>${SUBJECT_NAMES[id]}</h4>
-    </div>`).join("") + `
+    <button class="dash-subject-tile is-clickable" onclick="openPinnedSubject('${id}')">
+      <span class="db-subj-icon" aria-hidden="true">${SUBJECT_ICONS[id] || "📘"}</span>
+      <span class="db-subj-name">${SUBJECT_NAMES[id]}</span>
+    </button>`).join("") + `
     <button class="dash-add-subject-tile" onclick="openSubjectPickerForPinning()">
-      <span class="plus-icon">+</span>
+      <span class="plus-icon" aria-hidden="true">+</span>
       <span>Edit</span>
     </button>`;
 }
@@ -3054,6 +3238,48 @@ function pickerTogglePin(subjectId) {
   renderPickerStep();
   renderPinnedSubjects();
 }
+// Icons for the recent-activity rows, by quiz mode
+const ACTIVITY_KINDS = {
+    exam:     { tone: "db-tone-violet", icon: '<svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>' },
+    practice: { tone: "db-tone-blue",   icon: '<svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>' },
+    weak:     { tone: "db-tone-orange", icon: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>' }
+};
+
+// The percentage and ring on the "continue" card
+function setContinueProgress(pct) {
+    const label = document.getElementById("db-continue-pct");
+    if (label) label.textContent = `${pct}%`;
+    const ring = document.getElementById("db-continue-ring");
+    if (ring) {
+        const length = 2 * Math.PI * 50;              // r = 50 in the SVG
+        ring.style.strokeDashoffset = String(length * (1 - Math.min(100, Math.max(0, pct)) / 100));
+    }
+}
+
+// The four numbers under the banner, from what this browser has saved
+function renderDashboardStats() {
+    let history = [];
+    try { history = JSON.parse(localStorage.getItem('jupeb_quiz_history') || '[]'); } catch (e) {}
+    let progress = {};
+    try { progress = JSON.parse(localStorage.getItem(qbKey('jupeb_subject_progress')) || '{}'); } catch (e) {}
+
+    const scores = history.map(h => Number(h.score)).filter(Number.isFinite);
+    const fromProgress = Object.values(progress).reduce((sum, p) => sum + (Number(p && p.answered) || 0), 0);
+    const fromHistory = history.reduce((sum, h) => sum + (Number(h.total) || 0), 0);
+    const values = {
+        "db-stat-answered": Math.max(fromProgress, fromHistory),
+        "db-stat-quizzes": history.length,
+        "db-stat-avg": scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0,
+        "db-stat-best": scores.length ? Math.round(Math.max(...scores)) : 0
+    };
+    Object.entries(values).forEach(([id, value]) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.dataset.value = value;
+        el.textContent = value.toLocaleString() + (el.dataset.suffix || "");
+    });
+}
+
 function renderDashboard(data = {}) {
     console.log('renderDashboard called with:', data);
     const {
@@ -3086,11 +3312,16 @@ document.getElementById("dash-user-name").textContent =
         const pct = Math.round((lastSession.answered / lastSession.total) * 100) || 0;
         textEl.textContent = `${lastSession.subject} · ${lastSession.answered} / ${lastSession.total} questions completed`;
         fillEl.style.width = `${pct}%`;
+        setContinueProgress(pct);
     } else {
         topicEl.textContent = "Pick a subject to begin";
         textEl.textContent = "You haven't started studying yet.";
         fillEl.style.width = "0%";
+        setContinueProgress(0);
     }
+
+    // Numbers row
+    renderDashboardStats();
 
     // Streak
     document.getElementById("dash-streak-text").innerHTML = `${streakDays} <span>days</span>`;
@@ -3110,24 +3341,36 @@ document.getElementById("dash-user-name").textContent =
     if (weakTopics.length) {
         weakEl.innerHTML = weakTopics.map(t => `
             <div class="dash-weak-row">
-                <span>${t.name}</span>
-                <div class="dash-progress-track"><div class="dash-progress-fill" style="width:${t.score}%;background:#ef4444;"></div></div>
+                <span class="db-weak-name" title="${t.name}">${t.name}</span>
+                <div class="dash-progress-track"><div class="dash-progress-fill" style="width:${t.score}%"></div></div>
                 <span class="dash-weak-pct">${t.score}%</span>
             </div>`).join("");
     } else {
-        weakEl.innerHTML = '<p class="dash-subtext">Answer 10+ questions to unlock weak area tracking.</p>';
+        weakEl.innerHTML = '<p class="db-empty">Answer 10+ questions to unlock weak area tracking.</p>';
     }
 
     // Recent activity
     const recentEl = document.getElementById("dash-recent-activity");
     if (recentActivity.length) {
-        recentEl.innerHTML = recentActivity.map(a => `
+        recentEl.innerHTML = recentActivity.map(a => {
+            const score = Number(a.score);
+            const hasScore = Number.isFinite(score);
+            const scoreClass = !hasScore ? "" : score >= 70 ? "" : score >= 50 ? " db-score--mid" : " db-score--low";
+            const kind = ACTIVITY_KINDS[a.mode] || ACTIVITY_KINDS.weak;
+            const subjectName = (typeof SUBJECT_NAMES === "object" && SUBJECT_NAMES[a.subject]) || a.subject;
+            const meta = a.subject ? `${subjectName}${a.total ? ` · ${a.total} questions` : ""}` : (a.meta || "");
+            return `
             <div class="dash-activity-row">
-                <span>${a.label}${a.meta ? ` · ${a.meta}` : ""}</span>
-                <span class="dash-subtext">${a.when}</span>
-            </div>`).join("");
+                <span class="db-act-icon ${kind.tone}" aria-hidden="true">${kind.icon}</span>
+                <div class="db-act-body"><strong>${a.label}</strong><span>${meta}</span></div>
+                <div class="db-act-side">
+                    ${hasScore ? `<span class="db-score${scoreClass}">${score}%</span>` : ""}
+                    <span class="db-act-when">${a.when}</span>
+                </div>
+            </div>`;
+        }).join("");
     } else {
-        recentEl.innerHTML = '<p class="dash-subtext">No activity yet — your study sessions will show here.</p>';
+        recentEl.innerHTML = '<p class="db-empty">No activity yet. Your study sessions will show here.</p>';
     }
      if (typeof renderPinnedSubjects === 'function') {
         renderPinnedSubjects();
@@ -3196,13 +3439,25 @@ function startQuickPractice() {
 function goToDashboard() {
     // Check if quiz is in progress
     if (typeof quizState !== 'undefined' && quizState.questions && quizState.questions.length > 0 && !quizState.submitted) {
-        const confirmed = confirm("Leave this quiz? Your progress won't be saved.");
-        if (!confirmed) {
-            // Push the quiz state back so back gesture doesn't desync
-            history.pushState({ screenId: "app-content" }, "", "#questions");
-            return;
-        }
-        clearQuizTimer();
+        const answered = Object.keys(quizState.answers || {}).length;
+        const ask = (typeof appDialog === 'function')
+            ? appDialog({
+                title: "Leave this quiz?",
+                message: `<p>You've answered <strong>${answered} of ${quizState.questions.length}</strong> questions. If you leave now, this attempt won't be saved or scored.</p>`,
+                tone: "warning", icon: "clock", confirmText: "Leave quiz", cancelText: "Keep going" })
+            : Promise.resolve(confirm("Leave this quiz? Your progress won't be saved."));
+        ask.then(leave => {
+            if (!leave) {
+                // Push the quiz state back so back gesture doesn't desync
+                history.pushState({ screenId: "app-content" }, "", "#questions");
+                return;
+            }
+            clearQuizTimer();
+            quizState.questions = [];
+            showScreen("dashboard-screen");
+            showDashboard();
+        });
+        return;
     }
     showScreen("dashboard-screen");
     showDashboard();
@@ -3280,6 +3535,7 @@ function goToProgress() { showScreen("progress-screen"); }
 function goToSettings() {
     showScreen("settings-screen");
     if (typeof renderSettings === 'function') renderSettings();
+    if (typeof syncSettingsOptions === 'function') syncSettingsOptions();
 }
 function goToHelp() {
   showScreen("help-screen");
@@ -3488,59 +3744,108 @@ document.addEventListener('jupebDataLoaded', () => {
     if (pickerEl && pickerEl.classList.contains('is-open')) renderPickerStep();
 });
 
-// REPLACE your entire existing renderPickerStep() with this whole function.
+// Each subject's accent colour in the picker
+const SUBJECT_TONES = {
+    chemistry: '#10b981', physics: '#6366f1', maths: '#0ea5e9', biology: '#22c55e',
+    crs: '#f59e0b', irs: '#14b8a6', literature: '#ec4899', economics: '#eab308',
+    government: '#ef4444', accounting: '#64748b', businessManagement: '#f97316',
+    geography: '#06b6d4', sociology: '#a855f7'
+};
+// "CHM 001 - General Chemistry" → { code: "CHM 001", title: "General Chemistry" }
+function splitCourseName(name) {
+    const i = name.indexOf(' - ');
+    return i === -1 ? { code: '', title: name } : { code: name.slice(0, i), title: name.slice(i + 3) };
+}
+const PICKER_CHEVRON = '<svg class="sp-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+
 function renderPickerStep() {
     pickerSearch.value = "";
     pickerBackBtn.classList.toggle("is-visible", pickerStep !== "subject");
+    const emptyNote = document.getElementById("sp-empty");
+    if (emptyNote) emptyNote.hidden = true;
 
     // Breadcrumb
     const crumbs = [];
     if (pickerStep === "subject") {
-        crumbs.push(`<span class="crumb is-current">${pickerPinMode ? "Pick your subjects" : "Choose a subject"}</span>`);
+        crumbs.push(`<span class="crumb is-current">${pickerPinMode ? "Quick access" : "All subjects"}</span>`);
     } else if (pickerStep === "set") {
-        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">${pickerSubjectName}</span>`);
-        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">Choose a course</span>`);
+        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">Subjects</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">${escapeHtml(pickerSubjectName)}</span>`);
     } else if (pickerStep === "topic") {
-        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">${pickerSubjectName}</span>`);
-        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb" onclick="pickerJumpTo('set')">${pickerSet}</span>`);
-        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">Choose a topic</span>`);
+        crumbs.push(`<span class="crumb" onclick="pickerJumpTo('subject')">Subjects</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb" onclick="pickerJumpTo('set')">${escapeHtml(pickerSubjectName)}</span>`);
+        crumbs.push(`<span class="crumb-sep">›</span><span class="crumb is-current">${escapeHtml(splitCourseName(pickerSet).code || pickerSet)}</span>`);
     }
     pickerCrumbs.innerHTML = crumbs.join("");
 
-    // Tiles
+    // Step tracker, heading, footer
+    const order = ["subject", "set", "topic"];
+    document.querySelectorAll("#sp-steps li").forEach(li => {
+        const i = order.indexOf(li.dataset.step), cur = order.indexOf(pickerStep);
+        li.classList.toggle("is-done", i < cur);
+        li.classList.toggle("is-current", i === cur);
+    });
+    const stepsEl = document.getElementById("sp-steps");
+    if (stepsEl) stepsEl.hidden = pickerPinMode;
+    const titleEl = document.getElementById("sp-title");
+    const subEl = document.getElementById("sp-sub");
+    const footer = document.getElementById("sp-footer");
+    if (footer) footer.hidden = !pickerPinMode;
+    pickerGrid.className = `subject-picker-grid sp-grid--${pickerStep}`;
+    pickerEl.style.setProperty("--sp-tone", SUBJECT_TONES[pickerSubject] || "var(--tab-active-bg)");
+
     if (pickerStep === "subject") {
-        pickerSearch.placeholder = "Search subjects…";
-        const subjects = Object.keys(courseStructure);
+        pickerSearch.placeholder = "Search subjects";
+        // Subjects with questions first; "coming soon" ones at the end
+        const subjects = Object.keys(courseStructure).sort((a, b) =>
+            countsReady() ? (subjectQuestionCount(b) > 0 || subjectLoadFailed(b)) - (subjectQuestionCount(a) > 0 || subjectLoadFailed(a)) : 0);
         const pinned = pickerPinMode ? getPinnedSubjects() : [];
+        if (titleEl) titleEl.textContent = pickerPinMode ? "Pick your subjects" : "What do you want to study?";
+        if (subEl) subEl.textContent = pickerPinMode
+            ? "Tap a subject to add it to Quick Access on your dashboard. Tap again to remove it."
+            : `${subjects.length} subjects, each split into courses and topics.`;
+        const footText = document.getElementById("sp-footer-text");
+        if (footText) footText.textContent = `${pinned.length} subject${pinned.length === 1 ? '' : 's'} pinned`;
 
         pickerGrid.innerHTML = subjects.map(id => {
             const isPinned = pinned.includes(id);
             const n = subjectQuestionCount(id);
-            const empty = countsReady() && n === 0 && !pickerPinMode;
+            const courses = Object.keys(courseStructure[id] || {}).length;
+            const failedLoad = countsReady() && subjectLoadFailed(id);
+            const empty = countsReady() && n === 0 && !pickerPinMode && !failedLoad;
             const action = pickerPinMode ? `pickerTogglePin('${id}')`
+                : failedLoad ? `retryQuestionLoad()`
                 : empty ? `pickerEmptyTile('${SUBJECT_NAMES[id]}')` : `pickerChooseSubject('${id}')`;
             const badge = pickerPinMode
-                ? `<span class="pin-badge ${isPinned ? 'is-pinned' : ''}">${isPinned ? '−' : '+'}</span>`
+                ? `<span class="pin-badge ${isPinned ? 'is-pinned' : ''}" aria-hidden="true">${isPinned ? '✓' : '+'}</span>`
                 : '';
             return `
-                <button class="subject-tile ${empty ? 'is-empty' : ''}" data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="${action}" ${empty ? 'aria-disabled="true"' : ''}>
+                <button class="subject-tile sp-subject ${empty ? 'is-empty' : ''} ${isPinned ? 'is-pinned' : ''}" style="--tone:${SUBJECT_TONES[id] || '#0d6efd'}"
+                        data-name="${SUBJECT_NAMES[id].toLowerCase()}" onclick="${action}" ${empty ? 'aria-disabled="true"' : ''} ${pickerPinMode ? `aria-pressed="${isPinned}"` : ''}>
                     ${badge}
                     <span class="subject-tile-icon">${SUBJECT_ICONS[id] || "📘"}</span>
                     <span class="subject-tile-name">${SUBJECT_NAMES[id]}</span>
-                    <span class="subject-tile-count">${countLabel(n)}</span>
+                    <span class="subject-tile-count">${failedLoad && !pickerPinMode ? "Couldn't load · tap to retry" : empty ? 'Coming soon' : `${courses} course${courses === 1 ? '' : 's'} · ${countLabel(n)}`}</span>
                 </button>`;
         }).join("");
     } else if (pickerStep === "set") {
-        pickerSearch.placeholder = "Search courses…";
+        pickerSearch.placeholder = "Search courses";
         const courses = Object.keys(courseStructure[pickerSubject] || {});
+        if (titleEl) titleEl.textContent = pickerSubjectName;
+        if (subEl) subEl.textContent = `Choose a course · ${courses.length} course${courses.length === 1 ? '' : 's'} · ${countLabel(subjectQuestionCount(pickerSubject))}`;
         pickerGrid.innerHTML = courses.map((course, i) => {
             const n = courseQuestionCount(pickerSubject, course);
             const empty = countsReady() && n === 0;
+            const { code, title } = splitCourseName(course);
+            const topics = (courseStructure[pickerSubject][course] || []).length;
             return `
-            <button class="subject-tile ${empty ? 'is-empty' : ''}" data-name="${course.toLowerCase()}" data-course-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
-                <span class="subject-tile-icon">📘</span>
-                <span class="subject-tile-name">${escapeHtml(course)}</span>
-                <span class="subject-tile-count">${countLabel(n)}</span>
+            <button class="subject-tile sp-course ${empty ? 'is-empty' : ''}" data-name="${course.toLowerCase()}" data-course-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
+                <span class="sp-code">${escapeHtml(code || String(i + 1))}</span>
+                <span class="sp-row-text">
+                    <span class="subject-tile-name">${escapeHtml(title)}</span>
+                    <span class="subject-tile-count">${topics} topic${topics === 1 ? '' : 's'} · ${empty ? 'Coming soon' : countLabel(n)}</span>
+                </span>
+                ${PICKER_CHEVRON}
             </button>`;
         }).join("");
 
@@ -3552,28 +3857,35 @@ function renderPickerStep() {
             });
         });
     } else if (pickerStep === "topic") {
-    pickerSearch.placeholder = "Search topics…";
-    const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
-    const counts = topicCounts(pickerSubject);
-    pickerGrid.innerHTML = topics.map((topic, i) => {
-        const n = counts[topic] || 0;
-        const empty = countsReady() && n === 0;
-        return `
-        <button class="subject-tile ${empty ? 'is-empty' : ''}" data-name="${topic.toLowerCase()}" data-topic-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
-            <span class="subject-tile-icon">📖</span>
-            <span class="subject-tile-name">${escapeHtml(topic)}</span>
-            <span class="subject-tile-count">${countLabel(n)}</span>
-        </button>`;
-    }).join("");
+        pickerSearch.placeholder = "Search topics";
+        const topics = courseStructure[pickerSubject]?.[pickerSet] || [];
+        const counts = topicCounts(pickerSubject);
+        const { code, title } = splitCourseName(pickerSet);
+        if (titleEl) titleEl.textContent = title;
+        if (subEl) subEl.textContent = `${code ? code + ' · ' : ''}${topics.length} topic${topics.length === 1 ? '' : 's'} · ${countLabel(courseQuestionCount(pickerSubject, pickerSet))}`;
+        pickerGrid.innerHTML = topics.map((topic, i) => {
+            const n = counts[topic] || 0;
+            const empty = countsReady() && n === 0;
+            return `
+            <button class="subject-tile sp-topic ${empty ? 'is-empty' : ''}" data-name="${topic.toLowerCase()}" data-topic-index="${i}" ${empty ? 'aria-disabled="true"' : ''}>
+                <span class="sp-num">${String(i + 1).padStart(2, '0')}</span>
+                <span class="subject-tile-name">${escapeHtml(topic)}</span>
+                <span class="subject-tile-count">${empty ? 'Soon' : countsReady() ? n : '…'}</span>
+                ${PICKER_CHEVRON}
+            </button>`;
+        }).join("");
 
-    pickerGrid.querySelectorAll("button[data-topic-index]").forEach(btn => {
-        btn.addEventListener("click", () => {
-            const topic = topics[parseInt(btn.dataset.topicIndex, 10)];
-            if (btn.classList.contains("is-empty")) pickerEmptyTile(topic);
-            else pickerChooseTopic(topic);
+        pickerGrid.querySelectorAll("button[data-topic-index]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const topic = topics[parseInt(btn.dataset.topicIndex, 10)];
+                if (btn.classList.contains("is-empty")) pickerEmptyTile(topic);
+                else pickerChooseTopic(topic);
+            });
         });
-    });
-}
+    }
+    // Start each step at the top of the list
+    const body = pickerEl.querySelector(".sp-body");
+    if (body) body.scrollTop = 0;
 }
 
 let pickerPinMode = false; // true when the picker is open for pinning, not browsing
@@ -3607,9 +3919,14 @@ function pickerChooseTopic(topicName) {
 
 function filterPickerTiles(query) {
     const q = query.trim().toLowerCase();
-    document.querySelectorAll(".subject-tile").forEach(tile => {
-        tile.classList.toggle("is-hidden", q && !tile.dataset.name.includes(q));
+    let shown = 0;
+    pickerGrid.querySelectorAll(".subject-tile").forEach(tile => {
+        const hide = !!q && !tile.dataset.name.includes(q);
+        tile.classList.toggle("is-hidden", hide);
+        if (!hide) shown++;
     });
+    const emptyNote = document.getElementById("sp-empty");
+    if (emptyNote) emptyNote.hidden = shown > 0;
 }
 
 // Set up picker events
@@ -3655,51 +3972,55 @@ function submitQuiz(timeUp = false) {
     const circumference = 327;
     const dashOffset = circumference - (circumference * score / 100);
 
+    const subjectLabel = (typeof SUBJECT_NAMES === 'object' && SUBJECT_NAMES[currentSubject]) || currentSubject;
+    const tone = score >= 70 ? 'great' : score >= 50 ? 'ok' : 'low';
     questionsContainer.innerHTML = `
         <div class="quiz-debrief">
-            ${timeUp ? '<div class="time-up-banner">⏰ Time Up! Auto-Submitted</div>' : ''}
-            <div class="debrief-hero">
+            ${timeUp ? '<div class="time-up-banner">⏰ Time is up. Your answers were submitted automatically.</div>' : ''}
+            <div class="debrief-hero debrief-hero--${tone}">
                 <div class="debrief-score-ring">
                     <svg viewBox="0 0 120 120" class="score-ring-svg"><circle cx="60" cy="60" r="52" class="ring-track"/><circle cx="60" cy="60" r="52" class="ring-fill" style="stroke-dashoffset:${dashOffset}"/></svg>
-                    <div class="score-ring-label"><span class="score-pct">${score}%</span><span class="score-grade" style="color:${gradeInfo.color}">${gradeInfo.grade}</span></div>
+                    <div class="score-ring-label"><span class="score-pct">${score}%</span><span class="score-grade">Grade ${gradeInfo.grade}</span></div>
                 </div>
                 <div class="debrief-summary-text">
+                    <span class="debrief-kicker">${escapeHtml(subjectLabel)} · ${total} question${total === 1 ? '' : 's'}</span>
                     <h2>${gradeInfo.message}</h2>
                     <div class="debrief-stats-row">
-                        <div class="ds-item correct-item"><span class="ds-num">${correct}</span><span class="ds-label">✅ Correct</span></div>
-                        <div class="ds-item incorrect-item"><span class="ds-num">${incorrect}</span><span class="ds-label">❌ Wrong</span></div>
-                        <div class="ds-item skipped-item"><span class="ds-num">${skipped}</span><span class="ds-label">⏭️ Skipped</span></div>
+                        <div class="ds-item correct-item"><span class="ds-num">${correct}</span><span class="ds-label">Correct</span></div>
+                        <div class="ds-item incorrect-item"><span class="ds-num">${incorrect}</span><span class="ds-label">Wrong</span></div>
+                        <div class="ds-item skipped-item"><span class="ds-num">${skipped}</span><span class="ds-label">Skipped</span></div>
+                        <div class="ds-item time-item"><span class="ds-num">${formatTime(timeTaken)}</span><span class="ds-label">Time</span></div>
                     </div>
-                    <p class="debrief-time">⏱ Time taken: ${formatTime(timeTaken)}</p>
-                </div>
-            </div>
-            <div class="debrief-section">
-                <h3>📊 Performance by Topic</h3>
-                <div class="topic-breakdown">
-                    ${Object.entries(topicBreakdown).sort((a,b) => (a[1].correct/a[1].total) - (b[1].correct/b[1].total)).map(([cat, data]) => {
-                        const pct = Math.round((data.correct / data.total) * 100);
-                        const barColor = pct >= 70 ? '#22c55e' : pct >= 50 ? '#f59e0b' : '#ef4444';
-                        return `<div class="topic-row"><span class="topic-name">${escapeHtml(cat)}</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:${pct}%;background:${barColor}"></div></div><span class="topic-pct" style="color:${barColor}">${data.correct}/${data.total}</span></div>`;
-                    }).join('')}
                 </div>
             </div>
             <div class="debrief-actions">
-                <button class="da-btn primary" id="review-answers-btn">🔍 Review Answers</button>
-                <button class="da-btn secondary" id="retry-wrong-btn" ${incorrect === 0 ? 'disabled' : ''}>🔁 Retry Wrong (${incorrect})</button>
-                <button class="da-btn secondary" id="new-quiz-btn">➕ New Quiz</button>
+                <button class="da-btn primary" id="review-answers-btn">Review answers</button>
+                <button class="da-btn secondary" id="retry-wrong-btn" ${incorrect === 0 ? 'disabled' : ''}>Retry wrong ones (${incorrect})</button>
+                <button class="da-btn secondary" id="new-quiz-btn">New quiz</button>
+            </div>
+            <div class="debrief-section">
+                <h3>How you did by topic</h3>
+                <div class="topic-breakdown">
+                    ${Object.entries(topicBreakdown).sort((a,b) => (a[1].correct/a[1].total) - (b[1].correct/b[1].total)).map(([cat, data]) => {
+                        const pct = Math.round((data.correct / data.total) * 100);
+                        const level = pct >= 70 ? 'good' : pct >= 50 ? 'mid' : 'low';
+                        return `<div class="topic-row topic-row--${level}"><span class="topic-name">${escapeHtml(cat)}</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:${pct}%"></div></div><span class="topic-pct">${data.correct}/${data.total}</span></div>`;
+                    }).join('')}
+                </div>
             </div>
             <div id="answer-review-section" style="display:none">
                 <div class="debrief-section">
-                    <h3>🔍 Question Review</h3>
+                    <h3>Question review</h3>
                     ${questions.map((q, i) => {
                         const userAns = answers[i];
                         const correctAns = q.answer.toUpperCase();
                         const isCorrect = userAns && userAns.toUpperCase() === correctAns;
                         const isSkipped = !userAns;
                         const optLabels = ['A','B','C','D','E'];
+                        const status = isCorrect ? 'Correct' : isSkipped ? 'Skipped' : 'Wrong';
                         return `<div class="review-q-card ${isCorrect ? 'rq-correct' : isSkipped ? 'rq-skipped' : 'rq-wrong'}">
                             <div class="rq-header">
-                                <span class="rq-num">Q${i+1}</span><span class="rq-year">📅 ${q.year}</span><span class="rq-paper-num">📄 Paper Q${q.questionNumber.toString().padStart(2, '0')}</span><span class="rq-cat">🏷️ ${escapeHtml(q.category)}</span>${q.diagramMissing ? '<span class="rq-diagram-badge">⚠️</span>' : ''}<span class="rq-status">${isCorrect ? '✅' : isSkipped ? '⏭️' : '❌'}</span>
+                                <span class="rq-num">Q${i+1}</span><span class="rq-year">${q.year} · paper Q${q.questionNumber.toString().padStart(2, '0')}</span><span class="rq-cat">${escapeHtml(q.category)}</span><span class="rq-status">${status}</span>
                             </div>
                             <div class="rq-question">${escapeHtml(q.question)}</div>
                             <div class="rq-options">
@@ -3708,23 +4029,23 @@ function submitQuiz(timeUp = false) {
                                     let cls = 'rq-opt';
                                     if (label === correctAns) cls += ' rq-opt-correct';
                                     else if (label === userAns) cls += ' rq-opt-wrong';
-                                    return `<div class="${cls}"><strong>${label})</strong> ${escapeHtml(opt)}</div>`;
+                                    return `<div class="${cls}"><span class="rq-letter">${label}</span><span>${escapeHtml(opt)}</span></div>`;
                                 }).join('')}
                             </div>
-                            ${!isCorrect && !isSkipped ? `<div class="rq-your-ans">Your answer: <strong>${userAns}</strong></div>` : ''}
-                            <div class="rq-correct-ans">Correct answer: <strong>${correctAns}</strong></div>
-                            ${q.explanation ? `<div class="rq-explanation">💡 ${formatModelAnswer(q.explanation)}</div>` : ''}
+                            ${!isCorrect && !isSkipped ? `<div class="rq-your-ans">You answered <strong>${userAns}</strong>. The correct answer is <strong>${correctAns}</strong>.</div>` : isSkipped ? `<div class="rq-your-ans">The correct answer is <strong>${correctAns}</strong>.</div>` : ''}
+                            ${q.explanation ? `<div class="rq-explanation"><span class="rq-why">Why</span>${formatModelAnswer(q.explanation)}</div>` : ''}
                         </div>`;
                     }).join('')}
                 </div>
             </div>
         </div>`;
+    if (score >= 70 && typeof celebrate === 'function') celebrate();
 
     document.getElementById('review-answers-btn').addEventListener('click', function() {
         const section = document.getElementById('answer-review-section');
         const visible = section.style.display !== 'none';
         section.style.display = visible ? 'none' : 'block';
-        this.textContent = visible ? '🔍 Review Answers' : '🙈 Hide Review';
+        this.textContent = visible ? 'Review answers' : 'Hide review';
         if (!visible) section.scrollIntoView({ behavior: 'smooth' });
     });
     document.getElementById('retry-wrong-btn').addEventListener('click', () => {
@@ -3741,11 +4062,11 @@ function submitQuiz(timeUp = false) {
 }
 
 function getGrade(score) {
-    if (score >= 70) return { grade: 'A', color: '#22c55e', message: 'Excellent! 🎉' };
+    if (score >= 70) return { grade: 'A', color: '#22c55e', message: 'Excellent work! 🎉' };
     if (score >= 60) return { grade: 'B', color: '#84cc16', message: 'Good job! 👍' };
-    if (score >= 50) return { grade: 'C', color: '#f59e0b', message: 'Pass! Keep pushing 📈' };
-    if (score >= 45) return { grade: 'D', color: '#f97316', message: 'Just below pass mark 💪' };
-    return { grade: 'F', color: '#ef4444', message: 'Keep studying — you\'ve got this! 📚' };
+    if (score >= 50) return { grade: 'C', color: '#f59e0b', message: 'You passed. Keep pushing 📈' };
+    if (score >= 45) return { grade: 'D', color: '#f97316', message: 'Just below the pass mark 💪' };
+    return { grade: 'F', color: '#ef4444', message: "Keep going. You've got this 📚" };
 }
 // Settings screen logic. Call renderSettings() whenever the screen is shown
 // (e.g. from goToSettings()), after Firebase auth has resolved.
@@ -3769,6 +4090,14 @@ function renderSettings() {
     const savedName = localStorage.getItem("jupeb_user_name");
   document.getElementById("settings-name-input").value =
     savedName || (user.displayName ? user.displayName.split(" ")[0] : "");
+  const heroName = document.getElementById("settings-hero-name");
+  if (heroName) heroName.textContent = savedName || user.displayName || "Student";
+  const badges = document.getElementById("settings-badges");
+  if (badges) {
+    const exams = (typeof userExamList === "function") ? userExamList() : ["jupeb"];
+    badges.innerHTML = '<span class="set-badge set-badge--gold">⭐ Lifetime access</span>' +
+      exams.map(x => `<span class="set-badge">${x === "ijmb" ? "IJMB" : "JUPEB"}</span>`).join("");
+  }
 
   // --- Appearance ---
   const themeToggle = document.getElementById("settings-theme-toggle");
@@ -3805,15 +4134,25 @@ document.getElementById("settings-name-save").addEventListener("click", () => {
         });
     }
 
+    const heroName = document.getElementById("settings-hero-name");
+    if (heroName) heroName.textContent = name;
     statusEl.textContent = "✓ Saved";
     setTimeout(() => (statusEl.textContent = ""), 2000);
 });
 
 document.getElementById("settings-signout-btn").addEventListener("click", () => {
-  const confirmed = confirm("Sign out of your account?");
-  if (!confirmed) return;
+  const email = (firebase.auth().currentUser || {}).email || "";
+  const ask = (typeof appDialog === "function")
+    ? appDialog({
+        title: "Sign out?",
+        message: `<p>You'll need to sign in with ${email ? `<strong>${escapeHtml(email)}</strong>` : "your Gmail"} again to study.</p><p>Questions saved on this device for offline use will be removed.</p>`,
+        tone: "danger", icon: "signout", confirmText: "Sign out", cancelText: "Stay signed in" })
+    : Promise.resolve(confirm("Sign out of your account?"));
+  ask.then(ok => {
+    if (!ok) return;
     firebase.auth().signOut().then(() => {
-    window.location.replace("/");
+      window.location.replace("/");
+    });
   });
 });
 
@@ -3841,16 +4180,29 @@ const SUPPORT_EMAIL = "jupeb.qbank@gmail.com";
 
 function renderHelp() {
   const listEl = document.getElementById("help-faq-list");
-  if (FAQ_ITEMS.length === 0) {
+  const items = FAQ_ITEMS.filter(Boolean);
+  const countEl = document.getElementById("help-faq-count");
+  if (countEl) countEl.textContent = `${items.length} questions`;
+  const emailLink = document.getElementById("help-email-link");
+  if (emailLink) emailLink.href = `mailto:${SUPPORT_EMAIL}`;
+  const emailText = document.getElementById("help-email-text");
+  if (emailText) emailText.textContent = SUPPORT_EMAIL;
+  const search = document.getElementById("help-search");
+  if (search) search.value = "";
+  const empty = document.getElementById("help-faq-empty");
+  if (empty) empty.hidden = true;
+
+  if (items.length === 0) {
     listEl.innerHTML = `<p class="dash-subtext">No FAQs yet — check back soon!</p>`;
   } else {
-    listEl.innerHTML = FAQ_ITEMS.map((item, i) => `
+    listEl.innerHTML = items.map((item, i) => `
       <div class="help-faq-item" data-index="${i}">
-        <button class="help-faq-question" onclick="toggleFaqItem(${i})">
-          <span>${item.q}</span>
-          <span class="help-faq-caret" aria-hidden="true">▾</span>
+        <button class="help-faq-question" onclick="toggleFaqItem(${i})" aria-expanded="false">
+          <span class="help-faq-num">${String(i + 1).padStart(2, "0")}</span>
+          <span class="help-faq-q">${item.q}</span>
+          <span class="help-faq-caret" aria-hidden="true"></span>
         </button>
-        <div class="help-faq-answer">${item.a}</div>
+        <div class="help-faq-answer"><p>${item.a}</p></div>
       </div>`).join("");
   }
 }
@@ -3862,6 +4214,7 @@ function toggleFaqItem(index) {
     } else {
       el.classList.remove("is-open"); // accordion: only one open at a time
     }
+    el.querySelector(".help-faq-question")?.setAttribute("aria-expanded", el.classList.contains("is-open"));
   });
 }
 
@@ -3887,15 +4240,51 @@ function initJUPEBApp() {
     setupThemeListeners();
     initStickyNavbar();
     setupEventListeners();
-        loadQuestions(null, () => {
-        console.log('All data loaded!');
-        window.jupebDataLoaded = true;
-        document.dispatchEvent(new CustomEvent("jupebDataLoaded"));   // add this
-        if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
-            showPastQuestionsSidebar();
-        }
-    });
+    loadQuestions(null, onQuestionsLoaded);
 }
+
+function onQuestionsLoaded() {
+    console.log('All data loaded!');
+    window.jupebDataLoaded = true;
+    document.dispatchEvent(new CustomEvent("jupebDataLoaded"));
+    if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
+        showPastQuestionsSidebar();
+    }
+    updateLoadProblemBar();
+}
+
+// ===== WHEN SOME SUBJECTS COULDN'T LOAD =====
+// (offline with nothing saved yet, a very slow connection, or sign-in not ready)
+function subjectLoadFailed(id) {
+    return Array.isArray(window.jupebFailedSubjects) && window.jupebFailedSubjects.includes(id);
+}
+let _retryingLoad = false;
+function retryQuestionLoad() {
+    if (_retryingLoad) return;
+    _retryingLoad = true;
+    updateLoadProblemBar(true);
+    loadQuestions(null, () => { _retryingLoad = false; onQuestionsLoaded(); });
+}
+function updateLoadProblemBar(retrying = false) {
+    let bar = document.getElementById('load-problem-bar');
+    const failed = window.jupebFailedSubjects || [];
+    if (!retrying && failed.length === 0) { if (bar) bar.classList.remove('is-on'); return; }
+    if (!bar) {
+        bar = document.createElement('div');
+        bar.id = 'load-problem-bar';
+        bar.className = 'load-problem-bar';
+        bar.setAttribute('role', 'status');
+        document.body.appendChild(bar);
+    }
+    bar.innerHTML = retrying
+        ? '<span class="load-problem-spinner" aria-hidden="true"></span><span>Loading questions…</span>'
+        : `<span class="load-problem-text"><strong>${failed.length === 1 ? `${SUBJECT_NAMES[failed[0]] || failed[0]} didn't load.` : `${failed.length} subjects didn't load.`}</strong> <small>${escapeHtml((window.jupebLoadErrors || {})[failed[0]] || (navigator.onLine ? 'Check your connection.' : "You're offline."))}</small></span><button type="button" onclick="retryQuestionLoad()">Retry</button>`;
+    bar.classList.add('is-on');
+}
+// Back online: try the missing subjects again by themselves
+window.addEventListener('online', () => {
+    if ((window.jupebFailedSubjects || []).length && window.jupebDataLoaded) retryQuestionLoad();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     // App waits for Firebase auth before loading

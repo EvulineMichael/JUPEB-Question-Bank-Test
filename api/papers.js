@@ -72,7 +72,11 @@ module.exports = async (req, res) => {
   try {
     email = (await admin.auth().verifyIdToken(token)).email;
   } catch (err) {
-    return res.status(401).json({ error: 'Sign-in expired. Please reload the page.' });
+    // err.code says which check failed, e.g. "auth/id-token-expired", or
+    // "auth/argument-error" when the token belongs to a different Firebase project than
+    // FIREBASE_SERVICE_ACCOUNT. Nothing secret is in it.
+    console.error('verifyIdToken failed:', err.code, err.message);
+    return res.status(401).json({ error: 'Sign-in expired. Please reload the page.', detail: err.code || 'token-check-failed' });
   }
   if (!email) return res.status(401).json({ error: 'Please sign in' });
 
@@ -82,7 +86,8 @@ module.exports = async (req, res) => {
     if (!snap.exists) return res.status(403).json({ error: 'Not authorized' });
     record = snap.data();
   } catch (err) {
-    return res.status(500).json({ error: 'Could not check your access. Please try again.' });
+    console.error('authorized_users read failed:', err.code, err.message);
+    return res.status(500).json({ error: 'Could not check your access. Please try again.', detail: String(err.code || 'firestore-read-failed') });
   }
   if (!examsOf(record).includes(exam)) {
     return res.status(403).json({ error: 'This exam is not unlocked on your account' });

@@ -74,6 +74,8 @@
       "product efficiency."
     ],
     "answer": "A",
+    "reviewNote": "The graph this question refers to is not in this copy of the paper, so point E cannot be identified.\n\nThe examiners' answer is A (productive efficiency). On a production possibility curve, any point on the curve shows productive efficiency: the economy is using all its resources fully.",
+    "excludeFromQuiz": true,
     "explanation": "Without the diagram, point 'E' typically represents productive efficiency on a production possibility frontier (PPF) — a point on the curve where resources are fully utilized. If it is on the PPF, it shows productive efficiency. If it is at the point where marginal cost equals marginal benefit, it shows allocative efficiency."
   },
   {

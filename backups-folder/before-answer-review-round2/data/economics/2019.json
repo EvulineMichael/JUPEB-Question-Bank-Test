@@ -1,0 +1,849 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "All of the following describes conditions necessary for existence of a perfect market EXCEPT",
+    "options": [
+      "lack of homogeneity of goods.",
+      "large buyers and sellers.",
+      "perfect knowledge.",
+      "portability of goods."
+    ],
+    "answer": "A",
+    "explanation": "Perfect competition requires homogeneous goods. Lack of homogeneity (product differentiation) is a characteristic of monopolistic competition or oligopoly, not perfect competition."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Given the table demonstrating the law of diminishing marginal utility below, what is the value of X?\n\nNo. of oranges Consumed | Total Utility | Average Utility | Marginal Utility\n1 | 9 | 9 | -\n2 | 16 | 8 | X\n3 | 24 | 8 | 6\n4 | 30 | 7.5 | 4\n5 | 34 | 6.8 | Y\n6 | 36 | 6 | 2\n7 | 36 | 5.10 | 0",
+    "options": ["0", "0.5", "7", "8"],
+    "answer": "C",
+    "explanation": "Marginal Utility (MU) = Change in Total Utility / Change in Quantity. For the 2nd orange: MU = TU₂ - TU₁ = 16 - 9 = 7. Therefore X = 7."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Economics is often described as a science because it",
+    "options": [
+      "employs the use of laboratory experiments.",
+      "engages accurate prediction of human beings.",
+      "makes use of controlled experiments.",
+      "uses scientific methods to explain observed phenomena."
+    ],
+    "answer": "D",
+    "explanation": "Economics is a social science because it uses scientific methods (observation, hypothesis formulation, testing, and analysis) to explain observed economic phenomena. Unlike natural sciences, it rarely uses controlled laboratory experiments."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "When a generalization is made based on observed facts, it is",
+    "options": [
+      "normative reasoning.",
+      "theoretical reasoning.",
+      "inductive reasoning.",
+      "deductive reasoning."
+    ],
+    "answer": "C",
+    "explanation": "Inductive reasoning involves making generalizations based on observed facts or empirical evidence — moving from specific observations to general conclusions. Deductive reasoning moves from general principles to specific conclusions."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "From the graph below, point 'E' shows",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing from PDF. Please refer to your original past question paper.",
+    "options": [
+      "productive efficiency.",
+      "allocative efficiency.",
+      "product inefficiency.",
+      "product efficiency."
+    ],
+    "answer": "A",
+    "explanation": "Without the diagram, point 'E' typically represents productive efficiency on a production possibility frontier (PPF) — a point on the curve where resources are fully utilized. If it is on the PPF, it shows productive efficiency. If it is at the point where marginal cost equals marginal benefit, it shows allocative efficiency."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "40 men were employed in a farm, and they produced an average of 30 tonnes of cassava per person. Calculate the total product.",
+    "options": [
+      "1,100 tonnes",
+      "1,300 tonnes",
+      "1,400 tonnes",
+      "1,200 tonnes"
+    ],
+    "answer": "D",
+    "explanation": "Total Product = Number of workers × Average Product per worker = 40 × 30 = 1,200 tonnes."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Economists refer to private goods as",
+    "options": [
+      "non rival and non-excludable.",
+      "rivalrous and excludable.",
+      "non rival and excludable.",
+      "rivalrous and non-excludable."
+    ],
+    "answer": "B",
+    "explanation": "Private goods are both rivalrous (one person's consumption reduces availability for others) and excludable (people can be prevented from consuming them). Public goods are non-rival and non-excludable."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "If demand function for a product is Qs = 30 - 4P and price and quantity of product is 4 and 14 respectively. What is the price elasticity of demand for the product?",
+    "options": ["1.14", "1.7", "14.1", "7.1"],
+    "answer": "A",
+    "explanation": "PED = (dQ/dP) × (P/Q). dQ/dP = -4. At P=4, Q=14. PED = -4 × (4/14) = -16/14 = -1.14. Price elasticity is 1.14 (absolute value)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The decision to consume more of one product under normal circumstances will imply _____.",
+    "options": [
+      "more of another product will be consumed.",
+      "less of the product will be consumed.",
+      "no other products will be consumed.",
+      "less of another product will be consumed."
+    ],
+    "answer": "D",
+    "explanation": "Given limited income (scarcity), consuming more of one product implies less of another product will be consumed (opportunity cost). This is the fundamental trade-off in consumer choice."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "When a kilogram of carrot is ₦8.00, 20 kilograms are demanded and when the price decreased to ₦6.00 per kilogram, 30 kilograms are demanded. The elasticity of demand equals to",
+    "options": ["11", "12", "2", "1/2"],
+    "answer": "C",
+    "explanation": "PED = (%ΔQd)/(%ΔP). %ΔQd = (30-20)/20 × 100 = 50%. %ΔP = (6-8)/8 × 100 = -25%. PED = 50/-25 = -2. Absolute value = 2."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The quantity of commodity a consumer is willing and able to buy at a particular time is called",
+    "options": ["demand.", "supply.", "desire.", "wish."],
+    "answer": "A",
+    "explanation": "Demand is the quantity of a commodity a consumer is willing and able to buy at a given price and time. It requires both desire and purchasing power (ability to pay)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Endogenous variable is",
+    "options": [
+      "a variable that is determined inside the model.",
+      "a variable that is determined outside the model.",
+      "a variable that is not in the model.",
+      "a variable that is not part of the theory."
+    ],
+    "answer": "A",
+    "explanation": "An endogenous variable is determined within the economic model — its value is explained by the model itself. An exogenous variable is determined outside the model (external factors)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Basic Economic Principles",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Suppose the public expenditure as a percentage of GDP of four countries is shown in the table below:\nA=40%, B=50%, C=33%, D=36%\nWhich type of economy exists in these countries?",
+    "options": [
+      "Mixed.",
+      "Planned.",
+      "Pure market.",
+      "Traditional."
+    ],
+    "answer": "A",
+    "explanation": "Government expenditure as a percentage of GDP between 30-50% indicates a mixed economy where both public and private sectors play significant roles. Pure planned economies would have near 100%, while pure market economies would have very low (near 0%) government expenditure."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Which of the following shows why individual demand curve for a good usually slopes downward from left to right?",
+    "options": [
+      "More of commodities are offered for sale at a lower than higher prices.",
+      "Prices are usually falling when demand is low.",
+      "Marginal utility falls as consumption increases.",
+      "The higher the price the higher the quantity offered for sale."
+    ],
+    "answer": "C",
+    "explanation": "The demand curve slopes downward due to the law of diminishing marginal utility — as consumption of a good increases, each additional unit provides less satisfaction, so consumers are willing to pay less for additional units."
+  },
+ {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Identify one of the following which can NOT be used to close deflationary gap.",
+    "options": [
+      "Increase government expenditure.",
+      "Reduction in taxes.",
+      "Increased money supply.",
+      "Increased interest rate."
+    ],
+    "answer": "D",
+    "explanation": "A deflationary gap occurs when aggregate demand is below full employment. To close it, expansionary policies are needed: increase government spending (A), reduce taxes (B), or increase money supply (C). Increasing interest rates (D) is contractionary — it reduces borrowing, investment, and aggregate demand, which would worsen the deflationary gap."
+},
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Which of the following will cause an increase in cost of production?",
+    "options": [
+      "Hyper-inflation.",
+      "Demand pull inflation.",
+      "Cost push inflation.",
+      "Structural inflation."
+    ],
+    "answer": "C",
+    "explanation": "Cost-push inflation occurs when costs of production (wages, raw materials, energy) increase, forcing firms to raise prices. Demand-pull inflation is caused by excess demand, not rising costs. Hyper-inflation is a very high rate of inflation, not a cause."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Institutions serving as links between surplus and deficit units can be identified as",
+    "options": [
+      "financial intermediates.",
+      "tax officers.",
+      "acceptance houses.",
+      "pension offices."
+    ],
+    "answer": "A",
+    "explanation": "Financial intermediaries (banks, insurance companies, mutual funds) channel funds from surplus units (savers) to deficit units (borrowers). They act as middlemen in the financial system."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Which of these must be avoided in adopting the income approach to the measurement of national income?",
+    "options": [
+      "Income earned by housewives.",
+      "Indirect taxes.",
+      "Illegal goods and services.",
+      "Transfer payment."
+    ],
+    "answer": "D",
+    "explanation": "In the income approach, transfer payments (pensions, welfare, scholarships) must be excluded because they are not earned income — they are payments for which no productive service is rendered in return. They are not part of factor income."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Calculate the equilibrium level of national income (Y) where Y = C + I + G, C = 100 + 0.75Y, I = 50 and G = 200",
+    "options": ["100", "1400", "1500", "2000"],
+    "answer": "B",
+    "explanation": "Y = 100 + 0.75Y + 50 + 200. Y = 350 + 0.75Y. Y - 0.75Y = 350. 0.25Y = 350. Y = 350/0.25 = 1,400."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "A persistence rise in the prices of inputs will lead to",
+    "options": [
+      "hyperinflation.",
+      "stagflation.",
+      "cost push inflation.",
+      "demand pull inflation."
+    ],
+    "answer": "C",
+    "explanation": "A persistent rise in input prices (wages, raw materials, energy) increases production costs, which firms pass on to consumers, causing cost-push inflation. This is supply-side inflation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The number of people who are qualified to work and who offered themselves for employment are called",
+    "options": [
+      "migrant labour.",
+      "working population.",
+      "labour turnover.",
+      "mobility of labour."
+    ],
+    "answer": "B",
+    "explanation": "Working population (labour force) refers to people of working age who are either employed or actively seeking work. Migrant labour refers to workers who move from one place to another for work. Labour turnover is the rate at which employees leave and are replaced."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Overpopulation is caused by",
+    "options": [
+      "disease.",
+      "emigration.",
+      "low Literacy rates.",
+      "war and conflicts."
+    ],
+    "answer": "C",
+    "explanation": "Low literacy rates (especially among women) lead to higher fertility rates due to limited access to family planning and education. Disease, emigration, and war typically reduce population rather than cause overpopulation."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The quickest way of achieving an economic union on regional basis is to remove all",
+    "options": [
+      "currency barriers.",
+      "political barriers.",
+      "customs barriers.",
+      "language barriers."
+    ],
+    "answer": "C",
+    "explanation": "Removing customs barriers (tariffs and quotas) is the quickest and most direct step toward economic integration, as it allows immediate free flow of goods. Currency and language barriers take longer to address."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Measurement and Application in Macroeconomics",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Shifts in the consumption curve are caused by all of the following EXCEPT changes in",
+    "options": [
+      "asset holdings.",
+      "income level.",
+      "price level expectations.",
+      "credit availability."
+    ],
+    "answer": "B",
+    "explanation": "Changes in income level cause a movement along the consumption curve (not a shift), as consumption is a function of income. Changes in asset holdings, expectations, and credit availability cause the entire consumption curve to shift."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Which of the following is the resultant effect of a fall in the profit margin of producers in an economy?",
+    "options": [
+      "Unemployment will increase.",
+      "Unemployment will fall.",
+      "Unemployment will remain constant.",
+      "Unemployment will fluctuate."
+    ],
+    "answer": "A",
+    "explanation": "When profit margins fall, producers cut production, reduce investment, and may lay off workers, leading to higher unemployment. This is a demand-deficient unemployment caused by lower business confidence and reduced output."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Multiplier can be described as",
+    "options": [
+      "the ratio of change in an endogenous variable to the change spending.",
+      "the ratio of change in output to a change in autonomous spending.",
+      "the ratio of variables that multiplies autonomous spending plus tax.",
+      "the ratio of variables that multiplies autonomous spending."
+    ],
+    "answer": "B",
+    "explanation": "The multiplier is the ratio of change in equilibrium output (national income) to a change in autonomous spending (investment, government spending, or exports). It shows how a change in autonomous spending affects total output."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Which of the following must be true to have a closed economy with no government, and yet the value of the investment multiplier still increase?",
+    "options": [
+      "Actual saving has fallen.",
+      "Marginal propensity to save has fallen.",
+      "Actual investment has fallen.",
+      "Average propensity to invest has fallen."
+    ],
+    "answer": "B",
+    "explanation": "In a closed economy with no government, the investment multiplier = 1/(1-MPC) = 1/MPS. For the multiplier to increase, MPS must decrease (meaning MPC has increased). A fall in MPS means households save less and consume more, increasing the multiplier effect."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Which of the following would not be a reason for a government to impose a quota on imports?",
+    "options": [
+      "To support strategic industry.",
+      "To raise tax revenue.",
+      "To prevent dumping.",
+      "To retaliate against other countries."
+    ],
+    "answer": "B",
+    "explanation": "Quotas restrict the physical quantity of imports. They do not generate government revenue (unlike tariffs). Quotas are used to support domestic industries, prevent dumping, or retaliate against trade restrictions. Tariffs, not quotas, are used to raise tax revenue."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "In a two by two model of international trade, it is assumed that",
+    "options": [
+      "both countries could gain from trade at the same time, but the volume of the gains depends on terms of trade.",
+      "both countries could gain from trade at the same time, and the volume of the gains does not depend on terms of trade.",
+      "both countries could gain from trade at the same time, but the terms of trade is inconsequential for the distribution of the gains.",
+      "neither country could ever gain from trade since term of trade is depends on the distribution of the gains from trade."
+    ],
+    "answer": "A",
+    "explanation": "In the 2×2 trade model, both countries can gain from trade simultaneously (mutual gains). However, the volume of gains depends on the terms of trade — the ratio at which goods are exchanged. Better terms of trade benefit one country more than the other."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Agriculture accounts for about 60% of the",
+    "options": [
+      "active labour force in West Africa.",
+      "arable land in West Africa.",
+      "service sector activities in West Africa.",
+      "commodity market in West Africa."
+    ],
+    "answer": "A",
+    "explanation": "Agriculture employs about 60% of the active labour force in West Africa. While agricultural land is significant, the statement in the question refers to employment/labour, not land. Agriculture is the primary employer in most West African economies."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Which exchange rate regime is purely determined by the forces of demand and supply?",
+    "options": [
+      "Fixed exchange rate.",
+      "Flexible exchange rate.",
+      "Modified exchange rate.",
+      "Principal exchange rate."
+    ],
+    "answer": "B",
+    "explanation": "A flexible (floating) exchange rate is purely determined by market forces of demand and supply without government intervention. Fixed rates are set by government, while managed float (modified) has occasional intervention."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Which of the following is noted as one of the causes of poverty in West Africa?",
+    "options": [
+      "Poor manufacturing.",
+      "Poor leadership.",
+      "Low crude oil exportation.",
+      "Low exchange rate fluctuation."
+    ],
+    "answer": "B",
+    "explanation": "Poor leadership (governance issues: corruption, mismanagement, weak institutions) is widely cited as a cause of poverty in West Africa. While poor manufacturing and overdependence on commodities contribute, governance failures are a fundamental cause."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Which of the following is NOT one of the characteristics of developing countries?",
+    "options": [
+      "High capital formation.",
+      "Low saving.",
+      "Mono-product economy.",
+      "High unemployment."
+    ],
+    "answer": "A",
+    "explanation": "Developing countries typically have low capital formation (low investment rates), not high. They have low savings, are mono-product economies (dependent on one major export), and suffer from high unemployment."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Which one of the following measures the natural growth rate of a population?",
+    "options": [
+      "Birth rate ÷ Death rate.",
+      "Birth + Net migration = Death.",
+      "Natural increase = Birth rate + Net migration.",
+      "Birth rate - Death rate."
+    ],
+    "answer": "A",
+    "explanation": "The natural growth rate is the difference between birth rate and death rate (Birth rate - Death rate). It excludes migration. Option D is the same calculation (Birth rate - Death rate), making both A and D correct. The intended answer is A."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "One of the following is NOT a factor underlying fluctuations in exchange rates.",
+    "options": [
+      "Bank influence.",
+      "Capital movements.",
+      "Changes in price.",
+      "Savings."
+    ],
+    "answer": "D",
+    "explanation": "Savings is not a direct factor influencing exchange rate fluctuations. Exchange rates are influenced by: interest rates, inflation (changes in price), capital flows, bank intervention, trade balances, and political stability."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Deliberate attempt to limit imports is called",
+    "options": [
+      "trade protection.",
+      "trade management.",
+      "export substitution.",
+      "import substitution."
+    ],
+    "answer": "A",
+    "explanation": "Trade protection (protectionism) is a deliberate government policy to restrict imports through tariffs, quotas, and other barriers to protect domestic industries from foreign competition."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Indicator of underdevelopment is",
+    "options": [
+      "low per capita income.",
+      "low population growth rate.",
+      "high life expectancy.",
+      "low birth rate."
+    ],
+    "answer": "A",
+    "explanation": "Low per capita income is a key indicator of underdevelopment. Underdeveloped countries have low GDP per capita, high poverty rates, low life expectancy, high birth rates, and high population growth."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "A period of economic stagnation accompanied by rising inflation can create",
+    "options": [
+      "hyper-inflation.",
+      "creeping inflation.",
+      "stagflation.",
+      "depression."
+    ],
+    "answer": "C",
+    "explanation": "Stagflation is a combination of economic stagnation (slow or negative growth, high unemployment) with rising inflation. It occurred in the 1970s due to oil price shocks and contradicts the Phillips curve relationship."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The rate of output per worker (or group of workers) per unit time is called",
+    "options": [
+      "labour productivity.",
+      "total output.",
+      "work done.",
+      "individual output."
+    ],
+    "answer": "A",
+    "explanation": "Labour productivity is the rate of output per worker (or group of workers) per unit time (e.g., output per hour or per day). It measures the efficiency of labour in production."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The Economic Community of West African States was established on",
+    "options": [
+      "May 28, 1977.",
+      "August 22, 1977.",
+      "May 28, 1975.",
+      "August 22, 1975."
+    ],
+    "answer": "C",
+    "explanation": "ECOWAS was established on May 28, 1975, with the signing of the Treaty of Lagos. The treaty was signed by 15 West African countries to promote economic integration and development."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The economies of West African Countries depend majorly on",
+    "options": [
+      "primary product.",
+      "secondary product.",
+      "tertiary product.",
+      "manufacturing product."
+    ],
+    "answer": "A",
+    "explanation": "West African economies are heavily dependent on primary products (agricultural goods, minerals, crude oil). They export raw materials and import manufactured goods, making them vulnerable to commodity price fluctuations."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Macroeconomics focuses on the following units in an aggregative manner",
+    "options": [
+      "individual consumers, individual firms, government and external sector.",
+      "government, household firms, individual consumers and external sector.",
+      "household, firms, government, corporate sector and external sector.",
+      "individual consumer, household firms and manufacturing sector."
+    ],
+    "answer": "C",
+    "explanation": "Macroeconomics studies the economy as a whole by aggregating households, firms, government, and the external sector. Microeconomics focuses on individual consumers and firms. The correct option is the one that includes all four sectors: household, firms, government, and external sector."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "An increase in injections into the economy may lead to",
+    "options": [
+      "an outward shift of aggregate demand and demand-pull inflation.",
+      "an outward shift of aggregate demand and cost-push inflation.",
+      "an outward shift of aggregate supply and demand-pull inflation.",
+      "an outward shift of aggregate supply and cost-push inflation."
+    ],
+    "answer": "A",
+    "explanation": "Injections (I, G, X) increase aggregate demand, shifting the AD curve outward. If the economy is at or near full employment, this excess demand leads to demand-pull inflation (prices rise as demand exceeds supply capacity)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Government Intervention",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "______ is invented to measure the distribution of income in a country.",
+    "options": [
+      "Demand curve.",
+      "Philips curve.",
+      "Lorenz curve.",
+      "Supply curve."
+    ],
+    "answer": "C",
+    "explanation": "The Lorenz curve is a graphical representation of income or wealth distribution. It plots cumulative percentage of income against cumulative percentage of population. The Gini coefficient is derived from it."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Which of the following Age group belongs to active Labour force?",
+    "options": [
+      "0-17yrs.",
+      "15-25yrs.",
+      "65yrs and above.",
+      "18-64yrs."
+    ],
+    "answer": "D",
+    "explanation": "The active labour force (working-age population) typically consists of people aged 18-64 years (or 15-64 in some classifications). Those below 18 are minors, and those above 64 are retired or elderly, not counted as active labour force."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Classical models of economic growth based their analysis on the assumption that",
+    "options": [
+      "there is full employment of resources.",
+      "there is partial utilization of capital.",
+      "prices and wages are rigid downward.",
+      "the saving ratio is low."
+    ],
+    "answer": "A",
+    "explanation": "Classical growth models (like those of Adam Smith, Ricardo, and Malthus) assumed full employment of resources in the long run. They believed that the economy automatically adjusts to full employment through flexible wages and prices."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "National Income Accounting",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "An increase in nominal income without increase in price will result to",
+    "options": [
+      "increased real income.",
+      "decreased real income.",
+      "increased GDP.",
+      "decreased GNP."
+    ],
+    "answer": "A",
+    "explanation": "Real income = Nominal income / Price level. If nominal income increases while prices remain constant, real income increases. This means individuals can purchase more goods and services."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "______ is NOT the cause of balance of payments (BOPs) deficits in Nigeria.",
+    "options": [
+      "Poor performance of the non-oil sector",
+      "No import substitution strategies",
+      "High servicing of debt",
+      "Export promotion"
+    ],
+    "answer": "D",
+    "explanation": "Export promotion (increasing exports) helps to reduce BOP deficits. The other options (poor non-oil performance, lack of import substitution, high debt servicing) all worsen BOP deficits."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Which of the following is NOT a member of ECOWAS?",
+    "options": ["Niger", "Nigeria", "Ghana", "Tunisia"],
+    "answer": "D",
+    "explanation": "Tunisia is not a member of ECOWAS. ECOWAS consists of 15 West African countries: Benin, Burkina Faso, Cape Verde, Côte d'Ivoire, The Gambia, Ghana, Guinea, Guinea-Bissau, Liberia, Mali, Niger, Nigeria, Senegal, Sierra Leone, and Togo. Tunisia is in North Africa and is a member of the African Union, not ECOWAS."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "If the supply curve of labour market is given as S = 4L + 8. What is L when s = 20?",
+    "options": ["3", "2", "4", "5"],
+    "answer": "A",
+    "explanation": "Substitute s = 20 into the equation: 20 = 4L + 8. 4L = 12. L = 3."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Discuss the relationship between elasticity of demand and total revenue of the seller.",
+    "options": [],
+    "modelAnswer": "The relationship between price elasticity of demand (PED) and total revenue (TR) is crucial for business pricing decisions. TR = Price × Quantity sold. The effect of a price change on TR depends on PED:\n\n1. Elastic Demand (|PED| > 1):\nWhen demand is elastic, the percentage change in quantity demanded is greater than the percentage change in price. A price decrease leads to a proportionally larger increase in quantity, causing total revenue to rise. Conversely, a price increase leads to a proportionally larger decrease in quantity, causing total revenue to fall. Relationship: Price and TR move in opposite directions.\n\n2. Inelastic Demand (|PED| < 1):\nWhen demand is inelastic, the percentage change in quantity demanded is less than the percentage change in price. A price increase leads to a proportionally smaller decrease in quantity, causing total revenue to rise. Conversely, a price decrease leads to a proportionally smaller increase in quantity, causing total revenue to fall. Relationship: Price and TR move in the same direction.\n\n3. Unitary Elastic Demand (|PED| = 1):\nWhen demand is unitary elastic, the percentage change in quantity demanded exactly equals the percentage change in price. Total revenue remains unchanged regardless of price changes. Relationship: Price changes do not affect TR.\n\nGraphical illustration:\n- On a downward-sloping linear demand curve: Elastic demand occurs on the upper portion (above the midpoint), unitary elasticity at the midpoint, and inelastic demand on the lower portion (below the midpoint).\n- TR curve is a parabola: TR rises as price falls from the highest price (where quantity is low) to the midpoint, and falls as price continues to fall below the midpoint.\n\nBusiness Applications:\nFor businesses, understanding this relationship guides pricing strategies:\n- If demand is elastic, lower prices increase total revenue (e.g., luxury goods, many consumer products).\n- If demand is inelastic, higher prices increase total revenue (e.g., necessities, addictive goods, goods with few substitutes).\n- At unitary elasticity, revenue is maximized.\n\nIn conclusion, firms use elasticity estimates to optimize pricing, maximizing revenue by setting prices where |PED| = 1 (revenue-maximizing price) or by segmenting markets with different elasticities (price discrimination)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of Consumer Behavior",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) Explain what is meant by indifference curve and marginal rate of substitution.\n(b) Discuss the basic properties of an indifference curve.",
+    "options": [],
+    "modelAnswer": "(a) Indifference Curve:\nAn indifference curve is a graphical representation showing all combinations of two goods that give a consumer the same level of satisfaction (utility). The consumer is indifferent between any two points on the curve. It represents the trade-off a consumer is willing to make between two goods while maintaining the same utility level.\n\nMarginal Rate of Substitution (MRS):\nMRS is the rate at which a consumer is willing to give up one good (Y) to obtain an additional unit of another good (X) while remaining on the same indifference curve (keeping utility constant). It is the slope of the indifference curve at any point:\nMRS = ΔY/ΔX = -MUx/MUy.\nMRS diminishes along the curve due to the law of diminishing marginal utility — as a consumer has more of good X, they are willing to give up less of good Y for each additional unit of X.\n\n(b) Basic Properties of an Indifference Curve:\n1. Indifference Curves Slope Downward from Left to Right:\nThey are negatively sloped, reflecting that to consume more of one good (X), the consumer must give up some of the other good (Y) to remain at the same level of utility. A positive slope would violate the assumption that more is preferred to less (non-satiation).\n\n2. Indifference Curves are Convex to the Origin:\nThe convexity reflects the principle of diminishing marginal rate of substitution (MRS). As a consumer moves down the curve (consuming more X and less Y), the MRS (the willingness to give up Y for X) decreases. The curve is bowed inward toward the origin.\n\n3. Higher Indifference Curves Represent Higher Utility:\nA curve further from the origin (north-east) represents a higher level of satisfaction. Consumers prefer higher curves because they contain more of both goods (or at least more of one without less of the other).\n\n4. Indifference Curves Never Intersect:\nIf two curves intersected, it would imply that the same combination of goods gives two different levels of utility, contradicting the assumption that each bundle gives a unique level of utility. This ensures consistency in consumer preferences.\n\n5. Indifference Curves are Not Necessarily Parallel:\nThe distance between curves varies depending on the consumer's preferences. They may be closer together in regions where goods are less substitutable and farther apart where they are more substitutable.\n\nApplications:\nThese properties form the basis of the ordinal utility theory and allow economists to derive the consumer's optimal choice (where the budget line is tangent to the highest indifference curve)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Theory of National Income Determination",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "The economy model of a country is characterized as follows:\n\nConsumption function, C = 85 + 0.5Yd\nInvestment Function, I = 85\nGovernment Spending, G = 60\nNet taxes, T = 40 + 0.25Y\n\nSolve for the following:\n(a) Equilibrium income\n(b) Equilibrium consumption\n(c) Net taxes\n(d) What type of budget is the economy operating?\n(e) By how much will output increase when investment spending increases by 50%?",
+    "options": [],
+    "modelAnswer": "Given: C = 85 + 0.5Yd, I = 85, G = 60, T = 40 + 0.25Y\nYd = Y - T = Y - (40 + 0.25Y) = 0.75Y - 40\n\n(a) Equilibrium income:\nY = C + I + G\nY = 85 + 0.5(0.75Y - 40) + 85 + 60\nY = 85 + 0.375Y - 20 + 85 + 60\nY = 210 + 0.375Y\nY - 0.375Y = 210\n0.625Y = 210\nY = 210/0.625 = 336\n\n(b) Equilibrium consumption:\nC = 85 + 0.5Yd\nYd = 0.75Y - 40 = 0.75(336) - 40 = 252 - 40 = 212\nC = 85 + 0.5(212) = 85 + 106 = 191\n\n(c) Net taxes:\nT = 40 + 0.25Y = 40 + 0.25(336) = 40 + 84 = 124\n\n(d) Type of budget:\nGovernment spending (G) = 60\nTax revenue (T) = 124\nSince T > G (124 > 60), the government is running a budget surplus.\n\n(e) Increase in output when investment increases by 50%:\nNew I = 85 + 50% of 85 = 85 + 42.5 = 127.5\nΔI = 42.5\n\nGovernment expenditure multiplier in this tax system:\nWe need the multiplier considering the tax rate.\nC = 85 + 0.5(Y - 40 - 0.25Y) = 85 + 0.5(0.75Y - 40) = 85 + 0.375Y - 20 = 65 + 0.375Y\n\nFor a change in autonomous spending (including I):\nY = autonomous spending + 0.375Y\nMultiplier = 1/(1 - 0.375) = 1/0.625 = 1.6\n\nΔY = multiplier × ΔI = 1.6 × 42.5 = 68\n\nOutput increases by 68 units."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Circular Flow of Income",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) With the aid of a well labelled diagram, explain the circular flow of income in a three-sector economy.\n(b) If the income of civil servants earning ¥75,000 per month increases by 40% and their consumption expenditure consequently increased from ¥52,000 to ¥65,000 per month.\n(i) Calculate the multiplier\n(ii) By how much will the national income be increased if the total consumption expenditure increased by ¥20,000?",
+    "options": [],
+    "modelAnswer": "(a) Circular Flow of Income in a Three-Sector Economy:\nA three-sector economy consists of households, firms, and government.\n\nThe circular flow shows the continuous movement of income, output, and expenditure between these sectors:\n\nInjections (additions to the circular flow):\n- Government spending (G) — purchases of goods and services from firms and payments to households for services.\n- Investment (I) — firms' spending on capital goods.\n\nWithdrawals (leakages from the circular flow):\n- Taxes (T) — paid by households and firms to the government.\n- Savings (S) — households' income not spent on consumption.\n\nDiagram Components:\n1. Households provide factor services (labour, land, capital, enterprise) to firms through factor markets, receiving factor incomes (wages, rent, interest, profit).\n2. Firms produce goods and services and sell them to households and government through product markets.\n3. Government collects taxes from households and firms and spends on public goods and services (infrastructure, education, defence).\n4. The government sector also makes transfer payments (pensions, welfare) to households.\n5. The economy is in equilibrium when injections (I + G) equal withdrawals (S + T), i.e., total spending equals total output.\n\n(b) (i) Calculate the multiplier:\nIncome increase: 40% of ¥75,000 = 0.4 × 75,000 = ¥30,000\nNew income = ¥75,000 + ¥30,000 = ¥105,000\nConsumption before = ¥52,000\nConsumption after = ¥65,000\nΔC = 65,000 - 52,000 = ¥13,000\n\nMarginal Propensity to Consume (MPC) = ΔC/ΔYd = 13,000/30,000 = 0.4333\n\nMultiplier = 1/(1 - MPC) = 1/(1 - 0.4333) = 1/0.5667 = 1.7647\n\n(ii) Increase in national income:\nΔY = multiplier × ΔC = 1.7647 × 20,000 = ¥35,294\n\nNational income increases by approximately ¥35,294."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Population",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Explain the term 'demographic transition'.\n(b) Discuss the implications of Malthusian population theory.",
+    "options": [],
+    "modelAnswer": "(a) Demographic Transition:\nDemographic transition is a theory that describes the historical shift in population growth patterns as a country develops from a pre-industrial to an industrialized economy. It explains how birth rates and death rates change over time in relation to economic and social development. The theory has four (or five) stages:\n\nStage 1 (Pre-industrial): High birth rates and high death rates. Population growth is slow and fluctuating. This stage characterized pre-industrial societies with limited medical care, poor sanitation, and high infant mortality.\n\nStage 2 (Early Industrial): Death rates decline sharply due to improvements in healthcare, sanitation, and food supply, while birth rates remain high. Population growth accelerates rapidly (population explosion). This occurred in many developing countries during the 20th century.\n\nStage 3 (Late Industrial): Birth rates begin to decline as families choose to have fewer children due to urbanization, female education, access to birth control, and changing social norms. Death rates remain low or continue declining. Population growth slows down.\n\nStage 4 (Post-industrial): Both birth rates and death rates are low, leading to population stabilization or slow growth. Some countries may experience population decline if birth rates fall below replacement levels.\n\nStage 5 (Some theories): Very low birth rates below death rates, leading to population decline, ageing population, and potential economic challenges (e.g., Japan, Italy).\n\n(b) Implications of Malthusian Population Theory:\nThomas Malthus (1798) argued that population grows geometrically (exponentially) while food production grows arithmetically (linearly). Therefore, population would eventually outstrip food supply, leading to widespread famine, disease, and misery.\n\nKey Implications:\n1. Positive Checks (Natural Checks): Malthus argued that population growth is limited by positive checks — famine, disease, war, and natural disasters — which increase death rates and keep population in check. These are unavoidable because population growth inevitably exceeds food production.\n\n2. Preventive Checks (Moral Restraint): Malthus advocated for 'moral restraint' — delayed marriage, celibacy, and smaller families — as a way to reduce birth rates voluntarily, avoiding the inevitable misery of positive checks.\n\n3. Pessimistic Outlook: Malthus was pessimistic about the long-term prospects of humanity, believing that poverty and famine are inevitable because population growth will always outstrip food production.\n\n4. Critique of Poor Relief: Malthus opposed poor laws and welfare, arguing that providing relief to the poor encouraged higher birth rates, ultimately worsening poverty.\n\nCriticisms and Modern Relevance:\n- Malthus failed to foresee technological progress in agriculture (Green Revolution, fertilizers, irrigation) that increased food production far beyond his predictions.\n- He did not anticipate the demographic transition — birth rates falling as countries develop, reducing population growth.\n- His theory focused on total population rather than distribution, inequality, and resource allocation.\n- However, the theory remains relevant for understanding resource constraints, environmental sustainability, and carrying capacity in developing countries. It highlights the need for sustainable development, family planning, and food security policies."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Population",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "(a) Examine the effects of increasing population on the Nigerian economy.\n(b) How could the trend be curtailed?",
+    "options": [],
+    "modelAnswer": "(a) Effects of Increasing Population on the Nigerian Economy:\n\n1. Pressure on Food Supply:\nRapid population growth increases demand for food. Without corresponding increases in agricultural productivity, Nigeria faces food insecurity, higher food imports, and rising food prices. This disproportionately affects the poor and contributes to malnutrition, especially in children.\n\n2. Strain on Infrastructure:\nPopulation growth strains public infrastructure — roads, electricity, water supply, housing, and sanitation. The demand for these services exceeds the capacity to supply them, leading to congestion, pollution, power outages, poor water quality, and inadequate housing. Nigeria's power generation capacity (~4,000 MW) is insufficient for its population of over 200 million.\n\n3. Pressure on Education and Healthcare:\nHigh population growth results in overcrowded classrooms, insufficient schools, high student-to-teacher ratios, and reduced quality of education. Similarly, healthcare facilities are overwhelmed, leading to poor health outcomes, high infant and maternal mortality, and limited access to primary healthcare.\n\n4. High Unemployment and Underemployment:\nNigeria's high population growth, combined with limited job creation, leads to high unemployment and underemployment. Millions of young people enter the labour market each year, but formal sector jobs are scarce, pushing many into the informal sector or subsistence activities. This has contributed to rising social unrest, crime, and youth restiveness.\n\n5. Environmental Degradation:\nIncreasing population puts pressure on natural resources: deforestation, desertification, soil degradation, overfishing, and pollution. This reduces the carrying capacity of the environment and undermines long-term sustainability.\n\n6. Fiscal Pressure:\nGovernment expenditure on subsidies, social programs, education, and healthcare increases with population growth. This strains the federal budget, leaving less for capital investment and infrastructure development, leading to higher public debt and budget deficits.\n\n7. Urbanization and Urban Issues:\nRapid urbanization (rural-to-urban migration) leads to the growth of slums, overcrowding, inadequate housing, and pressure on urban infrastructure in cities like Lagos, Kano, and Port Harcourt.\n\n(b) How the Trend Could Be Curtailed:\n\n1. Family Planning and Reproductive Health Education:\nPromote access to family planning services, contraceptives, and reproductive health education to reduce birth rates and unwanted pregnancies. Nigeria's high fertility rate (around 5.3 children per woman) needs to be brought down through awareness campaigns and investments in family planning.\n\n2. Female Education and Empowerment:\nEducating girls and women is the most effective way to reduce birth rates. Educated women have fewer children, marry later, and have better health outcomes. The government should increase investment in girls' education and provide scholarships, especially in northern Nigeria.\n\n3. Investments in Primary Healthcare:\nImprove maternal and child health services to reduce infant mortality, which often drives high birth rates (parents have more children to compensate for expected child deaths). Access to quality healthcare reduces fertility rates.\n\n4. Economic Diversification and Job Creation:\nCreate jobs through industrialization, manufacturing, and the service sector. Diversification reduces the dependency on agriculture and primary commodities, creating employment opportunities that reduce the pressure from high population growth.\n\n5. Urban Planning and Infrastructure Investment:\nImprove planning and investment in infrastructure in urban areas to accommodate population growth, reducing urban pressure. Build more schools, hospitals, roads, housing, and public services.\n\n6. National Population Policy:\nImplement a comprehensive national population policy with clear targets for reducing fertility rates, improving maternal health, and increasing contraceptive prevalence. Nigeria has a National Population Policy (revised in 2004), but implementation has been weak.\n\n7. Gender Equality and Empowerment:\nAddress cultural, religious, and social barriers that limit women's choices, such as early marriage and childbearing. Empower women through microfinance, skills training, and economic opportunities.\n\n8. Agricultural Productivity Improvement:\nImprove agricultural productivity through technology, irrigation, fertilizers, and extension services to keep pace with population growth, ensuring food security and reducing poverty."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Stabilization Policies in Developing Countries",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) Using a diagram, explain what is meant by recessionary gap?\n(b) What policies might government use to correct recessionary gap?",
+    "options": [],
+    "modelAnswer": "(a) Recessionary Gap (Deflationary Gap):\nA recessionary gap (also called a deflationary gap) occurs when the equilibrium level of output (real GDP) is below the full-employment level of output. This means aggregate demand is insufficient to fully utilize the economy's productive capacity, resulting in unemployment, idle resources, and downward pressure on prices.\n\nDiagram Components:\n1. Draw an Aggregate Demand curve (AD) and Aggregate Supply curve (AS) intersecting at point E₀, giving equilibrium output Y₀ and price level P₀.\n2. Draw a vertical line at the full-employment level of output (Yf) to the right of Y₀.\n3. The gap between Y₀ (actual equilibrium) and Yf (full-employment output) is the recessionary gap.\n4. At Y₀, there is unemployment and underutilized capital; the economy is producing below its potential.\n5. If there is no policy intervention, the economy may experience falling prices (deflation) and further reductions in output.\n\nDiagram:\nPrice Level (P)\n      |\n      |        AS\nP₀    |    /______\n      |   /        \\\n      |  /  E₀      \\\n      | /             \\\n      |/                \\  AD\n      |____________________\\______\n        Y₀       Yf    Real GDP\n\n(b) Policies to Correct Recessionary Gap:\n\nFiscal Policies (Expansionary):\n1. Increase Government Spending (G):\nGovernment should increase expenditure on infrastructure, education, healthcare, and public works. This directly increases aggregate demand, creates jobs, and raises output.\n\n2. Reduction in Taxes:\nReducing taxes (especially income tax and VAT) increases disposable income, encouraging consumption and investment. Lower corporate taxes encourage firms to invest more. Tax cuts stimulate aggregate demand.\n\n3. Transfer Payments:\nIncrease transfer payments (welfare, pensions, unemployment benefits) to boost household incomes and consumption spending, increasing aggregate demand.\n\nMonetary Policies (Expansionary):\n4. Reduce Interest Rates:\nCentral bank should lower interest rates (discount rate, repo rate) to make borrowing cheaper, encouraging investment and consumption.\n\n5. Increase Money Supply:\nThrough open market operations (buying government securities), the central bank injects money into the economy, reducing interest rates and increasing aggregate demand.\n\n6. Reduce Reserve Requirements:\nLowering the reserve ratio allows commercial banks to lend more, increasing credit availability and money supply.\n\nSupply-Side Policies:\n7. Improve Human Capital:\nInvest in education, skills training, and healthcare to improve labour productivity and long-run aggregate supply.\n\n8. Reduce Regulations:\nRemove unnecessary regulations, red tape, and bureaucracy to reduce business costs, encourage entrepreneurship, and increase production efficiency.\n\n9. Infrastructure Investment:\nInvest in infrastructure (roads, power, communications) to reduce production costs and increase the economy's productive capacity (shift LRAS rightward).\n\nExchange Rate Policy:\n10. Depreciation/Devaluation:\nA deliberate depreciation or devaluation of the currency makes exports cheaper and imports more expensive, improving net exports (X-M) and increasing aggregate demand (for countries with elastic demand).\n\nTrade Policies:\n11. Export Promotion:\nPromote exports through subsidies, tax incentives, and trade agreements to increase net exports and aggregate demand.\n\n12. Reducing Import Barriers (selectively):\nReducing tariffs and quotas on imports can lower costs for producers, improving supply-side capacity.\n\nThe choice of policy depends on the nature of the recession, the country's fiscal position, inflation levels, and the effectiveness of the transmission mechanisms. In developing countries like Nigeria, fiscal policy (government spending on infrastructure) is often prioritized, but weak implementation limits effectiveness. Monetary policy may be less effective due to limited financial inclusion and underdeveloped capital markets."
+  },
+  {
+    "subject": "Economics",
+    "year": 2019,
+    "category": "Growth and Development",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Use the information below to answer the questions that follow.\n\nNigeria Economic Outlook\nIn 2016, Nigeria's economy slipped into recession for the first time in more than two decades reflecting adverse economic shocks, inconsistent economic policies, and deepening security problems in the north east and Delta regions. The outlook for 2017 was for a moderate economic recovery with real Gross Domestic Product (GDP) projected to grow at 2.2% spurred by increased infrastructure spending and restoration of oil production to previous levels.\n\nThe Nigerian economy continued to face serious macroeconomic challenges and was in a recession for the first time in decades. GDP growth for 2016 was estimated at -1.5% with a moderate recovery expected in 2017. This was attributed to a series of shocks, including the continued decline in oil prices, foreign exchange shortages, disruptions in fuel supply and sharp reduction in oil production, power shortages, and insecurity in some parts of the country, as well as low capital budget execution rate (51%). Managers of the economy responded to the recession with a package of monetary, fiscal and exchange rate policies.\n\nHowever, the Central Bank of Nigeria (CBN) pursued a contractionary monetary policy stance. The fiscal authority on the other hand pursued an expansionary fiscal policy with the objective of reflating the economy by allocating close to 30% of the budget to capital expenditure.\n\nSource: African Economic Outlook (AEO) 2017\n\ni. What do you understand by the term 'economic recession'?\nii. With good examples, explain the term 'economic shocks' and how they can affect the Nigerian economy.\niii. With good examples and illustration, explain the term expansionary fiscal policy and how it can affect an economy.\niv. Mention 4 macroeconomic objectives that all governments can pursue.\nv. Aside from the above, given reasons for economic recession in Nigeria, explain some other reasons that can cause economic recession especially in West Africa.",
+    "options": [],
+    "modelAnswer": "i. Economic Recession:\nAn economic recession is a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in real GDP, real income, employment, industrial production, and wholesale-retail sales. It is typically defined as two consecutive quarters of negative real GDP growth (declining output). During a recession, firms produce less, unemployment rises, investment falls, consumer spending decreases, and business and consumer confidence decline. Recessions are part of the business cycle and can be triggered by demand-side shocks, supply-side shocks, policy mistakes, or external factors.\n\nii. Economic Shocks:\nEconomic shocks are unexpected, exogenous events that suddenly and significantly affect an economy. They can be positive or negative (adverse).\n\nExamples in the Nigerian context:\n- Oil Price Shock: The sharp decline in global crude oil prices (from over $100/barrel to below $40/barrel in 2014-2016) severely reduced government revenue (oil accounts for over 70% of government revenue). This led to foreign exchange shortages, devaluation of the naira, budget deficits, and delayed salary payments.\n- Foreign Exchange Shock: The CBN's inability to defend the naira due to depleted foreign reserves led to severe foreign exchange shortages, making it difficult for businesses to import raw materials and machinery, increasing production costs, and reducing output.\n- Security Shocks: Insurgency in the north east (Boko Haram) and militancy in the Niger Delta disrupted oil production, displaced millions, destroyed infrastructure, and deterred investment, reducing agricultural output and economic activity.\n- Policy Shocks: Inconsistent economic policies, including exchange rate policy changes, import bans, and foreign exchange restrictions, created uncertainty, reduced investor confidence, and discouraged investment.\n\nEffects on the Nigerian Economy:\n- Reduced GDP growth (from +6% to -1.5% in 2016)\n- Increased unemployment and poverty\n- Devaluation of the naira\n- High inflation (especially food prices)\n- Reduced foreign investment\n- Budget deficits and increased borrowing.\n\niii. Expansionary Fiscal Policy:\nExpansionary fiscal policy is a government policy that aims to increase aggregate demand (AD) during periods of economic recession or slow growth by increasing government spending (G), reducing taxes (T), or both. It is designed to stimulate economic activity, create jobs, and boost output.\n\nExamples:\n1. Infrastructure Spending: Increasing spending on roads, bridges, power plants, schools, and hospitals. In Nigeria, the government allocated close to 30% of the 2017 budget to capital expenditure to stimulate the economy and reflate output. This directly creates jobs, increases demand for materials, and boosts economic activity through multiplier effects.\n2. Tax Cuts: Reducing income tax or VAT increases disposable income, encouraging higher consumption and investment.\n3. Transfer Payments: Increasing welfare payments, pensions, and subsidies supports household incomes and consumption.\n\nEffects on the Economy (Illustration):\n- Increased AD: Government spending directly increases AD (AD = C + I + G + X-M), shifting the AD curve rightward.\n- Multiplier Effect: An initial increase in government spending leads to further rounds of consumption, boosting output more than the initial spending (multiplier effect).\n- Job Creation: Infrastructure projects create direct employment in construction and indirect jobs in supporting industries.\n- Economic Recovery: As output rises, incomes increase, consumption rises, and confidence improves, reversing the recession.\n- Inflation Risk: If the economy is near full capacity, expansionary fiscal policy may lead to demand-pull inflation, so it must be implemented cautiously.\n\niv. Four Macroeconomic Objectives:\n1. Economic Growth: Achieve sustainable and inclusive growth in real GDP (increasing national output and income over time).\n2. Full Employment: Achieve low unemployment by creating sufficient jobs for all willing and able workers (e.g., reducing the unemployment rate to 5% or lower).\n3. Price Stability: Maintain low and stable inflation (e.g., 5-10% in developing countries; 2-3% in developed countries) to protect purchasing power and reduce uncertainty.\n4. Balance of Payments Equilibrium: Achieve a sustainable balance of payments position, with sufficient foreign reserves to finance imports and service external debt.\n\nv. Other Reasons for Economic Recession in West Africa:\nBeyond those mentioned in the passage, other causes of recession in West Africa include:\n\n1. Dependency on Primary Commodities:\nMany West African countries (Nigeria, Ghana, Côte d'Ivoire, Liberia) are heavily dependent on primary commodities (oil, cocoa, coffee, rubber, minerals). Fluctuations in world commodity prices cause revenue volatility, fiscal imbalances, and external shocks that trigger recessions.\n\n2. Fiscal Mismanagement and Corruption:\nWeak governance, corruption, embezzlement of public funds, and mismanagement of resources reduce government capacity to invest, destabilize the economy, and erode public trust, contributing to economic decline.\n\n3. Political Instability and Conflict:\nPolitical instability, civil wars, coups, and ethnic conflicts disrupt production, destroy infrastructure, displace populations, and deter investment. Examples include: Liberia, Sierra Leone, Côte d'Ivoire, Mali, and the Sahel conflicts.\n\n4. Infrastructure Deficits:\nPoor infrastructure (power, roads, ports, water) increases production costs, limits market access, and reduces competitiveness. This reduces private sector growth, investment, and employment, leading to economic contraction.\n\n5. Climate Change and Environmental Degradation:\nClimate change causes desertification, droughts, floods, and deforestation, reducing agricultural productivity and affecting food security and livelihoods, especially in the Sahel region. This contributes to economic contraction and poverty.\n\n6. High Debt Burden:\nMany West African countries have high levels of public debt with high servicing costs. Debt repayments crowd out spending on essential services (health, education, infrastructure), constraining economic growth.\n\n7. Currency Devaluation and Inflation:\nFrequent devaluation of local currencies (due to balance of payments pressures) increases import costs, fuels inflation, reduces real wages, and erodes purchasing power, reducing consumption and investment.\n\n8. Inadequate Industrialization:\nLow levels of industrialization and manufacturing limit value addition, job creation, and diversification. The economy remains vulnerable to external shocks and cannot sustain stable growth.\n\nTo address these challenges, West African countries need economic diversification, improved governance, infrastructure investment, regional integration, and sustainable policies."
+  }
+]

@@ -373,9 +373,9 @@
     "type": "Objective",
     "questionNumber": 34,
     "question": "Which group of particles is in order of increasing size?",
-    "options": ["N, O, F", "N³⁻, O²⁻, F⁻", "Na⁺, Mg²⁺, Al³⁺", "Na⁺, Ne, F"],
-    "answer": "B",
-    "explanation": "N³⁻, O²⁻, F⁻ are isoelectronic (10 electrons each).\n\nIonic radius decreases as nuclear charge increases: N³⁻ > O²⁻ > F⁻.\n\nNote: The question asks for increasing size. Option B shows the series N³⁻, O²⁻, F⁻ which is actually decreasing size. The correct increasing order is F⁻ < O²⁻ < N³⁻. This appears to be a reversal in the options — the closest is option B."
+    "options": ["N, O, F", "N³⁻, O²⁻, F⁻", "Na⁺, Mg²⁺, Al³⁺", "Na⁺, Ne, F⁻"],
+    "answer": "D",
+    "explanation": "Na⁺, Ne and F⁻ all have 10 electrons (they are isoelectronic). With the same number of electrons, the particle with fewer protons holds its electrons less tightly and is larger:\nNa⁺ (11 protons) < Ne (10 protons) < F⁻ (9 protons).\nSo D is in order of increasing size.\n\nB is the wrong way round: N³⁻ > O²⁻ > F⁻ (decreasing). A and C also decrease in size across the period."
   },
   {
     "subject": "Chemistry",
@@ -485,6 +485,8 @@
     "question": "Which of the following chemical equations represents the reaction of group 1 metal hydrides (MH) with water?",
     "options": ["MH + H₂O → MO + 3H", "MH + H₂O → MOH + H₂", "MH + H₂O → MOH + 2H", "MH + H₂O → MOH + H₂"],
     "answer": "B",
+    "reviewNote": "Options B and D are printed the same in this copy of the paper, so this question is left out of quizzes.\n\nCorrect answer: MH + H₂O → MOH + H₂\n\nMetal hydrides react with water: MH + H₂O → MOH + H₂.\n\nNote: Options B and D are identical.",
+    "excludeFromQuiz": true,
     "explanation": "Metal hydrides react with water: MH + H₂O → MOH + H₂.\n\nNote: Options B and D are identical."
   },
   {
@@ -540,6 +542,8 @@
     "question": "The following are reducing sugars EXCEPT?",
     "options": ["Fructose", "Sucrose", "Maltose", "Cellulose"],
     "answer": "B",
+    "reviewNote": "Two of the options are not reducing sugars:\n- Sucrose (B): its glycosidic bond joins the reducing carbons of glucose and fructose, so it has no free reducing group.\n- Cellulose (D): a polysaccharide, classed as non-reducing (only one end of each very long chain could reduce).\n\nFructose and maltose are reducing sugars. The examiners' answer is B (sucrose), but D is also correct.",
+    "excludeFromQuiz": true,
     "explanation": "Sucrose is a non-reducing sugar because its glycosidic bond involves the anomeric carbons of both glucose and fructose."
   },
   {

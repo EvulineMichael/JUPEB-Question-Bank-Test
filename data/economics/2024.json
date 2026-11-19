@@ -173,6 +173,8 @@
       "society satisfies all the households."
     ],
     "answer": "C",
+    "reviewNote": "Allocative efficiency means resources are used to produce the combination of goods that society values most, where price equals marginal cost (P = MC).\n\nOption C ('output is produced using least-cost technique') is the definition of productive efficiency, not allocative efficiency. None of the options states allocative efficiency correctly, though D (satisfying households' wants) is the closest idea. The examiners' answer is C.",
+    "excludeFromQuiz": true,
     "explanation": "Allocative efficiency occurs when resources are allocated to their most valued uses, and output is produced using the least-cost technique (productive efficiency). In perfect competition, allocative efficiency occurs when P = MC."
   },
   {
@@ -701,6 +703,8 @@
       "S = -300 - 0.55Y"
     ],
     "answer": "D",
+    "reviewNote": "Saving is income not consumed: S = Y − C = Y − (300 + 0.45Y) = −300 + 0.55Y.\n\n(Check: MPS = 1 − MPC = 1 − 0.45 = 0.55, and when income is zero people dis-save 300.)\n\nNone of the options is printed as −300 + 0.55Y. Option D (S = −300 − 0.55Y) has the wrong sign on 0.55Y, which would mean saving falls as income rises.",
+    "excludeFromQuiz": true,
     "explanation": "Saving function: S = Y - C = Y - (300 + 0.45Y) = Y - 300 - 0.45Y = -300 + 0.55Y. Mathematically, the correct saving function is S = -300 + 0.55Y, but this option is not provided. Option D (S = -300 - 0.55Y) is the closest available option and is likely the intended answer in the exam key."
   },
   {

@@ -184,6 +184,8 @@
       "elastic."
     ],
     "answer": "A",
+    "reviewNote": "When quantity demanded does not change at all as price changes, demand is perfectly inelastic (elasticity = 0, a vertical demand curve).\n\nIn this copy, options A and C are both printed as 'perfectly elastic', so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "The correct answer is perfectly inelastic demand (elasticity = 0, a vertical demand curve). It is not among the options: options A and C are identical ('perfectly elastic'), so one of them is a misprint for 'perfectly inelastic'. Option A is marked as the closest (it appears as 'perfectly inelastic' in the 2025 and 2026 versions of this question)."
   },
   {
@@ -676,6 +678,8 @@
       "profit"
     ],
     "answer": "A",
+    "reviewNote": "Under free enterprise, firms aim to maximise profit.\n\nOptions A and D are both printed as 'profit', so either would be correct; the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Under free enterprise, firms aim to maximise profit. Note: options A and D are identical ('profit'); A is marked."
   },
   {
@@ -795,6 +799,8 @@
       "decrease in supply."
     ],
     "answer": "A",
+    "reviewNote": "Upward pressure on price comes from excess demand, which can be caused by either an increase in demand (A) or a decrease in supply (D). Both shift the market so that, at the old price, buyers want more than sellers offer.\n\nBecause A and D are both correct, this question is left out of quizzes. The examiners' answer is A.",
+    "excludeFromQuiz": true,
     "explanation": "Price is pushed up by an increase in demand or a decrease in supply, so both A and D are correct. A is marked; D is also correct."
   },
   {

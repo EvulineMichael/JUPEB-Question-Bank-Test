@@ -1,0 +1,300 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a). State the condition for a ray of light to be refracted in a triangular glass prism.\n(b) A monochromatic ray of light is incident on one face of an equilateral glass prism of refractive index √2 . It undergoes a minimum deviation and finally emerges from the opposite face. What is the angle of incidence?",
+    "options": [],
+    "modelAnswer": "(a) A ray is refracted through a triangular prism when it passes from one medium into another of different optical density (different refractive index) at an angle other than 90° to the surface, i.e. at an oblique angle to the normal. For the ray to emerge from the second face, its angle of incidence inside the glass at the second face must be less than the critical angle of the glass; otherwise it is totally internally reflected.\n\n(b) For an equilateral prism, A = 60°.\nAt minimum deviation the ray passes symmetrically through the prism, so the angle of refraction at each face is r = A/2 = 30°.\nn = sin i/sin r\nsin i = √2 × sin 30° = 1.414 × 0.5 = 0.7071\ni = 45°.\n(The minimum deviation is D = 2i − A = 90° − 60° = 30°.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Sketch the ray diagrams to illustrate the following terms: parallel beams, converging and diverging beams of lighgt. Show the ray diagram for the formation of virtual image of a point object by a plane mirrow.",
+    "options": [],
+    "modelAnswer": "Note: 'lighgt' means light and 'mirrow' means mirror.\n\nParallel beam: draw several straight rays running side by side that never meet (e.g. light from a very distant source such as the sun).\nConverging beam: draw rays that come closer together and meet at a point (e.g. light after passing through a convex lens).\nDiverging beam: draw rays that spread out from a point (e.g. light from a lamp or a point source).\n\nVirtual image of a point object in a plane mirror: draw a point object O in front of the mirror. Draw two rays from O to the mirror and reflect each so that the angle of reflection equals the angle of incidence. Extend the two reflected rays backwards behind the mirror as dashed lines; they meet at I.\nI is the image. It is virtual because the reflected rays only appear to come from it (it cannot be caught on a screen), and it is as far behind the mirror as O is in front, on the same normal line through O."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "An object 2 cm height is placed 10 cm in front of a concave lens of focal length 20 cm. What is the image size?",
+    "options": [],
+    "modelAnswer": "Sign convention: real-is-positive (distances to real objects and images are positive, to virtual ones negative; a concave lens has a negative focal length). Lens formula: 1/f = 1/u + 1/v; magnification m = v/u.\n\nf = −20 cm, u = 10 cm.\n1/v = 1/f − 1/u = −1/20 − 1/10 = −3/20\nv = −6.67 cm (the image is virtual, 6.67 cm from the lens on the same side as the object).\n\nMagnification m = |v|/u = 6.67/10 = 0.667.\nImage size = 0.667 × 2 = 1.33 cm.\nThe image is virtual, upright and diminished."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(i) What are the main sources of electric field and magnetic field? (ii) Consider 2 resistors, of resistance 3 and 6Ω connected in parallel across a 12 V battery. Determine the current flowing in the 3Ω resistor and the voltage across each resistor.",
+    "options": [],
+    "modelAnswer": "(i) An electric field is produced by electric charges (stationary or moving), and by a changing magnetic field.\nA magnetic field is produced by moving charges (electric currents), by permanent magnets (spinning and orbiting electrons in magnetic materials), and by a changing electric field.\n\n(ii) Resistors in parallel have the same p.d. across them, equal to the battery voltage (assuming the battery has no internal resistance).\nVoltage across each resistor = 12 V.\nCurrent in the 3 Ω resistor: I = V/R = 12/3 = 4 A.\n(Current in the 6 Ω resistor = 12/6 = 2 A, so the battery supplies 6 A.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "When a 2A current flows through a very long wire, Find the magnetic field at a point 2.3 cm from the wire.",
+    "options": [],
+    "modelAnswer": "For a long straight wire: B = μ₀I/(2πr).\nB = (4π × 10⁻⁷ × 2)/(2π × 0.023)\n= (2 × 10⁻⁷ × 2)/0.023\n= 1.74 × 10⁻⁵ T."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Determine the capacitance that must be connected in series with a 30μF capacitor for the equivalent capacitance to be 12μF ? Also find the charges through each capacitor when the arrangement is connected to 10V d.c supply.",
+    "options": [],
+    "modelAnswer": "For capacitors in series: 1/C = 1/C₁ + 1/C₂.\n1/12 = 1/30 + 1/C₂\n1/C₂ = 1/12 − 1/30 = (5 − 2)/60 = 3/60\nC₂ = 20 μF.\n\nCapacitors in series carry the same charge, equal to the charge on the equivalent capacitor:\nQ = CV = 12 × 10⁻⁶ × 10 = 1.2 × 10⁻⁴ C (120 μC) on each capacitor.\n(Check: p.d. across 30 μF = 120/30 = 4 V; across 20 μF = 120/20 = 6 V; total 10 V.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "An inductor is connected to a 150 V, 50 Hz supply, to a 300 VA power supply. Calculate the value of the inductance.",
+    "options": [],
+    "modelAnswer": "Note: the wording is unclear. It is taken to mean that the (pure) inductor draws 300 VA from a 150 V, 50 Hz supply.\n\nCurrent: I = S/V = 300/150 = 2 A.\nInductive reactance: X_L = V/I = 150/2 = 75 Ω.\nX_L = 2πfL, so L = X_L/(2πf) = 75/(2π × 50) = 0.239 H."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Show that, the Einstein equation that related the frequency (f) and wavelength (λ) of light wave by a photon has energy E(eV) = 12431/λ(Å) .",
+    "options": [],
+    "modelAnswer": "E = hf = hc/λ (in joules, with λ in metres).\nTo express E in eV, divide by e; to use λ in ångströms, write λ(m) = λ(Å) × 10⁻¹⁰:\nE(eV) = hc/(e × λ(Å) × 10⁻¹⁰) = [hc/(e × 10⁻¹⁰)]/λ(Å).\n\nWith h = 6.63 × 10⁻³⁴ J s, c = 3.0 × 10⁸ m s⁻¹ and e = 1.6 × 10⁻¹⁹ C:\nhc/(e × 10⁻¹⁰) = (6.63 × 10⁻³⁴ × 3.0 × 10⁸)/(1.6 × 10⁻¹⁹ × 10⁻¹⁰) = 12 431\nso E(eV) = 12 431/λ(Å).\n\nNote: the constant 12 431 comes from h = 6.63 × 10⁻³⁴ J s. With the paper's own value h = 6.6 × 10⁻³⁴ J s the constant is 12 375, and with precise constants it is about 12 398."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "What is electromagnetic wave (emw)?. State the basic sources of emw. Write down any four examples of emw.",
+    "options": [],
+    "modelAnswer": "An electromagnetic wave is a transverse wave made up of oscillating electric and magnetic fields at right angles to each other and to the direction of travel. It does not need a material medium and travels through a vacuum at the speed of light, c = 3.0 × 10⁸ m s⁻¹.\n\nBasic sources: accelerating (oscillating) electric charges, e.g. oscillating currents in an aerial; electrons changing energy levels in atoms; rapidly decelerated electrons (X-ray tubes); changes in energy of atomic nuclei (gamma rays); hot bodies (thermal radiation).\n\nExamples (any four): radio waves, microwaves, infrared radiation, visible light, ultraviolet radiation, X-rays, gamma rays."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Cesium has a work function of 1.8eV. When light of wavelength 5000A is incident on it, find the threshold frequency, cutoff wavelength and the maximum kinetic energy of the emitted electrons.",
+    "options": [],
+    "modelAnswer": "Note: '5000A' means 5000 Å.\nφ = 1.8 eV = 1.8 × 1.6 × 10⁻¹⁹ = 2.88 × 10⁻¹⁹ J.\n\nThreshold frequency: f₀ = φ/h = 2.88 × 10⁻¹⁹/(6.6 × 10⁻³⁴) = 4.36 × 10¹⁴ Hz.\n\nCut-off (threshold) wavelength: λ₀ = c/f₀ = 3.0 × 10⁸/(4.36 × 10¹⁴) = 6.875 × 10⁻⁷ m (6875 Å).\n\nPhoton energy at 5000 Å: E = hc/λ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(5000 × 10⁻¹⁰) = 3.96 × 10⁻¹⁹ J = 2.475 eV.\nMaximum kinetic energy: K.E._max = E − φ = 2.475 − 1.8 = 0.675 eV (= 1.08 × 10⁻¹⁹ J)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "a (i) State any four applications of optical instruments that used lenses. Sketch ray diagrams of focal length by parallel beam of light striking the face each of converging (or convex) and diverging (concave) lenses. What is the nature of each focal length?\n(ii). A small pin object is placed 15 cm from a concave lens with focal length 10 cm. discuss the nature of the image formed.",
+    "options": [],
+    "modelAnswer": "(i) Applications (any four): spectacles (correcting short and long sight), the camera, the simple microscope (magnifying glass), the compound microscope, the telescope, the slide or film projector, binoculars.\n\nRay diagrams:\nConvex lens: draw a beam of rays parallel to the principal axis striking the lens. After refraction the rays converge and actually meet at a point F on the axis on the other side of the lens. The distance from the optical centre to F is the focal length. Because the rays really pass through F, the principal focus is real, and the focal length is taken as positive.\nConcave lens: draw a parallel beam striking the lens. After refraction the rays diverge. Extend them backwards (dashed lines); they appear to come from a point F on the same side as the incident light. The principal focus is virtual, and the focal length is taken as negative.\n\n(ii) Sign convention: real-is-positive (concave lens: f = −10 cm). Lens formula: 1/f = 1/u + 1/v.\nu = 15 cm.\n1/v = 1/f − 1/u = −1/10 − 1/15 = −5/30\nv = −6 cm.\nMagnification m = 6/15 = 0.4.\nNature: the image is virtual (on the same side as the object, 6 cm from the lens), upright and diminished (0.4 times the size of the object). A concave lens always forms this kind of image of a real object."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Consider an object 3.7 cm high placed 15 cm from the pole of a (i) concave mirror (ii) convex mirror of radius of curvature 40 cm .find the nature of the image position, magnification and image height.",
+    "options": [],
+    "modelAnswer": "Sign convention: real-is-positive (concave mirror f positive, convex mirror f negative). Mirror formula: 1/f = 1/u + 1/v; magnification m = v/u.\nf = r/2 = 40/2 = 20 cm. u = 15 cm.\n\n(i) Concave mirror (f = +20 cm):\n1/v = 1/20 − 1/15 = (3 − 4)/60 = −1/60\nv = −60 cm: the image is 60 cm behind the mirror.\nm = 60/15 = 4.\nImage height = 4 × 3.7 = 14.8 cm.\nNature: virtual, upright and magnified (the object is inside the focal length).\n\n(ii) Convex mirror (f = −20 cm):\n1/v = −1/20 − 1/15 = −7/60\nv = −8.57 cm: the image is 8.57 cm behind the mirror.\nm = 8.57/15 = 0.571.\nImage height = 0.571 × 3.7 = 2.11 cm.\nNature: virtual, upright and diminished."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Geometric Optics (Light)",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "12a. (i) A ray of light travels from water to glass. Show the ray diagram and indicate clearly the angle of incidence (î) , angle of refraction (r̂) and the angle of deviation (δ̂). Express δ̂ in terms of r̂ and î .(ii) If î = cos⁻¹(4/5), Calculate r̂ and δ̂ , given that, refractive indices of water and glass are respectively 4/3 and 3/2.",
+    "options": [],
+    "modelAnswer": "(i) Ray diagram: draw the water–glass boundary and the normal at the point of incidence. Draw the incident ray in water at angle î to the normal, and the refracted ray in glass bent towards the normal at angle r̂ (r̂ < î, since glass is optically denser than water). Continue the incident ray straight on as a dashed line; the angle between this dashed line and the refracted ray is the angle of deviation δ̂.\nδ̂ = î − r̂.\n\n(ii) cos î = 4/5, so sin î = √(1 − 16/25) = 3/5 = 0.6, and î = 36.9°.\nSnell's law: n_w sin î = n_g sin r̂\n(4/3)(3/5) = (3/2) sin r̂\nsin r̂ = (4/5)/(3/2) = 8/15 = 0.533\nr̂ = 32.2°.\nδ̂ = î − r̂ = 36.9° − 32.2° = 4.6°."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "12b(i) An object AB 10 cm from the mirror is viewed through a plane mirror at angle 30° as shown in the diagram. Copy and locate the image formed by the mirror.\n12b(ii). Calculate the object distance from a convex lens of focal length 10 cm when the image is magnified two times (A) if the image is real (B) if the image is virtual.",
+    "image": {
+      "src": "images/ijmb/physics/2025/phy-2025-paper2-12b.png",
+      "alt": "Figure 1: object AB at 30° to a line through A perpendicular to a plane mirror; A is 10 cm and B is 6 cm from the mirror"
+    },
+    "options": [],
+    "modelAnswer": "Figure 1: object AB inclined at 30° to a line through A perpendicular to a plane mirror; A is 10 cm from the mirror and B is 6 cm from the mirror.\n\n(i) Each point of the image is as far behind the mirror as the matching point of the object is in front, on the same normal.\nA' (image of A) is 10 cm behind the mirror on the line through A.\nB is 10 − 6 = 4 cm along the line from A, and 4 tan 30° = 2.31 cm above it, so B' is 6 cm behind the mirror and 2.31 cm above the line.\nJoin A'B'. The image A'B' is virtual, upright, the same length as AB (4/cos 30° = 4.62 cm), and inclined at 30° to the line, sloping the opposite way (laterally inverted), so object and image are symmetrical about the mirror.\n\n(ii) Sign convention: real-is-positive (convex lens f = +10 cm). Lens formula: 1/f = 1/u + 1/v; magnification m = v/u.\n(A) Real image: v = 2u.\n1/u + 1/(2u) = 1/10\n3/(2u) = 1/10\nu = 15 cm.\n(B) Virtual image: v = −2u.\n1/u − 1/(2u) = 1/10\n1/(2u) = 1/10\nu = 5 cm."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "13a (i) State the mathematical form of Coulomb's law of electrostatics in terms of relative permittivity (εᵣ) and state any two properties each of electric charges and electric field line of force.\n(ii) Write down (without proof) the expression in each of the following forms of electric field:\n(A) The electric field due a point charge.\n(B) The electric field uniformly distributed due to infinite line charge density (λ).\n(C) The electric field uniformly distributed due to surface charge density (σ) .\n(D) The electric field uniformly distributed due to volume charge density (ρ).",
+    "options": [],
+    "modelAnswer": "(i) Coulomb's law: F = q₁q₂/(4πε₀εᵣr²), where εᵣ is the relative permittivity of the medium between the charges, ε₀ the permittivity of free space and r their separation.\n\nProperties of electric charges (any two): like charges repel and unlike charges attract; charge is conserved; charge is quantised (it comes in whole multiples of e = 1.6 × 10⁻¹⁹ C); charge is additive (a scalar).\nProperties of electric lines of force (any two): they begin on positive charges and end on negative charges; they never cross one another; they are closer together where the field is stronger; they meet the surface of a conductor at right angles; the tangent at any point gives the direction of the field.\n\n(ii)\n(A) Point charge q: E = q/(4πε₀r²).\n(B) Infinite line of charge with charge per unit length λ: E = λ/(2πε₀r), where r is the perpendicular distance from the line.\n(C) Infinite plane sheet with charge per unit area σ: E = σ/(2ε₀). (Just outside the surface of a charged conductor, E = σ/ε₀.)\n(D) Uniformly charged sphere of radius R with charge per unit volume ρ: inside (r ≤ R), E = ρr/(3ε₀); outside (r ≥ R), E = ρR³/(3ε₀r²)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "13b. (i) Find the equivalent capacitance of the given network in figure 2.\n(ii) If a 200 volt d.c supply is connected to the circuit, calculate the charge and energy stored in the circuit.",
+    "image": {
+      "src": "images/ijmb/physics/2025/phy-2025-paper2-13b.png",
+      "alt": "Figure 2: capacitor ladder between A and B with three 3 μF capacitors on the top and bottom lines and rungs of 2 μF, 2 μF and 3 μF"
+    },
+    "options": [],
+    "modelAnswer": "Figure 2: a ladder network between terminals A and B. Along the top and bottom lines are three 3 μF capacitors each; the rungs are 2 μF, 2 μF and, at the far end, 3 μF.\n\n(i) Work from the far end:\nThe last top 3 μF, the end rung 3 μF and the last bottom 3 μF are in series: 1/C = 1/3 + 1/3 + 1/3 = 1, so C = 1 μF.\nThis is in parallel with the second 2 μF rung: 1 + 2 = 3 μF.\nThis 3 μF is in series with the middle top 3 μF and middle bottom 3 μF: 1/C = 1/3 + 1/3 + 1/3, so C = 1 μF.\nIn parallel with the first 2 μF rung: 1 + 2 = 3 μF.\nIn series with the first top 3 μF and first bottom 3 μF: C = 1 μF.\nEquivalent capacitance between A and B = 1 μF.\n\n(ii) Charge: Q = CV = 1 × 10⁻⁶ × 200 = 2.0 × 10⁻⁴ C.\nEnergy stored: W = ½CV² = ½ × 1 × 10⁻⁶ × 200² = 0.02 J."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "14",
+    "question": "(i) Define the following terms as applied to electrical circuit: branch (give two examples), node and loop. Define the underlined term. (ii) State the Kirchhoff's laws in words and copy the circuit in figure 3 and indicate the number of branches, nodes and loops(iii) Find the current through each resistor in figure 3.",
+    "image": {
+      "src": "images/ijmb/physics/2025/phy-2025-paper2-14.png",
+      "alt": "Figure 3: three parallel branches: 2 V cell with 1 Ω (a–b), 3 V cell with 2 Ω (d–c), and 5 Ω (e–f)"
+    },
+    "options": [],
+    "modelAnswer": "Figure 3: three branches connected between a left wire (a–d–e) and a right wire (b–c–f). Top branch a–b: a 2 V cell and a 1 Ω resistor. Middle branch d–c: a 3 V cell and a 2 Ω resistor. Bottom branch e–f: a 5 Ω resistor. Both cells are drawn with the long (positive) plate on the left.\n\n(i) Note: in the paper the underlined term is 'circuit'.\nElectric circuit: a closed conducting path through which current can flow from one terminal of a source, through components, back to the other terminal.\nBranch: a part of a circuit between two nodes that carries a single current, e.g. a resistor with a cell in series (such as a–b in figure 3), or a single resistor (such as e–f).\nNode: a point where two or more branches meet.\nLoop: any closed path in a circuit that does not pass through the same node twice.\n\n(ii) Kirchhoff's current law: the algebraic sum of the currents meeting at a junction is zero (total current entering = total current leaving).\nKirchhoff's voltage law: around any closed loop, the algebraic sum of the e.m.f.s equals the algebraic sum of the potential drops (IR).\nFigure 3 has 3 branches, 2 principal nodes (the left wire and the right wire) and 3 loops (two of them independent).\n\n(iii) Let the right-hand wire be at 0 V and the left-hand wire at potential V. Take currents as flowing from left to right in each branch.\nTop: I₁ = (V − 2)/1. Middle: I₂ = (V − 3)/2. Bottom: I₃ = V/5.\nKirchhoff's current law: I₁ + I₂ + I₃ = 0\n(V − 2) + (V − 3)/2 + V/5 = 0\nMultiply by 10: 10V − 20 + 5V − 15 + 2V = 0, so 17V = 35, V = 2.06 V.\nI₁ = 2.06 − 2 = 1/17 A = 0.059 A (from a to b; the 2 V cell is being charged).\nI₂ = (2.06 − 3)/2 = −8/17 A: 0.47 A flowing from c to d.\nI₃ = 2.06/5 = 7/17 A = 0.41 A (from e to f).\nCurrents: 1 Ω: 0.059 A; 2 Ω: 0.47 A; 5 Ω: 0.41 A. (Check: 0.059 + 0.41 = 0.47 A.)\nNote: the answer depends on the polarity of the cells, which is read from the figure."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "15a. (i) Distinguish between the terms: cell and battery(as applied to electricity) . electromotive force and terminal potential difference.\n(ii) A copper thick coil of 300 turns is wound uniformly on a non-magnetic ring . If the mean circumference of ring is 40 cm and a uniform cross sectional area of 4 cm². When the current in the coil is 5 A, calculate the magnetic field strength, the flux density, the total magnetic flux in the ring and reluctance . also define the underlined term.",
+    "options": [],
+    "modelAnswer": "(i) A cell is a single unit that converts chemical energy into electrical energy. A battery is two or more cells connected together (in series and/or parallel).\nElectromotive force (e.m.f.) is the energy supplied by the source per unit charge to drive charge round the whole circuit; it equals the p.d. across the terminals when no current flows.\nTerminal potential difference is the p.d. across the terminals when the source is delivering current. It is less than the e.m.f. by the 'lost volts' across the internal resistance: V = E − Ir.\n\n(ii) The underlined term is reluctance: the opposition of a magnetic circuit to the setting up of magnetic flux, S = mmf/Φ = l/(μ₀μᵣA). Unit: ampere-turn per weber (A Wb⁻¹).\nl = 0.40 m, A = 4 × 10⁻⁴ m², N = 300, I = 5 A. The ring is non-magnetic, so μᵣ = 1.\nMagnetic field strength: H = NI/l = (300 × 5)/0.40 = 3750 A m⁻¹.\nFlux density: B = μ₀H = 4π × 10⁻⁷ × 3750 = 4.71 × 10⁻³ T.\nTotal flux: Φ = BA = 4.71 × 10⁻³ × 4 × 10⁻⁴ = 1.88 × 10⁻⁶ Wb.\nReluctance: S = NI/Φ = 1500/(1.88 × 10⁻⁶) = 7.96 × 10⁸ A Wb⁻¹.\n(Check: S = l/(μ₀A) = 0.40/(4π × 10⁻⁷ × 4 × 10⁻⁴) = 7.96 × 10⁸ A Wb⁻¹.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "15b. (i) With the help of suitable diagram, briefly explain the phenomena that: \"magnetic monopole does not exist\" ( i.e a magnet with a single N- pole or S-pole can not be formed).\n(ii) The magnetic field at a point on the axis of a circular current-carrying coil is given by\nB = (1/2) μ₀NIr²/(r² + x²)^(3/2)\nwhere N is the number of turns, r is the radius of the coil and x is the distance of the observation point from the centre of the coil, Determine the B : At the centre of the loop, and at place when the observation point is far far away from the coil (x >> r).",
+    "options": [],
+    "modelAnswer": "(i) Diagram: a bar magnet N–S cut in half, and each half cut again. Each piece is a complete magnet with its own N and S poles.\nHowever many times a magnet is broken, each piece always has both a north and a south pole. This is because magnetism comes from tiny current loops (electrons orbiting and spinning) inside the material, and each loop behaves as a small dipole with two poles. Magnetic field lines therefore always form closed loops, leaving the N pole and returning to the S pole, with no beginning or end. This is expressed by Gauss's law for magnetism: the net magnetic flux through any closed surface is zero.\n\n(ii) At the centre of the loop, x = 0:\nB = (1/2)μ₀NIr²/(r²)^(3/2) = μ₀NI/(2r).\n\nFar away (x >> r): r² + x² ≈ x², so (r² + x²)^(3/2) ≈ x³ and\nB ≈ μ₀NIr²/(2x³). The field falls off as 1/x³, like the field of a magnetic dipole."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Electromagnetic Induction",
+    "type": "Essay",
+    "questionNumber": "15c",
+    "question": "15c. Calculate the value of the energy stored when a current of 30 mA is flowing in a coil of inductance 400 mH.",
+    "options": [],
+    "modelAnswer": "W = ½LI² = ½ × 0.400 × (0.030)² = ½ × 0.400 × 9 × 10⁻⁴ = 1.8 × 10⁻⁴ J."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "16a(i). What are Ohmic and non Ohmic conductors? Support your answers with suitable sketches graphs. State the factors upon which the resistance and resistivity of on electrical conductors depend and the effect of each factor. (ii) The resistance of a 5 m length of wire is 600 Ω Determine the resistance of an 8 m length of the same wire, and the length of the same wire when the resistance is 420 Ω.",
+    "options": [],
+    "modelAnswer": "(i) Ohmic conductors obey Ohm's law: at constant temperature the current is directly proportional to the p.d., so the resistance is constant (e.g. metals such as copper, nichrome). Sketch: a straight line through the origin on an I–V graph.\nNon-ohmic conductors do not obey Ohm's law: the resistance changes with the current or p.d. (e.g. a filament lamp, a semiconductor diode, a thermistor, an electrolyte). Sketch: a curve, e.g. a filament lamp's I–V graph bends towards the V-axis as it heats up; a diode passes almost no current in reverse and conducts sharply above about 0.6 V forward.\n\nResistance R = ρl/A depends on:\n1. Length: R is directly proportional to l.\n2. Cross-sectional area: R is inversely proportional to A.\n3. The material (its resistivity ρ).\n4. Temperature: for metals R increases with temperature; for semiconductors it decreases.\nResistivity depends only on the material (nature of the conductor, impurities) and temperature, not on the dimensions.\n\n(ii) R is proportional to l for the same wire, so the resistance per metre = 600/5 = 120 Ω m⁻¹.\nResistance of 8 m = 8 × 120 = 960 Ω.\nLength for 420 Ω = 420/120 = 3.5 m."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "16b(i) State two avantages of a.c over d.c and one advantage of d.c over a.c. (ii)A series circuit of resistance 60 ohm and 75 mH inductance are connected to a 110 V, 60 Hz a.c supply. Calculate the power dissipated and the power factor.\n(iii) By substituting the values μ₀ and ε₀ , Show that physical quantity 1/√(μ₀ε₀) represents the speed of light in vacuum. And find the value of √(μ₀/ε₀) (has a unit of Ω).",
+    "options": [],
+    "modelAnswer": "(i) Advantages of a.c. over d.c. (any two): its voltage can easily be stepped up or down with transformers; it can be transmitted over long distances at high voltage with small power loss; a.c. generators are simpler and cheaper to build and maintain.\nAdvantage of d.c. over a.c. (any one): it can be stored in batteries; it is needed for electrolysis, electroplating and charging; it is safer at the same voltage.\n\n(ii) X_L = 2πfL = 2π × 60 × 0.075 = 28.3 Ω.\nZ = √(R² + X_L²) = √(60² + 28.3²) = 66.3 Ω.\nI = V/Z = 110/66.3 = 1.66 A.\nPower dissipated (only in the resistance): P = I²R = 1.66² × 60 = 165 W.\nPower factor = cos φ = R/Z = 60/66.3 = 0.905 (lagging).\n\n(iii) μ₀ = 4π × 10⁻⁷ H m⁻¹, ε₀ = 8.85 × 10⁻¹² F m⁻¹.\nμ₀ε₀ = 4π × 10⁻⁷ × 8.85 × 10⁻¹² = 1.112 × 10⁻¹⁷ s² m⁻²\n1/√(μ₀ε₀) = 1/(3.335 × 10⁻⁹) = 3.0 × 10⁸ m s⁻¹, which is the speed of light in vacuum, c.\nUnits: H m⁻¹ × F m⁻¹ = (Ω s)(s Ω⁻¹) m⁻² = s² m⁻², so 1/√(μ₀ε₀) is in m s⁻¹.\n\n√(μ₀/ε₀) = √(4π × 10⁻⁷/8.85 × 10⁻¹²) = √(1.42 × 10⁵) = 377 Ω (the impedance of free space). Units: √(H/F) = √(Ω s/(s Ω⁻¹)) = Ω."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Elements of Modern Physics",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "17a. (i) Briefly explain the concept of photoelectric emission. Write down the Einstein photoelectric relations in terms of frequency of the emitted radiation, wavelength, stopping potential.\n(ii) What are the factors affecting the photoelectric emissions? State the effects of each factor.\n(iii) Assume the stopping potential for a certain metal is 3V when is is illuminated by radiation of wavelength 0.5um. what would be the stopping potential of the metal when the wavelength is 600nm?",
+    "options": [],
+    "modelAnswer": "(i) Photoelectric emission is the release of electrons from a metal surface when electromagnetic radiation of high enough frequency falls on it. Each photon of energy hf gives all its energy to one electron. If hf is greater than the work function φ, the electron escapes, with the excess as kinetic energy.\nEinstein's equation:\nIn terms of frequency: hf = φ + ½mv²_max.\nIn terms of wavelength: hc/λ = hc/λ₀ + ½mv²_max.\nIn terms of stopping potential: hf = φ + eV_s, or eV_s = h(f − f₀).\n\n(ii)\n1. Frequency (wavelength) of the radiation: no electrons are emitted below the threshold frequency f₀, however intense the light. Above it, the maximum kinetic energy of the electrons increases linearly with frequency.\n2. Intensity of the radiation: above f₀, a greater intensity gives more photoelectrons per second (a larger photocurrent) but does not change their maximum kinetic energy.\n3. Nature of the metal (work function): a metal with a smaller work function has a lower threshold frequency and gives faster electrons for the same light.\n4. Potential of the collector: a positive potential collects all the electrons (saturation current); a negative potential reduces the current to zero at the stopping potential.\n\n(iii) Note: '0.5um' means 0.5 μm (500 nm).\neV_s = hc/λ − φ, so for two wavelengths: V₂ = V₁ − (hc/e)(1/λ₁ − 1/λ₂).\nPhoton energy at 500 nm: hc/λ₁ = (6.6 × 10⁻³⁴ × 3.0 × 10⁸)/(5.0 × 10⁻⁷) = 3.96 × 10⁻¹⁹ J = 2.475 eV.\nPhoton energy at 600 nm: hc/λ₂ = 3.3 × 10⁻¹⁹ J = 2.0625 eV.\nV₂ = 3 − (2.475 − 2.0625) = 3 − 0.4125 = 2.59 V.\n\nNote: the data in the paper are not physically possible. A 500 nm photon has only 2.475 eV, so it cannot give a stopping potential of 3 V (the work function would be 2.475 − 3 = −0.525 eV, which is impossible). The answer above uses the method the question expects."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "17b",
+    "question": "17b State the natural radiations emitted by a radioactive element. Assume a radioactive element X. eject each one of the radiation, explain with help of the disintegration reaction, what would be the resulting nucleus?\n(ii) A radioactive source at any instant has its disintegration rate of 5000 disintegrations per minute. After 5 minutes, the rate is 1250 disintegrations per minute. Calculate , the decay constant (per minute).",
+    "options": [],
+    "modelAnswer": "(i) The natural radiations are alpha (α) particles, beta (β) particles and gamma (γ) rays.\nAlpha emission: the nucleus loses a helium nucleus, so the mass number falls by 4 and the atomic number by 2; a new element two places back in the periodic table is formed:\nᴬ_ZX → ᴬ⁻⁴_(Z−2)Y + ⁴₂He\nBeta emission: a neutron changes into a proton and an electron is emitted, so the mass number is unchanged and the atomic number rises by 1; a new element one place forward is formed:\nᴬ_ZX → ᴬ_(Z+1)Y + ⁰₋₁e\nGamma emission: an excited nucleus releases energy as a photon; mass number and atomic number are unchanged, so the same element remains (in a lower energy state):\nᴬ_ZX* → ᴬ_ZX + γ\n\n(ii) The activity falls from 5000 to 1250 per minute, i.e. to 1/4, which is two half-lives, in 5 minutes. So T½ = 2.5 min.\nλ = ln 2/T½ = 0.693/2.5 = 0.277 min⁻¹.\n(Directly: 1250 = 5000e^(−5λ), so λ = ln 4/5 = 0.277 min⁻¹.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "18a.(i) Briefly explain the terms \"mass defect and nuclear binding energy \" How are they related?. (ii). Consider the Energy released in fission fragments when Barium, Krypton and neutrons are released with high velocities according to the reaction ¹₀n + ²³⁵₉₂U → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3¹₀n + γ\nFind the energy released due to γ emission. Given that ²³⁵₉₂U = 235.0439u, ¹₀n = 1.0087u, ¹⁴¹₅₆Br = 140.9129u, ⁹²₃₆Kr = 91.8973u .",
+    "options": [],
+    "modelAnswer": "(i) Mass defect: the difference between the total mass of the separate protons and neutrons in a nucleus and the actual mass of the nucleus. The nucleus is always lighter than its separate nucleons.\nNuclear binding energy: the energy needed to separate a nucleus completely into its individual protons and neutrons (equal to the energy released when the nucleus is formed from them).\nRelationship: the binding energy is the energy equivalent of the mass defect, E = Δmc² (or, in MeV, E = Δm(in u) × 931).\n\n(ii) Note: '¹⁴¹₅₆Br' is a misprint for ¹⁴¹₅₆Ba (barium).\nMass of reactants = 1.0087 + 235.0439 = 236.0526 u.\nMass of products = 140.9129 + 91.8973 + 3(1.0087) = 235.8363 u.\nMass defect: Δm = 236.0526 − 235.8363 = 0.2163 u.\nEnergy released = 0.2163 × 931 = 201 MeV (about 2.0 × 10² MeV).\nThis is the total energy released in the fission (shared as kinetic energy of the fragments and neutrons and the γ radiation); the data given do not allow the γ-ray part to be separated out."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper II",
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "18b(i) State the Heisenberg's Uncertainty Principle in words and write down (without proof) its mathematical form, state clearly the meaning of each symbol for a particle having: a momentum, for a particle having an energy, and for a particle moving round a circular orbit.\n(ii). Find the de Broglie wavelength of an electron (A) moving with velocity 1000 ms⁻¹ (B) having the kinetic energy of 100 Ev.",
+    "options": [],
+    "modelAnswer": "(i) Heisenberg's uncertainty principle: it is impossible to know both the exact position and the exact momentum of a particle (or other pairs of related quantities) at the same time. The more precisely one is known, the less precisely the other can be known. ħ = h/2π.\nMomentum: Δx Δp ≥ ħ/2, where Δx is the uncertainty in position and Δp the uncertainty in linear momentum.\nEnergy: ΔE Δt ≥ ħ/2, where ΔE is the uncertainty in energy and Δt the uncertainty in the time (the time interval over which the energy is measured).\nCircular orbit: ΔL Δθ ≥ ħ/2, where ΔL is the uncertainty in angular momentum and Δθ the uncertainty in angular position.\n(Some textbooks write these approximately as ≥ h/2π or ≈ h.)\n\n(ii) Note: '100 Ev' means 100 eV.\n(A) λ = h/(mv) = 6.6 × 10⁻³⁴/(9.0 × 10⁻³¹ × 1000) = 7.33 × 10⁻⁷ m.\n(B) K.E. = 100 × 1.6 × 10⁻¹⁹ = 1.6 × 10⁻¹⁷ J.\np = √(2mK) = √(2 × 9.0 × 10⁻³¹ × 1.6 × 10⁻¹⁷) = 5.37 × 10⁻²⁴ kg m s⁻¹.\nλ = h/p = 6.6 × 10⁻³⁴/(5.37 × 10⁻²⁴) = 1.23 × 10⁻¹⁰ m (1.23 Å)."
+  }
+]

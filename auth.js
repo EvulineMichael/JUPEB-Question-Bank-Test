@@ -84,6 +84,8 @@ if (!IS_LOCAL && getSavedAccess()) {
 }
 
 function revealDashboard(user) {
+  document.body.classList.remove('is-signing-in');
+  sessionStorage.removeItem('qb_signing_in');
   const loginEl = document.getElementById('login-screen');
   if (loginEl) loginEl.style.display = 'none';
 
@@ -113,11 +115,9 @@ function revealDashboard(user) {
 }
 
 function showNotAuthorized(email) {
-  document.getElementById('auth-status').innerHTML =
-    `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-      <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
-      <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
-    </div>`;
+  showAuthMessage('warn',
+    `<strong>${escapeAuthText(email)}</strong> doesn't have access yet. If you've paid, send your receipt and this Gmail to us on WhatsApp and we'll activate it.`,
+    `<button type="button" class="auth-msg-btn" onclick="document.getElementById('lp-pricing')?.scrollIntoView({behavior:'smooth'}); if (document.getElementById('access-info').style.display === 'none') toggleAccessInfo();">How to get access</button>`);
   forgetAccess();
   auth.signOut();
 }
@@ -162,21 +162,20 @@ auth.onAuthStateChanged(async (user) => {
     }
 
     // First sign-in on this device: check access before opening (needs internet)
-    await recordReferralClaim(user);
+    showAuthMessage('info', 'Checking your access…');
+    try { await recordReferralClaim(user); } catch (e) { /* tried again next time; never block sign-in */ }
 
     let doc;
     try {
       doc = await docRef.get();
     } catch (err) {
-      document.getElementById('auth-status').innerHTML =
-        `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-          <p>We couldn't check your access. Please check your internet connection and sign in again.</p>
-        </div>`;
+      showAuthMessage('error', "We couldn't check your access. Check your internet connection and sign in again.");
       auth.signOut();
       return;
     }
 
     if (doc.exists) {
+      clearAuthMessage();
       // Access is lifetime, so there is no expiry check any more.
       window.userExams = getUserExams(doc.data());
       saveAccess(email, window.userExams);
@@ -186,6 +185,7 @@ auth.onAuthStateChanged(async (user) => {
       showNotAuthorized(email);
     }
   } else {
+    if (!sessionStorage.getItem(REDIRECT_FLAG)) setSigningIn(false);
     forgetAccess();
     forgetSavedPapers();
     showScreen("login-screen", { pushHistory: false });
@@ -197,24 +197,154 @@ auth.onAuthStateChanged(async (user) => {
 });
 
 
-// Google Sign In
-function signInWithGoogle() {
-  const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider).catch((error) => {
-    alert('Login failed: ' + error.message);
+// ===== GOOGLE SIGN-IN =====
+// Desktop: a pop-up window. Phones: a full-page sign-in when the site handles sign-in on
+// its own address (SITE_HANDLES_AUTH in firebase-config.js), because phones often lose a
+// pop-up's result; otherwise a pop-up, with clear messages if it fails.
+// In-app browsers (WhatsApp, Instagram, Facebook…) are blocked by Google, so the student
+// is shown how to open the site in Chrome or Safari instead.
+const REDIRECT_FLAG = 'qb_signing_in';
+const UA = navigator.userAgent || '';
+const IS_ANDROID = /Android/i.test(UA);
+const IS_IOS = /iPhone|iPad|iPod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
+const IS_MOBILE = IS_ANDROID || IS_IOS;
+const IN_APP_BROWSER = (() => {
+  if (/FBAN|FBAV|FB_IAB|Instagram|WhatsApp|Snapchat|TikTok|musical_ly|Line\/|Twitter|LinkedInApp/i.test(UA)) return true;
+  if (IS_ANDROID && /; wv\)/.test(UA)) return true;                       // Android WebView
+  if (IS_IOS && !/Safari\//.test(UA) && /AppleWebKit/.test(UA)) return true; // iOS WebView
+  return false;
+})();
+
+function escapeAuthText(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+// The message box above the sign-in buttons (#auth-status on the home screen)
+function showAuthMessage(kind, html, actionsHtml = '') {
+  const box = document.getElementById('auth-status');
+  if (!box) return;
+  box.innerHTML = `
+    <div class="auth-msg auth-msg--${kind}" role="${kind === 'error' || kind === 'warn' ? 'alert' : 'status'}">
+      ${kind === 'info' ? '<span class="auth-spinner" aria-hidden="true"></span>' : ''}
+      <div class="auth-msg-body"><p>${html}</p>${actionsHtml ? `<div class="auth-msg-actions">${actionsHtml}</div>` : ''}</div>
+    </div>`;
+  if (kind !== 'info') box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function clearAuthMessage() {
+  const box = document.getElementById('auth-status');
+  if (box) box.innerHTML = '';
+}
+function setSigningIn(on) {
+  document.body.classList.toggle('is-signing-in', !!on);
+  if (on) showAuthMessage('info', 'Signing you in…');
+  else {
+    sessionStorage.removeItem(REDIRECT_FLAG);
+    const box = document.getElementById('auth-status');
+    if (box && box.querySelector('.auth-msg--info')) clearAuthMessage();
+  }
+}
+
+function showInAppBrowserHelp() {
+  const url = location.href.split('#')[0];
+  const chromeLink = IS_ANDROID
+    ? `<a class="auth-msg-btn" href="intent://${escapeAuthText(url.replace(/^https?:\/\//, ''))}#Intent;scheme=https;package=com.android.chrome;end">Open in Chrome</a>`
+    : '';
+  showAuthMessage('warn',
+    `You're in ${/WhatsApp/i.test(UA) ? "WhatsApp's" : /Instagram/i.test(UA) ? "Instagram's" : /FBAN|FBAV|FB_IAB/i.test(UA) ? "Facebook's" : "an app's"} built-in browser, and Google doesn't allow sign-in here. ` +
+    (IS_IOS ? 'Tap the <strong>•••</strong> or share button and choose <strong>Open in Safari</strong>, then sign in.'
+            : 'Tap <strong>⋮</strong> and choose <strong>Open in Chrome</strong> (or your usual browser), then sign in.'),
+    `${chromeLink}<button type="button" class="auth-msg-btn auth-msg-btn--ghost" onclick="copySiteLink(this)">Copy link</button>`);
+}
+function copySiteLink(btn) {
+  const url = location.href.split('#')[0];
+  const done = () => { btn.textContent = 'Link copied'; };
+  const showLink = () => (typeof appDialog === 'function')
+    ? appDialog({ title: 'Copy this link', icon: 'info', confirmText: 'Done',
+        message: `<p>Press and hold the link to copy it, then paste it into Chrome or Safari.</p><p><strong style="user-select:all;word-break:break-all">${escapeAuthText(url)}</strong></p>` })
+    : prompt('Copy this link:', url);
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done).catch(showLink);
+  else showLink();
+}
+
+function handleSignInError(error) {
+  setSigningIn(false);
+  const code = (error && error.code) || '';
+  if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request' || code === 'auth/user-cancelled') return;
+  if (code === 'auth/too-many-requests') {
+    if (typeof appDialog === 'function') {
+      appDialog({ title: 'Too many attempts', icon: 'clock', tone: 'warning', confirmText: 'OK',
+        message: '<p>Google has paused sign-in on this device for a short while because of several attempts in a row.</p><p>Wait about a minute, then tap <strong>Sign in</strong> once.</p>' });
+    } else showAuthMessage('error', 'Too many attempts. Wait a minute, then try again.');
+  } else if (code === 'auth/network-request-failed') {
+    showAuthMessage('error', "No internet connection. Check your data or Wi-Fi and try again.");
+  } else if (code === 'auth/popup-blocked') {
+    if (typeof appDialog === 'function') {
+      appDialog({ title: 'Sign-in window was blocked', icon: 'warning', tone: 'warning', confirmText: 'Try again', cancelText: 'Close',
+        message: '<p>Your browser stopped the Google sign-in window from opening.</p><p>Allow pop-ups for this site in your browser settings, or open the site in Chrome or Safari, then try again.</p>' })
+        .then((retry) => { if (retry) signInWithGoogle(); });
+    } else showAuthMessage('error', "Your browser blocked the Google sign-in window. Allow pop-ups for this site, or open it in Chrome or Safari, and try again.");
+  } else if (code === 'auth/web-storage-unsupported' || code === 'auth/operation-not-supported-in-this-environment') {
+    showAuthMessage('error', "This browser is blocking sign-in. Open the site in Chrome or Safari (not private mode) and try again.");
+  } else if (code === 'auth/unauthorized-domain') {
+    showAuthMessage('error', "Sign-in isn't set up for this web address yet. Please message us on WhatsApp.");
+  } else {
+    showAuthMessage('error', `Sign-in didn't finish. Please try again.${code ? ` <small>(${escapeAuthText(code)})</small>` : ''}`);
+  }
+  console.error('Sign-in error:', error);
+}
+
+// Tapped "Sign in" again while a sign-in is still open
+let _signInStartedAt = 0;
+function signInAlreadyOpen() {
+  const waited = Math.round((Date.now() - _signInStartedAt) / 1000);
+  if (typeof appDialog !== 'function') return;
+  appDialog({
+    title: 'Sign-in is already open',
+    message: `<p>Finish signing in with Google in the window that opened${waited > 2 ? ` ${waited} seconds ago` : ''}.</p><p>Closed it, or can't see it? Start again.</p>`,
+    icon: 'google', confirmText: 'Start again', cancelText: 'Keep waiting'
+  }).then((restart) => {
+    if (!restart) return;
+    setSigningIn(false);
+    signInWithGoogle();
   });
 }
 
-// Handle redirect result
-auth.getRedirectResult().then((result) => {
-  if (result.user) {
-    console.log('Redirect sign-in successful:', result.user.email);
+function signInWithGoogle() {
+  if (IN_APP_BROWSER) { showInAppBrowserHelp(); return; }
+  if (document.body.classList.contains('is-signing-in')) { signInAlreadyOpen(); return; }
+  _signInStartedAt = Date.now();
+  const provider = new firebase.auth.GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: 'select_account' });
+  const canRedirect = typeof SITE_HANDLES_AUTH !== 'undefined' && SITE_HANDLES_AUTH;
+  setSigningIn(true);
+
+  if (IS_MOBILE && canRedirect) {
+    sessionStorage.setItem(REDIRECT_FLAG, '1');
+    auth.signInWithRedirect(provider).catch(handleSignInError);
+    return;
   }
+  auth.signInWithPopup(provider).catch((error) => {
+    if (error && error.code === 'auth/popup-blocked' && canRedirect) {
+      sessionStorage.setItem(REDIRECT_FLAG, '1');
+      return auth.signInWithRedirect(provider).catch(handleSignInError);
+    }
+    handleSignInError(error);
+  });
+}
+
+// Coming back from a full-page sign-in: say so while Firebase finishes
+if (sessionStorage.getItem(REDIRECT_FLAG)) {
+  document.body.classList.add('is-signing-in');
+  showAuthMessage('info', 'Finishing sign-in…');
+}
+auth.getRedirectResult().then((result) => {
+  if (result && result.user) console.log('Redirect sign-in successful:', result.user.email);
+  else if (sessionStorage.getItem(REDIRECT_FLAG)) setSigningIn(false);   // came back without signing in
+  sessionStorage.removeItem(REDIRECT_FLAG);
 }).catch((error) => {
-  console.error('Redirect sign-in error:', error);
+  sessionStorage.removeItem(REDIRECT_FLAG);
+  handleSignInError(error);
 });
-
-
 
 // Sign Out
 function signOutUser() {

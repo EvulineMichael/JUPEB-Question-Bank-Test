@@ -250,7 +250,7 @@
     "question": "Which of the following defines the Heisenberg uncertainty principle for position and momentum?",
     "options": ["Δx Δp ≤ h/2", "Δx Δp = h/2", "Δx Δp ≥ h/2", "Δx Δp ≥ 2h"],
     "answer": "C",
-    "explanation": "Heisenberg uncertainty principle: Δx Δp ≥ ħ/2 = h/4π.\n\nIn terms of h: Δx Δp ≥ h/2 (since ħ = h/2π)."
+    "explanation": "Heisenberg's uncertainty principle: Δx Δp ≥ ħ/2, where ħ = h/2π (so ħ/2 = h/4π).\n\nThe options write 'h' where ħ (h-bar) is meant, so option C, Δx Δp ≥ h/2, is the intended answer. The key point is the 'greater than or equal to' sign: the product of the uncertainties can never be smaller than this limit."
   },
   {
     "subject": "Physics",
@@ -371,7 +371,7 @@
     "question": "The velocity of sound in a gas is given by v_s = √(γP/ρ). For a particular gas under certain conditions, v_s is found to be 400 m/s. What is the new value of v_s if the pressure were reduced by 5%?",
     "options": ["89.4 m/s", "20 m/s", "100 m/s", "390 m/s"],
     "answer": "D",
-    "explanation": "The velocity of sound in a gas is independent of pressure changes at constant temperature.\n\nAt constant temperature, P/ρ is constant (Boyle's law), so v_s remains unchanged at 400 m/s.\n\nNote: The correct answer is 400 m/s, which is not among the options. The question is flawed — the closest option has been selected."
+    "explanation": "With the density taken as constant, v ∝ √P.\n\nNew pressure = 0.95P, so v = 400 × √0.95 = 400 × 0.9747 ≈ 390 m/s.\n\n(Strictly, if temperature stays constant, density falls with pressure and v does not change. The question intends density to stay constant.)"
   },
   {
     "subject": "Physics",
@@ -481,6 +481,8 @@
     "question": "Which of the following consists entirely of vector quantities?",
     "options": ["velocity, magnetic flux and reaction", "tension, magnetic flux and mass", "displacement, impulse and power", "work, pressure and moment"],
     "answer": "A",
+    "reviewNote": "Magnetic flux (Φ = BA cos θ) is a scalar, so option A is not 'entirely vectors' as printed. Every other option also contains a scalar (mass, power, work, pressure).\n\nThe examiners' answer is A, which would be fully correct if it said magnetic field (flux density) instead of magnetic flux: velocity, magnetic field and reaction are all vectors.",
+    "excludeFromQuiz": true,
     "explanation": "Velocity (vector), magnetic flux (vector), reaction (force, vector).\n\nOption A consists entirely of vector quantities.\n\nMass, power, work, and pressure are scalars."
   },
   {
@@ -547,6 +549,8 @@
     "question": "A certain radioactive source emits radiations that were found to be deflected by both magnetic and electric fields. The radiations are",
     "options": ["ultra-violet rays", "gamma rays", "alpha rays", "beta rays"],
     "answer": "D",
+    "reviewNote": "Both alpha rays (positive) and beta rays (negative) are charged, so both are deflected by electric and magnetic fields; only gamma rays are not. Options C and D are therefore both correct.\n\nThe examiners' answer is D (beta rays). Beta particles are bent much more than alpha particles because they are far lighter.",
+    "excludeFromQuiz": true,
     "explanation": "Beta rays (electrons) are charged and are deflected by electric and magnetic fields.\n\nAlpha rays are also deflected but heavier.\nGamma rays are uncharged and not deflected."
   },
   {

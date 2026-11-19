@@ -97,7 +97,7 @@
     "questionNumber": "3c",
     "question": "(c) i. 250g of a liquid at 98°C is poured into a copper calorimeter of mass 600g containing 500g of water at 30°C. Find the temperature of the mixture. [Specific heat capacity of copper = 390 J/Kg°C, Specific heat capacity of water = 4200 J/Kg°C and Specific heat capacity of liquid = 2200 J/Kg°C]\nii. A copper tube 50 cm thick and area 0.8 m² is heated at one end through 100°C while the other end is maintained at 23°C. Calculate how much heat is conducted in 30 minutes. [Thermal conductivity is 380Wm⁻¹k⁻¹] [5 marks]",
     "options": [],
-    "modelAnswer": "i. Heat lost by liquid = heat gained by calorimeter + water.\n0.25 × 2200 × (98 − θ) = 0.6 × 390 × (θ − 30) + 0.5 × 4200 × (θ − 30)\n550(98 − θ) = 234(θ − 30) + 2100(θ − 30) = 2334(θ − 30)\n53900 − 550θ = 2334θ − 70020\n123920 = 2884θ → θ = 42.97°C ≈ 43.0°C.\n\nii. Q = kAΔT·t/d = 380 × 0.8 × (100 − 23) × (30 × 60)/0.5\n= 380 × 0.8 × 77 × 1800/0.5 = 380 × 0.8 × 77 × 3600 = 8.43 × 10⁷ J.\n\nNote: The question states \"50 cm thick\" — this is physically unrealistic. If the intended thickness is 5 cm (0.05 m), Q = 8.43 × 10⁸ J. Please verify the original question."
+    "modelAnswer": "i. Heat lost by liquid = heat gained by calorimeter + water.\n0.25 × 2200 × (98 − θ) = 0.6 × 390 × (θ − 30) + 0.5 × 4200 × (θ − 30)\n550(98 − θ) = 234(θ − 30) + 2100(θ − 30) = 2334(θ − 30)\n53900 − 550θ = 2334θ − 70020\n123920 = 2884θ → θ = 42.97°C ≈ 43.0°C.\n\nii. Q = kAΔT·t/d = 380 × 0.8 × (100 − 23) × (30 × 60)/0.5\n= 380 × 0.8 × 77 × 1800/0.5 = 380 × 0.8 × 77 × 3600 = 8.43 × 10⁷ J.\n\nNote: '50 cm thick' is unusually thick for a tube wall; the paper may mean 5 cm. With d = 0.05 m the answer is ten times larger: Q = 8.43 × 10⁸ J. Use the thickness printed in your exam."
   },
   {
     "subject": "Physics",
@@ -237,6 +237,6 @@
     "questionNumber": "8c",
     "question": "(c) i. Distinguish between thermionic emission and photoelectric emission.\nii. Calculate the minimum wavelength of an electron accelerated through a potential difference of 200V. [6 marks]",
     "options": [],
-    "modelAnswer": "i. Thermionic emission: emission of electrons from a heated metal surface due to thermal energy. Photoelectric emission: emission of electrons from a metal surface when irradiated with light of sufficient frequency (photon energy).\n\nii. λ_min = hc/(eV) = (6.626 × 10⁻³⁴ × 3 × 10⁸)/(1.6 × 10⁻¹⁹ × 200)\n= 1.988 × 10⁻²⁵/(3.2 × 10⁻¹⁷) = 6.21 × 10⁻⁹ m = 6.21 nm."
+    "modelAnswer": "i. Thermionic emission: emission of electrons from a heated metal surface due to thermal energy. Photoelectric emission: emission of electrons from a metal surface when irradiated with light of sufficient frequency (photon energy).\n\nii. λ_min = hc/(eV) = (6.626 × 10⁻³⁴ × 3 × 10⁸)/(1.6 × 10⁻¹⁹ × 200)\n= 1.988 × 10⁻²⁵/(3.2 × 10⁻¹⁷) = 6.21 × 10⁻⁹ m = 6.21 nm.\nThis is the shortest wavelength of the X-ray photon the electron can produce when it hits a target.\n\nIf the question means the electron's own (de Broglie) wavelength:\nλ = h/√(2meV) = 6.626 × 10⁻³⁴/√(2 × 9.11 × 10⁻³¹ × 1.6 × 10⁻¹⁹ × 200) = 6.626 × 10⁻³⁴/7.64 × 10⁻²⁴ ≈ 8.7 × 10⁻¹¹ m (0.087 nm).\nState which one you are calculating."
   }
 ]

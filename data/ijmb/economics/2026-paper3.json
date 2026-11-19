@@ -320,7 +320,7 @@
       "average cost."
     ],
     "answer": "D",
-    "explanation": "Note: the question is ambiguous. Price is the amount received per unit (average revenue); in long-run competitive equilibrium price equals average cost, and firms often set prices from average cost (cost-plus pricing), so average cost is the cost item most closely related to price."
+    "explanation": "Price is the amount received per unit sold, i.e. average revenue. Of the cost items listed, average cost (cost per unit) is the one compared with price: in long-run competitive equilibrium price equals average cost, and many firms set prices by adding a margin to average cost."
   },
   {
     "subject": "Economics",
@@ -337,6 +337,8 @@
       "1/1-b"
     ],
     "answer": "C",
+    "reviewNote": "Government spending multiplier = 1/(1 − b); tax multiplier = −b/(1 − b). Added together they give (1 − b)/(1 − b) = 1, so the balanced budget multiplier is 1.\n\nOption C is printed as '.1', so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "When government spending and taxes rise by the same amount, the government spending multiplier 1/(1 − b) and the tax multiplier −b/(1 − b) add up to (1 − b)/(1 − b) = 1. The balanced budget multiplier is therefore 1. Option C is printed '.1' (read as 1, probably a misprint) and is marked as the closest option."
   },
   {
@@ -643,6 +645,8 @@
       "existence."
     ],
     "answer": "A",
+    "reviewNote": "Cross elasticity of demand shows whether two goods are substitutes (positive) or complements (negative), and how closely related they are.\n\nThat is not among the printed options, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "The correct answer is substitutability or complementarity: cross elasticity is positive for substitutes and negative for complements, and its size shows how close they are. This is not among the options; A ('demand or supply') is marked as the closest, since cross elasticity measures how the demand for one good responds to the price of another."
   },
   {

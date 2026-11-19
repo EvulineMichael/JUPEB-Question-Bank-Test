@@ -333,6 +333,8 @@
       "marginal propensity to save."
     ],
     "answer": "C",
+    "reviewNote": "The simple multiplier is k = 1/(1 − MPC) = 1/MPS. So the size of the multiplier is determined by the marginal propensity to consume (C) and, equally, by the marginal propensity to save (D): a higher MPC (lower MPS) gives a larger multiplier.\n\nBecause C and D are both correct, this question is left out of quizzes. The examiners' answer is C.",
+    "excludeFromQuiz": true,
     "explanation": "The multiplier is calculated as 1/(1 - MPC). Therefore, the size of the multiplier is directly determined by the marginal propensity to consume (MPC). A higher MPC means a larger multiplier. MPS also determines it (1/MPS), but MPC is the more direct factor."
   },
   {
@@ -430,6 +432,8 @@
     "question": "The variance of the set of numbers is",
     "options": ["800", "900", "1600", "1000"],
     "answer": "B",
+    "reviewNote": "The set of numbers for this question is not included in this copy of the paper, so it cannot be answered here. It is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Variance = 4480/5 = 896. Closest option is 900."
 },
   {

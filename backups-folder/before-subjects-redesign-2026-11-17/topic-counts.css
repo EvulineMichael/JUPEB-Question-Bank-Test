@@ -1,0 +1,34 @@
+/* ===== QUESTION COUNTS IN THE SUBJECT PICKER =====
+   Its own file: topic-counts.css, linked in <head> after style.css. */
+
+.subject-tile-count {
+  margin-top: -6px;
+  font-size: 0.72rem; font-weight: 600; line-height: 1.2; text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Tiles with no questions: greyed out and can't be opened */
+.subject-tile.is-empty { cursor: not-allowed; }
+.subject-tile.is-empty:hover,
+.subject-tile.is-empty:active { transform: none; }
+.subject-tile.is-empty .subject-tile-icon {
+  background: var(--bg-primary);
+  border: 2px dashed var(--dash-border);
+  box-shadow: none;
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+.subject-tile.is-empty .subject-tile-name { color: var(--text-secondary); opacity: 0.75; }
+.subject-tile.is-empty .subject-tile-count { font-style: italic; opacity: 0.85; }
+
+/* The short note shown when an empty tile is tapped */
+.picker-note {
+  position: absolute; left: 50%; bottom: 28px; z-index: 5;
+  max-width: min(90%, 420px); padding: 11px 18px; border-radius: 14px;
+  background: var(--text-primary); color: var(--bg-secondary);
+  font-size: 0.86rem; font-weight: 600; text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0; transform: translate(-50%, 16px); pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.picker-note.is-show { opacity: 1; transform: translate(-50%, 0); }

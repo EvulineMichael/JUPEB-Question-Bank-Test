@@ -1,0 +1,248 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Separation and Purification Techniques",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "List five (5) common techniques used for purification in organic chemistry.",
+    "options": [],
+    "modelAnswer": "Any five:\n1. Crystallisation (recrystallisation): for purifying solids.\n2. Simple distillation: for separating a liquid from non-volatile impurities.\n3. Fractional distillation: for separating miscible liquids with close boiling points.\n4. Steam distillation: for volatile, water-immiscible compounds that decompose at their boiling points (e.g., essential oils, aniline).\n5. Distillation under reduced pressure (vacuum distillation): for liquids that decompose below their normal boiling points.\n6. Sublimation: for solids that pass directly into vapour (e.g., naphthalene, camphor).\n7. Chromatography (paper, thin-layer or column): for separating mixtures of similar compounds.\n8. Solvent extraction: using a separating funnel."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Give the structure of the first member of the following homologous series:\n(a) Alkyne\n(b) Alkanone\n(c) Alkanoic acid\n(d) Alkanamide\n(e) Alkanol",
+    "options": [],
+    "modelAnswer": "(a) Alkyne: ethyne, HC≡CH (H–C≡C–H).\n\n(b) Alkanone: propanone, CH₃COCH₃ (CH₃–CO–CH₃). The first ketone has three carbons, because the C=O group must be between two carbon atoms.\n\n(c) Alkanoic acid: methanoic acid, HCOOH (H–CO–OH).\n\n(d) Alkanamide: methanamide, HCONH₂ (H–CO–NH₂).\n\n(e) Alkanol: methanol, CH₃OH (H₃C–OH)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Give the organic product of the following reactions or indicate ‘no reaction’ if no product is formed:\n(a) 2CH₃CH₂Br + Na →\n(b) CH₃CH₂CH₃ + LiAlH₄ →\n(c) CH₃CH=CHCH₂Cl + H₂/Pt →\n(d) CH₃CH₂CH₂Br + CH₃ONa →\n(e) (CH₃)₂CHCH₂CH₃ + Cl₂ →",
+    "options": [],
+    "modelAnswer": "(a) Butane, CH₃CH₂CH₂CH₃ (Wurtz reaction, in dry ether):\n2CH₃CH₂Br + 2Na → CH₃CH₂CH₂CH₃ + 2NaBr\nNote: the equation as printed shows one Na; two moles of sodium are needed to balance it.\n\n(b) No reaction. An alkane has no polar functional group that LiAlH₄ can reduce.\n\n(c) 1-Chlorobutane, CH₃CH₂CH₂CH₂Cl. Hydrogen adds across the C=C double bond (catalytic hydrogenation):\nCH₃CH=CHCH₂Cl + H₂ →(Pt) CH₃CH₂CH₂CH₂Cl\n\n(d) 1-Methoxypropane (methyl propyl ether), CH₃CH₂CH₂OCH₃ (Williamson ether synthesis):\nCH₃CH₂CH₂Br + CH₃ONa → CH₃CH₂CH₂OCH₃ + NaBr\n\n(e) Free-radical substitution takes place in ultraviolet light (or on heating); the paper does not state the condition, and in the dark there is no reaction. The main product is 2-chloro-2-methylbutane, because the tertiary hydrogen is replaced most easily:\n(CH₃)₂CHCH₂CH₃ + Cl₂ →(UV) (CH₃)₂CClCH₂CH₃ + HCl\nA mixture of monochloro isomers forms, including 1-chloro-2-methylbutane, 2-chloro-3-methylbutane and 1-chloro-3-methylbutane."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Classify the following statements as True or False:\n(a) Increase in molar mass leads to decrease in melting point of compounds in a homologous series.\n(b) Weak conjugate bases is obtained from strong acids.\n(c) The structure of a molecule does not affect its boiling point.\n(d) Polar compounds generally boils at higher temperature than non-polar compounds.\n(e) Water solubility of compounds generally increases with hydrogen bonding.",
+    "options": [],
+    "modelAnswer": "(a) False. In a homologous series, melting point generally increases with molar mass, because the van der Waals forces between larger molecules are stronger.\n\n(b) True. A strong acid ionises completely, so its conjugate base has very little tendency to accept a proton back (e.g., Cl⁻ from HCl).\n\n(c) False. Structure affects boiling point. Branched isomers have lower boiling points than straight-chain ones, because they have less surface contact; e.g., pentane boils at 36°C but 2,2-dimethylpropane at 9.5°C.\n\n(d) True. Polar molecules attract each other by dipole–dipole forces as well as van der Waals forces, so for molecules of similar size, more energy is needed to separate them.\n\n(e) True. Compounds that can form hydrogen bonds with water molecules (e.g., alcohols, carboxylic acids, amines) dissolve more readily in water."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Write the electron configuration of carbon in the: (i) ground state (ii) excited state",
+    "options": [],
+    "modelAnswer": "Carbon has atomic number 6.\n\n(i) Ground state: 1s² 2s² 2p², written in orbitals as 1s² 2s² 2pₓ¹ 2p_y¹ 2p_z⁰. There are two unpaired electrons.\n\n(ii) Excited state: one 2s electron is promoted to the empty 2p_z orbital, giving 1s² 2s¹ 2pₓ¹ 2p_y¹ 2p_z¹. There are four unpaired electrons, which is why carbon forms four bonds (is tetravalent)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Which hybrid orbitals are involved in:\n(i) C – C bond\n(ii) C = C bond\n(iii) C ≡ C bond",
+    "options": [],
+    "modelAnswer": "(i) C–C (single bond): sp³ hybrid orbitals. An sp³ orbital on each carbon overlaps end-on to form a σ bond, e.g., in ethane. Each carbon is tetrahedral (109.5°).\n\n(ii) C=C (double bond): sp² hybrid orbitals. An sp² orbital on each carbon forms a σ bond, and the unhybridised p orbitals overlap sideways to form a π bond, e.g., in ethene. Each carbon is trigonal planar (120°).\n\n(iii) C≡C (triple bond): sp hybrid orbitals. An sp orbital on each carbon forms a σ bond, and two pairs of unhybridised p orbitals form two π bonds, e.g., in ethyne. Each carbon is linear (180°)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Define Resonance effect and Electrometric effect.",
+    "options": [],
+    "modelAnswer": "Misprint note: 'Electrometric effect' should be Electromeric effect.\n\nResonance (mesomeric) effect: the permanent delocalisation of π electrons or lone pairs through a conjugated system, which changes the electron density at different parts of the molecule. The molecule can then be represented by two or more canonical (resonance) structures; its real structure is a hybrid of these and is more stable than any one of them. A group that releases electrons by resonance shows a +R effect (e.g., –OH, –NH₂); one that withdraws electrons shows a –R effect (e.g., –NO₂, –CHO). Examples: benzene, the carboxylate ion.\n\nElectromeric effect: the temporary, complete transfer of the shared π electrons of a multiple bond to one of the bonded atoms. It happens only when an attacking reagent approaches, and it disappears when the reagent is removed. For example, when a nucleophile approaches C=O, the π electrons shift completely to oxygen. It is +E if the electrons move towards the attacking reagent and –E if they move away from it."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Give the name of five (5) structural isomers of pentenes.",
+    "options": [],
+    "modelAnswer": "Pentenes have the molecular formula C₅H₁₀. The five structural isomers are:\n1. Pent-1-ene: CH₂=CHCH₂CH₂CH₃\n2. Pent-2-ene: CH₃CH=CHCH₂CH₃ (exists as cis and trans geometric isomers)\n3. 2-Methylbut-1-ene: CH₂=C(CH₃)CH₂CH₃\n4. 3-Methylbut-1-ene: CH₂=CHCH(CH₃)₂\n5. 2-Methylbut-2-ene: (CH₃)₂C=CHCH₃"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Amines",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Use formulae to illustrate the following:\n(a) tertiary amine\n(b) organometallic compound\n(c) quaternary ammonium salt\n(d) alkane triol\n(e) diazonium salt.",
+    "options": [],
+    "modelAnswer": "(a) Tertiary amine (nitrogen bonded to three alkyl groups): trimethylamine, (CH₃)₃N, or triethylamine, (C₂H₅)₃N.\n\n(b) Organometallic compound (a carbon–metal bond): methylmagnesium bromide (a Grignard reagent), CH₃MgBr, or tetraethyl lead, (C₂H₅)₄Pb.\n\n(c) Quaternary ammonium salt (nitrogen bonded to four alkyl groups): tetramethylammonium chloride, (CH₃)₄N⁺Cl⁻.\n\n(d) Alkane triol (three –OH groups): propane-1,2,3-triol (glycerol), HOCH₂CH(OH)CH₂OH.\n\n(e) Diazonium salt: benzenediazonium chloride, C₆H₅N₂⁺Cl⁻ (C₆H₅–N≡N⁺ Cl⁻)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "List Five (5) conversion processes in the refining of crude oil (petroleum).",
+    "options": [],
+    "modelAnswer": "Any five:\n1. Thermal cracking: large molecules are broken into smaller ones by heat and pressure.\n2. Catalytic cracking: large molecules are broken down using a catalyst (e.g., zeolites, Al₂O₃/SiO₂) to give petrol and alkenes.\n3. Hydrocracking: cracking in the presence of hydrogen.\n4. Catalytic reforming: straight-chain alkanes are converted to cyclic and aromatic hydrocarbons (e.g., using a Pt catalyst) to raise the octane number.\n5. Isomerisation: straight-chain alkanes are converted to branched isomers.\n6. Alkylation: small alkanes and alkenes are combined into larger branched molecules for high-octane petrol.\n7. Polymerisation: small alkenes are joined into larger molecules.\n8. Coking: heavy residues are converted to lighter products and petroleum coke."
+  },
+{
+  "subject": "Chemistry",
+  "year": 2016,
+  "paper": "Paper II",
+  "category": "Organic Reactions",
+  "type": "Essay",
+  "questionNumber": "10",
+  "question": "Consider the following scheme of reactions.\n(a) Identify a reagent for Reaction 2. Name the organic product, P.\n(b) Identify a reagent for Reaction 5. Name the organic product, Q.\n(c) Identify a reagent for Reaction 3.",
+  "image": {
+    "src": "images/ijmb/chemistry/2016/chem-2016-paper2-10.png",
+    "alt": "Reaction scheme: ethene to bromoethane with HBr (Reaction 1); bromoethane to CH₃CH₂CN, P (Reaction 2) and to CH₃CH₂NH₂, Q (Reaction 5); ethene to epoxyethane C₂H₄O (Reaction 3); epoxyethane to ethane-1,2-diol (Reaction 4)"
+  },
+  "options": [],
+  "modelAnswer": "Figure: reaction scheme. Ethene (H₂C=CH₂) is converted by HBr (Reaction 1) to bromoethane (CH₃CH₂Br), which gives CH₃CH₂CN, P (Reaction 2), and CH₃CH₂NH₂, Q (Reaction 5). Ethene is also converted to epoxyethane, C₂H₄O (Reaction 3), which gives ethane-1,2-diol, HOCH₂CH₂OH (Reaction 4).\n\n(a) Reagent for Reaction 2: potassium cyanide (KCN) or sodium cyanide (NaCN), in ethanol, heated under reflux.\nCH₃CH₂Br + KCN → CH₃CH₂CN + KBr\nP = propanenitrile (ethyl cyanide).\n\n(b) Reagent for Reaction 5: excess concentrated ammonia in ethanol, heated in a sealed tube.\nCH₃CH₂Br + 2NH₃ → CH₃CH₂NH₂ + NH₄Br\nQ = ethanamine (ethylamine).\n\n(c) Reagent for Reaction 3: oxygen (air), with a silver catalyst at about 250–300°C (the industrial method):\n2CH₂=CH₂ + O₂ →(Ag) 2C₂H₄O\n(In the laboratory, a peroxyacid such as peroxybenzoic acid can be used.)"
+},
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Write the expected product(s) of the reaction between ethyl ethanoate (CH₃CO₂C₂H₅) and the following reagents –\n(i) H⁺, H₂O, heat\n(ii) NaOH, H₂O\n(iii) aqueous NH₃, heat\n(iv) LiAlH₄ followed by H₃O⁺ (8 marks)",
+    "options": [],
+    "modelAnswer": "(i) Acid hydrolysis (reversible): products are ethanoic acid and ethanol.\nCH₃COOC₂H₅ + H₂O ⇌(H⁺, heat) CH₃COOH + C₂H₅OH\n\n(ii) Alkaline hydrolysis (saponification, goes to completion): products are sodium ethanoate and ethanol.\nCH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH\n\n(iii) Ammonolysis: products are ethanamide and ethanol.\nCH₃COOC₂H₅ + NH₃ → CH₃CONH₂ + C₂H₅OH\n\n(iv) Reduction: the ester is reduced to two alcohols. Here both halves give ethanol, so the only product is ethanol.\nCH₃COOC₂H₅ + 4[H] →(1. LiAlH₄ in dry ether; 2. H₃O⁺) CH₃CH₂OH + C₂H₅OH, i.e., 2C₂H₅OH"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) The reaction of Grignard reagent (e.g. CH₃MgBr) with carbonyl compounds is an important synthetic route to primary, secondary & tertiary alkanols. Use appropriately named starting materials to write balanced equations to justify this statement. The appropriate name of the products should be indicated. (9 marks)",
+    "options": [],
+    "modelAnswer": "The Grignard reagent adds to the C=O group in dry ether, forming a magnesium alkoxide. This is then hydrolysed with dilute acid to give the alkanol. The type of alkanol depends on the carbonyl compound used.\n\n1. Primary alkanol, from methanal:\nCH₃MgBr + HCHO → CH₃CH₂OMgBr\nCH₃CH₂OMgBr + H₂O →(H⁺) CH₃CH₂OH + Mg(OH)Br\nStarting materials: methylmagnesium bromide and methanal. Product: ethanol (a primary alkanol).\n\n2. Secondary alkanol, from any other aldehyde (here ethanal):\nCH₃MgBr + CH₃CHO → (CH₃)₂CHOMgBr\n(CH₃)₂CHOMgBr + H₂O →(H⁺) (CH₃)₂CHOH + Mg(OH)Br\nStarting materials: methylmagnesium bromide and ethanal. Product: propan-2-ol (a secondary alkanol).\n\n3. Tertiary alkanol, from a ketone (here propanone):\nCH₃MgBr + CH₃COCH₃ → (CH₃)₃COMgBr\n(CH₃)₃COMgBr + H₂O →(H⁺) (CH₃)₃COH + Mg(OH)Br\nStarting materials: methylmagnesium bromide and propanone. Product: 2-methylpropan-2-ol (a tertiary alkanol)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "11c",
+    "question": "(c) Briefly describe the fermentation process of starch. (8 marks)",
+    "options": [],
+    "modelAnswer": "Fermentation converts starch (e.g., from maize, cassava, potatoes or rice) into ethanol by the action of enzymes.\n\n1. The starchy material is crushed and boiled with water to form a mash.\n2. Malt (germinated barley) is added and the mixture is kept at about 50–60°C. The enzyme diastase (amylase) in malt hydrolyses starch to maltose:\n2(C₆H₁₀O₅)ₙ + nH₂O →(diastase) nC₁₂H₂₂O₁₁\n3. The mixture is cooled, and yeast is added. The enzyme maltase in yeast hydrolyses maltose to glucose:\nC₁₂H₂₂O₁₁ + H₂O →(maltase) 2C₆H₁₂O₆\n4. The enzyme zymase in yeast converts glucose to ethanol and carbon(IV) oxide:\nC₆H₁₂O₆ →(zymase) 2C₂H₅OH + 2CO₂\nThis step is carried out at about 25–35°C, in the absence of air, for a few days.\n5. Fermentation stops when the ethanol concentration reaches about 10–15%, because the ethanol kills the yeast. Fractional distillation of the liquid then gives up to 95.6% ethanol (rectified spirit)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "(a) A carbonyl compound has a relative molar mass of 86 and contain 69.8 % carbon and 11.6 % hydrogen.\n(i) What is the molecular formula of this compound?\n(ii) Write out ALL the possible chemical formulae of the compound. (13 marks)",
+    "options": [],
+    "modelAnswer": "(i) % oxygen = 100 − (69.8 + 11.6) = 18.6%.\n\nDivide each percentage by the atomic mass:\nC: 69.8/12 = 5.817\nH: 11.6/1 = 11.6\nO: 18.6/16 = 1.163\n\nDivide by the smallest value (1.163):\nC: 5.817/1.163 = 5.0\nH: 11.6/1.163 = 10.0\nO: 1.163/1.163 = 1\n\nEmpirical formula = C₅H₁₀O, with empirical formula mass = 5(12) + 10(1) + 16 = 86.\nn = 86/86 = 1, so the molecular formula is C₅H₁₀O.\n\n(ii) The possible carbonyl compounds with formula C₅H₁₀O are four aldehydes and three ketones:\nAldehydes:\n1. Pentanal: CH₃CH₂CH₂CH₂CHO\n2. 2-Methylbutanal: CH₃CH₂CH(CH₃)CHO\n3. 3-Methylbutanal: (CH₃)₂CHCH₂CHO\n4. 2,2-Dimethylpropanal: (CH₃)₃CCHO\nKetones:\n5. Pentan-2-one: CH₃COCH₂CH₂CH₃\n6. Pentan-3-one: CH₃CH₂COCH₂CH₃\n7. 3-Methylbutan-2-one: CH₃COCH(CH₃)₂"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "(b) Write an equation to illustrate the oxidation of each of the following compounds using CrO₃ with aqueous H₂SO₄ in acetone as reagent. Give the name of the organic products.\n(i) 3-Pentanol (ii) Pentanol\n(iii) Pentanal (iv) 3-Pentanone (12 marks)",
+    "options": [],
+    "modelAnswer": "CrO₃ in aqueous H₂SO₄ and acetone is the Jones reagent, a strong oxidising agent. [O] represents oxygen from the oxidising agent. During the reaction, the orange Cr(VI) is reduced to green Cr³⁺.\n\n(i) 3-Pentanol (pentan-3-ol) is a secondary alcohol, so it is oxidised to a ketone:\nCH₃CH₂CH(OH)CH₂CH₃ + [O] → CH₃CH₂COCH₂CH₃ + H₂O\nProduct: pentan-3-one (3-pentanone).\n\n(ii) 'Pentanol' is taken as pentan-1-ol, a primary alcohol. The Jones reagent oxidises it through the aldehyde to the carboxylic acid:\nCH₃CH₂CH₂CH₂CH₂OH + 2[O] → CH₃CH₂CH₂CH₂COOH + H₂O\nProduct: pentanoic acid.\n\n(iii) Pentanal, an aldehyde, is oxidised to a carboxylic acid:\nCH₃CH₂CH₂CH₂CHO + [O] → CH₃CH₂CH₂CH₂COOH\nProduct: pentanoic acid.\n\n(iv) 3-Pentanone is a ketone. Ketones are not oxidised by this reagent under normal conditions, so there is no reaction."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "(a) Write chemical equations to illustrate an industrial process to make a detergent (D) which involve the following reaction steps\n(i) tetramerisation of propene to give the starting alkene (X)\n(ii) acid catalysed reaction of the alkene (X) with benzene to give product, Y.\n(iii) sulphonation of the product, Y, with concentrated tetraoxosulphate (VI) acid gave product, Z.\n(iv) sodium hydroxide neutralization of product, Z, gave the detergent, D. (12 marks)",
+    "options": [],
+    "modelAnswer": "(i) Four propene molecules combine, with an acid catalyst such as H₃PO₄, to form a branched dodecene:\n4CH₃CH=CH₂ → C₁₂H₂₄\nX = dodecene (propene tetramer), C₁₂H₂₄.\n\n(ii) Friedel–Crafts alkylation of benzene with X, using an acid catalyst (e.g., HF, H₂SO₄ or AlCl₃):\nC₆H₆ + C₁₂H₂₄ → C₁₂H₂₅C₆H₅\nY = dodecylbenzene.\n\n(iii) Sulphonation with concentrated H₂SO₄, mainly at the para position:\nC₁₂H₂₅C₆H₅ + H₂SO₄ → C₁₂H₂₅C₆H₄SO₃H + H₂O\nZ = 4-dodecylbenzenesulphonic acid.\n\n(iv) Neutralisation with sodium hydroxide:\nC₁₂H₂₅C₆H₄SO₃H + NaOH → C₁₂H₂₅C₆H₄SO₃⁻Na⁺ + H₂O\nD = sodium dodecylbenzenesulphonate (the detergent)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "(b) Give the name of the detergent, D, and calculate its percentage elemental composition. (9 marks)",
+    "options": [],
+    "modelAnswer": "Name: sodium dodecylbenzenesulphonate (sodium 4-dodecylbenzenesulphonate).\nFormula: C₁₂H₂₅C₆H₄SO₃Na = C₁₈H₂₉SO₃Na.\n\nMolar mass (C = 12, H = 1, S = 32, O = 16, Na = 23):\nC: 18 × 12 = 216\nH: 29 × 1 = 29\nS: 1 × 32 = 32\nO: 3 × 16 = 48\nNa: 1 × 23 = 23\nTotal = 348 g mol⁻¹.\n\nPercentage composition:\n%C = 216/348 × 100 = 62.07%\n%H = 29/348 × 100 = 8.33%\n%S = 32/348 × 100 = 9.20%\n%O = 48/348 × 100 = 13.79%\n%Na = 23/348 × 100 = 6.61%\nCheck: 62.07 + 8.33 + 9.20 + 13.79 + 6.61 = 100.00%."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "13c",
+    "question": "(c) Outline two (2) similarities and two (2) differences between detergents and soaps. (4 marks)",
+    "options": [],
+    "modelAnswer": "Similarities:\n1. Both are surface-active agents (surfactants). Each molecule has a long hydrophobic (water-repelling) hydrocarbon tail and a hydrophilic (water-attracting) ionic head.\n2. Both clean by lowering the surface tension of water and emulsifying grease and oil into micelles, which are then washed away.\n(Also: both are usually sodium or potassium salts.)\n\nDifferences:\n1. Source and structure: soaps are sodium or potassium salts of long-chain fatty (carboxylic) acids, made from fats and oils by saponification. Detergents are sodium salts of sulphonic acids or alkyl hydrogensulphates, made from petroleum products.\n2. Hard water: soaps form an insoluble scum with the Ca²⁺ and Mg²⁺ ions in hard water, wasting soap. Detergents do not form scum, because their calcium and magnesium salts are soluble.\n(Also: soaps do not work well in acidic water, while detergents do. Soaps are biodegradable, but branched-chain detergents, such as the one made from propene tetramer, are not, and cause foam pollution in rivers.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "(a) Draw the condensed structure of the following compounds:\n(i) 2-bromo-3-chloro-4,4-dimethylpentanal\n(ii) 2,3-dihydroxybutan-1-ol\n(iii) 3-amino-2-methoxypentanoic acid\n(iv) 4-methylhex-2-ene\n(v) 2,4,6-tribromophenol. (10 marks)",
+    "options": [],
+    "modelAnswer": "(i) 2-Bromo-3-chloro-4,4-dimethylpentanal (C1 is the CHO carbon):\nOHC–CH(Br)–CH(Cl)–C(CH₃)₂–CH₃, i.e., (CH₃)₃CCHClCHBrCHO\n\n(ii) 2,3-Dihydroxybutan-1-ol:\nHOCH₂–CH(OH)–CH(OH)–CH₃, i.e., HOCH₂CH(OH)CH(OH)CH₃\nNote: the correct IUPAC name of this compound is butane-1,2,3-triol.\n\n(iii) 3-Amino-2-methoxypentanoic acid (C1 is the COOH carbon):\nHOOC–CH(OCH₃)–CH(NH₂)–CH₂–CH₃, i.e., CH₃CH₂CH(NH₂)CH(OCH₃)COOH\n\n(iv) 4-Methylhex-2-ene:\nCH₃–CH=CH–CH(CH₃)–CH₂–CH₃, i.e., CH₃CH=CHCH(CH₃)CH₂CH₃\n\n(v) 2,4,6-Tribromophenol: a benzene ring with –OH on C1 and Br on C2, C4 and C6 (the two carbons next to the OH and the one opposite it). Condensed formula: 2,4,6-Br₃C₆H₂OH."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "(b) Explain the following scientific observations:\n(i) ethanol is miscible with water in all proportions but phenol is only sparingly soluble in water.\n(ii) propan-2-one in the presence of trace acid gives positive test for both carbonyl and hydroxyl groups. (10 marks)",
+    "options": [],
+    "modelAnswer": "(i) Both compounds have an –OH group, which can form hydrogen bonds with water molecules. In ethanol (C₂H₅OH), the hydrocarbon part is small, so hydrogen bonding with water outweighs it, and ethanol mixes with water in all proportions. In phenol (C₆H₅OH), the large, non-polar (hydrophobic) benzene ring is much bigger than the single –OH group. It disrupts the hydrogen bonding of the surrounding water, so phenol is only sparingly soluble (about 8 g per 100 g of water at room temperature).\n\n(ii) This is due to keto–enol tautomerism. In the presence of a trace of acid, propan-2-one (the keto form) is in equilibrium with a small amount of its enol form, prop-1-en-2-ol:\nCH₃–CO–CH₃ ⇌(H⁺) CH₂=C(OH)–CH₃\nThe keto form contains the C=O group, so it gives positive tests for the carbonyl group (e.g., an orange precipitate with 2,4-dinitrophenylhydrazine). The enol form contains an –OH group, so it gives positive tests for the hydroxyl group. Because the two forms keep interconverting, the sample responds to both tests."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2016,
+    "paper": "Paper II",
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "14c",
+    "question": "(c) Give the name of the monomer(s) of the following polymers:\n(i) protein\n(ii) natural rubber\n(iii) Nylon 6,6\n(iv) Dacron or Terylene\n(v) Starch. (5 marks)",
+    "options": [],
+    "modelAnswer": "(i) Protein: amino acids (α-amino acids), joined by peptide bonds.\n\n(ii) Natural rubber: isoprene (2-methylbuta-1,3-diene), CH₂=C(CH₃)CH=CH₂.\n\n(iii) Nylon 6,6: hexane-1,6-diamine (hexamethylenediamine), H₂N(CH₂)₆NH₂, and hexanedioic acid (adipic acid), HOOC(CH₂)₄COOH.\n\n(iv) Dacron or Terylene: ethane-1,2-diol (ethylene glycol), HOCH₂CH₂OH, and benzene-1,4-dicarboxylic acid (terephthalic acid), HOOC–C₆H₄–COOH.\n\n(v) Starch: α-glucose (α-D-glucose), C₆H₁₂O₆."
+  }
+]

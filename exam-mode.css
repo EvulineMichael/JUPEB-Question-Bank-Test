@@ -24,6 +24,9 @@ body.exam-ijmb .sidebar-link[data-screen="quiz-screen"],
 body.exam-ijmb .dash-quick-practice-card,
 body.exam-ijmb .dash-weak-topics-card,
 body.exam-ijmb .dash-recent-card,
+body.exam-ijmb .db-quiz-only,
+body.exam-ijmb .tabbar-link--quiz,
+body.exam-ijmb .help-quiz-only,
 body.exam-ijmb .past-take-quiz-btn { display: none !important; }
 
 /* Locked screen */

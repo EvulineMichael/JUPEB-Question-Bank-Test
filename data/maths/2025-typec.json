@@ -30,6 +30,8 @@
     "question": "Two objects of masses 8kg and 6kg are attached to the ends of a light inextensible string that passes over a light frictionless pulley. If the masses hang freely and the system is released from rest when the 8kg mass is 10m above the floor, express in minutes the time the 8kg mass takes to reach the floor [Take g = 9.8ms⁻²].",
     "options": ["√2", "30√2", "1/(60√2)", "1/(30√2)"],
     "answer": "D",
+    "reviewNote": "a = (8 − 6) × 9.8 / 14 = 1.4 m/s². 10 = ½ × 1.4 × t², so t = √14.3 ≈ 3.78 s ≈ 0.063 min.\n\nNone of the printed options matches this, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "a = g(m₁ - m₂)/(m₁ + m₂) = 9.8(8-6)/14 = 1.4 m/s².\n\ns = ½at².\n10 = ½(1.4)t².\nt = √(20/1.4) = √14.286 = 3.78 s.\n\nIn minutes: t = 3.78/60 ≈ 0.063 minutes.\n\nNote: This doesn't match any option exactly. The closest option is 1/(30√2) ≈ 0.0236."
   },
   {
@@ -195,6 +197,8 @@
     "question": "Integrate sinⁿ x cos x with respect to x",
     "options": ["sinⁿ⁺¹ x/(n+1) + C", "-cosⁿ⁺¹ x/(n+1) + C", "sinⁿ⁺¹ x/(n+1) + C", "-cosⁿ⁺¹ x/(n+1) + C"],
     "answer": "A",
+    "reviewNote": "Options A and C are printed the same in this copy of the paper, so this question is left out of quizzes.\n\nCorrect answer: sinⁿ⁺¹ x/(n+1) + C\n\nLet u = sin x, du = cos x dx.\n\n∫ sinⁿ x cos x dx = ∫ uⁿ du = uⁿ⁺¹/(n+1) + C = sinⁿ⁺¹ x/(n+1) + C.\n\nNote: Options A and C are identical.",
+    "excludeFromQuiz": true,
     "explanation": "Let u = sin x, du = cos x dx.\n\n∫ sinⁿ x cos x dx = ∫ uⁿ du = uⁿ⁺¹/(n+1) + C = sinⁿ⁺¹ x/(n+1) + C.\n\nNote: Options A and C are identical."
   },
   {
@@ -557,7 +561,7 @@
     "questionNumber": "3",
     "question": "(a) Find the equation of normal to the curve y = x³ + xy + y² + 10 at the point (-1, 3).\n(b) Solve the Bernoulli equation dy/dx - y/x = y² e^(x²).\n(c) (i) Obtain reduction formula of ∫ cotⁿ θ dθ.\n(ii) Hence, find ∫ cot⁴ θ dθ.",
     "options": [],
-    "modelAnswer": "(a) Differentiating implicitly:\n3x² + y + x(dy/dx) + 2y(dy/dx) = 0.\n\nAt (-1, 3):\n3(1) + 3 + (-1)(dy/dx) + 6(dy/dx) = 0.\n6 + 5(dy/dx) = 0.\ndy/dx = -6/5.\n\nGradient of normal = 5/6.\n\nEquation: y - 3 = (5/6)(x + 1).\n6y - 18 = 5x + 5.\n5x - 6y + 23 = 0.\n\n(b) Bernoulli equation: dy/dx - y/x = y²e^(x²).\n\nLet v = y⁻¹ → dy/dx = -y²(dv/dx).\n\nSubstituting:\n-y²(dv/dx) - y/x = y²e^(x²).\ndv/dx + v/x = -e^(x²).\n\nIntegrating factor: μ = e^(∫dx/x) = x.\n\nxv = -∫xe^(x²)dx = -½e^(x²) + C.\n\nv = -½e^(x²)/x + C/x.\n\ny = 1/v = x/(-½e^(x²) + C).\n\n(c)(i) Iₙ = ∫cotⁿθ dθ = ∫cotⁿ⁻²θ(csc²θ - 1)dθ\n= -cotⁿ⁻¹θ/(n-1) - Iₙ₋₂.\n\n(ii) I₄ = -cot³θ/3 - I₂.\nI₂ = -cotθ - I₀ = -cotθ - θ.\n\nI₄ = -cot³θ/3 + cotθ + θ + C."
+    "modelAnswer": "(a) Differentiate y = x³ + xy + y² + 10 implicitly (the left side gives dy/dx):\ndy/dx = 3x² + y + x(dy/dx) + 2y(dy/dx)\ndy/dx(1 − x − 2y) = 3x² + y\ndy/dx = (3x² + y)/(1 − x − 2y).\n\nAt (−1, 3):\ndy/dx = (3 + 3)/(1 + 1 − 6) = 6/(−4) = −3/2.\n\nGradient of normal = 2/3.\n\nEquation: y − 3 = (2/3)(x + 1)\n3y − 9 = 2x + 2\n2x − 3y + 11 = 0.\n\nNote: (−1, 3) does not satisfy the equation as printed (the right side gives 15, not 3), so the paper contains a misprint. If the curve is read as x³ + xy + y² + 10 = 0, then 3x² + y + x(dy/dx) + 2y(dy/dx) = 0 gives dy/dx = −6/5 at (−1, 3), and the normal is 5x − 6y + 23 = 0.\n\n(b) Bernoulli equation: dy/dx - y/x = y²e^(x²).\n\nLet v = y⁻¹ → dy/dx = -y²(dv/dx).\n\nSubstituting:\n-y²(dv/dx) - y/x = y²e^(x²).\ndv/dx + v/x = -e^(x²).\n\nIntegrating factor: μ = e^(∫dx/x) = x.\n\nxv = -∫xe^(x²)dx = -½e^(x²) + C.\n\nv = -½e^(x²)/x + C/x.\n\ny = 1/v = x/(-½e^(x²) + C).\n\n(c)(i) Iₙ = ∫cotⁿθ dθ = ∫cotⁿ⁻²θ(csc²θ - 1)dθ\n= -cotⁿ⁻¹θ/(n-1) - Iₙ₋₂.\n\n(ii) I₄ = -cot³θ/3 - I₂.\nI₂ = -cotθ - I₀ = -cotθ - θ.\n\nI₄ = -cot³θ/3 + cotθ + θ + C."
   },
   {
     "subject": "Mathematics",

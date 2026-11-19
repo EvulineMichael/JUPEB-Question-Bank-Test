@@ -77,6 +77,8 @@
       "quantity and quality of water resources."
     ],
     "answer": "D",
+    "reviewNote": "All four options are factors that raise a country's national income: natural resources, the size and quality of the labour force, technical knowledge, and water resources (for farming, power and industry). There is no real exception.\n\nThe examiners' answer is D, presumably because water is already part of 'natural resources' (option A), so it is not a separate factor.",
+    "excludeFromQuiz": true,
     "explanation": "All options are factors that positively affect national income. However, the question asks for the exception. Water resources are not typically listed as a primary determinant of national income. Natural resources, labour, and technology are standard factors of production. Water quality is an environmental factor, not a direct determinant of national income."
   },
   {
@@ -477,6 +479,8 @@
       "within the retirement age."
     ],
     "answer": "C",
+    "reviewNote": "The labour force is everyone of working age who is either employed or actively looking for work (the employed plus the unemployed).\n\nNeither printed option matches exactly: C ('in paid employment') leaves out the unemployed who are seeking work, and B ('within the working age') also counts people who are not working or seeking work, such as students. The examiners' answer is C.",
+    "excludeFromQuiz": true,
     "explanation": "The labour force consists of people who are either employed (in paid employment) or actively seeking work (unemployed). Pensioners and those not seeking work are excluded. The working-age population is broader than the labour force."
   },
   {
@@ -623,6 +627,8 @@
       "returns."
     ],
     "answer": "B",
+    "reviewNote": "The table this question refers to ('the table above') is not in this copy of the paper.\n\nThe examiners' answer is B: a table where each extra unit adds less total utility than the one before illustrates the law of diminishing marginal utility.",
+    "excludeFromQuiz": true,
     "explanation": "The table shows total utility increasing at a decreasing rate, while marginal utility declines (8, 7, 6, 5, 4). This exemplifies the law of diminishing marginal utility — each additional unit consumed gives less additional satisfaction."
   },
   {
@@ -638,8 +644,8 @@
       "production of the commodity is subject to diminishing returns.",
       "demand for his product is more elastic than the supply."
     ],
-    "answer": "D",
-    "explanation": "The incidence of a tax depends on relative elasticities. If demand is more elastic than supply, producers bear a larger share of the tax burden (they cannot pass it on because consumers are sensitive to price changes). If demand is perfectly elastic, producers bear the entire tax burden."
+    "answer": "B",
+    "explanation": "Who bears a tax depends on elasticities: the side of the market that is less able to react carries more of the burden.\n\nIf demand is perfectly ('purely') elastic, buyers will not pay even a slightly higher price, so the price cannot rise at all. The whole tax then comes out of the producer's receipts: the producer bears the entire burden (option B).\n\nOption D (demand more elastic than supply) only means the producer bears the larger share, not all of it."
   },
   {
     "subject": "Economics",

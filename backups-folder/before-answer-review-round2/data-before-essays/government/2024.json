@@ -1,0 +1,883 @@
+[
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "An authority that is based on culture to govern is",
+    "options": [
+      "charismatic authority.",
+      "legal-rational authority.",
+      "traditional authority.",
+      "military authority."
+    ],
+    "answer": "C",
+    "explanation": "Traditional authority is based on culture, custom, and tradition — it is derived from long-standing beliefs and practices. Charismatic authority is based on personal qualities, legal-rational authority is based on laws and rules, and military authority is based on force."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The concept of constitutionalism in political studies explains that",
+    "options": [
+      "the citizens are mandated to challenge their leaders' ineptitude.",
+      "the citizens should adhere to the stipulated law.",
+      "a government should rule by the constitution.",
+      "a government should conduct itself according to traditions."
+    ],
+    "answer": "C",
+    "explanation": "Constitutionalism is the principle that government should rule by the constitution — the powers of government are limited by the constitution, and all actions must conform to constitutional provisions. It is the practice of limited government."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The distinction between flexible and rigid constitutions is based on the",
+    "options": [
+      "amendment procedure.",
+      "application method.",
+      "suitability purpose.",
+      "ratification procedure."
+    ],
+    "answer": "A",
+    "explanation": "The distinction between flexible and rigid constitutions is based on the amendment procedure. A flexible constitution can be amended by ordinary legislative process, while a rigid constitution requires a special procedure (e.g., supermajority, referendum) for amendment."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "A country with low political culture may experience political",
+    "options": [
+      "participation.",
+      "apathy.",
+      "development.",
+      "socialisation."
+    ],
+    "answer": "B",
+    "explanation": "A country with low political culture may experience political apathy — citizens are disinterested, uninformed, and uninvolved in political processes. Low political culture leads to low voter turnout, weak participation, and poor civic engagement."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The most significant feature of gerontocracy is",
+    "options": [
+      "gender.",
+      "age.",
+      "wealth.",
+      "race."
+    ],
+    "answer": "B",
+    "explanation": "Gerontocracy is rule by the elderly — age is the most significant feature. In a gerontocracy, political power is held by older people, often based on the belief that age brings wisdom and experience."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The system of government that promotes the rights and freedom of the citizens is",
+    "options": [
+      "oligarchy.",
+      "democracy.",
+      "plutocracy.",
+      "autocracy."
+    ],
+    "answer": "B",
+    "explanation": "Democracy promotes the rights and freedoms of citizens through popular participation, rule of law, protection of civil liberties, and constitutional limits on government power. Oligarchy, plutocracy, and autocracy are authoritarian systems."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The art of transmitting political beliefs, values, attitudes, habits and behavioural patterns from one generation to another is known as",
+    "options": [
+      "political party.",
+      "political system.",
+      "political socialization.",
+      "political participation."
+    ],
+    "answer": "C",
+    "explanation": "Political socialization is the process of transmitting political beliefs, values, attitudes, habits, and behavioural patterns from one generation to another. It shapes political culture and is carried out by agents like family, school, and media."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "An example of a unitary state is",
+    "options": [
+      "Ghana.",
+      "Nigeria.",
+      "USA.",
+      "India."
+    ],
+    "answer": "A",
+    "explanation": "Ghana is an example of a unitary state, where power is centralized in the national government. Nigeria, the USA, and India are federal states with power divided between central and regional governments."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Public Opinion & Propaganda",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The aggregate of the views of people in the country regarding national issues explains",
+    "options": [
+      "public aggregation.",
+      "opinion polls.",
+      "public opinion.",
+      "opinion leaders."
+    ],
+    "answer": "C",
+    "explanation": "Public opinion is the aggregate of the views, attitudes, and beliefs of the people in a country regarding national issues. It is the collective expression of citizens' preferences and influences government decision-making."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Communism is to Marx as Fascism is to",
+    "options": [
+      "Plato.",
+      "Rousseau.",
+      "Aristotle.",
+      "Mussolini."
+    ],
+    "answer": "D",
+    "explanation": "Communism is associated with Karl Marx, and Fascism is associated with Benito Mussolini. Mussolini was the founder of fascism in Italy. Hitler was a Nazi (National Socialist), not a fascist, though they are related ideologies."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "A socio-political ideology that promotes racial supremacy is",
+    "options": [
+      "Racism.",
+      "Fascism.",
+      "Nazism.",
+      "Marxism."
+    ],
+    "answer": "C",
+    "explanation": "Nazism is a socio-political ideology that promotes racial supremacy — specifically, the belief in the superiority of the Aryan race. It was the ideology of Adolf Hitler's Nazi Germany. Racism is a broader term, but Nazism explicitly promoted racial supremacy."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Pressure groups can operate legally through",
+    "options": [
+      "lobbying.",
+      "bribery.",
+      "legislation.",
+      "maiming."
+    ],
+    "answer": "A",
+    "explanation": "Pressure groups operate legally through lobbying — the process of influencing government decisions and policies through persuasion, providing information, and advocacy. Bribery and maiming are illegal methods."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The state according to John Locke was created through",
+    "options": [
+      "coercion.",
+      "compromise.",
+      "conquest.",
+      "contract."
+    ],
+    "answer": "D",
+    "explanation": "According to John Locke, the state was created through contract — individuals voluntarily agreed to form a state to protect their natural rights (life, liberty, property). This is the Social Contract theory."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Rousseau in his theory of social contract argued that citizens should surrender their rights to the",
+    "options": [
+      "king.",
+      "emperor.",
+      "community.",
+      "police."
+    ],
+    "answer": "C",
+    "explanation": "Rousseau argued that citizens should surrender their rights to the community — the general will. Unlike Hobbes (surrender to a Leviathan) and Locke (partial surrender to government), Rousseau believed in popular sovereignty and collective decision-making."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "The branch of politics that studies the relationship between politics and economics is",
+    "options": [
+      "Political Sociology.",
+      "Political Science.",
+      "Political Economy.",
+      "Politics of Economics."
+    ],
+    "answer": "C",
+    "explanation": "Political Economy is the branch of politics that studies the relationship between politics and economics — how political forces and economic systems interact. It analyses the impact of government policy on economic outcomes and vice versa."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Parties, Party System & Pressure Groups",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The key function of a political party is to",
+    "options": [
+      "mobilize voters during election.",
+      "educate voters through campaigns.",
+      "ensure freedom of political criminals.",
+      "hire personnel for political leaders."
+    ],
+    "answer": "A",
+    "explanation": "The key function of a political party is to mobilize voters during elections — to get citizens to vote for their candidates. While educating voters is also a function, mobilization is the primary purpose of political parties. Ensuring freedom of criminals is not a party function."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "A political system where the state has absolute control over the citizen is",
+    "options": [
+      "anarchism.",
+      "authoritarianism.",
+      "militarism.",
+      "totalitarianism."
+    ],
+    "answer": "D",
+    "explanation": "Totalitarianism is a political system where the state has absolute control over every aspect of citizens' lives — public and private. It is the most extreme form of authoritarianism. Authoritarianism is broader but may allow some private sphere autonomy."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Indirect rule in Nigeria was most successful in the",
+    "options": [
+      "southern protectorate.",
+      "western province.",
+      "northern protectorate.",
+      "eastern province."
+    ],
+    "answer": "C",
+    "explanation": "Indirect rule was most successful in the Northern protectorate because of the existing centralized political system under the Emirs and the Sultan. The North already had a hierarchical administrative structure, making it easier for the British to govern through traditional rulers."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The two political parties set up by the government to contest the 1993 general elections in Nigeria were",
+    "options": [
+      "NPN and UPN.",
+      "SDP and NRC.",
+      "APP and PDP.",
+      "APC and PDP."
+    ],
+    "answer": "B",
+    "explanation": "The two political parties set up by the Babangida government to contest the 1993 general elections were the Social Democratic Party (SDP) and the National Republican Convention (NRC). They were both created by the military government."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Elections & Electoral Process in Nigeria",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The 2023 General Elections in Nigeria ushered in the",
+    "options": [
+      "Seventh Assembly.",
+      "Eighth Assembly.",
+      "Ninth Assembly.",
+      "Tenth Assembly."
+    ],
+    "answer": "D",
+    "explanation": "The 2023 General Elections in Nigeria ushered in the Tenth National Assembly. The Ninth Assembly served from 2019-2023, and the Tenth Assembly was inaugurated in June 2023 following the elections."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Post-colonial Nationalism can be described as",
+    "options": [
+      "sentimental attachment to one's nation.",
+      "massive participation during election.",
+      "regular payment of taxes.",
+      "reporting criminal activities."
+    ],
+    "answer": "A",
+    "explanation": "Post-colonial nationalism can be described as sentimental attachment to one's nation — it is a sense of pride, loyalty, and belonging to the nation-state after independence. Massive participation during elections, paying taxes, and reporting crimes are civic duties, not nationalism per se."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The Nationalist Movement in West Africa",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The nationalist activities in Nigeria were spearheaded by",
+    "options": [
+      "political parties.",
+      "trade unions.",
+      "traditional rulers.",
+      "educated elites."
+    ],
+    "answer": "D",
+    "explanation": "The nationalist activities in Nigeria were spearheaded by educated elites — people like Herbert Macaulay, Nnamdi Azikiwe, Obafemi Awolowo, and Ahmadu Bello. They had the education, vision, and organization to lead the nationalist movement."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Development of Political Parties in Nigeria",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The three registered political parties at the inception of Nigeria's fourth republic were",
+    "options": [
+      "PDP, DPP and PPA.",
+      "PDP, AD, and PPA.",
+      "PDP, APP and AC.",
+      "PDP, AD and APP."
+    ],
+    "answer": "D",
+    "explanation": "At the inception of Nigeria's Fourth Republic in 1999, the three registered political parties were the People's Democratic Party (PDP), the Alliance for Democracy (AD), and the All People's Party (APP)."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The pre-colonial constitution that established the single federal legislative council in Nigeria was",
+    "options": [
+      "Clifford.",
+      "Macpherson.",
+      "Richards.",
+      "Lyttleton."
+    ],
+    "answer": "A",
+    "explanation": "The Clifford Constitution of 1922 established the first single federal legislative council in Nigeria. It was the first constitution to introduce a legislative council with elected representation."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Reasons for Military Rule of Military Regimes",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Military regimes in Nigeria operated through the use of",
+    "options": [
+      "dictates.",
+      "decrees.",
+      "ordinance.",
+      "by-laws."
+    ],
+    "answer": "B",
+    "explanation": "Military regimes in Nigeria operated through the use of decrees — they were laws made by the military government without legislative approval. Decrees had the force of law and could not be challenged in court."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The principle of association encouraged",
+    "options": [
+      "mutual cooperation between France and the colonies.",
+      "disintegration between France and the colonies.",
+      "integration of elites into the administration.",
+      "superiority of civilization and culture over Africans."
+    ],
+    "answer": "A",
+    "explanation": "The principle of association (French colonial policy) encouraged mutual cooperation between France and the colonies. It was a modification of assimilation, recognizing that Africans had their own cultures and that cooperation was more effective than forced assimilation."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The basis of apartheid policy in South Africa was",
+    "options": [
+      "tribal segregation.",
+      "xenophobia.",
+      "quarantine.",
+      "racial discrimination."
+    ],
+    "answer": "D",
+    "explanation": "The basis of apartheid policy in South Africa was racial discrimination — the systematic segregation and discrimination against non-white South Africans. It was institutionalized racism, not tribalism, xenophobia, or quarantine."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "A major feature of the Indigenat Policy in the French colonies in Africa was",
+    "options": [
+      "assimilation of Africans to the French culture.",
+      "subjugation of Africans to harsh treatments.",
+      "making of some French Africans.",
+      "giving Africans the right to go to school."
+    ],
+    "answer": "B",
+    "explanation": "A major feature of the Indigenat Policy in the French colonies was the subjugation of Africans to harsh treatments — arbitrary arrests, forced labour, and summary justice without trial. It was a system of administrative repression."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The advantage of the French policy of Association over Assimilation was that Africans were free",
+    "options": [
+      "culturally.",
+      "socially.",
+      "economically.",
+      "politically."
+    ],
+    "answer": "A",
+    "explanation": "The advantage of the French policy of Association over Assimilation was that Africans were free culturally — they were allowed to maintain their own cultures, languages, and customs, unlike under Assimilation where they were expected to adopt French culture."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "International Relations",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Neo-colonialism in Africa has shown that",
+    "options": [
+      "Africans are still controlled by their colonizers.",
+      "Europe is the source of corruption in Africa.",
+      "Europe is developing Africa.",
+      "Africans are uneducated."
+    ],
+    "answer": "A",
+    "explanation": "Neo-colonialism in Africa has shown that Africans are still controlled by their colonizers — through economic dependency, debt, trade imbalances, and political influence. Formal colonialism has ended, but indirect control continues."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The first Europeans who had contacts with Africans were the",
+    "options": [
+      "Belgians.",
+      "Portuguese.",
+      "French.",
+      "British."
+    ],
+    "answer": "B",
+    "explanation": "The first Europeans who had contacts with Africans were the Portuguese in the 15th century. Prince Henry the Navigator sponsored expeditions along the West African coast, beginning European exploration and trade with Africa."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The Berlin Conference that led to the partitioning of Africa took place in",
+    "options": [
+      "1884/1885.",
+      "1885/1886.",
+      "1886/1887.",
+      "1887/1888."
+    ],
+    "answer": "A",
+    "explanation": "The Berlin Conference that led to the partitioning of Africa took place in 1884-1885 (1884/1885). It was convened by Otto von Bismarck to regulate European colonization and trade in Africa."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "A major pre-colonial political system in West Africa was",
+    "options": [
+      "Zulu empire.",
+      "Benin kingdom.",
+      "Ibadan empire.",
+      "Bakongo empire."
+    ],
+    "answer": "B",
+    "explanation": "The Benin kingdom was a major pre-colonial political system in West Africa. The Zulu empire was in Southern Africa, the Bakongo empire was in Central Africa, and Ibadan was not an empire."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Public Administration",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The process of collective decision-making and policy implementation describes",
+    "options": [
+      "bureaucracy.",
+      "administration.",
+      "management.",
+      "governance."
+    ],
+    "answer": "D",
+    "explanation": "Governance is the process of collective decision-making and policy implementation — it involves how societies are governed, including the interactions between government, citizens, and institutions. Administration is the implementation of policies, while bureaucracy is the structure."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The right of secession is a feature of",
+    "options": [
+      "confederalism.",
+      "unitarism.",
+      "parliamentarism.",
+      "federalism."
+      
+    ],
+    "answer": "A",
+    "explanation": "The right of secession is a feature of confederalism — member states in a confederation have the right to withdraw from the union at any time. This is not allowed in federal or unitary systems."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Normative approach to the study of politics emphasizes the use of",
+    "options": [
+      "rules and standard.",
+      "logic and history.",
+      "logic and standard.",
+      "precepts and history."
+    ],
+    "answer": "A",
+    "explanation": "The normative approach emphasizes the use of rules and standards — value judgments about what ought to be. It is prescriptive and focuses on ideals, ethics, and moral principles, rather than empirical facts."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "The fundamental laws and principles of a state are contained in the",
+    "options": [
+      "constitution.",
+      "manifesto.",
+      "agenda.",
+      "decrees."
+    ],
+    "answer": "A",
+    "explanation": "The fundamental laws and principles of a state are contained in the constitution — it establishes the framework of government, defines powers and functions of branches, and outlines citizens' rights and duties."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Basic Concepts of Government",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The system of empirical beliefs, expression of symbols and values is",
+    "options": [
+      "political culture.",
+      "political alienation.",
+      "political participation.",
+      "political institution."
+    ],
+    "answer": "A",
+    "explanation": "Political culture is the system of empirical beliefs, expression of symbols, and values in a political community. It shapes how citizens view their political system and their role within it."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The dominant class under capitalist system is the",
+    "options": [
+      "vassals.",
+      "bourgeoisie.",
+      "slaves.",
+      "proletariat."
+    ],
+    "answer": "B",
+    "explanation": "Under the capitalist system, the dominant class is the bourgeoisie — the owners of capital and means of production. The proletariat are the working class who sell their labour. Vassals and slaves are associated with feudalism."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The mode of production in which land and its produce are equitably shared amongst the people is",
+    "options": [
+      "capitalism.",
+      "feudalism.",
+      "socialism.",
+      "communalism."
+    ],
+    "answer": "D",
+    "explanation": "Communalism is the mode of production in which land and its produce are equitably shared amongst the people — it is based on collective ownership and communal living. This was typical of pre-colonial African societies."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The State, Structure & Types of Government",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The organ of government that oversees the implementation of decision and policies is the",
+    "options": [
+      "Judiciary.",
+      "Executive.",
+      "Legislative.",
+      "Bureaucracy."
+    ],
+    "answer": "B",
+    "explanation": "The Executive is the organ of government that oversees the implementation of decisions and policies. It carries out and enforces laws, administers government programs, and executes policies."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Political Ideas & Thoughts",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Feudalism can simply be described as",
+    "options": [
+      "a stratified political structure.",
+      "political system based on land ownership.",
+      "denial of fundamental rights of citizens.",
+      "inequality in wealth distribution."
+    ],
+    "answer": "B",
+    "explanation": "Feudalism can simply be described as a political system based on land ownership — land is the source of power and wealth, and social hierarchy is based on land tenure. Lords own land and grant it to vassals in exchange for service."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Governance & Citizenship",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The essence of convening Sovereign National Conference in a country is to",
+    "options": [
+      "allow the people bargain for their harmonious existence.",
+      "grant diverse tribes freedom of expression.",
+      "make government serve the political class.",
+      "give the representative of the people a sense of belonging."
+    ],
+    "answer": "A",
+    "explanation": "The essence of convening a Sovereign National Conference is to allow the people to bargain for their harmonious existence — it is a forum for discussing national issues, resolving conflicts, and negotiating the terms of national unity and governance."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The constitution that provided for the Central Legislative Council in Nigeria was",
+    "options": [
+      "Clifford.",
+      "Macpherson.",
+      "Richards.",
+      "Lyttleton."
+    ],
+    "answer": "A",
+    "explanation": "The Clifford Constitution of 1922 provided for the Central Legislative Council in Nigeria. It established the first legislative council with elected members for Lagos and Calabar."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Pre-Colonial Systems of Government in Nigeria",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The most powerful women organisation in pre-colonial Igbo administration was",
+    "options": [
+      "Umu Nwanyi.",
+      "Umu Ada.",
+      "Umu Nwunye.",
+      "Umu Iyom."
+    ],
+    "answer": "B",
+    "explanation": "The most powerful women's organisation in pre-colonial Igbo administration was Umu Ada — the daughters of the lineage. They had significant influence in village affairs, including veto power over decisions affecting women."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Constitution & Constitutionalism",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The Federal Character Principle was entrenched in the 1999 Constitution of Nigeria to ensure",
+    "options": [
+      "loyalty.",
+      "economic empowerment.",
+      "equal representation.",
+      "tribalism."
+    ],
+    "answer": "C",
+    "explanation": "The Federal Character Principle was entrenched in the 1999 Constitution to ensure equal representation of all ethnic groups in federal government appointments, public institutions, and political positions. It promotes national unity and prevents discrimination."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The constitution that introduced regionalism in Nigeria was",
+    "options": [
+      "Independence.",
+      "Republican.",
+      "Lyttleton.",
+      "Richards."
+    ],
+    "answer": "D",
+    "explanation": "The Richards Constitution of 1946 introduced regionalism in Nigeria by dividing the country into three regions — Northern, Western, and Eastern — each with its own legislative council. This laid the foundation for Nigeria's federal structure."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The similarity between a colony and protectorate is that both",
+    "options": [
+      "retains some power to manage their own affair.",
+      "are controlled by a foreign power.",
+      "are acquired through peaceful means.",
+      "depends on the assistance of the traditional rulers."
+    ],
+    "answer": "B",
+    "explanation": "The similarity between a colony and protectorate is that both are controlled by a foreign power — they are subject to external control and lose their independence. A colony is directly administered, while a protectorate has some autonomy but is under foreign protection/suzerainty."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Nature of Government and Politics",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The scholar, who defined politics as 'authoritative allocation of values' is",
+    "options": [
+      "Harold Lasswell.",
+      "David Easton.",
+      "Robert Dahl.",
+      "Karl Marx."
+    ],
+    "answer": "B",
+    "explanation": "David Easton defined politics as 'the authoritative allocation of values' — meaning that politics is the process by which society decides who gets what, when, and how, and enforces those decisions through legitimate authority."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The British conquered territories in Africa are referred to as",
+    "options": [
+      "Saxophone.",
+      "Anglophone.",
+      "Francophone.",
+      "Lusophone."
+    ],
+    "answer": "B",
+    "explanation": "The British conquered territories in Africa are referred to as Anglophone — English-speaking countries. Francophone refers to French-speaking territories, Lusophone to Portuguese-speaking, and Saxophone is not a term used for this."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "The State, Structure & Types of Government",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) What is Parliamentary system?\n(b) Discuss FOUR features of the Parliamentary system of government.",
+    "options": [],
+    "modelAnswer": "(a) Parliamentary System:\nA parliamentary system is a system of government where the executive branch derives its legitimacy from and is directly accountable to the legislature (parliament). The head of government (Prime Minister) is the leader of the majority party in parliament and is responsible to it. The head of state (Monarch or President) is separate and ceremonial.\n\n(b) Four features of a Parliamentary system:\n1. Fusion of Executive and Legislature: The executive (Prime Minister and Cabinet) is drawn from the legislature — members of parliament serve as ministers. There is no separation of powers; the two branches are fused.\n\n2. Collective Responsibility: The Cabinet is collectively responsible to parliament for its actions. If parliament passes a vote of no confidence, the entire government must resign. This ensures accountability.\n\n3. Head of Government vs Head of State: The head of government (Prime Minister) and head of state (Monarch or President) are separate. The Prime Minister is the political leader, while the head of state is ceremonial.\n\n4. Parliamentary Sovereignty: Parliament is supreme — it can make, amend, or repeal any law. There is no constitutional limit on parliament's power (in the UK-style Westminster system).\n\n5. Party Discipline: Political parties play a central role — the Prime Minister is the leader of the majority party, and party discipline ensures government bills are passed by parliament."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Nature of Government and Politics",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Briefly discuss the relationships between politics and the following fields of study.\n(a) Economics\n(b) History\n(c) Sociology\n(d) Law\n(e) Geography",
+    "options": [],
+    "modelAnswer": "(a) Politics and Economics: Politics and economics are closely related through political economy — political decisions influence economic policies (taxation, spending, regulation), and economic conditions affect political outcomes (growth, unemployment, inequality). Governments use fiscal and monetary policies to manage the economy, while economic interests shape political power and policy choices.\n\n(b) Politics and History: History provides the context for understanding political systems and institutions. Historical events (wars, revolutions, colonization) shape contemporary politics. The study of political history helps explain why certain political structures, laws, and cultures exist. Historical analysis of constitutions, treaties, and leadership provides insight into political development.\n\n(c) Politics and Sociology: Sociology studies society and social behaviour. The relationship between politics and sociology is evident in political socialization, political culture, class, ethnicity, and gender. Social structures influence political participation, voting behaviour, and power relations. Political sociology examines how social groups compete for power and how social inequality affects politics.\n\n(d) Politics and Law: Law is the foundation of governance — constitutions, statutes, and regulations establish the framework for political authority. The rule of law limits government power, protects rights, and ensures accountability. Political decisions are implemented through law, and legal institutions (courts) interpret and enforce laws. Jurisprudence and constitutional law are central to political science.\n\n(e) Politics and Geography: Geography shapes politics through territory, borders, resources, population distribution, and strategic location. Geopolitics analyses how geography influences international relations, security, and foreign policy. Natural resources (oil, minerals, water) affect political power and conflict. Geography also determines the structure of the state (federal vs unitary) and the relationship between centre and periphery."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Elections & Electoral System",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) Define election.",
+    "options": [],
+    "modelAnswer": "(a) Election:\nAn election is a formal process by which citizens of a country choose their representatives or leaders through voting. It is a fundamental mechanism of democracy, allowing citizens to participate in governance, hold leaders accountable, and peacefully transfer political power. Elections are held at regular intervals for legislative and executive offices.\n\nNote: The rest of Question 3 (features of electoral system) was not visible in the PDF. Please supply the missing parts if needed."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "International Relations",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) What is foreign policy?\n(b) Discuss FOUR determinants of foreign policy.",
+    "options": [],
+    "modelAnswer": "(a) Foreign Policy:\nForeign policy is a set of principles, strategies, and actions adopted by a state to guide its relations with other states, international organizations, and non-state actors. It aims to protect and promote the national interest, ensure security, and achieve diplomatic, economic, and political objectives.\n\n(b) Four determinants of foreign policy:\n1. National Interest: The primary determinant of foreign policy is national interest — the protection of sovereignty, territorial integrity, security, and economic well-being. National interest guides all foreign policy decisions.\n\n2. Geographical Location: A country's location and strategic position influence its foreign policy. Neighbouring states, access to sea routes, natural resources, and regional dynamics shape foreign policy priorities.\n\n3. Historical Factors: Historical experiences (colonialism, wars, alliances) shape foreign policy. Countries often maintain relationships based on historical ties, shared language, or past conflicts.\n\n4. Economic Factors: Economic interests — trade, investment, access to resources, and markets — determine foreign policy. Countries pursue policies that promote economic growth and protect economic interests abroad.\n\n5. International Obligations: Membership in international organizations (UN, AU, ECOWAS, WTO) imposes obligations that influence foreign policy. Treaties, conventions, and commitments guide diplomatic actions.\n\n6. Leadership and Ideology: The preferences, beliefs, and ideologies of leaders shape foreign policy direction. Some leaders prioritize African unity, non-alignment, or global partnerships based on ideological commitments.\n\n7. Security Concerns: Security threats (terrorism, insurgency, piracy, border disputes) influence foreign policy, leading to cooperation with international partners on defence and security matters."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Explain any FIVE features of the 1951 Macpherson Constitution in Nigeria.",
+    "options": [],
+    "modelAnswer": "The Macpherson Constitution of 1951 was a significant constitutional development in Nigeria that expanded African participation in governance.\n\nFive features of the 1951 Macpherson Constitution:\n1. Introduction of a Central Executive Council: The constitution established a Central Executive Council with both official and unofficial members. The Governor-General was still the head, but African ministers were included, increasing African participation in governance.\n\n2. Establishment of Regional Legislatures: The constitution created three regional legislatures (Northern, Western, Eastern) with elected majorities. Each region had its own House of Assembly and House of Chiefs, giving regions more autonomy.\n\n3. Establishment of the Council of Ministers: The Council of Ministers was created to advise the Governor-General. It included African ministers who were responsible for various portfolios, fostering experience in administration.\n\n4. Increased African Representation: The constitution increased African representation in the Central Legislature — elected representatives from the regions formed the majority. This was a step towards self-governance.\n\n5. Introduction of Ministerial Responsibility: The constitution introduced the principle of ministerial responsibility, where ministers were responsible to the legislature for their departments. This was a major step towards responsible government.\n\n6. Formal Recognition of Regions: The constitution formally recognized the three regions as units of governance, laying the foundation for Nigeria's federal system. Each region had its own budget, legislature, and executive.\n\n7. Unicameral Legislature at the Centre: The Central Legislature was unicameral (one chamber), with members drawn from the regional legislatures. This was a departure from the previous legislative councils."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Major Political Crises in Nigeria",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "(a) What is political crisis?\n(b) Explain FOUR factors that led to the Kano riots of 1953.",
+    "options": [],
+    "modelAnswer": "(a) Political Crisis:\nA political crisis is a period of instability, conflict, or tension in a political system that threatens the legitimacy, stability, or functioning of government. It may involve protests, violence, civil unrest, constitutional breakdown, or threats to national unity. Political crises can be triggered by policy disputes, ethnic tensions, electoral irregularities, or leadership conflicts.\n\n(b) Four factors that led to the Kano riots of 1953:\n1. Opposition to Self-Government Motion: The Kano riots were triggered by the motion for self-government in 1956, moved by Chief Anthony Enahoro in the Federal House of Representatives. The Northern members opposed the motion, fearing domination by the South. This led to tension and conflict.\n\n2. Northern Fear of Southern Domination: The North feared that independence would lead to Southern domination in politics and administration. The North was less educated and felt unprepared for independence, creating resentment against Southern politicians.\n\n3. Political Rivalry between NCNC and NPC: The National Council of Nigeria and Cameroon (NCNC) and the Northern People's Congress (NPC) were rivals. The NPC opposed the NCNC's push for rapid independence, leading to political animosity and violence in Kano.\n\n4. Ethnic and Regional Tensions: The riots were fueled by ethnic and regional tensions — Southern politicians (mainly Igbo and Yoruba) were seen as pushing for independence at the expense of the North. Northerners attacked Southerners living in Kano, leading to widespread violence and destruction.\n\n5. Misunderstanding of the Motion: There was a misunderstanding of the motion's implications — Northern leaders interpreted it as a threat to their political position and interests. The lack of consultation and dialogue worsened the situation.\n\n6. Economic Grievances: There were also economic grievances — Southern migrants were perceived to dominate trade and employment in Kano, creating resentment among the local population. The riots were partly a reaction to economic marginalization."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Administration in Nigeria",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) What is indirect rule?\n(b) Discuss any FOUR reasons why the British introduced indirect rule in West Africa.",
+    "options": [],
+    "modelAnswer": "(a) Indirect Rule:\nIndirect rule is a colonial policy used by the British in administering their colonies, especially in West Africa. It involved governing through traditional rulers (chiefs, emirs, kings) who maintained their authority while being supervised by British colonial officials. The traditional rulers collected taxes, maintained law and order, and administered justice under the oversight of the British.\n\n(b) Four reasons why the British introduced indirect rule in West Africa:\n1. Limited Personnel and Resources: Britain lacked enough colonial administrators to govern West Africa directly. Indirect rule allowed them to govern through traditional rulers, using minimal British personnel and reducing administrative costs.\n\n2. Preservation of Traditional Institutions: Britain wanted to preserve traditional political structures to avoid resistance and maintain stability. They recognized the authority of traditional rulers and used them as intermediaries.\n\n3. Cost Effectiveness: Indirect rule was cheaper than direct rule — traditional rulers were paid less than British officials, and local administrative structures were already in place. This reduced the financial burden on the colonial administration.\n\n4. Communication and Transportation Challenges: Poor infrastructure (roads, communication) made direct rule difficult. Traditional rulers served as intermediaries, bridging the gap between the British and the local population.\n\n5. Lack of Knowledge of Local Customs: British officials had limited understanding of West African customs and languages. Ruling through traditional rulers who understood local customs was practical and reduced misunderstandings.\n\n6. Fear of Resistance: Britain feared that direct rule could provoke resistance and rebellion. Indirect rule was seen as a less disruptive way to maintain control and minimize opposition."
+  },
+  {
+    "subject": "Government",
+    "year": 2024,
+    "category": "Colonial Systems of Administration in Africa",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Discuss any THREE strategies of European invasion of Africa.",
+    "options": [],
+    "modelAnswer": "Three strategies of European invasion of Africa:\n\n1. Military Conquest and Force: European powers used military force to subjugate African societies and establish colonial rule. They employed superior weapons (guns, cannons, machine guns) to defeat African armies. Examples: The British conquest of the Ashanti Empire, the French conquest of the Dahomey Kingdom, and the German suppression of the Maji Maji rebellion. Military force was used to overcome resistance, depose African leaders, and establish control over territory.\n\n2. Treaties and Deception: Europeans used treaties and agreements to acquire territory, often exploiting African leaders' lack of understanding of European legal concepts. They signed treaties with African chiefs that gave them sovereignty or control over land and resources. In many cases, African leaders were deceived about the terms. Examples: The treaties signed by Lugard with Northern Nigerian Emirs, the treaties between Cecil Rhodes and African chiefs in Southern Africa.\n\n3. Divide and Rule: Europeans exploited existing ethnic, religious, and political divisions among African societies to weaken resistance. They played groups against each other, used alliances with some groups to conquer others, and exacerbated rivalries. Examples: The British used the Fulani against the Hausa, and the French used certain ethnic groups as auxiliaries against others. This strategy weakened African unity and facilitated conquest.\n\n4. Economic Infiltration: Europeans established trading posts, commercial companies, and economic influence before formal colonization. They used missionaries and explorers to gather information, create goodwill, and prepare the ground for political control. Economic interests (trade in palm oil, rubber, gold, minerals) often preceded colonial rule. Examples: The Royal Niger Company and the British East Africa Company were trading companies that later became instruments of colonial administration.\n\n5. Missionary and Religious Activity: Missionaries were often the first Europeans to enter African territories. They established schools, churches, and missions, winning converts and gaining influence. They also provided information to colonial authorities about local conditions and peoples. Missionary activity facilitated colonization by creating a favourable environment for European presence and influence."
+  }
+]

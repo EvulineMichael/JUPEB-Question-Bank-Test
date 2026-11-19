@@ -301,6 +301,8 @@
       "The Apostolic Gospel"
     ],
     "answer": "D",
+    "reviewNote": "African Independent (Indigenous) Churches (AICs) are churches founded and led by Africans, such as the Christ Apostolic Church.\n\nThe Apostolic Church (A) came from the British Apostolic Church and the Apostolic Faith (C) from the United States, so neither is strictly an AIC. 'The Apostolic Gospel' (D, the examiners' answer) is not a known church. Because more than one option is 'not an AIC', this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "The Apostolic Gospel is NOT a known example of African Independent Churches (AICs). The Apostolic Church, Christ Apostolic Church, and The Apostolic Faith are examples of AICs or Pentecostal churches in Nigeria."
   },
   {
@@ -604,8 +606,8 @@
       "Neo-Griesbachian two Gospel hypothesis",
       "Primitive Gospel hypothesis."
     ],
-    "answer": "C",
-    "explanation": "The Neo-Griesbachian two Gospel hypothesis is the main hypothesis against Matthew Priority. It argues that Matthew was written first and that Mark used Matthew and Luke as sources (the opposite of Markan priority)."
+    "answer": "B",
+    "explanation": "Matthean priority means Matthew was the first Gospel written. The neo-Griesbachian (Two-Gospel) hypothesis (option C) supports Matthean priority: it says Matthew came first, then Luke, and Mark used both.\n\nThe hypothesis against Matthean priority is the Two-Document (Two-Source) Theory: Mark was written first, and Matthew and Luke each used Mark plus the sayings source Q."
   },
   {
     "subject": "CRS",

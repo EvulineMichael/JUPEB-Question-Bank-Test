@@ -1,13 +1,47 @@
 const CACHE_VERSION = 'v26';
 const CACHE_NAME = `jupeb-qb-${CACHE_VERSION}`;
 
+// Everything the app needs to open, saved when the service worker installs, so a
+// student who has visited once can study offline. (Keep this list in step with the
+// files linked in index.html. A missing file here stops the install, so only list
+// files that exist.)
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
-  '/style.css',
-  '/script.js',
-  '/auth.js',
   '/manifest.json',
+  '/style.css',
+  '/welcome.css',
+  '/exam-mode.css',
+  '/topic-counts.css',
+  '/home.css',
+  '/dashboard.css',
+  '/nav.css',
+  '/study.css',
+  '/account.css',
+  '/firebase-config.js',
+  '/topic-resources.js',
+  '/notes/physics.js',
+  '/notes/chemistry.js',
+  '/notes/biology.js',
+  '/notes/maths.js',
+  '/script.js',
+  '/exam-mode.js',
+  '/auth.js',
+  '/home-screen.js',
+  '/welcome.js',
+  '/ui.js',
+  '/images/jupeb-icon.png',
+  '/favicon.ico',
+  '/icon-192.png'
+];
+
+// Outside files, saved at install too when their servers allow it. If one can't be
+// saved now, the install still succeeds and it is saved the first time it loads.
+const OPTIONAL_ASSETS = [
+  'https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js',
+  'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js',
+  'https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js',
+  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
   'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'
 ];
@@ -26,7 +60,11 @@ const SAVE_FROM_HOSTS = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(ASSETS_TO_CACHE))
+      .then(cache => cache.addAll(ASSETS_TO_CACHE).then(() => Promise.all(
+        OPTIONAL_ASSETS.map(url => fetch(url, { mode: 'no-cors' })
+          .then(response => cache.put(url, response))
+          .catch(() => { /* saved later, the first time it loads */ }))
+      )))
       .then(() => self.skipWaiting())
   );
 });

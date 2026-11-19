@@ -107,7 +107,9 @@
     "question": "State the change in oxidation number of sulphur in the redox reaction below: I2 + 2S2O3^{2-} → 2I^- + S4O6^{2-}",
     "options": ["-2 to -4", "+2 to +3", "-4 to -2", "+3 to +2"],
     "answer": "B",
-    "explanation": "In S₂O₃²⁻, the two sulfur atoms have oxidation numbers of +5 and -1.\nIn S₄O₆²⁻, they have oxidation numbers of +5 and 0.\n\nThe actual change for one sulfur atom is -1 to 0.\n\nNote: The correct value (-1 to 0) is not among the options. The closest option has been selected."
+    "reviewNote": "Average oxidation number of sulphur:\nIn S₂O₃²⁻: 2x + 3(−2) = −2 → x = +2\nIn S₄O₆²⁻: 4x + 6(−2) = −2 → x = +2.5\n\nSo sulphur goes from +2 to +2.5 (it is oxidised while iodine is reduced). None of the options shows +2 to +2.5; the examiners' answer is B (+2 to +3).",
+    "excludeFromQuiz": true,
+    "explanation": "Average oxidation number of sulphur:\nIn S₂O₃²⁻: 2x + 3(−2) = −2, so x = +2.\nIn S₄O₆²⁻: 4x + 6(−2) = −2, so x = +2.5.\n\nSulphur is oxidised from +2 to +2.5 (on average). Option B (+2 to +3) is the paper's answer for this increase from +2."
   },
   {
     "subject": "Chemistry",
@@ -184,6 +186,8 @@
     "question": "Identify the species A in the radioactive reaction represented by the equation below: ^{234}_{34}Th + A → 2^{239}_{92}U",
     "options": ["0n", "1e", "1r", "2He"],
     "answer": "D",
+    "reviewNote": "The nuclear equation is misprinted in this copy of the paper (the mass and atomic numbers do not balance), so the species A cannot be worked out reliably. The question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Note: The equation as written does not balance correctly, suggesting a typo in the question.\n\nIn standard radioactive equations, an alpha particle (⁴₂He) is commonly involved in nuclear transformations.\n\nThe intended answer is most likely D (alpha particle)."
   },
   {
@@ -538,9 +542,9 @@
     "type": "Objective",
     "questionNumber": 49,
     "question": "Identify P in the reaction C2H5MgBr + P → C2H5C(OH)(CH3)C3H7",
-    "options": ["C3H7CHO", "C2H7COCl", "C2H7COCH3", "C2H5COC2H5"],
+    "options": ["C3H7CHO", "C3H7COCl", "C3H7COCH3", "C2H5COC2H5"],
     "answer": "C",
-    "explanation": "Grignard reagent reacts with a ketone to form a tertiary alcohol.\n\nThe product suggests the ketone was C₂H₇COCH₃ (butan-2-one)."
+    "explanation": "A Grignard reagent adds to the C=O carbon of a ketone; after hydrolysis this gives a tertiary alcohol.\n\nIn the product C₂H₅–C(OH)(CH₃)–C₃H₇, the ethyl group came from C₂H₅MgBr. The other two groups on that carbon, CH₃ and C₃H₇, were already on the carbonyl carbon.\n\nSo P is CH₃COC₃H₇ (C₃H₇COCH₃), pentan-2-one."
   },
   {
     "subject": "Chemistry",

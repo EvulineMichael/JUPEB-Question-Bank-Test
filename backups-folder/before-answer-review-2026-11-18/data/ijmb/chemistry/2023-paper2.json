@@ -1,0 +1,252 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) What type of bond fission leads to the formation of a carbonium ion in a reaction?\n(b) What is the name of the reaction type in which two or more substances combine to give a single product?\n(c) Give the structure of two (2) nitrogen-based nucleophiles.\n(d) Give one (1) example of a Lewis acid. (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Heterolytic fission: the shared pair of electrons goes to the more electronegative atom, leaving the carbon atom with a positive charge (a carbonium ion, or carbocation).\n(b) Addition reaction.\n(c) Any two: ammonia, :NH₃ (H–N̈–H with one H below); methylamine, CH₃–N̈H₂; the azide ion N₃⁻; the cyanide ion :C≡N⁻ (in which nitrogen also carries a lone pair). Each has a lone pair of electrons on nitrogen.\n(d) Any one: AlCl₃, BF₃, FeBr₃, ZnCl₂, H⁺."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alkyl Halides",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Give the name of the class of organic compound that is formed when a haloalkane (R-X) reacts with (5 marks)\n(a) Hot water\n(b) Sodium\n(c) Alcoholic solution of ammonia\n(d) Magnesium in dry ether\n(e) Sodium alkoxide in alcohol",
+    "options": [],
+    "modelAnswer": "(a) Alkanol (alcohol), R–OH (by hydrolysis).\n(b) Alkane, R–R (Wurtz reaction).\n(c) Amine (alkanamine), R–NH₂ (further reaction gives secondary and tertiary amines).\n(d) Grignard reagent (alkylmagnesium halide), R–MgX.\n(e) Ether (alkoxyalkane), R–O–R′ (Williamson synthesis)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Give the name of the class of organic compound that is formed when an alkanol (R-OH) reacts with (5 marks)\n(a) Thionyl chloride\n(b) Hot concentrated tetraoxosulphate(VI) acid\n(c) Alkanoic acid\n(d) Reactive metal\n(e) Excess potassium tetraoxomanganate(VII) acid",
+    "options": [],
+    "modelAnswer": "(a) Haloalkane (chloroalkane), R–Cl.\n(b) Alkene (by dehydration at about 170 °C; with excess alkanol at a lower temperature, about 140 °C, an ether is formed).\n(c) Ester (alkyl alkanoate), RCOOR′.\n(d) Alkoxide (e.g. sodium alkoxide, RO⁻Na⁺), with hydrogen gas evolved.\n(e) Alkanoic acid (carboxylic acid) from a primary alkanol; a ketone (alkanone) from a secondary alkanol.\nNote: 'potassium tetraoxomanganate(VII) acid' means acidified potassium tetraoxomanganate(VII)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) The reaction of alkanoate with lithium tetrahydridoaluminate can be classified as?\n(b) Give the molecular formula of the organic product(s) formed when lithium tetrahydridoaluminate reacts with\n(i) ethyl ethanoate\n(ii) methyl propanoate (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Reduction.\n(b) LiAlH₄ reduces an ester RCOOR′ to two alcohols, RCH₂OH and R′OH.\n(i) Ethyl ethanoate, CH₃COOC₂H₅ → 2 CH₃CH₂OH: ethanol, C₂H₆O (only one product).\n(ii) Methyl propanoate, CH₃CH₂COOCH₃ → CH₃CH₂CH₂OH + CH₃OH: propan-1-ol, C₃H₈O, and methanol, CH₄O."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Why are aromatic alkanoic acids weaker than aliphatic alkanoic acids?\n(b) Give the name and structural formular of one example each of an aromatic monoalkanoic acids and dialkanoic acids (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) In an aromatic acid such as benzoic acid, the benzene ring is directly attached to the –COOH group and releases electrons into it by resonance (+R effect). This makes the O–H bond less polar and destabilises (reduces the delocalisation in) the carboxylate ion, so the acid ionises less.\nNote: this holds when comparing benzoic acid (pKa 4.20) with methanoic acid (pKa 3.75). Benzoic acid is actually stronger than ethanoic acid (pKa 4.76), because ethanoic acid's CH₃ group is a stronger electron donor; the question's general statement is therefore not true for all aliphatic acids.\n\n(b) Monoalkanoic (monocarboxylic): benzoic acid (benzenecarboxylic acid), C₆H₅–COOH.\nDialkanoic (dicarboxylic): benzene-1,2-dicarboxylic acid (phthalic acid), C₆H₄(COOH)₂, with the two –COOH groups on adjacent ring carbons (or benzene-1,4-dicarboxylic acid, terephthalic acid)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Amines",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Classify the following substances in order of increasing basic strength (5 marks)\n(a) Ammonium ion\n(b) Dimethylamine\n(c) 3-aminopentane\n(d) Ammonia\n(e) Triethylamine",
+    "options": [],
+    "modelAnswer": "Order of increasing basic strength (based on the inductive effect):\nammonium ion < ammonia < 3-aminopentane < dimethylamine < triethylamine.\nReasons:\nAmmonium ion, NH₄⁺, has no lone pair (it is already protonated), so it is not basic; it is the weakest.\nAmmonia has a lone pair on N but no electron-releasing alkyl groups.\nAlkyl groups release electrons (+I effect), increasing the electron density on nitrogen and making the lone pair more available: primary (3-aminopentane, one alkyl group) < secondary (dimethylamine, two) < tertiary (triethylamine, three).\nNote: in aqueous solution, solvation (hydrogen bonding) of the protonated amine also matters, and the measured order is closer to NH₄⁺ < NH₃ < tertiary ≈ primary < secondary; the inductive order above is the one usually expected at this level."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "(a) Depict the structural formular of aminoethanoic acid as a zwitterion.\n(b) Name three (3) simple proteins. (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Aminoethanoic acid (glycine) as a zwitterion: ⁺H₃N–CH₂–COO⁻ (the amino group is protonated and the carboxyl group has lost its proton, so the molecule has both a positive and a negative charge but is neutral overall).\n\n(b) Any three: albumins (e.g. egg albumin), globulins, glutelins, histones, protamines, prolamins (e.g. zein). (Simple proteins give only amino acids on hydrolysis.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "Classify these anhydrides as either simple anhydride or mixed anhydride, and indicate the alkanoic acids from which the anhydrides are formed. (5 marks)\n(a) CH₃CH₂COOCOCH₃\n(b) CH₃CH₂COOCOCH₂CH₃",
+    "options": [],
+    "modelAnswer": "(a) CH₃CH₂CO–O–COCH₃: mixed anhydride (the two acyl groups are different), ethanoic propanoic anhydride. Formed from propanoic acid (CH₃CH₂COOH) and ethanoic acid (CH₃COOH).\n(b) CH₃CH₂CO–O–COCH₂CH₃: simple anhydride (both acyl groups the same), propanoic anhydride. Formed from two molecules of propanoic acid (CH₃CH₂COOH)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "(a) Define condensation polymerization.\n(b) State the names of the monomers of (i) PVC (ii) Teflon (iii) PVAc (5 marks)",
+    "options": [],
+    "modelAnswer": "(a) Condensation polymerisation is the joining together of many monomer molecules (each with two functional groups) to form a polymer, with the elimination of small molecules such as water, HCl or methanol at each link (e.g. nylon, polyesters).\n\n(b)\n(i) PVC (poly(chloroethene)): chloroethene (vinyl chloride), CH₂=CHCl.\n(ii) Teflon (PTFE): tetrafluoroethene, CF₂=CF₂.\n(iii) PVAc (poly(vinyl acetate)): ethenyl ethanoate (vinyl acetate), CH₃COOCH=CH₂."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "Name five (5) conversion processes use to improve the yield and quality of petroleum products after fractional distillation. (5 marks)",
+    "options": [],
+    "modelAnswer": "1. Cracking (thermal or catalytic): breaking large molecules into smaller, more useful ones such as petrol and alkenes.\n2. Reforming (catalytic reforming/aromatisation): converting straight-chain alkanes into cyclic and aromatic hydrocarbons of higher octane number.\n3. Isomerisation: converting straight-chain alkanes into branched isomers.\n4. Alkylation: combining small alkanes and alkenes into larger branched molecules for high-octane petrol.\n5. Polymerisation: joining small alkenes into larger molecules in the petrol range.\n(Also: hydrotreating/desulphurisation, blending.)"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Amines",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "11. (a) Write chemical equation to illustrate the preparation of alkanamines from\n(i) Alkyl halides\n(ii) Alkanamides\n(iii) Alkyl Nitro compounds\n(iv) Alkyl Nitriles (8 marks)",
+    "options": [],
+    "modelAnswer": "(i) Heating with excess ammonia (in ethanol, under pressure):\nCH₃CH₂Br + NH₃ → CH₃CH₂NH₂ + HBr (the HBr reacts with excess NH₃ to give NH₄Br).\n(ii) Reduction with LiAlH₄ (or Hofmann degradation with Br₂ and NaOH, which removes one carbon):\nCH₃CONH₂ + 4[H] → CH₃CH₂NH₂ + H₂O (LiAlH₄ in dry ether)\nCH₃CONH₂ + Br₂ + 4NaOH → CH₃NH₂ + Na₂CO₃ + 2NaBr + 2H₂O (Hofmann)\n(iii) Reduction with Sn and concentrated HCl (or H₂/Ni):\nCH₃NO₂ + 6[H] → CH₃NH₂ + 2H₂O\n(iv) Reduction with LiAlH₄ (or H₂/Ni, or Na/ethanol):\nCH₃CN + 4[H] → CH₃CH₂NH₂"
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b) Give the IUPAC name the following organic compounds:\n(i) (ii) (iii)\n(iv) (v) (vi) (12 marks)",
+    "image": {
+      "src": "images/ijmb/chemistry/2023/chem-2023-paper2-11b.png",
+      "alt": "Six structures (i)–(vi): CH3CH(OH)COCl; (CH3CH2CO)2O; CH3COOCH2CH(CH3)2; (C2H5)2NH; CH3CH2CH(NH2)COOH; CH3COC(Br)(CH3)2"
+    },
+    "options": [],
+    "modelAnswer": "Structures shown in the figure:\n(i) CH₃–CH(OH)–COCl\n(ii) (CH₃CH₂CO)₂O\n(iii) CH₃COO–CH₂–CH(CH₃)–CH₃\n(iv) C₂H₅–NH–C₂H₅\n(v) CH₃–CH₂–CH(NH₂)–COOH\n(vi) CH₃–CO–C(Br)(CH₃)–CH₃\n\nIUPAC names:\n(i) 2-hydroxypropanoyl chloride.\n(ii) Propanoic anhydride.\n(iii) 2-methylpropyl ethanoate.\n(iv) N-ethylethanamine (diethylamine).\n(v) 2-aminobutanoic acid.\n(vi) 3-bromo-3-methylbutan-2-one."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "11c",
+    "question": "(c) Protonation of alkanol A and subsequent loss of water produces the intermediate B.\n(i) Name alkanol A.\n(ii) What type of species is intermediate B?\n(iii) Draw the structures of the two alkenes which can be formed from species B by removal of a proton.\n(iv) The intermediate B is readily attacked by nucleophiles such as water. What is the essential feature of a nucleophile? (5 marks)",
+    "image": {
+      "src": "images/ijmb/chemistry/2023/chem-2023-paper2-11c.png",
+      "alt": "Alkanol A, 3-methylpentan-3-ol, and carbocation B, CH3CH2C+(CH3)CH2CH3"
+    },
+    "options": [],
+    "modelAnswer": "Figure: A is CH₃CH₂–C(CH₃)(OH)–CH₂CH₃; B is CH₃CH₂–C⁺(CH₃)–CH₂CH₃.\n\n(i) A: 3-methylpentan-3-ol.\n(ii) B is a carbocation (carbonium ion), specifically a tertiary carbocation.\n(iii) Loss of H⁺ from a carbon next to the positive carbon gives:\n3-methylpent-2-ene: CH₃CH=C(CH₃)CH₂CH₃ (loss of H from a CH₂ group; exists as cis and trans forms).\n2-ethylbut-1-ene: CH₂=C(CH₂CH₃)CH₂CH₃ (loss of H from the CH₃ group).\n(iv) A nucleophile has a lone pair of electrons (and is often negatively charged); it is electron-rich and donates its electron pair to an electron-deficient centre such as the positive carbon of B."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "12. (a) Use chemical equation to illustrate the reaction between ethanol an\n(i) methanoic acid\n(ii) hot concentrated tetraoxosulphate(VI) acid\n(iii) phosphorus pentachloride\n(iv) acidified potassium tetraoxomanganate(VII)\n(v) iodine/sodium trioxocarbonate(IV) solution (10 marks)",
+    "options": [],
+    "modelAnswer": "(i) Esterification (concentrated H₂SO₄ catalyst): HCOOH + C₂H₅OH ⇌ HCOOC₂H₅ + H₂O (ethyl methanoate).\n(ii) Dehydration at about 170 °C: C₂H₅OH → CH₂=CH₂ + H₂O (ethene). (At about 140 °C with excess ethanol: 2C₂H₅OH → C₂H₅OC₂H₅ + H₂O.)\n(iii) C₂H₅OH + PCl₅ → C₂H₅Cl + POCl₃ + HCl.\n(iv) Oxidation: C₂H₅OH + [O] → CH₃CHO + H₂O; CH₃CHO + [O] → CH₃COOH (overall C₂H₅OH + 2[O] → CH₃COOH + H₂O; the purple colour is decolourised).\n(v) Iodoform (triiodomethane) reaction, giving a yellow precipitate:\nC₂H₅OH + 4I₂ + 3Na₂CO₃ → CHI₃ + HCOONa + 5NaI + 3CO₂ + 2H₂O."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Amines",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "(b) Give the structure of the possible organic product of these reactions\n(i) CH₃CH₂-NH₂ + HCl\n(ii) C₆H₅NH₂ + HNO₂\n(iii) CH₃CH₂-NH₂ + CH₃-COCl\n(iv) CH₃-NH₂ + alc.KOH/CHCl₃\n(v) CH₃CH₂-NH₂ + CH₃Br (10 marks)",
+    "options": [],
+    "modelAnswer": "(i) CH₃CH₂NH₃⁺Cl⁻ (ethylammonium chloride).\n(ii) At 0–5 °C (HNO₂ from NaNO₂ and HCl): C₆H₅N₂⁺Cl⁻ (benzenediazonium chloride). If warmed above about 10 °C, this decomposes to phenol, C₆H₅OH, and N₂.\n(iii) CH₃CONHCH₂CH₃ (N-ethylethanamide), with HCl.\n(iv) Carbylamine reaction: CH₃NC (methyl isocyanide, methyl isonitrile), with an offensive smell: CH₃NH₂ + CHCl₃ + 3KOH → CH₃NC + 3KCl + 3H₂O.\n(v) CH₃CH₂NHCH₃ (N-methylethanamine), with HBr; with excess CH₃Br, further alkylation can give the tertiary amine and the quaternary ammonium salt."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "12c",
+    "question": "(c) (i) Each homologous series has its own general formula. State three (3) other characteristics of a homologous series.\n(ii) State what is meant by the term structural isomers. (5 marks)",
+    "options": [],
+    "modelAnswer": "(i) Any three:\n1. Successive members differ by a –CH₂– group (relative molecular mass 14).\n2. All members have the same functional group and similar chemical properties.\n3. Physical properties (e.g. boiling point, density) change gradually as the chain length increases.\n4. Members can be prepared by similar general methods.\n\n(ii) Structural isomers are compounds with the same molecular formula but different structural formulae (different arrangement of atoms), e.g. butane and 2-methylpropane, C₄H₁₀."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Alkyl Halides",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "13. (a) Write equations showing how chloroethane may be used in preparing (10 marks)\n(i) Ethane\n(ii) Ethene\n(iii) Butane\n(iv) Ethanol\n(v) Propenonitrile",
+    "options": [],
+    "modelAnswer": "(i) Reduction (Zn/HCl or H₂/Ni): CH₃CH₂Cl + 2[H] → CH₃CH₃ + HCl.\n(ii) Elimination, heating with alcoholic KOH: CH₃CH₂Cl + KOH → CH₂=CH₂ + KCl + H₂O.\n(iii) Wurtz reaction, sodium in dry ether: 2CH₃CH₂Cl + 2Na → CH₃CH₂CH₂CH₃ + 2NaCl.\n(iv) Hydrolysis, boiling with aqueous NaOH: CH₃CH₂Cl + NaOH → CH₃CH₂OH + NaCl.\n(v) Note: 'propenonitrile' (CH₂=CHCN) cannot be made from chloroethane in one step; propanenitrile is probably intended. Heating with alcoholic KCN: CH₃CH₂Cl + KCN → CH₃CH₂CN + KCl."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "(b) Give the structure of the organic products obtainable from the hydrolysis of the following compounds.\n(i) Propyl methanoate\n(ii) Methyl butanoate\n(iii) Ethyl ethanoate\n(iv) 2-methylpropyl propanoate\n(v) 2-propyl ethanoate (10 marks)",
+    "options": [],
+    "modelAnswer": "Hydrolysis of an ester gives a carboxylic acid and an alcohol (in alkali, the salt of the acid):\n(i) HCOOH (methanoic acid) + CH₃CH₂CH₂OH (propan-1-ol).\n(ii) CH₃CH₂CH₂COOH (butanoic acid) + CH₃OH (methanol).\n(iii) CH₃COOH (ethanoic acid) + CH₃CH₂OH (ethanol).\n(iv) CH₃CH₂COOH (propanoic acid) + (CH₃)₂CHCH₂OH (2-methylpropan-1-ol).\n(v) CH₃COOH (ethanoic acid) + CH₃CH(OH)CH₃ (propan-2-ol)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Isomerism in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "13c",
+    "question": "(c) (i) But-2-ene can exist in two isomeric forms. Give the structures of these two isomers and name the type of isomerism.\n(ii) Give the name of the process shown in the reaction equation:\nnC₂H₄ → (–CH₂–CH₂–)ₙ (5 marks)",
+    "options": [],
+    "modelAnswer": "Note: the reaction in (ii) is drawn in the paper as nC₂H₄ forming a repeating unit with two carbons each carrying two H atoms, in brackets with subscript n.\n\n(i) cis-but-2-ene: the two CH₃ groups on the same side of the C=C double bond (each carbon also carries one H on the same side).\ntrans-but-2-ene: the two CH₃ groups on opposite sides of the C=C double bond.\nType of isomerism: geometric (cis–trans) isomerism, a type of stereoisomerism. It arises because rotation about the C=C bond is restricted and each double-bond carbon carries two different groups.\n\n(ii) Addition polymerisation (polymerisation of ethene to poly(ethene)/polythene)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "14. (a) Determine the empirical formula of a compound with molecular mass of 138 which has 60.87 % carbon, 4.35 % hydrogen and 34.78 % oxygen. (5 marks)",
+    "options": [],
+    "modelAnswer": "In 100 g: C = 60.87/12 = 5.0725 mol; H = 4.35/1 = 4.35 mol; O = 34.78/16 = 2.174 mol.\nDivide by the smallest (2.174): C = 2.333, H = 2.00, O = 1.\nMultiply by 3 to get whole numbers: C = 7, H = 6, O = 3.\nEmpirical formula: C₇H₆O₃.\nEmpirical mass = 7(12) + 6(1) + 3(16) = 138, which equals the molecular mass, so the molecular formula is also C₇H₆O₃ (e.g. 2-hydroxybenzoic acid, salicylic acid)."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "(b) Give the structure and IUPAC name of the organic product of the reaction between (15 marks)\n(i) Methanal and ammoniacal silver trioxonitrate(V) solution\n(ii) Ethanal and chlorine gas\n(iii) Ethanal and cold dilute sodium hydroxide solution\n(iv) Propanone and hydrazine solution\n(v) Propanone and sodium tetrahydridoborate in methanol solution, followed by acid treatment.",
+    "options": [],
+    "modelAnswer": "(i) Tollens' reagent oxidises methanal: HCOOH, methanoic acid (present as ammonium methanoate, HCOO⁻NH₄⁺; it can be oxidised further to CO₂). A silver mirror forms.\n(ii) Chlorination of the α-hydrogens: CCl₃CHO, 2,2,2-trichloroethanal (chloral), with HCl.\n(iii) Aldol addition: CH₃CH(OH)CH₂CHO, 3-hydroxybutanal (aldol).\n(iv) Condensation: (CH₃)₂C=N–NH₂, propanone hydrazone, with water.\n(v) Reduction: CH₃CH(OH)CH₃, propan-2-ol."
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2023,
+    "paper": "Paper II",
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "14c",
+    "question": "(c) A naturally-occurring triester, shown below, was heated under reflux with an excess of aqueous sodium hydroxide and the mixture produced was then distilled. One of the products distilled off and the other was left in the distillation flask.\nCH₃(CH₂)₁₆COOCH₂\n|\nCH₃(CH₂)₁₆COOCH\n|\nCH₃(CH₂)₁₆COOCH₂\n(i) Draw the structure of the product distilled off and give its name.\n(ii) Give the formula of the product left in the distillation flask and give a use for it.\n(iii) What the name of this type of reaction. (5 marks)",
+    "options": [],
+    "modelAnswer": "The triester is glyceryl tristearate (propane-1,2,3-triyl trioctadecanoate). With NaOH it gives glycerol and sodium octadecanoate (sodium stearate):\n(C₁₇H₃₅COO)₃C₃H₅ + 3NaOH → 3C₁₇H₃₅COONa + C₃H₅(OH)₃\n\n(i) The product distilled off (with the water) is glycerol: HOCH₂–CH(OH)–CH₂OH, propane-1,2,3-triol.\n(ii) The product left in the flask is sodium octadecanoate (sodium stearate), CH₃(CH₂)₁₆COONa. Use: as soap.\n(iii) Saponification (alkaline hydrolysis of an ester)."
+  }
+]

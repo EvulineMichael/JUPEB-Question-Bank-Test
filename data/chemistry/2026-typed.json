@@ -13,7 +13,7 @@
       ]
     },
     "options": [],
-    "modelAnswer": "(i) First ionization energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous univalent positive ions.\n(ii) Al(g) → Al⁺(g) + e⁻\n(iii) Element T has a lower first ionization energy than R because T has a stable electronic configuration (a completely filled shell or half-filled subshell), which makes it more difficult to remove an electron from R than from T; the increased stability of T's configuration means the electron removed is more easily lost relative to the general trend."
+    "modelAnswer": "(i) First ionization energy is the energy required to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous univalent positive ions.\n(ii) Al(g) → Al⁺(g) + e⁻\n(iii) R has a half-filled p subshell (p³ configuration, one electron in each p orbital), which is especially stable, so its ionization energy is unusually high. T, the next element, has p⁴: its fourth p electron has to pair up in an orbital that already holds an electron. The repulsion between the paired electrons makes that electron easier to remove, so T has a lower first ionization energy than R (e.g. N > O, or P > S)."
   },
   {
     "subject": "Chemistry",
@@ -43,7 +43,7 @@
     "questionNumber": "2a",
     "question": "(a) (i) In terms of bonding, give a reason each why silicon has a high melting point and low conductivity. [2 marks]\n(ii) State the type of bond formed when BH₃ reacts with NH₃. [1 mark]\n(iii) Why does BH₃ react with NH₃ and not with AlCl₃? [1 mark]",
     "options": [],
-    "modelAnswer": "(i) Silicon has a giant covalent (macromolecular) structure with strong covalent bonds extending in all directions, giving a high melting point. It has no free electrons or mobile ions, so it has low conductivity.\n(ii) Coordinate (dative) covalent bond.\n(iii) BH₃ is electron-deficient and has a vacant orbital that accepts the lone pair from NH₃. AlCl₃, although also electron-deficient, dimerises to Al₂Cl₆ to satisfy the octet of aluminium, so it is not strongly electron-deficient and does not readily accept the lone pair from NH₃ under the same conditions."
+    "modelAnswer": "(i) Silicon has a giant covalent (macromolecular) structure with strong covalent bonds extending in all directions, giving a high melting point. It has no free electrons or mobile ions, so it has low conductivity.\n(ii) Coordinate (dative) covalent bond.\n(iii) BH₃ is electron-deficient (boron has only six outer electrons and an empty p orbital), so it accepts a lone pair. NH₃ is a good electron-pair donor (Lewis base), with a lone pair on nitrogen. AlCl₃ is not a donor: like BH₃, it is itself electron-deficient and is an electron-pair acceptor (Lewis acid). Two acceptors do not form a donor–acceptor bond with each other.\n\n(AlCl₃ itself does react with NH₃, forming AlCl₃·NH₃, because aluminium also has an empty orbital. The point is that BH₃ needs an electron-pair donor, and NH₃ is one while AlCl₃ is not.)"
   },
   {
     "subject": "Chemistry",
@@ -102,7 +102,7 @@
     "questionNumber": "3c",
     "question": "(c) If 350cm³ of CO is sparked with 200 cm³ of O₂ to form CO₂ according to the reaction: 2CO(g) + O₂(g) → 2CO₂(g)\n(i) Find the volume of each gas present after the reaction. [2 mark]\n(ii) What volume is left when the gases are passed through a solution of alkaline pyrogallol? [1 mark]",
     "options": [],
-    "modelAnswer": "(i) 2CO + O₂ → 2CO₂. 350 cm³ CO requires 175 cm³ O₂. O₂ is in excess (200 − 175 = 25 cm³ left). CO₂ formed = 350 cm³. After reaction: CO₂ = 350 cm³, O₂ = 25 cm³.\n(ii) Alkaline pyrogallol absorbs oxygen only. The 25 cm³ of O₂ is absorbed, leaving 350 cm³ of CO₂."
+    "modelAnswer": "(i) 2CO + O₂ → 2CO₂. 350 cm³ CO requires 175 cm³ O₂. O₂ is in excess (200 − 175 = 25 cm³ left). CO₂ formed = 350 cm³. After reaction: CO₂ = 350 cm³, O₂ = 25 cm³.\n(ii) Alkaline pyrogallol is the standard absorbent for oxygen, so the 25 cm³ of O₂ is removed, leaving 350 cm³ of CO₂. This is the answer expected.\n(Strictly, the alkali in the solution can also absorb CO₂, which is why in gas analysis CO₂ is removed first with KOH solution and O₂ afterwards with alkaline pyrogallol. If the examiner treats the solution as absorbing both, the volume left would be 0 cm³.)"
   },
   {
     "subject": "Chemistry",

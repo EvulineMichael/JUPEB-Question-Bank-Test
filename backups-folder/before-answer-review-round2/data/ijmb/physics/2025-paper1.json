@@ -1,0 +1,404 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Physical Quantities and Units",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "i). Explain the terms “fundamental quantities and derived quantities” (ii). What is the dimension of h in the equation E = hf?",
+    "options": [],
+    "modelAnswer": "(i) Fundamental quantities are basic physical quantities that are independent of one another and are not defined in terms of other quantities. The SI fundamental quantities are mass (kg), length (m), time (s), electric current (A), temperature (K), amount of substance (mol) and luminous intensity (cd).\nDerived quantities are quantities obtained by combining fundamental quantities through multiplication or division, e.g., velocity (m s⁻¹), acceleration (m s⁻²), force (N = kg m s⁻²), density (kg m⁻³) and energy (J = kg m² s⁻²).\n\n(ii) E = hf, so h = E/f.\n[E] = energy = ML²T⁻²\n[f] = frequency = T⁻¹\n[h] = ML²T⁻²/T⁻¹ = ML²T⁻¹.\n(The SI unit of h is therefore J s, i.e., kg m² s⁻¹.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Dynamics (Newton's Laws and Forces)",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "An object of mass 4 kg is suspended from a spring balance which is attached to a ceiling of a lift. If the spring balance is calibrated in SI unit of force. What will be the reading on the balance when (i) the lift is stationary (ii) the lift is moving upwards with an acceleration of 0.15 ms⁻². (iii) the lift is moving downwards with an acceleration of 0.20 ms⁻².",
+    "options": [],
+    "modelAnswer": "The balance reads the tension R in the spring, in newtons. m = 4 kg, g = 10 m s⁻².\n\n(i) Lift stationary: a = 0, so R = mg = 4 × 10 = 40 N.\n\n(ii) Accelerating upwards at 0.15 m s⁻²: the net force is upwards.\nR − mg = ma\nR = m(g + a) = 4 × (10 + 0.15) = 4 × 10.15 = 40.6 N.\n\n(iii) Accelerating downwards at 0.20 m s⁻²: the net force is downwards.\nmg − R = ma\nR = m(g − a) = 4 × (10 − 0.20) = 4 × 9.80 = 39.2 N."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Work, Energy and Power",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "A block of wood of mass 1 kg is held in a vice and a bullet of mass 0.01 kg is fired in to it. It penetrates to a depth of 0.10 m. if the block is now suspended so that it can move freely and a second bullet is fired in to it, to what depth will the bullet penetrate?",
+    "options": [],
+    "modelAnswer": "Assumptions: both bullets have the same speed u, and the wood exerts the same constant resistive force F on each bullet.\nm = 0.01 kg (bullet), M = 1 kg (block), d₁ = 0.10 m.\n\nBlock held fixed: all of the bullet's kinetic energy is used doing work against F.\nF d₁ = ½mu² ...(1)\n\nBlock free to move: the bullet embeds itself and the block moves off. By conservation of momentum:\nmu = (m + M)v, so v = mu/(m + M).\nKinetic energy left after impact = ½(m + M)v² = ½mu² × m/(m + M).\nEnergy used in penetrating the wood = ½mu² − ½mu² × m/(m + M) = ½mu² × M/(m + M).\nF d₂ = ½mu² × M/(m + M) ...(2)\n\nDivide (2) by (1):\nd₂/d₁ = M/(m + M) = 1/(1 + 0.01) = 1/1.01\nd₂ = 0.10/1.01 = 0.099 m (9.9 cm).\n\nThe bullet penetrates slightly less deeply, because part of its kinetic energy becomes kinetic energy of the moving block."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "An observer stands by the side of a railway truck while a train approaches him at a constant speed of 50 ms⁻¹. If the train is sounding its whistle at a frequency of 500 Hz, what will be the frequency perceived by the observer as the train (i) approaches (ii) recedes. Comment on your results.",
+    "options": [],
+    "modelAnswer": "Note: 'railway truck' means railway track.\n\nThe source moves; the observer is at rest. v = 340 m s⁻¹ (speed of sound, from the constants), u_s = 50 m s⁻¹, f = 500 Hz.\n\n(i) Train approaching: f' = f × v/(v − u_s) = 500 × 340/(340 − 50) = 500 × 340/290 = 586 Hz.\n\n(ii) Train receding: f' = f × v/(v + u_s) = 500 × 340/(340 + 50) = 500 × 340/390 = 436 Hz.\n\nComment: this is the Doppler effect. As the train approaches, the sound waves are crowded together, so the observer hears a higher pitch (586 Hz) than the true frequency. As it recedes, the waves are spread out, so the pitch is lower (436 Hz). The pitch drops suddenly as the train passes. The rise (86 Hz) is larger than the fall (64 Hz), so the two changes are not equal."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "The temperature of three different liquids are maintain at 15°C, 20°C and 25°C respectively. When equal masses of the first two liquids are mixed, the final temperature is 18°C and when equal masses of the last two liquids are mixed, the final temperature is 24°C. What temperature will be achieved by mixing equal masses of the first and the last liquids?",
+    "options": [],
+    "modelAnswer": "Let the specific heat capacities be c₁, c₂ and c₃, and let each mass be m. Assume no heat is lost to the surroundings, so heat gained = heat lost.\n\nLiquids 1 and 2 (final 18°C):\nmc₁(18 − 15) = mc₂(20 − 18)\n3c₁ = 2c₂, so c₂ = 1.5c₁.\n\nLiquids 2 and 3 (final 24°C):\nmc₂(24 − 20) = mc₃(25 − 24)\n4c₂ = c₃, so c₃ = 4 × 1.5c₁ = 6c₁.\n\nLiquids 1 and 3 (final temperature T):\nmc₁(T − 15) = mc₃(25 − T)\nT − 15 = 6(25 − T)\nT − 15 = 150 − 6T\n7T = 165\nT = 23.6°C."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "the solar constant is 0.14 Wcm⁻². Calculate the surface temperature of the sun. the ratio of the earth orbit to the radius of the sun is approximately 215. (Assume the sun as perfectly radiating body).",
+    "options": [],
+    "modelAnswer": "Note: the Stefan–Boltzmann constant is not in the list of constants, so σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴ is used.\n\nSolar constant S = 0.14 W cm⁻² = 0.14 × 10⁴ W m⁻² = 1400 W m⁻².\nLet r = radius of the sun and R = radius of the earth's orbit, with R/r = 215.\n\nPower radiated by the sun (a blackbody): P = σT⁴ × 4πr².\nThis power spreads over a sphere of radius R, so the power per unit area at the earth is:\nS = P/(4πR²) = σT⁴ × r²/R²\n\nT⁴ = S × (R/r)²/σ\n= 1400 × 215²/(5.67 × 10⁻⁸)\n= 1400 × 46 225/(5.67 × 10⁻⁸)\n= 1.141 × 10¹⁵ K⁴\n\nT = (1.141 × 10¹⁵)^(1/4) ≈ 5.8 × 10³ K (about 5800 K)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "water flows into a water tank of large cross sectional area at a rate of 104 m³s⁻¹ but flows out of from a hole of cross sectional area of 10⁻⁴m² at the base of the tank. How high does the water rise in the tank?",
+    "options": [],
+    "modelAnswer": "Misprint note: the paper prints the inflow rate as 104 m³ s⁻¹. This would require an outflow speed of 10⁶ m s⁻¹, which is impossible, so the rate is taken as 10⁻⁴ m³ s⁻¹ (the minus sign of the power was lost).\n\nThe water level stops rising when the rate of outflow equals the rate of inflow.\nOutflow speed: v = Q/A = (10⁻⁴ m³ s⁻¹)/(10⁻⁴ m²) = 1.0 m s⁻¹.\n\nBy Torricelli's theorem (from Bernoulli's equation), water leaves a hole at depth h with speed v = √(2gh).\nh = v²/(2g) = (1.0)²/(2 × 10) = 0.05 m.\n\nThe water rises to a height of 0.05 m (5 cm) above the hole."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "A sonar device emits waves of frequency 4 x 10⁴ Hz. The velocities of the wave in air and water are 400 ms⁻¹ and 1350 ms⁻¹ respectively. Suppose that the device is fixed to the bottom of a ship. If it emits a signal and the echo from the ocean bed returns to the observer 0.8 s later. Determine the (i) the depth of the ocean at that point. (ii) the wavelength of the signal in air and in water. ( HINT: the frequency of the wave emitted is the same in air and in water).",
+    "options": [],
+    "modelAnswer": "Note: this question gives the speed of sound in air as 400 m s⁻¹, not the 340 m s⁻¹ in the list of constants, so 400 m s⁻¹ is used.\n\n(i) The signal travels through the water down to the ocean bed and back, so the one-way time is 0.8/2 = 0.4 s.\nDepth = v_water × t = 1350 × 0.4 = 540 m.\n\n(ii) λ = v/f, with f = 4 × 10⁴ Hz in both media.\nIn air: λ = 400/(4 × 10⁴) = 0.01 m (1.0 cm).\nIn water: λ = 1350/(4 × 10⁴) = 0.03375 m ≈ 0.034 m (3.4 cm)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "9",
+    "question": "A steel tyre of diameter 1.50 m at a temperature 10°C is to be fitted on to a train’s wheel of diameter 1.51 m . to what temperature must the tyre be heated to just fit the wheel? (Linear expensivity of steel is 11.0 x 10⁻⁶ K⁻¹.",
+    "options": [],
+    "modelAnswer": "Note: 'expensivity' means expansivity.\n\nThe diameter must increase from 1.50 m to 1.51 m: ΔD = 0.01 m.\nΔD = αD₀Δθ\nΔθ = ΔD/(αD₀) = 0.01/(11.0 × 10⁻⁶ × 1.50) = 0.01/(1.65 × 10⁻⁵) = 606 K (606°C rise).\n\nFinal temperature = 10 + 606 = 616°C."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "10",
+    "question": "a). What do you understand by the term evaporation? b). evaporation is usually accompanied by cooling . Explain.",
+    "options": [],
+    "modelAnswer": "(a) Evaporation is the change of a liquid into vapour that takes place only at the surface of the liquid, at any temperature below its boiling point.\n\n(b) The molecules of a liquid move with a range of speeds. Only the most energetic (fastest) molecules near the surface have enough kinetic energy to overcome the attraction of neighbouring molecules and escape. When they leave, the average kinetic energy of the molecules left behind falls. Since temperature depends on the average kinetic energy of the molecules, the temperature of the liquid falls. The latent heat of vaporisation needed is taken from the liquid itself and its surroundings, which is why, for example, sweat evaporating from the skin cools the body."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Dynamics (Newton's Laws and Forces)",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "a). (i) state the Newton’s third law of motion. (ii) what do you understand by non conservative forces? (iii) state the principle of conservation of linear momentum.",
+    "options": [],
+    "modelAnswer": "(i) Newton's third law: to every action there is an equal and opposite reaction. When body A exerts a force on body B, body B exerts a force of equal magnitude in the opposite direction on body A.\n\n(ii) Non-conservative forces are forces for which the work done in moving a body between two points depends on the path taken. The work done around a closed path is not zero, and mechanical energy is not conserved but is converted to other forms, usually heat. Examples: friction, air resistance, viscous drag.\n\n(iii) Principle of conservation of linear momentum: when no external force acts on a system of colliding or interacting bodies, the total linear momentum of the system remains constant (in magnitude and direction)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Dynamics (Newton's Laws and Forces)",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "b). A small rectangular mirror with a mass of 9.0 x 10⁻⁶ kg is suspended from a thin quartz filament 0.04 m long. A powerful laser beam is emitted in a direction perpendicular to the mirror so that, the system is deflected from the vertical by a certain angle. The energy of the laser beam is 100J. (i) Using the principle of conservation of energy and momentum, discuss briefly the interaction between the laser beam and the mirror. (ii). Determine the angle of deflection of the mirror. Assuming the mirror is a perfect reflector and undergoes negligible vibration.",
+    "options": [],
+    "modelAnswer": "(i) Light carries momentum as well as energy. A beam of energy E has momentum p = E/c. When the beam strikes the mirror perpendicularly and is perfectly reflected, its momentum is reversed, from +E/c to −E/c. By conservation of momentum, the mirror receives momentum Δp = 2E/c.\nThe mirror therefore starts to move with a small speed and swings like a pendulum. By conservation of energy, its kinetic energy is converted into gravitational potential energy as it rises to its maximum deflection. The energy taken from the beam is extremely small compared with 100 J, so the reflected beam has almost the same energy.\n\n(ii) Momentum given to the mirror:\nΔp = 2E/c = 2 × 100/(3.0 × 10⁸) = 6.67 × 10⁻⁷ kg m s⁻¹.\n\nSpeed of the mirror:\nv = Δp/m = 6.67 × 10⁻⁷/(9.0 × 10⁻⁶) = 0.0741 m s⁻¹.\n\nHeight risen (½mv² = mgh):\nh = v²/(2g) = (0.0741)²/(2 × 10) = 2.74 × 10⁻⁴ m.\n\nFor a pendulum of length L = 0.04 m deflected through angle θ: h = L(1 − cos θ).\n1 − cos θ = h/L = 2.74 × 10⁻⁴/0.04 = 6.86 × 10⁻³\ncos θ = 0.99314\nθ ≈ 6.7°."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "The Gravitational Field",
+    "type": "Essay",
+    "questionNumber": "12a",
+    "question": "a) (i) State the law of universal gravitation (ii). Obtain the expression for mass m of the earth and density ρ of the earth . hence, deduce their numerical values.",
+    "options": [],
+    "modelAnswer": "(i) Newton's law of universal gravitation: every particle of matter in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.\nF = Gm₁m₂/r², where G is the universal gravitational constant.\n\n(ii) Note: the radius of the earth is not in the list of constants, so R = 6.4 × 10⁶ m is used.\n\nMass of the earth: a body of mass m₀ on the earth's surface has weight m₀g, which equals the gravitational force on it:\nm₀g = Gm m₀/R², so g = Gm/R² and\nm = gR²/G.\n\nDensity of the earth: m = ρ × (4/3)πR³, so\nρ = m/((4/3)πR³) = (gR²/G)/((4/3)πR³) = 3g/(4πGR).\n\nNumerical values (g = 10 m s⁻², G = 6.67 × 10⁻¹¹ N m² kg⁻²):\nm = 10 × (6.4 × 10⁶)²/(6.67 × 10⁻¹¹) = 4.096 × 10¹⁴/(6.67 × 10⁻¹¹) ≈ 6.1 × 10²⁴ kg.\nρ = 3 × 10/(4π × 6.67 × 10⁻¹¹ × 6.4 × 10⁶) = 30/(5.36 × 10⁻³) ≈ 5.6 × 10³ kg m⁻³."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "The Gravitational Field",
+    "type": "Essay",
+    "questionNumber": "12b",
+    "question": "b). A fully equipped astronaut in space can jump 2 m vertically on earth using maximum effort. (i) if the diameter of the moon is 0.25 that of the earth and its density is 2/3 that of the earth. Show that, the acceleration due to gravity on the moon is 1/6 that of the earth. (ii) How far can the astronaut jump on the moon?",
+    "options": [],
+    "modelAnswer": "(i) From 12(a): g = GM/R², and M = ρ × (4/3)πR³, so\ng = G × (4/3)πR³ρ/R² = (4/3)πGρR.\nTherefore g is proportional to ρR (G is constant).\n\ng_moon/g_earth = (ρ_moon/ρ_earth) × (R_moon/R_earth).\nThe ratio of radii equals the ratio of diameters, 0.25.\ng_moon/g_earth = (2/3) × 0.25 = 1/6.\nSo the acceleration due to gravity on the moon is 1/6 that of the earth.\n\n(ii) With maximum effort, the astronaut leaves the ground with the same speed u on both bodies.\nMaximum height: h = u²/(2g), so h is inversely proportional to g.\nh_moon = h_earth × (g_earth/g_moon) = 2 × 6 = 12 m."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "13a",
+    "question": "a). Explain the terms (i) laminar flow. (ii) turbulent flow",
+    "options": [],
+    "modelAnswer": "(i) Laminar (streamline) flow: the fluid moves in smooth, parallel layers that slide past one another without mixing. The velocity at any point is constant in time, and every particle passing a given point follows the same path (a streamline). It occurs at low speeds.\n\n(ii) Turbulent flow: the fluid moves irregularly, with eddies and whirlpools. The layers mix, and the velocity at a point changes erratically with time. It occurs when the speed exceeds a critical value."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "13b",
+    "question": "b). write down the expression of Reynold number, a basic parameter for the characteristic of fluid motion and show that, it is dimensionless.",
+    "options": [],
+    "modelAnswer": "Reynolds number: Re = ρvD/η, where ρ = density of the fluid, v = flow speed, D = diameter of the pipe (or a characteristic length), and η = coefficient of viscosity.\n\nDimensions:\n[ρ] = ML⁻³\n[v] = LT⁻¹\n[D] = L\n[η] = ML⁻¹T⁻¹ (unit N s m⁻²)\n\n[Re] = (ML⁻³ × LT⁻¹ × L)/(ML⁻¹T⁻¹) = (ML⁻¹T⁻¹)/(ML⁻¹T⁻¹) = M⁰L⁰T⁰.\nSo the Reynolds number is dimensionless.\n\nFor flow in a pipe, the flow is usually laminar when Re is below about 2000 and turbulent when it is above about 3000."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "13c",
+    "question": "c). For a streamline motion of an incompressible non viscous fluid in a pipe , the Bernoulli’s principle states that: (P₁ − P₂)ΔV = ½ρΔV(v₂² − v₁²) + ρgΔV(h₂ − h₁) . Where all the symbols retain their usual meanings. Show that, the total work done per unit volume of the fluid is constant.",
+    "options": [],
+    "modelAnswer": "(P₁ − P₂)ΔV = ½ρΔV(v₂² − v₁²) + ρgΔV(h₂ − h₁)\n\nDivide both sides by the volume ΔV:\nP₁ − P₂ = ½ρv₂² − ½ρv₁² + ρgh₂ − ρgh₁\n\nCollect the terms for point 1 on one side and point 2 on the other:\nP₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂\n\nPoints 1 and 2 are any two points along the pipe, so:\nP + ½ρv² + ρgh = constant.\n\nEach term is energy (work) per unit volume: P is the pressure energy (work done by pressure) per unit volume, ½ρv² is the kinetic energy per unit volume, and ρgh is the potential energy per unit volume. Their sum is the same everywhere along the flow, so the total work done (energy) per unit volume of the fluid is constant."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "13d",
+    "question": "d). Water enters a house through a pipe of internal diameter of 0.02 m at an absolute pressure of 4×10⁵ Pa. The pipe leading to the second flow bathroom 5 m above is 0.01 m in diameter. (i). When the flow velocity at the inlet pipe is 4 ms⁻¹. Calculate the flow velocity and the pressure in the bathroom. (ii) What is the pressure in the bathroom if the tap is turned off?",
+    "options": [],
+    "modelAnswer": "Note: 'second flow' means second floor.\n\nInlet (1): d₁ = 0.02 m, P₁ = 4 × 10⁵ Pa, v₁ = 4 m s⁻¹, h₁ = 0.\nBathroom (2): d₂ = 0.01 m, h₂ = 5 m. ρ = 1000 kg m⁻³, g = 10 m s⁻².\n\n(i) Flow velocity, by the equation of continuity:\nA₁v₁ = A₂v₂, and A is proportional to d², so\nv₂ = v₁ × (d₁/d₂)² = 4 × (0.02/0.01)² = 4 × 4 = 16 m s⁻¹.\n\nPressure, by Bernoulli's equation:\nP₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂\nP₂ = P₁ + ½ρ(v₁² − v₂²) − ρg(h₂ − h₁)\n= 4 × 10⁵ + ½ × 1000 × (16 − 256) − 1000 × 10 × 5\n= 4 × 10⁵ − 1.2 × 10⁵ − 0.5 × 10⁵\n= 2.3 × 10⁵ Pa.\n\n(ii) With the tap turned off, the water is at rest (v₁ = v₂ = 0). Assuming the inlet pressure stays at 4 × 10⁵ Pa:\nP₂ = P₁ − ρg(h₂ − h₁) = 4 × 10⁵ − 1000 × 10 × 5 = 3.5 × 10⁵ Pa."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "14a",
+    "question": "a) Define the following and state their units. (i) specific heat capacity (ii) specific latent heat of fusion.",
+    "options": [],
+    "modelAnswer": "(i) Specific heat capacity of a substance is the quantity of heat required to raise the temperature of 1 kg of the substance by 1 K (or 1°C). c = Q/(mΔθ). Unit: J kg⁻¹ K⁻¹.\n\n(ii) Specific latent heat of fusion of a substance is the quantity of heat required to change 1 kg of the substance from solid to liquid at its melting point, without any change in temperature. L = Q/m. Unit: J kg⁻¹."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "14b",
+    "question": "b). describe the method of continuous flow for the determination of the specific heat of liquid.",
+    "options": [],
+    "modelAnswer": "Continuous flow method (Callendar and Barnes):\n\nApparatus: the liquid flows at a steady rate through a narrow glass tube. A heating coil (e.g., platinum wire) runs along the axis of the tube, and is connected to a battery, ammeter and voltmeter. Thermometers (platinum resistance thermometers) measure the inlet temperature θ₁ and outlet temperature θ₂. The tube is surrounded by a vacuum jacket to reduce heat loss.\n\nProcedure:\n1. Start the liquid flowing at a constant rate and switch on the heater.\n2. Wait until a steady state is reached, when θ₁ and θ₂ no longer change.\n3. Record the current I₁, the voltage V₁ and the temperatures. Collect the liquid flowing out in a measured time t₁ and weigh it, to get the mass m₁.\n4. Change the flow rate, and adjust the current and voltage to I₂ and V₂ until the same θ₁ and θ₂ are obtained. Record m₂ in time t₂.\n\nTheory: in the steady state, the electrical power supplied heats the flowing liquid, and a little is lost to the surroundings at a rate H:\nI₁V₁ = (m₁/t₁)c(θ₂ − θ₁) + H\nI₂V₂ = (m₂/t₂)c(θ₂ − θ₁) + H\nThe temperatures are the same in both runs, so H is the same. Subtracting eliminates H:\nc = (I₁V₁ − I₂V₂)/[(m₁/t₁ − m₂/t₂)(θ₂ − θ₁)].\n\nAdvantages: in the steady state the apparatus does not absorb heat, so its heat capacity is not needed. Heat losses are eliminated by the two-run method. The steady temperatures can be measured accurately."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "14c",
+    "question": "c).In an experiment to determine the specific heat capacity of water using continuous flow method, the flowing sets of measurements were taken.\nUse the given data to obtain the specific heat capacity of water.\nc). State and explain three factors that affect evaporation of liquids.",
+    "dataTable": {
+      "headers": [
+        "",
+        "Exp. 1",
+        "Exp. 2"
+      ],
+      "rows": [
+        [
+          "Current in heating coil",
+          "2.0 A",
+          "1.5 A"
+        ],
+        [
+          "Potential difference across coil",
+          "5.5 V",
+          "4.5 V"
+        ],
+        [
+          "Mass of water collected",
+          "0.0405 kg",
+          "0.0700 kg"
+        ],
+        [
+          "Time of flow",
+          "60.0 s",
+          "180.0 s"
+        ],
+        [
+          "Inlet temperature",
+          "38.0°C",
+          "38.0°C"
+        ],
+        [
+          "Outlet temperature",
+          "45.0°C",
+          "45.0°C"
+        ]
+      ]
+    },
+    "options": [],
+    "modelAnswer": "Note: the paper labels two parts as (c). Both are answered here.\n\nFirst (c): specific heat capacity of water.\nPower supplied:\nExp. 1: P₁ = I₁V₁ = 2.0 × 5.5 = 11.0 W\nExp. 2: P₂ = I₂V₂ = 1.5 × 4.5 = 6.75 W\n\nRate of flow:\nExp. 1: m₁/t₁ = 0.0405/60.0 = 6.75 × 10⁻⁴ kg s⁻¹\nExp. 2: m₂/t₂ = 0.0700/180.0 = 3.89 × 10⁻⁴ kg s⁻¹\n\nTemperature rise in both: Δθ = 45.0 − 38.0 = 7.0 K.\n\nSince the temperatures are the same in both experiments, the rate of heat loss H is the same:\nP₁ = (m₁/t₁)cΔθ + H\nP₂ = (m₂/t₂)cΔθ + H\n\nSubtract:\nc = (P₁ − P₂)/[(m₁/t₁ − m₂/t₂)Δθ]\n= (11.0 − 6.75)/[(6.75 × 10⁻⁴ − 3.89 × 10⁻⁴) × 7.0]\n= 4.25/(2.003 × 10⁻³)\n≈ 2.1 × 10³ J kg⁻¹ K⁻¹.\n\nNote: this is about half the accepted value for water (about 4200 J kg⁻¹ K⁻¹). The method is correct, so some of the printed data are probably misprinted. Students should still show this working, which is what the question asks for.\n\nSecond (c): factors that affect evaporation (any three):\n1. Temperature: at a higher temperature, more molecules have enough kinetic energy to escape, so evaporation is faster.\n2. Surface area: evaporation happens only at the surface, so a larger exposed surface gives faster evaporation.\n3. Humidity: if the air is already full of vapour, fewer molecules escape than return, so evaporation is slower in humid air.\n4. Air movement (wind): moving air carries vapour away from the surface, so evaporation is faster.\n5. Pressure: lower pressure above the liquid increases evaporation.\n6. Nature of the liquid: liquids with weak intermolecular forces (volatile liquids such as ether or alcohol) evaporate faster than water."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "15a",
+    "question": "a). Define coefficient of viscosity and briefly describe two applications of viscosity of liquids.",
+    "options": [],
+    "modelAnswer": "Coefficient of viscosity (η): the tangential (frictional) force per unit area needed to maintain a unit velocity gradient between adjacent layers of a fluid in streamline flow.\nη = F/(A × dv/dx). Unit: N s m⁻² (Pa s).\n\nApplications (any two):\n1. Lubrication: oils of suitable viscosity are chosen to reduce friction and wear between moving parts of machines. Thicker oils are used in heavy machinery and in hot conditions.\n2. Shock absorbers and dampers: in vehicles, viscous oil resists the motion of a piston and damps vibrations.\n3. Millikan's oil-drop experiment: the viscous drag on falling oil drops (Stokes's law) is used to find their size and the charge on the electron.\n4. Flow in pipes and blood vessels: the viscosity of blood affects how hard the heart must pump, and the viscosity of liquids is considered when designing pipelines.\n5. Measuring the size of tiny particles, e.g., in sedimentation, from their terminal velocity."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "15b",
+    "question": "b). (i), The viscous force opposing the motion of a sphere of radius r moving through a liquid of viscosity η is given by f = krvη .\nobtain an expression for the terminal velocity v_T of the sphere falling freely in the liquid if the density of the liquid is ρ and the density of the sphere is ρₛ.\n(ii). Spherical particles of pollen are shaken up in water and allowed to stand. The depth of water is 0.02 m. what is the diameter of of the largest particles remaining in suspension 1 hour later? Density of pollen is 1.8 x 10³ kgm⁻³.",
+    "options": [],
+    "modelAnswer": "(i) Three forces act on the falling sphere:\nWeight (downwards): W = (4/3)πr³ρₛg\nUpthrust (upwards): U = (4/3)πr³ρg\nViscous force (upwards): f = krv_Tη\n\nAt the terminal velocity the resultant force is zero: W = U + f\n(4/3)πr³ρₛg = (4/3)πr³ρg + krv_Tη\nkrv_Tη = (4/3)πr³(ρₛ − ρ)g\nv_T = 4πr²(ρₛ − ρ)g/(3kη)\n\nBy Stokes's law k = 6π, which gives:\nv_T = 2r²(ρₛ − ρ)g/(9η).\n\n(ii) Note: the viscosity of water is not given, so η = 1.0 × 10⁻³ N s m⁻² is assumed.\n\nThe largest particles still in suspension after 1 hour are those that have just fallen the full depth of 0.02 m in that time. (Larger particles fall faster and have already settled.)\nv_T = 0.02/3600 = 5.56 × 10⁻⁶ m s⁻¹.\n\nr² = 9ηv_T/[2(ρₛ − ρ)g]\n= (9 × 1.0 × 10⁻³ × 5.56 × 10⁻⁶)/[2 × (1800 − 1000) × 10]\n= (5.0 × 10⁻⁸)/16 000\n= 3.125 × 10⁻¹²\nr = 1.77 × 10⁻⁶ m.\n\nDiameter = 2r = 3.5 × 10⁻⁶ m (about 3.5 μm)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "16a",
+    "question": "a) (i). State and explain the first law of thermodynamics. (ii). Show that, the internal energy of a gas depends only on its temperature.",
+    "options": [],
+    "modelAnswer": "(i) First law of thermodynamics: the heat ΔQ supplied to a system is equal to the increase in its internal energy ΔU plus the external work ΔW done by the system:\nΔQ = ΔU + ΔW.\nExplanation: it is the principle of conservation of energy applied to heat and work. Heat given to a gas is partly used to raise its internal energy (and so its temperature) and partly to do work as the gas expands against an external pressure (ΔW = PΔV).\n\n(ii) For an ideal gas, there are no forces of attraction between the molecules, so the molecules have no potential energy. The internal energy is therefore only the total kinetic energy of the molecules.\nFrom the kinetic theory, the average kinetic energy of a molecule is (3/2)kT. For n moles (N molecules) of a monatomic gas:\nU = N × (3/2)kT = (3/2)nRT.\nU depends only on T, not on the pressure or volume.\n(This agrees with Joule's experiment: when a gas expands freely into a vacuum, doing no work and absorbing no heat, its temperature does not change, so its internal energy does not depend on volume.)"
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "16b",
+    "question": "b). With the aid of a sketch diagram, explain the isothermal and adiabatic changes.",
+    "options": [],
+    "modelAnswer": "Sketch: draw a P–V graph with pressure on the vertical axis and volume on the horizontal axis. From the same starting point, draw two curves falling to the right. The adiabatic curve should fall more steeply than the isothermal curve.\n\nIsothermal change: a change in pressure and volume that takes place at constant temperature.\n1. Boyle's law applies: PV = constant.\n2. The change must take place slowly, in a container with good conducting walls, so heat can flow in or out to keep the temperature constant.\n3. ΔU = 0, so ΔQ = ΔW: all the heat absorbed is used to do work.\n\nAdiabatic change: a change in which no heat enters or leaves the gas (ΔQ = 0).\n1. PV^γ = constant, where γ = C_p/C_v.\n2. The change must take place quickly, in a container with insulating walls, so there is no time for heat transfer.\n3. ΔU = −ΔW: in an adiabatic expansion the gas does work at the expense of its internal energy, so its temperature falls. In an adiabatic compression its temperature rises.\n4. Since γ > 1, the adiabatic curve is steeper than the isothermal curve on a P–V graph."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "16c",
+    "question": "c). (i). A mass of an ideal gas of volume 6 x 10⁻⁴ m³ at 219 K expands adiabatically and its temperature falls to 273 K. what is the final volume if the ratio of the principal heat capacities of the ideal gas γ = 1.40? (ii). In a Wilson cloud chamber at a temperature of 20°C, particles tracks are made visible by causing condensation on ions by an approximately reversible adiabatic expansion of the volume in the ration 1.375 to 1. Estimate the gas temperature after the expansion.",
+    "options": [],
+    "modelAnswer": "For an adiabatic change: TV^(γ−1) = constant, so T₁V₁^(γ−1) = T₂V₂^(γ−1). Here γ − 1 = 0.40.\n\n(i) Misprint note: the paper says the gas expands and its temperature falls from 219 K to 273 K, but 273 K is higher than 219 K. In an adiabatic expansion the temperature must fall, so one of the printed temperatures is wrong. It is not possible to be sure which value was intended.\n\nV₂ = V₁(T₁/T₂)^(1/(γ−1)) = V₁(T₁/T₂)^2.5\n\nUsing the numbers as printed (T₁ = 219 K, T₂ = 273 K):\nV₂ = 6 × 10⁻⁴ × (219/273)^2.5 = 6 × 10⁻⁴ × 0.576 = 3.46 × 10⁻⁴ m³.\nThis is a decrease in volume, i.e., a compression, which contradicts the question.\n\nIf the initial temperature was meant to be 291 K (falling to 273 K):\nV₂ = 6 × 10⁻⁴ × (291/273)^2.5 = 6 × 10⁻⁴ × 1.173 = 7.04 × 10⁻⁴ m³.\n\n(ii) Note: 'ration' means ratio. The gas is taken as air, with γ = 1.40.\nT₁ = 20 + 273 = 293 K; V₂/V₁ = 1.375.\nT₂ = T₁(V₁/V₂)^(γ−1) = 293 × (1/1.375)^0.40\n= 293 × 0.8804\n= 258 K.\n\nThe gas temperature after the expansion is about 258 K, i.e., about −15°C."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "17a",
+    "question": "a). Explain the meaning of the following: (i) fundamental note. (ii). Overtones, (iii) Harmonic frequencies.",
+    "options": [],
+    "modelAnswer": "(i) Fundamental note: the note of lowest frequency (lowest pitch) that a vibrating system, such as a string or an air column, can produce. Its frequency is the fundamental frequency f₀.\n\n(ii) Overtones: notes of higher frequency than the fundamental that are produced along with it by the same vibrating system. The first overtone is the next possible note above the fundamental, the second overtone the next, and so on.\n\n(iii) Harmonic frequencies (harmonics): frequencies that are whole-number multiples of the fundamental frequency: f₀ (1st harmonic), 2f₀ (2nd harmonic), 3f₀ (3rd harmonic), and so on."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "17b",
+    "question": "b). (i). Draw sketches to show how the first three overtones are produced in a closed pipe.\n(ii). Show that, a closed pipe produces only odd harmonics.",
+    "options": [],
+    "modelAnswer": "(i) Sketches: draw a pipe closed at one end and open at the other for each mode. Always show a node (N) at the closed end and an antinode (A) at the open end, ignoring end correction.\nFundamental (for reference): one quarter-wavelength fills the pipe, N to A. L = λ/4.\nFirst overtone: N–A–N–A, three quarter-wavelengths. L = 3λ/4, so f = 3v/4L (3rd harmonic).\nSecond overtone: N–A–N–A–N–A, five quarter-wavelengths. L = 5λ/4, so f = 5v/4L (5th harmonic).\nThird overtone: seven quarter-wavelengths. L = 7λ/4, so f = 7v/4L (7th harmonic).\n\n(ii) A closed pipe must have a node at its closed end and an antinode at its open end. The distance from a node to the next antinode is λ/4, and each further node–antinode pair adds λ/2. So the length must contain an odd number of quarter-wavelengths:\nL = (2n − 1)λ/4, n = 1, 2, 3, ...\nλ = 4L/(2n − 1), so f = v/λ = (2n − 1)v/4L.\nWith fundamental f₀ = v/4L, the possible frequencies are f₀, 3f₀, 5f₀, 7f₀, ...\nThese are only odd multiples of the fundamental, so a closed pipe produces only odd harmonics."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "17c",
+    "question": "c). Explain the meaning of end correction of resonance tube.",
+    "options": [],
+    "modelAnswer": "In a resonance tube, the antinode at the open end is not exactly at the mouth of the tube but forms a short distance beyond it, because the air just outside the tube also vibrates. This small extra distance, c, is called the end correction.\nThe effective length of the vibrating air column is therefore L + c, not L. For a closed pipe in its fundamental mode: L + c = λ/4.\nThe end correction depends on the width of the tube and is about 0.6r, where r is the radius of the tube (about 0.3 × diameter)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "17d",
+    "question": "d). You are given a closed pipe 0.46 m long and an opened pipe 0.60 m long.. they both have same diameter and each sound its first overtone at the same pitch. What is the end correction?",
+    "options": [],
+    "modelAnswer": "Both pipes have the same diameter, so they have the same end correction c at each open end. The closed pipe has one open end; the open pipe has two.\n\nClosed pipe, first overtone (3rd harmonic): L₁ + c = 3λ/4, so f = 3v/[4(0.46 + c)].\nOpen pipe, first overtone (2nd harmonic): L₂ + 2c = λ, so f = v/(0.60 + 2c).\n\nSame pitch, so the frequencies are equal:\n3v/[4(0.46 + c)] = v/(0.60 + 2c)\n3(0.60 + 2c) = 4(0.46 + c)\n1.80 + 6c = 1.84 + 4c\n2c = 0.04\nc = 0.02 m (2 cm)."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "18a",
+    "question": "a). (i). What is simple harmonic motion? (ii). State and explain three examples of simple harmonic motion.",
+    "options": [],
+    "modelAnswer": "(i) Simple harmonic motion (SHM) is the motion of a body whose acceleration is always directed towards a fixed point (the equilibrium position) and is directly proportional to its displacement from that point: a = −ω²x.\n\n(ii) Any three:\n1. Simple pendulum, for small angles: the restoring force on the bob, mg sin θ ≈ mgθ, is proportional to its displacement and directed towards the lowest point.\n2. Mass on a spring: by Hooke's law the restoring force is F = −kx, so a = −(k/m)x.\n3. Liquid in a U-tube: when displaced, the weight of the unbalanced column acts as a restoring force proportional to the displacement.\n4. A loaded test tube or cylinder floating in a liquid: when pushed down and released, the extra upthrust is proportional to the displacement.\n5. The prongs of a vibrating tuning fork."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "18b",
+    "question": "b). A liquid column of total length L, and density ρ is at rest in a U- tube of uniform cross sectional area A. if the liquid in a U-tube is given a small placement x. (i). Show that, the issuing motion is simple harmonic . (ii) deduce an expression for the period of the water column.",
+    "options": [],
+    "modelAnswer": "Note: 'small placement' means small displacement, and 'issuing motion' means ensuing (resulting) motion.\n\n(i) When the liquid in one arm is pushed down by x, the liquid in the other arm rises by x. The difference in levels is 2x.\nThe unbalanced column of height 2x has weight: F = (2x)Aρg.\nThis weight acts to restore the liquid to equilibrium, so F = −2Aρgx.\n\nMass of the whole moving liquid column: m = LAρ.\nAcceleration: a = F/m = −2Aρgx/(LAρ) = −(2g/L)x.\n\nSince 2g/L is constant, the acceleration is proportional to the displacement x and directed towards the equilibrium position. The motion is therefore simple harmonic, with ω² = 2g/L.\n\n(ii) Period: T = 2π/ω = 2π√(L/(2g))."
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "paper": "Paper I",
+    "category": "Circular and Oscillatory Motions",
+    "type": "Essay",
+    "questionNumber": "18c",
+    "question": "c). The displacement x, of an object oscillating with simple harmonic motion is given by x = 12cos(5πt). Where x is in millimeter and t is in second. Determine the (i) amplitude (ii). The period. (iii) the maximum velocity attained by the object.",
+    "options": [],
+    "modelAnswer": "Compare with the SHM equation x = A cos ωt.\n\n(i) Amplitude: A = 12 mm (0.012 m).\n\n(ii) ω = 5π rad s⁻¹, so the period T = 2π/ω = 2π/(5π) = 0.4 s.\n\n(iii) Maximum velocity: v_max = ωA = 5π × 12 = 60π mm s⁻¹ ≈ 188 mm s⁻¹ (0.19 m s⁻¹)."
+  }
+]

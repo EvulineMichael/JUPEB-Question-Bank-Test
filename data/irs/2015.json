@@ -536,6 +536,8 @@
     "question": "'Innamal-a'malu binniyat...' is an example of",
     "options": ["Hadith Gharib", "Hadith Mutawatir", "Hadith Mursal", "Hadith an-Nawawi"],
     "answer": "D",
+    "reviewNote": "'Innamal-a'malu binniyat' (actions are judged by intentions) is the first hadith in Imam an-Nawawi's Forty Hadith. In hadith classification it is the classic example of a Hadith Gharib (A): in its earliest links it was reported by only one narrator at each stage ('Umar, then 'Alqamah, then Muhammad at-Taymi, then Yahya ibn Sa'id), though it is fully authentic (sahih).\n\n'Hadith an-Nawawi' (D, the examiners' answer) names the collection it appears in, not a type of hadith. Because A is the stronger answer by hadith science, this question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "'Actions are judged by intentions' is Hadith One of an-Nawawi's collection."
   },
   {

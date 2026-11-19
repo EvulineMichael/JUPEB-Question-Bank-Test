@@ -45,6 +45,8 @@
       "prologue."
     ],
     "answer": "A",
+    "reviewNote": "The parts of a Greek tragedy come in this order: prologue → parodos (the chorus's entry song) → episodes separated by stasima (choral odes) → exodos (the closing scene).\n\nThe exodos therefore comes after all of the prologue, the parodos and the stasima. The most precise answer is 'after the (last) stasimon' (C), but the examiners' answer is A (parodos). Because the question allows more than one answer, it is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Exodus in Greek theatre occurs after the parados — it is the final section of the play, the last episode, where the chorus exits. The parados is the entrance of the chorus, which occurs earlier in the play."
   },
   {
@@ -445,6 +447,8 @@
       "Classical."
     ],
     "answer": "D",
+    "reviewNote": "This question asks about 'the poems studied', meaning the poems on the course syllabus for that year, which are not listed here. It cannot be answered without that list.",
+    "excludeFromQuiz": true,
     "explanation": "The Classical period (Greek and Roman poetry) is not typically reflected in the poems studied for JUPEB Literature-in-English. The Renaissance, Victorian, and Modern periods are commonly studied."
 },
   {
@@ -495,6 +499,8 @@
       "aab."
     ],
     "answer": "B",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The rhyme scheme of the extract is abc — the three lines do not rhyme with each other, following an abc pattern. The lines are from Shakespeare's Richard II, where John of Gaunt praises England."
   },
   {
@@ -513,6 +519,8 @@
       "hyperbole."
     ],
     "answer": "C",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The last line ('This other Eden, demi-paradise') is a metaphor — it compares England to Eden, suggesting it is a paradise. This metaphorical description elevates England to a near-divine status."
   },
   {
@@ -563,6 +571,8 @@
       "eye rhyme."
     ],
     "answer": "B",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The type of rhyme used is coupled rhyme — the lines rhyme in pairs (AABB). The rhyme scheme of the stanza is AABB, with each couplet rhyming internally (battle/cattle, them/owned them)."
   },
   {
@@ -581,6 +591,8 @@
       "litotes."
     ],
     "answer": "A",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The second line ('And much their land bemoaned them') illustrates euphemism — it is a mild expression used to soften the harsh reality of the defeat and loss in battle. 'Bemoaned' is softer than saying they were killed or defeated."
   },
   {
@@ -599,6 +611,8 @@
       "villain."
     ],
     "answer": "C",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "It can be inferred that the persona is the victor — they have 'brought away' cattle and the head of the owner, indicating they have won in battle. The poem celebrates the spoils of war, from the perspective of the victorious side."
   },
   {
@@ -719,6 +733,8 @@
       "bored."
     ],
     "answer": "B",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "It can be deduced that the character is pretentious — he laughs at dull jokes, dries a tear for a kitten, and acts out emotions, but his true thoughts are elsewhere (thinking of driving Anne Murchison home). He is putting on a performance."
   },
   {
@@ -753,6 +769,8 @@
       "limerick."
     ],
     "answer": "D",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The poem is a limerick — a humorous five-line poem with a specific rhyme scheme (AABBA) and rhythm. Limericks are known for their playful, nonsensical content and are often anonymous."
   },
   {
@@ -771,6 +789,8 @@
       "antithesis"
     ],
     "answer": "A",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The last line ('And a smile on the face of the tiger') evidences the presence of irony — it is unexpected and humorous. The tiger ate the lady and is smiling, which is ironic because the rider was smiling at the start, and now the tiger is."
   },
   {
@@ -789,6 +809,8 @@
       "onomatopoeia."
     ],
     "answer": "D",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The dominant device presented is onomatopoeia — words like 'screams' imitate the sound they describe, creating a vivid auditory effect. The passage conveys the horror of the moment."
   },
   {
@@ -807,6 +829,8 @@
       "barking dog."
     ],
     "answer": "A",
+    "reviewNote": "This question is about a poem and prose passage printed in the original exam paper, but the poem and prose passage is not included in this copy, so it cannot be answered here. The examiners' answer is shown, but without the text you cannot check it.\n\nTip: in the exam, read the passage at least twice before answering, and look for evidence in specific words and lines.",
+    "excludeFromQuiz": true,
     "explanation": "The image evoked is that of a screaming man — the phrase 'bursting suddenly from the throat of the chained form' indicates that a chained person is screaming, creating a disturbing image of suffering and terror."
   },
   {

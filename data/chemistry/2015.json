@@ -30,7 +30,7 @@
     "question": "How many atoms of Cu are present in 35.4g of Cu? [Cu = 63.5 gmol^{-1}]",
     "options": ["1.08 × 10^{24} atoms of Cu", "3.27 × 10^{23} atoms of Cu", "6.02 × 10^{23} atoms of Cu", "1.20 × 10^{22} atoms of Cu"],
     "answer": "B",
-    "explanation": "Moles of Cu = 35.4/63.5 = 0.5575 mol.\n\nNumber of atoms = 0.5575 × 6.02 × 10²³ = 3.36 × 10²³ atoms.\n\nThe correct value is 3.36 × 10²³ atoms. The closest option has been selected."
+    "explanation": "Moles of Cu = 35.4 ÷ 63.5 = 0.557 mol.\nNumber of atoms = 0.557 × 6.02 × 10²³ ≈ 3.36 × 10²³ atoms.\n\nThe nearest option is B (3.27 × 10²³); the small difference comes from rounding in the original paper. The other options are far off: C is one whole mole, A is nearly two moles."
   },
   {
     "subject": "Chemistry",
@@ -85,6 +85,8 @@
     "question": "Which of the following statements explain why caesium has a lower melting point than sodium?",
     "options": ["Sodium is a more electropositive metal", "Sodium has higher ionization energy", "Sodium has a stronger metallic bond", "Caesium has a larger atomic radius"],
     "answer": "C",
+    "reviewNote": "Both C and D are true: caesium's larger atomic radius (D) puts its outer electron further from the nucleus, which makes its metallic bonding weaker than sodium's (C), so it melts at a lower temperature.\n\nBecause two options are correct (and the 2015 and 2026 papers give different keys), the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "Caesium has a larger atomic radius, resulting in weaker metallic bonding and a lower melting point.\n\nSodium has a stronger metallic bond due to its smaller size."
   },
   {
@@ -536,8 +538,8 @@
     "questionNumber": 48,
     "question": "In which of the following characteristics does hydrogen resemble halogens?",
     "options": ["Hydrogen is the lightest", "Hydrogen forms ionic hydrides with alkali metals", "Hydrogen atom contains one electron each", "Hydrogen has three isotopes."],
-    "answer": "C",
-    "explanation": "Both hydrogen and halogens have one electron in their outermost shell, giving them a valency of 1."
+    "answer": "B",
+    "explanation": "Hydrogen resembles the halogens because, like them, it is one electron short of a noble-gas configuration (H has 1 electron; helium has 2). So it can gain one electron to form a −1 ion.\n\nWith alkali metals it forms ionic hydrides such as Na⁺H⁻, just as chlorine forms Na⁺Cl⁻. It is also diatomic (H₂, like Cl₂).\n\nOption C (one electron in its shell) is how hydrogen resembles the alkali metals, not the halogens, which have 7 outer electrons."
   },
   {
     "subject": "Chemistry",
@@ -568,7 +570,7 @@
     "type": "Essay",
     "questionNumber": 1,
     "question": "(a) Explain the condition of chemical equilibrium using the hypothetical equilibrium equation;\naA + bB ⇌ cC + dD\n\n(b) Write the equilibrium constant, Kc expressions for the following reactions:\n(i) 3C2H2(g) ⇌ C6H6(g)\n(ii) 2NOCl ⇌ 2NO + Cl2\n(iii) N2O4(g) ⇌ 2NO2\n\n(c) A mixture of 0.003 mol of H2 and 0.002 mole of I2 were reacted to attain equilibrium in a 2-L container at 400°C. Analysis of the equilibrium mixtures shows that the concentration of HI is 0.0022 M. Calculate Kc for the reaction at 400°C.",
-    "modelAnswer": "(a) Chemical equilibrium occurs when the rate of forward reaction equals the rate of reverse reaction.\n\nAt this point, concentrations of reactants and products remain constant over time.\n\nFor aA + bB ⇌ cC + dD, Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ.\n\n(b) (i) Kc = [C₆H₆] / [C₂H₂]³\n(ii) Kc = [NO]²[Cl₂] / [NOCl]²\n(iii) Kc = [NO₂]² / [N₂O₄]\n\n(c) Reaction: H₂ + I₂ ⇌ 2HI.\n\nInitial [H₂] = 0.003/2 = 0.0015 M.\nInitial [I₂] = 0.002/2 = 0.0010 M.\n\nAt equilibrium, [HI] = 0.0022 M.\nChange in [HI] = +0.0022 M.\n\n[H₂] reacted = [I₂] reacted = 0.0022/2 = 0.0011 M.\n\nEquilibrium [H₂] = 0.0015 - 0.0011 = 0.0004 M.\nEquilibrium [I₂] = 0.0010 - 0.0011 = -0.0001 M (negative indicates data inconsistency).\n\nNote: The given data produces a physically impossible negative concentration of I₂, suggesting a typo in the question. Using the closest plausible values, Kc ≈ 121.",
+    "modelAnswer": "(a) A reaction is at chemical equilibrium when the rate of the forward reaction equals the rate of the reverse reaction. Both reactions keep going (dynamic equilibrium), but the concentrations of A, B, C and D no longer change. Equilibrium can only be reached in a closed system at constant temperature.\n\nFor aA + bB ⇌ cC + dD:\nKc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ\n\n(b) (i) Kc = [C₆H₆] / [C₂H₂]³\n(ii) Kc = [NO]²[Cl₂] / [NOCl]²\n(iii) Kc = [NO₂]² / [N₂O₄]\n\n(c) H₂ + I₂ ⇌ 2HI, Kc = [HI]² / ([H₂][I₂])\n\nNote: the data as printed cannot all be right. In a 2 L container, [I₂] starts at 0.002/2 = 0.0010 M, so at most 0.0020 M of HI can form. The paper's 0.0022 M of HI would need more iodine than there is. The figures work if the container is 1 L, which is most likely what was meant:\n\nInitial: [H₂] = 0.0030 M, [I₂] = 0.0020 M, [HI] = 0\nChange: 2x = 0.0022, so x = 0.0011 M of H₂ and of I₂ react\nEquilibrium: [H₂] = 0.0030 − 0.0011 = 0.0019 M; [I₂] = 0.0020 − 0.0011 = 0.0009 M; [HI] = 0.0022 M\n\nKc = (0.0022)² / (0.0019 × 0.0009) = 4.84 × 10⁻⁶ / 1.71 × 10⁻⁶ ≈ 2.8\n\nIn the exam, show the ICE table (Initial, Change, Equilibrium) clearly. Most of the marks are for the method.",
     "options": []
   },
   {
@@ -582,7 +584,7 @@
         "src": "/images/questions/chemistry/2015/chem-2015-essay-2a.svg",
         "alt": "Structural formulas for ethane (CH₃CH₃), propene (CH₃CH=CH₂), and cyclohexene (C₆H₁₀)"
     },
-    "modelAnswer": "(a) (i) Ethane + Br₂ (UV light) → Bromoethane: CH₃CH₂Br + HBr\n(ii) Butene + HBr → 2-bromobutane: CH₃CH₂CHBrCH₃ (Markovnikov addition)\n(iii) Cyclohexene + HBr → Bromocyclohexane: C₆H₁₁Br\n\n(b) (i) C₃H₈ + 5O₂ → 3CO₂ + 4H₂O\n(ii) C₃H₈ + 3H₂O → 3CO + 7H₂ (steam reforming)\n(iii) C₆H₁₀ + H₂ → C₆H₁₂ (cyclohexane)",
+    "modelAnswer": "(a) (i) Ethane + Br₂ (UV light) → Bromoethane: CH₃CH₂Br + HBr\n(ii) Butene + HBr → 2-bromobutane: CH₃CH₂CHBrCH₃ (Markovnikov addition)\n(iii) Cyclohexene + HBr → Bromocyclohexane: C₆H₁₁Br\n\n(b) (i) C₃H₈ + 5O₂ → 3CO₂ + 4H₂O\n(ii) The question most likely means propene (listed above), since steam adds across a C=C double bond. With a phosphoric acid catalyst (about 300 °C, 60–70 atm), steam adds by Markovnikov's rule to give propan-2-ol:\nCH₃CH=CH₂ + H₂O → CH₃CH(OH)CH₃\n(If propane really is meant, the only reaction with steam is industrial steam reforming over a nickel catalyst: C₃H₈ + 3H₂O → 3CO + 7H₂.)\n(iii) C₆H₁₀ + H₂ → C₆H₁₂ (cyclohexane)",
     "options": []
   },
   {
@@ -612,7 +614,7 @@
     "type": "Essay",
     "questionNumber": 4,
     "question": "(a) Name the strongest type of intermolecular force between hydrogen fluoride molecules and draw a diagram to illustrate how two molecules of HF are attracted to each other. In your diagram show all lone pairs of electrons and any partial charges. Explain the origin of these charges. Suggest why this strong intermolecular force is not present between HI molecules.\n\n(b) Crystals of sodium chloride and of diamond both have giant structures. Their melting points are 1074K and 3827K respectively. State the type of structure present in each case and explain why the melting point of diamond is so high.\n\n(c) Write a Lewis structure and identify the octet-rule exception for:\n(i) SClF5\n(ii) BFCl2",
-    "modelAnswer": "(a) Hydrogen bonding.\n\nPartial charges arise from fluorine's high electronegativity.\n\nHI does not show strong hydrogen bonding because iodine is less electronegative and has larger size.\n\n(b) NaCl: Ionic giant structure.\nDiamond: Covalent network giant structure.\n\nDiamond's melting point is higher because covalent bonds extend throughout the crystal and are very strong.\n\n(c) (i) SClF₅: Sulfur has 12 electrons (expanded octet — uses d-orbitals).\n(ii) BFCl₂: Boron has 6 electrons (incomplete octet — electron deficient).",
+    "modelAnswer": "(a) Hydrogen bonding.\n\nDiagram: draw two H–F molecules side by side, H–F ··· H–F. On each fluorine show three lone pairs. Mark each H as δ+ and each F as δ−. Draw a dotted line from the δ+ hydrogen of one molecule to a lone pair on the δ− fluorine of the other; the F–H···F atoms lie roughly in a straight line.\n\nPartial charges arise because fluorine is the most electronegative element: it pulls the shared electron pair of the H–F bond towards itself, leaving the hydrogen nucleus almost bare (δ+) and the fluorine electron-rich (δ−).\n\nHI does not show strong hydrogen bonding because iodine is less electronegative and has larger size.\n\n(b) NaCl: Ionic giant structure.\nDiamond: Covalent network giant structure.\n\nDiamond's melting point is higher because covalent bonds extend throughout the crystal and are very strong.\n\n(c) (i) SClF₅: Sulfur has 12 electrons (expanded octet — uses d-orbitals).\n(ii) BFCl₂: Boron has 6 electrons (incomplete octet — electron deficient).",
     "options": []
   },
   {
@@ -682,7 +684,7 @@
     "type": "Essay",
     "questionNumber": 8,
     "question": "(a) State three (3) major factors which affect the discharge of ions at the electrodes during electrolysis.\n\n(b) Explain why a tin-plated iron container corrodes faster than a galvanized iron container with reference to the electrochemical series.\n\n(c) 528g of a trivalent metal is deposited when a current of 1.56A is passed through a solution of its salt for 1 hour; calculate the relative atomic mass of the metal. Hence identify the metal. (1F = 96500C)\n\n(d) State any three (3) common applications of electrolysis.",
-    "modelAnswer": "(a) 1. Position of ions in electrochemical series (lower E° discharged first)\n2. Concentration of ions (higher concentration favored)\n3. Nature of electrode material\n\n(b) Tin is less reactive (more noble) than iron, so iron corrodes when coating is scratched.\nZinc is more reactive than iron, so zinc corrodes sacrificially, protecting iron.\n\n(c) Q = It = 1.56 × 3600 = 5616 C.\nMoles e⁻ = 5616/96500 = 0.0582 mol.\nFor M³⁺, moles M = 0.0582/3 = 0.0194 mol.\nAtomic mass = 0.528/0.0194 = 27.2 g/mol.\nMetal is Aluminium (Al).\n\n(d) 1. Electroplating\n2. Extraction of metals (e.g., aluminium)\n3. Purification of metals (e.g., copper refining)",
+    "modelAnswer": "(a) 1. Position of ions in electrochemical series (lower E° discharged first)\n2. Concentration of ions (higher concentration favored)\n3. Nature of electrode material\n\n(b) Tin is less reactive (more noble) than iron, so iron corrodes when coating is scratched.\nZinc is more reactive than iron, so zinc corrodes sacrificially, protecting iron.\n\n(c) Q = It = 1.56 × 3600 = 5616 C.\nMoles e⁻ = 5616/96500 = 0.0582 mol.\nFor M³⁺, moles M = 0.0582/3 = 0.0194 mol.\nAtomic mass = 0.528/0.0194 = 27.2 g/mol.\n(Note: the paper prints '528g'. That would give a relative atomic mass of about 27 000, which is impossible, so the mass deposited must be 0.528 g.)\nMetal is Aluminium (Al).\n\n(d) 1. Electroplating\n2. Extraction of metals (e.g., aluminium)\n3. Purification of metals (e.g., copper refining)",
     "options": []
   }
 ]

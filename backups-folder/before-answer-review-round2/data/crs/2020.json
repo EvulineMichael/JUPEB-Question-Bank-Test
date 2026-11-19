@@ -1,0 +1,882 @@
+[
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Rise of Monarchy in Israel",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "King Solomon's reign was regarded as the",
+    "options": [
+      "golden age.",
+      "mechanized age.",
+      "industrial age.",
+      "civilized age."
+    ],
+    "answer": "A",
+    "explanation": "King Solomon's reign is regarded as the golden age of Israel — a period of peace, prosperity, extensive building projects (including the Temple), and international trade. It was the height of Israel's power and influence."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The rival Temples built by King Jeroboam were situated at",
+    "options": [
+      "Benjamin and Judah.",
+      "Ephraim and Manasseh.",
+      "Shechem and Tirzah.",
+      "Dan and Bethel."
+    ],
+    "answer": "D",
+    "explanation": "King Jeroboam built rival temples at Dan (in the north) and Bethel (in the south) to prevent the northern tribes from going to Jerusalem to worship (1 Kings 12:28-29)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "The genre of literature in the Bible which is usually communicated in form of dream and vision is called",
+    "options": [
+      "Historical Literature.",
+      "Wisdom Literature.",
+      "Poetic Literature.",
+      "Apocalyptic Literature."
+    ],
+    "answer": "D",
+    "explanation": "Apocalyptic Literature is communicated in the form of dreams and visions, using symbolic imagery to reveal divine secrets about the end times. Examples include Daniel and Revelation."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The immediate factor in the division of the Kingdom was",
+    "options": [
+      "King Saul's folly.",
+      "King Rehoboam's folly.",
+      "King Solomon's folly.",
+      "King David's folly."
+    ],
+    "answer": "B",
+    "explanation": "The immediate factor in the division of the kingdom was King Rehoboam's folly — he rejected the wise counsel of the elders and followed the advice of his young friends, responding harshly to the people's request for relief from heavy taxation (1 Kings 12:1-16)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The canonical books of the Old Testament are categorized as the",
+    "options": [
+      "Mosaic, Davidic and Prophetic.",
+      "Law, Prophets and Writings.",
+      "Abrahamic, Davidic and Prophetic.",
+      "Poems, Proverbs and Prophets."
+    ],
+    "answer": "B",
+    "explanation": "The canonical books of the Old Testament are categorized as the Law (Torah), Prophets (Nebiim), and Writings (Ketubim). This is the traditional Jewish division of the Hebrew Bible."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The opinion that God uses human beings as secretaries/agents of His word is known as",
+    "options": [
+      "delegated inspiration.",
+      "correspondence inspiration.",
+      "documented inspiration.",
+      "dictation inspiration."
+    ],
+    "answer": "D",
+    "explanation": "Dictation inspiration is the opinion that God uses human beings as secretaries/agents of His word — God dictates every word, and the human author merely writes it down without any personal input. This is the most mechanical view of inspiration."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Mosaic Authorship of the Pentateuch: An Overview",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The source associated with worship is the",
+    "options": [
+      "J-Source.",
+      "E-Source.",
+      "D-Source.",
+      "P-Source."
+    ],
+    "answer": "D",
+    "explanation": "The P-Source (Priestly Source) is associated with worship — it contains detailed instructions on sacrifices, festivals, priesthood, and the Tabernacle. The J-Source uses 'Yahweh' and the E-Source uses 'Elohim.'"
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Mosaic Authorship of the Pentateuch: An Overview",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "One of the arguments against Mosaic authorship of the Pentateuch is that Moses wrote of his",
+    "options": [
+      "marriage.",
+      "crime of murder.",
+      "death.",
+      "flight from Egypt."
+    ],
+    "answer": "C",
+    "explanation": "One argument against Mosaic authorship is that Moses wrote of his own death (Deuteronomy 34:1-12). Since the Pentateuch records Moses' death and burial, it suggests that someone else (Joshua or later editors) completed the work."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Rise of Monarchy in Israel",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Israel demanded for a King because of the fear of the",
+    "options": [
+      "Moabites.",
+      "Philistines.",
+      "Assyrians.",
+      "Babylonians."
+    ],
+    "answer": "B",
+    "explanation": "Israel demanded a king because of the fear of the Philistines (1 Samuel 8:20). They wanted a king to lead them in battle against their enemies, like the other nations around them."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Rise of Monarchy in Israel",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Samuel's farewell address was delivered at",
+    "options": [
+      "Mizpah.",
+      "Gilgal.",
+      "Beersheba.",
+      "Shiloh."
+    ],
+    "answer": "B",
+    "explanation": "Samuel's farewell address was delivered at Gilgal (1 Samuel 12:1-25). He gathered the people there to review God's faithfulness and warn them about the consequences of their demand for a king."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Rise of Monarchy in Israel",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Jonathan demonstrated love for David by",
+    "options": [
+      "sharing his father's wealth with David.",
+      "fighting in the same battalion with David.",
+      "singing together with David.",
+      "refusing his father's bidding to kill David."
+    ],
+    "answer": "D",
+    "explanation": "Jonathan demonstrated love for David by refusing his father's bidding to kill David (1 Samuel 19:1-6). He warned David of Saul's intentions and protected him."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Rise of Prophecy in Israel",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Who was noted for his messages on holiness?",
+    "options": [
+      "Jeremiah",
+      "Isaiah",
+      "Amos",
+      "Hosea"
+    ],
+    "answer": "B",
+    "explanation": "Isaiah was noted for his messages on holiness — he had a vision of God's holiness (Isaiah 6) and called Israel to be holy and righteous. His message emphasized God's holiness and the need for Israel to be purified."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "The Northern tribe of Israel is sometimes called Ephraim because",
+    "options": [
+      "it housed the alternative Temples.",
+      "it was the capital city.",
+      "Jeroboam was a native of Ephraim.",
+      "the kingdom was divided near Ephraim."
+    ],
+    "answer": "C",
+    "explanation": "The Northern tribe of Israel is sometimes called Ephraim because Jeroboam was a native of Ephraim (1 Kings 11:26). Ephraim was the largest and most influential tribe in the northern kingdom."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "A major benefit of the Babylonian exile is that it led the people to",
+    "options": [
+      "apostasy.",
+      "idolatry.",
+      "syncretism.",
+      "repentance."
+    ],
+    "answer": "D",
+    "explanation": "A major benefit of the Babylonian exile was that it led the people to repentance — they turned away from idolatry and returned to the worship of Yahweh. The exile purified Israel of their idolatrous practices."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Mosaic Authorship of the Pentateuch: An Overview",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Documentary Hypothesis is the",
+    "options": [
+      "Fragmented Source Theory.",
+      "Pseudo-Source Theory.",
+      "Four-Source Theory.",
+      "Supplementary Source Theory."
+    ],
+    "answer": "C",
+    "explanation": "The Documentary Hypothesis is the Four-Source Theory — it argues that the Pentateuch was composed from four distinct source documents (J, E, D, P), compiled over time. It is also known as the Graf-Wellhausen hypothesis."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "What background largely influenced the Gospel of Matthew?",
+    "options": [
+      "Samaritan",
+      "Roman",
+      "Jewish",
+      "Greek"
+    ],
+    "answer": "C",
+    "explanation": "The Gospel of Matthew was largely influenced by a Jewish background — it was written primarily for a Jewish Christian audience, emphasizing Jesus as the fulfilment of Old Testament prophecies and the Jewish Messiah."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The Gospel known for its brevity is",
+    "options": [
+      "Matthew.",
+      "Mark.",
+      "Luke.",
+      "John."
+    ],
+    "answer": "B",
+    "explanation": "The Gospel of Mark is known for its brevity — it is the shortest of the four Gospels. Mark emphasizes action and uses the word 'immediately' frequently, giving a fast-paced account of Jesus' ministry."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Which group did Jesus upbraid most?",
+    "options": [
+      "The Sadducees.",
+      "The Pharisees.",
+      "The Zealots.",
+      "The Essenes."
+    ],
+    "answer": "B",
+    "explanation": "Jesus upbraided the Pharisees most — He called them hypocrites, whitewashed tombs, and blind guides (Matthew 23). He criticized their hypocrisy, legalism, and self-righteousness more than any other group."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Who went into extinction after the destruction of the Temple in 70 A.D?",
+    "options": [
+      "The Zealots",
+      "The Essenes",
+      "The Sadducees",
+      "The Pharisees"
+    ],
+    "answer": "C",
+    "explanation": "The Sadducees went into extinction after the destruction of the Temple in 70 AD. Since their power and influence were tied to the Temple and the priesthood, they lost their relevance after the Temple was destroyed."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The Jewish Supreme Court was known as the",
+    "options": [
+      "Council of Elders.",
+      "Sanhedrin.",
+      "Scribes.",
+      "Sadducees."
+    ],
+    "answer": "B",
+    "explanation": "The Jewish Supreme Court was known as the Sanhedrin — the highest Jewish judicial and administrative body in Jerusalem. It was composed of chief priests, elders, and scribes."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Synopsis, Materials & Canonization of the New Testament",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Which one is not a criterion in the canonization of the New Testament?",
+    "options": [
+      "Attribution to the Apostles.",
+      "Writings of Jesus.",
+      "Ecclesiastical usage.",
+      "Congruence with sound doctrine."
+    ],
+    "answer": "B",
+    "explanation": "Writings of Jesus is NOT a criterion for canonization — Jesus did not write any books. The criteria included apostolic authorship (or close associates), ecclesiastical usage (widespread use in churches), and congruence with sound doctrine (orthodoxy)."
+},
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Modern Criticism of the Gospel",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "A type of Biblical criticism which breaks down the Gospels into units is called",
+    "options": [
+      "Source Criticism.",
+      "Redaction Criticism.",
+      "Textual Criticism.",
+      "Form Criticism."
+    ],
+    "answer": "D",
+    "explanation": "Form Criticism breaks down the Gospels into units (pericopes) and analyzes the oral tradition behind them. It studies the forms (genres) of the sayings and stories before they were written down."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The Zealots were",
+    "options": [
+      "agriculturists.",
+      "imperialists.",
+      "religious fighters.",
+      "freedom fighters."
+    ],
+    "answer": "D",
+    "explanation": "The Zealots were freedom fighters — they were a Jewish political movement that resisted Roman rule and sought to liberate Israel from foreign domination. They engaged in violent rebellion against the Romans."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Historical Background of the New Testament",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The term, 'sacarii' refers to the",
+    "options": [
+      "Essenes.",
+      "Zealots.",
+      "Herodians.",
+      "Sadducees."
+    ],
+    "answer": "B",
+    "explanation": "The term 'sacarii' (meaning 'dagger men') refers to the Zealots — a radical Jewish group that used violence and assassination against the Romans and their collaborators. They were known for carrying concealed daggers."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The sermon in which Jesus pronounced rewards for various acts of righteousness is commonly referred to as the",
+    "options": [
+      "Annunciation.",
+      "Decalogue.",
+      "Beatitudes.",
+      "Atonement."
+    ],
+    "answer": "C",
+    "explanation": "The Beatitudes is the sermon where Jesus pronounced rewards (blessings) for various acts of righteousness (Matthew 5:3-12). Each Beatitude begins with 'Blessed are...' and promises a reward."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "In the Sermon on the Mount, Jesus explained that adultery is not only the physical act but a matter of",
+    "options": [
+      "greed.",
+      "hatred.",
+      "the heart.",
+      "the eyes."
+    ],
+    "answer": "C",
+    "explanation": "In the Sermon on the Mount, Jesus explained that adultery is not only the physical act but a matter of the heart — looking at a woman lustfully is adultery in the heart (Matthew 5:27-28)."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "According to Matthew 14:15-21, they picked up twelve baskets of pieces of bread after the feeding of the",
+    "options": [
+      "ten lepers.",
+      "twelve disciples.",
+      "four thousand.",
+      "five thousand."
+    ],
+    "answer": "D",
+    "explanation": "After the feeding of the five thousand (Matthew 14:15-21), they picked up twelve baskets of leftover pieces of bread. This signified that Jesus' provision was more than enough."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Mark and Luke did not record the healing of",
+    "options": [
+      "the dumb.",
+      "the paralytic.",
+      "Peter's mother-in-law.",
+      "the two blind men."
+    ],
+    "answer": "D",
+    "explanation": "Mark and Luke did not record the healing of the two blind men (Matthew 9:27-31). This account is unique to Matthew's Gospel, emphasizing Jesus' compassion and power over blindness."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Jewish piety in Jesus' days centred on",
+    "options": [
+      "sacrifices, oath taking and prayers.",
+      "fasting, almsgiving and prayer.",
+      "praising, singing and prayer.",
+      "temple worship, dancing and prayer."
+    ],
+    "answer": "B",
+    "explanation": "Jewish piety in Jesus' days centered on fasting, almsgiving, and prayer (Matthew 6:1-18). These were the three pillars of Jewish religious life, and Jesus taught His disciples to practice them sincerely."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "On one's relationship to parents, Jesus taught that",
+    "options": [
+      "'Corban' should be declared.",
+      "service to parents is service to God.",
+      "parent's rights should be transferred to God.",
+      "Parents deserve worship."
+    ],
+    "answer": "B",
+    "explanation": "Jesus taught that service to parents is service to God — He criticized the Pharisees for using 'Corban' (vow to God) to avoid supporting their parents (Mark 7:9-13). He emphasized honouring parents."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "An Overview of the Previous Attempts at Christianizing Africa",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The discovery of which of these medicines made the European Missionaries more enthusiastic about African mission?",
+    "options": [
+      "Penicillin.",
+      "Pesticides.",
+      "Codeine.",
+      "Quinine."
+    ],
+    "answer": "D",
+    "explanation": "The discovery of Quinine made European missionaries more enthusiastic about the African mission. Quinine was an effective treatment for malaria, which had been a major obstacle to missionary work in Africa."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The leader of the Holy Club was",
+    "options": [
+      "John Wesley.",
+      "Henry Venn.",
+      "David Livingstone.",
+      "William Wilberforce."
+    ],
+    "answer": "A",
+    "explanation": "The leader of the Holy Club was John Wesley. The Holy Club was a small group of students at Oxford University (including Wesley and his brother Charles) who met for prayer, Bible study, and charitable works."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Planting of Christianity in the Gold Coast (Ghana)",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The father of Methodism in Ghana is",
+    "options": [
+      "Thomas Freeman.",
+      "J.R. Dunwell.",
+      "Thomas Thompson.",
+      "Philip Quaque."
+    ],
+    "answer": "A",
+    "explanation": "Thomas Freeman is considered the father of Methodism in Ghana. He was a Wesleyan Methodist missionary who arrived in the Gold Coast in 1838 and established Methodist missions there."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Planting of Christianity in the Gold Coast (Ghana)",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "SPCK in Ghana is connected to which denomination?",
+    "options": [
+      "Roman Catholic Ministry.",
+      "Presbyterian Church.",
+      "Anglican Church.",
+      "Methodist Church."
+    ],
+    "answer": "C",
+    "explanation": "SPCK (Society for Promoting Christian Knowledge) in Ghana is connected to the Anglican Church. The SPCK was a missionary society that promoted Christian literature and education."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The first Niger Expedition failed because of",
+    "options": [
+      "ship wreck.",
+      "high fatality.",
+      "language barrier.",
+      "insufficient funds."
+    ],
+    "answer": "B",
+    "explanation": "The first Niger Expedition (1841) failed because of high fatality — many of the participants died from malaria and other tropical diseases. This led to the abandonment of the expedition."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The Second Niger Expedition took place in",
+    "options": [
+      "1857.",
+      "1856.",
+      "1855.",
+      "1854."
+    ],
+    "answer": "A",
+    "explanation": "The Second Niger Expedition took place in 1857. It was led by William Balfour Baikie and was more successful than the first expedition, reaching the confluence of the Niger and Benue rivers."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Planting of Christianity in Nigeria",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Missionary activities in Igbo land began from",
+    "options": [
+      "Onitsha.",
+      "Aba.",
+      "Umuahia.",
+      "Owerri."
+    ],
+    "answer": "A",
+    "explanation": "Missionary activities in Igbo land began from Onitsha. The CMS missionaries, led by Samuel Ajayi Crowther and J.C. Taylor, established a mission in Onitsha in 1857."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Planting of Christianity in Nigeria",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "John Christopher Taylor, an ex-slave and convert from Sierra Leone, was of which extraction?",
+    "options": [
+      "Igbo.",
+      "Yoruba.",
+      "Hausa.",
+      "Ijaw."
+    ],
+    "answer": "A",
+    "explanation": "John Christopher Taylor, an ex-slave and convert from Sierra Leone, was of Igbo extraction. He was a CMS missionary who worked in Onitsha and pioneered missionary work among the Igbo people."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "After the emancipation of slaves, African missionaries were mostly trained at",
+    "options": [
+      "United Kingdom.",
+      "Gold Coast.",
+      "Sierra Leone.",
+      "United States."
+    ],
+    "answer": "C",
+    "explanation": "After the emancipation of slaves, African missionaries were mostly trained at Sierra Leone — the Church Missionary Society (CMS) established training institutions in Freetown, producing many African missionaries."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Planting of Christianity in Nigeria",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Which place was known as a slave coast?",
+    "options": [
+      "Abeokuta",
+      "Lokoja",
+      "Badagry",
+      "Warri"
+    ],
+    "answer": "C",
+    "explanation": "Badagry was known as a slave coast — it was a major slave trading port in Nigeria during the transatlantic slave trade. It was also the site where the first Christian mission was established in 1842."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Measures of Religion",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Religiosity can be measured EXCEPT through",
+    "options": [
+      "visitation.",
+      "prayer.",
+      "church attendance.",
+      "use of religious language."
+    ],
+    "answer": "D",
+    "explanation": "Religiosity can be measured through visitation, prayer, and church attendance — but the use of religious language is NOT a reliable measure. Religious language can be superficial and does not necessarily reflect genuine piety."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Religious Personality & Human Values",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Which of the following is an example of human values?",
+    "options": [
+      "Prayerfulness",
+      "Attendance to worship",
+      "Bible study",
+      "Gratitude"
+    ],
+    "answer": "D",
+    "explanation": "Gratitude is an example of human values — it is a moral quality that reflects appreciation and thankfulness. Prayerfulness, worship attendance, and Bible study are religious practices, not necessarily human values."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Religious Personality & Human Values",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "In Christianity, the greatest of the human values is",
+    "options": [
+      "forgiveness.",
+      "truthfulness.",
+      "love.",
+      "honesty."
+    ],
+    "answer": "C",
+    "explanation": "In Christianity, the greatest of the human values is love (1 Corinthians 13:13). Love is the greatest of the theological virtues — faith, hope, and love — and it fulfills the entire law."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Religious Personality & Human Values",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Human values cannot be promoted by",
+    "options": [
+      "reward for good.",
+      "church attendance.",
+      "prayers.",
+      "persecution."
+    ],
+    "answer": "D",
+    "explanation": "Human values cannot be promoted by persecution — persecution has the opposite effect. Reward for good, church attendance, and prayers can promote human values. Persecution undermines values and creates hostility."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Religion, Peace & Conflict Resolution",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Inter-religious dialogue does NOT include",
+    "options": [
+      "peaceful talk between two religions.",
+      "interaction between two religions.",
+      "dialogue between two religions.",
+      "conversion from one religion to another."
+    ],
+    "answer": "D",
+    "explanation": "Inter-religious dialogue does NOT include conversion from one religion to another — it is about mutual understanding, respect, and cooperation, not proselytizing. Conversion is not the goal of inter-religious dialogue."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Religion, Peace & Conflict Resolution",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Which of the following can be identified as a means of conflict resolution?",
+    "options": [
+      "Self defence",
+      "Mediation",
+      "Intimidation",
+      "Reprisal attack"
+    ],
+    "answer": "B",
+    "explanation": "Mediation is a means of conflict resolution — it involves a neutral third party helping conflicting parties reach a peaceful agreement. Self-defence, intimidation, and reprisal attacks escalate conflict."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Christianity Response to Contemporary Issues",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Generally, Christians see euthanasia as",
+    "options": [
+      "excusable.",
+      "pardonable.",
+      "justifiable.",
+      "murder."
+    ],
+    "answer": "D",
+    "explanation": "Generally, Christians see euthanasia as murder — because it involves the intentional taking of human life, which is contrary to the sanctity of life principle. Life is a gift from God, and only God has the right to take it."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Christianity Response to Contemporary Issues",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "What is a Christian response to HIV/AIDS epidemic?",
+    "options": [
+      "Quarantine",
+      "Advocacy",
+      "Euthanasia",
+      "Litigation"
+    ],
+    "answer": "B",
+    "explanation": "Advocacy is a Christian response to HIV/AIDS — Christians advocate for prevention, care, support for those affected, and the fight against stigma. Quarantine and euthanasia are not Christian responses, and litigation is not the primary response."
+},
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Christianity Response to Contemporary Issues",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The 'B' in the acronym LGBT means",
+    "options": [
+      "Both-sex.",
+      "Born-lesbian.",
+      "Bi-sexual.",
+      "Born-gay."
+    ],
+    "answer": "C",
+    "explanation": "The 'B' in the acronym LGBT stands for Bi-sexual — referring to individuals who are attracted to both men and women. LGBT stands for Lesbian, Gay, Bisexual, and Transgender."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Christianity Response to Contemporary Issues",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Choose the option that describes Christian response to drug abuse.",
+    "options": [
+      "Capital punishment.",
+      "Imprisonment.",
+      "Remand home.",
+      "Counselling."
+    ],
+    "answer": "D",
+    "explanation": "Counselling describes the Christian response to drug abuse — Christians emphasize rehabilitation, support, and recovery through counselling, prayer, and community support. Punitive measures like capital punishment and imprisonment are not the primary Christian response."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Divided Kingdoms & The Exiles",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "(a) Examine four (4) factors that led to the Babylonian exile.\n(b) Explain two (2) of the consequences of the exile.",
+    "options": [],
+    "modelAnswer": "(a) Four factors that led to the Babylonian exile:\n\n1. Idolatry and Religious Apostasy: The people of Judah had turned away from the worship of Yahweh and adopted the worship of foreign gods (Baal, Asherah, and other deities). This was a major sin that provoked God's anger.\n\n2. Social Injustice and Oppression: The prophets (especially Jeremiah and Amos) condemned the social injustices in Judah — the rich oppressed the poor, widows and orphans were neglected, and corruption was rampant. This injustice violated God's covenant.\n\n3. Disregard for the Prophets: The people and kings of Judah rejected and persecuted the prophets who called them to repentance. They ignored warnings about the coming judgment.\n\n4. Political Alliances: Judah relied on foreign alliances (with Egypt and Assyria) rather than trusting in God for protection. This led to political instability and eventually to Babylon's invasion.\n\n5. Moral Decay: The nation was characterized by moral decay — sexual immorality, dishonesty, and violence were widespread. The society had lost its moral compass.\n\n6. Refusal to Repent: Despite repeated warnings from prophets like Jeremiah, the people refused to repent and turn back to God. Their pride and hardness of heart led to judgment.\n\n(b) Two consequences of the exile:\n\n1. Destruction of Jerusalem and the Temple: The Babylonians destroyed the city of Jerusalem, including the Temple (Solomon's Temple). This was a devastating blow to the religious and national identity of the people. The Temple was the centre of worship, and its destruction symbolized God's judgment.\n\n2. The Exile and Dispersion of the People: Many Jews were taken into captivity in Babylon, while others fled to Egypt and other countries. The exile disrupted the social and religious life of the people, and they were forced to live in a foreign land without their Temple.\n\n3. Purification of Faith: The exile led to the purification of Israel's faith — they abandoned idolatry and focused on the Torah. The synagogue system developed during this period, and the people learned to worship God without the Temple. This was a positive consequence that prepared them for the future."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Formation & Composition of the Old Testament",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) What is Biblical inspiration?\n(b) Mention and explain three theories of Biblical inspiration.",
+    "options": [],
+    "modelAnswer": "(a) Biblical Inspiration:\nBiblical inspiration is the divine influence of God upon the human authors of the Bible, enabling them to write His message without error. It means that the Bible is God's Word — written by human beings under the guidance and inspiration of the Holy Spirit. The Bible is authoritative, trustworthy, and sufficient for faith and practice.\n\n(b) Three theories of Biblical inspiration:\n1. Dictation Theory (Mechanical Inspiration): This theory holds that God dictated every word of the Bible to the human authors, and they merely wrote down what God said. The human authors were like secretaries or robots, with no personal input. This theory emphasizes the divine origin of Scripture but ignores the human element.\n\n2. Plenary Inspiration (Verbal Inspiration): This theory holds that the entire Bible (all parts) is inspired by God. The Holy Spirit influenced the authors to write without error, using their personalities, vocabularies, and styles. The Bible is fully inspired in every part, but the authors were not passive machines — they contributed their own backgrounds.\n\n3. Dynamic Inspiration: This theory holds that God inspired the thoughts and ideas of the authors, but not every word. The authors were inspired in their concepts, and they expressed those concepts in their own words. This theory emphasizes the human element and acknowledges that the Bible contains the human expression of divine truth.\n\n4. Neo-Orthodox Theory: This theory suggests that the Bible becomes the Word of God when it confronts the reader and speaks to them. The Bible is not inherently the Word of God but becomes so through encounter. This is a more subjective view of inspiration."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Literature & Theology of the Synoptic Gospels",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "(a) Explain the authorship of the Gospel of Luke.\n(b) Discuss six (6) characteristics of the Gospel of Luke.",
+    "options": [],
+    "modelAnswer": "(a) Authorship of the Gospel of Luke:\nThe Gospel of Luke was written by Luke, a physician and companion of the Apostle Paul (Colossians 4:14, Philemon 1:24). Luke was a Gentile Christian and is the only Gentile author in the New Testament. He was not an eyewitness of Jesus but carefully investigated the accounts of eyewitnesses and compiled an orderly account (Luke 1:1-4). He also wrote the Acts of the Apostles. The Gospel is dated around 60-80 AD and was written for a Gentile audience, emphasizing the universal nature of salvation.\n\n(b) Six characteristics of the Gospel of Luke:\n1. Historical Orientation: Luke is more historically oriented than the other Gospels — he provides precise dates, historical figures (e.g., Caesar Augustus, Quirinius), and chronological details. He presents an orderly account of events.\n\n2. Gentile Focus: Luke addresses a Gentile (Theophilus) and writes for a universal audience — he emphasizes that salvation is for all people (Jews and Gentiles). He downplays Jewish laws and customs.\n\n3. Emphasis on the Holy Spirit: Luke emphasizes the work of the Holy Spirit — the Spirit is active in Jesus' ministry, in the disciples, and in the early church. The Holy Spirit is a central theme in Luke's Gospel.\n\n4. Compassion for the Marginalized: Luke emphasizes Jesus' compassion for the poor, women, tax collectors, Samaritans, and the marginalized. He includes parables like the Good Samaritan and the Prodigal Son that highlight God's love for all.\n\n5. Emphasis on Prayer: Luke emphasizes prayer — Jesus is often portrayed praying (at His baptism, transfiguration, Gethsemane). He also includes parables about prayer (e.g., the persistent widow).\n\n6. Joy and Praise: Luke has a theme of joy and praise — songs like the Magnificat (Mary), the Benedictus (Zechariah), the Gloria in Excelsis (angels), and the Nunc Dimittis (Simeon) are unique to Luke.\n\n7. Parables: Luke contains many unique parables, including the Good Samaritan, the Prodigal Son, the Rich Man and Lazarus, and the Pharisee and the Tax Collector.\n\n8. Salvation History: Luke presents Jesus as the central figure in salvation history — the fulfilment of God's plan from creation to the early church. He shows continuity between the Old Testament, Jesus, and the apostolic age."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Historical Background of the New Testament",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) Trace the origin of the Synagogue.\n(b) Highlight five (5) of its relevance to the Gospel in Jesus' time.",
+    "options": [],
+    "modelAnswer": "(a) Origin of the Synagogue:\nThe synagogue originated during the Babylonian exile (6th century BCE) when the Temple in Jerusalem was destroyed and the Jews were in captivity. Without the Temple, the Jews gathered in local assemblies to pray, read the Scriptures, and worship God. The synagogue became a centre of Jewish religious life and community. By the time of Jesus, synagogues were found throughout Palestine and the diaspora (Jewish communities outside Israel).\n\n(b) Five relevance of the synagogue to the Gospel in Jesus' time:\n1. Place of Worship: The synagogue was the centre of Jewish worship and prayer. Jesus and His disciples regularly attended synagogue services (Luke 4:16). It was where the community gathered to hear the Scriptures read and explained.\n\n2. Place of Teaching: The synagogue provided a platform for teaching — Jesus taught in synagogues (Matthew 4:23). The reading of the Torah and Prophets was followed by teaching, which allowed Jesus to proclaim His message.\n\n3. Place of Community Life: The synagogue was a centre of community life — it was where the Jewish community met for social gatherings, education, and mutual support. It was a place of identity and belonging.\n\n4. Place of Evangelism: The synagogue was a venue for evangelism — Paul and the apostles often began their missionary work in synagogues, preaching to the Jews first (Acts 13:14, 17:1-2).\n\n5. Preserver of Jewish Tradition: The synagogue helped preserve Jewish tradition, law, and identity during the exile and after the destruction of the Temple. It kept the Jewish faith alive and provided continuity for future generations.\n\n6. Place of Leadership: The synagogue was governed by elders and a synagogue ruler, providing a structure of leadership and accountability. It shaped the religious and social life of the Jewish community.\n\n7. Place of Healing: Jesus healed people in synagogues (Mark 1:21-28, 3:1-6). The synagogue was a place where acts of compassion and healing were performed, demonstrating Jesus' authority."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Establishing Christianity in Sierra Leone",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Describe the Protestant revivals in Europe and America in the 18th Century.\n(b) Highlight four (4) effects of the revivals.",
+    "options": [],
+    "modelAnswer": "(a) Protestant Revivals in Europe and America in the 18th Century:\nThe 18th Century Protestant revivals were a series of religious awakenings that swept across Europe and America. They were characterized by a renewed emphasis on personal conversion, evangelical preaching, and spiritual renewal.\n\n- In England, the revival was associated with the Wesley brothers (John and Charles Wesley) and the Methodist movement. The Holy Club at Oxford and the open-air preaching of John Wesley led to widespread evangelism and church planting.\n\n- In America, the revival was known as the Great Awakening (1730s-1740s), led by preachers like Jonathan Edwards and George Whitefield. It emphasized personal salvation, repentance, and a vibrant faith.\n\n- These revivals were a reaction against formalism, dead orthodoxy, and rationalism (Enlightenment). They emphasized the need for conversion and a personal relationship with God.\n\n(b) Four effects of the revivals:\n1. Church Growth: The revivals led to the rapid growth of churches — many people were converted and joined churches. New denominations emerged (e.g., Methodists, Baptists).\n\n2. Social Reform: The revivals inspired social reform — the abolition of the slave trade, prison reform, education, and charity work. William Wilberforce and the Clapham Sect were influenced by the revivals to campaign against slavery.\n\n3. Missionary Expansion: The revivals sparked missionary enthusiasm — the modern missionary movement began with William Carey (1792) and the founding of missionary societies (CMS, LMS). Missionaries were sent to Africa, Asia, and the Americas.\n\n4. Emphasis on Education: The revivals emphasized education — Sunday schools, Bible schools, and colleges were established to educate people in the faith. The Sunday School movement was a direct result of the revivals.\n\n5. Emotional and Heart-Centred Faith: The revivals shifted emphasis from intellectual faith to emotional and experiential faith — personal conversion, testimony, and a vibrant spiritual life became central.\n\n6. Lay Participation: The revivals encouraged lay participation — ordinary people were involved in preaching, teaching, and church leadership. This democratized Christianity and spread the faith more widely."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "The Planting of Christianity in Nigeria",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Discuss the endeavours of the Presbyterian Church in Calabar axis with reference to the contributions.",
+    "options": [],
+    "modelAnswer": "The Presbyterian Church in the Calabar axis (south-eastern Nigeria) made significant contributions to the spread of Christianity, education, and social development. The following are key endeavours and contributions:\n\n1. Missionary Arrival: The Presbyterian Church (originally the United Presbyterian Church of Scotland) established its mission in Calabar in 1846. The first missionaries were Rev. Hope Waddell and Rev. Samuel Edgerley. They arrived at Calabar with the support of the Duke of Calabar, King Eyo Honesty.\n\n2. Establishment of Schools: The Presbyterian missionaries established schools in Calabar and the surrounding areas — the Hope Waddell Training Institution (now Hope Waddell College) was founded in 1895. It became a centre of learning, producing many educated Africans who became leaders in the church and society.\n\n3. Translation of the Bible and Literature: The Presbyterian missionaries translated the Bible and other Christian literature into Efik and other local languages. This made Christianity accessible to the local people and promoted literacy.\n\n4. Medical Mission: The Presbyterian Church established health facilities, clinics, and medical missions in the Calabar area. They provided healthcare to the local population and treated diseases like malaria and yaws.\n\n5. Abolition of Inhuman Practices: The missionaries, in collaboration with local rulers, worked to abolish inhuman practices like the killing of twins, human sacrifice, and the trial by poison (Esu). They advocated for the sanctity of life and human dignity.\n\n6. Promotion of Agriculture and Vocational Training: The Presbyterian missionaries promoted agriculture, vocational training, and trades (carpentry, masonry, printing). They taught practical skills to help people become self-sufficient.\n\n7. Church Planting: The Presbyterian Church planted churches and congregations throughout the Calabar axis — from Calabar to Itu, Ikot Ekpene, and beyond. The church became a major Christian presence in the Cross River and Akwa Ibom areas.\n\n8. Impact on Women: The missionaries educated women and girls, promoting women's rights and empowerment. They established women's organizations and taught skills like sewing and hygiene.\n\n9. Development of Indigenous Leadership: The Presbyterian Church trained and ordained indigenous clergy, developing local leadership and reducing dependence on foreign missionaries. This led to the eventual indigenization of the church.\n\n10. Contributions to National Development: The Hope Waddell Training Institution produced many notable Nigerians who contributed to the development of the country — politicians, educators, doctors, and administrators. The Presbyterian Church's contribution to education and social development has been significant.\n\nIn conclusion, the Presbyterian Church in the Calabar axis contributed immensely to the spread of Christianity, education, healthcare, and social reform in the region."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Religion, Peace & Conflict Resolution",
+    "type": "Essay",
+    "questionNumber": "7",
+    "question": "Evaluate five (5) ways in which religion can enhance peace in Nigerian society.",
+    "options": [],
+    "modelAnswer": "Five ways in which religion can enhance peace in Nigerian society:\n\n1. Teaching Tolerance and Love: Religion teaches tolerance, love, forgiveness, and respect for others. These values promote peaceful coexistence between different ethnic, religious, and social groups. Religious leaders can preach messages of peace and unity.\n\n2. Inter-faith Dialogue: Inter-faith dialogue promotes understanding and cooperation between different religious groups. By engaging in dialogue, Christians, Muslims, and adherents of African Traditional Religion can build trust, reduce suspicion, and prevent conflict.\n\n3. Conflict Mediation and Reconciliation: Religious leaders and institutions can serve as mediators in conflicts — they can facilitate dialogue, reconciliation, and peacebuilding. Religious leaders are often respected and trusted by communities, making them effective peacemakers.\n\n4. Advocacy for Justice and Human Rights: Religion can advocate for justice, fairness, and human rights. When religious leaders speak out against injustice, corruption, and oppression, they contribute to a just and peaceful society. Justice is a foundation for peace.\n\n5. Promotion of Moral Values: Religion promotes moral values — honesty, integrity, compassion, and accountability. When these values are upheld, society becomes more harmonious and less prone to conflict.\n\n6. Social Cohesion and Community Building: Religious institutions bring people together — churches, mosques, and temples provide spaces for community gatherings, support, and solidarity. They strengthen social bonds and create a sense of belonging.\n\n7. Charitable and Humanitarian Work: Religious organizations provide charity, welfare, and humanitarian assistance — they support the poor, sick, and vulnerable. This reduces social inequality and promotes peace.\n\n8. Peaceful Coexistence Education: Religion can educate people about peaceful coexistence, human rights, and the importance of living in harmony with others. Religious education can prevent radicalization and extremism.\n\n9. Counselling and Healing: Religious leaders provide counselling and spiritual healing to individuals and communities affected by conflict, trauma, and violence. Healing promotes reconciliation and peace.\n\nIn conclusion, religion has a crucial role to play in enhancing peace in Nigerian society. It provides moral guidance, promotes reconciliation, and advocates for justice and human rights."
+  },
+  {
+    "subject": "CRS",
+    "year": 2020,
+    "category": "Christianity Response to Contemporary Issues",
+    "type": "Essay",
+    "questionNumber": "8",
+    "question": "(a) Discuss the term 'Euthanasia.'\n(b) List five (5) ways Christians can respond to euthanasia.",
+    "options": [],
+    "modelAnswer": "(a) Euthanasia:\nEuthanasia is the practice of intentionally ending a person's life to relieve pain and suffering, especially in cases of terminal illness. It is also known as 'mercy killing.' There are different types of euthanasia:\n- Voluntary euthanasia: The person consents to the procedure.\n- Non-voluntary euthanasia: The person cannot consent (e.g., in a coma).\n- Involuntary euthanasia: The person is killed against their will.\n- Active euthanasia: The deliberate act of ending a life (e.g., lethal injection).\n- Passive euthanasia: The withdrawal of life-sustaining treatment, allowing the person to die naturally.\n\nEuthanasia raises important ethical, moral, and theological questions about the sanctity of life, human dignity, and the role of suffering.\n\n(b) Five ways Christians can respond to euthanasia:\n1. Affirm the Sanctity of Life: Christians should affirm that life is sacred and is a gift from God. Only God has the right to give and take life. Euthanasia violates the sanctity of life principle.\n\n2. Promote Compassionate Care: Christians should support palliative care, hospice care, and pain relief to alleviate suffering. Rather than ending life, Christians should advocate for better care for the dying and the terminally ill.\n\n3. Provide Counselling and Support: Christians should provide emotional, spiritual, and pastoral support to those who are suffering and their families. Counselling can help people cope with suffering and find meaning in their pain.\n\n4. Educate on Ethical Issues: Christians should educate themselves and others about the ethical and theological issues surrounding euthanasia. They should engage in public discourse and advocate for laws that protect life.\n\n5. Advocate for Dignity and Care: Christians should advocate for the dignity of every human life and for healthcare policies that provide compassionate care for the terminally ill. They should oppose legalizing euthanasia and support alternatives like palliative care.\n\n6. Prayer and Spiritual Support: Christians should pray for the suffering, the dying, and their families. Prayer offers comfort, hope, and spiritual healing. It acknowledges God's sovereignty even in times of suffering.\n\n7. Encourage Hope in Christ: Christians should encourage hope in Christ, who has conquered death and offers eternal life. Suffering is temporary, and eternal life awaits those who trust in God."
+  }
+]

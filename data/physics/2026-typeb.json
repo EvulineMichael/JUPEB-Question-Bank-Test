@@ -171,7 +171,7 @@
       "alt": "Diagram showing two parallel horizontal plates with an upward electric field. An electron enters from the left with velocity v₀, follows a parabolic path downwards towards the bottom plate, and exits from the right side with velocity v."
     },
     "options": [],
-    "modelAnswer": "i. a = eE/m = (1.60 × 10⁻¹⁹ × 200)/(1.67 × 10⁻²⁷) = 3.20 × 10⁻¹⁷/1.67 × 10⁻²⁷ = 1.92 × 10¹⁰ m/s².\n\nii. Horizontal motion is uniform: t = l/v₀ = 0.100/(3.00 × 10⁶) = 3.33 × 10⁻⁸ s.\n\nNote: The mass given in the question (1.67 × 10⁻²⁷ kg) is the mass of a proton, not an electron (9.11 × 10⁻³¹ kg). If the particle is truly an electron, the acceleration should be 3.51 × 10¹³ m/s². Flagged for examiner clarification."
+    "modelAnswer": "Note: the paper gives the electron's mass as 1.67 × 10⁻²⁷ kg, which is the mass of a proton. An electron's mass is 9.11 × 10⁻³¹ kg. Use the value printed in the exam (that is what the marking scheme expects), but know the true value.\n\ni. Acceleration (force eE on the charge, a = F/m):\na = eE/m = (1.60 × 10⁻¹⁹ × 200) / (1.67 × 10⁻²⁷) = 3.20 × 10⁻¹⁷ / 1.67 × 10⁻²⁷ ≈ 1.92 × 10¹⁰ m/s²\n(With the true electron mass: a = 3.20 × 10⁻¹⁷ / 9.11 × 10⁻³¹ ≈ 3.51 × 10¹³ m/s².)\nThe acceleration is perpendicular to the plates (vertical): towards the positive plate for an electron.\n\nii. The electric field acts only vertically, so the horizontal velocity stays at v₀:\nt = l / v₀ = 0.100 / (3.00 × 10⁶) ≈ 3.33 × 10⁻⁸ s\nThis time does not depend on the mass."
   },
   {
     "subject": "Physics",

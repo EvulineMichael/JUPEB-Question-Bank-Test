@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Distinguish between a change in quantity demanded of a commodity and change in demand. What are the factors responsible for a change in the demand for fish in Nigeria?",
+    "options": [],
+    "modelAnswer": "Change in quantity demanded: a change in the amount of a commodity buyers are willing and able to buy caused only by a change in its own price, other things being equal. It is shown as a movement along the same demand curve: a fall in price gives an extension (movement down), a rise in price a contraction (movement up).\nChange in demand: a change in the amount demanded at every price, caused by a change in factors other than the commodity's own price. It is shown as a shift of the whole demand curve: to the right (increase in demand) or to the left (decrease in demand).\n\nFactors that can change the demand for fish in Nigeria:\n1. Income of consumers: a rise in income increases demand for fish (a normal good); a fall reduces it.\n2. Prices of related goods: a rise in the price of substitutes (beef, chicken, eggs, beans) increases demand for fish; a rise in the price of complements (e.g. cooking oil, pepper used with fish) may reduce it.\n3. Tastes, preferences and health consciousness: e.g. people preferring fish to red meat for health reasons.\n4. Population size and structure: a growing population (especially in cities) increases demand.\n5. Religious and cultural factors: e.g. Lenten season for Christians raises demand for fish; some groups avoid certain fish.\n6. Advertisement and information: e.g. campaigns on the nutritional value of fish, or reports of contaminated fish reducing demand.\n7. Expectations of future price changes: an expected rise in price increases present demand.\n8. Seasons and festivals: demand rises during festive periods.\n9. Government policy: taxes, subsidies or import bans on frozen fish affect availability and demand.\n10. Distribution of income and availability of credit."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Government Intervention",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "The equations:\n¼ Qd + ½P = 75\nQs = 9.5P – 70\nare the demand and supply equations for kerosene in Nigeria respectively.\na) If the price of kerosene is seen by government as too low and to eliminate hoarding, it decided to increase the price to ₦40.37k per litre.\nb) What will be the new quantity demanded and the effect in the market?",
+    "options": [],
+    "modelAnswer": "Note: part (a) is a statement, not a question; part (b) is answered using it. '₦40.37k' is read as ₦40.37 (40 naira 37 kobo) per litre.\n\nDemand: ¼Qd + ½P = 75. Multiply by 4: Qd = 300 − 2P.\nSupply: Qs = 9.5P − 70.\n\nEquilibrium (Qd = Qs): 300 − 2P = 9.5P − 70\n370 = 11.5P\nP = ₦32.17 per litre.\nQ = 300 − 2(32.17) = 235.65 units (litres).\n\nb) At the new price of ₦40.37 (a price floor above equilibrium):\nQuantity demanded: Qd = 300 − 2(40.37) = 300 − 80.74 = 219.26 litres.\nQuantity supplied: Qs = 9.5(40.37) − 70 = 383.52 − 70 = 313.52 litres.\nExcess supply (surplus) = 313.52 − 219.26 = 94.26 litres.\n\nEffect in the market: quantity demanded falls from 235.65 to 219.26 litres, while sellers are willing to supply more (313.52 litres), so there is a surplus (glut) of about 94.26 litres. Hoarding is discouraged because sellers now get a higher price, but consumers pay more and buy less; unsold stocks may build up, and sellers may be tempted to sell below the official price unless government buys the surplus or enforces the price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Basic Economic Principles",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Write short notes on the following:\ni) Subsistence economic system\nii) Production possibility frontier\niii) Economic System\niv) Equilibrium and what determines the equilibrium point",
+    "options": [],
+    "modelAnswer": "i) Subsistence economic system: an economy in which people produce mainly to satisfy their own (and their family's) needs, not for sale. Features: use of simple tools and family labour, small-scale production, little or no specialisation, little surplus for exchange (barter), low income and savings, and decisions guided by tradition. It is common in rural areas of developing countries.\n\nii) Production possibility frontier (PPF): a curve showing the maximum combinations of two goods an economy can produce with its given resources and technology, when all resources are fully and efficiently employed. Points on the curve are efficient; points inside show unemployment or inefficiency; points outside are unattainable with present resources. It is usually concave to the origin because of increasing opportunity cost. It illustrates scarcity, choice and opportunity cost; economic growth shifts it outwards.\n\niii) Economic system: the set of institutions, laws and methods by which a society organises production, distribution and consumption, i.e. answers the basic questions of what to produce, how to produce, for whom to produce, and how to provide for growth. Types: traditional/subsistence, capitalist (free market), socialist (command/planned) and mixed economies.\n\niv) Equilibrium is a state of balance in which there is no tendency to change. In a market, equilibrium occurs where quantity demanded equals quantity supplied; the price at that point is the equilibrium price and the quantity is the equilibrium quantity. It is determined by the interaction of the forces of demand and supply, i.e. where the demand and supply curves intersect. Any change in the factors behind demand (income, tastes, prices of related goods, population) or supply (cost of production, technology, weather, taxes and subsidies) shifts the curves and gives a new equilibrium point."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "The Price System",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "a) Suppose the demand for millet is Qd = 710 -4P² and the supply of same commodity is Qs = 38 + 2P², where Q is quantity and P is price.\ni) Determine the equilibrium quantity and price\nii) From your answer in (ai), draw the demand and supply curves and lebelled correctly.",
+    "options": [],
+    "modelAnswer": "i) At equilibrium, Qd = Qs:\n710 − 4P² = 38 + 2P²\n672 = 6P²\nP² = 112\nP = √112 = 10.58 (taking the positive root).\nQ = 38 + 2(112) = 38 + 224 = 262 units.\n(Check: Qd = 710 − 4(112) = 710 − 448 = 262.)\nEquilibrium price ≈ 10.58; equilibrium quantity = 262.\n\nii) Note: 'lebelled' means labelled.\nSchedule (P: Qd, Qs): P = 0: 710, 38; P = 4: 646, 70; P = 8: 454, 166; P = 10.58: 262, 262; P = 12: 134, 326; P = 13: 34, 376.\nDraw quantity on the horizontal axis and price on the vertical axis. The demand curve (D) slopes downwards from left to right; the supply curve (S) slopes upwards. They intersect at E, the equilibrium point (Q = 262, P ≈ 10.58). Label the axes, the curves D and S, the point E, and dashed lines from E to the axes marking P ≈ 10.58 and Q = 262."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Applied Issues in Labour Economics",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "b) Define the concept of labour and list its characteristics",
+    "options": [],
+    "modelAnswer": "Labour is the human effort, physical or mental, used in the production of goods and services for a reward (wages or salaries).\n\nCharacteristics:\n1. Labour is inseparable from the labourer (it cannot be detached from the person who supplies it).\n2. It is perishable: labour not used today is lost and cannot be stored.\n3. It is a human factor with feelings, so working conditions and motivation affect productivity.\n4. It is mobile (geographically and occupationally), though imperfectly.\n5. Its supply cannot be increased quickly; it depends on population and training.\n6. Labour differs in quality, skills and efficiency (heterogeneous).\n7. It is an active factor of production that combines and directs other factors.\n8. The reward for labour is wages or salaries.\n9. Labour can organise (form trade unions) to bargain for better pay and conditions."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Theory of Income Distribution",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Why do wages differ in different occupations?",
+    "options": [],
+    "modelAnswer": "Wages differ between occupations because of:\n1. Differences in skill, training and education: jobs requiring long and costly training (doctors, engineers) pay more to compensate and because few people qualify.\n2. Differences in ability and talent: rare natural talent (footballers, musicians) earns high pay.\n3. Demand for the product: workers producing goods or services in high demand (and the productivity of labour, its marginal revenue product) earn more.\n4. Supply of labour: occupations with few qualified workers pay more; those with many unskilled workers pay less.\n5. Nature and conditions of the job: dangerous, unpleasant or risky jobs (mining, oil rigs) carry extra pay (compensating differentials), while pleasant jobs with status may pay less.\n6. Trade union strength: strong unions can bargain for higher wages.\n7. Government policy: minimum wage laws, public sector pay scales, taxes and incentives.\n8. Immobility of labour: geographical and occupational immobility prevents wages from equalising.\n9. Location: wages are often higher in urban areas and where the cost of living is high.\n10. Discrimination and custom (by sex, age, ethnicity), and differences in responsibility, experience and seniority.\n11. Fringe benefits and non-monetary rewards (job security, pension, accommodation) that may offset lower pay."
+  },
+  {
+    "subject": "Economics",
+    "year": 2023,
+    "paper": "Paper I",
+    "category": "Introduction to Economics",
+    "type": "Essay",
+    "questionNumber": "6",
+    "question": "Choice arises because of scarcity of resources. Discuss.",
+    "options": [],
+    "modelAnswer": "Human wants are unlimited, numerous and recurring, but the resources (land, labour, capital and entrepreneurship) used to satisfy them are limited in supply relative to the wants. This is scarcity. Because of scarcity, not all wants can be satisfied, so individuals, firms and governments must choose which wants to satisfy and which to forgo.\n\nChoice and scale of preference: wants are arranged in order of importance (a scale of preference), and the most pressing are satisfied first with the available resources.\n\nOpportunity cost: every choice involves giving up the next best alternative. The opportunity cost of a choice is the value of the alternative forgone, e.g. a student who uses ₦5,000 to buy a textbook instead of shoes has the shoes as the opportunity cost.\n\nIllustrations:\nIndividual: a consumer with limited income must choose between food, clothing and recreation.\nFirm: a firm with limited capital must choose what to produce and which methods to use.\nGovernment: with a limited budget, government must choose between, e.g., building schools or hospitals, or between defence and agriculture.\nThe production possibility frontier shows this: to produce more of one good, some of the other must be given up.\n\nScarcity also raises the basic economic problems: what to produce, how to produce, for whom to produce, and how to use resources efficiently. If resources were unlimited (free goods such as air), there would be no need for choice. Therefore choice is a direct consequence of scarcity, and economics studies how people make these choices."
+  }
+]

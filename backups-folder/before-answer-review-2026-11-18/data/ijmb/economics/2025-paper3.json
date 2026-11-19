@@ -1,0 +1,852 @@
+[
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "A development plan covering a period of fifteen years is:",
+    "options": [
+      "Perspective plan",
+      "short-term plan",
+      "medium-term plan",
+      "combined plan."
+    ],
+    "answer": "A",
+    "explanation": "A perspective (long-term) plan covers a long period, usually 10–20 years or more. Medium-term plans usually cover 4–6 years."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Factors militating against improved agriculture in Nigeria are:",
+    "options": [
+      "Land tenure",
+      "lack of proper storage facilities",
+      "A and B",
+      "None of the above."
+    ],
+    "answer": "C",
+    "explanation": "Both the land tenure system (fragmentation, insecurity of title) and lack of storage facilities (post-harvest losses) hinder agricultural development."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "In order to accelerate economic development, a country must:",
+    "options": [
+      "pursue a rational population policy",
+      "pursue an incremental population policy",
+      "stimulate her population growth rate",
+      "pursue a high population growth rate"
+    ],
+    "answer": "A",
+    "explanation": "A rational population policy keeps population growth in line with resources and development goals."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Labour productivity is defined as",
+    "options": [
+      "total level of output",
+      "average output",
+      "output per man hour",
+      "marginal output of labour."
+    ],
+    "answer": "C",
+    "explanation": "Labour productivity is output per unit of labour input, e.g. output per worker per hour."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Marketing board is",
+    "options": [
+      "joint stock company",
+      "public corporation",
+      "cooperative society",
+      "private limited liability company."
+    ],
+    "answer": "B",
+    "explanation": "Marketing boards were statutory public corporations set up by government to buy and export agricultural produce."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "One of the following classical economist propounded the theory of population.",
+    "options": [
+      "Adam Smith",
+      "Alfred Marshall",
+      "Thomas Robert Malthus",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "Thomas Robert Malthus (Essay on the Principle of Population, 1798) argued that population grows geometrically while food supply grows arithmetically."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Applied Issues in Labour Economics",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "If the supply curve of labour market is given as: S = 4L + 8, what is L when S = 20?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "answer": "A",
+    "explanation": "20 = 4L + 8, so 4L = 12 and L = 3."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The traditional basis for international trade is",
+    "options": [
+      "comparative advantage",
+      "terms of trade",
+      "balance of trade",
+      "tariff and quota."
+    ],
+    "answer": "A",
+    "explanation": "The classical basis of international trade is the theory of comparative advantage."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "OPEC is a good example of:",
+    "options": [
+      "economic grouping",
+      "social organization",
+      "regional grouping",
+      "cartel."
+    ],
+    "answer": "D",
+    "explanation": "OPEC is a cartel of oil-exporting countries that coordinates output to influence prices."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Money and Banking",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "One of the function of CBN is:",
+    "options": [
+      "long term loan syndication",
+      "floor for capital market stock",
+      "acceptance of deposits",
+      "lender of last resort."
+    ],
+    "answer": "D",
+    "explanation": "The Central Bank of Nigeria acts as lender of last resort to commercial banks. Accepting deposits from the public is a function of commercial banks."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Which one of the following is not an important determinant of growth of an economy?",
+    "options": [
+      "human capital",
+      "production possibility frontiers",
+      "entrepreneurship",
+      "technology."
+    ],
+    "answer": "B",
+    "explanation": "Human capital, entrepreneurship and technology determine growth. The production possibility frontier is a tool that illustrates growth (an outward shift), not a determinant of it."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The system of agricultural practice which involves hunting, gathering and growing of food crops for family consumption is described as:",
+    "options": [
+      "subsistence farming",
+      "co-operative farming",
+      "plantation agriculture",
+      "mixed cropping."
+    ],
+    "answer": "A",
+    "explanation": "Subsistence farming is production mainly for the family's own consumption."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "What is the term used to describe a policy aimed at promoting the local production of goods which are usually imported?",
+    "options": [
+      "deregulation",
+      "tariff reduction",
+      "import substation",
+      "export promotion."
+    ],
+    "answer": "C",
+    "explanation": "Import substitution industrialisation encourages local production of goods that were previously imported. ('substation' is a misprint for substitution.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "If planned savings exceeds planned investment, the result will be:",
+    "options": [
+      "an unplanned rise in stick",
+      "a rise in the national income",
+      "a rise in the general level of prices",
+      "a fall in planned investment."
+    ],
+    "answer": "A",
+    "explanation": "When planned saving exceeds planned investment, spending is less than output, so unsold goods accumulate: an unplanned rise in stocks (inventories). Firms then cut output, and national income falls. ('stick' is a misprint for stock.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "An industry is a group of:",
+    "options": [
+      "firms producing related goods",
+      "companies producing unrelated goods",
+      "firms producing differentiated goods",
+      "firms producing distinct goods."
+    ],
+    "answer": "A",
+    "explanation": "An industry is a group of firms producing the same or closely related (similar) products."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "In agricultural sector, improved extension services facilitates",
+    "options": [
+      "acquisition of technique",
+      "mobility of labour",
+      "livestock production",
+      "arable crop production."
+    ],
+    "answer": "A",
+    "explanation": "Extension services pass new techniques and knowledge (improved seeds, methods) from research institutes to farmers."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Labour-intensive strategy of industrialization emphasized the use of:",
+    "options": [
+      "steam energy in the process of production",
+      "manual labour",
+      "synthetic raw materials",
+      "hydro-electric power."
+    ],
+    "answer": "B",
+    "explanation": "A labour-intensive strategy uses relatively more labour (manual labour) than capital."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The economics of aggregates is referred as:",
+    "options": [
+      "macro-economics",
+      "micro-economics",
+      "national income",
+      "income distribution."
+    ],
+    "answer": "A",
+    "explanation": "Macroeconomics studies the economy as a whole, using aggregates such as national income, total employment and the general price level."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "One of the aims of ECOWAS is the",
+    "options": [
+      "liberation of trade among member states",
+      "establishment of it headquarter in each of the member state",
+      "discouraging of trade among member states",
+      "taking over of business in member states."
+    ],
+    "answer": "A",
+    "explanation": "ECOWAS aims to promote economic integration, including liberalisation (removal of barriers to) trade among member states. ('liberation' is a misprint for liberalisation.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Circular Flow of Income",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Which of the following is a leakage out of the circular flow?",
+    "options": [
+      "saving",
+      "investment",
+      "consumption",
+      "expenditure."
+    ],
+    "answer": "A",
+    "explanation": "Saving is a leakage; investment is an injection."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "When production is based on free enterprise, firm seek to maximize",
+    "options": [
+      "employment",
+      "innovation",
+      "profit",
+      "quality."
+    ],
+    "answer": "C",
+    "explanation": "Firms under free enterprise aim to maximise profit."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "What would you call a firm which produces and the sells as much as it can at a given market price?",
+    "options": [
+      "a monopolistic firm",
+      "an oligopolistic firm",
+      "a perfectly competitive firm",
+      "a free market producer."
+    ],
+    "answer": "C",
+    "explanation": "A perfectly competitive firm is a price taker and can sell any quantity at the market price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "A production function can be defined as the relationship between",
+    "options": [
+      "inputs and output",
+      "costs and revenue",
+      "inputs and revenue",
+      "inputs and cost."
+    ],
+    "answer": "A",
+    "explanation": "A production function shows the relationship between the quantities of inputs used and the output produced."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The three limitations of division of labour are:",
+    "options": [
+      "capital, labour and entrepreneurship",
+      "price, quantity and product",
+      "extent of market, nature of product, political and strategic consideration",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "Division of labour is limited by the size (extent) of the market, the nature of the product, and political/strategic considerations."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The equilibrium national income of an economy in an open economy is",
+    "options": [
+      "Y = S + C + IG",
+      "Y = C + I + G + (X-M)",
+      "Y = C + I + G + (M-X)",
+      "Y = C + I + G."
+    ],
+    "answer": "B",
+    "explanation": "In an open economy with government, Y = C + I + G + (X − M), where X − M is net exports."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Tools and Methods of Economic Analysis",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The formulation of hypothesis in economics help in:",
+    "options": [
+      "the establishment of economic thinking",
+      "making normative statement",
+      "the establishment of economic theory",
+      "establishment of government policies."
+    ],
+    "answer": "C",
+    "explanation": "Hypotheses are tested against facts; those that are confirmed become economic theories (laws)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Population",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The population of a country is regarded to be greater than the optimum of:",
+    "options": [
+      "output per capita increases as population increases",
+      "output per capita decreases as population increases",
+      "output per capita decreases as population decreases",
+      "output per capita is zero as population increases."
+    ],
+    "answer": "B",
+    "explanation": "Population is above the optimum (over-population) when further increases in population reduce output per head."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Growth and Development",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Economic development can be defined as:",
+    "options": [
+      "economic growth minus change in population",
+      "economic growth and change in population",
+      "growth in income per capita",
+      "economic growth plus charge in population."
+    ],
+    "answer": "C",
+    "explanation": "Economic development is a sustained increase in real income per head accompanied by structural change and improved welfare (health, education, reduced poverty). Of the options, growth in income per capita is the closest; the other options are not meaningful definitions. ('charge' in D is a misprint for change.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Ricardo's law of comparative advantage is based on",
+    "options": [
+      "the opportunity cost theory",
+      "the law of diminishing marginal utility",
+      "the law of increasing relative cost",
+      "the law of diminishing returns."
+    ],
+    "answer": "A",
+    "explanation": "Comparative advantage is based on differences in opportunity cost. Note: the question number is cut off at the left edge of the photo."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The theory of division of labour is best associated with:",
+    "options": [
+      "Ricardo",
+      "Keynes",
+      "Marx",
+      "Adam smith."
+    ],
+    "answer": "D",
+    "explanation": "Adam Smith explained division of labour in The Wealth of Nations (1776), using the example of a pin factory."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Socialist mode of planning is based on:",
+    "options": [
+      "development plan",
+      "rolling plan",
+      "perspective plan",
+      "central plan."
+    ],
+    "answer": "D",
+    "explanation": "Under socialism, planning is centralised: a central planning authority draws up a central (comprehensive) plan for the whole economy."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Agro-allied industry involved",
+    "options": [
+      "production enterprises on the farm",
+      "production on a joint stock basis",
+      "production of only cash crop",
+      "production of only food crops"
+    ],
+    "answer": "A",
+    "explanation": "Agro-allied industries are linked to agriculture, e.g. production enterprises on the farm that process or use farm produce as raw materials."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "When the quantity of a goods does not changes at all as price change, demand is said to be:",
+    "options": [
+      "perfectly inelastic",
+      "unit elasticity",
+      "perfectly elastic",
+      "elastic"
+    ],
+    "answer": "A",
+    "explanation": "If quantity demanded does not change at all when price changes, elasticity is zero: perfectly inelastic demand (vertical demand curve)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The curve which shows different combination of labour and capital that can produce the same level of output is known as",
+    "options": [
+      "isocost",
+      "isoquant",
+      "production possibility curve",
+      "MP curve."
+    ],
+    "answer": "B",
+    "explanation": "An isoquant shows all the combinations of two inputs (e.g. labour and capital) that produce the same level of output. An isocost shows combinations with the same total cost."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Economic Structure of West Africa",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The private sector in Nigeria is made up of:",
+    "options": [
+      "household",
+      "corporate bodies",
+      "incorporated businesses and households",
+      "joint stock companies."
+    ],
+    "answer": "C",
+    "explanation": "The private sector consists of all economic units not owned by government: households and private businesses (incorporated companies, partnerships, sole proprietors)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "A downward pressure on the price of a commodity towards the equilibrium results from:",
+    "options": [
+      "increase in demand",
+      "decrease in demand",
+      "decrease in supply",
+      "b and d."
+    ],
+    "answer": "B",
+    "explanation": "Price falls when demand decreases (or supply increases); a decrease in supply raises price. Option D ('b and d') refers to itself and is meaningless (probably a misprint for 'b and c', which is also wrong)."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of National Income Determination",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Given C = 20 + 0.7Y, I = 60\nWhat is the equilibrium level of national income",
+    "options": [
+      "6000",
+      "600",
+      "650",
+      "60."
+    ],
+    "answer": "D",
+    "explanation": "Y = C + I = 20 + 0.7Y + 60, so 0.3Y = 80 and Y = 266.67.\nThe correct answer, 266.67, is not among the options; D (60) is the numerically closest option and is marked. If autonomous spending were 180 (e.g. I = 160), Y would be 180/0.3 = 600 (option B), so the paper's figures probably contain a misprint."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The rate at which one input can be substituted for another and still maintain the same level of output is called:",
+    "options": [
+      "marginal efficiency of capital",
+      "marginal rate of capital",
+      "marginal rate of technical substitution",
+      "all of the above."
+    ],
+    "answer": "C",
+    "explanation": "This is the marginal rate of technical substitution (MRTS), the slope of the isoquant. Note: the question number is cut off at the left edge of the photo."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Trade",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Which of these does not belong?",
+    "options": [
+      "deregulation",
+      "foreign exchange",
+      "hedging",
+      "foreign payment."
+    ],
+    "answer": "A",
+    "explanation": "Foreign exchange, hedging and foreign payment relate to the foreign exchange market; deregulation does not belong. Note: the question number is cut off at the left edge of the photo."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of the Firm",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Which of the following cost items refers to price?",
+    "options": [
+      "variable cost",
+      "opportunity cost",
+      "fixed cost",
+      "average cost."
+    ],
+    "answer": "D",
+    "explanation": "Note: the question number is cut off at the left edge of the photo, and the question is ambiguous.\nPrice is the amount received per unit sold (average revenue). In the long run under perfect competition, price equals average cost (normal profit), and firms base prices on average cost (cost-plus pricing), so average cost is the cost item most closely related to price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Theory of Consumer Behavior",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "A good is said to be inferior if:",
+    "options": [
+      "its negative substitution effect is exceeded by its negative income effect",
+      "its negative substitution effect is exceeded by its positive income effect",
+      "its positive substitution effect is exceeded by its positive income effect",
+      "all of the above."
+    ],
+    "answer": "B",
+    "explanation": "Note: none of the options states the standard definition clearly. An inferior good is one whose demand falls as income rises, i.e. its income effect works against (opposes) the substitution effect. Using the Slutsky sign convention (substitution effect negative, income effect positive for an inferior good), B describes an income effect that opposes the substitution effect; if it exceeds the substitution effect, the good is a Giffen good (a special inferior good). B is marked as the closest option."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Economic integration among regional groups aim at:",
+    "options": [
+      "deriving the benefits of free trade",
+      "maximizing their joint profit",
+      "all of the above",
+      "none of the above."
+    ],
+    "answer": "A",
+    "explanation": "Regional economic integration (e.g. ECOWAS) aims to gain the benefits of free trade: larger markets, specialisation and economies of scale. 'Joint profit maximisation' describes a cartel."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "A shift in the demand curve for a good may result from:",
+    "options": [
+      "a change in the price of other goods",
+      "a change in the price of the good",
+      "a change in money income",
+      "all of the above."
+    ],
+    "answer": "A",
+    "explanation": "Changes in the prices of other goods (A) and in money income (C) both shift the demand curve, so both are correct. A change in the good's own price (B) causes a movement along the curve, so 'all of the above' is wrong. A is marked; C is also correct."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "A discriminating monopolist tends to change a lower price in the market where the demand elasticity is:",
+    "options": [
+      "higher than in the other",
+      "lower than in the other",
+      "equal to unity",
+      "greater than zero."
+    ],
+    "answer": "A",
+    "explanation": "A price-discriminating monopolist charges a lower price in the market where demand is more elastic and a higher price where it is less elastic. ('change' is a misprint for charge.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Market Structure",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The practice in which a group of firms establish a central selling agency for their product is called:",
+    "options": [
+      "oligopoly",
+      "cartel",
+      "monopoly",
+      "oligopoly."
+    ],
+    "answer": "B",
+    "explanation": "A cartel is an agreement among firms to act jointly, e.g. through a central selling agency, quotas or common prices. Note: options A and D are identical ('oligopoly')."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "International Economic Institutions",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The quickest way of achieving an economic vision on regional basis is to remove all:",
+    "options": [
+      "customs barriers",
+      "language barrier",
+      "legal barriers",
+      "monetary barriers."
+    ],
+    "answer": "A",
+    "explanation": "Regional integration usually starts with removing customs barriers (tariffs and quotas) to create a free trade area or customs union."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "The Price System",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The total revenue derived from the demand for a commodity will not change as price varies if the",
+    "options": [
+      "elasticity of demand along the curve is zero",
+      "elasticity of demand along the curve is unity",
+      "a and b",
+      "none of the above."
+    ],
+    "answer": "B",
+    "explanation": "With unit elasticity, any change in price is exactly offset by a proportional change in quantity, so total revenue stays constant. With zero elasticity, quantity is fixed, so total revenue changes in the same direction as price."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Public Finance",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "A greater burden of the taxeson essential goods is borne by the:",
+    "options": [
+      "lower income group",
+      "higher income group",
+      "middle income group",
+      "none of the above."
+    ],
+    "answer": "A",
+    "explanation": "Taxes on essential goods are regressive: the poor spend a larger proportion of their income on essentials, so they bear a greater burden. ('taxeson' is a misprint for taxes on.)"
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Inflation and Unemployment",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Which of the following best explain the cause of structural unemployment",
+    "options": [
+      "change in the pattern of aggregate demand leading to the decline of some industries and the emergence of others",
+      "structural rigidities",
+      "change in technology",
+      "none of the above."
+    ],
+    "answer": "A",
+    "explanation": "Structural unemployment results from long-term changes in the structure of demand and production, so that some industries decline while others grow, and workers' skills or locations do not match the new jobs."
+  },
+  {
+    "subject": "Economics",
+    "year": 2025,
+    "paper": "Paper III",
+    "category": "Introduction to Economics",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "An economic system which is regulated by invisible hand is known as:",
+    "options": [
+      "planned economy",
+      "market economy",
+      "communist",
+      "all of the above."
+    ],
+    "answer": "B",
+    "explanation": "Adam Smith's 'invisible hand' refers to the price mechanism guiding a free market economy."
+  }
+]

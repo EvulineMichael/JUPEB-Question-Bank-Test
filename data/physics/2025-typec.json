@@ -30,6 +30,8 @@
     "question": "Given two displacements A = (8i + 3j - 2k) m and B = (4i - 6j + 8k) m. Determine the magnitude of the displacement 3A - B.",
     "options": ["9 m", "11 m", "15 m", "25 m"],
     "answer": "D",
+    "reviewNote": "Working: 3A − B = (24 − 4)i + (9 + 6)j + (−6 − 8)k = 20i + 15j − 14k.\n|3A − B| = √(400 + 225 + 196) = √821 ≈ 28.7 m.\n\nNone of the printed options matches this, so the question is left out of quizzes.",
+    "excludeFromQuiz": true,
     "explanation": "3A - B = (24-4)i + (9+6)j + (-6-8)k = 20i + 15j - 14k.\n\nMagnitude = √(20² + 15² + 14²) = √821 ≈ 28.7 m.\n\nThe correct value is approximately 28.7 m, which is not among the options. The closest option has been selected."
   },
   {
@@ -569,7 +571,7 @@
     "questionNumber": "4b",
     "question": "(b) A copper of mass 10 g is heated to 125 °C and held for half an hour in the air before being dropped into a calorimeter containing 100 g of water. Assuming the heat gained by calorimeter is negligible and the S.H.C. of water is 4.2 × 10³ Jkg⁻¹K⁻¹ while the S.H.C. of Cu is 4.0 × 10² Jkg⁻¹K⁻¹, if the initial temperature of water was 20 °C and the increase in temperature is 25 °C. Calculate the rate at which energy is lost to the surroundings.",
     "options": [],
-    "modelAnswer": "Q_loss = m_Cu × c_Cu × ΔT_air = 0.01 × 400 × (125 - 25) = 400 J.\n\nt = 1800 s.\n\nRate of energy loss = 400/1800 ≈ 0.22 W."
+    "modelAnswer": "Q_loss = m_Cu × c_Cu × ΔT_air = 0.01 × 400 × (125 - 25) = 400 J.\n\nt = 1800 s.\n\nRate of energy loss = 400/1800 ≈ 0.22 W.\n\nNote: the printed data don't fit together, so treat this as the expected method rather than an exact result. A 10 g piece of copper cooling all the way from 125 °C can give out at most 0.01 × 400 × 100 = 400 J, which would warm 100 g of water by under 1 °C, not 5 °C (and certainly not 25 °C). The working above reads the question as: the copper has cooled to the water's final temperature (25 °C) during the half-hour in air, so all 400 J were lost to the surroundings. In the exam, state the assumption you make, then use: rate of loss = heat lost ÷ time (in seconds)."
   },
   {
     "subject": "Physics",

@@ -1,0 +1,189 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Express y² − 4x = 4y in polar coordinates. [04 marks]",
+    "options": [],
+    "modelAnswer": "Use x = r cos θ and y = r sin θ:\nr² sin²θ − 4r cos θ = 4r sin θ.\nDivide by r (r ≠ 0):\nr sin²θ = 4(sin θ + cos θ)\nr = 4(sin θ + cos θ)/sin²θ."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Find the eccentricity of the ellipse x²/25 + y²/16 = 1, hence its foci [04 marks]",
+    "options": [],
+    "modelAnswer": "a² = 25 (a = 5), b² = 16 (b = 4).\nb² = a²(1 − e²): 16 = 25(1 − e²), so e² = 9/25 and e = 3/5.\nFoci: (±ae, 0) = (±3, 0)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Given that the coordinates of the center and the length of the radius of a circle are (−2,−5) and 5 respectively, obtain its equation. [04 marks]",
+    "options": [],
+    "modelAnswer": "(x + 2)² + (y + 5)² = 25\nx² + 4x + 4 + y² + 10y + 25 = 25\nx² + y² + 4x + 10y + 4 = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "Calculate P(A ∩ B) where P(A) = 0.4, P(B) = 0.6, P(A ∪ B) = 0.8. [04 marks]",
+    "options": [],
+    "modelAnswer": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)\n0.8 = 0.4 + 0.6 − P(A ∩ B)\nP(A ∩ B) = 1.0 − 0.8 = 0.2."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Polynomials",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "What is the remainder when the polynomial x³ + 3x² + 6x + 1 is divided by (x − 1)? [04 marks]",
+    "options": [],
+    "modelAnswer": "By the remainder theorem, the remainder is f(1):\nf(1) = 1 + 3 + 6 + 1 = 11.\nThe remainder is 11."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Find the condition for the line y = ax + b to be tangent to the circle x² + y² + x + y = 0. [12 marks]",
+    "options": [],
+    "modelAnswer": "The circle x² + y² + x + y = 0 has centre (−½, −½) and radius r, where r² = ¼ + ¼ = ½.\n\nThe line ax − y + b = 0 is a tangent when its distance from the centre equals the radius:\n|a(−½) − (−½) + b|/√(a² + 1) = 1/√2\n(b + ½ − a/2)² = (a² + 1)/2\nMultiply by 4: (2b + 1 − a)² = 2(a² + 1).\n\nExpanding: 4b² + 1 + a² + 4b − 4ab − 2a = 2a² + 2\nCondition: a² + 4ab + 2a − 4b² − 4b + 1 = 0, i.e., (2b + 1 − a)² = 2(1 + a²).\n\n(Check by substitution: putting y = ax + b into the circle gives (1 + a²)x² + (2ab + 1 + a)x + (b² + b) = 0; setting its discriminant to zero gives the same condition.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Show that r = 1/(2 + 2cos θ) represents a parabola in polar form. [08 marks]",
+    "options": [],
+    "modelAnswer": "r(2 + 2cos θ) = 1, so 2r + 2r cos θ = 1.\nWith r = √(x² + y²) and r cos θ = x:\n2√(x² + y²) = 1 − 2x.\nSquare both sides: 4x² + 4y² = 1 − 4x + 4x²\n4y² = 1 − 4x\ny² = −x + ¼ = −(x − ¼).\nThis is a parabola, with vertex (¼, 0), opening to the left, and focus at the pole.\n\n(Alternatively: r = (½)/(1 + cos θ) is of the form r = l/(1 + e cos θ) with e = 1, which is a parabola.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Find the condition for the line y = ax + b to touch the parabola y² − y + 3x = 0. [10 marks]",
+    "options": [],
+    "modelAnswer": "From the line, x = (y − b)/a (a ≠ 0). Substitute into the parabola:\ny² − y + 3(y − b)/a = 0\nay² + (3 − a)y − 3b = 0.\n\nThe line touches the parabola when this quadratic in y has equal roots:\n(3 − a)² − 4a(−3b) = 0\n(3 − a)² + 12ab = 0\nCondition: a² − 6a + 9 + 12ab = 0."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Sketch the curve in polar form r = 3(1 − sin 3θ). [10 marks]",
+    "options": [],
+    "modelAnswer": "Table of values (θ in degrees):\nθ = 0°: r = 3\nθ = 30°: r = 0\nθ = 60°: r = 3\nθ = 90°: r = 6\nθ = 120°: r = 3\nθ = 150°: r = 0\nθ = 180°: r = 3\nθ = 210°: r = 6\nθ = 240°: r = 3\nθ = 270°: r = 0\nθ = 300°: r = 3\nθ = 330°: r = 6\nθ = 360°: r = 3\n\nFeatures:\n1. The period of sin 3θ is 120°, so the curve repeats three times: it has three lobes.\n2. r is never negative (0 ≤ r ≤ 6).\n3. r = 0 (the curve passes through the pole) at θ = 30°, 150° and 270°.\n4. r is greatest (r = 6) at θ = 90°, 210° and 330°, the tips of the three lobes.\n5. r = 3 at θ = 0°, 60°, 120°, 180°, 240° and 300°.\n\nSketch: plot the points and join them smoothly. The curve has three equal rounded lobes, pointing in the directions 90°, 210° and 330°, meeting at the pole."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Obtain the equation of the tangent to the ellipse x²/a² + y²/b² = 1 at the point (x₁, y₁). Hence, write down the equation of the tangent at (a sin θ, b cos θ). [10 marks]",
+    "options": [],
+    "modelAnswer": "Differentiate implicitly: 2x/a² + (2y/b²)(dy/dx) = 0, so dy/dx = −b²x/(a²y).\nAt (x₁, y₁), the gradient is −b²x₁/(a²y₁).\n\nTangent: y − y₁ = −(b²x₁/(a²y₁))(x − x₁)\na²y₁y − a²y₁² = −b²x₁x + b²x₁²\nb²x₁x + a²y₁y = b²x₁² + a²y₁².\nDivide by a²b²: xx₁/a² + yy₁/b² = x₁²/a² + y₁²/b² = 1 (since (x₁, y₁) lies on the ellipse).\n\nTangent at (x₁, y₁): xx₁/a² + yy₁/b² = 1.\n\nAt (a sin θ, b cos θ): x(a sin θ)/a² + y(b cos θ)/b² = 1, i.e.,\n(x sin θ)/a + (y cos θ)/b = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) Show that f(x) = 2e^(−2x), 0 ≤ x < ∞ represents probability density function for a random variable x. Calculate:\n(i) P(x ≤ 3); (ii) P(x ≥ 2). [08 marks]",
+    "options": [],
+    "modelAnswer": "f(x) = 2e^(−2x) ≥ 0 for all x ≥ 0, and\n∫₀^∞ 2e^(−2x) dx = [−e^(−2x)]₀^∞ = 0 − (−1) = 1.\nSo f(x) is a valid probability density function.\n\n(i) P(x ≤ 3) = ∫₀³ 2e^(−2x) dx = 1 − e^(−6) = 1 − 0.00248 = 0.9975.\n(ii) P(x ≥ 2) = ∫₂^∞ 2e^(−2x) dx = e^(−4) = 0.0183."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) For a Binomial distribution with 6 trials and p = 0.125, find the probability that\n(i) all six trials are successful; (ii) at most two trials are successful;\n(iii) none of the trials is successful. [08 marks]",
+    "options": [],
+    "modelAnswer": "X ~ B(6, 0.125), q = 0.875; P(X = r) = ⁶Cᵣ(0.125)ʳ(0.875)⁶⁻ʳ.\n\n(i) P(X = 6) = (0.125)⁶ = 3.81 × 10⁻⁶.\n\n(ii) P(X ≤ 2) = P(0) + P(1) + P(2)\nP(0) = (0.875)⁶ = 0.4488\nP(1) = 6(0.125)(0.875)⁵ = 0.3847\nP(2) = 15(0.125)²(0.875)⁴ = 0.1374\nP(X ≤ 2) = 0.9709.\n\n(iii) P(X = 0) = (0.875)⁶ = 0.4488."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "9c",
+    "question": "(c) A card is selected from a park of playing cards, what is the probability that it is a queen or a diamond? [04 marks]",
+    "options": [],
+    "modelAnswer": "Note: 'park' means pack.\nP(queen or diamond) = P(queen) + P(diamond) − P(queen of diamonds) = 4/52 + 13/52 − 1/52 = 16/52 = 4/13 ≈ 0.308."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) A random variable has the distribution given by the probability density function f(x) = mx², 1 ≤ x ≤ 4. Calculate the value of m. For this value of m, find the mean and standard deviation of the distribution. [08 marks]",
+    "options": [],
+    "modelAnswer": "Total probability: ∫₁⁴ mx² dx = m[x³/3]₁⁴ = m(64 − 1)/3 = 21m = 1, so m = 1/21.\n\nMean: E(X) = ∫₁⁴ x(x²/21) dx = (1/21)[x⁴/4]₁⁴ = (256 − 1)/84 = 255/84 = 85/28 ≈ 3.036.\n\nE(X²) = ∫₁⁴ x²(x²/21) dx = (1/21)[x⁵/5]₁⁴ = (1024 − 1)/105 = 1023/105 = 341/35 ≈ 9.743.\nVariance = E(X²) − [E(X)]² = 341/35 − (85/28)² = 9.7429 − 9.2156 = 0.5273.\nStandard deviation = √0.5273 ≈ 0.726."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) The average birth in a certain community is 5 per day; find the probability that In a certain day\n(i) there will be 2 births; (ii) at least 3 births. [08 marks]",
+    "options": [],
+    "modelAnswer": "The number of births follows a Poisson distribution with λ = 5: P(X = r) = e⁻⁵5ʳ/r!, where e⁻⁵ = 0.006738.\n\n(i) P(X = 2) = e⁻⁵ × 25/2 = 0.006738 × 12.5 = 0.0842.\n\n(ii) P(X ≥ 3) = 1 − [P(0) + P(1) + P(2)] = 1 − e⁻⁵(1 + 5 + 12.5) = 1 − 0.006738 × 18.5 = 1 − 0.1247 = 0.8753."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "10c",
+    "question": "(c) In a single toss of a fair die, what is the probability of obtaining a prime or even number? [04 marks]",
+    "options": [],
+    "modelAnswer": "Prime numbers: {2, 3, 5}; even numbers: {2, 4, 6}.\nPrime or even: {2, 3, 4, 5, 6}, i.e., 5 outcomes.\nP = 5/6.\n(Using the formula: 3/6 + 3/6 − 1/6 = 5/6, since 2 is both prime and even.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2026,
+    "paper": "Paper III",
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "11",
+    "question": "Two dice are tossed once, What is the probability that the outcomes are\n(a) prime and\n(b) the product of the outcome is (i) less than 7, (ii) even, (iii) odd? [15 marks]\n(c) Find the Harmonic and Geometric means of 7,9 and 11. [05 marks]",
+    "options": [],
+    "modelAnswer": "There are 6 × 6 = 36 equally likely outcomes.\n\n(a) Both outcomes prime (each from {2, 3, 5}): 3 × 3 = 9 outcomes, so P = 9/36 = 1/4.\n\n(b)(i) Product less than 7: the pairs are (1,1)–(1,6) [6], (2,1), (2,2), (2,3) [3], (3,1), (3,2) [2], (4,1), (5,1), (6,1) [3]: 14 outcomes.\nP = 14/36 = 7/18.\n(ii) Product even: the product is odd only when both numbers are odd: 3 × 3 = 9 outcomes, so P(even) = 1 − 9/36 = 27/36 = 3/4.\n(iii) Product odd: P = 9/36 = 1/4.\n\n(c) Harmonic mean = 3/(1/7 + 1/9 + 1/11) = 3/(0.14286 + 0.11111 + 0.09091) = 3/0.34488 = 8.70.\n(Exactly: 1/7 + 1/9 + 1/11 = 239/693, so HM = 2079/239 ≈ 8.699.)\nGeometric mean = (7 × 9 × 11)^(1/3) = 693^(1/3) ≈ 8.85."
+  }
+]

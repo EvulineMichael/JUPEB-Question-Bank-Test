@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUPEB &amp; IJMB Prep</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="welcome.css">
+<link rel="stylesheet" href="exam-mode.css">
+ <link rel="stylesheet" href="topic-counts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="study.css">
+<link rel="stylesheet" href="account.css">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#0d6efd">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="JUPEB &amp; IJMB">
+
+<!-- Service Worker Registration -->
+<script>
+  if ('serviceWorker' in navigator) {
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(reg => reg.unregister());
+      });
+    } else {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(reg => console.log('SW registered:', reg.scope))
+          .catch(err => console.log('SW failed:', err));
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        const banner = document.createElement('div');
+        banner.style.cssText = `position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0d6efd;color:white;padding:14px 24px;border-radius:12px;z-index:9999;font-size:0.9rem;box-shadow:0 4px 16px rgba(0,0,0,0.3);cursor:pointer;text-align:center;font-family:'Segoe UI',sans-serif;white-space:nowrap;`;
+        banner.textContent = '🔄 Update available — tap to refresh';
+        banner.addEventListener('click', () => window.location.reload());
+        document.body.appendChild(banner);
+      });
+    }
+  }
+</script>
+<script>
+  // Notify user when a new version is available
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      // New service worker took over - show update notification
+      const updateBanner = document.createElement('div');
+      updateBanner.style.cssText = `
+        position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+        background: #0d6efd; color: white; padding: 14px 24px; border-radius: 12px;
+        z-index: 9999; font-size: 0.9rem; box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        cursor: pointer; text-align: center; font-family: 'Segoe UI', sans-serif;
+      `;
+      updateBanner.textContent = '🔄 Update available — tap to refresh';
+      updateBanner.addEventListener('click', () => window.location.reload());
+      document.body.appendChild(updateBanner);
+    });
+  }
+</script>
+</head>
+<body>
+    <!-- ===== APP NAVIGATION =====
+     Styles: nav.css. Behaviour: script.js (open/close, collapse, active link, theme)
+     and ui.js (top bar, tab bar, streak badge). Keep these ids: sidebar-toggle,
+     sidebar-overlay, app-sidebar, app-sidebar-collapse-btn, sidebar-avatar,
+     sidebar-user-name, sidebar-user-plan, sidebar-theme-toggle. exam-mode.js puts
+     the JUPEB | IJMB switch right after .sidebar-brand. -->
+
+<!-- Phones and tablets: top bar -->
+<div class="app-topbar" id="app-topbar">
+  <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+  </button>
+  <button class="topbar-brand" onclick="goToDashboard()" aria-label="Go to home">
+    <img src="images/jupeb-icon.png" alt="" width="30" height="30">
+    <span id="topbar-exam">JUPEB</span>
+  </button>
+  <div class="topbar-actions">
+    <button class="topbar-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+      <svg class="icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="topbar-avatar" id="topbar-avatar" onclick="goToSettings()" aria-label="Your account">ST</button>
+  </div>
+</div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<aside class="app-sidebar" id="app-sidebar" style="display:none;" aria-label="Main menu">
+  <button class="sidebar-collapse-btn" id="app-sidebar-collapse-btn" aria-label="Collapse sidebar">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+
+  <div class="sidebar-brand">
+    <div class="sidebar-logo">
+      <img src="images/jupeb-icon.png" alt="" width="38" height="38">
+      <span class="sidebar-label sidebar-logo-text">JUPEB</span>
+    </div>
+    <p class="sidebar-tagline sidebar-label">Study smarter. Score higher.</p>
+    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="sidebar-scroll">
+    <p class="sidebar-section sidebar-label">Menu</p>
+    <nav class="sidebar-nav">
+      <button class="sidebar-link is-active" data-screen="dashboard-screen" onclick="goToDashboard()" data-tooltip="Home">
+        <span class="sidebar-icon"><svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg></span>
+        <span class="sidebar-label">Home</span>
+      </button>
+      <button class="sidebar-link" data-screen="subjects-screen" onclick="openSubjectPicker()" data-tooltip="Subjects">
+        <span class="sidebar-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+        <span class="sidebar-label">Subjects</span>
+      </button>
+      <button class="sidebar-link" data-screen="quiz-screen" onclick="goToQuizMode()" data-tooltip="Quiz Mode">
+        <span class="sidebar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg></span>
+        <span class="sidebar-label">Quiz Mode</span>
+      </button>
+      <button class="sidebar-link" data-screen="past-papers-screen" onclick="goToPastPapers()" data-tooltip="Past Papers">
+        <span class="sidebar-icon"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+        <span class="sidebar-label">Past Papers</span>
+      </button>
+    </nav>
+
+    <!-- Streak badge (ui.js fills in the number) -->
+    <button class="sidebar-streak sidebar-label" onclick="goToDashboard()">
+      <span class="sidebar-streak-flame" aria-hidden="true">🔥</span>
+      <span class="sidebar-streak-text"><strong><span id="sidebar-streak-days">0</span>-day streak</strong><small id="sidebar-streak-note">Study today to start one</small></span>
+    </button>
+
+    <p class="sidebar-section sidebar-label">General</p>
+    <nav class="sidebar-nav sidebar-nav--secondary">
+      <button class="sidebar-link" data-screen="settings-screen" onclick="goToSettings()" data-tooltip="Settings">
+        <span class="sidebar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span class="sidebar-label">Settings</span>
+      </button>
+      <button class="sidebar-link" data-screen="help-screen" onclick="goToHelp()" data-tooltip="Help &amp; Support">
+        <span class="sidebar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+        <span class="sidebar-label">Help &amp; Support</span>
+      </button>
+      <!-- script.js attaches the click handler to this id -->
+      <button class="sidebar-link sidebar-theme" id="sidebar-theme-toggle" data-tooltip="Switch theme">
+        <span class="sidebar-icon">
+          <svg class="sidebar-moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sidebar-sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </span>
+        <span class="sidebar-label"><span class="theme-label-dark">Dark mode</span><span class="theme-label-light">Light mode</span></span>
+        <span class="sidebar-switch sidebar-label" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </div>
+
+  <button class="sidebar-footer" onclick="goToSettings()" aria-label="Your account">
+    <span class="sidebar-avatar" id="sidebar-avatar">ST</span>
+    <span class="sidebar-user-info sidebar-label">
+      <span class="sidebar-user-name" id="sidebar-user-name">Student</span>
+      <span class="sidebar-user-plan" id="sidebar-user-plan">⭐ Premium Plan</span>
+    </span>
+    <svg class="sidebar-footer-chev sidebar-label" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+</aside>
+
+<!-- Phones: bottom tab bar (shown on Home, Settings and Help) -->
+<nav class="app-tabbar" id="app-tabbar" aria-label="Quick navigation">
+  <button class="tabbar-link" data-screen="dashboard-screen" onclick="goToDashboard()">
+    <svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg><span>Home</span>
+  </button>
+  <button class="tabbar-link" data-screen="subjects-screen" onclick="openSubjectPicker()">
+    <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>Subjects</span>
+  </button>
+  <button class="tabbar-link tabbar-link--quiz" data-screen="quiz-screen" onclick="goToQuizMode()">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg><span>Quiz</span>
+  </button>
+  <button class="tabbar-link" data-screen="past-papers-screen" onclick="goToPastPapers()">
+    <svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span>Papers</span>
+  </button>
+  <button class="tabbar-link" onclick="openSidebar()">
+    <svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg><span>More</span>
+  </button>
+</nav>
+
+<!-- ===== HOME SCREEN (landing page) =====
+     Styles: home.css. Behaviour: home-screen.js (slideshow, free sample, WhatsApp) and ui.js.
+     Keep these ids, because auth.js and script.js use them: login-screen, auth-status,
+     access-info, login-sun-icon, login-moon-icon, home-hero, home-segs, home-slides,
+     home-sample*, home-exam-pick, home-pay-amount, home-wa-btn. -->
+<div id="login-screen" style="display:block;">
+  <div class="lp">
+
+    <!-- Top bar -->
+    <nav class="lp-nav" id="lp-nav" aria-label="Main">
+      <div class="lp-wrap lp-nav-inner">
+        <button class="lp-brand" data-scroll="top" aria-label="Back to top">
+          <img src="images/jupeb-icon.png" alt="" width="36" height="36">
+          <span data-site-name>JUPEB &amp; IJMB Prep</span>
+        </button>
+        <div class="lp-nav-links">
+          <button data-scroll="lp-features">Features</button>
+          <button data-scroll="lp-how">How it works</button>
+          <button data-scroll="lp-pricing">Pricing</button>
+          <button data-scroll="lp-faq">FAQ</button>
+        </div>
+        <div class="lp-nav-actions">
+          <button class="lp-icon-btn" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle theme">
+            <svg id="login-sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="4.5"></circle><line x1="12" y1="1.5" x2="12" y2="3.5"></line><line x1="12" y1="20.5" x2="12" y2="22.5"></line><line x1="4.6" y1="4.6" x2="6" y2="6"></line><line x1="18" y1="18" x2="19.4" y2="19.4"></line><line x1="1.5" y1="12" x2="3.5" y2="12"></line><line x1="20.5" y1="12" x2="22.5" y2="12"></line><line x1="4.6" y1="19.4" x2="6" y2="18"></line><line x1="18" y1="6" x2="19.4" y2="4.6"></line>
+            </svg>
+            <svg id="login-moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button class="lp-btn lp-btn--outline lp-btn--sm" onclick="signInWithGoogle()">Sign in</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="lp-hero" id="lp-top">
+      <div class="lp-hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="lp-wrap lp-hero-grid">
+        <div class="lp-hero-copy">
+          <span class="lp-pill"><span class="lp-pill-dot"></span>New: IJMB past questions are here</span>
+          <h1>Pass JUPEB &amp; IJMB with <span class="lp-grad">confidence</span>.</h1>
+          <p class="lp-lead">Over 2,000 real past questions, each with a clear explanation. Practise with a timer, find your weak topics and revise only what matters.</p>
+
+          <div id="auth-status"></div>
+
+          <div class="lp-hero-ctas">
+            <button class="lp-btn lp-btn--primary lp-btn--lg" id="home-get-access" data-scroll="lp-pricing">
+              Get access
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button class="lp-btn lp-btn--outline lp-btn--lg" id="home-sample-open">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z" fill="currentColor"/></svg>
+              Try 5 free questions
+            </button>
+          </div>
+
+          <button class="lp-google" onclick="signInWithGoogle()">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            <span>Already paid? <strong>Sign in with Google</strong></span>
+          </button>
+
+          <ul class="lp-trust">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>One-time payment</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lifetime access</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Works on any phone</li>
+          </ul>
+        </div>
+
+        <div class="lp-hero-visual">
+          <!-- Slideshow (home-screen.js drives it) -->
+          <section class="home-hero" id="home-hero" aria-roledescription="carousel" aria-label="Why students use JUPEB &amp; IJMB Prep">
+            <div class="home-segs" id="home-segs"></div>
+            <div class="home-slides" id="home-slides">
+
+              <article class="home-slide home-slide--blue">
+                <span class="home-eyebrow">Past questions</span>
+                <h2>2,000+ past questions</h2>
+                <p>Every JUPEB year from 2015 to 2026, organised by subject, topic and year.</p>
+                <div class="home-chips">
+                  <span>🧪 Chemistry</span><span>⚛️ Physics</span><span>📐 Maths</span><span>🧬 Biology</span><span>✝️ CRS</span><span>☪️ IRS</span><span>📖 Literature</span><span>💰 Economics</span><span>🏛️ Government</span>
+                </div>
+              </article>
+
+              <article class="home-slide home-slide--amber">
+                <span class="home-eyebrow">New · IJMB</span>
+                <h2>IJMB past questions</h2>
+                <p>Essay questions with step-by-step model answers. Get IJMB on its own, or JUPEB and IJMB together.</p>
+                <div class="home-chips">
+                  <span>🧪 Chemistry</span><span>⚛️ Physics</span><span>📐 Maths</span><span>🧬 Biology</span><span>✝️ CRS</span><span>☪️ IRS</span><span>📖 Literature</span><span>💰 Economics</span><span>🏛️ Government</span>
+                </div>
+              </article>
+
+              <article class="home-slide home-slide--violet">
+                <span class="home-eyebrow">Explanations</span>
+                <h2>Every answer explained</h2>
+                <p>Learn why an answer is right, not just what it is.</p>
+                <div class="home-demo">
+                  <div class="home-demo-q">Which phenomenon posed a challenge to the wave theory of light?</div>
+                  <div class="home-demo-opt">✓ Photoelectric effect observations.</div>
+                  <div class="home-demo-why">💡 Einstein explained it with photons, which classical wave theory could not do.</div>
+                </div>
+              </article>
+
+              <article class="home-slide home-slide--orange">
+                <span class="home-eyebrow">Quiz mode</span>
+                <h2>Practise like it's exam day</h2>
+                <p>Timed quizzes, so exam conditions feel familiar before the real thing.</p>
+                <div class="home-demo">
+                  <div class="home-quiz-top"><span class="home-timer">⏱ 29:41</span><span>Question 12 of 40</span></div>
+                  <div class="home-bar"><i style="width:30%"></i></div>
+                </div>
+              </article>
+
+              <article class="home-slide home-slide--green">
+                <span class="home-eyebrow">Progress</span>
+                <h2>Know your weak spots</h2>
+                <p>We track the topics you struggle with, so you know exactly what to revise.</p>
+                <div class="home-demo">
+                  <div class="home-row"><span>Atomic Structure</span><div class="home-bar"><i style="width:58%"></i></div></div>
+                  <div class="home-row"><span>Mole Concept</span><div class="home-bar"><i style="width:44%"></i></div></div>
+                  <div class="home-row"><span>Stoichiometry</span><div class="home-bar"><i style="width:31%"></i></div></div>
+                </div>
+              </article>
+
+              <article class="home-slide home-slide--rose">
+                <span class="home-eyebrow">Community</span>
+                <h2>Join 100+ students</h2>
+                <p>Students are already studying with us, one question at a time.</p>
+                <div class="home-demo home-demo--people">
+                  <div class="home-avatars"><span></span><span></span><span></span><span></span><span class="home-avatar-more">100+</span></div>
+                  <div class="home-people-note">studying with JUPEB &amp; IJMB Prep</div>
+                </div>
+              </article>
+
+              <article class="home-slide home-slide--teal">
+                <span class="home-eyebrow">On your phone</span>
+                <h2>Study on any phone</h2>
+                <p>Add it to your home screen and open it like an app.</p>
+                <div class="home-demo home-demo--phone">
+                  <div class="home-phone"><img src="images/jupeb-icon.png" alt="" width="46" height="46"><small>JUPEB &amp; IJMB</small></div>
+                  <div class="home-phone-steps"><strong>Share</strong> → <strong>Add to Home Screen</strong></div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <!-- Floating badges around the slideshow (larger screens) -->
+          <div class="lp-float lp-float--a" aria-hidden="true">
+            <span class="lp-float-icon lp-float-icon--green"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><strong>Correct!</strong><small>+1 to your score</small></div>
+          </div>
+          <div class="lp-float lp-float--b" aria-hidden="true">
+            <span class="lp-float-icon lp-float-icon--amber">🔥</span>
+            <div><strong>7-day streak</strong><small>Keep it going</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbers -->
+    <section class="lp-stats lp-reveal" aria-label="At a glance">
+      <div class="lp-wrap"><div class="lp-stats-grid">
+        <div class="lp-stat"><strong data-count="2000" data-suffix="+">2,000+</strong><span>Past questions</span></div>
+        <div class="lp-stat"><strong data-count="9">9</strong><span>Subjects</span></div>
+        <div class="lp-stat"><strong data-count="12">12</strong><span>Years covered</span></div>
+        <div class="lp-stat"><strong data-count="100" data-suffix="+">100+</strong><span>Students</span></div>
+      </div></div>
+    </section>
+
+    <!-- Features -->
+    <section class="lp-section" id="lp-features">
+      <div class="lp-wrap">
+        <div class="lp-head lp-reveal">
+          <span class="lp-kicker">Features</span>
+          <h2>Everything you need to revise properly</h2>
+          <p>Built for JUPEB and IJMB students who want to walk into the exam hall prepared.</p>
+        </div>
+        <div class="lp-features">
+          <article class="lp-feature lp-reveal">
+            <span class="lp-feature-icon lp-tone-blue"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+            <h3>Real past questions</h3>
+            <p>Every JUPEB paper from 2015 to 2026, sorted by subject, topic and year.</p>
+          </article>
+          <article class="lp-feature lp-reveal">
+            <span class="lp-feature-icon lp-tone-violet"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z"/></svg></span>
+            <h3>Clear explanations</h3>
+            <p>Understand why each answer is right, so you can handle any version of the question.</p>
+          </article>
+          <article class="lp-feature lp-reveal">
+            <span class="lp-feature-icon lp-tone-orange"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg></span>
+            <h3>Timed quiz mode</h3>
+            <p>Practise under exam conditions with a timer, then review every answer.</p>
+          </article>
+          <article class="lp-feature lp-reveal">
+            <span class="lp-feature-icon lp-tone-green"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 16v-4M11 16V8M16 16v-6M21 4l-5 5-3-3-5 5"/></svg></span>
+            <h3>Weak-topic tracking</h3>
+            <p>See the topics you keep missing and practise them until they stick.</p>
+          </article>
+          <article class="lp-feature lp-reveal">
+            <span class="lp-feature-icon lp-tone-amber"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+            <h3>IJMB model answers</h3>
+            <p>Essay past questions with step-by-step model answers in all nine subjects.</p>
+          </article>
+          <article class="lp-feature lp-reveal">
+            <span class="lp-feature-icon lp-tone-teal"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+            <h3>Made for your phone</h3>
+            <p>Works on any phone, tablet or laptop. Add it to your home screen like an app.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="lp-section lp-section--tint" id="lp-how">
+      <div class="lp-wrap">
+        <div class="lp-head lp-reveal">
+          <span class="lp-kicker">How it works</span>
+          <h2>Start studying in three steps</h2>
+          <p>No subscription and no card needed. Pay once and you're in for life.</p>
+        </div>
+        <ol class="lp-steps">
+          <li class="lp-step lp-reveal">
+            <span class="lp-step-num">1</span>
+            <h3>Choose and pay</h3>
+            <p>Pick JUPEB, IJMB or both, and pay by bank transfer to Moniepoint.</p>
+          </li>
+          <li class="lp-step lp-reveal">
+            <span class="lp-step-num">2</span>
+            <h3>Send your receipt</h3>
+            <p>Send the receipt and your Gmail address to us on WhatsApp.</p>
+          </li>
+          <li class="lp-step lp-reveal">
+            <span class="lp-step-num">3</span>
+            <h3>Sign in and study</h3>
+            <p>Once we activate your Gmail, sign in with Google and start practising.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="lp-section" id="lp-pricing">
+      <div class="lp-wrap">
+        <div class="lp-head lp-reveal">
+          <span class="lp-kicker">Pricing</span>
+          <h2>One payment. Lifetime access.</h2>
+          <p>Already have one exam? Add the other for ₦3,000.</p>
+        </div>
+
+        <div class="lp-plans">
+          <article class="lp-plan lp-reveal">
+            <h3>JUPEB</h3>
+            <p class="lp-plan-desc">All nine JUPEB subjects</p>
+            <p class="lp-plan-price"><strong>₦5,000</strong><span>one-time</span></p>
+            <ul class="lp-plan-list">
+              <li>Past questions 2015–2026</li>
+              <li>Every answer explained</li>
+              <li>Timed quizzes and weak-topic tracking</li>
+            </ul>
+            <button class="lp-btn lp-btn--outline lp-btn--block" data-plan="JUPEB">Choose JUPEB</button>
+          </article>
+
+          <article class="lp-plan lp-plan--featured lp-reveal">
+            <span class="lp-plan-badge">Best value</span>
+            <h3>JUPEB + IJMB</h3>
+            <p class="lp-plan-desc">Both exams, everything included</p>
+            <p class="lp-plan-price"><strong>₦8,000</strong><span>one-time</span></p>
+            <ul class="lp-plan-list">
+              <li>Everything in JUPEB and IJMB</li>
+              <li>Save ₦2,000</li>
+              <li>Lifetime access on all your devices</li>
+            </ul>
+            <button class="lp-btn lp-btn--primary lp-btn--block" data-plan="JUPEB + IJMB">Choose both</button>
+          </article>
+
+          <article class="lp-plan lp-reveal">
+            <h3>IJMB</h3>
+            <p class="lp-plan-desc">All nine IJMB subjects</p>
+            <p class="lp-plan-price"><strong>₦5,000</strong><span>one-time</span></p>
+            <ul class="lp-plan-list">
+              <li>Essay past questions from 2016</li>
+              <li>Step-by-step model answers</li>
+              <li>Study on any phone or laptop</li>
+            </ul>
+            <button class="lp-btn lp-btn--outline lp-btn--block" data-plan="IJMB">Choose IJMB</button>
+          </article>
+        </div>
+
+        <!-- How to get access (opened by the plan buttons and by toggleAccessInfo) -->
+        <div id="access-info" class="home-access" style="display:none;">
+          <div class="home-access-head">
+            <h3>How to get access</h3>
+            <button class="home-access-close" onclick="toggleAccessInfo()" aria-label="Close">×</button>
+          </div>
+          <p class="home-exam-pick-label">Which exam do you want?</p>
+          <div class="home-exam-pick" id="home-exam-pick" role="radiogroup" aria-label="Choose your exam">
+            <button type="button" role="radio" class="is-on" aria-checked="true" data-exam="JUPEB" data-price="₦5,000">JUPEB<span>₦5,000</span></button>
+            <button type="button" role="radio" aria-checked="false" data-exam="IJMB" data-price="₦5,000">IJMB<span>₦5,000</span></button>
+            <button type="button" role="radio" aria-checked="false" data-exam="JUPEB + IJMB" data-price="₦8,000">Both<span>₦8,000</span></button>
+          </div>
+          <ol class="home-steps">
+            <li><strong>Pay <span id="home-pay-amount">₦5,000</span></strong> to Moniepoint <span class="home-mono">5282798033</span> (Michael Evuline).</li>
+            <li><strong>Send your receipt and your Gmail address</strong> to us on WhatsApp. This is the Gmail you'll sign in with.</li>
+            <li><strong>Sign in with that Gmail</strong> once we've activated you. That's it. Access is for life.</li>
+          </ol>
+          <div class="home-access-actions">
+            <a class="lp-btn lp-btn--whatsapp lp-btn--block" id="home-wa-btn" href="https://wa.me/2349035801863" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
+              Send receipt on WhatsApp
+            </a>
+            <button class="lp-btn lp-btn--outline lp-btn--block" onclick="signInWithGoogle()">Already activated? Sign in</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="lp-section lp-section--tint" id="lp-faq">
+      <div class="lp-wrap lp-faq-grid">
+        <div class="lp-head lp-head--left lp-reveal">
+          <span class="lp-kicker">FAQ</span>
+          <h2>Questions? Answers.</h2>
+          <p>Can't find what you're looking for? <a href="https://wa.me/2349035801863" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>
+        </div>
+        <div class="home-faq-list">
+          <details class="home-faq-item"><summary>How much does it cost?</summary><p>₦5,000 per exam (JUPEB or IJMB), or ₦8,000 for both, paid once. You get lifetime access, with no subscription. Already have one exam? Add the other for ₦3,000.</p></details>
+          <details class="home-faq-item"><summary>How do I get access?</summary><p>Choose JUPEB, IJMB or both and pay, then send your receipt and your Gmail address to us on WhatsApp. We activate that Gmail, and you sign in with it. Tap "Get access" above for the details.</p></details>
+          <details class="home-faq-item"><summary>Which subjects and years are covered?</summary><p>JUPEB: Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, with past questions from 2015 to 2026 depending on the subject. IJMB: essay past questions with model answers in all nine subjects, from 2016 onwards.</p></details>
+          <details class="home-faq-item"><summary>Are the answers correct?</summary><p>Yes, but always cross-check with your textbook, because no answer bank is 100% perfect. If you spot a mistake, tell us and we fix it quickly.</p></details>
+          <details class="home-faq-item"><summary>Does it work on my phone?</summary><p>Yes. It works on any phone, tablet or laptop, and you can add it to your home screen and open it like an app.</p></details>
+          <details class="home-faq-item"><summary>Can I use it on more than one device?</summary><p>Yes. Just sign in with the same Gmail.</p></details>
+          <details class="home-faq-item"><summary>I paid but I can't sign in.</summary><p>Sign in with the exact Gmail you sent us with your receipt. If it still doesn't work, message us on WhatsApp and we'll sort it out.</p></details>
+          <details class="home-faq-item"><summary>Is this the official JUPEB or IJMB website?</summary><p>No. <span data-site-name>JUPEB &amp; IJMB Prep</span> is an independent study tool. It is not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB).</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing call to action -->
+    <section class="lp-section">
+      <div class="lp-wrap">
+        <div class="lp-final lp-reveal">
+          <h2>Your exam is coming. Start revising today.</h2>
+          <p>Try five real past questions for free. No sign-up needed.</p>
+          <div class="lp-final-ctas">
+            <button class="lp-btn lp-btn--light lp-btn--lg" data-open-sample>Try 5 free questions</button>
+            <button class="lp-btn lp-btn--ghost-light lp-btn--lg" data-scroll="lp-pricing">See pricing</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="lp-footer">
+      <div class="lp-wrap lp-footer-inner">
+        <div class="lp-footer-brand">
+          <img src="images/jupeb-icon.png" alt="" width="28" height="28">
+          <span data-site-name>JUPEB &amp; IJMB Prep</span>
+        </div>
+        <p class="lp-footer-note">An independent study tool. Not affiliated with JUPEB or IJMB.</p>
+        <a class="lp-footer-link" href="https://wa.me/2349035801863" target="_blank" rel="noopener">WhatsApp: +234 903 580 1863</a>
+      </div>
+    </footer>
+
+    <!-- Free sample (only exists on this screen, so it disappears after sign-in) -->
+    <div class="home-modal" id="home-sample" aria-hidden="true">
+      <div class="home-modal-backdrop" id="home-sample-backdrop"></div>
+      <div class="home-modal-card" role="dialog" aria-label="Free sample questions">
+        <button class="home-modal-close" id="home-sample-close" aria-label="Close">×</button>
+        <div id="home-sample-body"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== DASHBOARD =====
+     Styles: dashboard.css. Filled in by renderDashboard() in script.js; ui.js adds the
+     exam countdown, the study tip and the small animations.
+     exam-mode.css hides .dash-quick-practice-card, .dash-weak-topics-card,
+     .dash-recent-card and .db-quiz-only for IJMB, so keep those classes. -->
+<div id="dashboard-screen" style="display:none;">
+  <div class="dash-shell">
+
+    <!-- Header -->
+    <div class="dashboard-header">
+      <div class="dash-greeting">
+        <p class="db-date" id="dash-date"></p>
+        <h2 id="dash-greeting-text">Good morning</h2>
+        <p id="dash-user-name">Ready to make today a productive study session?</p>
+      </div>
+      <div class="dash-header-actions">
+        <button class="db-header-btn" onclick="openSubjectPicker()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span>Find a topic</span>
+        </button>
+        <button class="bell-btn" id="bell-btn" aria-label="Updates and feedback">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="bell-dot" id="bell-dot"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="db-layout">
+      <!-- Main column -->
+      <div class="db-main">
+
+        <!-- Continue banner -->
+        <div class="dash-card db-hero db-o-hero" id="dash-continue-card">
+          <div class="db-hero-text">
+            <p class="db-hero-eyebrow">Continue where you left off</p>
+            <h3 id="dash-continue-topic">Pick a subject to begin</h3>
+            <p id="dash-continue-text" class="db-hero-sub">You haven't started studying yet.</p>
+            <div class="db-hero-progress">
+              <div class="dash-progress-track"><div class="dash-progress-fill" id="dash-continue-fill" style="width:0%"></div></div>
+              <span id="db-continue-pct">0%</span>
+            </div>
+            <button class="db-btn db-btn--light" onclick="openSubjectPicker()">
+              Continue practising
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div class="db-hero-art" aria-hidden="true">
+            <svg class="db-ring" viewBox="0 0 120 120">
+              <circle class="db-ring-track" cx="60" cy="60" r="50"/>
+              <circle class="db-ring-fill" id="db-continue-ring" cx="60" cy="60" r="50"/>
+            </svg>
+            <span class="db-ring-icon">📘</span>
+          </div>
+        </div>
+
+        <!-- Numbers (filled in by renderDashboard) -->
+        <div class="db-stats db-o-stats">
+          <div class="db-stat">
+            <span class="db-stat-icon db-tone-blue"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+            <div><strong id="db-stat-answered" data-count>0</strong><span>Questions answered</span></div>
+          </div>
+          <div class="db-stat db-quiz-only">
+            <span class="db-stat-icon db-tone-violet"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+            <div><strong id="db-stat-quizzes" data-count>0</strong><span>Quizzes completed</span></div>
+          </div>
+          <div class="db-stat db-quiz-only">
+            <span class="db-stat-icon db-tone-green"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M21 4l-5 5-3-3-5 5"/></svg></span>
+            <div><strong id="db-stat-avg" data-count data-suffix="%">0%</strong><span>Average score</span></div>
+          </div>
+          <div class="db-stat db-quiz-only">
+            <span class="db-stat-icon db-tone-amber"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>
+            <div><strong id="db-stat-best" data-count data-suffix="%">0%</strong><span>Best score</span></div>
+          </div>
+        </div>
+
+        <!-- Start studying -->
+        <section class="db-block db-o-start" aria-labelledby="db-start-title">
+          <div class="db-section-title"><h3 id="db-start-title">Start studying</h3></div>
+          <div class="db-actions">
+            <button class="db-action dash-quick-practice-card" onclick="startQuickPractice()">
+              <span class="db-action-icon db-tone-blue"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+              <strong>Quick practice</strong>
+              <span>10 random questions</span>
+            </button>
+            <button class="db-action db-quiz-only" onclick="goToQuizMode()">
+              <span class="db-action-icon db-tone-orange"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg></span>
+              <strong>Quiz mode</strong>
+              <span>Timed, like the exam</span>
+            </button>
+            <button class="db-action" onclick="goToPastPapers()">
+              <span class="db-action-icon db-tone-violet"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+              <strong>Past papers</strong>
+              <span>Full papers by year</span>
+            </button>
+            <button class="db-action" onclick="openSubjectPicker()">
+              <span class="db-action-icon db-tone-green"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+              <strong>Study by topic</strong>
+              <span>Browse every subject</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Quick access (pinned subjects) -->
+        <div class="dash-card db-subjects db-o-subjects">
+          <div class="db-card-head">
+            <div>
+              <h3>Quick access</h3>
+              <p class="db-muted">Pin your subjects to open them in one tap.</p>
+            </div>
+          </div>
+          <div id="dash-pinned-subjects" class="dash-subject-grid">
+            <!-- populated by renderPinnedSubjects() -->
+          </div>
+        </div>
+
+        <!-- Recent activity -->
+        <div class="dash-card db-recent dash-recent-card db-o-recent">
+          <div class="db-card-head">
+            <h3><span class="db-head-icon db-tone-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Recent activity</h3>
+          </div>
+          <div id="dash-recent-activity">
+            <p class="db-empty">No activity yet. Your study sessions will show here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side rail -->
+      <aside class="db-rail">
+
+        <!-- Streak -->
+        <div class="dash-card db-streak db-o-streak" id="dash-streak-card">
+          <div class="db-card-head">
+            <h3><span class="db-head-icon db-tone-amber">🔥</span>Study streak</h3>
+          </div>
+          <p id="dash-streak-text" class="dash-streak-number">0 <span>days</span></p>
+          <p id="dash-streak-subtext" class="db-muted">Start studying today to build your streak</p>
+          <div class="streak-dots" id="streak-dots">
+            <span class="streak-dot">M</span><span class="streak-dot">T</span><span class="streak-dot">W</span>
+            <span class="streak-dot">T</span><span class="streak-dot">F</span><span class="streak-dot">S</span>
+            <span class="streak-dot">S</span>
+          </div>
+        </div>
+
+        <!-- Exam countdown (ui.js) -->
+        <div class="dash-card db-countdown db-o-countdown" id="db-countdown">
+          <div class="db-card-head">
+            <h3><span class="db-head-icon db-tone-violet"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span>Exam countdown</h3>
+            <button class="dash-link-btn" id="db-countdown-edit" hidden>Change</button>
+          </div>
+          <div id="db-countdown-view"></div>
+          <form class="db-countdown-form" id="db-countdown-form" hidden>
+            <label class="db-muted" for="db-countdown-input">When is your exam?</label>
+            <div class="db-countdown-row">
+              <input type="date" id="db-countdown-input" class="db-date-input" required>
+              <button type="submit" class="dash-btn-primary">Save</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Weak topics -->
+        <div class="dash-card db-weak dash-weak-topics-card db-o-weak">
+          <div class="db-card-head">
+            <h3><span class="db-head-icon db-tone-red"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>Weak topics</h3>
+            <button class="dash-link-btn" onclick="goToQuizMode()">Practise</button>
+          </div>
+          <div id="dash-weak-topics">
+            <p class="db-empty">Answer 10+ questions to unlock weak area tracking.</p>
+          </div>
+        </div>
+
+        <!-- Study tip (ui.js) -->
+        <div class="dash-card db-tip db-o-tip">
+          <div class="db-card-head">
+            <h3><span class="db-head-icon db-tone-amber">💡</span>Study tip</h3>
+            <button class="dash-link-btn" id="db-tip-next">Next tip</button>
+          </div>
+          <p class="db-tip-text" id="db-tip-text">Little and often beats one long cram. Twenty focused minutes a day adds up fast.</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</div>
+    <!-- App Content (Hidden until authorized) -->
+    <div id="app-content" style="display:none;">
+    <div class="main-container">
+        <main id="questions-area">
+            <div class="welcome-message" id="welcome-message">
+                <h2>📚 Welcome to JUPEB &amp; IJMB Prep</h2>
+                <p>Click "Subjects" in the sidebar to get started.</p>
+            </div>
+            <div id="questions-container"></div>
+        </main>
+    </div>
+</div>
+
+<!-- ===== SETTINGS =====
+     Styles: account.css. Logic: renderSettings() and the listeners after it in script.js;
+     ui.js drives the option buttons and theme cards. Keep these ids: settings-avatar,
+     settings-email, settings-name-input, settings-name-save, settings-name-status,
+     settings-default-length, settings-default-timer, settings-theme-toggle, settings-signout-btn. -->
+<div class="app-screen" id="settings-screen" style="display:none;">
+  <div class="dash-shell acc-shell">
+    <div class="acc-head">
+      <span class="acc-kicker">Account</span>
+      <h2>Settings</h2>
+      <p>Your profile, study preferences and how the app looks.</p>
+    </div>
+
+    <!-- Profile banner -->
+    <div class="set-hero">
+      <div class="settings-avatar" id="settings-avatar">ST</div>
+      <div class="set-hero-text">
+        <h3 id="settings-hero-name">Student</h3>
+        <p class="settings-account-email" id="settings-email">Signed in with Google</p>
+        <div class="set-badges" id="settings-badges"><span class="set-badge set-badge--gold">⭐ Lifetime access</span></div>
+      </div>
+    </div>
+
+    <div class="acc-grid">
+      <!-- Profile -->
+      <section class="acc-card">
+        <div class="acc-card-head">
+          <span class="acc-icon acc-tone-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          <div><h3>Profile</h3><p>The name we use to greet you.</p></div>
+        </div>
+        <label class="acc-label" for="settings-name-input">What should we call you?</label>
+        <div class="settings-name-row">
+          <input type="text" id="settings-name-input" class="settings-input" placeholder="Your preferred name" maxlength="40" />
+          <button class="acc-btn acc-btn--primary" id="settings-name-save">Save</button>
+        </div>
+        <p class="acc-status" id="settings-name-status" role="status"></p>
+      </section>
+
+      <!-- Study preferences -->
+      <section class="acc-card">
+        <div class="acc-card-head">
+          <span class="acc-icon acc-tone-violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg></span>
+          <div><h3>Study preferences</h3><p>Used as the starting choice in Quiz mode.</p></div>
+        </div>
+        <p class="acc-label">Practice quiz length</p>
+        <div class="acc-seg" data-for="settings-default-length" role="radiogroup" aria-label="Practice quiz length">
+          <button type="button" data-value="10">10</button><button type="button" data-value="20">20</button><button type="button" data-value="50">50</button>
+        </div>
+        <select id="settings-default-length" class="acc-hidden" aria-hidden="true" tabindex="-1">
+          <option value="10">10 Questions</option><option value="20">20 Questions</option><option value="50">50 Questions</option>
+        </select>
+        <p class="acc-label">Timer</p>
+        <div class="acc-seg" data-for="settings-default-timer" role="radiogroup" aria-label="Default timer">
+          <button type="button" data-value="0">None</button><button type="button" data-value="1800">30 min</button><button type="button" data-value="3600">60 min</button><button type="button" data-value="5400">90 min</button>
+        </div>
+        <select id="settings-default-timer" class="acc-hidden" aria-hidden="true" tabindex="-1">
+          <option value="0">No Timer</option><option value="1800">30 min</option><option value="3600">60 min</option><option value="5400">90 min</option>
+        </select>
+      </section>
+
+      <!-- Appearance -->
+      <section class="acc-card">
+        <div class="acc-card-head">
+          <span class="acc-icon acc-tone-amber"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+          <div><h3>Appearance</h3><p>Pick what's easiest on your eyes.</p></div>
+        </div>
+        <div class="theme-cards">
+          <button type="button" class="theme-card theme-card--light" onclick="setThemeTo('light')" aria-label="Light theme">
+            <span class="theme-preview"><i></i><b></b><b></b><b></b></span>
+            <span class="theme-name">Light</span>
+          </button>
+          <button type="button" class="theme-card theme-card--dark" onclick="setThemeTo('dark')" aria-label="Dark theme">
+            <span class="theme-preview"><i></i><b></b><b></b><b></b></span>
+            <span class="theme-name">Dark</span>
+          </button>
+        </div>
+        <!-- kept for script.js (renderSettings sets it; its change listener switches the theme) -->
+        <label class="acc-hidden"><input type="checkbox" id="settings-theme-toggle" tabindex="-1" /></label>
+      </section>
+
+      <!-- Account -->
+      <section class="acc-card">
+        <div class="acc-card-head">
+          <span class="acc-icon acc-tone-red"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+          <div><h3>Account</h3><p>Signed in with Google.</p></div>
+        </div>
+        <div class="acc-list">
+          <button type="button" class="acc-list-row" onclick="goToHelp()">
+            <span>Help &amp; support</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <a class="acc-list-row" href="https://wa.me/2349035801863" target="_blank" rel="noopener">
+            <span>Message us on WhatsApp</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <button class="settings-danger-btn" id="settings-signout-btn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+          Sign out
+        </button>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HELP & SUPPORT =====
+     Styles: account.css. Logic: renderHelp() in script.js; ui.js runs the FAQ search.
+     Keep these ids: help-faq-list, help-whatsapp-btn, help-report-btn. -->
+<div class="app-screen" id="help-screen" style="display:none;">
+  <div class="dash-shell acc-shell">
+    <div class="help-hero">
+      <span class="acc-kicker">Help &amp; support</span>
+      <h2>How can we help?</h2>
+      <p>Search the common questions below, or get in touch. A real person reads every message.</p>
+      <label class="help-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="help-search" placeholder="Search, e.g. sign in, IJMB, phone" autocomplete="off">
+      </label>
+    </div>
+
+    <div class="help-contact-grid">
+      <button class="help-contact help-contact--wa" id="help-whatsapp-btn">
+        <span class="help-contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg></span>
+        <strong>Chat on WhatsApp</strong>
+        <span>Payments, access and anything else</span>
+      </button>
+      <button class="help-contact help-contact--report" id="help-report-btn">
+        <span class="help-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>
+        <strong>Report a problem</strong>
+        <span>Wrong answer, broken question or a bug</span>
+      </button>
+      <a class="help-contact help-contact--mail" id="help-email-link" href="mailto:jupeb.qbank@gmail.com">
+        <span class="help-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <strong>Email us</strong>
+        <span id="help-email-text">jupeb.qbank@gmail.com</span>
+      </a>
+    </div>
+
+    <section class="acc-card help-faq-card">
+      <div class="help-faq-head">
+        <h3>Frequently asked questions</h3>
+        <span class="help-faq-count" id="help-faq-count"></span>
+      </div>
+      <div class="help-faq-list" id="help-faq-list"></div>
+      <p class="help-faq-empty" id="help-faq-empty" hidden>No questions match that. Try other words, or message us on WhatsApp.</p>
+    </section>
+
+    <section class="help-guide">
+      <h3>Getting around</h3>
+      <div class="help-guide-grid">
+        <button class="help-guide-card" onclick="openSubjectPicker()">
+          <span class="acc-icon acc-tone-green"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span>
+          <strong>Study by topic</strong><span>Subject → course → topic, with every answer explained.</span>
+        </button>
+        <button class="help-guide-card help-quiz-only" onclick="goToQuizMode()">
+          <span class="acc-icon acc-tone-violet"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2h5"/></svg></span>
+          <strong>Take a quiz</strong><span>Timed practice. On a keyboard, press A–E to answer.</span>
+        </button>
+        <button class="help-guide-card" onclick="goToPastPapers()">
+          <span class="acc-icon acc-tone-blue"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+          <strong>Past papers</strong><span>Read a full paper, reveal answers, or take it as a quiz.</span>
+        </button>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- Stub Screens -->
+<div class="app-screen" id="progress-screen" style="display:none;padding:40px;">
+  <button class="dash-back-btn" onclick="goToDashboard()">← Back to Dashboard</button>
+  <h2 style="color:var(--text-primary);">📈 Progress</h2>
+  <p style="color:var(--text-secondary);">Your detailed progress will appear here.</p>
+</div>
+
+<!-- Subject Picker Overlay -->
+<!-- ===== SUBJECTS PICKER (subject → course → topic) =====
+     Styles: study.css (#subject-picker). Filled in by renderPickerStep() in script.js.
+     Keep these ids: subject-picker, subject-picker-backdrop, subject-picker-close,
+     subject-picker-back, subject-picker-crumbs, subject-picker-search, subject-picker-grid. -->
+<div class="subject-picker" id="subject-picker" aria-hidden="true">
+  <div class="subject-picker-backdrop" id="subject-picker-backdrop"></div>
+  <div class="subject-picker-panel" role="dialog" aria-modal="true" aria-labelledby="sp-title">
+    <div class="sp-header">
+      <div class="subject-picker-topbar">
+        <button class="subject-picker-back" id="subject-picker-back" aria-label="Go back">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Back
+        </button>
+        <nav class="subject-picker-crumbs" id="subject-picker-crumbs" aria-label="Breadcrumb"></nav>
+        <button class="subject-picker-close" id="subject-picker-close" aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <ol class="sp-steps" id="sp-steps" aria-hidden="true">
+        <li data-step="subject"><span>1</span>Subject</li>
+        <li data-step="set"><span>2</span>Course</li>
+        <li data-step="topic"><span>3</span>Topic</li>
+      </ol>
+      <h2 class="sp-title" id="sp-title">Choose a subject</h2>
+      <p class="sp-sub" id="sp-sub"></p>
+      <label class="sp-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="text" class="subject-picker-search" id="subject-picker-search" placeholder="Search…" autocomplete="off" />
+      </label>
+    </div>
+    <div class="sp-body">
+      <div class="subject-picker-grid" id="subject-picker-grid"></div>
+      <p class="sp-empty" id="sp-empty" hidden>Nothing matches that search.</p>
+    </div>
+    <div class="sp-footer" id="sp-footer" hidden>
+      <span id="sp-footer-text">0 subjects pinned</span>
+      <button class="sp-done" onclick="closeSubjectPicker()">Done</button>
+    </div>
+  </div>
+</div>
+<div class="survey-overlay" id="survey-overlay" style="display:none;">
+  <div class="survey-modal">
+    <div class="survey-header">
+      <div class="survey-emoji">👋</div>
+      <h2>Welcome to JUPEB &amp; IJMB Prep</h2>
+      <p>Before we get started, help us understand how you found us. Takes 20 seconds.</p>
+    </div>
+
+    <div class="survey-body">
+      <label class="survey-label">How did you hear about us? <span class="survey-required">*</span></label>
+      <select id="survey-source" class="survey-select">
+        <option value="">— Select one —</option>
+        <option value="Referred by a friend">Referred by a friend</option>
+        <option value="Referred by a teacher">Referred by a teacher</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Google search">Google search</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <div id="survey-other-wrap" style="display:none;">
+        <label class="survey-label">Please specify</label>
+        <input type="text" id="survey-other" class="survey-input" placeholder="e.g. Friend's WhatsApp status" />
+      </div>
+
+      <div id="survey-referrer-wrap" style="display:none;">
+        <label class="survey-label">Who referred you? <span class="survey-optional">(optional)</span></label>
+        <input type="text" id="survey-referrer" class="survey-input" placeholder="Their name" />
+        <p class="survey-hint">Skip this if you found us yourself.</p>
+      </div>
+    </div>
+
+    <div class="survey-footer">
+      <button class="survey-submit" id="survey-submit">Continue →</button>
+      <p class="survey-error" id="survey-error" style="display:none;"></p>
+    </div>
+  </div>
+</div>
+<!-- ========== PART 2: the bell panel ==========
+     Paste once as a DIRECT child of <body>, next to your other overlays
+     (the subject picker and the survey), NOT inside any screen. -->
+<div class="bell-backdrop" id="bell-backdrop"></div>
+<section class="bell-panel" id="bell-panel" role="dialog" aria-label="Updates and feedback" aria-hidden="true">
+  <div class="bell-head">
+    <div class="bell-tabs">
+      <button class="bell-tab is-active" data-tab="updates">Updates</button>
+      <button class="bell-tab" data-tab="feedback">Feedback</button>
+    </div>
+    <button class="bell-close" id="bell-close" aria-label="Close">×</button>
+  </div>
+ 
+  <div class="bell-body" id="bell-pane-updates">
+    <details class="bell-guide" id="bell-guide" open>
+      <summary>📲 Add JUPEB &amp; IJMB Prep to your home screen</summary>
+      <p>Open it like an app, in one tap.</p>
+      <ul>
+        <li><strong>Android (Chrome):</strong> tap the ⋮ menu, then “Install app” (or “Add to Home screen”).</li>
+        <li><strong>iPhone (Safari):</strong> tap the Share button, then “Add to Home Screen”.</li>
+      </ul>
+      <p class="bell-guide-note">Opened this link from WhatsApp or Instagram? Open it in Chrome or Safari first.</p>
+      <button class="bell-link" id="bell-guide-hide">Don't show this again</button>
+    </details>
+    <div id="bell-updates-list"></div>
+  </div>
+ 
+  <div class="bell-body" id="bell-pane-feedback" hidden>
+    <label class="bell-label" for="bell-fb-type">What is this about?</label>
+    <select class="bell-field" id="bell-fb-type">
+      <option>Wrong answer</option>
+      <option>Bug</option>
+      <option>Suggestion</option>
+      <option>Other</option>
+    </select>
+ 
+    <label class="bell-label" for="bell-fb-message">Your message</label>
+    <textarea class="bell-field" id="bell-fb-message" rows="4" maxlength="1000" placeholder="Tell us what happened…"></textarea>
+ 
+    <label class="bell-label" for="bell-fb-context">Where did it happen? <span class="bell-optional">(optional)</span></label>
+    <input class="bell-field" id="bell-fb-context" maxlength="200" placeholder="e.g. Chemistry · Atomic Structure · Question 3">
+ 
+    <p class="bell-msg" id="bell-fb-status" role="status"></p>
+    <button class="bell-send" id="bell-fb-send">Send feedback</button>
+  </div>
+</section>
+ 
+<!-- ===== WELCOME STEP =====
+     Asks every student once: name, subjects, school, and (only if they didn't come
+     through a teacher's link) how they heard about us.
+
+     Paste once as a DIRECT child of <body>, directly ABOVE the Footer comment line.
+     Not inside login-screen or any other screen. -->
+<div class="welcome-overlay" id="welcome-overlay" aria-hidden="true">
+  <div class="welcome-card" role="dialog" aria-labelledby="welcome-title">
+    <div class="welcome-head">
+      <div class="welcome-emoji">👋</div>
+      <h2 id="welcome-title">Welcome!</h2>
+      <p>Tell us a little about you so we can set things up for you. It takes 20 seconds.</p>
+    </div>
+
+    <div id="welcome-exam-wrap" hidden>
+      <div class="welcome-label">Which exam are you writing?</div>
+      <div class="welcome-exams" id="welcome-exams" role="radiogroup" aria-label="Which exam are you writing?">
+        <button type="button" role="radio" aria-checked="false" data-exams="jupeb">JUPEB</button>
+        <button type="button" role="radio" aria-checked="false" data-exams="ijmb">IJMB</button>
+        <button type="button" role="radio" aria-checked="false" data-exams="jupeb,ijmb">Both</button>
+      </div>
+    </div>
+
+    <label class="welcome-label" for="welcome-name">What should we call you?</label>
+    <input class="welcome-input" id="welcome-name" maxlength="40" autocomplete="given-name">
+
+    <div class="welcome-label">Which subjects are you taking? <span class="welcome-hint">Pick all that apply</span></div>
+    <div class="welcome-subjects" id="welcome-subjects"></div>
+
+    <label class="welcome-label" for="welcome-school">Your school or study centre</label>
+    <input class="welcome-input" id="welcome-school" maxlength="80" placeholder="e.g. University of Lagos">
+
+    <div id="welcome-source-wrap" hidden>
+      <label class="welcome-label" for="welcome-source">How did you hear about us?</label>
+      <select class="welcome-input" id="welcome-source">
+        <option value="">Select one</option>
+        <option value="Referred by a friend">A friend told me</option>
+        <option value="Referred by a teacher">A teacher told me</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Instagram">Instagram</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Google search">Google search</option>
+        <option value="Other">Other</option>
+      </select>
+      <input class="welcome-input" id="welcome-source-other" maxlength="80" placeholder="Please tell us where" hidden>
+    </div>
+
+    <p class="welcome-error" id="welcome-error" role="alert"></p>
+    <button class="welcome-submit" id="welcome-submit">Continue →</button>
+    <button class="welcome-later" id="welcome-later">Not now</button>
+  </div>
+</div>
+<!-- Back to Top Button -->
+<button id="back-to-top" style="display:none;">↑ Back to Top</button>
+
+<!-- Footer -->
+<footer class="app-footer">
+    <div class="footer-content">
+        <div class="footer-top">
+            <span class="footer-tagline">Helping you ace JUPEB and IJMB, one question at a time...</span>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <span class="footer-brand" data-site-name>JUPEB &amp; IJMB Prep</span>
+                <span class="footer-version desktop-only">v2.0</span>
+            </div>
+            <div class="footer-center">
+                <span class="footer-copyright">&copy; 2026 <span data-site-name>JUPEB &amp; IJMB Prep</span></span>
+                <span class="footer-dot desktop-only">•</span>
+                <span class="footer-updated desktop-only">Updated: August 1, 2026</span>
+            </div>
+            <div class="footer-right desktop-only">
+                <span class="footer-contact">Contact: +234 903 580 1863</span>
+                <a href="https://wa.me/2349035801863" target="_blank" rel="noopener noreferrer" class="footer-link" title="Message on WhatsApp">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+        <p style="font-size:0.8rem;">⚠️ Answers may not be 100% accurate. Always cross-check with your textbooks and research tools.</p>
+        <p style="margin-bottom:4px;">Disclaimer: Not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB)</p>
+</div>
+    </div>
+</footer>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script src="topic-resources.js"></script>
+<script src="script.js"></script>
+<script src="exam-mode.js"></script>
+<script src="auth.js"></script>
+<script src="home-screen.js"></script>
+     <script src="welcome.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "1",
+    "question": "Find the value of k for which the equation kx² + kx + 1 = 0 to have equal roots.",
+    "options": [],
+    "modelAnswer": "For equal roots the discriminant must be zero: b² − 4ac = 0.\nHere a = k, b = k, c = 1.\nk² − 4(k)(1) = 0\nk(k − 4) = 0\nk = 0 or k = 4.\nk = 0 is rejected, because the equation becomes 1 = 0, which is not a quadratic.\nTherefore k = 4. (Check: 4x² + 4x + 1 = (2x + 1)² = 0, so x = −½ twice.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "Express (−1 + i)¹⁰⁰ in the form x + iy.",
+    "options": [],
+    "modelAnswer": "Write −1 + i in polar form.\nModulus: r = √((−1)² + 1²) = √2.\nArgument: the point (−1, 1) is in the second quadrant, so θ = 3π/4 (135°).\nSo −1 + i = √2(cos 3π/4 + i sin 3π/4).\n\nBy De Moivre's theorem:\n(−1 + i)¹⁰⁰ = (√2)¹⁰⁰ [cos(100 × 3π/4) + i sin(100 × 3π/4)]\n= 2⁵⁰ (cos 75π + i sin 75π)\n75π = 74π + π, and 74π is a whole number of turns, so cos 75π = cos π = −1 and sin 75π = sin π = 0.\n(−1 + i)¹⁰⁰ = 2⁵⁰(−1 + 0i) = −2⁵⁰ + 0i.\n\nSo x = −2⁵⁰ = −1 125 899 906 842 624 and y = 0.\n(Quick check: (−1 + i)² = 1 − 2i + i² = −2i, so (−1 + i)¹⁰⁰ = (−2i)⁵⁰ = 2⁵⁰ i⁵⁰ = 2⁵⁰(i²)²⁵ = −2⁵⁰.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "3",
+    "question": "Given That A = {2,4,6}, write down all the possible subsets of A.",
+    "options": [],
+    "modelAnswer": "A set with n elements has 2ⁿ subsets. Here n = 3, so A has 2³ = 8 subsets:\n∅ (the empty set), {2}, {4}, {6}, {2, 4}, {2, 6}, {4, 6}, {2, 4, 6}.\n(The first seven are proper subsets; {2, 4, 6} is A itself.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "Without using tables or calculator, calculate cos 15⁰",
+    "options": [],
+    "modelAnswer": "Note: \"15⁰\" in the paper means 15°.\nWrite 15° = 45° − 30° and use cos(A − B) = cos A cos B + sin A sin B.\ncos 15° = cos 45° cos 30° + sin 45° sin 30°\n= (√2/2)(√3/2) + (√2/2)(1/2)\n= √6/4 + √2/4\n= (√6 + √2)/4.\n(This is about 0.9659.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Inequalities",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Find the values of x for which √(3x² − 5x + 2) ≤ x − 1.",
+    "options": [],
+    "modelAnswer": "Three conditions must hold together.\n\n1. The expression under the root must not be negative:\n3x² − 5x + 2 ≥ 0 → (3x − 2)(x − 1) ≥ 0 → x ≤ 2/3 or x ≥ 1.\n\n2. A square root is never negative, so the right-hand side must not be negative:\nx − 1 ≥ 0 → x ≥ 1.\n\n3. Both sides are now non-negative, so we may square:\n3x² − 5x + 2 ≤ (x − 1)² = x² − 2x + 1\n2x² − 3x + 1 ≤ 0\n(2x − 1)(x − 1) ≤ 0 → 1/2 ≤ x ≤ 1.\n\nCombining: x ≥ 1 (from 1 and 2) and 1/2 ≤ x ≤ 1 (from 3) are both true only at x = 1.\nCheck: at x = 1, √(3 − 5 + 2) = √0 = 0 and x − 1 = 0, so 0 ≤ 0 is true.\nTherefore the only value is x = 1."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Matrices",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Obtain the inverse of the matrix A = (1 0 1; 3 1 1; 2 −3 2), hence solve AX = B where Bᵀ = (2,3,7)",
+    "options": [],
+    "modelAnswer": "The matrix has rows (1, 0, 1), (3, 1, 1) and (2, −3, 2).\n\nDeterminant (expanding along row 1):\n|A| = 1[(1)(2) − (1)(−3)] − 0[(3)(2) − (1)(2)] + 1[(3)(−3) − (1)(2)]\n= 1(2 + 3) − 0 + 1(−9 − 2) = 5 − 11 = −6.\n\nCofactors Cᵢⱼ:\nC₁₁ = +(2 + 3) = 5, C₁₂ = −(6 − 2) = −4, C₁₃ = +(−9 − 2) = −11\nC₂₁ = −(0 + 3) = −3, C₂₂ = +(2 − 2) = 0, C₂₃ = −(−3 − 0) = 3\nC₃₁ = +(0 − 1) = −1, C₃₂ = −(1 − 3) = 2, C₃₃ = +(1 − 0) = 1\n\nAdjoint (transpose of the cofactor matrix), rows:\n(5, −3, −1), (−4, 0, 2), (−11, 3, 1).\n\nA⁻¹ = (1/|A|) adj A = −(1/6) × adj A, so A⁻¹ has rows:\n(−5/6, 1/2, 1/6), (2/3, 0, −1/3), (11/6, −1/2, −1/6).\n\nSolving AX = B, with B = (2, 3, 7) as a column:\nX = A⁻¹B = −(1/6) × adj A × B\nadj A × B: 5(2) − 3(3) − 1(7) = −6; −4(2) + 0 + 2(7) = 6; −11(2) + 3(3) + 1(7) = −6.\nX = −(1/6)(−6, 6, −6) = (1, −1, 1).\nSo x = 1, y = −1, z = 1.\n\nCheck in AX: row 1: 1 + 0 + 1 = 2 ✓; row 2: 3 − 1 + 1 = 3 ✓; row 3: 2 + 3 + 2 = 7 ✓."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Solve the equation (x² − x)/2 + 2/(x² − x) = 2.",
+    "options": [],
+    "modelAnswer": "Let u = x² − x (u ≠ 0).\nu/2 + 2/u = 2\nMultiply through by 2u: u² + 4 = 4u\nu² − 4u + 4 = 0 → (u − 2)² = 0 → u = 2.\n\nSo x² − x = 2\nx² − x − 2 = 0 → (x − 2)(x + 1) = 0\nx = 2 or x = −1.\nCheck: for both values x² − x = 2, and 2/2 + 2/2 = 2 ✓."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) If the 3rd term of an A.P is 32 and the 10th term is 4, what is the 15th term and the sum of the first 7 terms?",
+    "options": [],
+    "modelAnswer": "For an A.P., Tₙ = a + (n − 1)d.\nT₃ = a + 2d = 32 ... (1)\nT₁₀ = a + 9d = 4 ... (2)\n(2) − (1): 7d = −28 → d = −4.\nFrom (1): a = 32 − 2(−4) = 40.\n\n15th term: T₁₅ = a + 14d = 40 + 14(−4) = 40 − 56 = −16.\n\nSum of the first 7 terms: Sₙ = (n/2)[2a + (n − 1)d]\nS₇ = (7/2)[2(40) + 6(−4)] = (7/2)(80 − 24) = (7/2)(56) = 196.\n(Check: 40 + 36 + 32 + 28 + 24 + 20 + 16 = 196.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Matrices",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Show that |1 1 1; x y z; x² y² z²| = (y − x)(z − x)(z − y)",
+    "options": [],
+    "modelAnswer": "The determinant has rows (1, 1, 1), (x, y, z) and (x², y², z²).\n\nColumn operations do not change the value of a determinant. Replace C₂ by C₂ − C₁ and C₃ by C₃ − C₁:\nRows become (1, 0, 0), (x, y − x, z − x), (x², y² − x², z² − x²).\n\nExpand along row 1:\nΔ = 1 × [(y − x)(z² − x²) − (z − x)(y² − x²)]\n\nUse z² − x² = (z − x)(z + x) and y² − x² = (y − x)(y + x):\nΔ = (y − x)(z − x)(z + x) − (z − x)(y − x)(y + x)\nTake out the common factor (y − x)(z − x):\nΔ = (y − x)(z − x)[(z + x) − (y + x)]\n= (y − x)(z − x)(z − y), as required."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Binomial Theorem",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Obtain the first five terms of the binomial expansion of (x − 2y)¹⁰ and use it to estimate the value of (0.8)¹⁰, correct to 3 decimal points.",
+    "options": [],
+    "modelAnswer": "Using (a + b)ⁿ = Σ ⁿCᵣ aⁿ⁻ʳ bʳ with a = x, b = −2y, n = 10:\nr = 0: ¹⁰C₀ x¹⁰ = x¹⁰\nr = 1: ¹⁰C₁ x⁹(−2y) = −20x⁹y\nr = 2: ¹⁰C₂ x⁸(4y²) = 45 × 4 x⁸y² = 180x⁸y²\nr = 3: ¹⁰C₃ x⁷(−8y³) = 120 × (−8) x⁷y³ = −960x⁷y³\nr = 4: ¹⁰C₄ x⁶(16y⁴) = 210 × 16 x⁶y⁴ = 3360x⁶y⁴\n(x − 2y)¹⁰ = x¹⁰ − 20x⁹y + 180x⁸y² − 960x⁷y³ + 3360x⁶y⁴ − ...\n\nEstimate: 0.8 = 1 − 2(0.1), so put x = 1, y = 0.1:\n(0.8)¹⁰ ≈ 1 − 20(0.1) + 180(0.01) − 960(0.001) + 3360(0.0001)\n= 1 − 2 + 1.8 − 0.96 + 0.336\n= 0.176.\n\nNote on the question: the five-term estimate is 0.176, but the true value is (0.8)¹⁰ = 0.107 (to 3 d.p.). Because 2y = 0.2 is not small enough for a power of 10, the later terms (−0.08064 + 0.01344 − 0.001536 + ...) are still large, so five terms cannot give 3-decimal accuracy. The expected answer from the five terms is 0.176; mention in an exam that all eleven terms are needed to reach 0.107."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a). Find the roots of the equation z³ − 1 = 0, where z = x + iy.",
+    "options": [],
+    "modelAnswer": "z³ = 1.\nMethod 1 (factorising): z³ − 1 = (z − 1)(z² + z + 1) = 0.\nz = 1, or z² + z + 1 = 0 → z = [−1 ± √(1 − 4)]/2 = (−1 ± i√3)/2.\n\nMethod 2 (De Moivre): 1 = cos 2kπ + i sin 2kπ, so z = cos(2kπ/3) + i sin(2kπ/3), k = 0, 1, 2:\nk = 0: z = 1\nk = 1: z = cos 120° + i sin 120° = −1/2 + i(√3/2)\nk = 2: z = cos 240° + i sin 240° = −1/2 − i(√3/2)\n\nRoots in the form x + iy: z = 1 + 0i, z = −½ + (√3/2)i, z = −½ − (√3/2)i."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Express sin 5θ in terms of sin θ, given that z = cos θ + i sin θ .",
+    "options": [],
+    "modelAnswer": "Let c = cos θ and s = sin θ. By De Moivre's theorem, cos 5θ + i sin 5θ = (c + is)⁵.\nExpand by the binomial theorem:\n(c + is)⁵ = c⁵ + 5c⁴(is) + 10c³(is)² + 10c²(is)³ + 5c(is)⁴ + (is)⁵\n= c⁵ + 5ic⁴s − 10c³s² − 10ic²s³ + 5cs⁴ + is⁵.\n\nEquate imaginary parts:\nsin 5θ = 5c⁴s − 10c²s³ + s⁵.\n\nReplace c² by 1 − s²:\n5s(1 − s²)² − 10s³(1 − s²) + s⁵\n= 5s(1 − 2s² + s⁴) − 10s³ + 10s⁵ + s⁵\n= 5s − 10s³ + 5s⁵ − 10s³ + 11s⁵\n= 16s⁵ − 20s³ + 5s.\n\nTherefore sin 5θ = 16 sin⁵θ − 20 sin³θ + 5 sin θ.\n(Check with θ = 30°: left side sin 150° = 0.5; right side 16/32 − 20/8 + 5/2 = 0.5 − 2.5 + 2.5 = 0.5 ✓.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) Express ½cos x − (√3/2) sin x in the form R cos(x + α), hence solve the equation ½cos x − (√3/2) sin x = ½ for 0 < x < 360⁰.",
+    "options": [],
+    "modelAnswer": "R cos(x + α) = R cos x cos α − R sin x sin α.\nCompare: R cos α = 1/2 and R sin α = √3/2.\nR² = 1/4 + 3/4 = 1 → R = 1.\ntan α = (√3/2)/(1/2) = √3, with cos α and sin α both positive → α = 60°.\nSo ½cos x − (√3/2) sin x = cos(x + 60°).\n\nSolve cos(x + 60°) = 1/2.\nSince 0° < x < 360°, 60° < x + 60° < 420°.\ncos θ = 1/2 at θ = 60°, 300°, 420°, ...; inside the interval (60°, 420°) only θ = 300° works (60° and 420° are end points, which are excluded).\nx + 60° = 300° → x = 240°.\n\nCheck: ½cos 240° − (√3/2) sin 240° = ½(−½) − (√3/2)(−√3/2) = −¼ + ¾ = ½ ✓.\nAnswer: x = 240°. (x = 0° and x = 360° would also satisfy the equation but are outside 0 < x < 360°.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) Given that x = cos θ + cos 2θ and y = sin θ +, show that\nx² − y² = cos 2θ + 2 cos 3θ + cos 4θ and\n2xy = sin 2θ + 2 sin 3θ + sin 4θ.",
+    "options": [],
+    "modelAnswer": "Note: the paper prints \"y = sin θ +\" with the second term missing. The results only work with y = sin θ + sin 2θ, which is used below.\n\nx² − y²:\nx² = cos²θ + 2cos θ cos 2θ + cos²2θ\ny² = sin²θ + 2sin θ sin 2θ + sin²2θ\nx² − y² = (cos²θ − sin²θ) + (cos²2θ − sin²2θ) + 2(cos θ cos 2θ − sin θ sin 2θ)\nUsing cos²A − sin²A = cos 2A and cos A cos B − sin A sin B = cos(A + B):\nx² − y² = cos 2θ + cos 4θ + 2cos 3θ\n= cos 2θ + 2 cos 3θ + cos 4θ, as required.\n\n2xy:\n2xy = 2(cos θ + cos 2θ)(sin θ + sin 2θ)\n= 2sin θ cos θ + 2sin 2θ cos 2θ + 2(sin 2θ cos θ + cos 2θ sin θ)\nUsing 2 sin A cos A = sin 2A and sin A cos B + cos A sin B = sin(A + B):\n2xy = sin 2θ + sin 4θ + 2 sin 3θ\n= sin 2θ + 2 sin 3θ + sin 4θ, as required.\n\n(Neat link: x + iy = z + z², where z = cos θ + i sin θ, so (x + iy)² = z² + 2z³ + z⁴; the real and imaginary parts give the two results.)"
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "11a",
+    "question": "(a) Solve the equation cos(x + 45⁰) − cos(x + 60⁰) = 0.4",
+    "options": [],
+    "modelAnswer": "Use cos A − cos B = −2 sin((A + B)/2) sin((A − B)/2).\nA = x + 45°, B = x + 60°:\n(A + B)/2 = x + 52.5°, (A − B)/2 = −7.5°.\ncos(x + 45°) − cos(x + 60°) = −2 sin(x + 52.5°) sin(−7.5°) = 2 sin 7.5° sin(x + 52.5°).\n\nSo 2 sin 7.5° sin(x + 52.5°) = 0.4\nsin 7.5° = 0.13053, so 0.26105 sin(x + 52.5°) = 0.4\nsin(x + 52.5°) = 0.4/0.26105 = 1.532.\n\nSince the sine of an angle can never exceed 1, the equation has no real solution.\nThe left-hand side can only take values between −0.261 and +0.261, so it can never equal 0.4.\n\nNote: this looks like a misprint in the paper (perhaps a smaller right-hand side, such as 0.04 or 0.2, was intended). The method above is what the examiner expects: combine into one sine, then solve. For example, if the right-hand side were 0.2: sin(x + 52.5°) = 0.2/0.26105 = 0.7661, so x + 52.5° = 50.01° or 129.99°, giving x = −2.49° (+360°n) or x = 77.49° (+360°n)."
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2022,
+    "paper": "Paper I",
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "11b",
+    "question": "(b)Find the cube roots of 1 − i√3.",
+    "options": [],
+    "modelAnswer": "Polar form of 1 − i√3:\nModulus r = √(1 + 3) = 2.\nThe point (1, −√3) is in the fourth quadrant, tan⁻¹(√3) = 60°, so the argument is −60°.\n1 − i√3 = 2[cos(−60° + 360°k) + i sin(−60° + 360°k)].\n\nBy De Moivre's theorem, the cube roots are\nz = 2^(1/3) [cos((−60° + 360°k)/3) + i sin((−60° + 360°k)/3)], k = 0, 1, 2\n= ∛2 [cos(−20° + 120°k) + i sin(−20° + 120°k)].\n\n∛2 = 1.2599.\nk = 0: ∛2(cos(−20°) + i sin(−20°)) = 1.1839 − 0.4309i\nk = 1: ∛2(cos 100° + i sin 100°) = −0.2188 + 1.2408i\nk = 2: ∛2(cos 220° + i sin 220°) = −0.9652 − 0.8099i\n(values to 4 d.p.)"
+  }
+]
